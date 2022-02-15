@@ -1,0 +1,38 @@
+{
+  "name": "inspec-objects",
+  "version": "1.0.0",
+  "description": "Typescript objects for InSpec profiles",
+  "main": "index.ts",
+  "publishConfig": {
+    "main": "lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json",
+    "dev": "npx -y ts-node test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitre/ts-inspec-objects.git"
+  },
+  "author": "The MITRE Security Automation Framework",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mitre/ts-inspec-objects/issues"
+  },
+  "homepage": "https://github.com/mitre/ts-inspec-objects#readme",
+  "dependencies": {
+    "@mitre/hdf-converters": "^2.6.9",
+    "@types/lodash": "^4.14.178",
+    "fast-xml-parser": "^3.1.19",
+    "htmlparser2": "^7.2.0",
+    "inspecjs": "^2.6.6",
+    "lodash": "^4.17.21",
+    "typescript": "^4.5.5",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "eslint": "^8.9.0"
+  }
+}
