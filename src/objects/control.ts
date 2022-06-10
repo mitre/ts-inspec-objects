@@ -1,17 +1,17 @@
 import { ExecJSON } from "inspecjs";
 import _ from "lodash";
-import { escapeQuotes, wrapAndEscapeQuotes } from "../utilities/global";
+import {flatten, unflatten} from "flat"
+import { escapeQuotes, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
 
 export default class Control {
   id?: string | null;
   title?: string | null;
   code?: string | null;
   desc?: string | null;
-  descs?: ExecJSON.ControlDescription[] | {[key: string]: string} | null;
+  descs?: ExecJSON.ControlDescription[] | { [key: string]: string } | null;
   impact?: number;
   ref?: string;
   refs?: string[];
-  rationale?: string;
   tags: {
     check?: string;
     fix?: string;
@@ -36,15 +36,33 @@ export default class Control {
     mitigation_controls?: string;
     responsibility?: string;
     ia_controls?: string;
-    [key: string]: string | string[] | Record<string, string[]>[] | boolean | undefined;
+    [key: string]:
+      | string
+      | string[]
+      | Record<string, string[]>[]
+      | boolean
+      | undefined
+      | null;
   } = {};
 
-  constructor(data: Partial<Control>) {
+  constructor(data?: Partial<Control>) {
     if (data) {
       Object.entries(data).forEach(([key, value]) => {
-          _.set(this, key, value)
-      })
+        _.set(this, key, value);
+      });
+    }
   }
+
+  toUnformattedObject(): Control {
+    const flattened: Record<string, string | number> = flatten(this)
+    
+    Object.entries(flattened).forEach(([key, value]) => {
+      if(typeof value === 'string') {
+        _.set(flattened, key, unformatText(value));
+      }
+    });
+
+    return new Control(unflatten(flattened));
   }
 
   toRuby(lineLength: number = 80) {
@@ -71,9 +89,7 @@ export default class Control {
             lineLength
           )}"\n`;
         } else {
-          console.error(
-            `${this.id} does not have a desc for the value ${key}`
-          );
+          console.error(`${this.id} does not have a desc for the value ${key}`);
         }
       });
     }
@@ -81,9 +97,7 @@ export default class Control {
     if (this.impact) {
       result += `  impact ${this.impact}\n`;
     } else {
-      console.error(
-        `${this.id} does not have an impact`
-      );
+      console.error(`${this.id} does not have an impact`);
     }
 
     if (this.refs) {

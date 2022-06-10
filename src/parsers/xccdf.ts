@@ -1,4 +1,4 @@
-import {default as CCINistMappings} from '@mitre/hdf-converters/lib/data/cci-nist-mapping.json'
+import {data as CCINistMappings} from '@mitre/hdf-converters/lib/src/mappings/CciNistMappingData'
 import Profile from '../objects/profile';
 import { convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson, impactNumberToSeverityString, severityStringToImpact } from '../utilities/xccdf';
 import { DecodedDescription, DisaStig } from '../types/xccdf';
@@ -22,12 +22,11 @@ export function processXCCDF(xml: string): Profile {
             title: group.Rule['@_severity'] ? group.Rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${group.Rule.title}`,
             desc: extractedDescription.VulnDiscussion?.split('Satisfies: ')[0],
             impact: severityStringToImpact(group.Rule['@_severity'] || 'critical'),
-            rationale: '',
             descs: {
                 check: group.Rule.check['check-content'],
-                fix: group.Rule.fixtext['#text'],
+                fix: group.Rule.fixtext['#text']
             },
-            tags: {
+            tags: _.omitBy({
                 severity: impactNumberToSeverityString(severityStringToImpact(group.Rule['@_severity'] || 'critical')),
                 gtitle: group.title,
                 satisfies: extractedDescription.VulnDiscussion?.includes('Satisfies: ') && extractedDescription.VulnDiscussion.split('Satisfies: ').length >= 1 ? extractedDescription.VulnDiscussion.split('Satisfies: ')[1].split(',').map(satisfaction => satisfaction.trim()) : undefined,
@@ -46,7 +45,7 @@ export function processXCCDF(xml: string): Profile {
                 mitigation_controls: extractedDescription.MitigationControls,
                 responsibility: extractedDescription.Responsibility,
                 ia_controls: extractedDescription.IAControls
-            }
+            }, i => !Boolean(i))
         })
 
         if ('ident' in group.Rule) {
@@ -69,5 +68,7 @@ export function processXCCDF(xml: string): Profile {
         profile.controls.push(control)
     })
 
-    return profile
+    profile.controls = _.sortBy(profile.controls, 'id')
+
+    return profile.toUnformattedObject()
 }
