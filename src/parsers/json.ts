@@ -5,8 +5,7 @@ import {
   contextualizeProfile,
   ConversionResult,
   convertFile,
-  ExecJSON,
-  ProfileJSON,
+  ExecJSON
 } from "inspecjs";
 import _ from "lodash";
 import Control from "../objects/control";
