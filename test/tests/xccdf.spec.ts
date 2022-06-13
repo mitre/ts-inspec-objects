@@ -1,5 +1,5 @@
 import fs from 'fs'
-import {processXCCDF} from "../../index"
+import {processXCCDF} from "../../src/index"
 
 describe('The XCCDF Parser', () => {
     for (const file of fs.readdirSync('./test/sample_data/xccdf/input')) {
