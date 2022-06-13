@@ -10,7 +10,7 @@ import {
 } from "inspecjs";
 import _ from "lodash";
 import Control from "../objects/control";
-import Profile from "../objects/Profile";
+import Profile from "../objects/profile";
 
 export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
   const topLevelProfile = evaluationInput.contains[0];
