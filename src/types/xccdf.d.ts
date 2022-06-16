@@ -733,10 +733,10 @@ export interface BenchmarkRule {
     ident:        Ident[];
     fixtext:      Fixtext[];
     fix:          FluffyFix[];
-    check:        StickyCheck[];
+    check:        CheckContent[];
 }
 
-export interface StickyCheck {
+export interface CheckContent {
     "@_system":          string;
     "check-content-ref": CheckContentRef[];
     "check-content":     string;

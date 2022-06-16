@@ -5,6 +5,7 @@ import { BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice,
 import Control from '../objects/control';
 import _ from 'lodash';
 import { getFirstPath } from '../utilities/global';
+import { OvalDefinitionValue } from '../types/oval';
 
 export type GroupContextualizedRule = BenchmarkRule & {group: Omit<BenchmarkGroup, 'Rule' | 'Group'>}
 
@@ -26,7 +27,7 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
     return rules
 }
 
-export function processXCCDF(xml: string): Profile {
+export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
     const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
     const rules = extractAllRules(parsedXML.Benchmark[0].Group)
 
@@ -45,18 +46,19 @@ export function processXCCDF(xml: string): Profile {
         } else {
             extractedDescription = convertEncodedHTMLIntoJson(rule.description)
         }
+        const control = new Control();
 
+        control.id = rule.group['@_id']
+        control.title = rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`
+        control.desc = typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion.split('Satisfies: ')[0]
+        control.impact = severityStringToImpact(rule['@_severity'] || 'critical', rule.group['@_id'])
+        if (!control.descs || Array.isArray(control.descs)) {
+            control.descs = {}
+        }
         console.log(rule.check)
-
-        const control = new Control({
-            id: rule.group['@_id'],
-            title: rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`,
-            desc: typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion.split('Satisfies: ')[0],
-            impact: severityStringToImpact(rule['@_severity'] || 'critical', rule.group['@_id']),
-            descs: {
-                check: rule.check ? rule.check[0]['check-content'] : 'Missing description',
-                fix: rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text')
-            },
+        control.descs.check = rule.check ? rule.check[0]['check-content'] : 'Missing description'
+        control.descs.fix = rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text')
+        new Control({
     //         tags: _.omitBy({
     //             severity: impactNumberToSeverityString(severityStringToImpact(group.Rule['@_severity'] || 'critical')),
     //             gtitle: group.title,
