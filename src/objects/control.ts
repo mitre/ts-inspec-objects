@@ -8,7 +8,7 @@ export default class Control {
   title?: string | null;
   code?: string | null;
   desc?: string | null;
-  descs?: ExecJSON.ControlDescription[] | { [key: string]: string } | null;
+  descs?: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null;
   impact?: number;
   ref?: string;
   refs?: string[];

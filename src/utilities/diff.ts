@@ -41,7 +41,7 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDi
                     if (_.has(value, '__new')) {
                         _.set(profileDiff, 'changedControls.'+fromControl.id +'.'+key.replace('.', '\\.'), _.get(controlDiff, key+'.__new'))
                     } else if (typeof value === 'object') {
-                        Object.entries(value).forEach(([subKey, subValue]) => {
+                        Object.entries(value).forEach(([subKey]) => {
                             _.set(profileDiff, 'changedControls.'+fromControl.id +'.'+key.replace('.', '\\.')+'.'+subKey.replace('.', '\\.'), _.get(controlDiff, key+'.'+subKey+'.__new'))
                         })
                     }
