@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DNS-000115",
         "gid": "V-54777",
         "rid": "SV-69023r1_rule",
         "stig_id": "SRG-APP-000001-DNS-000115",
-        "fix_id": "F-59635r1_fix"
+        "fix_id": "F-59635r1_fix",
+        "documentable": false
       },
       "id": "V-54777",
       "title": "The DNS implementation must limit the number of concurrent sessions client connections to the number of allowed dynamic update clients.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-DNS-000004",
         "gid": "V-54781",
         "rid": "SV-69027r1_rule",
         "stig_id": "SRG-APP-000089-DNS-000004",
-        "fix_id": "F-59639r2_fix"
+        "fix_id": "F-59639r2_fix",
+        "documentable": false
       },
       "id": "V-54781",
       "title": "The DNS server implementation must be configured to provide audit record generation capability for DoD-defined auditable events within all DNS server components.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-DNS-000005",
         "gid": "V-54783",
         "rid": "SV-69029r1_rule",
         "stig_id": "SRG-APP-000089-DNS-000005",
-        "fix_id": "F-59641r2_fix"
+        "fix_id": "F-59641r2_fix",
+        "documentable": false
       },
       "id": "V-54783",
       "title": "The DNS server implementation must be configured to provide audit record generation capability for DoD-defined auditable events within all DNS server components.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095-DNS-000006",
         "gid": "V-54785",
         "rid": "SV-69031r1_rule",
         "stig_id": "SRG-APP-000095-DNS-000006",
-        "fix_id": "F-59643r2_fix"
+        "fix_id": "F-59643r2_fix",
+        "documentable": false
       },
       "id": "V-54785",
       "title": "The DNS server implementation must produce audit records containing information to establish what type of events occurred.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097-DNS-000008",
         "gid": "V-54787",
         "rid": "SV-69033r1_rule",
         "stig_id": "SRG-APP-000097-DNS-000008",
-        "fix_id": "F-59645r1_fix"
+        "fix_id": "F-59645r1_fix",
+        "documentable": false
       },
       "id": "V-54787",
       "title": "The DNS server implementation must produce audit records containing information to establish where the events occurred.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-DNS-000009",
         "gid": "V-54789",
         "rid": "SV-69035r1_rule",
         "stig_id": "SRG-APP-000098-DNS-000009",
-        "fix_id": "F-59647r1_fix"
+        "fix_id": "F-59647r1_fix",
+        "documentable": false
       },
       "id": "V-54789",
       "title": "The DNS server implementation must produce audit records containing information to establish the source of the events.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099-DNS-000010",
         "gid": "V-54791",
         "rid": "SV-69037r1_rule",
         "stig_id": "SRG-APP-000099-DNS-000010",
-        "fix_id": "F-59649r1_fix"
+        "fix_id": "F-59649r1_fix",
+        "documentable": false
       },
       "id": "V-54791",
       "title": "The DNS server implementation must produce audit records that contain information to establish the outcome of the events.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000100-DNS-000011",
         "gid": "V-54793",
         "rid": "SV-69039r1_rule",
         "stig_id": "SRG-APP-000100-DNS-000011",
-        "fix_id": "F-59651r1_fix"
+        "fix_id": "F-59651r1_fix",
+        "documentable": false
       },
       "id": "V-54793",
       "title": "The DNS server implementation must generate audit records containing information that establishes the identity of any individual or process associated with the event.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000125-DNS-000012",
         "gid": "V-54795",
         "rid": "SV-69041r1_rule",
         "stig_id": "SRG-APP-000125-DNS-000012",
-        "fix_id": "F-59653r1_fix"
+        "fix_id": "F-59653r1_fix",
+        "documentable": false
       },
       "id": "V-54795",
       "title": "The DNS server implementations audit records must be backed up at least every seven days onto a different system or system component than the system or component being audited.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DNS-000014",
         "gid": "V-54797",
         "rid": "SV-69043r1_rule",
         "stig_id": "SRG-APP-000142-DNS-000014",
-        "fix_id": "F-59655r1_fix"
+        "fix_id": "F-59655r1_fix",
+        "documentable": false
       },
       "id": "V-54797",
       "title": "The DNS server implementation must be configured to prohibit or restrict unapproved ports and protocols.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000158-DNS-000015",
         "gid": "V-54799",
         "rid": "SV-69045r1_rule",
         "stig_id": "SRG-APP-000158-DNS-000015",
-        "fix_id": "F-59657r4_fix"
+        "fix_id": "F-59657r4_fix",
+        "documentable": false
       },
       "id": "V-54799",
       "title": "The DNS server implementation must uniquely identify the other DNS server before responding to a server-to-server transaction.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000017",
         "gid": "V-54801",
         "rid": "SV-69047r1_rule",
         "stig_id": "SRG-APP-000176-DNS-000017",
-        "fix_id": "F-59659r1_fix"
+        "fix_id": "F-59659r1_fix",
+        "documentable": false
       },
       "id": "V-54801",
       "title": "The DNS server implementation, when using PKI-based authentication, must enforce authorized access to the corresponding private key.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000018",
         "gid": "V-54803",
         "rid": "SV-69049r1_rule",
         "stig_id": "SRG-APP-000176-DNS-000018",
-        "fix_id": "F-59661r1_fix"
+        "fix_id": "F-59661r1_fix",
+        "documentable": false
       },
       "id": "V-54803",
       "title": "The key file must be owned by the account under which the name server software is run.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000019",
         "gid": "V-54805",
         "rid": "SV-69051r1_rule",
         "stig_id": "SRG-APP-000176-DNS-000019",
-        "fix_id": "F-59663r1_fix"
+        "fix_id": "F-59663r1_fix",
+        "documentable": false
       },
       "id": "V-54805",
       "title": "Read/Write access to the key file must be restricted to the account that runs the name server software only.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000076",
         "gid": "V-54807",
         "rid": "SV-69053r1_rule",
         "stig_id": "SRG-APP-000176-DNS-000076",
-        "fix_id": "F-59665r1_fix"
+        "fix_id": "F-59665r1_fix",
+        "documentable": false
       },
       "id": "V-54807",
       "title": "A unique TSIG key must be generated for each pair of communicating hosts.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000094",
         "gid": "V-54809",
         "rid": "SV-69055r1_rule",
         "stig_id": "SRG-APP-000176-DNS-000094",
-        "fix_id": "F-59667r1_fix"
+        "fix_id": "F-59667r1_fix",
+        "documentable": false
       },
       "id": "V-54809",
       "title": "Only the private key corresponding to the ZSK alone must be kept on the name server that does support dynamic updates.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000096",
         "gid": "V-54811",
         "rid": "SV-69057r1_rule",
         "stig_id": "SRG-APP-000176-DNS-000096",
-        "fix_id": "F-59669r1_fix"
+        "fix_id": "F-59669r1_fix",
+        "documentable": false
       },
       "id": "V-54811",
       "title": "Signature generation using the KSK must be done off-line, using the KSK-private stored off-line.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000185-DNS-000021",
         "gid": "V-54813",
         "rid": "SV-69059r1_rule",
         "stig_id": "SRG-APP-000185-DNS-000021",
-        "fix_id": "F-59671r1_fix"
+        "fix_id": "F-59671r1_fix",
+        "documentable": false
       },
       "id": "V-54813",
       "title": "The DNS server implementation must employ strong authenticators in the establishment of nonlocal maintenance and diagnostic sessions.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000213-DNS-000024",
         "gid": "V-54815",
         "rid": "SV-69061r1_rule",
         "stig_id": "SRG-APP-000213-DNS-000024",
-        "fix_id": "F-59673r4_fix"
+        "fix_id": "F-59673r4_fix",
+        "documentable": false
       },
       "id": "V-54815",
       "title": "A DNS server implementation must provide additional data origin artifacts along with the authoritative data the system returns in response to external name/address resolution queries.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000214-DNS-000025",
         "gid": "V-54817",
         "rid": "SV-69063r1_rule",
         "stig_id": "SRG-APP-000214-DNS-000025",
-        "fix_id": "F-59675r4_fix"
+        "fix_id": "F-59675r4_fix",
+        "documentable": false
       },
       "id": "V-54817",
       "title": "A DNS server implementation must provide the means to indicate the security status of child zones.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000214-DNS-000079",
         "gid": "V-54819",
         "rid": "SV-69065r1_rule",
         "stig_id": "SRG-APP-000214-DNS-000079",
-        "fix_id": "F-59677r1_fix"
+        "fix_id": "F-59677r1_fix",
+        "documentable": false
       },
       "id": "V-54819",
       "title": "The validity period for the RRSIGs covering the DS RR for a zones delegated children must be no less than two days and no more than one week.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000003",
         "gid": "V-54821",
         "rid": "SV-69067r1_rule",
         "stig_id": "SRG-APP-000215-DNS-000003",
-        "fix_id": "F-59679r2_fix"
+        "fix_id": "F-59679r2_fix",
+        "documentable": false
       },
       "id": "V-54821",
       "title": "The DNS server implementation must enforce approved authorizations for controlling the flow of information between DNS servers and between DNS servers and DNS clients based on DNSSEC policies.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000026",
         "gid": "V-54823",
         "rid": "SV-69069r1_rule",
         "stig_id": "SRG-APP-000215-DNS-000026",
-        "fix_id": "F-59681r1_fix"
+        "fix_id": "F-59681r1_fix",
+        "documentable": false
       },
       "id": "V-54823",
       "title": "A DNS server implementation must provide the means to enable verification of a chain of trust among parent and child domains (if the child supports secure resolution services).",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-DNS-000028",
         "gid": "V-54825",
         "rid": "SV-69071r1_rule",
         "stig_id": "SRG-APP-000219-DNS-000028",
-        "fix_id": "F-59683r1_fix"
+        "fix_id": "F-59683r1_fix",
+        "documentable": false
       },
       "id": "V-54825",
       "title": "The DNS implementation must protect the authenticity of communications sessions for zone transfers.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-DNS-000029",
         "gid": "V-54827",
         "rid": "SV-69073r1_rule",
         "stig_id": "SRG-APP-000219-DNS-000029",
-        "fix_id": "F-59685r1_fix"
+        "fix_id": "F-59685r1_fix",
+        "documentable": false
       },
       "id": "V-54827",
       "title": "The DNS implementation must protect the authenticity of communications sessions for dynamic updates.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-DNS-000030",
         "gid": "V-54829",
         "rid": "SV-69075r1_rule",
         "stig_id": "SRG-APP-000219-DNS-000030",
-        "fix_id": "F-59687r1_fix"
+        "fix_id": "F-59687r1_fix",
+        "documentable": false
       },
       "id": "V-54829",
       "title": "The DNS implementation must protect the authenticity of communications sessions for queries.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000225-DNS-000031",
         "gid": "V-54831",
         "rid": "SV-69077r1_rule",
         "stig_id": "SRG-APP-000225-DNS-000031",
-        "fix_id": "F-59689r1_fix"
+        "fix_id": "F-59689r1_fix",
+        "documentable": false
       },
       "id": "V-54831",
       "title": "The DNS server implementation must fail to a secure state if system initialization fails, shutdown fails, or aborts fail.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000226-DNS-000032",
         "gid": "V-54833",
         "rid": "SV-69079r1_rule",
         "stig_id": "SRG-APP-000226-DNS-000032",
-        "fix_id": "F-59691r1_fix"
+        "fix_id": "F-59691r1_fix",
+        "documentable": false
       },
       "id": "V-54833",
       "title": "In the event of a system failure, the DNS server implementation must preserve any information necessary to determine cause of failure and any information necessary to return to operations with least disruption to mission processes.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231-DNS-000033",
         "gid": "V-54835",
         "rid": "SV-69081r1_rule",
         "stig_id": "SRG-APP-000231-DNS-000033",
-        "fix_id": "F-59693r1_fix"
+        "fix_id": "F-59693r1_fix",
+        "documentable": false
       },
       "id": "V-54835",
       "title": "The DNS server implementation must protect the confidentiality and integrity of secret/private cryptographic keys at rest and the integrity of DNS information at rest.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DNS-000034",
         "gid": "V-54837",
         "rid": "SV-69083r1_rule",
         "stig_id": "SRG-APP-000243-DNS-000034",
-        "fix_id": "F-59695r1_fix"
+        "fix_id": "F-59695r1_fix",
+        "documentable": false
       },
       "id": "V-54837",
       "title": "The DNS server implementation must prevent unauthorized and unintended information transfer via shared system resources.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-DNS-000035",
         "gid": "V-54839",
         "rid": "SV-69085r1_rule",
         "stig_id": "SRG-APP-000246-DNS-000035",
-        "fix_id": "F-59697r1_fix"
+        "fix_id": "F-59697r1_fix",
+        "documentable": false
       },
       "id": "V-54839",
       "title": "The DNS server implementation must restrict the ability of individuals to use the DNS server to launch Denial of Service (DoS) attacks against other information systems.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000247-DNS-000036",
         "gid": "V-54841",
         "rid": "SV-69087r1_rule",
         "stig_id": "SRG-APP-000247-DNS-000036",
-        "fix_id": "F-59699r1_fix"
+        "fix_id": "F-59699r1_fix",
+        "documentable": false
       },
       "id": "V-54841",
       "title": "The DNS server implementation must manage excess capacity, bandwidth, or other redundancy to limit the effects of information flooding types of Denial of Service (DoS) attacks.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DNS-000037",
         "gid": "V-54843",
         "rid": "SV-69089r1_rule",
         "stig_id": "SRG-APP-000251-DNS-000037",
-        "fix_id": "F-59701r1_fix"
+        "fix_id": "F-59701r1_fix",
+        "documentable": false
       },
       "id": "V-54843",
       "title": "The DNS server implementation must check the validity of all data inputs except those specifically identified by the organization.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000275-DNS-000040",
         "gid": "V-54845",
         "rid": "SV-69091r1_rule",
         "stig_id": "SRG-APP-000275-DNS-000040",
-        "fix_id": "F-59703r1_fix"
+        "fix_id": "F-59703r1_fix",
+        "documentable": false
       },
       "id": "V-54845",
       "title": "The DNS server implementation must be configured to generate audit records for failed security verification tests so that the ISSO and ISSM can be notified of the failures.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000333-DNS-000104",
         "gid": "V-54847",
         "rid": "SV-69093r1_rule",
         "stig_id": "SRG-APP-000333-DNS-000104",
-        "fix_id": "F-59705r1_fix"
+        "fix_id": "F-59705r1_fix",
+        "documentable": false
       },
       "id": "V-54847",
       "title": "The DNS Name Server software must be configured to refuse queries for its version information.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000333-DNS-000107",
         "gid": "V-54849",
         "rid": "SV-69095r1_rule",
         "stig_id": "SRG-APP-000333-DNS-000107",
-        "fix_id": "F-59707r1_fix"
+        "fix_id": "F-59707r1_fix",
+        "documentable": false
       },
       "id": "V-54849",
       "title": "The HINFO, RP, TXT and LOC RR types must not be used in the zone SOA.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000353-DNS-000045",
         "gid": "V-54851",
         "rid": "SV-69097r1_rule",
         "stig_id": "SRG-APP-000353-DNS-000045",
-        "fix_id": "F-59709r1_fix"
+        "fix_id": "F-59709r1_fix",
+        "documentable": false
       },
       "id": "V-54851",
       "title": "The DNS server implementation must be configured to allow DNS administrators to change the auditing to be performed on all DNS server components, based on all selectable event criteria.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DNS-000001",
         "gid": "V-54853",
         "rid": "SV-69099r1_rule",
         "stig_id": "SRG-APP-000001-DNS-000001",
-        "fix_id": "F-59711r1_fix"
+        "fix_id": "F-59711r1_fix",
+        "documentable": false
       },
       "id": "V-54853",
       "title": "The DNS implementation must limit the number of concurrent sessions for zone transfers to the number of secondary name servers.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DNS-000047",
         "gid": "V-54855",
         "rid": "SV-69101r2_rule",
         "stig_id": "SRG-APP-000383-DNS-000047",
-        "fix_id": "F-59713r1_fix"
+        "fix_id": "F-59713r1_fix",
+        "documentable": false
       },
       "id": "V-54855",
       "title": "The DNS implementation must prohibit recursion on authoritative name servers.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000390-DNS-000048",
         "gid": "V-54857",
         "rid": "SV-69103r1_rule",
         "stig_id": "SRG-APP-000390-DNS-000048",
-        "fix_id": "F-59717r1_fix"
+        "fix_id": "F-59717r1_fix",
+        "documentable": false
       },
       "id": "V-54857",
       "title": "The DNS server implementation must require devices to re-authenticate for each zone transfer and dynamic update request connection attempt.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000394-DNS-000049",
         "gid": "V-54861",
         "rid": "SV-69107r1_rule",
         "stig_id": "SRG-APP-000394-DNS-000049",
-        "fix_id": "F-59719r1_fix"
+        "fix_id": "F-59719r1_fix",
+        "documentable": false
       },
       "id": "V-54861",
       "title": "The DNS server implementation must authenticate the other DNS server before responding to a server-to-server transaction.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000395-DNS-000050",
         "gid": "V-54863",
         "rid": "SV-69109r1_rule",
         "stig_id": "SRG-APP-000395-DNS-000050",
-        "fix_id": "F-59721r1_fix"
+        "fix_id": "F-59721r1_fix",
+        "documentable": false
       },
       "id": "V-54863",
       "title": "The DNS server implementation must authenticate another DNS server before establishing a remote and/or network connection using bidirectional authentication that is cryptographically based.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000401-DNS-000051",
         "gid": "V-54865",
         "rid": "SV-69111r1_rule",
         "stig_id": "SRG-APP-000401-DNS-000051",
-        "fix_id": "F-59723r1_fix"
+        "fix_id": "F-59723r1_fix",
+        "documentable": false
       },
       "id": "V-54865",
       "title": "The DNS server implementation, for PKI-based authentication, must implement a local cache of revocation data to support path discovery and validation in case of the inability to access revocation information via the network.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000420-DNS-000053",
         "gid": "V-54867",
         "rid": "SV-69113r1_rule",
         "stig_id": "SRG-APP-000420-DNS-000053",
-        "fix_id": "F-59725r1_fix"
+        "fix_id": "F-59725r1_fix",
+        "documentable": false
       },
       "id": "V-54867",
       "title": "A DNS server implementation must provide data origin artifacts for internal name/address resolution queries.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000421-DNS-000054",
         "gid": "V-54869",
         "rid": "SV-69115r1_rule",
         "stig_id": "SRG-APP-000421-DNS-000054",
-        "fix_id": "F-59727r1_fix"
+        "fix_id": "F-59727r1_fix",
+        "documentable": false
       },
       "id": "V-54869",
       "title": "A DNS server implementation must provide data integrity protection artifacts for internal name/address resolution queries.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000422-DNS-000055",
         "gid": "V-54871",
         "rid": "SV-69117r1_rule",
         "stig_id": "SRG-APP-000422-DNS-000055",
-        "fix_id": "F-59729r1_fix"
+        "fix_id": "F-59729r1_fix",
+        "documentable": false
       },
       "id": "V-54871",
       "title": "A DNS server implementation must provide additional integrity artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000423-DNS-000056",
         "gid": "V-54873",
         "rid": "SV-69119r1_rule",
         "stig_id": "SRG-APP-000423-DNS-000056",
-        "fix_id": "F-59731r1_fix"
+        "fix_id": "F-59731r1_fix",
+        "documentable": false
       },
       "id": "V-54873",
       "title": "A DNS server implementation must request data origin authentication verification on the name/address resolution responses the system receives from authoritative sources.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000424-DNS-000057",
         "gid": "V-54875",
         "rid": "SV-69121r1_rule",
         "stig_id": "SRG-APP-000424-DNS-000057",
-        "fix_id": "F-59733r1_fix"
+        "fix_id": "F-59733r1_fix",
+        "documentable": false
       },
       "id": "V-54875",
       "title": "A DNS server implementation must request data integrity verification on the name/address resolution responses the system receives from authoritative sources.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000425-DNS-000058",
         "gid": "V-54877",
         "rid": "SV-69123r1_rule",
         "stig_id": "SRG-APP-000425-DNS-000058",
-        "fix_id": "F-59737r1_fix"
+        "fix_id": "F-59737r1_fix",
+        "documentable": false
       },
       "id": "V-54877",
       "title": "A DNS server implementation must perform data integrity verification on the name/address resolution responses the system receives from authoritative sources.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000426-DNS-000059",
         "gid": "V-54885",
         "rid": "SV-69131r1_rule",
         "stig_id": "SRG-APP-000426-DNS-000059",
-        "fix_id": "F-59747r1_fix"
+        "fix_id": "F-59747r1_fix",
+        "documentable": false
       },
       "id": "V-54885",
       "title": "A DNS server implementation must perform data origin verification authentication on the name/address resolution responses the system receives from authoritative sources.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-DNS-000060",
         "gid": "V-54887",
         "rid": "SV-69133r1_rule",
         "stig_id": "SRG-APP-000427-DNS-000060",
-        "fix_id": "F-59749r2_fix"
+        "fix_id": "F-59749r2_fix",
+        "documentable": false
       },
       "id": "V-54887",
       "title": "If the DNS server is using SIG(0), the DNS server implementation must only allow the use of DoD PKI-established certificate authorities for verification of the establishment of protected transactions.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429-DNS-000062",
         "gid": "V-54889",
         "rid": "SV-69135r1_rule",
         "stig_id": "SRG-APP-000429-DNS-000062",
-        "fix_id": "F-59751r1_fix"
+        "fix_id": "F-59751r1_fix",
+        "documentable": false
       },
       "id": "V-54889",
       "title": "The DNS server implementation must utilize cryptographic mechanisms to prevent unauthorized disclosure of non-DNS data stored on the DNS server.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-DNS-000063",
         "gid": "V-54891",
         "rid": "SV-69137r1_rule",
         "stig_id": "SRG-APP-000439-DNS-000063",
-        "fix_id": "F-59753r2_fix"
+        "fix_id": "F-59753r2_fix",
+        "documentable": false
       },
       "id": "V-54891",
       "title": "The DNS server implementation must protect the integrity of transmitted information.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000440-DNS-000065",
         "gid": "V-54895",
         "rid": "SV-69141r1_rule",
         "stig_id": "SRG-APP-000440-DNS-000065",
-        "fix_id": "F-59757r1_fix"
+        "fix_id": "F-59757r1_fix",
+        "documentable": false
       },
       "id": "V-54895",
       "title": "The DNS server implementation must implement cryptographic mechanisms to detect changes to information during transmission unless otherwise protected by alternative physical safeguards, such as, at a minimum, a Protected Distribution System (PDS).",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-DNS-000066",
         "gid": "V-54897",
         "rid": "SV-69143r1_rule",
         "stig_id": "SRG-APP-000441-DNS-000066",
-        "fix_id": "F-59759r1_fix"
+        "fix_id": "F-59759r1_fix",
+        "documentable": false
       },
       "id": "V-54897",
       "title": "The DNS server implementation must maintain the integrity of information during preparation for transmission.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-DNS-000067",
         "gid": "V-54899",
         "rid": "SV-69145r1_rule",
         "stig_id": "SRG-APP-000442-DNS-000067",
-        "fix_id": "F-59761r1_fix"
+        "fix_id": "F-59761r1_fix",
+        "documentable": false
       },
       "id": "V-54899",
       "title": "The DNS server implementation must maintain the integrity of information during reception.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000447-DNS-000068",
         "gid": "V-54901",
         "rid": "SV-69147r1_rule",
         "stig_id": "SRG-APP-000447-DNS-000068",
-        "fix_id": "F-59763r1_fix"
+        "fix_id": "F-59763r1_fix",
+        "documentable": false
       },
       "id": "V-54901",
       "title": "The DNS server implementation must behave in a predictable and documented manner that reflects organizational and system objectives when invalid inputs are received.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000451-DNS-000069",
         "gid": "V-54903",
         "rid": "SV-69149r1_rule",
         "stig_id": "SRG-APP-000451-DNS-000069",
-        "fix_id": "F-59765r1_fix"
+        "fix_id": "F-59765r1_fix",
+        "documentable": false
       },
       "id": "V-54903",
       "title": "The DNS server implementation must follow procedures to re-role a secondary name server as the master name server should the master name server permanently lose functionality.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000473-DNS-000072",
         "gid": "V-54905",
         "rid": "SV-69151r1_rule",
         "stig_id": "SRG-APP-000473-DNS-000072",
-        "fix_id": "F-59767r1_fix"
+        "fix_id": "F-59767r1_fix",
+        "documentable": false
       },
       "id": "V-54905",
       "title": "The DNS server implementation must perform verification of the correct operation of security functions: upon system start-up and/or restart; upon command by a user with privileged access; and/or every 30 days.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000474-DNS-000073",
         "gid": "V-54907",
         "rid": "SV-69153r1_rule",
         "stig_id": "SRG-APP-000474-DNS-000073",
-        "fix_id": "F-59769r1_fix"
+        "fix_id": "F-59769r1_fix",
+        "documentable": false
       },
       "id": "V-54907",
       "title": "The DNS server implementation must log the event and notify the system administrator when anomalies in the operation of the signed zone transfers are discovered.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DNS-000074",
         "gid": "V-54909",
         "rid": "SV-69155r1_rule",
         "stig_id": "SRG-APP-000504-DNS-000074",
-        "fix_id": "F-59771r1_fix"
+        "fix_id": "F-59771r1_fix",
+        "documentable": false
       },
       "id": "V-54909",
       "title": "The DNS implementation must generate audit records for the success and failure of start and stop of the name server service or daemon.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DNS-000082",
         "gid": "V-54911",
         "rid": "SV-69157r1_rule",
         "stig_id": "SRG-APP-000504-DNS-000082",
-        "fix_id": "F-59773r1_fix"
+        "fix_id": "F-59773r1_fix",
+        "documentable": false
       },
       "id": "V-54911",
       "title": "The DNS implementation must generate audit records for the success and failure of all name server events.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514-DNS-000075",
         "gid": "V-54915",
         "rid": "SV-69161r1_rule",
         "stig_id": "SRG-APP-000514-DNS-000075",
-        "fix_id": "F-59777r2_fix"
+        "fix_id": "F-59777r2_fix",
+        "documentable": false
       },
       "id": "V-54915",
       "title": "The DNS server must implement NIST FIPS-validated cryptography for provisioning digital signatures, generating cryptographic hashes, and protecting unclassified information requiring confidentiality.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000077",
         "gid": "V-54917",
         "rid": "SV-69163r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000077",
-        "fix_id": "F-59779r1_fix"
+        "fix_id": "F-59779r1_fix",
+        "documentable": false
       },
       "id": "V-54917",
       "title": "The salt value for zones signed using NSEC3 RRs must be changed every time the zone is completely re-signed.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000078",
         "gid": "V-54919",
         "rid": "SV-69165r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000078",
-        "fix_id": "F-59781r1_fix"
+        "fix_id": "F-59781r1_fix",
+        "documentable": false
       },
       "id": "V-54919",
       "title": "The validity period for the RRSIGs covering a zones DNSKEY RRSet must be no less than two days and no more than one week.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000084",
         "gid": "V-54921",
         "rid": "SV-69167r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000084",
-        "fix_id": "F-59783r1_fix"
+        "fix_id": "F-59783r1_fix",
+        "documentable": false
       },
       "id": "V-54921",
       "title": "NSEC3 must be used for all internal DNS zones.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000085",
         "gid": "V-54923",
         "rid": "SV-69169r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000085",
-        "fix_id": "F-59785r1_fix"
+        "fix_id": "F-59785r1_fix",
+        "documentable": false
       },
       "id": "V-54923",
       "title": "The DNS implementation must ensure each NS record in a zone file points to an active name server authoritative for the domain specified in that record.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000086",
         "gid": "V-54925",
         "rid": "SV-69171r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000086",
-        "fix_id": "F-59787r1_fix"
+        "fix_id": "F-59787r1_fix",
+        "documentable": false
       },
       "id": "V-54925",
       "title": "The two files generated by the dnssec-keygen program must be made accessible only to the server administrator account, or deleted, after they have been copied to the key file in the name server.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000087",
         "gid": "V-54927",
         "rid": "SV-69173r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000087",
-        "fix_id": "F-59789r1_fix"
+        "fix_id": "F-59789r1_fix",
+        "documentable": false
       },
       "id": "V-54927",
       "title": "All authoritative name servers for a zone must be located on different network segments.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000088",
         "gid": "V-54929",
         "rid": "SV-69175r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000088",
-        "fix_id": "F-59791r1_fix"
+        "fix_id": "F-59791r1_fix",
+        "documentable": false
       },
       "id": "V-54929",
       "title": "All authoritative name servers for a zone must have the same version of zone information.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000089",
         "gid": "V-54931",
         "rid": "SV-69177r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000089",
-        "fix_id": "F-59793r1_fix"
+        "fix_id": "F-59793r1_fix",
+        "documentable": false
       },
       "id": "V-54931",
       "title": "An authoritative name server must be configured to enable DNSSEC Resource Records.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000091",
         "gid": "V-54933",
         "rid": "SV-69179r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000091",
-        "fix_id": "F-59795r1_fix"
+        "fix_id": "F-59795r1_fix",
+        "documentable": false
       },
       "id": "V-54933",
       "title": "For zones split between the external and internal sides of a network, the RRs for the external hosts must be separate from the RRs for the internal hosts.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000092",
         "gid": "V-54935",
         "rid": "SV-69181r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000092",
-        "fix_id": "F-59797r1_fix"
+        "fix_id": "F-59797r1_fix",
+        "documentable": false
       },
       "id": "V-54935",
       "title": "In a split DNS configuration, where separate name servers are used between the external and internal networks, the external name server must be configured to not be reachable from inside resolvers.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000093",
         "gid": "V-54937",
         "rid": "SV-69183r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000093",
-        "fix_id": "F-59799r1_fix"
+        "fix_id": "F-59799r1_fix",
+        "documentable": false
       },
       "id": "V-54937",
       "title": "In a split DNS configuration, where separate name servers are used between the external and internal networks, the internal name server must be configured to not be reachable from outside resolvers.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000095",
         "gid": "V-54939",
         "rid": "SV-69185r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000095",
-        "fix_id": "F-59801r1_fix"
+        "fix_id": "F-59801r1_fix",
+        "documentable": false
       },
       "id": "V-54939",
       "title": "Primary authoritative name servers must be configured to only receive zone transfer requests from specified secondary name servers.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000097",
         "gid": "V-54941",
         "rid": "SV-69187r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000097",
-        "fix_id": "F-59803r1_fix"
+        "fix_id": "F-59803r1_fix",
+        "documentable": false
       },
       "id": "V-54941",
       "title": "The DNS implementation must be conformant to the IETF DNS specification.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000099",
         "gid": "V-54943",
         "rid": "SV-69189r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000099",
-        "fix_id": "F-59805r1_fix"
+        "fix_id": "F-59805r1_fix",
+        "documentable": false
       },
       "id": "V-54943",
       "title": "The DNS implementation must enforce a Discretionary Access Control (DAC) policy that limits propagation of access rights.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000101",
         "gid": "V-54945",
         "rid": "SV-69191r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000101",
-        "fix_id": "F-59807r1_fix"
+        "fix_id": "F-59807r1_fix",
+        "documentable": false
       },
       "id": "V-54945",
       "title": "The DNS implementation must implement internal/external role separation.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000102",
         "gid": "V-54947",
         "rid": "SV-69193r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000102",
-        "fix_id": "F-59809r1_fix"
+        "fix_id": "F-59809r1_fix",
+        "documentable": false
       },
       "id": "V-54947",
       "title": "The DNS must utilize valid root name servers in the local root zone file.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000103",
         "gid": "V-54949",
         "rid": "SV-69195r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000103",
-        "fix_id": "F-59811r1_fix"
+        "fix_id": "F-59811r1_fix",
+        "documentable": false
       },
       "id": "V-54949",
       "title": "The DNS name server software must be at the latest version.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000105",
         "gid": "V-54951",
         "rid": "SV-69197r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000105",
-        "fix_id": "F-59813r1_fix"
+        "fix_id": "F-59813r1_fix",
+        "documentable": false
       },
       "id": "V-54951",
       "title": "The DNS Name Server software must run with restricted privileges.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000108",
         "gid": "V-54953",
         "rid": "SV-69199r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000108",
-        "fix_id": "F-59815r1_fix"
+        "fix_id": "F-59815r1_fix",
+        "documentable": false
       },
       "id": "V-54953",
       "title": "The IP address for hidden master authoritative name servers must not appear in the name servers set in the zone database.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000109",
         "gid": "V-54955",
         "rid": "SV-69201r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000109",
-        "fix_id": "F-59817r2_fix"
+        "fix_id": "F-59817r2_fix",
+        "documentable": false
       },
       "id": "V-54955",
       "title": "The platform on which the name server software is hosted must be configured to respond to DNS traffic only.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000110",
         "gid": "V-54957",
         "rid": "SV-69203r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000110",
-        "fix_id": "F-59819r1_fix"
+        "fix_id": "F-59819r1_fix",
+        "documentable": false
       },
       "id": "V-54957",
       "title": "The platform on which the name server software is hosted must be configured to send outgoing DNS messages from a random port.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000111",
         "gid": "V-54959",
         "rid": "SV-69205r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000111",
-        "fix_id": "F-59821r1_fix"
+        "fix_id": "F-59821r1_fix",
+        "documentable": false
       },
       "id": "V-54959",
       "title": "The private key corresponding to the ZSK, stored on name servers accepting dynamic updates, must have appropriate directory/file-level access control list-based or cryptography-based protections.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000112",
         "gid": "V-54961",
         "rid": "SV-69207r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000112",
-        "fix_id": "F-59823r1_fix"
+        "fix_id": "F-59823r1_fix",
+        "documentable": false
       },
       "id": "V-54961",
       "title": "The private keys corresponding to both the ZSK and the KSK must not be kept on the DNSSEC-aware primary authoritative name server when the name server does not support dynamic updates.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000113",
         "gid": "V-54963",
         "rid": "SV-69209r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000113",
-        "fix_id": "F-59825r1_fix"
+        "fix_id": "F-59825r1_fix",
+        "documentable": false
       },
       "id": "V-54963",
       "title": "A zone file must not include resource records that resolve to a fully qualified domain name residing in another zone.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000114",
         "gid": "V-54965",
         "rid": "SV-69211r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000114",
-        "fix_id": "F-59827r2_fix"
+        "fix_id": "F-59827r2_fix",
+        "documentable": false
       },
       "id": "V-54965",
       "title": "CNAME records must not point to a zone with lesser security for more than six months.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000218-DNS-000027",
         "gid": "V-54967",
         "rid": "SV-69213r1_rule",
         "stig_id": "SRG-APP-000218-DNS-000027",
-        "fix_id": "F-59829r1_fix"
+        "fix_id": "F-59829r1_fix",
+        "documentable": false
       },
       "id": "V-54967",
       "title": "All authoritative name servers for a zone must be geographically disbursed.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000268-DNS-000039",
         "gid": "V-54969",
         "rid": "SV-69215r1_rule",
         "stig_id": "SRG-APP-000268-DNS-000039",
-        "fix_id": "F-59831r1_fix"
+        "fix_id": "F-59831r1_fix",
+        "documentable": false
       },
       "id": "V-54969",
       "title": "The DNS server implementation must, when a component failure is detected, activate a notification to the system administrator.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000347-DNS-000041",
         "gid": "V-54971",
         "rid": "SV-69217r1_rule",
         "stig_id": "SRG-APP-000347-DNS-000041",
-        "fix_id": "F-59833r1_fix"
+        "fix_id": "F-59833r1_fix",
+        "documentable": false
       },
       "id": "V-54971",
       "title": "The DNS server implementation must strongly bind the identity of the DNS server with the DNS information.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000348-DNS-000042",
         "gid": "V-54973",
         "rid": "SV-69219r1_rule",
         "stig_id": "SRG-APP-000348-DNS-000042",
-        "fix_id": "F-59835r1_fix"
+        "fix_id": "F-59835r1_fix",
+        "documentable": false
       },
       "id": "V-54973",
       "title": "The DNS server implementation must provide the means for authorized individuals to determine the identity of the source of the DNS server-provided information.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000349-DNS-000043",
         "gid": "V-54975",
         "rid": "SV-69221r1_rule",
         "stig_id": "SRG-APP-000349-DNS-000043",
-        "fix_id": "F-59837r1_fix"
+        "fix_id": "F-59837r1_fix",
+        "documentable": false
       },
       "id": "V-54975",
       "title": "The DNS server implementation must validate the binding of the other DNS servers identity to the DNS information for a server-to-server transaction (e.g., zone transfer).",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000350-DNS-000044",
         "gid": "V-54977",
         "rid": "SV-69223r1_rule",
         "stig_id": "SRG-APP-000350-DNS-000044",
-        "fix_id": "F-59839r1_fix"
+        "fix_id": "F-59839r1_fix",
+        "documentable": false
       },
       "id": "V-54977",
       "title": "In the event of an error when validating the binding of another DNS servers identity to the DNS information, the DNS server implementation must log the event and send notification to the DNS administrator.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000090",
         "gid": "V-54979",
         "rid": "SV-69225r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000090",
-        "fix_id": "F-59841r1_fix"
+        "fix_id": "F-59841r1_fix",
+        "documentable": false
       },
       "id": "V-54979",
       "title": "Digital signature algorithm used for DNSSEC-enabled zones must be FIPS-compatible.",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096-DNS-000007",
         "gid": "V-55225",
         "rid": "SV-69471r1_rule",
         "stig_id": "SRG-APP-000096-DNS-000007",
-        "fix_id": "F-60089r1_fix"
+        "fix_id": "F-60089r1_fix",
+        "documentable": false
       },
       "id": "V-55225",
       "title": "The DNS server implementation must produce audit records containing information to establish when (date and time) the events occurred.",
@@ -1736,11 +1736,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000428-DNS-000061",
         "gid": "V-55227",
         "rid": "SV-69473r1_rule",
         "stig_id": "SRG-APP-000428-DNS-000061",
-        "fix_id": "F-60091r1_fix"
+        "fix_id": "F-60091r1_fix",
+        "documentable": false
       },
       "id": "V-55227",
       "title": "The DNS server implementation must utilize cryptographic mechanisms to prevent unauthorized modification of DNS zone data.",
@@ -1754,11 +1754,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-55229",
         "rid": "SV-69475r1_rule",
         "stig_id": "SRG-APP-000516-DNS-000500",
-        "fix_id": "F-60093r1_fix"
+        "fix_id": "F-60093r1_fix",
+        "documentable": false
       },
       "id": "V-55229",
       "title": "The DNS server implementation must be configured in accordance with the security configuration settings based on DoD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.",
@@ -1770,7 +1770,5 @@
       }
     }
   ],
-  "name": "DNS_SRG",
-  "title": "Domain Name System (DNS) Security Requirements Guide",
-  "summary": "The DNS Security Requirements Guide (SRG) is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the NIST 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil."
+  "name": "DNS_SRG"
 }

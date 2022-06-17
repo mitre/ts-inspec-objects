@@ -8,16 +8,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000114-GPOS-00059",
+        "gid": "V-100023",
+        "rid": "SV-109127r1_rule",
+        "stig_id": "RHEL-07-020111",
+        "fix_id": "F-105707r1_fix",
         "satisfies": [
           "SRG-OS-000114-GPOS-00059",
           "SRG-OS-000378-GPOS-00163",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-100023",
-        "rid": "SV-109127r1_rule",
-        "stig_id": "RHEL-07-020111",
-        "fix_id": "F-105707r1_fix"
+        "documentable": false
       },
       "id": "V-100023",
       "title": "The Red Hat Enterprise Linux operating system must disable the graphical user interface automounter unless required.",
@@ -31,15 +31,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000257-GPOS-00098",
+        "gid": "V-71849",
+        "rid": "SV-86473r4_rule",
+        "stig_id": "RHEL-07-010010",
+        "fix_id": "F-78201r4_fix",
         "satisfies": [
           "SRG-OS-000257-GPOS-00098",
           "SRG-OS-000278-GPOS-00108"
         ],
-        "gid": "V-71849",
-        "rid": "SV-86473r4_rule",
-        "stig_id": "RHEL-07-010010",
-        "fix_id": "F-78201r4_fix"
+        "documentable": false
       },
       "id": "V-71849",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership, and group membership of system files and commands match the vendor values.",
@@ -53,11 +53,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-71855",
         "rid": "SV-86479r4_rule",
         "stig_id": "RHEL-07-010020",
-        "fix_id": "F-78207r1_fix"
+        "fix_id": "F-78207r1_fix",
+        "documentable": false
       },
       "id": "V-71855",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the cryptographic hash of system files and commands matches vendor values.",
@@ -71,16 +71,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-71859",
+        "rid": "SV-86483r4_rule",
+        "stig_id": "RHEL-07-010030",
+        "fix_id": "F-78211r4_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "gid": "V-71859",
-        "rid": "SV-86483r4_rule",
-        "stig_id": "RHEL-07-010030",
-        "fix_id": "F-78211r4_fix"
+        "documentable": false
       },
       "id": "V-71859",
       "title": "The Red Hat Enterprise Linux operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon.",
@@ -94,16 +94,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-71861",
+        "rid": "SV-86485r5_rule",
+        "stig_id": "RHEL-07-010040",
+        "fix_id": "F-78213r6_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "gid": "V-71861",
-        "rid": "SV-86485r5_rule",
-        "stig_id": "RHEL-07-010040",
-        "fix_id": "F-78213r6_fix"
+        "documentable": false
       },
       "id": "V-71861",
       "title": "The Red Hat Enterprise Linux operating system must display the approved Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon.",
@@ -117,15 +117,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-71863",
+        "rid": "SV-86487r3_rule",
+        "stig_id": "RHEL-07-010050",
+        "fix_id": "F-78217r2_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007"
         ],
-        "gid": "V-71863",
-        "rid": "SV-86487r3_rule",
-        "stig_id": "RHEL-07-010050",
-        "fix_id": "F-78217r2_fix"
+        "documentable": false
       },
       "id": "V-71863",
       "title": "The Red Hat Enterprise Linux operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon.",
@@ -139,15 +139,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
+        "gid": "V-71891",
+        "rid": "SV-86515r6_rule",
+        "stig_id": "RHEL-07-010060",
+        "fix_id": "F-78243r9_fix",
         "satisfies": [
           "SRG-OS-000028-GPOS-00009",
           "SRG-OS-000030-GPOS-00011"
         ],
-        "gid": "V-71891",
-        "rid": "SV-86515r6_rule",
-        "stig_id": "RHEL-07-010060",
-        "fix_id": "F-78243r9_fix"
+        "documentable": false
       },
       "id": "V-71891",
       "title": "The Red Hat Enterprise Linux operating system must enable a user session lock until that user re-establishes access using established identification and authentication procedures.",
@@ -161,11 +161,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-71893",
         "rid": "SV-86517r5_rule",
         "stig_id": "RHEL-07-010070",
-        "fix_id": "F-78245r5_fix"
+        "fix_id": "F-78245r5_fix",
+        "documentable": false
       },
       "id": "V-71893",
       "title": "The Red Hat Enterprise Linux operating system must initiate a screensaver after a 15-minute period of inactivity for graphical user interfaces.",
@@ -179,11 +179,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-71897",
         "rid": "SV-86521r3_rule",
         "stig_id": "RHEL-07-010090",
-        "fix_id": "F-78249r3_fix"
+        "fix_id": "F-78249r3_fix",
+        "documentable": false
       },
       "id": "V-71897",
       "title": "The Red Hat Enterprise Linux operating system must have the screen package installed.",
@@ -197,11 +197,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-71899",
         "rid": "SV-86523r5_rule",
         "stig_id": "RHEL-07-010100",
-        "fix_id": "F-78251r2_fix"
+        "fix_id": "F-78251r2_fix",
+        "documentable": false
       },
       "id": "V-71899",
       "title": "The Red Hat Enterprise Linux operating system must initiate a session lock for the screensaver after a period of inactivity for graphical user interfaces.",
@@ -215,11 +215,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-71901",
         "rid": "SV-86525r3_rule",
         "stig_id": "RHEL-07-010110",
-        "fix_id": "F-78253r2_fix"
+        "fix_id": "F-78253r2_fix",
+        "documentable": false
       },
       "id": "V-71901",
       "title": "The Red Hat Enterprise Linux operating system must initiate a session lock for graphical user interfaces when the screensaver is activated.",
@@ -233,11 +233,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-71903",
         "rid": "SV-86527r3_rule",
         "stig_id": "RHEL-07-010120",
-        "fix_id": "F-78255r1_fix"
+        "fix_id": "F-78255r1_fix",
+        "documentable": false
       },
       "id": "V-71903",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed or new passwords are established, the new password must contain at least one upper-case character.",
@@ -251,11 +251,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000070-GPOS-00038",
         "gid": "V-71905",
         "rid": "SV-86529r5_rule",
         "stig_id": "RHEL-07-010130",
-        "fix_id": "F-78257r6_fix"
+        "fix_id": "F-78257r6_fix",
+        "documentable": false
       },
       "id": "V-71905",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed or new passwords are established, the new password must contain at least one lower-case character.",
@@ -269,11 +269,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000071-GPOS-00039",
         "gid": "V-71907",
         "rid": "SV-86531r3_rule",
         "stig_id": "RHEL-07-010140",
-        "fix_id": "F-78259r1_fix"
+        "fix_id": "F-78259r1_fix",
+        "documentable": false
       },
       "id": "V-71907",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed or new passwords are assigned, the new password must contain at least one numeric character.",
@@ -287,11 +287,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000266-GPOS-00101",
         "gid": "V-71909",
         "rid": "SV-86533r2_rule",
         "stig_id": "RHEL-07-010150",
-        "fix_id": "F-78261r2_fix"
+        "fix_id": "F-78261r2_fix",
+        "documentable": false
       },
       "id": "V-71909",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed or new passwords are established, the new password must contain at least one special character.",
@@ -305,11 +305,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-71911",
         "rid": "SV-86535r2_rule",
         "stig_id": "RHEL-07-010160",
-        "fix_id": "F-78263r1_fix"
+        "fix_id": "F-78263r1_fix",
+        "documentable": false
       },
       "id": "V-71911",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed a minimum of eight of the total number of characters must be changed.",
@@ -323,11 +323,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-71913",
         "rid": "SV-86537r2_rule",
         "stig_id": "RHEL-07-010170",
-        "fix_id": "F-78265r1_fix"
+        "fix_id": "F-78265r1_fix",
+        "documentable": false
       },
       "id": "V-71913",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed a minimum of four character classes must be changed.",
@@ -341,11 +341,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-71915",
         "rid": "SV-86539r3_rule",
         "stig_id": "RHEL-07-010180",
-        "fix_id": "F-78267r2_fix"
+        "fix_id": "F-78267r2_fix",
+        "documentable": false
       },
       "id": "V-71915",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed the number of repeating consecutive characters must not be more than three characters.",
@@ -359,11 +359,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-71917",
         "rid": "SV-86541r2_rule",
         "stig_id": "RHEL-07-010190",
-        "fix_id": "F-78269r1_fix"
+        "fix_id": "F-78269r1_fix",
+        "documentable": false
       },
       "id": "V-71917",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed the number of repeating characters of the same character class must not be more than four characters.",
@@ -377,11 +377,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-71919",
         "rid": "SV-86543r3_rule",
         "stig_id": "RHEL-07-010200",
-        "fix_id": "F-78271r4_fix"
+        "fix_id": "F-78271r4_fix",
+        "documentable": false
       },
       "id": "V-71919",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the PAM system service is configured to store only encrypted representations of passwords.",
@@ -395,11 +395,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-71921",
         "rid": "SV-86545r2_rule",
         "stig_id": "RHEL-07-010210",
-        "fix_id": "F-78273r1_fix"
+        "fix_id": "F-78273r1_fix",
+        "documentable": false
       },
       "id": "V-71921",
       "title": "The Red Hat Enterprise Linux operating system must be configured to use the shadow file to store only encrypted representations of passwords.",
@@ -413,11 +413,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-71923",
         "rid": "SV-86547r3_rule",
         "stig_id": "RHEL-07-010220",
-        "fix_id": "F-78275r1_fix"
+        "fix_id": "F-78275r1_fix",
+        "documentable": false
       },
       "id": "V-71923",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that user and group account administration utilities are configured to store only encrypted representations of passwords.",
@@ -431,11 +431,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-71925",
         "rid": "SV-86549r2_rule",
         "stig_id": "RHEL-07-010230",
-        "fix_id": "F-78277r1_fix"
+        "fix_id": "F-78277r1_fix",
+        "documentable": false
       },
       "id": "V-71925",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that passwords for new users are restricted to a 24 hours/1 day minimum lifetime.",
@@ -449,11 +449,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-71927",
         "rid": "SV-86551r2_rule",
         "stig_id": "RHEL-07-010240",
-        "fix_id": "F-78279r1_fix"
+        "fix_id": "F-78279r1_fix",
+        "documentable": false
       },
       "id": "V-71927",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that passwords are restricted to a 24 hours/1 day minimum lifetime.",
@@ -467,11 +467,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-71929",
         "rid": "SV-86553r2_rule",
         "stig_id": "RHEL-07-010250",
-        "fix_id": "F-78281r1_fix"
+        "fix_id": "F-78281r1_fix",
+        "documentable": false
       },
       "id": "V-71929",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that passwords for new users are restricted to a 60-day maximum lifetime.",
@@ -485,11 +485,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-71931",
         "rid": "SV-86555r3_rule",
         "stig_id": "RHEL-07-010260",
-        "fix_id": "F-78283r1_fix"
+        "fix_id": "F-78283r1_fix",
+        "documentable": false
       },
       "id": "V-71931",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that existing passwords are restricted to a 60-day maximum lifetime.",
@@ -503,11 +503,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-71933",
         "rid": "SV-86557r3_rule",
         "stig_id": "RHEL-07-010270",
-        "fix_id": "F-78285r3_fix"
+        "fix_id": "F-78285r3_fix",
+        "documentable": false
       },
       "id": "V-71933",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that passwords are prohibited from reuse for a minimum of five generations.",
@@ -521,11 +521,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-71935",
         "rid": "SV-86559r2_rule",
         "stig_id": "RHEL-07-010280",
-        "fix_id": "F-78287r1_fix"
+        "fix_id": "F-78287r1_fix",
+        "documentable": false
       },
       "id": "V-71935",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that passwords are a minimum of 15 characters in length.",
@@ -539,11 +539,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-71937",
         "rid": "SV-86561r3_rule",
         "stig_id": "RHEL-07-010290",
-        "fix_id": "F-78289r3_fix"
+        "fix_id": "F-78289r3_fix",
+        "documentable": false
       },
       "id": "V-71937",
       "title": "The Red Hat Enterprise Linux operating system must not have accounts configured with blank or null passwords.",
@@ -557,11 +557,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000106-GPOS-00053",
         "gid": "V-71939",
         "rid": "SV-86563r3_rule",
         "stig_id": "RHEL-07-010300",
-        "fix_id": "F-78291r2_fix"
+        "fix_id": "F-78291r2_fix",
+        "documentable": false
       },
       "id": "V-71939",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow authentication using an empty password.",
@@ -575,11 +575,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000118-GPOS-00060",
         "gid": "V-71941",
         "rid": "SV-86565r2_rule",
         "stig_id": "RHEL-07-010310",
-        "fix_id": "F-78293r1_fix"
+        "fix_id": "F-78293r1_fix",
+        "documentable": false
       },
       "id": "V-71941",
       "title": "The Red Hat Enterprise Linux operating system must disable account identifiers (individuals, groups, roles, and devices) if the password expires.",
@@ -593,15 +593,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000329-GPOS-00128",
+        "gid": "V-71943",
+        "rid": "SV-86567r5_rule",
+        "stig_id": "RHEL-07-010320",
+        "fix_id": "F-78295r5_fix",
         "satisfies": [
           "SRG-OS-000329-GPOS-00128",
           "SRG-OS-000021-GPOS-00005"
         ],
-        "gid": "V-71943",
-        "rid": "SV-86567r5_rule",
-        "stig_id": "RHEL-07-010320",
-        "fix_id": "F-78295r5_fix"
+        "documentable": false
       },
       "id": "V-71943",
       "title": "The Red Hat Enterprise Linux operating system must be configured to lock accounts for a minimum of 15 minutes after three unsuccessful logon attempts within a 15-minute timeframe.",
@@ -615,15 +615,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000329-GPOS-00128",
+        "gid": "V-71945",
+        "rid": "SV-86569r4_rule",
+        "stig_id": "RHEL-07-010330",
+        "fix_id": "F-78297r3_fix",
         "satisfies": [
           "SRG-OS-000329-GPOS-00128",
           "SRG-OS-000021-GPOS-00005"
         ],
-        "gid": "V-71945",
-        "rid": "SV-86569r4_rule",
-        "stig_id": "RHEL-07-010330",
-        "fix_id": "F-78297r3_fix"
+        "documentable": false
       },
       "id": "V-71945",
       "title": "The Red Hat Enterprise Linux operating system must lock the associated account after three unsuccessful root logon attempts are made within a 15-minute period.",
@@ -637,16 +637,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
+        "gid": "V-71947",
+        "rid": "SV-86571r3_rule",
+        "stig_id": "RHEL-07-010340",
+        "fix_id": "F-78299r2_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00156",
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00158"
         ],
-        "gid": "V-71947",
-        "rid": "SV-86571r3_rule",
-        "stig_id": "RHEL-07-010340",
-        "fix_id": "F-78299r2_fix"
+        "documentable": false
       },
       "id": "V-71947",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that users must provide a password for privilege escalation.",
@@ -660,16 +660,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
+        "gid": "V-71949",
+        "rid": "SV-86573r3_rule",
+        "stig_id": "RHEL-07-010350",
+        "fix_id": "F-78301r3_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00156",
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00158"
         ],
-        "gid": "V-71949",
-        "rid": "SV-86573r3_rule",
-        "stig_id": "RHEL-07-010350",
-        "fix_id": "F-78301r3_fix"
+        "documentable": false
       },
       "id": "V-71949",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that users must re-authenticate for privilege escalation.",
@@ -683,11 +683,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00226",
         "gid": "V-71951",
         "rid": "SV-86575r2_rule",
         "stig_id": "RHEL-07-010430",
-        "fix_id": "F-78303r1_fix"
+        "fix_id": "F-78303r1_fix",
+        "documentable": false
       },
       "id": "V-71951",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the delay between logon prompts following a failed console logon attempt is at least four seconds.",
@@ -701,11 +701,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-71953",
         "rid": "SV-86577r2_rule",
         "stig_id": "RHEL-07-010440",
-        "fix_id": "F-78305r1_fix"
+        "fix_id": "F-78305r1_fix",
+        "documentable": false
       },
       "id": "V-71953",
       "title": "The Red Hat Enterprise Linux operating system must not allow an unattended or automatic logon to the system via a graphical user interface.",
@@ -719,11 +719,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-71955",
         "rid": "SV-86579r3_rule",
         "stig_id": "RHEL-07-010450",
-        "fix_id": "F-78307r2_fix"
+        "fix_id": "F-78307r2_fix",
+        "documentable": false
       },
       "id": "V-71955",
       "title": "The Red Hat Enterprise Linux operating system must not allow an unrestricted logon to the system.",
@@ -737,11 +737,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-71957",
         "rid": "SV-86581r3_rule",
         "stig_id": "RHEL-07-010460",
-        "fix_id": "F-78309r2_fix"
+        "fix_id": "F-78309r2_fix",
+        "documentable": false
       },
       "id": "V-71957",
       "title": "The Red Hat Enterprise Linux operating system must not allow users to override SSH environment variables.",
@@ -755,11 +755,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-71959",
         "rid": "SV-86583r3_rule",
         "stig_id": "RHEL-07-010470",
-        "fix_id": "F-78311r3_fix"
+        "fix_id": "F-78311r3_fix",
+        "documentable": false
       },
       "id": "V-71959",
       "title": "The Red Hat Enterprise Linux operating system must not allow a non-certificate trusted host SSH logon to the system.",
@@ -773,11 +773,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-71961",
         "rid": "SV-86585r6_rule",
         "stig_id": "RHEL-07-010480",
-        "fix_id": "F-78313r3_fix"
+        "fix_id": "F-78313r3_fix",
+        "documentable": false
       },
       "id": "V-71961",
       "title": "Red Hat Enterprise Linux operating systems prior to version 7.2 with a Basic Input/Output System (BIOS) must require authentication upon booting into single-user and maintenance modes.",
@@ -791,11 +791,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-71963",
         "rid": "SV-86587r4_rule",
         "stig_id": "RHEL-07-010490",
-        "fix_id": "F-78315r3_fix"
+        "fix_id": "F-78315r3_fix",
+        "documentable": false
       },
       "id": "V-71963",
       "title": "Red Hat Enterprise Linux operating systems prior to version 7.2 using Unified Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user and maintenance modes.",
@@ -809,7 +809,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
+        "gid": "V-71965",
+        "rid": "SV-86589r2_rule",
+        "stig_id": "RHEL-07-010500",
+        "fix_id": "F-78317r3_fix",
         "satisfies": [
           "SRG-OS-000104-GPOS-00051",
           "SRG-OS-000106-GPOS-00053",
@@ -819,10 +822,7 @@
           "SRG-OS-000108-GPOS-00057",
           "SRG-OS-000108-GPOS-00058"
         ],
-        "gid": "V-71965",
-        "rid": "SV-86589r2_rule",
-        "stig_id": "RHEL-07-010500",
-        "fix_id": "F-78317r3_fix"
+        "documentable": false
       },
       "id": "V-71965",
       "title": "The Red Hat Enterprise Linux operating system must uniquely identify and must authenticate organizational users (or processes acting on behalf of organizational users) using multifactor authentication.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-71967",
         "rid": "SV-86591r2_rule",
         "stig_id": "RHEL-07-020000",
-        "fix_id": "F-78319r1_fix"
+        "fix_id": "F-78319r1_fix",
+        "documentable": false
       },
       "id": "V-71967",
       "title": "The Red Hat Enterprise Linux operating system must not have the rsh-server package installed.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-71969",
         "rid": "SV-86593r2_rule",
         "stig_id": "RHEL-07-020010",
-        "fix_id": "F-78321r1_fix"
+        "fix_id": "F-78321r1_fix",
+        "documentable": false
       },
       "id": "V-71969",
       "title": "The Red Hat Enterprise Linux operating system must not have the ypserv package installed.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-71971",
         "rid": "SV-86595r3_rule",
         "stig_id": "RHEL-07-020020",
-        "fix_id": "F-78323r2_fix"
+        "fix_id": "F-78323r2_fix",
+        "documentable": false
       },
       "id": "V-71971",
       "title": "The Red Hat Enterprise Linux operating system must prevent non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000363-GPOS-00150",
         "gid": "V-71973",
         "rid": "SV-86597r2_rule",
         "stig_id": "RHEL-07-020030",
-        "fix_id": "F-78325r2_fix"
+        "fix_id": "F-78325r2_fix",
+        "documentable": false
       },
       "id": "V-71973",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that a file integrity tool verifies the baseline operating system configuration at least weekly.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000363-GPOS-00150",
         "gid": "V-71975",
         "rid": "SV-86599r2_rule",
         "stig_id": "RHEL-07-020040",
-        "fix_id": "F-78327r3_fix"
+        "fix_id": "F-78327r3_fix",
+        "documentable": false
       },
       "id": "V-71975",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that designated personnel are notified if baseline configurations are changed in an unauthorized manner.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000366-GPOS-00153",
         "gid": "V-71977",
         "rid": "SV-86601r2_rule",
         "stig_id": "RHEL-07-020050",
-        "fix_id": "F-78329r1_fix"
+        "fix_id": "F-78329r1_fix",
+        "documentable": false
       },
       "id": "V-71977",
       "title": "The Red Hat Enterprise Linux operating system must prevent the installation of software, patches, service packs, device drivers, or operating system components from a repository without verification they have been digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved by the organization.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000366-GPOS-00153",
         "gid": "V-71979",
         "rid": "SV-86603r2_rule",
         "stig_id": "RHEL-07-020060",
-        "fix_id": "F-78331r1_fix"
+        "fix_id": "F-78331r1_fix",
+        "documentable": false
       },
       "id": "V-71979",
       "title": "The Red Hat Enterprise Linux operating system must prevent the installation of software, patches, service packs, device drivers, or operating system components of local packages without verification they have been digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved by the organization.",
@@ -962,16 +962,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000114-GPOS-00059",
+        "gid": "V-71983",
+        "rid": "SV-86607r4_rule",
+        "stig_id": "RHEL-07-020100",
+        "fix_id": "F-78335r4_fix",
         "satisfies": [
           "SRG-OS-000114-GPOS-00059",
           "SRG-OS-000378-GPOS-00163",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-71983",
-        "rid": "SV-86607r4_rule",
-        "stig_id": "RHEL-07-020100",
-        "fix_id": "F-78335r4_fix"
+        "documentable": false
       },
       "id": "V-71983",
       "title": "The Red Hat Enterprise Linux operating system must be configured to disable USB mass storage.",
@@ -985,16 +985,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000114-GPOS-00059",
+        "gid": "V-71985",
+        "rid": "SV-86609r2_rule",
+        "stig_id": "RHEL-07-020110",
+        "fix_id": "F-78337r2_fix",
         "satisfies": [
           "SRG-OS-000114-GPOS-00059",
           "SRG-OS-000378-GPOS-00163",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-71985",
-        "rid": "SV-86609r2_rule",
-        "stig_id": "RHEL-07-020110",
-        "fix_id": "F-78337r2_fix"
+        "documentable": false
       },
       "id": "V-71985",
       "title": "The Red Hat Enterprise Linux operating system must disable the file system automounter unless required.",
@@ -1008,11 +1008,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000437-GPOS-00194",
         "gid": "V-71987",
         "rid": "SV-86611r2_rule",
         "stig_id": "RHEL-07-020200",
-        "fix_id": "F-78339r1_fix"
+        "fix_id": "F-78339r1_fix",
+        "documentable": false
       },
       "id": "V-71987",
       "title": "The Red Hat Enterprise Linux operating system must remove all software components after updated versions have been installed.",
@@ -1026,11 +1026,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000445-GPOS-00199",
         "gid": "V-71989",
         "rid": "SV-86613r3_rule",
         "stig_id": "RHEL-07-020210",
-        "fix_id": "F-78341r2_fix"
+        "fix_id": "F-78341r2_fix",
+        "documentable": false
       },
       "id": "V-71989",
       "title": "The Red Hat Enterprise Linux operating system must enable SELinux.",
@@ -1044,11 +1044,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000445-GPOS-00199",
         "gid": "V-71991",
         "rid": "SV-86615r5_rule",
         "stig_id": "RHEL-07-020220",
-        "fix_id": "F-78343r2_fix"
+        "fix_id": "F-78343r2_fix",
+        "documentable": false
       },
       "id": "V-71991",
       "title": "The Red Hat Enterprise Linux operating system must enable the SELinux targeted policy.",
@@ -1062,11 +1062,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-71993",
         "rid": "SV-86617r5_rule",
         "stig_id": "RHEL-07-020230",
-        "fix_id": "F-78345r6_fix"
+        "fix_id": "F-78345r6_fix",
+        "documentable": false
       },
       "id": "V-71993",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the x86 Ctrl-Alt-Delete key sequence is disabled on the command line.",
@@ -1080,11 +1080,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00228",
         "gid": "V-71995",
         "rid": "SV-86619r2_rule",
         "stig_id": "RHEL-07-020240",
-        "fix_id": "F-78347r1_fix"
+        "fix_id": "F-78347r1_fix",
+        "documentable": false
       },
       "id": "V-71995",
       "title": "The Red Hat Enterprise Linux operating system must define default permissions for all authenticated users in such a way that the user can only read and modify their own files.",
@@ -1098,11 +1098,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-71997",
         "rid": "SV-86621r5_rule",
         "stig_id": "RHEL-07-020250",
-        "fix_id": "F-78349r1_fix"
+        "fix_id": "F-78349r1_fix",
+        "documentable": false
       },
       "id": "V-71997",
       "title": "The Red Hat Enterprise Linux operating system must be a vendor supported release.",
@@ -1116,11 +1116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-71999",
         "rid": "SV-86623r4_rule",
         "stig_id": "RHEL-07-020260",
-        "fix_id": "F-78351r1_fix"
+        "fix_id": "F-78351r1_fix",
+        "documentable": false
       },
       "id": "V-71999",
       "title": "The Red Hat Enterprise Linux operating system security patches and updates must be installed and up to date.",
@@ -1134,11 +1134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72001",
         "rid": "SV-86625r2_rule",
         "stig_id": "RHEL-07-020270",
-        "fix_id": "F-78353r1_fix"
+        "fix_id": "F-78353r1_fix",
+        "documentable": false
       },
       "id": "V-72001",
       "title": "The Red Hat Enterprise Linux operating system must not have unnecessary accounts.",
@@ -1152,11 +1152,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-72003",
         "rid": "SV-86627r2_rule",
         "stig_id": "RHEL-07-020300",
-        "fix_id": "F-78355r1_fix"
+        "fix_id": "F-78355r1_fix",
+        "documentable": false
       },
       "id": "V-72003",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all Group Identifiers (GIDs) referenced in the /etc/passwd file are defined in the /etc/group file.",
@@ -1170,11 +1170,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72005",
         "rid": "SV-86629r2_rule",
         "stig_id": "RHEL-07-020310",
-        "fix_id": "F-78357r1_fix"
+        "fix_id": "F-78357r1_fix",
+        "documentable": false
       },
       "id": "V-72005",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the root account must be the only account having unrestricted access to the system.",
@@ -1188,11 +1188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72007",
         "rid": "SV-86631r3_rule",
         "stig_id": "RHEL-07-020320",
-        "fix_id": "F-78359r1_fix"
+        "fix_id": "F-78359r1_fix",
+        "documentable": false
       },
       "id": "V-72007",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all files and directories have a valid owner.",
@@ -1206,11 +1206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72009",
         "rid": "SV-86633r3_rule",
         "stig_id": "RHEL-07-020330",
-        "fix_id": "F-78361r1_fix"
+        "fix_id": "F-78361r1_fix",
+        "documentable": false
       },
       "id": "V-72009",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all files and directories have a valid group owner.",
@@ -1224,11 +1224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72011",
         "rid": "SV-86635r2_rule",
         "stig_id": "RHEL-07-020600",
-        "fix_id": "F-78363r1_fix"
+        "fix_id": "F-78363r1_fix",
+        "documentable": false
       },
       "id": "V-72011",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local interactive users have a home directory assigned in the /etc/passwd file.",
@@ -1242,11 +1242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72013",
         "rid": "SV-86637r2_rule",
         "stig_id": "RHEL-07-020610",
-        "fix_id": "F-78365r1_fix"
+        "fix_id": "F-78365r1_fix",
+        "documentable": false
       },
       "id": "V-72013",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local interactive user accounts, upon creation, are assigned a home directory.",
@@ -1260,11 +1260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72015",
         "rid": "SV-86639r2_rule",
         "stig_id": "RHEL-07-020620",
-        "fix_id": "F-78367r2_fix"
+        "fix_id": "F-78367r2_fix",
+        "documentable": false
       },
       "id": "V-72015",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local interactive user home directories are defined in the /etc/passwd file.",
@@ -1278,11 +1278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72017",
         "rid": "SV-86641r3_rule",
         "stig_id": "RHEL-07-020630",
-        "fix_id": "F-78369r2_fix"
+        "fix_id": "F-78369r2_fix",
+        "documentable": false
       },
       "id": "V-72017",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local interactive user home directories have mode 0750 or less permissive.",
@@ -1296,11 +1296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72019",
         "rid": "SV-86643r5_rule",
         "stig_id": "RHEL-07-020640",
-        "fix_id": "F-78371r2_fix"
+        "fix_id": "F-78371r2_fix",
+        "documentable": false
       },
       "id": "V-72019",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local interactive user home directories are owned by their respective users.",
@@ -1314,11 +1314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72021",
         "rid": "SV-86645r5_rule",
         "stig_id": "RHEL-07-020650",
-        "fix_id": "F-78373r2_fix"
+        "fix_id": "F-78373r2_fix",
+        "documentable": false
       },
       "id": "V-72021",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local interactive user home directories are group-owned by the home directory owners primary group.",
@@ -1332,11 +1332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72023",
         "rid": "SV-86647r2_rule",
         "stig_id": "RHEL-07-020660",
-        "fix_id": "F-78375r2_fix"
+        "fix_id": "F-78375r2_fix",
+        "documentable": false
       },
       "id": "V-72023",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all files and directories contained in local interactive user home directories are owned by the owner of the home directory.",
@@ -1350,11 +1350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72025",
         "rid": "SV-86649r2_rule",
         "stig_id": "RHEL-07-020670",
-        "fix_id": "F-78377r2_fix"
+        "fix_id": "F-78377r2_fix",
+        "documentable": false
       },
       "id": "V-72025",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all files and directories contained in local interactive user home directories are group-owned by a group of which the home directory owner is a member.",
@@ -1368,11 +1368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72027",
         "rid": "SV-86651r2_rule",
         "stig_id": "RHEL-07-020680",
-        "fix_id": "F-78379r1_fix"
+        "fix_id": "F-78379r1_fix",
+        "documentable": false
       },
       "id": "V-72027",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all files and directories contained in local interactive user home directories have a mode of 0750 or less permissive.",
@@ -1386,11 +1386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72029",
         "rid": "SV-86653r4_rule",
         "stig_id": "RHEL-07-020690",
-        "fix_id": "F-78381r4_fix"
+        "fix_id": "F-78381r4_fix",
+        "documentable": false
       },
       "id": "V-72029",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local initialization files for interactive users are owned by the home directory user or root.",
@@ -1404,11 +1404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72031",
         "rid": "SV-86655r4_rule",
         "stig_id": "RHEL-07-020700",
-        "fix_id": "F-78383r4_fix"
+        "fix_id": "F-78383r4_fix",
+        "documentable": false
       },
       "id": "V-72031",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local initialization files for local interactive users are be group-owned by the users primary group or root.",
@@ -1422,11 +1422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72033",
         "rid": "SV-86657r3_rule",
         "stig_id": "RHEL-07-020710",
-        "fix_id": "F-78385r4_fix"
+        "fix_id": "F-78385r4_fix",
+        "documentable": false
       },
       "id": "V-72033",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local initialization files have mode 0740 or less permissive.",
@@ -1440,11 +1440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72035",
         "rid": "SV-86659r4_rule",
         "stig_id": "RHEL-07-020720",
-        "fix_id": "F-78387r4_fix"
+        "fix_id": "F-78387r4_fix",
+        "documentable": false
       },
       "id": "V-72035",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all local interactive user initialization files executable search paths contain only paths that resolve to the users home directory.",
@@ -1458,11 +1458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72037",
         "rid": "SV-86661r2_rule",
         "stig_id": "RHEL-07-020730",
-        "fix_id": "F-78389r2_fix"
+        "fix_id": "F-78389r2_fix",
+        "documentable": false
       },
       "id": "V-72037",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that local initialization files do not execute world-writable programs.",
@@ -1476,11 +1476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72039",
         "rid": "SV-86663r2_rule",
         "stig_id": "RHEL-07-020900",
-        "fix_id": "F-78391r1_fix"
+        "fix_id": "F-78391r1_fix",
+        "documentable": false
       },
       "id": "V-72039",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all system device files are correctly labeled to prevent unauthorized modification.",
@@ -1494,11 +1494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72041",
         "rid": "SV-86665r4_rule",
         "stig_id": "RHEL-07-021000",
-        "fix_id": "F-78393r2_fix"
+        "fix_id": "F-78393r2_fix",
+        "documentable": false
       },
       "id": "V-72041",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that file systems containing user home directories are mounted to prevent files with the setuid and setgid bit set from being executed.",
@@ -1512,11 +1512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72043",
         "rid": "SV-86667r2_rule",
         "stig_id": "RHEL-07-021010",
-        "fix_id": "F-78395r1_fix"
+        "fix_id": "F-78395r1_fix",
+        "documentable": false
       },
       "id": "V-72043",
       "title": "The Red Hat Enterprise Linux operating system must prevent files with the setuid and setgid bit set from being executed on file systems that are used with removable media.",
@@ -1530,11 +1530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72045",
         "rid": "SV-86669r2_rule",
         "stig_id": "RHEL-07-021020",
-        "fix_id": "F-78397r2_fix"
+        "fix_id": "F-78397r2_fix",
+        "documentable": false
       },
       "id": "V-72045",
       "title": "The Red Hat Enterprise Linux operating system must prevent files with the setuid and setgid bit set from being executed on file systems that are being imported via Network File System (NFS).",
@@ -1548,11 +1548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72047",
         "rid": "SV-86671r4_rule",
         "stig_id": "RHEL-07-021030",
-        "fix_id": "F-78399r1_fix"
+        "fix_id": "F-78399r1_fix",
+        "documentable": false
       },
       "id": "V-72047",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all world-writable directories are group-owned by root, sys, bin, or an application group.",
@@ -1566,11 +1566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72049",
         "rid": "SV-86673r2_rule",
         "stig_id": "RHEL-07-021040",
-        "fix_id": "F-78401r3_fix"
+        "fix_id": "F-78401r3_fix",
+        "documentable": false
       },
       "id": "V-72049",
       "title": "The Red Hat Enterprise Linux operating system must set the umask value to 077 for all local interactive user accounts.",
@@ -1584,11 +1584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72051",
         "rid": "SV-86675r2_rule",
         "stig_id": "RHEL-07-021100",
-        "fix_id": "F-78403r2_fix"
+        "fix_id": "F-78403r2_fix",
+        "documentable": false
       },
       "id": "V-72051",
       "title": "The Red Hat Enterprise Linux operating system must have cron logging implemented.",
@@ -1602,11 +1602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72053",
         "rid": "SV-86677r3_rule",
         "stig_id": "RHEL-07-021110",
-        "fix_id": "F-78405r1_fix"
+        "fix_id": "F-78405r1_fix",
+        "documentable": false
       },
       "id": "V-72053",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the cron.allow file, if it exists, is owned by root.",
@@ -1620,11 +1620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72055",
         "rid": "SV-86679r2_rule",
         "stig_id": "RHEL-07-021120",
-        "fix_id": "F-78407r1_fix"
+        "fix_id": "F-78407r1_fix",
+        "documentable": false
       },
       "id": "V-72055",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the cron.allow file, if it exists, is group-owned by root.",
@@ -1638,11 +1638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72057",
         "rid": "SV-86681r2_rule",
         "stig_id": "RHEL-07-021300",
-        "fix_id": "F-78409r1_fix"
+        "fix_id": "F-78409r1_fix",
+        "documentable": false
       },
       "id": "V-72057",
       "title": "The Red Hat Enterprise Linux operating system must disable Kernel core dumps unless needed.",
@@ -1656,11 +1656,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72059",
         "rid": "SV-86683r2_rule",
         "stig_id": "RHEL-07-021310",
-        "fix_id": "F-78411r1_fix"
+        "fix_id": "F-78411r1_fix",
+        "documentable": false
       },
       "id": "V-72059",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that a separate file system is used for user home directories (such as /home or an equivalent).",
@@ -1674,11 +1674,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72061",
         "rid": "SV-86685r2_rule",
         "stig_id": "RHEL-07-021320",
-        "fix_id": "F-78413r1_fix"
+        "fix_id": "F-78413r1_fix",
+        "documentable": false
       },
       "id": "V-72061",
       "title": "The Red Hat Enterprise Linux operating system must use a separate file system for /var.",
@@ -1692,11 +1692,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72063",
         "rid": "SV-86687r6_rule",
         "stig_id": "RHEL-07-021330",
-        "fix_id": "F-78415r1_fix"
+        "fix_id": "F-78415r1_fix",
+        "documentable": false
       },
       "id": "V-72063",
       "title": "The Red Hat Enterprise Linux operating system must use a separate file system for the system audit data path.",
@@ -1710,11 +1710,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72065",
         "rid": "SV-86689r3_rule",
         "stig_id": "RHEL-07-021340",
-        "fix_id": "F-78417r2_fix"
+        "fix_id": "F-78417r2_fix",
+        "documentable": false
       },
       "id": "V-72065",
       "title": "The Red Hat Enterprise Linux operating system must use a separate file system for /tmp (or equivalent).",
@@ -1728,7 +1728,10 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-72067",
+        "rid": "SV-86691r4_rule",
+        "stig_id": "RHEL-07-021350",
+        "fix_id": "F-78419r3_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000185-GPOS-00079",
@@ -1736,10 +1739,7 @@
           "SRG-OS-000405-GPOS-00184",
           "SRG-OS-000478-GPOS-00223"
         ],
-        "gid": "V-72067",
-        "rid": "SV-86691r4_rule",
-        "stig_id": "RHEL-07-021350",
-        "fix_id": "F-78419r3_fix"
+        "documentable": false
       },
       "id": "V-72067",
       "title": "The Red Hat Enterprise Linux operating system must implement NIST FIPS-validated cryptography for the following: to provision digital signatures, to generate cryptographic hashes, and to protect data requiring data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.",
@@ -1753,11 +1753,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72069",
         "rid": "SV-86693r3_rule",
         "stig_id": "RHEL-07-021600",
-        "fix_id": "F-78421r2_fix"
+        "fix_id": "F-78421r2_fix",
+        "documentable": false
       },
       "id": "V-72069",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the file integrity tool is configured to verify Access Control Lists (ACLs).",
@@ -1771,11 +1771,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72071",
         "rid": "SV-86695r3_rule",
         "stig_id": "RHEL-07-021610",
-        "fix_id": "F-78423r2_fix"
+        "fix_id": "F-78423r2_fix",
+        "documentable": false
       },
       "id": "V-72071",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the file integrity tool is configured to verify extended attributes.",
@@ -1789,11 +1789,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72073",
         "rid": "SV-86697r3_rule",
         "stig_id": "RHEL-07-021620",
-        "fix_id": "F-78425r2_fix"
+        "fix_id": "F-78425r2_fix",
+        "documentable": false
       },
       "id": "V-72073",
       "title": "The Red Hat Enterprise Linux operating system must use a file integrity tool that is configured to use FIPS 140-2 approved cryptographic hashes for validating file contents and directories.",
@@ -1807,11 +1807,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000364-GPOS-00151",
         "gid": "V-72075",
         "rid": "SV-86699r2_rule",
         "stig_id": "RHEL-07-021700",
-        "fix_id": "F-78427r1_fix"
+        "fix_id": "F-78427r1_fix",
+        "documentable": false
       },
       "id": "V-72075",
       "title": "The Red Hat Enterprise Linux operating system must not allow removable media to be used as the boot loader unless approved.",
@@ -1825,11 +1825,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-72077",
         "rid": "SV-86701r2_rule",
         "stig_id": "RHEL-07-021710",
-        "fix_id": "F-78429r1_fix"
+        "fix_id": "F-78429r1_fix",
+        "documentable": false
       },
       "id": "V-72077",
       "title": "The Red Hat Enterprise Linux operating system must not have the telnet-server package installed.",
@@ -1843,7 +1843,10 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000038-GPOS-00016",
+        "gid": "V-72079",
+        "rid": "SV-86703r3_rule",
+        "stig_id": "RHEL-07-030000",
+        "fix_id": "F-78431r2_fix",
         "satisfies": [
           "SRG-OS-000038-GPOS-00016",
           "SRG-OS-000039-GPOS-00017",
@@ -1851,10 +1854,7 @@
           "SRG-OS-000254-GPOS-00095",
           "SRG-OS-000255-GPOS-00096"
         ],
-        "gid": "V-72079",
-        "rid": "SV-86703r3_rule",
-        "stig_id": "RHEL-07-030000",
-        "fix_id": "F-78431r2_fix"
+        "documentable": false
       },
       "id": "V-72079",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that auditing is configured to produce records containing information to establish what type of events occurred, where the events occurred, the source of the events, and the outcome of the events. These audit records must also identify individual identities of group account users.",
@@ -1868,15 +1868,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000046-GPOS-00022",
+        "gid": "V-72081",
+        "rid": "SV-86705r5_rule",
+        "stig_id": "RHEL-07-030010",
+        "fix_id": "F-78433r2_fix",
         "satisfies": [
           "SRG-OS-000046-GPOS-00022",
           "SRG-OS-000047-GPOS-00023"
         ],
-        "gid": "V-72081",
-        "rid": "SV-86705r5_rule",
-        "stig_id": "RHEL-07-030010",
-        "fix_id": "F-78433r2_fix"
+        "documentable": false
       },
       "id": "V-72081",
       "title": "The Red Hat Enterprise Linux operating system must shut down upon audit processing failure, unless availability is an overriding concern. If availability is a concern, the system must alert the designated staff (System Administrator [SA] and Information System Security Officer [ISSO] at a minimum) in the event of an audit processing failure.",
@@ -1890,15 +1890,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "gid": "V-72083",
+        "rid": "SV-86707r2_rule",
+        "stig_id": "RHEL-07-030300",
+        "fix_id": "F-78435r1_fix",
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-72083",
-        "rid": "SV-86707r2_rule",
-        "stig_id": "RHEL-07-030300",
-        "fix_id": "F-78435r1_fix"
+        "documentable": false
       },
       "id": "V-72083",
       "title": "The Red Hat Enterprise Linux operating system must off-load audit records onto a different system or media from the system being audited.",
@@ -1912,15 +1912,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "gid": "V-72085",
+        "rid": "SV-86709r2_rule",
+        "stig_id": "RHEL-07-030310",
+        "fix_id": "F-78437r1_fix",
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-72085",
-        "rid": "SV-86709r2_rule",
-        "stig_id": "RHEL-07-030310",
-        "fix_id": "F-78437r1_fix"
+        "documentable": false
       },
       "id": "V-72085",
       "title": "The Red Hat Enterprise Linux operating system must encrypt the transfer of audit records off-loaded onto a different system or media from the system being audited.",
@@ -1934,11 +1934,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
         "gid": "V-72087",
         "rid": "SV-86711r3_rule",
         "stig_id": "RHEL-07-030320",
-        "fix_id": "F-78439r4_fix"
+        "fix_id": "F-78439r4_fix",
+        "documentable": false
       },
       "id": "V-72087",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the audit system takes appropriate action when the audit storage volume is full.",
@@ -1952,11 +1952,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000343-GPOS-00134",
         "gid": "V-72089",
         "rid": "SV-86713r4_rule",
         "stig_id": "RHEL-07-030330",
-        "fix_id": "F-78441r3_fix"
+        "fix_id": "F-78441r3_fix",
+        "documentable": false
       },
       "id": "V-72089",
       "title": "The Red Hat Enterprise Linux operating system must initiate an action to notify the System Administrator (SA) and Information System Security Officer ISSO, at a minimum, when allocated audit record storage volume reaches 75% of the repository maximum audit record storage capacity.",
@@ -1970,11 +1970,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000343-GPOS-00134",
         "gid": "V-72091",
         "rid": "SV-86715r2_rule",
         "stig_id": "RHEL-07-030340",
-        "fix_id": "F-78443r1_fix"
+        "fix_id": "F-78443r1_fix",
+        "documentable": false
       },
       "id": "V-72091",
       "title": "The Red Hat Enterprise Linux operating system must immediately notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) via email when the threshold for the repository maximum audit record storage capacity is reached.",
@@ -1988,11 +1988,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000343-GPOS-00134",
         "gid": "V-72093",
         "rid": "SV-86717r3_rule",
         "stig_id": "RHEL-07-030350",
-        "fix_id": "F-78445r3_fix"
+        "fix_id": "F-78445r3_fix",
+        "documentable": false
       },
       "id": "V-72093",
       "title": "The Red Hat Enterprise Linux operating system must immediately notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when the threshold for the repository maximum audit record storage capacity is reached.",
@@ -2006,11 +2006,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
         "gid": "V-72095",
         "rid": "SV-86719r7_rule",
         "stig_id": "RHEL-07-030360",
-        "fix_id": "F-78447r9_fix"
+        "fix_id": "F-78447r9_fix",
+        "documentable": false
       },
       "id": "V-72095",
       "title": "The Red Hat Enterprise Linux operating system must audit all executions of privileged functions.",
@@ -2024,17 +2024,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72097",
+        "rid": "SV-86721r5_rule",
+        "stig_id": "RHEL-07-030370",
+        "fix_id": "F-78449r8_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-72097",
-        "rid": "SV-86721r5_rule",
-        "stig_id": "RHEL-07-030370",
-        "fix_id": "F-78449r8_fix"
+        "documentable": false
       },
       "id": "V-72097",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the chown syscall.",
@@ -2048,17 +2048,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72099",
+        "rid": "SV-86723r5_rule",
+        "stig_id": "RHEL-07-030380",
+        "fix_id": "F-78451r8_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-72099",
-        "rid": "SV-86723r5_rule",
-        "stig_id": "RHEL-07-030380",
-        "fix_id": "F-78451r8_fix"
+        "documentable": false
       },
       "id": "V-72099",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the fchown syscall.",
@@ -2072,17 +2072,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72101",
+        "rid": "SV-86725r5_rule",
+        "stig_id": "RHEL-07-030390",
+        "fix_id": "F-78453r8_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-72101",
-        "rid": "SV-86725r5_rule",
-        "stig_id": "RHEL-07-030390",
-        "fix_id": "F-78453r8_fix"
+        "documentable": false
       },
       "id": "V-72101",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the lchown syscall.",
@@ -2096,17 +2096,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72103",
+        "rid": "SV-86727r5_rule",
+        "stig_id": "RHEL-07-030400",
+        "fix_id": "F-78455r7_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-72103",
-        "rid": "SV-86727r5_rule",
-        "stig_id": "RHEL-07-030400",
-        "fix_id": "F-78455r7_fix"
+        "documentable": false
       },
       "id": "V-72103",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the fchownat syscall.",
@@ -2120,16 +2120,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72105",
+        "rid": "SV-86729r5_rule",
+        "stig_id": "RHEL-07-030410",
+        "fix_id": "F-78457r7_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72105",
-        "rid": "SV-86729r5_rule",
-        "stig_id": "RHEL-07-030410",
-        "fix_id": "F-78457r7_fix"
+        "documentable": false
       },
       "id": "V-72105",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the chmod syscall.",
@@ -2143,16 +2143,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72107",
+        "rid": "SV-86731r5_rule",
+        "stig_id": "RHEL-07-030420",
+        "fix_id": "F-78459r9_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72107",
-        "rid": "SV-86731r5_rule",
-        "stig_id": "RHEL-07-030420",
-        "fix_id": "F-78459r9_fix"
+        "documentable": false
       },
       "id": "V-72107",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the fchmod syscall.",
@@ -2166,16 +2166,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72109",
+        "rid": "SV-86733r5_rule",
+        "stig_id": "RHEL-07-030430",
+        "fix_id": "F-78461r8_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72109",
-        "rid": "SV-86733r5_rule",
-        "stig_id": "RHEL-07-030430",
-        "fix_id": "F-78461r8_fix"
+        "documentable": false
       },
       "id": "V-72109",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the fchmodat syscall.",
@@ -2189,16 +2189,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72111",
+        "rid": "SV-86735r5_rule",
+        "stig_id": "RHEL-07-030440",
+        "fix_id": "F-78463r8_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72111",
-        "rid": "SV-86735r5_rule",
-        "stig_id": "RHEL-07-030440",
-        "fix_id": "F-78463r8_fix"
+        "documentable": false
       },
       "id": "V-72111",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the setxattr syscall.",
@@ -2212,16 +2212,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72113",
+        "rid": "SV-86737r5_rule",
+        "stig_id": "RHEL-07-030450",
+        "fix_id": "F-78465r7_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72113",
-        "rid": "SV-86737r5_rule",
-        "stig_id": "RHEL-07-030450",
-        "fix_id": "F-78465r7_fix"
+        "documentable": false
       },
       "id": "V-72113",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the fsetxattr syscall.",
@@ -2235,16 +2235,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72115",
+        "rid": "SV-86739r5_rule",
+        "stig_id": "RHEL-07-030460",
+        "fix_id": "F-78467r10_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72115",
-        "rid": "SV-86739r5_rule",
-        "stig_id": "RHEL-07-030460",
-        "fix_id": "F-78467r10_fix"
+        "documentable": false
       },
       "id": "V-72115",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the lsetxattr syscall.",
@@ -2258,16 +2258,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72117",
+        "rid": "SV-86741r5_rule",
+        "stig_id": "RHEL-07-030470",
+        "fix_id": "F-78469r7_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72117",
-        "rid": "SV-86741r5_rule",
-        "stig_id": "RHEL-07-030470",
-        "fix_id": "F-78469r7_fix"
+        "documentable": false
       },
       "id": "V-72117",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the removexattr syscall.",
@@ -2281,16 +2281,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72119",
+        "rid": "SV-86743r5_rule",
+        "stig_id": "RHEL-07-030480",
+        "fix_id": "F-78471r6_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72119",
-        "rid": "SV-86743r5_rule",
-        "stig_id": "RHEL-07-030480",
-        "fix_id": "F-78471r6_fix"
+        "documentable": false
       },
       "id": "V-72119",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the fremovexattr syscall.",
@@ -2304,16 +2304,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-72121",
+        "rid": "SV-86745r5_rule",
+        "stig_id": "RHEL-07-030490",
+        "fix_id": "F-78473r7_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000064-GPOS-00033"
         ],
-        "gid": "V-72121",
-        "rid": "SV-86745r5_rule",
-        "stig_id": "RHEL-07-030490",
-        "fix_id": "F-78473r7_fix"
+        "documentable": false
       },
       "id": "V-72121",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the lremovexattr syscall.",
@@ -2327,17 +2327,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72123",
+        "rid": "SV-86747r5_rule",
+        "stig_id": "RHEL-07-030500",
+        "fix_id": "F-78475r7_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000461-GPOS-00205",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72123",
-        "rid": "SV-86747r5_rule",
-        "stig_id": "RHEL-07-030500",
-        "fix_id": "F-78475r7_fix"
+        "documentable": false
       },
       "id": "V-72123",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the creat syscall.",
@@ -2351,17 +2351,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72125",
+        "rid": "SV-86749r5_rule",
+        "stig_id": "RHEL-07-030510",
+        "fix_id": "F-78477r7_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000461-GPOS-00205",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72125",
-        "rid": "SV-86749r5_rule",
-        "stig_id": "RHEL-07-030510",
-        "fix_id": "F-78477r7_fix"
+        "documentable": false
       },
       "id": "V-72125",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the open syscall.",
@@ -2375,17 +2375,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72127",
+        "rid": "SV-86751r5_rule",
+        "stig_id": "RHEL-07-030520",
+        "fix_id": "F-78479r8_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000461-GPOS-00205",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72127",
-        "rid": "SV-86751r5_rule",
-        "stig_id": "RHEL-07-030520",
-        "fix_id": "F-78479r8_fix"
+        "documentable": false
       },
       "id": "V-72127",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the openat syscall.",
@@ -2399,17 +2399,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72129",
+        "rid": "SV-86753r5_rule",
+        "stig_id": "RHEL-07-030530",
+        "fix_id": "F-78481r8_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000461-GPOS-00205",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72129",
-        "rid": "SV-86753r5_rule",
-        "stig_id": "RHEL-07-030530",
-        "fix_id": "F-78481r8_fix"
+        "documentable": false
       },
       "id": "V-72129",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the open_by_handle_at syscall.",
@@ -2423,17 +2423,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72131",
+        "rid": "SV-86755r5_rule",
+        "stig_id": "RHEL-07-030540",
+        "fix_id": "F-78483r7_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000461-GPOS-00205",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72131",
-        "rid": "SV-86755r5_rule",
-        "stig_id": "RHEL-07-030540",
-        "fix_id": "F-78483r7_fix"
+        "documentable": false
       },
       "id": "V-72131",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the truncate syscall.",
@@ -2447,17 +2447,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-72133",
+        "rid": "SV-86757r5_rule",
+        "stig_id": "RHEL-07-030550",
+        "fix_id": "F-78485r8_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000461-GPOS-00205",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72133",
-        "rid": "SV-86757r5_rule",
-        "stig_id": "RHEL-07-030550",
-        "fix_id": "F-78485r8_fix"
+        "documentable": false
       },
       "id": "V-72133",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the ftruncate syscall.",
@@ -2471,16 +2471,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
+        "gid": "V-72135",
+        "rid": "SV-86759r4_rule",
+        "stig_id": "RHEL-07-030560",
+        "fix_id": "F-78487r5_fix",
         "satisfies": [
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000465-GPOS-00209"
         ],
-        "gid": "V-72135",
-        "rid": "SV-86759r4_rule",
-        "stig_id": "RHEL-07-030560",
-        "fix_id": "F-78487r5_fix"
+        "documentable": false
       },
       "id": "V-72135",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the semanage command.",
@@ -2494,16 +2494,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
+        "gid": "V-72137",
+        "rid": "SV-86761r4_rule",
+        "stig_id": "RHEL-07-030570",
+        "fix_id": "F-78489r6_fix",
         "satisfies": [
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000465-GPOS-00209"
         ],
-        "gid": "V-72137",
-        "rid": "SV-86761r4_rule",
-        "stig_id": "RHEL-07-030570",
-        "fix_id": "F-78489r6_fix"
+        "documentable": false
       },
       "id": "V-72137",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the setsebool command.",
@@ -2517,16 +2517,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
+        "gid": "V-72139",
+        "rid": "SV-86763r4_rule",
+        "stig_id": "RHEL-07-030580",
+        "fix_id": "F-78491r6_fix",
         "satisfies": [
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000465-GPOS-00209"
         ],
-        "gid": "V-72139",
-        "rid": "SV-86763r4_rule",
-        "stig_id": "RHEL-07-030580",
-        "fix_id": "F-78491r6_fix"
+        "documentable": false
       },
       "id": "V-72139",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the chcon command.",
@@ -2540,16 +2540,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
+        "gid": "V-72141",
+        "rid": "SV-86765r5_rule",
+        "stig_id": "RHEL-07-030590",
+        "fix_id": "F-78493r7_fix",
         "satisfies": [
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000465-GPOS-00209"
         ],
-        "gid": "V-72141",
-        "rid": "SV-86765r5_rule",
-        "stig_id": "RHEL-07-030590",
-        "fix_id": "F-78493r7_fix"
+        "documentable": false
       },
       "id": "V-72141",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the setfiles command.",
@@ -2563,16 +2563,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
+        "gid": "V-72145",
+        "rid": "SV-86769r4_rule",
+        "stig_id": "RHEL-07-030610",
+        "fix_id": "F-78497r4_fix",
         "satisfies": [
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000473-GPOS-00218"
         ],
-        "gid": "V-72145",
-        "rid": "SV-86769r4_rule",
-        "stig_id": "RHEL-07-030610",
-        "fix_id": "F-78497r4_fix"
+        "documentable": false
       },
       "id": "V-72145",
       "title": "The Red Hat Enterprise Linux operating system must generate audit records for all unsuccessful account access events.",
@@ -2586,16 +2586,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
+        "gid": "V-72147",
+        "rid": "SV-86771r3_rule",
+        "stig_id": "RHEL-07-030620",
+        "fix_id": "F-78499r3_fix",
         "satisfies": [
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000473-GPOS-00218"
         ],
-        "gid": "V-72147",
-        "rid": "SV-86771r3_rule",
-        "stig_id": "RHEL-07-030620",
-        "fix_id": "F-78499r3_fix"
+        "documentable": false
       },
       "id": "V-72147",
       "title": "The Red Hat Enterprise Linux operating system must generate audit records for all successful account access events.",
@@ -2609,16 +2609,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72149",
+        "rid": "SV-86773r5_rule",
+        "stig_id": "RHEL-07-030630",
+        "fix_id": "F-78501r6_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72149",
-        "rid": "SV-86773r5_rule",
-        "stig_id": "RHEL-07-030630",
-        "fix_id": "F-78501r6_fix"
+        "documentable": false
       },
       "id": "V-72149",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the passwd command.",
@@ -2632,16 +2632,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72151",
+        "rid": "SV-86775r5_rule",
+        "stig_id": "RHEL-07-030640",
+        "fix_id": "F-78503r8_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72151",
-        "rid": "SV-86775r5_rule",
-        "stig_id": "RHEL-07-030640",
-        "fix_id": "F-78503r8_fix"
+        "documentable": false
       },
       "id": "V-72151",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the unix_chkpwd command.",
@@ -2655,16 +2655,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72153",
+        "rid": "SV-86777r5_rule",
+        "stig_id": "RHEL-07-030650",
+        "fix_id": "F-78505r5_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72153",
-        "rid": "SV-86777r5_rule",
-        "stig_id": "RHEL-07-030650",
-        "fix_id": "F-78505r5_fix"
+        "documentable": false
       },
       "id": "V-72153",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the gpasswd command.",
@@ -2678,16 +2678,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72155",
+        "rid": "SV-86779r5_rule",
+        "stig_id": "RHEL-07-030660",
+        "fix_id": "F-78507r5_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72155",
-        "rid": "SV-86779r5_rule",
-        "stig_id": "RHEL-07-030660",
-        "fix_id": "F-78507r5_fix"
+        "documentable": false
       },
       "id": "V-72155",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the chage command.",
@@ -2701,16 +2701,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72157",
+        "rid": "SV-86781r5_rule",
+        "stig_id": "RHEL-07-030670",
+        "fix_id": "F-78509r5_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72157",
-        "rid": "SV-86781r5_rule",
-        "stig_id": "RHEL-07-030670",
-        "fix_id": "F-78509r5_fix"
+        "documentable": false
       },
       "id": "V-72157",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the userhelper command.",
@@ -2724,7 +2724,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-72159",
+        "rid": "SV-86783r5_rule",
+        "stig_id": "RHEL-07-030680",
+        "fix_id": "F-78511r6_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000042-GPOS-00020",
@@ -2732,10 +2735,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72159",
-        "rid": "SV-86783r5_rule",
-        "stig_id": "RHEL-07-030680",
-        "fix_id": "F-78511r6_fix"
+        "documentable": false
       },
       "id": "V-72159",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the su command.",
@@ -2749,7 +2749,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-72161",
+        "rid": "SV-86785r4_rule",
+        "stig_id": "RHEL-07-030690",
+        "fix_id": "F-78513r5_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000042-GPOS-00020",
@@ -2757,10 +2760,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72161",
-        "rid": "SV-86785r4_rule",
-        "stig_id": "RHEL-07-030690",
-        "fix_id": "F-78513r5_fix"
+        "documentable": false
       },
       "id": "V-72161",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the sudo command.",
@@ -2774,7 +2774,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-72163",
+        "rid": "SV-86787r5_rule",
+        "stig_id": "RHEL-07-030700",
+        "fix_id": "F-78517r6_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000042-GPOS-00020",
@@ -2782,10 +2785,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72163",
-        "rid": "SV-86787r5_rule",
-        "stig_id": "RHEL-07-030700",
-        "fix_id": "F-78517r6_fix"
+        "documentable": false
       },
       "id": "V-72163",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the sudoers file and all files in the /etc/sudoers.d/ directory.",
@@ -2799,7 +2799,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-72165",
+        "rid": "SV-86789r4_rule",
+        "stig_id": "RHEL-07-030710",
+        "fix_id": "F-78519r5_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000042-GPOS-00020",
@@ -2807,10 +2810,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72165",
-        "rid": "SV-86789r4_rule",
-        "stig_id": "RHEL-07-030710",
-        "fix_id": "F-78519r5_fix"
+        "documentable": false
       },
       "id": "V-72165",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the newgrp command.",
@@ -2824,7 +2824,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-72167",
+        "rid": "SV-86791r4_rule",
+        "stig_id": "RHEL-07-030720",
+        "fix_id": "F-78521r5_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000042-GPOS-00020",
@@ -2832,10 +2835,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72167",
-        "rid": "SV-86791r4_rule",
-        "stig_id": "RHEL-07-030720",
-        "fix_id": "F-78521r5_fix"
+        "documentable": false
       },
       "id": "V-72167",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the chsh command.",
@@ -2849,15 +2849,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72171",
+        "rid": "SV-86795r7_rule",
+        "stig_id": "RHEL-07-030740",
+        "fix_id": "F-78525r9_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72171",
-        "rid": "SV-86795r7_rule",
-        "stig_id": "RHEL-07-030740",
-        "fix_id": "F-78525r9_fix"
+        "documentable": false
       },
       "id": "V-72171",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the mount command and syscall.",
@@ -2871,15 +2871,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72173",
+        "rid": "SV-86797r5_rule",
+        "stig_id": "RHEL-07-030750",
+        "fix_id": "F-78527r5_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72173",
-        "rid": "SV-86797r5_rule",
-        "stig_id": "RHEL-07-030750",
-        "fix_id": "F-78527r5_fix"
+        "documentable": false
       },
       "id": "V-72173",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the umount command.",
@@ -2893,15 +2893,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72175",
+        "rid": "SV-86799r4_rule",
+        "stig_id": "RHEL-07-030760",
+        "fix_id": "F-78529r5_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72175",
-        "rid": "SV-86799r4_rule",
-        "stig_id": "RHEL-07-030760",
-        "fix_id": "F-78529r5_fix"
+        "documentable": false
       },
       "id": "V-72175",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the postdrop command.",
@@ -2915,15 +2915,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72177",
+        "rid": "SV-86801r3_rule",
+        "stig_id": "RHEL-07-030770",
+        "fix_id": "F-78531r5_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72177",
-        "rid": "SV-86801r3_rule",
-        "stig_id": "RHEL-07-030770",
-        "fix_id": "F-78531r5_fix"
+        "documentable": false
       },
       "id": "V-72177",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the postqueue command.",
@@ -2937,16 +2937,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72179",
+        "rid": "SV-86803r3_rule",
+        "stig_id": "RHEL-07-030780",
+        "fix_id": "F-78533r4_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72179",
-        "rid": "SV-86803r3_rule",
-        "stig_id": "RHEL-07-030780",
-        "fix_id": "F-78533r4_fix"
+        "documentable": false
       },
       "id": "V-72179",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the ssh-keysign command.",
@@ -2960,16 +2960,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-72183",
+        "rid": "SV-86807r3_rule",
+        "stig_id": "RHEL-07-030800",
+        "fix_id": "F-78537r4_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-72183",
-        "rid": "SV-86807r3_rule",
-        "stig_id": "RHEL-07-030800",
-        "fix_id": "F-78537r4_fix"
+        "documentable": false
       },
       "id": "V-72183",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the crontab command.",
@@ -2983,11 +2983,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00215",
         "gid": "V-72185",
         "rid": "SV-86809r4_rule",
         "stig_id": "RHEL-07-030810",
-        "fix_id": "F-78539r4_fix"
+        "fix_id": "F-78539r4_fix",
+        "documentable": false
       },
       "id": "V-72185",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the pam_timestamp_check command.",
@@ -3001,15 +3001,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00216",
+        "gid": "V-72187",
+        "rid": "SV-86811r5_rule",
+        "stig_id": "RHEL-07-030820",
+        "fix_id": "F-78541r7_fix",
         "satisfies": [
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-72187",
-        "rid": "SV-86811r5_rule",
-        "stig_id": "RHEL-07-030820",
-        "fix_id": "F-78541r7_fix"
+        "documentable": false
       },
       "id": "V-72187",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the init_module syscall.",
@@ -3023,15 +3023,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00216",
+        "gid": "V-72189",
+        "rid": "SV-86813r5_rule",
+        "stig_id": "RHEL-07-030830",
+        "fix_id": "F-78543r7_fix",
         "satisfies": [
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-72189",
-        "rid": "SV-86813r5_rule",
-        "stig_id": "RHEL-07-030830",
-        "fix_id": "F-78543r7_fix"
+        "documentable": false
       },
       "id": "V-72189",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the delete_module syscall.",
@@ -3045,15 +3045,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00216",
+        "gid": "V-72191",
+        "rid": "SV-86815r5_rule",
+        "stig_id": "RHEL-07-030840",
+        "fix_id": "F-78545r10_fix",
         "satisfies": [
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-72191",
-        "rid": "SV-86815r5_rule",
-        "stig_id": "RHEL-07-030840",
-        "fix_id": "F-78545r10_fix"
+        "documentable": false
       },
       "id": "V-72191",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the kmod command.",
@@ -3067,7 +3067,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-72197",
+        "rid": "SV-86821r5_rule",
+        "stig_id": "RHEL-07-030870",
+        "fix_id": "F-78551r4_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -3076,10 +3079,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-72197",
-        "rid": "SV-86821r5_rule",
-        "stig_id": "RHEL-07-030870",
-        "fix_id": "F-78551r4_fix"
+        "documentable": false
       },
       "id": "V-72197",
       "title": "The Red Hat Enterprise Linux operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/passwd.",
@@ -3093,17 +3093,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000466-GPOS-00210",
+        "gid": "V-72199",
+        "rid": "SV-86823r5_rule",
+        "stig_id": "RHEL-07-030880",
+        "fix_id": "F-78553r7_fix",
         "satisfies": [
           "SRG-OS-000466-GPOS-00210",
           "SRG-OS-000467-GPOS-00210",
           "SRG-OS-000468-GPOS-00212",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72199",
-        "rid": "SV-86823r5_rule",
-        "stig_id": "RHEL-07-030880",
-        "fix_id": "F-78553r7_fix"
+        "documentable": false
       },
       "id": "V-72199",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the rename syscall.",
@@ -3117,17 +3117,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000466-GPOS-00210",
+        "gid": "V-72201",
+        "rid": "SV-86825r5_rule",
+        "stig_id": "RHEL-07-030890",
+        "fix_id": "F-78555r8_fix",
         "satisfies": [
           "SRG-OS-000466-GPOS-00210",
           "SRG-OS-000467-GPOS-00210",
           "SRG-OS-000468-GPOS-00212",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72201",
-        "rid": "SV-86825r5_rule",
-        "stig_id": "RHEL-07-030890",
-        "fix_id": "F-78555r8_fix"
+        "documentable": false
       },
       "id": "V-72201",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the renameat syscall.",
@@ -3141,17 +3141,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000466-GPOS-00210",
+        "gid": "V-72203",
+        "rid": "SV-86827r5_rule",
+        "stig_id": "RHEL-07-030900",
+        "fix_id": "F-78557r9_fix",
         "satisfies": [
           "SRG-OS-000466-GPOS-00210",
           "SRG-OS-000467-GPOS-00210",
           "SRG-OS-000468-GPOS-00212",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72203",
-        "rid": "SV-86827r5_rule",
-        "stig_id": "RHEL-07-030900",
-        "fix_id": "F-78557r9_fix"
+        "documentable": false
       },
       "id": "V-72203",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the rmdir syscall.",
@@ -3165,17 +3165,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000466-GPOS-00210",
+        "gid": "V-72205",
+        "rid": "SV-86829r5_rule",
+        "stig_id": "RHEL-07-030910",
+        "fix_id": "F-78559r7_fix",
         "satisfies": [
           "SRG-OS-000466-GPOS-00210",
           "SRG-OS-000467-GPOS-00210",
           "SRG-OS-000468-GPOS-00212",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72205",
-        "rid": "SV-86829r5_rule",
-        "stig_id": "RHEL-07-030910",
-        "fix_id": "F-78559r7_fix"
+        "documentable": false
       },
       "id": "V-72205",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the unlink syscall.",
@@ -3189,17 +3189,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000466-GPOS-00210",
+        "gid": "V-72207",
+        "rid": "SV-86831r5_rule",
+        "stig_id": "RHEL-07-030920",
+        "fix_id": "F-78561r10_fix",
         "satisfies": [
           "SRG-OS-000466-GPOS-00210",
           "SRG-OS-000467-GPOS-00210",
           "SRG-OS-000468-GPOS-00212",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-72207",
-        "rid": "SV-86831r5_rule",
-        "stig_id": "RHEL-07-030920",
-        "fix_id": "F-78561r10_fix"
+        "documentable": false
       },
       "id": "V-72207",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the unlinkat syscall.",
@@ -3213,11 +3213,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72209",
         "rid": "SV-86833r2_rule",
         "stig_id": "RHEL-07-031000",
-        "fix_id": "F-78563r2_fix"
+        "fix_id": "F-78563r2_fix",
+        "documentable": false
       },
       "id": "V-72209",
       "title": "The Red Hat Enterprise Linux operating system must send rsyslog output to a log aggregation server.",
@@ -3231,11 +3231,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72211",
         "rid": "SV-86835r2_rule",
         "stig_id": "RHEL-07-031010",
-        "fix_id": "F-78565r2_fix"
+        "fix_id": "F-78565r2_fix",
+        "documentable": false
       },
       "id": "V-72211",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the rsyslog daemon does not accept log messages from other servers unless the server is being used for log aggregation.",
@@ -3249,11 +3249,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72213",
         "rid": "SV-86837r3_rule",
         "stig_id": "RHEL-07-032000",
-        "fix_id": "F-78567r2_fix"
+        "fix_id": "F-78567r2_fix",
+        "documentable": false
       },
       "id": "V-72213",
       "title": "The Red Hat Enterprise Linux operating system must use a virus scan program.",
@@ -3267,11 +3267,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000027-GPOS-00008",
         "gid": "V-72217",
         "rid": "SV-86841r3_rule",
         "stig_id": "RHEL-07-040000",
-        "fix_id": "F-78571r2_fix"
+        "fix_id": "F-78571r2_fix",
+        "documentable": false
       },
       "id": "V-72217",
       "title": "The Red Hat Enterprise Linux operating system must limit the number of concurrent sessions to 10 for all accounts and/or account types.",
@@ -3285,15 +3285,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
+        "gid": "V-72219",
+        "rid": "SV-86843r2_rule",
+        "stig_id": "RHEL-07-040100",
+        "fix_id": "F-78573r1_fix",
         "satisfies": [
           "SRG-OS-000096-GPOS-00050",
           "SRG-OS-000297-GPOS-00115"
         ],
-        "gid": "V-72219",
-        "rid": "SV-86843r2_rule",
-        "stig_id": "RHEL-07-040100",
-        "fix_id": "F-78573r1_fix"
+        "documentable": false
       },
       "id": "V-72219",
       "title": "The Red Hat Enterprise Linux operating system must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services, as defined in the Ports, Protocols, and Services Management Component Local Service Assessment (PPSM CLSA) and vulnerability assessments.",
@@ -3307,7 +3307,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-72221",
+        "rid": "SV-86845r3_rule",
+        "stig_id": "RHEL-07-040110",
+        "fix_id": "F-78575r3_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000120-GPOS-00061",
@@ -3315,10 +3318,7 @@
           "SRG-OS-000250-GPOS-00093",
           "SRG-OS-000393-GPOS-00173"
         ],
-        "gid": "V-72221",
-        "rid": "SV-86845r3_rule",
-        "stig_id": "RHEL-07-040110",
-        "fix_id": "F-78575r3_fix"
+        "documentable": false
       },
       "id": "V-72221",
       "title": "The Red Hat Enterprise Linux operating system must use a FIPS 140-2 approved cryptographic algorithm for SSH communications.",
@@ -3332,11 +3332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-72223",
         "rid": "SV-86847r4_rule",
         "stig_id": "RHEL-07-040160",
-        "fix_id": "F-78577r5_fix"
+        "fix_id": "F-78577r5_fix",
+        "documentable": false
       },
       "id": "V-72223",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all network connections associated with a communication session are terminated at the end of the session or after 10 minutes of inactivity from the user at a command prompt, except to fulfill documented and validated mission requirements.",
@@ -3350,16 +3350,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-72225",
+        "rid": "SV-86849r5_rule",
+        "stig_id": "RHEL-07-040170",
+        "fix_id": "F-78579r5_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "gid": "V-72225",
-        "rid": "SV-86849r5_rule",
-        "stig_id": "RHEL-07-040170",
-        "fix_id": "F-78579r5_fix"
+        "documentable": false
       },
       "id": "V-72225",
       "title": "The Red Hat Enterprise Linux operating system must display the Standard Mandatory DoD Notice and Consent Banner immediately prior to, or as part of, remote access logon prompts.",
@@ -3373,11 +3373,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000250-GPOS-00093",
         "gid": "V-72227",
         "rid": "SV-86851r4_rule",
         "stig_id": "RHEL-07-040180",
-        "fix_id": "F-78581r2_fix"
+        "fix_id": "F-78581r2_fix",
+        "documentable": false
       },
       "id": "V-72227",
       "title": "The Red Hat Enterprise Linux operating system must implement cryptography to protect the integrity of Lightweight Directory Access Protocol (LDAP) authentication communications.",
@@ -3391,11 +3391,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000250-GPOS-00093",
         "gid": "V-72229",
         "rid": "SV-86853r4_rule",
         "stig_id": "RHEL-07-040190",
-        "fix_id": "F-78583r4_fix"
+        "fix_id": "F-78583r4_fix",
+        "documentable": false
       },
       "id": "V-72229",
       "title": "The Red Hat Enterprise Linux operating system must implement cryptography to protect the integrity of Lightweight Directory Access Protocol (LDAP) communications.",
@@ -3409,11 +3409,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000250-GPOS-00093",
         "gid": "V-72231",
         "rid": "SV-86855r4_rule",
         "stig_id": "RHEL-07-040200",
-        "fix_id": "F-78585r3_fix"
+        "fix_id": "F-78585r3_fix",
+        "documentable": false
       },
       "id": "V-72231",
       "title": "The Red Hat Enterprise Linux operating system must implement cryptography to protect the integrity of Lightweight Directory Access Protocol (LDAP) communications.",
@@ -3427,17 +3427,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-72233",
+        "rid": "SV-86857r3_rule",
+        "stig_id": "RHEL-07-040300",
+        "fix_id": "F-78587r3_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188",
           "SRG-OS-000425-GPOS-00189",
           "SRG-OS-000426-GPOS-00190"
         ],
-        "gid": "V-72233",
-        "rid": "SV-86857r3_rule",
-        "stig_id": "RHEL-07-040300",
-        "fix_id": "F-78587r3_fix"
+        "documentable": false
       },
       "id": "V-72233",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all networked systems have SSH installed.",
@@ -3451,17 +3451,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-72235",
+        "rid": "SV-86859r3_rule",
+        "stig_id": "RHEL-07-040310",
+        "fix_id": "F-78589r2_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000423-GPOS-00188",
           "SRG-OS-000423-GPOS-00189",
           "SRG-OS-000423-GPOS-00190"
         ],
-        "gid": "V-72235",
-        "rid": "SV-86859r3_rule",
-        "stig_id": "RHEL-07-040310",
-        "fix_id": "F-78589r2_fix"
+        "documentable": false
       },
       "id": "V-72235",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all networked systems use SSH for confidentiality and integrity of transmitted and received information as well as information during preparation for transmission.",
@@ -3475,15 +3475,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
+        "gid": "V-72237",
+        "rid": "SV-86861r4_rule",
+        "stig_id": "RHEL-07-040320",
+        "fix_id": "F-78591r2_fix",
         "satisfies": [
           "SRG-OS-000163-GPOS-00072",
           "SRG-OS-000279-GPOS-00109"
         ],
-        "gid": "V-72237",
-        "rid": "SV-86861r4_rule",
-        "stig_id": "RHEL-07-040320",
-        "fix_id": "F-78591r2_fix"
+        "documentable": false
       },
       "id": "V-72237",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all network connections associated with SSH traffic are terminated at the end of the session or after 10 minutes of inactivity, except to fulfill documented and validated mission requirements.",
@@ -3497,11 +3497,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72239",
         "rid": "SV-86863r4_rule",
         "stig_id": "RHEL-07-040330",
-        "fix_id": "F-78593r4_fix"
+        "fix_id": "F-78593r4_fix",
+        "documentable": false
       },
       "id": "V-72239",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow authentication using RSA rhosts authentication.",
@@ -3515,15 +3515,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
+        "gid": "V-72241",
+        "rid": "SV-86865r4_rule",
+        "stig_id": "RHEL-07-040340",
+        "fix_id": "F-78595r4_fix",
         "satisfies": [
           "SRG-OS-000163-GPOS-00072",
           "SRG-OS-000279-GPOS-00109"
         ],
-        "gid": "V-72241",
-        "rid": "SV-86865r4_rule",
-        "stig_id": "RHEL-07-040340",
-        "fix_id": "F-78595r4_fix"
+        "documentable": false
       },
       "id": "V-72241",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all network connections associated with SSH traffic terminate after a period of inactivity.",
@@ -3537,11 +3537,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72243",
         "rid": "SV-86867r3_rule",
         "stig_id": "RHEL-07-040350",
-        "fix_id": "F-78597r2_fix"
+        "fix_id": "F-78597r2_fix",
+        "documentable": false
       },
       "id": "V-72243",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow authentication using rhosts authentication.",
@@ -3555,11 +3555,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72245",
         "rid": "SV-86869r3_rule",
         "stig_id": "RHEL-07-040360",
-        "fix_id": "F-78599r3_fix"
+        "fix_id": "F-78599r3_fix",
+        "documentable": false
       },
       "id": "V-72245",
       "title": "The Red Hat Enterprise Linux operating system must display the date and time of the last successful account logon upon an SSH logon.",
@@ -3573,11 +3573,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72247",
         "rid": "SV-86871r3_rule",
         "stig_id": "RHEL-07-040370",
-        "fix_id": "F-78601r2_fix"
+        "fix_id": "F-78601r2_fix",
+        "documentable": false
       },
       "id": "V-72247",
       "title": "The Red Hat Enterprise Linux operating system must not permit direct logons to the root account using remote access via SSH.",
@@ -3591,11 +3591,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72249",
         "rid": "SV-86873r3_rule",
         "stig_id": "RHEL-07-040380",
-        "fix_id": "F-78603r2_fix"
+        "fix_id": "F-78603r2_fix",
+        "documentable": false
       },
       "id": "V-72249",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow authentication using known hosts authentication.",
@@ -3609,15 +3609,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
+        "gid": "V-72251",
+        "rid": "SV-86875r4_rule",
+        "stig_id": "RHEL-07-040390",
+        "fix_id": "F-78605r2_fix",
         "satisfies": [
           "SRG-OS-000074-GPOS-00042",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-72251",
-        "rid": "SV-86875r4_rule",
-        "stig_id": "RHEL-07-040390",
-        "fix_id": "F-78605r2_fix"
+        "documentable": false
       },
       "id": "V-72251",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon is configured to only use the SSHv2 protocol.",
@@ -3631,11 +3631,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000250-GPOS-00093",
         "gid": "V-72253",
         "rid": "SV-86877r3_rule",
         "stig_id": "RHEL-07-040400",
-        "fix_id": "F-78607r2_fix"
+        "fix_id": "F-78607r2_fix",
+        "documentable": false
       },
       "id": "V-72253",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon is configured to only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms.",
@@ -3649,11 +3649,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72255",
         "rid": "SV-86879r2_rule",
         "stig_id": "RHEL-07-040410",
-        "fix_id": "F-78609r1_fix"
+        "fix_id": "F-78609r1_fix",
+        "documentable": false
       },
       "id": "V-72255",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH public host key files have mode 0644 or less permissive.",
@@ -3667,11 +3667,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72257",
         "rid": "SV-86881r3_rule",
         "stig_id": "RHEL-07-040420",
-        "fix_id": "F-78611r5_fix"
+        "fix_id": "F-78611r5_fix",
+        "documentable": false
       },
       "id": "V-72257",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH private host key files have mode 0640 or less permissive.",
@@ -3685,11 +3685,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000364-GPOS-00151",
         "gid": "V-72259",
         "rid": "SV-86883r3_rule",
         "stig_id": "RHEL-07-040430",
-        "fix_id": "F-78613r2_fix"
+        "fix_id": "F-78613r2_fix",
+        "documentable": false
       },
       "id": "V-72259",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not permit Generic Security Service Application Program Interface (GSSAPI) authentication unless needed.",
@@ -3703,11 +3703,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000364-GPOS-00151",
         "gid": "V-72261",
         "rid": "SV-86885r3_rule",
         "stig_id": "RHEL-07-040440",
-        "fix_id": "F-78615r2_fix"
+        "fix_id": "F-78615r2_fix",
+        "documentable": false
       },
       "id": "V-72261",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not permit Kerberos authentication unless needed.",
@@ -3721,11 +3721,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72263",
         "rid": "SV-86887r3_rule",
         "stig_id": "RHEL-07-040450",
-        "fix_id": "F-78617r4_fix"
+        "fix_id": "F-78617r4_fix",
+        "documentable": false
       },
       "id": "V-72263",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon performs strict mode checking of home directory configuration files.",
@@ -3739,11 +3739,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72265",
         "rid": "SV-86889r3_rule",
         "stig_id": "RHEL-07-040460",
-        "fix_id": "F-78619r2_fix"
+        "fix_id": "F-78619r2_fix",
+        "documentable": false
       },
       "id": "V-72265",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon uses privilege separation.",
@@ -3757,11 +3757,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72267",
         "rid": "SV-86891r3_rule",
         "stig_id": "RHEL-07-040470",
-        "fix_id": "F-78621r2_fix"
+        "fix_id": "F-78621r2_fix",
+        "documentable": false
       },
       "id": "V-72267",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow compression or only allows compression after successful authentication.",
@@ -3775,15 +3775,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
+        "gid": "V-72269",
+        "rid": "SV-86893r5_rule",
+        "stig_id": "RHEL-07-040500",
+        "fix_id": "F-78623r5_fix",
         "satisfies": [
           "SRG-OS-000355-GPOS-00143",
           "SRG-OS-000356-GPOS-00144"
         ],
-        "gid": "V-72269",
-        "rid": "SV-86893r5_rule",
-        "stig_id": "RHEL-07-040500",
-        "fix_id": "F-78623r5_fix"
+        "documentable": false
       },
       "id": "V-72269",
       "title": "The Red Hat Enterprise Linux operating system must, for networked systems, synchronize clocks with a server that is synchronized to one of the redundant United States Naval Observatory (USNO) time servers, a time server designated for the appropriate DoD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS).",
@@ -3797,16 +3797,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "gid": "V-72273",
+        "rid": "SV-86897r2_rule",
+        "stig_id": "RHEL-07-040520",
+        "fix_id": "F-78627r1_fix",
         "satisfies": [
           "SRG-OS-000480-GPOS-00227",
           "SRG-OS-000480-GPOS-00231",
           "SRG-OS-000480-GPOS-00232"
         ],
-        "gid": "V-72273",
-        "rid": "SV-86897r2_rule",
-        "stig_id": "RHEL-07-040520",
-        "fix_id": "F-78627r1_fix"
+        "documentable": false
       },
       "id": "V-72273",
       "title": "The Red Hat Enterprise Linux operating system must enable an application firewall, if available.",
@@ -3820,11 +3820,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72275",
         "rid": "SV-86899r4_rule",
         "stig_id": "RHEL-07-040530",
-        "fix_id": "F-78629r4_fix"
+        "fix_id": "F-78629r4_fix",
+        "documentable": false
       },
       "id": "V-72275",
       "title": "The Red Hat Enterprise Linux operating system must display the date and time of the last successful account logon upon logon.",
@@ -3838,11 +3838,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72277",
         "rid": "SV-86901r2_rule",
         "stig_id": "RHEL-07-040540",
-        "fix_id": "F-78631r1_fix"
+        "fix_id": "F-78631r1_fix",
+        "documentable": false
       },
       "id": "V-72277",
       "title": "The Red Hat Enterprise Linux operating system must not contain .shosts files.",
@@ -3856,11 +3856,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72279",
         "rid": "SV-86903r2_rule",
         "stig_id": "RHEL-07-040550",
-        "fix_id": "F-78633r1_fix"
+        "fix_id": "F-78633r1_fix",
+        "documentable": false
       },
       "id": "V-72279",
       "title": "The Red Hat Enterprise Linux operating system must not contain shosts.equiv files.",
@@ -3874,11 +3874,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72281",
         "rid": "SV-86905r3_rule",
         "stig_id": "RHEL-07-040600",
-        "fix_id": "F-78635r1_fix"
+        "fix_id": "F-78635r1_fix",
+        "documentable": false
       },
       "id": "V-72281",
       "title": "For Red Hat Enterprise Linux operating systems using DNS resolution, at least two name servers must be configured.",
@@ -3892,11 +3892,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72283",
         "rid": "SV-86907r2_rule",
         "stig_id": "RHEL-07-040610",
-        "fix_id": "F-78637r3_fix"
+        "fix_id": "F-78637r3_fix",
+        "documentable": false
       },
       "id": "V-72283",
       "title": "The Red Hat Enterprise Linux operating system must not forward Internet Protocol version 4 (IPv4) source-routed packets.",
@@ -3910,11 +3910,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72285",
         "rid": "SV-86909r2_rule",
         "stig_id": "RHEL-07-040620",
-        "fix_id": "F-78639r2_fix"
+        "fix_id": "F-78639r2_fix",
+        "documentable": false
       },
       "id": "V-72285",
       "title": "The Red Hat Enterprise Linux operating system must not forward Internet Protocol version 4 (IPv4) source-routed packets by default.",
@@ -3928,11 +3928,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72287",
         "rid": "SV-86911r2_rule",
         "stig_id": "RHEL-07-040630",
-        "fix_id": "F-78641r2_fix"
+        "fix_id": "F-78641r2_fix",
+        "documentable": false
       },
       "id": "V-72287",
       "title": "The Red Hat Enterprise Linux operating system must not respond to Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) echoes sent to a broadcast address.",
@@ -3946,11 +3946,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72289",
         "rid": "SV-86913r3_rule",
         "stig_id": "RHEL-07-040640",
-        "fix_id": "F-78643r3_fix"
+        "fix_id": "F-78643r3_fix",
+        "documentable": false
       },
       "id": "V-72289",
       "title": "The Red Hat Enterprise Linux operating system must prevent Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) redirect messages from being accepted.",
@@ -3964,11 +3964,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72291",
         "rid": "SV-86915r4_rule",
         "stig_id": "RHEL-07-040650",
-        "fix_id": "F-78645r4_fix"
+        "fix_id": "F-78645r4_fix",
+        "documentable": false
       },
       "id": "V-72291",
       "title": "The Red Hat Enterprise Linux operating system must not allow interfaces to perform Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) redirects by default.",
@@ -3982,11 +3982,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72293",
         "rid": "SV-86917r3_rule",
         "stig_id": "RHEL-07-040660",
-        "fix_id": "F-78647r3_fix"
+        "fix_id": "F-78647r3_fix",
+        "documentable": false
       },
       "id": "V-72293",
       "title": "The Red Hat Enterprise Linux operating system must not send Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) redirects.",
@@ -4000,11 +4000,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72295",
         "rid": "SV-86919r2_rule",
         "stig_id": "RHEL-07-040670",
-        "fix_id": "F-78649r1_fix"
+        "fix_id": "F-78649r1_fix",
+        "documentable": false
       },
       "id": "V-72295",
       "title": "Network interfaces configured on the Red Hat Enterprise Linux operating system must not be in promiscuous mode.",
@@ -4018,11 +4018,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72297",
         "rid": "SV-86921r3_rule",
         "stig_id": "RHEL-07-040680",
-        "fix_id": "F-78651r2_fix"
+        "fix_id": "F-78651r2_fix",
+        "documentable": false
       },
       "id": "V-72297",
       "title": "The Red Hat Enterprise Linux operating system must be configured to prevent unrestricted mail relaying.",
@@ -4036,11 +4036,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72299",
         "rid": "SV-86923r3_rule",
         "stig_id": "RHEL-07-040690",
-        "fix_id": "F-78653r3_fix"
+        "fix_id": "F-78653r3_fix",
+        "documentable": false
       },
       "id": "V-72299",
       "title": "The Red Hat Enterprise Linux operating system must not have a File Transfer Protocol (FTP) server package installed unless needed.",
@@ -4054,11 +4054,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72301",
         "rid": "SV-86925r2_rule",
         "stig_id": "RHEL-07-040700",
-        "fix_id": "F-78655r2_fix"
+        "fix_id": "F-78655r2_fix",
+        "documentable": false
       },
       "id": "V-72301",
       "title": "The Red Hat Enterprise Linux operating system must not have the Trivial File Transfer Protocol (TFTP) server package installed if not required for operational support.",
@@ -4072,11 +4072,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72303",
         "rid": "SV-86927r4_rule",
         "stig_id": "RHEL-07-040710",
-        "fix_id": "F-78657r6_fix"
+        "fix_id": "F-78657r6_fix",
+        "documentable": false
       },
       "id": "V-72303",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that remote X connections for interactive users are encrypted.",
@@ -4090,11 +4090,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72305",
         "rid": "SV-86929r3_rule",
         "stig_id": "RHEL-07-040720",
-        "fix_id": "F-78659r1_fix"
+        "fix_id": "F-78659r1_fix",
+        "documentable": false
       },
       "id": "V-72305",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that if the Trivial File Transfer Protocol (TFTP) server is required, the TFTP daemon is configured to operate in secure mode.",
@@ -4108,11 +4108,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72307",
         "rid": "SV-86931r4_rule",
         "stig_id": "RHEL-07-040730",
-        "fix_id": "F-78661r2_fix"
+        "fix_id": "F-78661r2_fix",
+        "documentable": false
       },
       "id": "V-72307",
       "title": "The Red Hat Enterprise Linux operating system must not have an X Windows display manager installed unless approved.",
@@ -4126,11 +4126,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72309",
         "rid": "SV-86933r2_rule",
         "stig_id": "RHEL-07-040740",
-        "fix_id": "F-78663r2_fix"
+        "fix_id": "F-78663r2_fix",
+        "documentable": false
       },
       "id": "V-72309",
       "title": "The Red Hat Enterprise Linux operating system must not be performing packet forwarding unless the system is a router.",
@@ -4144,11 +4144,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72311",
         "rid": "SV-86935r4_rule",
         "stig_id": "RHEL-07-040750",
-        "fix_id": "F-78665r2_fix"
+        "fix_id": "F-78665r2_fix",
+        "documentable": false
       },
       "id": "V-72311",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the Network File System (NFS) is configured to use RPCSEC_GSS.",
@@ -4162,11 +4162,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72313",
         "rid": "SV-86937r2_rule",
         "stig_id": "RHEL-07-040800",
-        "fix_id": "F-78667r1_fix"
+        "fix_id": "F-78667r1_fix",
+        "documentable": false
       },
       "id": "V-72313",
       "title": "SNMP community strings on the Red Hat Enterprise Linux operating system must be changed from the default.",
@@ -4180,11 +4180,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72315",
         "rid": "SV-86939r3_rule",
         "stig_id": "RHEL-07-040810",
-        "fix_id": "F-78669r3_fix"
+        "fix_id": "F-78669r3_fix",
+        "documentable": false
       },
       "id": "V-72315",
       "title": "The Red Hat Enterprise Linux operating system access control program must be configured to grant or deny system access to specific hosts and services.",
@@ -4198,11 +4198,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72317",
         "rid": "SV-86941r2_rule",
         "stig_id": "RHEL-07-040820",
-        "fix_id": "F-78671r1_fix"
+        "fix_id": "F-78671r1_fix",
+        "documentable": false
       },
       "id": "V-72317",
       "title": "The Red Hat Enterprise Linux operating system must not have unauthorized IP tunnels configured.",
@@ -4216,11 +4216,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-72319",
         "rid": "SV-86943r2_rule",
         "stig_id": "RHEL-07-040830",
-        "fix_id": "F-78673r2_fix"
+        "fix_id": "F-78673r2_fix",
+        "documentable": false
       },
       "id": "V-72319",
       "title": "The Red Hat Enterprise Linux operating system must not forward IPv6 source-routed packets.",
@@ -4234,16 +4234,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000375-GPOS-00160",
+        "gid": "V-72417",
+        "rid": "SV-87041r5_rule",
+        "stig_id": "RHEL-07-041001",
+        "fix_id": "F-78769r5_fix",
         "satisfies": [
           "SRG-OS-000375-GPOS-00160",
           "SRG-OS-000375-GPOS-00161",
           "SRG-OS-000375-GPOS-00162"
         ],
-        "gid": "V-72417",
-        "rid": "SV-87041r5_rule",
-        "stig_id": "RHEL-07-041001",
-        "fix_id": "F-78769r5_fix"
+        "documentable": false
       },
       "id": "V-72417",
       "title": "The Red Hat Enterprise Linux operating system must have the required packages for multifactor authentication installed.",
@@ -4257,16 +4257,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000375-GPOS-00160",
+        "gid": "V-72427",
+        "rid": "SV-87051r4_rule",
+        "stig_id": "RHEL-07-041002",
+        "fix_id": "F-78779r3_fix",
         "satisfies": [
           "SRG-OS-000375-GPOS-00160",
           "SRG-OS-000375-GPOS-00161",
           "SRG-OS-000375-GPOS-00162"
         ],
-        "gid": "V-72427",
-        "rid": "SV-87051r4_rule",
-        "stig_id": "RHEL-07-041002",
-        "fix_id": "F-78779r3_fix"
+        "documentable": false
       },
       "id": "V-72427",
       "title": "The Red Hat Enterprise Linux operating system must implement multifactor authentication for access to privileged accounts via pluggable authentication modules (PAM).",
@@ -4280,16 +4280,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000375-GPOS-00160",
+        "gid": "V-72433",
+        "rid": "SV-87057r5_rule",
+        "stig_id": "RHEL-07-041003",
+        "fix_id": "F-78785r3_fix",
         "satisfies": [
           "SRG-OS-000375-GPOS-00160",
           "SRG-OS-000375-GPOS-00161",
           "SRG-OS-000375-GPOS-00162"
         ],
-        "gid": "V-72433",
-        "rid": "SV-87057r5_rule",
-        "stig_id": "RHEL-07-041003",
-        "fix_id": "F-78785r3_fix"
+        "documentable": false
       },
       "id": "V-72433",
       "title": "The Red Hat Enterprise Linux operating system must implement certificate status checking for PKI authentication.",
@@ -4303,11 +4303,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-73155",
         "rid": "SV-87807r4_rule",
         "stig_id": "RHEL-07-010081",
-        "fix_id": "F-79601r2_fix"
+        "fix_id": "F-79601r2_fix",
+        "documentable": false
       },
       "id": "V-73155",
       "title": "The Red Hat Enterprise Linux operating system must prevent a user from overriding the screensaver lock-delay setting for the graphical user interface.",
@@ -4321,11 +4321,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-73157",
         "rid": "SV-87809r4_rule",
         "stig_id": "RHEL-07-010082",
-        "fix_id": "F-79603r1_fix"
+        "fix_id": "F-79603r1_fix",
+        "documentable": false
       },
       "id": "V-73157",
       "title": "The Red Hat Enterprise Linux operating system must prevent a user from overriding the session idle-delay setting for the graphical user interface.",
@@ -4339,11 +4339,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-73159",
         "rid": "SV-87811r4_rule",
         "stig_id": "RHEL-07-010119",
-        "fix_id": "F-79605r5_fix"
+        "fix_id": "F-79605r5_fix",
+        "documentable": false
       },
       "id": "V-73159",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed or new passwords are established, pwquality must be used.",
@@ -4357,11 +4357,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-73161",
         "rid": "SV-87813r2_rule",
         "stig_id": "RHEL-07-021021",
-        "fix_id": "F-79607r2_fix"
+        "fix_id": "F-79607r2_fix",
+        "documentable": false
       },
       "id": "V-73161",
       "title": "The Red Hat Enterprise Linux operating system must prevent binary files from being executed on file systems that are being imported via Network File System (NFS).",
@@ -4375,11 +4375,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
         "gid": "V-73163",
         "rid": "SV-87815r3_rule",
         "stig_id": "RHEL-07-030321",
-        "fix_id": "F-79609r2_fix"
+        "fix_id": "F-79609r2_fix",
+        "documentable": false
       },
       "id": "V-73163",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the audit system takes appropriate action when there is an error sending audit records to a remote system.",
@@ -4393,11 +4393,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
         "gid": "V-73165",
         "rid": "SV-87817r3_rule",
         "stig_id": "RHEL-07-030871",
-        "fix_id": "F-79611r3_fix"
+        "fix_id": "F-79611r3_fix",
+        "documentable": false
       },
       "id": "V-73165",
       "title": "The Red Hat Enterprise Linux operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/group.",
@@ -4411,11 +4411,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
         "gid": "V-73167",
         "rid": "SV-87819r4_rule",
         "stig_id": "RHEL-07-030872",
-        "fix_id": "F-79613r3_fix"
+        "fix_id": "F-79613r3_fix",
+        "documentable": false
       },
       "id": "V-73167",
       "title": "The Red Hat Enterprise Linux operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/gshadow.",
@@ -4429,11 +4429,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
         "gid": "V-73171",
         "rid": "SV-87823r4_rule",
         "stig_id": "RHEL-07-030873",
-        "fix_id": "F-79617r4_fix"
+        "fix_id": "F-79617r4_fix",
+        "documentable": false
       },
       "id": "V-73171",
       "title": "The Red Hat Enterprise Linux operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/shadow.",
@@ -4447,11 +4447,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
         "gid": "V-73173",
         "rid": "SV-87825r5_rule",
         "stig_id": "RHEL-07-030874",
-        "fix_id": "F-79619r6_fix"
+        "fix_id": "F-79619r6_fix",
+        "documentable": false
       },
       "id": "V-73173",
       "title": "The Red Hat Enterprise Linux operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/opasswd.",
@@ -4465,11 +4465,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-73175",
         "rid": "SV-87827r4_rule",
         "stig_id": "RHEL-07-040641",
-        "fix_id": "F-79621r3_fix"
+        "fix_id": "F-79621r3_fix",
+        "documentable": false
       },
       "id": "V-73175",
       "title": "The Red Hat Enterprise Linux operating system must ignore Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) redirect messages.",
@@ -4483,11 +4483,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000424-GPOS-00188",
         "gid": "V-73177",
         "rid": "SV-87829r2_rule",
         "stig_id": "RHEL-07-041010",
-        "fix_id": "F-79623r1_fix"
+        "fix_id": "F-79623r1_fix",
+        "documentable": false
       },
       "id": "V-73177",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that all wireless network adapters are disabled.",
@@ -4501,15 +4501,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000375-GPOS-00160",
+        "gid": "V-77819",
+        "rid": "SV-92515r2_rule",
+        "stig_id": "RHEL-07-010061",
+        "fix_id": "F-84519r4_fix",
         "satisfies": [
           "SRG-OS-000375-GPOS-00161",
           "SRG-OS-000375-GPOS-00162"
         ],
-        "gid": "V-77819",
-        "rid": "SV-92515r2_rule",
-        "stig_id": "RHEL-07-010061",
-        "fix_id": "F-84519r4_fix"
+        "documentable": false
       },
       "id": "V-77819",
       "title": "The Red Hat Enterprise Linux operating system must uniquely identify and must authenticate users using multifactor authentication via a graphical user logon.",
@@ -4523,11 +4523,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000378-GPOS-00163",
         "gid": "V-77821",
         "rid": "SV-92517r3_rule",
         "stig_id": "RHEL-07-020101",
-        "fix_id": "F-84521r3_fix"
+        "fix_id": "F-84521r3_fix",
+        "documentable": false
       },
       "id": "V-77821",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the Datagram Congestion Control Protocol (DCCP) kernel module is disabled unless required.",
@@ -4541,11 +4541,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-77823",
         "rid": "SV-92519r2_rule",
         "stig_id": "RHEL-07-010481",
-        "fix_id": "F-84523r2_fix"
+        "fix_id": "F-84523r2_fix",
+        "documentable": false
       },
       "id": "V-77823",
       "title": "The Red Hat Enterprise Linux operating system must require authentication upon booting into single-user and maintenance modes.",
@@ -4559,11 +4559,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-77825",
         "rid": "SV-92521r2_rule",
         "stig_id": "RHEL-07-040201",
-        "fix_id": "F-84531r2_fix"
+        "fix_id": "F-84531r2_fix",
+        "documentable": false
       },
       "id": "V-77825",
       "title": "The Red Hat Enterprise Linux operating system must implement virtual address space randomization.",
@@ -4577,11 +4577,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-78995",
         "rid": "SV-93701r3_rule",
         "stig_id": "RHEL-07-010062",
-        "fix_id": "F-85745r1_fix"
+        "fix_id": "F-85745r1_fix",
+        "documentable": false
       },
       "id": "V-78995",
       "title": "The Red Hat Enterprise Linux operating system must prevent a user from overriding the screensaver lock-enabled setting for the graphical user interface.",
@@ -4595,11 +4595,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-78997",
         "rid": "SV-93703r2_rule",
         "stig_id": "RHEL-07-010101",
-        "fix_id": "F-85747r1_fix"
+        "fix_id": "F-85747r1_fix",
+        "documentable": false
       },
       "id": "V-78997",
       "title": "The Red Hat Enterprise Linux operating system must prevent a user from overriding the screensaver idle-activation-enabled setting for the graphical user interface.",
@@ -4613,15 +4613,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00216",
+        "gid": "V-78999",
+        "rid": "SV-93705r3_rule",
+        "stig_id": "RHEL-07-030819",
+        "fix_id": "F-85749r4_fix",
         "satisfies": [
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-78999",
-        "rid": "SV-93705r3_rule",
-        "stig_id": "RHEL-07-030819",
-        "fix_id": "F-85749r4_fix"
+        "documentable": false
       },
       "id": "V-78999",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the create_module syscall.",
@@ -4635,15 +4635,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00216",
+        "gid": "V-79001",
+        "rid": "SV-93707r3_rule",
+        "stig_id": "RHEL-07-030821",
+        "fix_id": "F-85751r3_fix",
         "satisfies": [
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-79001",
-        "rid": "SV-93707r3_rule",
-        "stig_id": "RHEL-07-030821",
-        "fix_id": "F-85751r3_fix"
+        "documentable": false
       },
       "id": "V-79001",
       "title": "The Red Hat Enterprise Linux operating system must audit all uses of the finit_module syscall.",
@@ -4657,11 +4657,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-81003",
         "rid": "SV-95715r1_rule",
         "stig_id": "RHEL-07-010118",
-        "fix_id": "F-87837r1_fix"
+        "fix_id": "F-87837r1_fix",
+        "documentable": false
       },
       "id": "V-81003",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that /etc/pam.d/passwd implements /etc/pam.d/system-auth when changing passwords.",
@@ -4675,11 +4675,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-81005",
         "rid": "SV-95717r1_rule",
         "stig_id": "RHEL-07-010482",
-        "fix_id": "F-87839r2_fix"
+        "fix_id": "F-87839r2_fix",
+        "documentable": false
       },
       "id": "V-81005",
       "title": "Red Hat Enterprise Linux operating systems version 7.2 or newer with a Basic Input/Output System (BIOS) must require authentication upon booting into single-user and maintenance modes.",
@@ -4693,11 +4693,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-81007",
         "rid": "SV-95719r1_rule",
         "stig_id": "RHEL-07-010491",
-        "fix_id": "F-87841r2_fix"
+        "fix_id": "F-87841r2_fix",
+        "documentable": false
       },
       "id": "V-81007",
       "title": "Red Hat Enterprise Linux operating systems version 7.2 or newer using Unified Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user and maintenance modes.",
@@ -4711,11 +4711,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-81009",
         "rid": "SV-95721r2_rule",
         "stig_id": "RHEL-07-021022",
-        "fix_id": "F-87843r2_fix"
+        "fix_id": "F-87843r2_fix",
+        "documentable": false
       },
       "id": "V-81009",
       "title": "The Red Hat Enterprise Linux operating system must mount /dev/shm with the nodev option.",
@@ -4729,11 +4729,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-81011",
         "rid": "SV-95723r2_rule",
         "stig_id": "RHEL-07-021023",
-        "fix_id": "F-87845r2_fix"
+        "fix_id": "F-87845r2_fix",
+        "documentable": false
       },
       "id": "V-81011",
       "title": "The Red Hat Enterprise Linux operating system must mount /dev/shm with the nosuid option.",
@@ -4747,11 +4747,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-81013",
         "rid": "SV-95725r2_rule",
         "stig_id": "RHEL-07-021024",
-        "fix_id": "F-87847r2_fix"
+        "fix_id": "F-87847r2_fix",
+        "documentable": false
       },
       "id": "V-81013",
       "title": "The Red Hat Enterprise Linux operating system must mount /dev/shm with the noexec option.",
@@ -4765,15 +4765,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "gid": "V-81015",
+        "rid": "SV-95727r1_rule",
+        "stig_id": "RHEL-07-030200",
+        "fix_id": "F-87849r2_fix",
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-81015",
-        "rid": "SV-95727r1_rule",
-        "stig_id": "RHEL-07-030200",
-        "fix_id": "F-87849r2_fix"
+        "documentable": false
       },
       "id": "V-81015",
       "title": "The Red Hat Enterprise Linux operating system must be configured to use the au-remote plugin.",
@@ -4787,15 +4787,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "gid": "V-81017",
+        "rid": "SV-95729r1_rule",
+        "stig_id": "RHEL-07-030201",
+        "fix_id": "F-87851r2_fix",
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-81017",
-        "rid": "SV-95729r1_rule",
-        "stig_id": "RHEL-07-030201",
-        "fix_id": "F-87851r2_fix"
+        "documentable": false
       },
       "id": "V-81017",
       "title": "The Red Hat Enterprise Linux operating system must configure the au-remote plugin to off-load audit logs using the audisp-remote daemon.",
@@ -4809,15 +4809,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "gid": "V-81019",
+        "rid": "SV-95731r1_rule",
+        "stig_id": "RHEL-07-030210",
+        "fix_id": "F-87853r3_fix",
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-81019",
-        "rid": "SV-95731r1_rule",
-        "stig_id": "RHEL-07-030210",
-        "fix_id": "F-87853r3_fix"
+        "documentable": false
       },
       "id": "V-81019",
       "title": "The Red Hat Enterprise Linux operating system must take appropriate action when the audisp-remote buffer is full.",
@@ -4831,15 +4831,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "gid": "V-81021",
+        "rid": "SV-95733r1_rule",
+        "stig_id": "RHEL-07-030211",
+        "fix_id": "F-87855r2_fix",
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-81021",
-        "rid": "SV-95733r1_rule",
-        "stig_id": "RHEL-07-030211",
-        "fix_id": "F-87855r2_fix"
+        "documentable": false
       },
       "id": "V-81021",
       "title": "The Red Hat Enterprise Linux operating system must label all off-loaded audit logs before sending them to the central log server.",
@@ -4853,11 +4853,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-92251",
         "rid": "SV-102353r1_rule",
         "stig_id": "RHEL-07-040611",
-        "fix_id": "F-98473r1_fix"
+        "fix_id": "F-98473r1_fix",
+        "documentable": false
       },
       "id": "V-92251",
       "title": "The Red Hat Enterprise Linux operating system must use a reverse-path filter for IPv4 network traffic when possible on all interfaces.",
@@ -4871,11 +4871,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-92253",
         "rid": "SV-102355r1_rule",
         "stig_id": "RHEL-07-040612",
-        "fix_id": "F-98475r1_fix"
+        "fix_id": "F-98475r1_fix",
+        "documentable": false
       },
       "id": "V-92253",
       "title": "The Red Hat Enterprise Linux operating system must use a reverse-path filter for IPv4 network traffic when possible by default.",
@@ -4889,11 +4889,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000196",
         "gid": "V-92255",
         "rid": "SV-102357r1_rule",
         "stig_id": "RHEL-07-020019",
-        "fix_id": "F-98477r1_fix"
+        "fix_id": "F-98477r1_fix",
+        "documentable": false
       },
       "id": "V-92255",
       "title": "The Red Hat Enterprise Linux operating system must have a host-based intrusion detection tool installed.",
@@ -4907,11 +4907,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-94843",
         "rid": "SV-104673r2_rule",
         "stig_id": "RHEL-07-020231",
-        "fix_id": "F-100967r2_fix"
+        "fix_id": "F-100967r2_fix",
+        "documentable": false
       },
       "id": "V-94843",
       "title": "The Red Hat Enterprise Linux operating system must be configured so that the x86 Ctrl-Alt-Delete key sequence is disabled in the Graphical User Interface.",
@@ -4923,7 +4923,5 @@
       }
     }
   ],
-  "name": "RHEL_7_STIG",
-  "title": "Red Hat Enterprise Linux 7 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "RHEL_7_STIG"
 }

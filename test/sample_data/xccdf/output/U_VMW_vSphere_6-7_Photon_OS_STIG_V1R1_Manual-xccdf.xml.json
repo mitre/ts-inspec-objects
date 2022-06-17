@@ -8,15 +8,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "gid": "V-239072",
+        "rid": "SV-239072r717090_rule",
+        "stig_id": "PHTN-67-000129",
+        "fix_id": "F-42242r675023_fix",
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000447-GPOS-00201"
         ],
-        "gid": "V-239072",
-        "rid": "SV-239072r717090_rule",
-        "stig_id": "PHTN-67-000129",
-        "fix_id": "F-42242r675023_fix"
+        "documentable": false
       },
       "id": "V-239072",
       "title": "The Photon operating system must be configured to offload audit logs to a syslog server.",
@@ -30,11 +30,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
         "gid": "V-239073",
         "rid": "SV-239073r675027_rule",
         "stig_id": "PHTN-67-000001",
-        "fix_id": "F-42243r675026_fix"
+        "fix_id": "F-42243r675026_fix",
+        "documentable": false
       },
       "id": "V-239073",
       "title": "The Photon operating system must audit all account creations.",
@@ -48,15 +48,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000021-GPOS-00005",
+        "gid": "V-239074",
+        "rid": "SV-239074r675030_rule",
+        "stig_id": "PHTN-67-000002",
+        "fix_id": "F-42244r675029_fix",
         "satisfies": [
           "SRG-OS-000021-GPOS-00005",
           "SRG-OS-000329-GPOS-00128"
         ],
-        "gid": "V-239074",
-        "rid": "SV-239074r675030_rule",
-        "stig_id": "PHTN-67-000002",
-        "fix_id": "F-42244r675029_fix"
+        "documentable": false
       },
       "id": "V-239074",
       "title": "The Photon operating system must automatically lock an account when three unsuccessful logon attempts occur.",
@@ -70,15 +70,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-239075",
+        "rid": "SV-239075r675033_rule",
+        "stig_id": "PHTN-67-000003",
+        "fix_id": "F-42245r675032_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "gid": "V-239075",
-        "rid": "SV-239075r675033_rule",
-        "stig_id": "PHTN-67-000003",
-        "fix_id": "F-42245r675032_fix"
+        "documentable": false
       },
       "id": "V-239075",
       "title": "The Photon operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting SSH access.",
@@ -92,11 +92,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000027-GPOS-00008",
         "gid": "V-239076",
         "rid": "SV-239076r675036_rule",
         "stig_id": "PHTN-67-000004",
-        "fix_id": "F-42246r675035_fix"
+        "fix_id": "F-42246r675035_fix",
+        "documentable": false
       },
       "id": "V-239076",
       "title": "The Photon operating system must limit the number of concurrent sessions to 10 for all accounts and/or account types.",
@@ -110,16 +110,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
+        "gid": "V-239077",
+        "rid": "SV-239077r675039_rule",
+        "stig_id": "PHTN-67-000005",
+        "fix_id": "F-42247r675038_fix",
         "satisfies": [
           "SRG-OS-000029-GPOS-00010",
           "SRG-OS-000126-GPOS-00066",
           "SRG-OS-000279-GPOS-00109"
         ],
-        "gid": "V-239077",
-        "rid": "SV-239077r675039_rule",
-        "stig_id": "PHTN-67-000005",
-        "fix_id": "F-42247r675038_fix"
+        "documentable": false
       },
       "id": "V-239077",
       "title": "The Photon operating system must set a session inactivity timeout of 15 minutes or less.",
@@ -133,11 +133,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-239078",
         "rid": "SV-239078r675042_rule",
         "stig_id": "PHTN-67-000006",
-        "fix_id": "F-42248r675041_fix"
+        "fix_id": "F-42248r675041_fix",
+        "documentable": false
       },
       "id": "V-239078",
       "title": "The Photon operating system must have the sshd SyslogFacility set to \"authpriv\".",
@@ -151,11 +151,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-239079",
         "rid": "SV-239079r675045_rule",
         "stig_id": "PHTN-67-000007",
-        "fix_id": "F-42249r675044_fix"
+        "fix_id": "F-42249r675044_fix",
+        "documentable": false
       },
       "id": "V-239079",
       "title": "The Photon operating system must have sshd authentication logging enabled.",
@@ -169,11 +169,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-239080",
         "rid": "SV-239080r675048_rule",
         "stig_id": "PHTN-67-000008",
-        "fix_id": "F-42250r675047_fix"
+        "fix_id": "F-42250r675047_fix",
+        "documentable": false
       },
       "id": "V-239080",
       "title": "The Photon operating system must have the sshd LogLevel set to \"INFO\".",
@@ -187,7 +187,10 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-239081",
+        "rid": "SV-239081r675051_rule",
+        "stig_id": "PHTN-67-000009",
+        "fix_id": "F-42251r675050_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000250-GPOS-00093",
@@ -195,10 +198,7 @@
           "SRG-OS-000396-GPOS-00176",
           "SRG-OS-000423-GPOS-00187"
         ],
-        "gid": "V-239081",
-        "rid": "SV-239081r675051_rule",
-        "stig_id": "PHTN-67-000009",
-        "fix_id": "F-42251r675050_fix"
+        "documentable": false
       },
       "id": "V-239081",
       "title": "The Photon operating system must configure sshd to use approved encryption algorithms.",
@@ -212,17 +212,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-239082",
+        "rid": "SV-239082r675054_rule",
+        "stig_id": "PHTN-67-000010",
+        "fix_id": "F-42252r675053_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000039-GPOS-00017",
           "SRG-OS-000040-GPOS-00018",
           "SRG-OS-000041-GPOS-00019"
         ],
-        "gid": "V-239082",
-        "rid": "SV-239082r675054_rule",
-        "stig_id": "PHTN-67-000010",
-        "fix_id": "F-42252r675053_fix"
+        "documentable": false
       },
       "id": "V-239082",
       "title": "The Photon operating system must configure auditd to log to disk.",
@@ -236,11 +236,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000038-GPOS-00016",
         "gid": "V-239083",
         "rid": "SV-239083r675057_rule",
         "stig_id": "PHTN-67-000011",
-        "fix_id": "F-42253r675056_fix"
+        "fix_id": "F-42253r675056_fix",
+        "documentable": false
       },
       "id": "V-239083",
       "title": "The Photon operating system must configure auditd to use the correct log format.",
@@ -254,15 +254,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "gid": "V-239084",
+        "rid": "SV-239084r675060_rule",
+        "stig_id": "PHTN-67-000012",
+        "fix_id": "F-42254r675059_fix",
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-239084",
-        "rid": "SV-239084r675060_rule",
-        "stig_id": "PHTN-67-000012",
-        "fix_id": "F-42254r675059_fix"
+        "documentable": false
       },
       "id": "V-239084",
       "title": "The Photon operating system must be configured to audit the execution of privileged functions.",
@@ -276,15 +276,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000046-GPOS-00022",
+        "gid": "V-239085",
+        "rid": "SV-239085r675063_rule",
+        "stig_id": "PHTN-67-000013",
+        "fix_id": "F-42255r675062_fix",
         "satisfies": [
           "SRG-OS-000046-GPOS-00022",
           "SRG-OS-000344-GPOS-00135"
         ],
-        "gid": "V-239085",
-        "rid": "SV-239085r675063_rule",
-        "stig_id": "PHTN-67-000013",
-        "fix_id": "F-42255r675062_fix"
+        "documentable": false
       },
       "id": "V-239085",
       "title": "The Photon operating system audit log must log space limit problems to syslog.",
@@ -298,11 +298,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000047-GPOS-00023",
         "gid": "V-239086",
         "rid": "SV-239086r675066_rule",
         "stig_id": "PHTN-67-000014",
-        "fix_id": "F-42256r675065_fix"
+        "fix_id": "F-42256r675065_fix",
+        "documentable": false
       },
       "id": "V-239086",
       "title": "The Photon operating system audit log must attempt to log audit failures to syslog.",
@@ -316,11 +316,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-239087",
         "rid": "SV-239087r675069_rule",
         "stig_id": "PHTN-67-000015",
-        "fix_id": "F-42257r675068_fix"
+        "fix_id": "F-42257r675068_fix",
+        "documentable": false
       },
       "id": "V-239087",
       "title": "The Photon operating system audit log must have correct permissions.",
@@ -334,11 +334,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000058-GPOS-00028",
         "gid": "V-239088",
         "rid": "SV-239088r675072_rule",
         "stig_id": "PHTN-67-000016",
-        "fix_id": "F-42258r675071_fix"
+        "fix_id": "F-42258r675071_fix",
+        "documentable": false
       },
       "id": "V-239088",
       "title": "The Photon operating system audit log must be owned by root.",
@@ -352,11 +352,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000059-GPOS-00029",
         "gid": "V-239089",
         "rid": "SV-239089r675075_rule",
         "stig_id": "PHTN-67-000017",
-        "fix_id": "F-42259r675074_fix"
+        "fix_id": "F-42259r675074_fix",
+        "documentable": false
       },
       "id": "V-239089",
       "title": "The Photon operating system audit log must be group-owned by root.",
@@ -370,7 +370,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000062-GPOS-00031",
+        "gid": "V-239090",
+        "rid": "SV-239090r675078_rule",
+        "stig_id": "PHTN-67-000018",
+        "fix_id": "F-42260r675077_fix",
         "satisfies": [
           "SRG-OS-000062-GPOS-00031",
           "SRG-OS-000042-GPOS-00021",
@@ -385,10 +388,7 @@
           "SRG-OS-000474-GPOS-00219",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "gid": "V-239090",
-        "rid": "SV-239090r675078_rule",
-        "stig_id": "PHTN-67-000018",
-        "fix_id": "F-42260r675077_fix"
+        "documentable": false
       },
       "id": "V-239090",
       "title": "The Photon operating system must have the auditd service running.",
@@ -402,11 +402,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000063-GPOS-00032",
         "gid": "V-239091",
         "rid": "SV-239091r675081_rule",
         "stig_id": "PHTN-67-000019",
-        "fix_id": "F-42261r675080_fix"
+        "fix_id": "F-42261r675080_fix",
+        "documentable": false
       },
       "id": "V-239091",
       "title": "The Photon operating system must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.",
@@ -420,15 +420,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-239092",
+        "rid": "SV-239092r675084_rule",
+        "stig_id": "PHTN-67-000020",
+        "fix_id": "F-42262r675083_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-239092",
-        "rid": "SV-239092r675084_rule",
-        "stig_id": "PHTN-67-000020",
-        "fix_id": "F-42262r675083_fix"
+        "documentable": false
       },
       "id": "V-239092",
       "title": "The Photon operating system must generate audit records when successful/unsuccessful attempts to access privileges occur.",
@@ -442,11 +442,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-239093",
         "rid": "SV-239093r675087_rule",
         "stig_id": "PHTN-67-000021",
-        "fix_id": "F-42263r675086_fix"
+        "fix_id": "F-42263r675086_fix",
+        "documentable": false
       },
       "id": "V-239093",
       "title": "The Photon operating system must enforce password complexity by requiring that at least one uppercase character be used.",
@@ -460,11 +460,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000070-GPOS-00038",
         "gid": "V-239094",
         "rid": "SV-239094r717043_rule",
         "stig_id": "PHTN-67-000022",
-        "fix_id": "F-42264r717042_fix"
+        "fix_id": "F-42264r717042_fix",
+        "documentable": false
       },
       "id": "V-239094",
       "title": "The Photon operating system must enforce password complexity by requiring that at least one lowercase character be used.",
@@ -478,11 +478,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000071-GPOS-00039",
         "gid": "V-239095",
         "rid": "SV-239095r675093_rule",
         "stig_id": "PHTN-67-000023",
-        "fix_id": "F-42265r675092_fix"
+        "fix_id": "F-42265r675092_fix",
+        "documentable": false
       },
       "id": "V-239095",
       "title": "The Photon operating system must enforce password complexity by requiring that at least one numeric character be used.",
@@ -496,11 +496,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-239096",
         "rid": "SV-239096r675096_rule",
         "stig_id": "PHTN-67-000024",
-        "fix_id": "F-42266r675095_fix"
+        "fix_id": "F-42266r675095_fix",
+        "documentable": false
       },
       "id": "V-239096",
       "title": "The Photon operating system must require that new passwords are at least four characters different from the old password.",
@@ -514,11 +514,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-239097",
         "rid": "SV-239097r675099_rule",
         "stig_id": "PHTN-67-000025",
-        "fix_id": "F-42267r675098_fix"
+        "fix_id": "F-42267r675098_fix",
+        "documentable": false
       },
       "id": "V-239097",
       "title": "The Photon operating system must store only encrypted representations of passwords.",
@@ -532,11 +532,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-239098",
         "rid": "SV-239098r675102_rule",
         "stig_id": "PHTN-67-000026",
-        "fix_id": "F-42268r675101_fix"
+        "fix_id": "F-42268r675101_fix",
+        "documentable": false
       },
       "id": "V-239098",
       "title": "The Photon operating system must store only encrypted representations of passwords.",
@@ -550,11 +550,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-239099",
         "rid": "SV-239099r675105_rule",
         "stig_id": "PHTN-67-000027",
-        "fix_id": "F-42269r675104_fix"
+        "fix_id": "F-42269r675104_fix",
+        "documentable": false
       },
       "id": "V-239099",
       "title": "The Photon operating system must be configured so that passwords for new users are restricted to a 24-hour minimum lifetime.",
@@ -568,11 +568,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-239100",
         "rid": "SV-239100r675108_rule",
         "stig_id": "PHTN-67-000028",
-        "fix_id": "F-42270r675107_fix"
+        "fix_id": "F-42270r675107_fix",
+        "documentable": false
       },
       "id": "V-239100",
       "title": "The Photon operating system must be configured so that passwords for new users are restricted to a 90-day maximum lifetime.",
@@ -586,11 +586,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-239101",
         "rid": "SV-239101r675111_rule",
         "stig_id": "PHTN-67-000029",
-        "fix_id": "F-42271r675110_fix"
+        "fix_id": "F-42271r675110_fix",
+        "documentable": false
       },
       "id": "V-239101",
       "title": "The Photon operating system must prohibit password reuse for a minimum of five generations.",
@@ -604,11 +604,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-239102",
         "rid": "SV-239102r675114_rule",
         "stig_id": "PHTN-67-000030",
-        "fix_id": "F-42272r675113_fix"
+        "fix_id": "F-42272r675113_fix",
+        "documentable": false
       },
       "id": "V-239102",
       "title": "The Photon operating system must ensure old passwords are being stored.",
@@ -622,11 +622,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-239103",
         "rid": "SV-239103r675117_rule",
         "stig_id": "PHTN-67-000031",
-        "fix_id": "F-42273r675116_fix"
+        "fix_id": "F-42273r675116_fix",
+        "documentable": false
       },
       "id": "V-239103",
       "title": "The Photon operating system must enforce a minimum eight-character password length.",
@@ -640,11 +640,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-239104",
         "rid": "SV-239104r675120_rule",
         "stig_id": "PHTN-67-000032",
-        "fix_id": "F-42274r675119_fix"
+        "fix_id": "F-42274r675119_fix",
+        "documentable": false
       },
       "id": "V-239104",
       "title": "The Photon operating system must only allow installation of packages signed by VMware.",
@@ -658,15 +658,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
+        "gid": "V-239105",
+        "rid": "SV-239105r675123_rule",
+        "stig_id": "PHTN-67-000033",
+        "fix_id": "F-42275r675122_fix",
         "satisfies": [
           "SRG-OS-000096-GPOS-00050",
           "SRG-OS-000114-GPOS-00059"
         ],
-        "gid": "V-239105",
-        "rid": "SV-239105r675123_rule",
-        "stig_id": "PHTN-67-000033",
-        "fix_id": "F-42275r675122_fix"
+        "documentable": false
       },
       "id": "V-239105",
       "title": "The Photon operating system must disable the loading of unnecessary kernel modules.",
@@ -680,11 +680,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-239106",
         "rid": "SV-239106r675126_rule",
         "stig_id": "PHTN-67-000034",
-        "fix_id": "F-42276r675125_fix"
+        "fix_id": "F-42276r675125_fix",
+        "documentable": false
       },
       "id": "V-239106",
       "title": "The Photon operating system must not have Duplicate User IDs (UIDs).",
@@ -698,11 +698,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000109-GPOS-00056",
         "gid": "V-239107",
         "rid": "SV-239107r675129_rule",
         "stig_id": "PHTN-67-000035",
-        "fix_id": "F-42277r675128_fix"
+        "fix_id": "F-42277r675128_fix",
+        "documentable": false
       },
       "id": "V-239107",
       "title": "The Photon operating system must configure sshd to disallow root logins.",
@@ -716,11 +716,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000118-GPOS-00060",
         "gid": "V-239108",
         "rid": "SV-239108r675132_rule",
         "stig_id": "PHTN-67-000036",
-        "fix_id": "F-42278r675131_fix"
+        "fix_id": "F-42278r675131_fix",
+        "documentable": false
       },
       "id": "V-239108",
       "title": "The Photon operating system must disable new accounts immediately upon password expiration.",
@@ -734,15 +734,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000142-GPOS-00071",
+        "gid": "V-239109",
+        "rid": "SV-239109r675135_rule",
+        "stig_id": "PHTN-67-000037",
+        "fix_id": "F-42279r675134_fix",
         "satisfies": [
           "SRG-OS-000142-GPOS-00071",
           "SRG-OS-000420-GPOS-00186"
         ],
-        "gid": "V-239109",
-        "rid": "SV-239109r675135_rule",
-        "stig_id": "PHTN-67-000037",
-        "fix_id": "F-42279r675134_fix"
+        "documentable": false
       },
       "id": "V-239109",
       "title": "The Photon operating system must use TCP syncookies.",
@@ -756,11 +756,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-239110",
         "rid": "SV-239110r675138_rule",
         "stig_id": "PHTN-67-000038",
-        "fix_id": "F-42280r675137_fix"
+        "fix_id": "F-42280r675137_fix",
+        "documentable": false
       },
       "id": "V-239110",
       "title": "The Photon operating system must configure sshd to disconnect idle SSH sessions.",
@@ -774,11 +774,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-239111",
         "rid": "SV-239111r675141_rule",
         "stig_id": "PHTN-67-000039",
-        "fix_id": "F-42281r675140_fix"
+        "fix_id": "F-42281r675140_fix",
+        "documentable": false
       },
       "id": "V-239111",
       "title": "The Photon operating system must configure sshd to disconnect idle SSH sessions.",
@@ -792,7 +792,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000205-GPOS-00083",
+        "gid": "V-239112",
+        "rid": "SV-239112r675144_rule",
+        "stig_id": "PHTN-67-000040",
+        "fix_id": "F-42282r675143_fix",
         "satisfies": [
           "SRG-OS-000205-GPOS-00083",
           "SRG-OS-000274-GPOS-00104",
@@ -801,10 +804,7 @@
           "SRG-OS-000277-GPOS-00107",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-239112",
-        "rid": "SV-239112r675144_rule",
-        "stig_id": "PHTN-67-000040",
-        "fix_id": "F-42282r675143_fix"
+        "documentable": false
       },
       "id": "V-239112",
       "title": "The Photon operating system must configure rsyslog to offload system logs to a central server.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-239113",
         "rid": "SV-239113r675147_rule",
         "stig_id": "PHTN-67-000041",
-        "fix_id": "F-42283r675146_fix"
+        "fix_id": "F-42283r675146_fix",
+        "documentable": false
       },
       "id": "V-239113",
       "title": "The Photon operating system /var/log directory must be owned by root.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-239114",
         "rid": "SV-239114r675150_rule",
         "stig_id": "PHTN-67-000042",
-        "fix_id": "F-42284r675149_fix"
+        "fix_id": "F-42284r675149_fix",
+        "documentable": false
       },
       "id": "V-239114",
       "title": "The Photon operating system messages file must be owned by root.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-239115",
         "rid": "SV-239115r675153_rule",
         "stig_id": "PHTN-67-000043",
-        "fix_id": "F-42285r675152_fix"
+        "fix_id": "F-42285r675152_fix",
+        "documentable": false
       },
       "id": "V-239115",
       "title": "The Photon operating system messages file must have mode 0640 or less permissive.",
@@ -872,16 +872,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000239-GPOS-00089",
+        "gid": "V-239116",
+        "rid": "SV-239116r675156_rule",
+        "stig_id": "PHTN-67-000045",
+        "fix_id": "F-42286r675155_fix",
         "satisfies": [
           "SRG-OS-000239-GPOS-00089",
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000304-GPOS-00121"
         ],
-        "gid": "V-239116",
-        "rid": "SV-239116r675156_rule",
-        "stig_id": "PHTN-67-000045",
-        "fix_id": "F-42286r675155_fix"
+        "documentable": false
       },
       "id": "V-239116",
       "title": "The Photon operating system must audit all account modifications.",
@@ -895,11 +895,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000240-GPOS-00090",
         "gid": "V-239117",
         "rid": "SV-239117r675159_rule",
         "stig_id": "PHTN-67-000046",
-        "fix_id": "F-42287r675158_fix"
+        "fix_id": "F-42287r675158_fix",
+        "documentable": false
       },
       "id": "V-239117",
       "title": "The Photon operating system must audit all account disabling actions.",
@@ -913,11 +913,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000241-GPOS-00091",
         "gid": "V-239118",
         "rid": "SV-239118r675162_rule",
         "stig_id": "PHTN-67-000047",
-        "fix_id": "F-42288r675161_fix"
+        "fix_id": "F-42288r675161_fix",
+        "documentable": false
       },
       "id": "V-239118",
       "title": "The Photon operating system must audit all account removal actions.",
@@ -931,11 +931,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000254-GPOS-00095",
         "gid": "V-239119",
         "rid": "SV-239119r675165_rule",
         "stig_id": "PHTN-67-000048",
-        "fix_id": "F-42289r675164_fix"
+        "fix_id": "F-42289r675164_fix",
+        "documentable": false
       },
       "id": "V-239119",
       "title": "The Photon operating system must initiate auditing as part of the boot process.",
@@ -949,11 +949,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
         "gid": "V-239120",
         "rid": "SV-239120r675168_rule",
         "stig_id": "PHTN-67-000049",
-        "fix_id": "F-42290r675167_fix"
+        "fix_id": "F-42290r675167_fix",
+        "documentable": false
       },
       "id": "V-239120",
       "title": "The Photon operating system audit files and directories must have correct permissions.",
@@ -967,11 +967,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
         "gid": "V-239121",
         "rid": "SV-239121r675171_rule",
         "stig_id": "PHTN-67-000050",
-        "fix_id": "F-42291r675170_fix"
+        "fix_id": "F-42291r675170_fix",
+        "documentable": false
       },
       "id": "V-239121",
       "title": "The Photon operating system audit files and directories must have correct permissions.",
@@ -985,15 +985,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000257-GPOS-00098",
+        "gid": "V-239122",
+        "rid": "SV-239122r675174_rule",
+        "stig_id": "PHTN-67-000051",
+        "fix_id": "F-42292r675173_fix",
         "satisfies": [
           "SRG-OS-000257-GPOS-00098",
           "SRG-OS-000258-GPOS-00099"
         ],
-        "gid": "V-239122",
-        "rid": "SV-239122r675174_rule",
-        "stig_id": "PHTN-67-000051",
-        "fix_id": "F-42292r675173_fix"
+        "documentable": false
       },
       "id": "V-239122",
       "title": "The Photon operating system must protect audit tools from unauthorized modification.",
@@ -1007,11 +1007,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000266-GPOS-00101",
         "gid": "V-239123",
         "rid": "SV-239123r675177_rule",
         "stig_id": "PHTN-67-000052",
-        "fix_id": "F-42293r675176_fix"
+        "fix_id": "F-42293r675176_fix",
+        "documentable": false
       },
       "id": "V-239123",
       "title": "The Photon operating system must enforce password complexity by requiring that at least one special character be used.",
@@ -1025,11 +1025,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000278-GPOS-00108",
         "gid": "V-239124",
         "rid": "SV-239124r675180_rule",
         "stig_id": "PHTN-67-000053",
-        "fix_id": "F-42294r675179_fix"
+        "fix_id": "F-42294r675179_fix",
+        "documentable": false
       },
       "id": "V-239124",
       "title": "The Photon operating system package files must not be modified.",
@@ -1043,11 +1043,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000279-GPOS-00109",
         "gid": "V-239125",
         "rid": "SV-239125r675183_rule",
         "stig_id": "PHTN-67-000054",
-        "fix_id": "F-42295r675182_fix"
+        "fix_id": "F-42295r675182_fix",
+        "documentable": false
       },
       "id": "V-239125",
       "title": "The Photon operating system must set an inactivity timeout value for non-interactive sessions.",
@@ -1061,11 +1061,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-239126",
         "rid": "SV-239126r675186_rule",
         "stig_id": "PHTN-67-000055",
-        "fix_id": "F-42296r675185_fix"
+        "fix_id": "F-42296r675185_fix",
+        "documentable": false
       },
       "id": "V-239126",
       "title": "The Photon operating system must configure sshd with a specific ListenAddress.",
@@ -1079,15 +1079,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-239127",
+        "rid": "SV-239127r675189_rule",
+        "stig_id": "PHTN-67-000056",
+        "fix_id": "F-42297r675188_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-239127",
-        "rid": "SV-239127r675189_rule",
-        "stig_id": "PHTN-67-000056",
-        "fix_id": "F-42297r675188_fix"
+        "documentable": false
       },
       "id": "V-239127",
       "title": "The Photon operating system must audit the execution of privileged functions.",
@@ -1101,11 +1101,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-239128",
         "rid": "SV-239128r675192_rule",
         "stig_id": "PHTN-67-000057",
-        "fix_id": "F-42298r675191_fix"
+        "fix_id": "F-42298r675191_fix",
+        "documentable": false
       },
       "id": "V-239128",
       "title": "The Photon operating system must configure auditd to keep five rotated log files.",
@@ -1119,11 +1119,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-239129",
         "rid": "SV-239129r675195_rule",
         "stig_id": "PHTN-67-000058",
-        "fix_id": "F-42299r675194_fix"
+        "fix_id": "F-42299r675194_fix",
+        "documentable": false
       },
       "id": "V-239129",
       "title": "The Photon operating system must configure auditd to keep five rotated log files.",
@@ -1137,11 +1137,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-239130",
         "rid": "SV-239130r675198_rule",
         "stig_id": "PHTN-67-000059",
-        "fix_id": "F-42300r675197_fix"
+        "fix_id": "F-42300r675197_fix",
+        "documentable": false
       },
       "id": "V-239130",
       "title": "The Photon operating system must configure a cron job to rotate auditd logs daily.",
@@ -1155,11 +1155,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000343-GPOS-00134",
         "gid": "V-239131",
         "rid": "SV-239131r675201_rule",
         "stig_id": "PHTN-67-000060",
-        "fix_id": "F-42301r675200_fix"
+        "fix_id": "F-42301r675200_fix",
+        "documentable": false
       },
       "id": "V-239131",
       "title": "The Photon operating system must configure auditd to log space limit problems to syslog.",
@@ -1173,15 +1173,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
+        "gid": "V-239132",
+        "rid": "SV-239132r675204_rule",
+        "stig_id": "PHTN-67-000061",
+        "fix_id": "F-42302r675203_fix",
         "satisfies": [
           "SRG-OS-000355-GPOS-00143",
           "SRG-OS-000356-GPOS-00144"
         ],
-        "gid": "V-239132",
-        "rid": "SV-239132r675204_rule",
-        "stig_id": "PHTN-67-000061",
-        "fix_id": "F-42302r675203_fix"
+        "documentable": false
       },
       "id": "V-239132",
       "title": "The Photon operating system must be configured to synchronize with an approved DoD time source.",
@@ -1195,11 +1195,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000366-GPOS-00153",
         "gid": "V-239133",
         "rid": "SV-239133r675207_rule",
         "stig_id": "PHTN-67-000062",
-        "fix_id": "F-42303r675206_fix"
+        "fix_id": "F-42303r675206_fix",
+        "documentable": false
       },
       "id": "V-239133",
       "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
@@ -1213,11 +1213,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000366-GPOS-00153",
         "gid": "V-239134",
         "rid": "SV-239134r675210_rule",
         "stig_id": "PHTN-67-000063",
-        "fix_id": "F-42304r675209_fix"
+        "fix_id": "F-42304r675209_fix",
+        "documentable": false
       },
       "id": "V-239134",
       "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
@@ -1231,11 +1231,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000366-GPOS-00153",
         "gid": "V-239135",
         "rid": "SV-239135r675213_rule",
         "stig_id": "PHTN-67-000064",
-        "fix_id": "F-42305r675212_fix"
+        "fix_id": "F-42305r675212_fix",
+        "documentable": false
       },
       "id": "V-239135",
       "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
@@ -1249,16 +1249,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
+        "gid": "V-239136",
+        "rid": "SV-239136r675216_rule",
+        "stig_id": "PHTN-67-000065",
+        "fix_id": "F-42306r675215_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00156",
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00158"
         ],
-        "gid": "V-239136",
-        "rid": "SV-239136r675216_rule",
-        "stig_id": "PHTN-67-000065",
-        "fix_id": "F-42306r675215_fix"
+        "documentable": false
       },
       "id": "V-239136",
       "title": "The Photon operating system must require users to reauthenticate for privilege escalation.",
@@ -1272,11 +1272,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000383-GPOS-00166",
         "gid": "V-239137",
         "rid": "SV-239137r675219_rule",
         "stig_id": "PHTN-67-000066",
-        "fix_id": "F-42307r675218_fix"
+        "fix_id": "F-42307r675218_fix",
+        "documentable": false
       },
       "id": "V-239137",
       "title": "The Photon operating system must prohibit the use of cached authenticators after one day.",
@@ -1290,16 +1290,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000394-GPOS-00174",
+        "gid": "V-239138",
+        "rid": "SV-239138r675222_rule",
+        "stig_id": "PHTN-67-000067",
+        "fix_id": "F-42308r675221_fix",
         "satisfies": [
           "SRG-OS-000394-GPOS-00174",
           "SRG-OS-000424-GPOS-00188",
           "SRG-OS-000478-GPOS-00223"
         ],
-        "gid": "V-239138",
-        "rid": "SV-239138r675222_rule",
-        "stig_id": "PHTN-67-000067",
-        "fix_id": "F-42308r675221_fix"
+        "documentable": false
       },
       "id": "V-239138",
       "title": "The Photon operating system must configure sshd to use preferred ciphers.",
@@ -1313,7 +1313,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000395-GPOS-00175",
+        "gid": "V-239139",
+        "rid": "SV-239139r675225_rule",
+        "stig_id": "PHTN-67-000068",
+        "fix_id": "F-42309r675224_fix",
         "satisfies": [
           "SRG-OS-000395-GPOS-00175",
           "SRG-OS-000074-GPOS-00042",
@@ -1324,10 +1327,7 @@
           "SRG-OS-000425-GPOS-00189",
           "SRG-OS-000426-GPOS-00190"
         ],
-        "gid": "V-239139",
-        "rid": "SV-239139r675225_rule",
-        "stig_id": "PHTN-67-000068",
-        "fix_id": "F-42309r675224_fix"
+        "documentable": false
       },
       "id": "V-239139",
       "title": "The Photon operating system must use OpenSSH for remote maintenance sessions.",
@@ -1341,11 +1341,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00193",
         "gid": "V-239140",
         "rid": "SV-239140r675228_rule",
         "stig_id": "PHTN-67-000069",
-        "fix_id": "F-42310r675227_fix"
+        "fix_id": "F-42310r675227_fix",
+        "documentable": false
       },
       "id": "V-239140",
       "title": "The Photon operating system must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution.",
@@ -1359,11 +1359,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000437-GPOS-00194",
         "gid": "V-239141",
         "rid": "SV-239141r675231_rule",
         "stig_id": "PHTN-67-000070",
-        "fix_id": "F-42311r675230_fix"
+        "fix_id": "F-42311r675230_fix",
+        "documentable": false
       },
       "id": "V-239141",
       "title": "The Photon operating system must remove all software components after updated versions have been installed.",
@@ -1377,17 +1377,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "gid": "V-239142",
+        "rid": "SV-239142r675234_rule",
+        "stig_id": "PHTN-67-000071",
+        "fix_id": "F-42312r675233_fix",
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000466-GPOS-00210",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-239142",
-        "rid": "SV-239142r675234_rule",
-        "stig_id": "PHTN-67-000071",
-        "fix_id": "F-42312r675233_fix"
+        "documentable": false
       },
       "id": "V-239142",
       "title": "The Photon operating system must generate audit records when the sudo command is used.",
@@ -1401,16 +1401,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
+        "gid": "V-239143",
+        "rid": "SV-239143r675237_rule",
+        "stig_id": "PHTN-67-000072",
+        "fix_id": "F-42313r675236_fix",
         "satisfies": [
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000472-GPOS-00217",
           "SRG-OS-000473-GPOS-00218"
         ],
-        "gid": "V-239143",
-        "rid": "SV-239143r675237_rule",
-        "stig_id": "PHTN-67-000072",
-        "fix_id": "F-42313r675236_fix"
+        "documentable": false
       },
       "id": "V-239143",
       "title": "The Photon operating system must generate audit records when successful/unsuccessful logon attempts occur.",
@@ -1424,15 +1424,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00216",
+        "gid": "V-239144",
+        "rid": "SV-239144r675240_rule",
+        "stig_id": "PHTN-67-000073",
+        "fix_id": "F-42314r675239_fix",
         "satisfies": [
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-239144",
-        "rid": "SV-239144r675240_rule",
-        "stig_id": "PHTN-67-000073",
-        "fix_id": "F-42314r675239_fix"
+        "documentable": false
       },
       "id": "V-239144",
       "title": "The Photon operating system must audit the insmod module.",
@@ -1446,11 +1446,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000476-GPOS-00221",
         "gid": "V-239145",
         "rid": "SV-239145r675243_rule",
         "stig_id": "PHTN-67-000074",
-        "fix_id": "F-42315r675242_fix"
+        "fix_id": "F-42315r675242_fix",
+        "documentable": false
       },
       "id": "V-239145",
       "title": "The Photon operating system auditd service must generate audit records for all account creations, modifications, disabling, and termination events.",
@@ -1464,11 +1464,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00225",
         "gid": "V-239146",
         "rid": "SV-239146r675246_rule",
         "stig_id": "PHTN-67-000075",
-        "fix_id": "F-42316r675245_fix"
+        "fix_id": "F-42316r675245_fix",
+        "documentable": false
       },
       "id": "V-239146",
       "title": "The Photon operating system must use the pam_cracklib module.",
@@ -1482,11 +1482,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00226",
         "gid": "V-239147",
         "rid": "SV-239147r675249_rule",
         "stig_id": "PHTN-67-000076",
-        "fix_id": "F-42317r675248_fix"
+        "fix_id": "F-42317r675248_fix",
+        "documentable": false
       },
       "id": "V-239147",
       "title": "The Photon operating system must set the FAIL_DELAY parameter.",
@@ -1500,11 +1500,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00226",
         "gid": "V-239148",
         "rid": "SV-239148r675252_rule",
         "stig_id": "PHTN-67-000077",
-        "fix_id": "F-42318r675251_fix"
+        "fix_id": "F-42318r675251_fix",
+        "documentable": false
       },
       "id": "V-239148",
       "title": "The Photon operating system must enforce a delay of at least four seconds between logon prompts following a failed logon attempt.",
@@ -1518,11 +1518,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239149",
         "rid": "SV-239149r675255_rule",
         "stig_id": "PHTN-67-000078",
-        "fix_id": "F-42319r675254_fix"
+        "fix_id": "F-42319r675254_fix",
+        "documentable": false
       },
       "id": "V-239149",
       "title": "The Photon operating system must ensure audit events are flushed to disk at proper intervals.",
@@ -1536,11 +1536,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239150",
         "rid": "SV-239150r675258_rule",
         "stig_id": "PHTN-67-000079",
-        "fix_id": "F-42320r675257_fix"
+        "fix_id": "F-42320r675257_fix",
+        "documentable": false
       },
       "id": "V-239150",
       "title": "The Photon operating system must ensure root $PATH entries are appropriate.",
@@ -1554,11 +1554,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239151",
         "rid": "SV-239151r675261_rule",
         "stig_id": "PHTN-67-000080",
-        "fix_id": "F-42321r675260_fix"
+        "fix_id": "F-42321r675260_fix",
+        "documentable": false
       },
       "id": "V-239151",
       "title": "The Photon operating system must create a home directory for all new local interactive user accounts.",
@@ -1572,11 +1572,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239152",
         "rid": "SV-239152r675264_rule",
         "stig_id": "PHTN-67-000081",
-        "fix_id": "F-42322r675263_fix"
+        "fix_id": "F-42322r675263_fix",
+        "documentable": false
       },
       "id": "V-239152",
       "title": "The Photon operating system must disable the debug-shell service.",
@@ -1590,11 +1590,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239153",
         "rid": "SV-239153r675267_rule",
         "stig_id": "PHTN-67-000082",
-        "fix_id": "F-42323r675266_fix"
+        "fix_id": "F-42323r675266_fix",
+        "documentable": false
       },
       "id": "V-239153",
       "title": "The Photon operating system must configure a secure umask for all shells.",
@@ -1608,11 +1608,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239154",
         "rid": "SV-239154r675270_rule",
         "stig_id": "PHTN-67-000083",
-        "fix_id": "F-42324r675269_fix"
+        "fix_id": "F-42324r675269_fix",
+        "documentable": false
       },
       "id": "V-239154",
       "title": "The Photon operating system must configure sshd to disallow Generic Security Service Application Program Interface (GSSAPI) authentication.",
@@ -1626,11 +1626,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239155",
         "rid": "SV-239155r675273_rule",
         "stig_id": "PHTN-67-000084",
-        "fix_id": "F-42325r675272_fix"
+        "fix_id": "F-42325r675272_fix",
+        "documentable": false
       },
       "id": "V-239155",
       "title": "The Photon operating system must configure sshd to disable environment processing.",
@@ -1644,11 +1644,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239156",
         "rid": "SV-239156r675276_rule",
         "stig_id": "PHTN-67-000085",
-        "fix_id": "F-42326r675275_fix"
+        "fix_id": "F-42326r675275_fix",
+        "documentable": false
       },
       "id": "V-239156",
       "title": "The Photon operating system must configure sshd to disable X11 forwarding.",
@@ -1662,11 +1662,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239157",
         "rid": "SV-239157r675279_rule",
         "stig_id": "PHTN-67-000086",
-        "fix_id": "F-42327r675278_fix"
+        "fix_id": "F-42327r675278_fix",
+        "documentable": false
       },
       "id": "V-239157",
       "title": "The Photon operating system must configure sshd to perform strict mode checking of home directory configuration files.",
@@ -1680,11 +1680,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239158",
         "rid": "SV-239158r675282_rule",
         "stig_id": "PHTN-67-000087",
-        "fix_id": "F-42328r675281_fix"
+        "fix_id": "F-42328r675281_fix",
+        "documentable": false
       },
       "id": "V-239158",
       "title": "The Photon operating system must configure sshd to disallow Kerberos authentication.",
@@ -1698,11 +1698,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239159",
         "rid": "SV-239159r675285_rule",
         "stig_id": "PHTN-67-000088",
-        "fix_id": "F-42329r675284_fix"
+        "fix_id": "F-42329r675284_fix",
+        "documentable": false
       },
       "id": "V-239159",
       "title": "The Photon operating system must configure sshd to use privilege separation.",
@@ -1716,11 +1716,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239160",
         "rid": "SV-239160r675288_rule",
         "stig_id": "PHTN-67-000089",
-        "fix_id": "F-42330r675287_fix"
+        "fix_id": "F-42330r675287_fix",
+        "documentable": false
       },
       "id": "V-239160",
       "title": "The Photon operating system must configure sshd to disallow authentication with an empty password.",
@@ -1734,11 +1734,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239161",
         "rid": "SV-239161r675291_rule",
         "stig_id": "PHTN-67-000090",
-        "fix_id": "F-42331r675290_fix"
+        "fix_id": "F-42331r675290_fix",
+        "documentable": false
       },
       "id": "V-239161",
       "title": "The Photon operating system must configure sshd to disallow compression of the encrypted session stream.",
@@ -1752,11 +1752,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239162",
         "rid": "SV-239162r675294_rule",
         "stig_id": "PHTN-67-000091",
-        "fix_id": "F-42332r675293_fix"
+        "fix_id": "F-42332r675293_fix",
+        "documentable": false
       },
       "id": "V-239162",
       "title": "The Photon operating system must configure sshd to display the last login immediately after authentication.",
@@ -1770,11 +1770,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239163",
         "rid": "SV-239163r675297_rule",
         "stig_id": "PHTN-67-000092",
-        "fix_id": "F-42333r675296_fix"
+        "fix_id": "F-42333r675296_fix",
+        "documentable": false
       },
       "id": "V-239163",
       "title": "The Photon operating system must configure sshd to ignore user-specific trusted hosts lists.",
@@ -1788,11 +1788,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239164",
         "rid": "SV-239164r675300_rule",
         "stig_id": "PHTN-67-000093",
-        "fix_id": "F-42334r675299_fix"
+        "fix_id": "F-42334r675299_fix",
+        "documentable": false
       },
       "id": "V-239164",
       "title": "The Photon operating system must configure sshd to ignore user-specific known_host files.",
@@ -1806,11 +1806,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239165",
         "rid": "SV-239165r675303_rule",
         "stig_id": "PHTN-67-000094",
-        "fix_id": "F-42335r675302_fix"
+        "fix_id": "F-42335r675302_fix",
+        "documentable": false
       },
       "id": "V-239165",
       "title": "The Photon operating system must configure sshd to limit the number of allowed login attempts per connection.",
@@ -1824,11 +1824,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239166",
         "rid": "SV-239166r675306_rule",
         "stig_id": "PHTN-67-000095",
-        "fix_id": "F-42336r675305_fix"
+        "fix_id": "F-42336r675305_fix",
+        "documentable": false
       },
       "id": "V-239166",
       "title": "The Photon operating system must be configured so that the x86 Ctrl-Alt-Delete key sequence is disabled on the command line.",
@@ -1842,11 +1842,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239167",
         "rid": "SV-239167r675309_rule",
         "stig_id": "PHTN-67-000096",
-        "fix_id": "F-42337r675308_fix"
+        "fix_id": "F-42337r675308_fix",
+        "documentable": false
       },
       "id": "V-239167",
       "title": "The Photon operating system must be configured so that the /etc/skel default scripts are protected from unauthorized modification.",
@@ -1860,11 +1860,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239168",
         "rid": "SV-239168r675312_rule",
         "stig_id": "PHTN-67-000097",
-        "fix_id": "F-42338r675311_fix"
+        "fix_id": "F-42338r675311_fix",
+        "documentable": false
       },
       "id": "V-239168",
       "title": "The Photon operating system must be configured so that the /root path is protected from unauthorized access.",
@@ -1878,11 +1878,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239169",
         "rid": "SV-239169r675315_rule",
         "stig_id": "PHTN-67-000098",
-        "fix_id": "F-42339r675314_fix"
+        "fix_id": "F-42339r675314_fix",
+        "documentable": false
       },
       "id": "V-239169",
       "title": "The Photon operating system must be configured so that all global initialization scripts are protected from unauthorized modification.",
@@ -1896,11 +1896,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239170",
         "rid": "SV-239170r675318_rule",
         "stig_id": "PHTN-67-000099",
-        "fix_id": "F-42340r675317_fix"
+        "fix_id": "F-42340r675317_fix",
+        "documentable": false
       },
       "id": "V-239170",
       "title": "The Photon operating system must be configured so that all system startup scripts are protected from unauthorized modification.",
@@ -1914,11 +1914,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239171",
         "rid": "SV-239171r675321_rule",
         "stig_id": "PHTN-67-000100",
-        "fix_id": "F-42341r675320_fix"
+        "fix_id": "F-42341r675320_fix",
+        "documentable": false
       },
       "id": "V-239171",
       "title": "The Photon operating system must be configured so that all files have a valid owner and group owner.",
@@ -1932,11 +1932,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239172",
         "rid": "SV-239172r675324_rule",
         "stig_id": "PHTN-67-000101",
-        "fix_id": "F-42342r675323_fix"
+        "fix_id": "F-42342r675323_fix",
+        "documentable": false
       },
       "id": "V-239172",
       "title": "The Photon operating system must be configured so that the /etc/cron.allow file is protected from unauthorized modification.",
@@ -1950,11 +1950,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239173",
         "rid": "SV-239173r675327_rule",
         "stig_id": "PHTN-67-000102",
-        "fix_id": "F-42343r675326_fix"
+        "fix_id": "F-42343r675326_fix",
+        "documentable": false
       },
       "id": "V-239173",
       "title": "The Photon operating system must be configured so that all cron jobs are protected from unauthorized modification.",
@@ -1968,11 +1968,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239174",
         "rid": "SV-239174r675330_rule",
         "stig_id": "PHTN-67-000103",
-        "fix_id": "F-42344r675329_fix"
+        "fix_id": "F-42344r675329_fix",
+        "documentable": false
       },
       "id": "V-239174",
       "title": "The Photon operating system must be configured so that all cron paths are protected from unauthorized modification.",
@@ -1986,11 +1986,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239175",
         "rid": "SV-239175r675333_rule",
         "stig_id": "PHTN-67-000104",
-        "fix_id": "F-42345r675332_fix"
+        "fix_id": "F-42345r675332_fix",
+        "documentable": false
       },
       "id": "V-239175",
       "title": "The Photon operating system must not forward IPv4 or IPv6 source-routed packets.",
@@ -2004,11 +2004,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239176",
         "rid": "SV-239176r675336_rule",
         "stig_id": "PHTN-67-000105",
-        "fix_id": "F-42346r675335_fix"
+        "fix_id": "F-42346r675335_fix",
+        "documentable": false
       },
       "id": "V-239176",
       "title": "The Photon operating system must not respond to IPv4 Internet Control Message Protocol (ICMP) echoes sent to a broadcast address.",
@@ -2022,11 +2022,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239177",
         "rid": "SV-239177r675339_rule",
         "stig_id": "PHTN-67-000106",
-        "fix_id": "F-42347r675338_fix"
+        "fix_id": "F-42347r675338_fix",
+        "documentable": false
       },
       "id": "V-239177",
       "title": "The Photon operating system must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted.",
@@ -2040,11 +2040,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239178",
         "rid": "SV-239178r675342_rule",
         "stig_id": "PHTN-67-000107",
-        "fix_id": "F-42348r675341_fix"
+        "fix_id": "F-42348r675341_fix",
+        "documentable": false
       },
       "id": "V-239178",
       "title": "The Photon operating system must prevent IPv4 Internet Control Message Protocol (ICMP) secure redirect messages from being accepted.",
@@ -2058,11 +2058,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239179",
         "rid": "SV-239179r675345_rule",
         "stig_id": "PHTN-67-000108",
-        "fix_id": "F-42349r675344_fix"
+        "fix_id": "F-42349r675344_fix",
+        "documentable": false
       },
       "id": "V-239179",
       "title": "The Photon operating system must not send IPv4 Internet Control Message Protocol (ICMP) redirects.",
@@ -2076,11 +2076,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239180",
         "rid": "SV-239180r675348_rule",
         "stig_id": "PHTN-67-000109",
-        "fix_id": "F-42350r675347_fix"
+        "fix_id": "F-42350r675347_fix",
+        "documentable": false
       },
       "id": "V-239180",
       "title": "The Photon operating system must log IPv4 packets with impossible addresses.",
@@ -2094,11 +2094,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239181",
         "rid": "SV-239181r675351_rule",
         "stig_id": "PHTN-67-000110",
-        "fix_id": "F-42351r675350_fix"
+        "fix_id": "F-42351r675350_fix",
+        "documentable": false
       },
       "id": "V-239181",
       "title": "The Photon operating system must use a reverse-path filter for IPv4 network traffic.",
@@ -2112,11 +2112,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239182",
         "rid": "SV-239182r675354_rule",
         "stig_id": "PHTN-67-000111",
-        "fix_id": "F-42352r675353_fix"
+        "fix_id": "F-42352r675353_fix",
+        "documentable": false
       },
       "id": "V-239182",
       "title": "The Photon operating system must not perform multicast packet forwarding.",
@@ -2130,11 +2130,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239183",
         "rid": "SV-239183r675357_rule",
         "stig_id": "PHTN-67-000112",
-        "fix_id": "F-42353r675356_fix"
+        "fix_id": "F-42353r675356_fix",
+        "documentable": false
       },
       "id": "V-239183",
       "title": "The Photon operating system must not perform IPv4 packet forwarding.",
@@ -2148,11 +2148,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239184",
         "rid": "SV-239184r675360_rule",
         "stig_id": "PHTN-67-000113",
-        "fix_id": "F-42354r675359_fix"
+        "fix_id": "F-42354r675359_fix",
+        "documentable": false
       },
       "id": "V-239184",
       "title": "The Photon operating system must send TCP timestamps.",
@@ -2166,11 +2166,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239185",
         "rid": "SV-239185r675363_rule",
         "stig_id": "PHTN-67-000114",
-        "fix_id": "F-42355r675362_fix"
+        "fix_id": "F-42355r675362_fix",
+        "documentable": false
       },
       "id": "V-239185",
       "title": "The Photon OS must not have the xinetd service enabled.",
@@ -2184,11 +2184,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239186",
         "rid": "SV-239186r675366_rule",
         "stig_id": "PHTN-67-000115",
-        "fix_id": "F-42356r675365_fix"
+        "fix_id": "F-42356r675365_fix",
+        "documentable": false
       },
       "id": "V-239186",
       "title": "The Photon operating system must be configured to protect the SSH public host key from unauthorized modification.",
@@ -2202,11 +2202,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239187",
         "rid": "SV-239187r675369_rule",
         "stig_id": "PHTN-67-000116",
-        "fix_id": "F-42357r675368_fix"
+        "fix_id": "F-42357r675368_fix",
+        "documentable": false
       },
       "id": "V-239187",
       "title": "The Photon operating system must be configured to protect the SSH private host key from unauthorized access.",
@@ -2220,11 +2220,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239188",
         "rid": "SV-239188r675372_rule",
         "stig_id": "PHTN-67-000117",
-        "fix_id": "F-42358r675371_fix"
+        "fix_id": "F-42358r675371_fix",
+        "documentable": false
       },
       "id": "V-239188",
       "title": "The Photon operating system must enforce password complexity on the root account.",
@@ -2238,11 +2238,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239189",
         "rid": "SV-239189r675375_rule",
         "stig_id": "PHTN-67-000118",
-        "fix_id": "F-42359r675374_fix"
+        "fix_id": "F-42359r675374_fix",
+        "documentable": false
       },
       "id": "V-239189",
       "title": "The Photon operating system must protect all boot configuration files from unauthorized access.",
@@ -2256,11 +2256,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239190",
         "rid": "SV-239190r675378_rule",
         "stig_id": "PHTN-67-000119",
-        "fix_id": "F-42360r675377_fix"
+        "fix_id": "F-42360r675377_fix",
+        "documentable": false
       },
       "id": "V-239190",
       "title": "The Photon operating system must protect sshd configuration from unauthorized access.",
@@ -2274,11 +2274,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239191",
         "rid": "SV-239191r675381_rule",
         "stig_id": "PHTN-67-000120",
-        "fix_id": "F-42361r675380_fix"
+        "fix_id": "F-42361r675380_fix",
+        "documentable": false
       },
       "id": "V-239191",
       "title": "The Photon operating system must protect all sysctl configuration files from unauthorized access.",
@@ -2292,11 +2292,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-239192",
         "rid": "SV-239192r675384_rule",
         "stig_id": "PHTN-67-000121",
-        "fix_id": "F-42362r675383_fix"
+        "fix_id": "F-42362r675383_fix",
+        "documentable": false
       },
       "id": "V-239192",
       "title": "The Photon operating system must ship vCenter SSO logs via rsyslog.",
@@ -2310,15 +2310,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00228",
+        "gid": "V-239193",
+        "rid": "SV-239193r675387_rule",
+        "stig_id": "PHTN-67-000122",
+        "fix_id": "F-42363r675386_fix",
         "satisfies": [
           "SRG-OS-000480-GPOS-00228",
           "SRG-OS-000480-GPOS-00230"
         ],
-        "gid": "V-239193",
-        "rid": "SV-239193r675387_rule",
-        "stig_id": "PHTN-67-000122",
-        "fix_id": "F-42363r675386_fix"
+        "documentable": false
       },
       "id": "V-239193",
       "title": "The Photon operating system must set the UMASK parameter correctly.",
@@ -2332,11 +2332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-239194",
         "rid": "SV-239194r675390_rule",
         "stig_id": "PHTN-67-000123",
-        "fix_id": "F-42364r675389_fix"
+        "fix_id": "F-42364r675389_fix",
+        "documentable": false
       },
       "id": "V-239194",
       "title": "The Photon operating system must configure sshd to disallow HostbasedAuthentication.",
@@ -2350,11 +2350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-239195",
         "rid": "SV-239195r675393_rule",
         "stig_id": "PHTN-67-000124",
-        "fix_id": "F-42365r675392_fix"
+        "fix_id": "F-42365r675392_fix",
+        "documentable": false
       },
       "id": "V-239195",
       "title": "The Photon operating system must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
@@ -2366,7 +2366,5 @@
       }
     }
   ],
-  "name": "VMW_vSphere_6-7_Photon_OS_STIG",
-  "title": "VMware vSphere 6.7 Photon OS Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "VMW_vSphere_6-7_Photon_OS_STIG"
 }

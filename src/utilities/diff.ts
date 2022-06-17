@@ -14,8 +14,9 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDi
     const toControlIDs = toProfile.controls.map((control) => control.id).sort();
 
     // Find new controls
-    const controlIDDiff: string[][] = diff(fromControlIDs, toControlIDs)
-    controlIDDiff.forEach((diffValue) => {
+    const controlIDDiff: string[][] | undefined = diff(fromControlIDs, toControlIDs)
+
+    controlIDDiff?.forEach((diffValue) => {
         if (diffValue[0] === '-') {
             profileDiff.removedControlIDs.push(diffValue[1])
         } else if (diffValue[0] === '+') {

@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001",
         "gid": "V-234275",
         "rid": "SV-234275r617395_rule",
         "stig_id": "SRG-APP-000001-UEM-000001",
-        "fix_id": "F-37425r617395_fix"
+        "fix_id": "F-37425r617395_fix",
+        "documentable": false
       },
       "id": "V-234275",
       "title": "The UEM server must limit the number of concurrent sessions per privileged user account to three or less concurrent sessions.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000002",
         "gid": "V-234276",
         "rid": "SV-234276r617355_rule",
         "stig_id": "SRG-APP-000002-UEM-000002",
-        "fix_id": "F-37426r613839_fix"
+        "fix_id": "F-37426r613839_fix",
+        "documentable": false
       },
       "id": "V-234276",
       "title": "The UEM server must conceal, via the session lock, information previously visible on the display with a publicly viewable image.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000003",
         "gid": "V-234277",
         "rid": "SV-234277r617355_rule",
         "stig_id": "SRG-APP-000003-UEM-000003",
-        "fix_id": "F-37427r613842_fix"
+        "fix_id": "F-37427r613842_fix",
+        "documentable": false
       },
       "id": "V-234277",
       "title": "The UEM server must initiate a session lock after a 15-minute period of inactivity.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000004",
         "gid": "V-234278",
         "rid": "SV-234278r617355_rule",
         "stig_id": "SRG-APP-000004-UEM-000004",
-        "fix_id": "F-37428r613845_fix"
+        "fix_id": "F-37428r613845_fix",
+        "documentable": false
       },
       "id": "V-234278",
       "title": "The MDM server must provide the capability for users to directly initiate a session lock.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000005",
         "gid": "V-234279",
         "rid": "SV-234279r617355_rule",
         "stig_id": "SRG-APP-000005-UEM-000005",
-        "fix_id": "F-37429r613848_fix"
+        "fix_id": "F-37429r613848_fix",
+        "documentable": false
       },
       "id": "V-234279",
       "title": "The MDM server must retain the session lock until the user reestablishes access using established identification and authentication procedures.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014",
         "gid": "V-234283",
         "rid": "SV-234283r617355_rule",
         "stig_id": "SRG-APP-000014-UEM-000009",
-        "fix_id": "F-37433r613860_fix"
+        "fix_id": "F-37433r613860_fix",
+        "documentable": false
       },
       "id": "V-234283",
       "title": "The UEM server must use TLS 1.2, or higher, to protect the confidentiality of sensitive data during electronic dissemination using remote access.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000023",
         "gid": "V-234286",
         "rid": "SV-234286r617355_rule",
         "stig_id": "SRG-APP-000023-UEM-000012",
-        "fix_id": "F-37436r613869_fix"
+        "fix_id": "F-37436r613869_fix",
+        "documentable": false
       },
       "id": "V-234286",
       "title": "The UEM server must provide automated mechanisms for supporting account management functions.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000024",
         "gid": "V-234287",
         "rid": "SV-234287r617355_rule",
         "stig_id": "SRG-APP-000024-UEM-000013",
-        "fix_id": "F-37437r613872_fix"
+        "fix_id": "F-37437r613872_fix",
+        "documentable": false
       },
       "id": "V-234287",
       "title": "The UEM server must automatically remove or disable temporary user accounts after 72 hours if supported by the UEM server.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000025",
         "gid": "V-234288",
         "rid": "SV-234288r617355_rule",
         "stig_id": "SRG-APP-000025-UEM-000014",
-        "fix_id": "F-37438r613875_fix"
+        "fix_id": "F-37438r613875_fix",
+        "documentable": false
       },
       "id": "V-234288",
       "title": "The UEM server must automatically disable accounts after a 35-day period of account inactivity.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000026",
         "gid": "V-234289",
         "rid": "SV-234289r617355_rule",
         "stig_id": "SRG-APP-000026-UEM-000015",
-        "fix_id": "F-37439r613878_fix"
+        "fix_id": "F-37439r613878_fix",
+        "documentable": false
       },
       "id": "V-234289",
       "title": "The UEM server must automatically audit account creation.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000027",
         "gid": "V-234290",
         "rid": "SV-234290r617355_rule",
         "stig_id": "SRG-APP-000027-UEM-000016",
-        "fix_id": "F-37440r613881_fix"
+        "fix_id": "F-37440r613881_fix",
+        "documentable": false
       },
       "id": "V-234290",
       "title": "The UEM server must automatically audit account modification.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000028",
         "gid": "V-234291",
         "rid": "SV-234291r617355_rule",
         "stig_id": "SRG-APP-000028-UEM-000017",
-        "fix_id": "F-37441r613884_fix"
+        "fix_id": "F-37441r613884_fix",
+        "documentable": false
       },
       "id": "V-234291",
       "title": "The UEM server must automatically audit account disabling actions.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000029",
         "gid": "V-234292",
         "rid": "SV-234292r617355_rule",
         "stig_id": "SRG-APP-000029-UEM-000018",
-        "fix_id": "F-37442r613887_fix"
+        "fix_id": "F-37442r613887_fix",
+        "documentable": false
       },
       "id": "V-234292",
       "title": "The UEM server must automatically audit account removal actions.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000065",
         "gid": "V-234310",
         "rid": "SV-234310r617396_rule",
         "stig_id": "SRG-APP-000065-UEM-000036",
-        "fix_id": "F-37460r613941_fix"
+        "fix_id": "F-37460r613941_fix",
+        "documentable": false
       },
       "id": "V-234310",
       "title": "The UEM server must enforce the limit of three consecutive invalid logon attempts by a user during a 15-minute time period.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000068",
         "gid": "V-234311",
         "rid": "SV-234311r617355_rule",
         "stig_id": "SRG-APP-000068-UEM-000037",
-        "fix_id": "F-37461r613944_fix"
+        "fix_id": "F-37461r613944_fix",
+        "documentable": false
       },
       "id": "V-234311",
       "title": "The UEM server must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the application.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000069",
         "gid": "V-234312",
         "rid": "SV-234312r617355_rule",
         "stig_id": "SRG-APP-000069-UEM-000038",
-        "fix_id": "F-37462r613947_fix"
+        "fix_id": "F-37462r613947_fix",
+        "documentable": false
       },
       "id": "V-234312",
       "title": "The UEM server must retain the access banner until the user acknowledges acceptance of the access conditions.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000075",
         "gid": "V-234315",
         "rid": "SV-234315r617355_rule",
         "stig_id": "SRG-APP-000075-UEM-000041",
-        "fix_id": "F-37465r613956_fix"
+        "fix_id": "F-37465r613956_fix",
+        "documentable": false
       },
       "id": "V-234315",
       "title": "The UEM server must notify the user, upon successful logon (access) to the application, of the date and time of the last logon (access).",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000076",
         "gid": "V-234316",
         "rid": "SV-234316r617355_rule",
         "stig_id": "SRG-APP-000076-UEM-000042",
-        "fix_id": "F-37466r613959_fix"
+        "fix_id": "F-37466r613959_fix",
+        "documentable": false
       },
       "id": "V-234316",
       "title": "The UEM server must notify the user, upon successful logon (access), of the number of unsuccessful logon (access) attempts since the last successful logon (access).",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000080",
         "gid": "V-234318",
         "rid": "SV-234318r617355_rule",
         "stig_id": "SRG-APP-000080-UEM-000044",
-        "fix_id": "F-37468r613965_fix"
+        "fix_id": "F-37468r613965_fix",
+        "documentable": false
       },
       "id": "V-234318",
       "title": "The UEM server must protect against an individual (or process acting on behalf of an individual) falsely denying having performed organization-defined actions to be covered by non-repudiation.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089",
         "gid": "V-234323",
         "rid": "SV-234323r617355_rule",
         "stig_id": "SRG-APP-000089-UEM-000049",
-        "fix_id": "F-37473r613980_fix"
+        "fix_id": "F-37473r613980_fix",
+        "documentable": false
       },
       "id": "V-234323",
       "title": "The UEM server must provide audit record generation capability for DoD-defined auditable events within all application components.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089",
         "gid": "V-234324",
         "rid": "SV-234324r617355_rule",
         "stig_id": "SRG-APP-000089-UEM-000050",
-        "fix_id": "F-37474r613983_fix"
+        "fix_id": "F-37474r613983_fix",
+        "documentable": false
       },
       "id": "V-234324",
       "title": "The UEM server must be configured to provide audit records in a manner suitable for the Authorized Administrators to interpret the information.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090",
         "gid": "V-234325",
         "rid": "SV-234325r617355_rule",
         "stig_id": "SRG-APP-000090-UEM-000051",
-        "fix_id": "F-37475r613986_fix"
+        "fix_id": "F-37475r613986_fix",
+        "documentable": false
       },
       "id": "V-234325",
       "title": "The UEM server must be configured to allow only specific administrator roles to select which auditable events are to be audited.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091",
         "gid": "V-234326",
         "rid": "SV-234326r617355_rule",
         "stig_id": "SRG-APP-000091-UEM-000052",
-        "fix_id": "F-37476r613989_fix"
+        "fix_id": "F-37476r613989_fix",
+        "documentable": false
       },
       "id": "V-234326",
       "title": "The UEM server must generate audit records when successful/unsuccessful attempts to access privileges occur.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000092",
         "gid": "V-234327",
         "rid": "SV-234327r617355_rule",
         "stig_id": "SRG-APP-000092-UEM-000053",
-        "fix_id": "F-37477r613992_fix"
+        "fix_id": "F-37477r613992_fix",
+        "documentable": false
       },
       "id": "V-234327",
       "title": "The UEM server must initiate session auditing upon startup.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095",
         "gid": "V-234328",
         "rid": "SV-234328r617355_rule",
         "stig_id": "SRG-APP-000095-UEM-000055",
-        "fix_id": "F-37478r613995_fix"
+        "fix_id": "F-37478r613995_fix",
+        "documentable": false
       },
       "id": "V-234328",
       "title": "The UEM server must be configured to produce audit records containing information to establish what type of events occurred.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096",
         "gid": "V-234329",
         "rid": "SV-234329r617355_rule",
         "stig_id": "SRG-APP-000096-UEM-000056",
-        "fix_id": "F-37479r613998_fix"
+        "fix_id": "F-37479r613998_fix",
+        "documentable": false
       },
       "id": "V-234329",
       "title": "The UEM server must be configured to produce audit records containing information to establish when (date and time) the events occurred.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097",
         "gid": "V-234330",
         "rid": "SV-234330r617355_rule",
         "stig_id": "SRG-APP-000097-UEM-000057",
-        "fix_id": "F-37480r614001_fix"
+        "fix_id": "F-37480r614001_fix",
+        "documentable": false
       },
       "id": "V-234330",
       "title": "The UEM server must be configured to produce audit records containing information to establish where the events occurred.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098",
         "gid": "V-234331",
         "rid": "SV-234331r617355_rule",
         "stig_id": "SRG-APP-000098-UEM-000058",
-        "fix_id": "F-37481r614004_fix"
+        "fix_id": "F-37481r614004_fix",
+        "documentable": false
       },
       "id": "V-234331",
       "title": "The UEM server must be configured to produce audit records containing information to establish the source of the events.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099",
         "gid": "V-234332",
         "rid": "SV-234332r617355_rule",
         "stig_id": "SRG-APP-000099-UEM-000059",
-        "fix_id": "F-37482r614007_fix"
+        "fix_id": "F-37482r614007_fix",
+        "documentable": false
       },
       "id": "V-234332",
       "title": "The UEM server must be configured to produce audit records that contain information to establish the outcome of the events.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000100",
         "gid": "V-234333",
         "rid": "SV-234333r617355_rule",
         "stig_id": "SRG-APP-000100-UEM-000060",
-        "fix_id": "F-37483r614010_fix"
+        "fix_id": "F-37483r614010_fix",
+        "documentable": false
       },
       "id": "V-234333",
       "title": "The UEM server must be configured to generate audit records containing information that establishes the identity of any individual or process associated with the event.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000101",
         "gid": "V-234334",
         "rid": "SV-234334r617355_rule",
         "stig_id": "SRG-APP-000101-UEM-000061",
-        "fix_id": "F-37484r614013_fix"
+        "fix_id": "F-37484r614013_fix",
+        "documentable": false
       },
       "id": "V-234334",
       "title": "The UEM server must be configured to generate audit records containing the full-text recording of privileged commands or the individual identities of group account users.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000108",
         "gid": "V-234335",
         "rid": "SV-234335r617355_rule",
         "stig_id": "SRG-APP-000108-UEM-000062",
-        "fix_id": "F-37485r614016_fix"
+        "fix_id": "F-37485r614016_fix",
+        "documentable": false
       },
       "id": "V-234335",
       "title": "The UEM SRG must alert the ISSO and SA (at a minimum) in the event of an audit processing failure.",
@@ -584,15 +584,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000116",
+        "gid": "V-234340",
+        "rid": "SV-234340r617403_rule",
+        "stig_id": "SRG-APP-000116-UEM-000067",
+        "fix_id": "F-37490r614031_fix",
         "satisfies": [
           "OE.TIMESTAMP",
           "FAU_GEN.1.2(1)"
         ],
-        "gid": "V-234340",
-        "rid": "SV-234340r617403_rule",
-        "stig_id": "SRG-APP-000116-UEM-000067",
-        "fix_id": "F-37490r614031_fix"
+        "documentable": false
       },
       "id": "V-234340",
       "title": "The UEM server must use host operating system clocks to generate time stamps for audit records.",
@@ -606,11 +606,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118",
         "gid": "V-234341",
         "rid": "SV-234341r617355_rule",
         "stig_id": "SRG-APP-000118-UEM-000068",
-        "fix_id": "F-37491r614034_fix"
+        "fix_id": "F-37491r614034_fix",
+        "documentable": false
       },
       "id": "V-234341",
       "title": "The UEM server must protect audit information from any type of unauthorized read access.",
@@ -624,11 +624,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119",
         "gid": "V-234342",
         "rid": "SV-234342r617355_rule",
         "stig_id": "SRG-APP-000119-UEM-000069",
-        "fix_id": "F-37492r614037_fix"
+        "fix_id": "F-37492r614037_fix",
+        "documentable": false
       },
       "id": "V-234342",
       "title": "The UEM server must protect audit information from unauthorized modification.",
@@ -642,11 +642,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120",
         "gid": "V-234343",
         "rid": "SV-234343r617355_rule",
         "stig_id": "SRG-APP-000120-UEM-000070",
-        "fix_id": "F-37493r614040_fix"
+        "fix_id": "F-37493r614040_fix",
+        "documentable": false
       },
       "id": "V-234343",
       "title": "The UEM server must protect audit information from unauthorized deletion.",
@@ -660,11 +660,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000125",
         "gid": "V-234347",
         "rid": "SV-234347r617355_rule",
         "stig_id": "SRG-APP-000125-UEM-000074",
-        "fix_id": "F-37497r614052_fix"
+        "fix_id": "F-37497r614052_fix",
+        "documentable": false
       },
       "id": "V-234347",
       "title": "The UEM server must back up audit records at least every seven days onto a log management server.",
@@ -678,11 +678,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-234349",
         "rid": "SV-234349r617355_rule",
         "stig_id": "SRG-APP-000131-UEM-000076",
-        "fix_id": "F-37499r614058_fix"
+        "fix_id": "F-37499r614058_fix",
+        "documentable": false
       },
       "id": "V-234349",
       "title": "The UEM server must prevent the installation of patches, service packs, or application components without verification the software component has been digitally signed using a certificate that is recognized and approved by the organization.",
@@ -696,11 +696,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133",
         "gid": "V-234351",
         "rid": "SV-234351r617355_rule",
         "stig_id": "SRG-APP-000133-UEM-000078",
-        "fix_id": "F-37501r614064_fix"
+        "fix_id": "F-37501r614064_fix",
+        "documentable": false
       },
       "id": "V-234351",
       "title": "The UEM server must limit privileges to change the software resident within software libraries.",
@@ -714,11 +714,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-234352",
         "rid": "SV-234352r617355_rule",
         "stig_id": "SRG-APP-000141-UEM-000079",
-        "fix_id": "F-37502r614067_fix"
+        "fix_id": "F-37502r614067_fix",
+        "documentable": false
       },
       "id": "V-234352",
       "title": "The UEM server must be configured to disable non-essential capabilities.",
@@ -732,11 +732,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-234353",
         "rid": "SV-234353r617355_rule",
         "stig_id": "SRG-APP-000142-UEM-000080",
-        "fix_id": "F-37503r614070_fix"
+        "fix_id": "F-37503r614070_fix",
+        "documentable": false
       },
       "id": "V-234353",
       "title": "The firewall protecting the UEM server platform must be configured so only DoD-approved ports, protocols, and services are enabled. (See the DoD Ports, Protocols, Services Management [PPSM] Category Assurance Levels [CAL] list for DoD-approved ports, protocols, and services).",
@@ -750,11 +750,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-234354",
         "rid": "SV-234354r617397_rule",
         "stig_id": "SRG-APP-000142-UEM-000081",
-        "fix_id": "F-37504r614073_fix"
+        "fix_id": "F-37504r614073_fix",
+        "documentable": false
       },
       "id": "V-234354",
       "title": "The UEM server must be configured to use only documented platform APIs.",
@@ -768,14 +768,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148",
-        "satisfies": [
-          "FIA Reference:PP-MDM-414003"
-        ],
         "gid": "V-234355",
         "rid": "SV-234355r617404_rule",
         "stig_id": "SRG-APP-000148-UEM-000082",
-        "fix_id": "F-37505r614076_fix"
+        "fix_id": "F-37505r614076_fix",
+        "satisfies": [
+          "FIA Reference:PP-MDM-414003"
+        ],
+        "documentable": false
       },
       "id": "V-234355",
       "title": "The UEM server must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -789,14 +789,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000149",
-        "satisfies": [
-          "FIA Reference:PP-MDM-414003"
-        ],
         "gid": "V-234356",
         "rid": "SV-234356r617405_rule",
         "stig_id": "SRG-APP-000149-UEM-000083",
-        "fix_id": "F-37506r614079_fix"
+        "fix_id": "F-37506r614079_fix",
+        "satisfies": [
+          "FIA Reference:PP-MDM-414003"
+        ],
+        "documentable": false
       },
       "id": "V-234356",
       "title": "The UEM server must be configured to use a DoD Central Directory Service to provide multifactor authentication for network access to privileged and non-privileged accounts.",
@@ -810,11 +810,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000151",
         "gid": "V-234358",
         "rid": "SV-234358r617355_rule",
         "stig_id": "SRG-APP-000151-UEM-000085",
-        "fix_id": "F-37508r614085_fix"
+        "fix_id": "F-37508r614085_fix",
+        "documentable": false
       },
       "id": "V-234358",
       "title": "All UEM server local accounts created during application installation and configuration must be removed. Note: In this context local accounts refers to user and or administrator accounts on the server that use user name and password for user access and authentication.",
@@ -828,14 +828,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000153",
-        "satisfies": [
-          "FIA Reference:PP-MDM-414003"
-        ],
         "gid": "V-234360",
         "rid": "SV-234360r617406_rule",
         "stig_id": "SRG-APP-000153-UEM-000087",
-        "fix_id": "F-37510r614091_fix"
+        "fix_id": "F-37510r614091_fix",
+        "satisfies": [
+          "FIA Reference:PP-MDM-414003"
+        ],
+        "documentable": false
       },
       "id": "V-234360",
       "title": "The UEM server must ensure users are authenticated with an individual authenticator prior to using a group authenticator.",
@@ -849,11 +849,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000154",
         "gid": "V-234361",
         "rid": "SV-234361r617355_rule",
         "stig_id": "SRG-APP-000154-UEM-000088",
-        "fix_id": "F-37511r614094_fix"
+        "fix_id": "F-37511r614094_fix",
+        "documentable": false
       },
       "id": "V-234361",
       "title": "The UEM server must be configured to use DoD PKI for multifactor authentication. This requirement is included in SRG-APP-000149.",
@@ -867,14 +867,14 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000156",
-        "satisfies": [
-          "FIA Reference:PP-MDM-414003"
-        ],
         "gid": "V-234363",
         "rid": "SV-234363r617407_rule",
         "stig_id": "SRG-APP-000156-UEM-000090",
-        "fix_id": "F-37513r614100_fix"
+        "fix_id": "F-37513r614100_fix",
+        "satisfies": [
+          "FIA Reference:PP-MDM-414003"
+        ],
+        "documentable": false
       },
       "id": "V-234363",
       "title": "The UEM server must use FIPS-validated SHA-2 or higher hash function to provide replay-resistant authentication mechanisms for network access to privileged accounts.",
@@ -888,14 +888,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000157",
-        "satisfies": [
-          "FIA Reference:PP-MDM-414003"
-        ],
         "gid": "V-234364",
         "rid": "SV-234364r617408_rule",
         "stig_id": "SRG-APP-000157-UEM-000091",
-        "fix_id": "F-37514r614103_fix"
+        "fix_id": "F-37514r614103_fix",
+        "satisfies": [
+          "FIA Reference:PP-MDM-414003"
+        ],
+        "documentable": false
       },
       "id": "V-234364",
       "title": "The UEM server must implement replay-resistant authentication mechanisms for network access to non-privileged accounts.",
@@ -909,11 +909,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000163",
         "gid": "V-234366",
         "rid": "SV-234366r617355_rule",
         "stig_id": "SRG-APP-000163-UEM-000093",
-        "fix_id": "F-37516r614109_fix"
+        "fix_id": "F-37516r614109_fix",
+        "documentable": false
       },
       "id": "V-234366",
       "title": "The UEM server must disable identifiers (individuals, groups, roles, and devices) after 35 days of inactivity.",
@@ -927,11 +927,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000164",
         "gid": "V-234367",
         "rid": "SV-234367r617355_rule",
         "stig_id": "SRG-APP-000164-UEM-000094",
-        "fix_id": "F-37517r614112_fix"
+        "fix_id": "F-37517r614112_fix",
+        "documentable": false
       },
       "id": "V-234367",
       "title": "The UEM server must enforce a minimum 15-character password length.",
@@ -945,11 +945,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000165",
         "gid": "V-234368",
         "rid": "SV-234368r617355_rule",
         "stig_id": "SRG-APP-000165-UEM-000095",
-        "fix_id": "F-37518r614115_fix"
+        "fix_id": "F-37518r614115_fix",
+        "documentable": false
       },
       "id": "V-234368",
       "title": "The UEM server must prohibit password reuse for a minimum of five generations.",
@@ -963,11 +963,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000166",
         "gid": "V-234369",
         "rid": "SV-234369r617355_rule",
         "stig_id": "SRG-APP-000166-UEM-000096",
-        "fix_id": "F-37519r614118_fix"
+        "fix_id": "F-37519r614118_fix",
+        "documentable": false
       },
       "id": "V-234369",
       "title": "The UEM server must enforce password complexity by requiring that at least one uppercase character be used.",
@@ -981,11 +981,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000167",
         "gid": "V-234370",
         "rid": "SV-234370r617355_rule",
         "stig_id": "SRG-APP-000167-UEM-000097",
-        "fix_id": "F-37520r614121_fix"
+        "fix_id": "F-37520r614121_fix",
+        "documentable": false
       },
       "id": "V-234370",
       "title": "The UEM server must enforce password complexity by requiring that at least one lowercase character be used.",
@@ -999,11 +999,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000168",
         "gid": "V-234371",
         "rid": "SV-234371r617355_rule",
         "stig_id": "SRG-APP-000168-UEM-000098",
-        "fix_id": "F-37521r614124_fix"
+        "fix_id": "F-37521r614124_fix",
+        "documentable": false
       },
       "id": "V-234371",
       "title": "The UEM server must enforce password complexity by requiring that at least one numeric character be used.",
@@ -1017,11 +1017,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000169",
         "gid": "V-234372",
         "rid": "SV-234372r617355_rule",
         "stig_id": "SRG-APP-000169-UEM-000099",
-        "fix_id": "F-37522r614127_fix"
+        "fix_id": "F-37522r614127_fix",
+        "documentable": false
       },
       "id": "V-234372",
       "title": "The UEM server must enforce password complexity by requiring that at least one special character be used.",
@@ -1035,11 +1035,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000170",
         "gid": "V-234373",
         "rid": "SV-234373r617355_rule",
         "stig_id": "SRG-APP-000170-UEM-000100",
-        "fix_id": "F-37523r614130_fix"
+        "fix_id": "F-37523r614130_fix",
+        "documentable": false
       },
       "id": "V-234373",
       "title": "The UEM server must require the change of at least 15 of the total number of characters when passwords are changed.",
@@ -1053,11 +1053,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000171",
         "gid": "V-234374",
         "rid": "SV-234374r617355_rule",
         "stig_id": "SRG-APP-000171-UEM-000101",
-        "fix_id": "F-37524r614133_fix"
+        "fix_id": "F-37524r614133_fix",
+        "documentable": false
       },
       "id": "V-234374",
       "title": "For UEM server using password authentication, the application must store only cryptographic representations of passwords.",
@@ -1071,11 +1071,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172",
         "gid": "V-234375",
         "rid": "SV-234375r617355_rule",
         "stig_id": "SRG-APP-000172-UEM-000102",
-        "fix_id": "F-37525r614136_fix"
+        "fix_id": "F-37525r614136_fix",
+        "documentable": false
       },
       "id": "V-234375",
       "title": "For UEM server using password authentication, the network element must use FIPS-validated SHA-2 or later protocol to protect the integrity of the password authentication process.",
@@ -1089,11 +1089,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000173",
         "gid": "V-234376",
         "rid": "SV-234376r617355_rule",
         "stig_id": "SRG-APP-000173-UEM-000103",
-        "fix_id": "F-37526r614139_fix"
+        "fix_id": "F-37526r614139_fix",
+        "documentable": false
       },
       "id": "V-234376",
       "title": "The UEM server must enforce 24 hours/1 day as the minimum password lifetime.",
@@ -1107,11 +1107,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000174",
         "gid": "V-234377",
         "rid": "SV-234377r617355_rule",
         "stig_id": "SRG-APP-000174-UEM-000104",
-        "fix_id": "F-37527r614142_fix"
+        "fix_id": "F-37527r614142_fix",
+        "documentable": false
       },
       "id": "V-234377",
       "title": "The UEM server must enforce a 60-day maximum password lifetime restriction.",
@@ -1125,11 +1125,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175",
         "gid": "V-234378",
         "rid": "SV-234378r617412_rule",
         "stig_id": "SRG-APP-000175-UEM-000105",
-        "fix_id": "F-37528r614145_fix"
+        "fix_id": "F-37528r614145_fix",
+        "documentable": false
       },
       "id": "V-234378",
       "title": "When using PKI-based authentication for user access, the UEM server must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor.",
@@ -1143,11 +1143,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175",
         "gid": "V-234379",
         "rid": "SV-234379r617355_rule",
         "stig_id": "SRG-APP-000175-UEM-000106",
-        "fix_id": "F-37529r614148_fix"
+        "fix_id": "F-37529r614148_fix",
+        "documentable": false
       },
       "id": "V-234379",
       "title": "When the UEM server cannot establish a connection to determine the validity of a certificate, the server must be configured not to have the option to accept the certificate.",
@@ -1161,11 +1161,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176",
         "gid": "V-234380",
         "rid": "SV-234380r617355_rule",
         "stig_id": "SRG-APP-000176-UEM-000107",
-        "fix_id": "F-37530r614151_fix"
+        "fix_id": "F-37530r614151_fix",
+        "documentable": false
       },
       "id": "V-234380",
       "title": "The UEM server, when using PKI-based authentication, must enforce authorized access to the corresponding private key.",
@@ -1179,14 +1179,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000177",
-        "satisfies": [
-          "FIA Reference:PP-MDM-414003"
-        ],
         "gid": "V-234381",
         "rid": "SV-234381r617409_rule",
         "stig_id": "SRG-APP-000177-UEM-000108",
-        "fix_id": "F-37531r614154_fix"
+        "fix_id": "F-37531r614154_fix",
+        "satisfies": [
+          "FIA Reference:PP-MDM-414003"
+        ],
+        "documentable": false
       },
       "id": "V-234381",
       "title": "The UEM server must map the authenticated identity to the individual user or group account for PKI-based authentication.",
@@ -1200,11 +1200,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000178",
         "gid": "V-234382",
         "rid": "SV-234382r617355_rule",
         "stig_id": "SRG-APP-000178-UEM-000109",
-        "fix_id": "F-37532r614157_fix"
+        "fix_id": "F-37532r614157_fix",
+        "documentable": false
       },
       "id": "V-234382",
       "title": "The UEM server must obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
@@ -1218,11 +1218,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179",
         "gid": "V-234383",
         "rid": "SV-234383r617355_rule",
         "stig_id": "SRG-APP-000179-UEM-000110",
-        "fix_id": "F-37533r614160_fix"
+        "fix_id": "F-37533r614160_fix",
+        "documentable": false
       },
       "id": "V-234383",
       "title": "The UEM server must use FIPS-validated SHA-2 or higher hash function to protect the integrity of keyed-hash message authentication code (HMAC), Key Derivation Functions (KDFs), Random Bit Generation, and hash-only applications.",
@@ -1236,11 +1236,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000191",
         "gid": "V-234390",
         "rid": "SV-234390r617355_rule",
         "stig_id": "SRG-APP-000191-UEM-000117",
-        "fix_id": "F-37540r614181_fix"
+        "fix_id": "F-37540r614181_fix",
+        "documentable": false
       },
       "id": "V-234390",
       "title": "The UEM server must be configured to provide a trusted communication channel between itself and authorized IT entities using [selection: -IPsec, -SSH, -mutually authenticated TLS, -mutually authenticated DTLS, -HTTPS].",
@@ -1254,11 +1254,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000191",
         "gid": "V-234391",
         "rid": "SV-234391r617355_rule",
         "stig_id": "SRG-APP-000191-UEM-000118",
-        "fix_id": "F-37541r615961_fix"
+        "fix_id": "F-37541r615961_fix",
+        "documentable": false
       },
       "id": "V-234391",
       "title": "The UEM server must be configured to invoke either host-OS functionality or server functionality to provide a trusted communication channel between itself and remote administrators that provides assured identification of its endpoints and protection of the communicated data from modification and disclosure using [selection:-IPsec,-SSH,-TLS, -HTTPS].",
@@ -1272,11 +1272,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000191",
         "gid": "V-234392",
         "rid": "SV-234392r617355_rule",
         "stig_id": "SRG-APP-000191-UEM-000119",
-        "fix_id": "F-37542r615963_fix"
+        "fix_id": "F-37542r615963_fix",
+        "documentable": false
       },
       "id": "V-234392",
       "title": "The UEM server must be configured to invoke either host-OS functionality or server functionality to provide a trusted communication channel between itself and managed devices that provides assured identification of its endpoints and protection of the communicated data from modification and disclosure using [selection:-TLS, -HTTPS].",
@@ -1290,11 +1290,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219",
         "gid": "V-234405",
         "rid": "SV-234405r617355_rule",
         "stig_id": "SRG-APP-000219-UEM-000132",
-        "fix_id": "F-37555r614226_fix"
+        "fix_id": "F-37555r614226_fix",
+        "documentable": false
       },
       "id": "V-234405",
       "title": "The UEM server must protect the authenticity of communications sessions.",
@@ -1308,11 +1308,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000220",
         "gid": "V-234406",
         "rid": "SV-234406r617355_rule",
         "stig_id": "SRG-APP-000220-UEM-000133",
-        "fix_id": "F-37556r614229_fix"
+        "fix_id": "F-37556r614229_fix",
+        "documentable": false
       },
       "id": "V-234406",
       "title": "The UEM server must invalidate session identifiers upon user logout or other session termination.",
@@ -1326,11 +1326,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000223",
         "gid": "V-234407",
         "rid": "SV-234407r617355_rule",
         "stig_id": "SRG-APP-000223-UEM-000134",
-        "fix_id": "F-37557r614232_fix"
+        "fix_id": "F-37557r614232_fix",
+        "documentable": false
       },
       "id": "V-234407",
       "title": "The UEM server must recognize only system-generated session identifiers.",
@@ -1344,11 +1344,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000224",
         "gid": "V-234408",
         "rid": "SV-234408r617355_rule",
         "stig_id": "SRG-APP-000224-UEM-000135",
-        "fix_id": "F-37558r614235_fix"
+        "fix_id": "F-37558r614235_fix",
+        "documentable": false
       },
       "id": "V-234408",
       "title": "The UEM server must generate unique session identifiers using a FIPS-validated Random Number Generator (RNG) based on the Deterministic Random Bit Generators (DRBG) algorithm.",
@@ -1362,11 +1362,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000225",
         "gid": "V-234409",
         "rid": "SV-234409r617355_rule",
         "stig_id": "SRG-APP-000225-UEM-000136",
-        "fix_id": "F-37559r614238_fix"
+        "fix_id": "F-37559r614238_fix",
+        "documentable": false
       },
       "id": "V-234409",
       "title": "The UEM server must fail to a secure state if system initialization fails, shutdown fails, or aborts fail.",
@@ -1380,11 +1380,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000226",
         "gid": "V-234410",
         "rid": "SV-234410r617413_rule",
         "stig_id": "SRG-APP-000226-UEM-000137",
-        "fix_id": "F-37560r617413_fix"
+        "fix_id": "F-37560r617413_fix",
+        "documentable": false
       },
       "id": "V-234410",
       "title": "In the event of a system failure, the UEM server must preserve any information necessary to determine cause of failure and any information necessary to return to operations with least disruption to mission processes.",
@@ -1398,11 +1398,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251",
         "gid": "V-234421",
         "rid": "SV-234421r617398_rule",
         "stig_id": "SRG-APP-000251-UEM-000148",
-        "fix_id": "F-37571r614274_fix"
+        "fix_id": "F-37571r614274_fix",
+        "documentable": false
       },
       "id": "V-234421",
       "title": "The UEM server must check the validity of all data inputs.",
@@ -1416,11 +1416,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266",
         "gid": "V-234424",
         "rid": "SV-234424r617355_rule",
         "stig_id": "SRG-APP-000266-UEM-000151",
-        "fix_id": "F-37574r614283_fix"
+        "fix_id": "F-37574r614283_fix",
+        "documentable": false
       },
       "id": "V-234424",
       "title": "The UEM server must generate error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries.",
@@ -1434,11 +1434,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000267",
         "gid": "V-234425",
         "rid": "SV-234425r617355_rule",
         "stig_id": "SRG-APP-000267-UEM-000152",
-        "fix_id": "F-37575r614286_fix"
+        "fix_id": "F-37575r614286_fix",
+        "documentable": false
       },
       "id": "V-234425",
       "title": "The UEM server must reveal error messages only to the Information System Security Manager (ISSM) and Information System Security Officer (ISSO).",
@@ -1452,11 +1452,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000268",
         "gid": "V-234426",
         "rid": "SV-234426r617355_rule",
         "stig_id": "SRG-APP-000268-UEM-000153",
-        "fix_id": "F-37576r614289_fix"
+        "fix_id": "F-37576r614289_fix",
+        "documentable": false
       },
       "id": "V-234426",
       "title": "The UEM server must, when a component failure is detected, activate an organization-defined alarm and/or automatically shut down the application or the component.",
@@ -1470,11 +1470,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000275",
         "gid": "V-234430",
         "rid": "SV-234430r617355_rule",
         "stig_id": "SRG-APP-000275-UEM-000157",
-        "fix_id": "F-37580r614301_fix"
+        "fix_id": "F-37580r614301_fix",
+        "documentable": false
       },
       "id": "V-234430",
       "title": "The application must notify the Information System Security Manager (ISSM) and Information System Security Officer (ISSO) of failed security verification tests.",
@@ -1488,11 +1488,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000291",
         "gid": "V-234438",
         "rid": "SV-234438r617355_rule",
         "stig_id": "SRG-APP-000291-UEM-000165",
-        "fix_id": "F-37588r614325_fix"
+        "fix_id": "F-37588r614325_fix",
+        "documentable": false
       },
       "id": "V-234438",
       "title": "The UEM server must notify system administrators and the Information System Security Officer (ISSO) when accounts are created.",
@@ -1506,11 +1506,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000292",
         "gid": "V-234439",
         "rid": "SV-234439r617355_rule",
         "stig_id": "SRG-APP-000292-UEM-000166",
-        "fix_id": "F-37589r614328_fix"
+        "fix_id": "F-37589r614328_fix",
+        "documentable": false
       },
       "id": "V-234439",
       "title": "The UEM server must notify system administrators and the Information System Security Officer (ISSO) when accounts are modified.",
@@ -1524,11 +1524,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000293",
         "gid": "V-234440",
         "rid": "SV-234440r617355_rule",
         "stig_id": "SRG-APP-000293-UEM-000167",
-        "fix_id": "F-37590r614331_fix"
+        "fix_id": "F-37590r614331_fix",
+        "documentable": false
       },
       "id": "V-234440",
       "title": "The UEM server must notify system administrators and the Information System Security Officer (ISSO) for account disabling actions.",
@@ -1542,11 +1542,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000294",
         "gid": "V-234441",
         "rid": "SV-234441r617414_rule",
         "stig_id": "SRG-APP-000294-UEM-000168",
-        "fix_id": "F-37591r614334_fix"
+        "fix_id": "F-37591r614334_fix",
+        "documentable": false
       },
       "id": "V-234441",
       "title": "The UEM server must notify system administrators and the Information System Security Officer (ISSO) for account removal actions.",
@@ -1560,11 +1560,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295",
         "gid": "V-234442",
         "rid": "SV-234442r617355_rule",
         "stig_id": "SRG-APP-000295-UEM-000169",
-        "fix_id": "F-37592r614337_fix"
+        "fix_id": "F-37592r614337_fix",
+        "documentable": false
       },
       "id": "V-234442",
       "title": "The UEM server must automatically terminate a user session after an organization-defined period of user inactivity.",
@@ -1578,11 +1578,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000296",
         "gid": "V-234443",
         "rid": "SV-234443r617355_rule",
         "stig_id": "SRG-APP-000296-UEM-000170",
-        "fix_id": "F-37593r614340_fix"
+        "fix_id": "F-37593r614340_fix",
+        "documentable": false
       },
       "id": "V-234443",
       "title": "The UEM server must provide logout capability for user-initiated communication sessions.",
@@ -1596,11 +1596,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000297",
         "gid": "V-234444",
         "rid": "SV-234444r617355_rule",
         "stig_id": "SRG-APP-000297-UEM-000171",
-        "fix_id": "F-37594r614343_fix"
+        "fix_id": "F-37594r614343_fix",
+        "documentable": false
       },
       "id": "V-234444",
       "title": "The UEM server must display an explicit logout message to users indicating the reliable termination of authenticated communications sessions.",
@@ -1614,11 +1614,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000319",
         "gid": "V-234465",
         "rid": "SV-234465r617355_rule",
         "stig_id": "SRG-APP-000319-UEM-000192",
-        "fix_id": "F-37615r614406_fix"
+        "fix_id": "F-37615r614406_fix",
+        "documentable": false
       },
       "id": "V-234465",
       "title": "The UEM server must automatically audit account-enabling actions.",
@@ -1632,11 +1632,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000320",
         "gid": "V-234466",
         "rid": "SV-234466r617399_rule",
         "stig_id": "SRG-APP-000320-UEM-000193",
-        "fix_id": "F-37616r614409_fix"
+        "fix_id": "F-37616r614409_fix",
+        "documentable": false
       },
       "id": "V-234466",
       "title": "The UEM server must notify system administrator and Information System Security Officer (ISSO) of account enabling actions.",
@@ -1650,11 +1650,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000327",
         "gid": "V-234473",
         "rid": "SV-234473r617355_rule",
         "stig_id": "SRG-APP-000327-UEM-000200",
-        "fix_id": "F-37623r614430_fix"
+        "fix_id": "F-37623r614430_fix",
+        "documentable": false
       },
       "id": "V-234473",
       "title": "The UEM server must employ an audited override of automated access control mechanisms under organization-defined conditions.",
@@ -1668,11 +1668,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000329",
         "gid": "V-234475",
         "rid": "SV-234475r617355_rule",
         "stig_id": "SRG-APP-000329-UEM-000202",
-        "fix_id": "F-37625r615069_fix"
+        "fix_id": "F-37625r615069_fix",
+        "documentable": false
       },
       "id": "V-234475",
       "title": "The UEM server must be configured to have at least one user in defined administrator roles.",
@@ -1686,11 +1686,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000343",
         "gid": "V-234489",
         "rid": "SV-234489r617355_rule",
         "stig_id": "SRG-APP-000343-UEM-000216",
-        "fix_id": "F-37639r615111_fix"
+        "fix_id": "F-37639r615111_fix",
+        "documentable": false
       },
       "id": "V-234489",
       "title": "The UEM server must audit the execution of privileged functions.",
@@ -1704,11 +1704,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000345",
         "gid": "V-234491",
         "rid": "SV-234491r617355_rule",
         "stig_id": "SRG-APP-000345-UEM-000218",
-        "fix_id": "F-37641r615117_fix"
+        "fix_id": "F-37641r615117_fix",
+        "documentable": false
       },
       "id": "V-234491",
       "title": "The UEM server must automatically lock the account until the locked account is released by an administrator when three unsuccessful login attempts in 15 minutes are exceeded.",
@@ -1722,11 +1722,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000358",
         "gid": "V-234500",
         "rid": "SV-234500r617411_rule",
         "stig_id": "SRG-APP-000358-UEM-000228",
-        "fix_id": "F-37650r615144_fix"
+        "fix_id": "F-37650r615144_fix",
+        "documentable": false
       },
       "id": "V-234500",
       "title": "The UEM server must be configured to transfer UEM server logs to another server for storage, analysis, and reporting. Note: UEM server logs include logs of UEM events and logs transferred to the UEM server by UEM agents of managed devices.",
@@ -1740,11 +1740,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000374",
         "gid": "V-234516",
         "rid": "SV-234516r617355_rule",
         "stig_id": "SRG-APP-000374-UEM-000244",
-        "fix_id": "F-37666r615192_fix"
+        "fix_id": "F-37666r615192_fix",
+        "documentable": false
       },
       "id": "V-234516",
       "title": "The UEM server must be configured to record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).",
@@ -1758,11 +1758,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000375",
         "gid": "V-234517",
         "rid": "SV-234517r617355_rule",
         "stig_id": "SRG-APP-000375-UEM-000245",
-        "fix_id": "F-37667r615195_fix"
+        "fix_id": "F-37667r615195_fix",
+        "documentable": false
       },
       "id": "V-234517",
       "title": "The UEM server must be configured to record time stamps for audit records that meet a granularity of one second for a minimum degree of precision.",
@@ -1776,11 +1776,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000377",
         "gid": "V-234519",
         "rid": "SV-234519r617355_rule",
         "stig_id": "SRG-APP-000377-UEM-000247",
-        "fix_id": "F-37669r615201_fix"
+        "fix_id": "F-37669r615201_fix",
+        "documentable": false
       },
       "id": "V-234519",
       "title": "The UEM server must verify the digital signature of software before installation and alert the Information System Security Officer (ISSO), Information System Security Manager (ISSM), and other designated personnel if unauthorized software is detected.",
@@ -1794,11 +1794,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378",
         "gid": "V-234520",
         "rid": "SV-234520r617355_rule",
         "stig_id": "SRG-APP-000378-UEM-000248",
-        "fix_id": "F-37670r615204_fix"
+        "fix_id": "F-37670r615204_fix",
+        "documentable": false
       },
       "id": "V-234520",
       "title": "The UEM server must prohibit user installation of software by an administrator without the appropriate assigned permission for software installation.",
@@ -1812,11 +1812,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378",
         "gid": "V-234521",
         "rid": "SV-234521r617355_rule",
         "stig_id": "SRG-APP-000378-UEM-000249",
-        "fix_id": "F-37671r615207_fix"
+        "fix_id": "F-37671r615207_fix",
+        "documentable": false
       },
       "id": "V-234521",
       "title": "The UEM server must be configured to only allow enrolled devices that are compliant with UEM policies and assigned to a user in the application access group to download applications.",
@@ -1830,11 +1830,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380",
         "gid": "V-234523",
         "rid": "SV-234523r617355_rule",
         "stig_id": "SRG-APP-000380-UEM-000251",
-        "fix_id": "F-37673r615213_fix"
+        "fix_id": "F-37673r615213_fix",
+        "documentable": false
       },
       "id": "V-234523",
       "title": "The UEM server must enforce access restrictions associated with changes to the server configuration.",
@@ -1848,11 +1848,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000381",
         "gid": "V-234524",
         "rid": "SV-234524r617355_rule",
         "stig_id": "SRG-APP-000381-UEM-000252",
-        "fix_id": "F-37674r615216_fix"
+        "fix_id": "F-37674r615216_fix",
+        "documentable": false
       },
       "id": "V-234524",
       "title": "The UEM server must audit the enforcement actions used to restrict access associated with changes to the application.",
@@ -1866,11 +1866,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383",
         "gid": "V-234526",
         "rid": "SV-234526r617355_rule",
         "stig_id": "SRG-APP-000383-UEM-000254",
-        "fix_id": "F-37676r615222_fix"
+        "fix_id": "F-37676r615222_fix",
+        "documentable": false
       },
       "id": "V-234526",
       "title": "The UEM server must disable organization-defined functions, ports, protocols, and services (within the application) deemed unnecessary and/or non-secure.",
@@ -1884,11 +1884,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000389",
         "gid": "V-234532",
         "rid": "SV-234532r617355_rule",
         "stig_id": "SRG-APP-000389-UEM-000260",
-        "fix_id": "F-37682r615240_fix"
+        "fix_id": "F-37682r615240_fix",
+        "documentable": false
       },
       "id": "V-234532",
       "title": "The UEM server must require users (administrators) to reauthenticate when roles change.",
@@ -1902,11 +1902,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000390",
         "gid": "V-234533",
         "rid": "SV-234533r617355_rule",
         "stig_id": "SRG-APP-000390-UEM-000261",
-        "fix_id": "F-37683r615243_fix"
+        "fix_id": "F-37683r615243_fix",
+        "documentable": false
       },
       "id": "V-234533",
       "title": "The UEM server must require end-point devices to reauthenticate when organization-defined circumstances or situations requiring reauthentication.",
@@ -1920,11 +1920,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000395",
         "gid": "V-234538",
         "rid": "SV-234538r617415_rule",
         "stig_id": "SRG-APP-000395-UEM-000266",
-        "fix_id": "F-37688r615984_fix"
+        "fix_id": "F-37688r615984_fix",
+        "documentable": false
       },
       "id": "V-234538",
       "title": "Before establishing a connection to any endpoint device being managed, the UEM server must establish a trusted path between the server and endpoint that provides assured identification of the end point using a bidirectional authentication mechanism configured with a FIPS-validated Advanced Encryption Standard (AES) cipher block algorithm to authenticate with the device.",
@@ -1938,11 +1938,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000400",
         "gid": "V-234543",
         "rid": "SV-234543r617355_rule",
         "stig_id": "SRG-APP-000400-UEM-000271",
-        "fix_id": "F-37693r615273_fix"
+        "fix_id": "F-37693r615273_fix",
+        "documentable": false
       },
       "id": "V-234543",
       "title": "The UEM server must prohibit the use of cached authenticators after an organization-defined time period.",
@@ -1956,11 +1956,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000401",
         "gid": "V-234544",
         "rid": "SV-234544r617355_rule",
         "stig_id": "SRG-APP-000401-UEM-000272",
-        "fix_id": "F-37694r615276_fix"
+        "fix_id": "F-37694r615276_fix",
+        "documentable": false
       },
       "id": "V-234544",
       "title": "The UEM server, for PKI-based authentication, must implement a local cache of revocation data to support path discovery and validation in case of the inability to access revocation information via the network.",
@@ -1974,11 +1974,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000412",
         "gid": "V-234555",
         "rid": "SV-234555r617355_rule",
         "stig_id": "SRG-APP-000412-UEM-000283",
-        "fix_id": "F-37705r615309_fix"
+        "fix_id": "F-37705r615309_fix",
+        "documentable": false
       },
       "id": "V-234555",
       "title": "The UEM server must configure web management tools with FIPS-validated Advanced Encryption Standard (AES) cipher block algorithm to protect the confidentiality of maintenance and diagnostic communications for nonlocal maintenance sessions.",
@@ -1992,11 +1992,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000413",
         "gid": "V-234556",
         "rid": "SV-234556r617355_rule",
         "stig_id": "SRG-APP-000413-UEM-000284",
-        "fix_id": "F-37706r615312_fix"
+        "fix_id": "F-37706r615312_fix",
+        "documentable": false
       },
       "id": "V-234556",
       "title": "The UEM server must verify remote disconnection when non-local maintenance and diagnostic sessions are terminated.",
@@ -2010,11 +2010,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427",
         "gid": "V-234573",
         "rid": "SV-234573r617355_rule",
         "stig_id": "SRG-APP-000427-UEM-000298",
-        "fix_id": "F-37723r615354_fix"
+        "fix_id": "F-37723r615354_fix",
+        "documentable": false
       },
       "id": "V-234573",
       "title": "The UEM server must only allow the use of DoD PKI established certificate authorities for verification of the establishment of protected sessions.",
@@ -2028,11 +2028,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427",
         "gid": "V-234574",
         "rid": "SV-234574r617355_rule",
         "stig_id": "SRG-APP-000427-UEM-000299",
-        "fix_id": "F-37724r615357_fix"
+        "fix_id": "F-37724r615357_fix",
+        "documentable": false
       },
       "id": "V-234574",
       "title": "The UEM server must be configured to use X.509v3 certificates for code signing for system software updates.",
@@ -2046,11 +2046,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427",
         "gid": "V-234575",
         "rid": "SV-234575r617355_rule",
         "stig_id": "SRG-APP-000427-UEM-000300",
-        "fix_id": "F-37725r615360_fix"
+        "fix_id": "F-37725r615360_fix",
+        "documentable": false
       },
       "id": "V-234575",
       "title": "The UEM server must be configured to use X.509v3 certificates for code signing for integrity verification.",
@@ -2064,11 +2064,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000439",
         "gid": "V-234588",
         "rid": "SV-234588r617355_rule",
         "stig_id": "SRG-APP-000439-UEM-000313",
-        "fix_id": "F-37738r615399_fix"
+        "fix_id": "F-37738r615399_fix",
+        "documentable": false
       },
       "id": "V-234588",
       "title": "The UEM server must connect to [assignment: [list of applications]] and managed mobile devices with an authenticated and secure (encrypted) connection to protect the confidentiality and integrity of transmitted information.",
@@ -2082,11 +2082,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000447",
         "gid": "V-234596",
         "rid": "SV-234596r617355_rule",
         "stig_id": "SRG-APP-000447-UEM-000321",
-        "fix_id": "F-37746r615423_fix"
+        "fix_id": "F-37746r615423_fix",
+        "documentable": false
       },
       "id": "V-234596",
       "title": "The UEM server must be configured to write to the server event log when invalid inputs are received.",
@@ -2100,11 +2100,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000454",
         "gid": "V-234603",
         "rid": "SV-234603r617355_rule",
         "stig_id": "SRG-APP-000454-UEM-000328",
-        "fix_id": "F-37753r615444_fix"
+        "fix_id": "F-37753r615444_fix",
+        "documentable": false
       },
       "id": "V-234603",
       "title": "The UEM server must remove old software components after updated versions have been installed.",
@@ -2118,11 +2118,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000456",
         "gid": "V-234605",
         "rid": "SV-234605r617355_rule",
         "stig_id": "SRG-APP-000456-UEM-000330",
-        "fix_id": "F-37755r615450_fix"
+        "fix_id": "F-37755r615450_fix",
+        "documentable": false
       },
       "id": "V-234605",
       "title": "The UEM server must be maintained at a supported version.",
@@ -2136,11 +2136,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000472",
         "gid": "V-234622",
         "rid": "SV-234622r617355_rule",
         "stig_id": "SRG-APP-000472-UEM-000347",
-        "fix_id": "F-37772r616002_fix"
+        "fix_id": "F-37772r616002_fix",
+        "documentable": false
       },
       "id": "V-234622",
       "title": "The UEM server must be configured with the periodicity of the following commands to the agent of six hours or less: - query connectivity status - query the current version of the managed device firmware/software - query the current version of installed mobile applications - read audit logs kept by the managed device.",
@@ -2154,11 +2154,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000473",
         "gid": "V-234623",
         "rid": "SV-234623r617355_rule",
         "stig_id": "SRG-APP-000473-UEM-000348",
-        "fix_id": "F-37773r615504_fix"
+        "fix_id": "F-37773r615504_fix",
+        "documentable": false
       },
       "id": "V-234623",
       "title": "The UEM server must run a suite of self-tests during initial start-up (power on) to demonstrate correct operation of the server.",
@@ -2172,11 +2172,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000474",
         "gid": "V-234624",
         "rid": "SV-234624r617355_rule",
         "stig_id": "SRG-APP-000474-UEM-000349",
-        "fix_id": "F-37774r615507_fix"
+        "fix_id": "F-37774r615507_fix",
+        "documentable": false
       },
       "id": "V-234624",
       "title": "The UEM server must alert the system administrator when anomalies in the operation of security functions are discovered.",
@@ -2190,11 +2190,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000479",
         "gid": "V-234629",
         "rid": "SV-234629r617355_rule",
         "stig_id": "SRG-APP-000479-UEM-000354",
-        "fix_id": "F-37779r615522_fix"
+        "fix_id": "F-37779r615522_fix",
+        "documentable": false
       },
       "id": "V-234629",
       "title": "The UEM server must be configured to verify software updates to the server using a digital signature mechanism prior to installing those updates.",
@@ -2208,11 +2208,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492",
         "gid": "V-234642",
         "rid": "SV-234642r617355_rule",
         "stig_id": "SRG-APP-000492-UEM-000367",
-        "fix_id": "F-37792r615561_fix"
+        "fix_id": "F-37792r615561_fix",
+        "documentable": false
       },
       "id": "V-234642",
       "title": "The UEM server must generate audit records when successful/unsuccessful attempts to access security objects occur.",
@@ -2226,11 +2226,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495",
         "gid": "V-234645",
         "rid": "SV-234645r617401_rule",
         "stig_id": "SRG-APP-000495-UEM-000370",
-        "fix_id": "F-37795r615570_fix"
+        "fix_id": "F-37795r615570_fix",
+        "documentable": false
       },
       "id": "V-234645",
       "title": "The UEM server must generate audit records when successful/unsuccessful attempts to modify privileges occur.",
@@ -2244,11 +2244,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496",
         "gid": "V-234646",
         "rid": "SV-234646r617355_rule",
         "stig_id": "SRG-APP-000496-UEM-000371",
-        "fix_id": "F-37796r615573_fix"
+        "fix_id": "F-37796r615573_fix",
+        "documentable": false
       },
       "id": "V-234646",
       "title": "The UEM server must generate audit records when successful/unsuccessful attempts to modify security objects occur.",
@@ -2262,11 +2262,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499",
         "gid": "V-234649",
         "rid": "SV-234649r617355_rule",
         "stig_id": "SRG-APP-000499-UEM-000374",
-        "fix_id": "F-37799r615582_fix"
+        "fix_id": "F-37799r615582_fix",
+        "documentable": false
       },
       "id": "V-234649",
       "title": "The UEM server must generate audit records when successful/unsuccessful attempts to delete privileges occur.",
@@ -2280,11 +2280,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501",
         "gid": "V-234651",
         "rid": "SV-234651r617355_rule",
         "stig_id": "SRG-APP-000501-UEM-000376",
-        "fix_id": "F-37801r615588_fix"
+        "fix_id": "F-37801r615588_fix",
+        "documentable": false
       },
       "id": "V-234651",
       "title": "The UEM server must generate audit records when successful/unsuccessful attempts to delete security objects occur.",
@@ -2298,11 +2298,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503",
         "gid": "V-234653",
         "rid": "SV-234653r617355_rule",
         "stig_id": "SRG-APP-000503-UEM-000378",
-        "fix_id": "F-37803r615594_fix"
+        "fix_id": "F-37803r615594_fix",
+        "documentable": false
       },
       "id": "V-234653",
       "title": "The UEM server must generate audit records when successful/unsuccessful logon attempts occur.",
@@ -2316,11 +2316,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504",
         "gid": "V-234654",
         "rid": "SV-234654r617355_rule",
         "stig_id": "SRG-APP-000504-UEM-000379",
-        "fix_id": "F-37804r615597_fix"
+        "fix_id": "F-37804r615597_fix",
+        "documentable": false
       },
       "id": "V-234654",
       "title": "The UEM server must generate audit records for privileged activities or other system-level access.",
@@ -2334,11 +2334,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000505",
         "gid": "V-234655",
         "rid": "SV-234655r617355_rule",
         "stig_id": "SRG-APP-000505-UEM-000380",
-        "fix_id": "F-37805r615600_fix"
+        "fix_id": "F-37805r615600_fix",
+        "documentable": false
       },
       "id": "V-234655",
       "title": "The UEM server must generate audit records showing starting and ending time for user access to the system.",
@@ -2352,11 +2352,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000506",
         "gid": "V-234656",
         "rid": "SV-234656r617355_rule",
         "stig_id": "SRG-APP-000506-UEM-000381",
-        "fix_id": "F-37806r615603_fix"
+        "fix_id": "F-37806r615603_fix",
+        "documentable": false
       },
       "id": "V-234656",
       "title": "The UEM server must generate audit records when concurrent logons from different workstations occur.",
@@ -2370,11 +2370,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507",
         "gid": "V-234657",
         "rid": "SV-234657r617355_rule",
         "stig_id": "SRG-APP-000507-UEM-000382",
-        "fix_id": "F-37807r615606_fix"
+        "fix_id": "F-37807r615606_fix",
+        "documentable": false
       },
       "id": "V-234657",
       "title": "The UEM server must generate audit records when successful/unsuccessful accesses to objects occur.",
@@ -2388,11 +2388,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000508",
         "gid": "V-234658",
         "rid": "SV-234658r617355_rule",
         "stig_id": "SRG-APP-000508-UEM-000383",
-        "fix_id": "F-37808r615609_fix"
+        "fix_id": "F-37808r615609_fix",
+        "documentable": false
       },
       "id": "V-234658",
       "title": "The UEM server must generate audit records for all direct access to the information system.",
@@ -2406,11 +2406,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000509",
         "gid": "V-234659",
         "rid": "SV-234659r617355_rule",
         "stig_id": "SRG-APP-000509-UEM-000384",
-        "fix_id": "F-37809r615612_fix"
+        "fix_id": "F-37809r615612_fix",
+        "documentable": false
       },
       "id": "V-234659",
       "title": "The UEM server must generate audit records for all account creations, modifications, disabling, and termination events.",
@@ -2424,11 +2424,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000514",
         "gid": "V-234664",
         "rid": "SV-234664r617355_rule",
         "stig_id": "SRG-APP-000514-UEM-000389",
-        "fix_id": "F-37814r615627_fix"
+        "fix_id": "F-37814r615627_fix",
+        "documentable": false
       },
       "id": "V-234664",
       "title": "The UEM server must use a FIPS-validated cryptographic module to generate cryptographic hashes.",
@@ -2442,11 +2442,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000515",
         "gid": "V-234665",
         "rid": "SV-234665r617355_rule",
         "stig_id": "SRG-APP-000515-UEM-000390",
-        "fix_id": "F-37815r615630_fix"
+        "fix_id": "F-37815r615630_fix",
+        "documentable": false
       },
       "id": "V-234665",
       "title": "The UEM server must, at a minimum, off-load audit logs of interconnected systems in real time and off-load standalone systems weekly.",
@@ -2460,11 +2460,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234666",
         "rid": "SV-234666r617355_rule",
         "stig_id": "SRG-APP-000516-UEM-000391",
-        "fix_id": "F-37816r615633_fix"
+        "fix_id": "F-37816r615633_fix",
+        "documentable": false
       },
       "id": "V-234666",
       "title": "The UEM server must be configured in accordance with the security configuration settings based on DoD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.",
@@ -2478,11 +2478,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234667",
         "rid": "SV-234667r617355_rule",
         "stig_id": "SRG-APP-000516-UEM-000392",
-        "fix_id": "F-37817r615636_fix"
+        "fix_id": "F-37817r615636_fix",
+        "documentable": false
       },
       "id": "V-234667",
       "title": "The UEM server must be configured to allow authorized administrators to read all audit data from audit records on the server.",
@@ -2496,11 +2496,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000555",
         "gid": "V-234668",
         "rid": "SV-234668r617355_rule",
         "stig_id": "SRG-APP-000555-UEM-000393",
-        "fix_id": "F-37818r615639_fix"
+        "fix_id": "F-37818r615639_fix",
+        "documentable": false
       },
       "id": "V-234668",
       "title": "The UEM server must be configured to implement FIPS 140-2 mode for all server and agent encryption.",
@@ -2514,11 +2514,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000560",
         "gid": "V-234669",
         "rid": "SV-234669r617355_rule",
         "stig_id": "SRG-APP-000560-UEM-000394",
-        "fix_id": "F-37819r615642_fix"
+        "fix_id": "F-37819r615642_fix",
+        "documentable": false
       },
       "id": "V-234669",
       "title": "The UEM server must be configured to prohibit client negotiation to TLS 1.1, TLS 1.0, SSL 2.0, or SSL 3.0.",
@@ -2532,11 +2532,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000580",
         "gid": "V-234673",
         "rid": "SV-234673r617355_rule",
         "stig_id": "SRG-APP-000580-UEM-000398",
-        "fix_id": "F-37823r615654_fix"
+        "fix_id": "F-37823r615654_fix",
+        "documentable": false
       },
       "id": "V-234673",
       "title": "The UEM server must authenticate endpoint devices (servers) before establishing a local, remote, and/or network connection using bidirectional authentication that is cryptographically based.",
@@ -2550,11 +2550,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000585",
         "gid": "V-234674",
         "rid": "SV-234674r617355_rule",
         "stig_id": "SRG-APP-000585-UEM-000399",
-        "fix_id": "F-37824r615657_fix"
+        "fix_id": "F-37824r615657_fix",
+        "documentable": false
       },
       "id": "V-234674",
       "title": "If cipher suites using pre-shared keys are used for device authentication, the UEM server must have a minimum security strength of 112 bits or higher.",
@@ -2568,11 +2568,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000605",
         "gid": "V-234676",
         "rid": "SV-234676r617355_rule",
         "stig_id": "SRG-APP-000605-UEM-000401",
-        "fix_id": "F-37826r615663_fix"
+        "fix_id": "F-37826r615663_fix",
+        "documentable": false
       },
       "id": "V-234676",
       "title": "The UEM server must validate certificates used for Transport Layer Security (TLS) functions by performing RFC 5280-compliant certification path validation.",
@@ -2586,11 +2586,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000610",
         "gid": "V-234677",
         "rid": "SV-234677r617355_rule",
         "stig_id": "SRG-APP-000610-UEM-000402",
-        "fix_id": "F-37827r615666_fix"
+        "fix_id": "F-37827r615666_fix",
+        "documentable": false
       },
       "id": "V-234677",
       "title": "The application must use FIPS-validated SHA-256 or higher hash function for digital signature generation and verification.",
@@ -2602,7 +2602,5 @@
       }
     }
   ],
-  "name": "UEM_Server_SRG",
-  "title": "Unified Endpoint Management Server Security Requirements Guide",
-  "summary": "This Security Requirements Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "UEM_Server_SRG"
 }

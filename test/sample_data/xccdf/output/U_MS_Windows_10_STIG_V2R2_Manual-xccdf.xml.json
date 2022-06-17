@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220697",
         "rid": "SV-220697r569187_rule",
         "stig_id": "WN10-00-000005",
-        "fix_id": "F-22401r554577_fix"
+        "fix_id": "F-22401r554577_fix",
+        "documentable": false
       },
       "id": "V-220697",
       "title": "Domain-joined systems must use Windows 10 Enterprise Edition 64-bit version.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220698",
         "rid": "SV-220698r569187_rule",
         "stig_id": "WN10-00-000010",
-        "fix_id": "F-22402r554580_fix"
+        "fix_id": "F-22402r554580_fix",
+        "documentable": false
       },
       "id": "V-220698",
       "title": "Windows 10 domain-joined systems must have a Trusted Platform Module (TPM) enabled and ready for use.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220699",
         "rid": "SV-220699r569187_rule",
         "stig_id": "WN10-00-000015",
-        "fix_id": "F-22403r554583_fix"
+        "fix_id": "F-22403r554583_fix",
+        "documentable": false
       },
       "id": "V-220699",
       "title": "Windows 10 systems must have Unified Extensible Firmware Interface (UEFI) firmware and be configured to run in UEFI mode, not Legacy BIOS.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220700",
         "rid": "SV-220700r569187_rule",
         "stig_id": "WN10-00-000020",
-        "fix_id": "F-22404r554586_fix"
+        "fix_id": "F-22404r554586_fix",
+        "documentable": false
       },
       "id": "V-220700",
       "title": "Secure Boot must be enabled on Windows 10 systems.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000191-GPOS-00080",
         "gid": "V-220701",
         "rid": "SV-220701r569187_rule",
         "stig_id": "WN10-00-000025",
-        "fix_id": "F-22405r641865_fix"
+        "fix_id": "F-22405r641865_fix",
+        "documentable": false
       },
       "id": "V-220701",
       "title": "Windows 10 must employ automated mechanisms to determine the state of system components with regard to flaw remediation using the following frequency: continuously, where HBSS is used; 30 days, for any additional internal network scans not covered by HBSS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP).",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
         "gid": "V-220702",
         "rid": "SV-220702r569228_rule",
         "stig_id": "WN10-00-000030",
-        "fix_id": "F-22406r554592_fix"
+        "fix_id": "F-22406r554592_fix",
+        "documentable": false
       },
       "id": "V-220702",
       "title": "Windows 10 information systems must use BitLocker to encrypt all disks to protect the confidentiality and integrity of all information at rest.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
         "gid": "V-220703",
         "rid": "SV-220703r569288_rule",
         "stig_id": "WN10-00-000031",
-        "fix_id": "F-22407r554595_fix"
+        "fix_id": "F-22407r554595_fix",
+        "documentable": false
       },
       "id": "V-220703",
       "title": "Windows 10 systems must use a BitLocker PIN for pre-boot authentication.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
         "gid": "V-220704",
         "rid": "SV-220704r569290_rule",
         "stig_id": "WN10-00-000032",
-        "fix_id": "F-22408r554598_fix"
+        "fix_id": "F-22408r554598_fix",
+        "documentable": false
       },
       "id": "V-220704",
       "title": "Windows 10 systems must use a BitLocker PIN with a minimum length of 6 digits for pre-boot authentication.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000370-GPOS-00155",
         "gid": "V-220705",
         "rid": "SV-220705r569187_rule",
         "stig_id": "WN10-00-000035",
-        "fix_id": "F-22409r554601_fix"
+        "fix_id": "F-22409r554601_fix",
+        "documentable": false
       },
       "id": "V-220705",
       "title": "The operating system must employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220706",
         "rid": "SV-220706r646212_rule",
         "stig_id": "WN10-00-000040",
-        "fix_id": "F-22410r646211_fix"
+        "fix_id": "F-22410r646211_fix",
+        "documentable": false
       },
       "id": "V-220706",
       "title": "Windows 10 systems must be maintained at a supported servicing level.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220707",
         "rid": "SV-220707r569187_rule",
         "stig_id": "WN10-00-000045",
-        "fix_id": "F-22411r641868_fix"
+        "fix_id": "F-22411r641868_fix",
+        "documentable": false
       },
       "id": "V-220707",
       "title": "The Windows 10 system must use an anti-virus program.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-220708",
         "rid": "SV-220708r569187_rule",
         "stig_id": "WN10-00-000050",
-        "fix_id": "F-22412r554610_fix"
+        "fix_id": "F-22412r554610_fix",
+        "documentable": false
       },
       "id": "V-220708",
       "title": "Local volumes must be formatted using NTFS.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220709",
         "rid": "SV-220709r569187_rule",
         "stig_id": "WN10-00-000055",
-        "fix_id": "F-22413r554613_fix"
+        "fix_id": "F-22413r554613_fix",
+        "documentable": false
       },
       "id": "V-220709",
       "title": "Alternate operating systems must not be permitted on the same system.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-220710",
         "rid": "SV-220710r569187_rule",
         "stig_id": "WN10-00-000060",
-        "fix_id": "F-22414r554616_fix"
+        "fix_id": "F-22414r554616_fix",
+        "documentable": false
       },
       "id": "V-220710",
       "title": "Non system-created file shares on a system must limit access to groups that require it.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000118-GPOS-00060",
         "gid": "V-220711",
         "rid": "SV-220711r569187_rule",
         "stig_id": "WN10-00-000065",
-        "fix_id": "F-22415r554619_fix"
+        "fix_id": "F-22415r554619_fix",
+        "documentable": false
       },
       "id": "V-220711",
       "title": "Unused accounts must be disabled or removed from the system after 35 days of inactivity.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220712",
         "rid": "SV-220712r569187_rule",
         "stig_id": "WN10-00-000070",
-        "fix_id": "F-22416r554622_fix"
+        "fix_id": "F-22416r554622_fix",
+        "documentable": false
       },
       "id": "V-220712",
       "title": "Only accounts responsible for the administration of a system must have Administrator rights on the system.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220713",
         "rid": "SV-220713r569187_rule",
         "stig_id": "WN10-00-000075",
-        "fix_id": "F-22417r554625_fix"
+        "fix_id": "F-22417r554625_fix",
+        "documentable": false
       },
       "id": "V-220713",
       "title": "Only accounts responsible for the backup operations must be members of the Backup Operators group.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220714",
         "rid": "SV-220714r569187_rule",
         "stig_id": "WN10-00-000080",
-        "fix_id": "F-22418r554628_fix"
+        "fix_id": "F-22418r554628_fix",
+        "documentable": false
       },
       "id": "V-220714",
       "title": "Only authorized user accounts must be allowed to create or run virtual machines on Windows 10 systems.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220715",
         "rid": "SV-220715r569187_rule",
         "stig_id": "WN10-00-000085",
-        "fix_id": "F-22419r554631_fix"
+        "fix_id": "F-22419r554631_fix",
+        "documentable": false
       },
       "id": "V-220715",
       "title": "Standard local user accounts must not exist on a system in a domain.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-220716",
         "rid": "SV-220716r569187_rule",
         "stig_id": "WN10-00-000090",
-        "fix_id": "F-22420r554634_fix"
+        "fix_id": "F-22420r554634_fix",
+        "documentable": false
       },
       "id": "V-220716",
       "title": "Accounts must be configured to require password expiration.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000312-GPOS-00122",
         "gid": "V-220717",
         "rid": "SV-220717r569187_rule",
         "stig_id": "WN10-00-000095",
-        "fix_id": "F-22421r554637_fix"
+        "fix_id": "F-22421r554637_fix",
+        "documentable": false
       },
       "id": "V-220717",
       "title": "Permissions for system files and directories must conform to minimum requirements.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220718",
         "rid": "SV-220718r569187_rule",
         "stig_id": "WN10-00-000100",
-        "fix_id": "F-22422r554640_fix"
+        "fix_id": "F-22422r554640_fix",
+        "documentable": false
       },
       "id": "V-220718",
       "title": "Internet Information System (IIS) or its subcomponents must not be installed on a workstation.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-220719",
         "rid": "SV-220719r569187_rule",
         "stig_id": "WN10-00-000105",
-        "fix_id": "F-22423r554643_fix"
+        "fix_id": "F-22423r554643_fix",
+        "documentable": false
       },
       "id": "V-220719",
       "title": "Simple Network Management Protocol (SNMP) must not be installed on the system.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220720",
         "rid": "SV-220720r569187_rule",
         "stig_id": "WN10-00-000110",
-        "fix_id": "F-22424r554646_fix"
+        "fix_id": "F-22424r554646_fix",
+        "documentable": false
       },
       "id": "V-220720",
       "title": "Simple TCP/IP Services must not be installed on the system.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-220721",
         "rid": "SV-220721r569187_rule",
         "stig_id": "WN10-00-000115",
-        "fix_id": "F-22425r554649_fix"
+        "fix_id": "F-22425r554649_fix",
+        "documentable": false
       },
       "id": "V-220721",
       "title": "The Telnet Client must not be installed on the system.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-220722",
         "rid": "SV-220722r569187_rule",
         "stig_id": "WN10-00-000120",
-        "fix_id": "F-22426r554652_fix"
+        "fix_id": "F-22426r554652_fix",
+        "documentable": false
       },
       "id": "V-220722",
       "title": "The TFTP Client must not be installed on the system.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220723",
         "rid": "SV-220723r569187_rule",
         "stig_id": "WN10-00-000130",
-        "fix_id": "F-22427r554655_fix"
+        "fix_id": "F-22427r554655_fix",
+        "documentable": false
       },
       "id": "V-220723",
       "title": "Software certificate installation files must be removed from Windows 10.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220724",
         "rid": "SV-220724r569187_rule",
         "stig_id": "WN10-00-000135",
-        "fix_id": "F-22428r554658_fix"
+        "fix_id": "F-22428r554658_fix",
+        "documentable": false
       },
       "id": "V-220724",
       "title": "A host-based firewall must be installed and enabled on the system.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220725",
         "rid": "SV-220725r569187_rule",
         "stig_id": "WN10-00-000140",
-        "fix_id": "F-22429r554661_fix"
+        "fix_id": "F-22429r554661_fix",
+        "documentable": false
       },
       "id": "V-220725",
       "title": "Inbound exceptions to the firewall on Windows 10 domain workstations must only allow authorized remote management hosts.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000433-GPOS-00192",
         "gid": "V-220726",
         "rid": "SV-220726r569187_rule",
         "stig_id": "WN10-00-000145",
-        "fix_id": "F-22430r554664_fix"
+        "fix_id": "F-22430r554664_fix",
+        "documentable": false
       },
       "id": "V-220726",
       "title": "Data Execution Prevention (DEP) must be configured to at least OptOut.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000433-GPOS-00192",
         "gid": "V-220727",
         "rid": "SV-220727r569187_rule",
         "stig_id": "WN10-00-000150",
-        "fix_id": "F-22431r554667_fix"
+        "fix_id": "F-22431r554667_fix",
+        "documentable": false
       },
       "id": "V-220727",
       "title": "Structured Exception Handling Overwrite Protection (SEHOP) must be enabled.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220728",
         "rid": "SV-220728r569187_rule",
         "stig_id": "WN10-00-000155",
-        "fix_id": "F-22432r554670_fix"
+        "fix_id": "F-22432r554670_fix",
+        "documentable": false
       },
       "id": "V-220728",
       "title": "The Windows PowerShell 2.0 feature must be disabled on the system.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220729",
         "rid": "SV-220729r569187_rule",
         "stig_id": "WN10-00-000160",
-        "fix_id": "F-22433r554673_fix"
+        "fix_id": "F-22433r554673_fix",
+        "documentable": false
       },
       "id": "V-220729",
       "title": "The Server Message Block (SMB) v1 protocol must be disabled on the system.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220730",
         "rid": "SV-220730r569187_rule",
         "stig_id": "WN10-00-000165",
-        "fix_id": "F-22434r554676_fix"
+        "fix_id": "F-22434r554676_fix",
+        "documentable": false
       },
       "id": "V-220730",
       "title": "The Server Message Block (SMB) v1 protocol must be disabled on the SMB server.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220731",
         "rid": "SV-220731r569187_rule",
         "stig_id": "WN10-00-000170",
-        "fix_id": "F-22435r554679_fix"
+        "fix_id": "F-22435r554679_fix",
+        "documentable": false
       },
       "id": "V-220731",
       "title": "The Server Message Block (SMB) v1 protocol must be disabled on the SMB client.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220732",
         "rid": "SV-220732r569187_rule",
         "stig_id": "WN10-00-000175",
-        "fix_id": "F-22436r554682_fix"
+        "fix_id": "F-22436r554682_fix",
+        "documentable": false
       },
       "id": "V-220732",
       "title": "The Secondary Logon service must be disabled on Windows 10.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220733",
         "rid": "SV-220733r569187_rule",
         "stig_id": "WN10-00-000190",
-        "fix_id": "F-22437r554685_fix"
+        "fix_id": "F-22437r554685_fix",
+        "documentable": false
       },
       "id": "V-220733",
       "title": "Orphaned security identifiers (SIDs) must be removed from user rights on Windows 10.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220734",
         "rid": "SV-220734r569187_rule",
         "stig_id": "WN10-00-000210",
-        "fix_id": "F-22438r554688_fix"
+        "fix_id": "F-22438r554688_fix",
+        "documentable": false
       },
       "id": "V-220734",
       "title": "Bluetooth must be turned off unless approved by the organization.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220735",
         "rid": "SV-220735r569187_rule",
         "stig_id": "WN10-00-000220",
-        "fix_id": "F-22439r554691_fix"
+        "fix_id": "F-22439r554691_fix",
+        "documentable": false
       },
       "id": "V-220735",
       "title": "Bluetooth must be turned off when not in use.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220736",
         "rid": "SV-220736r569187_rule",
         "stig_id": "WN10-00-000230",
-        "fix_id": "F-22440r554694_fix"
+        "fix_id": "F-22440r554694_fix",
+        "documentable": false
       },
       "id": "V-220736",
       "title": "The system must notify the user when a Bluetooth device attempts to connect.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220737",
         "rid": "SV-220737r569187_rule",
         "stig_id": "WN10-00-000240",
-        "fix_id": "F-22441r554697_fix"
+        "fix_id": "F-22441r554697_fix",
+        "documentable": false
       },
       "id": "V-220737",
       "title": "Administrative accounts must not be used with applications that access the Internet, such as web browsers, or with potential Internet sources, such as email.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
         "gid": "V-220738",
         "rid": "SV-220738r569187_rule",
         "stig_id": "WN10-00-000250",
-        "fix_id": "F-22442r554700_fix"
+        "fix_id": "F-22442r554700_fix",
+        "documentable": false
       },
       "id": "V-220738",
       "title": "Windows 10 non-persistent VM sessions should not exceed 24 hours.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000329-GPOS-00128",
         "gid": "V-220739",
         "rid": "SV-220739r569187_rule",
         "stig_id": "WN10-AC-000005",
-        "fix_id": "F-22443r554703_fix"
+        "fix_id": "F-22443r554703_fix",
+        "documentable": false
       },
       "id": "V-220739",
       "title": "Windows 10 account lockout duration must be configured to 15 minutes or greater.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000021-GPOS-00005",
         "gid": "V-220740",
         "rid": "SV-220740r569187_rule",
         "stig_id": "WN10-AC-000010",
-        "fix_id": "F-22444r554706_fix"
+        "fix_id": "F-22444r554706_fix",
+        "documentable": false
       },
       "id": "V-220740",
       "title": "The number of allowed bad logon attempts must be configured to 3 or less.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000021-GPOS-00005",
         "gid": "V-220741",
         "rid": "SV-220741r569187_rule",
         "stig_id": "WN10-AC-000015",
-        "fix_id": "F-22445r554709_fix"
+        "fix_id": "F-22445r554709_fix",
+        "documentable": false
       },
       "id": "V-220741",
       "title": "The period of time before the bad logon counter is reset must be configured to 15 minutes.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-220742",
         "rid": "SV-220742r569187_rule",
         "stig_id": "WN10-AC-000020",
-        "fix_id": "F-22446r554712_fix"
+        "fix_id": "F-22446r554712_fix",
+        "documentable": false
       },
       "id": "V-220742",
       "title": "The password history must be configured to 24 passwords remembered.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-220743",
         "rid": "SV-220743r569187_rule",
         "stig_id": "WN10-AC-000025",
-        "fix_id": "F-22447r554715_fix"
+        "fix_id": "F-22447r554715_fix",
+        "documentable": false
       },
       "id": "V-220743",
       "title": "The maximum password age must be configured to 60 days or less.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-220744",
         "rid": "SV-220744r569187_rule",
         "stig_id": "WN10-AC-000030",
-        "fix_id": "F-22448r554718_fix"
+        "fix_id": "F-22448r554718_fix",
+        "documentable": false
       },
       "id": "V-220744",
       "title": "The minimum password age must be configured to at least 1 day.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-220745",
         "rid": "SV-220745r569187_rule",
         "stig_id": "WN10-AC-000035",
-        "fix_id": "F-22449r554721_fix"
+        "fix_id": "F-22449r554721_fix",
+        "documentable": false
       },
       "id": "V-220745",
       "title": "Passwords must, at a minimum, be 14 characters.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-220746",
         "rid": "SV-220746r569187_rule",
         "stig_id": "WN10-AC-000040",
-        "fix_id": "F-22450r554724_fix"
+        "fix_id": "F-22450r554724_fix",
+        "documentable": false
       },
       "id": "V-220746",
       "title": "The built-in Microsoft password complexity filter must be enabled.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-220747",
         "rid": "SV-220747r569187_rule",
         "stig_id": "WN10-AC-000045",
-        "fix_id": "F-22451r554727_fix"
+        "fix_id": "F-22451r554727_fix",
+        "documentable": false
       },
       "id": "V-220747",
       "title": "Reversible password encryption must be disabled.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-220748",
         "rid": "SV-220748r569187_rule",
         "stig_id": "WN10-AU-000005",
-        "fix_id": "F-22452r554730_fix"
+        "fix_id": "F-22452r554730_fix",
+        "documentable": false
       },
       "id": "V-220748",
       "title": "The system must be configured to audit Account Logon - Credential Validation failures.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-220749",
         "rid": "SV-220749r569187_rule",
         "stig_id": "WN10-AU-000010",
-        "fix_id": "F-22453r554733_fix"
+        "fix_id": "F-22453r554733_fix",
+        "documentable": false
       },
       "id": "V-220749",
       "title": "The system must be configured to audit Account Logon - Credential Validation successes.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
         "gid": "V-220750",
         "rid": "SV-220750r569187_rule",
         "stig_id": "WN10-AU-000030",
-        "fix_id": "F-22454r554736_fix"
+        "fix_id": "F-22454r554736_fix",
+        "documentable": false
       },
       "id": "V-220750",
       "title": "The system must be configured to audit Account Management - Security Group Management successes.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
         "gid": "V-220751",
         "rid": "SV-220751r569187_rule",
         "stig_id": "WN10-AU-000035",
-        "fix_id": "F-22455r554739_fix"
+        "fix_id": "F-22455r554739_fix",
+        "documentable": false
       },
       "id": "V-220751",
       "title": "The system must be configured to audit Account Management - User Account Management failures.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
         "gid": "V-220752",
         "rid": "SV-220752r569187_rule",
         "stig_id": "WN10-AU-000040",
-        "fix_id": "F-22456r554742_fix"
+        "fix_id": "F-22456r554742_fix",
+        "documentable": false
       },
       "id": "V-220752",
       "title": "The system must be configured to audit Account Management - User Account Management successes.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000365-GPOS-00152",
         "gid": "V-220753",
         "rid": "SV-220753r569187_rule",
         "stig_id": "WN10-AU-000045",
-        "fix_id": "F-22457r554745_fix"
+        "fix_id": "F-22457r554745_fix",
+        "documentable": false
       },
       "id": "V-220753",
       "title": "The system must be configured to audit Detailed Tracking - PNP Activity successes.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000365-GPOS-00152",
         "gid": "V-220754",
         "rid": "SV-220754r569187_rule",
         "stig_id": "WN10-AU-000050",
-        "fix_id": "F-22458r554748_fix"
+        "fix_id": "F-22458r554748_fix",
+        "documentable": false
       },
       "id": "V-220754",
       "title": "The system must be configured to audit Detailed Tracking - Process Creation successes.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-220755",
         "rid": "SV-220755r569187_rule",
         "stig_id": "WN10-AU-000054",
-        "fix_id": "F-22459r554751_fix"
+        "fix_id": "F-22459r554751_fix",
+        "documentable": false
       },
       "id": "V-220755",
       "title": "The system must be configured to audit Logon/Logoff - Account Lockout failures.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-220756",
         "rid": "SV-220756r569187_rule",
         "stig_id": "WN10-AU-000060",
-        "fix_id": "F-22460r554754_fix"
+        "fix_id": "F-22460r554754_fix",
+        "documentable": false
       },
       "id": "V-220756",
       "title": "The system must be configured to audit Logon/Logoff - Group Membership successes.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-220757",
         "rid": "SV-220757r569187_rule",
         "stig_id": "WN10-AU-000065",
-        "fix_id": "F-22461r554757_fix"
+        "fix_id": "F-22461r554757_fix",
+        "documentable": false
       },
       "id": "V-220757",
       "title": "The system must be configured to audit Logon/Logoff - Logoff successes.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-220758",
         "rid": "SV-220758r569187_rule",
         "stig_id": "WN10-AU-000070",
-        "fix_id": "F-22462r554760_fix"
+        "fix_id": "F-22462r554760_fix",
+        "documentable": false
       },
       "id": "V-220758",
       "title": "The system must be configured to audit Logon/Logoff - Logon failures.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-220759",
         "rid": "SV-220759r569187_rule",
         "stig_id": "WN10-AU-000075",
-        "fix_id": "F-22463r554763_fix"
+        "fix_id": "F-22463r554763_fix",
+        "documentable": false
       },
       "id": "V-220759",
       "title": "The system must be configured to audit Logon/Logoff - Logon successes.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-220760",
         "rid": "SV-220760r569187_rule",
         "stig_id": "WN10-AU-000080",
-        "fix_id": "F-22464r554766_fix"
+        "fix_id": "F-22464r554766_fix",
+        "documentable": false
       },
       "id": "V-220760",
       "title": "The system must be configured to audit Logon/Logoff - Special Logon successes.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-220761",
         "rid": "SV-220761r569187_rule",
         "stig_id": "WN10-AU-000081",
-        "fix_id": "F-22465r554769_fix"
+        "fix_id": "F-22465r554769_fix",
+        "documentable": false
       },
       "id": "V-220761",
       "title": "Windows 10 must be configured to audit Object Access - File Share failures.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-220762",
         "rid": "SV-220762r569187_rule",
         "stig_id": "WN10-AU-000082",
-        "fix_id": "F-22466r554772_fix"
+        "fix_id": "F-22466r554772_fix",
+        "documentable": false
       },
       "id": "V-220762",
       "title": "Windows 10 must be configured to audit Object Access - File Share successes.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-220763",
         "rid": "SV-220763r569187_rule",
         "stig_id": "WN10-AU-000083",
-        "fix_id": "F-22467r554775_fix"
+        "fix_id": "F-22467r554775_fix",
+        "documentable": false
       },
       "id": "V-220763",
       "title": "Windows 10 must be configured to audit Object Access - Other Object Access Events successes.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-220764",
         "rid": "SV-220764r569187_rule",
         "stig_id": "WN10-AU-000084",
-        "fix_id": "F-22468r554778_fix"
+        "fix_id": "F-22468r554778_fix",
+        "documentable": false
       },
       "id": "V-220764",
       "title": "Windows 10 must be configured to audit Object Access - Other Object Access Events failures.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-220765",
         "rid": "SV-220765r569187_rule",
         "stig_id": "WN10-AU-000085",
-        "fix_id": "F-22469r554781_fix"
+        "fix_id": "F-22469r554781_fix",
+        "documentable": false
       },
       "id": "V-220765",
       "title": "The system must be configured to audit Object Access - Removable Storage failures.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-220766",
         "rid": "SV-220766r569187_rule",
         "stig_id": "WN10-AU-000090",
-        "fix_id": "F-22470r554784_fix"
+        "fix_id": "F-22470r554784_fix",
+        "documentable": false
       },
       "id": "V-220766",
       "title": "The system must be configured to audit Object Access - Removable Storage successes.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00215",
         "gid": "V-220767",
         "rid": "SV-220767r569187_rule",
         "stig_id": "WN10-AU-000100",
-        "fix_id": "F-22471r554787_fix"
+        "fix_id": "F-22471r554787_fix",
+        "documentable": false
       },
       "id": "V-220767",
       "title": "The system must be configured to audit Policy Change - Audit Policy Change successes.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
         "gid": "V-220768",
         "rid": "SV-220768r569187_rule",
         "stig_id": "WN10-AU-000105",
-        "fix_id": "F-22472r554790_fix"
+        "fix_id": "F-22472r554790_fix",
+        "documentable": false
       },
       "id": "V-220768",
       "title": "The system must be configured to audit Policy Change - Authentication Policy Change successes.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00215",
         "gid": "V-220769",
         "rid": "SV-220769r569187_rule",
         "stig_id": "WN10-AU-000107",
-        "fix_id": "F-22473r554793_fix"
+        "fix_id": "F-22473r554793_fix",
+        "documentable": false
       },
       "id": "V-220769",
       "title": "The system must be configured to audit Policy Change - Authorization Policy Change successes.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
         "gid": "V-220770",
         "rid": "SV-220770r569187_rule",
         "stig_id": "WN10-AU-000110",
-        "fix_id": "F-22474r554796_fix"
+        "fix_id": "F-22474r554796_fix",
+        "documentable": false
       },
       "id": "V-220770",
       "title": "The system must be configured to audit Privilege Use - Sensitive Privilege Use failures.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
         "gid": "V-220771",
         "rid": "SV-220771r569187_rule",
         "stig_id": "WN10-AU-000115",
-        "fix_id": "F-22475r554799_fix"
+        "fix_id": "F-22475r554799_fix",
+        "documentable": false
       },
       "id": "V-220771",
       "title": "The system must be configured to audit Privilege Use - Sensitive Privilege Use successes.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000477-GPOS-00222",
         "gid": "V-220772",
         "rid": "SV-220772r569187_rule",
         "stig_id": "WN10-AU-000120",
-        "fix_id": "F-22476r554802_fix"
+        "fix_id": "F-22476r554802_fix",
+        "documentable": false
       },
       "id": "V-220772",
       "title": "The system must be configured to audit System - IPSec Driver failures.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00215",
         "gid": "V-220773",
         "rid": "SV-220773r569187_rule",
         "stig_id": "WN10-AU-000130",
-        "fix_id": "F-22477r554805_fix"
+        "fix_id": "F-22477r554805_fix",
+        "documentable": false
       },
       "id": "V-220773",
       "title": "The system must be configured to audit System - Other System Events successes.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00215",
         "gid": "V-220774",
         "rid": "SV-220774r569187_rule",
         "stig_id": "WN10-AU-000135",
-        "fix_id": "F-22478r554808_fix"
+        "fix_id": "F-22478r554808_fix",
+        "documentable": false
       },
       "id": "V-220774",
       "title": "The system must be configured to audit System - Other System Events failures.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
         "gid": "V-220775",
         "rid": "SV-220775r569187_rule",
         "stig_id": "WN10-AU-000140",
-        "fix_id": "F-22479r554811_fix"
+        "fix_id": "F-22479r554811_fix",
+        "documentable": false
       },
       "id": "V-220775",
       "title": "The system must be configured to audit System - Security State Change successes.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
         "gid": "V-220776",
         "rid": "SV-220776r569187_rule",
         "stig_id": "WN10-AU-000150",
-        "fix_id": "F-22480r554814_fix"
+        "fix_id": "F-22480r554814_fix",
+        "documentable": false
       },
       "id": "V-220776",
       "title": "The system must be configured to audit System - Security System Extension successes.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
         "gid": "V-220777",
         "rid": "SV-220777r569187_rule",
         "stig_id": "WN10-AU-000155",
-        "fix_id": "F-22481r554817_fix"
+        "fix_id": "F-22481r554817_fix",
+        "documentable": false
       },
       "id": "V-220777",
       "title": "The system must be configured to audit System - System Integrity failures.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
         "gid": "V-220778",
         "rid": "SV-220778r569187_rule",
         "stig_id": "WN10-AU-000160",
-        "fix_id": "F-22482r554820_fix"
+        "fix_id": "F-22482r554820_fix",
+        "documentable": false
       },
       "id": "V-220778",
       "title": "The system must be configured to audit System - System Integrity successes.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-220779",
         "rid": "SV-220779r569187_rule",
         "stig_id": "WN10-AU-000500",
-        "fix_id": "F-22483r554823_fix"
+        "fix_id": "F-22483r554823_fix",
+        "documentable": false
       },
       "id": "V-220779",
       "title": "The Application event log size must be configured to 32768 KB or greater.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-220780",
         "rid": "SV-220780r569187_rule",
         "stig_id": "WN10-AU-000505",
-        "fix_id": "F-22484r554826_fix"
+        "fix_id": "F-22484r554826_fix",
+        "documentable": false
       },
       "id": "V-220780",
       "title": "The Security event log size must be configured to 1024000 KB or greater.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-220781",
         "rid": "SV-220781r569187_rule",
         "stig_id": "WN10-AU-000510",
-        "fix_id": "F-22485r554829_fix"
+        "fix_id": "F-22485r554829_fix",
+        "documentable": false
       },
       "id": "V-220781",
       "title": "The System event log size must be configured to 32768 KB or greater.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-220782",
         "rid": "SV-220782r569187_rule",
         "stig_id": "WN10-AU-000515",
-        "fix_id": "F-22486r554832_fix"
+        "fix_id": "F-22486r554832_fix",
+        "documentable": false
       },
       "id": "V-220782",
       "title": "Windows 10 permissions for the Application event log must prevent access by non-privileged accounts.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-220783",
         "rid": "SV-220783r569187_rule",
         "stig_id": "WN10-AU-000520",
-        "fix_id": "F-22487r554835_fix"
+        "fix_id": "F-22487r554835_fix",
+        "documentable": false
       },
       "id": "V-220783",
       "title": "Windows 10 permissions for the Security event log must prevent access by non-privileged accounts.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-220784",
         "rid": "SV-220784r569187_rule",
         "stig_id": "WN10-AU-000525",
-        "fix_id": "F-22488r554838_fix"
+        "fix_id": "F-22488r554838_fix",
+        "documentable": false
       },
       "id": "V-220784",
       "title": "Windows 10 permissions for the System event log must prevent access by non-privileged accounts.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
         "gid": "V-220785",
         "rid": "SV-220785r569187_rule",
         "stig_id": "WN10-AU-000550",
-        "fix_id": "F-22489r554841_fix"
+        "fix_id": "F-22489r554841_fix",
+        "documentable": false
       },
       "id": "V-220785",
       "title": "Windows 10 must be configured to audit Other Policy Change Events Successes.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
         "gid": "V-220786",
         "rid": "SV-220786r569187_rule",
         "stig_id": "WN10-AU-000555",
-        "fix_id": "F-22490r554844_fix"
+        "fix_id": "F-22490r554844_fix",
+        "documentable": false
       },
       "id": "V-220786",
       "title": "Windows 10 must be configured to audit Other Policy Change Events Failures.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
         "gid": "V-220787",
         "rid": "SV-220787r569187_rule",
         "stig_id": "WN10-AU-000560",
-        "fix_id": "F-22491r554847_fix"
+        "fix_id": "F-22491r554847_fix",
+        "documentable": false
       },
       "id": "V-220787",
       "title": "Windows 10 must be configured to audit other Logon/Logoff Events Successes.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
         "gid": "V-220788",
         "rid": "SV-220788r569187_rule",
         "stig_id": "WN10-AU-000565",
-        "fix_id": "F-22492r554850_fix"
+        "fix_id": "F-22492r554850_fix",
+        "documentable": false
       },
       "id": "V-220788",
       "title": "Windows 10 must be configured to audit other Logon/Logoff Events Failures.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
         "gid": "V-220789",
         "rid": "SV-220789r569187_rule",
         "stig_id": "WN10-AU-000570",
-        "fix_id": "F-22493r554853_fix"
+        "fix_id": "F-22493r554853_fix",
+        "documentable": false
       },
       "id": "V-220789",
       "title": "Windows 10 must be configured to audit Detailed File Share Failures.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
         "gid": "V-220790",
         "rid": "SV-220790r569187_rule",
         "stig_id": "WN10-AU-000575",
-        "fix_id": "F-22494r554856_fix"
+        "fix_id": "F-22494r554856_fix",
+        "documentable": false
       },
       "id": "V-220790",
       "title": "Windows 10 must be configured to audit MPSSVC Rule-Level Policy Change Successes.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
         "gid": "V-220791",
         "rid": "SV-220791r569187_rule",
         "stig_id": "WN10-AU-000580",
-        "fix_id": "F-22495r554859_fix"
+        "fix_id": "F-22495r554859_fix",
+        "documentable": false
       },
       "id": "V-220791",
       "title": "Windows 10 must be configured to audit MPSSVC Rule-Level Policy Change Failures.",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220792",
         "rid": "SV-220792r569187_rule",
         "stig_id": "WN10-CC-000005",
-        "fix_id": "F-22496r554862_fix"
+        "fix_id": "F-22496r554862_fix",
+        "documentable": false
       },
       "id": "V-220792",
       "title": "Camera access from the lock screen must be disabled.",
@@ -1736,15 +1736,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-220793",
+        "rid": "SV-220793r569187_rule",
+        "stig_id": "WN10-CC-000007",
+        "fix_id": "F-22497r554865_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-220793",
-        "rid": "SV-220793r569187_rule",
-        "stig_id": "WN10-CC-000007",
-        "fix_id": "F-22497r554865_fix"
+        "documentable": false
       },
       "id": "V-220793",
       "title": "Windows 10 must cover or disable the built-in or attached camera when not in use.",
@@ -1758,11 +1758,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220794",
         "rid": "SV-220794r569187_rule",
         "stig_id": "WN10-CC-000010",
-        "fix_id": "F-22498r554868_fix"
+        "fix_id": "F-22498r554868_fix",
+        "documentable": false
       },
       "id": "V-220794",
       "title": "The display of slide shows on the lock screen must be disabled.",
@@ -1776,11 +1776,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220795",
         "rid": "SV-220795r569187_rule",
         "stig_id": "WN10-CC-000020",
-        "fix_id": "F-22499r554871_fix"
+        "fix_id": "F-22499r554871_fix",
+        "documentable": false
       },
       "id": "V-220795",
       "title": "IPv6 source routing must be configured to highest protection.",
@@ -1794,11 +1794,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220796",
         "rid": "SV-220796r569187_rule",
         "stig_id": "WN10-CC-000025",
-        "fix_id": "F-22500r554874_fix"
+        "fix_id": "F-22500r554874_fix",
+        "documentable": false
       },
       "id": "V-220796",
       "title": "The system must be configured to prevent IP source routing.",
@@ -1812,11 +1812,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220797",
         "rid": "SV-220797r569187_rule",
         "stig_id": "WN10-CC-000030",
-        "fix_id": "F-22501r554877_fix"
+        "fix_id": "F-22501r554877_fix",
+        "documentable": false
       },
       "id": "V-220797",
       "title": "The system must be configured to prevent Internet Control Message Protocol (ICMP) redirects from overriding Open Shortest Path First (OSPF) generated routes.",
@@ -1830,11 +1830,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000420-GPOS-00186",
         "gid": "V-220798",
         "rid": "SV-220798r569187_rule",
         "stig_id": "WN10-CC-000035",
-        "fix_id": "F-22502r554880_fix"
+        "fix_id": "F-22502r554880_fix",
+        "documentable": false
       },
       "id": "V-220798",
       "title": "The system must be configured to ignore NetBIOS name release requests except from WINS servers.",
@@ -1848,11 +1848,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-220799",
         "rid": "SV-220799r569187_rule",
         "stig_id": "WN10-CC-000037",
-        "fix_id": "F-22503r554883_fix"
+        "fix_id": "F-22503r554883_fix",
+        "documentable": false
       },
       "id": "V-220799",
       "title": "Local administrator accounts must have their privileged token filtered to prevent elevated privileges from being used over the network on domain systems.",
@@ -1866,11 +1866,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220800",
         "rid": "SV-220800r569187_rule",
         "stig_id": "WN10-CC-000038",
-        "fix_id": "F-22504r554886_fix"
+        "fix_id": "F-22504r554886_fix",
+        "documentable": false
       },
       "id": "V-220800",
       "title": "WDigest Authentication must be disabled.",
@@ -1884,11 +1884,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220801",
         "rid": "SV-220801r569187_rule",
         "stig_id": "WN10-CC-000039",
-        "fix_id": "F-22505r554889_fix"
+        "fix_id": "F-22505r554889_fix",
+        "documentable": false
       },
       "id": "V-220801",
       "title": "Run as different user must be removed from context menus.",
@@ -1902,11 +1902,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220802",
         "rid": "SV-220802r569187_rule",
         "stig_id": "WN10-CC-000040",
-        "fix_id": "F-22506r554892_fix"
+        "fix_id": "F-22506r554892_fix",
+        "documentable": false
       },
       "id": "V-220802",
       "title": "Insecure logons to an SMB server must be disabled.",
@@ -1920,11 +1920,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220803",
         "rid": "SV-220803r569187_rule",
         "stig_id": "WN10-CC-000044",
-        "fix_id": "F-22507r554895_fix"
+        "fix_id": "F-22507r554895_fix",
+        "documentable": false
       },
       "id": "V-220803",
       "title": "Internet connection sharing must be disabled.",
@@ -1938,11 +1938,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220804",
         "rid": "SV-220804r569187_rule",
         "stig_id": "WN10-CC-000050",
-        "fix_id": "F-22508r554898_fix"
+        "fix_id": "F-22508r554898_fix",
+        "documentable": false
       },
       "id": "V-220804",
       "title": "Hardened UNC Paths must be defined to require mutual authentication and integrity for at least the \\\\*\\SYSVOL and \\\\*\\NETLOGON shares.",
@@ -1956,11 +1956,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000120-GPOS-00061",
         "gid": "V-220805",
         "rid": "SV-220805r569187_rule",
         "stig_id": "WN10-CC-000052",
-        "fix_id": "F-22509r554901_fix"
+        "fix_id": "F-22509r554901_fix",
+        "documentable": false
       },
       "id": "V-220805",
       "title": "Windows 10 must be configured to prioritize ECC Curves with longer key lengths first.",
@@ -1974,11 +1974,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220806",
         "rid": "SV-220806r569187_rule",
         "stig_id": "WN10-CC-000055",
-        "fix_id": "F-22510r554904_fix"
+        "fix_id": "F-22510r554904_fix",
+        "documentable": false
       },
       "id": "V-220806",
       "title": "Simultaneous connections to the Internet or a Windows domain must be limited.",
@@ -1992,11 +1992,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220807",
         "rid": "SV-220807r569187_rule",
         "stig_id": "WN10-CC-000060",
-        "fix_id": "F-22511r554907_fix"
+        "fix_id": "F-22511r554907_fix",
+        "documentable": false
       },
       "id": "V-220807",
       "title": "Connections to non-domain networks when connected to a domain authenticated network must be blocked.",
@@ -2010,11 +2010,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220808",
         "rid": "SV-220808r569187_rule",
         "stig_id": "WN10-CC-000065",
-        "fix_id": "F-22512r554910_fix"
+        "fix_id": "F-22512r554910_fix",
+        "documentable": false
       },
       "id": "V-220808",
       "title": "Wi-Fi Sense must be disabled.",
@@ -2028,11 +2028,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
         "gid": "V-220809",
         "rid": "SV-220809r569187_rule",
         "stig_id": "WN10-CC-000066",
-        "fix_id": "F-22513r554913_fix"
+        "fix_id": "F-22513r554913_fix",
+        "documentable": false
       },
       "id": "V-220809",
       "title": "Command line data must be included in process creation events.",
@@ -2046,11 +2046,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220810",
         "rid": "SV-220810r569187_rule",
         "stig_id": "WN10-CC-000068",
-        "fix_id": "F-22514r554916_fix"
+        "fix_id": "F-22514r554916_fix",
+        "documentable": false
       },
       "id": "V-220810",
       "title": "Windows 10 must be configured to enable Remote host allows delegation of non-exportable credentials.",
@@ -2064,11 +2064,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220811",
         "rid": "SV-220811r569187_rule",
         "stig_id": "WN10-CC-000070",
-        "fix_id": "F-22515r554919_fix"
+        "fix_id": "F-22515r554919_fix",
+        "documentable": false
       },
       "id": "V-220811",
       "title": "Virtualization Based Security must be enabled on Windows 10 with the platform security level configured to Secure Boot or Secure Boot with DMA Protection.",
@@ -2082,11 +2082,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220812",
         "rid": "SV-220812r569187_rule",
         "stig_id": "WN10-CC-000075",
-        "fix_id": "F-22516r554922_fix"
+        "fix_id": "F-22516r554922_fix",
+        "documentable": false
       },
       "id": "V-220812",
       "title": "Credential Guard must be running on Windows 10 domain-joined systems.",
@@ -2100,11 +2100,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220813",
         "rid": "SV-220813r569187_rule",
         "stig_id": "WN10-CC-000085",
-        "fix_id": "F-22517r554925_fix"
+        "fix_id": "F-22517r554925_fix",
+        "documentable": false
       },
       "id": "V-220813",
       "title": "Early Launch Antimalware, Boot-Start Driver Initialization Policy must prevent boot drivers.",
@@ -2118,11 +2118,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220814",
         "rid": "SV-220814r569187_rule",
         "stig_id": "WN10-CC-000090",
-        "fix_id": "F-22518r554928_fix"
+        "fix_id": "F-22518r554928_fix",
+        "documentable": false
       },
       "id": "V-220814",
       "title": "Group Policy objects must be reprocessed even if they have not changed.",
@@ -2136,11 +2136,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220815",
         "rid": "SV-220815r569187_rule",
         "stig_id": "WN10-CC-000100",
-        "fix_id": "F-22519r554931_fix"
+        "fix_id": "F-22519r554931_fix",
+        "documentable": false
       },
       "id": "V-220815",
       "title": "Downloading print driver packages over HTTP must be prevented.",
@@ -2154,11 +2154,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220816",
         "rid": "SV-220816r569187_rule",
         "stig_id": "WN10-CC-000105",
-        "fix_id": "F-22520r554934_fix"
+        "fix_id": "F-22520r554934_fix",
+        "documentable": false
       },
       "id": "V-220816",
       "title": "Web publishing and online ordering wizards must be prevented from downloading a list of providers.",
@@ -2172,11 +2172,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220817",
         "rid": "SV-220817r569187_rule",
         "stig_id": "WN10-CC-000110",
-        "fix_id": "F-22521r554937_fix"
+        "fix_id": "F-22521r554937_fix",
+        "documentable": false
       },
       "id": "V-220817",
       "title": "Printing over HTTP must be prevented.",
@@ -2190,11 +2190,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220818",
         "rid": "SV-220818r569187_rule",
         "stig_id": "WN10-CC-000115",
-        "fix_id": "F-22522r554940_fix"
+        "fix_id": "F-22522r554940_fix",
+        "documentable": false
       },
       "id": "V-220818",
       "title": "Systems must at least attempt device authentication using certificates.",
@@ -2208,11 +2208,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220819",
         "rid": "SV-220819r569187_rule",
         "stig_id": "WN10-CC-000120",
-        "fix_id": "F-22523r554943_fix"
+        "fix_id": "F-22523r554943_fix",
+        "documentable": false
       },
       "id": "V-220819",
       "title": "The network selection user interface (UI) must not be displayed on the logon screen.",
@@ -2226,11 +2226,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220820",
         "rid": "SV-220820r569187_rule",
         "stig_id": "WN10-CC-000130",
-        "fix_id": "F-22524r554946_fix"
+        "fix_id": "F-22524r554946_fix",
+        "documentable": false
       },
       "id": "V-220820",
       "title": "Local users on domain-joined computers must not be enumerated.",
@@ -2244,11 +2244,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
         "gid": "V-220821",
         "rid": "SV-220821r569187_rule",
         "stig_id": "WN10-CC-000145",
-        "fix_id": "F-22525r554949_fix"
+        "fix_id": "F-22525r554949_fix",
+        "documentable": false
       },
       "id": "V-220821",
       "title": "Users must be prompted for a password on resume from sleep (on battery).",
@@ -2262,11 +2262,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
         "gid": "V-220822",
         "rid": "SV-220822r569187_rule",
         "stig_id": "WN10-CC-000150",
-        "fix_id": "F-22526r554952_fix"
+        "fix_id": "F-22526r554952_fix",
+        "documentable": false
       },
       "id": "V-220822",
       "title": "The user must be prompted for a password on resume from sleep (plugged in).",
@@ -2280,11 +2280,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-220823",
         "rid": "SV-220823r569187_rule",
         "stig_id": "WN10-CC-000155",
-        "fix_id": "F-22527r554955_fix"
+        "fix_id": "F-22527r554955_fix",
+        "documentable": false
       },
       "id": "V-220823",
       "title": "Solicited Remote Assistance must not be allowed.",
@@ -2298,11 +2298,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000379-GPOS-00164",
         "gid": "V-220824",
         "rid": "SV-220824r569187_rule",
         "stig_id": "WN10-CC-000165",
-        "fix_id": "F-22528r554958_fix"
+        "fix_id": "F-22528r554958_fix",
+        "documentable": false
       },
       "id": "V-220824",
       "title": "Unauthenticated RPC clients must be restricted from connecting to the RPC server.",
@@ -2316,11 +2316,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220825",
         "rid": "SV-220825r569187_rule",
         "stig_id": "WN10-CC-000170",
-        "fix_id": "F-22529r554961_fix"
+        "fix_id": "F-22529r554961_fix",
+        "documentable": false
       },
       "id": "V-220825",
       "title": "The setting to allow Microsoft accounts to be optional for modern style apps must be enabled.",
@@ -2334,11 +2334,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220826",
         "rid": "SV-220826r569187_rule",
         "stig_id": "WN10-CC-000175",
-        "fix_id": "F-22530r554964_fix"
+        "fix_id": "F-22530r554964_fix",
+        "documentable": false
       },
       "id": "V-220826",
       "title": "The Application Compatibility Program Inventory must be prevented from collecting data and sending the information to Microsoft.",
@@ -2352,11 +2352,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-220827",
         "rid": "SV-220827r569187_rule",
         "stig_id": "WN10-CC-000180",
-        "fix_id": "F-22531r554967_fix"
+        "fix_id": "F-22531r554967_fix",
+        "documentable": false
       },
       "id": "V-220827",
       "title": "Autoplay must be turned off for non-volume devices.",
@@ -2370,11 +2370,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-220828",
         "rid": "SV-220828r569187_rule",
         "stig_id": "WN10-CC-000185",
-        "fix_id": "F-22532r554970_fix"
+        "fix_id": "F-22532r554970_fix",
+        "documentable": false
       },
       "id": "V-220828",
       "title": "The default autorun behavior must be configured to prevent autorun commands.",
@@ -2388,11 +2388,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-220829",
         "rid": "SV-220829r569187_rule",
         "stig_id": "WN10-CC-000190",
-        "fix_id": "F-22533r554973_fix"
+        "fix_id": "F-22533r554973_fix",
+        "documentable": false
       },
       "id": "V-220829",
       "title": "Autoplay must be disabled for all drives.",
@@ -2406,11 +2406,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220830",
         "rid": "SV-220830r569187_rule",
         "stig_id": "WN10-CC-000195",
-        "fix_id": "F-22534r554976_fix"
+        "fix_id": "F-22534r554976_fix",
+        "documentable": false
       },
       "id": "V-220830",
       "title": "Enhanced anti-spoofing for facial recognition must be enabled on Window 10.",
@@ -2424,11 +2424,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220831",
         "rid": "SV-220831r569187_rule",
         "stig_id": "WN10-CC-000197",
-        "fix_id": "F-22535r554979_fix"
+        "fix_id": "F-22535r554979_fix",
+        "documentable": false
       },
       "id": "V-220831",
       "title": "Microsoft consumer experiences must be turned off.",
@@ -2442,11 +2442,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-220832",
         "rid": "SV-220832r569187_rule",
         "stig_id": "WN10-CC-000200",
-        "fix_id": "F-22536r554982_fix"
+        "fix_id": "F-22536r554982_fix",
+        "documentable": false
       },
       "id": "V-220832",
       "title": "Administrator accounts must not be enumerated during elevation.",
@@ -2460,11 +2460,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220833",
         "rid": "SV-220833r569187_rule",
         "stig_id": "WN10-CC-000204",
-        "fix_id": "F-22537r554985_fix"
+        "fix_id": "F-22537r554985_fix",
+        "documentable": false
       },
       "id": "V-220833",
       "title": "If Enhanced diagnostic data is enabled it must be limited to the minimum required to support Windows Analytics.",
@@ -2478,11 +2478,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220834",
         "rid": "SV-220834r569187_rule",
         "stig_id": "WN10-CC-000205",
-        "fix_id": "F-22538r554988_fix"
+        "fix_id": "F-22538r554988_fix",
+        "documentable": false
       },
       "id": "V-220834",
       "title": "Windows Telemetry must not be configured to Full.",
@@ -2496,11 +2496,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220835",
         "rid": "SV-220835r569187_rule",
         "stig_id": "WN10-CC-000206",
-        "fix_id": "F-22539r554991_fix"
+        "fix_id": "F-22539r554991_fix",
+        "documentable": false
       },
       "id": "V-220835",
       "title": "Windows Update must not obtain updates from other PCs on the Internet.",
@@ -2514,11 +2514,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220836",
         "rid": "SV-220836r569187_rule",
         "stig_id": "WN10-CC-000210",
-        "fix_id": "F-22540r554994_fix"
+        "fix_id": "F-22540r554994_fix",
+        "documentable": false
       },
       "id": "V-220836",
       "title": "The Windows Defender SmartScreen for Explorer must be enabled.",
@@ -2532,11 +2532,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00192",
         "gid": "V-220837",
         "rid": "SV-220837r569187_rule",
         "stig_id": "WN10-CC-000215",
-        "fix_id": "F-22541r554997_fix"
+        "fix_id": "F-22541r554997_fix",
+        "documentable": false
       },
       "id": "V-220837",
       "title": "Explorer Data Execution Prevention must be enabled.",
@@ -2550,11 +2550,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000420-GPOS-00186",
         "gid": "V-220838",
         "rid": "SV-220838r569187_rule",
         "stig_id": "WN10-CC-000220",
-        "fix_id": "F-22542r555000_fix"
+        "fix_id": "F-22542r555000_fix",
+        "documentable": false
       },
       "id": "V-220838",
       "title": "Turning off File Explorer heap termination on corruption must be disabled.",
@@ -2568,11 +2568,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220839",
         "rid": "SV-220839r569187_rule",
         "stig_id": "WN10-CC-000225",
-        "fix_id": "F-22543r555003_fix"
+        "fix_id": "F-22543r555003_fix",
+        "documentable": false
       },
       "id": "V-220839",
       "title": "File Explorer shell protocol must run in protected mode.",
@@ -2586,11 +2586,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220840",
         "rid": "SV-220840r569187_rule",
         "stig_id": "WN10-CC-000230",
-        "fix_id": "F-22544r555006_fix"
+        "fix_id": "F-22544r555006_fix",
+        "documentable": false
       },
       "id": "V-220840",
       "title": "Users must not be allowed to ignore Windows Defender SmartScreen filter warnings for malicious websites in Microsoft Edge.",
@@ -2604,11 +2604,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220841",
         "rid": "SV-220841r569187_rule",
         "stig_id": "WN10-CC-000235",
-        "fix_id": "F-22545r555009_fix"
+        "fix_id": "F-22545r555009_fix",
+        "documentable": false
       },
       "id": "V-220841",
       "title": "Users must not be allowed to ignore Windows Defender SmartScreen filter warnings for unverified files in Microsoft Edge.",
@@ -2622,11 +2622,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220842",
         "rid": "SV-220842r569187_rule",
         "stig_id": "WN10-CC-000238",
-        "fix_id": "F-22546r555012_fix"
+        "fix_id": "F-22546r555012_fix",
+        "documentable": false
       },
       "id": "V-220842",
       "title": "Windows 10 must be configured to prevent certificate error overrides in Microsoft Edge.",
@@ -2640,11 +2640,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220843",
         "rid": "SV-220843r569187_rule",
         "stig_id": "WN10-CC-000245",
-        "fix_id": "F-22547r555015_fix"
+        "fix_id": "F-22547r555015_fix",
+        "documentable": false
       },
       "id": "V-220843",
       "title": "The password manager function in the Edge browser must be disabled.",
@@ -2658,11 +2658,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220844",
         "rid": "SV-220844r569187_rule",
         "stig_id": "WN10-CC-000250",
-        "fix_id": "F-22548r555018_fix"
+        "fix_id": "F-22548r555018_fix",
+        "documentable": false
       },
       "id": "V-220844",
       "title": "The Windows Defender SmartScreen filter for Microsoft Edge must be enabled.",
@@ -2676,11 +2676,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220845",
         "rid": "SV-220845r569187_rule",
         "stig_id": "WN10-CC-000252",
-        "fix_id": "F-22549r555021_fix"
+        "fix_id": "F-22549r555021_fix",
+        "documentable": false
       },
       "id": "V-220845",
       "title": "Windows 10 must be configured to disable Windows Game Recording and Broadcasting.",
@@ -2694,11 +2694,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220846",
         "rid": "SV-220846r569187_rule",
         "stig_id": "WN10-CC-000255",
-        "fix_id": "F-22550r555024_fix"
+        "fix_id": "F-22550r555024_fix",
+        "documentable": false
       },
       "id": "V-220846",
       "title": "The use of a hardware security device with Windows Hello for Business must be enabled.",
@@ -2712,11 +2712,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220847",
         "rid": "SV-220847r569187_rule",
         "stig_id": "WN10-CC-000260",
-        "fix_id": "F-22551r555027_fix"
+        "fix_id": "F-22551r555027_fix",
+        "documentable": false
       },
       "id": "V-220847",
       "title": "Windows 10 must be configured to require a minimum pin length of six characters or greater.",
@@ -2730,11 +2730,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
         "gid": "V-220848",
         "rid": "SV-220848r569187_rule",
         "stig_id": "WN10-CC-000270",
-        "fix_id": "F-22552r555030_fix"
+        "fix_id": "F-22552r555030_fix",
+        "documentable": false
       },
       "id": "V-220848",
       "title": "Passwords must not be saved in the Remote Desktop Client.",
@@ -2748,11 +2748,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-220849",
         "rid": "SV-220849r569187_rule",
         "stig_id": "WN10-CC-000275",
-        "fix_id": "F-22553r555033_fix"
+        "fix_id": "F-22553r555033_fix",
+        "documentable": false
       },
       "id": "V-220849",
       "title": "Local drives must be prevented from sharing with Remote Desktop Session Hosts.",
@@ -2766,11 +2766,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
         "gid": "V-220850",
         "rid": "SV-220850r569187_rule",
         "stig_id": "WN10-CC-000280",
-        "fix_id": "F-22554r555036_fix"
+        "fix_id": "F-22554r555036_fix",
+        "documentable": false
       },
       "id": "V-220850",
       "title": "Remote Desktop Services must always prompt a client for passwords upon connection.",
@@ -2784,11 +2784,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000250-GPOS-00093",
         "gid": "V-220851",
         "rid": "SV-220851r569187_rule",
         "stig_id": "WN10-CC-000285",
-        "fix_id": "F-22555r555039_fix"
+        "fix_id": "F-22555r555039_fix",
+        "documentable": false
       },
       "id": "V-220851",
       "title": "The Remote Desktop Session Host must require secure RPC communications.",
@@ -2802,11 +2802,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
         "gid": "V-220852",
         "rid": "SV-220852r569187_rule",
         "stig_id": "WN10-CC-000290",
-        "fix_id": "F-22556r555042_fix"
+        "fix_id": "F-22556r555042_fix",
+        "documentable": false
       },
       "id": "V-220852",
       "title": "Remote Desktop Services must be configured with the client connection encryption set to the required level.",
@@ -2820,11 +2820,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220853",
         "rid": "SV-220853r569187_rule",
         "stig_id": "WN10-CC-000295",
-        "fix_id": "F-22557r555045_fix"
+        "fix_id": "F-22557r555045_fix",
+        "documentable": false
       },
       "id": "V-220853",
       "title": "Attachments must be prevented from being downloaded from RSS feeds.",
@@ -2838,11 +2838,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220854",
         "rid": "SV-220854r569187_rule",
         "stig_id": "WN10-CC-000300",
-        "fix_id": "F-22558r555048_fix"
+        "fix_id": "F-22558r555048_fix",
+        "documentable": false
       },
       "id": "V-220854",
       "title": "Basic authentication for RSS feeds over HTTP must not be used.",
@@ -2856,11 +2856,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220855",
         "rid": "SV-220855r569187_rule",
         "stig_id": "WN10-CC-000305",
-        "fix_id": "F-22559r555051_fix"
+        "fix_id": "F-22559r555051_fix",
+        "documentable": false
       },
       "id": "V-220855",
       "title": "Indexing of encrypted files must be turned off.",
@@ -2874,11 +2874,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000362-GPOS-00149",
         "gid": "V-220856",
         "rid": "SV-220856r569187_rule",
         "stig_id": "WN10-CC-000310",
-        "fix_id": "F-22560r555054_fix"
+        "fix_id": "F-22560r555054_fix",
+        "documentable": false
       },
       "id": "V-220856",
       "title": "Users must be prevented from changing installation options.",
@@ -2892,11 +2892,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000362-GPOS-00149",
         "gid": "V-220857",
         "rid": "SV-220857r569187_rule",
         "stig_id": "WN10-CC-000315",
-        "fix_id": "F-22561r555057_fix"
+        "fix_id": "F-22561r555057_fix",
+        "documentable": false
       },
       "id": "V-220857",
       "title": "The Windows Installer Always install with elevated privileges must be disabled.",
@@ -2910,11 +2910,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220858",
         "rid": "SV-220858r569187_rule",
         "stig_id": "WN10-CC-000320",
-        "fix_id": "F-22562r555060_fix"
+        "fix_id": "F-22562r555060_fix",
+        "documentable": false
       },
       "id": "V-220858",
       "title": "Users must be notified if a web-based program attempts to install software.",
@@ -2928,11 +2928,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-220859",
         "rid": "SV-220859r569187_rule",
         "stig_id": "WN10-CC-000325",
-        "fix_id": "F-22563r555063_fix"
+        "fix_id": "F-22563r555063_fix",
+        "documentable": false
       },
       "id": "V-220859",
       "title": "Automatically signing in the last interactive user after a system-initiated restart must be disabled.",
@@ -2946,11 +2946,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
         "gid": "V-220860",
         "rid": "SV-220860r569187_rule",
         "stig_id": "WN10-CC-000326",
-        "fix_id": "F-22564r555066_fix"
+        "fix_id": "F-22564r555066_fix",
+        "documentable": false
       },
       "id": "V-220860",
       "title": "PowerShell script block logging must be enabled on Windows 10.",
@@ -2964,11 +2964,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-220861",
         "rid": "SV-220861r569305_rule",
         "stig_id": "WN10-CC-000328",
-        "fix_id": "F-22565r603223_fix"
+        "fix_id": "F-22565r603223_fix",
+        "documentable": false
       },
       "id": "V-220861",
       "title": "The Windows Explorer Preview pane must be disabled for Windows 10.",
@@ -2982,11 +2982,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
         "gid": "V-220862",
         "rid": "SV-220862r569187_rule",
         "stig_id": "WN10-CC-000330",
-        "fix_id": "F-22566r555072_fix"
+        "fix_id": "F-22566r555072_fix",
+        "documentable": false
       },
       "id": "V-220862",
       "title": "The Windows Remote Management (WinRM) client must not use Basic authentication.",
@@ -3000,11 +3000,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000393-GPOS-00173",
         "gid": "V-220863",
         "rid": "SV-220863r569187_rule",
         "stig_id": "WN10-CC-000335",
-        "fix_id": "F-22567r555075_fix"
+        "fix_id": "F-22567r555075_fix",
+        "documentable": false
       },
       "id": "V-220863",
       "title": "The Windows Remote Management (WinRM) client must not allow unencrypted traffic.",
@@ -3018,11 +3018,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
         "gid": "V-220865",
         "rid": "SV-220865r654974_rule",
         "stig_id": "WN10-CC-000345",
-        "fix_id": "F-22569r654973_fix"
+        "fix_id": "F-22569r654973_fix",
+        "documentable": false
       },
       "id": "V-220865",
       "title": "The Windows Remote Management (WinRM) service must not use Basic authentication.",
@@ -3036,11 +3036,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000393-GPOS-00173",
         "gid": "V-220866",
         "rid": "SV-220866r569187_rule",
         "stig_id": "WN10-CC-000350",
-        "fix_id": "F-22570r555084_fix"
+        "fix_id": "F-22570r555084_fix",
+        "documentable": false
       },
       "id": "V-220866",
       "title": "The Windows Remote Management (WinRM) service must not allow unencrypted traffic.",
@@ -3054,11 +3054,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
         "gid": "V-220867",
         "rid": "SV-220867r569187_rule",
         "stig_id": "WN10-CC-000355",
-        "fix_id": "F-22571r555087_fix"
+        "fix_id": "F-22571r555087_fix",
+        "documentable": false
       },
       "id": "V-220867",
       "title": "The Windows Remote Management (WinRM) service must not store RunAs credentials.",
@@ -3072,11 +3072,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
         "gid": "V-220868",
         "rid": "SV-220868r569187_rule",
         "stig_id": "WN10-CC-000360",
-        "fix_id": "F-22572r555090_fix"
+        "fix_id": "F-22572r555090_fix",
+        "documentable": false
       },
       "id": "V-220868",
       "title": "The Windows Remote Management (WinRM) client must not use Digest authentication.",
@@ -3090,11 +3090,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
         "gid": "V-220869",
         "rid": "SV-220869r569187_rule",
         "stig_id": "WN10-CC-000365",
-        "fix_id": "F-22573r555093_fix"
+        "fix_id": "F-22573r555093_fix",
+        "documentable": false
       },
       "id": "V-220869",
       "title": "Windows 10 must be configured to prevent Windows apps from being activated by voice while the system is locked.",
@@ -3108,11 +3108,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220870",
         "rid": "SV-220870r569187_rule",
         "stig_id": "WN10-CC-000370",
-        "fix_id": "F-22574r555096_fix"
+        "fix_id": "F-22574r555096_fix",
+        "documentable": false
       },
       "id": "V-220870",
       "title": "The convenience PIN for Windows 10 must be disabled.",
@@ -3126,11 +3126,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220871",
         "rid": "SV-220871r642141_rule",
         "stig_id": "WN10-CC-000385",
-        "fix_id": "F-22575r642140_fix"
+        "fix_id": "F-22575r642140_fix",
+        "documentable": false
       },
       "id": "V-220871",
       "title": "Windows Ink Workspace must be configured to disallow access above the lock.",
@@ -3144,11 +3144,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220872",
         "rid": "SV-220872r569187_rule",
         "stig_id": "WN10-CC-000390",
-        "fix_id": "F-22576r555102_fix"
+        "fix_id": "F-22576r555102_fix",
+        "documentable": false
       },
       "id": "V-220872",
       "title": "Windows 10 should be configured to prevent users from receiving suggestions for third-party or additional applications.",
@@ -3162,11 +3162,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220873",
         "rid": "SV-220873r569187_rule",
         "stig_id": "WN10-EP-000020",
-        "fix_id": "F-22577r555105_fix"
+        "fix_id": "F-22577r555105_fix",
+        "documentable": false
       },
       "id": "V-220873",
       "title": "Windows 10 Exploit Protection system-level mitigation, Data Execution Prevention (DEP), must be on.",
@@ -3180,11 +3180,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00192",
         "gid": "V-220874",
         "rid": "SV-220874r569187_rule",
         "stig_id": "WN10-EP-000030",
-        "fix_id": "F-22578r555108_fix"
+        "fix_id": "F-22578r555108_fix",
+        "documentable": false
       },
       "id": "V-220874",
       "title": "Windows 10 Exploit Protection system-level mitigation, Randomize memory allocations (Bottom-Up ASLR), must be on.",
@@ -3198,11 +3198,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220875",
         "rid": "SV-220875r569187_rule",
         "stig_id": "WN10-EP-000040",
-        "fix_id": "F-22579r555111_fix"
+        "fix_id": "F-22579r555111_fix",
+        "documentable": false
       },
       "id": "V-220875",
       "title": "Windows 10 Exploit Protection system-level mitigation, Control flow guard (CFG), must be on.",
@@ -3216,11 +3216,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220876",
         "rid": "SV-220876r569187_rule",
         "stig_id": "WN10-EP-000050",
-        "fix_id": "F-22580r555114_fix"
+        "fix_id": "F-22580r555114_fix",
+        "documentable": false
       },
       "id": "V-220876",
       "title": "Windows 10 Exploit Protection system-level mitigation, Validate exception chains (SEHOP), must be on.",
@@ -3234,11 +3234,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220877",
         "rid": "SV-220877r569187_rule",
         "stig_id": "WN10-EP-000060",
-        "fix_id": "F-22581r555117_fix"
+        "fix_id": "F-22581r555117_fix",
+        "documentable": false
       },
       "id": "V-220877",
       "title": "Windows 10 Exploit Protection system-level mitigation, Validate heap integrity, must be on.",
@@ -3252,11 +3252,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220878",
         "rid": "SV-220878r569187_rule",
         "stig_id": "WN10-EP-000070",
-        "fix_id": "F-22582r555120_fix"
+        "fix_id": "F-22582r555120_fix",
+        "documentable": false
       },
       "id": "V-220878",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for Acrobat.exe.",
@@ -3270,11 +3270,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220879",
         "rid": "SV-220879r569187_rule",
         "stig_id": "WN10-EP-000080",
-        "fix_id": "F-22583r555123_fix"
+        "fix_id": "F-22583r555123_fix",
+        "documentable": false
       },
       "id": "V-220879",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for AcroRd32.exe.",
@@ -3288,11 +3288,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220880",
         "rid": "SV-220880r569187_rule",
         "stig_id": "WN10-EP-000090",
-        "fix_id": "F-22584r555126_fix"
+        "fix_id": "F-22584r555126_fix",
+        "documentable": false
       },
       "id": "V-220880",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for chrome.exe.",
@@ -3306,11 +3306,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220881",
         "rid": "SV-220881r569187_rule",
         "stig_id": "WN10-EP-000100",
-        "fix_id": "F-22585r555129_fix"
+        "fix_id": "F-22585r555129_fix",
+        "documentable": false
       },
       "id": "V-220881",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for EXCEL.EXE.",
@@ -3324,11 +3324,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220882",
         "rid": "SV-220882r569187_rule",
         "stig_id": "WN10-EP-000110",
-        "fix_id": "F-22586r555132_fix"
+        "fix_id": "F-22586r555132_fix",
+        "documentable": false
       },
       "id": "V-220882",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for firefox.exe.",
@@ -3342,11 +3342,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220883",
         "rid": "SV-220883r569187_rule",
         "stig_id": "WN10-EP-000120",
-        "fix_id": "F-22587r555135_fix"
+        "fix_id": "F-22587r555135_fix",
+        "documentable": false
       },
       "id": "V-220883",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for FLTLDR.EXE.",
@@ -3360,11 +3360,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220884",
         "rid": "SV-220884r569187_rule",
         "stig_id": "WN10-EP-000130",
-        "fix_id": "F-22588r555138_fix"
+        "fix_id": "F-22588r555138_fix",
+        "documentable": false
       },
       "id": "V-220884",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for GROOVE.EXE.",
@@ -3378,11 +3378,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220885",
         "rid": "SV-220885r569187_rule",
         "stig_id": "WN10-EP-000140",
-        "fix_id": "F-22589r555141_fix"
+        "fix_id": "F-22589r555141_fix",
+        "documentable": false
       },
       "id": "V-220885",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for iexplore.exe.",
@@ -3396,11 +3396,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220886",
         "rid": "SV-220886r569187_rule",
         "stig_id": "WN10-EP-000150",
-        "fix_id": "F-22590r555144_fix"
+        "fix_id": "F-22590r555144_fix",
+        "documentable": false
       },
       "id": "V-220886",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for INFOPATH.EXE.",
@@ -3414,11 +3414,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220887",
         "rid": "SV-220887r569187_rule",
         "stig_id": "WN10-EP-000160",
-        "fix_id": "F-22591r555147_fix"
+        "fix_id": "F-22591r555147_fix",
+        "documentable": false
       },
       "id": "V-220887",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for java.exe, javaw.exe, and javaws.exe.",
@@ -3432,11 +3432,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220888",
         "rid": "SV-220888r569187_rule",
         "stig_id": "WN10-EP-000170",
-        "fix_id": "F-22592r555150_fix"
+        "fix_id": "F-22592r555150_fix",
+        "documentable": false
       },
       "id": "V-220888",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for lync.exe.",
@@ -3450,11 +3450,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220889",
         "rid": "SV-220889r569187_rule",
         "stig_id": "WN10-EP-000180",
-        "fix_id": "F-22593r555153_fix"
+        "fix_id": "F-22593r555153_fix",
+        "documentable": false
       },
       "id": "V-220889",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for MSACCESS.EXE.",
@@ -3468,11 +3468,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220890",
         "rid": "SV-220890r569187_rule",
         "stig_id": "WN10-EP-000190",
-        "fix_id": "F-22594r555156_fix"
+        "fix_id": "F-22594r555156_fix",
+        "documentable": false
       },
       "id": "V-220890",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for MSPUB.EXE.",
@@ -3486,11 +3486,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220891",
         "rid": "SV-220891r569308_rule",
         "stig_id": "WN10-EP-000200",
-        "fix_id": "F-22595r603226_fix"
+        "fix_id": "F-22595r603226_fix",
+        "documentable": false
       },
       "id": "V-220891",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for OIS.EXE.",
@@ -3504,11 +3504,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220893",
         "rid": "SV-220893r569187_rule",
         "stig_id": "WN10-EP-000220",
-        "fix_id": "F-22597r555165_fix"
+        "fix_id": "F-22597r555165_fix",
+        "documentable": false
       },
       "id": "V-220893",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for OUTLOOK.EXE.",
@@ -3522,11 +3522,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220894",
         "rid": "SV-220894r569187_rule",
         "stig_id": "WN10-EP-000230",
-        "fix_id": "F-22598r555168_fix"
+        "fix_id": "F-22598r555168_fix",
+        "documentable": false
       },
       "id": "V-220894",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for plugin-container.exe.",
@@ -3540,11 +3540,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220895",
         "rid": "SV-220895r569187_rule",
         "stig_id": "WN10-EP-000240",
-        "fix_id": "F-22599r555171_fix"
+        "fix_id": "F-22599r555171_fix",
+        "documentable": false
       },
       "id": "V-220895",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for POWERPNT.EXE.",
@@ -3558,11 +3558,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220896",
         "rid": "SV-220896r569187_rule",
         "stig_id": "WN10-EP-000250",
-        "fix_id": "F-22600r555174_fix"
+        "fix_id": "F-22600r555174_fix",
+        "documentable": false
       },
       "id": "V-220896",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for PPTVIEW.EXE.",
@@ -3576,11 +3576,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220897",
         "rid": "SV-220897r569187_rule",
         "stig_id": "WN10-EP-000260",
-        "fix_id": "F-22601r555177_fix"
+        "fix_id": "F-22601r555177_fix",
+        "documentable": false
       },
       "id": "V-220897",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for VISIO.EXE.",
@@ -3594,11 +3594,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220898",
         "rid": "SV-220898r569187_rule",
         "stig_id": "WN10-EP-000270",
-        "fix_id": "F-22602r555180_fix"
+        "fix_id": "F-22602r555180_fix",
+        "documentable": false
       },
       "id": "V-220898",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for VPREVIEW.EXE.",
@@ -3612,11 +3612,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220899",
         "rid": "SV-220899r569187_rule",
         "stig_id": "WN10-EP-000280",
-        "fix_id": "F-22603r555183_fix"
+        "fix_id": "F-22603r555183_fix",
+        "documentable": false
       },
       "id": "V-220899",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for WINWORD.EXE.",
@@ -3630,11 +3630,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220900",
         "rid": "SV-220900r569187_rule",
         "stig_id": "WN10-EP-000290",
-        "fix_id": "F-22604r555186_fix"
+        "fix_id": "F-22604r555186_fix",
+        "documentable": false
       },
       "id": "V-220900",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for wmplayer.exe.",
@@ -3648,11 +3648,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220901",
         "rid": "SV-220901r569187_rule",
         "stig_id": "WN10-EP-000300",
-        "fix_id": "F-22605r555189_fix"
+        "fix_id": "F-22605r555189_fix",
+        "documentable": false
       },
       "id": "V-220901",
       "title": "Exploit Protection mitigations in Windows 10 must be configured for wordpad.exe.",
@@ -3666,11 +3666,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-220902",
         "rid": "SV-220902r569187_rule",
         "stig_id": "WN10-EP-000310",
-        "fix_id": "F-22606r555192_fix"
+        "fix_id": "F-22606r555192_fix",
+        "documentable": false
       },
       "id": "V-220902",
       "title": "Windows 10 Kernel (Direct Memory Access) DMA Protection must be enabled.",
@@ -3684,11 +3684,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-220903",
         "rid": "SV-220903r569310_rule",
         "stig_id": "WN10-PK-000005",
-        "fix_id": "F-22607r603228_fix"
+        "fix_id": "F-22607r603228_fix",
+        "documentable": false
       },
       "id": "V-220903",
       "title": "The DoD Root CA certificates must be installed in the Trusted Root Store.",
@@ -3702,11 +3702,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-220904",
         "rid": "SV-220904r569312_rule",
         "stig_id": "WN10-PK-000010",
-        "fix_id": "F-22608r603230_fix"
+        "fix_id": "F-22608r603230_fix",
+        "documentable": false
       },
       "id": "V-220904",
       "title": "The External Root CA certificates must be installed in the Trusted Root Store on unclassified systems.",
@@ -3720,11 +3720,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-220905",
         "rid": "SV-220905r569314_rule",
         "stig_id": "WN10-PK-000015",
-        "fix_id": "F-22609r603232_fix"
+        "fix_id": "F-22609r603232_fix",
+        "documentable": false
       },
       "id": "V-220905",
       "title": "The DoD Interoperability Root CA cross-certificates must be installed in the Untrusted Certificates Store on unclassified systems.",
@@ -3738,11 +3738,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-220906",
         "rid": "SV-220906r569316_rule",
         "stig_id": "WN10-PK-000020",
-        "fix_id": "F-22610r603234_fix"
+        "fix_id": "F-22610r603234_fix",
+        "documentable": false
       },
       "id": "V-220906",
       "title": "The US DoD CCEB Interoperability Root CA cross-certificates must be installed in the Untrusted Certificates Store on unclassified systems.",
@@ -3756,11 +3756,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220907",
         "rid": "SV-220907r569187_rule",
         "stig_id": "WN10-RG-000005",
-        "fix_id": "F-22611r555207_fix"
+        "fix_id": "F-22611r555207_fix",
+        "documentable": false
       },
       "id": "V-220907",
       "title": "Default permissions for the HKEY_LOCAL_MACHINE registry hive must be maintained.",
@@ -3774,11 +3774,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-220908",
         "rid": "SV-220908r569187_rule",
         "stig_id": "WN10-SO-000005",
-        "fix_id": "F-22612r555210_fix"
+        "fix_id": "F-22612r555210_fix",
+        "documentable": false
       },
       "id": "V-220908",
       "title": "The built-in administrator account must be disabled.",
@@ -3792,11 +3792,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000121-GPOS-00062",
         "gid": "V-220909",
         "rid": "SV-220909r569187_rule",
         "stig_id": "WN10-SO-000010",
-        "fix_id": "F-22613r555213_fix"
+        "fix_id": "F-22613r555213_fix",
+        "documentable": false
       },
       "id": "V-220909",
       "title": "The built-in guest account must be disabled.",
@@ -3810,11 +3810,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220910",
         "rid": "SV-220910r569187_rule",
         "stig_id": "WN10-SO-000015",
-        "fix_id": "F-22614r555216_fix"
+        "fix_id": "F-22614r555216_fix",
+        "documentable": false
       },
       "id": "V-220910",
       "title": "Local accounts with blank passwords must be restricted to prevent access from the network.",
@@ -3828,11 +3828,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220911",
         "rid": "SV-220911r569187_rule",
         "stig_id": "WN10-SO-000020",
-        "fix_id": "F-22615r555219_fix"
+        "fix_id": "F-22615r555219_fix",
+        "documentable": false
       },
       "id": "V-220911",
       "title": "The built-in administrator account must be renamed.",
@@ -3846,11 +3846,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220912",
         "rid": "SV-220912r569187_rule",
         "stig_id": "WN10-SO-000025",
-        "fix_id": "F-22616r555222_fix"
+        "fix_id": "F-22616r555222_fix",
+        "documentable": false
       },
       "id": "V-220912",
       "title": "The built-in guest account must be renamed.",
@@ -3864,11 +3864,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000062-GPOS-00031",
         "gid": "V-220913",
         "rid": "SV-220913r569187_rule",
         "stig_id": "WN10-SO-000030",
-        "fix_id": "F-22617r555225_fix"
+        "fix_id": "F-22617r555225_fix",
+        "documentable": false
       },
       "id": "V-220913",
       "title": "Audit policy using subcategories must be enabled.",
@@ -3882,11 +3882,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
         "gid": "V-220914",
         "rid": "SV-220914r569187_rule",
         "stig_id": "WN10-SO-000035",
-        "fix_id": "F-22618r555228_fix"
+        "fix_id": "F-22618r555228_fix",
+        "documentable": false
       },
       "id": "V-220914",
       "title": "Outgoing secure channel traffic must be encrypted or signed.",
@@ -3900,11 +3900,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
         "gid": "V-220915",
         "rid": "SV-220915r569187_rule",
         "stig_id": "WN10-SO-000040",
-        "fix_id": "F-22619r555231_fix"
+        "fix_id": "F-22619r555231_fix",
+        "documentable": false
       },
       "id": "V-220915",
       "title": "Outgoing secure channel traffic must be encrypted when possible.",
@@ -3918,11 +3918,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
         "gid": "V-220916",
         "rid": "SV-220916r569187_rule",
         "stig_id": "WN10-SO-000045",
-        "fix_id": "F-22620r555234_fix"
+        "fix_id": "F-22620r555234_fix",
+        "documentable": false
       },
       "id": "V-220916",
       "title": "Outgoing secure channel traffic must be signed when possible.",
@@ -3936,11 +3936,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220917",
         "rid": "SV-220917r569187_rule",
         "stig_id": "WN10-SO-000050",
-        "fix_id": "F-22621r555237_fix"
+        "fix_id": "F-22621r555237_fix",
+        "documentable": false
       },
       "id": "V-220917",
       "title": "The computer account password must not be prevented from being reset.",
@@ -3954,11 +3954,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220918",
         "rid": "SV-220918r569187_rule",
         "stig_id": "WN10-SO-000055",
-        "fix_id": "F-22622r555240_fix"
+        "fix_id": "F-22622r555240_fix",
+        "documentable": false
       },
       "id": "V-220918",
       "title": "The maximum age for machine account passwords must be configured to 30 days or less.",
@@ -3972,11 +3972,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
         "gid": "V-220919",
         "rid": "SV-220919r569187_rule",
         "stig_id": "WN10-SO-000060",
-        "fix_id": "F-22623r555243_fix"
+        "fix_id": "F-22623r555243_fix",
+        "documentable": false
       },
       "id": "V-220919",
       "title": "The system must be configured to require a strong session key.",
@@ -3990,11 +3990,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-220920",
         "rid": "SV-220920r569187_rule",
         "stig_id": "WN10-SO-000070",
-        "fix_id": "F-22624r555246_fix"
+        "fix_id": "F-22624r555246_fix",
+        "documentable": false
       },
       "id": "V-220920",
       "title": "The machine inactivity limit must be set to 15 minutes, locking the system with the screensaver.",
@@ -4008,11 +4008,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-220921",
         "rid": "SV-220921r569187_rule",
         "stig_id": "WN10-SO-000075",
-        "fix_id": "F-22625r555249_fix"
+        "fix_id": "F-22625r555249_fix",
+        "documentable": false
       },
       "id": "V-220921",
       "title": "The required legal notice must be configured to display before console logon.",
@@ -4026,11 +4026,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-220922",
         "rid": "SV-220922r569187_rule",
         "stig_id": "WN10-SO-000080",
-        "fix_id": "F-22626r555252_fix"
+        "fix_id": "F-22626r555252_fix",
+        "documentable": false
       },
       "id": "V-220922",
       "title": "The Windows dialog box title for the legal banner must be configured.",
@@ -4044,11 +4044,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220923",
         "rid": "SV-220923r569187_rule",
         "stig_id": "WN10-SO-000085",
-        "fix_id": "F-22627r555255_fix"
+        "fix_id": "F-22627r555255_fix",
+        "documentable": false
       },
       "id": "V-220923",
       "title": "Caching of logon credentials must be limited.",
@@ -4062,11 +4062,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220924",
         "rid": "SV-220924r569187_rule",
         "stig_id": "WN10-SO-000095",
-        "fix_id": "F-22628r555258_fix"
+        "fix_id": "F-22628r555258_fix",
+        "documentable": false
       },
       "id": "V-220924",
       "title": "The Smart Card removal option must be configured to Force Logoff or Lock Workstation.",
@@ -4080,11 +4080,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
         "gid": "V-220925",
         "rid": "SV-220925r569187_rule",
         "stig_id": "WN10-SO-000100",
-        "fix_id": "F-22629r555261_fix"
+        "fix_id": "F-22629r555261_fix",
+        "documentable": false
       },
       "id": "V-220925",
       "title": "The Windows SMB client must be configured to always perform SMB packet signing.",
@@ -4098,11 +4098,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-220926",
         "rid": "SV-220926r569187_rule",
         "stig_id": "WN10-SO-000110",
-        "fix_id": "F-22630r555264_fix"
+        "fix_id": "F-22630r555264_fix",
+        "documentable": false
       },
       "id": "V-220926",
       "title": "Unencrypted passwords must not be sent to third-party SMB Servers.",
@@ -4116,11 +4116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
         "gid": "V-220927",
         "rid": "SV-220927r569187_rule",
         "stig_id": "WN10-SO-000120",
-        "fix_id": "F-22631r555267_fix"
+        "fix_id": "F-22631r555267_fix",
+        "documentable": false
       },
       "id": "V-220927",
       "title": "The Windows SMB server must be configured to always perform SMB packet signing.",
@@ -4134,11 +4134,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220928",
         "rid": "SV-220928r569187_rule",
         "stig_id": "WN10-SO-000140",
-        "fix_id": "F-22632r555270_fix"
+        "fix_id": "F-22632r555270_fix",
+        "documentable": false
       },
       "id": "V-220928",
       "title": "Anonymous SID/Name translation must not be allowed.",
@@ -4152,11 +4152,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220929",
         "rid": "SV-220929r569187_rule",
         "stig_id": "WN10-SO-000145",
-        "fix_id": "F-22633r555273_fix"
+        "fix_id": "F-22633r555273_fix",
+        "documentable": false
       },
       "id": "V-220929",
       "title": "Anonymous enumeration of SAM accounts must not be allowed.",
@@ -4170,11 +4170,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-220930",
         "rid": "SV-220930r569187_rule",
         "stig_id": "WN10-SO-000150",
-        "fix_id": "F-22634r555276_fix"
+        "fix_id": "F-22634r555276_fix",
+        "documentable": false
       },
       "id": "V-220930",
       "title": "Anonymous enumeration of shares must be restricted.",
@@ -4188,11 +4188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220931",
         "rid": "SV-220931r569187_rule",
         "stig_id": "WN10-SO-000160",
-        "fix_id": "F-22635r555279_fix"
+        "fix_id": "F-22635r555279_fix",
+        "documentable": false
       },
       "id": "V-220931",
       "title": "The system must be configured to prevent anonymous users from having the same rights as the Everyone group.",
@@ -4206,11 +4206,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-220932",
         "rid": "SV-220932r569187_rule",
         "stig_id": "WN10-SO-000165",
-        "fix_id": "F-22636r555282_fix"
+        "fix_id": "F-22636r555282_fix",
+        "documentable": false
       },
       "id": "V-220932",
       "title": "Anonymous access to Named Pipes and Shares must be restricted.",
@@ -4224,11 +4224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220933",
         "rid": "SV-220933r569187_rule",
         "stig_id": "WN10-SO-000167",
-        "fix_id": "F-22637r555285_fix"
+        "fix_id": "F-22637r555285_fix",
+        "documentable": false
       },
       "id": "V-220933",
       "title": "Remote calls to the Security Account Manager (SAM) must be restricted to Administrators.",
@@ -4242,11 +4242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220934",
         "rid": "SV-220934r569187_rule",
         "stig_id": "WN10-SO-000180",
-        "fix_id": "F-22638r555288_fix"
+        "fix_id": "F-22638r555288_fix",
+        "documentable": false
       },
       "id": "V-220934",
       "title": "NTLM must be prevented from falling back to a Null session.",
@@ -4260,11 +4260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220935",
         "rid": "SV-220935r569187_rule",
         "stig_id": "WN10-SO-000185",
-        "fix_id": "F-22639r555291_fix"
+        "fix_id": "F-22639r555291_fix",
+        "documentable": false
       },
       "id": "V-220935",
       "title": "PKU2U authentication using online identities must be prevented.",
@@ -4278,11 +4278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000120-GPOS-00061",
         "gid": "V-220936",
         "rid": "SV-220936r569187_rule",
         "stig_id": "WN10-SO-000190",
-        "fix_id": "F-22640r555294_fix"
+        "fix_id": "F-22640r555294_fix",
+        "documentable": false
       },
       "id": "V-220936",
       "title": "Kerberos encryption types must be configured to prevent the use of DES and RC4 encryption suites.",
@@ -4296,11 +4296,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-220937",
         "rid": "SV-220937r569187_rule",
         "stig_id": "WN10-SO-000195",
-        "fix_id": "F-22641r555297_fix"
+        "fix_id": "F-22641r555297_fix",
+        "documentable": false
       },
       "id": "V-220937",
       "title": "The system must be configured to prevent the storage of the LAN Manager hash of passwords.",
@@ -4314,11 +4314,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220938",
         "rid": "SV-220938r569187_rule",
         "stig_id": "WN10-SO-000205",
-        "fix_id": "F-22642r555300_fix"
+        "fix_id": "F-22642r555300_fix",
+        "documentable": false
       },
       "id": "V-220938",
       "title": "The LanMan authentication level must be set to send NTLMv2 response only, and to refuse LM and NTLM.",
@@ -4332,11 +4332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220939",
         "rid": "SV-220939r569187_rule",
         "stig_id": "WN10-SO-000210",
-        "fix_id": "F-22643r555303_fix"
+        "fix_id": "F-22643r555303_fix",
+        "documentable": false
       },
       "id": "V-220939",
       "title": "The system must be configured to the required LDAP client signing level.",
@@ -4350,11 +4350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220940",
         "rid": "SV-220940r569187_rule",
         "stig_id": "WN10-SO-000215",
-        "fix_id": "F-22644r555306_fix"
+        "fix_id": "F-22644r555306_fix",
+        "documentable": false
       },
       "id": "V-220940",
       "title": "The system must be configured to meet the minimum session security requirement for NTLM SSP based clients.",
@@ -4368,11 +4368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220941",
         "rid": "SV-220941r569187_rule",
         "stig_id": "WN10-SO-000220",
-        "fix_id": "F-22645r555309_fix"
+        "fix_id": "F-22645r555309_fix",
+        "documentable": false
       },
       "id": "V-220941",
       "title": "The system must be configured to meet the minimum session security requirement for NTLM SSP based servers.",
@@ -4386,11 +4386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000478-GPOS-00223",
         "gid": "V-220942",
         "rid": "SV-220942r569187_rule",
         "stig_id": "WN10-SO-000230",
-        "fix_id": "F-22646r555312_fix"
+        "fix_id": "F-22646r555312_fix",
+        "documentable": false
       },
       "id": "V-220942",
       "title": "The system must be configured to use FIPS-compliant algorithms for encryption, hashing, and signing.",
@@ -4404,11 +4404,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220943",
         "rid": "SV-220943r569187_rule",
         "stig_id": "WN10-SO-000240",
-        "fix_id": "F-22647r555315_fix"
+        "fix_id": "F-22647r555315_fix",
+        "documentable": false
       },
       "id": "V-220943",
       "title": "The default permissions of global system objects must be increased.",
@@ -4422,11 +4422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
         "gid": "V-220944",
         "rid": "SV-220944r569187_rule",
         "stig_id": "WN10-SO-000245",
-        "fix_id": "F-22648r555318_fix"
+        "fix_id": "F-22648r555318_fix",
+        "documentable": false
       },
       "id": "V-220944",
       "title": "User Account Control approval mode for the built-in Administrator must be enabled.",
@@ -4440,11 +4440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-220945",
         "rid": "SV-220945r569187_rule",
         "stig_id": "WN10-SO-000250",
-        "fix_id": "F-22649r555321_fix"
+        "fix_id": "F-22649r555321_fix",
+        "documentable": false
       },
       "id": "V-220945",
       "title": "User Account Control must, at minimum, prompt administrators for consent on the secure desktop.",
@@ -4458,16 +4458,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000105-GPOS-00052",
+        "gid": "V-220946",
+        "rid": "SV-220946r569187_rule",
+        "stig_id": "WN10-SO-000251",
+        "fix_id": "F-22650r555324_fix",
         "satisfies": [
           "SRG-OS-000106-GPOS-00053",
           "SRG-OS-000107-GPOS-00054",
           "SRG-OS-000108-GPOS-00055"
         ],
-        "gid": "V-220946",
-        "rid": "SV-220946r569187_rule",
-        "stig_id": "WN10-SO-000251",
-        "fix_id": "F-22650r555324_fix"
+        "documentable": false
       },
       "id": "V-220946",
       "title": "Windows 10 must use multifactor authentication for local and network access to privileged and non-privileged accounts.",
@@ -4481,11 +4481,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
         "gid": "V-220947",
         "rid": "SV-220947r569187_rule",
         "stig_id": "WN10-SO-000255",
-        "fix_id": "F-22651r555327_fix"
+        "fix_id": "F-22651r555327_fix",
+        "documentable": false
       },
       "id": "V-220947",
       "title": "User Account Control must automatically deny elevation requests for standard users.",
@@ -4499,11 +4499,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-220948",
         "rid": "SV-220948r569187_rule",
         "stig_id": "WN10-SO-000260",
-        "fix_id": "F-22652r555330_fix"
+        "fix_id": "F-22652r555330_fix",
+        "documentable": false
       },
       "id": "V-220948",
       "title": "User Account Control must be configured to detect application installations and prompt for elevation.",
@@ -4517,11 +4517,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-220949",
         "rid": "SV-220949r569187_rule",
         "stig_id": "WN10-SO-000265",
-        "fix_id": "F-22653r555333_fix"
+        "fix_id": "F-22653r555333_fix",
+        "documentable": false
       },
       "id": "V-220949",
       "title": "User Account Control must only elevate UIAccess applications that are installed in secure locations.",
@@ -4535,11 +4535,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
         "gid": "V-220950",
         "rid": "SV-220950r569187_rule",
         "stig_id": "WN10-SO-000270",
-        "fix_id": "F-22654r555336_fix"
+        "fix_id": "F-22654r555336_fix",
+        "documentable": false
       },
       "id": "V-220950",
       "title": "User Account Control must run all administrators in Admin Approval Mode, enabling UAC.",
@@ -4553,11 +4553,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-220951",
         "rid": "SV-220951r569187_rule",
         "stig_id": "WN10-SO-000275",
-        "fix_id": "F-22655r555339_fix"
+        "fix_id": "F-22655r555339_fix",
+        "documentable": false
       },
       "id": "V-220951",
       "title": "User Account Control must virtualize file and registry write failures to per-user locations.",
@@ -4571,11 +4571,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-220952",
         "rid": "SV-220952r569187_rule",
         "stig_id": "WN10-SO-000280",
-        "fix_id": "F-22656r555342_fix"
+        "fix_id": "F-22656r555342_fix",
+        "documentable": false
       },
       "id": "V-220952",
       "title": "Passwords for enabled local Administrator accounts must be changed at least every 60 days.",
@@ -4589,11 +4589,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-220954",
         "rid": "SV-220954r569187_rule",
         "stig_id": "WN10-UC-000015",
-        "fix_id": "F-22658r555348_fix"
+        "fix_id": "F-22658r555348_fix",
+        "documentable": false
       },
       "id": "V-220954",
       "title": "Toast notifications to the lock screen must be turned off.",
@@ -4607,11 +4607,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-220955",
         "rid": "SV-220955r569187_rule",
         "stig_id": "WN10-UC-000020",
-        "fix_id": "F-22659r555351_fix"
+        "fix_id": "F-22659r555351_fix",
+        "documentable": false
       },
       "id": "V-220955",
       "title": "Zone information must be preserved when saving attachments.",
@@ -4625,11 +4625,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220956",
         "rid": "SV-220956r569187_rule",
         "stig_id": "WN10-UR-000005",
-        "fix_id": "F-22660r555354_fix"
+        "fix_id": "F-22660r555354_fix",
+        "documentable": false
       },
       "id": "V-220956",
       "title": "The Access Credential Manager as a trusted caller user right must not be assigned to any groups or accounts.",
@@ -4643,11 +4643,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-220957",
         "rid": "SV-220957r569187_rule",
         "stig_id": "WN10-UR-000010",
-        "fix_id": "F-22661r555357_fix"
+        "fix_id": "F-22661r555357_fix",
+        "documentable": false
       },
       "id": "V-220957",
       "title": "The Access this computer from the network user right must only be assigned to the Administrators and Remote Desktop Users groups.",
@@ -4661,11 +4661,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220958",
         "rid": "SV-220958r569187_rule",
         "stig_id": "WN10-UR-000015",
-        "fix_id": "F-22662r555360_fix"
+        "fix_id": "F-22662r555360_fix",
+        "documentable": false
       },
       "id": "V-220958",
       "title": "The Act as part of the operating system user right must not be assigned to any groups or accounts.",
@@ -4679,11 +4679,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-220959",
         "rid": "SV-220959r569187_rule",
         "stig_id": "WN10-UR-000025",
-        "fix_id": "F-22663r555363_fix"
+        "fix_id": "F-22663r555363_fix",
+        "documentable": false
       },
       "id": "V-220959",
       "title": "The Allow log on locally user right must only be assigned to the Administrators and Users groups.",
@@ -4697,11 +4697,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220960",
         "rid": "SV-220960r569187_rule",
         "stig_id": "WN10-UR-000030",
-        "fix_id": "F-22664r555366_fix"
+        "fix_id": "F-22664r555366_fix",
+        "documentable": false
       },
       "id": "V-220960",
       "title": "The Back up files and directories user right must only be assigned to the Administrators group.",
@@ -4715,11 +4715,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220961",
         "rid": "SV-220961r569187_rule",
         "stig_id": "WN10-UR-000035",
-        "fix_id": "F-22665r555369_fix"
+        "fix_id": "F-22665r555369_fix",
+        "documentable": false
       },
       "id": "V-220961",
       "title": "The Change the system time user right must only be assigned to Administrators and Local Service and NT SERVICE\\autotimesvc.",
@@ -4733,11 +4733,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220962",
         "rid": "SV-220962r569187_rule",
         "stig_id": "WN10-UR-000040",
-        "fix_id": "F-22666r555372_fix"
+        "fix_id": "F-22666r555372_fix",
+        "documentable": false
       },
       "id": "V-220962",
       "title": "The Create a pagefile user right must only be assigned to the Administrators group.",
@@ -4751,11 +4751,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220963",
         "rid": "SV-220963r569187_rule",
         "stig_id": "WN10-UR-000045",
-        "fix_id": "F-22667r555375_fix"
+        "fix_id": "F-22667r555375_fix",
+        "documentable": false
       },
       "id": "V-220963",
       "title": "The Create a token object user right must not be assigned to any groups or accounts.",
@@ -4769,11 +4769,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220964",
         "rid": "SV-220964r569187_rule",
         "stig_id": "WN10-UR-000050",
-        "fix_id": "F-22668r555378_fix"
+        "fix_id": "F-22668r555378_fix",
+        "documentable": false
       },
       "id": "V-220964",
       "title": "The Create global objects user right must only be assigned to Administrators, Service, Local Service, and Network Service.",
@@ -4787,11 +4787,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220965",
         "rid": "SV-220965r569187_rule",
         "stig_id": "WN10-UR-000055",
-        "fix_id": "F-22669r555381_fix"
+        "fix_id": "F-22669r555381_fix",
+        "documentable": false
       },
       "id": "V-220965",
       "title": "The Create permanent shared objects user right must not be assigned to any groups or accounts.",
@@ -4805,11 +4805,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220966",
         "rid": "SV-220966r569187_rule",
         "stig_id": "WN10-UR-000060",
-        "fix_id": "F-22670r555384_fix"
+        "fix_id": "F-22670r555384_fix",
+        "documentable": false
       },
       "id": "V-220966",
       "title": "The Create symbolic links user right must only be assigned to the Administrators group.",
@@ -4823,11 +4823,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220967",
         "rid": "SV-220967r569187_rule",
         "stig_id": "WN10-UR-000065",
-        "fix_id": "F-22671r555387_fix"
+        "fix_id": "F-22671r555387_fix",
+        "documentable": false
       },
       "id": "V-220967",
       "title": "The Debug programs user right must only be assigned to the Administrators group.",
@@ -4841,11 +4841,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-220968",
         "rid": "SV-220968r569187_rule",
         "stig_id": "WN10-UR-000070",
-        "fix_id": "F-22672r555390_fix"
+        "fix_id": "F-22672r555390_fix",
+        "documentable": false
       },
       "id": "V-220968",
       "title": "The Deny access to this computer from the network user right on workstations must be configured to prevent access from highly privileged domain accounts and local accounts on domain systems and unauthenticated access on all systems.",
@@ -4859,11 +4859,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-220969",
         "rid": "SV-220969r569187_rule",
         "stig_id": "WN10-UR-000075",
-        "fix_id": "F-22673r555393_fix"
+        "fix_id": "F-22673r555393_fix",
+        "documentable": false
       },
       "id": "V-220969",
       "title": "The Deny log on as a batch job user right on domain-joined workstations must be configured to prevent access from highly privileged domain accounts.",
@@ -4877,11 +4877,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-220970",
         "rid": "SV-220970r569187_rule",
         "stig_id": "WN10-UR-000080",
-        "fix_id": "F-22674r555396_fix"
+        "fix_id": "F-22674r555396_fix",
+        "documentable": false
       },
       "id": "V-220970",
       "title": "The Deny log on as a service user right on Windows 10 domain-joined workstations must be configured to prevent access from highly privileged domain accounts.",
@@ -4895,11 +4895,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-220971",
         "rid": "SV-220971r569187_rule",
         "stig_id": "WN10-UR-000085",
-        "fix_id": "F-22675r555399_fix"
+        "fix_id": "F-22675r555399_fix",
+        "documentable": false
       },
       "id": "V-220971",
       "title": "The Deny log on locally user right on workstations must be configured to prevent access from highly privileged domain accounts on domain systems and unauthenticated access on all systems.",
@@ -4913,11 +4913,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-220972",
         "rid": "SV-220972r569187_rule",
         "stig_id": "WN10-UR-000090",
-        "fix_id": "F-22676r555402_fix"
+        "fix_id": "F-22676r555402_fix",
+        "documentable": false
       },
       "id": "V-220972",
       "title": "The Deny log on through Remote Desktop Services user right on Windows 10 workstations must at a minimum be configured to prevent access from highly privileged domain accounts and local accounts on domain systems and unauthenticated access on all systems.",
@@ -4931,11 +4931,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220973",
         "rid": "SV-220973r569187_rule",
         "stig_id": "WN10-UR-000095",
-        "fix_id": "F-22677r555405_fix"
+        "fix_id": "F-22677r555405_fix",
+        "documentable": false
       },
       "id": "V-220973",
       "title": "The Enable computer and user accounts to be trusted for delegation user right must not be assigned to any groups or accounts.",
@@ -4949,11 +4949,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220974",
         "rid": "SV-220974r569187_rule",
         "stig_id": "WN10-UR-000100",
-        "fix_id": "F-22678r555408_fix"
+        "fix_id": "F-22678r555408_fix",
+        "documentable": false
       },
       "id": "V-220974",
       "title": "The Force shutdown from a remote system user right must only be assigned to the Administrators group.",
@@ -4967,11 +4967,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220975",
         "rid": "SV-220975r569187_rule",
         "stig_id": "WN10-UR-000110",
-        "fix_id": "F-22679r555411_fix"
+        "fix_id": "F-22679r555411_fix",
+        "documentable": false
       },
       "id": "V-220975",
       "title": "The Impersonate a client after authentication user right must only be assigned to Administrators, Service, Local Service, and Network Service.",
@@ -4985,11 +4985,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220976",
         "rid": "SV-220976r569187_rule",
         "stig_id": "WN10-UR-000120",
-        "fix_id": "F-22680r555414_fix"
+        "fix_id": "F-22680r555414_fix",
+        "documentable": false
       },
       "id": "V-220976",
       "title": "The Load and unload device drivers user right must only be assigned to the Administrators group.",
@@ -5003,11 +5003,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220977",
         "rid": "SV-220977r569187_rule",
         "stig_id": "WN10-UR-000125",
-        "fix_id": "F-22681r555417_fix"
+        "fix_id": "F-22681r555417_fix",
+        "documentable": false
       },
       "id": "V-220977",
       "title": "The Lock pages in memory user right must not be assigned to any groups or accounts.",
@@ -5021,11 +5021,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-220978",
         "rid": "SV-220978r569187_rule",
         "stig_id": "WN10-UR-000130",
-        "fix_id": "F-22682r555420_fix"
+        "fix_id": "F-22682r555420_fix",
+        "documentable": false
       },
       "id": "V-220978",
       "title": "The Manage auditing and security log user right must only be assigned to the Administrators group.",
@@ -5039,11 +5039,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220979",
         "rid": "SV-220979r569187_rule",
         "stig_id": "WN10-UR-000140",
-        "fix_id": "F-22683r555423_fix"
+        "fix_id": "F-22683r555423_fix",
+        "documentable": false
       },
       "id": "V-220979",
       "title": "The Modify firmware environment values user right must only be assigned to the Administrators group.",
@@ -5057,11 +5057,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220980",
         "rid": "SV-220980r569187_rule",
         "stig_id": "WN10-UR-000145",
-        "fix_id": "F-22684r555426_fix"
+        "fix_id": "F-22684r555426_fix",
+        "documentable": false
       },
       "id": "V-220980",
       "title": "The Perform volume maintenance tasks user right must only be assigned to the Administrators group.",
@@ -5075,11 +5075,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220981",
         "rid": "SV-220981r569187_rule",
         "stig_id": "WN10-UR-000150",
-        "fix_id": "F-22685r555429_fix"
+        "fix_id": "F-22685r555429_fix",
+        "documentable": false
       },
       "id": "V-220981",
       "title": "The Profile single process user right must only be assigned to the Administrators group.",
@@ -5093,11 +5093,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220982",
         "rid": "SV-220982r569187_rule",
         "stig_id": "WN10-UR-000160",
-        "fix_id": "F-22686r555432_fix"
+        "fix_id": "F-22686r555432_fix",
+        "documentable": false
       },
       "id": "V-220982",
       "title": "The Restore files and directories user right must only be assigned to the Administrators group.",
@@ -5111,11 +5111,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-220983",
         "rid": "SV-220983r569187_rule",
         "stig_id": "WN10-UR-000165",
-        "fix_id": "F-22687r555435_fix"
+        "fix_id": "F-22687r555435_fix",
+        "documentable": false
       },
       "id": "V-220983",
       "title": "The Take ownership of files or other objects user right must only be assigned to the Administrators group.",
@@ -5129,11 +5129,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000041",
         "gid": "V-230220",
         "rid": "SV-230220r569300_rule",
         "stig_id": "WN10-CC-000327",
-        "fix_id": "F-32522r603218_fix"
+        "fix_id": "F-32522r603218_fix",
+        "documentable": false
       },
       "id": "V-230220",
       "title": "PowerShell Transcription must be enabled on Windows 10.",
@@ -5145,7 +5145,5 @@
       }
     }
   ],
-  "name": "Windows_10_STIG",
-  "title": "Windows 10 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Windows_10_STIG"
 }

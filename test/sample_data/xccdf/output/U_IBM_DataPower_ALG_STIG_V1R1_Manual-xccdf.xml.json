@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000015-ALG-000016",
         "gid": "V-64979",
         "rid": "SV-79469r1_rule",
         "stig_id": "WSDP-AG-000001",
-        "fix_id": "F-70919r1_fix"
+        "fix_id": "F-70919r1_fix",
+        "documentable": false
       },
       "id": "V-64979",
       "title": "The DataPower Gateway must enforce approved authorizations for logical access to information and system resources by employing identity-based, role-based, and/or attribute-based security policies.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-ALG-000017",
         "gid": "V-65191",
         "rid": "SV-79681r1_rule",
         "stig_id": "WSDP-AG-000002",
-        "fix_id": "F-71131r1_fix"
+        "fix_id": "F-71131r1_fix",
+        "documentable": false
       },
       "id": "V-65191",
       "title": "The DataPower Gateway must enforce approved authorizations for controlling the flow of information within the network based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-ALG-000018",
         "gid": "V-65193",
         "rid": "SV-79683r1_rule",
         "stig_id": "WSDP-AG-000003",
-        "fix_id": "F-71133r1_fix"
+        "fix_id": "F-71133r1_fix",
+        "documentable": false
       },
       "id": "V-65193",
       "title": "The DataPower Gateway must restrict or block harmful or suspicious communications traffic by controlling the flow of information between interconnected networks based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000041-ALG-000022",
         "gid": "V-65195",
         "rid": "SV-79685r1_rule",
         "stig_id": "WSDP-AG-000011",
-        "fix_id": "F-71135r1_fix"
+        "fix_id": "F-71135r1_fix",
+        "documentable": false
       },
       "id": "V-65195",
       "title": "The DataPower Gateway providing user access control intermediary services must display the Standard Mandatory DoD-approved Notice and Consent Banner before granting access to the network.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000042-ALG-000023",
         "gid": "V-65197",
         "rid": "SV-79687r1_rule",
         "stig_id": "WSDP-AG-000012",
-        "fix_id": "F-71137r1_fix"
+        "fix_id": "F-71137r1_fix",
+        "documentable": false
       },
       "id": "V-65197",
       "title": "The DataPower Gateway providing user access control intermediary services must retain the Standard Mandatory DoD-approved Notice and Consent Banner on the screen until users acknowledge the usage conditions and take explicit actions to log on for further access.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000043-ALG-000024",
         "gid": "V-65199",
         "rid": "SV-79689r1_rule",
         "stig_id": "WSDP-AG-000013",
-        "fix_id": "F-71139r1_fix"
+        "fix_id": "F-71139r1_fix",
+        "documentable": false
       },
       "id": "V-65199",
       "title": "The DataPower Gateway providing user access control intermediary services for publicly accessible applications must display the Standard Mandatory DoD-approved Notice and Consent Banner before granting access to the system.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000062-ALG-000011",
         "gid": "V-65201",
         "rid": "SV-79691r1_rule",
         "stig_id": "WSDP-AG-000016",
-        "fix_id": "F-71141r1_fix"
+        "fix_id": "F-71141r1_fix",
+        "documentable": false
       },
       "id": "V-65201",
       "title": "The DataPower Gateway providing intermediary services for remote access communications traffic must use encryption services that implement NIST FIPS-validated cryptography to protect the confidentiality of remote access sessions.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000062-ALG-000092",
         "gid": "V-65203",
         "rid": "SV-79693r1_rule",
         "stig_id": "WSDP-AG-000017",
-        "fix_id": "F-71143r1_fix"
+        "fix_id": "F-71143r1_fix",
+        "documentable": false
       },
       "id": "V-65203",
       "title": "The DataPower Gateway that stores secret or private keys must use FIPS-approved key management technology and processes in the production and control of private/secret cryptographic keys.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000062-ALG-000150",
         "gid": "V-65205",
         "rid": "SV-79695r1_rule",
         "stig_id": "WSDP-AG-000018",
-        "fix_id": "F-71145r1_fix"
+        "fix_id": "F-71145r1_fix",
+        "documentable": false
       },
       "id": "V-65205",
       "title": "The DataPower Gateway that provides intermediary services for TLS must be configured to comply with the required TLS settings in NIST SP 800-52.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000063-ALG-000012",
         "gid": "V-65207",
         "rid": "SV-79697r1_rule",
         "stig_id": "WSDP-AG-000019",
-        "fix_id": "F-71147r1_fix"
+        "fix_id": "F-71147r1_fix",
+        "documentable": false
       },
       "id": "V-65207",
       "title": "The DataPower Gateway providing intermediary services for remote access communications traffic must use NIST FIPS-validated cryptography to protect the integrity of remote access sessions.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000088-ALG-000054",
         "gid": "V-65209",
         "rid": "SV-79699r1_rule",
         "stig_id": "WSDP-AG-000026",
-        "fix_id": "F-71149r1_fix"
+        "fix_id": "F-71149r1_fix",
+        "documentable": false
       },
       "id": "V-65209",
       "title": "The DataPower Gateway must send an alert to, at a minimum, the ISSO and SCA when an audit processing failure occurs.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000098-ALG-000056",
         "gid": "V-65211",
         "rid": "SV-79701r1_rule",
         "stig_id": "WSDP-AG-000028",
-        "fix_id": "F-71151r1_fix"
+        "fix_id": "F-71151r1_fix",
+        "documentable": false
       },
       "id": "V-65211",
       "title": "The DataPower Gateway must protect audit information from unauthorized read access.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000132-ALG-000087",
         "gid": "V-65213",
         "rid": "SV-79703r1_rule",
         "stig_id": "WSDP-AG-000036",
-        "fix_id": "F-71153r1_fix"
+        "fix_id": "F-71153r1_fix",
+        "documentable": false
       },
       "id": "V-65213",
       "title": "The DataPower Gateway must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000138-ALG-000063",
         "gid": "V-65215",
         "rid": "SV-79705r1_rule",
         "stig_id": "WSDP-AG-000037",
-        "fix_id": "F-71155r1_fix"
+        "fix_id": "F-71155r1_fix",
+        "documentable": false
       },
       "id": "V-65215",
       "title": "The DataPower Gateway providing user authentication intermediary services must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000138-ALG-000088",
         "gid": "V-65217",
         "rid": "SV-79707r1_rule",
         "stig_id": "WSDP-AG-000038",
-        "fix_id": "F-71157r1_fix"
+        "fix_id": "F-71157r1_fix",
+        "documentable": false
       },
       "id": "V-65217",
       "title": "The DataPower Gateway providing user access control intermediary services must be configured with a pre-established trust relationship and mechanisms with appropriate authorities (e.g., Active Directory or AAA server) which validate user account access authorizations and privileges.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000138-ALG-000089",
         "gid": "V-65219",
         "rid": "SV-79709r1_rule",
         "stig_id": "WSDP-AG-000039",
-        "fix_id": "F-71159r1_fix"
+        "fix_id": "F-71159r1_fix",
+        "documentable": false
       },
       "id": "V-65219",
       "title": "The DataPower Gateway providing user authentication intermediary services must restrict user authentication traffic to specific authentication server(s).",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000140-ALG-000094",
         "gid": "V-65221",
         "rid": "SV-79711r1_rule",
         "stig_id": "WSDP-AG-000040",
-        "fix_id": "F-71161r1_fix"
+        "fix_id": "F-71161r1_fix",
+        "documentable": false
       },
       "id": "V-65221",
       "title": "The DataPower Gateway providing user authentication intermediary services must use multifactor authentication for network access to non-privileged accounts.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000147-ALG-000095",
         "gid": "V-65223",
         "rid": "SV-79713r1_rule",
         "stig_id": "WSDP-AG-000041",
-        "fix_id": "F-71163r1_fix"
+        "fix_id": "F-71163r1_fix",
+        "documentable": false
       },
       "id": "V-65223",
       "title": "The DataPower Gateway providing user authentication intermediary services must implement replay-resistant authentication mechanisms for network access to non-privileged accounts.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000164-ALG-000100",
         "gid": "V-65225",
         "rid": "SV-79715r1_rule",
         "stig_id": "WSDP-AG-000042",
-        "fix_id": "F-71165r1_fix"
+        "fix_id": "F-71165r1_fix",
+        "documentable": false
       },
       "id": "V-65225",
       "title": "The DataPower Gateway that provides intermediary services for TLS must validate certificates used for TLS functions by performing RFC 5280-compliant certification path validation.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000166-ALG-000101",
         "gid": "V-65227",
         "rid": "SV-79717r1_rule",
         "stig_id": "WSDP-AG-000043",
-        "fix_id": "F-71167r1_fix"
+        "fix_id": "F-71167r1_fix",
+        "documentable": false
       },
       "id": "V-65227",
       "title": "The DataPower Gateway providing PKI-based user authentication intermediary services must map authenticated identities to the user account.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000169-ALG-000102",
         "gid": "V-65229",
         "rid": "SV-79719r1_rule",
         "stig_id": "WSDP-AG-000044",
-        "fix_id": "F-71169r1_fix"
+        "fix_id": "F-71169r1_fix",
+        "documentable": false
       },
       "id": "V-65229",
       "title": "The DataPower Gateway providing user authentication intermediary services must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000192-ALG-000121",
         "gid": "V-65231",
         "rid": "SV-79721r1_rule",
         "stig_id": "WSDP-AG-000045",
-        "fix_id": "F-71171r1_fix"
+        "fix_id": "F-71171r1_fix",
+        "documentable": false
       },
       "id": "V-65231",
       "title": "The DataPower Gateway providing content filtering must not have a front side handler configured facing an internal network.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230-ALG-000113",
         "gid": "V-65233",
         "rid": "SV-79723r1_rule",
         "stig_id": "WSDP-AG-000049",
-        "fix_id": "F-71173r1_fix"
+        "fix_id": "F-71173r1_fix",
+        "documentable": false
       },
       "id": "V-65233",
       "title": "The DataPower Gateway must protect the authenticity of communications sessions.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000231-ALG-000114",
         "gid": "V-65235",
         "rid": "SV-79725r1_rule",
         "stig_id": "WSDP-AG-000050",
-        "fix_id": "F-71175r1_fix"
+        "fix_id": "F-71175r1_fix",
+        "documentable": false
       },
       "id": "V-65235",
       "title": "The DataPower Gateway must invalidate session identifiers upon user logout or other session termination.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000233-ALG-000115",
         "gid": "V-65237",
         "rid": "SV-79727r1_rule",
         "stig_id": "WSDP-AG-000051",
-        "fix_id": "F-71177r1_fix"
+        "fix_id": "F-71177r1_fix",
+        "documentable": false
       },
       "id": "V-65237",
       "title": "The DataPower Gateway must recognize only system-generated session identifiers.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000236-ALG-000119",
         "gid": "V-65239",
         "rid": "SV-79729r1_rule",
         "stig_id": "WSDP-AG-000054",
-        "fix_id": "F-71179r1_fix"
+        "fix_id": "F-71179r1_fix",
+        "documentable": false
       },
       "id": "V-65239",
       "title": "In the event of a system failure of the DataPower Gateway function, the DataPower Gateway must save diagnostic information, log system messages, and load the most current security policies, rules, and signatures when restarted.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000273-ALG-000129",
         "gid": "V-65241",
         "rid": "SV-79731r1_rule",
         "stig_id": "WSDP-AG-000061",
-        "fix_id": "F-71181r1_fix"
+        "fix_id": "F-71181r1_fix",
+        "documentable": false
       },
       "id": "V-65241",
       "title": "The DataPower Gateway must have ICMP responses disabled on all interfaces facing untrusted networks.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000318-ALG-000014",
         "gid": "V-65243",
         "rid": "SV-79733r1_rule",
         "stig_id": "WSDP-AG-000075",
-        "fix_id": "F-71183r1_fix"
+        "fix_id": "F-71183r1_fix",
+        "documentable": false
       },
       "id": "V-65243",
       "title": "To protect against data mining, the DataPower Gateway providing content filtering must prevent code injection attacks from being launched against data storage objects, including, at a minimum, databases, database records, queries, and fields.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000318-ALG-000151",
         "gid": "V-65245",
         "rid": "SV-79735r1_rule",
         "stig_id": "WSDP-AG-000076",
-        "fix_id": "F-71185r1_fix"
+        "fix_id": "F-71185r1_fix",
+        "documentable": false
       },
       "id": "V-65245",
       "title": "To protect against data mining, the DataPower Gateway providing content filtering must prevent code injection attacks launched against application objects including, at a minimum, application URLs and application code.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000318-ALG-000152",
         "gid": "V-65247",
         "rid": "SV-79737r1_rule",
         "stig_id": "WSDP-AG-000077",
-        "fix_id": "F-71187r1_fix"
+        "fix_id": "F-71187r1_fix",
+        "documentable": false
       },
       "id": "V-65247",
       "title": "To protect against data mining, the DataPower Gateway providing content filtering must prevent SQL injection attacks launched against data storage objects, including, at a minimum, databases, database records, and database fields.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000319-ALG-000015",
         "gid": "V-65249",
         "rid": "SV-79739r1_rule",
         "stig_id": "WSDP-AG-000078",
-        "fix_id": "F-71189r1_fix"
+        "fix_id": "F-71189r1_fix",
+        "documentable": false
       },
       "id": "V-65249",
       "title": "To protect against data mining, the DataPower Gateway providing content filtering must detect code injection attacks from being launched against data storage objects, including, at a minimum, databases, database records, queries, and fields.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000319-ALG-000020",
         "gid": "V-65251",
         "rid": "SV-79741r1_rule",
         "stig_id": "WSDP-AG-000079",
-        "fix_id": "F-71191r1_fix"
+        "fix_id": "F-71191r1_fix",
+        "documentable": false
       },
       "id": "V-65251",
       "title": "To protect against data mining, the DataPower Gateway providing content filtering must detect SQL injection attacks launched against data storage objects, including, at a minimum, databases, database records, and database fields.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000319-ALG-000153",
         "gid": "V-65253",
         "rid": "SV-79743r1_rule",
         "stig_id": "WSDP-AG-000080",
-        "fix_id": "F-71193r1_fix"
+        "fix_id": "F-71193r1_fix",
+        "documentable": false
       },
       "id": "V-65253",
       "title": "To protect against data mining, the DataPower Gateway providing content filtering as part of its intermediary services must detect code injection attacks launched against application objects including, at a minimum, application URLs and application code.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000331-ALG-000041",
         "gid": "V-65255",
         "rid": "SV-79745r1_rule",
         "stig_id": "WSDP-AG-000088",
-        "fix_id": "F-71195r1_fix"
+        "fix_id": "F-71195r1_fix",
+        "documentable": false
       },
       "id": "V-65255",
       "title": "The DataPower Gateway providing user access control intermediary services must provide the capability for authorized users to select a user session to capture or view.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000333-ALG-000049",
         "gid": "V-65257",
         "rid": "SV-79747r1_rule",
         "stig_id": "WSDP-AG-000089",
-        "fix_id": "F-71197r1_fix"
+        "fix_id": "F-71197r1_fix",
+        "documentable": false
       },
       "id": "V-65257",
       "title": "The DataPower Gateway must be configured to support centralized management and configuration.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000334-ALG-000050",
         "gid": "V-65259",
         "rid": "SV-79749r1_rule",
         "stig_id": "WSDP-AG-000090",
-        "fix_id": "F-71199r1_fix"
+        "fix_id": "F-71199r1_fix",
+        "documentable": false
       },
       "id": "V-65259",
       "title": "The DataPower Gateway must off-load audit records onto a centralized log server.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000335-ALG-000053",
         "gid": "V-65261",
         "rid": "SV-79751r1_rule",
         "stig_id": "WSDP-AG-000091",
-        "fix_id": "F-71201r1_fix"
+        "fix_id": "F-71201r1_fix",
+        "documentable": false
       },
       "id": "V-65261",
       "title": "The DataPower Gateway must provide an immediate real-time alert to, at a minimum, the SCA and ISSO, of all audit failure events where the detection and/or prevention function is unable to write events to either local storage or the centralized server.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000344-ALG-000098",
         "gid": "V-65263",
         "rid": "SV-79753r1_rule",
         "stig_id": "WSDP-AG-000095",
-        "fix_id": "F-71203r1_fix"
+        "fix_id": "F-71203r1_fix",
+        "documentable": false
       },
       "id": "V-65263",
       "title": "The DataPower Gateway must prohibit the use of cached authenticators after an organization-defined time period.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000345-ALG-000099",
         "gid": "V-65265",
         "rid": "SV-79755r1_rule",
         "stig_id": "WSDP-AG-000096",
-        "fix_id": "F-71205r1_fix"
+        "fix_id": "F-71205r1_fix",
+        "documentable": false
       },
       "id": "V-65265",
       "title": "The DataPower Gateway providing user authentication intermediary services using PKI-based user authentication must implement a local cache of revocation data to support path discovery and validation in case of the inability to access revocation information via the network.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000349-ALG-000106",
         "gid": "V-65267",
         "rid": "SV-79757r1_rule",
         "stig_id": "WSDP-AG-000097",
-        "fix_id": "F-71207r1_fix"
+        "fix_id": "F-71207r1_fix",
+        "documentable": false
       },
       "id": "V-65267",
       "title": "The DataPower Gateway providing user authentication intermediary services must conform to FICAM-issued profiles.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000355-ALG-000117",
         "gid": "V-65269",
         "rid": "SV-79759r1_rule",
         "stig_id": "WSDP-AG-000098",
-        "fix_id": "F-71209r1_fix"
+        "fix_id": "F-71209r1_fix",
+        "documentable": false
       },
       "id": "V-65269",
       "title": "The DataPower Gateway providing user authentication intermediary services using PKI-based user authentication must only accept end entity certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs) for the establishment of protected sessions.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000362-ALG-000112",
         "gid": "V-65271",
         "rid": "SV-79761r1_rule",
         "stig_id": "WSDP-AG-000099",
-        "fix_id": "F-71211r1_fix"
+        "fix_id": "F-71211r1_fix",
+        "documentable": false
       },
       "id": "V-65271",
       "title": "The DataPower Gateway providing content filtering must protect against known and unknown types of Denial of Service (DoS) attacks by employing rate-based attack prevention behavior analysis (traffic thresholds).",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-ALG-000120",
         "gid": "V-65273",
         "rid": "SV-79763r1_rule",
         "stig_id": "WSDP-AG-000100",
-        "fix_id": "F-71213r1_fix"
+        "fix_id": "F-71213r1_fix",
+        "documentable": false
       },
       "id": "V-65273",
       "title": "The DataPower Gateway must implement load balancing to limit the effects of known and unknown types of Denial of Service (DoS) attacks.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-ALG-000126",
         "gid": "V-65275",
         "rid": "SV-79765r1_rule",
         "stig_id": "WSDP-AG-000101",
-        "fix_id": "F-71215r1_fix"
+        "fix_id": "F-71215r1_fix",
+        "documentable": false
       },
       "id": "V-65275",
       "title": "The DataPower Gateway providing content filtering must protect against known types of Denial of Service (DoS) attacks by employing signatures.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-ALG-000155",
         "gid": "V-65277",
         "rid": "SV-79767r1_rule",
         "stig_id": "WSDP-AG-000102",
-        "fix_id": "F-71217r1_fix"
+        "fix_id": "F-71217r1_fix",
+        "documentable": false
       },
       "id": "V-65277",
       "title": "The DataPower Gateway providing content filtering must protect against or limit the effects of known and unknown types of Denial of Service (DoS) attacks by employing pattern recognition pre-processors.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-ALG-000122",
         "gid": "V-65279",
         "rid": "SV-79769r1_rule",
         "stig_id": "WSDP-AG-000103",
-        "fix_id": "F-71219r1_fix"
+        "fix_id": "F-71219r1_fix",
+        "documentable": false
       },
       "id": "V-65279",
       "title": "The DataPower Gateway must only allow incoming communications from organization-defined authorized sources routed to organization-defined authorized destinations.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000380-ALG-000128",
         "gid": "V-65281",
         "rid": "SV-79771r1_rule",
         "stig_id": "WSDP-AG-000106",
-        "fix_id": "F-71221r1_fix"
+        "fix_id": "F-71221r1_fix",
+        "documentable": false
       },
       "id": "V-65281",
       "title": "The DataPower Gateway must behave in a predictable and documented manner that reflects organizational and system objectives when invalid inputs are received.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000383-ALG-000135",
         "gid": "V-65283",
         "rid": "SV-79773r1_rule",
         "stig_id": "WSDP-AG-000107",
-        "fix_id": "F-71223r1_fix"
+        "fix_id": "F-71223r1_fix",
+        "documentable": false
       },
       "id": "V-65283",
       "title": "The DataPower Gateway providing content filtering must be configured to integrate with a system-wide intrusion detection system.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000385-ALG-000137",
         "gid": "V-65285",
         "rid": "SV-79775r1_rule",
         "stig_id": "WSDP-AG-000109",
-        "fix_id": "F-71225r1_fix"
+        "fix_id": "F-71225r1_fix",
+        "documentable": false
       },
       "id": "V-65285",
       "title": "The DataPower Gateway providing content filtering must generate a log record when unauthorized network services are detected.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000385-ALG-000138",
         "gid": "V-65287",
         "rid": "SV-79777r1_rule",
         "stig_id": "WSDP-AG-000110",
-        "fix_id": "F-71227r1_fix"
+        "fix_id": "F-71227r1_fix",
+        "documentable": false
       },
       "id": "V-65287",
       "title": "The DataPower Gateway providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when unauthorized network services are detected.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000390-ALG-000139",
         "gid": "V-65289",
         "rid": "SV-79779r1_rule",
         "stig_id": "WSDP-AG-000111",
-        "fix_id": "F-71229r1_fix"
+        "fix_id": "F-71229r1_fix",
+        "documentable": false
       },
       "id": "V-65289",
       "title": "The DataPower Gateway providing content filtering must continuously monitor inbound communications traffic crossing internal security boundaries for unusual or unauthorized activities or conditions.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000391-ALG-000140",
         "gid": "V-65291",
         "rid": "SV-79781r1_rule",
         "stig_id": "WSDP-AG-000112",
-        "fix_id": "F-71231r1_fix"
+        "fix_id": "F-71231r1_fix",
+        "documentable": false
       },
       "id": "V-65291",
       "title": "The DataPower Gateway providing content filtering must continuously monitor outbound communications traffic crossing internal security boundaries for unusual/unauthorized activities or conditions.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000141",
         "gid": "V-65293",
         "rid": "SV-79783r1_rule",
         "stig_id": "WSDP-AG-000113",
-        "fix_id": "F-71233r1_fix"
+        "fix_id": "F-71233r1_fix",
+        "documentable": false
       },
       "id": "V-65293",
       "title": "The DataPower Gateway providing content filtering must send an alert to, at a minimum, the ISSO and ISSM when detection events occur.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000142",
         "gid": "V-65295",
         "rid": "SV-79785r1_rule",
         "stig_id": "WSDP-AG-000114",
-        "fix_id": "F-71235r1_fix"
+        "fix_id": "F-71235r1_fix",
+        "documentable": false
       },
       "id": "V-65295",
       "title": "The DataPower Gateway providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when threats identified by authoritative sources (e.g., IAVMs or CTOs) are detected.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000143",
         "gid": "V-65297",
         "rid": "SV-79787r1_rule",
         "stig_id": "WSDP-AG-000115",
-        "fix_id": "F-71237r1_fix"
+        "fix_id": "F-71237r1_fix",
+        "documentable": false
       },
       "id": "V-65297",
       "title": "The DataPower Gateway providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when root level intrusion events which provide unauthorized privileged access are detected.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000147",
         "gid": "V-65299",
         "rid": "SV-79789r1_rule",
         "stig_id": "WSDP-AG-000116",
-        "fix_id": "F-71239r1_fix"
+        "fix_id": "F-71239r1_fix",
+        "documentable": false
       },
       "id": "V-65299",
       "title": "The DataPower Gateway providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when user level intrusions which provide non-privileged access are detected.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000148",
         "gid": "V-65301",
         "rid": "SV-79791r1_rule",
         "stig_id": "WSDP-AG-000117",
-        "fix_id": "F-71241r1_fix"
+        "fix_id": "F-71241r1_fix",
+        "documentable": false
       },
       "id": "V-65301",
       "title": "The DataPower Gateway providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when denial of service incidents are detected.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000149",
         "gid": "V-65303",
         "rid": "SV-79793r1_rule",
         "stig_id": "WSDP-AG-000118",
-        "fix_id": "F-71243r1_fix"
+        "fix_id": "F-71243r1_fix",
+        "documentable": false
       },
       "id": "V-65303",
       "title": "The DataPower Gateway providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when new active propagation of malware infecting DoD systems or malicious code adversely affecting the operations and/or security of DoD systems is detected.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000399-ALG-000042",
         "gid": "V-65305",
         "rid": "SV-79795r1_rule",
         "stig_id": "WSDP-AG-000120",
-        "fix_id": "F-71245r1_fix"
+        "fix_id": "F-71245r1_fix",
+        "documentable": false
       },
       "id": "V-65305",
       "title": "The DataPower Gateway providing user access control intermediary services must provide the capability for authorized users to capture, record, and log all content related to a selected user session.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000401-ALG-000127",
         "gid": "V-65307",
         "rid": "SV-79797r1_rule",
         "stig_id": "WSDP-AG-000122",
-        "fix_id": "F-71247r1_fix"
+        "fix_id": "F-71247r1_fix",
+        "documentable": false
       },
       "id": "V-65307",
       "title": "The DataPower Gateway must check the validity of all data inputs except those specifically identified by the organization.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000025",
         "gid": "V-65309",
         "rid": "SV-79799r1_rule",
         "stig_id": "WSDP-AG-000137",
-        "fix_id": "F-71249r1_fix"
+        "fix_id": "F-71249r1_fix",
+        "documentable": false
       },
       "id": "V-65309",
       "title": "The DataPower Gateway providing encryption intermediary services must implement NIST FIPS-validated cryptography to generate cryptographic hashes.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000040",
         "gid": "V-65311",
         "rid": "SV-79801r1_rule",
         "stig_id": "WSDP-AG-000138",
-        "fix_id": "F-71251r1_fix"
+        "fix_id": "F-71251r1_fix",
+        "documentable": false
       },
       "id": "V-65311",
       "title": "The DataPower Gateway providing encryption intermediary services must implement NIST FIPS-validated cryptography for digital signatures.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000111",
         "gid": "V-65313",
         "rid": "SV-79803r1_rule",
         "stig_id": "WSDP-AG-000139",
-        "fix_id": "F-71253r1_fix"
+        "fix_id": "F-71253r1_fix",
+        "documentable": false
       },
       "id": "V-65313",
       "title": "The DataPower Gateway providing encryption intermediary services must use NIST FIPS-validated cryptography to implement encryption services.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000511-ALG-000051",
         "gid": "V-65315",
         "rid": "SV-79805r1_rule",
         "stig_id": "WSDP-AG-000140",
-        "fix_id": "F-71255r1_fix"
+        "fix_id": "F-71255r1_fix",
+        "documentable": false
       },
       "id": "V-65315",
       "title": "The DataPower Gateway must off-load audit records onto a centralized log server in real time.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-ALG-000122",
         "gid": "V-65317",
         "rid": "SV-79807r1_rule",
         "stig_id": "WSDP-AG-000151",
-        "fix_id": "F-71257r1_fix"
+        "fix_id": "F-71257r1_fix",
+        "documentable": false
       },
       "id": "V-65317",
       "title": "The DataPower Gateway must not use 0.0.0.0 as a listening IP address for any service.",
@@ -1176,7 +1176,5 @@
       }
     }
   ],
-  "name": "IBM_DataPower_ALG_STIG",
-  "title": "IBM DataPower ALG Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil."
+  "name": "IBM_DataPower_ALG_STIG"
 }

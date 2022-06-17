@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000001-AS-000001",
         "gid": "V-222926",
         "rid": "SV-222926r615938_rule",
         "stig_id": "TCAT-AS-000010",
-        "fix_id": "F-24587r426223_fix"
+        "fix_id": "F-24587r426223_fix",
+        "documentable": false
       },
       "id": "V-222926",
       "title": "The number of allowed simultaneous sessions to the manager application must be limited.",
@@ -26,7 +26,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014-AS-000009",
         "gid": "V-222927",
         "rid": "SV-222927r615938_rule",
         "stig_id": "TCAT-AS-000020",
@@ -34,7 +33,7 @@
       },
       "id": "V-222927",
       "title": "Secured connectors must be configured to use strong encryption ciphers.",
-      "desc": "<#text> The Tomcat<Connector> element controls the TLS protocol and the associated ciphers used. If a strong cipher is not selected, an attacker may be able to circumvent encryption protections that are configured for the connector. Strong ciphers must be employed when configuring a secured connector. The configuration attribute and its values depend on what HTTPS implementation the user is utilizing. The user may be utilizing either Java-based implementation aka JSSE — with BIO and NIO connectors, or OpenSSL-based implementation — with APR connector. TLSv1.2 ciphers are configured via the server.xml file on a per connector basis. For a list of approved ciphers, refer to NIST SP 800-52 section 3.3.1.1.",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "From the Tomcat server console, run the following command: sudo grep -i ciphers $CATALINA_BASE/conf/server.xml. Examine each &lt;Connector/&gt; element that is not a redirect to a secure port. Identify the ciphers that are configured on each connector and determine if any of the ciphers are not secure. For a list of approved ciphers, refer to NIST SP 800-52 section 3.3.1.1. If insecure ciphers are configured for use, this is a finding.",
@@ -44,11 +43,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000015-AS-000010",
         "gid": "V-222928",
         "rid": "SV-222928r616154_rule",
         "stig_id": "TCAT-AS-000030",
-        "fix_id": "F-37850r616153_fix"
+        "fix_id": "F-37850r616153_fix",
+        "documentable": false
       },
       "id": "V-222928",
       "title": "HTTP Strict Transport Security (HSTS) must be enabled.",
@@ -62,16 +61,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015-AS-000010",
+        "gid": "V-222929",
+        "rid": "SV-222929r615938_rule",
+        "stig_id": "TCAT-AS-000040",
+        "fix_id": "F-24590r426232_fix",
         "satisfies": [
           "SRG-APP-000015-AS-000010",
           "SRG-APP-000172-AS-000120",
           "SRG-APP-000439-AS-000155"
         ],
-        "gid": "V-222929",
-        "rid": "SV-222929r615938_rule",
-        "stig_id": "TCAT-AS-000040",
-        "fix_id": "F-24590r426232_fix"
+        "documentable": false
       },
       "id": "V-222929",
       "title": "TLS 1.2 must be used on secured HTTP connectors.",
@@ -85,7 +84,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-AS-000013",
         "gid": "V-222930",
         "rid": "SV-222930r615938_rule",
         "stig_id": "TCAT-AS-000050",
@@ -93,7 +91,7 @@
       },
       "id": "V-222930",
       "title": "AccessLogValve must be configured for each application context.",
-      "desc": "<#text> Tomcat has the ability to host multiple contexts (applications) on one physical server by using the<Host> [object Object]",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "As an elevated user on the Tomcat server: Edit the $CATALINA_BASE/conf/server.xml file. Review for all &lt;Context&gt; elements. If a &lt;Valve className=\"org.apache.catalina.valves.AccessLogValve\" .../&gt; element is not defined within each &lt;Context&gt; element, this is a finding. EXAMPLE: &lt;Context ... &lt;Valve className=\"org.apache.catalina.valves.AccessLogValve\" directory=\"logs\" prefix=\"application_name_log\" suffix=\".txt\" pattern=\"\"%h %l %t %u &amp;quot;%r&amp;quot; %s %b\" /&gt; ... /&gt;",
@@ -103,15 +101,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-AS-000024",
+        "gid": "V-222931",
+        "rid": "SV-222931r615938_rule",
+        "stig_id": "TCAT-AS-000060",
+        "fix_id": "F-24592r426238_fix",
         "satisfies": [
           "SRG-APP-000033-AS-000023",
           "SRG-APP-000176-AS-000125"
         ],
-        "gid": "V-222931",
-        "rid": "SV-222931r615938_rule",
-        "stig_id": "TCAT-AS-000060",
-        "fix_id": "F-24592r426238_fix"
+        "documentable": false
       },
       "id": "V-222931",
       "title": "Default password for keystore must be changed.",
@@ -125,7 +123,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-AS-000024",
         "gid": "V-222932",
         "rid": "SV-222932r615938_rule",
         "stig_id": "TCAT-AS-000070",
@@ -133,7 +130,7 @@
       },
       "id": "V-222932",
       "title": "Cookies must have secure flag set.",
-      "desc": "<#text> It is possible to steal or manipulate web application session and cookies without having a secure cookie. Configuring the secure flag injects the setting into the response header. The $CATALINA_BASE/conf/web.xml file controls how all applications handle cookies via the<cookie-config> element.",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "From the Tomcat server console, run the following command: sudo grep -i -B10 -A1 \\/cookie-config $CATALINA_BASE/conf/web.xml If the command returns no results or if the &lt;secure&gt; element is not set to true, this is a finding. EXAMPLE: &lt;session-config&gt; &lt;session-timeout&gt;15&lt;/session-timeout&gt; &lt;cookie-config&gt; &lt;http-only&gt;true&lt;/http-only&gt; &lt;secure&gt;true&lt;/secure&gt; &lt;/cookie-config&gt; &lt;/session-config&gt;",
@@ -143,7 +140,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-AS-000024",
         "gid": "V-222933",
         "rid": "SV-222933r615938_rule",
         "stig_id": "TCAT-AS-000080",
@@ -151,7 +147,7 @@
       },
       "id": "V-222933",
       "title": "Cookies must have http-only flag set.",
-      "desc": "<#text> It is possible to steal or manipulate web application session and cookies without having a secure cookie. Configuring the secure flag injects the setting into the response header. The $CATALINA_BASE/conf/web.xml file controls how all applications handle cookies via the<cookie-config> element.",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "From the Tomcat server console, run the following command: sudo grep -i -B10 -A1 \\/cookie-config $CATALINA_BASE/conf/web.xml If the command returns no results or if the &lt;http-only&gt; element is not set to true, this is a finding. EXAMPLE: &lt;session-config&gt; &lt;session-timeout&gt;15&lt;/session-timeout&gt; &lt;cookie-config&gt; &lt;http-only&gt;true&lt;/http-only&gt; &lt;secure&gt;true&lt;/secure&gt; &lt;/cookie-config&gt; &lt;/session-config&gt;",
@@ -161,11 +157,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-AS-000024",
         "gid": "V-222934",
         "rid": "SV-222934r615938_rule",
         "stig_id": "TCAT-AS-000090",
-        "fix_id": "F-24595r612229_fix"
+        "fix_id": "F-24595r612229_fix",
+        "documentable": false
       },
       "id": "V-222934",
       "title": "DefaultServlet must be set to readonly for PUT and DELETE.",
@@ -179,11 +175,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-AS-000024",
         "gid": "V-222935",
         "rid": "SV-222935r615938_rule",
         "stig_id": "TCAT-AS-000100",
-        "fix_id": "F-24596r426250_fix"
+        "fix_id": "F-24596r426250_fix",
+        "documentable": false
       },
       "id": "V-222935",
       "title": "Connectors must be secured.",
@@ -197,11 +193,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-AS-000024",
         "gid": "V-222936",
         "rid": "SV-222936r615938_rule",
         "stig_id": "TCAT-AS-000110",
-        "fix_id": "F-24597r426253_fix"
+        "fix_id": "F-24597r426253_fix",
+        "documentable": false
       },
       "id": "V-222936",
       "title": "The Java Security Manager must be enabled.",
@@ -215,11 +211,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-AS-000050",
         "gid": "V-222937",
         "rid": "SV-222937r615938_rule",
         "stig_id": "TCAT-AS-000170",
-        "fix_id": "F-24598r426256_fix"
+        "fix_id": "F-24598r426256_fix",
+        "documentable": false
       },
       "id": "V-222937",
       "title": "Tomcat servers behind a proxy or load balancer must log client IP.",
@@ -233,7 +229,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090-AS-000051",
+        "gid": "V-222938",
+        "rid": "SV-222938r615938_rule",
+        "stig_id": "TCAT-AS-000180",
+        "fix_id": "F-24599r426259_fix",
         "satisfies": [
           "SRG-APP-000090-AS-000051",
           "SRG-APP-000095-AS-000056",
@@ -243,10 +242,7 @@
           "SRG-APP-000505-AS-000230",
           "SRG-APP-000506-AS-000231"
         ],
-        "gid": "V-222938",
-        "rid": "SV-222938r615938_rule",
-        "stig_id": "TCAT-AS-000180",
-        "fix_id": "F-24599r426259_fix"
+        "documentable": false
       },
       "id": "V-222938",
       "title": "AccessLogValve must be configured per each virtual host.",
@@ -260,11 +256,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096-AS-000059",
         "gid": "V-222939",
         "rid": "SV-222939r615938_rule",
         "stig_id": "TCAT-AS-000240",
-        "fix_id": "F-24600r426262_fix"
+        "fix_id": "F-24600r426262_fix",
+        "documentable": false
       },
       "id": "V-222939",
       "title": "Date and time of events must be logged.",
@@ -278,11 +274,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097-AS-000060",
         "gid": "V-222940",
         "rid": "SV-222940r615938_rule",
         "stig_id": "TCAT-AS-000250",
-        "fix_id": "F-24601r426265_fix"
+        "fix_id": "F-24601r426265_fix",
+        "documentable": false
       },
       "id": "V-222940",
       "title": "Remote hostname must be logged.",
@@ -296,11 +292,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000097-AS-000060",
         "gid": "V-222941",
         "rid": "SV-222941r615938_rule",
         "stig_id": "TCAT-AS-000260",
-        "fix_id": "F-24602r426268_fix"
+        "fix_id": "F-24602r426268_fix",
+        "documentable": false
       },
       "id": "V-222941",
       "title": "HTTP status code must be logged.",
@@ -314,11 +310,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097-AS-000060",
         "gid": "V-222942",
         "rid": "SV-222942r615938_rule",
         "stig_id": "TCAT-AS-000270",
-        "fix_id": "F-24603r426271_fix"
+        "fix_id": "F-24603r426271_fix",
+        "documentable": false
       },
       "id": "V-222942",
       "title": "The first line of request must be logged.",
@@ -332,11 +328,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-AS-000078",
         "gid": "V-222943",
         "rid": "SV-222943r615938_rule",
         "stig_id": "TCAT-AS-000360",
-        "fix_id": "F-24604r426274_fix"
+        "fix_id": "F-24604r426274_fix",
+        "documentable": false
       },
       "id": "V-222943",
       "title": "$CATALINA_BASE/logs folder permissions must be set to 750.",
@@ -350,11 +346,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-AS-000078",
         "gid": "V-222944",
         "rid": "SV-222944r615938_rule",
         "stig_id": "TCAT-AS-000361",
-        "fix_id": "F-24605r426277_fix"
+        "fix_id": "F-24605r426277_fix",
+        "documentable": false
       },
       "id": "V-222944",
       "title": "Files in the $CATALINA_BASE/logs/ folder must have their permissions set to 640.",
@@ -368,15 +364,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-AS-000079",
+        "gid": "V-222945",
+        "rid": "SV-222945r615938_rule",
+        "stig_id": "TCAT-AS-000370",
+        "fix_id": "F-24606r426280_fix",
         "satisfies": [
           "SRG-APP-000119-AS-000079",
           "SRG-APP-000380-AS-000088"
         ],
-        "gid": "V-222945",
-        "rid": "SV-222945r615938_rule",
-        "stig_id": "TCAT-AS-000370",
-        "fix_id": "F-24606r426280_fix"
+        "documentable": false
       },
       "id": "V-222945",
       "title": "Files in the $CATALINA_BASE/conf/ folder must have their permissions set to 640.",
@@ -390,15 +386,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-AS-000079",
+        "gid": "V-222946",
+        "rid": "SV-222946r615938_rule",
+        "stig_id": "TCAT-AS-000371",
+        "fix_id": "F-24607r426283_fix",
         "satisfies": [
           "SRG-APP-000119-AS-000079",
           "SRG-APP-000380-AS-000088"
         ],
-        "gid": "V-222946",
-        "rid": "SV-222946r615938_rule",
-        "stig_id": "TCAT-AS-000371",
-        "fix_id": "F-24607r426283_fix"
+        "documentable": false
       },
       "id": "V-222946",
       "title": "$CATALINA_BASE/conf folder permissions must be set to 750.",
@@ -412,11 +408,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-AS-000080",
         "gid": "V-222947",
         "rid": "SV-222947r615938_rule",
         "stig_id": "TCAT-AS-000380",
-        "fix_id": "F-24608r426286_fix"
+        "fix_id": "F-24608r426286_fix",
+        "documentable": false
       },
       "id": "V-222947",
       "title": "Jar files in the $CATALINA_HOME/bin/ folder must have their permissions set to 640.",
@@ -430,17 +426,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121-AS-000081",
+        "gid": "V-222948",
+        "rid": "SV-222948r615938_rule",
+        "stig_id": "TCAT-AS-000390",
+        "fix_id": "F-24609r426289_fix",
         "satisfies": [
           "SRG-APP-000121-AS-000081",
           "SRG-APP-000122-AS-000082",
           "SRG-APP-000123-AS-000083",
           "SRG-APP-000340-AS-000185"
         ],
-        "gid": "V-222948",
-        "rid": "SV-222948r615938_rule",
-        "stig_id": "TCAT-AS-000390",
-        "fix_id": "F-24609r426289_fix"
+        "documentable": false
       },
       "id": "V-222948",
       "title": "$CATALINA_HOME/bin folder permissions must be set to 750.",
@@ -454,11 +450,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-AS-000092",
         "gid": "V-222949",
         "rid": "SV-222949r615938_rule",
         "stig_id": "TCAT-AS-000450",
-        "fix_id": "F-24610r426292_fix"
+        "fix_id": "F-24610r426292_fix",
+        "documentable": false
       },
       "id": "V-222949",
       "title": "Tomcat user UMASK must be set to 0027.",
@@ -472,11 +468,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222950",
         "rid": "SV-222950r615938_rule",
         "stig_id": "TCAT-AS-000470",
-        "fix_id": "F-24611r426295_fix"
+        "fix_id": "F-24611r426295_fix",
+        "documentable": false
       },
       "id": "V-222950",
       "title": "Stack tracing must be disabled.",
@@ -490,11 +486,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222951",
         "rid": "SV-222951r615938_rule",
         "stig_id": "TCAT-AS-000490",
-        "fix_id": "F-24612r426298_fix"
+        "fix_id": "F-24612r426298_fix",
+        "documentable": false
       },
       "id": "V-222951",
       "title": "The shutdown port must be disabled.",
@@ -508,11 +504,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222952",
         "rid": "SV-222952r615938_rule",
         "stig_id": "TCAT-AS-000500",
-        "fix_id": "F-24613r426301_fix"
+        "fix_id": "F-24613r426301_fix",
+        "documentable": false
       },
       "id": "V-222952",
       "title": "Unapproved connectors must be disabled.",
@@ -526,11 +522,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222953",
         "rid": "SV-222953r615938_rule",
         "stig_id": "TCAT-AS-000510",
-        "fix_id": "F-24614r426304_fix"
+        "fix_id": "F-24614r426304_fix",
+        "documentable": false
       },
       "id": "V-222953",
       "title": "DefaultServlet debug parameter must be disabled.",
@@ -544,11 +540,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222954",
         "rid": "SV-222954r615938_rule",
         "stig_id": "TCAT-AS-000520",
-        "fix_id": "F-24615r426307_fix"
+        "fix_id": "F-24615r426307_fix",
+        "documentable": false
       },
       "id": "V-222954",
       "title": "DefaultServlet directory listings parameter must be disabled.",
@@ -562,11 +558,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222955",
         "rid": "SV-222955r615938_rule",
         "stig_id": "TCAT-AS-000530",
-        "fix_id": "F-24616r426310_fix"
+        "fix_id": "F-24616r426310_fix",
+        "documentable": false
       },
       "id": "V-222955",
       "title": "The deployXML attribute must be set to false in hosted environments.",
@@ -580,11 +576,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222956",
         "rid": "SV-222956r615938_rule",
         "stig_id": "TCAT-AS-000540",
-        "fix_id": "F-24617r426313_fix"
+        "fix_id": "F-24617r426313_fix",
+        "documentable": false
       },
       "id": "V-222956",
       "title": "Autodeploy must be disabled.",
@@ -598,11 +594,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222957",
         "rid": "SV-222957r615938_rule",
         "stig_id": "TCAT-AS-000550",
-        "fix_id": "F-24618r426316_fix"
+        "fix_id": "F-24618r426316_fix",
+        "documentable": false
       },
       "id": "V-222957",
       "title": "xpoweredBy attribute must be disabled.",
@@ -616,11 +612,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222958",
         "rid": "SV-222958r615938_rule",
         "stig_id": "TCAT-AS-000560",
-        "fix_id": "F-24619r426319_fix"
+        "fix_id": "F-24619r426319_fix",
+        "documentable": false
       },
       "id": "V-222958",
       "title": "Example applications must be removed.",
@@ -634,11 +630,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222959",
         "rid": "SV-222959r615938_rule",
         "stig_id": "TCAT-AS-000570",
-        "fix_id": "F-24620r426322_fix"
+        "fix_id": "F-24620r426322_fix",
+        "documentable": false
       },
       "id": "V-222959",
       "title": "Tomcat default ROOT web application must be removed.",
@@ -652,11 +648,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-222960",
         "rid": "SV-222960r615938_rule",
         "stig_id": "TCAT-AS-000580",
-        "fix_id": "F-24621r426325_fix"
+        "fix_id": "F-24621r426325_fix",
+        "documentable": false
       },
       "id": "V-222960",
       "title": "Documentation must be removed.",
@@ -670,11 +666,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-AS-000014",
         "gid": "V-222961",
         "rid": "SV-222961r615938_rule",
         "stig_id": "TCAT-AS-000590",
-        "fix_id": "F-24622r426328_fix"
+        "fix_id": "F-24622r426328_fix",
+        "documentable": false
       },
       "id": "V-222961",
       "title": "Applications in privileged mode must be approved by the ISSO.",
@@ -688,11 +684,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148-AS-000101",
         "gid": "V-222962",
         "rid": "SV-222962r615938_rule",
         "stig_id": "TCAT-AS-000600",
-        "fix_id": "F-24623r426331_fix"
+        "fix_id": "F-24623r426331_fix",
+        "documentable": false
       },
       "id": "V-222962",
       "title": "Tomcat management applications must use LDAP realm authentication.",
@@ -706,11 +702,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000149-AS-000102",
         "gid": "V-222963",
         "rid": "SV-222963r615938_rule",
         "stig_id": "TCAT-AS-000610",
-        "fix_id": "F-24624r426334_fix"
+        "fix_id": "F-24624r426334_fix",
+        "documentable": false
       },
       "id": "V-222963",
       "title": "JMX authentication must be secured.",
@@ -724,11 +720,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000153-AS-000104",
         "gid": "V-222964",
         "rid": "SV-222964r615938_rule",
         "stig_id": "TCAT-AS-000630",
-        "fix_id": "F-24625r426337_fix"
+        "fix_id": "F-24625r426337_fix",
+        "documentable": false
       },
       "id": "V-222964",
       "title": "TLS must be enabled on JMX.",
@@ -742,11 +738,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-AS-000121",
         "gid": "V-222965",
         "rid": "SV-222965r615938_rule",
         "stig_id": "TCAT-AS-000690",
-        "fix_id": "F-24626r426340_fix"
+        "fix_id": "F-24626r426340_fix",
+        "documentable": false
       },
       "id": "V-222965",
       "title": "LDAP authentication must be secured.",
@@ -760,11 +756,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-AS-000124",
         "gid": "V-222966",
         "rid": "SV-222966r616155_rule",
         "stig_id": "TCAT-AS-000700",
-        "fix_id": "F-24627r426343_fix"
+        "fix_id": "F-24627r426343_fix",
+        "documentable": false
       },
       "id": "V-222966",
       "title": "DoD root CA certificates must be installed in Tomcat trust store.",
@@ -778,11 +774,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-AS-000125",
         "gid": "V-222967",
         "rid": "SV-222967r615938_rule",
         "stig_id": "TCAT-AS-000710",
-        "fix_id": "F-24628r426346_fix"
+        "fix_id": "F-24628r426346_fix",
+        "documentable": false
       },
       "id": "V-222967",
       "title": "Keystore file must be protected.",
@@ -796,7 +792,10 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179-AS-000129",
+        "gid": "V-222968",
+        "rid": "SV-222968r615938_rule",
+        "stig_id": "TCAT-AS-000750",
+        "fix_id": "F-24629r426349_fix",
         "satisfies": [
           "SRG-APP-000224-AS-000152",
           "SRG-APP-000428-AS-000265",
@@ -804,10 +803,7 @@
           "SRG-APP-000439-AS-000274",
           "SRG-APP-000440-AS-000167"
         ],
-        "gid": "V-222968",
-        "rid": "SV-222968r615938_rule",
-        "stig_id": "TCAT-AS-000750",
-        "fix_id": "F-24629r426349_fix"
+        "documentable": false
       },
       "id": "V-222968",
       "title": "Tomcat must use FIPS-validated ciphers on secured connectors.",
@@ -821,11 +817,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-AS-000146",
         "gid": "V-222969",
         "rid": "SV-222969r615938_rule",
         "stig_id": "TCAT-AS-000780",
-        "fix_id": "F-24630r426352_fix"
+        "fix_id": "F-24630r426352_fix",
+        "documentable": false
       },
       "id": "V-222969",
       "title": "Access to JMX management interface must be restricted.",
@@ -839,11 +835,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-AS-000146",
         "gid": "V-222970",
         "rid": "SV-222970r615938_rule",
         "stig_id": "TCAT-AS-000790",
-        "fix_id": "F-24631r426355_fix"
+        "fix_id": "F-24631r426355_fix",
+        "documentable": false
       },
       "id": "V-222970",
       "title": "Access to Tomcat manager application must be restricted.",
@@ -857,11 +853,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-AS-000147",
         "gid": "V-222971",
         "rid": "SV-222971r615938_rule",
         "stig_id": "TCAT-AS-000800",
-        "fix_id": "F-24632r426358_fix"
+        "fix_id": "F-24632r426358_fix",
+        "documentable": false
       },
       "id": "V-222971",
       "title": "Tomcat servers must mutually authenticate proxy or load balancer connections.",
@@ -875,11 +871,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000223-AS-000150",
         "gid": "V-222973",
         "rid": "SV-222973r615938_rule",
         "stig_id": "TCAT-AS-000820",
-        "fix_id": "F-24634r426364_fix"
+        "fix_id": "F-24634r426364_fix",
+        "documentable": false
       },
       "id": "V-222973",
       "title": "Tomcat must be configured to limit data exposure between applications.",
@@ -893,7 +889,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000225-AS-000154",
         "gid": "V-222974",
         "rid": "SV-222974r615938_rule",
         "stig_id": "TCAT-AS-000860",
@@ -901,7 +896,7 @@
       },
       "id": "V-222974",
       "title": "Clusters must operate on a trusted network.",
-      "desc": "<#text> Operating a Tomcat cluster on an untrusted network creates potential for unauthorized persons to view or manipulate cluster session traffic. When operating a Tomcat cluster, care must be taken to isolate the cluster traffic from untrusted sources. Options include using a private VLAN, VPN, or IPSEC tunnel or by encrypting cluster traffic by using the EncryptInterceptor. The EncryptInterceptor adds encryption to the channel messages carrying session data between Tomcat cluster nodes. Place the<Cluster> [object Object]",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "Review System Security Plan (SSP) documentation determine if the Tomcat server is part of an application server cluster. Also identify Tomcat network interfaces and the proxy/load balancer that front-ends the cluster. From the Tomcat server as a privileged user, run the following command: sudo grep -i -A2 -B2 \"Cluster\" $CATALINA_BASE/conf/server.xml If the &lt;Cluster/&gt; element is commented out, or there are no results returned, this requirement is NA. If a cluster is in use, run the following command as a privileged user: grep -i EncryptInterceptor $CATALINA_BASE/conf/server.xml file. If the Tomcat server is clustered and the EncryptionInterceptor is not in use or if the cluster traffic is not on a private network or VLAN, this is a finding.",
@@ -911,11 +906,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266-AS-000169",
         "gid": "V-222975",
         "rid": "SV-222975r615938_rule",
         "stig_id": "TCAT-AS-000920",
-        "fix_id": "F-24636r426370_fix"
+        "fix_id": "F-24636r426370_fix",
+        "documentable": false
       },
       "id": "V-222975",
       "title": "ErrorReportValve showServerInfo must be set to false.",
@@ -929,11 +924,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000267-AS-000170",
         "gid": "V-222976",
         "rid": "SV-222976r615938_rule",
         "stig_id": "TCAT-AS-000930",
-        "fix_id": "F-24637r426373_fix"
+        "fix_id": "F-24637r426373_fix",
+        "documentable": false
       },
       "id": "V-222976",
       "title": "Default error pages for manager application must be customized.",
@@ -947,11 +942,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000267-AS-000170",
         "gid": "V-222977",
         "rid": "SV-222977r615938_rule",
         "stig_id": "TCAT-AS-000940",
-        "fix_id": "F-24638r426376_fix"
+        "fix_id": "F-24638r426376_fix",
+        "documentable": false
       },
       "id": "V-222977",
       "title": "ErrorReportValve showReport must be set to false.",
@@ -965,11 +960,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000267-AS-000170",
         "gid": "V-222978",
         "rid": "SV-222978r615938_rule",
         "stig_id": "TCAT-AS-000950",
-        "fix_id": "F-24639r426379_fix"
+        "fix_id": "F-24639r426379_fix",
+        "documentable": false
       },
       "id": "V-222978",
       "title": "Tomcat server version must not be sent with warnings and errors.",
@@ -983,15 +978,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295-AS-000263",
+        "gid": "V-222979",
+        "rid": "SV-222979r615938_rule",
+        "stig_id": "TCAT-AS-000970",
+        "fix_id": "F-24640r612231_fix",
         "satisfies": [
           "SRG-APP-000389",
           "SRG-APP-000220"
         ],
-        "gid": "V-222979",
-        "rid": "SV-222979r615938_rule",
-        "stig_id": "TCAT-AS-000970",
-        "fix_id": "F-24640r612231_fix"
+        "documentable": false
       },
       "id": "V-222979",
       "title": "Idle timeout for management application must be set to 10 minutes.",
@@ -1005,11 +1000,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000315-AS-000094",
         "gid": "V-222980",
         "rid": "SV-222980r615938_rule",
         "stig_id": "TCAT-AS-001020",
-        "fix_id": "F-24641r426385_fix"
+        "fix_id": "F-24641r426385_fix",
+        "documentable": false
       },
       "id": "V-222980",
       "title": "LockOutRealms must be used for management of Tomcat.",
@@ -1023,11 +1018,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000316-AS-000199",
         "gid": "V-222981",
         "rid": "SV-222981r615938_rule",
         "stig_id": "TCAT-AS-001030",
-        "fix_id": "F-24642r426388_fix"
+        "fix_id": "F-24642r426388_fix",
+        "documentable": false
       },
       "id": "V-222981",
       "title": "LockOutRealms failureCount attribute must be set to 5 failed logins for admin users.",
@@ -1041,11 +1036,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000316-AS-000199",
         "gid": "V-222982",
         "rid": "SV-222982r615938_rule",
         "stig_id": "TCAT-AS-001040",
-        "fix_id": "F-24643r426391_fix"
+        "fix_id": "F-24643r426391_fix",
+        "documentable": false
       },
       "id": "V-222982",
       "title": "LockOutRealms lockOutTime attribute must be set to 600 seconds (10 minutes) for admin users.",
@@ -1059,11 +1054,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340-AS-000185",
         "gid": "V-222983",
         "rid": "SV-222983r615938_rule",
         "stig_id": "TCAT-AS-001050",
-        "fix_id": "F-24644r426394_fix"
+        "fix_id": "F-24644r426394_fix",
+        "documentable": false
       },
       "id": "V-222983",
       "title": "Tomcat user account must be set to nologin.",
@@ -1077,11 +1072,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340-AS-000185",
         "gid": "V-222984",
         "rid": "SV-222984r615938_rule",
         "stig_id": "TCAT-AS-001060",
-        "fix_id": "F-24645r426397_fix"
+        "fix_id": "F-24645r426397_fix",
+        "documentable": false
       },
       "id": "V-222984",
       "title": "Tomcat user account must be a non-privileged user.",
@@ -1095,11 +1090,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000343-AS-000030",
         "gid": "V-222985",
         "rid": "SV-222985r615938_rule",
         "stig_id": "TCAT-AS-001080",
-        "fix_id": "F-24646r426400_fix"
+        "fix_id": "F-24646r426400_fix",
+        "documentable": false
       },
       "id": "V-222985",
       "title": "Application user name must be logged.",
@@ -1113,11 +1108,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-AS-000088",
         "gid": "V-222986",
         "rid": "SV-222986r615938_rule",
         "stig_id": "TCAT-AS-001200",
-        "fix_id": "F-24647r426403_fix"
+        "fix_id": "F-24647r426403_fix",
+        "documentable": false
       },
       "id": "V-222986",
       "title": "$CATALINA_HOME folder must be owned by the root user, group tomcat.",
@@ -1131,11 +1126,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-AS-000088",
         "gid": "V-222987",
         "rid": "SV-222987r615938_rule",
         "stig_id": "TCAT-AS-001220",
-        "fix_id": "F-24648r426406_fix"
+        "fix_id": "F-24648r426406_fix",
+        "documentable": false
       },
       "id": "V-222987",
       "title": "$CATALINA_BASE/conf/ folder must be owned by root, group tomcat.",
@@ -1149,11 +1144,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-AS-000088",
         "gid": "V-222988",
         "rid": "SV-222988r615938_rule",
         "stig_id": "TCAT-AS-001250",
-        "fix_id": "F-24649r426409_fix"
+        "fix_id": "F-24649r426409_fix",
+        "documentable": false
       },
       "id": "V-222988",
       "title": "$CATALINA_BASE/logs/ folder must be owned by tomcat user, group tomcat.",
@@ -1167,11 +1162,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000380-AS-000088",
         "gid": "V-222989",
         "rid": "SV-222989r615938_rule",
         "stig_id": "TCAT-AS-001260",
-        "fix_id": "F-24650r426412_fix"
+        "fix_id": "F-24650r426412_fix",
+        "documentable": false
       },
       "id": "V-222989",
       "title": "$CATALINA_BASE/temp/ folder must be owned by tomcat user, group tomcat.",
@@ -1185,11 +1180,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000380-AS-000088",
         "gid": "V-222990",
         "rid": "SV-222990r615938_rule",
         "stig_id": "TCAT-AS-001270",
-        "fix_id": "F-24651r426415_fix"
+        "fix_id": "F-24651r426415_fix",
+        "documentable": false
       },
       "id": "V-222990",
       "title": "$CATALINA_BASE/temp folder permissions must be set to 750.",
@@ -1203,11 +1198,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-AS-000088",
         "gid": "V-222991",
         "rid": "SV-222991r615938_rule",
         "stig_id": "TCAT-AS-001280",
-        "fix_id": "F-24652r426418_fix"
+        "fix_id": "F-24652r426418_fix",
+        "documentable": false
       },
       "id": "V-222991",
       "title": "$CATALINA_BASE/work/ folder must be owned by tomcat user, group tomcat.",
@@ -1221,17 +1216,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000391-AS-000239",
+        "gid": "V-222993",
+        "rid": "SV-222993r615938_rule",
+        "stig_id": "TCAT-AS-001320",
+        "fix_id": "F-24654r426424_fix",
         "satisfies": [
           "SRG-APP-000391-AS-000239",
           "SRG-APP-000392-AS-000240",
           "SRG-APP-000402-AS-000247",
           "SRG-APP-000403-AS-000248"
         ],
-        "gid": "V-222993",
-        "rid": "SV-222993r615938_rule",
-        "stig_id": "TCAT-AS-001320",
-        "fix_id": "F-24654r426424_fix"
+        "documentable": false
       },
       "id": "V-222993",
       "title": "Multifactor certificate-based tokens (CAC) must be used when accessing the management interface.",
@@ -1245,11 +1240,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-AS-000264",
         "gid": "V-222994",
         "rid": "SV-222994r615938_rule",
         "stig_id": "TCAT-AS-001430",
-        "fix_id": "F-24655r426427_fix"
+        "fix_id": "F-24655r426427_fix",
+        "documentable": false
       },
       "id": "V-222994",
       "title": "Certificates in the trust store must be issued/signed by an approved CA.",
@@ -1263,11 +1258,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435-AS-000069",
         "gid": "V-222995",
         "rid": "SV-222995r615938_rule",
         "stig_id": "TCAT-AS-001460",
-        "fix_id": "F-24656r426430_fix"
+        "fix_id": "F-24656r426430_fix",
+        "documentable": false
       },
       "id": "V-222995",
       "title": "The application server, when categorized as a high availability system within RMF, must be in a high-availability (HA) cluster.",
@@ -1281,15 +1276,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435-AS-000163",
+        "gid": "V-222996",
+        "rid": "SV-222996r615938_rule",
+        "stig_id": "TCAT-AS-001470",
+        "fix_id": "F-24657r426433_fix",
         "satisfies": [
           "SRG-APP-000435-AS-000163",
           "SRG-APP-000456-AS-000266"
         ],
-        "gid": "V-222996",
-        "rid": "SV-222996r615938_rule",
-        "stig_id": "TCAT-AS-001470",
-        "fix_id": "F-24657r426433_fix"
+        "documentable": false
       },
       "id": "V-222996",
       "title": "Tomcat server must be patched for security vulnerabilities.",
@@ -1303,13 +1298,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-AS-000220",
-        "satisfies": [
-          "SRG-APP-000495-AS-000220",
-          "SRG-APP-000381-AS-000089",
-          "SRG-APP-000499-AS-000224",
-          "SRG-APP-000504-AS-000229"
-        ],
         "gid": "V-222997",
         "rid": "SV-222997r615938_rule",
         "stig_id": "TCAT-AS-001560",
@@ -1317,7 +1305,7 @@
       },
       "id": "V-222997",
       "title": "AccessLogValve must be configured for Catalina engine.",
-      "desc": "<#text> The<Engine> container represents the entire request processing machinery associated with a particular Catalina Service. It receives and processes all requests from one or more Connectors, and returns the completed response to the Connector for transmission back to the client. The AccessLogValve will log activity for the Catalina service. Exactly one Engine element MUST be nested inside a Service element, following all of the corresponding Connector elements associated with the Service. ",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "As an elevated user on the Tomcat server: Edit the $CATALINA_BASE/conf/server.xml file. Review the &lt;Engine&gt; element. Ensure one AccessLog &lt;Valve&gt; element is nested within the Engine element. If a &lt;Valve className=\"org.apache.catalina.valves.AccessLogValve\" .../&gt; element is not defined, this is a finding. EXAMPLE: &lt;Engine name=\"Standalone\" ...&gt; ... &lt;Valve className=\"org.apache.catalina.valves.AccessLogValve\" prefix=\"catalina_access_log\" suffix=\".txt\" pattern=\"common\"/&gt; ... &lt;/Engine&gt;",
@@ -1327,11 +1315,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-AS-000229",
         "gid": "V-222998",
         "rid": "SV-222998r615938_rule",
         "stig_id": "TCAT-AS-001590",
-        "fix_id": "F-24659r426439_fix"
+        "fix_id": "F-24659r426439_fix",
+        "documentable": false
       },
       "id": "V-222998",
       "title": "Changes to $CATALINA_HOME/bin/ folder must be logged.",
@@ -1345,11 +1333,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-AS-000229",
         "gid": "V-222999",
         "rid": "SV-222999r615938_rule",
         "stig_id": "TCAT-AS-001591",
-        "fix_id": "F-24660r426442_fix"
+        "fix_id": "F-24660r426442_fix",
+        "documentable": false
       },
       "id": "V-222999",
       "title": "Changes to $CATALINA_BASE/conf/ folder must be logged.",
@@ -1363,11 +1351,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-AS-000229",
         "gid": "V-223000",
         "rid": "SV-223000r615938_rule",
         "stig_id": "TCAT-AS-001592",
-        "fix_id": "F-24661r426445_fix"
+        "fix_id": "F-24661r426445_fix",
+        "documentable": false
       },
       "id": "V-223000",
       "title": "Changes to $CATALINA_HOME/lib/ folder must be logged.",
@@ -1381,11 +1369,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000514-AS-000137",
         "gid": "V-223001",
         "rid": "SV-223001r615938_rule",
         "stig_id": "TCAT-AS-001640",
-        "fix_id": "F-24662r426448_fix"
+        "fix_id": "F-24662r426448_fix",
+        "documentable": false
       },
       "id": "V-223001",
       "title": "Application servers must use NIST-approved or NSA-approved key management technology and processes.",
@@ -1399,11 +1387,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-AS-000237",
         "gid": "V-223002",
         "rid": "SV-223002r615938_rule",
         "stig_id": "TCAT-AS-001660",
-        "fix_id": "F-24663r426451_fix"
+        "fix_id": "F-24663r426451_fix",
+        "documentable": false
       },
       "id": "V-223002",
       "title": "STRICT_SERVLET_COMPLIANCE must be set to true.",
@@ -1417,11 +1405,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-AS-000237",
         "gid": "V-223003",
         "rid": "SV-223003r615938_rule",
         "stig_id": "TCAT-AS-001670",
-        "fix_id": "F-24664r426454_fix"
+        "fix_id": "F-24664r426454_fix",
+        "documentable": false
       },
       "id": "V-223003",
       "title": "RECYCLE_FACADES must be set to true.",
@@ -1435,11 +1423,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AS-000237",
         "gid": "V-223004",
         "rid": "SV-223004r615938_rule",
         "stig_id": "TCAT-AS-001680",
-        "fix_id": "F-24665r426457_fix"
+        "fix_id": "F-24665r426457_fix",
+        "documentable": false
       },
       "id": "V-223004",
       "title": "ALLOW_BACKSLASH must be set to false.",
@@ -1453,11 +1441,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AS-000237",
         "gid": "V-223005",
         "rid": "SV-223005r615938_rule",
         "stig_id": "TCAT-AS-001690",
-        "fix_id": "F-24666r426460_fix"
+        "fix_id": "F-24666r426460_fix",
+        "documentable": false
       },
       "id": "V-223005",
       "title": "ENFORCE_ENCODING_IN_GET_WRITER must be set to true.",
@@ -1471,11 +1459,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AS-000237",
         "gid": "V-223006",
         "rid": "SV-223006r615938_rule",
         "stig_id": "TCAT-AS-001700",
-        "fix_id": "F-24667r426463_fix"
+        "fix_id": "F-24667r426463_fix",
+        "documentable": false
       },
       "id": "V-223006",
       "title": "Tomcat users in a management role must be approved by the ISSO.",
@@ -1489,11 +1477,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-AS-000237",
         "gid": "V-223007",
         "rid": "SV-223007r615938_rule",
         "stig_id": "TCAT-AS-001710",
-        "fix_id": "F-24668r426466_fix"
+        "fix_id": "F-24668r426466_fix",
+        "documentable": false
       },
       "id": "V-223007",
       "title": "Hosted applications must be documented in the system security plan.",
@@ -1507,11 +1495,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-AS-000237",
         "gid": "V-223008",
         "rid": "SV-223008r615938_rule",
         "stig_id": "TCAT-AS-001720",
-        "fix_id": "F-24669r426469_fix"
+        "fix_id": "F-24669r426469_fix",
+        "documentable": false
       },
       "id": "V-223008",
       "title": "Connectors must be approved by the ISSO.",
@@ -1525,11 +1513,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-AS-000237",
         "gid": "V-223009",
         "rid": "SV-223009r615938_rule",
         "stig_id": "TCAT-AS-001730",
-        "fix_id": "F-24670r426472_fix"
+        "fix_id": "F-24670r426472_fix",
+        "documentable": false
       },
       "id": "V-223009",
       "title": "Connector address attribute must be set.",
@@ -1543,11 +1531,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000108-AS-000067",
         "gid": "V-223010",
         "rid": "SV-223010r615938_rule",
         "stig_id": "TCAT-AS-001731",
-        "fix_id": "F-24671r426475_fix"
+        "fix_id": "F-24671r426475_fix",
+        "documentable": false
       },
       "id": "V-223010",
       "title": "The application server must alert the SA and ISSO, at a minimum, in the event of a log processing failure.",
@@ -1559,7 +1547,5 @@
       }
     }
   ],
-  "name": "Tomcat_Application_Server_9_STIG",
-  "title": "Apache Tomcat Application Sever 9 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Tomcat_Application_Server_9_STIG"
 }

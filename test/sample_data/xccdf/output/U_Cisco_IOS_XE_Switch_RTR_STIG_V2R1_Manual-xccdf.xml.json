@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000001",
         "gid": "V-220986",
         "rid": "SV-220986r622190_rule",
         "stig_id": "CISC-RT-000010",
-        "fix_id": "F-22690r408753_fix"
+        "fix_id": "F-22690r408753_fix",
+        "documentable": false
       },
       "id": "V-220986",
       "title": "The Cisco switch must be configured to enforce approved authorizations for controlling the flow of information within the network based on organization-defined information flow control policies.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230-RTR-000001",
         "gid": "V-220987",
         "rid": "SV-220987r622190_rule",
         "stig_id": "CISC-RT-000020",
-        "fix_id": "F-22691r408756_fix"
+        "fix_id": "F-22691r408756_fix",
+        "documentable": false
       },
       "id": "V-220987",
       "title": "The Cisco switch must be configured to implement message authentication for all control plane protocols.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230-RTR-000003",
         "gid": "V-220988",
         "rid": "SV-220988r622190_rule",
         "stig_id": "CISC-RT-000030",
-        "fix_id": "F-22692r408759_fix"
+        "fix_id": "F-22692r408759_fix",
+        "documentable": false
       },
       "id": "V-220988",
       "title": "The Cisco switch must be configured to use keys with a duration not exceeding 180 days for authenticating routing protocol messages.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000168-RTR-000077",
         "gid": "V-220989",
         "rid": "SV-220989r622190_rule",
         "stig_id": "CISC-RT-000040",
-        "fix_id": "F-22693r408762_fix"
+        "fix_id": "F-22693r408762_fix",
+        "documentable": false
       },
       "id": "V-220989",
       "title": "The Cisco switch must be configured to use encryption for routing protocol authentication.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000168-RTR-000078",
         "gid": "V-220990",
         "rid": "SV-220990r622190_rule",
         "stig_id": "CISC-RT-000050",
-        "fix_id": "F-22694r408765_fix"
+        "fix_id": "F-22694r408765_fix",
+        "documentable": false
       },
       "id": "V-220990",
       "title": "The Cisco switch must be configured to authenticate all routing protocol messages using NIST-validated FIPS 198-1 message authentication code algorithm.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000007",
         "gid": "V-220991",
         "rid": "SV-220991r622190_rule",
         "stig_id": "CISC-RT-000060",
-        "fix_id": "F-22695r408768_fix"
+        "fix_id": "F-22695r408768_fix",
+        "documentable": false
       },
       "id": "V-220991",
       "title": "The Cisco switch must be configured to have all inactive layer 3 interfaces disabled.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000131-RTR-000035",
         "gid": "V-220992",
         "rid": "SV-220992r622190_rule",
         "stig_id": "CISC-RT-000070",
-        "fix_id": "F-22696r408771_fix"
+        "fix_id": "F-22696r408771_fix",
+        "documentable": false
       },
       "id": "V-220992",
       "title": "The Cisco switch must be configured to have all non-essential capabilities disabled.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000131-RTR-000083",
         "gid": "V-220993",
         "rid": "SV-220993r622190_rule",
         "stig_id": "CISC-RT-000080",
-        "fix_id": "F-22697r408774_fix"
+        "fix_id": "F-22697r408774_fix",
+        "documentable": false
       },
       "id": "V-220993",
       "title": "The Cisco switch must not be configured to have any feature enabled that calls home to the vendor.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000109",
         "gid": "V-220994",
         "rid": "SV-220994r622190_rule",
         "stig_id": "CISC-RT-000090",
-        "fix_id": "F-22698r408777_fix"
+        "fix_id": "F-22698r408777_fix",
+        "documentable": false
       },
       "id": "V-220994",
       "title": "The Cisco switch must not be configured to have any zero-touch deployment feature enabled when connected to an operational network.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000110",
         "gid": "V-220995",
         "rid": "SV-220995r622190_rule",
         "stig_id": "CISC-RT-000120",
-        "fix_id": "F-22699r408780_fix"
+        "fix_id": "F-22699r408780_fix",
+        "documentable": false
       },
       "id": "V-220995",
       "title": "The Cisco switch must be configured to protect against or limit the effects of denial-of-service (DoS) attacks by employing control plane protection.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205-RTR-000001",
         "gid": "V-220996",
         "rid": "SV-220996r622190_rule",
         "stig_id": "CISC-RT-000130",
-        "fix_id": "F-22700r408783_fix"
+        "fix_id": "F-22700r408783_fix",
+        "documentable": false
       },
       "id": "V-220996",
       "title": "The Cisco switch must be configured to restrict traffic destined to itself.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000002",
         "gid": "V-220997",
         "rid": "SV-220997r622190_rule",
         "stig_id": "CISC-RT-000140",
-        "fix_id": "F-22701r408786_fix"
+        "fix_id": "F-22701r408786_fix",
+        "documentable": false
       },
       "id": "V-220997",
       "title": "The Cisco switch must be configured to drop all fragmented Internet Control Message Protocol (ICMP) packets destined to itself.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000111",
         "gid": "V-220998",
         "rid": "SV-220998r622190_rule",
         "stig_id": "CISC-RT-000150",
-        "fix_id": "F-22702r408789_fix"
+        "fix_id": "F-22702r408789_fix",
+        "documentable": false
       },
       "id": "V-220998",
       "title": "The Cisco switch must be configured to have Gratuitous ARP disabled on all external interfaces.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000112",
         "gid": "V-220999",
         "rid": "SV-220999r622190_rule",
         "stig_id": "CISC-RT-000160",
-        "fix_id": "F-22703r408792_fix"
+        "fix_id": "F-22703r408792_fix",
+        "documentable": false
       },
       "id": "V-220999",
       "title": "The Cisco switch must be configured to have IP directed broadcast disabled on all interfaces.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000113",
         "gid": "V-221000",
         "rid": "SV-221000r622190_rule",
         "stig_id": "CISC-RT-000170",
-        "fix_id": "F-22704r408795_fix"
+        "fix_id": "F-22704r408795_fix",
+        "documentable": false
       },
       "id": "V-221000",
       "title": "The Cisco switch must be configured to have Internet Control Message Protocol (ICMP) unreachable messages disabled on all external interfaces.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000114",
         "gid": "V-221001",
         "rid": "SV-221001r622190_rule",
         "stig_id": "CISC-RT-000180",
-        "fix_id": "F-22705r408798_fix"
+        "fix_id": "F-22705r408798_fix",
+        "documentable": false
       },
       "id": "V-221001",
       "title": "The Cisco switch must be configured to have Internet Control Message Protocol (ICMP) mask reply messages disabled on all external interfaces.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000115",
         "gid": "V-221002",
         "rid": "SV-221002r622190_rule",
         "stig_id": "CISC-RT-000190",
-        "fix_id": "F-22706r408801_fix"
+        "fix_id": "F-22706r408801_fix",
+        "documentable": false
       },
       "id": "V-221002",
       "title": "The Cisco switch must be configured to have Internet Control Message Protocol (ICMP) redirect messages disabled on all external interfaces.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000078-RTR-000001",
         "gid": "V-221003",
         "rid": "SV-221003r622190_rule",
         "stig_id": "CISC-RT-000200",
-        "fix_id": "F-22707r408804_fix"
+        "fix_id": "F-22707r408804_fix",
+        "documentable": false
       },
       "id": "V-221003",
       "title": "The Cisco switch must be configured to log all packets that have been dropped at interfaces via an ACL.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000076-RTR-000001",
         "gid": "V-221004",
         "rid": "SV-221004r622190_rule",
         "stig_id": "CISC-RT-000210",
-        "fix_id": "F-22708r408807_fix"
+        "fix_id": "F-22708r408807_fix",
+        "documentable": false
       },
       "id": "V-221004",
       "title": "The Cisco switch must be configured to produce audit records containing information to establish where the events occurred.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000077-RTR-000001",
         "gid": "V-221005",
         "rid": "SV-221005r622190_rule",
         "stig_id": "CISC-RT-000220",
-        "fix_id": "F-22709r408810_fix"
+        "fix_id": "F-22709r408810_fix",
+        "documentable": false
       },
       "id": "V-221005",
       "title": "The Cisco switch must be configured to produce audit records containing information to establish the source of the events.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000001",
         "gid": "V-221006",
         "rid": "SV-221006r622190_rule",
         "stig_id": "CISC-RT-000230",
-        "fix_id": "F-22710r408813_fix"
+        "fix_id": "F-22710r408813_fix",
+        "documentable": false
       },
       "id": "V-221006",
       "title": "The Cisco switch must be configured to disable the auxiliary port unless it is connected to a secured modem providing encryption and authentication.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000202-RTR-000001",
         "gid": "V-221007",
         "rid": "SV-221007r622190_rule",
         "stig_id": "CISC-RT-000240",
-        "fix_id": "F-22711r408816_fix"
+        "fix_id": "F-22711r408816_fix",
+        "documentable": false
       },
       "id": "V-221007",
       "title": "The Cisco perimeter switch must be configured to deny network traffic by default and allow network traffic by exception.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-RTR-000002",
         "gid": "V-221008",
         "rid": "SV-221008r622190_rule",
         "stig_id": "CISC-RT-000250",
-        "fix_id": "F-22712r408819_fix"
+        "fix_id": "F-22712r408819_fix",
+        "documentable": false
       },
       "id": "V-221008",
       "title": "The Cisco perimeter switch must be configured to enforce approved authorizations for controlling the flow of information between interconnected networks in accordance with applicable policy.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000109",
         "gid": "V-221009",
         "rid": "SV-221009r622190_rule",
         "stig_id": "CISC-RT-000260",
-        "fix_id": "F-22713r408822_fix"
+        "fix_id": "F-22713r408822_fix",
+        "documentable": false
       },
       "id": "V-221009",
       "title": "The Cisco perimeter switch must be configured to only allow incoming communications from authorized sources to be routed to authorized destinations.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000110",
         "gid": "V-221010",
         "rid": "SV-221010r622190_rule",
         "stig_id": "CISC-RT-000270",
-        "fix_id": "F-22714r408825_fix"
+        "fix_id": "F-22714r408825_fix",
+        "documentable": false
       },
       "id": "V-221010",
       "title": "The Cisco perimeter switch must be configured to block inbound packets with source Bogon IP address prefixes.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205-RTR-000014",
         "gid": "V-221011",
         "rid": "SV-221011r622190_rule",
         "stig_id": "CISC-RT-000310",
-        "fix_id": "F-22715r408828_fix"
+        "fix_id": "F-22715r408828_fix",
+        "documentable": false
       },
       "id": "V-221011",
       "title": "The Cisco perimeter switch must be configured to restrict it from accepting outbound IP packets that contain an illegitimate address in the source address field via egress filter or by enabling Unicast Reverse Path Forwarding (uRPF).",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000003",
         "gid": "V-221012",
         "rid": "SV-221012r622190_rule",
         "stig_id": "CISC-RT-000320",
-        "fix_id": "F-22716r408831_fix"
+        "fix_id": "F-22716r408831_fix",
+        "documentable": false
       },
       "id": "V-221012",
       "title": "The Cisco perimeter switch must be configured to filter traffic destined to the enclave in accordance with the guidelines contained in DoD Instruction 8551.1.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000004",
         "gid": "V-221013",
         "rid": "SV-221013r622190_rule",
         "stig_id": "CISC-RT-000330",
-        "fix_id": "F-22717r408834_fix"
+        "fix_id": "F-22717r408834_fix",
+        "documentable": false
       },
       "id": "V-221013",
       "title": "The Cisco perimeter switch must be configured to filter ingress traffic at the external interface on an inbound direction.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000005",
         "gid": "V-221014",
         "rid": "SV-221014r622190_rule",
         "stig_id": "CISC-RT-000340",
-        "fix_id": "F-22718r408837_fix"
+        "fix_id": "F-22718r408837_fix",
+        "documentable": false
       },
       "id": "V-221014",
       "title": "The Cisco perimeter switch must be configured to filter egress traffic at the internal interface on an inbound direction.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000015",
         "gid": "V-221015",
         "rid": "SV-221015r622190_rule",
         "stig_id": "CISC-RT-000350",
-        "fix_id": "F-22719r408840_fix"
+        "fix_id": "F-22719r408840_fix",
+        "documentable": false
       },
       "id": "V-221015",
       "title": "The Cisco perimeter switch must be configured to block all packets with any IP options.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000364-RTR-000111",
         "gid": "V-221016",
         "rid": "SV-221016r622190_rule",
         "stig_id": "CISC-RT-000360",
-        "fix_id": "F-22720r408843_fix"
+        "fix_id": "F-22720r408843_fix",
+        "documentable": false
       },
       "id": "V-221016",
       "title": "The Cisco perimeter switch must be configured to have Link Layer Discovery Protocol (LLDP) disabled on all external interfaces.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000364-RTR-000111",
         "gid": "V-221017",
         "rid": "SV-221017r622190_rule",
         "stig_id": "CISC-RT-000370",
-        "fix_id": "F-22721r408846_fix"
+        "fix_id": "F-22721r408846_fix",
+        "documentable": false
       },
       "id": "V-221017",
       "title": "The Cisco perimeter switch must be configured to have Cisco Discovery Protocol (CDP) disabled on all external interfaces.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000112",
         "gid": "V-221018",
         "rid": "SV-221018r622190_rule",
         "stig_id": "CISC-RT-000380",
-        "fix_id": "F-22722r408849_fix"
+        "fix_id": "F-22722r408849_fix",
+        "documentable": false
       },
       "id": "V-221018",
       "title": "The Cisco perimeter switch must be configured to have Proxy ARP disabled on all external interfaces.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000113",
         "gid": "V-221019",
         "rid": "SV-221019r622190_rule",
         "stig_id": "CISC-RT-000390",
-        "fix_id": "F-22723r408852_fix"
+        "fix_id": "F-22723r408852_fix",
+        "documentable": false
       },
       "id": "V-221019",
       "title": "The Cisco perimeter switch must be configured to block all outbound management traffic.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000012",
         "gid": "V-221020",
         "rid": "SV-221020r622190_rule",
         "stig_id": "CISC-RT-000450",
-        "fix_id": "F-22724r408855_fix"
+        "fix_id": "F-22724r408855_fix",
+        "documentable": false
       },
       "id": "V-221020",
       "title": "The Cisco switch must be configured to only permit management traffic that ingresses and egresses the out-of-band management (OOBM) interface.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000124",
         "gid": "V-221021",
         "rid": "SV-221021r622190_rule",
         "stig_id": "CISC-RT-000470",
-        "fix_id": "F-22725r408858_fix"
+        "fix_id": "F-22725r408858_fix",
+        "documentable": false
       },
       "id": "V-221021",
       "title": "The Cisco BGP switch must be configured to enable the Generalized TTL Security Mechanism (GTSM).",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230-RTR-000002",
         "gid": "V-221022",
         "rid": "SV-221022r622190_rule",
         "stig_id": "CISC-RT-000480",
-        "fix_id": "F-22726r408861_fix"
+        "fix_id": "F-22726r408861_fix",
+        "documentable": false
       },
       "id": "V-221022",
       "title": "The Cisco BGP switch must be configured to use a unique key for each autonomous system (AS) that it peers with.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000002",
         "gid": "V-221023",
         "rid": "SV-221023r622190_rule",
         "stig_id": "CISC-RT-000490",
-        "fix_id": "F-22727r408864_fix"
+        "fix_id": "F-22727r408864_fix",
+        "documentable": false
       },
       "id": "V-221023",
       "title": "The Cisco BGP switch must be configured to reject inbound route advertisements for any Bogon prefixes.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000003",
         "gid": "V-221024",
         "rid": "SV-221024r622190_rule",
         "stig_id": "CISC-RT-000500",
-        "fix_id": "F-22728r408867_fix"
+        "fix_id": "F-22728r408867_fix",
+        "documentable": false
       },
       "id": "V-221024",
       "title": "The Cisco BGP switch must be configured to reject inbound route advertisements for any prefixes belonging to the local autonomous system (AS).",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000004",
         "gid": "V-221025",
         "rid": "SV-221025r622190_rule",
         "stig_id": "CISC-RT-000510",
-        "fix_id": "F-22729r408870_fix"
+        "fix_id": "F-22729r408870_fix",
+        "documentable": false
       },
       "id": "V-221025",
       "title": "The Cisco BGP switch must be configured to reject inbound route advertisements from a customer edge (CE) switch for prefixes that are not allocated to that customer.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000005",
         "gid": "V-221026",
         "rid": "SV-221026r622190_rule",
         "stig_id": "CISC-RT-000520",
-        "fix_id": "F-22730r408873_fix"
+        "fix_id": "F-22730r408873_fix",
+        "documentable": false
       },
       "id": "V-221026",
       "title": "The Cisco BGP switch must be configured to reject outbound route advertisements for any prefixes that do not belong to any customers or the local autonomous system (AS).",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000006",
         "gid": "V-221027",
         "rid": "SV-221027r622190_rule",
         "stig_id": "CISC-RT-000530",
-        "fix_id": "F-22731r408876_fix"
+        "fix_id": "F-22731r408876_fix",
+        "documentable": false
       },
       "id": "V-221027",
       "title": "The Cisco BGP switch must be configured to reject outbound route advertisements for any prefixes belonging to the IP core.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000006",
         "gid": "V-221028",
         "rid": "SV-221028r622190_rule",
         "stig_id": "CISC-RT-000540",
-        "fix_id": "F-22732r408879_fix"
+        "fix_id": "F-22732r408879_fix",
+        "documentable": false
       },
       "id": "V-221028",
       "title": "The Cisco BGP switch must be configured to reject route advertisements from BGP peers that do not list their autonomous system (AS) number as the first AS in the AS_PATH attribute.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000010",
         "gid": "V-221029",
         "rid": "SV-221029r622190_rule",
         "stig_id": "CISC-RT-000550",
-        "fix_id": "F-22733r408882_fix"
+        "fix_id": "F-22733r408882_fix",
+        "documentable": false
       },
       "id": "V-221029",
       "title": "The Cisco BGP switch must be configured to reject route advertisements from CE switches with an originating AS in the AS_PATH attribute that does not belong to that customer.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000117",
         "gid": "V-221030",
         "rid": "SV-221030r622190_rule",
         "stig_id": "CISC-RT-000560",
-        "fix_id": "F-22734r507595_fix"
+        "fix_id": "F-22734r507595_fix",
+        "documentable": false
       },
       "id": "V-221030",
       "title": "The Cisco BGP switch must be configured to use the maximum prefixes feature to protect against route table flooding and prefix de-aggregation attacks.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000118",
         "gid": "V-221031",
         "rid": "SV-221031r622190_rule",
         "stig_id": "CISC-RT-000570",
-        "fix_id": "F-22735r408888_fix"
+        "fix_id": "F-22735r408888_fix",
+        "documentable": false
       },
       "id": "V-221031",
       "title": "The Cisco BGP switch must be configured to limit the prefix size on any inbound route advertisement to /24, or the least significant prefixes issued to the customer.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000001",
         "gid": "V-221032",
         "rid": "SV-221032r622190_rule",
         "stig_id": "CISC-RT-000580",
-        "fix_id": "F-22736r408891_fix"
+        "fix_id": "F-22736r408891_fix",
+        "documentable": false
       },
       "id": "V-221032",
       "title": "The Cisco BGP switch must be configured to use its loopback address as the source address for iBGP peering sessions.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000002",
         "gid": "V-221033",
         "rid": "SV-221033r622190_rule",
         "stig_id": "CISC-RT-000590",
-        "fix_id": "F-22737r408894_fix"
+        "fix_id": "F-22737r408894_fix",
+        "documentable": false
       },
       "id": "V-221033",
       "title": "The Cisco MPLS switch must be configured to use its loopback address as the source address for LDP peering sessions.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000003",
         "gid": "V-221034",
         "rid": "SV-221034r622190_rule",
         "stig_id": "CISC-RT-000600",
-        "fix_id": "F-22738r408897_fix"
+        "fix_id": "F-22738r408897_fix",
+        "documentable": false
       },
       "id": "V-221034",
       "title": "The Cisco MPLS switch must be configured to synchronize Interior Gateway Protocol (IGP) and LDP to minimize packet loss when an IGP adjacency is established prior to LDP peers completing label exchange.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193-RTR-000001",
         "gid": "V-221035",
         "rid": "SV-221035r622190_rule",
         "stig_id": "CISC-RT-000610",
-        "fix_id": "F-22739r408900_fix"
+        "fix_id": "F-22739r408900_fix",
+        "documentable": false
       },
       "id": "V-221035",
       "title": "The MPLS switch with RSVP-TE enabled must be configured with message pacing to adjust maximum burst and maximum number of RSVP messages to an output queue based on the link speed and input queue size of adjacent core switches.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000004",
         "gid": "V-221036",
         "rid": "SV-221036r622190_rule",
         "stig_id": "CISC-RT-000620",
-        "fix_id": "F-22740r408903_fix"
+        "fix_id": "F-22740r408903_fix",
+        "documentable": false
       },
       "id": "V-221036",
       "title": "The Cisco MPLS switch must be configured to have TTL Propagation disabled.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512-RTR-000005",
         "gid": "V-221037",
         "rid": "SV-221037r622190_rule",
         "stig_id": "CISC-RT-000630",
-        "fix_id": "F-22741r408906_fix"
+        "fix_id": "F-22741r408906_fix",
+        "documentable": false
       },
       "id": "V-221037",
       "title": "The Cisco PE switch must be configured to have each Virtual Routing and Forwarding (VRF) instance bound to the appropriate physical or logical interfaces to maintain traffic separation between all MPLS L3VPNs.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512-RTR-000006",
         "gid": "V-221038",
         "rid": "SV-221038r622190_rule",
         "stig_id": "CISC-RT-000640",
-        "fix_id": "F-22742r408909_fix"
+        "fix_id": "F-22742r408909_fix",
+        "documentable": false
       },
       "id": "V-221038",
       "title": "The Cisco PE switch must be configured to have each Virtual Routing and Forwarding (VRF) instance with the appropriate Route Target (RT).",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000007",
         "gid": "V-221039",
         "rid": "SV-221039r622190_rule",
         "stig_id": "CISC-RT-000650",
-        "fix_id": "F-22743r408912_fix"
+        "fix_id": "F-22743r408912_fix",
+        "documentable": false
       },
       "id": "V-221039",
       "title": "The Cisco PE switch must be configured to have each VRF with the appropriate Route Distinguisher (RD).",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000343-RTR-000001",
         "gid": "V-221040",
         "rid": "SV-221040r622190_rule",
         "stig_id": "CISC-RT-000660",
-        "fix_id": "F-22744r507598_fix"
+        "fix_id": "F-22744r507598_fix",
+        "documentable": false
       },
       "id": "V-221040",
       "title": "The Cisco PE switch providing MPLS Layer 2 Virtual Private Network (L2VPN) services must be configured to authenticate targeted Label Distribution Protocol (LDP) sessions used to exchange virtual circuit (VC) information using a FIPS-approved message authentication code algorithm.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512-RTR-000008",
         "gid": "V-221041",
         "rid": "SV-221041r622190_rule",
         "stig_id": "CISC-RT-000670",
-        "fix_id": "F-22745r408918_fix"
+        "fix_id": "F-22745r408918_fix",
+        "documentable": false
       },
       "id": "V-221041",
       "title": "The Cisco PE switch providing MPLS Virtual Private Wire Service (VPWS) must be configured to have the appropriate virtual circuit identification (VC ID) for each attachment circuit.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512-RTR-000009",
         "gid": "V-221042",
         "rid": "SV-221042r622190_rule",
         "stig_id": "CISC-RT-000680",
-        "fix_id": "F-22746r408921_fix"
+        "fix_id": "F-22746r408921_fix",
+        "documentable": false
       },
       "id": "V-221042",
       "title": "The Cisco PE switch providing Virtual Private LAN Services (VPLS) must be configured to have all attachment circuits defined to the virtual forwarding instance (VFI) with the globally unique VPN ID assigned for each customer VLAN.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000010",
         "gid": "V-221043",
         "rid": "SV-221043r622190_rule",
         "stig_id": "CISC-RT-000690",
-        "fix_id": "F-22747r408924_fix"
+        "fix_id": "F-22747r408924_fix",
+        "documentable": false
       },
       "id": "V-221043",
       "title": "The Cisco PE switch must be configured to enforce the split-horizon rule for all pseudowires within a Virtual Private LAN Services (VPLS) bridge domain.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000193-RTR-000002",
         "gid": "V-221044",
         "rid": "SV-221044r622190_rule",
         "stig_id": "CISC-RT-000700",
-        "fix_id": "F-22748r408927_fix"
+        "fix_id": "F-22748r408927_fix",
+        "documentable": false
       },
       "id": "V-221044",
       "title": "The Cisco PE switch providing Virtual Private LAN Services (VPLS) must be configured to have traffic storm control thresholds on CE-facing interfaces.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000119",
         "gid": "V-221045",
         "rid": "SV-221045r622190_rule",
         "stig_id": "CISC-RT-000710",
-        "fix_id": "F-22749r408930_fix"
+        "fix_id": "F-22749r408930_fix",
+        "documentable": false
       },
       "id": "V-221045",
       "title": "The Cisco PE switch must be configured to implement Internet Group Management Protocol (IGMP) or Multicast Listener Discovery (MLD) snooping for each Virtual Private LAN Services (VPLS) bridge domain.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000192-RTR-000002",
         "gid": "V-221046",
         "rid": "SV-221046r622190_rule",
         "stig_id": "CISC-RT-000720",
-        "fix_id": "F-22750r408933_fix"
+        "fix_id": "F-22750r408933_fix",
+        "documentable": false
       },
       "id": "V-221046",
       "title": "The Cisco PE switch must be configured to limit the number of MAC addresses it can learn for each Virtual Private LAN Services (VPLS) bridge domain.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205-RTR-000007",
         "gid": "V-221047",
         "rid": "SV-221047r622190_rule",
         "stig_id": "CISC-RT-000730",
-        "fix_id": "F-22751r408936_fix"
+        "fix_id": "F-22751r408936_fix",
+        "documentable": false
       },
       "id": "V-221047",
       "title": "The Cisco PE switch must be configured to block any traffic that is destined to the IP core infrastructure.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000008",
         "gid": "V-221048",
         "rid": "SV-221048r622190_rule",
         "stig_id": "CISC-RT-000740",
-        "fix_id": "F-22752r408939_fix"
+        "fix_id": "F-22752r408939_fix",
+        "documentable": false
       },
       "id": "V-221048",
       "title": "The Cisco PE switch must be configured with Unicast Reverse Path Forwarding (uRPF) loose mode enabled on all CE-facing interfaces.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000016",
         "gid": "V-221049",
         "rid": "SV-221049r622190_rule",
         "stig_id": "CISC-RT-000750",
-        "fix_id": "F-22753r408942_fix"
+        "fix_id": "F-22753r408942_fix",
+        "documentable": false
       },
       "id": "V-221049",
       "title": "The Cisco PE switch must be configured to ignore or drop all packets with any IP options.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193-RTR-000113",
         "gid": "V-221050",
         "rid": "SV-221050r622190_rule",
         "stig_id": "CISC-RT-000760",
-        "fix_id": "F-22754r408945_fix"
+        "fix_id": "F-22754r408945_fix",
+        "documentable": false
       },
       "id": "V-221050",
       "title": "The Cisco PE switch must be configured to enforce a Quality-of-Service (QoS) policy in accordance with the QoS GIG Technical Profile.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193-RTR-000114",
         "gid": "V-221051",
         "rid": "SV-221051r622190_rule",
         "stig_id": "CISC-RT-000770",
-        "fix_id": "F-22755r408948_fix"
+        "fix_id": "F-22755r408948_fix",
+        "documentable": false
       },
       "id": "V-221051",
       "title": "The Cisco P switch must be configured to implement a Quality-of-Service (QoS) policy in accordance with the QoS GIG Technical Profile.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000193-RTR-000112",
         "gid": "V-221052",
         "rid": "SV-221052r622190_rule",
         "stig_id": "CISC-RT-000780",
-        "fix_id": "F-22756r408951_fix"
+        "fix_id": "F-22756r408951_fix",
+        "documentable": false
       },
       "id": "V-221052",
       "title": "The Cisco switch must be configured to enforce a Quality-of-Service (QoS) policy to limit the effects of packet flooding denial-of-service (DoS) attacks.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-RTR-000003",
         "gid": "V-221053",
         "rid": "SV-221053r622190_rule",
         "stig_id": "CISC-RT-000790",
-        "fix_id": "F-22757r408954_fix"
+        "fix_id": "F-22757r408954_fix",
+        "documentable": false
       },
       "id": "V-221053",
       "title": "The Cisco multicast switch must be configured to disable Protocol Independent Multicast (PIM) on all interfaces that are not required to support multicast routing.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-RTR-000004",
         "gid": "V-221054",
         "rid": "SV-221054r622190_rule",
         "stig_id": "CISC-RT-000800",
-        "fix_id": "F-22758r408957_fix"
+        "fix_id": "F-22758r408957_fix",
+        "documentable": false
       },
       "id": "V-221054",
       "title": "The Cisco multicast switch must be configured to bind a Protocol Independent Multicast (PIM) neighbor filter to interfaces that have PIM enabled.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000005",
         "gid": "V-221055",
         "rid": "SV-221055r622190_rule",
         "stig_id": "CISC-RT-000810",
-        "fix_id": "F-22759r408960_fix"
+        "fix_id": "F-22759r408960_fix",
+        "documentable": false
       },
       "id": "V-221055",
       "title": "The Cisco multicast edge switch must be configured to establish boundaries for administratively scoped multicast traffic.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000120",
         "gid": "V-221056",
         "rid": "SV-221056r622190_rule",
         "stig_id": "CISC-RT-000820",
-        "fix_id": "F-22760r507601_fix"
+        "fix_id": "F-22760r507601_fix",
+        "documentable": false
       },
       "id": "V-221056",
       "title": "The Cisco multicast Rendezvous Point (RP) switch must be configured to limit the multicast forwarding cache so that its resources are not saturated by managing an overwhelming number of Protocol Independent Multicast (PIM) and Multicast Source Discovery Protocol (MSDP) source-active entries.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000013",
         "gid": "V-221057",
         "rid": "SV-221057r622190_rule",
         "stig_id": "CISC-RT-000830",
-        "fix_id": "F-22761r408966_fix"
+        "fix_id": "F-22761r408966_fix",
+        "documentable": false
       },
       "id": "V-221057",
       "title": "The Cisco multicast Rendezvous Point (RP) switch must be configured to filter Protocol Independent Multicast (PIM) Register messages received from the Designated switch (DR) for any undesirable multicast groups and sources.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000014",
         "gid": "V-221058",
         "rid": "SV-221058r622190_rule",
         "stig_id": "CISC-RT-000840",
-        "fix_id": "F-22762r408969_fix"
+        "fix_id": "F-22762r408969_fix",
+        "documentable": false
       },
       "id": "V-221058",
       "title": "The Cisco multicast Rendezvous Point (RP) switch must be configured to filter Protocol Independent Multicast (PIM) Join messages received from the Designated Cisco switch (DR) for any undesirable multicast groups.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000121",
         "gid": "V-221059",
         "rid": "SV-221059r622190_rule",
         "stig_id": "CISC-RT-000850",
-        "fix_id": "F-22763r408972_fix"
+        "fix_id": "F-22763r408972_fix",
+        "documentable": false
       },
       "id": "V-221059",
       "title": "The Cisco multicast Rendezvous Point (RP) must be configured to rate limit the number of Protocol Independent Multicast (PIM) Register messages.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000364-RTR-000114",
         "gid": "V-221060",
         "rid": "SV-221060r622190_rule",
         "stig_id": "CISC-RT-000860",
-        "fix_id": "F-22764r507604_fix"
+        "fix_id": "F-22764r507604_fix",
+        "documentable": false
       },
       "id": "V-221060",
       "title": "The Cisco multicast Designated switch (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join only multicast groups that have been approved by the organization.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000115",
         "gid": "V-221061",
         "rid": "SV-221061r622190_rule",
         "stig_id": "CISC-RT-000870",
-        "fix_id": "F-22765r507607_fix"
+        "fix_id": "F-22765r507607_fix",
+        "documentable": false
       },
       "id": "V-221061",
       "title": "The Cisco multicast Designated switch (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join a multicast group only from sources that have been approved by the organization.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000122",
         "gid": "V-221062",
         "rid": "SV-221062r622190_rule",
         "stig_id": "CISC-RT-000880",
-        "fix_id": "F-22766r408981_fix"
+        "fix_id": "F-22766r408981_fix",
+        "documentable": false
       },
       "id": "V-221062",
       "title": "The Cisco multicast Designated switch (DR) must be configured to limit the number of mroute states resulting from Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Host Membership Reports.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000123",
         "gid": "V-221063",
         "rid": "SV-221063r622190_rule",
         "stig_id": "CISC-RT-000890",
-        "fix_id": "F-22767r408984_fix"
+        "fix_id": "F-22767r408984_fix",
+        "documentable": false
       },
       "id": "V-221063",
       "title": "The Cisco multicast Designated switch (DR) must be configured to set the shortest-path tree (SPT) threshold to infinity to minimalize source-group (S, G) state within the multicast topology where Any Source Multicast (ASM) is deployed.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000116",
         "gid": "V-221064",
         "rid": "SV-221064r622190_rule",
         "stig_id": "CISC-RT-000900",
-        "fix_id": "F-22768r408987_fix"
+        "fix_id": "F-22768r408987_fix",
+        "documentable": false
       },
       "id": "V-221064",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) switch must be configured to only accept MSDP packets from known MSDP peers.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000343-RTR-000002",
         "gid": "V-221065",
         "rid": "SV-221065r622190_rule",
         "stig_id": "CISC-RT-000910",
-        "fix_id": "F-22769r408990_fix"
+        "fix_id": "F-22769r408990_fix",
+        "documentable": false
       },
       "id": "V-221065",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) switch must be configured to authenticate all received MSDP packets.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000007",
         "gid": "V-221066",
         "rid": "SV-221066r622190_rule",
         "stig_id": "CISC-RT-000920",
-        "fix_id": "F-22770r408993_fix"
+        "fix_id": "F-22770r408993_fix",
+        "documentable": false
       },
       "id": "V-221066",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) switch must be configured to filter received source-active multicast advertisements for any undesirable multicast groups and sources.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000008",
         "gid": "V-221067",
         "rid": "SV-221067r622190_rule",
         "stig_id": "CISC-RT-000930",
-        "fix_id": "F-22771r408996_fix"
+        "fix_id": "F-22771r408996_fix",
+        "documentable": false
       },
       "id": "V-221067",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) switch must be configured to filter source-active multicast advertisements to external MSDP peers to avoid global visibility of local-only multicast sources and groups.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000009",
         "gid": "V-221068",
         "rid": "SV-221068r622190_rule",
         "stig_id": "CISC-RT-000940",
-        "fix_id": "F-22772r408999_fix"
+        "fix_id": "F-22772r408999_fix",
+        "documentable": false
       },
       "id": "V-221068",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) switch must be configured to limit the amount of source-active messages it accepts on a per-peer basis.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000011",
         "gid": "V-221069",
         "rid": "SV-221069r622190_rule",
         "stig_id": "CISC-RT-000950",
-        "fix_id": "F-22773r409002_fix"
+        "fix_id": "F-22773r409002_fix",
+        "documentable": false
       },
       "id": "V-221069",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) switch must be configured to use a loopback address as the source address when originating MSDP traffic.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000100",
         "gid": "V-237750",
         "rid": "SV-237750r648776_rule",
         "stig_id": "CISC-RT-000235",
-        "fix_id": "F-40931r648774_fix"
+        "fix_id": "F-40931r648774_fix",
+        "documentable": false
       },
       "id": "V-237750",
       "title": "The Cisco switch must be configured to have Cisco Express Forwarding enabled.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000012",
         "gid": "V-237752",
         "rid": "SV-237752r648780_rule",
         "stig_id": "CISC-RT-000236",
-        "fix_id": "F-40932r648778_fix"
+        "fix_id": "F-40932r648778_fix",
+        "documentable": false
       },
       "id": "V-237752",
       "title": "The Cisco switch must be configured to advertise a hop limit of at least 32 in Switch Advertisement messages for IPv6 stateless auto-configuration deployments.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000013",
         "gid": "V-237756",
         "rid": "SV-237756r648787_rule",
         "stig_id": "CISC-RT-000237",
-        "fix_id": "F-40935r648785_fix"
+        "fix_id": "F-40935r648785_fix",
+        "documentable": false
       },
       "id": "V-237756",
       "title": "The Cisco switch must not be configured to use IPv6 Site Local Unicast addresses.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000014",
         "gid": "V-237759",
         "rid": "SV-237759r648792_rule",
         "stig_id": "CISC-RT-000391",
-        "fix_id": "F-40936r648790_fix"
+        "fix_id": "F-40936r648790_fix",
+        "documentable": false
       },
       "id": "V-237759",
       "title": "The Cisco perimeter switch must be configured to suppress Router Advertisements on all external IPv6-enabled interfaces.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000200",
         "gid": "V-237762",
         "rid": "SV-237762r648799_rule",
         "stig_id": "CISC-RT-000392",
-        "fix_id": "F-40938r648797_fix"
+        "fix_id": "F-40938r648797_fix",
+        "documentable": false
       },
       "id": "V-237762",
       "title": "The Cisco perimeter switch must be configured to drop IPv6 undetermined transport packets.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000201",
         "gid": "V-237764",
         "rid": "SV-237764r648803_rule",
         "stig_id": "CISC-RT-000393",
-        "fix_id": "F-40939r648801_fix"
+        "fix_id": "F-40939r648801_fix",
+        "documentable": false
       },
       "id": "V-237764",
       "title": "The Cisco perimeter switch must be configured drop IPv6 packets with a Routing Header type 0, 1, or 3-255.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000202",
         "gid": "V-237766",
         "rid": "SV-237766r648807_rule",
         "stig_id": "CISC-RT-000394",
-        "fix_id": "F-40940r648805_fix"
+        "fix_id": "F-40940r648805_fix",
+        "documentable": false
       },
       "id": "V-237766",
       "title": "The Cisco perimeter switch must be configured to drop IPv6 packets containing a Hop-by-Hop header with invalid option type values.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000203",
         "gid": "V-237772",
         "rid": "SV-237772r648811_rule",
         "stig_id": "CISC-RT-000395",
-        "fix_id": "F-40944r648809_fix"
+        "fix_id": "F-40944r648809_fix",
+        "documentable": false
       },
       "id": "V-237772",
       "title": "The Cisco perimeter switch must be configured to drop IPv6 packets containing a Destination Option header with invalid option type values.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000204",
         "gid": "V-237774",
         "rid": "SV-237774r648815_rule",
         "stig_id": "CISC-RT-000396",
-        "fix_id": "F-40945r648813_fix"
+        "fix_id": "F-40945r648813_fix",
+        "documentable": false
       },
       "id": "V-237774",
       "title": "The Cisco perimeter switch must be configured to drop IPv6 packets containing an extension header with the Endpoint Identification option.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000205",
         "gid": "V-237776",
         "rid": "SV-237776r648819_rule",
         "stig_id": "CISC-RT-000397",
-        "fix_id": "F-40946r648817_fix"
+        "fix_id": "F-40946r648817_fix",
+        "documentable": false
       },
       "id": "V-237776",
       "title": "The Cisco perimeter switch must be configured to drop IPv6 packets containing the NSAP address option within Destination Option header.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000206",
         "gid": "V-237778",
         "rid": "SV-237778r648823_rule",
         "stig_id": "CISC-RT-000398",
-        "fix_id": "F-40947r648821_fix"
+        "fix_id": "F-40947r648821_fix",
+        "documentable": false
       },
       "id": "V-237778",
       "title": "The Cisco perimeter switch must be configured to drop IPv6 packets containing a Hop-by-Hop or Destination Option extension header with an undefined option type.",
@@ -1716,7 +1716,5 @@
       }
     }
   ],
-  "name": "Cisco_IOS_XE_Switch_RTR_STIG",
-  "title": "Cisco IOS-XE Switch RTR Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Cisco_IOS_XE_Switch_RTR_STIG"
 }

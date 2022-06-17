@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DB-000031",
         "gid": "V-224130",
         "rid": "SV-224130r508023_rule",
         "stig_id": "EP11-00-000100",
-        "fix_id": "F-25791r495411_fix"
+        "fix_id": "F-25791r495411_fix",
+        "documentable": false
       },
       "id": "V-224130",
       "title": "The EDB Postgres Advanced Server must limit the number of concurrent sessions to an organization-defined number per user for all accounts and/or account types.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000023-DB-000001",
         "gid": "V-224131",
         "rid": "SV-224131r508023_rule",
         "stig_id": "EP11-00-000700",
-        "fix_id": "F-25792r495414_fix"
+        "fix_id": "F-25792r495414_fix",
+        "documentable": false
       },
       "id": "V-224131",
       "title": "The EDB Postgres Advanced Server must integrate with an organization-level authentication/access mechanism providing account management and automation for all users, groups, roles, and any other principals.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-DB-000084",
         "gid": "V-224132",
         "rid": "SV-224132r508023_rule",
         "stig_id": "EP11-00-000800",
-        "fix_id": "F-25793r495417_fix"
+        "fix_id": "F-25793r495417_fix",
+        "documentable": false
       },
       "id": "V-224132",
       "title": "The EDB Postgres Advanced Server must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000080-DB-000063",
         "gid": "V-224133",
         "rid": "SV-224133r508023_rule",
         "stig_id": "EP11-00-000900",
-        "fix_id": "F-25794r495420_fix"
+        "fix_id": "F-25794r495420_fix",
+        "documentable": false
       },
       "id": "V-224133",
       "title": "The EDB Postgres Advanced Server must protect against a user falsely repudiating by ensuring all accounts are individual, unique, and not shared.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-DB-000064",
         "gid": "V-224134",
         "rid": "SV-224134r508023_rule",
         "stig_id": "EP11-00-001000",
-        "fix_id": "F-25795r495423_fix"
+        "fix_id": "F-25795r495423_fix",
+        "documentable": false
       },
       "id": "V-224134",
       "title": "The EDB Postgres Advanced Server must be configured to provide audit record generation capability for DoD-defined auditable events within all EDB Postgres Advanced Server/database components.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090-DB-000065",
         "gid": "V-224135",
         "rid": "SV-224135r508023_rule",
         "stig_id": "EP11-00-001100",
-        "fix_id": "F-25796r495426_fix"
+        "fix_id": "F-25796r495426_fix",
+        "documentable": false
       },
       "id": "V-224135",
       "title": "The EDB Postgres Advanced Server must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.",
@@ -116,7 +116,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000066",
+        "gid": "V-224136",
+        "rid": "SV-224136r557457_rule",
+        "stig_id": "EP11-00-001200",
+        "fix_id": "F-25797r495429_fix",
         "satisfies": [
           "SRG-APP-000095-DB-000039",
           "SRG-APP-000091-DB-000325",
@@ -149,10 +152,7 @@
           "SRG-APP-000507-DB-000356",
           "SRG-APP-000507-DB-000357"
         ],
-        "gid": "V-224136",
-        "rid": "SV-224136r557457_rule",
-        "stig_id": "EP11-00-001200",
-        "fix_id": "F-25797r495429_fix"
+        "documentable": false
       },
       "id": "V-224136",
       "title": "The EDB Postgres Advanced Server must generate audit records for DoD-defined auditable events.",
@@ -166,11 +166,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000092-DB-000208",
         "gid": "V-224138",
         "rid": "SV-224138r508023_rule",
         "stig_id": "EP11-00-001400",
-        "fix_id": "F-25799r495435_fix"
+        "fix_id": "F-25799r495435_fix",
+        "documentable": false
       },
       "id": "V-224138",
       "title": "The EDB Postgres Advanced Server must initiate support of session auditing upon startup.",
@@ -184,11 +184,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000101-DB-000044",
         "gid": "V-224145",
         "rid": "SV-224145r508023_rule",
         "stig_id": "EP11-00-002200",
-        "fix_id": "F-25806r495456_fix"
+        "fix_id": "F-25806r495456_fix",
+        "documentable": false
       },
       "id": "V-224145",
       "title": "The EDB Postgres Advanced Server must include additional, more detailed, organization-defined information in the audit records for audit events identified by type, location, or subject.",
@@ -202,11 +202,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000109-DB-000049",
         "gid": "V-224146",
         "rid": "SV-224146r508023_rule",
         "stig_id": "EP11-00-002300",
-        "fix_id": "F-25807r495459_fix"
+        "fix_id": "F-25807r495459_fix",
+        "documentable": false
       },
       "id": "V-224146",
       "title": "The EDB Postgres Advanced Server must by default shut down upon audit failure, to include the unavailability of space for more audit log records; or must be configurable to shut down upon audit failure.",
@@ -220,11 +220,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000109-DB-000321",
         "gid": "V-224147",
         "rid": "SV-224147r508023_rule",
         "stig_id": "EP11-00-002400",
-        "fix_id": "F-25808r495462_fix"
+        "fix_id": "F-25808r495462_fix",
+        "documentable": false
       },
       "id": "V-224147",
       "title": "The EDB Postgres Advanced Server must be configurable to overwrite audit log records, oldest first (First-In-First-Out - FIFO), in the event of unavailability of space for more audit log records.",
@@ -238,11 +238,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-DB-000059",
         "gid": "V-224148",
         "rid": "SV-224148r508023_rule",
         "stig_id": "EP11-00-002600",
-        "fix_id": "F-25809r495465_fix"
+        "fix_id": "F-25809r495465_fix",
+        "documentable": false
       },
       "id": "V-224148",
       "title": "The audit information produced by the EDB Postgres Advanced Server must be protected from unauthorized read access.",
@@ -256,11 +256,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-DB-000060",
         "gid": "V-224149",
         "rid": "SV-224149r508023_rule",
         "stig_id": "EP11-00-002700",
-        "fix_id": "F-25810r495468_fix"
+        "fix_id": "F-25810r495468_fix",
+        "documentable": false
       },
       "id": "V-224149",
       "title": "The audit information produced by the EDB Postgres Advanced Server must be protected from unauthorized modification.",
@@ -274,11 +274,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-DB-000061",
         "gid": "V-224150",
         "rid": "SV-224150r508023_rule",
         "stig_id": "EP11-00-002800",
-        "fix_id": "F-25811r495471_fix"
+        "fix_id": "F-25811r495471_fix",
+        "documentable": false
       },
       "id": "V-224150",
       "title": "The audit information produced by the EDB Postgres Advanced Server must be protected from unauthorized deletion.",
@@ -292,11 +292,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121-DB-000202",
         "gid": "V-224151",
         "rid": "SV-224151r508023_rule",
         "stig_id": "EP11-00-002900",
-        "fix_id": "F-25812r495474_fix"
+        "fix_id": "F-25812r495474_fix",
+        "documentable": false
       },
       "id": "V-224151",
       "title": "The EDB Postgres Advanced Server must protect its audit features from unauthorized access.",
@@ -310,11 +310,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000122-DB-000203",
         "gid": "V-224152",
         "rid": "SV-224152r508023_rule",
         "stig_id": "EP11-00-003000",
-        "fix_id": "F-25813r495477_fix"
+        "fix_id": "F-25813r495477_fix",
+        "documentable": false
       },
       "id": "V-224152",
       "title": "The EDB Postgres Advanced Server must protect its audit configuration from unauthorized modification.",
@@ -328,11 +328,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000123-DB-000204",
         "gid": "V-224153",
         "rid": "SV-224153r508023_rule",
         "stig_id": "EP11-00-003100",
-        "fix_id": "F-25814r495480_fix"
+        "fix_id": "F-25814r495480_fix",
+        "documentable": false
       },
       "id": "V-224153",
       "title": "The EDB Postgres Advanced Server must protect its audit features from unauthorized removal.",
@@ -346,11 +346,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-224154",
         "rid": "SV-224154r508023_rule",
         "stig_id": "EP11-00-003200",
-        "fix_id": "F-25815r495483_fix"
+        "fix_id": "F-25815r495483_fix",
+        "documentable": false
       },
       "id": "V-224154",
       "title": "Software, applications, and configuration files that are part of, or related to, the Postgres Plus Advanced Server installation must be monitored to discover unauthorized changes.",
@@ -364,11 +364,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-224155",
         "rid": "SV-224155r508023_rule",
         "stig_id": "EP11-00-003210",
-        "fix_id": "F-25816r495486_fix"
+        "fix_id": "F-25816r495486_fix",
+        "documentable": false
       },
       "id": "V-224155",
       "title": "EDB Postgres Advanced Server software modules, to include stored procedures, functions, and triggers must be monitored to discover unauthorized changes.",
@@ -382,11 +382,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000198",
         "gid": "V-224156",
         "rid": "SV-224156r508023_rule",
         "stig_id": "EP11-00-003300",
-        "fix_id": "F-25817r495489_fix"
+        "fix_id": "F-25817r495489_fix",
+        "documentable": false
       },
       "id": "V-224156",
       "title": "The EDB Postgres Advanced Server software installation account must be restricted to authorized users.",
@@ -400,11 +400,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000199",
         "gid": "V-224157",
         "rid": "SV-224157r508023_rule",
         "stig_id": "EP11-00-003400",
-        "fix_id": "F-25818r495492_fix"
+        "fix_id": "F-25818r495492_fix",
+        "documentable": false
       },
       "id": "V-224157",
       "title": "Database software, including EDB Postgres Advanced Server configuration files, must be stored in dedicated directories, separate from the host OS and other applications.",
@@ -418,11 +418,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000200",
         "gid": "V-224158",
         "rid": "SV-224158r508023_rule",
         "stig_id": "EP11-00-003500",
-        "fix_id": "F-25819r495495_fix"
+        "fix_id": "F-25819r495495_fix",
+        "documentable": false
       },
       "id": "V-224158",
       "title": "Database objects (including but not limited to tables, indexes, storage, stored procedures, functions, triggers, links to software external to the EDB Postgres Advanced Server, etc.) must be owned by database/EDB Postgres Advanced Server principals authorized for ownership.",
@@ -436,11 +436,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000362",
         "gid": "V-224159",
         "rid": "SV-224159r508023_rule",
         "stig_id": "EP11-00-003600",
-        "fix_id": "F-25820r495497_fix"
+        "fix_id": "F-25820r495497_fix",
+        "documentable": false
       },
       "id": "V-224159",
       "title": "The role(s)/group(s) used to modify database structure (including but not necessarily limited to tables, indexes, storage, etc.) and logic modules (stored procedures, functions, triggers, links to software external to the EDB Postgres Advanced Server, etc.) must be restricted to authorized users.",
@@ -454,11 +454,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000090",
         "gid": "V-224160",
         "rid": "SV-224160r508023_rule",
         "stig_id": "EP11-00-003700",
-        "fix_id": "F-25821r495499_fix"
+        "fix_id": "F-25821r495499_fix",
+        "documentable": false
       },
       "id": "V-224160",
       "title": "Default, demonstration and sample databases, database objects, and applications must be removed.",
@@ -472,11 +472,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-224161",
         "rid": "SV-224161r508023_rule",
         "stig_id": "EP11-00-003800",
-        "fix_id": "F-25822r495502_fix"
+        "fix_id": "F-25822r495502_fix",
+        "documentable": false
       },
       "id": "V-224161",
       "title": "Unused database components, EDB Postgres Advanced Server software, and database objects must be removed.",
@@ -490,11 +490,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000092",
         "gid": "V-224162",
         "rid": "SV-224162r508023_rule",
         "stig_id": "EP11-00-003900",
-        "fix_id": "F-25823r495505_fix"
+        "fix_id": "F-25823r495505_fix",
+        "documentable": false
       },
       "id": "V-224162",
       "title": "Unused database components which are integrated in the EDB Postgres Advanced Server and cannot be uninstalled must be disabled.",
@@ -508,11 +508,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000093",
         "gid": "V-224163",
         "rid": "SV-224163r508023_rule",
         "stig_id": "EP11-00-004000",
-        "fix_id": "F-25824r495508_fix"
+        "fix_id": "F-25824r495508_fix",
+        "documentable": false
       },
       "id": "V-224163",
       "title": "Access to external executables must be disabled or restricted.",
@@ -526,11 +526,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DB-000094",
         "gid": "V-224164",
         "rid": "SV-224164r508023_rule",
         "stig_id": "EP11-00-004100",
-        "fix_id": "F-25825r495511_fix"
+        "fix_id": "F-25825r495511_fix",
+        "documentable": false
       },
       "id": "V-224164",
       "title": "The EDB Postgres Advanced Server must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -544,11 +544,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148-DB-000103",
         "gid": "V-224165",
         "rid": "SV-224165r508023_rule",
         "stig_id": "EP11-00-004200",
-        "fix_id": "F-25826r495514_fix"
+        "fix_id": "F-25826r495514_fix",
+        "documentable": false
       },
       "id": "V-224165",
       "title": "The EDB Postgres Advanced Server must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -562,11 +562,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000164-DB-000401",
         "gid": "V-224166",
         "rid": "SV-224166r508023_rule",
         "stig_id": "EP11-00-004250",
-        "fix_id": "F-25827r495517_fix"
+        "fix_id": "F-25827r495517_fix",
+        "documentable": false
       },
       "id": "V-224166",
       "title": "If DBMS authentication, using passwords, is employed, EDB Postgres Advanced Server must enforce the DoD standards for password complexity and lifetime.",
@@ -580,11 +580,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000171-DB-000074",
         "gid": "V-224167",
         "rid": "SV-224167r508023_rule",
         "stig_id": "EP11-00-004300",
-        "fix_id": "F-25828r495520_fix"
+        "fix_id": "F-25828r495520_fix",
+        "documentable": false
       },
       "id": "V-224167",
       "title": "If passwords are used for authentication, the EDB Postgres Advanced Server must store only hashed, salted representations of passwords.",
@@ -598,11 +598,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000172-DB-000075",
         "gid": "V-224168",
         "rid": "SV-224168r508023_rule",
         "stig_id": "EP11-00-004400",
-        "fix_id": "F-25829r495523_fix"
+        "fix_id": "F-25829r495523_fix",
+        "documentable": false
       },
       "id": "V-224168",
       "title": "If passwords are used for authentication, the EDB Postgres Advanced Server must transmit only encrypted representations of passwords.",
@@ -616,11 +616,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-DB-000067",
         "gid": "V-224169",
         "rid": "SV-224169r508023_rule",
         "stig_id": "EP11-00-004500",
-        "fix_id": "F-25830r495526_fix"
+        "fix_id": "F-25830r495526_fix",
+        "documentable": false
       },
       "id": "V-224169",
       "title": "The EDB Postgres Advanced Server, when utilizing PKI-based authentication, must validate certificates by performing RFC 5280-compliant certification path validation.",
@@ -634,11 +634,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000176-DB-000068",
         "gid": "V-224170",
         "rid": "SV-224170r508023_rule",
         "stig_id": "EP11-00-004600",
-        "fix_id": "F-25831r495529_fix"
+        "fix_id": "F-25831r495529_fix",
+        "documentable": false
       },
       "id": "V-224170",
       "title": "The EDB Postgres Advanced Server must enforce authorized access to all PKI private keys stored/utilized by the EDB Postgres Advanced Server.",
@@ -652,11 +652,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000178-DB-000083",
         "gid": "V-224171",
         "rid": "SV-224171r508023_rule",
         "stig_id": "EP11-00-004810",
-        "fix_id": "F-25832r495532_fix"
+        "fix_id": "F-25832r495532_fix",
+        "documentable": false
       },
       "id": "V-224171",
       "title": "Applications must obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
@@ -670,11 +670,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000178-DB-000083",
         "gid": "V-224172",
         "rid": "SV-224172r508023_rule",
         "stig_id": "EP11-00-004820",
-        "fix_id": "F-25833r495535_fix"
+        "fix_id": "F-25833r495535_fix",
+        "documentable": false
       },
       "id": "V-224172",
       "title": "When using command-line tools such as psql, users must use a logon method that does not expose the password.",
@@ -688,11 +688,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DB-000363",
         "gid": "V-224173",
         "rid": "SV-224173r508023_rule",
         "stig_id": "EP11-00-004850",
-        "fix_id": "F-25834r495538_fix"
+        "fix_id": "F-25834r495538_fix",
+        "documentable": false
       },
       "id": "V-224173",
       "title": "The EDB Postgres Advanced Server password file must not be used.",
@@ -706,16 +706,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179-DB-000114",
+        "gid": "V-224174",
+        "rid": "SV-224174r508023_rule",
+        "stig_id": "EP11-00-004900",
+        "fix_id": "F-25835r495541_fix",
         "satisfies": [
           "SRG-APP-000179-DB-000114",
           "SRG-APP-000514-DB-000382",
           "SRG-APP-000514-DB-000383"
         ],
-        "gid": "V-224174",
-        "rid": "SV-224174r508023_rule",
-        "stig_id": "EP11-00-004900",
-        "fix_id": "F-25835r495541_fix"
+        "documentable": false
       },
       "id": "V-224174",
       "title": "The EDB Postgres Advanced Server must use NIST FIPS 140-2 validated cryptographic modules for all cryptographic operations including generation of cryptographic hashes and data protection.",
@@ -729,11 +729,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000180-DB-000115",
         "gid": "V-224175",
         "rid": "SV-224175r508023_rule",
         "stig_id": "EP11-00-005000",
-        "fix_id": "F-25836r495544_fix"
+        "fix_id": "F-25836r495544_fix",
+        "documentable": false
       },
       "id": "V-224175",
       "title": "The DBMS must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
@@ -747,11 +747,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-DB-000122",
         "gid": "V-224176",
         "rid": "SV-224176r508023_rule",
         "stig_id": "EP11-00-005100",
-        "fix_id": "F-25837r495547_fix"
+        "fix_id": "F-25837r495547_fix",
+        "documentable": false
       },
       "id": "V-224176",
       "title": "The EDB Postgres Advanced Server must separate user functionality (including user interface services) from database management functionality.",
@@ -765,11 +765,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000226-DB-000147",
         "gid": "V-224177",
         "rid": "SV-224177r508023_rule",
         "stig_id": "EP11-00-005600",
-        "fix_id": "F-25838r495550_fix"
+        "fix_id": "F-25838r495550_fix",
+        "documentable": false
       },
       "id": "V-224177",
       "title": "In the event of a system failure, the DBMS must preserve any information necessary to determine cause of failure and any information necessary to return to operations with least disruption to mission processes.",
@@ -783,11 +783,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231-DB-000154",
         "gid": "V-224178",
         "rid": "SV-224178r508023_rule",
         "stig_id": "EP11-00-005700",
-        "fix_id": "F-25839r495553_fix"
+        "fix_id": "F-25839r495553_fix",
+        "documentable": false
       },
       "id": "V-224178",
       "title": "The EDB Postgres Advanced Server must protect the confidentiality and integrity of all information at rest.",
@@ -801,11 +801,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233-DB-000124",
         "gid": "V-224179",
         "rid": "SV-224179r508023_rule",
         "stig_id": "EP11-00-005800",
-        "fix_id": "F-25840r495556_fix"
+        "fix_id": "F-25840r495556_fix",
+        "documentable": false
       },
       "id": "V-224179",
       "title": "The EDB Postgres Advanced Server must isolate security functions from non-security functions.",
@@ -819,11 +819,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000128",
         "gid": "V-224180",
         "rid": "SV-224180r508023_rule",
         "stig_id": "EP11-00-005900",
-        "fix_id": "F-25841r495559_fix"
+        "fix_id": "F-25841r495559_fix",
+        "documentable": false
       },
       "id": "V-224180",
       "title": "Database contents must be protected from unauthorized and unintended information transfer by enforcement of a data-transfer policy.",
@@ -837,11 +837,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000374",
         "gid": "V-224181",
         "rid": "SV-224181r508023_rule",
         "stig_id": "EP11-00-006100",
-        "fix_id": "F-25842r495562_fix"
+        "fix_id": "F-25842r495562_fix",
+        "documentable": false
       },
       "id": "V-224181",
       "title": "Access to database files must be limited to relevant processes and to authorized, administrative users.",
@@ -855,11 +855,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000160",
         "gid": "V-224182",
         "rid": "SV-224182r508023_rule",
         "stig_id": "EP11-00-006200",
-        "fix_id": "F-25843r495565_fix"
+        "fix_id": "F-25843r495565_fix",
+        "documentable": false
       },
       "id": "V-224182",
       "title": "The EDB Postgres Advanced Server must check the validity of all data inputs except those specifically identified by the organization.",
@@ -873,11 +873,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000391",
         "gid": "V-224183",
         "rid": "SV-224183r508023_rule",
         "stig_id": "EP11-00-006300",
-        "fix_id": "F-25844r495568_fix"
+        "fix_id": "F-25844r495568_fix",
+        "documentable": false
       },
       "id": "V-224183",
       "title": "The EDB Postgres Advanced Server and associated applications must reserve the use of dynamic code execution for situations that require it.",
@@ -891,11 +891,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000392",
         "gid": "V-224184",
         "rid": "SV-224184r508023_rule",
         "stig_id": "EP11-00-006400",
-        "fix_id": "F-25845r495571_fix"
+        "fix_id": "F-25845r495571_fix",
+        "documentable": false
       },
       "id": "V-224184",
       "title": "The EDB Postgres Advanced Server and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack.",
@@ -909,11 +909,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266-DB-000162",
         "gid": "V-224185",
         "rid": "SV-224185r508023_rule",
         "stig_id": "EP11-00-006500",
-        "fix_id": "F-25846r495574_fix"
+        "fix_id": "F-25846r495574_fix",
+        "documentable": false
       },
       "id": "V-224185",
       "title": "The EDB Postgres Advanced Server must provide non-privileged users with error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries.",
@@ -927,11 +927,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000267-DB-000163",
         "gid": "V-224186",
         "rid": "SV-224186r508023_rule",
         "stig_id": "EP11-00-006600",
-        "fix_id": "F-25847r495577_fix"
+        "fix_id": "F-25847r495577_fix",
+        "documentable": false
       },
       "id": "V-224186",
       "title": "The EDB Postgres Advanced Server must reveal detailed error messages only to the ISSO, ISSM, SA, and DBA.",
@@ -945,11 +945,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295-DB-000305",
         "gid": "V-224187",
         "rid": "SV-224187r508023_rule",
         "stig_id": "EP11-00-006700",
-        "fix_id": "F-25848r495580_fix"
+        "fix_id": "F-25848r495580_fix",
+        "documentable": false
       },
       "id": "V-224187",
       "title": "The EDB Postgres Advanced Server must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.",
@@ -963,11 +963,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000311-DB-000308",
         "gid": "V-224188",
         "rid": "SV-224188r508023_rule",
         "stig_id": "EP11-00-006900",
-        "fix_id": "F-25849r495583_fix"
+        "fix_id": "F-25849r495583_fix",
+        "documentable": false
       },
       "id": "V-224188",
       "title": "The EDB Postgres Advanced Server must associate organization-defined types of security labels having organization-defined security label values with information in storage.",
@@ -981,11 +981,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000313-DB-000309",
         "gid": "V-224189",
         "rid": "SV-224189r508023_rule",
         "stig_id": "EP11-00-007000",
-        "fix_id": "F-25850r495586_fix"
+        "fix_id": "F-25850r495586_fix",
+        "documentable": false
       },
       "id": "V-224189",
       "title": "The EDB Postgres Advanced Server must associate organization-defined types of security labels having organization-defined security label values with information in process.",
@@ -999,11 +999,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000314-DB-000310",
         "gid": "V-224190",
         "rid": "SV-224190r508023_rule",
         "stig_id": "EP11-00-007100",
-        "fix_id": "F-25851r495589_fix"
+        "fix_id": "F-25851r495589_fix",
+        "documentable": false
       },
       "id": "V-224190",
       "title": "The EDB Postgres Advanced Server must associate organization-defined types of security labels having organization-defined security label values with information in transmission.",
@@ -1017,11 +1017,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328-DB-000301",
         "gid": "V-224191",
         "rid": "SV-224191r508023_rule",
         "stig_id": "EP11-00-007300",
-        "fix_id": "F-25852r495592_fix"
+        "fix_id": "F-25852r495592_fix",
+        "documentable": false
       },
       "id": "V-224191",
       "title": "EDB Postgres Advanced Server must enforce discretionary access control policies, as defined by the data owner, over defined subjects and objects.",
@@ -1035,11 +1035,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340-DB-000304",
         "gid": "V-224192",
         "rid": "SV-224192r508023_rule",
         "stig_id": "EP11-00-007400",
-        "fix_id": "F-25853r495595_fix"
+        "fix_id": "F-25853r495595_fix",
+        "documentable": false
       },
       "id": "V-224192",
       "title": "The EDB Postgres Advanced Server must prevent non-privileged users from executing privileged functions, to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
@@ -1053,11 +1053,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000342-DB-000302",
         "gid": "V-224193",
         "rid": "SV-224193r508023_rule",
         "stig_id": "EP11-00-007500",
-        "fix_id": "F-25854r495598_fix"
+        "fix_id": "F-25854r495598_fix",
+        "documentable": false
       },
       "id": "V-224193",
       "title": "Execution of software modules (to include stored procedures, functions, and triggers) with elevated privileges must be restricted to necessary cases only.",
@@ -1071,11 +1071,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000342-DB-000302",
         "gid": "V-224194",
         "rid": "SV-224194r508023_rule",
         "stig_id": "EP11-00-007510",
-        "fix_id": "F-25855r495601_fix"
+        "fix_id": "F-25855r495601_fix",
+        "documentable": false
       },
       "id": "V-224194",
       "title": "Execution of software modules (to include stored procedures, functions, and triggers) with elevated privileges must be restricted to necessary cases only.",
@@ -1089,11 +1089,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356-DB-000314",
         "gid": "V-224195",
         "rid": "SV-224195r508023_rule",
         "stig_id": "EP11-00-007700",
-        "fix_id": "F-25856r495604_fix"
+        "fix_id": "F-25856r495604_fix",
+        "documentable": false
       },
       "id": "V-224195",
       "title": "The EDB Postgres Advanced Server must utilize centralized management of the content captured in audit records generated by all components of the EDB Postgres Advanced Server.",
@@ -1107,11 +1107,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356-DB-000315",
         "gid": "V-224196",
         "rid": "SV-224196r508023_rule",
         "stig_id": "EP11-00-007800",
-        "fix_id": "F-25857r495607_fix"
+        "fix_id": "F-25857r495607_fix",
+        "documentable": false
       },
       "id": "V-224196",
       "title": "The EDB Postgres Advanced Server must provide centralized configuration of the content to be captured in audit records generated by all components of the EDB Postgres Advanced Server.",
@@ -1125,11 +1125,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357-DB-000316",
         "gid": "V-224197",
         "rid": "SV-224197r508023_rule",
         "stig_id": "EP11-00-007900",
-        "fix_id": "F-25858r495610_fix"
+        "fix_id": "F-25858r495610_fix",
+        "documentable": false
       },
       "id": "V-224197",
       "title": "The EDB Postgres Advanced Server must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.",
@@ -1143,11 +1143,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000359-DB-000319",
         "gid": "V-224198",
         "rid": "SV-224198r508023_rule",
         "stig_id": "EP11-00-008000",
-        "fix_id": "F-25859r495613_fix"
+        "fix_id": "F-25859r495613_fix",
+        "documentable": false
       },
       "id": "V-224198",
       "title": "The EDB Postgres Advanced Server must provide a warning to appropriate support staff when allocated audit record storage volume reaches 75% of maximum audit record storage capacity.",
@@ -1161,11 +1161,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360-DB-000320",
         "gid": "V-224199",
         "rid": "SV-224199r508023_rule",
         "stig_id": "EP11-00-008100",
-        "fix_id": "F-25860r495616_fix"
+        "fix_id": "F-25860r495616_fix",
+        "documentable": false
       },
       "id": "V-224199",
       "title": "The EDB Postgres Advanced Server must provide an immediate real-time alert to appropriate support staff of all audit failure events requiring real-time alerts.",
@@ -1179,11 +1179,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378-DB-000365",
         "gid": "V-224200",
         "rid": "SV-224200r508023_rule",
         "stig_id": "EP11-00-008400",
-        "fix_id": "F-25861r495619_fix"
+        "fix_id": "F-25861r495619_fix",
+        "documentable": false
       },
       "id": "V-224200",
       "title": "The EDB Postgres Advanced Server must prohibit user installation of logic modules (stored procedures, functions, triggers, views, etc.) without explicit privileged status.",
@@ -1197,11 +1197,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-DB-000360",
         "gid": "V-224201",
         "rid": "SV-224201r508023_rule",
         "stig_id": "EP11-00-008500",
-        "fix_id": "F-25862r495622_fix"
+        "fix_id": "F-25862r495622_fix",
+        "documentable": false
       },
       "id": "V-224201",
       "title": "The EDB Postgres Advanced Server must enforce access restrictions associated with changes to the configuration of the EDB Postgres Advanced Server or database(s).",
@@ -1215,11 +1215,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DB-000364",
         "gid": "V-224203",
         "rid": "SV-224203r508023_rule",
         "stig_id": "EP11-00-008700",
-        "fix_id": "F-25864r495628_fix"
+        "fix_id": "F-25864r495628_fix",
+        "documentable": false
       },
       "id": "V-224203",
       "title": "The EDB Postgres Advanced Server must disable network functions, ports, protocols, and services deemed by the organization to be nonsecure, in accord with the Ports, Protocols, and Services Management (PPSM) guidance.",
@@ -1233,11 +1233,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000389-DB-000372",
         "gid": "V-224204",
         "rid": "SV-224204r508023_rule",
         "stig_id": "EP11-00-008800",
-        "fix_id": "F-25865r495631_fix"
+        "fix_id": "F-25865r495631_fix",
+        "documentable": false
       },
       "id": "V-224204",
       "title": "The EDB Postgres Advanced Server must require users to re-authenticate when organization-defined circumstances or situations require re-authentication.",
@@ -1251,11 +1251,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-DB-000385",
         "gid": "V-224205",
         "rid": "SV-224205r508023_rule",
         "stig_id": "EP11-00-009100",
-        "fix_id": "F-25866r495634_fix"
+        "fix_id": "F-25866r495634_fix",
+        "documentable": false
       },
       "id": "V-224205",
       "title": "The EDB Postgres Advanced Server must only accept end entity certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs) for the establishment of all encrypted sessions.",
@@ -1269,11 +1269,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000428-DB-000386",
         "gid": "V-224206",
         "rid": "SV-224206r508023_rule",
         "stig_id": "EP11-00-009200",
-        "fix_id": "F-25867r495637_fix"
+        "fix_id": "F-25867r495637_fix",
+        "documentable": false
       },
       "id": "V-224206",
       "title": "The EDB Postgres Advanced Server must implement cryptographic mechanisms to prevent unauthorized modification of organization-defined information at rest (to include, at a minimum, PII and classified information) on organization-defined information system components.",
@@ -1287,11 +1287,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429-DB-000387",
         "gid": "V-224207",
         "rid": "SV-224207r508023_rule",
         "stig_id": "EP11-00-009300",
-        "fix_id": "F-25868r495639_fix"
+        "fix_id": "F-25868r495639_fix",
+        "documentable": false
       },
       "id": "V-224207",
       "title": "The EDB Postgres Advanced Server must implement cryptographic mechanisms preventing the unauthorized disclosure of organization-defined information at rest on organization-defined information system components.",
@@ -1305,11 +1305,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-DB-000378",
         "gid": "V-224208",
         "rid": "SV-224208r557402_rule",
         "stig_id": "EP11-00-009500",
-        "fix_id": "F-25869r557401_fix"
+        "fix_id": "F-25869r557401_fix",
+        "documentable": false
       },
       "id": "V-224208",
       "title": "The EDB Postgres Advanced Server must maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -1323,11 +1323,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-DB-000379",
         "gid": "V-224209",
         "rid": "SV-224209r557408_rule",
         "stig_id": "EP11-00-009600",
-        "fix_id": "F-25870r557407_fix"
+        "fix_id": "F-25870r557407_fix",
+        "documentable": false
       },
       "id": "V-224209",
       "title": "The EDB Postgres Advanced Server must maintain the confidentiality and integrity of information during reception.",
@@ -1341,11 +1341,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000447-DB-000393",
         "gid": "V-224210",
         "rid": "SV-224210r508023_rule",
         "stig_id": "EP11-00-009700",
-        "fix_id": "F-25871r495648_fix"
+        "fix_id": "F-25871r495648_fix",
+        "documentable": false
       },
       "id": "V-224210",
       "title": "When invalid inputs are received, the EDB Postgres Advanced Server must behave in a predictable and documented manner that reflects organizational and system objectives.",
@@ -1359,11 +1359,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-DB-000390",
         "gid": "V-224211",
         "rid": "SV-224211r508023_rule",
         "stig_id": "EP11-00-009900",
-        "fix_id": "F-25872r495651_fix"
+        "fix_id": "F-25872r495651_fix",
+        "documentable": false
       },
       "id": "V-224211",
       "title": "Security-relevant software updates to the EDB Postgres Advanced Server must be installed within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).",
@@ -1377,15 +1377,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000350",
+        "gid": "V-224232",
+        "rid": "SV-224232r508023_rule",
+        "stig_id": "EP11-00-011800",
+        "fix_id": "F-25893r495714_fix",
         "satisfies": [
           "SRG-APP-000503-DB-000350",
           "SRG-APP-000503-DB-000351"
         ],
-        "gid": "V-224232",
-        "rid": "SV-224232r508023_rule",
-        "stig_id": "EP11-00-011800",
-        "fix_id": "F-25893r495714_fix"
+        "documentable": false
       },
       "id": "V-224232",
       "title": "The EDB Postgres Advanced Server must generate audit records when successful/unsuccessful logons, connections, or connection attempts occur.",
@@ -1399,15 +1399,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000505-DB-000352",
+        "gid": "V-224235",
+        "rid": "SV-224235r508023_rule",
+        "stig_id": "EP11-00-012200",
+        "fix_id": "F-25896r495723_fix",
         "satisfies": [
           "SRG-APP-000505-DB-000352",
           "SRG-APP-000506-DB-000353"
         ],
-        "gid": "V-224235",
-        "rid": "SV-224235r508023_rule",
-        "stig_id": "EP11-00-012200",
-        "fix_id": "F-25896r495723_fix"
+        "documentable": false
       },
       "id": "V-224235",
       "title": "The EDB Postgres Advanced Server must generate audit records showing starting and ending time for user access to the database(s) and concurrent logons/connections by the same user from different workstations.",
@@ -1421,11 +1421,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000508-DB-000358",
         "gid": "V-224238",
         "rid": "SV-224238r508023_rule",
         "stig_id": "EP11-00-012600",
-        "fix_id": "F-25899r495732_fix"
+        "fix_id": "F-25899r495732_fix",
+        "documentable": false
       },
       "id": "V-224238",
       "title": "The EDB Postgres Advanced Server must generate audit records for all direct access to the database(s).",
@@ -1439,11 +1439,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514-DB-000381",
         "gid": "V-224239",
         "rid": "SV-224239r508023_rule",
         "stig_id": "EP11-00-012700",
-        "fix_id": "F-25900r495735_fix"
+        "fix_id": "F-25900r495735_fix",
+        "documentable": false
       },
       "id": "V-224239",
       "title": "The EDB Postgres Advanced Server must implement NIST FIPS 140-2 validated cryptographic modules to provision digital signatures.",
@@ -1457,11 +1457,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000515-DB-000318",
         "gid": "V-224240",
         "rid": "SV-224240r508023_rule",
         "stig_id": "EP11-00-013000",
-        "fix_id": "F-25901r495738_fix"
+        "fix_id": "F-25901r495738_fix",
+        "documentable": false
       },
       "id": "V-224240",
       "title": "The EDB Postgres Advanced Server must off-load audit data to a separate log management facility; this must be continuous and in near real time for systems with a network connection to the storage facility and weekly or more often for stand-alone systems.",
@@ -1475,11 +1475,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DB-000363",
         "gid": "V-224241",
         "rid": "SV-224241r508023_rule",
         "stig_id": "EP11-00-013100",
-        "fix_id": "F-25902r495741_fix"
+        "fix_id": "F-25902r495741_fix",
+        "documentable": false
       },
       "id": "V-224241",
       "title": "The EDB Postgres Advanced Server must be configured in accordance with the security configuration settings based on DoD security configuration and implementation guidance, including STIGs, NSA configuration guides, CTOs, DTMs, and IAVMs.",
@@ -1493,11 +1493,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-DB-000114",
         "gid": "V-224242",
         "rid": "SV-224242r508023_rule",
         "stig_id": "EP11-00-013200",
-        "fix_id": "F-25903r495744_fix"
+        "fix_id": "F-25903r495744_fix",
+        "documentable": false
       },
       "id": "V-224242",
       "title": "The EDB Postgres Advanced Server must be configured on a platform that has a NIST certified FIPS 140-2 installation of OpenSSL.",
@@ -1509,7 +1509,5 @@
       }
     }
   ],
-  "name": "EDB_Postgres_Advanced_Server_v11_on_Windows_STIG",
-  "title": "EDB Postgres Advanced Server v11 on Windows Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "EDB_Postgres_Advanced_Server_v11_on_Windows_STIG"
 }

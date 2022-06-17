@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000002-GPOS-00002",
         "gid": "V-238196",
         "rid": "SV-238196r653763_rule",
         "stig_id": "UBTU-20-010000",
-        "fix_id": "F-41365r653762_fix"
+        "fix_id": "F-41365r653762_fix",
+        "documentable": false
       },
       "id": "V-238196",
       "title": "The Ubuntu operating system must provision temporary user accounts with an expiration time of 72 hours or less.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-238197",
         "rid": "SV-238197r653766_rule",
         "stig_id": "UBTU-20-010002",
-        "fix_id": "F-41366r653765_fix"
+        "fix_id": "F-41366r653765_fix",
+        "documentable": false
       },
       "id": "V-238197",
       "title": "The Ubuntu operating system must enable the graphical user logon banner to display the Standard Mandatory DoD Notice and Consent Banner before granting local access to the system via a graphical user logon.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-238198",
         "rid": "SV-238198r653769_rule",
         "stig_id": "UBTU-20-010003",
-        "fix_id": "F-41367r653768_fix"
+        "fix_id": "F-41367r653768_fix",
+        "documentable": false
       },
       "id": "V-238198",
       "title": "The Ubuntu operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local access to the system via a graphical user logon.",
@@ -62,15 +62,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
+        "gid": "V-238199",
+        "rid": "SV-238199r653772_rule",
+        "stig_id": "UBTU-20-010004",
+        "fix_id": "F-41368r653771_fix",
         "satisfies": [
           "SRG-OS-000028-GPOS-00009",
           "SRG-OS-000029-GPOS-00010"
         ],
-        "gid": "V-238199",
-        "rid": "SV-238199r653772_rule",
-        "stig_id": "UBTU-20-010004",
-        "fix_id": "F-41368r653771_fix"
+        "documentable": false
       },
       "id": "V-238199",
       "title": "The Ubuntu operating system must retain a user's session lock until that user reestablishes access using established identification and authentication procedures.",
@@ -84,15 +84,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000030-GPOS-00011",
+        "gid": "V-238200",
+        "rid": "SV-238200r653775_rule",
+        "stig_id": "UBTU-20-010005",
+        "fix_id": "F-41369r653774_fix",
         "satisfies": [
           "SRG-OS-000030-GPOS-00011",
           "SRG-OS-000031-GPOS-00012"
         ],
-        "gid": "V-238200",
-        "rid": "SV-238200r653775_rule",
-        "stig_id": "UBTU-20-010005",
-        "fix_id": "F-41369r653774_fix"
+        "documentable": false
       },
       "id": "V-238200",
       "title": "The Ubuntu operating system must allow users to directly initiate a session lock for all connection types.",
@@ -106,11 +106,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000068-GPOS-00036",
         "gid": "V-238201",
         "rid": "SV-238201r653778_rule",
         "stig_id": "UBTU-20-010006",
-        "fix_id": "F-41370r653777_fix"
+        "fix_id": "F-41370r653777_fix",
+        "documentable": false
       },
       "id": "V-238201",
       "title": "The Ubuntu operating system must map the authenticated identity to the user or group account for PKI-based authentication.",
@@ -124,11 +124,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-238202",
         "rid": "SV-238202r653781_rule",
         "stig_id": "UBTU-20-010007",
-        "fix_id": "F-41371r653780_fix"
+        "fix_id": "F-41371r653780_fix",
+        "documentable": false
       },
       "id": "V-238202",
       "title": "The Ubuntu operating system must enforce 24 hours/1 day as the minimum password lifetime. Passwords for new users must have a 24 hours/1 day minimum password lifetime restriction.",
@@ -142,11 +142,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-238203",
         "rid": "SV-238203r653784_rule",
         "stig_id": "UBTU-20-010008",
-        "fix_id": "F-41372r653783_fix"
+        "fix_id": "F-41372r653783_fix",
+        "documentable": false
       },
       "id": "V-238203",
       "title": "The Ubuntu operating system must enforce a 60-day maximum password lifetime restriction. Passwords for new users must have a 60-day maximum password lifetime restriction.",
@@ -160,11 +160,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-238204",
         "rid": "SV-238204r653787_rule",
         "stig_id": "UBTU-20-010009",
-        "fix_id": "F-41373r653786_fix"
+        "fix_id": "F-41373r653786_fix",
+        "documentable": false
       },
       "id": "V-238204",
       "title": "Ubuntu operating systems when booted must require authentication upon booting into single-user and maintenance modes.",
@@ -178,15 +178,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
+        "gid": "V-238205",
+        "rid": "SV-238205r653790_rule",
+        "stig_id": "UBTU-20-010010",
+        "fix_id": "F-41374r653789_fix",
         "satisfies": [
           "SRG-OS-000104-GPOS-00051",
           "SRG-OS-000121-GPOS-00062"
         ],
-        "gid": "V-238205",
-        "rid": "SV-238205r653790_rule",
-        "stig_id": "UBTU-20-010010",
-        "fix_id": "F-41374r653789_fix"
+        "documentable": false
       },
       "id": "V-238205",
       "title": "The Ubuntu operating system must uniquely identify interactive users.",
@@ -200,11 +200,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-238206",
         "rid": "SV-238206r653793_rule",
         "stig_id": "UBTU-20-010012",
-        "fix_id": "F-41375r653792_fix"
+        "fix_id": "F-41375r653792_fix",
+        "documentable": false
       },
       "id": "V-238206",
       "title": "The Ubuntu operating system must ensure only users who need access to security functions are part of sudo group.",
@@ -218,11 +218,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000279-GPOS-00109",
         "gid": "V-238207",
         "rid": "SV-238207r653796_rule",
         "stig_id": "UBTU-20-010013",
-        "fix_id": "F-41376r653795_fix"
+        "fix_id": "F-41376r653795_fix",
+        "documentable": false
       },
       "id": "V-238207",
       "title": "The Ubuntu operating system must automatically terminate a user session after inactivity timeouts have expired.",
@@ -236,15 +236,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
+        "gid": "V-238208",
+        "rid": "SV-238208r653799_rule",
+        "stig_id": "UBTU-20-010014",
+        "fix_id": "F-41377r653798_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00156",
           "SRG-OS-000373-GPOS-00157"
         ],
-        "gid": "V-238208",
-        "rid": "SV-238208r653799_rule",
-        "stig_id": "UBTU-20-010014",
-        "fix_id": "F-41377r653798_fix"
+        "documentable": false
       },
       "id": "V-238208",
       "title": "The Ubuntu operating system must require users to reauthenticate for privilege escalation or when changing roles.",
@@ -258,11 +258,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00228",
         "gid": "V-238209",
         "rid": "SV-238209r653802_rule",
         "stig_id": "UBTU-20-010016",
-        "fix_id": "F-41378r653801_fix"
+        "fix_id": "F-41378r653801_fix",
+        "documentable": false
       },
       "id": "V-238209",
       "title": "The Ubuntu operating system default filesystem permissions must be defined in such a way that all authenticated users can read and modify only their own files.",
@@ -276,17 +276,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000105-GPOS-00052",
+        "gid": "V-238210",
+        "rid": "SV-238210r653805_rule",
+        "stig_id": "UBTU-20-010033",
+        "fix_id": "F-41379r653804_fix",
         "satisfies": [
           "SRG-OS-000105-GPOS-00052",
           "SRG-OS-000106-GPOS-00053",
           "SRG-OS-000107-GPOS-00054",
           "SRG-OS-000108-GPOS-00055"
         ],
-        "gid": "V-238210",
-        "rid": "SV-238210r653805_rule",
-        "stig_id": "UBTU-20-010033",
-        "fix_id": "F-41379r653804_fix"
+        "documentable": false
       },
       "id": "V-238210",
       "title": "The Ubuntu operating system must implement smart card logins for multifactor authentication for local and network access to privileged and non-privileged accounts.",
@@ -300,11 +300,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
         "gid": "V-238211",
         "rid": "SV-238211r653808_rule",
         "stig_id": "UBTU-20-010035",
-        "fix_id": "F-41380r653807_fix"
+        "fix_id": "F-41380r653807_fix",
+        "documentable": false
       },
       "id": "V-238211",
       "title": "The Ubuntu operating system must use strong authenticators in establishing nonlocal maintenance and diagnostic sessions.",
@@ -318,11 +318,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000126-GPOS-00066",
         "gid": "V-238212",
         "rid": "SV-238212r653811_rule",
         "stig_id": "UBTU-20-010036",
-        "fix_id": "F-41381r653810_fix"
+        "fix_id": "F-41381r653810_fix",
+        "documentable": false
       },
       "id": "V-238212",
       "title": "The Ubuntu operating system must immediately terminate all network connections associated with SSH traffic after a period of inactivity.",
@@ -336,11 +336,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-238213",
         "rid": "SV-238213r653814_rule",
         "stig_id": "UBTU-20-010037",
-        "fix_id": "F-41382r653813_fix"
+        "fix_id": "F-41382r653813_fix",
+        "documentable": false
       },
       "id": "V-238213",
       "title": "The Ubuntu operating system must immediately terminate all network connections associated with SSH traffic at the end of the session or after 10 minutes of inactivity.",
@@ -354,15 +354,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
+        "gid": "V-238214",
+        "rid": "SV-238214r653817_rule",
+        "stig_id": "UBTU-20-010038",
+        "fix_id": "F-41383r653816_fix",
         "satisfies": [
           "SRG-OS-000228-GPOS-00088",
           "SRG-OS-000023-GPOS-00006"
         ],
-        "gid": "V-238214",
-        "rid": "SV-238214r653817_rule",
-        "stig_id": "UBTU-20-010038",
-        "fix_id": "F-41383r653816_fix"
+        "documentable": false
       },
       "id": "V-238214",
       "title": "The Ubuntu operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting any local or remote connection to the system.",
@@ -376,16 +376,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-238215",
+        "rid": "SV-238215r653820_rule",
+        "stig_id": "UBTU-20-010042",
+        "fix_id": "F-41384r653819_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000425-GPOS-00189",
           "SRG-OS-000426-GPOS-00190"
         ],
-        "gid": "V-238215",
-        "rid": "SV-238215r653820_rule",
-        "stig_id": "UBTU-20-010042",
-        "fix_id": "F-41384r653819_fix"
+        "documentable": false
       },
       "id": "V-238215",
       "title": "The Ubuntu operating system must use SSH to protect the confidentiality and integrity of transmitted information.",
@@ -399,16 +399,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000424-GPOS-00188",
+        "gid": "V-238216",
+        "rid": "SV-238216r654316_rule",
+        "stig_id": "UBTU-20-010043",
+        "fix_id": "F-41385r653822_fix",
         "satisfies": [
           "SRG-OS-000424-GPOS-00188",
           "SRG-OS-000250-GPOS-00093",
           "SRG-OS-000393-GPOS-00173"
         ],
-        "gid": "V-238216",
-        "rid": "SV-238216r654316_rule",
-        "stig_id": "UBTU-20-010043",
-        "fix_id": "F-41385r653822_fix"
+        "documentable": false
       },
       "id": "V-238216",
       "title": "The Ubuntu operating system must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
@@ -422,16 +422,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000424-GPOS-00188",
+        "gid": "V-238217",
+        "rid": "SV-238217r653826_rule",
+        "stig_id": "UBTU-20-010044",
+        "fix_id": "F-41386r653825_fix",
         "satisfies": [
           "SRG-OS-000424-GPOS-00188",
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000394-GPOS-00174"
         ],
-        "gid": "V-238217",
-        "rid": "SV-238217r653826_rule",
-        "stig_id": "UBTU-20-010044",
-        "fix_id": "F-41386r653825_fix"
+        "documentable": false
       },
       "id": "V-238217",
       "title": "The Ubuntu operating system must configure the SSH daemon to use FIPS 140-2 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
@@ -445,11 +445,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-238218",
         "rid": "SV-238218r653829_rule",
         "stig_id": "UBTU-20-010047",
-        "fix_id": "F-41387r653828_fix"
+        "fix_id": "F-41387r653828_fix",
+        "documentable": false
       },
       "id": "V-238218",
       "title": "The Ubuntu operating system must not allow unattended or automatic login via SSH.",
@@ -463,11 +463,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-238219",
         "rid": "SV-238219r653832_rule",
         "stig_id": "UBTU-20-010048",
-        "fix_id": "F-41388r653831_fix"
+        "fix_id": "F-41388r653831_fix",
+        "documentable": false
       },
       "id": "V-238219",
       "title": "The Ubuntu operating system must be configured so that remote X connections are disabled, unless to fulfill documented and validated mission requirements.",
@@ -481,11 +481,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-238220",
         "rid": "SV-238220r653835_rule",
         "stig_id": "UBTU-20-010049",
-        "fix_id": "F-41389r653834_fix"
+        "fix_id": "F-41389r653834_fix",
+        "documentable": false
       },
       "id": "V-238220",
       "title": "The Ubuntu operating system SSH daemon must prevent remote hosts from connecting to the proxy display.",
@@ -499,11 +499,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-238221",
         "rid": "SV-238221r653838_rule",
         "stig_id": "UBTU-20-010050",
-        "fix_id": "F-41390r653837_fix"
+        "fix_id": "F-41390r653837_fix",
+        "documentable": false
       },
       "id": "V-238221",
       "title": "The Ubuntu operating system must enforce password complexity by requiring that at least one upper-case character be used.",
@@ -517,11 +517,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000070-GPOS-00038",
         "gid": "V-238222",
         "rid": "SV-238222r653841_rule",
         "stig_id": "UBTU-20-010051",
-        "fix_id": "F-41391r653840_fix"
+        "fix_id": "F-41391r653840_fix",
+        "documentable": false
       },
       "id": "V-238222",
       "title": "The Ubuntu operating system must enforce password complexity by requiring that at least one lower-case character be used.",
@@ -535,11 +535,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000071-GPOS-00039",
         "gid": "V-238223",
         "rid": "SV-238223r653844_rule",
         "stig_id": "UBTU-20-010052",
-        "fix_id": "F-41392r653843_fix"
+        "fix_id": "F-41392r653843_fix",
+        "documentable": false
       },
       "id": "V-238223",
       "title": "The Ubuntu operating system must enforce password complexity by requiring that at least one numeric character be used.",
@@ -553,11 +553,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-238224",
         "rid": "SV-238224r653847_rule",
         "stig_id": "UBTU-20-010053",
-        "fix_id": "F-41393r653846_fix"
+        "fix_id": "F-41393r653846_fix",
+        "documentable": false
       },
       "id": "V-238224",
       "title": "The Ubuntu operating system must require the change of at least 8 characters when passwords are changed.",
@@ -571,11 +571,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-238225",
         "rid": "SV-238225r653850_rule",
         "stig_id": "UBTU-20-010054",
-        "fix_id": "F-41394r653849_fix"
+        "fix_id": "F-41394r653849_fix",
+        "documentable": false
       },
       "id": "V-238225",
       "title": "The Ubuntu operating system must enforce a minimum 15-character password length.",
@@ -589,11 +589,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000266-GPOS-00101",
         "gid": "V-238226",
         "rid": "SV-238226r653853_rule",
         "stig_id": "UBTU-20-010055",
-        "fix_id": "F-41395r653852_fix"
+        "fix_id": "F-41395r653852_fix",
+        "documentable": false
       },
       "id": "V-238226",
       "title": "The Ubuntu operating system must enforce password complexity by requiring that at least one special character be used.",
@@ -607,11 +607,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00225",
         "gid": "V-238227",
         "rid": "SV-238227r653856_rule",
         "stig_id": "UBTU-20-010056",
-        "fix_id": "F-41396r653855_fix"
+        "fix_id": "F-41396r653855_fix",
+        "documentable": false
       },
       "id": "V-238227",
       "title": "The Ubuntu operating system must prevent the use of dictionary words for passwords.",
@@ -625,11 +625,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00225",
         "gid": "V-238228",
         "rid": "SV-238228r653859_rule",
         "stig_id": "UBTU-20-010057",
-        "fix_id": "F-41397r653858_fix"
+        "fix_id": "F-41397r653858_fix",
+        "documentable": false
       },
       "id": "V-238228",
       "title": "The Ubuntu operating system must be configured so that when passwords are changed or new passwords are established, pwquality must be used.",
@@ -643,11 +643,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-238229",
         "rid": "SV-238229r653862_rule",
         "stig_id": "UBTU-20-010060",
-        "fix_id": "F-41398r653861_fix"
+        "fix_id": "F-41398r653861_fix",
+        "documentable": false
       },
       "id": "V-238229",
       "title": "The Ubuntu operating system, for PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor.",
@@ -661,11 +661,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000375-GPOS-00160",
         "gid": "V-238230",
         "rid": "SV-238230r653865_rule",
         "stig_id": "UBTU-20-010063",
-        "fix_id": "F-41399r653864_fix"
+        "fix_id": "F-41399r653864_fix",
+        "documentable": false
       },
       "id": "V-238230",
       "title": "The Ubuntu operating system must implement multifactor authentication for remote access to privileged accounts in such a way that one of the factors is provided by a device separate from the system gaining access.",
@@ -679,11 +679,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000376-GPOS-00161",
         "gid": "V-238231",
         "rid": "SV-238231r653868_rule",
         "stig_id": "UBTU-20-010064",
-        "fix_id": "F-41400r653867_fix"
+        "fix_id": "F-41400r653867_fix",
+        "documentable": false
       },
       "id": "V-238231",
       "title": "The Ubuntu operating system must accept Personal Identity Verification (PIV) credentials.",
@@ -697,11 +697,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000377-GPOS-00162",
         "gid": "V-238232",
         "rid": "SV-238232r653871_rule",
         "stig_id": "UBTU-20-010065",
-        "fix_id": "F-41401r653870_fix"
+        "fix_id": "F-41401r653870_fix",
+        "documentable": false
       },
       "id": "V-238232",
       "title": "The Ubuntu operating system must electronically verify Personal Identity Verification (PIV) credentials.",
@@ -715,11 +715,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000384-GPOS-00167",
         "gid": "V-238233",
         "rid": "SV-238233r653874_rule",
         "stig_id": "UBTU-20-010066",
-        "fix_id": "F-41402r653873_fix"
+        "fix_id": "F-41402r653873_fix",
+        "documentable": false
       },
       "id": "V-238233",
       "title": "The Ubuntu operating system for PKI-based authentication, must implement a local cache of revocation data in case of the inability to access revocation information via the network.",
@@ -733,15 +733,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
+        "gid": "V-238234",
+        "rid": "SV-238234r685225_rule",
+        "stig_id": "UBTU-20-010070",
+        "fix_id": "F-41403r653876_fix",
         "satisfies": [
           "SRG-OS-000077-GPOS-00045",
           "SRG-OS-000073-GPOS-00041"
         ],
-        "gid": "V-238234",
-        "rid": "SV-238234r685225_rule",
-        "stig_id": "UBTU-20-010070",
-        "fix_id": "F-41403r653876_fix"
+        "documentable": false
       },
       "id": "V-238234",
       "title": "The Ubuntu operating system must prohibit password reuse for a minimum of five generations.",
@@ -755,15 +755,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000329-GPOS-00128",
+        "gid": "V-238235",
+        "rid": "SV-238235r653880_rule",
+        "stig_id": "UBTU-20-010072",
+        "fix_id": "F-41404r653879_fix",
         "satisfies": [
           "SRG-OS-000329-GPOS-00128",
           "SRG-OS-000021-GPOS-00005"
         ],
-        "gid": "V-238235",
-        "rid": "SV-238235r653880_rule",
-        "stig_id": "UBTU-20-010072",
-        "fix_id": "F-41404r653879_fix"
+        "documentable": false
       },
       "id": "V-238235",
       "title": "The Ubuntu operating system must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts have been made.",
@@ -777,11 +777,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000446-GPOS-00200",
         "gid": "V-238236",
         "rid": "SV-238236r653883_rule",
         "stig_id": "UBTU-20-010074",
-        "fix_id": "F-41405r653882_fix"
+        "fix_id": "F-41405r653882_fix",
+        "documentable": false
       },
       "id": "V-238236",
       "title": "The Ubuntu operating system must be configured so that the script which runs each 30 days or less to check file integrity is the default one.",
@@ -795,11 +795,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00226",
         "gid": "V-238237",
         "rid": "SV-238237r653886_rule",
         "stig_id": "UBTU-20-010075",
-        "fix_id": "F-41406r653885_fix"
+        "fix_id": "F-41406r653885_fix",
+        "documentable": false
       },
       "id": "V-238237",
       "title": "The Ubuntu operating system must enforce a delay of at least 4 seconds between logon prompts following a failed logon attempt.",
@@ -813,7 +813,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-238238",
+        "rid": "SV-238238r653889_rule",
+        "stig_id": "UBTU-20-010100",
+        "fix_id": "F-41407r653888_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -824,10 +827,7 @@
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-238238",
-        "rid": "SV-238238r653889_rule",
-        "stig_id": "UBTU-20-010100",
-        "fix_id": "F-41407r653888_fix"
+        "documentable": false
       },
       "id": "V-238238",
       "title": "The Ubuntu operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/passwd.",
@@ -841,7 +841,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-238239",
+        "rid": "SV-238239r653892_rule",
+        "stig_id": "UBTU-20-010101",
+        "fix_id": "F-41408r653891_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -851,10 +854,7 @@
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-238239",
-        "rid": "SV-238239r653892_rule",
-        "stig_id": "UBTU-20-010101",
-        "fix_id": "F-41408r653891_fix"
+        "documentable": false
       },
       "id": "V-238239",
       "title": "The Ubuntu operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/group.",
@@ -868,7 +868,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-238240",
+        "rid": "SV-238240r653895_rule",
+        "stig_id": "UBTU-20-010102",
+        "fix_id": "F-41409r653894_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -878,10 +881,7 @@
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-238240",
-        "rid": "SV-238240r653895_rule",
-        "stig_id": "UBTU-20-010102",
-        "fix_id": "F-41409r653894_fix"
+        "documentable": false
       },
       "id": "V-238240",
       "title": "The Ubuntu operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/shadow.",
@@ -895,7 +895,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-238241",
+        "rid": "SV-238241r653898_rule",
+        "stig_id": "UBTU-20-010103",
+        "fix_id": "F-41410r653897_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -905,10 +908,7 @@
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-238241",
-        "rid": "SV-238241r653898_rule",
-        "stig_id": "UBTU-20-010103",
-        "fix_id": "F-41410r653897_fix"
+        "documentable": false
       },
       "id": "V-238241",
       "title": "The Ubuntu operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/gshadow.",
@@ -922,7 +922,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-238242",
+        "rid": "SV-238242r653901_rule",
+        "stig_id": "UBTU-20-010104",
+        "fix_id": "F-41411r653900_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -932,10 +935,7 @@
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-238242",
-        "rid": "SV-238242r653901_rule",
-        "stig_id": "UBTU-20-010104",
-        "fix_id": "F-41411r653900_fix"
+        "documentable": false
       },
       "id": "V-238242",
       "title": "The Ubuntu operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/opasswd.",
@@ -949,11 +949,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000046-GPOS-00022",
         "gid": "V-238243",
         "rid": "SV-238243r653904_rule",
         "stig_id": "UBTU-20-010117",
-        "fix_id": "F-41412r653903_fix"
+        "fix_id": "F-41412r653903_fix",
+        "documentable": false
       },
       "id": "V-238243",
       "title": "The Ubuntu operating system must alert the ISSO and SA (at a minimum) in the event of an audit processing failure.",
@@ -967,11 +967,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000047-GPOS-00023",
         "gid": "V-238244",
         "rid": "SV-238244r653907_rule",
         "stig_id": "UBTU-20-010118",
-        "fix_id": "F-41413r653906_fix"
+        "fix_id": "F-41413r653906_fix",
+        "documentable": false
       },
       "id": "V-238244",
       "title": "The Ubuntu operating system must shut down by default upon audit failure (unless availability is an overriding concern).",
@@ -985,15 +985,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-238245",
+        "rid": "SV-238245r653910_rule",
+        "stig_id": "UBTU-20-010122",
+        "fix_id": "F-41414r653909_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028"
         ],
-        "gid": "V-238245",
-        "rid": "SV-238245r653910_rule",
-        "stig_id": "UBTU-20-010122",
-        "fix_id": "F-41414r653909_fix"
+        "documentable": false
       },
       "id": "V-238245",
       "title": "The Ubuntu operating system must be configured so that audit log files are not read or write-accessible by unauthorized users.",
@@ -1007,16 +1007,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-238246",
+        "rid": "SV-238246r653913_rule",
+        "stig_id": "UBTU-20-010123",
+        "fix_id": "F-41415r653912_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-238246",
-        "rid": "SV-238246r653913_rule",
-        "stig_id": "UBTU-20-010123",
-        "fix_id": "F-41415r653912_fix"
+        "documentable": false
       },
       "id": "V-238246",
       "title": "The Ubuntu operating system must be configured to permit only authorized users ownership of the audit log files.",
@@ -1030,16 +1030,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-238247",
+        "rid": "SV-238247r653916_rule",
+        "stig_id": "UBTU-20-010124",
+        "fix_id": "F-41416r653915_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-238247",
-        "rid": "SV-238247r653916_rule",
-        "stig_id": "UBTU-20-010124",
-        "fix_id": "F-41416r653915_fix"
+        "documentable": false
       },
       "id": "V-238247",
       "title": "The Ubuntu operating system must permit only authorized groups ownership of the audit log files.",
@@ -1053,11 +1053,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000059-GPOS-00029",
         "gid": "V-238248",
         "rid": "SV-238248r653919_rule",
         "stig_id": "UBTU-20-010128",
-        "fix_id": "F-41417r653918_fix"
+        "fix_id": "F-41417r653918_fix",
+        "documentable": false
       },
       "id": "V-238248",
       "title": "The Ubuntu operating system must be configured so that the audit log directory is not write-accessible by unauthorized users.",
@@ -1071,11 +1071,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000063-GPOS-00032",
         "gid": "V-238249",
         "rid": "SV-238249r653922_rule",
         "stig_id": "UBTU-20-010133",
-        "fix_id": "F-41418r653921_fix"
+        "fix_id": "F-41418r653921_fix",
+        "documentable": false
       },
       "id": "V-238249",
       "title": "The Ubuntu operating system must be configured so that audit configuration files are not write-accessible by unauthorized users.",
@@ -1089,11 +1089,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000063-GPOS-00032",
         "gid": "V-238250",
         "rid": "SV-238250r653925_rule",
         "stig_id": "UBTU-20-010134",
-        "fix_id": "F-41419r653924_fix"
+        "fix_id": "F-41419r653924_fix",
+        "documentable": false
       },
       "id": "V-238250",
       "title": "The Ubuntu operating system must permit only authorized accounts to own the audit configuration files.",
@@ -1107,11 +1107,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000063-GPOS-00032",
         "gid": "V-238251",
         "rid": "SV-238251r653928_rule",
         "stig_id": "UBTU-20-010135",
-        "fix_id": "F-41420r653927_fix"
+        "fix_id": "F-41420r653927_fix",
+        "documentable": false
       },
       "id": "V-238251",
       "title": "The Ubuntu operating system must permit only authorized groups to own the audit configuration files.",
@@ -1125,11 +1125,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238252",
         "rid": "SV-238252r653931_rule",
         "stig_id": "UBTU-20-010136",
-        "fix_id": "F-41421r653930_fix"
+        "fix_id": "F-41421r653930_fix",
+        "documentable": false
       },
       "id": "V-238252",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the su command.",
@@ -1143,11 +1143,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238253",
         "rid": "SV-238253r653934_rule",
         "stig_id": "UBTU-20-010137",
-        "fix_id": "F-41422r653933_fix"
+        "fix_id": "F-41422r653933_fix",
+        "documentable": false
       },
       "id": "V-238253",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the chfn command.",
@@ -1161,11 +1161,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238254",
         "rid": "SV-238254r653937_rule",
         "stig_id": "UBTU-20-010138",
-        "fix_id": "F-41423r653936_fix"
+        "fix_id": "F-41423r653936_fix",
+        "documentable": false
       },
       "id": "V-238254",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the mount command.",
@@ -1179,11 +1179,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238255",
         "rid": "SV-238255r653940_rule",
         "stig_id": "UBTU-20-010139",
-        "fix_id": "F-41424r653939_fix"
+        "fix_id": "F-41424r653939_fix",
+        "documentable": false
       },
       "id": "V-238255",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the umount command.",
@@ -1197,11 +1197,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238256",
         "rid": "SV-238256r653943_rule",
         "stig_id": "UBTU-20-010140",
-        "fix_id": "F-41425r653942_fix"
+        "fix_id": "F-41425r653942_fix",
+        "documentable": false
       },
       "id": "V-238256",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the ssh-agent command.",
@@ -1215,11 +1215,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238257",
         "rid": "SV-238257r653946_rule",
         "stig_id": "UBTU-20-010141",
-        "fix_id": "F-41426r653945_fix"
+        "fix_id": "F-41426r653945_fix",
+        "documentable": false
       },
       "id": "V-238257",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the ssh-keysign command.",
@@ -1233,15 +1233,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238258",
+        "rid": "SV-238258r653949_rule",
+        "stig_id": "UBTU-20-010142",
+        "fix_id": "F-41427r653948_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238258",
-        "rid": "SV-238258r653949_rule",
-        "stig_id": "UBTU-20-010142",
-        "fix_id": "F-41427r653948_fix"
+        "documentable": false
       },
       "id": "V-238258",
       "title": "The Ubuntu operating system must generate audit records for any use of the setxattr system call.",
@@ -1255,15 +1255,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238259",
+        "rid": "SV-238259r653952_rule",
+        "stig_id": "UBTU-20-010143",
+        "fix_id": "F-41428r653951_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238259",
-        "rid": "SV-238259r653952_rule",
-        "stig_id": "UBTU-20-010143",
-        "fix_id": "F-41428r653951_fix"
+        "documentable": false
       },
       "id": "V-238259",
       "title": "The Ubuntu operating system must generate audit records for any use of the lsetxattr system call.",
@@ -1277,15 +1277,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238260",
+        "rid": "SV-238260r653955_rule",
+        "stig_id": "UBTU-20-010144",
+        "fix_id": "F-41429r653954_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238260",
-        "rid": "SV-238260r653955_rule",
-        "stig_id": "UBTU-20-010144",
-        "fix_id": "F-41429r653954_fix"
+        "documentable": false
       },
       "id": "V-238260",
       "title": "The Ubuntu operating system must generate audit records for any use of the fsetxattr system call.",
@@ -1299,16 +1299,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238261",
+        "rid": "SV-238261r653958_rule",
+        "stig_id": "UBTU-20-010145",
+        "fix_id": "F-41430r653957_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000466-GPOS-00210"
         ],
-        "gid": "V-238261",
-        "rid": "SV-238261r653958_rule",
-        "stig_id": "UBTU-20-010145",
-        "fix_id": "F-41430r653957_fix"
+        "documentable": false
       },
       "id": "V-238261",
       "title": "The Ubuntu operating system must generate audit records for any use of the removexattr system call.",
@@ -1322,16 +1322,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238262",
+        "rid": "SV-238262r653961_rule",
+        "stig_id": "UBTU-20-010146",
+        "fix_id": "F-41431r653960_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000466-GPOS-00210"
         ],
-        "gid": "V-238262",
-        "rid": "SV-238262r653961_rule",
-        "stig_id": "UBTU-20-010146",
-        "fix_id": "F-41431r653960_fix"
+        "documentable": false
       },
       "id": "V-238262",
       "title": "The Ubuntu operating system must generate audit records for any use of the lremovexattr system call.",
@@ -1345,17 +1345,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238263",
+        "rid": "SV-238263r653964_rule",
+        "stig_id": "UBTU-20-010147",
+        "fix_id": "F-41432r653963_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000466-GPOS-00210",
           "SRG-OS-000365-GPOS-00152"
         ],
-        "gid": "V-238263",
-        "rid": "SV-238263r653964_rule",
-        "stig_id": "UBTU-20-010147",
-        "fix_id": "F-41432r653963_fix"
+        "documentable": false
       },
       "id": "V-238263",
       "title": "The Ubuntu operating system must generate audit records for any use of the fremovexattr system call.",
@@ -1369,15 +1369,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238264",
+        "rid": "SV-238264r653967_rule",
+        "stig_id": "UBTU-20-010148",
+        "fix_id": "F-41433r653966_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238264",
-        "rid": "SV-238264r653967_rule",
-        "stig_id": "UBTU-20-010148",
-        "fix_id": "F-41433r653966_fix"
+        "documentable": false
       },
       "id": "V-238264",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the chown system call.",
@@ -1391,15 +1391,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238265",
+        "rid": "SV-238265r653970_rule",
+        "stig_id": "UBTU-20-010149",
+        "fix_id": "F-41434r653969_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238265",
-        "rid": "SV-238265r653970_rule",
-        "stig_id": "UBTU-20-010149",
-        "fix_id": "F-41434r653969_fix"
+        "documentable": false
       },
       "id": "V-238265",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the fchown system call.",
@@ -1413,15 +1413,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238266",
+        "rid": "SV-238266r653973_rule",
+        "stig_id": "UBTU-20-010150",
+        "fix_id": "F-41435r653972_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238266",
-        "rid": "SV-238266r653973_rule",
-        "stig_id": "UBTU-20-010150",
-        "fix_id": "F-41435r653972_fix"
+        "documentable": false
       },
       "id": "V-238266",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the fchownat system call.",
@@ -1435,15 +1435,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238267",
+        "rid": "SV-238267r653976_rule",
+        "stig_id": "UBTU-20-010151",
+        "fix_id": "F-41436r653975_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238267",
-        "rid": "SV-238267r653976_rule",
-        "stig_id": "UBTU-20-010151",
-        "fix_id": "F-41436r653975_fix"
+        "documentable": false
       },
       "id": "V-238267",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the lchown system call.",
@@ -1457,15 +1457,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238268",
+        "rid": "SV-238268r653979_rule",
+        "stig_id": "UBTU-20-010152",
+        "fix_id": "F-41437r653978_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238268",
-        "rid": "SV-238268r653979_rule",
-        "stig_id": "UBTU-20-010152",
-        "fix_id": "F-41437r653978_fix"
+        "documentable": false
       },
       "id": "V-238268",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the chmod system call.",
@@ -1479,15 +1479,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238269",
+        "rid": "SV-238269r653982_rule",
+        "stig_id": "UBTU-20-010153",
+        "fix_id": "F-41438r653981_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238269",
-        "rid": "SV-238269r653982_rule",
-        "stig_id": "UBTU-20-010153",
-        "fix_id": "F-41438r653981_fix"
+        "documentable": false
       },
       "id": "V-238269",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the fchmod system call.",
@@ -1501,15 +1501,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238270",
+        "rid": "SV-238270r653985_rule",
+        "stig_id": "UBTU-20-010154",
+        "fix_id": "F-41439r653984_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-238270",
-        "rid": "SV-238270r653985_rule",
-        "stig_id": "UBTU-20-010154",
-        "fix_id": "F-41439r653984_fix"
+        "documentable": false
       },
       "id": "V-238270",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the fchmodat system call.",
@@ -1523,15 +1523,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238271",
+        "rid": "SV-238271r653988_rule",
+        "stig_id": "UBTU-20-010155",
+        "fix_id": "F-41440r653987_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-238271",
-        "rid": "SV-238271r653988_rule",
-        "stig_id": "UBTU-20-010155",
-        "fix_id": "F-41440r653987_fix"
+        "documentable": false
       },
       "id": "V-238271",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the open system call.",
@@ -1545,15 +1545,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238272",
+        "rid": "SV-238272r653991_rule",
+        "stig_id": "UBTU-20-010156",
+        "fix_id": "F-41441r653990_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-238272",
-        "rid": "SV-238272r653991_rule",
-        "stig_id": "UBTU-20-010156",
-        "fix_id": "F-41441r653990_fix"
+        "documentable": false
       },
       "id": "V-238272",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the truncate system call.",
@@ -1567,15 +1567,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238273",
+        "rid": "SV-238273r653994_rule",
+        "stig_id": "UBTU-20-010157",
+        "fix_id": "F-41442r653993_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-238273",
-        "rid": "SV-238273r653994_rule",
-        "stig_id": "UBTU-20-010157",
-        "fix_id": "F-41442r653993_fix"
+        "documentable": false
       },
       "id": "V-238273",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the ftruncate system call.",
@@ -1589,15 +1589,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238274",
+        "rid": "SV-238274r653997_rule",
+        "stig_id": "UBTU-20-010158",
+        "fix_id": "F-41443r653996_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-238274",
-        "rid": "SV-238274r653997_rule",
-        "stig_id": "UBTU-20-010158",
-        "fix_id": "F-41443r653996_fix"
+        "documentable": false
       },
       "id": "V-238274",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the creat system call.",
@@ -1611,15 +1611,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238275",
+        "rid": "SV-238275r654000_rule",
+        "stig_id": "UBTU-20-010159",
+        "fix_id": "F-41444r653999_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-238275",
-        "rid": "SV-238275r654000_rule",
-        "stig_id": "UBTU-20-010159",
-        "fix_id": "F-41444r653999_fix"
+        "documentable": false
       },
       "id": "V-238275",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the openat system call.",
@@ -1633,15 +1633,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238276",
+        "rid": "SV-238276r654003_rule",
+        "stig_id": "UBTU-20-010160",
+        "fix_id": "F-41445r654002_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-238276",
-        "rid": "SV-238276r654003_rule",
-        "stig_id": "UBTU-20-010160",
-        "fix_id": "F-41445r654002_fix"
+        "documentable": false
       },
       "id": "V-238276",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the open_by_handle_at system call.",
@@ -1655,11 +1655,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238277",
         "rid": "SV-238277r654006_rule",
         "stig_id": "UBTU-20-010161",
-        "fix_id": "F-41446r654005_fix"
+        "fix_id": "F-41446r654005_fix",
+        "documentable": false
       },
       "id": "V-238277",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the sudo command.",
@@ -1673,11 +1673,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238278",
         "rid": "SV-238278r654009_rule",
         "stig_id": "UBTU-20-010162",
-        "fix_id": "F-41447r654008_fix"
+        "fix_id": "F-41447r654008_fix",
+        "documentable": false
       },
       "id": "V-238278",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the sudoedit command.",
@@ -1691,11 +1691,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238279",
         "rid": "SV-238279r654012_rule",
         "stig_id": "UBTU-20-010163",
-        "fix_id": "F-41448r654011_fix"
+        "fix_id": "F-41448r654011_fix",
+        "documentable": false
       },
       "id": "V-238279",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the chsh command.",
@@ -1709,11 +1709,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238280",
         "rid": "SV-238280r654015_rule",
         "stig_id": "UBTU-20-010164",
-        "fix_id": "F-41449r654014_fix"
+        "fix_id": "F-41449r654014_fix",
+        "documentable": false
       },
       "id": "V-238280",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the newgrp command.",
@@ -1727,11 +1727,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238281",
         "rid": "SV-238281r654018_rule",
         "stig_id": "UBTU-20-010165",
-        "fix_id": "F-41450r654017_fix"
+        "fix_id": "F-41450r654017_fix",
+        "documentable": false
       },
       "id": "V-238281",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the chcon command.",
@@ -1745,11 +1745,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238282",
         "rid": "SV-238282r654021_rule",
         "stig_id": "UBTU-20-010166",
-        "fix_id": "F-41451r654020_fix"
+        "fix_id": "F-41451r654020_fix",
+        "documentable": false
       },
       "id": "V-238282",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the apparmor_parser command.",
@@ -1763,11 +1763,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238283",
         "rid": "SV-238283r654024_rule",
         "stig_id": "UBTU-20-010167",
-        "fix_id": "F-41452r654023_fix"
+        "fix_id": "F-41452r654023_fix",
+        "documentable": false
       },
       "id": "V-238283",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the setfacl command.",
@@ -1781,11 +1781,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238284",
         "rid": "SV-238284r654027_rule",
         "stig_id": "UBTU-20-010168",
-        "fix_id": "F-41453r654026_fix"
+        "fix_id": "F-41453r654026_fix",
+        "documentable": false
       },
       "id": "V-238284",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the chacl command.",
@@ -1799,16 +1799,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238285",
+        "rid": "SV-238285r654030_rule",
+        "stig_id": "UBTU-20-010169",
+        "fix_id": "F-41454r654029_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000473-GPOS-00218"
         ],
-        "gid": "V-238285",
-        "rid": "SV-238285r654030_rule",
-        "stig_id": "UBTU-20-010169",
-        "fix_id": "F-41454r654029_fix"
+        "documentable": false
       },
       "id": "V-238285",
       "title": "The Ubuntu operating system must generate audit records for the use and modification of the tallylog file.",
@@ -1822,16 +1822,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238286",
+        "rid": "SV-238286r654033_rule",
+        "stig_id": "UBTU-20-010170",
+        "fix_id": "F-41455r654032_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000473-GPOS-00218"
         ],
-        "gid": "V-238286",
-        "rid": "SV-238286r654033_rule",
-        "stig_id": "UBTU-20-010170",
-        "fix_id": "F-41455r654032_fix"
+        "documentable": false
       },
       "id": "V-238286",
       "title": "The Ubuntu operating system must generate audit records for the use and modification of faillog file.",
@@ -1845,16 +1845,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238287",
+        "rid": "SV-238287r654036_rule",
+        "stig_id": "UBTU-20-010171",
+        "fix_id": "F-41456r654035_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000473-GPOS-00218"
         ],
-        "gid": "V-238287",
-        "rid": "SV-238287r654036_rule",
-        "stig_id": "UBTU-20-010171",
-        "fix_id": "F-41456r654035_fix"
+        "documentable": false
       },
       "id": "V-238287",
       "title": "The Ubuntu operating system must generate audit records for the use and modification of the lastlog file.",
@@ -1868,11 +1868,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238288",
         "rid": "SV-238288r654039_rule",
         "stig_id": "UBTU-20-010172",
-        "fix_id": "F-41457r654038_fix"
+        "fix_id": "F-41457r654038_fix",
+        "documentable": false
       },
       "id": "V-238288",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the passwd command.",
@@ -1886,11 +1886,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238289",
         "rid": "SV-238289r654042_rule",
         "stig_id": "UBTU-20-010173",
-        "fix_id": "F-41458r654041_fix"
+        "fix_id": "F-41458r654041_fix",
+        "documentable": false
       },
       "id": "V-238289",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the unix_update command.",
@@ -1904,11 +1904,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238290",
         "rid": "SV-238290r654045_rule",
         "stig_id": "UBTU-20-010174",
-        "fix_id": "F-41459r654044_fix"
+        "fix_id": "F-41459r654044_fix",
+        "documentable": false
       },
       "id": "V-238290",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the gpasswd command.",
@@ -1922,11 +1922,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238291",
         "rid": "SV-238291r654048_rule",
         "stig_id": "UBTU-20-010175",
-        "fix_id": "F-41460r654047_fix"
+        "fix_id": "F-41460r654047_fix",
+        "documentable": false
       },
       "id": "V-238291",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the chage command.",
@@ -1940,11 +1940,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238292",
         "rid": "SV-238292r654051_rule",
         "stig_id": "UBTU-20-010176",
-        "fix_id": "F-41461r654050_fix"
+        "fix_id": "F-41461r654050_fix",
+        "documentable": false
       },
       "id": "V-238292",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the usermod command.",
@@ -1958,11 +1958,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238293",
         "rid": "SV-238293r654054_rule",
         "stig_id": "UBTU-20-010177",
-        "fix_id": "F-41462r654053_fix"
+        "fix_id": "F-41462r654053_fix",
+        "documentable": false
       },
       "id": "V-238293",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the crontab command.",
@@ -1976,11 +1976,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238294",
         "rid": "SV-238294r654057_rule",
         "stig_id": "UBTU-20-010178",
-        "fix_id": "F-41463r654056_fix"
+        "fix_id": "F-41463r654056_fix",
+        "documentable": false
       },
       "id": "V-238294",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the pam_timestamp_check command.",
@@ -1994,15 +1994,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238295",
+        "rid": "SV-238295r654060_rule",
+        "stig_id": "UBTU-20-010179",
+        "fix_id": "F-41464r654059_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000471-GPOS-00216"
         ],
-        "gid": "V-238295",
-        "rid": "SV-238295r654060_rule",
-        "stig_id": "UBTU-20-010179",
-        "fix_id": "F-41464r654059_fix"
+        "documentable": false
       },
       "id": "V-238295",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the init_module syscall.",
@@ -2016,15 +2016,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-238296",
+        "rid": "SV-238296r654063_rule",
+        "stig_id": "UBTU-20-010180",
+        "fix_id": "F-41465r654062_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-238296",
-        "rid": "SV-238296r654063_rule",
-        "stig_id": "UBTU-20-010180",
-        "fix_id": "F-41465r654062_fix"
+        "documentable": false
       },
       "id": "V-238296",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the finit_module syscall.",
@@ -2038,11 +2038,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
         "gid": "V-238297",
         "rid": "SV-238297r654066_rule",
         "stig_id": "UBTU-20-010181",
-        "fix_id": "F-41466r654065_fix"
+        "fix_id": "F-41466r654065_fix",
+        "documentable": false
       },
       "id": "V-238297",
       "title": "The Ubuntu operating system must generate audit records for successful/unsuccessful uses of the delete_module syscall.",
@@ -2056,7 +2056,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000122-GPOS-00063",
+        "gid": "V-238298",
+        "rid": "SV-238298r654069_rule",
+        "stig_id": "UBTU-20-010182",
+        "fix_id": "F-41467r654068_fix",
         "satisfies": [
           "SRG-OS-000122-GPOS-00063",
           "SRG-OS-000037-GPOS-00015",
@@ -2079,10 +2082,7 @@
           "SRG-OS-000354-GPOS-00142",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "gid": "V-238298",
-        "rid": "SV-238298r654069_rule",
-        "stig_id": "UBTU-20-010182",
-        "fix_id": "F-41467r654068_fix"
+        "documentable": false
       },
       "id": "V-238298",
       "title": "The Ubuntu operating system must produce audit records and reports containing information to establish when, where, what type, the source, and the outcome for all DoD-defined auditable events and actions in near real time.",
@@ -2096,11 +2096,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000254-GPOS-00095",
         "gid": "V-238299",
         "rid": "SV-238299r654072_rule",
         "stig_id": "UBTU-20-010198",
-        "fix_id": "F-41468r654071_fix"
+        "fix_id": "F-41468r654071_fix",
+        "documentable": false
       },
       "id": "V-238299",
       "title": "The Ubuntu operating system must initiate session audits at system start-up.",
@@ -2114,15 +2114,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "gid": "V-238300",
+        "rid": "SV-238300r654075_rule",
+        "stig_id": "UBTU-20-010199",
+        "fix_id": "F-41469r654074_fix",
         "satisfies": [
           "SRG-OS-000256-GPOS-00097",
           "SRG-OS-000257-GPOS-00098"
         ],
-        "gid": "V-238300",
-        "rid": "SV-238300r654075_rule",
-        "stig_id": "UBTU-20-010199",
-        "fix_id": "F-41469r654074_fix"
+        "documentable": false
       },
       "id": "V-238300",
       "title": "The Ubuntu operating system must configure audit tools with a mode of 0755 or less permissive.",
@@ -2136,15 +2136,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "gid": "V-238301",
+        "rid": "SV-238301r654078_rule",
+        "stig_id": "UBTU-20-010200",
+        "fix_id": "F-41470r654077_fix",
         "satisfies": [
           "SRG-OS-000256-GPOS-00097",
           "SRG-OS-000257-GPOS-00098"
         ],
-        "gid": "V-238301",
-        "rid": "SV-238301r654078_rule",
-        "stig_id": "UBTU-20-010200",
-        "fix_id": "F-41470r654077_fix"
+        "documentable": false
       },
       "id": "V-238301",
       "title": "The Ubuntu operating system must configure audit tools to be owned by root.",
@@ -2158,15 +2158,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "gid": "V-238302",
+        "rid": "SV-238302r654081_rule",
+        "stig_id": "UBTU-20-010201",
+        "fix_id": "F-41471r654080_fix",
         "satisfies": [
           "SRG-OS-000256-GPOS-00097",
           "SRG-OS-000257-GPOS-00098"
         ],
-        "gid": "V-238302",
-        "rid": "SV-238302r654081_rule",
-        "stig_id": "UBTU-20-010201",
-        "fix_id": "F-41471r654080_fix"
+        "documentable": false
       },
       "id": "V-238302",
       "title": "The Ubuntu operating system must configure the audit tools to be group-owned by root.",
@@ -2180,11 +2180,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000278-GPOS-00108",
         "gid": "V-238303",
         "rid": "SV-238303r654084_rule",
         "stig_id": "UBTU-20-010205",
-        "fix_id": "F-41472r654083_fix"
+        "fix_id": "F-41472r654083_fix",
+        "documentable": false
       },
       "id": "V-238303",
       "title": "The Ubuntu operating system must use cryptographic mechanisms to protect the integrity of audit tools.",
@@ -2198,15 +2198,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000326-GPOS-00126",
+        "gid": "V-238304",
+        "rid": "SV-238304r654087_rule",
+        "stig_id": "UBTU-20-010211",
+        "fix_id": "F-41473r654086_fix",
         "satisfies": [
           "SRG-OS-000326-GPOS-00126",
           "SRG-OS-000327-GPOS-00127"
         ],
-        "gid": "V-238304",
-        "rid": "SV-238304r654087_rule",
-        "stig_id": "UBTU-20-010211",
-        "fix_id": "F-41473r654086_fix"
+        "documentable": false
       },
       "id": "V-238304",
       "title": "The Ubuntu operating system must prevent all software from executing at higher privilege levels than users executing the software and the audit system must be configured to audit the execution of privileged functions.",
@@ -2220,11 +2220,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-238305",
         "rid": "SV-238305r654090_rule",
         "stig_id": "UBTU-20-010215",
-        "fix_id": "F-41474r654089_fix"
+        "fix_id": "F-41474r654089_fix",
+        "documentable": false
       },
       "id": "V-238305",
       "title": "The Ubuntu operating system must allocate audit record storage capacity to store at least one weeks' worth of audit records, when audit records are not immediately sent to a central audit record storage facility.",
@@ -2238,15 +2238,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "gid": "V-238306",
+        "rid": "SV-238306r654093_rule",
+        "stig_id": "UBTU-20-010216",
+        "fix_id": "F-41475r654092_fix",
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-238306",
-        "rid": "SV-238306r654093_rule",
-        "stig_id": "UBTU-20-010216",
-        "fix_id": "F-41475r654092_fix"
+        "documentable": false
       },
       "id": "V-238306",
       "title": "The Ubuntu operating system audit event multiplexor must be configured to off-load audit logs onto a different system or storage media from the system being audited.",
@@ -2260,11 +2260,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000343-GPOS-00134",
         "gid": "V-238307",
         "rid": "SV-238307r654096_rule",
         "stig_id": "UBTU-20-010217",
-        "fix_id": "F-41476r654095_fix"
+        "fix_id": "F-41476r654095_fix",
+        "documentable": false
       },
       "id": "V-238307",
       "title": "The Ubuntu operating system must immediately notify the SA and ISSO (at a minimum) when allocated audit record storage volume reaches 75% of the repository maximum audit record storage capacity.",
@@ -2278,11 +2278,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000359-GPOS-00146",
         "gid": "V-238308",
         "rid": "SV-238308r654099_rule",
         "stig_id": "UBTU-20-010230",
-        "fix_id": "F-41477r654098_fix"
+        "fix_id": "F-41477r654098_fix",
+        "documentable": false
       },
       "id": "V-238308",
       "title": "The Ubuntu operating system must record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).",
@@ -2296,15 +2296,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
+        "gid": "V-238309",
+        "rid": "SV-238309r654102_rule",
+        "stig_id": "UBTU-20-010244",
+        "fix_id": "F-41478r654101_fix",
         "satisfies": [
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-238309",
-        "rid": "SV-238309r654102_rule",
-        "stig_id": "UBTU-20-010244",
-        "fix_id": "F-41478r654101_fix"
+        "documentable": false
       },
       "id": "V-238309",
       "title": "The Ubuntu operating system must generate audit records for privileged activities, nonlocal maintenance, diagnostic sessions and other system-level access.",
@@ -2318,11 +2318,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000468-GPOS-00212",
         "gid": "V-238310",
         "rid": "SV-238310r654105_rule",
         "stig_id": "UBTU-20-010267",
-        "fix_id": "F-41479r654104_fix"
+        "fix_id": "F-41479r654104_fix",
+        "documentable": false
       },
       "id": "V-238310",
       "title": "The Ubuntu operating system must generate audit records for any successful/unsuccessful use of unlink system call.",
@@ -2336,11 +2336,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000468-GPOS-00212",
         "gid": "V-238311",
         "rid": "SV-238311r654108_rule",
         "stig_id": "UBTU-20-010268",
-        "fix_id": "F-41480r654107_fix"
+        "fix_id": "F-41480r654107_fix",
+        "documentable": false
       },
       "id": "V-238311",
       "title": "The Ubuntu operating system must generate audit records for any successful/unsuccessful use of unlinkat system call.",
@@ -2354,11 +2354,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000468-GPOS-00212",
         "gid": "V-238312",
         "rid": "SV-238312r654111_rule",
         "stig_id": "UBTU-20-010269",
-        "fix_id": "F-41481r654110_fix"
+        "fix_id": "F-41481r654110_fix",
+        "documentable": false
       },
       "id": "V-238312",
       "title": "The Ubuntu operating system must generate audit records for any successful/unsuccessful use of rename system call.",
@@ -2372,11 +2372,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000468-GPOS-00212",
         "gid": "V-238313",
         "rid": "SV-238313r654114_rule",
         "stig_id": "UBTU-20-010270",
-        "fix_id": "F-41482r654113_fix"
+        "fix_id": "F-41482r654113_fix",
+        "documentable": false
       },
       "id": "V-238313",
       "title": "The Ubuntu operating system must generate audit records for any successful/unsuccessful use of renameat system call.",
@@ -2390,11 +2390,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000471-GPOS-00216",
         "gid": "V-238314",
         "rid": "SV-238314r654117_rule",
         "stig_id": "UBTU-20-010276",
-        "fix_id": "F-41483r654116_fix"
+        "fix_id": "F-41483r654116_fix",
+        "documentable": false
       },
       "id": "V-238314",
       "title": "The Ubuntu operating system must generate audit records when loading dynamic kernel modules.",
@@ -2408,11 +2408,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000472-GPOS-00217",
         "gid": "V-238315",
         "rid": "SV-238315r654120_rule",
         "stig_id": "UBTU-20-010277",
-        "fix_id": "F-41484r654119_fix"
+        "fix_id": "F-41484r654119_fix",
+        "documentable": false
       },
       "id": "V-238315",
       "title": "The Ubuntu operating system must generate audit records for the /var/log/wtmp file.",
@@ -2426,11 +2426,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000472-GPOS-00217",
         "gid": "V-238316",
         "rid": "SV-238316r654123_rule",
         "stig_id": "UBTU-20-010278",
-        "fix_id": "F-41485r654122_fix"
+        "fix_id": "F-41485r654122_fix",
+        "documentable": false
       },
       "id": "V-238316",
       "title": "The Ubuntu operating system must generate audit records for the /var/run/wtmp file.",
@@ -2444,11 +2444,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000472-GPOS-00217",
         "gid": "V-238317",
         "rid": "SV-238317r654126_rule",
         "stig_id": "UBTU-20-010279",
-        "fix_id": "F-41486r654125_fix"
+        "fix_id": "F-41486r654125_fix",
+        "documentable": false
       },
       "id": "V-238317",
       "title": "The Ubuntu operating system must generate audit records for the /var/log/btmp file.",
@@ -2462,11 +2462,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000477-GPOS-00222",
         "gid": "V-238318",
         "rid": "SV-238318r654129_rule",
         "stig_id": "UBTU-20-010296",
-        "fix_id": "F-41487r654128_fix"
+        "fix_id": "F-41487r654128_fix",
+        "documentable": false
       },
       "id": "V-238318",
       "title": "The Ubuntu operating system must generate audit records when successful/unsuccessful attempts to use modprobe command.",
@@ -2480,11 +2480,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000477-GPOS-00222",
         "gid": "V-238319",
         "rid": "SV-238319r654132_rule",
         "stig_id": "UBTU-20-010297",
-        "fix_id": "F-41488r654131_fix"
+        "fix_id": "F-41488r654131_fix",
+        "documentable": false
       },
       "id": "V-238319",
       "title": "The Ubuntu operating system must generate audit records when successful/unsuccessful attempts to use the kmod command.",
@@ -2498,11 +2498,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000477-GPOS-00222",
         "gid": "V-238320",
         "rid": "SV-238320r654135_rule",
         "stig_id": "UBTU-20-010298",
-        "fix_id": "F-41489r654134_fix"
+        "fix_id": "F-41489r654134_fix",
+        "documentable": false
       },
       "id": "V-238320",
       "title": "The Ubuntu operating system must generate audit records when successful/unsuccessful attempts to use the fdisk command.",
@@ -2516,11 +2516,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000479-GPOS-00224",
         "gid": "V-238321",
         "rid": "SV-238321r654138_rule",
         "stig_id": "UBTU-20-010300",
-        "fix_id": "F-41490r654137_fix"
+        "fix_id": "F-41490r654137_fix",
+        "documentable": false
       },
       "id": "V-238321",
       "title": "The Ubuntu operating system must have a crontab script running weekly to offload audit events of standalone systems.",
@@ -2534,11 +2534,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000477-GPOS-00222",
         "gid": "V-238322",
         "rid": "SV-238322r654141_rule",
         "stig_id": "UBTU-20-010302",
-        "fix_id": "F-41491r654140_fix"
+        "fix_id": "F-41491r654140_fix",
+        "documentable": false
       },
       "id": "V-238322",
       "title": "The Ubuntu operating system must generate records for successful/unsuccessful uses of delete_module syscall.",
@@ -2552,11 +2552,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000027-GPOS-00008",
         "gid": "V-238323",
         "rid": "SV-238323r654144_rule",
         "stig_id": "UBTU-20-010400",
-        "fix_id": "F-41492r654143_fix"
+        "fix_id": "F-41492r654143_fix",
+        "documentable": false
       },
       "id": "V-238323",
       "title": "The Ubuntu operating system must limit the number of concurrent sessions to ten for all accounts and/or account types.",
@@ -2570,11 +2570,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-238324",
         "rid": "SV-238324r654147_rule",
         "stig_id": "UBTU-20-010403",
-        "fix_id": "F-41493r654146_fix"
+        "fix_id": "F-41493r654146_fix",
+        "documentable": false
       },
       "id": "V-238324",
       "title": "The Ubuntu operating system must monitor remote access methods.",
@@ -2588,11 +2588,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000120-GPOS-00061",
         "gid": "V-238325",
         "rid": "SV-238325r654150_rule",
         "stig_id": "UBTU-20-010404",
-        "fix_id": "F-41494r654149_fix"
+        "fix_id": "F-41494r654149_fix",
+        "documentable": false
       },
       "id": "V-238325",
       "title": "The Ubuntu operating system must encrypt all stored passwords with a FIPS 140-2 approved cryptographic hashing algorithm.",
@@ -2606,11 +2606,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-238326",
         "rid": "SV-238326r654153_rule",
         "stig_id": "UBTU-20-010405",
-        "fix_id": "F-41495r654152_fix"
+        "fix_id": "F-41495r654152_fix",
+        "documentable": false
       },
       "id": "V-238326",
       "title": "The Ubuntu operating system must not have the telnet package installed.",
@@ -2624,11 +2624,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-238327",
         "rid": "SV-238327r654156_rule",
         "stig_id": "UBTU-20-010406",
-        "fix_id": "F-41496r654155_fix"
+        "fix_id": "F-41496r654155_fix",
+        "documentable": false
       },
       "id": "V-238327",
       "title": "The Ubuntu operating system must not have the rsh-server package installed.",
@@ -2642,11 +2642,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-238328",
         "rid": "SV-238328r654159_rule",
         "stig_id": "UBTU-20-010407",
-        "fix_id": "F-41497r654158_fix"
+        "fix_id": "F-41497r654158_fix",
+        "documentable": false
       },
       "id": "V-238328",
       "title": "The Ubuntu operating system must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -2660,11 +2660,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000109-GPOS-00056",
         "gid": "V-238329",
         "rid": "SV-238329r654162_rule",
         "stig_id": "UBTU-20-010408",
-        "fix_id": "F-41498r654161_fix"
+        "fix_id": "F-41498r654161_fix",
+        "documentable": false
       },
       "id": "V-238329",
       "title": "The Ubuntu operating system must prevent direct login into the root account.",
@@ -2678,11 +2678,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000118-GPOS-00060",
         "gid": "V-238330",
         "rid": "SV-238330r654165_rule",
         "stig_id": "UBTU-20-010409",
-        "fix_id": "F-41499r654164_fix"
+        "fix_id": "F-41499r654164_fix",
+        "documentable": false
       },
       "id": "V-238330",
       "title": "The Ubuntu operating system must disable account identifiers (individuals, groups, roles, and devices) after 35 days of inactivity.",
@@ -2696,11 +2696,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000123-GPOS-00064",
         "gid": "V-238331",
         "rid": "SV-238331r654168_rule",
         "stig_id": "UBTU-20-010410",
-        "fix_id": "F-41500r654167_fix"
+        "fix_id": "F-41500r654167_fix",
+        "documentable": false
       },
       "id": "V-238331",
       "title": "The Ubuntu operating system must automatically remove or disable emergency accounts after 72 hours.",
@@ -2714,11 +2714,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-238332",
         "rid": "SV-238332r654171_rule",
         "stig_id": "UBTU-20-010411",
-        "fix_id": "F-41501r654170_fix"
+        "fix_id": "F-41501r654170_fix",
+        "documentable": false
       },
       "id": "V-238332",
       "title": "The Ubuntu operating system must set a sticky bit on all public directories to prevent unauthorized and unintended information transferred via shared system resources.",
@@ -2732,11 +2732,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000142-GPOS-00071",
         "gid": "V-238333",
         "rid": "SV-238333r654174_rule",
         "stig_id": "UBTU-20-010412",
-        "fix_id": "F-41502r654173_fix"
+        "fix_id": "F-41502r654173_fix",
+        "documentable": false
       },
       "id": "V-238333",
       "title": "The Ubuntu operating system must be configured to use TCP syncookies.",
@@ -2750,11 +2750,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000184-GPOS-00078",
         "gid": "V-238334",
         "rid": "SV-238334r654177_rule",
         "stig_id": "UBTU-20-010413",
-        "fix_id": "F-41503r654176_fix"
+        "fix_id": "F-41503r654176_fix",
+        "documentable": false
       },
       "id": "V-238334",
       "title": "The Ubuntu operating system must disable kernel core dumps so that it can fail to a secure state if system initialization fails, shutdown fails or aborts fail.",
@@ -2768,11 +2768,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
         "gid": "V-238335",
         "rid": "SV-238335r654180_rule",
         "stig_id": "UBTU-20-010414",
-        "fix_id": "F-41504r654179_fix"
+        "fix_id": "F-41504r654179_fix",
+        "documentable": false
       },
       "id": "V-238335",
       "title": "Ubuntu operating systems handling data requiring \"data at rest\" protections must employ cryptographic mechanisms to prevent unauthorized disclosure and modification of the information at rest.",
@@ -2786,11 +2786,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000191-GPOS-00080",
         "gid": "V-238336",
         "rid": "SV-238336r654183_rule",
         "stig_id": "UBTU-20-010415",
-        "fix_id": "F-41505r654182_fix"
+        "fix_id": "F-41505r654182_fix",
+        "documentable": false
       },
       "id": "V-238336",
       "title": "The Ubuntu operating system must deploy Endpoint Security for Linux Threat Prevention (ENSLTP).",
@@ -2804,11 +2804,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000205-GPOS-00083",
         "gid": "V-238337",
         "rid": "SV-238337r654186_rule",
         "stig_id": "UBTU-20-010416",
-        "fix_id": "F-41506r654185_fix"
+        "fix_id": "F-41506r654185_fix",
+        "documentable": false
       },
       "id": "V-238337",
       "title": "The Ubuntu operating system must generate error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries.",
@@ -2822,11 +2822,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-238338",
         "rid": "SV-238338r654189_rule",
         "stig_id": "UBTU-20-010417",
-        "fix_id": "F-41507r654188_fix"
+        "fix_id": "F-41507r654188_fix",
+        "documentable": false
       },
       "id": "V-238338",
       "title": "The Ubuntu operating system must configure the /var/log directory to be group-owned by syslog.",
@@ -2840,11 +2840,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-238339",
         "rid": "SV-238339r654192_rule",
         "stig_id": "UBTU-20-010418",
-        "fix_id": "F-41508r654191_fix"
+        "fix_id": "F-41508r654191_fix",
+        "documentable": false
       },
       "id": "V-238339",
       "title": "The Ubuntu operating system must configure the /var/log directory to be owned by root.",
@@ -2858,11 +2858,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-238340",
         "rid": "SV-238340r654195_rule",
         "stig_id": "UBTU-20-010419",
-        "fix_id": "F-41509r654194_fix"
+        "fix_id": "F-41509r654194_fix",
+        "documentable": false
       },
       "id": "V-238340",
       "title": "The Ubuntu operating system must configure the /var/log directory to have mode 0750 or less permissive.",
@@ -2876,11 +2876,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-238341",
         "rid": "SV-238341r654198_rule",
         "stig_id": "UBTU-20-010420",
-        "fix_id": "F-41510r654197_fix"
+        "fix_id": "F-41510r654197_fix",
+        "documentable": false
       },
       "id": "V-238341",
       "title": "The Ubuntu operating system must configure the /var/log/syslog file to be group-owned by adm.",
@@ -2894,11 +2894,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-238342",
         "rid": "SV-238342r654201_rule",
         "stig_id": "UBTU-20-010421",
-        "fix_id": "F-41511r654200_fix"
+        "fix_id": "F-41511r654200_fix",
+        "documentable": false
       },
       "id": "V-238342",
       "title": "The Ubuntu operating system must configure /var/log/syslog file to be owned by syslog.",
@@ -2912,11 +2912,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-238343",
         "rid": "SV-238343r654204_rule",
         "stig_id": "UBTU-20-010422",
-        "fix_id": "F-41512r654203_fix"
+        "fix_id": "F-41512r654203_fix",
+        "documentable": false
       },
       "id": "V-238343",
       "title": "The Ubuntu operating system must configure /var/log/syslog file with mode 0640 or less permissive.",
@@ -2930,11 +2930,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000258-GPOS-00099",
         "gid": "V-238344",
         "rid": "SV-238344r654207_rule",
         "stig_id": "UBTU-20-010423",
-        "fix_id": "F-41513r654206_fix"
+        "fix_id": "F-41513r654206_fix",
+        "documentable": false
       },
       "id": "V-238344",
       "title": "The Ubuntu operating system must have directories that contain system commands set to a mode of 0755 or less permissive.",
@@ -2948,11 +2948,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000258-GPOS-00099",
         "gid": "V-238345",
         "rid": "SV-238345r654210_rule",
         "stig_id": "UBTU-20-010424",
-        "fix_id": "F-41514r654209_fix"
+        "fix_id": "F-41514r654209_fix",
+        "documentable": false
       },
       "id": "V-238345",
       "title": "The Ubuntu operating system must have directories that contain system commands owned by root.",
@@ -2966,11 +2966,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000258-GPOS-00099",
         "gid": "V-238346",
         "rid": "SV-238346r654213_rule",
         "stig_id": "UBTU-20-010425",
-        "fix_id": "F-41515r654212_fix"
+        "fix_id": "F-41515r654212_fix",
+        "documentable": false
       },
       "id": "V-238346",
       "title": "The Ubuntu operating system must have directories that contain system commands group-owned by root.",
@@ -2984,11 +2984,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238347",
         "rid": "SV-238347r654216_rule",
         "stig_id": "UBTU-20-010426",
-        "fix_id": "F-41516r654215_fix"
+        "fix_id": "F-41516r654215_fix",
+        "documentable": false
       },
       "id": "V-238347",
       "title": "The Ubuntu operating system library files must have mode 0755 or less permissive.",
@@ -3002,11 +3002,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238348",
         "rid": "SV-238348r654219_rule",
         "stig_id": "UBTU-20-010427",
-        "fix_id": "F-41517r654218_fix"
+        "fix_id": "F-41517r654218_fix",
+        "documentable": false
       },
       "id": "V-238348",
       "title": "The Ubuntu operating system library directories must have mode 0755 or less permissive.",
@@ -3020,11 +3020,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238349",
         "rid": "SV-238349r654222_rule",
         "stig_id": "UBTU-20-010428",
-        "fix_id": "F-41518r654221_fix"
+        "fix_id": "F-41518r654221_fix",
+        "documentable": false
       },
       "id": "V-238349",
       "title": "The Ubuntu operating system library files must be owned by root.",
@@ -3038,11 +3038,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238350",
         "rid": "SV-238350r654225_rule",
         "stig_id": "UBTU-20-010429",
-        "fix_id": "F-41519r654224_fix"
+        "fix_id": "F-41519r654224_fix",
+        "documentable": false
       },
       "id": "V-238350",
       "title": "The Ubuntu operating system library directories must be owned by root.",
@@ -3056,11 +3056,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238351",
         "rid": "SV-238351r654228_rule",
         "stig_id": "UBTU-20-010430",
-        "fix_id": "F-41520r654227_fix"
+        "fix_id": "F-41520r654227_fix",
+        "documentable": false
       },
       "id": "V-238351",
       "title": "The Ubuntu operating system library files must be group-owned by root.",
@@ -3074,11 +3074,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238352",
         "rid": "SV-238352r654231_rule",
         "stig_id": "UBTU-20-010431",
-        "fix_id": "F-41521r654230_fix"
+        "fix_id": "F-41521r654230_fix",
+        "documentable": false
       },
       "id": "V-238352",
       "title": "The Ubuntu operating system library directories must be group-owned by root.",
@@ -3092,11 +3092,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000269-GPOS-00103",
         "gid": "V-238353",
         "rid": "SV-238353r654234_rule",
         "stig_id": "UBTU-20-010432",
-        "fix_id": "F-41522r654233_fix"
+        "fix_id": "F-41522r654233_fix",
+        "documentable": false
       },
       "id": "V-238353",
       "title": "The Ubuntu operating system must be configured to preserve log records from failure events.",
@@ -3110,11 +3110,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-238354",
         "rid": "SV-238354r654237_rule",
         "stig_id": "UBTU-20-010433",
-        "fix_id": "F-41523r654236_fix"
+        "fix_id": "F-41523r654236_fix",
+        "documentable": false
       },
       "id": "V-238354",
       "title": "The Ubuntu operating system must have an application firewall installed in order to control remote access methods.",
@@ -3128,11 +3128,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-238355",
         "rid": "SV-238355r654240_rule",
         "stig_id": "UBTU-20-010434",
-        "fix_id": "F-41524r654239_fix"
+        "fix_id": "F-41524r654239_fix",
+        "documentable": false
       },
       "id": "V-238355",
       "title": "The Ubuntu operating system must enable and run the uncomplicated firewall(ufw).",
@@ -3146,11 +3146,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
         "gid": "V-238356",
         "rid": "SV-238356r654317_rule",
         "stig_id": "UBTU-20-010435",
-        "fix_id": "F-41525r654242_fix"
+        "fix_id": "F-41525r654242_fix",
+        "documentable": false
       },
       "id": "V-238356",
       "title": "The Ubuntu operating system must, for networked systems, compare internal information system clocks at least every 24 hours with a server which is synchronized to one of the redundant United States Naval Observatory (USNO) time servers, or a time server designated for the appropriate DoD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS).",
@@ -3164,11 +3164,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000356-GPOS-00144",
         "gid": "V-238357",
         "rid": "SV-238357r654246_rule",
         "stig_id": "UBTU-20-010436",
-        "fix_id": "F-41526r654245_fix"
+        "fix_id": "F-41526r654245_fix",
+        "documentable": false
       },
       "id": "V-238357",
       "title": "The Ubuntu operating system must synchronize internal information system clocks to the authoritative time source when the time difference is greater than one second.",
@@ -3182,11 +3182,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000363-GPOS-00150",
         "gid": "V-238358",
         "rid": "SV-238358r654249_rule",
         "stig_id": "UBTU-20-010437",
-        "fix_id": "F-41527r654248_fix"
+        "fix_id": "F-41527r654248_fix",
+        "documentable": false
       },
       "id": "V-238358",
       "title": "The Ubuntu operating system must notify designated personnel if baseline configurations are changed in an unauthorized manner. The file integrity tool must notify the System Administrator when changes to the baseline configuration or anomalies in the oper",
@@ -3200,11 +3200,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000366-GPOS-00153",
         "gid": "V-238359",
         "rid": "SV-238359r654319_rule",
         "stig_id": "UBTU-20-010438",
-        "fix_id": "F-41528r654251_fix"
+        "fix_id": "F-41528r654251_fix",
+        "documentable": false
       },
       "id": "V-238359",
       "title": "The Ubuntu operating system's Advance Package Tool (APT) must be configured to prevent the installation of patches, service packs, device drivers, or Ubuntu operating system components without verification they have been digitally signed using a certificate that is recognized and approved by the organization.",
@@ -3218,7 +3218,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
+        "gid": "V-238360",
+        "rid": "SV-238360r654255_rule",
+        "stig_id": "UBTU-20-010439",
+        "fix_id": "F-41529r654254_fix",
         "satisfies": [
           "SRG-OS-000368-GPOS-00154",
           "SRG-OS-000312-GPOS-00122",
@@ -3227,10 +3230,7 @@
           "SRG-OS-000324-GPOS-00125",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-238360",
-        "rid": "SV-238360r654255_rule",
-        "stig_id": "UBTU-20-010439",
-        "fix_id": "F-41529r654254_fix"
+        "documentable": false
       },
       "id": "V-238360",
       "title": "The Ubuntu operating system must be configured to use AppArmor.",
@@ -3244,11 +3244,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000380-GPOS-00165",
         "gid": "V-238361",
         "rid": "SV-238361r654258_rule",
         "stig_id": "UBTU-20-010440",
-        "fix_id": "F-41530r654257_fix"
+        "fix_id": "F-41530r654257_fix",
+        "documentable": false
       },
       "id": "V-238361",
       "title": "The Ubuntu operating system must allow the use of a temporary password for system logons with an immediate change to a permanent password.",
@@ -3262,11 +3262,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000383-GPOS-00166",
         "gid": "V-238362",
         "rid": "SV-238362r654261_rule",
         "stig_id": "UBTU-20-010441",
-        "fix_id": "F-41531r654260_fix"
+        "fix_id": "F-41531r654260_fix",
+        "documentable": false
       },
       "id": "V-238362",
       "title": "The Ubuntu operating system must be configured such that Pluggable Authentication Module (PAM) prohibits the use of cached authentications after one day.",
@@ -3280,15 +3280,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000396-GPOS-00176",
+        "gid": "V-238363",
+        "rid": "SV-238363r654320_rule",
+        "stig_id": "UBTU-20-010442",
+        "fix_id": "F-41532r654263_fix",
         "satisfies": [
           "SRG-OS-000396-GPOS-00176",
           "SRG-OS-000478-GPOS-00223"
         ],
-        "gid": "V-238363",
-        "rid": "SV-238363r654320_rule",
-        "stig_id": "UBTU-20-010442",
-        "fix_id": "F-41532r654263_fix"
+        "documentable": false
       },
       "id": "V-238363",
       "title": "The Ubuntu operating system must implement NIST FIPS-validated cryptography to protect classified information and for the following: to provision digital signatures, to generate cryptographic hashes, and to protect unclassified information requiring confidentiality and cryptographic protection in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.",
@@ -3302,11 +3302,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000403-GPOS-00182",
         "gid": "V-238364",
         "rid": "SV-238364r654267_rule",
         "stig_id": "UBTU-20-010443",
-        "fix_id": "F-41533r654266_fix"
+        "fix_id": "F-41533r654266_fix",
+        "documentable": false
       },
       "id": "V-238364",
       "title": "The Ubuntu operating system must only allow the use of DoD PKI-established certificate authorities for verification of the establishment of protected sessions.",
@@ -3320,11 +3320,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000404-GPOS-00183",
         "gid": "V-238365",
         "rid": "SV-238365r654270_rule",
         "stig_id": "UBTU-20-010444",
-        "fix_id": "F-41534r654269_fix"
+        "fix_id": "F-41534r654269_fix",
+        "documentable": false
       },
       "id": "V-238365",
       "title": "Ubuntu operating system must implement cryptographic mechanisms to prevent unauthorized modification of all information at rest.",
@@ -3338,11 +3338,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000405-GPOS-00184",
         "gid": "V-238366",
         "rid": "SV-238366r654273_rule",
         "stig_id": "UBTU-20-010445",
-        "fix_id": "F-41535r654272_fix"
+        "fix_id": "F-41535r654272_fix",
+        "documentable": false
       },
       "id": "V-238366",
       "title": "Ubuntu operating system must implement cryptographic mechanisms to prevent unauthorized disclosure of all information at rest.",
@@ -3356,11 +3356,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000420-GPOS-00186",
         "gid": "V-238367",
         "rid": "SV-238367r654276_rule",
         "stig_id": "UBTU-20-010446",
-        "fix_id": "F-41536r654275_fix"
+        "fix_id": "F-41536r654275_fix",
+        "documentable": false
       },
       "id": "V-238367",
       "title": "The Ubuntu operating system must configure the uncomplicated firewall to rate-limit impacted network interfaces.",
@@ -3374,11 +3374,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00192",
         "gid": "V-238368",
         "rid": "SV-238368r654279_rule",
         "stig_id": "UBTU-20-010447",
-        "fix_id": "F-41537r654278_fix"
+        "fix_id": "F-41537r654278_fix",
+        "documentable": false
       },
       "id": "V-238368",
       "title": "The Ubuntu operating system must implement non-executable data to protect its memory from unauthorized code execution.",
@@ -3392,11 +3392,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00193",
         "gid": "V-238369",
         "rid": "SV-238369r654282_rule",
         "stig_id": "UBTU-20-010448",
-        "fix_id": "F-41538r654281_fix"
+        "fix_id": "F-41538r654281_fix",
+        "documentable": false
       },
       "id": "V-238369",
       "title": "The Ubuntu operating system must implement address space layout randomization to protect its memory from unauthorized code execution.",
@@ -3410,11 +3410,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000437-GPOS-00194",
         "gid": "V-238370",
         "rid": "SV-238370r654285_rule",
         "stig_id": "UBTU-20-010449",
-        "fix_id": "F-41539r654284_fix"
+        "fix_id": "F-41539r654284_fix",
+        "documentable": false
       },
       "id": "V-238370",
       "title": "The Ubuntu operating system must be configured so that Advance Package Tool (APT) removes all software components after updated versions have been installed.",
@@ -3428,11 +3428,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000445-GPOS-00199",
         "gid": "V-238371",
         "rid": "SV-238371r654288_rule",
         "stig_id": "UBTU-20-010450",
-        "fix_id": "F-41540r654287_fix"
+        "fix_id": "F-41540r654287_fix",
+        "documentable": false
       },
       "id": "V-238371",
       "title": "The Ubuntu operating system must use a file integrity tool to verify correct operation of all security functions.",
@@ -3446,11 +3446,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000447-GPOS-00201",
         "gid": "V-238372",
         "rid": "SV-238372r654318_rule",
         "stig_id": "UBTU-20-010451",
-        "fix_id": "F-41541r654290_fix"
+        "fix_id": "F-41541r654290_fix",
+        "documentable": false
       },
       "id": "V-238372",
       "title": "The Ubuntu operating system must notify designated personnel if baseline configurations are changed in an unauthorized manner. The file integrity tool must notify the System Administrator when changes to the baseline configuration or anomalies in the operation of any security functions are discovered.",
@@ -3464,11 +3464,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-238373",
         "rid": "SV-238373r654294_rule",
         "stig_id": "UBTU-20-010453",
-        "fix_id": "F-41542r654293_fix"
+        "fix_id": "F-41542r654293_fix",
+        "documentable": false
       },
       "id": "V-238373",
       "title": "The Ubuntu operating system must display the date and time of the last successful account logon upon logon.",
@@ -3482,11 +3482,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00232",
         "gid": "V-238374",
         "rid": "SV-238374r654297_rule",
         "stig_id": "UBTU-20-010454",
-        "fix_id": "F-41543r654296_fix"
+        "fix_id": "F-41543r654296_fix",
+        "documentable": false
       },
       "id": "V-238374",
       "title": "The Ubuntu operating system must have an application firewall enabled.",
@@ -3500,11 +3500,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000481-GPOS-000481",
         "gid": "V-238375",
         "rid": "SV-238375r654300_rule",
         "stig_id": "UBTU-20-010455",
-        "fix_id": "F-41544r654299_fix"
+        "fix_id": "F-41544r654299_fix",
+        "documentable": false
       },
       "id": "V-238375",
       "title": "The Ubuntu operating system must disable all wireless network adapters.",
@@ -3518,11 +3518,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238376",
         "rid": "SV-238376r654303_rule",
         "stig_id": "UBTU-20-010456",
-        "fix_id": "F-41545r654302_fix"
+        "fix_id": "F-41545r654302_fix",
+        "documentable": false
       },
       "id": "V-238376",
       "title": "The Ubuntu operating system must have system commands set to a mode of 0755 or less permissive.",
@@ -3536,11 +3536,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238377",
         "rid": "SV-238377r654306_rule",
         "stig_id": "UBTU-20-010457",
-        "fix_id": "F-41546r654305_fix"
+        "fix_id": "F-41546r654305_fix",
+        "documentable": false
       },
       "id": "V-238377",
       "title": "The Ubuntu operating system must have system commands owned by root.",
@@ -3554,11 +3554,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-238378",
         "rid": "SV-238378r654309_rule",
         "stig_id": "UBTU-20-010458",
-        "fix_id": "F-41547r654308_fix"
+        "fix_id": "F-41547r654308_fix",
+        "documentable": false
       },
       "id": "V-238378",
       "title": "The Ubuntu operating system must have system commands group-owned by root.",
@@ -3572,11 +3572,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-238379",
         "rid": "SV-238379r654312_rule",
         "stig_id": "UBTU-20-010459",
-        "fix_id": "F-41548r654311_fix"
+        "fix_id": "F-41548r654311_fix",
+        "documentable": false
       },
       "id": "V-238379",
       "title": "The Ubuntu operating system must disable the x86 Ctrl-Alt-Delete key sequence if a graphical user interface is installed.",
@@ -3590,11 +3590,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-238380",
         "rid": "SV-238380r654315_rule",
         "stig_id": "UBTU-20-010460",
-        "fix_id": "F-41549r654314_fix"
+        "fix_id": "F-41549r654314_fix",
+        "documentable": false
       },
       "id": "V-238380",
       "title": "The Ubuntu operating system must disable the x86 Ctrl-Alt-Delete key sequence.",
@@ -3606,7 +3606,5 @@
       }
     }
   ],
-  "name": "Canonical_Ubuntu_20-04_LTS_STIG",
-  "title": "Canonical Ubuntu 20.04 LTS Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Canonical_Ubuntu_20-04_LTS_STIG"
 }

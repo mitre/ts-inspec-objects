@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-WSR-000001",
         "gid": "V-63153",
         "rid": "SV-77643r1_rule",
         "stig_id": "OH12-1X-000001",
-        "fix_id": "F-69071r3_fix"
+        "fix_id": "F-69071r3_fix",
+        "documentable": false
       },
       "id": "V-63153",
       "title": "OHS must have the mpm property set to use the worker Multi-Processing Module (MPM) as the preferred means to limit the number of allowed simultaneous requests.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-WSR-000001",
         "gid": "V-64125",
         "rid": "SV-78615r1_rule",
         "stig_id": "OH12-1X-000002",
-        "fix_id": "F-70053r1_fix"
+        "fix_id": "F-70053r1_fix",
+        "documentable": false
       },
       "id": "V-64125",
       "title": "OHS must have the mpm_prefork_module directive disabled so as not conflict with the worker directive used to limit the number of allowed simultaneous requests.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-WSR-000001",
         "gid": "V-64127",
         "rid": "SV-78617r1_rule",
         "stig_id": "OH12-1X-000003",
-        "fix_id": "F-70055r1_fix"
+        "fix_id": "F-70055r1_fix",
+        "documentable": false
       },
       "id": "V-64127",
       "title": "OHS must have the MaxClients directive defined to limit the number of allowed simultaneous requests.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-WSR-000001",
         "gid": "V-64129",
         "rid": "SV-78619r1_rule",
         "stig_id": "OH12-1X-000004",
-        "fix_id": "F-70057r1_fix"
+        "fix_id": "F-70057r1_fix",
+        "documentable": false
       },
       "id": "V-64129",
       "title": "OHS must limit the number of threads within a worker process to limit the number of allowed simultaneous requests.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-WSR-000001",
         "gid": "V-64131",
         "rid": "SV-78621r1_rule",
         "stig_id": "OH12-1X-000005",
-        "fix_id": "F-70059r1_fix"
+        "fix_id": "F-70059r1_fix",
+        "documentable": false
       },
       "id": "V-64131",
       "title": "OHS must limit the number of worker processes to limit the number of allowed simultaneous requests.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000014-WSR-000006",
         "gid": "V-64133",
         "rid": "SV-78623r1_rule",
         "stig_id": "OH12-1X-000007",
-        "fix_id": "F-70061r1_fix"
+        "fix_id": "F-70061r1_fix",
+        "documentable": false
       },
       "id": "V-64133",
       "title": "OHS must have the LoadModule ossl_module directive enabled to encrypt remote connections in accordance with the categorization of data hosted by the web server.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000014-WSR-000006",
         "gid": "V-64135",
         "rid": "SV-78625r1_rule",
         "stig_id": "OH12-1X-000008",
-        "fix_id": "F-70063r1_fix"
+        "fix_id": "F-70063r1_fix",
+        "documentable": false
       },
       "id": "V-64135",
       "title": "OHS must have the SSLFIPS directive enabled to encrypt remote connections in accordance with the categorization of data hosted by the web server.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014-WSR-000006",
         "gid": "V-64137",
         "rid": "SV-78627r2_rule",
         "stig_id": "OH12-1X-000009",
-        "fix_id": "F-70065r2_fix"
+        "fix_id": "F-70065r2_fix",
+        "documentable": false
       },
       "id": "V-64137",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to encrypt remote connections in accordance with the categorization of data hosted by the web server.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000014-WSR-000006",
         "gid": "V-64139",
         "rid": "SV-78629r2_rule",
         "stig_id": "OH12-1X-000010",
-        "fix_id": "F-70067r2_fix"
+        "fix_id": "F-70067r2_fix",
+        "documentable": false
       },
       "id": "V-64139",
       "title": "OHS must have the SSLCipherSuite directive enabled to encrypt remote connections in accordance with the categorization of data hosted by the web server.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000015-WSR-000014",
         "gid": "V-64141",
         "rid": "SV-78631r1_rule",
         "stig_id": "OH12-1X-000011",
-        "fix_id": "F-70069r1_fix"
+        "fix_id": "F-70069r1_fix",
+        "documentable": false
       },
       "id": "V-64141",
       "title": "OHS must have the LoadModule ossl_module directive enabled to protect the integrity of remote sessions in accordance with the categorization of data hosted by the web server.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000015-WSR-000014",
         "gid": "V-64143",
         "rid": "SV-78633r1_rule",
         "stig_id": "OH12-1X-000012",
-        "fix_id": "F-70071r1_fix"
+        "fix_id": "F-70071r1_fix",
+        "documentable": false
       },
       "id": "V-64143",
       "title": "OHS must have the SSLFIPS directive enabled to protect the integrity of remote sessions in accordance with the categorization of data hosted by the web server.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000015-WSR-000014",
         "gid": "V-64145",
         "rid": "SV-78635r2_rule",
         "stig_id": "OH12-1X-000013",
-        "fix_id": "F-70073r2_fix"
+        "fix_id": "F-70073r2_fix",
+        "documentable": false
       },
       "id": "V-64145",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to protect the integrity of remote sessions in accordance with the categorization of data hosted by the web server.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000015-WSR-000014",
         "gid": "V-64147",
         "rid": "SV-78637r1_rule",
         "stig_id": "OH12-1X-000014",
-        "fix_id": "F-70075r1_fix"
+        "fix_id": "F-70075r1_fix",
+        "documentable": false
       },
       "id": "V-64147",
       "title": "OHS must have the SSLCipherSuite directive enabled to protect the integrity of remote sessions in accordance with the categorization of data hosted by the web server.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015-WSR-000014",
         "gid": "V-64149",
         "rid": "SV-78639r1_rule",
         "stig_id": "OH12-1X-000015",
-        "fix_id": "F-70077r1_fix"
+        "fix_id": "F-70077r1_fix",
+        "documentable": false
       },
       "id": "V-64149",
       "title": "OHS must have the SecureProxy directive enabled to protect the integrity of remote sessions when integrated with WebLogic in accordance with the categorization of data hosted by the web server.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015-WSR-000014",
         "gid": "V-64151",
         "rid": "SV-78641r1_rule",
         "stig_id": "OH12-1X-000016",
-        "fix_id": "F-70079r1_fix"
+        "fix_id": "F-70079r1_fix",
+        "documentable": false
       },
       "id": "V-64151",
       "title": "OHS must have the WLSSLWallet directive enabled to protect the integrity of remote sessions when integrated with WebLogic in accordance with the categorization of data hosted by the web server.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015-WSR-000014",
         "gid": "V-64153",
         "rid": "SV-78643r1_rule",
         "stig_id": "OH12-1X-000017",
-        "fix_id": "F-70081r1_fix"
+        "fix_id": "F-70081r1_fix",
+        "documentable": false
       },
       "id": "V-64153",
       "title": "OHS must have the WebLogicSSLVersion directive enabled to protect the integrity of remote sessions when integrated with WebLogic in accordance with the categorization of data hosted by the web server.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015-WSR-000014",
         "gid": "V-64155",
         "rid": "SV-78645r1_rule",
         "stig_id": "OH12-1X-000018",
-        "fix_id": "F-70085r1_fix"
+        "fix_id": "F-70085r1_fix",
+        "documentable": false
       },
       "id": "V-64155",
       "title": "OHS must have the WLProxySSL directive enabled to protect the integrity of remote sessions when integrated with WebLogic in accordance with the categorization of data hosted by the web server.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-WSR-000005",
         "gid": "V-64157",
         "rid": "SV-78647r1_rule",
         "stig_id": "OH12-1X-000019",
-        "fix_id": "F-70087r1_fix"
+        "fix_id": "F-70087r1_fix",
+        "documentable": false
       },
       "id": "V-64157",
       "title": "OHS must have the LoadModule log_config_module directive enabled to generate information to be used by external applications or entities to monitor and control remote access.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-WSR-000005",
         "gid": "V-64159",
         "rid": "SV-78649r1_rule",
         "stig_id": "OH12-1X-000020",
-        "fix_id": "F-70089r1_fix"
+        "fix_id": "F-70089r1_fix",
+        "documentable": false
       },
       "id": "V-64159",
       "title": "OHS must have the OraLogMode set to Oracle Diagnostic Logging text mode to generate information to be used by external applications or entities to monitor and control remote access.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-WSR-000005",
         "gid": "V-64161",
         "rid": "SV-78651r1_rule",
         "stig_id": "OH12-1X-000021",
-        "fix_id": "F-70091r1_fix"
+        "fix_id": "F-70091r1_fix",
+        "documentable": false
       },
       "id": "V-64161",
       "title": "OHS must have a log directory location defined to generate information for use by external applications or entities to monitor and control remote access.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-WSR-000005",
         "gid": "V-64163",
         "rid": "SV-78653r1_rule",
         "stig_id": "OH12-1X-000022",
-        "fix_id": "F-70093r1_fix"
+        "fix_id": "F-70093r1_fix",
+        "documentable": false
       },
       "id": "V-64163",
       "title": "OHS must have the OraLogSeverity directive defined to generate adequate information to be used by external applications or entities to monitor and control remote access.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-WSR-000005",
         "gid": "V-64165",
         "rid": "SV-78655r1_rule",
         "stig_id": "OH12-1X-000023",
-        "fix_id": "F-70095r1_fix"
+        "fix_id": "F-70095r1_fix",
+        "documentable": false
       },
       "id": "V-64165",
       "title": "OHS must have the log rotation parameter set to allow generated information to be used by external applications or entities to monitor and control remote access.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-WSR-000005",
         "gid": "V-64167",
         "rid": "SV-78657r1_rule",
         "stig_id": "OH12-1X-000024",
-        "fix_id": "F-70097r1_fix"
+        "fix_id": "F-70097r1_fix",
+        "documentable": false
       },
       "id": "V-64167",
       "title": "OHS must have a log format defined to generate adequate information to be used by external applications or entities to monitor and control remote access.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-WSR-000005",
         "gid": "V-64169",
         "rid": "SV-78659r1_rule",
         "stig_id": "OH12-1X-000025",
-        "fix_id": "F-70099r1_fix"
+        "fix_id": "F-70099r1_fix",
+        "documentable": false
       },
       "id": "V-64169",
       "title": "OHS must have a SSL log format defined to allow generated information to be used by external applications or entities to monitor and control remote access in accordance with the categorization of data hosted by the web server.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-WSR-000005",
         "gid": "V-64171",
         "rid": "SV-78661r1_rule",
         "stig_id": "OH12-1X-000026",
-        "fix_id": "F-70101r1_fix"
+        "fix_id": "F-70101r1_fix",
+        "documentable": false
       },
       "id": "V-64171",
       "title": "OHS must have a log file defined for each site/virtual host to capture information to be used by external applications or entities to monitor and control remote access.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-WSR-000047",
         "gid": "V-64173",
         "rid": "SV-78663r1_rule",
         "stig_id": "OH12-1X-000040",
-        "fix_id": "F-70103r1_fix"
+        "fix_id": "F-70103r1_fix",
+        "documentable": false
       },
       "id": "V-64173",
       "title": "OHS must have the client requests logging module loaded to generate log records for system startup and shutdown, system access, and system authentication logging.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-WSR-000047",
         "gid": "V-64175",
         "rid": "SV-78665r1_rule",
         "stig_id": "OH12-1X-000041",
-        "fix_id": "F-70105r1_fix"
+        "fix_id": "F-70105r1_fix",
+        "documentable": false
       },
       "id": "V-64175",
       "title": "OHS must have OraLogMode set to Oracle Diagnostic Logging text mode to generate log records for system startup and shutdown, system access, and system authentication logging.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-WSR-000047",
         "gid": "V-64177",
         "rid": "SV-78667r1_rule",
         "stig_id": "OH12-1X-000042",
-        "fix_id": "F-70107r1_fix"
+        "fix_id": "F-70107r1_fix",
+        "documentable": false
       },
       "id": "V-64177",
       "title": "OHS must have a log directory location defined to generate log records for system startup and shutdown, system access, and system authentication logging.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-WSR-000047",
         "gid": "V-64179",
         "rid": "SV-78669r1_rule",
         "stig_id": "OH12-1X-000043",
-        "fix_id": "F-70109r1_fix"
+        "fix_id": "F-70109r1_fix",
+        "documentable": false
       },
       "id": "V-64179",
       "title": "OHS must have a log level severity defined to generate adequate log records for system startup and shutdown, system access, and system authentication events.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-WSR-000047",
         "gid": "V-64181",
         "rid": "SV-78671r1_rule",
         "stig_id": "OH12-1X-000044",
-        "fix_id": "F-70111r1_fix"
+        "fix_id": "F-70111r1_fix",
+        "documentable": false
       },
       "id": "V-64181",
       "title": "OHS must have the log rotation parameter set to allow for the generation log records for system startup and shutdown, system access, and system authentication events.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-WSR-000047",
         "gid": "V-64183",
         "rid": "SV-78673r1_rule",
         "stig_id": "OH12-1X-000045",
-        "fix_id": "F-70113r1_fix"
+        "fix_id": "F-70113r1_fix",
+        "documentable": false
       },
       "id": "V-64183",
       "title": "OHS must have a log format defined to generate adequate logs by system startup and shutdown, system access, and system authentication events.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-WSR-000047",
         "gid": "V-64185",
         "rid": "SV-78675r1_rule",
         "stig_id": "OH12-1X-000046",
-        "fix_id": "F-70115r1_fix"
+        "fix_id": "F-70115r1_fix",
+        "documentable": false
       },
       "id": "V-64185",
       "title": "OHS must have a SSL log format defined to generate adequate logs by system startup and shutdown, system access, and system authentication events.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-WSR-000047",
         "gid": "V-64187",
         "rid": "SV-78677r1_rule",
         "stig_id": "OH12-1X-000047",
-        "fix_id": "F-70117r1_fix"
+        "fix_id": "F-70117r1_fix",
+        "documentable": false
       },
       "id": "V-64187",
       "title": "OHS must have a log file defined for each site/virtual host to capture logs generated by system startup and shutdown, system access, and system authentication events.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000093-WSR-000053",
         "gid": "V-64189",
         "rid": "SV-78679r1_rule",
         "stig_id": "OH12-1X-000049",
-        "fix_id": "F-70119r1_fix"
+        "fix_id": "F-70119r1_fix",
+        "documentable": false
       },
       "id": "V-64189",
       "title": "OHS must capture, record, and log all content related to a user session.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095-WSR-000056",
         "gid": "V-64191",
         "rid": "SV-78681r1_rule",
         "stig_id": "OH12-1X-000050",
-        "fix_id": "F-70121r1_fix"
+        "fix_id": "F-70121r1_fix",
+        "documentable": false
       },
       "id": "V-64191",
       "title": "OHS must have a log level severity defined to produce sufficient log records to establish what type of events occurred.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095-WSR-000056",
         "gid": "V-64193",
         "rid": "SV-78683r1_rule",
         "stig_id": "OH12-1X-000051",
-        "fix_id": "F-70123r1_fix"
+        "fix_id": "F-70123r1_fix",
+        "documentable": false
       },
       "id": "V-64193",
       "title": "OHS must have a log format defined for log records generated to capture sufficient information to establish what type of events occurred.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095-WSR-000056",
         "gid": "V-64195",
         "rid": "SV-78685r1_rule",
         "stig_id": "OH12-1X-000052",
-        "fix_id": "F-70125r1_fix"
+        "fix_id": "F-70125r1_fix",
+        "documentable": false
       },
       "id": "V-64195",
       "title": "OHS must have a SSL log format defined for log records generated to capture sufficient information to establish what type of events occurred.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095-WSR-000056",
         "gid": "V-64197",
         "rid": "SV-78687r1_rule",
         "stig_id": "OH12-1X-000053",
-        "fix_id": "F-70127r1_fix"
+        "fix_id": "F-70127r1_fix",
+        "documentable": false
       },
       "id": "V-64197",
       "title": "OHS must have a log file defined for each site/virtual host to capture sufficient information to establish what type of events occurred.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096-WSR-000057",
         "gid": "V-64199",
         "rid": "SV-78689r1_rule",
         "stig_id": "OH12-1X-000054",
-        "fix_id": "F-70129r1_fix"
+        "fix_id": "F-70129r1_fix",
+        "documentable": false
       },
       "id": "V-64199",
       "title": "OHS must have a log format defined for log records generated to capture sufficient information to establish when an event occurred.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096-WSR-000057",
         "gid": "V-64201",
         "rid": "SV-78691r1_rule",
         "stig_id": "OH12-1X-000055",
-        "fix_id": "F-70131r1_fix"
+        "fix_id": "F-70131r1_fix",
+        "documentable": false
       },
       "id": "V-64201",
       "title": "OHS must have a SSL log format defined for log records generated to capture sufficient information to establish when an event occurred.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096-WSR-000057",
         "gid": "V-64203",
         "rid": "SV-78693r1_rule",
         "stig_id": "OH12-1X-000056",
-        "fix_id": "F-70133r1_fix"
+        "fix_id": "F-70133r1_fix",
+        "documentable": false
       },
       "id": "V-64203",
       "title": "OHS must have a log file defined for each site/virtual host to capture logs generated that allow the establishment of when an event occurred.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097-WSR-000058",
         "gid": "V-64205",
         "rid": "SV-78695r1_rule",
         "stig_id": "OH12-1X-000057",
-        "fix_id": "F-70135r1_fix"
+        "fix_id": "F-70135r1_fix",
+        "documentable": false
       },
       "id": "V-64205",
       "title": "OHS must have a log format defined for log records that allow the establishment of where within OHS the events occurred.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097-WSR-000058",
         "gid": "V-64207",
         "rid": "SV-78697r1_rule",
         "stig_id": "OH12-1X-000058",
-        "fix_id": "F-70137r1_fix"
+        "fix_id": "F-70137r1_fix",
+        "documentable": false
       },
       "id": "V-64207",
       "title": "OHS must have a SSL log format defined for log records that allow the establishment of where within OHS the events occurred.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097-WSR-000058",
         "gid": "V-64209",
         "rid": "SV-78699r1_rule",
         "stig_id": "OH12-1X-000059",
-        "fix_id": "F-70139r1_fix"
+        "fix_id": "F-70139r1_fix",
+        "documentable": false
       },
       "id": "V-64209",
       "title": "OHS must have a log file defined for each site/virtual host to capture logs generated that allow the establishment of where within OHS the events occurred.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-WSR-000059",
         "gid": "V-64211",
         "rid": "SV-78701r1_rule",
         "stig_id": "OH12-1X-000060",
-        "fix_id": "F-70141r1_fix"
+        "fix_id": "F-70141r1_fix",
+        "documentable": false
       },
       "id": "V-64211",
       "title": "OHS must have a log format defined for log records that allow the establishment of the source of events.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-WSR-000059",
         "gid": "V-64213",
         "rid": "SV-78703r1_rule",
         "stig_id": "OH12-1X-000061",
-        "fix_id": "F-70143r1_fix"
+        "fix_id": "F-70143r1_fix",
+        "documentable": false
       },
       "id": "V-64213",
       "title": "OHS must have a SSL log format defined for log records that allow the establishment of the source of events.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-WSR-000059",
         "gid": "V-64215",
         "rid": "SV-78705r1_rule",
         "stig_id": "OH12-1X-000062",
-        "fix_id": "F-70145r1_fix"
+        "fix_id": "F-70145r1_fix",
+        "documentable": false
       },
       "id": "V-64215",
       "title": "OHS must have a log file defined for each site/virtual host to capture logs generated that allow the establishment of the source of events.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-WSR-000060",
         "gid": "V-64217",
         "rid": "SV-78707r1_rule",
         "stig_id": "OH12-1X-000063",
-        "fix_id": "F-70147r1_fix"
+        "fix_id": "F-70147r1_fix",
+        "documentable": false
       },
       "id": "V-64217",
       "title": "OHS, behind a load balancer or proxy server, must produce log records containing the client IP information as the source and destination and not the load balancer or proxy IP information with each event.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-WSR-000060",
         "gid": "V-64219",
         "rid": "SV-78709r1_rule",
         "stig_id": "OH12-1X-000064",
-        "fix_id": "F-70149r1_fix"
+        "fix_id": "F-70149r1_fix",
+        "documentable": false
       },
       "id": "V-64219",
       "title": "OHS, behind a load balancer or proxy server, must have the SSL log format set correctly to produce log records containing the client IP information as the source and destination and not the load balancer or proxy IP information with each event.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-WSR-000060",
         "gid": "V-64221",
         "rid": "SV-78711r1_rule",
         "stig_id": "OH12-1X-000065",
-        "fix_id": "F-70151r1_fix"
+        "fix_id": "F-70151r1_fix",
+        "documentable": false
       },
       "id": "V-64221",
       "title": "OHS, behind a load balancer or proxy server, must have a log file defined for each site/virtual host to produce log records containing the client IP information as the source and destination and not the load balancer or proxy IP information with each event.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099-WSR-000061",
         "gid": "V-64223",
         "rid": "SV-78713r1_rule",
         "stig_id": "OH12-1X-000066",
-        "fix_id": "F-70153r1_fix"
+        "fix_id": "F-70153r1_fix",
+        "documentable": false
       },
       "id": "V-64223",
       "title": "OHS must have a log format defined to produce log records that contain sufficient information to establish the outcome (success or failure) of events.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099-WSR-000061",
         "gid": "V-64225",
         "rid": "SV-78715r1_rule",
         "stig_id": "OH12-1X-000067",
-        "fix_id": "F-70155r1_fix"
+        "fix_id": "F-70155r1_fix",
+        "documentable": false
       },
       "id": "V-64225",
       "title": "OHS must have a SSL log format defined to produce log records that contain sufficient information to establish the outcome (success or failure) of events.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099-WSR-000061",
         "gid": "V-64227",
         "rid": "SV-78717r1_rule",
         "stig_id": "OH12-1X-000068",
-        "fix_id": "F-70157r1_fix"
+        "fix_id": "F-70157r1_fix",
+        "documentable": false
       },
       "id": "V-64227",
       "title": "OHS must have a log file defined for each site/virtual host to produce log records that contain sufficient information to establish the outcome (success or failure) of events.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000100-WSR-000064",
         "gid": "V-64229",
         "rid": "SV-78719r1_rule",
         "stig_id": "OH12-1X-000069",
-        "fix_id": "F-70159r1_fix"
+        "fix_id": "F-70159r1_fix",
+        "documentable": false
       },
       "id": "V-64229",
       "title": "OHS must have a log format defined to produce log records containing sufficient information to establish the identity of any user/subject or process associated with an event.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000100-WSR-000064",
         "gid": "V-64231",
         "rid": "SV-78721r1_rule",
         "stig_id": "OH12-1X-000070",
-        "fix_id": "F-70161r1_fix"
+        "fix_id": "F-70161r1_fix",
+        "documentable": false
       },
       "id": "V-64231",
       "title": "OHS must have a SSL log format defined to produce log records containing sufficient information to establish the identity of any user/subject or process associated with an event.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000100-WSR-000064",
         "gid": "V-64233",
         "rid": "SV-78723r1_rule",
         "stig_id": "OH12-1X-000071",
-        "fix_id": "F-70163r1_fix"
+        "fix_id": "F-70163r1_fix",
+        "documentable": false
       },
       "id": "V-64233",
       "title": "OHS must have a log file defined for each site/virtual host to produce log records containing sufficient information to establish the identity of any user/subject or process associated with an event.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-WSR-000068",
         "gid": "V-64235",
         "rid": "SV-78725r1_rule",
         "stig_id": "OH12-1X-000074",
-        "fix_id": "F-70165r1_fix"
+        "fix_id": "F-70165r1_fix",
+        "documentable": false
       },
       "id": "V-64235",
       "title": "OHS log files must only be accessible by privileged users.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-WSR-000069",
         "gid": "V-64237",
         "rid": "SV-78727r1_rule",
         "stig_id": "OH12-1X-000075",
-        "fix_id": "F-70167r1_fix"
+        "fix_id": "F-70167r1_fix",
+        "documentable": false
       },
       "id": "V-64237",
       "title": "The log information from OHS must be protected from unauthorized modification.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-WSR-000070",
         "gid": "V-64239",
         "rid": "SV-78729r1_rule",
         "stig_id": "OH12-1X-000076",
-        "fix_id": "F-70169r1_fix"
+        "fix_id": "F-70169r1_fix",
+        "documentable": false
       },
       "id": "V-64239",
       "title": "The log information from OHS must be protected from unauthorized deletion.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000125-WSR-000071",
         "gid": "V-64241",
         "rid": "SV-78731r1_rule",
         "stig_id": "OH12-1X-000077",
-        "fix_id": "F-70171r1_fix"
+        "fix_id": "F-70171r1_fix",
+        "documentable": false
       },
       "id": "V-64241",
       "title": "The log data and records from OHS must be backed up onto a different system or media.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64243",
         "rid": "SV-78733r1_rule",
         "stig_id": "OH12-1X-000093",
-        "fix_id": "F-70173r1_fix"
+        "fix_id": "F-70173r1_fix",
+        "documentable": false
       },
       "id": "V-64243",
       "title": "OHS must have the LoadModule file_cache_module directive disabled.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64245",
         "rid": "SV-78735r1_rule",
         "stig_id": "OH12-1X-000094",
-        "fix_id": "F-70175r1_fix"
+        "fix_id": "F-70175r1_fix",
+        "documentable": false
       },
       "id": "V-64245",
       "title": "OHS must have the LoadModule vhost_alias_module directive disabled.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64247",
         "rid": "SV-78737r1_rule",
         "stig_id": "OH12-1X-000095",
-        "fix_id": "F-70177r1_fix"
+        "fix_id": "F-70177r1_fix",
+        "documentable": false
       },
       "id": "V-64247",
       "title": "OHS must have the LoadModule env_module directive disabled.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64249",
         "rid": "SV-78739r1_rule",
         "stig_id": "OH12-1X-000096",
-        "fix_id": "F-70179r1_fix"
+        "fix_id": "F-70179r1_fix",
+        "documentable": false
       },
       "id": "V-64249",
       "title": "OHS must have the LoadModule mime_magic_module directive disabled.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64251",
         "rid": "SV-78741r1_rule",
         "stig_id": "OH12-1X-000097",
-        "fix_id": "F-70181r1_fix"
+        "fix_id": "F-70181r1_fix",
+        "documentable": false
       },
       "id": "V-64251",
       "title": "OHS must have the LoadModule negotiation_module directive disabled.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64253",
         "rid": "SV-78743r1_rule",
         "stig_id": "OH12-1X-000098",
-        "fix_id": "F-70183r1_fix"
+        "fix_id": "F-70183r1_fix",
+        "documentable": false
       },
       "id": "V-64253",
       "title": "OHS must not have the LanguagePriority directive enabled.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64255",
         "rid": "SV-78745r1_rule",
         "stig_id": "OH12-1X-000099",
-        "fix_id": "F-70185r1_fix"
+        "fix_id": "F-70185r1_fix",
+        "documentable": false
       },
       "id": "V-64255",
       "title": "OHS must not have the ForceLanguagePriority directive enabled.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64257",
         "rid": "SV-78747r1_rule",
         "stig_id": "OH12-1X-000100",
-        "fix_id": "F-70187r1_fix"
+        "fix_id": "F-70187r1_fix",
+        "documentable": false
       },
       "id": "V-64257",
       "title": "OHS must have the LoadModule status_module directive disabled.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64259",
         "rid": "SV-78749r1_rule",
         "stig_id": "OH12-1X-000101",
-        "fix_id": "F-70189r1_fix"
+        "fix_id": "F-70189r1_fix",
+        "documentable": false
       },
       "id": "V-64259",
       "title": "OHS must have the LoadModule info_module directive disabled.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64261",
         "rid": "SV-78751r1_rule",
         "stig_id": "OH12-1X-000102",
-        "fix_id": "F-70191r1_fix"
+        "fix_id": "F-70191r1_fix",
+        "documentable": false
       },
       "id": "V-64261",
       "title": "OHS must have the LoadModule include_module directive disabled.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64263",
         "rid": "SV-78753r1_rule",
         "stig_id": "OH12-1X-000103",
-        "fix_id": "F-70193r1_fix"
+        "fix_id": "F-70193r1_fix",
+        "documentable": false
       },
       "id": "V-64263",
       "title": "OHS must have the LoadModule autoindex_module directive disabled.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64265",
         "rid": "SV-78755r1_rule",
         "stig_id": "OH12-1X-000104",
-        "fix_id": "F-70195r1_fix"
+        "fix_id": "F-70195r1_fix",
+        "documentable": false
       },
       "id": "V-64265",
       "title": "OHS must have the IndexOptions directive disabled.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64267",
         "rid": "SV-78757r1_rule",
         "stig_id": "OH12-1X-000105",
-        "fix_id": "F-70197r1_fix"
+        "fix_id": "F-70197r1_fix",
+        "documentable": false
       },
       "id": "V-64267",
       "title": "OHS must have the AddIconByEncoding directive disabled.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64269",
         "rid": "SV-78759r1_rule",
         "stig_id": "OH12-1X-000106",
-        "fix_id": "F-70199r1_fix"
+        "fix_id": "F-70199r1_fix",
+        "documentable": false
       },
       "id": "V-64269",
       "title": "OHS must have the AddIconByType directive disabled.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64271",
         "rid": "SV-78761r1_rule",
         "stig_id": "OH12-1X-000107",
-        "fix_id": "F-70201r1_fix"
+        "fix_id": "F-70201r1_fix",
+        "documentable": false
       },
       "id": "V-64271",
       "title": "OHS must have the AddIcon directive disabled.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64273",
         "rid": "SV-78763r1_rule",
         "stig_id": "OH12-1X-000108",
-        "fix_id": "F-70203r1_fix"
+        "fix_id": "F-70203r1_fix",
+        "documentable": false
       },
       "id": "V-64273",
       "title": "OHS must have the DefaultIcon directive disabled.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64275",
         "rid": "SV-78765r1_rule",
         "stig_id": "OH12-1X-000109",
-        "fix_id": "F-70205r1_fix"
+        "fix_id": "F-70205r1_fix",
+        "documentable": false
       },
       "id": "V-64275",
       "title": "OHS must have the ReadmeName directive disabled.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64277",
         "rid": "SV-78767r1_rule",
         "stig_id": "OH12-1X-000110",
-        "fix_id": "F-70207r1_fix"
+        "fix_id": "F-70207r1_fix",
+        "documentable": false
       },
       "id": "V-64277",
       "title": "OHS must have the HeaderName directive disabled.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64279",
         "rid": "SV-78769r1_rule",
         "stig_id": "OH12-1X-000111",
-        "fix_id": "F-70209r1_fix"
+        "fix_id": "F-70209r1_fix",
+        "documentable": false
       },
       "id": "V-64279",
       "title": "OHS must have the IndexIgnore directive disabled.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64281",
         "rid": "SV-78771r1_rule",
         "stig_id": "OH12-1X-000112",
-        "fix_id": "F-70211r1_fix"
+        "fix_id": "F-70211r1_fix",
+        "documentable": false
       },
       "id": "V-64281",
       "title": "OHS must have the LoadModule dir_module directive disabled.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64283",
         "rid": "SV-78773r1_rule",
         "stig_id": "OH12-1X-000113",
-        "fix_id": "F-70213r1_fix"
+        "fix_id": "F-70213r1_fix",
+        "documentable": false
       },
       "id": "V-64283",
       "title": "OHS must have the DirectoryIndex directive disabled.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64285",
         "rid": "SV-78775r1_rule",
         "stig_id": "OH12-1X-000114",
-        "fix_id": "F-70215r1_fix"
+        "fix_id": "F-70215r1_fix",
+        "documentable": false
       },
       "id": "V-64285",
       "title": "OHS must have the LoadModule cgi_module directive disabled.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64287",
         "rid": "SV-78777r1_rule",
         "stig_id": "OH12-1X-000115",
-        "fix_id": "F-70217r1_fix"
+        "fix_id": "F-70217r1_fix",
+        "documentable": false
       },
       "id": "V-64287",
       "title": "OHS must have the LoadModule fastcgi_module disabled.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64289",
         "rid": "SV-78779r1_rule",
         "stig_id": "OH12-1X-000116",
-        "fix_id": "F-70219r1_fix"
+        "fix_id": "F-70219r1_fix",
+        "documentable": false
       },
       "id": "V-64289",
       "title": "OHS must have the LoadModule cgid_module directive disabled for mpm workers.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64291",
         "rid": "SV-78781r1_rule",
         "stig_id": "OH12-1X-000117",
-        "fix_id": "F-70221r1_fix"
+        "fix_id": "F-70221r1_fix",
+        "documentable": false
       },
       "id": "V-64291",
       "title": "OHS must have the IfModule cgid_module directive disabled.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64293",
         "rid": "SV-78783r1_rule",
         "stig_id": "OH12-1X-000118",
-        "fix_id": "F-70223r1_fix"
+        "fix_id": "F-70223r1_fix",
+        "documentable": false
       },
       "id": "V-64293",
       "title": "OHS must have the LoadModule mpm_winnt_module directive disabled.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64295",
         "rid": "SV-78785r1_rule",
         "stig_id": "OH12-1X-000119",
-        "fix_id": "F-70225r1_fix"
+        "fix_id": "F-70225r1_fix",
+        "documentable": false
       },
       "id": "V-64295",
       "title": "OHS must have the ScriptAlias directive for CGI scripts disabled.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64297",
         "rid": "SV-78787r1_rule",
         "stig_id": "OH12-1X-000120",
-        "fix_id": "F-70227r1_fix"
+        "fix_id": "F-70227r1_fix",
+        "documentable": false
       },
       "id": "V-64297",
       "title": "OHS must have the ScriptSock directive disabled.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64299",
         "rid": "SV-78789r2_rule",
         "stig_id": "OH12-1X-000121",
-        "fix_id": "F-70229r2_fix"
+        "fix_id": "F-70229r2_fix",
+        "documentable": false
       },
       "id": "V-64299",
       "title": "OHS must have the cgi-bin directory disabled.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64301",
         "rid": "SV-78791r1_rule",
         "stig_id": "OH12-1X-000122",
-        "fix_id": "F-70231r1_fix"
+        "fix_id": "F-70231r1_fix",
+        "documentable": false
       },
       "id": "V-64301",
       "title": "OHS must have directives pertaining to certain scripting languages removed from virtual hosts.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64303",
         "rid": "SV-78793r1_rule",
         "stig_id": "OH12-1X-000123",
-        "fix_id": "F-70233r1_fix"
+        "fix_id": "F-70233r1_fix",
+        "documentable": false
       },
       "id": "V-64303",
       "title": "OHS must have the LoadModule asis_module directive disabled.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64305",
         "rid": "SV-78795r1_rule",
         "stig_id": "OH12-1X-000124",
-        "fix_id": "F-70235r1_fix"
+        "fix_id": "F-70235r1_fix",
+        "documentable": false
       },
       "id": "V-64305",
       "title": "OHS must have the LoadModule imagemap_module directive disabled.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64307",
         "rid": "SV-78797r1_rule",
         "stig_id": "OH12-1X-000125",
-        "fix_id": "F-70237r1_fix"
+        "fix_id": "F-70237r1_fix",
+        "documentable": false
       },
       "id": "V-64307",
       "title": "OHS must have the LoadModule actions_module directive disabled.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64309",
         "rid": "SV-78799r1_rule",
         "stig_id": "OH12-1X-000126",
-        "fix_id": "F-70239r1_fix"
+        "fix_id": "F-70239r1_fix",
+        "documentable": false
       },
       "id": "V-64309",
       "title": "OHS must have the LoadModule speling_module directive disabled.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64311",
         "rid": "SV-78801r1_rule",
         "stig_id": "OH12-1X-000127",
-        "fix_id": "F-70241r1_fix"
+        "fix_id": "F-70241r1_fix",
+        "documentable": false
       },
       "id": "V-64311",
       "title": "OHS must have the LoadModule userdir_module directive disabled.",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64313",
         "rid": "SV-78803r1_rule",
         "stig_id": "OH12-1X-000128",
-        "fix_id": "F-70243r1_fix"
+        "fix_id": "F-70243r1_fix",
+        "documentable": false
       },
       "id": "V-64313",
       "title": "OHS must have the AliasMatch directive pertaining to the OHS manuals disabled.",
@@ -1736,11 +1736,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64315",
         "rid": "SV-78805r1_rule",
         "stig_id": "OH12-1X-000129",
-        "fix_id": "F-70245r1_fix"
+        "fix_id": "F-70245r1_fix",
+        "documentable": false
       },
       "id": "V-64315",
       "title": "OHS must have the Directory directive pointing to the OHS manuals disabled.",
@@ -1754,11 +1754,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64317",
         "rid": "SV-78807r1_rule",
         "stig_id": "OH12-1X-000130",
-        "fix_id": "F-70247r1_fix"
+        "fix_id": "F-70247r1_fix",
+        "documentable": false
       },
       "id": "V-64317",
       "title": "OHS must have the LoadModule auth_basic_module directive disabled.",
@@ -1772,11 +1772,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64319",
         "rid": "SV-78809r2_rule",
         "stig_id": "OH12-1X-000131",
-        "fix_id": "F-70249r1_fix"
+        "fix_id": "F-70249r1_fix",
+        "documentable": false
       },
       "id": "V-64319",
       "title": "OHS must have the LoadModule authz_user_module directive disabled.",
@@ -1790,11 +1790,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64321",
         "rid": "SV-78811r1_rule",
         "stig_id": "OH12-1X-000132",
-        "fix_id": "F-70251r1_fix"
+        "fix_id": "F-70251r1_fix",
+        "documentable": false
       },
       "id": "V-64321",
       "title": "OHS must have the LoadModule authn_file_module directive disabled.",
@@ -1808,11 +1808,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64323",
         "rid": "SV-78813r1_rule",
         "stig_id": "OH12-1X-000133",
-        "fix_id": "F-70253r1_fix"
+        "fix_id": "F-70253r1_fix",
+        "documentable": false
       },
       "id": "V-64323",
       "title": "OHS must have the LoadModule authn_anon_module directive disabled.",
@@ -1826,11 +1826,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64325",
         "rid": "SV-78815r2_rule",
         "stig_id": "OH12-1X-000134",
-        "fix_id": "F-70255r1_fix"
+        "fix_id": "F-70255r1_fix",
+        "documentable": false
       },
       "id": "V-64325",
       "title": "OHS must have the LoadModule proxy_module directive disabled.",
@@ -1844,11 +1844,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64327",
         "rid": "SV-78817r2_rule",
         "stig_id": "OH12-1X-000135",
-        "fix_id": "F-70257r1_fix"
+        "fix_id": "F-70257r1_fix",
+        "documentable": false
       },
       "id": "V-64327",
       "title": "OHS must have the LoadModule proxy_http_module directive disabled.",
@@ -1862,11 +1862,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64329",
         "rid": "SV-78819r1_rule",
         "stig_id": "OH12-1X-000136",
-        "fix_id": "F-70259r1_fix"
+        "fix_id": "F-70259r1_fix",
+        "documentable": false
       },
       "id": "V-64329",
       "title": "OHS must have the LoadModule proxy_ftp_module directive disabled.",
@@ -1880,11 +1880,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64331",
         "rid": "SV-78821r1_rule",
         "stig_id": "OH12-1X-000137",
-        "fix_id": "F-70261r1_fix"
+        "fix_id": "F-70261r1_fix",
+        "documentable": false
       },
       "id": "V-64331",
       "title": "OHS must have the LoadModule proxy_connect_module directive disabled.",
@@ -1898,11 +1898,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64333",
         "rid": "SV-78823r1_rule",
         "stig_id": "OH12-1X-000138",
-        "fix_id": "F-70263r1_fix"
+        "fix_id": "F-70263r1_fix",
+        "documentable": false
       },
       "id": "V-64333",
       "title": "OHS must have the LoadModule proxy_balancer_module directive disabled.",
@@ -1916,11 +1916,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64335",
         "rid": "SV-78825r1_rule",
         "stig_id": "OH12-1X-000139",
-        "fix_id": "F-70265r1_fix"
+        "fix_id": "F-70265r1_fix",
+        "documentable": false
       },
       "id": "V-64335",
       "title": "OHS must have the LoadModule cern_meta_module directive disabled.",
@@ -1934,11 +1934,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64337",
         "rid": "SV-78827r1_rule",
         "stig_id": "OH12-1X-000140",
-        "fix_id": "F-70267r1_fix"
+        "fix_id": "F-70267r1_fix",
+        "documentable": false
       },
       "id": "V-64337",
       "title": "OHS must have the LoadModule expires_module directive disabled.",
@@ -1952,11 +1952,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64339",
         "rid": "SV-78829r1_rule",
         "stig_id": "OH12-1X-000141",
-        "fix_id": "F-70269r1_fix"
+        "fix_id": "F-70269r1_fix",
+        "documentable": false
       },
       "id": "V-64339",
       "title": "OHS must have the LoadModule usertrack_module directive disabled.",
@@ -1970,11 +1970,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64341",
         "rid": "SV-78831r2_rule",
         "stig_id": "OH12-1X-000142",
-        "fix_id": "F-70271r2_fix"
+        "fix_id": "F-70271r2_fix",
+        "documentable": false
       },
       "id": "V-64341",
       "title": "OHS must have the LoadModule uniqueid_module directive disabled.",
@@ -1988,11 +1988,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64343",
         "rid": "SV-78833r1_rule",
         "stig_id": "OH12-1X-000143",
-        "fix_id": "F-70273r1_fix"
+        "fix_id": "F-70273r1_fix",
+        "documentable": false
       },
       "id": "V-64343",
       "title": "OHS must have the LoadModule setenvif_module directive disabled.",
@@ -2006,11 +2006,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64345",
         "rid": "SV-78835r1_rule",
         "stig_id": "OH12-1X-000144",
-        "fix_id": "F-70275r1_fix"
+        "fix_id": "F-70275r1_fix",
+        "documentable": false
       },
       "id": "V-64345",
       "title": "OHS must have the BrowserMatch directive disabled.",
@@ -2024,11 +2024,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64347",
         "rid": "SV-78837r1_rule",
         "stig_id": "OH12-1X-000145",
-        "fix_id": "F-70277r1_fix"
+        "fix_id": "F-70277r1_fix",
+        "documentable": false
       },
       "id": "V-64347",
       "title": "OHS must have the LoadModule dumpio_module directive disabled.",
@@ -2042,11 +2042,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64349",
         "rid": "SV-78839r1_rule",
         "stig_id": "OH12-1X-000146",
-        "fix_id": "F-70279r1_fix"
+        "fix_id": "F-70279r1_fix",
+        "documentable": false
       },
       "id": "V-64349",
       "title": "OHS must have the IfModule dumpio_module directive disabled.",
@@ -2060,11 +2060,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64351",
         "rid": "SV-78841r1_rule",
         "stig_id": "OH12-1X-000147",
-        "fix_id": "F-70281r1_fix"
+        "fix_id": "F-70281r1_fix",
+        "documentable": false
       },
       "id": "V-64351",
       "title": "OHS must have the Alias /icons/ directive disabled.",
@@ -2078,11 +2078,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64353",
         "rid": "SV-78843r1_rule",
         "stig_id": "OH12-1X-000148",
-        "fix_id": "F-70283r1_fix"
+        "fix_id": "F-70283r1_fix",
+        "documentable": false
       },
       "id": "V-64353",
       "title": "OHS must have the path to the icons directory disabled.",
@@ -2096,11 +2096,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64355",
         "rid": "SV-78845r1_rule",
         "stig_id": "OH12-1X-000149",
-        "fix_id": "F-70285r1_fix"
+        "fix_id": "F-70285r1_fix",
+        "documentable": false
       },
       "id": "V-64355",
       "title": "OHS must have the IfModule mpm_winnt_module directive disabled.",
@@ -2114,11 +2114,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64357",
         "rid": "SV-78847r1_rule",
         "stig_id": "OH12-1X-000235",
-        "fix_id": "F-70287r1_fix"
+        "fix_id": "F-70287r1_fix",
+        "documentable": false
       },
       "id": "V-64357",
       "title": "If WebLogic is not in use with OHS, OHS must have the include mod_wl_ohs.conf directive disabled at the server level.",
@@ -2132,11 +2132,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000075",
         "gid": "V-64359",
         "rid": "SV-78849r1_rule",
         "stig_id": "OH12-1X-000236",
-        "fix_id": "F-70289r1_fix"
+        "fix_id": "F-70289r1_fix",
+        "documentable": false
       },
       "id": "V-64359",
       "title": "If mod_plsql is not in use with OHS, OHS must have the include moduleconf/* directive disabled.",
@@ -2150,11 +2150,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000076",
         "gid": "V-64361",
         "rid": "SV-78851r2_rule",
         "stig_id": "OH12-1X-000150",
-        "fix_id": "F-70291r1_fix"
+        "fix_id": "F-70291r1_fix",
+        "documentable": false
       },
       "id": "V-64361",
       "title": "OHS must have the LoadModule proxy_module directive disabled.",
@@ -2168,11 +2168,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000076",
         "gid": "V-64363",
         "rid": "SV-78853r2_rule",
         "stig_id": "OH12-1X-000151",
-        "fix_id": "F-70293r1_fix"
+        "fix_id": "F-70293r1_fix",
+        "documentable": false
       },
       "id": "V-64363",
       "title": "OHS must have the LoadModule proxy_http_module directive disabled.",
@@ -2186,11 +2186,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000076",
         "gid": "V-64365",
         "rid": "SV-78855r1_rule",
         "stig_id": "OH12-1X-000152",
-        "fix_id": "F-70295r1_fix"
+        "fix_id": "F-70295r1_fix",
+        "documentable": false
       },
       "id": "V-64365",
       "title": "OHS must have the LoadModule proxy_ftp_module directive disabled.",
@@ -2204,11 +2204,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000076",
         "gid": "V-64375",
         "rid": "SV-78865r1_rule",
         "stig_id": "OH12-1X-000153",
-        "fix_id": "F-70305r1_fix"
+        "fix_id": "F-70305r1_fix",
+        "documentable": false
       },
       "id": "V-64375",
       "title": "OHS must have the LoadModule proxy_connect_module directive disabled.",
@@ -2222,11 +2222,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000076",
         "gid": "V-64377",
         "rid": "SV-78867r1_rule",
         "stig_id": "OH12-1X-000154",
-        "fix_id": "F-70307r1_fix"
+        "fix_id": "F-70307r1_fix",
+        "documentable": false
       },
       "id": "V-64377",
       "title": "OHS must have the LoadModule proxy_balancer_module directive disabled.",
@@ -2240,11 +2240,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000077",
         "gid": "V-64379",
         "rid": "SV-78869r1_rule",
         "stig_id": "OH12-1X-000156",
-        "fix_id": "F-70309r1_fix"
+        "fix_id": "F-70309r1_fix",
+        "documentable": false
       },
       "id": "V-64379",
       "title": "OHS must disable the directive pointing to the directory containing the OHS manuals.",
@@ -2258,11 +2258,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000077",
         "gid": "V-64381",
         "rid": "SV-78871r1_rule",
         "stig_id": "OH12-1X-000157",
-        "fix_id": "F-70311r1_fix"
+        "fix_id": "F-70311r1_fix",
+        "documentable": false
       },
       "id": "V-64381",
       "title": "OHS must have the AliasMatch directive disabled for the OHS manuals.",
@@ -2276,11 +2276,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000081",
         "gid": "V-64383",
         "rid": "SV-78873r1_rule",
         "stig_id": "OH12-1X-000160",
-        "fix_id": "F-70313r1_fix"
+        "fix_id": "F-70313r1_fix",
+        "documentable": false
       },
       "id": "V-64383",
       "title": "OHS must have the AddHandler directive disabled.",
@@ -2294,11 +2294,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000082",
         "gid": "V-64385",
         "rid": "SV-78875r1_rule",
         "stig_id": "OH12-1X-000161",
-        "fix_id": "F-70315r1_fix"
+        "fix_id": "F-70315r1_fix",
+        "documentable": false
       },
       "id": "V-64385",
       "title": "OHS must have the LoadModule cgi_module directive disabled.",
@@ -2312,11 +2312,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000082",
         "gid": "V-64387",
         "rid": "SV-78877r1_rule",
         "stig_id": "OH12-1X-000162",
-        "fix_id": "F-70317r1_fix"
+        "fix_id": "F-70317r1_fix",
+        "documentable": false
       },
       "id": "V-64387",
       "title": "OHS must have the LoadModule cgid_module directive disabled.",
@@ -2330,11 +2330,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000082",
         "gid": "V-64389",
         "rid": "SV-78879r1_rule",
         "stig_id": "OH12-1X-000163",
-        "fix_id": "F-70319r1_fix"
+        "fix_id": "F-70319r1_fix",
+        "documentable": false
       },
       "id": "V-64389",
       "title": "OHS must have the IfModule cgid_module directive disabled for the OHS server, virtual host, and directory configuration.",
@@ -2348,11 +2348,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-WSR-000082",
         "gid": "V-64391",
         "rid": "SV-78881r1_rule",
         "stig_id": "OH12-1X-000164",
-        "fix_id": "F-70321r1_fix"
+        "fix_id": "F-70321r1_fix",
+        "documentable": false
       },
       "id": "V-64391",
       "title": "OHS must have the LoadModule cgi_module directive disabled within the IfModule mpm_winnt_module directive.",
@@ -2366,11 +2366,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000082",
         "gid": "V-64393",
         "rid": "SV-78883r1_rule",
         "stig_id": "OH12-1X-000165",
-        "fix_id": "F-70323r1_fix"
+        "fix_id": "F-70323r1_fix",
+        "documentable": false
       },
       "id": "V-64393",
       "title": "OHS must have the ScriptAlias /cgi-bin/ directive within a IfModule alias_module directive disabled.",
@@ -2384,11 +2384,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000082",
         "gid": "V-64395",
         "rid": "SV-78885r1_rule",
         "stig_id": "OH12-1X-000166",
-        "fix_id": "F-70325r1_fix"
+        "fix_id": "F-70325r1_fix",
+        "documentable": false
       },
       "id": "V-64395",
       "title": "OHS must have the ScriptSock directive within a IfModule cgid_module directive disabled.",
@@ -2402,11 +2402,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000082",
         "gid": "V-64397",
         "rid": "SV-78887r1_rule",
         "stig_id": "OH12-1X-000167",
-        "fix_id": "F-70327r1_fix"
+        "fix_id": "F-70327r1_fix",
+        "documentable": false
       },
       "id": "V-64397",
       "title": "OHS must have the cgi-bin directory disabled.",
@@ -2420,11 +2420,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000082",
         "gid": "V-64399",
         "rid": "SV-78889r1_rule",
         "stig_id": "OH12-1X-000168",
-        "fix_id": "F-70329r1_fix"
+        "fix_id": "F-70329r1_fix",
+        "documentable": false
       },
       "id": "V-64399",
       "title": "OHS must have directives pertaining to certain scripting languages removed from virtual hosts.",
@@ -2438,11 +2438,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000083",
         "gid": "V-64401",
         "rid": "SV-78891r1_rule",
         "stig_id": "OH12-1X-000169",
-        "fix_id": "F-70331r1_fix"
+        "fix_id": "F-70331r1_fix",
+        "documentable": false
       },
       "id": "V-64401",
       "title": "OHS must have resource mappings set to disable the serving of certain file types.",
@@ -2456,11 +2456,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-WSR-000087",
         "gid": "V-64403",
         "rid": "SV-78893r1_rule",
         "stig_id": "OH12-1X-000172",
-        "fix_id": "F-70333r1_fix"
+        "fix_id": "F-70333r1_fix",
+        "documentable": false
       },
       "id": "V-64403",
       "title": "Users and scripts running on behalf of users must be contained to the document root or home directory tree of OHS.",
@@ -2474,11 +2474,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-WSR-000089",
         "gid": "V-64405",
         "rid": "SV-78895r1_rule",
         "stig_id": "OH12-1X-000173",
-        "fix_id": "F-70335r1_fix"
+        "fix_id": "F-70335r1_fix",
+        "documentable": false
       },
       "id": "V-64405",
       "title": "OHS must be configured to use a specified IP address, port, and protocol.",
@@ -2492,11 +2492,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-WSR-000104",
         "gid": "V-64407",
         "rid": "SV-78897r1_rule",
         "stig_id": "OH12-1X-000240",
-        "fix_id": "F-70337r1_fix"
+        "fix_id": "F-70337r1_fix",
+        "documentable": false
       },
       "id": "V-64407",
       "title": "OHS must have the LoadModule ossl_module directive enabled to encrypt passwords during transmission.",
@@ -2510,11 +2510,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-WSR-000104",
         "gid": "V-64409",
         "rid": "SV-78899r1_rule",
         "stig_id": "OH12-1X-000241",
-        "fix_id": "F-70339r1_fix"
+        "fix_id": "F-70339r1_fix",
+        "documentable": false
       },
       "id": "V-64409",
       "title": "OHS must use FIPS modules to encrypt passwords during transmission.",
@@ -2528,11 +2528,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-WSR-000104",
         "gid": "V-64411",
         "rid": "SV-78901r2_rule",
         "stig_id": "OH12-1X-000242",
-        "fix_id": "F-70341r2_fix"
+        "fix_id": "F-70341r2_fix",
+        "documentable": false
       },
       "id": "V-64411",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to encrypt passwords during transmission.",
@@ -2546,11 +2546,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-WSR-000104",
         "gid": "V-64413",
         "rid": "SV-78903r1_rule",
         "stig_id": "OH12-1X-000243",
-        "fix_id": "F-70343r1_fix"
+        "fix_id": "F-70343r1_fix",
+        "documentable": false
       },
       "id": "V-64413",
       "title": "OHS must have the SSLCipherSuite directive enabled to encrypt passwords during transmission.",
@@ -2564,11 +2564,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-WSR-000095",
         "gid": "V-64415",
         "rid": "SV-78905r1_rule",
         "stig_id": "OH12-1X-000244",
-        "fix_id": "F-70345r1_fix"
+        "fix_id": "F-70345r1_fix",
+        "documentable": false
       },
       "id": "V-64415",
       "title": "OHS must have the LoadModule ossl_module directive enabled to perform RFC 5280-compliant certification path validation.",
@@ -2582,11 +2582,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-WSR-000095",
         "gid": "V-64417",
         "rid": "SV-78907r1_rule",
         "stig_id": "OH12-1X-000245",
-        "fix_id": "F-70347r1_fix"
+        "fix_id": "F-70347r1_fix",
+        "documentable": false
       },
       "id": "V-64417",
       "title": "OHS must use FIPS modules to perform RFC 5280-compliant certification path validation.",
@@ -2600,11 +2600,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-WSR-000095",
         "gid": "V-64419",
         "rid": "SV-78909r2_rule",
         "stig_id": "OH12-1X-000246",
-        "fix_id": "F-70349r2_fix"
+        "fix_id": "F-70349r2_fix",
+        "documentable": false
       },
       "id": "V-64419",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to perform RFC 5280-compliant certification path validation.",
@@ -2618,11 +2618,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-WSR-000095",
         "gid": "V-64421",
         "rid": "SV-78911r1_rule",
         "stig_id": "OH12-1X-000247",
-        "fix_id": "F-70351r1_fix"
+        "fix_id": "F-70351r1_fix",
+        "documentable": false
       },
       "id": "V-64421",
       "title": "OHS must have the SSLCipherSuite directive enabled to perform RFC 5280-compliant certification path validation.",
@@ -2636,11 +2636,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-WSR-000095",
         "gid": "V-64423",
         "rid": "SV-78913r1_rule",
         "stig_id": "OH12-1X-000248",
-        "fix_id": "F-70353r1_fix"
+        "fix_id": "F-70353r1_fix",
+        "documentable": false
       },
       "id": "V-64423",
       "title": "OHS must have the SSLVerifyClient directive set within each SSL-enabled VirtualHost directive to perform RFC 5280-compliant certification path validation.",
@@ -2654,11 +2654,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-WSR-000095",
         "gid": "V-64425",
         "rid": "SV-78915r1_rule",
         "stig_id": "OH12-1X-000249",
-        "fix_id": "F-70355r1_fix"
+        "fix_id": "F-70355r1_fix",
+        "documentable": false
       },
       "id": "V-64425",
       "title": "OHS must have the SSLCARevocationFile and SSLCRLCheck directives within each SSL-enabled VirtualHost directive set to perform RFC 5280-compliant certification path validation when using single certification revocation.",
@@ -2672,11 +2672,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-WSR-000095",
         "gid": "V-64427",
         "rid": "SV-78917r1_rule",
         "stig_id": "OH12-1X-000250",
-        "fix_id": "F-70357r1_fix"
+        "fix_id": "F-70357r1_fix",
+        "documentable": false
       },
       "id": "V-64427",
       "title": "OHS must have SSLCARevocationPath and SSLCRLCheck directives within each SSL-enabled VirtualHost directive set to perform RFC 5280-compliant certification path validation when using multiple certification revocation.",
@@ -2690,11 +2690,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-WSR-000095",
         "gid": "V-64429",
         "rid": "SV-78919r1_rule",
         "stig_id": "OH12-1X-000251",
-        "fix_id": "F-70359r1_fix"
+        "fix_id": "F-70359r1_fix",
+        "documentable": false
       },
       "id": "V-64429",
       "title": "OHS must be integrated with a tool such as Oracle Access Manager to enforce a client-side certificate revocation check through the OCSP protocol.",
@@ -2708,11 +2708,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-WSR-000110",
         "gid": "V-64431",
         "rid": "SV-78921r1_rule",
         "stig_id": "OH12-1X-000253",
-        "fix_id": "F-70361r1_fix"
+        "fix_id": "F-70361r1_fix",
+        "documentable": false
       },
       "id": "V-64431",
       "title": "OHS must have the LoadModule ossl_module directive enabled to meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance when encrypting stored data.",
@@ -2726,11 +2726,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-WSR-000110",
         "gid": "V-64433",
         "rid": "SV-78923r1_rule",
         "stig_id": "OH12-1X-000254",
-        "fix_id": "F-70363r1_fix"
+        "fix_id": "F-70363r1_fix",
+        "documentable": false
       },
       "id": "V-64433",
       "title": "OHS must have the SSLFIPS directive enabled to meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance when encrypting stored data.",
@@ -2744,11 +2744,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-WSR-000110",
         "gid": "V-64435",
         "rid": "SV-78925r2_rule",
         "stig_id": "OH12-1X-000255",
-        "fix_id": "F-70365r2_fix"
+        "fix_id": "F-70365r2_fix",
+        "documentable": false
       },
       "id": "V-64435",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled to meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance when encrypting stored data.",
@@ -2762,11 +2762,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-WSR-000110",
         "gid": "V-64437",
         "rid": "SV-78927r1_rule",
         "stig_id": "OH12-1X-000256",
-        "fix_id": "F-70367r1_fix"
+        "fix_id": "F-70367r1_fix",
+        "documentable": false
       },
       "id": "V-64437",
       "title": "OHS must have the SSLCipherSuite directive enabled to meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance when encrypting stored data.",
@@ -2780,11 +2780,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-WSR-000111",
         "gid": "V-64439",
         "rid": "SV-78929r1_rule",
         "stig_id": "OH12-1X-000257",
-        "fix_id": "F-70369r1_fix"
+        "fix_id": "F-70369r1_fix",
+        "documentable": false
       },
       "id": "V-64439",
       "title": "OHS must have the LoadModule ossl_module directive enabled to meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.",
@@ -2798,11 +2798,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-WSR-000111",
         "gid": "V-64441",
         "rid": "SV-78931r1_rule",
         "stig_id": "OH12-1X-000258",
-        "fix_id": "F-70371r1_fix"
+        "fix_id": "F-70371r1_fix",
+        "documentable": false
       },
       "id": "V-64441",
       "title": "OHS must have the SSLFIPS directive enabled to meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.",
@@ -2816,11 +2816,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-WSR-000111",
         "gid": "V-64443",
         "rid": "SV-78933r2_rule",
         "stig_id": "OH12-1X-000259",
-        "fix_id": "F-70373r2_fix"
+        "fix_id": "F-70373r2_fix",
+        "documentable": false
       },
       "id": "V-64443",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.",
@@ -2834,11 +2834,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-WSR-000111",
         "gid": "V-64445",
         "rid": "SV-78935r1_rule",
         "stig_id": "OH12-1X-000260",
-        "fix_id": "F-70375r1_fix"
+        "fix_id": "F-70375r1_fix",
+        "documentable": false
       },
       "id": "V-64445",
       "title": "OHS must have the SSLCipherSuite directive enabled to meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.",
@@ -2852,11 +2852,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000206-WSR-000128",
         "gid": "V-64447",
         "rid": "SV-78937r1_rule",
         "stig_id": "OH12-1X-000265",
-        "fix_id": "F-70377r1_fix"
+        "fix_id": "F-70377r1_fix",
+        "documentable": false
       },
       "id": "V-64447",
       "title": "OHS utilizing mobile code must meet DoD-defined mobile code requirements.",
@@ -2870,11 +2870,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000211-WSR-000030",
         "gid": "V-64449",
         "rid": "SV-78939r1_rule",
         "stig_id": "OH12-1X-000266",
-        "fix_id": "F-70379r1_fix"
+        "fix_id": "F-70379r1_fix",
+        "documentable": false
       },
       "id": "V-64449",
       "title": "OHS accounts accessing the directory tree, the shell, or other operating system functions and utilities must only be administrative accounts.",
@@ -2888,11 +2888,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233-WSR-000146",
         "gid": "V-64451",
         "rid": "SV-78941r1_rule",
         "stig_id": "OH12-1X-000281",
-        "fix_id": "F-70381r1_fix"
+        "fix_id": "F-70381r1_fix",
+        "documentable": false
       },
       "id": "V-64451",
       "title": "OHS must have the DocumentRoot directive set to a separate partition from the OHS system files.",
@@ -2906,11 +2906,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233-WSR-000146",
         "gid": "V-64453",
         "rid": "SV-78943r1_rule",
         "stig_id": "OH12-1X-000282",
-        "fix_id": "F-70383r1_fix"
+        "fix_id": "F-70383r1_fix",
+        "documentable": false
       },
       "id": "V-64453",
       "title": "OHS must have the Directory directive accompanying the DocumentRoot directive set to a separate partition from the OHS system files.",
@@ -2924,11 +2924,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64455",
         "rid": "SV-78945r1_rule",
         "stig_id": "OH12-1X-000283",
-        "fix_id": "F-70385r1_fix"
+        "fix_id": "F-70385r1_fix",
+        "documentable": false
       },
       "id": "V-64455",
       "title": "OHS must have the Timeout directive properly set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -2942,11 +2942,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64457",
         "rid": "SV-78947r1_rule",
         "stig_id": "OH12-1X-000284",
-        "fix_id": "F-70387r1_fix"
+        "fix_id": "F-70387r1_fix",
+        "documentable": false
       },
       "id": "V-64457",
       "title": "OHS must have the KeepAlive directive properly set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -2960,11 +2960,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64459",
         "rid": "SV-78949r1_rule",
         "stig_id": "OH12-1X-000285",
-        "fix_id": "F-70389r1_fix"
+        "fix_id": "F-70389r1_fix",
+        "documentable": false
       },
       "id": "V-64459",
       "title": "OHS must have the KeepAliveTimeout properly set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -2978,11 +2978,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64461",
         "rid": "SV-78951r1_rule",
         "stig_id": "OH12-1X-000286",
-        "fix_id": "F-70391r1_fix"
+        "fix_id": "F-70391r1_fix",
+        "documentable": false
       },
       "id": "V-64461",
       "title": "OHS must have the MaxKeepAliveRequests directive properly set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -2996,11 +2996,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64463",
         "rid": "SV-78953r1_rule",
         "stig_id": "OH12-1X-000287",
-        "fix_id": "F-70393r1_fix"
+        "fix_id": "F-70393r1_fix",
+        "documentable": false
       },
       "id": "V-64463",
       "title": "OHS must have the ListenBacklog properly set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -3014,11 +3014,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64465",
         "rid": "SV-78955r2_rule",
         "stig_id": "OH12-1X-000288",
-        "fix_id": "F-70395r1_fix"
+        "fix_id": "F-70395r1_fix",
+        "documentable": false
       },
       "id": "V-64465",
       "title": "OHS must have the LimitRequestBody directive set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -3032,11 +3032,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64467",
         "rid": "SV-78957r1_rule",
         "stig_id": "OH12-1X-000289",
-        "fix_id": "F-70397r1_fix"
+        "fix_id": "F-70397r1_fix",
+        "documentable": false
       },
       "id": "V-64467",
       "title": "OHS must have the LimitRequestFields directive set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -3050,11 +3050,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64469",
         "rid": "SV-78959r1_rule",
         "stig_id": "OH12-1X-000290",
-        "fix_id": "F-70399r1_fix"
+        "fix_id": "F-70399r1_fix",
+        "documentable": false
       },
       "id": "V-64469",
       "title": "OHS must have the LimitRequestFieldSize directive set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -3068,11 +3068,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64471",
         "rid": "SV-78961r1_rule",
         "stig_id": "OH12-1X-000291",
-        "fix_id": "F-70401r1_fix"
+        "fix_id": "F-70401r1_fix",
+        "documentable": false
       },
       "id": "V-64471",
       "title": "OHS must have the LimitRequestLine directive set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -3086,11 +3086,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64473",
         "rid": "SV-78963r1_rule",
         "stig_id": "OH12-1X-000292",
-        "fix_id": "F-70403r1_fix"
+        "fix_id": "F-70403r1_fix",
+        "documentable": false
       },
       "id": "V-64473",
       "title": "OHS must have the LimitXMLRequestBody directive set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -3104,11 +3104,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-WSR-000149",
         "gid": "V-64475",
         "rid": "SV-78965r1_rule",
         "stig_id": "OH12-1X-000293",
-        "fix_id": "F-70405r1_fix"
+        "fix_id": "F-70405r1_fix",
+        "documentable": false
       },
       "id": "V-64475",
       "title": "OHS must have the LimitInternalRecursion directive set to restrict the ability of users to launch Denial of Service (DoS) attacks against other information systems or networks.",
@@ -3122,11 +3122,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000266-WSR-000142",
         "gid": "V-64477",
         "rid": "SV-78967r1_rule",
         "stig_id": "OH12-1X-000346",
-        "fix_id": "F-70407r1_fix"
+        "fix_id": "F-70407r1_fix",
+        "documentable": false
       },
       "id": "V-64477",
       "title": "OHS must display a default hosted application web page, not a directory listing, when a requested web page cannot be found.",
@@ -3140,11 +3140,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266-WSR-000159",
         "gid": "V-64479",
         "rid": "SV-78969r1_rule",
         "stig_id": "OH12-1X-000347",
-        "fix_id": "F-70409r1_fix"
+        "fix_id": "F-70409r1_fix",
+        "documentable": false
       },
       "id": "V-64479",
       "title": "OHS must have the ServerSignature directive disabled.",
@@ -3158,11 +3158,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000266-WSR-000159",
         "gid": "V-64481",
         "rid": "SV-78971r1_rule",
         "stig_id": "OH12-1X-000348",
-        "fix_id": "F-70411r1_fix"
+        "fix_id": "F-70411r1_fix",
+        "documentable": false
       },
       "id": "V-64481",
       "title": "OHS must have the ServerTokens directive set to limit the response header.",
@@ -3176,11 +3176,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266-WSR-000159",
         "gid": "V-64483",
         "rid": "SV-78973r1_rule",
         "stig_id": "OH12-1X-000349",
-        "fix_id": "F-70413r1_fix"
+        "fix_id": "F-70413r1_fix",
+        "documentable": false
       },
       "id": "V-64483",
       "title": "OHS must have the Alias /error directive defined to reference the directory accompanying the ErrorDocument directives to minimize the identity of OHS, patches, loaded modules, and directory paths in warning and error messages displayed to clients.",
@@ -3194,11 +3194,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266-WSR-000159",
         "gid": "V-64485",
         "rid": "SV-78975r2_rule",
         "stig_id": "OH12-1X-000350",
-        "fix_id": "F-70415r2_fix"
+        "fix_id": "F-70415r2_fix",
+        "documentable": false
       },
       "id": "V-64485",
       "title": "OHS must have the permissions set properly via the Directory directive accompanying the ErrorDocument directives to minimize improper access to the warning and error messages displayed to clients.",
@@ -3212,11 +3212,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000266-WSR-000159",
         "gid": "V-64487",
         "rid": "SV-78977r1_rule",
         "stig_id": "OH12-1X-000351",
-        "fix_id": "F-70417r1_fix"
+        "fix_id": "F-70417r1_fix",
+        "documentable": false
       },
       "id": "V-64487",
       "title": "OHS must have defined error pages for common error codes that minimize the identity of the web server, patches, loaded modules, and directory paths.",
@@ -3230,11 +3230,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000266-WSR-000159",
         "gid": "V-64489",
         "rid": "SV-78979r1_rule",
         "stig_id": "OH12-1X-000352",
-        "fix_id": "F-70419r1_fix"
+        "fix_id": "F-70419r1_fix",
+        "documentable": false
       },
       "id": "V-64489",
       "title": "OHS must have production information removed from error documents to minimize the identity of OHS, patches, loaded modules, and directory paths in warning and error messages displayed to clients.",
@@ -3248,11 +3248,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266-WSR-000160",
         "gid": "V-64491",
         "rid": "SV-78981r1_rule",
         "stig_id": "OH12-1X-000353",
-        "fix_id": "F-70421r1_fix"
+        "fix_id": "F-70421r1_fix",
+        "documentable": false
       },
       "id": "V-64491",
       "title": "Debugging and trace information used to diagnose OHS must be disabled.",
@@ -3266,11 +3266,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000315-WSR-000003",
         "gid": "V-64493",
         "rid": "SV-78983r1_rule",
         "stig_id": "OH12-1X-000030",
-        "fix_id": "F-70423r1_fix"
+        "fix_id": "F-70423r1_fix",
+        "documentable": false
       },
       "id": "V-64493",
       "title": "Remote access to OHS must follow access policy or work in conjunction with enterprise tools designed to enforce policy requirements.",
@@ -3284,11 +3284,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000315-WSR-000004",
         "gid": "V-64495",
         "rid": "SV-78985r1_rule",
         "stig_id": "OH12-1X-000031",
-        "fix_id": "F-70425r1_fix"
+        "fix_id": "F-70425r1_fix",
+        "documentable": false
       },
       "id": "V-64495",
       "title": "OHS must have the Order, Allow, and Deny directives set within the Directory directives set to restrict inbound connections from nonsecure zones.",
@@ -3302,11 +3302,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000315-WSR-000004",
         "gid": "V-64497",
         "rid": "SV-78987r1_rule",
         "stig_id": "OH12-1X-000032",
-        "fix_id": "F-70427r1_fix"
+        "fix_id": "F-70427r1_fix",
+        "documentable": false
       },
       "id": "V-64497",
       "title": "OHS must have the Order, Allow, and Deny directives set within the Files directives set to restrict inbound connections from nonsecure zones.",
@@ -3320,11 +3320,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000315-WSR-000004",
         "gid": "V-64499",
         "rid": "SV-78989r1_rule",
         "stig_id": "OH12-1X-000033",
-        "fix_id": "F-70429r1_fix"
+        "fix_id": "F-70429r1_fix",
+        "documentable": false
       },
       "id": "V-64499",
       "title": "OHS must have the Order, Allow, and Deny directives set within the Location directives set to restrict inbound connections from nonsecure zones.",
@@ -3338,11 +3338,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000316-WSR-000170",
         "gid": "V-64501",
         "rid": "SV-78991r1_rule",
         "stig_id": "OH12-1X-000034",
-        "fix_id": "F-70431r1_fix"
+        "fix_id": "F-70431r1_fix",
+        "documentable": false
       },
       "id": "V-64501",
       "title": "OHS must provide the capability to immediately disconnect or disable remote access to the hosted applications.",
@@ -3356,11 +3356,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340-WSR-000029",
         "gid": "V-64503",
         "rid": "SV-78993r1_rule",
         "stig_id": "OH12-1X-000035",
-        "fix_id": "F-70433r1_fix"
+        "fix_id": "F-70433r1_fix",
+        "documentable": false
       },
       "id": "V-64503",
       "title": "Non-privileged accounts on the hosting system must only access OHS security-relevant information and functions through a distinct administrative account.",
@@ -3374,11 +3374,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000358-WSR-000163",
         "gid": "V-64505",
         "rid": "SV-78995r1_rule",
         "stig_id": "OH12-1X-000081",
-        "fix_id": "F-70435r1_fix"
+        "fix_id": "F-70435r1_fix",
+        "documentable": false
       },
       "id": "V-64505",
       "title": "OHS must be configured to store error log files to an appropriate storage device from which other tools can be configured to reference those log files for diagnostic/forensic purposes.",
@@ -3392,11 +3392,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000358-WSR-000163",
         "gid": "V-64507",
         "rid": "SV-78997r1_rule",
         "stig_id": "OH12-1X-000082",
-        "fix_id": "F-70437r1_fix"
+        "fix_id": "F-70437r1_fix",
+        "documentable": false
       },
       "id": "V-64507",
       "title": "OHS must be configured to store access log files to an appropriate storage device from which other tools can be configured to reference those log files for diagnostic/forensic purposes.",
@@ -3410,11 +3410,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000416-WSR-000118",
         "gid": "V-64509",
         "rid": "SV-78999r1_rule",
         "stig_id": "OH12-1X-000294",
-        "fix_id": "F-70439r1_fix"
+        "fix_id": "F-70439r1_fix",
+        "documentable": false
       },
       "id": "V-64509",
       "title": "OHS must have the LoadModule ossl_module directive enabled to implement required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance when encrypting data that must be compartmentalized.",
@@ -3428,11 +3428,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000416-WSR-000118",
         "gid": "V-64511",
         "rid": "SV-79001r1_rule",
         "stig_id": "OH12-1X-000295",
-        "fix_id": "F-70441r1_fix"
+        "fix_id": "F-70441r1_fix",
+        "documentable": false
       },
       "id": "V-64511",
       "title": "OHS must have the SSLFIPS directive enabled to implement required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance when encrypting data that must be compartmentalized.",
@@ -3446,11 +3446,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000416-WSR-000118",
         "gid": "V-64513",
         "rid": "SV-79003r2_rule",
         "stig_id": "OH12-1X-000296",
-        "fix_id": "F-70443r2_fix"
+        "fix_id": "F-70443r2_fix",
+        "documentable": false
       },
       "id": "V-64513",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to implement required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance when encrypting data that must be compartmentalized.",
@@ -3464,11 +3464,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000416-WSR-000118",
         "gid": "V-64515",
         "rid": "SV-79005r1_rule",
         "stig_id": "OH12-1X-000297",
-        "fix_id": "F-70445r1_fix"
+        "fix_id": "F-70445r1_fix",
+        "documentable": false
       },
       "id": "V-64515",
       "title": "OHS must have the SSLCipherSuite directive enabled to implement required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance when encrypting data that must be compartmentalized.",
@@ -3482,11 +3482,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-WSR-000186",
         "gid": "V-64517",
         "rid": "SV-79007r1_rule",
         "stig_id": "OH12-1X-000298",
-        "fix_id": "F-70447r1_fix"
+        "fix_id": "F-70447r1_fix",
+        "documentable": false
       },
       "id": "V-64517",
       "title": "OHS must have the LoadModule ossl_module directive enabled so SSL requests can be processed with client certificates only issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs).",
@@ -3500,11 +3500,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-WSR-000186",
         "gid": "V-64519",
         "rid": "SV-79009r1_rule",
         "stig_id": "OH12-1X-000299",
-        "fix_id": "F-70449r1_fix"
+        "fix_id": "F-70449r1_fix",
+        "documentable": false
       },
       "id": "V-64519",
       "title": "OHS must have the SSLFIPS directive enabled so SSL requests can be processed with client certificates only issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs).",
@@ -3518,11 +3518,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-WSR-000186",
         "gid": "V-64521",
         "rid": "SV-79011r2_rule",
         "stig_id": "OH12-1X-000300",
-        "fix_id": "F-70451r2_fix"
+        "fix_id": "F-70451r2_fix",
+        "documentable": false
       },
       "id": "V-64521",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled so SSL requests can be processed with client certificates only issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs).",
@@ -3536,11 +3536,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-WSR-000186",
         "gid": "V-64523",
         "rid": "SV-79013r1_rule",
         "stig_id": "OH12-1X-000301",
-        "fix_id": "F-70453r1_fix"
+        "fix_id": "F-70453r1_fix",
+        "documentable": false
       },
       "id": "V-64523",
       "title": "OHS must have the SSLCipherSuite directive enabled so SSL requests can be processed with client certificates only issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs).",
@@ -3554,11 +3554,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-WSR-000186",
         "gid": "V-64525",
         "rid": "SV-79015r1_rule",
         "stig_id": "OH12-1X-000302",
-        "fix_id": "F-70455r1_fix"
+        "fix_id": "F-70455r1_fix",
+        "documentable": false
       },
       "id": "V-64525",
       "title": "OHS must have the SSLVerifyClient directive enabled to only accept client certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs).",
@@ -3572,11 +3572,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-WSR-000186",
         "gid": "V-64527",
         "rid": "SV-79017r1_rule",
         "stig_id": "OH12-1X-000303",
-        "fix_id": "F-70457r1_fix"
+        "fix_id": "F-70457r1_fix",
+        "documentable": false
       },
       "id": "V-64527",
       "title": "OHS must use wallets that have only DoD certificate authorities defined.",
@@ -3590,11 +3590,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435-WSR-000148",
         "gid": "V-64529",
         "rid": "SV-79019r1_rule",
         "stig_id": "OH12-1X-000307",
-        "fix_id": "F-70459r1_fix"
+        "fix_id": "F-70459r1_fix",
+        "documentable": false
       },
       "id": "V-64529",
       "title": "OHS must be tuned to handle the operational requirements of the hosted application.",
@@ -3608,11 +3608,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000439-WSR-000151",
         "gid": "V-64541",
         "rid": "SV-79031r1_rule",
         "stig_id": "OH12-1X-000308",
-        "fix_id": "F-70471r1_fix"
+        "fix_id": "F-70471r1_fix",
+        "documentable": false
       },
       "id": "V-64541",
       "title": "OHS must have the LoadModule ossl_module directive enabled to prevent unauthorized disclosure of information during transmission.",
@@ -3626,11 +3626,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000439-WSR-000151",
         "gid": "V-64543",
         "rid": "SV-79033r1_rule",
         "stig_id": "OH12-1X-000309",
-        "fix_id": "F-70473r1_fix"
+        "fix_id": "F-70473r1_fix",
+        "documentable": false
       },
       "id": "V-64543",
       "title": "OHS must have the SSLFIPS directive enabled to prevent unauthorized disclosure of information during transmission.",
@@ -3644,11 +3644,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000439-WSR-000151",
         "gid": "V-64545",
         "rid": "SV-79035r2_rule",
         "stig_id": "OH12-1X-000310",
-        "fix_id": "F-70475r2_fix"
+        "fix_id": "F-70475r2_fix",
+        "documentable": false
       },
       "id": "V-64545",
       "title": "OHS must have the SSLEngine, SSLProtocol, SSLWallet directives enabled and configured to prevent unauthorized disclosure of information during transmission.",
@@ -3662,11 +3662,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000439-WSR-000151",
         "gid": "V-64547",
         "rid": "SV-79037r1_rule",
         "stig_id": "OH12-1X-000311",
-        "fix_id": "F-70477r1_fix"
+        "fix_id": "F-70477r1_fix",
+        "documentable": false
       },
       "id": "V-64547",
       "title": "OHS must have the SSLCipherSuite directive enabled to prevent unauthorized disclosure of information during transmission.",
@@ -3680,11 +3680,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-WSR-000151",
         "gid": "V-64549",
         "rid": "SV-79039r1_rule",
         "stig_id": "OH12-1X-000312",
-        "fix_id": "F-70479r1_fix"
+        "fix_id": "F-70479r1_fix",
+        "documentable": false
       },
       "id": "V-64549",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring end-to-end SSL, OHS must have the SecureProxy directive enabled to prevent unauthorized disclosure of information during transmission.",
@@ -3698,11 +3698,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-WSR-000151",
         "gid": "V-64551",
         "rid": "SV-79041r1_rule",
         "stig_id": "OH12-1X-000313",
-        "fix_id": "F-70481r1_fix"
+        "fix_id": "F-70481r1_fix",
+        "documentable": false
       },
       "id": "V-64551",
       "title": "OHS must have the WLSSLWallet directive enabled to prevent unauthorized disclosure of information during transmission.",
@@ -3716,11 +3716,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-WSR-000151",
         "gid": "V-64553",
         "rid": "SV-79043r1_rule",
         "stig_id": "OH12-1X-000314",
-        "fix_id": "F-70483r1_fix"
+        "fix_id": "F-70483r1_fix",
+        "documentable": false
       },
       "id": "V-64553",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring end-to-end SSL, OHS must have the WebLogicSSLVersion directive enabled to prevent unauthorized disclosure of information during transmission.",
@@ -3734,11 +3734,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-WSR-000151",
         "gid": "V-64555",
         "rid": "SV-79045r1_rule",
         "stig_id": "OH12-1X-000315",
-        "fix_id": "F-70485r1_fix"
+        "fix_id": "F-70485r1_fix",
+        "documentable": false
       },
       "id": "V-64555",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring SSL termination at OHS, OHS must have the WLProxySSL directive enabled to prevent unauthorized disclosure of information during transmission.",
@@ -3752,11 +3752,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-WSR-000156",
         "gid": "V-64557",
         "rid": "SV-79047r1_rule",
         "stig_id": "OH12-1X-000320",
-        "fix_id": "F-70487r1_fix"
+        "fix_id": "F-70487r1_fix",
+        "documentable": false
       },
       "id": "V-64557",
       "title": "OHS must have the LoadModule ossl_module directive enabled to maintain the confidentiality of controlled information during transmission through the use of an approved TLS version.",
@@ -3770,11 +3770,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-WSR-000156",
         "gid": "V-64559",
         "rid": "SV-79049r1_rule",
         "stig_id": "OH12-1X-000321",
-        "fix_id": "F-70489r1_fix"
+        "fix_id": "F-70489r1_fix",
+        "documentable": false
       },
       "id": "V-64559",
       "title": "OHS must have the SSLFIPS directive enabled to maintain the confidentiality of controlled information during transmission through the use of an approved TLS version.",
@@ -3788,11 +3788,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-WSR-000156",
         "gid": "V-64561",
         "rid": "SV-79051r2_rule",
         "stig_id": "OH12-1X-000322",
-        "fix_id": "F-70491r2_fix"
+        "fix_id": "F-70491r2_fix",
+        "documentable": false
       },
       "id": "V-64561",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to maintain the confidentiality of controlled information during transmission through the use of an approved TLS version.",
@@ -3806,11 +3806,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-WSR-000156",
         "gid": "V-64563",
         "rid": "SV-79053r1_rule",
         "stig_id": "OH12-1X-000323",
-        "fix_id": "F-70493r1_fix"
+        "fix_id": "F-70493r1_fix",
+        "documentable": false
       },
       "id": "V-64563",
       "title": "OHS must have the SSLCipherSuite directive enabled to maintain the confidentiality of controlled information during transmission through the use of an approved TLS version.",
@@ -3824,11 +3824,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-WSR-000181",
         "gid": "V-64565",
         "rid": "SV-79055r1_rule",
         "stig_id": "OH12-1X-000324",
-        "fix_id": "F-70495r1_fix"
+        "fix_id": "F-70495r1_fix",
+        "documentable": false
       },
       "id": "V-64565",
       "title": "OHS must have the LoadModule ossl_module directive enabled to maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -3842,11 +3842,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-WSR-000181",
         "gid": "V-64567",
         "rid": "SV-79057r1_rule",
         "stig_id": "OH12-1X-000325",
-        "fix_id": "F-70497r1_fix"
+        "fix_id": "F-70497r1_fix",
+        "documentable": false
       },
       "id": "V-64567",
       "title": "OHS must have the SSLFIPS directive enabled to maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -3860,11 +3860,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-WSR-000181",
         "gid": "V-64569",
         "rid": "SV-79059r2_rule",
         "stig_id": "OH12-1X-000326",
-        "fix_id": "F-70499r2_fix"
+        "fix_id": "F-70499r2_fix",
+        "documentable": false
       },
       "id": "V-64569",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -3878,11 +3878,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-WSR-000181",
         "gid": "V-64571",
         "rid": "SV-79061r1_rule",
         "stig_id": "OH12-1X-000327",
-        "fix_id": "F-70501r1_fix"
+        "fix_id": "F-70501r1_fix",
+        "documentable": false
       },
       "id": "V-64571",
       "title": "OHS must have the SSLCipherSuite directive enabled to maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -3896,11 +3896,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-WSR-000181",
         "gid": "V-64573",
         "rid": "SV-79063r1_rule",
         "stig_id": "OH12-1X-000328",
-        "fix_id": "F-70503r1_fix"
+        "fix_id": "F-70503r1_fix",
+        "documentable": false
       },
       "id": "V-64573",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring end-to-end SSL, OHS must have the SecureProxy directive enabled to maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -3914,11 +3914,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-WSR-000181",
         "gid": "V-64575",
         "rid": "SV-79065r1_rule",
         "stig_id": "OH12-1X-000329",
-        "fix_id": "F-70505r1_fix"
+        "fix_id": "F-70505r1_fix",
+        "documentable": false
       },
       "id": "V-64575",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring end-to-end SSL, OHS must have the WLSSLWallet directive enabled to maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -3932,11 +3932,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-WSR-000181",
         "gid": "V-64577",
         "rid": "SV-79067r1_rule",
         "stig_id": "OH12-1X-000330",
-        "fix_id": "F-70507r1_fix"
+        "fix_id": "F-70507r1_fix",
+        "documentable": false
       },
       "id": "V-64577",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring SSL termination at OHS, OHS must have the WLSProxySSL directive enabled to maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -3950,11 +3950,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-WSR-000182",
         "gid": "V-64579",
         "rid": "SV-79069r1_rule",
         "stig_id": "OH12-1X-000331",
-        "fix_id": "F-70509r1_fix"
+        "fix_id": "F-70509r1_fix",
+        "documentable": false
       },
       "id": "V-64579",
       "title": "OHS must have the LoadModule ossl_module directive enabled to maintain the confidentiality and integrity of information during reception.",
@@ -3968,11 +3968,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-WSR-000182",
         "gid": "V-64581",
         "rid": "SV-79071r1_rule",
         "stig_id": "OH12-1X-000332",
-        "fix_id": "F-70511r1_fix"
+        "fix_id": "F-70511r1_fix",
+        "documentable": false
       },
       "id": "V-64581",
       "title": "OHS must have the SSLFIPS directive enabled to maintain the confidentiality and integrity of information during reception.",
@@ -3986,11 +3986,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-WSR-000182",
         "gid": "V-64583",
         "rid": "SV-79073r2_rule",
         "stig_id": "OH12-1X-000333",
-        "fix_id": "F-70513r2_fix"
+        "fix_id": "F-70513r2_fix",
+        "documentable": false
       },
       "id": "V-64583",
       "title": "OHS must have the SSLEngine, SSLProtocol, and SSLWallet directives enabled and configured to maintain the confidentiality and integrity of information during reception.",
@@ -4004,11 +4004,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-WSR-000182",
         "gid": "V-64585",
         "rid": "SV-79075r1_rule",
         "stig_id": "OH12-1X-000334",
-        "fix_id": "F-70515r1_fix"
+        "fix_id": "F-70515r1_fix",
+        "documentable": false
       },
       "id": "V-64585",
       "title": "OHS must have the SSLCipherSuite directive enabled to maintain the confidentiality and integrity of information during reception.",
@@ -4022,11 +4022,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-WSR-000182",
         "gid": "V-64587",
         "rid": "SV-79077r1_rule",
         "stig_id": "OH12-1X-000335",
-        "fix_id": "F-70517r1_fix"
+        "fix_id": "F-70517r1_fix",
+        "documentable": false
       },
       "id": "V-64587",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring end-to-end SSL, OHS must have the SSLSecureProxy directive enabled to maintain the confidentiality and integrity of information during reception.",
@@ -4040,11 +4040,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-WSR-000182",
         "gid": "V-64589",
         "rid": "SV-79079r1_rule",
         "stig_id": "OH12-1X-000336",
-        "fix_id": "F-70519r1_fix"
+        "fix_id": "F-70519r1_fix",
+        "documentable": false
       },
       "id": "V-64589",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring end-to-end SSL, OHS must have the WLSSLWallet directive enabled to maintain the confidentiality and integrity of information during reception.",
@@ -4058,11 +4058,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-WSR-000182",
         "gid": "V-64591",
         "rid": "SV-79081r1_rule",
         "stig_id": "OH12-1X-000337",
-        "fix_id": "F-70521r1_fix"
+        "fix_id": "F-70521r1_fix",
+        "documentable": false
       },
       "id": "V-64591",
       "title": "If using the WebLogic Web Server Proxy Plugin and configuring SSL termination at OHS, OHS must have the WLProxySSL directive enabled to maintain the confidentiality and integrity of information during reception.",
@@ -4076,11 +4076,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000079",
         "gid": "V-64593",
         "rid": "SV-79083r1_rule",
         "stig_id": "OH12-1X-000176",
-        "fix_id": "F-70523r1_fix"
+        "fix_id": "F-70523r1_fix",
+        "documentable": false
       },
       "id": "V-64593",
       "title": "The Node Manager account password associated with the installation of OHS must be in accordance with DoD guidance for length, complexity, etc.",
@@ -4094,11 +4094,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64595",
         "rid": "SV-79085r1_rule",
         "stig_id": "OH12-1X-000178",
-        "fix_id": "F-70525r1_fix"
+        "fix_id": "F-70525r1_fix",
+        "documentable": false
       },
       "id": "V-64595",
       "title": "OHS must have Entity tags (ETags) disabled.",
@@ -4112,11 +4112,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64597",
         "rid": "SV-79087r1_rule",
         "stig_id": "OH12-1X-000179",
-        "fix_id": "F-70527r1_fix"
+        "fix_id": "F-70527r1_fix",
+        "documentable": false
       },
       "id": "V-64597",
       "title": "The SecureListener property of the Node Manager configured to support OHS must be enabled for secure communication.",
@@ -4130,11 +4130,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64599",
         "rid": "SV-79089r1_rule",
         "stig_id": "OH12-1X-000180",
-        "fix_id": "F-70529r1_fix"
+        "fix_id": "F-70529r1_fix",
+        "documentable": false
       },
       "id": "V-64599",
       "title": "The ListenAddress property of the Node Manager configured to support OHS must match the CN of the certificate used by Node Manager.",
@@ -4148,11 +4148,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64601",
         "rid": "SV-79091r1_rule",
         "stig_id": "OH12-1X-000181",
-        "fix_id": "F-70531r1_fix"
+        "fix_id": "F-70531r1_fix",
+        "documentable": false
       },
       "id": "V-64601",
       "title": "The AuthenticationEnabled property of the Node Manager configured to support OHS must be configured to enforce authentication.",
@@ -4166,11 +4166,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64603",
         "rid": "SV-79093r1_rule",
         "stig_id": "OH12-1X-000182",
-        "fix_id": "F-70533r1_fix"
+        "fix_id": "F-70533r1_fix",
+        "documentable": false
       },
       "id": "V-64603",
       "title": "The KeyStores property of the Node Manager configured to support OHS must be configured for secure communication.",
@@ -4184,11 +4184,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64605",
         "rid": "SV-79095r1_rule",
         "stig_id": "OH12-1X-000183",
-        "fix_id": "F-70535r1_fix"
+        "fix_id": "F-70535r1_fix",
+        "documentable": false
       },
       "id": "V-64605",
       "title": "The CustomIdentityKeyStoreFileName property of the Node Manager configured to support OHS must be configured for secure communication.",
@@ -4202,11 +4202,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64607",
         "rid": "SV-79097r1_rule",
         "stig_id": "OH12-1X-000184",
-        "fix_id": "F-70537r1_fix"
+        "fix_id": "F-70537r1_fix",
+        "documentable": false
       },
       "id": "V-64607",
       "title": "The CustomIdentityKeyStorePassPhrase property of the Node Manager configured to support OHS must be configured for secure communication.",
@@ -4220,11 +4220,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64609",
         "rid": "SV-79099r1_rule",
         "stig_id": "OH12-1X-000185",
-        "fix_id": "F-70539r1_fix"
+        "fix_id": "F-70539r1_fix",
+        "documentable": false
       },
       "id": "V-64609",
       "title": "The CustomIdentityAlias property of the Node Manager configured to support OHS must be configured for secure communication.",
@@ -4238,11 +4238,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64611",
         "rid": "SV-79101r1_rule",
         "stig_id": "OH12-1X-000186",
-        "fix_id": "F-70541r1_fix"
+        "fix_id": "F-70541r1_fix",
+        "documentable": false
       },
       "id": "V-64611",
       "title": "The CustomIdentityPrivateKeyPassPhrase property of the Node Manager configured to support OHS must be configured for secure communication.",
@@ -4256,11 +4256,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64613",
         "rid": "SV-79103r1_rule",
         "stig_id": "OH12-1X-000187",
-        "fix_id": "F-70543r1_fix"
+        "fix_id": "F-70543r1_fix",
+        "documentable": false
       },
       "id": "V-64613",
       "title": "The listen-address element defined within the config.xml of the OHS Standalone domain that supports OHS must be configured for secure communication.",
@@ -4274,11 +4274,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64615",
         "rid": "SV-79105r1_rule",
         "stig_id": "OH12-1X-000188",
-        "fix_id": "F-70545r1_fix"
+        "fix_id": "F-70545r1_fix",
+        "documentable": false
       },
       "id": "V-64615",
       "title": "The listen-port element defined within the config.xml of the OHS Standalone Domain must be configured for secure communication.",
@@ -4292,11 +4292,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64617",
         "rid": "SV-79107r1_rule",
         "stig_id": "OH12-1X-000189",
-        "fix_id": "F-70547r1_fix"
+        "fix_id": "F-70547r1_fix",
+        "documentable": false
       },
       "id": "V-64617",
       "title": "The WLST_PROPERTIES environment variable defined for the OHS WebLogic Scripting Tool must be updated to reference an appropriate trust store so that it can communicate with the Node Manager supporting OHS.",
@@ -4310,11 +4310,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64619",
         "rid": "SV-79109r1_rule",
         "stig_id": "OH12-1X-000190",
-        "fix_id": "F-70549r1_fix"
+        "fix_id": "F-70549r1_fix",
+        "documentable": false
       },
       "id": "V-64619",
       "title": "The WLST_PROPERTIES environment variable defined for the Fusion Middleware WebLogic Scripting Tool must be updated to reference an appropriate trust store so that it can communicate with the Node Manager supporting OHS.",
@@ -4328,11 +4328,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64621",
         "rid": "SV-79111r1_rule",
         "stig_id": "OH12-1X-000234",
-        "fix_id": "F-70551r1_fix"
+        "fix_id": "F-70551r1_fix",
+        "documentable": false
       },
       "id": "V-64621",
       "title": "OHS must not have the directive PlsqlDatabasePassword set in clear text.",
@@ -4346,11 +4346,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64623",
         "rid": "SV-79113r1_rule",
         "stig_id": "OH12-1X-000192",
-        "fix_id": "F-70553r1_fix"
+        "fix_id": "F-70553r1_fix",
+        "documentable": false
       },
       "id": "V-64623",
       "title": "OHS must limit access to the Dynamic Monitoring Service (DMS).",
@@ -4364,11 +4364,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64625",
         "rid": "SV-79115r1_rule",
         "stig_id": "OH12-1X-000193",
-        "fix_id": "F-70555r1_fix"
+        "fix_id": "F-70555r1_fix",
+        "documentable": false
       },
       "id": "V-64625",
       "title": "OHS must have the AllowOverride directive set properly.",
@@ -4382,11 +4382,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64627",
         "rid": "SV-79117r1_rule",
         "stig_id": "OH12-1X-000194",
-        "fix_id": "F-70557r1_fix"
+        "fix_id": "F-70557r1_fix",
+        "documentable": false
       },
       "id": "V-64627",
       "title": "OHS must be set to evaluate deny directives first when considering whether to serve a file.",
@@ -4400,11 +4400,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64629",
         "rid": "SV-79119r1_rule",
         "stig_id": "OH12-1X-000195",
-        "fix_id": "F-70559r1_fix"
+        "fix_id": "F-70559r1_fix",
+        "documentable": false
       },
       "id": "V-64629",
       "title": "OHS must deny all access by default when considering whether to serve a file.",
@@ -4418,11 +4418,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64631",
         "rid": "SV-79121r1_rule",
         "stig_id": "OH12-1X-000196",
-        "fix_id": "F-70561r1_fix"
+        "fix_id": "F-70561r1_fix",
+        "documentable": false
       },
       "id": "V-64631",
       "title": "The OHS instance installation must not contain an .htaccess file.",
@@ -4436,11 +4436,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64633",
         "rid": "SV-79123r1_rule",
         "stig_id": "OH12-1X-000197",
-        "fix_id": "F-70563r1_fix"
+        "fix_id": "F-70563r1_fix",
+        "documentable": false
       },
       "id": "V-64633",
       "title": "The OHS instance configuration must not reference directories that contain an .htaccess file.",
@@ -4454,11 +4454,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64635",
         "rid": "SV-79125r1_rule",
         "stig_id": "OH12-1X-000198",
-        "fix_id": "F-70565r1_fix"
+        "fix_id": "F-70565r1_fix",
+        "documentable": false
       },
       "id": "V-64635",
       "title": "OHS must have the HostnameLookups directive enabled.",
@@ -4472,11 +4472,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64637",
         "rid": "SV-79127r1_rule",
         "stig_id": "OH12-1X-000199",
-        "fix_id": "F-70567r1_fix"
+        "fix_id": "F-70567r1_fix",
+        "documentable": false
       },
       "id": "V-64637",
       "title": "OHS must have the ServerAdmin directive set properly.",
@@ -4490,7 +4490,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64639",
         "rid": "SV-79129r1_rule",
         "stig_id": "OH12-1X-000200",
@@ -4498,7 +4497,7 @@
       },
       "id": "V-64639",
       "title": "OHS must restrict access methods.",
-      "desc": "<#text> The directive \"<LimitExcept> \" allows the system administrator to restrict what users may use which methods. An example of methods would be GET, POST and DELETE. These three are the most common used by applications and should be allowed. Methods such as TRACE, if allowed, give an attacker a way to map the system so that vulnerabilities to the system can be researched and developed.",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "1. Open $DOMAIN_HOME/config/fmwconfig/components/OHS/&lt;componentName&gt;/httpd.conf and every .conf file (e.g., ssl.conf) included in it with an editor. 2. Search for the \"&lt;LimitExcept&gt;\" directive at the directory configuration scope. 3. If the \"&lt;LimitExcept&gt;\" directive is omitted (with the exception of the \"&lt;Directory /&gt;\" directive) or is set improperly, this is a finding.",
@@ -4508,11 +4507,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64641",
         "rid": "SV-79131r1_rule",
         "stig_id": "OH12-1X-000201",
-        "fix_id": "F-70571r1_fix"
+        "fix_id": "F-70571r1_fix",
+        "documentable": false
       },
       "id": "V-64641",
       "title": "The OHS htdocs directory must not contain any default files.",
@@ -4526,11 +4525,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64643",
         "rid": "SV-79133r1_rule",
         "stig_id": "OH12-1X-000202",
-        "fix_id": "F-70573r1_fix"
+        "fix_id": "F-70573r1_fix",
+        "documentable": false
       },
       "id": "V-64643",
       "title": "OHS must have the SSLSessionCacheTimeout directive set properly.",
@@ -4544,11 +4543,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64645",
         "rid": "SV-79135r1_rule",
         "stig_id": "OH12-1X-000203",
-        "fix_id": "F-70575r1_fix"
+        "fix_id": "F-70575r1_fix",
+        "documentable": false
       },
       "id": "V-64645",
       "title": "OHS must have the RewriteEngine directive enabled.",
@@ -4562,11 +4561,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64647",
         "rid": "SV-79137r1_rule",
         "stig_id": "OH12-1X-000204",
-        "fix_id": "F-70577r1_fix"
+        "fix_id": "F-70577r1_fix",
+        "documentable": false
       },
       "id": "V-64647",
       "title": "OHS must have the RewriteOptions directive set properly.",
@@ -4580,11 +4579,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64649",
         "rid": "SV-79139r1_rule",
         "stig_id": "OH12-1X-000205",
-        "fix_id": "F-70579r1_fix"
+        "fix_id": "F-70579r1_fix",
+        "documentable": false
       },
       "id": "V-64649",
       "title": "OHS must have the RewriteLogLevel directive set to the proper log level.",
@@ -4598,11 +4597,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64651",
         "rid": "SV-79141r1_rule",
         "stig_id": "OH12-1X-000206",
-        "fix_id": "F-70581r1_fix"
+        "fix_id": "F-70581r1_fix",
+        "documentable": false
       },
       "id": "V-64651",
       "title": "OHS must have the RewriteLog directive set properly.",
@@ -4616,11 +4615,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64653",
         "rid": "SV-79143r2_rule",
         "stig_id": "OH12-1X-000207",
-        "fix_id": "F-70583r1_fix"
+        "fix_id": "F-70583r1_fix",
+        "documentable": false
       },
       "id": "V-64653",
       "title": "All accounts installed with the web server software and tools must have passwords assigned and default passwords changed.",
@@ -4634,11 +4633,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64655",
         "rid": "SV-79145r1_rule",
         "stig_id": "OH12-1X-000208",
-        "fix_id": "F-70585r1_fix"
+        "fix_id": "F-70585r1_fix",
+        "documentable": false
       },
       "id": "V-64655",
       "title": "A production OHS Installation must prohibit the installation of a compiler.",
@@ -4652,11 +4651,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64657",
         "rid": "SV-79147r1_rule",
         "stig_id": "OH12-1X-000209",
-        "fix_id": "F-70587r1_fix"
+        "fix_id": "F-70587r1_fix",
+        "documentable": false
       },
       "id": "V-64657",
       "title": "A public OHS installation, if hosted on the NIPRNet, must be isolated in an accredited DoD DMZ Extension.",
@@ -4670,11 +4669,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64659",
         "rid": "SV-79149r1_rule",
         "stig_id": "OH12-1X-000210",
-        "fix_id": "F-70589r1_fix"
+        "fix_id": "F-70589r1_fix",
+        "documentable": false
       },
       "id": "V-64659",
       "title": "A private OHS installation must be located on a separate controlled access subnet.",
@@ -4688,11 +4687,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64661",
         "rid": "SV-79151r1_rule",
         "stig_id": "OH12-1X-000211",
-        "fix_id": "F-70591r1_fix"
+        "fix_id": "F-70591r1_fix",
+        "documentable": false
       },
       "id": "V-64661",
       "title": "The version of the OHS installation must be vendor-supported.",
@@ -4706,11 +4705,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64663",
         "rid": "SV-79153r1_rule",
         "stig_id": "OH12-1X-000212",
-        "fix_id": "F-70593r1_fix"
+        "fix_id": "F-70593r1_fix",
+        "documentable": false
       },
       "id": "V-64663",
       "title": "OHS must be certified with accompanying Fusion Middleware products.",
@@ -4724,11 +4723,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64665",
         "rid": "SV-79155r1_rule",
         "stig_id": "OH12-1X-000214",
-        "fix_id": "F-70595r1_fix"
+        "fix_id": "F-70595r1_fix",
+        "documentable": false
       },
       "id": "V-64665",
       "title": "OHS tools must be restricted to the web manager and the web managers designees.",
@@ -4742,11 +4741,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64667",
         "rid": "SV-79157r1_rule",
         "stig_id": "OH12-1X-000215",
-        "fix_id": "F-70597r1_fix"
+        "fix_id": "F-70597r1_fix",
+        "documentable": false
       },
       "id": "V-64667",
       "title": "All utility programs, not necessary for operations, must be removed or disabled.",
@@ -4760,11 +4759,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64669",
         "rid": "SV-79159r1_rule",
         "stig_id": "OH12-1X-000216",
-        "fix_id": "F-70599r1_fix"
+        "fix_id": "F-70599r1_fix",
+        "documentable": false
       },
       "id": "V-64669",
       "title": "The OHS htpasswd files (if present) must reflect proper ownership and permissions.",
@@ -4778,11 +4777,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64671",
         "rid": "SV-79161r1_rule",
         "stig_id": "OH12-1X-000217",
-        "fix_id": "F-70601r1_fix"
+        "fix_id": "F-70601r1_fix",
+        "documentable": false
       },
       "id": "V-64671",
       "title": "A public OHS installation must limit email to outbound only.",
@@ -4796,11 +4795,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64673",
         "rid": "SV-79163r1_rule",
         "stig_id": "OH12-1X-000218",
-        "fix_id": "F-70603r1_fix"
+        "fix_id": "F-70603r1_fix",
+        "documentable": false
       },
       "id": "V-64673",
       "title": "OHS content and configuration files must be part of a routine backup program.",
@@ -4814,11 +4813,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64675",
         "rid": "SV-79165r1_rule",
         "stig_id": "OH12-1X-000219",
-        "fix_id": "F-70605r1_fix"
+        "fix_id": "F-70605r1_fix",
+        "documentable": false
       },
       "id": "V-64675",
       "title": "OHS must be segregated from other services.",
@@ -4832,11 +4831,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64677",
         "rid": "SV-79167r1_rule",
         "stig_id": "OH12-1X-000220",
-        "fix_id": "F-70607r1_fix"
+        "fix_id": "F-70607r1_fix",
+        "documentable": false
       },
       "id": "V-64677",
       "title": "OHS must have all applicable patches (i.e., CPUs) applied/documented (OEM).",
@@ -4850,11 +4849,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64679",
         "rid": "SV-79169r1_rule",
         "stig_id": "OH12-1X-000221",
-        "fix_id": "F-70609r1_fix"
+        "fix_id": "F-70609r1_fix",
+        "documentable": false
       },
       "id": "V-64679",
       "title": "A private OHS list of CAs in a trust hierarchy must lead to an authorized DoD PKI Root CA.",
@@ -4868,11 +4867,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64681",
         "rid": "SV-79171r1_rule",
         "stig_id": "OH12-1X-000222",
-        "fix_id": "F-70611r1_fix"
+        "fix_id": "F-70611r1_fix",
+        "documentable": false
       },
       "id": "V-64681",
       "title": "OHS must have the ScoreBoardFile directive disabled.",
@@ -4886,11 +4885,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64683",
         "rid": "SV-79173r1_rule",
         "stig_id": "OH12-1X-000223",
-        "fix_id": "F-70613r1_fix"
+        "fix_id": "F-70613r1_fix",
+        "documentable": false
       },
       "id": "V-64683",
       "title": "The OHS document root directory must not be on a network share.",
@@ -4904,11 +4903,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64685",
         "rid": "SV-79175r1_rule",
         "stig_id": "OH12-1X-000224",
-        "fix_id": "F-70615r1_fix"
+        "fix_id": "F-70615r1_fix",
+        "documentable": false
       },
       "id": "V-64685",
       "title": "The OHS server root directory must not be on a network share.",
@@ -4922,11 +4921,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64687",
         "rid": "SV-79177r1_rule",
         "stig_id": "OH12-1X-000225",
-        "fix_id": "F-70617r1_fix"
+        "fix_id": "F-70617r1_fix",
+        "documentable": false
       },
       "id": "V-64687",
       "title": "Symbolic links must not be used in the web content directory tree.",
@@ -4940,11 +4939,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64689",
         "rid": "SV-79179r1_rule",
         "stig_id": "OH12-1X-000226",
-        "fix_id": "F-70619r1_fix"
+        "fix_id": "F-70619r1_fix",
+        "documentable": false
       },
       "id": "V-64689",
       "title": "OHS administration must be performed over a secure path or at the local console.",
@@ -4958,11 +4957,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64691",
         "rid": "SV-79181r1_rule",
         "stig_id": "OH12-1X-000227",
-        "fix_id": "F-70621r1_fix"
+        "fix_id": "F-70621r1_fix",
+        "documentable": false
       },
       "id": "V-64691",
       "title": "OHS must not contain any robots.txt files.",
@@ -4976,11 +4975,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64693",
         "rid": "SV-79183r1_rule",
         "stig_id": "OH12-1X-000228",
-        "fix_id": "F-70623r1_fix"
+        "fix_id": "F-70623r1_fix",
+        "documentable": false
       },
       "id": "V-64693",
       "title": "OHS must prohibit anonymous FTP user access to interactive scripts.",
@@ -4994,11 +4993,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64695",
         "rid": "SV-79185r1_rule",
         "stig_id": "OH12-1X-000229",
-        "fix_id": "F-70625r1_fix"
+        "fix_id": "F-70625r1_fix",
+        "documentable": false
       },
       "id": "V-64695",
       "title": "The OHS DocumentRoot directory must be in a separate partition from the OHS ServerRoot directory.",
@@ -5012,11 +5011,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64697",
         "rid": "SV-79187r1_rule",
         "stig_id": "OH12-1X-000230",
-        "fix_id": "F-70627r1_fix"
+        "fix_id": "F-70627r1_fix",
+        "documentable": false
       },
       "id": "V-64697",
       "title": "The OHS DocumentRoot directory must be on a separate partition from OS root partition.",
@@ -5030,11 +5029,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64699",
         "rid": "SV-79189r1_rule",
         "stig_id": "OH12-1X-000231",
-        "fix_id": "F-70629r1_fix"
+        "fix_id": "F-70629r1_fix",
+        "documentable": false
       },
       "id": "V-64699",
       "title": "Remote authors or content providers must have all files scanned for viruses and malicious code before uploading files to the Document Root directory.",
@@ -5048,11 +5047,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64701",
         "rid": "SV-79191r2_rule",
         "stig_id": "OH12-1X-000232",
-        "fix_id": "F-70631r2_fix"
+        "fix_id": "F-70631r2_fix",
+        "documentable": false
       },
       "id": "V-64701",
       "title": "A public OHS server must use TLS if authentication is required to host web sites.",
@@ -5066,11 +5065,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-WSR-000174",
         "gid": "V-64703",
         "rid": "SV-79193r1_rule",
         "stig_id": "OH12-1X-000233",
-        "fix_id": "F-70633r1_fix"
+        "fix_id": "F-70633r1_fix",
+        "documentable": false
       },
       "id": "V-64703",
       "title": "OHS hosted web sites must utilize ports, protocols, and services according to PPSM guidelines.",
@@ -5082,7 +5081,5 @@
       }
     }
   ],
-  "name": "Oracle_HTTP_Server_12-1-3_STIG",
-  "title": "Oracle HTTP Server 12.1.3 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil."
+  "name": "Oracle_HTTP_Server_12-1-3_STIG"
 }

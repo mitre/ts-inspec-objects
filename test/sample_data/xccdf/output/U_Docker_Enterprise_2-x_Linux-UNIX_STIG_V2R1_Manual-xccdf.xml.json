@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000001",
         "gid": "V-235775",
         "rid": "SV-235775r627452_rule",
         "stig_id": "DKER-EE-001000",
-        "fix_id": "F-38957r627451_fix"
+        "fix_id": "F-38957r627451_fix",
+        "documentable": false
       },
       "id": "V-235775",
       "title": "The Docker Enterprise Per User Limit Login Session Control in the Universal Control Plane (UCP) Admin Settings must be set to an organization-defined value for all accounts and/or account types.",
@@ -26,7 +26,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014",
+        "gid": "V-235776",
+        "rid": "SV-235776r627455_rule",
+        "stig_id": "DKER-EE-001050",
+        "fix_id": "F-38958r627454_fix",
         "satisfies": [
           "SRG-APP-000014",
           "SRG-APP-000141",
@@ -38,10 +41,7 @@
           "SRG-APP-000442",
           "SRG-APP-000142"
         ],
-        "gid": "V-235776",
-        "rid": "SV-235776r627455_rule",
-        "stig_id": "DKER-EE-001050",
-        "fix_id": "F-38958r627454_fix"
+        "documentable": false
       },
       "id": "V-235776",
       "title": "TCP socket binding for all Docker Engine - Enterprise nodes in a Universal Control Plane (UCP) cluster must be disabled.",
@@ -55,7 +55,10 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000015",
+        "gid": "V-235777",
+        "rid": "SV-235777r627458_rule",
+        "stig_id": "DKER-EE-001070",
+        "fix_id": "F-38959r627457_fix",
         "satisfies": [
           "SRG-APP-000015",
           "SRG-APP-000231",
@@ -73,10 +76,7 @@
           "SRG-APP-000555",
           "SRG-APP-000635"
         ],
-        "gid": "V-235777",
-        "rid": "SV-235777r627458_rule",
-        "stig_id": "DKER-EE-001070",
-        "fix_id": "F-38959r627457_fix"
+        "documentable": false
       },
       "id": "V-235777",
       "title": "FIPS mode must be enabled on all Docker Engine - Enterprise nodes.",
@@ -90,7 +90,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016",
+        "gid": "V-235778",
+        "rid": "SV-235778r627461_rule",
+        "stig_id": "DKER-EE-001080",
+        "fix_id": "F-38960r627460_fix",
         "satisfies": [
           "SRG-APP-000016",
           "SRG-APP-000089",
@@ -129,10 +132,7 @@
           "SRG-APP-000092",
           "SRG-APP-000091"
         ],
-        "gid": "V-235778",
-        "rid": "SV-235778r627461_rule",
-        "stig_id": "DKER-EE-001080",
-        "fix_id": "F-38960r627460_fix"
+        "documentable": false
       },
       "id": "V-235778",
       "title": "The audit log configuration level must be set to request in the Universal Control Plane (UCP) component of Docker Enterprise.",
@@ -146,7 +146,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016",
+        "gid": "V-235779",
+        "rid": "SV-235779r627464_rule",
+        "stig_id": "DKER-EE-001090",
+        "fix_id": "F-38961r627463_fix",
         "satisfies": [
           "SRG-APP-000016",
           "SRG-APP-000090",
@@ -187,10 +190,7 @@
           "SRG-APP-000501",
           "SRG-APP-000447"
         ],
-        "gid": "V-235779",
-        "rid": "SV-235779r627464_rule",
-        "stig_id": "DKER-EE-001090",
-        "fix_id": "F-38961r627463_fix"
+        "documentable": false
       },
       "id": "V-235779",
       "title": "The host operating systems auditing policies for the Docker Engine - Enterprise component of Docker Enterprise must be set.",
@@ -204,7 +204,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000023",
+        "gid": "V-235780",
+        "rid": "SV-235780r627467_rule",
+        "stig_id": "DKER-EE-001100",
+        "fix_id": "F-38962r627466_fix",
         "satisfies": [
           "SRG-APP-000023",
           "SRG-APP-000405",
@@ -217,10 +220,7 @@
           "SRG-APP-000141",
           "SRG-APP-000391"
         ],
-        "gid": "V-235780",
-        "rid": "SV-235780r627467_rule",
-        "stig_id": "DKER-EE-001100",
-        "fix_id": "F-38962r627466_fix"
+        "documentable": false
       },
       "id": "V-235780",
       "title": "LDAP integration in Docker Enterprise must be configured.",
@@ -234,7 +234,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
+        "gid": "V-235781",
+        "rid": "SV-235781r627470_rule",
+        "stig_id": "DKER-EE-001170",
+        "fix_id": "F-38963r627469_fix",
         "satisfies": [
           "SRG-APP-000033",
           "SRG-APP-000038",
@@ -254,10 +257,7 @@
           "SRG-APP-000380",
           "SRG-APP-000384"
         ],
-        "gid": "V-235781",
-        "rid": "SV-235781r627470_rule",
-        "stig_id": "DKER-EE-001170",
-        "fix_id": "F-38963r627469_fix"
+        "documentable": false
       },
       "id": "V-235781",
       "title": "A policy set using the built-in role-based access control (RBAC) capabilities in the Universal Control Plane (UCP) component of Docker Enterprise must be configured.",
@@ -271,7 +271,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
+        "gid": "V-235782",
+        "rid": "SV-235782r627473_rule",
+        "stig_id": "DKER-EE-001180",
+        "fix_id": "F-38964r627472_fix",
         "satisfies": [
           "SRG-APP-000033",
           "SRG-APP-000243",
@@ -291,10 +294,7 @@
           "SRG-APP-000313",
           "SRG-APP-000314"
         ],
-        "gid": "V-235782",
-        "rid": "SV-235782r627473_rule",
-        "stig_id": "DKER-EE-001180",
-        "fix_id": "F-38964r627472_fix"
+        "documentable": false
       },
       "id": "V-235782",
       "title": "A policy set using the built-in role-based access control (RBAC) capabilities in the Docker Trusted Registry (DTR) component of Docker Enterprise must be set.",
@@ -308,11 +308,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-235783",
         "rid": "SV-235783r627476_rule",
         "stig_id": "DKER-EE-001190",
-        "fix_id": "F-38965r627475_fix"
+        "fix_id": "F-38965r627475_fix",
+        "documentable": false
       },
       "id": "V-235783",
       "title": "Docker Enterprise sensitive host system directories must not be mounted on containers.",
@@ -326,11 +326,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-235784",
         "rid": "SV-235784r627479_rule",
         "stig_id": "DKER-EE-001240",
-        "fix_id": "F-38966r627478_fix"
+        "fix_id": "F-38966r627478_fix",
+        "documentable": false
       },
       "id": "V-235784",
       "title": "The Docker Enterprise hosts process namespace must not be shared.",
@@ -344,11 +344,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-235785",
         "rid": "SV-235785r627482_rule",
         "stig_id": "DKER-EE-001250",
-        "fix_id": "F-38967r627481_fix"
+        "fix_id": "F-38967r627481_fix",
+        "documentable": false
       },
       "id": "V-235785",
       "title": "The Docker Enterprise hosts IPC namespace must not be shared.",
@@ -362,11 +362,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090",
         "gid": "V-235786",
         "rid": "SV-235786r627485_rule",
         "stig_id": "DKER-EE-001370",
-        "fix_id": "F-38968r627484_fix"
+        "fix_id": "F-38968r627484_fix",
+        "documentable": false
       },
       "id": "V-235786",
       "title": "log-opts on all Docker Engine - Enterprise nodes must be configured.",
@@ -380,11 +380,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000108",
         "gid": "V-235787",
         "rid": "SV-235787r627488_rule",
         "stig_id": "DKER-EE-001590",
-        "fix_id": "F-38969r627487_fix"
+        "fix_id": "F-38969r627487_fix",
+        "documentable": false
       },
       "id": "V-235787",
       "title": "Docker Enterprise must alert the ISSO and SA (at a minimum) in the event of an audit processing failure.",
@@ -398,11 +398,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-235788",
         "rid": "SV-235788r627491_rule",
         "stig_id": "DKER-EE-001770",
-        "fix_id": "F-38970r627490_fix"
+        "fix_id": "F-38970r627490_fix",
+        "documentable": false
       },
       "id": "V-235788",
       "title": "Docker Incs official GPG key must be added to the host using the users operating systems respective package repository management tooling.",
@@ -416,11 +416,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235789",
         "rid": "SV-235789r627494_rule",
         "stig_id": "DKER-EE-001800",
-        "fix_id": "F-38971r627493_fix"
+        "fix_id": "F-38971r627493_fix",
+        "documentable": false
       },
       "id": "V-235789",
       "title": "The insecure registry capability in the Docker Engine - Enterprise component of Docker Enterprise must be disabled.",
@@ -434,11 +434,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235790",
         "rid": "SV-235790r627497_rule",
         "stig_id": "DKER-EE-001810",
-        "fix_id": "F-38972r627496_fix"
+        "fix_id": "F-38972r627496_fix",
+        "documentable": false
       },
       "id": "V-235790",
       "title": "On Linux, a non-AUFS storage driver in the Docker Engine - Enterprise component of Docker Enterprise must be used.",
@@ -452,11 +452,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235791",
         "rid": "SV-235791r627500_rule",
         "stig_id": "DKER-EE-001830",
-        "fix_id": "F-38973r627499_fix"
+        "fix_id": "F-38973r627499_fix",
+        "documentable": false
       },
       "id": "V-235791",
       "title": "The userland proxy capability in the Docker Engine - Enterprise component of Docker Enterprise must be disabled.",
@@ -470,11 +470,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235792",
         "rid": "SV-235792r627503_rule",
         "stig_id": "DKER-EE-001840",
-        "fix_id": "F-38974r627502_fix"
+        "fix_id": "F-38974r627502_fix",
+        "documentable": false
       },
       "id": "V-235792",
       "title": "Experimental features in the Docker Engine - Enterprise component of Docker Enterprise must be disabled.",
@@ -488,11 +488,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235793",
         "rid": "SV-235793r627506_rule",
         "stig_id": "DKER-EE-001870",
-        "fix_id": "F-38975r627505_fix"
+        "fix_id": "F-38975r627505_fix",
+        "documentable": false
       },
       "id": "V-235793",
       "title": "The Docker Enterprise self-signed certificates in Universal Control Plane (UCP) must be replaced with DoD trusted, signed certificates.",
@@ -506,11 +506,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235794",
         "rid": "SV-235794r627509_rule",
         "stig_id": "DKER-EE-001880",
-        "fix_id": "F-38976r627508_fix"
+        "fix_id": "F-38976r627508_fix",
+        "documentable": false
       },
       "id": "V-235794",
       "title": "The Docker Enterprise self-signed certificates in Docker Trusted Registry (DTR) must be replaced with DoD trusted, signed certificates.",
@@ -524,11 +524,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235795",
         "rid": "SV-235795r627512_rule",
         "stig_id": "DKER-EE-001890",
-        "fix_id": "F-38977r627511_fix"
+        "fix_id": "F-38977r627511_fix",
+        "documentable": false
       },
       "id": "V-235795",
       "title": "The option in Universal Control Plane (UCP) allowing users and administrators to schedule containers on all nodes, including UCP managers and Docker Trusted Registry (DTR) nodes must be disabled in Docker Enterprise.",
@@ -542,11 +542,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235796",
         "rid": "SV-235796r627515_rule",
         "stig_id": "DKER-EE-001900",
-        "fix_id": "F-38978r627514_fix"
+        "fix_id": "F-38978r627514_fix",
+        "documentable": false
       },
       "id": "V-235796",
       "title": "The Create repository on push option in Docker Trusted Registry (DTR) must be disabled in Docker Enterprise.",
@@ -560,11 +560,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235797",
         "rid": "SV-235797r627518_rule",
         "stig_id": "DKER-EE-001910",
-        "fix_id": "F-38979r627517_fix"
+        "fix_id": "F-38979r627517_fix",
+        "documentable": false
       },
       "id": "V-235797",
       "title": "Periodic data usage and analytics reporting in Universal Control Plane (UCP) must be disabled in Docker Enterprise.",
@@ -578,11 +578,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235798",
         "rid": "SV-235798r627521_rule",
         "stig_id": "DKER-EE-001920",
-        "fix_id": "F-38980r627520_fix"
+        "fix_id": "F-38980r627520_fix",
+        "documentable": false
       },
       "id": "V-235798",
       "title": "Periodic data usage and analytics reporting in Docker Trusted Registry (DTR) must be disabled in Docker Enterprise.",
@@ -596,11 +596,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235799",
         "rid": "SV-235799r627524_rule",
         "stig_id": "DKER-EE-001930",
-        "fix_id": "F-38981r627523_fix"
+        "fix_id": "F-38981r627523_fix",
+        "documentable": false
       },
       "id": "V-235799",
       "title": "An appropriate AppArmor profile must be enabled on Ubuntu systems for Docker Enterprise.",
@@ -614,11 +614,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235800",
         "rid": "SV-235800r627527_rule",
         "stig_id": "DKER-EE-001940",
-        "fix_id": "F-38982r627526_fix"
+        "fix_id": "F-38982r627526_fix",
+        "documentable": false
       },
       "id": "V-235800",
       "title": "SELinux security options must be set on Red Hat or CentOS systems for Docker Enterprise.",
@@ -632,11 +632,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235801",
         "rid": "SV-235801r627530_rule",
         "stig_id": "DKER-EE-001950",
-        "fix_id": "F-38983r627529_fix"
+        "fix_id": "F-38983r627529_fix",
+        "documentable": false
       },
       "id": "V-235801",
       "title": "Linux Kernel capabilities must be restricted within containers as defined in the System Security Plan (SSP) for Docker Enterprise.",
@@ -650,11 +650,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235802",
         "rid": "SV-235802r672378_rule",
         "stig_id": "DKER-EE-001960",
-        "fix_id": "F-38984r627532_fix"
+        "fix_id": "F-38984r627532_fix",
+        "documentable": false
       },
       "id": "V-235802",
       "title": "Privileged Linux containers must not be used for Docker Enterprise.",
@@ -668,11 +668,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235803",
         "rid": "SV-235803r627536_rule",
         "stig_id": "DKER-EE-001970",
-        "fix_id": "F-38985r627535_fix"
+        "fix_id": "F-38985r627535_fix",
+        "documentable": false
       },
       "id": "V-235803",
       "title": "SSH must not run within Linux containers for Docker Enterprise.",
@@ -686,11 +686,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235804",
         "rid": "SV-235804r627539_rule",
         "stig_id": "DKER-EE-001990",
-        "fix_id": "F-38986r627538_fix"
+        "fix_id": "F-38986r627538_fix",
+        "documentable": false
       },
       "id": "V-235804",
       "title": "Only required ports must be open on the containers in Docker Enterprise.",
@@ -704,11 +704,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235805",
         "rid": "SV-235805r627542_rule",
         "stig_id": "DKER-EE-002000",
-        "fix_id": "F-38987r627541_fix"
+        "fix_id": "F-38987r627541_fix",
+        "documentable": false
       },
       "id": "V-235805",
       "title": "Docker Enterprise hosts network namespace must not be shared.",
@@ -722,11 +722,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235806",
         "rid": "SV-235806r627545_rule",
         "stig_id": "DKER-EE-002010",
-        "fix_id": "F-38988r627544_fix"
+        "fix_id": "F-38988r627544_fix",
+        "documentable": false
       },
       "id": "V-235806",
       "title": "Memory usage for all containers must be limited in Docker Enterprise.",
@@ -740,11 +740,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235807",
         "rid": "SV-235807r627548_rule",
         "stig_id": "DKER-EE-002020",
-        "fix_id": "F-38989r627547_fix"
+        "fix_id": "F-38989r627547_fix",
+        "documentable": false
       },
       "id": "V-235807",
       "title": "Docker Enterprise CPU priority must be set appropriately on all containers.",
@@ -758,11 +758,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235808",
         "rid": "SV-235808r627551_rule",
         "stig_id": "DKER-EE-002030",
-        "fix_id": "F-38990r627550_fix"
+        "fix_id": "F-38990r627550_fix",
+        "documentable": false
       },
       "id": "V-235808",
       "title": "All Docker Enterprise containers root filesystem must be mounted as read only.",
@@ -776,11 +776,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235809",
         "rid": "SV-235809r627554_rule",
         "stig_id": "DKER-EE-002040",
-        "fix_id": "F-38991r627553_fix"
+        "fix_id": "F-38991r627553_fix",
+        "documentable": false
       },
       "id": "V-235809",
       "title": "Docker Enterprise host devices must not be directly exposed to containers.",
@@ -794,11 +794,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235810",
         "rid": "SV-235810r627557_rule",
         "stig_id": "DKER-EE-002050",
-        "fix_id": "F-38992r627556_fix"
+        "fix_id": "F-38992r627556_fix",
+        "documentable": false
       },
       "id": "V-235810",
       "title": "Mount propagation mode must not set to shared in Docker Enterprise.",
@@ -812,11 +812,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235811",
         "rid": "SV-235811r627560_rule",
         "stig_id": "DKER-EE-002060",
-        "fix_id": "F-38993r627559_fix"
+        "fix_id": "F-38993r627559_fix",
+        "documentable": false
       },
       "id": "V-235811",
       "title": "The Docker Enterprise hosts UTS namespace must not be shared.",
@@ -830,11 +830,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235812",
         "rid": "SV-235812r627563_rule",
         "stig_id": "DKER-EE-002070",
-        "fix_id": "F-38994r627562_fix"
+        "fix_id": "F-38994r627562_fix",
+        "documentable": false
       },
       "id": "V-235812",
       "title": "The Docker Enterprise default seccomp profile must not be disabled.",
@@ -848,11 +848,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235813",
         "rid": "SV-235813r627566_rule",
         "stig_id": "DKER-EE-002080",
-        "fix_id": "F-38995r627565_fix"
+        "fix_id": "F-38995r627565_fix",
+        "documentable": false
       },
       "id": "V-235813",
       "title": "Docker Enterprise exec commands must not be used with privileged option.",
@@ -866,11 +866,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235814",
         "rid": "SV-235814r627569_rule",
         "stig_id": "DKER-EE-002090",
-        "fix_id": "F-38996r627568_fix"
+        "fix_id": "F-38996r627568_fix",
+        "documentable": false
       },
       "id": "V-235814",
       "title": "Docker Enterprise exec commands must not be used with the user option.",
@@ -884,11 +884,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235815",
         "rid": "SV-235815r627572_rule",
         "stig_id": "DKER-EE-002100",
-        "fix_id": "F-38997r627571_fix"
+        "fix_id": "F-38997r627571_fix",
+        "documentable": false
       },
       "id": "V-235815",
       "title": "cgroup usage must be confirmed in Docker Enterprise.",
@@ -902,11 +902,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235816",
         "rid": "SV-235816r672380_rule",
         "stig_id": "DKER-EE-002110",
-        "fix_id": "F-38998r627574_fix"
+        "fix_id": "F-38998r627574_fix",
+        "documentable": false
       },
       "id": "V-235816",
       "title": "All Docker Enterprise containers must be restricted from acquiring additional privileges.",
@@ -920,11 +920,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235817",
         "rid": "SV-235817r627578_rule",
         "stig_id": "DKER-EE-002120",
-        "fix_id": "F-38999r627577_fix"
+        "fix_id": "F-38999r627577_fix",
+        "documentable": false
       },
       "id": "V-235817",
       "title": "The Docker Enterprise hosts user namespace must not be shared.",
@@ -938,11 +938,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-235818",
         "rid": "SV-235818r627581_rule",
         "stig_id": "DKER-EE-002130",
-        "fix_id": "F-39000r627580_fix"
+        "fix_id": "F-39000r627580_fix",
+        "documentable": false
       },
       "id": "V-235818",
       "title": "The Docker Enterprise socket must not be mounted inside any containers.",
@@ -956,11 +956,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-235819",
         "rid": "SV-235819r627584_rule",
         "stig_id": "DKER-EE-002150",
-        "fix_id": "F-39001r627583_fix"
+        "fix_id": "F-39001r627583_fix",
+        "documentable": false
       },
       "id": "V-235819",
       "title": "Docker Enterprise privileged ports must not be mapped within containers.",
@@ -974,11 +974,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-235820",
         "rid": "SV-235820r627587_rule",
         "stig_id": "DKER-EE-002160",
-        "fix_id": "F-39002r627586_fix"
+        "fix_id": "F-39002r627586_fix",
+        "documentable": false
       },
       "id": "V-235820",
       "title": "Docker Enterprise incoming container traffic must be bound to a specific host interface.",
@@ -992,7 +992,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000149",
+        "gid": "V-235821",
+        "rid": "SV-235821r627590_rule",
+        "stig_id": "DKER-EE-002180",
+        "fix_id": "F-39003r627589_fix",
         "satisfies": [
           "SRG-APP-000149",
           "SRG-APP-000150",
@@ -1006,10 +1009,7 @@
           "SRG-APP-000404",
           "SRG-APP-000405"
         ],
-        "gid": "V-235821",
-        "rid": "SV-235821r627590_rule",
-        "stig_id": "DKER-EE-002180",
-        "fix_id": "F-39003r627589_fix"
+        "documentable": false
       },
       "id": "V-235821",
       "title": "SAML integration must be enabled in Docker Enterprise.",
@@ -1023,11 +1023,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175",
         "gid": "V-235822",
         "rid": "SV-235822r627593_rule",
         "stig_id": "DKER-EE-002380",
-        "fix_id": "F-39004r627592_fix"
+        "fix_id": "F-39004r627592_fix",
+        "documentable": false
       },
       "id": "V-235822",
       "title": "The certificate chain used by Universal Control Plane (UCP) client bundles must match what is defined in the System Security Plan (SSP) in Docker Enterprise.",
@@ -1041,11 +1041,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176",
         "gid": "V-235823",
         "rid": "SV-235823r627596_rule",
         "stig_id": "DKER-EE-002400",
-        "fix_id": "F-39005r627595_fix"
+        "fix_id": "F-39005r627595_fix",
+        "documentable": false
       },
       "id": "V-235823",
       "title": "Docker Enterprise Swarm manager must be run in auto-lock mode.",
@@ -1059,11 +1059,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176",
         "gid": "V-235824",
         "rid": "SV-235824r627599_rule",
         "stig_id": "DKER-EE-002410",
-        "fix_id": "F-39006r627598_fix"
+        "fix_id": "F-39006r627598_fix",
+        "documentable": false
       },
       "id": "V-235824",
       "title": "Docker Enterprise secret management commands must be used for managing secrets in a Swarm cluster.",
@@ -1077,7 +1077,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000190",
+        "gid": "V-235825",
+        "rid": "SV-235825r627602_rule",
+        "stig_id": "DKER-EE-002490",
+        "fix_id": "F-39007r627601_fix",
         "satisfies": [
           "SRG-APP-000190",
           "SRG-APP-000002",
@@ -1086,10 +1089,7 @@
           "SRG-APP-000389",
           "SRG-APP-000400"
         ],
-        "gid": "V-235825",
-        "rid": "SV-235825r627602_rule",
-        "stig_id": "DKER-EE-002490",
-        "fix_id": "F-39007r627601_fix"
+        "documentable": false
       },
       "id": "V-235825",
       "title": "The Lifetime Minutes and Renewal Threshold Minutes Login Session Controls must be set to 10 and 0 respectively in Docker Enterprise.",
@@ -1103,11 +1103,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231",
         "gid": "V-235826",
         "rid": "SV-235826r627605_rule",
         "stig_id": "DKER-EE-002660",
-        "fix_id": "F-39008r627604_fix"
+        "fix_id": "F-39008r627604_fix",
+        "documentable": false
       },
       "id": "V-235826",
       "title": "Docker Secrets must be used to store configuration files and small amounts of user-generated data (up to 500 kb in size) in Docker Enterprise.",
@@ -1121,11 +1121,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000247",
         "gid": "V-235827",
         "rid": "SV-235827r627608_rule",
         "stig_id": "DKER-EE-002770",
-        "fix_id": "F-39009r627607_fix"
+        "fix_id": "F-39009r627607_fix",
+        "documentable": false
       },
       "id": "V-235827",
       "title": "Docker Enterprise container health must be checked at runtime.",
@@ -1139,11 +1139,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000247",
         "gid": "V-235828",
         "rid": "SV-235828r627611_rule",
         "stig_id": "DKER-EE-002780",
-        "fix_id": "F-39010r627610_fix"
+        "fix_id": "F-39010r627610_fix",
+        "documentable": false
       },
       "id": "V-235828",
       "title": "PIDs cgroup limits must be used in Docker Enterprise.",
@@ -1157,11 +1157,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000295",
         "gid": "V-235829",
         "rid": "SV-235829r627614_rule",
         "stig_id": "DKER-EE-002970",
-        "fix_id": "F-39011r627613_fix"
+        "fix_id": "F-39011r627613_fix",
+        "documentable": false
       },
       "id": "V-235829",
       "title": "The Docker Enterprise per user limit login session control must be set per the requirements in the System Security Plan (SSP).",
@@ -1175,11 +1175,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000342",
         "gid": "V-235830",
         "rid": "SV-235830r627617_rule",
         "stig_id": "DKER-EE-003200",
-        "fix_id": "F-39012r627616_fix"
+        "fix_id": "F-39012r627616_fix",
+        "documentable": false
       },
       "id": "V-235830",
       "title": "Docker Enterprise images must be built with the USER instruction to prevent containers from running as root.",
@@ -1193,7 +1193,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000343",
+        "gid": "V-235831",
+        "rid": "SV-235831r627620_rule",
+        "stig_id": "DKER-EE-003230",
+        "fix_id": "F-39013r627619_fix",
         "satisfies": [
           "SRG-APP-000343",
           "SRG-APP-000381",
@@ -1217,10 +1220,7 @@
           "SRG-APP-000510",
           "SRG-APP-000500"
         ],
-        "gid": "V-235831",
-        "rid": "SV-235831r627620_rule",
-        "stig_id": "DKER-EE-003230",
-        "fix_id": "F-39013r627619_fix"
+        "documentable": false
       },
       "id": "V-235831",
       "title": "An appropriate Docker Engine - Enterprise log driver plugin must be configured to collect audit events from Universal Control Plane (UCP) and Docker Trusted Registry (DTR).",
@@ -1234,11 +1234,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357",
         "gid": "V-235832",
         "rid": "SV-235832r695335_rule",
         "stig_id": "DKER-EE-003310",
-        "fix_id": "F-39014r627622_fix"
+        "fix_id": "F-39014r627622_fix",
+        "documentable": false
       },
       "id": "V-235832",
       "title": "The Docker Enterprise max-size and max-file json-file drivers logging options in the daemon.json configuration file must be configured to allocate audit record storage capacity for Universal Control Plane (UCP) and Docker Trusted Registry (DTR) per the requirements set forth by the System Security Plan (SSP).",
@@ -1252,11 +1252,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000358",
         "gid": "V-235833",
         "rid": "SV-235833r627626_rule",
         "stig_id": "DKER-EE-003320",
-        "fix_id": "F-39015r627625_fix"
+        "fix_id": "F-39015r627625_fix",
+        "documentable": false
       },
       "id": "V-235833",
       "title": "All Docker Engine - Enterprise nodes must be configured with a log driver plugin that sends logs to a remote log aggregation system (SIEM).",
@@ -1270,11 +1270,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000359",
         "gid": "V-235834",
         "rid": "SV-235834r627629_rule",
         "stig_id": "DKER-EE-003330",
-        "fix_id": "F-39016r627628_fix"
+        "fix_id": "F-39016r627628_fix",
+        "documentable": false
       },
       "id": "V-235834",
       "title": "Log aggregation/SIEM systems must be configured to alarm when audit storage space for Docker Engine - Enterprise nodes exceed 75% usage.",
@@ -1288,11 +1288,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360",
         "gid": "V-235835",
         "rid": "SV-235835r627632_rule",
         "stig_id": "DKER-EE-003340",
-        "fix_id": "F-39017r627631_fix"
+        "fix_id": "F-39017r627631_fix",
+        "documentable": false
       },
       "id": "V-235835",
       "title": "Log aggregation/SIEM systems must be configured to notify SA and ISSO on Docker Engine - Enterprise audit failure events.",
@@ -1306,11 +1306,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000377",
         "gid": "V-235836",
         "rid": "SV-235836r627635_rule",
         "stig_id": "DKER-EE-003460",
-        "fix_id": "F-39018r627634_fix"
+        "fix_id": "F-39018r627634_fix",
+        "documentable": false
       },
       "id": "V-235836",
       "title": "The Docker Enterprise log aggregation/SIEM systems must be configured to send an alert the ISSO/ISSM when unauthorized software is installed.",
@@ -1324,11 +1324,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383",
         "gid": "V-235837",
         "rid": "SV-235837r627638_rule",
         "stig_id": "DKER-EE-003560",
-        "fix_id": "F-39019r627637_fix"
+        "fix_id": "F-39019r627637_fix",
+        "documentable": false
       },
       "id": "V-235837",
       "title": "Docker Enterprise network ports on all running containers must be limited to what is needed.",
@@ -1342,11 +1342,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000386",
         "gid": "V-235838",
         "rid": "SV-235838r627641_rule",
         "stig_id": "DKER-EE-003590",
-        "fix_id": "F-39020r627640_fix"
+        "fix_id": "F-39020r627640_fix",
+        "documentable": false
       },
       "id": "V-235838",
       "title": "Content Trust enforcement must be enabled in Universal Control Plane (UCP) in Docker Enterprise.",
@@ -1360,7 +1360,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000386",
+        "gid": "V-235839",
+        "rid": "SV-235839r627644_rule",
+        "stig_id": "DKER-EE-003610",
+        "fix_id": "F-39021r627643_fix",
         "satisfies": [
           "SRG-APP-000386",
           "SRG-APP-000480",
@@ -1368,10 +1371,7 @@
           "SRG-APP-000485",
           "SRG-APP-000475"
         ],
-        "gid": "V-235839",
-        "rid": "SV-235839r627644_rule",
-        "stig_id": "DKER-EE-003610",
-        "fix_id": "F-39021r627643_fix"
+        "documentable": false
       },
       "id": "V-235839",
       "title": "Only trusted, signed images must be on Universal Control Plane (UCP) in Docker Enterprise.",
@@ -1385,11 +1385,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000414",
         "gid": "V-235840",
         "rid": "SV-235840r627647_rule",
         "stig_id": "DKER-EE-003840",
-        "fix_id": "F-39022r627646_fix"
+        "fix_id": "F-39022r627646_fix",
+        "documentable": false
       },
       "id": "V-235840",
       "title": "Vulnerability scanning must be enabled for all repositories in the Docker Trusted Registry (DTR) component of Docker Enterprise.",
@@ -1403,11 +1403,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427",
         "gid": "V-235841",
         "rid": "SV-235841r627650_rule",
         "stig_id": "DKER-EE-003920",
-        "fix_id": "F-39023r627649_fix"
+        "fix_id": "F-39023r627649_fix",
+        "documentable": false
       },
       "id": "V-235841",
       "title": "Universal Control Plane (UCP) must be integrated with a trusted certificate authority (CA) in Docker Enterprise.",
@@ -1421,11 +1421,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427",
         "gid": "V-235842",
         "rid": "SV-235842r627653_rule",
         "stig_id": "DKER-EE-003930",
-        "fix_id": "F-39024r627652_fix"
+        "fix_id": "F-39024r627652_fix",
+        "documentable": false
       },
       "id": "V-235842",
       "title": "Docker Trusted Registry (DTR) must be integrated with a trusted certificate authority (CA) in Docker Enterprise.",
@@ -1439,11 +1439,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435",
         "gid": "V-235843",
         "rid": "SV-235843r627656_rule",
         "stig_id": "DKER-EE-004030",
-        "fix_id": "F-39025r627655_fix"
+        "fix_id": "F-39025r627655_fix",
+        "documentable": false
       },
       "id": "V-235843",
       "title": "The on-failure container restart policy must be is set to 5 in Docker Enterprise.",
@@ -1457,11 +1457,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435",
         "gid": "V-235844",
         "rid": "SV-235844r627659_rule",
         "stig_id": "DKER-EE-004040",
-        "fix_id": "F-39026r627658_fix"
+        "fix_id": "F-39026r627658_fix",
+        "documentable": false
       },
       "id": "V-235844",
       "title": "The Docker Enterprise default ulimit must not be overwritten at runtime unless approved in the System Security Plan (SSP).",
@@ -1475,11 +1475,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000454",
         "gid": "V-235845",
         "rid": "SV-235845r627662_rule",
         "stig_id": "DKER-EE-004130",
-        "fix_id": "F-39027r627661_fix"
+        "fix_id": "F-39027r627661_fix",
+        "documentable": false
       },
       "id": "V-235845",
       "title": "Docker Enterprise older Universal Control Plane (UCP) and Docker Trusted Registry (DTR) images must be removed from all cluster nodes upon upgrading.",
@@ -1493,7 +1493,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000475",
+        "gid": "V-235846",
+        "rid": "SV-235846r627665_rule",
+        "stig_id": "DKER-EE-004260",
+        "fix_id": "F-39028r627664_fix",
         "satisfies": [
           "SRG-APP-000475",
           "SRG-APP-000480",
@@ -1501,10 +1504,7 @@
           "SRG-APP-000485",
           "SRG-APP-000386"
         ],
-        "gid": "V-235846",
-        "rid": "SV-235846r627665_rule",
-        "stig_id": "DKER-EE-004260",
-        "fix_id": "F-39028r627664_fix"
+        "documentable": false
       },
       "id": "V-235846",
       "title": "Only trusted, signed images must be stored in Docker Trusted Registry (DTR) in Docker Enterprise.",
@@ -1518,11 +1518,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000485",
         "gid": "V-235847",
         "rid": "SV-235847r627668_rule",
         "stig_id": "DKER-EE-004370",
-        "fix_id": "F-39029r627667_fix"
+        "fix_id": "F-39029r627667_fix",
+        "documentable": false
       },
       "id": "V-235847",
       "title": "Docker Content Trust enforcement must be enabled in Universal Control Plane (UCP).",
@@ -1536,11 +1536,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235848",
         "rid": "SV-235848r627671_rule",
         "stig_id": "DKER-EE-005060",
-        "fix_id": "F-39030r627670_fix"
+        "fix_id": "F-39030r627670_fix",
+        "documentable": false
       },
       "id": "V-235848",
       "title": "Docker Swarm must have the minimum number of manager nodes.",
@@ -1554,11 +1554,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235849",
         "rid": "SV-235849r627674_rule",
         "stig_id": "DKER-EE-005070",
-        "fix_id": "F-39031r627673_fix"
+        "fix_id": "F-39031r627673_fix",
+        "documentable": false
       },
       "id": "V-235849",
       "title": "Docker Enterprise Swarm manager auto-lock key must be rotated periodically.",
@@ -1572,11 +1572,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235850",
         "rid": "SV-235850r627677_rule",
         "stig_id": "DKER-EE-005080",
-        "fix_id": "F-39032r627676_fix"
+        "fix_id": "F-39032r627676_fix",
+        "documentable": false
       },
       "id": "V-235850",
       "title": "Docker Enterprise node certificates must be rotated as defined in the System Security Plan (SSP).",
@@ -1590,11 +1590,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235851",
         "rid": "SV-235851r627680_rule",
         "stig_id": "DKER-EE-005170",
-        "fix_id": "F-39033r627679_fix"
+        "fix_id": "F-39033r627679_fix",
+        "documentable": false
       },
       "id": "V-235851",
       "title": "Docker Enterprise docker.service file ownership must be set to root:root.",
@@ -1608,11 +1608,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235852",
         "rid": "SV-235852r627683_rule",
         "stig_id": "DKER-EE-005180",
-        "fix_id": "F-39034r627682_fix"
+        "fix_id": "F-39034r627682_fix",
+        "documentable": false
       },
       "id": "V-235852",
       "title": "Docker Enterprise docker.service file permissions must be set to 644 or more restrictive.",
@@ -1626,11 +1626,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235853",
         "rid": "SV-235853r627686_rule",
         "stig_id": "DKER-EE-005190",
-        "fix_id": "F-39035r627685_fix"
+        "fix_id": "F-39035r627685_fix",
+        "documentable": false
       },
       "id": "V-235853",
       "title": "Docker Enterprise docker.socket file ownership must be set to root:root.",
@@ -1644,11 +1644,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235854",
         "rid": "SV-235854r627689_rule",
         "stig_id": "DKER-EE-005200",
-        "fix_id": "F-39036r627688_fix"
+        "fix_id": "F-39036r627688_fix",
+        "documentable": false
       },
       "id": "V-235854",
       "title": "Docker Enterprise docker.socket file permissions must be set to 644 or more restrictive.",
@@ -1662,11 +1662,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235855",
         "rid": "SV-235855r627692_rule",
         "stig_id": "DKER-EE-005210",
-        "fix_id": "F-39037r627691_fix"
+        "fix_id": "F-39037r627691_fix",
+        "documentable": false
       },
       "id": "V-235855",
       "title": "Docker Enterprise /etc/docker directory ownership must be set to root:root.",
@@ -1680,11 +1680,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235856",
         "rid": "SV-235856r627695_rule",
         "stig_id": "DKER-EE-005220",
-        "fix_id": "F-39038r627694_fix"
+        "fix_id": "F-39038r627694_fix",
+        "documentable": false
       },
       "id": "V-235856",
       "title": "Docker Enterprise /etc/docker directory permissions must be set to 755 or more restrictive.",
@@ -1698,7 +1698,6 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235857",
         "rid": "SV-235857r627698_rule",
         "stig_id": "DKER-EE-005230",
@@ -1706,7 +1705,7 @@
       },
       "id": "V-235857",
       "title": "Docker Enterprise registry certificate file ownership must be set to root:root.",
-      "desc": "<#text> Verify that all the registry certificate files (usually found under /etc/docker/certs.d/<registry-name> [object Object]",
+      "desc": "<0> [object Object]",
       "impact": 0.7,
       "descs": {
         "check": "Ensure that registry certificate file ownership is set to root:root. Execute the below command to verify that the registry certificate files are owned and group-owned by root: stat -c %U:%G /etc/docker/certs.d/* If the certificate files are not owned by root, this is a finding.",
@@ -1716,7 +1715,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235858",
         "rid": "SV-235858r627701_rule",
         "stig_id": "DKER-EE-005240",
@@ -1724,7 +1722,7 @@
       },
       "id": "V-235858",
       "title": "Docker Enterprise registry certificate file permissions must be set to 444 or more restrictive.",
-      "desc": "<#text> Verify that all the registry certificate files (usually found under /etc/docker/certs.d/<registry-name> [object Object]",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "Ensure that registry certificate file permissions are set to 444 or more restrictive. Execute the below command to verify that the registry certificate files have permissions of 444 or more restrictive: stat -c %a /etc/docker/certs.d/&lt;registry-name&gt;/* If the permissions are not set to 444, this is a finding.",
@@ -1734,11 +1732,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235859",
         "rid": "SV-235859r627704_rule",
         "stig_id": "DKER-EE-005250",
-        "fix_id": "F-39041r627703_fix"
+        "fix_id": "F-39041r627703_fix",
+        "documentable": false
       },
       "id": "V-235859",
       "title": "Docker Enterprise TLS certificate authority (CA) certificate file ownership must be set to root:root.",
@@ -1752,11 +1750,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235860",
         "rid": "SV-235860r627707_rule",
         "stig_id": "DKER-EE-005260",
-        "fix_id": "F-39042r627706_fix"
+        "fix_id": "F-39042r627706_fix",
+        "documentable": false
       },
       "id": "V-235860",
       "title": "Docker Enterprise TLS certificate authority (CA) certificate file permissions must be set to 444 or more restrictive.",
@@ -1770,11 +1768,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235861",
         "rid": "SV-235861r627710_rule",
         "stig_id": "DKER-EE-005270",
-        "fix_id": "F-39043r627709_fix"
+        "fix_id": "F-39043r627709_fix",
+        "documentable": false
       },
       "id": "V-235861",
       "title": "Docker Enterprise server certificate file ownership must be set to root:root.",
@@ -1788,11 +1786,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235862",
         "rid": "SV-235862r627713_rule",
         "stig_id": "DKER-EE-005280",
-        "fix_id": "F-39044r627712_fix"
+        "fix_id": "F-39044r627712_fix",
+        "documentable": false
       },
       "id": "V-235862",
       "title": "Docker Enterprise server certificate file permissions must be set to 444 or more restrictive.",
@@ -1806,11 +1804,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235863",
         "rid": "SV-235863r627716_rule",
         "stig_id": "DKER-EE-005290",
-        "fix_id": "F-39045r627715_fix"
+        "fix_id": "F-39045r627715_fix",
+        "documentable": false
       },
       "id": "V-235863",
       "title": "Docker Enterprise server certificate key file ownership must be set to root:root.",
@@ -1824,11 +1822,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235864",
         "rid": "SV-235864r627719_rule",
         "stig_id": "DKER-EE-005300",
-        "fix_id": "F-39046r627718_fix"
+        "fix_id": "F-39046r627718_fix",
+        "documentable": false
       },
       "id": "V-235864",
       "title": "Docker Enterprise server certificate key file permissions must be set to 400.",
@@ -1842,11 +1840,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235865",
         "rid": "SV-235865r627722_rule",
         "stig_id": "DKER-EE-005310",
-        "fix_id": "F-39047r627721_fix"
+        "fix_id": "F-39047r627721_fix",
+        "documentable": false
       },
       "id": "V-235865",
       "title": "Docker Enterprise socket file ownership must be set to root:docker.",
@@ -1860,11 +1858,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235866",
         "rid": "SV-235866r627725_rule",
         "stig_id": "DKER-EE-005320",
-        "fix_id": "F-39048r627724_fix"
+        "fix_id": "F-39048r627724_fix",
+        "documentable": false
       },
       "id": "V-235866",
       "title": "Docker Enterprise socket file permissions must be set to 660 or more restrictive.",
@@ -1878,11 +1876,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235867",
         "rid": "SV-235867r627728_rule",
         "stig_id": "DKER-EE-005330",
-        "fix_id": "F-39049r627727_fix"
+        "fix_id": "F-39049r627727_fix",
+        "documentable": false
       },
       "id": "V-235867",
       "title": "Docker Enterprise daemon.json file ownership must be set to root:root.",
@@ -1896,11 +1894,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235868",
         "rid": "SV-235868r627731_rule",
         "stig_id": "DKER-EE-005340",
-        "fix_id": "F-39050r627730_fix"
+        "fix_id": "F-39050r627730_fix",
+        "documentable": false
       },
       "id": "V-235868",
       "title": "Docker Enterprise daemon.json file permissions must be set to 644 or more restrictive.",
@@ -1914,11 +1912,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235869",
         "rid": "SV-235869r627734_rule",
         "stig_id": "DKER-EE-005350",
-        "fix_id": "F-39051r627733_fix"
+        "fix_id": "F-39051r627733_fix",
+        "documentable": false
       },
       "id": "V-235869",
       "title": "Docker Enterprise /etc/default/docker file ownership must be set to root:root.",
@@ -1932,11 +1930,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-235870",
         "rid": "SV-235870r627737_rule",
         "stig_id": "DKER-EE-005360",
-        "fix_id": "F-39052r627736_fix"
+        "fix_id": "F-39052r627736_fix",
+        "documentable": false
       },
       "id": "V-235870",
       "title": "Docker Enterprise /etc/default/docker file permissions must be set to 644 or more restrictive.",
@@ -1950,11 +1948,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175",
         "gid": "V-235871",
         "rid": "SV-235871r627740_rule",
         "stig_id": "DKER-EE-006190",
-        "fix_id": "F-39053r627739_fix"
+        "fix_id": "F-39053r627739_fix",
+        "documentable": false
       },
       "id": "V-235871",
       "title": "Docker Enterprise Universal Control Plane (UCP) must be integrated with a trusted certificate authority (CA).",
@@ -1968,11 +1966,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000416",
         "gid": "V-235872",
         "rid": "SV-235872r627743_rule",
         "stig_id": "DKER-EE-006240",
-        "fix_id": "F-39054r627742_fix"
+        "fix_id": "F-39054r627742_fix",
+        "documentable": false
       },
       "id": "V-235872",
       "title": "Docker Enterprise data exchanged between Linux containers on different nodes must be encrypted on the overlay network.",
@@ -1986,11 +1984,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-235873",
         "rid": "SV-235873r627746_rule",
         "stig_id": "DKER-EE-006270",
-        "fix_id": "F-39055r627745_fix"
+        "fix_id": "F-39055r627745_fix",
+        "documentable": false
       },
       "id": "V-235873",
       "title": "Docker Enterprise Swarm services must be bound to a specific host interface.",
@@ -2004,11 +2002,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000560",
         "gid": "V-235874",
         "rid": "SV-235874r627749_rule",
         "stig_id": "DKER-EE-006280",
-        "fix_id": "F-39056r627748_fix"
+        "fix_id": "F-39056r627748_fix",
+        "documentable": false
       },
       "id": "V-235874",
       "title": "Docker Enterprise Universal Control Plane (UCP) must be configured to use TLS 1.2.",
@@ -2020,7 +2018,5 @@
       }
     }
   ],
-  "name": "Docker_Enterprise_2-x_Linux-UNIX_STIG",
-  "title": "Docker Enterprise 2.x Linux/UNIX Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Docker_Enterprise_2-x_Linux-UNIX_STIG"
 }

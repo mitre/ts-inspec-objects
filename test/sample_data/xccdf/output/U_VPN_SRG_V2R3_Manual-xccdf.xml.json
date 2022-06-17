@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207184",
         "rid": "SV-207184r695317_rule",
         "stig_id": "SRG-NET-000019-VPN-000040",
-        "fix_id": "F-7444r378174_fix"
+        "fix_id": "F-7444r378174_fix",
+        "documentable": false
       },
       "id": "V-207184",
       "title": "The VPN Gateway must ensure inbound and outbound traffic is configured with a security policy in compliance with information flow control policies.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000041",
         "gid": "V-207185",
         "rid": "SV-207185r608988_rule",
         "stig_id": "SRG-NET-000041-VPN-000110",
-        "fix_id": "F-7445r378177_fix"
+        "fix_id": "F-7445r378177_fix",
+        "documentable": false
       },
       "id": "V-207185",
       "title": "The Remote Access VPN Gateway and/or client must display the Standard Mandatory DoD Notice and Consent Banner before granting remote access to the network.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000042",
         "gid": "V-207186",
         "rid": "SV-207186r608988_rule",
         "stig_id": "SRG-NET-000042-VPN-000120",
-        "fix_id": "F-7446r378180_fix"
+        "fix_id": "F-7446r378180_fix",
+        "documentable": false
       },
       "id": "V-207186",
       "title": "The Remote Access VPN Gateway and/or client must enforce a policy to retain the Standard Mandatory DoD Notice and Consent Banner on the screen until users acknowledge the usage conditions and take explicit actions to log on for further access.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000043",
         "gid": "V-207187",
         "rid": "SV-207187r608988_rule",
         "stig_id": "SRG-NET-000043-VPN-000130",
-        "fix_id": "F-7447r378183_fix"
+        "fix_id": "F-7447r378183_fix",
+        "documentable": false
       },
       "id": "V-207187",
       "title": "The publicly accessible VPN Gateway must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the system.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000049",
         "gid": "V-207188",
         "rid": "SV-207188r608988_rule",
         "stig_id": "SRG-NET-000049-VPN-000150",
-        "fix_id": "F-7448r378186_fix"
+        "fix_id": "F-7448r378186_fix",
+        "documentable": false
       },
       "id": "V-207188",
       "title": "The VPN Gateway must notify the user, upon successful logon (access), of the number of unsuccessful logon (access) attempts since the last successful logon (access).",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000053",
         "gid": "V-207189",
         "rid": "SV-207189r608988_rule",
         "stig_id": "SRG-NET-000053-VPN-000170",
-        "fix_id": "F-7449r378189_fix"
+        "fix_id": "F-7449r378189_fix",
+        "documentable": false
       },
       "id": "V-207189",
       "title": "The VPN Gateway must limit the number of concurrent sessions for user accounts to 1 or to an organization-defined number.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000062",
         "gid": "V-207190",
         "rid": "SV-207190r608988_rule",
         "stig_id": "SRG-NET-000062-VPN-000200",
-        "fix_id": "F-7450r378192_fix"
+        "fix_id": "F-7450r378192_fix",
+        "documentable": false
       },
       "id": "V-207190",
       "title": "The TLS VPN Gateway must use TLS 1.2, at a minimum, to protect the confidentiality of sensitive data during transmission.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000063",
         "gid": "V-207191",
         "rid": "SV-207191r608988_rule",
         "stig_id": "SRG-NET-000063-VPN-000210",
-        "fix_id": "F-7451r378195_fix"
+        "fix_id": "F-7451r378195_fix",
+        "documentable": false
       },
       "id": "V-207191",
       "title": "The remote access VPN Gateway must use a digital signature generated using FIPS-validated algorithms and an approved hash function to protect the integrity of remote access sessions.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000063",
         "gid": "V-207192",
         "rid": "SV-207192r608988_rule",
         "stig_id": "SRG-NET-000063-VPN-000220",
-        "fix_id": "F-7452r378198_fix"
+        "fix_id": "F-7452r378198_fix",
+        "documentable": false
       },
       "id": "V-207192",
       "title": "The VPN Gateway must be configured to use IPsec with SHA-1 or greater for hashing to protect the integrity of remote access sessions.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000074",
         "gid": "V-207193",
         "rid": "SV-207193r608988_rule",
         "stig_id": "SRG-NET-000074-VPN-000250",
-        "fix_id": "F-7453r378201_fix"
+        "fix_id": "F-7453r378201_fix",
+        "documentable": false
       },
       "id": "V-207193",
       "title": "The IPsec VPN must implement a FIPS 140-2 validated Diffie-Hellman (DH) group.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000075",
         "gid": "V-207194",
         "rid": "SV-207194r608988_rule",
         "stig_id": "SRG-NET-000075-VPN-000260",
-        "fix_id": "F-7454r378204_fix"
+        "fix_id": "F-7454r378204_fix",
+        "documentable": false
       },
       "id": "V-207194",
       "title": "If the site-to-site VPN implementation uses L2TP, L2TPv3 sessions must be authenticated prior to transporting traffic.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000077",
         "gid": "V-207195",
         "rid": "SV-207195r608988_rule",
         "stig_id": "SRG-NET-000077-VPN-000280",
-        "fix_id": "F-7455r378207_fix"
+        "fix_id": "F-7455r378207_fix",
+        "documentable": false
       },
       "id": "V-207195",
       "title": "The VPN Gateway must generate log records containing information to establish what type of events occurred.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000078",
         "gid": "V-207196",
         "rid": "SV-207196r608988_rule",
         "stig_id": "SRG-NET-000078-VPN-000290",
-        "fix_id": "F-7456r378210_fix"
+        "fix_id": "F-7456r378210_fix",
+        "documentable": false
       },
       "id": "V-207196",
       "title": "The VPN Gateway must generate log records containing information to establish when (date and time) the events occurred.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000079",
         "gid": "V-207197",
         "rid": "SV-207197r608988_rule",
         "stig_id": "SRG-NET-000079-VPN-000300",
-        "fix_id": "F-7457r378213_fix"
+        "fix_id": "F-7457r378213_fix",
+        "documentable": false
       },
       "id": "V-207197",
       "title": "The VPN Gateway must generate log records containing information that establishes the identity of any individual or process associated with the event.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000088",
         "gid": "V-207198",
         "rid": "SV-207198r608988_rule",
         "stig_id": "SRG-NET-000088-VPN-000310",
-        "fix_id": "F-7458r378216_fix"
+        "fix_id": "F-7458r378216_fix",
+        "documentable": false
       },
       "id": "V-207198",
       "title": "The VPN Gateway must generate log records containing information to establish where the events occurred.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000089",
         "gid": "V-207199",
         "rid": "SV-207199r608988_rule",
         "stig_id": "SRG-NET-000089-VPN-000330",
-        "fix_id": "F-7459r378219_fix"
+        "fix_id": "F-7459r378219_fix",
+        "documentable": false
       },
       "id": "V-207199",
       "title": "The VPN Gateway must generate log records containing information to establish the source of the events.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000091",
         "gid": "V-207200",
         "rid": "SV-207200r608988_rule",
         "stig_id": "SRG-NET-000091-VPN-000350",
-        "fix_id": "F-7460r378222_fix"
+        "fix_id": "F-7460r378222_fix",
+        "documentable": false
       },
       "id": "V-207200",
       "title": "The VPN Gateway must produce log records containing information to establish the outcome of the events.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000098",
         "gid": "V-207201",
         "rid": "SV-207201r608988_rule",
         "stig_id": "SRG-NET-000098-VPN-000370",
-        "fix_id": "F-7461r378225_fix"
+        "fix_id": "F-7461r378225_fix",
+        "documentable": false
       },
       "id": "V-207201",
       "title": "The VPN Gateway must protect log information from unauthorized read access if all or some of this data is stored locally.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000099",
         "gid": "V-207202",
         "rid": "SV-207202r608988_rule",
         "stig_id": "SRG-NET-000099-VPN-000380",
-        "fix_id": "F-7462r378228_fix"
+        "fix_id": "F-7462r378228_fix",
+        "documentable": false
       },
       "id": "V-207202",
       "title": "The VPN Gateway log must protect audit information from unauthorized modification when stored locally.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000100",
         "gid": "V-207203",
         "rid": "SV-207203r608988_rule",
         "stig_id": "SRG-NET-000100-VPN-000390",
-        "fix_id": "F-7463r378231_fix"
+        "fix_id": "F-7463r378231_fix",
+        "documentable": false
       },
       "id": "V-207203",
       "title": "The VPN Gateway must protect audit information from unauthorized deletion when stored locally.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000132",
         "gid": "V-207204",
         "rid": "SV-207204r608988_rule",
         "stig_id": "SRG-NET-000132-VPN-000450",
-        "fix_id": "F-7464r378234_fix"
+        "fix_id": "F-7464r378234_fix",
+        "documentable": false
       },
       "id": "V-207204",
       "title": "The VPN Gateway must be configured to prohibit the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000132",
         "gid": "V-207205",
         "rid": "SV-207205r608988_rule",
         "stig_id": "SRG-NET-000132-VPN-000460",
-        "fix_id": "F-7465r378237_fix"
+        "fix_id": "F-7465r378237_fix",
+        "documentable": false
       },
       "id": "V-207205",
       "title": "The IPsec VPN Gateway must use IKEv2 for IPsec VPN security associations.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000132",
         "gid": "V-207206",
         "rid": "SV-207206r608988_rule",
         "stig_id": "SRG-NET-000132-VPN-000470",
-        "fix_id": "F-7466r378240_fix"
+        "fix_id": "F-7466r378240_fix",
+        "documentable": false
       },
       "id": "V-207206",
       "title": "The Remote Access VPN Gateway must be configured to prohibit Point-to-Point Tunneling Protocol (PPTP) and L2F.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000132",
         "gid": "V-207207",
         "rid": "SV-207207r608988_rule",
         "stig_id": "SRG-NET-000132-VPN-000480",
-        "fix_id": "F-7467r378243_fix"
+        "fix_id": "F-7467r378243_fix",
+        "documentable": false
       },
       "id": "V-207207",
       "title": "For site-to-site VPN implementations, the L2TP protocol must be blocked or denied at the security boundary with the private network so unencrypted L2TP packets cannot traverse into the private network of the enclave.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000138",
         "gid": "V-207208",
         "rid": "SV-207208r608988_rule",
         "stig_id": "SRG-NET-000138-VPN-000490",
-        "fix_id": "F-7468r378246_fix"
+        "fix_id": "F-7468r378246_fix",
+        "documentable": false
       },
       "id": "V-207208",
       "title": "The VPN Gateway must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000140",
         "gid": "V-207209",
         "rid": "SV-207209r608988_rule",
         "stig_id": "SRG-NET-000140-VPN-000500",
-        "fix_id": "F-7469r378249_fix"
+        "fix_id": "F-7469r378249_fix",
+        "documentable": false
       },
       "id": "V-207209",
       "title": "The VPN Gateway must use multifactor authentication (e.g., DoD PKI) for network access to non-privileged accounts.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000145",
         "gid": "V-207210",
         "rid": "SV-207210r608988_rule",
         "stig_id": "SRG-NET-000145-VPN-000510",
-        "fix_id": "F-7470r378252_fix"
+        "fix_id": "F-7470r378252_fix",
+        "documentable": false
       },
       "id": "V-207210",
       "title": "The VPN Client must implement multifactor authentication for network access to non-privileged accounts such that one of the factors is provided by a device separate from the system gaining access.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000147",
         "gid": "V-207211",
         "rid": "SV-207211r608988_rule",
         "stig_id": "SRG-NET-000147-VPN-000520",
-        "fix_id": "F-7471r378255_fix"
+        "fix_id": "F-7471r378255_fix",
+        "documentable": false
       },
       "id": "V-207211",
       "title": "The TLS VPN must be configured to use replay-resistant authentication mechanisms for network access to non-privileged accounts.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000147",
         "gid": "V-207212",
         "rid": "SV-207212r608988_rule",
         "stig_id": "SRG-NET-000147-VPN-000530",
-        "fix_id": "F-7472r378258_fix"
+        "fix_id": "F-7472r378258_fix",
+        "documentable": false
       },
       "id": "V-207212",
       "title": "The IPsec VPN Gateway must use anti-replay mechanisms for security associations.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000148",
         "gid": "V-207213",
         "rid": "SV-207213r608988_rule",
         "stig_id": "SRG-NET-000148-VPN-000540",
-        "fix_id": "F-7473r378261_fix"
+        "fix_id": "F-7473r378261_fix",
+        "documentable": false
       },
       "id": "V-207213",
       "title": "The VPN Gateway must uniquely identify all network-connected endpoint devices before establishing a connection.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000164",
         "gid": "V-207214",
         "rid": "SV-207214r608988_rule",
         "stig_id": "SRG-NET-000164-VPN-000560",
-        "fix_id": "F-7474r378264_fix"
+        "fix_id": "F-7474r378264_fix",
+        "documentable": false
       },
       "id": "V-207214",
       "title": "The VPN Gateway, when utilizing PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000165",
         "gid": "V-207215",
         "rid": "SV-207215r608988_rule",
         "stig_id": "SRG-NET-000165-VPN-000570",
-        "fix_id": "F-7475r378267_fix"
+        "fix_id": "F-7475r378267_fix",
+        "documentable": false
       },
       "id": "V-207215",
       "title": "The site-to-site VPN, when using PKI-based authentication for devices, must enforce authorized access to the corresponding private key.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000166",
         "gid": "V-207216",
         "rid": "SV-207216r608988_rule",
         "stig_id": "SRG-NET-000166-VPN-000580",
-        "fix_id": "F-7476r378270_fix"
+        "fix_id": "F-7476r378270_fix",
+        "documentable": false
       },
       "id": "V-207216",
       "title": "The Remote Access VPN Gateway must use a separate authentication server (e.g., LDAP, RADIUS, TACACS+) to perform user authentication.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000166",
         "gid": "V-207217",
         "rid": "SV-207217r608988_rule",
         "stig_id": "SRG-NET-000166-VPN-000590",
-        "fix_id": "F-7477r378273_fix"
+        "fix_id": "F-7477r378273_fix",
+        "documentable": false
       },
       "id": "V-207217",
       "title": "The VPN Gateway must map the authenticated identity to the user account for PKI-based authentication.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000168",
         "gid": "V-207218",
         "rid": "SV-207218r608988_rule",
         "stig_id": "SRG-NET-000168-VPN-000600",
-        "fix_id": "F-7478r378276_fix"
+        "fix_id": "F-7478r378276_fix",
+        "documentable": false
       },
       "id": "V-207218",
       "title": "The VPN Gateway must use FIPS-validated SHA-1 or higher hash function to protect the integrity of hash message authentication code (HMAC), Key Derivation Functions (KDFs), Random Bit Generation, hash-only applications, and digital signature verification (",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000169",
         "gid": "V-207219",
         "rid": "SV-207219r608988_rule",
         "stig_id": "SRG-NET-000169-VPN-000610",
-        "fix_id": "F-7479r378279_fix"
+        "fix_id": "F-7479r378279_fix",
+        "documentable": false
       },
       "id": "V-207219",
       "title": "The VPN Gateway must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207220",
         "rid": "SV-207220r608988_rule",
         "stig_id": "SRG-NET-000205-VPN-000710",
-        "fix_id": "F-7480r378282_fix"
+        "fix_id": "F-7480r378282_fix",
+        "documentable": false
       },
       "id": "V-207220",
       "title": "The VPN Gateway must be configured to route sessions to an IDPS for inspection.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000213",
         "gid": "V-207221",
         "rid": "SV-207221r608988_rule",
         "stig_id": "SRG-NET-000213-VPN-000720",
-        "fix_id": "F-7481r378285_fix"
+        "fix_id": "F-7481r378285_fix",
+        "documentable": false
       },
       "id": "V-207221",
       "title": "The VPN Gateway must terminate all network connections associated with a communications session at the end of the session.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230",
         "gid": "V-207222",
         "rid": "SV-207222r608988_rule",
         "stig_id": "SRG-NET-000230-VPN-000770",
-        "fix_id": "F-7482r378288_fix"
+        "fix_id": "F-7482r378288_fix",
+        "documentable": false
       },
       "id": "V-207222",
       "title": "The VPN Gateway must use FIPS 140-2 compliant mechanisms for authentication to a cryptographic module.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000230",
         "gid": "V-207223",
         "rid": "SV-207223r608988_rule",
         "stig_id": "SRG-NET-000230-VPN-000780",
-        "fix_id": "F-7483r378291_fix"
+        "fix_id": "F-7483r378291_fix",
+        "documentable": false
       },
       "id": "V-207223",
       "title": "The IPsec VPN Gateway must use Internet Key Exchange (IKE) with SHA-1 or greater to protect the authenticity of communications sessions.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000231",
         "gid": "V-207224",
         "rid": "SV-207224r608988_rule",
         "stig_id": "SRG-NET-000231-VPN-000790",
-        "fix_id": "F-7484r378294_fix"
+        "fix_id": "F-7484r378294_fix",
+        "documentable": false
       },
       "id": "V-207224",
       "title": "The VPN Gateway must invalidate session identifiers upon user logoff or other session termination.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000233",
         "gid": "V-207225",
         "rid": "SV-207225r608988_rule",
         "stig_id": "SRG-NET-000233-VPN-000800",
-        "fix_id": "F-7485r378297_fix"
+        "fix_id": "F-7485r378297_fix",
+        "documentable": false
       },
       "id": "V-207225",
       "title": "The VPN Gateway must recognize only system-generated session identifiers.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000234",
         "gid": "V-207226",
         "rid": "SV-207226r608988_rule",
         "stig_id": "SRG-NET-000234-VPN-000810",
-        "fix_id": "F-7486r378300_fix"
+        "fix_id": "F-7486r378300_fix",
+        "documentable": false
       },
       "id": "V-207226",
       "title": "The VPN Gateway must generate unique session identifiers using FIPS-validated Random Number Generator (RNG) based on the Deterministic Random Bit Generators (DRBG) algorithm.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000235",
         "gid": "V-207227",
         "rid": "SV-207227r608988_rule",
         "stig_id": "SRG-NET-000235-VPN-000820",
-        "fix_id": "F-7487r378303_fix"
+        "fix_id": "F-7487r378303_fix",
+        "documentable": false
       },
       "id": "V-207227",
       "title": "The VPN Gateway must fail to a secure state if system initialization fails, shutdown fails, or aborts fail.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000313",
         "gid": "V-207228",
         "rid": "SV-207228r608988_rule",
         "stig_id": "SRG-NET-000313-VPN-001050",
-        "fix_id": "F-7488r378306_fix"
+        "fix_id": "F-7488r378306_fix",
+        "documentable": false
       },
       "id": "V-207228",
       "title": "The VPN Gateway must be configured to perform an organization-defined action if the audit reveals unauthorized activity.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000314",
         "gid": "V-207229",
         "rid": "SV-207229r608988_rule",
         "stig_id": "SRG-NET-000314-VPN-001060",
-        "fix_id": "F-7489r378309_fix"
+        "fix_id": "F-7489r378309_fix",
+        "documentable": false
       },
       "id": "V-207229",
       "title": "The VPN Gateway administrator accounts or security policy must be configured to allow the system administrator to immediately disconnect or disable remote access to devices and/or users when needed.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000317",
         "gid": "V-207230",
         "rid": "SV-207230r608988_rule",
         "stig_id": "SRG-NET-000317-VPN-001090",
-        "fix_id": "F-7490r378312_fix"
+        "fix_id": "F-7490r378312_fix",
+        "documentable": false
       },
       "id": "V-207230",
       "title": "The IPsec VPN Gateway must use AES encryption for the Internet Key Exchange (IKE) proposal to protect confidentiality of remote access sessions.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000320",
         "gid": "V-207231",
         "rid": "SV-207231r608988_rule",
         "stig_id": "SRG-NET-000320-VPN-001120",
-        "fix_id": "F-7491r378315_fix"
+        "fix_id": "F-7491r378315_fix",
+        "documentable": false
       },
       "id": "V-207231",
       "title": "The VPN Gateway must transmit organization-defined access authorization information using FIPS 140-2-validated cryptography to a compliant authentication server, which enforces access control decisions.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000330",
         "gid": "V-207232",
         "rid": "SV-207232r608988_rule",
         "stig_id": "SRG-NET-000330-VPN-001220",
-        "fix_id": "F-7492r378318_fix"
+        "fix_id": "F-7492r378318_fix",
+        "documentable": false
       },
       "id": "V-207232",
       "title": "The VPN Gateway must notify the user, upon successful logon (access), of the organization-defined information to be included in addition to the date and time of the last logon (access).",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000333",
         "gid": "V-207233",
         "rid": "SV-207233r608988_rule",
         "stig_id": "SRG-NET-000333-VPN-001250",
-        "fix_id": "F-7493r378321_fix"
+        "fix_id": "F-7493r378321_fix",
+        "documentable": false
       },
       "id": "V-207233",
       "title": "The VPN Gateway must provide centralized management and configuration of the content to be captured in log records generated by all network components.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000334",
         "gid": "V-207234",
         "rid": "SV-207234r608988_rule",
         "stig_id": "SRG-NET-000334-VPN-001260",
-        "fix_id": "F-7494r378324_fix"
+        "fix_id": "F-7494r378324_fix",
+        "documentable": false
       },
       "id": "V-207234",
       "title": "The VPN Gateway must off-load audit records onto a different system or media than the system being audited.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000335",
         "gid": "V-207235",
         "rid": "SV-207235r608988_rule",
         "stig_id": "SRG-NET-000335-VPN-001270",
-        "fix_id": "F-7495r378327_fix"
+        "fix_id": "F-7495r378327_fix",
+        "documentable": false
       },
       "id": "V-207235",
       "title": "The VPN Gateway must generate a log record or an SNMP trap that can be forwarded as an alert to, at a minimum, the SCA and ISSO, of all log failure events where the detection and/or prevention function is unable to write events to either local storage or",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000336",
         "gid": "V-207236",
         "rid": "SV-207236r608988_rule",
         "stig_id": "SRG-NET-000336-VPN-001280",
-        "fix_id": "F-7496r378330_fix"
+        "fix_id": "F-7496r378330_fix",
+        "documentable": false
       },
       "id": "V-207236",
       "title": "When communications with the Central Log Server is lost, the VPN Gateway must continue to queue traffic log records locally.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000337",
         "gid": "V-207237",
         "rid": "SV-207237r608988_rule",
         "stig_id": "SRG-NET-000337-VPN-001290",
-        "fix_id": "F-7497r378333_fix"
+        "fix_id": "F-7497r378333_fix",
+        "documentable": false
       },
       "id": "V-207237",
       "title": "The IPsec VPN Gateway must renegotiate the security association after 8 hours or less, or an organization-defined period.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000337",
         "gid": "V-207238",
         "rid": "SV-207238r608988_rule",
         "stig_id": "SRG-NET-000337-VPN-001300",
-        "fix_id": "F-7498r378336_fix"
+        "fix_id": "F-7498r378336_fix",
+        "documentable": false
       },
       "id": "V-207238",
       "title": "The VPN Gateway must renegotiate the security association after 24 hours or less or as defined by the organization.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000341",
         "gid": "V-207239",
         "rid": "SV-207239r608988_rule",
         "stig_id": "SRG-NET-000341-VPN-001350",
-        "fix_id": "F-7499r573753_fix"
+        "fix_id": "F-7499r573753_fix",
+        "documentable": false
       },
       "id": "V-207239",
       "title": "The VPN Gateway must accept the Common Access Card (CAC) credential.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000342",
         "gid": "V-207240",
         "rid": "SV-207240r608988_rule",
         "stig_id": "SRG-NET-000342-VPN-001360",
-        "fix_id": "F-7500r573756_fix"
+        "fix_id": "F-7500r573756_fix",
+        "documentable": false
       },
       "id": "V-207240",
       "title": "The VPN Gateway must electronically verify the Common Access Card (CAC) credential.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000343",
         "gid": "V-207241",
         "rid": "SV-207241r608988_rule",
         "stig_id": "SRG-NET-000343-VPN-001370",
-        "fix_id": "F-7501r378345_fix"
+        "fix_id": "F-7501r378345_fix",
+        "documentable": false
       },
       "id": "V-207241",
       "title": "The VPN Gateway must authenticate all network-connected endpoint devices before establishing a connection.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000352",
         "gid": "V-207242",
         "rid": "SV-207242r608988_rule",
         "stig_id": "SRG-NET-000352-VPN-001460",
-        "fix_id": "F-7502r378348_fix"
+        "fix_id": "F-7502r378348_fix",
+        "documentable": false
       },
       "id": "V-207242",
       "title": "The VPN Gateway must use an approved Commercial Solution for Classified (CSfC) when transporting classified traffic across an unclassified network.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000369",
         "gid": "V-207243",
         "rid": "SV-207243r608988_rule",
         "stig_id": "SRG-NET-000369-VPN-001620",
-        "fix_id": "F-7503r378351_fix"
+        "fix_id": "F-7503r378351_fix",
+        "documentable": false
       },
       "id": "V-207243",
       "title": "The VPN Gateway must disable split-tunneling for remote clients VPNs.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000371",
         "gid": "V-207244",
         "rid": "SV-207244r608988_rule",
         "stig_id": "SRG-NET-000371-VPN-001640",
-        "fix_id": "F-7504r378354_fix"
+        "fix_id": "F-7504r378354_fix",
+        "documentable": false
       },
       "id": "V-207244",
       "title": "The IPsec VPN Gateway must specify Perfect Forward Secrecy (PFS) during Internet Key Exchange (IKE) negotiation.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000371",
         "gid": "V-207245",
         "rid": "SV-207245r608988_rule",
         "stig_id": "SRG-NET-000371-VPN-001650",
-        "fix_id": "F-7505r378357_fix"
+        "fix_id": "F-7505r378357_fix",
+        "documentable": false
       },
       "id": "V-207245",
       "title": "The VPN Gateway and Client must be configured to protect the confidentiality and integrity of transmitted information.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000375",
         "gid": "V-207246",
         "rid": "SV-207246r695315_rule",
         "stig_id": "SRG-NET-000375-VPN-001690",
-        "fix_id": "F-7506r621693_fix"
+        "fix_id": "F-7506r621693_fix",
+        "documentable": false
       },
       "id": "V-207246",
       "title": "The IPsec VPN Gateway must use Encapsulating Security Payload (ESP) in tunnel mode for establishing secured paths to transport traffic between the organization's sites or between a gateway and remote end-stations.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000400",
         "gid": "V-207247",
         "rid": "SV-207247r608988_rule",
         "stig_id": "SRG-NET-000400-VPN-001940",
-        "fix_id": "F-7507r378363_fix"
+        "fix_id": "F-7507r378363_fix",
+        "documentable": false
       },
       "id": "V-207247",
       "title": "For site-to-site VPN, for accounts using password authentication, the VPN Gateway must use FIPS-validated SHA-1 or later protocol to protect the integrity of the password authentication process.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000492",
         "gid": "V-207248",
         "rid": "SV-207248r608988_rule",
         "stig_id": "SRG-NET-000492-VPN-001980",
-        "fix_id": "F-7508r378366_fix"
+        "fix_id": "F-7508r378366_fix",
+        "documentable": false
       },
       "id": "V-207248",
       "title": "The VPN Gateway must generate log records when successful and/or unsuccessful VPN connection attempts occur.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510",
         "gid": "V-207249",
         "rid": "SV-207249r608988_rule",
         "stig_id": "SRG-NET-000510-VPN-002160",
-        "fix_id": "F-7509r378369_fix"
+        "fix_id": "F-7509r378369_fix",
+        "documentable": false
       },
       "id": "V-207249",
       "title": "The VPN Gateway must use a FIPS-validated cryptographic module to generate cryptographic hashes.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510",
         "gid": "V-207250",
         "rid": "SV-207250r608988_rule",
         "stig_id": "SRG-NET-000510-VPN-002170",
-        "fix_id": "F-7510r378372_fix"
+        "fix_id": "F-7510r378372_fix",
+        "documentable": false
       },
       "id": "V-207250",
       "title": "The VPN Gateway must use a FIPS-validated cryptographic module to implement encryption services for unclassified information requiring confidentiality.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510",
         "gid": "V-207251",
         "rid": "SV-207251r608988_rule",
         "stig_id": "SRG-NET-000510-VPN-002180",
-        "fix_id": "F-7511r378375_fix"
+        "fix_id": "F-7511r378375_fix",
+        "documentable": false
       },
       "id": "V-207251",
       "title": "The IPsec VPN Gateway IKE must use NIST FIPS-validated cryptography to implement encryption services for unclassified VPN traffic.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207252",
         "rid": "SV-207252r608988_rule",
         "stig_id": "SRG-NET-000512-VPN-002220",
-        "fix_id": "F-7512r378378_fix"
+        "fix_id": "F-7512r378378_fix",
+        "documentable": false
       },
       "id": "V-207252",
       "title": "The IPsec VPN Gateway must use Internet Key Exchange (IKE) for IPsec VPN Security Associations (SAs).",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207253",
         "rid": "SV-207253r608988_rule",
         "stig_id": "SRG-NET-000512-VPN-002230",
-        "fix_id": "F-7513r378381_fix"
+        "fix_id": "F-7513r378381_fix",
+        "documentable": false
       },
       "id": "V-207253",
       "title": "The VPN Gateway must not accept certificates that have been revoked when using PKI for authentication.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000518",
         "gid": "V-207254",
         "rid": "SV-207254r608988_rule",
         "stig_id": "SRG-NET-000518-VPN-002280",
-        "fix_id": "F-7514r378384_fix"
+        "fix_id": "F-7514r378384_fix",
+        "documentable": false
       },
       "id": "V-207254",
       "title": "The VPN Client logout function must be configured to terminate the session on/with the VPN Gateway.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000519",
         "gid": "V-207255",
         "rid": "SV-207255r608988_rule",
         "stig_id": "SRG-NET-000519-VPN-002290",
-        "fix_id": "F-7515r378387_fix"
+        "fix_id": "F-7515r378387_fix",
+        "documentable": false
       },
       "id": "V-207255",
       "title": "The VPN Client must display an explicit logout message to users indicating the reliable termination of authenticated communications sessions.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000522",
         "gid": "V-207256",
         "rid": "SV-207256r608988_rule",
         "stig_id": "SRG-NET-000522-VPN-002320",
-        "fix_id": "F-7516r378390_fix"
+        "fix_id": "F-7516r378390_fix",
+        "documentable": false
       },
       "id": "V-207256",
       "title": "For site-to-site VPN Gateway must store only cryptographic representations of Pre-shared Keys (PSKs).",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000525",
         "gid": "V-207257",
         "rid": "SV-207257r608988_rule",
         "stig_id": "SRG-NET-000525-VPN-002330",
-        "fix_id": "F-7517r378393_fix"
+        "fix_id": "F-7517r378393_fix",
+        "documentable": false
       },
       "id": "V-207257",
       "title": "The IPsec VPN must use Advanced Encryption Standard (AES) encryption for the IPsec proposal to protect the confidentiality of remote access sessions.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000530",
         "gid": "V-207258",
         "rid": "SV-207258r608988_rule",
         "stig_id": "SRG-NET-000530-VPN-002340",
-        "fix_id": "F-7518r378396_fix"
+        "fix_id": "F-7518r378396_fix",
+        "documentable": false
       },
       "id": "V-207258",
       "title": "The TLS VPN Gateway that supports Government-only services must prohibit client negotiation to TLS 1.1, TLS 1.0, SSL 2.0, or SSL 3.0.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000540",
         "gid": "V-207259",
         "rid": "SV-207259r608988_rule",
         "stig_id": "SRG-NET-000540-VPN-002350",
-        "fix_id": "F-7519r378399_fix"
+        "fix_id": "F-7519r378399_fix",
+        "documentable": false
       },
       "id": "V-207259",
       "title": "The TLS VPN Gateway that supports citizen- or business-facing network devices must prohibit client negotiation to SSL 2.0 or SSL 3.0.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000550",
         "gid": "V-207260",
         "rid": "SV-207260r608988_rule",
         "stig_id": "SRG-NET-000550-VPN-002360",
-        "fix_id": "F-7520r378402_fix"
+        "fix_id": "F-7520r378402_fix",
+        "documentable": false
       },
       "id": "V-207260",
       "title": "The VPN Gateway that provides a Simple Network Management Protocol (SNMP) Network Management System (NMS) must configure SNMPv3 to use FIPS-validated AES cipher block algorithm.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000565",
         "gid": "V-207261",
         "rid": "SV-207261r608988_rule",
         "stig_id": "SRG-NET-000565-VPN-002390",
-        "fix_id": "F-7521r378405_fix"
+        "fix_id": "F-7521r378405_fix",
+        "documentable": false
       },
       "id": "V-207261",
       "title": "The VPN Gateway must use an approved High Assurance Commercial Solution for Classified (CSfC) cryptographic algorithm for remote access to a classified network.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000565",
         "gid": "V-207262",
         "rid": "SV-207262r608988_rule",
         "stig_id": "SRG-NET-000565-VPN-002400",
-        "fix_id": "F-7522r378408_fix"
+        "fix_id": "F-7522r378408_fix",
+        "documentable": false
       },
       "id": "V-207262",
       "title": "The IPsec VPN Gateway Internet Key Exchange (IKE) must use cryptography that is compliant with Suite B parameters when transporting classified traffic across an unclassified network.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000580",
         "gid": "V-207263",
         "rid": "SV-207263r608988_rule",
         "stig_id": "SRG-NET-000580-VPN-002410",
-        "fix_id": "F-7523r378411_fix"
+        "fix_id": "F-7523r378411_fix",
+        "documentable": false
       },
       "id": "V-207263",
       "title": "The VPN Gateway must validate certificates used for Transport Layer Security (TLS) functions by performing RFC 5280-compliant certification path validation.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000585",
         "gid": "V-207264",
         "rid": "SV-207264r608988_rule",
         "stig_id": "SRG-NET-000585-VPN-002420",
-        "fix_id": "F-7524r378414_fix"
+        "fix_id": "F-7524r378414_fix",
+        "documentable": false
       },
       "id": "V-207264",
       "title": "The VPN Gateway must use FIPS-validated SHA-2 or higher hash function for digital signature generation and verification (non-legacy use).",
@@ -1464,7 +1464,5 @@
       }
     }
   ],
-  "name": "VPN",
-  "title": "Virtual Private Network (VPN) Security Requirements Guide",
-  "summary": "This Security Requirements Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "VPN"
 }

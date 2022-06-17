@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient C2 user Training: Non-AS of PC Comm apps",
         "gid": "V-16070",
         "rid": "SV-17057r1_rule",
         "stig_id": "VVoIP 1300 (GENERAL)",
         "fix_id": "F-16175r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The reliance of C2 and Special-C2 users on this method of communications for assured service communications when assured service failure is highly likely.",
         "responsibility": [
@@ -32,11 +32,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient COOP: C2 User’s Backup for PC Comm app",
         "gid": "V-16073",
         "rid": "SV-17060r1_rule",
         "stig_id": "VVoIP 1205 (GENERAL)",
         "fix_id": "F-16177r1_fix",
+        "documentable": false,
         "severity_override_guidance": "This is “not a finding” in the event the PC, PC communications application, and the network to which it is attached can be proven to provide the reliability and availability needed to support assured service communications. This would be approximately equal to that achieved using an ASLAN and purpose built hardware based endpoints. Applicability of this requirement can vary based on the specific use case and situation. For example, this is “not applicable” in the event a C2 user is in a situation where there is no need to place or receive priority calls. In a remote connectivity use case, a DoD provided PED, private cell phone or regular phone could serve as backup.",
         "potential_impacts": "Denial of service for a C2 or Special-C2 user resulting in the inability to place an assured service call.",
         "responsibility": [
@@ -57,11 +57,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Deficient SOP: Camera operations / pickup",
         "gid": "V-16074",
         "rid": "SV-17061r2_rule",
         "stig_id": "VVoIP/VTC 1900 (GENERAL)",
         "fix_id": "F-16179r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "responsibility": [
           "Information Assurance Officer",
@@ -81,11 +81,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Microphone operations policy",
         "gid": "V-16076",
         "rid": "SV-17063r2_rule",
         "stig_id": "VVT/VTC 1905",
         "fix_id": "F-16180r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -104,11 +104,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient SOP; Video Display Positioning",
         "gid": "V-16077",
         "rid": "SV-17064r1_rule",
         "stig_id": "VVoIP/VTC 1910 (GENERAL)",
         "fix_id": "F-16182r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent and/or improper disclosure of sensitive or classified visual information.",
         "responsibility": [
@@ -128,11 +128,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient SOP; Presentation/App Sharing",
         "gid": "V-16078",
         "rid": "SV-17065r1_rule",
         "stig_id": "VVoIP/VTC 1915 (GENERAL)",
         "fix_id": "F-16183r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent and/or improper disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
         "responsibility": [
@@ -153,11 +153,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient User Trng: PC Collab App Shar’g Security",
         "gid": "V-16081",
         "rid": "SV-17069r1_rule",
         "stig_id": "VVoIP 1310 (GENERAL)",
         "fix_id": "F-16186r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent or improper disclosure of sensitive or classified information.",
         "responsibility": [
@@ -177,11 +177,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Imp’n: A/V Pickup/Capture when Inactive",
         "gid": "V-16082",
         "rid": "SV-17070r1_rule",
         "stig_id": "VVoIP 1735 (GENERAL)",
         "fix_id": "F-16187r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Inadvertent disclosure of sensitive or classified information in aural or visual form",
         "responsibility": [
@@ -202,11 +202,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "UC soft client accessory approval",
         "gid": "V-16085",
         "rid": "SV-17073r2_rule",
         "stig_id": "VVoIP 1745 (GENERAL)",
         "fix_id": "F-16190r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -225,11 +225,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "UC soft client accessory training",
         "gid": "V-16086",
         "rid": "SV-17074r2_rule",
         "stig_id": "VVoIP 1315 (GENERAL)",
         "fix_id": "F-16191r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -248,11 +248,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "UC soft client accessory bridging",
         "gid": "V-16087",
         "rid": "SV-17075r2_rule",
         "stig_id": "VVoIP 1750 (GENERAL)",
         "fix_id": "F-16192r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -271,11 +271,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "UC soft client bridging training",
         "gid": "V-16088",
         "rid": "SV-17076r2_rule",
         "stig_id": "VVoIP 1320 (GENERAL)",
         "fix_id": "F-16193r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -294,11 +294,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient User Trng: PC Comm App Secure Use",
         "gid": "V-16089",
         "rid": "SV-17077r1_rule",
         "stig_id": "VVoIP 1305 (GENERAL)",
         "fix_id": "F-16194r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent and/or improper disclosure of sensitive or classified information.",
         "responsibility": [
@@ -318,11 +318,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Enforce UC soft client acceptable use",
         "gid": "V-16090",
         "rid": "SV-17078r3_rule",
         "stig_id": "VVoIP 1335",
         "fix_id": "F-16195r3_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -340,11 +340,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Provide UC soft client user guide",
         "gid": "V-16091",
         "rid": "SV-17079r3_rule",
         "stig_id": "VVoIP 1330",
         "fix_id": "F-16196r3_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -362,11 +362,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient COOP: PC Comm App Backup Comm’s",
         "gid": "V-16094",
         "rid": "SV-17082r1_rule",
         "stig_id": "VVoIP 1920 (GENERAL)",
         "fix_id": "F-16199r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inability to make an emergency or any call when the PC soft-phone/UC application is unavailable, particularly in an emergency situation.",
         "responsibility": [
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1110",
         "gid": "V-16095",
         "rid": "SV-17083r2_rule",
         "stig_id": "VVoIP 1110",
         "fix_id": "F-16200r3_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Designated Approving Authority",
@@ -409,11 +409,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1720",
         "gid": "V-16096",
         "rid": "SV-17084r3_rule",
         "stig_id": "VVoIP 1720",
         "fix_id": "F-16201r3_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Designated Approving Authority",
@@ -432,11 +432,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1025",
         "gid": "V-16098",
         "rid": "SV-17086r2_rule",
         "stig_id": "VVoIP 1025",
         "fix_id": "F-16203r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -454,11 +454,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Network Architecture: Fixed Tactical",
         "gid": "V-16099",
         "rid": "SV-17087r1_rule",
         "stig_id": "VVoIP 1925 (GENERAL)",
         "fix_id": "F-16204r1_fix",
+        "documentable": false,
         "severity_override_guidance": "This finding can be reduced to a CAT III in the event VVoIP 1930 is not a finding. VVoIP 1930 requires a benefit vs. risk analysis be performed and approval for reduced VVoIP IA configuration measures in highly mobile tactical LANs and systems supporting hardware or PC based voice, video, unified, and/or collaboration communications.",
         "potential_impacts": "Increased potential for the compromise of the VVoIP controllers, gateways, hardware based instruments, and other VVoIP infrastructure. Possible degradation of service on the hardware based phone system. Reduced availability, confidentiality, and integrity of the VVoIP service.",
         "responsibility": [
@@ -478,11 +478,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Risk Analysis: Mobile Tactical Arch.",
         "gid": "V-16101",
         "rid": "SV-17089r1_rule",
         "stig_id": "VVoIP 1930 (GENERAL)",
         "fix_id": "F-16205r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Increased potential for the compromise of the VVoIP controllers, gateways, hardware based instruments, and other VVoIP infrastructure. Possible degradation of service on the hardware based phone system. Reduced availability, confidentiality, and integrity of the VVoIP service.",
         "responsibility": [
@@ -503,11 +503,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1105",
         "gid": "V-16106",
         "rid": "SV-17094r2_rule",
         "stig_id": "VVoIP 1105",
         "fix_id": "F-16211r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -525,11 +525,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1125",
         "gid": "V-16107",
         "rid": "SV-17095r2_rule",
         "stig_id": "VVoIP 1125",
         "fix_id": "F-16212r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -547,11 +547,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1130",
         "gid": "V-16108",
         "rid": "SV-17096r2_rule",
         "stig_id": "VVoIP 1130",
         "fix_id": "F-16214r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -569,11 +569,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient C&amp;A: PC Comm. App. DoD APL Certificatio",
         "gid": "V-16109",
         "rid": "SV-17097r1_rule",
         "stig_id": "VVoIP 1120 (GENERAL)",
         "fix_id": "F-16215r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "De-certification of the supporting communications system or service.",
         "responsibility": [
@@ -593,11 +593,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1705",
         "gid": "V-16111",
         "rid": "SV-17099r2_rule",
         "stig_id": "VVoIP 1705",
         "fix_id": "F-16217r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -615,11 +615,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Integrity: PC Comm App Digital Signature",
         "gid": "V-16112",
         "rid": "SV-17100r1_rule",
         "stig_id": "VVoIP 1710 (GENERAL)",
         "fix_id": "F-16218r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Compromise of the supported communications or the supporting network",
         "responsibility": [
@@ -639,11 +639,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Imp’n: PCCC Application Version",
         "gid": "V-16113",
         "rid": "SV-17101r1_rule",
         "stig_id": "VVoIP 1700 (GENERAL)",
         "fix_id": "F-16219r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Compromise of the supported communications or the supporting network.",
         "responsibility": "Information Assurance Officer"
@@ -653,17 +653,18 @@
       "desc": "Managing, mitigating, or eliminating a newly discovered vulnerably in a communications application is just as important as managing and mitigating the vulnerabilities of the platform supporting the application. PC communications applications must be patched or upgraded when a security related patch or upgrade is released by the vendor. While many vendors will release a patch to mitigate a vulnerability in an operating system or major application, other vendors will include the fix in a new version of the application. Multiple patches can also be rolled up into an upgrade. It is important to maintain the current patch and upgrade level of any communications applications installed on a PC. The purpose of this is to maintain the highest possible level of security for the application and the communications service(s) it provides.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to validate compliance with the following requirement: Ensure PC voice, video, UC, and/or collaboration communications applications are maintained at the current/latest approved patch or version/upgrade level. Determine if PC voice, video, UC, and/or collaboration communications applications are maintained at the current/latest approved patch or version/upgrade level. Consult with the vendor or their web site to determine if the version that is in use is the latest version that contains the latest IA mitigations. Determine if this version is the latest approved version.",
         "fix": "Ensure PC voice, video, UC, and/or collaboration communications applications are maintained at the current/latest approved patch or version/upgrade level. Implement the current/latest approved patch or version/upgrade level to utilize the latest IA mitigations. If an outdated application version is no longer in use, un-install it. If the latest version is not approved, submit it for testing and approval to ensure the latest IA mitigations are available and used."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Config: PC Comm App Operating Privilege",
         "gid": "V-16114",
         "rid": "SV-17102r1_rule",
         "stig_id": "VVoIP 1715 (GENERAL)",
         "fix_id": "F-16220r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Compromise of the supporting PC, attached network, and/or network resources.",
         "responsibility": [
@@ -683,11 +684,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1935",
         "gid": "V-16115",
         "rid": "SV-17103r2_rule",
         "stig_id": "VVoIP 1935",
         "fix_id": "F-16221r2_fix",
+        "documentable": false,
         "severity_override_guidance": "Reduce to a CAT III when vendor generated certificates are used instead of DoD PKI certificates.",
         "responsibility": [
           "System Administrator",
@@ -706,11 +707,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Config: PC Comm App. Server Association",
         "gid": "V-16116",
         "rid": "SV-17104r1_rule",
         "stig_id": "VVoIP 1805 (REMOTE)",
         "fix_id": "F-16222r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Compromise of the supported communications or supporting PC.",
         "responsibility": [
@@ -730,11 +731,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1990",
         "gid": "V-16117",
         "rid": "SV-17105r2_rule",
         "stig_id": "VVoIP 1990",
         "fix_id": "F-16223r2_fix",
+        "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
@@ -752,11 +753,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient User Trng: Non Apprvd PC Comm App/Hdwr",
         "gid": "V-16118",
         "rid": "SV-17106r1_rule",
         "stig_id": "VVoIP 1325 (GENERAL)",
         "fix_id": "F-16224r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Compromise of the supporting PC, attached network, and/or network resources",
         "responsibility": [
@@ -777,11 +778,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient PPSM: Voice/Video/UC PPS Registration",
         "gid": "V-16119",
         "rid": "SV-17107r1_rule",
         "stig_id": "VVoIP 1020 (GENERAL)",
         "fix_id": "F-16225r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Disconnection of the system or service.",
         "responsibility": [
@@ -801,11 +802,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 6165",
         "gid": "V-19440",
         "rid": "SV-21491r3_rule",
         "stig_id": "VVoIP 6165",
-        "fix_id": "F-20184r3_fix"
+        "fix_id": "F-20184r3_fix",
+        "documentable": false
       },
       "id": "V-19440",
       "title": "VVoIP session signaling must be encrypted to provide end-to-end interoperable confidentiality and integrity.",
@@ -819,11 +820,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 6170",
         "gid": "V-19441",
         "rid": "SV-21492r3_rule",
         "stig_id": "VVoIP 6170",
-        "fix_id": "F-20295r3_fix"
+        "fix_id": "F-20295r3_fix",
+        "documentable": false
       },
       "id": "V-19441",
       "title": "VVoIP session media must be encrypted to provide end-to-end interoperable confidentiality and integrity.",
@@ -837,11 +838,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Deficient COOP: LSC / MFSS - Backup LSC",
         "gid": "V-19442",
         "rid": "SV-21493r1_rule",
         "stig_id": "VVoIP 1210 (GENERAL)",
         "fix_id": "F-20186r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "The inability to use the V-VoIP system to communicate",
         "responsibility": "Information Assurance Officer"
@@ -858,11 +859,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1215",
         "gid": "V-19443",
         "rid": "SV-21494r3_rule",
         "stig_id": "VVoIP 1215",
         "fix_id": "F-20187r3_fix",
+        "documentable": false,
         "severity_override_guidance": "Reduced to no finding when the site has a separate commercial phone system (dedicated PBX or discrete instruments) available for areas with long local service. Reduced to no finding when the site has with a separate DoD phone system (PBX or discrete instruments) with a network path that is geographically separate from the system under evaluation available for areas with long local service. Reduced to no finding when the site has backup VVoIP call control to maintain local internal and commercial service if network connectivity is severed from the remote centrally located session controller."
       },
       "id": "V-19443",
@@ -877,11 +878,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Integrity: Vendor’s App, Upgrade, Patch",
         "gid": "V-19482",
         "rid": "SV-21541r1_rule",
         "stig_id": "VVoIP 1201 (GENERAL)",
         "fix_id": "F-20210r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "Compromise of the supported communications or the supporting infrastructure",
         "responsibility": [
@@ -901,11 +902,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 1936",
         "gid": "V-19493",
         "rid": "SV-21552r2_rule",
         "stig_id": "VVoIP 1936",
-        "fix_id": "F-20214r2_fix"
+        "fix_id": "F-20214r2_fix",
+        "documentable": false
       },
       "id": "V-19493",
       "title": "The confidentiality of VVoIP endpoint configuration files downloaded during endpoint registration must be protected by encryption.",
@@ -919,11 +920,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 5100",
         "gid": "V-19500",
         "rid": "SV-21562r2_rule",
         "stig_id": "VVoIP 5100",
-        "fix_id": "F-20216r2_fix"
+        "fix_id": "F-20216r2_fix",
+        "documentable": false
       },
       "id": "V-19500",
       "title": "The LAN supporting VVoIP services must provide enhanced reliability, availability, and bandwidth.",
@@ -937,11 +938,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 5110",
         "gid": "V-19514",
         "rid": "SV-21576r2_rule",
         "stig_id": "VVoIP 5110",
         "fix_id": "F-20226r2_fix",
+        "documentable": false,
         "severity_override_guidance": "Reduced to CAT III when the LAN hardware does not directly support Special-C2 and C2 users.",
         "responsibility": "Information Assurance Officer"
       },
@@ -957,11 +958,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 5115",
         "gid": "V-19521",
         "rid": "SV-21583r2_rule",
         "stig_id": "VVoIP 5115",
         "fix_id": "F-20229r2_fix",
+        "documentable": false,
         "severity_override_guidance": "Reduced to CAT III when the LAN hardware does not directly support Special-C2 and C2 users.",
         "responsibility": "Information Assurance Officer"
       },
@@ -977,11 +978,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient COOP design: VVOIP System Backup Power",
         "gid": "V-19535",
         "rid": "SV-21597r1_rule",
         "stig_id": "VVoIP 1220 (GENERAL)",
         "fix_id": "F-20235r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "Reduced or no availability and denial-of-service. A high priority command and control or emergency life-safety/security call may not be able to be completed in a timely fashion or at all.",
         "responsibility": "Information Assurance Officer"
@@ -991,17 +992,18 @@
       "desc": "An uninterruptible power source for the LAN and VVoIP infrastructure is a necessity for the continued survivability, availability, and reliability of the VVoIP services. In traditional telecommunications systems the need for backup power is the same but it can be met generally at a single location, which is the phone switch location. The power required by the endpoints is generally provided by the phone switch to maintain basic dial tone services even though some “digital and feature phones require a local power supply. This is not possible in an IP/LAN based VVoIP network because the LAN infrastructure is geographically spread out to be within 100m cabling distance from each LAN endpoint. As such, the power, both primary and backup, must follow the NE to its location. Centrally located core equipment must also have a central uninterruptible power supply (UPS). The endpoints also need continuous power to maintain service. IP telephony endpoints require power to operate. This can be provided locally with a power brick (a small plug-in power adaptor/supply) and an AC outlet or can be provided by the LAN using Power Over Ethernet (POE) technologies. The UPS providing backup power to the LAN access switch can also provide backup power to the endpoint via POE if properly sized. If this is not the case, an individual UPS is required for each instrument supporting special C2 and C2 users of the proper capacity. Policy sets the minimum requirements for the backup power supplied to the VVoIP systems and the supporting LAN and VVoIP endpoints with emphasis on supporting C2 communications when primary power is lost. While this is a very valid case, it is also best practice, if not critical, to provide some level of backup power to the core systems, LAN, and endpoints that only support C2R and non-C2/admin users to support some level of reliable/survivable service, especially for emergency life-safety and security calls. NOTE: The requirement here for UPS support for C2R or Non-C2/admin users communications is negated in the event that such users have an alternate reliable means of communicating in such situations. Personal and potentially even government provided cell phones are not the answer since there are many locations in DoD facilities where they are prohibited and/or signal availability is unreliable. An alternative to this could be to put a policy and SOP into effect that requires such users to evacuate the facility to a location where the appropriate communications capability is available. The policy excerpts driving this requirement are as follows: From the UCR 5.3.1.7.5 Power Backup [Required: ASLAN – Conditional: Non-ASLAN] To meet CJCS requirements for assured services, equipment serving special C2 and C2 users must be provided with backup power. The ASLAN must meet the power requirements outlined at a minimum as follows: Special C2: The ASLAN must provide an 8-hour backup capability in the event of primary power loss to special C2 users. Any ASLAN product, Core, Distribution, or Access that supplies service to the special C2 user must have an 8-hour UPS. 2. C2: The ASLAN must provide 2 hour backup capability in the event of primary power loss to C2 users. Any ASLAN product, core, distribution or access, that supplies service to the C2 user must have a 2 hour uninterruptible power system (UPS). 3. C2(R) or Non-C2: C2(R) or non-C2 users may lose telephony service in the event of a power failure. NOTE: Backup Power (Environmental). The backup power system shall have the capacity to operate environmental systems needed to sustain continuous equipment operation. Power to the environmental systems may not need to be continuous. From CJCSI 6215.01C Appendix A Enclosure C Based on the GIG MA ICD requirements associated with availability and reliability, the following requirements shall be met by IP based RTS. (a) Availability requirement for equipment/software serving Special C2 users is 0.99999 with eight hours uninterrupted power supply. (b) Availability requirement for equipment/software serving C2 users is 0.99997 with two hours uninterrupted power supply. (c) Availability requirement for equipment/software serving C2 users that are authorized to originate Routine ONLY (C2R) and non C2/admin users is 0.999 with no uninterrupted power supply. NOTE: While current DoD policy dictates that the VVoIP system as a whole only provide C2 and C2R users with specific durations of continued service during a power failure (as a cost saving measure), it is highly recommended that the entire system be provided some level of UPS. Traditional phone service is generally always available in a power failure since the endpoint or subscriber instrument is powered from the telephone switch. While there are exceptions to this regarding feature phones and some digital phones that need local power, for the most part all analog phones and others powered by the switch always work when local power is out. As noted above, VVoIP service is subject to disruption if power to the LAN infrastructure is disrupted. This can happen at various points since the LAN is a distributed (non-centralized) network. When implementing a VVoIP system without considering UPS power needs for the VVoIP controllers and endpoints as well as entire LAN, and supporting those needs with UPSs, we are reducing the availability of the telecommunications service that we are accustomed to.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: Ensure an uninterruptible power supply (battery at a minimum; plus optional generator) is provided for all parts of the VVoIP infrastructure (Core LSC/MFSS, adjunct systems providing critical services, EBC, CER, LAN NEs, and endpoints as follows: &gt; All VVoIP system devices including voice endpoints and portions of the LAN that directly support any single special-C2 user are minimally provided 8 hours UPS. &gt; All VVoIP system devices including voice endpoints and portions of the LAN that directly supports any single C2 user are minimally provided 2 hours UPS. &gt; All VVoIP system devices including voice endpoints and portions of the LAN that supports C2R and non-C2/admin users (that is the balance of the VVoIP system) are provided some reasonable level (minimum 15 minutes / target 30 to 60 minutes) of UPS in support of emergency life-safety and security communications. &gt; UPS systems supplying power to infrastructure that supports special-C2 and C2 users must also support environmental power (for example cooling power) such that equipment failures are prevented. This support may not need to be continuous but must be commensurate with the users supported (8 or 2hrs as appropriate). UPS. NOTE: UPS in support of C2R and non-C2/admin users’ endpoints is best provided using POE particularly if supporting the general population. (Probably more cost effective than a battery under every desk). While support of all such endpoints and infrastructure is desirable since this provides greater availability, the cost could become a negating factor. In this case, a portion of the regular endpoints or emergency use endpoints could be provided at strategic locations within the facility to fulfill the requirement to support emergency life-safety and security communications. Determine if the LAN supports Special-C2 or C2 users. If so, determine which part (or parts) of the LAN directly supports these users. Determine the method by which C2R and non-C2/admin users’ emergency life-safety and security communications are supported. This is a finding in the event, based on the interview; consideration has not been given to all aspects of backup power as described in the requirement. This finding carries a severity of Cat II if the requirements supporting a Special-C2 or C2 user are deficient. This finding carries a severity of Cat III if the requirements supporting C2R or Non-C2/admin users are deficient. NOTE: The requirement here for UPS support for C2R or Non-C2/admin users communications is negated in the event that such users have an alternate reliable means of communicating in such situations. Personal and potentially even government provided cell phones are not the answer since there are many locations in DoD facilities where they are prohibited and/or signal availability is unreliable. An alternative to this could be to put a policy and SOP into effect that requires such users to evacuate the facility to a location where the appropriate communications capability is available.",
         "fix": "Ensure an uninterruptible power supply (battery at a minimum; plus optional generator) is provided for all parts of the VVoIP infrastructure (Core LSC/MFSS, adjunct systems providing critical services, EBC, CER, LAN NEs, and endpoints as follows: &gt; All devices including voice endpoints and portions of the LAN that directly support any single special-C2 user are minimally provided 8 hours UPS. &gt; All devices including voice endpoints and portions of the LAN that directly supports any single C2 user are minimally provided 2 hours UPS. &gt; All devices including voice endpoints and portions of the LAN that supports C2R and non-C2/admin users (that is the balance of the VVoIP system) are provided some reasonable level of UPS in support of emergency life-safety and security communications. &gt; UPS systems supplying power to infrastructure that supports special-C2 and C2 users must also support environmental power (for example cooling power) such that equipment failures are prevented. This support may not need to be continuous but must be commensurate with the users supported (8 or 2hrs as appropriate). UPS NOTE: UPS in support of C2R and non-C2/admin users’ endpoints is best provided using POE particularly if supporting the general population. (Probably more cost effective than a battery under every desk). While support of all such endpoints and infrastructure is desirable since this provides greater availability, the cost could become a negating factor. In this case, a portion of the regular endpoints or emergency use endpoints could be provided at strategic locations within the facility to fulfill the requirement to support emergency life-safety and security communications. Install, upgrade, and maintain UPS systems as needed to meet the backup power requirements."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient design: VVoIP addressing re: core comp.",
         "gid": "V-19545",
         "rid": "SV-21607r1_rule",
         "stig_id": "VVoIP 5220 (LAN)",
         "fix_id": "F-20238r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "responsibility": "Information Assurance Officer"
       },
@@ -1017,11 +1019,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 5405",
         "gid": "V-19547",
         "rid": "SV-21610r3_rule",
         "stig_id": "VVoIP 5405",
         "fix_id": "F-20249r3_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-19547",
@@ -1036,11 +1038,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Segregated VVoIP management",
         "gid": "V-19562",
         "rid": "SV-21626r2_rule",
         "stig_id": "VVoIP 5505 (LAN)",
         "fix_id": "F-20254r2_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "DCBP-1, DCPA-1, DCSP-1, ECSC-1"
       },
@@ -1056,11 +1058,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP Core ACL support",
         "gid": "V-19565",
         "rid": "SV-21629r2_rule",
         "stig_id": "VVoIP 5510 (LAN)",
         "fix_id": "F-20255r2_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "DCBP-1, DCPA-1, DCSP-1, ECSC-1"
       },
@@ -1069,17 +1071,18 @@
       "desc": "VLAN and IP address segmentation enables access and traffic control for the VVoIP system components. Only the required protocols are to reach a given VVoIP device thereby protecting it from non-essential protocols. This protection is afforded on the LAN by implementing ACLs based on VLAN/subnet, protocol and in some instances specific IP addresses. While a firewall placed between the core equipment and endpoint VLANs might provide better protection for the core equipment as a whole, a router is best suited to control the varying traffic patterns between the various devices. Normally a large B/C/P/S will have a large LAN and one or more LSCs supporting a large VVoIP phone system. In this case, it is within normal network design parameters to employ routing devices at the core of the LAN within the enclave. As such, the VVoIP system’s core equipment would be connected to these routing devices or have one or more routing devices of its own. NOTE: It is recognized that small LANs and enclaves may not support VVoIP phone system core equipment as would be the case if they used a “managed service” or a remote LSC. In such a LAN the number of VLANs might be limited to one for data and one for VoIP. Also, a small LAN may not have a router at its core, potentially due to cost, thereby not having the capability of supporting multiple VVoIP VLANs. In this case, this requirement does not apply and all VVoIP endpoints and local VVoIP infrastructure equipment would be in a single VLAN. However, the use of a Layer 3 LAN switch instead of a dedicated router may be a cost effective method to meet this requirement for small LANs.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: In the event the LAN supports VVoIP system core or infrastructure equipment or multiple VVoIP VLANs, ensure the supporting LAN design contains one or more routing devices (router or layer 3 switch) to provide traffic control (support for required ACLs) between the various required VVoIP VLANs required for the core equipment. This device(s) should be as close to the VVoIP core equipment as possible. As such this is the intersection of these VLANs. NOTE: this does not have to be one device but could be several, particularly if the VVoIP equipment is split and geographically diverse in support of system survivability. NOTE: These devices may be (and typically will be) the core routing devices for the data LAN as well or may be dedicated to the VVoIP system.",
         "fix": "Ensure the VVoIP system and supporting LAN design contains one or more routing devices (router or layer 3 switch) to provide traffic control (support for required ACLs) between the various required VVoIP VLANs. Install the required routing equipment as close to the VVoIP core equipment as is practical and apply the required ACLs."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1015",
         "gid": "V-19592",
         "rid": "SV-21733r2_rule",
         "stig_id": "VVoIP 1015",
-        "fix_id": "F-20290r2_fix"
+        "fix_id": "F-20290r2_fix",
+        "documentable": false
       },
       "id": "V-19592",
       "title": "The sites enclave boundary protection must route commercial VoIP traffic via a local Media Gateway (MG) connected to a commercial service provider using PRI, CAS, or POTS analog trunks.",
@@ -1093,11 +1096,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1225",
         "gid": "V-19593",
         "rid": "SV-21734r3_rule",
         "stig_id": "VVoIP 1225",
-        "fix_id": "F-20291r3_fix"
+        "fix_id": "F-20291r3_fix",
+        "documentable": false
       },
       "id": "V-19593",
       "title": "Local commercial phone service must be provided in support of Continuity Of Operations (COOP) and Fire and Emergency Services (FES) communications.",
@@ -1111,11 +1114,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient C&amp;A: VVoIP DISN Bndry in LAN C&amp;A doc’n",
         "gid": "V-19594",
         "rid": "SV-21735r1_rule",
         "stig_id": "VVoIP 6100 (DISN-IPVS)",
         "fix_id": "F-20292r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "The inability to effectively maintain the network or voice service and apply security policy and vulnerability mitigations. The inability for the DAA to understand the voice system’s and/or network’s security posture, threats, and vulnerabilities. The inability for the DAA to approve or accept the security risk of operating the system",
         "responsibility": "Information Assurance Officer"
@@ -1132,11 +1135,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient DISN IPVS integration for C2 support",
         "gid": "V-19595",
         "rid": "SV-21736r1_rule",
         "stig_id": "VVoIP 6105 (DISN-IPVS)",
         "fix_id": "F-20293r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "The inability to make precedence or priority calls across the DISN in support of C2 assured service communications.",
         "responsibility": "Information Assurance Officer"
@@ -1153,11 +1156,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 6115",
         "gid": "V-19596",
         "rid": "SV-21737r2_rule",
         "stig_id": "VVoIP 6115",
-        "fix_id": "F-20294r2_fix"
+        "fix_id": "F-20294r2_fix",
+        "documentable": false
       },
       "id": "V-19596",
       "title": "All Customer Edge Routers (CE-R) implemented as the DISN access circuit termination point for the DISN NIPRNet IP Voice Services (IPVS) must be listed on the DoD Approved Products List (APL).",
@@ -1171,11 +1174,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 6120",
         "gid": "V-19597",
         "rid": "SV-21738r2_rule",
         "stig_id": "VVoIP 6120",
-        "fix_id": "F-20296r2_fix"
+        "fix_id": "F-20296r2_fix",
+        "documentable": false
       },
       "id": "V-19597",
       "title": "A Session Border Controller (SBC) implemented as the DISN boundary element for the DISN NIPRNet IP Voice Services (IPVS) must be listed on the DoD Approved Products List (APL).",
@@ -1189,11 +1192,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient design: NIDS protection for VVoIP",
         "gid": "V-19598",
         "rid": "SV-21739r1_rule",
         "stig_id": "VVoIP 6125 (DISN-IPVS)",
         "fix_id": "F-20297r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "Unauthorized and undetected access or compromise of the enclave or the services it supports",
         "responsibility": "Information Assurance Officer",
@@ -1204,17 +1207,18 @@
       "desc": "The purpose of the Internal Network IDS is to provide a backup for the enclave firewall(s) in the event they are compromised or mis-configured such that traffic which is normally blocked ends up being passed as well as to detect other malicious activity entering (or leaving) the enclave. As such the NIDS must be implemented in such a manner that it monitors all traffic flowing through the data and VVoIP firewalls. Minimally, it will detect improper data protocol traffic coming through the VVoIP firewall. While the NIDS will not be able to inspect the VVoIP signaling and bearer packet payload due to its encryption, it could detect anomalous behavior in the flow of these packets. Additionally, per the NI STIG, the NIDS is required to be a separate device from the firewall for reliability reasons. If the common firewall/IDS platform is compromised, both the firewall and IDS is vulnerable.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: In the event the VVoIP system within the enclave is interconnected with other VVoIP systems across the WAN, ensure the required internal Network IDS (NIDS) is implemented such that it monitors the traffic to/from both the data firewall (function) and the required VVoIP firewall/EBC (function). NOTE: This is applicable whether the VVoIP system is integrated with the DISN IPVS or not. This is a finding in the event the NIDS is not implemented such that it sees traffic from the VVoIP firewall (EBC or other) as well as the data firewall. NOTE: The NIDS monitoring the VVoIP firewall may be the same device that monitors the data firewall or it may be a separate device. In the event it is a separate device, it is subject to all Network Infrastructure STIG requirements to include CNDSP monitoring if applicable. NOTE: The Network Infrastructure STIG recognizes that many of today’s NIDS are also intrusion prevention devices. The NI STIG refers to the required NIDS as an Intrusion detection/Prevention System (IDPS).",
         "fix": "In the event the VVoIP system within the enclave is interconnected with other VVoIP systems across the WAN, ensure the required internal Network IDS (NIDS) is implemented such that it monitors the traffic to/from both the data firewall (function) and the required VVoIP firewall/EBC (function). NOTE: This is applicable whether the VVoIP system is integrated with the DISN IPVS or not."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 6130",
         "gid": "V-19599",
         "rid": "SV-21740r2_rule",
         "stig_id": "VVoIP 6130",
-        "fix_id": "F-20298r2_fix"
+        "fix_id": "F-20298r2_fix",
+        "documentable": false
       },
       "id": "V-19599",
       "title": "All Local Session Controllers (LSC), Enterprise Session Controllers (ESC), and Multi-Function Soft Switches (MFSS) implemented within the enclave to provide session management for the DISN NIPRNet IP Voice Services (IPVS) must be listed on the DoD Approved Products List (APL).",
@@ -1228,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Design: Access Circuit Call Budgets",
         "gid": "V-19600",
         "rid": "SV-21741r1_rule",
         "stig_id": "VVoIP 6155 (DISN-IPVS)",
         "fix_id": "F-20299r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "Reduced service availability and the inability to place a priority call",
         "responsibility": "Information Assurance Officer"
@@ -1242,17 +1246,18 @@
       "desc": "The DISN NIPRNet IPVS PMO has developed a method to provide Assured Service voice and video communications over the bandwidth constrained portion of the DISN. This method includes or supports providing precedence and priority capabilities for C2 users similar to the MLPP service provided by the traditional TDM based DSN. The enclave’s internal LAN is required to be designed to be non-blocking. That is it must provide ample bandwidth for all the traffic that it is expected to carry. This is controllable by DoD. On the other hand, the DISN Core is designed to have ample bandwidth and expandability to support what ever traffic the DoD enclaves throw at it. As such it is considered to be bandwidth rich. Due to issues surrounding the ability for an attached enclave to determine the bandwidth availability or congestion conditions within the core in real time, an assumption has to be made that the DISN Core is also non-blocking. The DISN Core bandwidth is also controllable by DoD. The portion of the overall DISN network that is bandwidth constrained is the TDM or optical OCx access circuits between the local enclave and the DISN Core. This is the portion of the network where we have the least control over bandwidth availability, primarily due to the cost of these circuits. The cost factor is an issue since many DISN access circuits must rely on commercial carriers for some portion of the overall circuit. This is typically the portion that delivers the DISN service to the B/C/P/S. Access circuit issues are less of an issue if the B/C/P/S also provides a home for one of the DISN Core SDNs. This is because a direct connection can be made between the CER and the SDN, however, the circuit capacity may still be an issue if the SDN is a small one that does not have an AR or PE. Due to the nature of digital transmission over these bandwidth constrained circuits, the quality and availability of the communications is degraded as these circuits become congested. “Data” packets can wait until processed without negatively affecting the delivery of a message. This is not the case for VVoIP due to its time sensitive nature (it is a real time service). If VVoIP packets have to wait for transmission, the quality of the call suffers. In IA terms, this relates to the availability of the service and quality communications. To overcome the bandwidth constraints inherent in WAN access circuits, an engineered bandwidth budget must be developed for each service (voice, video, and data) using the circuit. Voice and video budgets are developed in terms of call or session counts. For example, the UCR defines a voice call as follows: “One voice session budget unit shall be equivalent to 110 kilobits per second (kbps) of access circuit bandwidth independent of the EI codec used. This includes ITUT Recommendation G.711 encoding rate plus Internet Protocol Version 6 (IPv6) packet overhead plus ASLAN Ethernet overhead. IPv6 overhead, not IPv4 overhead, is used to determine bandwidth equivalents here.” NOTE: This budget is unidirectional and must be doubled for bi-directional communications sessions. NOTE: The VoIP budget covers the following types of services: Voice VoIP, FoIP, MoIP, or SCIP over IP calls The UCR also defines a video call as follows: “Since the bandwidth of a video session can vary [depending upon video resolution (ed)], video sessions will be budgeted in terms of video session units (VSUs). One VSU equals 500 kbps and bandwidth for video sessions will be allocated in multiples of VSUs. For example, the bandwidth allocated to video sessions may be 500 kbps, 1000 kbps, and 2500 kbps. Thus, a video session that requires 2500 kbps will be allocated five VSUs.” NOTE: This discussion, as it relates to video, is in regard to video sessions controlled by the LSC using AS-SIP for the signaling protocol. H.323 signaled video and/or VTC sessions must be considered separately and potentially have their own budget for access circuit bandwidth. NOTE: This budget (which also includes the audio component) is unidirectional and must be doubled for bi-directional communications sessions. When developing the bandwidth budgets, the engineer must determine how many simultaneous voice and video calls/sessions are to be supported by the access circuit based upon the unit per call defined in the UCR. The bandwidth budget to be reserved for voice is then calculated along with a budget for video. Next the engineer must determine what percentage of the overall access circuit bandwidth these reserved budgets should consume. The access circuit is then sized (ordered) to accommodate the needs. It is not recommended that IP voice and video capabilities be added to an existing circuit since this would mean the call/session counts would have to be restricted or the data budget would have to be squeezed. NOTE: Data traffic is permitted to surge into the voice and video budgets if the bandwidth is available; however the voice and video budgets are reserved and will be reclaimed if needed. Voice and video is not permitted to surge into the data budget since ASAC needs a fixed call count to be effective. NOTE: Instructions for determining voice call budgets for a DISN WAN access circuit can be found in the UCR section 5.3.3.11 Provisioning",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: In the event the VVoIP system connects to the DISN WAN for VVoIP transport between enclaves AND the system is intended to provide assured service communications to any level of C2 user (Special C2, C2, C2(R)), ensure Session Admission Control (SAC) for the DISN Core access circuit(s) is supported by engineered bandwidth budgets for VoIP and Video calls/sessions in support of Assured Service. NOTE: SAC in support of Assured Service is also referred to as Assured Service Admission Control (ASAC) NOTE: The VoIP budget covers the following types of services: Voice VoIP, FoIP, MoIP, or SCIP over IP calls NOTE: Per call/session units are defined in the UCR and are unidirectional. They must be doubled to support bi-directional communications between users which is the typical phone call. This is a finding in the event there is no evidence that the required budgets have been calculated and/or the access circuit has not been sized accordingly.",
         "fix": "In the event the VVoIP system connects to the DISN WAN for VVoIP transport between enclaves AND the system is intended to provide assured service communications to any level of C2 user (Special C2, C2, C2(R)), ensure Session Admission Control (SAC) for the DISN Core access circuit(s) is supported by engineered bandwidth budgets for VoIP and Video calls/sessions in support of Assured Service. NOTE: SAC in support of Assured Service is also referred to as Assured Service Admission Control (ASAC) NOTE: The VoIP budget covers the following types of services: Voice VoIP, FoIP, MoIP, or SCIP over IP calls NOTE: Per call/session units are defined in the UCR and are unidirectional. They must be doubled to support bi-directional communications between users which is the typical phone call. NOTE: Instructions for determining voice call budgets for a DISN WAN access circuit can be found in the UCR section 5.3.3.11 Provisioning"
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient imp’n: C2 enclave; Dual Homed Circuits",
         "gid": "V-19601",
         "rid": "SV-21742r1_rule",
         "stig_id": "VVoIP 6135 (DISN-IPVS)",
         "fix_id": "F-20300r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "Reduced availability and the inability to complete a C2 call",
         "responsibility": "Information Assurance Officer"
@@ -1262,17 +1267,18 @@
       "desc": "Redundancy and dual homing is used within the DISN core to provide for continuity of operations (COOP) in the event a piece of equipment, circuit path, or even an entire service delivery node is lost. DoD policy also requires DoD enclaves that support C2 users for data services to be dual homed to the DISN core SDNs. This means that there will be two physically separate access circuits from the enclave to two geographically diverse DISN SDNs. Once the access circuits arrive at the SDNs, the circuits need to be connected to two geographically diverse DISN WAN Service (NIPRNet or SIPRNet) Aggregation Routers (AR) or DISN Provider Edge (PE) routers. Depending upon the size of the SDN, one or both of the access circuits must be extended to another SDN containing the AR or PE. AR’s are also dual homed to geographically diverse DISN PE routers. A single circuit provides far less redundancy and reliability than dual circuits This redundancy is required to increase the availability of the access to the DISN core so that there is more chance that assured service can be achieved. This need extends to assured service C2 VVoIP communications and is why we check it here.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: In the event the VVoIP system connects to the DISN WAN for VVoIP transport between enclaves AND the system is intended to provide assured service communications to any level of C2 user (Special C2, C2, C2(R)), ensure the enclave is dual homed to two geographically diverse DISN SDNs and DISN WAN Service (NIPRNet or SIPRNet) Aggregation Routers (AR) or DISN Provider Edge (PE) routers. NOTE: This means there are two DISN (or commercial) access circuits (many circuits will have a commercial component, typically the “last mile”) from the site/enclave to the DISN SDNs. NOTE: This assumes the site/enclave is NOT collocated with a DISN SDN such that a direct Ethernet or optical connection can be made. NOTE: If a site is located at a DISN SDN and is able to directly connect to the SDN using Ethernet or optical connections, the site may be able to rely on the dual homing of the SDN into the core. However, the site must still be homed to two geographically diverse ARs. This is dependant upon the size or type of the SDN. A large site directly connected to a smaller SDN will implement an access circuit to a geographically diverse SDN (i.e., another SDN in another location remote from the local SDN. This should not be one of the SDNs that to which the local SDN is homed. Determine if the site supports any level of C2 user. Determine how many access circuits are implemented and to what SDN they are homed. Additionally, determine the ARs or PEs to which the enclave is homed. This is a finding in the event the site is a C2 site and the DISN access circuits between the enclave’s WAN boundary and the DISN is not redundant and diverse as described in the requirement and notes. This is not a finding in the event the site does not support any level of C2 user.",
         "fix": "In the event the VVoIP system connects to the DISN WAN for VVoIP transport between enclaves AND the system is intended to provide assured service communications to any level of C2 user (Special C2, C2, C2(R)), ensure the enclave is dual homed to two geographically diverse DISN SDNs and DISN WAN Service (NIPRNet or SIPRNet) routers. NOTE: This means there are two DISN (or commercial) access circuits (many circuits will have a commercial component, typically the “last mile”) from the site/enclave to the DISN SDNs. NOTE: This assumes the site/enclave is NOT collocated with a DISN SDN such that a direct Ethernet or optical connection can be made.. NOTE: If a site is located at a DISN SDN and is able to directly connect to the SDN using Ethernet or optical connections, the site may be able to rely on the dual homing of the SDN into the core. However, the site must still be homed to two geographically diverse ARs. This is dependant upon the size or type of the SDN. A large site directly connected to a smaller SDN will implement an access circuit to a geographically diverse SDN (i.e., another SDN in another location remote from the local SDN. This should not be one of the SDNs that to which the local SDN is homed."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient imp’n: C2 enclave; Dual Circuit Capacity",
         "gid": "V-19602",
         "rid": "SV-21743r1_rule",
         "stig_id": "VVoIP 6140 (DISN-IPVS)",
         "fix_id": "F-20301r1_fix",
+        "documentable": false,
         "severity_override_guidance": "none",
         "potential_impacts": "Reduced availability and the inability to complete a C2 call"
       },
@@ -1281,17 +1287,18 @@
       "desc": "Providing dual homed access circuits from a C2 enclave to the DISN core is useless unless both circuits provide the same capacity to include enough overhead to support surge conditions. If one circuit is lost due equipment failure or facility damage, the other circuit must be able to carry the entire engineered load for a single circuit servicing the site. Additionally, the engineered capacity must take additional bandwidth into account to support higher levels of both data and VVoIP communications in time of crisis.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: In the event dual homed DISN core access circuits are implemented as required to serve the enclave, ensure each circuit has the same capacity such that one is able to support the entire engineered bandwidth needs of the enclave. NOTE: Each circuit must be engineered to include additional bandwidth to support higher levels of both data and VVoIP communications in time of crisis. Determine if the site is dual homed via dual access circuits. Determine the size of both access circuits. Determine the engineered bandwidth needs for the enclave connection to the WAN.",
         "fix": "Ensure a bandwidth engineering study is performed to determine the WAN bandwidth needs for the site to include surge capacity. Ensure each redundant DISN Core access circuit has the same capacity such that one is able to support the entire engineered bandwidth needs of the enclave."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Design: Dual Homed ckts; Diverse Paths",
         "gid": "V-19603",
         "rid": "SV-21744r1_rule",
         "stig_id": "VVoIP 6145 (DISN-IPVS)",
         "fix_id": "F-20302r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "Reduced availability and the inability to complete a C2 call",
         "responsibility": "Information Assurance Officer",
@@ -1302,17 +1309,18 @@
       "desc": "In previous requirements we discussed the need for redundant DISN Core access circuits between the enclave and the DISN SDNs. Another method for providing the greatest reliability and availability for DISN services is to provide redundancy in the network pathways between the customer site and the redundant DISN SDNs. The DISN core network is designed to be highly reliable and available in support of the DoD mission, the most vulnerable part of the network is the access circuit from the enclave to the core and the path it takes from the SDN to the customer’s site. Therefore redundant access circuits should be provisioned. Physical pathways for communications network access circuits are vulnerable to physical disruption from a variety of threats, both natural and man made. These threats range from storm damage (falling trees, floods, to being damaged or dug up by “the big yellow fiber-finder” (backhoe); to rampaging vehicles attacking utility poles; to malicious acts including war and terrorism. To overcome the physical threat, the redundant circuits should follow geographically diverse paths.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: In the event the VVoIP system connects to the DISN WAN for VVoIP transport between enclaves AND the system is intended to provide assured service communications to any level of C2 user (Special C2, C2, C2(R)), ensure the required dual homed DISN Core or NIPRNet access circuits follow geographically diverse paths from the CER(s) along the entire route to the geographically diverse SDNs. Each circuit will use different facilities such as cables, demarks, and digital cross connects in geographically diverse locations. NOTE: Geographic and facilities diversity will be maintained on-site and off-site. This is a finding in the event the required dual-homed circuits follow the same path or are close enough to be damaged by a single event. NOTE: The paths taken by the access circuits must remain significantly separate for their entire length such that a single point of failure is not created.",
         "fix": "Ensure dual homed DISN Core or NIPRNet access circuits follow geographically diverse paths from the CER(s) along the entire route to the geographically diverse SDNs. Ensure each circuit uses different facilities such as cables, demarks, and digital cross connects in geographically diverse locations. Ensure geographic and facilities is maintained on-site and off-site. Ensure the paths taken by the access circuits remain significantly separate along their entire length such that a single point of failure is not created."
       }
     },
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 6150",
         "gid": "V-19604",
         "rid": "SV-21745r3_rule",
         "stig_id": "VVoIP 6150",
-        "fix_id": "F-20303r4_fix"
+        "fix_id": "F-20303r4_fix",
+        "documentable": false
       },
       "id": "V-19604",
       "title": "Critical network equipment must be redundant and in geographically diverse locations for a site supporting C2 users.",
@@ -1326,11 +1334,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 7100 (ITSP)",
         "gid": "V-19606",
         "rid": "SV-21747r1_rule",
         "stig_id": "VVoIP 7100 (ITSP)",
         "fix_id": "F-20305r3_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "EBCR-1"
       },
@@ -1346,11 +1354,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1800",
         "gid": "V-19627",
         "rid": "SV-21768r3_rule",
         "stig_id": "VVoIP 1800",
         "fix_id": "F-20331r3_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-19627",
@@ -1365,11 +1373,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 5320",
         "gid": "V-19651",
         "rid": "SV-21792r3_rule",
         "stig_id": "VVoIP 5320",
         "fix_id": "F-20355r3_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-19651",
@@ -1384,11 +1392,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 5300",
         "gid": "V-19652",
         "rid": "SV-21793r4_rule",
         "stig_id": "VVoIP 5300",
-        "fix_id": "F-20356r4_fix"
+        "fix_id": "F-20356r4_fix",
+        "documentable": false
       },
       "id": "V-19652",
       "title": "The access switch must only allow a maximum of one registered MAC address per access port, except when the Voice Video Endpoint has an enabled PC port.",
@@ -1402,11 +1410,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 5310",
         "gid": "V-19654",
         "rid": "SV-21795r3_rule",
         "stig_id": "VVoIP 5310",
         "fix_id": "F-20358r3_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-19654",
@@ -1421,11 +1429,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Deficient testing: COOP/Emergency phones",
         "gid": "V-21506",
         "rid": "SV-23715r1_rule",
         "stig_id": "VVoIP 1921 (GENERAL)",
         "fix_id": "F-22295r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "The inability to make an emergency or any call in the event the COOP/backup/emergency telephone is nonfunctional.",
         "responsibility": [
@@ -1439,17 +1447,18 @@
       "desc": "Backup/COOP or emergency telephones are useless if they don’t work. Thus they need to be tested regularly to ensure their functionality, particularly if they are not used regularly. Regular use will detect non functionality issues quickly. If not regularly used, service can be disrupted and the phone rendered inoperable without detection until a situation arose requiring its use. There’s nothing worse than a non functional communications device in an emergency situation. As such, a regular testing plan for backup/COOP or emergency telephones must be developed and documented that includes a record of the tests performed. The records of the test should include such information as the instrument being tested, date and potentially the time the test was performed, the name of the person performing the test, and whether the phone is functional or not. Additional information should be added if the phone is found to be non-functional such as maintenance actions taken and when service was restored. The frequency of testing for each instrument is variable but should minimally be monthly. Weekly, daily, or randomly within a monthly cycle is better. Testing may be made the responsibility of the user(s) the instrument serves providing they document their tests. Testing should include the placement of a call. While testing for the presence of dial tone could be a minimal test, this may not be an accurate indicator that a call can be completed.",
       "impact": 0.3,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: In the event hardware based instruments are implemented in a COOP capacity for backup or emergency communications, and such instruments are not regularly used, the IAO will ensure the functionality of these instruments by implementing and documenting a testing program which will include the documentation of the results of each test. NOTE: The frequency of testing for each instrument is variable but should minimally be monthly. Weekly, daily, or randomly within a monthly cycle is better. Testing may be made the responsibility of the user(s) the instrument serves providing they document their tests. The test could minimally involve determining if dial tone is present (unless generated within the phone as with some VoIP phones), but should include the placement of a call to an emergency number.",
         "fix": "In the event hardware based instruments are implemented in a COOP capacity for backup or emergency communications, and such instruments are not regularly used, the IAO will ensure the functionality of these instruments by implementing and documenting a testing program which will include the documentation of the results of each test. NOTE: The frequency of testing for each instrument is variable but should minimally be monthly. Weekly, daily, or randomly within a monthly cycle is better. Testing may be made the responsibility of the user(s) the instrument serves providing they document their tests. The test could minimally involve determining if dial tone is present (unless generated within the phone as with some VoIP phones), but should include the placement of a call to an emergency number."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVT 2000",
         "gid": "V-21508",
         "rid": "SV-23717r2_rule",
         "stig_id": "VVT 2000",
         "fix_id": "F-22297r2_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager",
@@ -1468,11 +1477,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVT 2010",
         "gid": "V-21509",
         "rid": "SV-23718r3_rule",
         "stig_id": "VVT 2010",
         "fix_id": "F-22298r3_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager",
@@ -1491,11 +1500,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVT 2015",
         "gid": "V-21510",
         "rid": "SV-23719r3_rule",
         "stig_id": "VVT 2015",
         "fix_id": "F-22299r3_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager",
@@ -1514,11 +1523,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVT 2005",
         "gid": "V-21512",
         "rid": "SV-23721r3_rule",
         "stig_id": "VVT 2005",
         "fix_id": "F-22300r3_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -1536,11 +1545,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1221",
         "gid": "V-21516",
         "rid": "SV-23726r3_rule",
         "stig_id": "VVoIP 1221 (Special-C2)",
         "fix_id": "F-22306r3_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Information Assurance Manager"
@@ -1558,11 +1567,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient Security: Unnecessary PPS disablement",
         "gid": "V-21521",
         "rid": "SV-23733r1_rule",
         "stig_id": "VVoIP 1021 (GENERAL)",
         "fix_id": "F-22312r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "responsibility": "Information Assurance Officer"
       },
@@ -1571,17 +1580,18 @@
       "desc": "The availability of applications and services that are not necessary for the OAM&P of the VVoIP system’s devices and servers, running or not as well as the existence of their code, places them at risk of being attacked and these avenues exploited. As such they should be removed if possible or minimally disabled so they cannot run and be exploited. For VVoIP and UC servers and endpoints, remove the software for or minimally disable PPS that are not necessary for the operation or maintenance of the system. Limit production PPS to production interfaces and management PPS to the OAM&P interfaces.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to validate compliance with the following requirement: For VVoIP and UC servers and endpoints, ensure all PPS that are not necessary for the operation or maintenance of the system are disabled or the supporting software removed. Limit production PPS to production interfaces and management PPS to the OAM&amp;P interfaces.",
         "fix": "Disable all PPS on all VVoIP or UC system servers and sevices that are not required to support OAM&amp;P in the specific VVoIP system implementation. Additionally, if possible, remove the software for the unnecessary PPS."
       }
     },
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Deficient design: VVoIP system re: DNS",
         "gid": "V-21522",
         "rid": "SV-23734r1_rule",
         "stig_id": "VVoIP 5212 (LAN)",
         "fix_id": "F-22313r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "responsibility": "Information Assurance Officer"
       },
@@ -1590,17 +1600,18 @@
       "desc": "In some cases a VVoIP endpoint will be configured with one or more URLs pointing to the locations of various servers with which they are associated such as their call controller. These URLs are translated to IP addresses by a DNS server. The use of URLS in this manner permits an endpoint to find the server it is looking for in the event the server’s IP address is changed. This also permits the endpoint to locate its assigned or home call controller from a remote location on a network that is not their home network. While all of this adds flexibility to the system and the endpoint’s location, it also exposes the endpoint and the home system to DNS vulnerabilities. Additionally, the home VVoIP system must expose critical IP address and domain information to the DNS system. If the DNS system is exposed to the DNS servers that support the enterprise data network or the Internet, this information and exposure of the system is, or may be, extended to the world. This provides information that can be used to attack or compromise the VVoIP system. When using DNS within a VVoIP system so that endpoints can find various servers in the network, the DNS server should be dedicated to the VVoIP system. Further more this DNS server should have limited or no interaction with the DNS server used by the data portion of the LAN/CAN or a publicly accessible DNS server. This will protect the VVoIP system’s DNS server from some of the vulnerabilities inherent in DNS servers that serve data endpoints and that are connected to the wider enterprise networks or the Internet. While the use of DNS adds IP addressing flexibility to a VVoIP system, it is not necessary to use it for systems within the local LAN. VVoIP servers and infrastructure devices are required to be statically addressed. Therefore the endpoints can be configured with these known IP addresses rather than URLs. A remote endpoint is required to connect to the home enclave via a VPN. It receives an internal LAN address and therefore becomes a part of the LAN and can directly reach its servers using their IP address. A URL is not required. The only time a URL might be required is in the event the endpoint is required to find a server such as a directory server that is somewhere on the WAN. This is the case in the VoSIP system on SIPRNet. Not using DNS in a VVoIP system eliminates its exposure to DNS vulnerabilities and attacks effected using information obtained from the DNS. NOTE: In the event a DNS server is implemented within the VVoIP system, the DNS STIG must be applied to the server.",
       "impact": 0.3,
       "descs": {
+        "check": "Interview the IAO to validate compliance with the following requirement: In the event DNS is used in the VVoIP system, ensure the DNS server is dedicated to the VVoIP system and that any DNS server interaction with other DNS servers is limited. Additionally ensure internal system URLS and information is not published to the enterprise WAN or the Internet. Determine if: The VVoIP system DNS server is not dedicated to the VVoIP system within the LAN; OR The VVoIP system DNS server freely interacts with other DNS servers outside the VVoIP system; OR The VVoIP system information is published to the enterprise WAN or the Internet. This is a finding in the event one or more of these conditions exist.",
         "fix": "Consider not using DNS for the VVoIP system unless it is required. In the event DNS is used in the VVoIP system, ensure the DNS server serving the VVoIP system is dedicated to the VVoIP system and that any DNS server interaction with other DNS servers is limited. Additionally ensure internal system URLS and information is not published to the enterprise WAN or the Internet. NOTE: In the event a DNS server is implemented within the VVoIP system, the DNS STIG must be applied to the server."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient design: VVoIP system re: NTP",
         "gid": "V-21523",
         "rid": "SV-23735r1_rule",
         "stig_id": "VVoIP 5250 (LAN)",
         "fix_id": "F-22314r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "responsibility": "Information Assurance Officer"
       },
@@ -1609,17 +1620,18 @@
       "desc": "It is critical that the network time be synchronized across all network elements when troubleshooting network problems or investigating an incident. Each log entry is required to be time stamped. If time-stamps are not synchronised, it can be difficult or impossible to see in what order events occurred. Additionally legacy telecommunications systems require synchronized time. Network elements (NE). The Network Infrastructure STIG provides guidance for using NTP and implementing NTP servers within the enclave or LAN. A paraphrased summary of the basic requirements follows: > Implement two NTP servers in the LAN management network to act as the source of NTP information to the rest of the enclave/LAN. > Reference the two NTP servers to two different stratum 1 reference clocks via GPS or NIST WWVB. > Harden NTP servers in accordance with the applicable OS STIG. > Distribute NTP information to all LAN NEs via the management interface. This provides a protected environment for the distribution of network time. > All received and sent messages between NTP peers are authenticated. > Receive NTP messages from authorized sources based on their IP address. > All LAN NEs are configured to receive NTP messages from two NTP sources within the LAN such that one backs up the other. > Distribution of NOTE: This list is not complete and is provided as information only. Refer to the current Network Infrastructure STIG for all policy and requirements associated with NTP use and implementation in the LAN. The VVoIP system must be synchronized with the LAN time, minimally to support troubleshooting and incident response. Therefore the VVoIP system must be integrated into the LAN’S NTP system in accordance with the Network Infrastructure STIG NTP guidance. Its network time must not be synchronized with an independent source. Additionally, if the VVoIP system is synchronized with an independent source via the Internet, the VVoIP system becomes exposed to NTP exploits and attacks from the Internet. Implementing NTP within the VVoIP system will require the system/call controller to be configured to receive authenticated NTP messages from the two NTP server IP addresses via its management interface. This will require that permissions be granted between the VVoIP management VLAN and the LAN management VLAN such that NTP requests and responses can flow between the VVoIP system controller and the two NTP servers in the LAN management VLAN. If the VVoIP endpoints time is synchronized via NTP, the VVoIP controller will have to serve as their NTP server since the endpoints do not have access to the VVoIP or LAN management VLANs and should not be permitted such access.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to validate compliance with the following requirement: Ensure the VVoIP system’s time is synchronized with or receives its time from the two internal LAN NTP servers that are configured within the LAN management VLAN in accordance with the Network Infrastructure STIG. Further ensure the VVoIP endpoints receive their time from the VVoIP system controller. NOTE: The use and implementation of NTP within the VVoIP system must be implemented in accordance with the Network Infrastructure STIG NTP requirements and policies. This is a finding in the event these conditions are not met. Additionally determine how the endpoints time is synchronized. This is a finding in the event their time is not sourced from the VVoIP system controller via the VVoIP VLANs.",
         "fix": "Implement NTP usage in the VVoIP system in accordance with the Network Infrastructure STIG policy and requirements. Ensure the VVoIP system’s time is synchronized with or receives its time from the two internal LAN NTP servers that are configured within the LAN management VLAN in accordance with the Network Infrastructure STIG. Further ensure the VVoIP endpoints receive their time from the VVoIP system controller. NOTE: Implementing NTP within the VVoIP system will require the system/call controller to be configured to receive authenticated NTP messages from the two NTP server IP addresses via its management interface. This will require that permissions be granted between the VVoIP management VLAN and the LAN management VLAN such that NTP requests and responses can flow between the VVoIP system controller and the two NTP servers in the LAN management VLAN. If the VVoIP endpoints time is synchronized via NTP, the VVoIP controller will have to serve as their NTP server since the endpoints do not have access to the VVoIP or LAN management VLANs and should not be permitted such access."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1410",
         "gid": "V-47735",
         "rid": "SV-60611r1_rule",
         "stig_id": "VVoIP 1410 (GENERAL)",
         "fix_id": "F-51371r1_fix",
+        "documentable": false,
         "severity_override_guidance": "Downgrade to CAT 3 when vendor provided PKI or x.509 certs are used instead of DoD PKI.",
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECSC-1"
@@ -1636,11 +1648,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1415",
         "gid": "V-47753",
         "rid": "SV-60629r1_rule",
         "stig_id": "VVoIP 1415 (GENERAL)",
         "fix_id": "F-51379r1_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECSC-1"
       },
@@ -1656,11 +1668,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Display DoD Notice and Consent Banner",
         "gid": "V-54691",
         "rid": "SV-68937r1_rule",
         "stig_id": "VVoIP 1340",
         "fix_id": "F-59547r2_fix",
+        "documentable": false,
         "ia_controls": "ECWM-1"
       },
       "id": "V-54691",
@@ -1675,11 +1687,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Acknowledge DoD Notice and Consent Banner",
         "gid": "V-54693",
         "rid": "SV-68939r1_rule",
         "stig_id": "VVoIP 1345",
-        "fix_id": "F-59549r2_fix"
+        "fix_id": "F-59549r2_fix",
+        "documentable": false
       },
       "id": "V-54693",
       "title": "VVoIP system components and UC soft clients Standard Mandatory DoD Notice and Consent Banner must be acknowledged by the user prior to logon or initial access.",
@@ -1693,11 +1705,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1222",
         "gid": "V-57951",
         "rid": "SV-72381r2_rule",
         "stig_id": "VVoIP 1222 (C2)",
         "fix_id": "F-63159r2_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-57951",
@@ -1712,11 +1724,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 1223",
         "gid": "V-57953",
         "rid": "SV-72383r2_rule",
         "stig_id": "VVoIP 1223 (Non-C2)",
         "fix_id": "F-63161r2_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-57953",
@@ -1731,11 +1743,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1937",
         "gid": "V-61319",
         "rid": "SV-75799r2_rule",
         "stig_id": "VVoIP 1937",
-        "fix_id": "F-67219r2_fix"
+        "fix_id": "F-67219r2_fix",
+        "documentable": false
       },
       "id": "V-61319",
       "title": "VVoIP endpoint configuration files must not be downloaded automatically during initial endpoint registration.",
@@ -1749,11 +1761,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 5410",
         "gid": "V-61321",
         "rid": "SV-75801r1_rule",
         "stig_id": "VVoIP 5410",
         "fix_id": "F-67221r1_fix",
+        "documentable": false,
         "ia_controls": "EBBD-2, ECSC-1"
       },
       "id": "V-61321",
@@ -1768,11 +1780,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 5415",
         "gid": "V-61323",
         "rid": "SV-75803r1_rule",
         "stig_id": "VVoIP 5415",
         "fix_id": "F-67223r1_fix",
+        "documentable": false,
         "ia_controls": "EBBD-2, ECSC-1"
       },
       "id": "V-61323",
@@ -1787,11 +1799,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 5420",
         "gid": "V-61325",
         "rid": "SV-75805r1_rule",
         "stig_id": "VVoIP 5420",
-        "fix_id": "F-67225r1_fix"
+        "fix_id": "F-67225r1_fix",
+        "documentable": false
       },
       "id": "V-61325",
       "title": "The VVoIP system management network bidirectional enclave boundary protection between the local management network and the DISN voice services management network must be scanned to confirm protections in place are effective.",
@@ -1805,11 +1817,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Speaker operations policy",
         "gid": "V-79051",
         "rid": "SV-93757r2_rule",
         "stig_id": "VVT/VTC 1906",
-        "fix_id": "F-85801r1_fix"
+        "fix_id": "F-85801r1_fix",
+        "documentable": false
       },
       "id": "V-79051",
       "title": "Video conferencing, Unified Capability (UC) soft client, and speakerphone speaker operations policy must prevent disclosure of sensitive or classified information over non-secure systems.",
@@ -1823,10 +1835,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Deficient C&amp;A: VVoIP System in LAN C&amp;A doc’n",
         "gid": "V-8223",
         "rid": "SV-8709r1_rule",
         "stig_id": "VVoIP 1100 (GENERAL)",
+        "fix_id": "F-7706r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "The inability to effectively maintain the network or voice service and apply security policy and vulnerability mitigations. The inability for the DAA to understand the voice system’s and/or network’s security posture, threats, and vulnerabilities. The inability for the DAA to approve or accept the security risk of operating the system",
         "responsibility": "Information Assurance Officer"
@@ -1836,17 +1849,18 @@
       "desc": "Documentation of the enclave / LAN configuration must include all VVoIP systems. If the current configuration cannot be determined then it is difficult to apply security policies effectively. Security is particularly important for VoIP technologies attached to the enclave network because these systems increase the potential for eavesdropping and other unauthorized access to network resources. Accurate network documentation is critical to maintaining the network and understanding its security posture, threats, and vulnerabilities. Baseline and C&A documentation is the vehicle by which the DAA receives security related information on the network for which he/she is personally responsible and accepts the security risk of operating the system.",
       "impact": 0.3,
       "descs": {
-        "check": "Interview the IAO to validate compliance with the following requirement: Ensure the VVoIP and/or IP connected VTC system and its components as well as their upgrades and changes are included in the site’s enclave / LAN C&amp;A documentation (e.g., the DIACAP Implementation Plan (DIP), System Identification Profile (SIP), Scorecard, etc.). NOTE: This requirement applies to or includes the existence or implementation of soft-phone applications or wireless VoIP (Wi-Fi or WiMAX) endpoints. &gt; Review the baseline documentation and/or C&amp;A documentation to verify that all VVoIP installations and/or modifications are included. Verify there is a procedure for approving changes to configuration. &gt; Determine if soft-phone applications or wireless VoIP (Wi-Fi or WiMAX) endpoints are used or implemented within the network. Look for the appearance of these in the required documentation noted above."
+        "check": "Interview the IAO to validate compliance with the following requirement: Ensure the VVoIP and/or IP connected VTC system and its components as well as their upgrades and changes are included in the site’s enclave / LAN C&amp;A documentation (e.g., the DIACAP Implementation Plan (DIP), System Identification Profile (SIP), Scorecard, etc.). NOTE: This requirement applies to or includes the existence or implementation of soft-phone applications or wireless VoIP (Wi-Fi or WiMAX) endpoints. &gt; Review the baseline documentation and/or C&amp;A documentation to verify that all VVoIP installations and/or modifications are included. Verify there is a procedure for approving changes to configuration. &gt; Determine if soft-phone applications or wireless VoIP (Wi-Fi or WiMAX) endpoints are used or implemented within the network. Look for the appearance of these in the required documentation noted above.",
+        "fix": "Add all VoIP installations and/or modifications to the SSAA. Obtain DAA approval for the updated SSAA. Submit to the SRR team lead for validation and finding closure."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1405",
         "gid": "V-8224",
         "rid": "SV-8710r2_rule",
         "stig_id": "VVoIP 1405",
-        "fix_id": "F-20185r2_fix"
+        "fix_id": "F-20185r2_fix",
+        "documentable": false
       },
       "id": "V-8224",
       "title": "MGCP and/or H.248 (MEGACO) is not restricted/controlled on the LAN and/or protected on the WAN using encryption OR MGCP and/or H.248 (MEGACO) packets are not authenticated or filtered by source IP address.",
@@ -1860,11 +1874,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 5200",
         "gid": "V-8227",
         "rid": "SV-8713r3_rule",
         "stig_id": "VVoIP 5200",
-        "fix_id": "F-20236r3_fix"
+        "fix_id": "F-20236r3_fix",
+        "documentable": false
       },
       "id": "V-8227",
       "title": "VVoIP system components must use separate address blocks from those used by non-VVoIP system devices.",
@@ -1878,11 +1892,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VLAN segregation for VVoIP",
         "gid": "V-8230",
         "rid": "SV-8716r2_rule",
         "stig_id": "VVoIP 5500 (LAN)",
         "fix_id": "F-20253r2_fix",
+        "documentable": false,
         "severity_override_guidance": "This finding can be reduced to a cat III in the event the system minimally implements one VLAN for endpoints and one for the core equipment. This may not be a finding under certain circumstances such as in the case of a small footprint tactical system where there are a limited number of VVoIP instruments (i.e., 20). This package system must have been accredited via the appropriate test exercises and configured in accordance with the accreditation. This override is partially driven by the difficulty in supporting a complex configuration for these small systems in deployed environments. This Severity Override does not apply to strategic systems (i.e., systems implemented on a base or fixed DOD facility) or large relatively fixed tactical deployments.",
         "responsibility": "Information Assurance Officer",
         "ia_controls": "DCBP-1, DCPA-1, ECSC-1"
@@ -1899,11 +1913,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1050",
         "gid": "V-8247",
         "rid": "SV-8733r2_rule",
         "stig_id": "VVoIP 1050",
-        "fix_id": "F-20122r2_fix"
+        "fix_id": "F-20122r2_fix",
+        "documentable": false
       },
       "id": "V-8247",
       "title": "Servers supporting the Voice Video and Unified Capability (UC) environment must be dedicated services, with unnecessary functions disabled or removed.",
@@ -1917,10 +1931,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Deficient hardening: STIG appl’n to VVOIP assets",
         "gid": "V-8248",
         "rid": "SV-8734r1_rule",
         "stig_id": "VVoIP 1030 (GENERAL)",
+        "fix_id": "F-7731r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "Denial of Service and/or unauthorized access to network or voice system resources or services and the information they contain. The DOD voice system may not be protected as required and may be vulnerable to attack or loss of availability due to a multitude of OS and application vulnerabilities.",
         "responsibility": "Information Assurance Officer"
@@ -1930,17 +1945,18 @@
       "desc": "For the purpose of this requirement a VVoIP server is any server directly supporting the communications service. Unlike a regular PC or print server on the network VVoIP servers are “mission critical” to the operation of the VoIP system. Some vendors provide IP Telephony services on their own proprietary systems while others provided these services on standard UNIX, Linux, and Microsoft Windows based systems. They may also use general-purpose applications such as databases like MS-SQL or Oracle and/or employ web server technology like IIS or similar as well as open source software. Additionally, application security guidance may be applicable for the vendor's application that makes the server or device perform the functions, or the management, of the system. Hardening these general purpose applications and operating systems against the much inherent vulnerabilities found in them is critical to securing the VVoIP core infrastructure, to include their installed applications. Doing so is vital to protecting the VoIP environment from malicious attack. The specific VVoIP system server or device determines the applicability of any given STIG. UNIX and Microsoft Windows based systems. Most known vulnerabilities exist on UNIX and Windows based operating systems. They may also use general-purpose applications such as databases like MS-SQL or Oracle and/or employ web server technology like IIS or similar. Additionally, application security guidance may be applicable for the vendor's application that makes the server or device perform the functions, or the management, of the system. Therefore, the securing of these voice processing and signaling platforms, to include their installed applications, is vital in protecting the VoIP environment from malicious attack. The specific VoIP system server or device determines the applicability of any given STIG.",
       "impact": 0.3,
       "descs": {
-        "check": "Interview the IAO and review site documentation to confirm compliance with the following requirement: Ensure that the VVoIP core infrastructure servers/devices have been secured and hardened in compliance with all applicable STIGs (i.e., UNIX, Microsoft Windows, database, web, etc.). Determine if the asset is based upon any of the general purpose technology (OS or application) for which there is a STIG or checklist. Obtain a copy of the applicable SRR or Self Assessment results and review for compliance. If SRR results are not available, then SRR a representative number of devices. This is a finding in the event it is evident that the appropriate STIGs have not been applied. This check is not intended to determine if the asset is in full compliance. NOTE: If the server/device is purpose built to its function (potentially considered an appliance) using an embedded or stripped down version of a general purpose OS and/or if the device has limited I/O capabilities, it may be difficult to impossible to perform a normal review that would be done on a general purpose platform. In this case the best way to determines if the device is vulnerable is to perform a network scan on it. NOTE: VVoIP core infrastructure servers/devices include but may not be limited to the TDM telephone switches, local session controller (LSC), voicemail / unified mail system, interactive voice response system, media gateway, signaling gateway, management servers and workstations, conference bridges, IM/presence servers, etc."
+        "check": "Interview the IAO and review site documentation to confirm compliance with the following requirement: Ensure that the VVoIP core infrastructure servers/devices have been secured and hardened in compliance with all applicable STIGs (i.e., UNIX, Microsoft Windows, database, web, etc.). Determine if the asset is based upon any of the general purpose technology (OS or application) for which there is a STIG or checklist. Obtain a copy of the applicable SRR or Self Assessment results and review for compliance. If SRR results are not available, then SRR a representative number of devices. This is a finding in the event it is evident that the appropriate STIGs have not been applied. This check is not intended to determine if the asset is in full compliance. NOTE: If the server/device is purpose built to its function (potentially considered an appliance) using an embedded or stripped down version of a general purpose OS and/or if the device has limited I/O capabilities, it may be difficult to impossible to perform a normal review that would be done on a general purpose platform. In this case the best way to determines if the device is vulnerable is to perform a network scan on it. NOTE: VVoIP core infrastructure servers/devices include but may not be limited to the TDM telephone switches, local session controller (LSC), voicemail / unified mail system, interactive voice response system, media gateway, signaling gateway, management servers and workstations, conference bridges, IM/presence servers, etc.",
+        "fix": "Secure critical servers supporting the telephony environment. Apply all applicable STIGs (i.e., UNIX, Microsoft Windows, database, web, etc. UNIX, Win2k/NT, DSN, etc.) and ensure compliance with applicable STIG guidelines."
       }
     },
     {
       "tags": {
         "severity": "high",
-        "gtitle": "VVoIP 1400",
         "gid": "V-8250",
         "rid": "SV-8736r4_rule",
         "stig_id": "VVoIP 1400",
         "fix_id": "F-20178r4_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-8250",
@@ -1955,11 +1971,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 1040",
         "gid": "V-8253",
         "rid": "SV-8739r2_rule",
         "stig_id": "VVoIP 1040",
-        "fix_id": "F-20134r2_fix"
+        "fix_id": "F-20134r2_fix",
+        "documentable": false
       },
       "id": "V-8253",
       "title": "The voicemail system and/or server must implement applicable SRG and/or STIG guidance.",
@@ -1973,11 +1989,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1045",
         "gid": "V-8254",
         "rid": "SV-8740r2_rule",
         "stig_id": "VVoIP 1045",
-        "fix_id": "F-20136r2_fix"
+        "fix_id": "F-20136r2_fix",
+        "documentable": false
       },
       "id": "V-8254",
       "title": "The Unified Mail system and/or server must implement applicable SRG and/or STIG guidance.",
@@ -1991,11 +2007,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient security: Personal VM settings via web",
         "gid": "V-8255",
         "rid": "SV-8741r1_rule",
         "stig_id": "VVoIP 1520 (GENERAL)",
         "fix_id": "F-20188r1_fix",
+        "documentable": false,
         "severity_override_guidance": "None",
         "potential_impacts": "Denial of Service and/or unauthorized access to network or voice system resources or services and the information they contain. Application of features and potential call redirection by unauthorized users.",
         "responsibility": "Information Assurance Officer"
@@ -2005,17 +2021,18 @@
       "desc": "In traditional TDM phone systems, personal voicemail settings and greetings are accessed / configured by the subscriber/user on traditional voicemail servers via the traditional telephone. Control commands are dialed using the keypad and transmitted using Dial-Tone Multi-Frequency (DTMF) audio tones. The voice greetings are transmitted using normal audio as well. The audio can be analog or digital, which is encoded in whatever coding scheme is used by the local PBX. In IP based phone systems access to the voicemail server carries the same vulnerabilities as the IP voice communications carried by the system. As such access to voicemail for the purpose of creating greeting messages, retrieving voicemail, or adjusting personal settings, must be encrypted on the IP network. In part this is because anyone with a sniffer and access to the right LAN segment can acquire the subscriber’s account and password information. With this intercepted information a hacker could gain access to the subscribers voice mail account, intercept sensitive information, and/or perform other destructive actions. Once access to settings is achieved there the intruder could change greetings or possibly forward all voicemails received. Encryption of the voice message traffic as well as control from the phone’s dial-pad falls under the normal requirement for the encryption of VoIP signaling and media. In the event the subscriber’s personal settings are accessible via a “web” connection using a browser on the subscriber’s desktop or phone, the connection must use HTTPS and TLS minimally to protect the user’s logon credentials. Additionally, the voicemail system/server, which provides this service via a web server application, must be configured in accordance with the “private web server” requirements in the Web Server STIG/Checklist.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to validate compliance with the following requirement: In the event voicemail subscribers can access their voicemail settings via an IP or “web” connection (in addition to having the standard normal capability from the phone via the dial pad), ensure the connection is encrypted using HTTPS with TLS. Additionally, ensure the web server on the voicemail system/server is configured in accordance with “private web server” requirements in the Web Services STIG/Checklist. NOTE: Web Services STIG/Checklist requirements include but are not limited to user CAC/PKI authentication Inspect the Web SRR results from the web server review performed on the web based personal settings interface to the voicemail system. If there is none, perform a Web SRR. This check is not intended to determine if the asset is in full compliance, it is only to determine if the applicable STIG has been applied. This is a finding in the event the voicemail system provides a web interface that is either not configured in accordance with the applicable Web STIG/Checklist requirements and/or it does not the web interface does not use HTTPS/TLS.",
         "fix": "Configure the voicemail system web access to personal settings in accordance with the applicable private web server requirements in the Web STIG/Checklist and ensure web interface is configured to use HTTPS/TLS."
       }
     },
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Enforce Wireless STIG",
         "gid": "V-8256",
         "rid": "SV-8742r2_rule",
         "stig_id": "VVoIP 1035 (GENERAL)",
         "fix_id": "F-20139r2_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECSC-1, ECWN-1"
       },
@@ -2031,11 +2048,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient SOP: endpt netwk config PIN/pswd mgmt",
         "gid": "V-8288",
         "rid": "SV-8783r1_rule",
         "stig_id": "VVoIP 1500 (GENERAL)",
         "fix_id": "F-20116r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Denial of Service and/or unauthorized access to network or voice system resources or services and the information they contain. Loss of confidentiality. Password or PIN code compromise. As compromise is easier or more likely if PINs are not managed.",
         "responsibility": "Information Assurance Officer"
@@ -2052,11 +2069,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient doc’n: Inventory of authorized endpoints",
         "gid": "V-8290",
         "rid": "SV-8785r1_rule",
         "stig_id": "VVoIP 1505 (GENERAL)",
         "fix_id": "F-20141r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Unauthorized use or abuse of the system",
         "responsibility": "Information Assurance Officer"
@@ -2073,11 +2090,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 5210",
         "gid": "V-8294",
         "rid": "SV-8789r2_rule",
         "stig_id": "VVoIP 5210",
-        "fix_id": "F-20239r2_fix"
+        "fix_id": "F-20239r2_fix",
+        "documentable": false
       },
       "id": "V-8294",
       "title": "VVoIP system components must receive IP address assignment and configuration information from a DHCP server with a dedicated scope to the VVoIP system.",
@@ -2091,11 +2108,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Deficient design: VVoIP addressing re: DISN VoSIP",
         "gid": "V-8295",
         "rid": "SV-8790r1_rule",
         "stig_id": "VVoIP 5215 (LAN)",
         "fix_id": "F-20240r1_fix",
+        "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Denial of service; Lack of interoperability with other VoSIP enclaves",
         "responsibility": "Information Assurance Officer"
@@ -2112,11 +2129,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "VVoIP 5105",
         "gid": "V-8302",
         "rid": "SV-8797r3_rule",
         "stig_id": "VVoIP 5105",
         "fix_id": "F-20217r3_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-8302",
@@ -2131,11 +2148,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient design: EI “PC port” switch VLAN suppt",
         "gid": "V-8306",
         "rid": "SV-8801r1_rule",
         "stig_id": "VVoIP 5700 (LAN)",
         "fix_id": "F-20257r1_fix",
+        "documentable": false,
         "mitigations": "VVoIP 5700",
         "severity_override_guidance": "NONE",
         "potential_impacts": "Denial of Service and/or unauthorized access to network or voice system resources or services and the information they contain. Loss of confidentiality. Degradation of the data and VoIP network segregation and associated problems.",
@@ -2147,17 +2164,18 @@
       "desc": "Some VVoIP hardware endpoints and hardware based VTC endpoints have a second Ethernet port on the device to provide a connection to external devices such as a. This port is typically called a “PC Port”. This is done so that a can share a single network cable drop and LAN access switchport. The PC port can, in general, support any device requiring an Ethernet connection. In theory, a VoIP phone, a desktop VTC unit, and a workstation could be daisy chained on a single LAN drop. These PC ports are supported by an embedded three port Ethernet switch or a hub. Hubs cannot support VLANs and therefore cannot be used to daisy chain VVoIP endpoints and non VVoIP devices in DoD networks. A switch must be used because the VVoIP or VTC endpoint must be capable of maintaining the separation of the voice (VVoIP), data, VLANs as well as the VTC VLAN and PC Comm Client VLAN if present. For example the attached PC must not be able to directly access the phone’s or VTU’s configurations or communications traffic. VAN separation helps to prevent this. NOTE: the switch or endpoint will typically utilize 802.1Q trunking (VLAN tagging) but may use some other means to separate voice and data traffic. Typically when 802.1Q VLAN tagging is used, the phone firmware tags the VoIP packets while the embedded switch passes all packets without modification. This permits devices connected to the PC port to tag their packets and assign the proper VLAN to their traffic type. 802.1Q VLAN tagging enables the LAN to better maintain separation of the traffic and is therefore the preferred method.",
       "impact": 0.5,
       "descs": {
+        "check": "Interview the IAO to confirm compliance with the following requirement: Ensure a VVoIP or VTC hardware endpoint possessing a “PC Port” is capable of maintaining voice/data VLAN separation via the use of an Ethernet switch and that it does not contain an Ethernet hub OR ensure the “PC Port” is physically disabled. Review VVoIP or VTC hardware endpoint specifications and documentation. This is a finding in the event the VVoIP or VTC hardware endpoint that provides PC port but cannot maintain voice/data VLAN separation.",
         "fix": "Ensure a VVoIP or VTC hardware endpoint possessing a “PC Port” contains an Ethernet switch such that VLAN separation can be maintained and that it does not contain an Ethernet hub OR ensure the “PC Port” is physically disabled."
       }
     },
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient design: VLAN ACL design for VVoIP prot’n",
         "gid": "V-8323",
         "rid": "SV-8818r2_rule",
         "stig_id": "VVoIP 5515 (LAN)",
         "fix_id": "F-20256r2_fix",
+        "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
       "id": "V-8323",
@@ -2172,11 +2190,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "VVoIP 1005",
         "gid": "V-8328",
         "rid": "SV-8823r4_rule",
         "stig_id": "VVoIP 1005",
-        "fix_id": "F-20286r4_fix"
+        "fix_id": "F-20286r4_fix",
+        "documentable": false
       },
       "id": "V-8328",
       "title": "The implementation of VoIP systems in the local enclave must not degrade the enclaves perimeter protection due to inadequate design of the VoIP boundary and its connection to external networks.",
@@ -2190,11 +2208,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "VVoIP 1010",
         "gid": "V-8329",
         "rid": "SV-8824r2_rule",
         "stig_id": "VVoIP 1010",
-        "fix_id": "F-20287r3_fix"
+        "fix_id": "F-20287r3_fix",
+        "documentable": false
       },
       "id": "V-8329",
       "title": "The sites enclave boundary protection must route DSN voice traffic via a local Media Gateway (MG) connected to a DSN service provider using the appropriate type of trunk based on the sites need to support C2 communications.",
@@ -2208,11 +2226,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Deficient COOP: Vendor orig’d Patches vs 3rd Prty",
         "gid": "V-8349",
         "rid": "SV-8844r1_rule",
         "stig_id": "VVoIP 1200 (GENERAL)",
         "fix_id": "F-20138r1_fix",
+        "documentable": false,
         "potential_impacts": "Denial of Service. Patches that have not been approved and provided by a vendor and/or applied in conflict with vendor’s instructions can break features or disable the system.",
         "responsibility": "Information Assurance Officer"
       },
@@ -2226,7 +2244,5 @@
       }
     }
   ],
-  "name": "VVoIP_STIG_Policy",
-  "title": "Voice Video Services Policy Security Technical Implementation Guide",
-  "summary": "The Voice Video Services Policy STIG includes the non-computing requirements for Voice/Video systems operating to support the DoD. The Voice/Video over Internet Protocol (VVoIP) STIG containing the computing requirements must also be reviewed for each site using voice/video services. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil."
+  "name": "VVoIP_STIG_Policy"
 }

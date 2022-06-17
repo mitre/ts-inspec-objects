@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179",
         "gid": "V-223280",
         "rid": "SV-223280r508019_rule",
         "stig_id": "O365-AC-000001",
-        "fix_id": "F-24941r442060_fix"
+        "fix_id": "F-24941r442060_fix",
+        "documentable": false
       },
       "id": "V-223280",
       "title": "Macros must be blocked from running in Access files from the Internet.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223281",
         "rid": "SV-223281r508019_rule",
         "stig_id": "O365-AC-000002",
-        "fix_id": "F-24942r442063_fix"
+        "fix_id": "F-24942r442063_fix",
+        "documentable": false
       },
       "id": "V-223281",
       "title": "Trust Bar Notifications for unsigned application add-ins in Access must be disabled and blocked.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-223282",
         "rid": "SV-223282r508019_rule",
         "stig_id": "O365-AC-000003",
-        "fix_id": "F-24943r442066_fix"
+        "fix_id": "F-24943r442066_fix",
+        "documentable": false
       },
       "id": "V-223282",
       "title": "VBA Macros not digitally signed must be blocked in Access.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223283",
         "rid": "SV-223283r508019_rule",
         "stig_id": "O365-AC-000004",
-        "fix_id": "F-24944r442069_fix"
+        "fix_id": "F-24944r442069_fix",
+        "documentable": false
       },
       "id": "V-223283",
       "title": "Allowing Trusted Locations on the network must be disabled in Access.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223284",
         "rid": "SV-223284r508192_rule",
         "stig_id": "O365-CO-000001",
-        "fix_id": "F-24945r442072_fix"
+        "fix_id": "F-24945r442072_fix",
+        "documentable": false
       },
       "id": "V-223284",
       "title": "The Macro Runtime Scan Scope must be enabled for all documents.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429",
         "gid": "V-223285",
         "rid": "SV-223285r508019_rule",
         "stig_id": "O365-CO-000002",
-        "fix_id": "F-24946r442075_fix"
+        "fix_id": "F-24946r442075_fix",
+        "documentable": false
       },
       "id": "V-223285",
       "title": "Document metadata for rights managed Office Open XML files must be protected.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-223286",
         "rid": "SV-223286r538226_rule",
         "stig_id": "O365-CO-000003",
-        "fix_id": "F-24947r572108_fix"
+        "fix_id": "F-24947r572108_fix",
+        "documentable": false
       },
       "id": "V-223286",
       "title": "The Office client must be prevented from polling the SharePoint Server for published links.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223287",
         "rid": "SV-223287r508019_rule",
         "stig_id": "O365-CO-000004",
-        "fix_id": "F-24948r442081_fix"
+        "fix_id": "F-24948r442081_fix",
+        "documentable": false
       },
       "id": "V-223287",
       "title": "Custom user interface (UI) code must be blocked from loading in all Office applications.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223288",
         "rid": "SV-223288r508019_rule",
         "stig_id": "O365-CO-000005",
-        "fix_id": "F-24949r442084_fix"
+        "fix_id": "F-24949r442084_fix",
+        "documentable": false
       },
       "id": "V-223288",
       "title": "ActiveX Controls must be initialized in Safe Mode.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223289",
         "rid": "SV-223289r508019_rule",
         "stig_id": "O365-CO-000006",
-        "fix_id": "F-24950r442087_fix"
+        "fix_id": "F-24950r442087_fix",
+        "documentable": false
       },
       "id": "V-223289",
       "title": "Macros in all Office applications that are opened programmatically by another application must be opened based upon macro security level.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223290",
         "rid": "SV-223290r508019_rule",
         "stig_id": "O365-CO-000007",
-        "fix_id": "F-24951r442090_fix"
+        "fix_id": "F-24951r442090_fix",
+        "documentable": false
       },
       "id": "V-223290",
       "title": "Trust Bar notifications must be configured to display information in the Message Bar about the content that has been automatically blocked.",
@@ -206,7 +206,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231",
         "gid": "V-223291",
         "rid": "SV-223291r508019_rule",
         "stig_id": "O365-CO-000008",
@@ -214,7 +213,7 @@
       },
       "id": "V-223291",
       "title": "Office applications must be configured to specify encryption type in password-protected Office 97-2003 files.",
-      "desc": "<#text> This policy setting enables you to specify an encryption type for password-protected Office 97-2003 files. If you enable this policy setting, you can specify the type of encryption that Office applications will use to encrypt password-protected files in the older Office 97-2003 file formats. The chosen encryption type must have a corresponding cryptographic service provider (CSP) installed on the computer that encrypts the file. See the HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography\\Defaults\\Provider\\ registry key for a list of CSPs installed on the local computer. Specify the encryption type to use by entering it in the provided text box in the following form:<Encryption> [object Object]",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "Verify the policy value for User Configuration &gt;&gt; Administrative Templates &gt;&gt; Microsoft Office 2016 &gt;&gt; Security Settings &gt;&gt; Encryption type for password protected Office 97-2003 files is set to Microsoft Enhanced RSA and AES Cryptographic Provider,AES 256,256. Use the Windows Registry Editor to navigate to the following key: HKCU\\software\\policies\\microsoft\\office\\16.0\\common\\security If the value defaultencryption12 is set to REG_SZ = \"Microsoft Enhanced RSA and AES Cryptographic Provider,AES 256,256\", this is not a finding.",
@@ -224,7 +223,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231",
         "gid": "V-223292",
         "rid": "SV-223292r508019_rule",
         "stig_id": "O365-CO-000009",
@@ -232,7 +230,7 @@
       },
       "id": "V-223292",
       "title": "Office applications must be configured to specify encryption type in password-protected Office Open XML files.",
-      "desc": "<#text> This policy setting allows you to specify an encryption type for Office Open XML files. If you enable this policy setting, you can specify the type of encryption that Office applications use to encrypt password-protected files in the Office Open XML file formats used by Excel, PowerPoint, and Word. The chosen encryption type must have a corresponding cryptographic service provider (CSP) installed on the computer that encrypts the file. See the HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography\\Defaults\\Provider\\ registry key for a list of CSPs installed on the local computer. Specify the encryption type to use by entering it in the provided text box in the following form:<Encryption> [object Object]",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "Verify the policy value for User Configuration &gt;&gt; Administrative Templates &gt;&gt; Microsoft Office 2016 &gt;&gt; Security Settings &gt;&gt; Encryption type for password protected Office Open XML files is set to Microsoft Enhanced RSA and AES Cryptographic Provider,AES 256,256. Use the Windows Registry Editor to navigate to the following key: HKCU\\software\\policies\\microsoft\\office\\16.0\\common\\security If the value OpenXMLEncryption is REG_SZ = \"Microsoft Enhanced RSA and AES Cryptographic Provider,AES 256,256\", this is not a finding.",
@@ -242,11 +240,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340",
         "gid": "V-223293",
         "rid": "SV-223293r508019_rule",
         "stig_id": "O365-CO-000010",
-        "fix_id": "F-24954r442099_fix"
+        "fix_id": "F-24954r442099_fix",
+        "documentable": false
       },
       "id": "V-223293",
       "title": "Users must be prevented from creating new trusted locations in the Trust Center.",
@@ -260,11 +258,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223294",
         "rid": "SV-223294r508019_rule",
         "stig_id": "O365-CO-000012",
-        "fix_id": "F-24955r442102_fix"
+        "fix_id": "F-24955r442102_fix",
+        "documentable": false
       },
       "id": "V-223294",
       "title": "Office applications must not load XML expansion packs with Smart Documents.",
@@ -278,11 +276,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223295",
         "rid": "SV-223295r684247_rule",
         "stig_id": "O365-CO-000013",
-        "fix_id": "F-24956r684246_fix"
+        "fix_id": "F-24956r684246_fix",
+        "documentable": false
       },
       "id": "V-223295",
       "title": "The load of controls in Forms3 must be blocked.",
@@ -296,11 +294,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223296",
         "rid": "SV-223296r508019_rule",
         "stig_id": "O365-CO-000014",
-        "fix_id": "F-24957r442108_fix"
+        "fix_id": "F-24957r442108_fix",
+        "documentable": false
       },
       "id": "V-223296",
       "title": "Add-on Management must be enabled for all Office 365 ProPlus programs.",
@@ -314,11 +312,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179",
         "gid": "V-223297",
         "rid": "SV-223297r508019_rule",
         "stig_id": "O365-CO-000015",
-        "fix_id": "F-24958r442111_fix"
+        "fix_id": "F-24958r442111_fix",
+        "documentable": false
       },
       "id": "V-223297",
       "title": "Consistent MIME handling must be enabled for all Office 365 ProPlus programs.",
@@ -332,11 +330,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223298",
         "rid": "SV-223298r508019_rule",
         "stig_id": "O365-CO-000016",
-        "fix_id": "F-24959r442114_fix"
+        "fix_id": "F-24959r442114_fix",
+        "documentable": false
       },
       "id": "V-223298",
       "title": "User name and password must be disabled in all Office programs.",
@@ -350,11 +348,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223299",
         "rid": "SV-223299r508019_rule",
         "stig_id": "O365-CO-000017",
-        "fix_id": "F-24960r442117_fix"
+        "fix_id": "F-24960r442117_fix",
+        "documentable": false
       },
       "id": "V-223299",
       "title": "The Information Bar must be enabled in all Office programs.",
@@ -368,11 +366,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223300",
         "rid": "SV-223300r508019_rule",
         "stig_id": "O365-CO-000018",
-        "fix_id": "F-24961r442120_fix"
+        "fix_id": "F-24961r442120_fix",
+        "documentable": false
       },
       "id": "V-223300",
       "title": "The Local Machine Zone Lockdown Security must be enabled in all Office programs.",
@@ -386,11 +384,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179",
         "gid": "V-223301",
         "rid": "SV-223301r508019_rule",
         "stig_id": "O365-CO-000019",
-        "fix_id": "F-24962r442123_fix"
+        "fix_id": "F-24962r442123_fix",
+        "documentable": false
       },
       "id": "V-223301",
       "title": "The MIME Sniffing safety feature must be enabled in all Office programs.",
@@ -404,11 +402,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223302",
         "rid": "SV-223302r508019_rule",
         "stig_id": "O365-CO-000020",
-        "fix_id": "F-24963r442126_fix"
+        "fix_id": "F-24963r442126_fix",
+        "documentable": false
       },
       "id": "V-223302",
       "title": "Navigate URL must be enabled in all Office programs.",
@@ -422,11 +420,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179",
         "gid": "V-223303",
         "rid": "SV-223303r508019_rule",
         "stig_id": "O365-CO-000021",
-        "fix_id": "F-24964r442129_fix"
+        "fix_id": "F-24964r442129_fix",
+        "documentable": false
       },
       "id": "V-223303",
       "title": "Object Caching Protection must be enabled in all Office programs.",
@@ -440,11 +438,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000112",
         "gid": "V-223304",
         "rid": "SV-223304r508019_rule",
         "stig_id": "O365-CO-000022",
-        "fix_id": "F-24965r442132_fix"
+        "fix_id": "F-24965r442132_fix",
+        "documentable": false
       },
       "id": "V-223304",
       "title": "Protection from zone elevation must be enabled in all Office programs.",
@@ -458,11 +456,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223305",
         "rid": "SV-223305r508019_rule",
         "stig_id": "O365-CO-000023",
-        "fix_id": "F-24966r442135_fix"
+        "fix_id": "F-24966r442135_fix",
+        "documentable": false
       },
       "id": "V-223305",
       "title": "ActiveX installation restriction must be enabled in all Office programs.",
@@ -476,11 +474,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000112",
         "gid": "V-223306",
         "rid": "SV-223306r508019_rule",
         "stig_id": "O365-CO-000024",
-        "fix_id": "F-24967r442138_fix"
+        "fix_id": "F-24967r442138_fix",
+        "documentable": false
       },
       "id": "V-223306",
       "title": "File Download Restriction must be enabled in all Office programs.",
@@ -494,11 +492,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223307",
         "rid": "SV-223307r508019_rule",
         "stig_id": "O365-CO-000025",
-        "fix_id": "F-24968r442141_fix"
+        "fix_id": "F-24968r442141_fix",
+        "documentable": false
       },
       "id": "V-223307",
       "title": "The Save from URL feature must be enabled in all Office programs.",
@@ -512,11 +510,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000112",
         "gid": "V-223308",
         "rid": "SV-223308r508019_rule",
         "stig_id": "O365-CO-000026",
-        "fix_id": "F-24969r442144_fix"
+        "fix_id": "F-24969r442144_fix",
+        "documentable": false
       },
       "id": "V-223308",
       "title": "Scripted Windows Security restrictions must be enabled in all Office programs.",
@@ -530,11 +528,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223309",
         "rid": "SV-223309r508019_rule",
         "stig_id": "O365-CO-000027",
-        "fix_id": "F-24970r442147_fix"
+        "fix_id": "F-24970r442147_fix",
+        "documentable": false
       },
       "id": "V-223309",
       "title": "Flash player activation must be disabled in all Office programs.",
@@ -548,11 +546,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223310",
         "rid": "SV-223310r508019_rule",
         "stig_id": "O365-EX-000001",
-        "fix_id": "F-24971r442150_fix"
+        "fix_id": "F-24971r442150_fix",
+        "documentable": false
       },
       "id": "V-223310",
       "title": "Trusted Locations on the network must be disabled in Excel.",
@@ -566,11 +564,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-223311",
         "rid": "SV-223311r508019_rule",
         "stig_id": "O365-EX-000002",
-        "fix_id": "F-24972r442153_fix"
+        "fix_id": "F-24972r442153_fix",
+        "documentable": false
       },
       "id": "V-223311",
       "title": "VBA Macros not digitally signed must be blocked in Excel.",
@@ -584,11 +582,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223312",
         "rid": "SV-223312r508019_rule",
         "stig_id": "O365-EX-000003",
-        "fix_id": "F-24973r442156_fix"
+        "fix_id": "F-24973r442156_fix",
+        "documentable": false
       },
       "id": "V-223312",
       "title": "Dynamic Data Exchange (DDE) server launch in Excel must be blocked.",
@@ -602,11 +600,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223313",
         "rid": "SV-223313r508019_rule",
         "stig_id": "O365-EX-000004",
-        "fix_id": "F-24974r442159_fix"
+        "fix_id": "F-24974r442159_fix",
+        "documentable": false
       },
       "id": "V-223313",
       "title": "Dynamic Data Exchange (DDE) server lookup in Excel must be blocked.",
@@ -620,11 +618,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223314",
         "rid": "SV-223314r508019_rule",
         "stig_id": "O365-EX-000005",
-        "fix_id": "F-24975r442162_fix"
+        "fix_id": "F-24975r442162_fix",
+        "documentable": false
       },
       "id": "V-223314",
       "title": "Open/save of dBase III / IV format files must be blocked.",
@@ -638,11 +636,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223315",
         "rid": "SV-223315r508019_rule",
         "stig_id": "O365-EX-000006",
-        "fix_id": "F-24976r442165_fix"
+        "fix_id": "F-24976r442165_fix",
+        "documentable": false
       },
       "id": "V-223315",
       "title": "Open/save of Dif and Sylk format files must be blocked.",
@@ -656,11 +654,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223316",
         "rid": "SV-223316r508019_rule",
         "stig_id": "O365-EX-000007",
-        "fix_id": "F-24977r442168_fix"
+        "fix_id": "F-24977r442168_fix",
+        "documentable": false
       },
       "id": "V-223316",
       "title": "Open/save of Excel 2 macrosheets and add-in files must be blocked.",
@@ -674,11 +672,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223317",
         "rid": "SV-223317r508019_rule",
         "stig_id": "O365-EX-000008",
-        "fix_id": "F-24978r442171_fix"
+        "fix_id": "F-24978r442171_fix",
+        "documentable": false
       },
       "id": "V-223317",
       "title": "Open/save of Excel 2 worksheets must be blocked.",
@@ -692,11 +690,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223318",
         "rid": "SV-223318r508019_rule",
         "stig_id": "O365-EX-000009",
-        "fix_id": "F-24979r442174_fix"
+        "fix_id": "F-24979r442174_fix",
+        "documentable": false
       },
       "id": "V-223318",
       "title": "Open/save of Excel 3 macrosheets and add-in files must be blocked.",
@@ -710,11 +708,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223319",
         "rid": "SV-223319r508019_rule",
         "stig_id": "O365-EX-000010",
-        "fix_id": "F-24980r442177_fix"
+        "fix_id": "F-24980r442177_fix",
+        "documentable": false
       },
       "id": "V-223319",
       "title": "Open/save of Excel 3 worksheets must be blocked.",
@@ -728,11 +726,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223320",
         "rid": "SV-223320r508019_rule",
         "stig_id": "O365-EX-000011",
-        "fix_id": "F-24981r442180_fix"
+        "fix_id": "F-24981r442180_fix",
+        "documentable": false
       },
       "id": "V-223320",
       "title": "Open/save of Excel 4 macrosheets and add-in files must be blocked.",
@@ -746,11 +744,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223321",
         "rid": "SV-223321r508019_rule",
         "stig_id": "O365-EX-000012",
-        "fix_id": "F-24982r442183_fix"
+        "fix_id": "F-24982r442183_fix",
+        "documentable": false
       },
       "id": "V-223321",
       "title": "Open/save of Excel 4 workbooks must be blocked.",
@@ -764,11 +762,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223322",
         "rid": "SV-223322r508019_rule",
         "stig_id": "O365-EX-000013",
-        "fix_id": "F-24983r442186_fix"
+        "fix_id": "F-24983r442186_fix",
+        "documentable": false
       },
       "id": "V-223322",
       "title": "Open/save of Excel 4 worksheets must be blocked.",
@@ -782,11 +780,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223323",
         "rid": "SV-223323r508019_rule",
         "stig_id": "O365-EX-000014",
-        "fix_id": "F-24984r442189_fix"
+        "fix_id": "F-24984r442189_fix",
+        "documentable": false
       },
       "id": "V-223323",
       "title": "Open/save of Excel 95 workbooks must be blocked.",
@@ -800,11 +798,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223324",
         "rid": "SV-223324r508019_rule",
         "stig_id": "O365-EX-000015",
-        "fix_id": "F-24985r442192_fix"
+        "fix_id": "F-24985r442192_fix",
+        "documentable": false
       },
       "id": "V-223324",
       "title": "Open/save of Excel 95-97 workbooks and templates must be blocked.",
@@ -818,11 +816,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223325",
         "rid": "SV-223325r508019_rule",
         "stig_id": "O365-EX-000016",
-        "fix_id": "F-24986r442195_fix"
+        "fix_id": "F-24986r442195_fix",
+        "documentable": false
       },
       "id": "V-223325",
       "title": "The default file block behavior must be set to not open blocked files in Excel.",
@@ -836,11 +834,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223326",
         "rid": "SV-223326r508019_rule",
         "stig_id": "O365-EX-000017",
-        "fix_id": "F-24987r442198_fix"
+        "fix_id": "F-24987r442198_fix",
+        "documentable": false
       },
       "id": "V-223326",
       "title": "Open/save of Web pages and Excel 2003 XML spreadsheets must be blocked.",
@@ -854,11 +852,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223327",
         "rid": "SV-223327r508019_rule",
         "stig_id": "O365-EX-000018",
-        "fix_id": "F-24988r442201_fix"
+        "fix_id": "F-24988r442201_fix",
+        "documentable": false
       },
       "id": "V-223327",
       "title": "Extraction options must be blocked when opening corrupt Excel workbooks.",
@@ -872,11 +870,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223328",
         "rid": "SV-223328r508019_rule",
         "stig_id": "O365-EX-000019",
-        "fix_id": "F-24989r442204_fix"
+        "fix_id": "F-24989r442204_fix",
+        "documentable": false
       },
       "id": "V-223328",
       "title": "Updating of links in Excel must be prompted and not automatic.",
@@ -890,11 +888,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223329",
         "rid": "SV-223329r508019_rule",
         "stig_id": "O365-EX-000020",
-        "fix_id": "F-24990r442207_fix"
+        "fix_id": "F-24990r442207_fix",
+        "documentable": false
       },
       "id": "V-223329",
       "title": "Loading of pictures from Web pages not created in Excel must be disabled.",
@@ -908,11 +906,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223330",
         "rid": "SV-223330r508019_rule",
         "stig_id": "O365-EX-000021",
-        "fix_id": "F-24991r442210_fix"
+        "fix_id": "F-24991r442210_fix",
+        "documentable": false
       },
       "id": "V-223330",
       "title": "AutoRepublish in Excel must be disabled.",
@@ -926,11 +924,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223331",
         "rid": "SV-223331r508019_rule",
         "stig_id": "O365-EX-000022",
-        "fix_id": "F-24992r442213_fix"
+        "fix_id": "F-24992r442213_fix",
+        "documentable": false
       },
       "id": "V-223331",
       "title": "AutoRepublish warning alert in Excel must be enabled.",
@@ -944,11 +942,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223332",
         "rid": "SV-223332r508019_rule",
         "stig_id": "O365-EX-000023",
-        "fix_id": "F-24993r442216_fix"
+        "fix_id": "F-24993r442216_fix",
+        "documentable": false
       },
       "id": "V-223332",
       "title": "File extensions must be enabled to match file types in Excel.",
@@ -962,11 +960,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223333",
         "rid": "SV-223333r508019_rule",
         "stig_id": "O365-EX-000024",
-        "fix_id": "F-24994r442219_fix"
+        "fix_id": "F-24994r442219_fix",
+        "documentable": false
       },
       "id": "V-223333",
       "title": "Scan of encrypted macros in Excel Open XML workbooks must be enabled.",
@@ -980,11 +978,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000112",
         "gid": "V-223334",
         "rid": "SV-223334r508019_rule",
         "stig_id": "O365-EX-000025",
-        "fix_id": "F-24995r442222_fix"
+        "fix_id": "F-24995r442222_fix",
+        "documentable": false
       },
       "id": "V-223334",
       "title": "File validation in Excel must be enabled.",
@@ -998,11 +996,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223335",
         "rid": "SV-223335r508019_rule",
         "stig_id": "O365-EX-000026",
-        "fix_id": "F-24996r442225_fix"
+        "fix_id": "F-24996r442225_fix",
+        "documentable": false
       },
       "id": "V-223335",
       "title": "WEBSERVICE Function Notification in Excel must be configured to disable all, with notifications.",
@@ -1016,11 +1014,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223336",
         "rid": "SV-223336r508019_rule",
         "stig_id": "O365-EX-000027",
-        "fix_id": "F-24997r442228_fix"
+        "fix_id": "F-24997r442228_fix",
+        "documentable": false
       },
       "id": "V-223336",
       "title": "Macros must be blocked from running in Excel files from the Internet.",
@@ -1034,11 +1032,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223337",
         "rid": "SV-223337r508019_rule",
         "stig_id": "O365-EX-000028",
-        "fix_id": "F-24998r442231_fix"
+        "fix_id": "F-24998r442231_fix",
+        "documentable": false
       },
       "id": "V-223337",
       "title": "Trust Bar notification must be enabled for unsigned application add-ins in Excel and blocked.",
@@ -1052,11 +1050,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223338",
         "rid": "SV-223338r684249_rule",
         "stig_id": "O365-EX-000029",
-        "fix_id": "F-24999r442234_fix"
+        "fix_id": "F-24999r442234_fix",
+        "documentable": false
       },
       "id": "V-223338",
       "title": "Untrusted Microsoft Query files must be blocked from opening in Excel.",
@@ -1070,11 +1068,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223339",
         "rid": "SV-223339r684251_rule",
         "stig_id": "O365-EX-000030",
-        "fix_id": "F-25000r572105_fix"
+        "fix_id": "F-25000r572105_fix",
+        "documentable": false
       },
       "id": "V-223339",
       "title": "Untrusted database files must be opened in Excel in Protected View mode.",
@@ -1088,11 +1086,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223340",
         "rid": "SV-223340r508019_rule",
         "stig_id": "O365-EX-000031",
-        "fix_id": "F-25001r442240_fix"
+        "fix_id": "F-25001r442240_fix",
+        "documentable": false
       },
       "id": "V-223340",
       "title": "Files from Internet zone must be opened in Excel in Protected View mode.",
@@ -1106,11 +1104,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223341",
         "rid": "SV-223341r508019_rule",
         "stig_id": "O365-EX-000032",
-        "fix_id": "F-25002r442243_fix"
+        "fix_id": "F-25002r442243_fix",
+        "documentable": false
       },
       "id": "V-223341",
       "title": "Files from unsafe locations must be opened in Excel in Protected View mode.",
@@ -1124,11 +1122,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223342",
         "rid": "SV-223342r508019_rule",
         "stig_id": "O365-EX-000033",
-        "fix_id": "F-25003r442246_fix"
+        "fix_id": "F-25003r442246_fix",
+        "documentable": false
       },
       "id": "V-223342",
       "title": "Files failing file validation must be opened in Excel in Protected view mode and disallow edits.",
@@ -1142,11 +1140,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223343",
         "rid": "SV-223343r508019_rule",
         "stig_id": "O365-EX-000034",
-        "fix_id": "F-25004r442249_fix"
+        "fix_id": "F-25004r442249_fix",
+        "documentable": false
       },
       "id": "V-223343",
       "title": "File attachments from Outlook must be opened in Excel in Protected mode.",
@@ -1160,11 +1158,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219",
         "gid": "V-223344",
         "rid": "SV-223344r508019_rule",
         "stig_id": "O365-LY-000001",
-        "fix_id": "F-25005r442252_fix"
+        "fix_id": "F-25005r442252_fix",
+        "documentable": false
       },
       "id": "V-223344",
       "title": "The SIP security mode in Lync must be enabled.",
@@ -1178,11 +1176,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219",
         "gid": "V-223345",
         "rid": "SV-223345r508019_rule",
         "stig_id": "O365-LY-000002",
-        "fix_id": "F-25006r442255_fix"
+        "fix_id": "F-25006r442255_fix",
+        "documentable": false
       },
       "id": "V-223345",
       "title": "The HTTP fallback for SIP connection in Lync must be disabled.",
@@ -1196,11 +1194,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000575",
         "gid": "V-223346",
         "rid": "SV-223346r508019_rule",
         "stig_id": "O365-OU-000001",
-        "fix_id": "F-25007r442258_fix"
+        "fix_id": "F-25007r442258_fix",
+        "documentable": false
       },
       "id": "V-223346",
       "title": "The Exchange client authentication with Exchange servers must be enabled to use Kerberos Password Authentication.",
@@ -1214,11 +1212,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000575",
         "gid": "V-223347",
         "rid": "SV-223347r508019_rule",
         "stig_id": "O365-OU-000002",
-        "fix_id": "F-25008r442261_fix"
+        "fix_id": "F-25008r442261_fix",
+        "documentable": false
       },
       "id": "V-223347",
       "title": "Outlook must use remote procedure call (RPC) encryption to communicate with Microsoft Exchange servers.",
@@ -1232,11 +1230,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223348",
         "rid": "SV-223348r508019_rule",
         "stig_id": "O365-OU-000003",
-        "fix_id": "F-25009r442264_fix"
+        "fix_id": "F-25009r442264_fix",
+        "documentable": false
       },
       "id": "V-223348",
       "title": "Scripts associated with public folders must be prevented from execution in Outlook.",
@@ -1250,11 +1248,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223349",
         "rid": "SV-223349r508019_rule",
         "stig_id": "O365-OU-000004",
-        "fix_id": "F-25010r442267_fix"
+        "fix_id": "F-25010r442267_fix",
+        "documentable": false
       },
       "id": "V-223349",
       "title": "Scripts associated with shared folders must be prevented from execution in Outlook.",
@@ -1268,11 +1266,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223350",
         "rid": "SV-223350r508019_rule",
         "stig_id": "O365-OU-000005",
-        "fix_id": "F-25011r442270_fix"
+        "fix_id": "F-25011r442270_fix",
+        "documentable": false
       },
       "id": "V-223350",
       "title": "Files dragged from an Outlook e-mail to the file system must be created in ANSI format.",
@@ -1286,11 +1284,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223351",
         "rid": "SV-223351r508019_rule",
         "stig_id": "O365-OU-000006",
-        "fix_id": "F-25012r442273_fix"
+        "fix_id": "F-25012r442273_fix",
+        "documentable": false
       },
       "id": "V-223351",
       "title": "Junk e-mail level must be enabled at a setting of High.",
@@ -1304,11 +1302,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223352",
         "rid": "SV-223352r508019_rule",
         "stig_id": "O365-OU-000007",
-        "fix_id": "F-25013r442276_fix"
+        "fix_id": "F-25013r442276_fix",
+        "documentable": false
       },
       "id": "V-223352",
       "title": "Active X One-Off forms must only be enabled to load with Outlook Controls.",
@@ -1322,11 +1320,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340",
         "gid": "V-223353",
         "rid": "SV-223353r508019_rule",
         "stig_id": "O365-OU-000008",
-        "fix_id": "F-25014r442279_fix"
+        "fix_id": "F-25014r442279_fix",
+        "documentable": false
       },
       "id": "V-223353",
       "title": "Outlook must be configured to prevent users overriding attachment security settings.",
@@ -1340,11 +1338,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223354",
         "rid": "SV-223354r508019_rule",
         "stig_id": "O365-OU-000009",
-        "fix_id": "F-25015r442282_fix"
+        "fix_id": "F-25015r442282_fix",
+        "documentable": false
       },
       "id": "V-223354",
       "title": "Internet must not be included in Safe Zone for picture download in Outlook.",
@@ -1358,11 +1356,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223355",
         "rid": "SV-223355r508019_rule",
         "stig_id": "O365-OU-000010",
-        "fix_id": "F-25016r442285_fix"
+        "fix_id": "F-25016r442285_fix",
+        "documentable": false
       },
       "id": "V-223355",
       "title": "The Publish to Global Address List (GAL) button must be disabled in Outlook.",
@@ -1376,11 +1374,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000630",
         "gid": "V-223356",
         "rid": "SV-223356r508019_rule",
         "stig_id": "O365-OU-000011",
-        "fix_id": "F-25017r442288_fix"
+        "fix_id": "F-25017r442288_fix",
+        "documentable": false
       },
       "id": "V-223356",
       "title": "The minimum encryption key length in Outlook must be at least 168.",
@@ -1394,11 +1392,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223357",
         "rid": "SV-223357r508019_rule",
         "stig_id": "O365-OU-000012",
-        "fix_id": "F-25018r442291_fix"
+        "fix_id": "F-25018r442291_fix",
+        "documentable": false
       },
       "id": "V-223357",
       "title": "The warning about invalid digital signatures must be enabled to warn Outlook users.",
@@ -1412,11 +1410,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000605",
         "gid": "V-223358",
         "rid": "SV-223358r508019_rule",
         "stig_id": "O365-OU-000013",
-        "fix_id": "F-25019r442294_fix"
+        "fix_id": "F-25019r442294_fix",
+        "documentable": false
       },
       "id": "V-223358",
       "title": "Outlook must be configured to allow retrieving of Certificate Revocation Lists (CRLs) always when online.",
@@ -1430,11 +1428,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223359",
         "rid": "SV-223359r508019_rule",
         "stig_id": "O365-OU-000014",
-        "fix_id": "F-25020r442297_fix"
+        "fix_id": "F-25020r442297_fix",
+        "documentable": false
       },
       "id": "V-223359",
       "title": "The Outlook Security Mode must be enabled to always use the Outlook Security Group Policy.",
@@ -1448,11 +1446,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223360",
         "rid": "SV-223360r508019_rule",
         "stig_id": "O365-OU-000015",
-        "fix_id": "F-25021r442300_fix"
+        "fix_id": "F-25021r442300_fix",
+        "documentable": false
       },
       "id": "V-223360",
       "title": "The ability to demote attachments from Level 2 to Level 1 must be disabled.",
@@ -1466,11 +1464,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223361",
         "rid": "SV-223361r508019_rule",
         "stig_id": "O365-OU-000016",
-        "fix_id": "F-25022r442303_fix"
+        "fix_id": "F-25022r442303_fix",
+        "documentable": false
       },
       "id": "V-223361",
       "title": "The display of Level 1 attachments must be disabled in Outlook.",
@@ -1484,11 +1482,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223362",
         "rid": "SV-223362r508019_rule",
         "stig_id": "O365-OU-000017",
-        "fix_id": "F-25023r442306_fix"
+        "fix_id": "F-25023r442306_fix",
+        "documentable": false
       },
       "id": "V-223362",
       "title": "Level 1 file attachments must be blocked from being delivered.",
@@ -1502,11 +1500,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223363",
         "rid": "SV-223363r508019_rule",
         "stig_id": "O365-OU-000018",
-        "fix_id": "F-25024r442309_fix"
+        "fix_id": "F-25024r442309_fix",
+        "documentable": false
       },
       "id": "V-223363",
       "title": "Level 2 file attachments must be blocked from being delivered.",
@@ -1520,11 +1518,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223364",
         "rid": "SV-223364r508019_rule",
         "stig_id": "O365-OU-000019",
-        "fix_id": "F-25025r442312_fix"
+        "fix_id": "F-25025r442312_fix",
+        "documentable": false
       },
       "id": "V-223364",
       "title": "Outlook must be configured to not run scripts in forms in which the script and the layout are contained within the message.",
@@ -1538,11 +1536,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223365",
         "rid": "SV-223365r508019_rule",
         "stig_id": "O365-OU-000020",
-        "fix_id": "F-25026r442315_fix"
+        "fix_id": "F-25026r442315_fix",
+        "documentable": false
       },
       "id": "V-223365",
       "title": "When a custom action is executed that uses the Outlook object model, Outlook must automatically deny it.",
@@ -1556,11 +1554,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223366",
         "rid": "SV-223366r508019_rule",
         "stig_id": "O365-OU-000021",
-        "fix_id": "F-25027r442318_fix"
+        "fix_id": "F-25027r442318_fix",
+        "documentable": false
       },
       "id": "V-223366",
       "title": "When an untrusted program attempts to programmatically access an Address Book using the Outlook object model, Outlook must automatically deny it.",
@@ -1574,11 +1572,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223367",
         "rid": "SV-223367r508019_rule",
         "stig_id": "O365-OU-000022",
-        "fix_id": "F-25028r442321_fix"
+        "fix_id": "F-25028r442321_fix",
+        "documentable": false
       },
       "id": "V-223367",
       "title": "When a user designs a custom form in Outlook and attempts to bind an Address Information field to a combination or formula custom field, Outlook must automatically deny it.",
@@ -1592,11 +1590,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223368",
         "rid": "SV-223368r508019_rule",
         "stig_id": "O365-OU-000023",
-        "fix_id": "F-25029r442324_fix"
+        "fix_id": "F-25029r442324_fix",
+        "documentable": false
       },
       "id": "V-223368",
       "title": "When an untrusted program attempts to use the Save As command to programmatically save an item, Outlook must automatically deny it.",
@@ -1610,11 +1608,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223369",
         "rid": "SV-223369r508019_rule",
         "stig_id": "O365-OU-000024",
-        "fix_id": "F-25030r442327_fix"
+        "fix_id": "F-25030r442327_fix",
+        "documentable": false
       },
       "id": "V-223369",
       "title": "When an untrusted program attempts to gain access to a recipient field, such as the, To: field, using the Outlook object model, Outlook must automatically deny it.",
@@ -1628,11 +1626,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223370",
         "rid": "SV-223370r508019_rule",
         "stig_id": "O365-OU-000025",
-        "fix_id": "F-25031r442330_fix"
+        "fix_id": "F-25031r442330_fix",
+        "documentable": false
       },
       "id": "V-223370",
       "title": "When an untrusted program attempts to programmatically send e-mail in Outlook using the Response method of a task or meeting request, Outlook must automatically deny it.",
@@ -1646,11 +1644,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000488",
         "gid": "V-223371",
         "rid": "SV-223371r508019_rule",
         "stig_id": "O365-OU-000026",
-        "fix_id": "F-25032r442333_fix"
+        "fix_id": "F-25032r442333_fix",
+        "documentable": false
       },
       "id": "V-223371",
       "title": "When an untrusted program attempts to send e-mail programmatically using the Outlook object model, Outlook must automatically deny it.",
@@ -1664,11 +1662,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-223372",
         "rid": "SV-223372r508019_rule",
         "stig_id": "O365-OU-000027",
-        "fix_id": "F-25033r442336_fix"
+        "fix_id": "F-25033r442336_fix",
+        "documentable": false
       },
       "id": "V-223372",
       "title": "Outlook must be configured to not allow hyperlinks in suspected phishing messages.",
@@ -1682,11 +1680,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223373",
         "rid": "SV-223373r508019_rule",
         "stig_id": "O365-OU-000028",
-        "fix_id": "F-25034r442339_fix"
+        "fix_id": "F-25034r442339_fix",
+        "documentable": false
       },
       "id": "V-223373",
       "title": "The Security Level for macros in Outlook must be configured to Warn for signed and disable unsigned.",
@@ -1700,11 +1698,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223374",
         "rid": "SV-223374r508019_rule",
         "stig_id": "O365-PR-000001",
-        "fix_id": "F-25035r442342_fix"
+        "fix_id": "F-25035r442342_fix",
+        "documentable": false
       },
       "id": "V-223374",
       "title": "Trusted Locations on the network must be disabled in Project.",
@@ -1718,11 +1716,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223375",
         "rid": "SV-223375r508019_rule",
         "stig_id": "O365-PR-000002",
-        "fix_id": "F-25036r442345_fix"
+        "fix_id": "F-25036r442345_fix",
+        "documentable": false
       },
       "id": "V-223375",
       "title": "Project must automatically disable unsigned add-ins without informing users.",
@@ -1736,11 +1734,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-223376",
         "rid": "SV-223376r508019_rule",
         "stig_id": "O365-PR-000003",
-        "fix_id": "F-25037r442348_fix"
+        "fix_id": "F-25037r442348_fix",
+        "documentable": false
       },
       "id": "V-223376",
       "title": "VBA Macros not digitally signed must be blocked in Project.",
@@ -1754,11 +1752,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-223377",
         "rid": "SV-223377r508019_rule",
         "stig_id": "O365-PT-000001",
-        "fix_id": "F-25038r442351_fix"
+        "fix_id": "F-25038r442351_fix",
+        "documentable": false
       },
       "id": "V-223377",
       "title": "VBA Macros not digitally signed must be blocked in PowerPoint.",
@@ -1772,11 +1770,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223378",
         "rid": "SV-223378r508019_rule",
         "stig_id": "O365-PT-000002",
-        "fix_id": "F-25039r442354_fix"
+        "fix_id": "F-25039r442354_fix",
+        "documentable": false
       },
       "id": "V-223378",
       "title": "The ability to run programs from PowerPoint must be disabled.",
@@ -1790,11 +1788,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223379",
         "rid": "SV-223379r508019_rule",
         "stig_id": "O365-PT-000003",
-        "fix_id": "F-25040r442357_fix"
+        "fix_id": "F-25040r442357_fix",
+        "documentable": false
       },
       "id": "V-223379",
       "title": "Open/Save of PowerPoint 97-2003 presentations, shows, templates, and add-in files must be blocked.",
@@ -1808,11 +1806,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223380",
         "rid": "SV-223380r508019_rule",
         "stig_id": "O365-PT-000004",
-        "fix_id": "F-25041r442360_fix"
+        "fix_id": "F-25041r442360_fix",
+        "documentable": false
       },
       "id": "V-223380",
       "title": "The default file block behavior must be set to not open blocked files in PowerPoint.",
@@ -1826,11 +1824,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223381",
         "rid": "SV-223381r508019_rule",
         "stig_id": "O365-PT-000005",
-        "fix_id": "F-25042r442363_fix"
+        "fix_id": "F-25042r442363_fix",
+        "documentable": false
       },
       "id": "V-223381",
       "title": "Encrypted macros in PowerPoint Open XML presentations must be scanned.",
@@ -1844,11 +1842,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223382",
         "rid": "SV-223382r508019_rule",
         "stig_id": "O365-PT-000006",
-        "fix_id": "F-25043r442366_fix"
+        "fix_id": "F-25043r442366_fix",
+        "documentable": false
       },
       "id": "V-223382",
       "title": "File validation in PowerPoint must be enabled.",
@@ -1862,11 +1860,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223383",
         "rid": "SV-223383r508019_rule",
         "stig_id": "O365-PT-000007",
-        "fix_id": "F-25044r442369_fix"
+        "fix_id": "F-25044r442369_fix",
+        "documentable": false
       },
       "id": "V-223383",
       "title": "Macros from the Internet must be blocked from running in PowerPoint.",
@@ -1880,11 +1878,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223384",
         "rid": "SV-223384r508019_rule",
         "stig_id": "O365-PT-000008",
-        "fix_id": "F-25045r442372_fix"
+        "fix_id": "F-25045r442372_fix",
+        "documentable": false
       },
       "id": "V-223384",
       "title": "Unsigned add-ins in PowerPoint must be blocked with no Trust Bar Notification to the user.",
@@ -1898,11 +1896,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223385",
         "rid": "SV-223385r508019_rule",
         "stig_id": "O365-PT-000009",
-        "fix_id": "F-25046r442375_fix"
+        "fix_id": "F-25046r442375_fix",
+        "documentable": false
       },
       "id": "V-223385",
       "title": "Files downloaded from the Internet must be opened in Protected view in PowerPoint.",
@@ -1916,11 +1914,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223386",
         "rid": "SV-223386r508019_rule",
         "stig_id": "O365-PT-000010",
-        "fix_id": "F-25047r442378_fix"
+        "fix_id": "F-25047r442378_fix",
+        "documentable": false
       },
       "id": "V-223386",
       "title": "PowerPoint attachments opened from Outlook must be in Protected View.",
@@ -1934,11 +1932,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223387",
         "rid": "SV-223387r508019_rule",
         "stig_id": "O365-PT-000011",
-        "fix_id": "F-25048r442381_fix"
+        "fix_id": "F-25048r442381_fix",
+        "documentable": false
       },
       "id": "V-223387",
       "title": "Files in unsafe locations must be opened in Protected view in PowerPoint.",
@@ -1952,11 +1950,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223388",
         "rid": "SV-223388r508019_rule",
         "stig_id": "O365-PT-000012",
-        "fix_id": "F-25049r442384_fix"
+        "fix_id": "F-25049r442384_fix",
+        "documentable": false
       },
       "id": "V-223388",
       "title": "If file validation fails, files must be opened in Protected view in PowerPoint with ability to edit disabled.",
@@ -1970,11 +1968,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223389",
         "rid": "SV-223389r508019_rule",
         "stig_id": "O365-PT-000013",
-        "fix_id": "F-25050r442387_fix"
+        "fix_id": "F-25050r442387_fix",
+        "documentable": false
       },
       "id": "V-223389",
       "title": "The use of network locations must be ignored in PowerPoint.",
@@ -1988,11 +1986,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223390",
         "rid": "SV-223390r508019_rule",
         "stig_id": "O365-PU-000001",
-        "fix_id": "F-25051r442390_fix"
+        "fix_id": "F-25051r442390_fix",
+        "documentable": false
       },
       "id": "V-223390",
       "title": "Publisher must be configured to prompt the user when another application programmatically opens a macro.",
@@ -2006,11 +2004,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223391",
         "rid": "SV-223391r508019_rule",
         "stig_id": "O365-PU-000002",
-        "fix_id": "F-25052r442393_fix"
+        "fix_id": "F-25052r442393_fix",
+        "documentable": false
       },
       "id": "V-223391",
       "title": "Publisher must automatically disable unsigned add-ins without informing users.",
@@ -2024,11 +2022,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223392",
         "rid": "SV-223392r508019_rule",
         "stig_id": "O365-PU-000003",
-        "fix_id": "F-25053r442396_fix"
+        "fix_id": "F-25053r442396_fix",
+        "documentable": false
       },
       "id": "V-223392",
       "title": "Publisher must disable all unsigned VBA macros.",
@@ -2042,11 +2040,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-223393",
         "rid": "SV-223393r508019_rule",
         "stig_id": "O365-VI-000001",
-        "fix_id": "F-25054r442399_fix"
+        "fix_id": "F-25054r442399_fix",
+        "documentable": false
       },
       "id": "V-223393",
       "title": "VBA Macros not digitally signed must be blocked in Visio.",
@@ -2060,11 +2058,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223394",
         "rid": "SV-223394r508019_rule",
         "stig_id": "O365-VI-000002",
-        "fix_id": "F-25055r442402_fix"
+        "fix_id": "F-25055r442402_fix",
+        "documentable": false
       },
       "id": "V-223394",
       "title": "Trusted Locations on the network must be disabled in Visio.",
@@ -2078,11 +2076,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223395",
         "rid": "SV-223395r508019_rule",
         "stig_id": "O365-VI-000003",
-        "fix_id": "F-25056r442405_fix"
+        "fix_id": "F-25056r442405_fix",
+        "documentable": false
       },
       "id": "V-223395",
       "title": "Visio must automatically disable unsigned add-ins without informing users.",
@@ -2096,11 +2094,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223396",
         "rid": "SV-223396r508019_rule",
         "stig_id": "O365-VI-000004",
-        "fix_id": "F-25057r442408_fix"
+        "fix_id": "F-25057r442408_fix",
+        "documentable": false
       },
       "id": "V-223396",
       "title": "Visio 2000-2002 Binary Drawings, Templates and Stencils must be blocked.",
@@ -2114,11 +2112,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223397",
         "rid": "SV-223397r508019_rule",
         "stig_id": "O365-VI-000005",
-        "fix_id": "F-25058r442411_fix"
+        "fix_id": "F-25058r442411_fix",
+        "documentable": false
       },
       "id": "V-223397",
       "title": "Visio 2003-2010 Binary Drawings, Templates and Stencils must be blocked.",
@@ -2132,11 +2130,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223398",
         "rid": "SV-223398r508019_rule",
         "stig_id": "O365-VI-000006",
-        "fix_id": "F-25059r442414_fix"
+        "fix_id": "F-25059r442414_fix",
+        "documentable": false
       },
       "id": "V-223398",
       "title": "Visio 5.0 or earlier Binary Drawings, Templates and Stencils must be blocked.",
@@ -2150,11 +2148,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223399",
         "rid": "SV-223399r508019_rule",
         "stig_id": "O365-VI-000007",
-        "fix_id": "F-25060r442417_fix"
+        "fix_id": "F-25060r442417_fix",
+        "documentable": false
       },
       "id": "V-223399",
       "title": "Macros must be blocked from running in Visio files from the Internet.",
@@ -2168,11 +2166,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-223400",
         "rid": "SV-223400r508019_rule",
         "stig_id": "O365-WD-000001",
-        "fix_id": "F-25061r442420_fix"
+        "fix_id": "F-25061r442420_fix",
+        "documentable": false
       },
       "id": "V-223400",
       "title": "Word must automatically disable unsigned add-ins without informing users.",
@@ -2186,11 +2184,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223401",
         "rid": "SV-223401r508019_rule",
         "stig_id": "O365-WD-000002",
-        "fix_id": "F-25062r442423_fix"
+        "fix_id": "F-25062r442423_fix",
+        "documentable": false
       },
       "id": "V-223401",
       "title": "In Word, encrypted macros must be scanned.",
@@ -2204,11 +2202,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223402",
         "rid": "SV-223402r508019_rule",
         "stig_id": "O365-WD-000003",
-        "fix_id": "F-25063r442426_fix"
+        "fix_id": "F-25063r442426_fix",
+        "documentable": false
       },
       "id": "V-223402",
       "title": "Files downloaded from the Internet must be opened in Protected view in Word.",
@@ -2222,11 +2220,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223403",
         "rid": "SV-223403r508019_rule",
         "stig_id": "O365-WD-000004",
-        "fix_id": "F-25064r442429_fix"
+        "fix_id": "F-25064r442429_fix",
+        "documentable": false
       },
       "id": "V-223403",
       "title": "Files located in unsafe locations must be opened in Protected view in Word.",
@@ -2240,11 +2238,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223404",
         "rid": "SV-223404r508019_rule",
         "stig_id": "O365-WD-000005",
-        "fix_id": "F-25065r442432_fix"
+        "fix_id": "F-25065r442432_fix",
+        "documentable": false
       },
       "id": "V-223404",
       "title": "If file validation fails, files must be opened in Protected view in Word with ability to edit disabled.",
@@ -2258,11 +2256,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223405",
         "rid": "SV-223405r508019_rule",
         "stig_id": "O365-WD-000006",
-        "fix_id": "F-25066r442435_fix"
+        "fix_id": "F-25066r442435_fix",
+        "documentable": false
       },
       "id": "V-223405",
       "title": "Word attachments opened from Outlook must be in Protected View.",
@@ -2276,11 +2274,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223406",
         "rid": "SV-223406r508019_rule",
         "stig_id": "O365-WD-000007",
-        "fix_id": "F-25067r442438_fix"
+        "fix_id": "F-25067r442438_fix",
+        "documentable": false
       },
       "id": "V-223406",
       "title": "The default file block behavior must be set to not open blocked files in Word.",
@@ -2294,11 +2292,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223407",
         "rid": "SV-223407r508019_rule",
         "stig_id": "O365-WD-000008",
-        "fix_id": "F-25068r442441_fix"
+        "fix_id": "F-25068r442441_fix",
+        "documentable": false
       },
       "id": "V-223407",
       "title": "Open/Save of Word 2 and earlier binary documents and templates must be blocked.",
@@ -2312,11 +2310,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223408",
         "rid": "SV-223408r508019_rule",
         "stig_id": "O365-WD-000009",
-        "fix_id": "F-25069r442444_fix"
+        "fix_id": "F-25069r442444_fix",
+        "documentable": false
       },
       "id": "V-223408",
       "title": "Open/Save of Word 2000 binary documents and templates must be blocked.",
@@ -2330,11 +2328,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223409",
         "rid": "SV-223409r508019_rule",
         "stig_id": "O365-WD-000010",
-        "fix_id": "F-25070r442447_fix"
+        "fix_id": "F-25070r442447_fix",
+        "documentable": false
       },
       "id": "V-223409",
       "title": "Open/Save of Word 2003 binary documents and templates must be blocked.",
@@ -2348,11 +2346,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223410",
         "rid": "SV-223410r508019_rule",
         "stig_id": "O365-WD-000011",
-        "fix_id": "F-25071r442450_fix"
+        "fix_id": "F-25071r442450_fix",
+        "documentable": false
       },
       "id": "V-223410",
       "title": "Open/Save of Word 2007 and later binary documents and templates must be blocked.",
@@ -2366,11 +2364,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223411",
         "rid": "SV-223411r508019_rule",
         "stig_id": "O365-WD-000012",
-        "fix_id": "F-25072r442453_fix"
+        "fix_id": "F-25072r442453_fix",
+        "documentable": false
       },
       "id": "V-223411",
       "title": "Open/Save of Word 6.0 binary documents and templates must be blocked.",
@@ -2384,11 +2382,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223412",
         "rid": "SV-223412r508019_rule",
         "stig_id": "O365-WD-000013",
-        "fix_id": "F-25073r442456_fix"
+        "fix_id": "F-25073r442456_fix",
+        "documentable": false
       },
       "id": "V-223412",
       "title": "Open/Save of Word 95 binary documents and templates must be blocked.",
@@ -2402,11 +2400,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223413",
         "rid": "SV-223413r508019_rule",
         "stig_id": "O365-WD-000014",
-        "fix_id": "F-25074r442459_fix"
+        "fix_id": "F-25074r442459_fix",
+        "documentable": false
       },
       "id": "V-223413",
       "title": "Open/Save of Word 97 binary documents and templates must be blocked.",
@@ -2420,11 +2418,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000207",
         "gid": "V-223414",
         "rid": "SV-223414r508019_rule",
         "stig_id": "O365-WD-000015",
-        "fix_id": "F-25075r442462_fix"
+        "fix_id": "F-25075r442462_fix",
+        "documentable": false
       },
       "id": "V-223414",
       "title": "Open/Save of Word XP binary documents and templates must be blocked.",
@@ -2438,11 +2436,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223415",
         "rid": "SV-223415r508019_rule",
         "stig_id": "O365-WD-000016",
-        "fix_id": "F-25076r442465_fix"
+        "fix_id": "F-25076r442465_fix",
+        "documentable": false
       },
       "id": "V-223415",
       "title": "In Word, macros must be blocked from running, even if Enable all macros is selected in the Macro Settings section of the Trust Center.",
@@ -2456,11 +2454,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000210",
         "gid": "V-223416",
         "rid": "SV-223416r508019_rule",
         "stig_id": "O365-WD-000017",
-        "fix_id": "F-25077r442468_fix"
+        "fix_id": "F-25077r442468_fix",
+        "documentable": false
       },
       "id": "V-223416",
       "title": "Trusted Locations on the network must be disabled in Word.",
@@ -2474,11 +2472,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-223417",
         "rid": "SV-223417r508019_rule",
         "stig_id": "O365-WD-000018",
-        "fix_id": "F-25078r442471_fix"
+        "fix_id": "F-25078r442471_fix",
+        "documentable": false
       },
       "id": "V-223417",
       "title": "VBA Macros not digitally signed must be blocked in Word.",
@@ -2492,11 +2490,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000112",
         "gid": "V-223418",
         "rid": "SV-223418r508019_rule",
         "stig_id": "O365-WD-000019",
-        "fix_id": "F-25079r442474_fix"
+        "fix_id": "F-25079r442474_fix",
+        "documentable": false
       },
       "id": "V-223418",
       "title": "File validation in Word must be enabled.",
@@ -2508,7 +2506,5 @@
       }
     }
   ],
-  "name": "MS_Office_365_ProPlus_STIG",
-  "title": "Microsoft Office 365 ProPlus Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "MS_Office_365_ProPlus_STIG"
 }

@@ -14,11 +14,7 @@ export function convertEncodedXmlIntoJson(
       attributeNamePrefix: '@_',
       arrayMode: true
     })
-    
-    fs.writeFileSync(`test/sample_data/xml/parsed/${randomUUID()}.json`, JSON.stringify(ret, null, 2))
-    
-    console.log(ret)
-
+  
     return ret
 }
 

@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DNS-000047",
         "gid": "V-215573",
         "rid": "SV-215573r561297_rule",
         "stig_id": "WDNS-CM-000003",
-        "fix_id": "F-16765r572192_fix"
+        "fix_id": "F-16765r572192_fix",
+        "documentable": false
       },
       "id": "V-215573",
       "title": "The Windows 2012 DNS Server must prohibit recursion on authoritative name servers for which forwarders have not been configured for external queries.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DNS-000047",
         "gid": "V-215574",
         "rid": "SV-215574r561297_rule",
         "stig_id": "WDNS-CM-000004",
-        "fix_id": "F-16766r572195_fix"
+        "fix_id": "F-16766r572195_fix",
+        "documentable": false
       },
       "id": "V-215574",
       "title": "Forwarders on an authoritative Windows 2012 DNS Server, if enabled for external resolution, must only forward to either an internal, non-AD-integrated DNS server or to the DoD Enterprise Recursive Services (ERS).",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DNS-000047",
         "gid": "V-215575",
         "rid": "SV-215575r561297_rule",
         "stig_id": "WDNS-CM-000005",
-        "fix_id": "F-16767r314201_fix"
+        "fix_id": "F-16767r314201_fix",
+        "documentable": false
       },
       "id": "V-215575",
       "title": "The Windows 2012 DNS Server with a caching name server role must restrict recursive query responses to only the IP addresses and IP address ranges of known supported clients.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DNS-000047",
         "gid": "V-215576",
         "rid": "SV-215576r561297_rule",
         "stig_id": "WDNS-CM-000006",
-        "fix_id": "F-16768r572198_fix"
+        "fix_id": "F-16768r572198_fix",
+        "documentable": false
       },
       "id": "V-215576",
       "title": "The Windows 2012 DNS Server with a caching name server role must be secured against pollution by ensuring the authenticity and integrity of queried records.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000440-DNS-000065",
         "gid": "V-215577",
         "rid": "SV-215577r561297_rule",
         "stig_id": "WDNS-CM-000007",
-        "fix_id": "F-16769r314207_fix"
+        "fix_id": "F-16769r314207_fix",
+        "documentable": false
       },
       "id": "V-215577",
       "title": "The Windows 2012 DNS Server must implement cryptographic mechanisms to detect changes to information during transmission unless otherwise protected by alternative physical safeguards, such as, at a minimum, a Protected Distribution System (PDS).",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000078",
         "gid": "V-215578",
         "rid": "SV-215578r561297_rule",
         "stig_id": "WDNS-CM-000008",
-        "fix_id": "F-16770r314210_fix"
+        "fix_id": "F-16770r314210_fix",
+        "documentable": false
       },
       "id": "V-215578",
       "title": "The validity period for the RRSIGs covering a zones DNSKEY RRSet must be no less than two days and no more than one week.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000084",
         "gid": "V-215579",
         "rid": "SV-215579r561297_rule",
         "stig_id": "WDNS-CM-000009",
-        "fix_id": "F-16771r572201_fix"
+        "fix_id": "F-16771r572201_fix",
+        "documentable": false
       },
       "id": "V-215579",
       "title": "NSEC3 must be used for all internal DNS zones.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-DNS-000085",
         "gid": "V-215580",
         "rid": "SV-215580r561297_rule",
         "stig_id": "WDNS-CM-000010",
-        "fix_id": "F-16772r572204_fix"
+        "fix_id": "F-16772r572204_fix",
+        "documentable": false
       },
       "id": "V-215580",
       "title": "The Windows 2012 DNS Servers zone files must have NS records that point to active name servers authoritative for the domain specified in that record.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000087",
         "gid": "V-215581",
         "rid": "SV-215581r561297_rule",
         "stig_id": "WDNS-CM-000012",
-        "fix_id": "F-16773r314219_fix"
+        "fix_id": "F-16773r314219_fix",
+        "documentable": false
       },
       "id": "V-215581",
       "title": "All authoritative name servers for a zone must be located on different network segments.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000088",
         "gid": "V-215582",
         "rid": "SV-215582r561297_rule",
         "stig_id": "WDNS-CM-000013",
-        "fix_id": "F-16774r572207_fix"
+        "fix_id": "F-16774r572207_fix",
+        "documentable": false
       },
       "id": "V-215582",
       "title": "All authoritative name servers for a zone must have the same version of zone information.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-DNS-000089",
         "gid": "V-215583",
         "rid": "SV-215583r561297_rule",
         "stig_id": "WDNS-CM-000014",
-        "fix_id": "F-16775r572210_fix"
+        "fix_id": "F-16775r572210_fix",
+        "documentable": false
       },
       "id": "V-215583",
       "title": "The Windows 2012 DNS Server must be configured to enable DNSSEC Resource Records.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000090",
         "gid": "V-215584",
         "rid": "SV-215584r561297_rule",
         "stig_id": "WDNS-CM-000015",
-        "fix_id": "F-16776r572213_fix"
+        "fix_id": "F-16776r572213_fix",
+        "documentable": false
       },
       "id": "V-215584",
       "title": "Digital signature algorithm used for DNSSEC-enabled zones must be FIPS-compatible.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000091",
         "gid": "V-215585",
         "rid": "SV-215585r561297_rule",
         "stig_id": "WDNS-CM-000016",
-        "fix_id": "F-16777r572216_fix"
+        "fix_id": "F-16777r572216_fix",
+        "documentable": false
       },
       "id": "V-215585",
       "title": "For zones split between the external and internal sides of a network, the RRs for the external hosts must be separate from the RRs for the internal hosts.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000092",
         "gid": "V-215586",
         "rid": "SV-215586r561297_rule",
         "stig_id": "WDNS-CM-000017",
-        "fix_id": "F-16778r314234_fix"
+        "fix_id": "F-16778r314234_fix",
+        "documentable": false
       },
       "id": "V-215586",
       "title": "In a split DNS configuration, where separate name servers are used between the external and internal networks, the external name server must be configured to not be reachable from inside resolvers.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000093",
         "gid": "V-215587",
         "rid": "SV-215587r561297_rule",
         "stig_id": "WDNS-CM-000018",
-        "fix_id": "F-16779r314237_fix"
+        "fix_id": "F-16779r314237_fix",
+        "documentable": false
       },
       "id": "V-215587",
       "title": "In a split DNS configuration, where separate name servers are used between the external and internal networks, the internal name server must be configured to not be reachable from outside resolvers.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000095",
         "gid": "V-215588",
         "rid": "SV-215588r561297_rule",
         "stig_id": "WDNS-CM-000019",
-        "fix_id": "F-16780r572219_fix"
+        "fix_id": "F-16780r572219_fix",
+        "documentable": false
       },
       "id": "V-215588",
       "title": "Primary authoritative name servers must be configured to only receive zone transfer requests from specified secondary name servers.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000099",
         "gid": "V-215589",
         "rid": "SV-215589r561297_rule",
         "stig_id": "WDNS-CM-000020",
-        "fix_id": "F-16781r572222_fix"
+        "fix_id": "F-16781r572222_fix",
+        "documentable": false
       },
       "id": "V-215589",
       "title": "The Windows 2012 DNS Servers zone database files must not be accessible for edit/write by users and/or processes other than the Windows 2012 DNS Server service account and/or the DNS database administrator.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000101",
         "gid": "V-215590",
         "rid": "SV-215590r561297_rule",
         "stig_id": "WDNS-CM-000021",
-        "fix_id": "F-16782r572225_fix"
+        "fix_id": "F-16782r572225_fix",
+        "documentable": false
       },
       "id": "V-215590",
       "title": "The Windows 2012 DNS Server must implement internal/external role separation.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000102",
         "gid": "V-215591",
         "rid": "SV-215591r561297_rule",
         "stig_id": "WDNS-CM-000022",
-        "fix_id": "F-16783r314249_fix"
+        "fix_id": "F-16783r314249_fix",
+        "documentable": false
       },
       "id": "V-215591",
       "title": "The Windows 2012 DNS Server authoritative for local zones must only point root hints to the DNS servers that host the internal root domain.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000103",
         "gid": "V-215592",
         "rid": "SV-215592r561297_rule",
         "stig_id": "WDNS-CM-000023",
-        "fix_id": "F-16784r314252_fix"
+        "fix_id": "F-16784r314252_fix",
+        "documentable": false
       },
       "id": "V-215592",
       "title": "The DNS name server software must be at the latest version.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000113",
         "gid": "V-215593",
         "rid": "SV-215593r561297_rule",
         "stig_id": "WDNS-CM-000024",
-        "fix_id": "F-16785r572228_fix"
+        "fix_id": "F-16785r572228_fix",
+        "documentable": false
       },
       "id": "V-215593",
       "title": "The Windows 2012 DNS Servers zone files must not include resource records that resolve to a fully qualified domain name residing in another zone.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000114",
         "gid": "V-215594",
         "rid": "SV-215594r561297_rule",
         "stig_id": "WDNS-CM-000025",
-        "fix_id": "F-16786r572231_fix"
+        "fix_id": "F-16786r572231_fix",
+        "documentable": false
       },
       "id": "V-215594",
       "title": "The Windows 2012 DNS Servers zone files must not include CNAME records pointing to a zone with lesser security for more than six months.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-215595",
         "rid": "SV-215595r561297_rule",
         "stig_id": "WDNS-CM-000026",
-        "fix_id": "F-16787r314261_fix"
+        "fix_id": "F-16787r314261_fix",
+        "documentable": false
       },
       "id": "V-215595",
       "title": "Non-routable IPv6 link-local scope addresses must not be configured in any zone.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-215596",
         "rid": "SV-215596r561297_rule",
         "stig_id": "WDNS-CM-000027",
-        "fix_id": "F-16788r572234_fix"
+        "fix_id": "F-16788r572234_fix",
+        "documentable": false
       },
       "id": "V-215596",
       "title": "AAAA addresses must not be configured in a zone for hosts that are not IPv6-aware.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-215597",
         "rid": "SV-215597r561297_rule",
         "stig_id": "WDNS-CM-000028",
-        "fix_id": "F-16789r572237_fix"
+        "fix_id": "F-16789r572237_fix",
+        "documentable": false
       },
       "id": "V-215597",
       "title": "IPv6 protocol must be disabled unless the Windows 2012 DNS server is configured to answer for and hosting IPv6 AAAA records.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DNS-000014",
         "gid": "V-215598",
         "rid": "SV-215598r561297_rule",
         "stig_id": "WDNS-CM-000029",
-        "fix_id": "F-16790r314270_fix"
+        "fix_id": "F-16790r314270_fix",
+        "documentable": false
       },
       "id": "V-215598",
       "title": "The Windows 2012 DNS Server must be configured to prohibit or restrict unapproved ports and protocols.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000390-DNS-000048",
         "gid": "V-215599",
         "rid": "SV-215599r561297_rule",
         "stig_id": "WDNS-IA-000001",
-        "fix_id": "F-16791r572240_fix"
+        "fix_id": "F-16791r572240_fix",
+        "documentable": false
       },
       "id": "V-215599",
       "title": "The Windows 2012 DNS Server must require devices to re-authenticate for each dynamic update request connection attempt.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000158-DNS-000015",
         "gid": "V-215600",
         "rid": "SV-215600r561297_rule",
         "stig_id": "WDNS-IA-000002",
-        "fix_id": "F-16792r572243_fix"
+        "fix_id": "F-16792r572243_fix",
+        "documentable": false
       },
       "id": "V-215600",
       "title": "The Windows 2012 DNS Server must uniquely identify the other DNS server before responding to a server-to-server transaction.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000394-DNS-000049",
         "gid": "V-215601",
         "rid": "SV-215601r561297_rule",
         "stig_id": "WDNS-IA-000003",
-        "fix_id": "F-16793r314279_fix"
+        "fix_id": "F-16793r314279_fix",
+        "documentable": false
       },
       "id": "V-215601",
       "title": "The secondary Windows DNS name servers must cryptographically authenticate zone transfers from primary name servers.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DNS-000001",
         "gid": "V-215602",
         "rid": "SV-215602r561297_rule",
         "stig_id": "WDNS-IA-000004",
-        "fix_id": "F-16794r572246_fix"
+        "fix_id": "F-16794r572246_fix",
+        "documentable": false
       },
       "id": "V-215602",
       "title": "The Windows DNS primary server must only send zone transfers to a specific list of secondary name servers.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000347-DNS-000041",
         "gid": "V-215603",
         "rid": "SV-215603r561297_rule",
         "stig_id": "WDNS-IA-000005",
-        "fix_id": "F-16795r314285_fix"
+        "fix_id": "F-16795r314285_fix",
+        "documentable": false
       },
       "id": "V-215603",
       "title": "The Windows 2012 DNS Server must provide its identity with returned DNS information by enabling DNSSEC and TSIG/SIG(0).",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000017",
         "gid": "V-215604",
         "rid": "SV-215604r561297_rule",
         "stig_id": "WDNS-IA-000006",
-        "fix_id": "F-16796r314288_fix"
+        "fix_id": "F-16796r314288_fix",
+        "documentable": false
       },
       "id": "V-215604",
       "title": "The Windows 2012 DNS Server must be configured to enforce authorized access to the corresponding private key.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000018",
         "gid": "V-215605",
         "rid": "SV-215605r561297_rule",
         "stig_id": "WDNS-IA-000007",
-        "fix_id": "F-16797r314291_fix"
+        "fix_id": "F-16797r314291_fix",
+        "documentable": false
       },
       "id": "V-215605",
       "title": "The Windows 2012 DNS Server key file must be owned by the account under which the Windows 2012 DNS Server service is run.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000019",
         "gid": "V-215606",
         "rid": "SV-215606r561297_rule",
         "stig_id": "WDNS-IA-000008",
-        "fix_id": "F-16798r314294_fix"
+        "fix_id": "F-16798r314294_fix",
+        "documentable": false
       },
       "id": "V-215606",
       "title": "The Windows 2012 DNS Server permissions must be set so that the key file can only be read or modified by the account that runs the name server software.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000094",
         "gid": "V-215607",
         "rid": "SV-215607r561297_rule",
         "stig_id": "WDNS-IA-000009",
-        "fix_id": "F-16799r314297_fix"
+        "fix_id": "F-16799r314297_fix",
+        "documentable": false
       },
       "id": "V-215607",
       "title": "The private key corresponding to the ZSK must only be stored on the name server that does support dynamic updates.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000401-DNS-000051",
         "gid": "V-215608",
         "rid": "SV-215608r561297_rule",
         "stig_id": "WDNS-IA-000011",
-        "fix_id": "F-16800r314300_fix"
+        "fix_id": "F-16800r314300_fix",
+        "documentable": false
       },
       "id": "V-215608",
       "title": "The Windows 2012 DNS Server must implement a local cache of revocation data for PKIauthentication in the event revocation information via the network is not accessible.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000077",
         "gid": "V-215609",
         "rid": "SV-215609r561297_rule",
         "stig_id": "WDNS-SC-000001",
-        "fix_id": "F-16801r572249_fix"
+        "fix_id": "F-16801r572249_fix",
+        "documentable": false
       },
       "id": "V-215609",
       "title": "The salt value for zones signed using NSEC3 RRs must be changed every time the zone is completely re-signed.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000213-DNS-000024",
         "gid": "V-215610",
         "rid": "SV-215610r561297_rule",
         "stig_id": "WDNS-SC-000002",
-        "fix_id": "F-16802r314306_fix"
+        "fix_id": "F-16802r314306_fix",
+        "documentable": false
       },
       "id": "V-215610",
       "title": "The Windows 2012 DNS Server must include data origin with authoritative data the system returns in response to external name/address resolution queries.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000420-DNS-000053",
         "gid": "V-215611",
         "rid": "SV-215611r561297_rule",
         "stig_id": "WDNS-SC-000003",
-        "fix_id": "F-16803r572252_fix"
+        "fix_id": "F-16803r572252_fix",
+        "documentable": false
       },
       "id": "V-215611",
       "title": "The Windows 2012 DNS Servers IP address must be statically defined and configured locally on the server.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000420-DNS-000053",
         "gid": "V-215612",
         "rid": "SV-215612r561297_rule",
         "stig_id": "WDNS-SC-000004",
-        "fix_id": "F-16804r314312_fix"
+        "fix_id": "F-16804r314312_fix",
+        "documentable": false
       },
       "id": "V-215612",
       "title": "The Windows 2012 DNS Server must return data information in responses to internal name/address resolution queries.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000421-DNS-000054",
         "gid": "V-215613",
         "rid": "SV-215613r561297_rule",
         "stig_id": "WDNS-SC-000005",
-        "fix_id": "F-16805r314315_fix"
+        "fix_id": "F-16805r314315_fix",
+        "documentable": false
       },
       "id": "V-215613",
       "title": "The Windows 2012 DNS Server must use DNSSEC data within queries to confirm data origin to DNS resolvers.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000422-DNS-000055",
         "gid": "V-215614",
         "rid": "SV-215614r561297_rule",
         "stig_id": "WDNS-SC-000006",
-        "fix_id": "F-16806r572255_fix"
+        "fix_id": "F-16806r572255_fix",
+        "documentable": false
       },
       "id": "V-215614",
       "title": "WINS lookups must be disabled on the Windows 2012 DNS Server.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000422-DNS-000055",
         "gid": "V-215615",
         "rid": "SV-215615r561297_rule",
         "stig_id": "WDNS-SC-000007",
-        "fix_id": "F-16807r314321_fix"
+        "fix_id": "F-16807r314321_fix",
+        "documentable": false
       },
       "id": "V-215615",
       "title": "The Windows 2012 DNS Server must use DNSSEC data within queries to confirm data integrity to DNS resolvers.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000214-DNS-000025",
         "gid": "V-215616",
         "rid": "SV-215616r561297_rule",
         "stig_id": "WDNS-SC-000008",
-        "fix_id": "F-16808r314324_fix"
+        "fix_id": "F-16808r314324_fix",
+        "documentable": false
       },
       "id": "V-215616",
       "title": "The Windows 2012 DNS Server must be configured with the DS RR carrying the signature for the RR that contains the public key of the child zone.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000003",
         "gid": "V-215617",
         "rid": "SV-215617r561297_rule",
         "stig_id": "WDNS-SC-000009",
-        "fix_id": "F-16809r572258_fix"
+        "fix_id": "F-16809r572258_fix",
+        "documentable": false
       },
       "id": "V-215617",
       "title": "The Windows 2012 DNS Server must enforce approved authorizations between DNS servers through the use of digital signatures in the RRSet.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000003",
         "gid": "V-215618",
         "rid": "SV-215618r561297_rule",
         "stig_id": "WDNS-SC-000010",
-        "fix_id": "F-16810r572261_fix"
+        "fix_id": "F-16810r572261_fix",
+        "documentable": false
       },
       "id": "V-215618",
       "title": "The Name Resolution Policy Table (NRPT) must be configured in Group Policy to enforce clients to request DNSSEC validation for a domain.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000026",
         "gid": "V-215619",
         "rid": "SV-215619r561297_rule",
         "stig_id": "WDNS-SC-000011",
-        "fix_id": "F-16811r314333_fix"
+        "fix_id": "F-16811r314333_fix",
+        "documentable": false
       },
       "id": "V-215619",
       "title": "The Windows 2012 DNS Server must be configured to validate an authentication chain of parent and child domains via response data.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000026",
         "gid": "V-215620",
         "rid": "SV-215620r561297_rule",
         "stig_id": "WDNS-SC-000012",
-        "fix_id": "F-16812r314336_fix"
+        "fix_id": "F-16812r314336_fix",
+        "documentable": false
       },
       "id": "V-215620",
       "title": "Trust anchors must be exported from authoritative Windows 2012 DNS Servers and distributed to validating Windows 2012 DNS Servers.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000026",
         "gid": "V-215621",
         "rid": "SV-215621r561297_rule",
         "stig_id": "WDNS-SC-000013",
-        "fix_id": "F-16813r572264_fix"
+        "fix_id": "F-16813r572264_fix",
+        "documentable": false
       },
       "id": "V-215621",
       "title": "Automatic Update of Trust Anchors must be enabled on key rollover.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000423-DNS-000056",
         "gid": "V-215622",
         "rid": "SV-215622r561297_rule",
         "stig_id": "WDNS-SC-000014",
-        "fix_id": "F-16814r572380_fix"
+        "fix_id": "F-16814r572380_fix",
+        "documentable": false
       },
       "id": "V-215622",
       "title": "The Windows DNS secondary servers must request data origin authentication verification from the primary server when requesting name/address resolution.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000424-DNS-000057",
         "gid": "V-215623",
         "rid": "SV-215623r561297_rule",
         "stig_id": "WDNS-SC-000015",
-        "fix_id": "F-16815r314345_fix"
+        "fix_id": "F-16815r314345_fix",
+        "documentable": false
       },
       "id": "V-215623",
       "title": "The Windows DNS secondary server must request data integrity verification from the primary server when requesting name/address resolution.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000425-DNS-000058",
         "gid": "V-215624",
         "rid": "SV-215624r561297_rule",
         "stig_id": "WDNS-SC-000017",
-        "fix_id": "F-16816r314348_fix"
+        "fix_id": "F-16816r314348_fix",
+        "documentable": false
       },
       "id": "V-215624",
       "title": "The Windows DNS secondary server must validate data integrity verification on the name/address resolution responses received from primary name servers.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000426-DNS-000059",
         "gid": "V-215625",
         "rid": "SV-215625r561297_rule",
         "stig_id": "WDNS-SC-000018",
-        "fix_id": "F-16817r314351_fix"
+        "fix_id": "F-16817r314351_fix",
+        "documentable": false
       },
       "id": "V-215625",
       "title": "The Windows DNS secondary server must validate data origin verification authentication on the name/address resolution responses received from primary name servers.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-DNS-000028",
         "gid": "V-215626",
         "rid": "SV-215626r561297_rule",
         "stig_id": "WDNS-SC-000019",
-        "fix_id": "F-16818r572267_fix"
+        "fix_id": "F-16818r572267_fix",
+        "documentable": false
       },
       "id": "V-215626",
       "title": "The Windows 2012 DNS Server must protect the authenticity of zone transfers via transaction signing.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000219-DNS-000029",
         "gid": "V-215627",
         "rid": "SV-215627r561297_rule",
         "stig_id": "WDNS-SC-000020",
-        "fix_id": "F-16819r314357_fix"
+        "fix_id": "F-16819r314357_fix",
+        "documentable": false
       },
       "id": "V-215627",
       "title": "The Windows 2012 DNS Server must protect the authenticity of dynamic updates via transaction signing.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-DNS-000030",
         "gid": "V-215628",
         "rid": "SV-215628r561297_rule",
         "stig_id": "WDNS-SC-000021",
-        "fix_id": "F-16820r314360_fix"
+        "fix_id": "F-16820r314360_fix",
+        "documentable": false
       },
       "id": "V-215628",
       "title": "The Windows 2012 DNS Server must protect the authenticity of query responses via DNSSEC.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-DNS-000060",
         "gid": "V-215629",
         "rid": "SV-215629r561297_rule",
         "stig_id": "WDNS-SC-000022",
-        "fix_id": "F-16821r572269_fix"
+        "fix_id": "F-16821r572269_fix",
+        "documentable": false
       },
       "id": "V-215629",
       "title": "The Windows 2012 DNS Server must only allow the use of an approved DoD PKI-established certificate authorities for verification of the establishment of protected transactions.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231-DNS-000033",
         "gid": "V-215630",
         "rid": "SV-215630r561297_rule",
         "stig_id": "WDNS-SC-000024",
-        "fix_id": "F-16822r572271_fix"
+        "fix_id": "F-16822r572271_fix",
+        "documentable": false
       },
       "id": "V-215630",
       "title": "The Windows 2012 DNS Server must protect secret/private cryptographic keys while at rest.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000428-DNS-000061",
         "gid": "V-215631",
         "rid": "SV-215631r561297_rule",
         "stig_id": "WDNS-SC-000025",
-        "fix_id": "F-16823r572274_fix"
+        "fix_id": "F-16823r572274_fix",
+        "documentable": false
       },
       "id": "V-215631",
       "title": "The Windows 2012 DNS Server must not contain zone records that have not been validated in over a year.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-DNS-000035",
         "gid": "V-215632",
         "rid": "SV-215632r561297_rule",
         "stig_id": "WDNS-SC-000026",
-        "fix_id": "F-16824r314372_fix"
+        "fix_id": "F-16824r314372_fix",
+        "documentable": false
       },
       "id": "V-215632",
       "title": "The Windows 2012 DNS Server must restrict individuals from using it for launching Denial of Service (DoS) attacks against other information systems.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000247-DNS-000036",
         "gid": "V-215633",
         "rid": "SV-215633r561297_rule",
         "stig_id": "WDNS-SC-000027",
-        "fix_id": "F-16825r572277_fix"
+        "fix_id": "F-16825r572277_fix",
+        "documentable": false
       },
       "id": "V-215633",
       "title": "The Windows 2012 DNS Server must use DNS Notify to prevent denial of service through increase in workload.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-DNS-000063",
         "gid": "V-215634",
         "rid": "SV-215634r561297_rule",
         "stig_id": "WDNS-SC-000028",
-        "fix_id": "F-16826r314378_fix"
+        "fix_id": "F-16826r314378_fix",
+        "documentable": false
       },
       "id": "V-215634",
       "title": "The Windows 2012 DNS Server must protect the integrity of transmitted information.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-DNS-000066",
         "gid": "V-215635",
         "rid": "SV-215635r561297_rule",
         "stig_id": "WDNS-SC-000029",
-        "fix_id": "F-16827r314381_fix"
+        "fix_id": "F-16827r314381_fix",
+        "documentable": false
       },
       "id": "V-215635",
       "title": "The Windows 2012 DNS Server must maintain the integrity of information during preparation for transmission.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-DNS-000067",
         "gid": "V-215636",
         "rid": "SV-215636r561297_rule",
         "stig_id": "WDNS-SC-000030",
-        "fix_id": "F-16828r314384_fix"
+        "fix_id": "F-16828r314384_fix",
+        "documentable": false
       },
       "id": "V-215636",
       "title": "The Windows 2012 DNS Server must maintain the integrity of information during reception.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514-DNS-000075",
         "gid": "V-215637",
         "rid": "SV-215637r561297_rule",
         "stig_id": "WDNS-SC-000031",
-        "fix_id": "F-16829r572280_fix"
+        "fix_id": "F-16829r572280_fix",
+        "documentable": false
       },
       "id": "V-215637",
       "title": "The Windows 2012 DNS Server must implement NIST FIPS-validated cryptography for provisioning digital signatures, generating cryptographic hashes, and protecting unclassified information requiring confidentiality.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DNS-000037",
         "gid": "V-215638",
         "rid": "SV-215638r561297_rule",
         "stig_id": "WDNS-SI-000001",
-        "fix_id": "F-16830r572283_fix"
+        "fix_id": "F-16830r572283_fix",
+        "documentable": false
       },
       "id": "V-215638",
       "title": "The Windows 2012 DNS Server must be configured to only allow zone information that reflects the environment for which it is authoritative, to include IP ranges and IP versions.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000451-DNS-000069",
         "gid": "V-215639",
         "rid": "SV-215639r561297_rule",
         "stig_id": "WDNS-SI-000002",
-        "fix_id": "F-16831r314393_fix"
+        "fix_id": "F-16831r314393_fix",
+        "documentable": false
       },
       "id": "V-215639",
       "title": "The Windows 2012 DNS Server must follow procedures to re-role a secondary name server as the master name server should the master name server permanently lose functionality.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000333-DNS-000104",
         "gid": "V-215640",
         "rid": "SV-215640r561297_rule",
         "stig_id": "WDNS-SI-000003",
-        "fix_id": "F-16832r572286_fix"
+        "fix_id": "F-16832r572286_fix",
+        "documentable": false
       },
       "id": "V-215640",
       "title": "The DNS Name Server software must be configured to refuse queries for its version information.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000333-DNS-000107",
         "gid": "V-215641",
         "rid": "SV-215641r561297_rule",
         "stig_id": "WDNS-SI-000004",
-        "fix_id": "F-16833r572289_fix"
+        "fix_id": "F-16833r572289_fix",
+        "documentable": false
       },
       "id": "V-215641",
       "title": "The HINFO, RP, TXT and LOC RR types must not be used in the zone SOA.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000268-DNS-000039",
         "gid": "V-215642",
         "rid": "SV-215642r561297_rule",
         "stig_id": "WDNS-SI-000005",
-        "fix_id": "F-16834r314402_fix"
+        "fix_id": "F-16834r314402_fix",
+        "documentable": false
       },
       "id": "V-215642",
       "title": "The Windows 2012 DNS Server must, when a component failure is detected, activate a notification to the system administrator.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000473-DNS-000072",
         "gid": "V-215643",
         "rid": "SV-215643r561297_rule",
         "stig_id": "WDNS-SI-000006",
-        "fix_id": "F-16835r314405_fix"
+        "fix_id": "F-16835r314405_fix",
+        "documentable": false
       },
       "id": "V-215643",
       "title": "The Windows 2012 DNS Server must perform verification of the correct operation of security functions: upon system start-up and/or restart; upon command by a user with privileged access; and/or every 30 days.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000474-DNS-000073",
         "gid": "V-215644",
         "rid": "SV-215644r561297_rule",
         "stig_id": "WDNS-SI-000007",
-        "fix_id": "F-16836r314408_fix"
+        "fix_id": "F-16836r314408_fix",
+        "documentable": false
       },
       "id": "V-215644",
       "title": "The Windows 2012 DNS Server must log the event and notify the system administrator when anomalies in the operation of the signed zone transfers are discovered.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000275-DNS-000040",
         "gid": "V-215645",
         "rid": "SV-215645r561297_rule",
         "stig_id": "WDNS-SI-000008",
-        "fix_id": "F-16837r314411_fix"
+        "fix_id": "F-16837r314411_fix",
+        "documentable": false
       },
       "id": "V-215645",
       "title": "The Windows 2012 DNS Server must be configured to notify the ISSO/ISSM/DNS administrator when functionality of DNSSEC/TSIG has been removed or broken.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DNS-000115",
         "gid": "V-215647",
         "rid": "SV-215647r561297_rule",
         "stig_id": "WDNS-AC-000001",
-        "fix_id": "F-16839r572163_fix"
+        "fix_id": "F-16839r572163_fix",
+        "documentable": false
       },
       "id": "V-215647",
       "title": "The Windows 2012 DNS Server must restrict incoming dynamic update requests to known clients.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000348-DNS-000042",
         "gid": "V-215648",
         "rid": "SV-215648r561297_rule",
         "stig_id": "WDNS-AU-000001",
-        "fix_id": "F-16840r572166_fix"
+        "fix_id": "F-16840r572166_fix",
+        "documentable": false
       },
       "id": "V-215648",
       "title": "The Windows 2012 DNS Server must be configured to record, and make available to authorized personnel, who added/modified/deleted DNS zone information.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000350-DNS-000044",
         "gid": "V-215649",
         "rid": "SV-215649r561297_rule",
         "stig_id": "WDNS-AU-000003",
-        "fix_id": "F-16841r314423_fix"
+        "fix_id": "F-16841r314423_fix",
+        "documentable": false
       },
       "id": "V-215649",
       "title": "The Windows 2012 DNS Server must, in the event of an error validating another DNS servers identity, send notification to the DNS administrator.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-DNS-000004",
         "gid": "V-215650",
         "rid": "SV-215650r561297_rule",
         "stig_id": "WDNS-AU-000005",
-        "fix_id": "F-16842r572169_fix"
+        "fix_id": "F-16842r572169_fix",
+        "documentable": false
       },
       "id": "V-215650",
       "title": "The Windows 2012 DNS Server log must be enabled.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-DNS-000005",
         "gid": "V-215651",
         "rid": "SV-215651r684253_rule",
         "stig_id": "WDNS-AU-000006",
-        "fix_id": "F-16843r572172_fix"
+        "fix_id": "F-16843r572172_fix",
+        "documentable": false
       },
       "id": "V-215651",
       "title": "The Windows 2012 DNS Server logging must be enabled to record events from all DNS server functions.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-215652",
         "rid": "SV-215652r561297_rule",
         "stig_id": "WDNS-AU-000007",
-        "fix_id": "F-16844r314432_fix"
+        "fix_id": "F-16844r314432_fix",
+        "documentable": false
       },
       "id": "V-215652",
       "title": "The Windows 2012 DNS Server logging criteria must only be configured by the ISSM or individuals appointed by the ISSM.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000125-DNS-000012",
         "gid": "V-215660",
         "rid": "SV-215660r561297_rule",
         "stig_id": "WDNS-AU-000016",
-        "fix_id": "F-16852r314456_fix"
+        "fix_id": "F-16852r314456_fix",
+        "documentable": false
       },
       "id": "V-215660",
       "title": "The Windows 2012 DNS Servers audit records must be backed up at least every seven days onto a different system or system component than the system or component being audited.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000214-DNS-000079",
         "gid": "V-215661",
         "rid": "SV-215661r561297_rule",
         "stig_id": "WDNS-CM-000001",
-        "fix_id": "F-16853r572189_fix"
+        "fix_id": "F-16853r572189_fix",
+        "documentable": false
       },
       "id": "V-215661",
       "title": "The validity period for the RRSIGs covering the DS RR for a zones delegated children must be no less than two days and no more than one week.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000218-DNS-000027",
         "gid": "V-228571",
         "rid": "SV-228571r561297_rule",
         "stig_id": "WDNS-CM-000002",
-        "fix_id": "F-30781r505013_fix"
+        "fix_id": "F-30781r505013_fix",
+        "documentable": false
       },
       "id": "V-228571",
       "title": "The Windows DNS name servers for a zone must be geographically dispersed.",
@@ -1482,7 +1482,5 @@
       }
     }
   ],
-  "name": "Microsoft_Windows_2012_Server_Domain_Name_System_STIG",
-  "title": "Microsoft Windows 2012 Server Domain Name System Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Microsoft_Windows_2012_Server_Domain_Name_System_STIG"
 }

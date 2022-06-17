@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DB-000031",
         "gid": "V-213807",
         "rid": "SV-213807r395442_rule",
         "stig_id": "SQL4-00-000100",
-        "fix_id": "F-15024r312773_fix"
+        "fix_id": "F-15024r312773_fix",
+        "documentable": false
       },
       "id": "V-213807",
       "title": "The number of concurrent SQL Server sessions for each system account must be limited.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-DB-000084",
         "gid": "V-213808",
         "rid": "SV-213808r395499_rule",
         "stig_id": "SQL4-00-002010",
-        "fix_id": "F-15025r312776_fix"
+        "fix_id": "F-15025r312776_fix",
+        "documentable": false
       },
       "id": "V-213808",
       "title": "SQL Server must enforce approved authorizations for logical access to server-level system resources in accordance with applicable access control policies.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-DB-000092",
         "gid": "V-213809",
         "rid": "SV-213809r395853_rule",
         "stig_id": "SQL4-00-010200",
-        "fix_id": "F-15026r312779_fix"
+        "fix_id": "F-15026r312779_fix",
+        "documentable": false
       },
       "id": "V-213809",
       "title": "SQL Server default account [sa] must have its name changed.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090-DB-000065",
         "gid": "V-213810",
         "rid": "SV-213810r395709_rule",
         "stig_id": "SQL4-00-011300",
-        "fix_id": "F-15027r312782_fix"
+        "fix_id": "F-15027r312782_fix",
+        "documentable": false
       },
       "id": "V-213810",
       "title": "Where SQL Server Trace is in use for auditing purposes, SQL Server must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be traced.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090-DB-000065",
         "gid": "V-213811",
         "rid": "SV-213811r395709_rule",
         "stig_id": "SQL4-00-011310",
-        "fix_id": "F-15028r312785_fix"
+        "fix_id": "F-15028r312785_fix",
+        "documentable": false
       },
       "id": "V-213811",
       "title": "Where SQL Server Audit is in use, SQL Server must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited at the server level.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000066",
         "gid": "V-213812",
         "rid": "SV-213812r395712_rule",
         "stig_id": "SQL4-00-011410",
-        "fix_id": "F-15029r312788_fix"
+        "fix_id": "F-15029r312788_fix",
+        "documentable": false
       },
       "id": "V-213812",
       "title": "Where SQL Server Audit is in use, SQL Server must generate audit records when privileges/permissions are retrieved.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096-DB-000040",
         "gid": "V-213813",
         "rid": "SV-213813r395724_rule",
         "stig_id": "SQL4-00-011900",
-        "fix_id": "F-15030r312791_fix"
+        "fix_id": "F-15030r312791_fix",
+        "documentable": false
       },
       "id": "V-213813",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish when the events occurred.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097-DB-000041",
         "gid": "V-213814",
         "rid": "SV-213814r395727_rule",
         "stig_id": "SQL4-00-012000",
-        "fix_id": "F-15031r312794_fix"
+        "fix_id": "F-15031r312794_fix",
+        "documentable": false
       },
       "id": "V-213814",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish where the events occurred.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-DB-000042",
         "gid": "V-213815",
         "rid": "SV-213815r395730_rule",
         "stig_id": "SQL4-00-012100",
-        "fix_id": "F-15032r312797_fix"
+        "fix_id": "F-15032r312797_fix",
+        "documentable": false
       },
       "id": "V-213815",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish the sources (origins) of the events.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099-DB-000043",
         "gid": "V-213816",
         "rid": "SV-213816r395733_rule",
         "stig_id": "SQL4-00-012200",
-        "fix_id": "F-15033r312800_fix"
+        "fix_id": "F-15033r312800_fix",
+        "documentable": false
       },
       "id": "V-213816",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish the outcome (success or failure) of the events.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000100-DB-000201",
         "gid": "V-213817",
         "rid": "SV-213817r395736_rule",
         "stig_id": "SQL4-00-012300",
-        "fix_id": "F-15034r312803_fix"
+        "fix_id": "F-15034r312803_fix",
+        "documentable": false
       },
       "id": "V-213817",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish the identity of any user/subject associated with the event.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000101-DB-000044",
         "gid": "V-213818",
         "rid": "SV-213818r395739_rule",
         "stig_id": "SQL4-00-012400",
-        "fix_id": "F-15035r312806_fix"
+        "fix_id": "F-15035r312806_fix",
+        "documentable": false
       },
       "id": "V-213818",
       "title": "SQL Server must include organization-defined additional, more detailed information in Trace or Audit records for events identified by type, location, or subject.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000109-DB-000049",
         "gid": "V-213819",
         "rid": "SV-213819r395805_rule",
         "stig_id": "SQL4-00-013000",
-        "fix_id": "F-15036r312809_fix"
+        "fix_id": "F-15036r312809_fix",
+        "documentable": false
       },
       "id": "V-213819",
       "title": "Unless it has been determined that availability is paramount, SQL Server must shut down upon the failure of an Audit, or a Trace used for auditing purposes, to include the unavailability of space for more audit/trace log records.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-DB-000059",
         "gid": "V-213820",
         "rid": "SV-213820r395820_rule",
         "stig_id": "SQL4-00-013600",
-        "fix_id": "F-15037r312812_fix"
+        "fix_id": "F-15037r312812_fix",
+        "documentable": false
       },
       "id": "V-213820",
       "title": "The audit information produced by SQL Server must be protected from unauthorized read access.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-DB-000060",
         "gid": "V-213821",
         "rid": "SV-213821r395823_rule",
         "stig_id": "SQL4-00-013700",
-        "fix_id": "F-15038r312815_fix"
+        "fix_id": "F-15038r312815_fix",
+        "documentable": false
       },
       "id": "V-213821",
       "title": "The audit information produced by SQL Server must be protected from unauthorized modification.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-DB-000061",
         "gid": "V-213822",
         "rid": "SV-213822r395826_rule",
         "stig_id": "SQL4-00-013800",
-        "fix_id": "F-15039r312818_fix"
+        "fix_id": "F-15039r312818_fix",
+        "documentable": false
       },
       "id": "V-213822",
       "title": "The audit information produced by SQL Server must be protected from unauthorized deletion.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121-DB-000202",
         "gid": "V-213823",
         "rid": "SV-213823r395829_rule",
         "stig_id": "SQL4-00-013900",
-        "fix_id": "F-15040r312821_fix"
+        "fix_id": "F-15040r312821_fix",
+        "documentable": false
       },
       "id": "V-213823",
       "title": "Audit tools used in, or in conjunction with, SQL Server must be protected from unauthorized access.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000122-DB-000203",
         "gid": "V-213824",
         "rid": "SV-213824r395832_rule",
         "stig_id": "SQL4-00-014000",
-        "fix_id": "F-15041r312824_fix"
+        "fix_id": "F-15041r312824_fix",
+        "documentable": false
       },
       "id": "V-213824",
       "title": "SQL Server and/or the operating system must protect its audit configuration from unauthorized modification.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000123-DB-000204",
         "gid": "V-213825",
         "rid": "SV-213825r395835_rule",
         "stig_id": "SQL4-00-014100",
-        "fix_id": "F-15042r312827_fix"
+        "fix_id": "F-15042r312827_fix",
+        "documentable": false
       },
       "id": "V-213825",
       "title": "SQL Server and the operating system must protect SQL Server audit features from unauthorized removal.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-213826",
         "rid": "SV-213826r395850_rule",
         "stig_id": "SQL4-00-015300",
-        "fix_id": "F-15043r312830_fix"
+        "fix_id": "F-15043r312830_fix",
+        "documentable": false
       },
       "id": "V-213826",
       "title": "SQL Server security-relevant configuration settings must be monitored to discover unauthorized changes.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-213827",
         "rid": "SV-213827r395850_rule",
         "stig_id": "SQL4-00-015350",
-        "fix_id": "F-15044r312833_fix"
+        "fix_id": "F-15044r312833_fix",
+        "documentable": false
       },
       "id": "V-213827",
       "title": "Software, applications, and configuration files that are part of, or related to, the SQL Server installation must be monitored to discover unauthorized changes.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000198",
         "gid": "V-213828",
         "rid": "SV-213828r395850_rule",
         "stig_id": "SQL4-00-015400",
-        "fix_id": "F-15045r312836_fix"
+        "fix_id": "F-15045r312836_fix",
+        "documentable": false
       },
       "id": "V-213828",
       "title": "SQL Server software installation account(s) must be restricted to authorized users.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000133-DB-000199",
         "gid": "V-213829",
         "rid": "SV-213829r395850_rule",
         "stig_id": "SQL4-00-015500",
-        "fix_id": "F-15046r312839_fix"
+        "fix_id": "F-15046r312839_fix",
+        "documentable": false
       },
       "id": "V-213829",
       "title": "Database software directories, including SQL Server configuration files, must be stored in dedicated directories, separate from the host OS and other applications.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000090",
         "gid": "V-213830",
         "rid": "SV-213830r395853_rule",
         "stig_id": "SQL4-00-016200",
-        "fix_id": "F-15047r312842_fix"
+        "fix_id": "F-15047r312842_fix",
+        "documentable": false
       },
       "id": "V-213830",
       "title": "SQL Server must have the publicly available Northwind sample database removed.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000090",
         "gid": "V-213831",
         "rid": "SV-213831r395853_rule",
         "stig_id": "SQL4-00-016300",
-        "fix_id": "F-15048r312845_fix"
+        "fix_id": "F-15048r312845_fix",
+        "documentable": false
       },
       "id": "V-213831",
       "title": "SQL Server must have the publicly available pubs sample database removed.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000090",
         "gid": "V-213832",
         "rid": "SV-213832r395853_rule",
         "stig_id": "SQL4-00-016310",
-        "fix_id": "F-15049r312848_fix"
+        "fix_id": "F-15049r312848_fix",
+        "documentable": false
       },
       "id": "V-213832",
       "title": "SQL Server must have the publicly available AdventureWorks sample database removed.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213833",
         "rid": "SV-213833r395853_rule",
         "stig_id": "SQL4-00-016500",
-        "fix_id": "F-15050r312851_fix"
+        "fix_id": "F-15050r312851_fix",
+        "documentable": false
       },
       "id": "V-213833",
       "title": "SQL Server must have the SQL Server Data Tools (SSDT) software component removed if it is unused.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213834",
         "rid": "SV-213834r395853_rule",
         "stig_id": "SQL4-00-016600",
-        "fix_id": "F-15051r312854_fix"
+        "fix_id": "F-15051r312854_fix",
+        "documentable": false
       },
       "id": "V-213834",
       "title": "SQL Server must have the SQL Server Reporting Services (SSRS) software component removed if it is unused.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213835",
         "rid": "SV-213835r395853_rule",
         "stig_id": "SQL4-00-016700",
-        "fix_id": "F-15052r312857_fix"
+        "fix_id": "F-15052r312857_fix",
+        "documentable": false
       },
       "id": "V-213835",
       "title": "SQL Server must have the SQL Server Integration Services (SSIS) software component removed if it is unused.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213836",
         "rid": "SV-213836r395853_rule",
         "stig_id": "SQL4-00-016800",
-        "fix_id": "F-15053r312860_fix"
+        "fix_id": "F-15053r312860_fix",
+        "documentable": false
       },
       "id": "V-213836",
       "title": "SQL Server must have the SQL Server Analysis Services (SSAS) software component removed if it is unused.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213837",
         "rid": "SV-213837r395853_rule",
         "stig_id": "SQL4-00-016805",
-        "fix_id": "F-15054r312863_fix"
+        "fix_id": "F-15054r312863_fix",
+        "documentable": false
       },
       "id": "V-213837",
       "title": "SQL Server must have the SQL Server Distributed Replay Client software component removed if it is unused.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213838",
         "rid": "SV-213838r395853_rule",
         "stig_id": "SQL4-00-016810",
-        "fix_id": "F-15055r312866_fix"
+        "fix_id": "F-15055r312866_fix",
+        "documentable": false
       },
       "id": "V-213838",
       "title": "SQL Server must have the SQL Server Distributed Replay Controller software component removed if it is unused.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213839",
         "rid": "SV-213839r395853_rule",
         "stig_id": "SQL4-00-016815",
-        "fix_id": "F-15056r312869_fix"
+        "fix_id": "F-15056r312869_fix",
+        "documentable": false
       },
       "id": "V-213839",
       "title": "SQL Server must have the Full-Text Search software component removed if it is unused.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213840",
         "rid": "SV-213840r395853_rule",
         "stig_id": "SQL4-00-016820",
-        "fix_id": "F-15057r312872_fix"
+        "fix_id": "F-15057r312872_fix",
+        "documentable": false
       },
       "id": "V-213840",
       "title": "SQL Server must have the Master Data Services software component removed if it is unused.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213841",
         "rid": "SV-213841r395853_rule",
         "stig_id": "SQL4-00-016826",
-        "fix_id": "F-15058r312875_fix"
+        "fix_id": "F-15058r312875_fix",
+        "documentable": false
       },
       "id": "V-213841",
       "title": "SQL Server must have the SQL Server Replication software component removed if it is unused.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213842",
         "rid": "SV-213842r395853_rule",
         "stig_id": "SQL4-00-016830",
-        "fix_id": "F-15059r312878_fix"
+        "fix_id": "F-15059r312878_fix",
+        "documentable": false
       },
       "id": "V-213842",
       "title": "SQL Server must have the Data Quality Client software component removed if it is unused.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213843",
         "rid": "SV-213843r395853_rule",
         "stig_id": "SQL4-00-016835",
-        "fix_id": "F-15060r312881_fix"
+        "fix_id": "F-15060r312881_fix",
+        "documentable": false
       },
       "id": "V-213843",
       "title": "SQL Server must have the Data Quality Services software component removed if it is unused.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213844",
         "rid": "SV-213844r395853_rule",
         "stig_id": "SQL4-00-016845",
-        "fix_id": "F-15061r312884_fix"
+        "fix_id": "F-15061r312884_fix",
+        "documentable": false
       },
       "id": "V-213844",
       "title": "SQL Server must have the Client Tools SDK software component removed if it is unused.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213845",
         "rid": "SV-213845r395853_rule",
         "stig_id": "SQL4-00-016850",
-        "fix_id": "F-15062r312887_fix"
+        "fix_id": "F-15062r312887_fix",
+        "documentable": false
       },
       "id": "V-213845",
       "title": "SQL Server must have the Management Tools software component removed if it is unused.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-213846",
         "rid": "SV-213846r395853_rule",
         "stig_id": "SQL4-00-016855",
-        "fix_id": "F-15063r312890_fix"
+        "fix_id": "F-15063r312890_fix",
+        "documentable": false
       },
       "id": "V-213846",
       "title": "SQL Server must have the Filestream feature disabled if it is unused.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000092",
         "gid": "V-213847",
         "rid": "SV-213847r395853_rule",
         "stig_id": "SQL4-00-017000",
-        "fix_id": "F-15064r312893_fix"
+        "fix_id": "F-15064r312893_fix",
+        "documentable": false
       },
       "id": "V-213847",
       "title": "Unused database components that are integrated in SQL Server and cannot be uninstalled must be disabled.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000092",
         "gid": "V-213848",
         "rid": "SV-213848r395853_rule",
         "stig_id": "SQL4-00-017100",
-        "fix_id": "F-15065r312896_fix"
+        "fix_id": "F-15065r312896_fix",
+        "documentable": false
       },
       "id": "V-213848",
       "title": "The SQL Server default account [sa] must be disabled.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000093",
         "gid": "V-213849",
         "rid": "SV-213849r395853_rule",
         "stig_id": "SQL4-00-017200",
-        "fix_id": "F-15066r312899_fix"
+        "fix_id": "F-15066r312899_fix",
+        "documentable": false
       },
       "id": "V-213849",
       "title": "Access to xp_cmdshell must be disabled, unless specifically required and approved.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DB-000094",
         "gid": "V-213850",
         "rid": "SV-213850r744320_rule",
         "stig_id": "SQL4-00-017400",
-        "fix_id": "F-15067r312902_fix"
+        "fix_id": "F-15067r312902_fix",
+        "documentable": false
       },
       "id": "V-213850",
       "title": "SQL Server must be configured to prohibit or restrict the use of unauthorized network protocols.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DB-000094",
         "gid": "V-213851",
         "rid": "SV-213851r744319_rule",
         "stig_id": "SQL4-00-017410",
-        "fix_id": "F-15068r312905_fix"
+        "fix_id": "F-15068r312905_fix",
+        "documentable": false
       },
       "id": "V-213851",
       "title": "SQL Server and Windows must be configured to prohibit or restrict the use of unauthorized network ports.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148-DB-000103",
         "gid": "V-213852",
         "rid": "SV-213852r395859_rule",
         "stig_id": "SQL4-00-018400",
-        "fix_id": "F-15069r312908_fix"
+        "fix_id": "F-15069r312908_fix",
+        "documentable": false
       },
       "id": "V-213852",
       "title": "SQL Server must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000180-DB-000115",
         "gid": "V-213853",
         "rid": "SV-213853r397609_rule",
         "stig_id": "SQL4-00-018900",
-        "fix_id": "F-15070r312911_fix"
+        "fix_id": "F-15070r312911_fix",
+        "documentable": false
       },
       "id": "V-213853",
       "title": "SQL Server must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-DB-000122",
         "gid": "V-213854",
         "rid": "SV-213854r397711_rule",
         "stig_id": "SQL4-00-020500",
-        "fix_id": "F-15071r312914_fix"
+        "fix_id": "F-15071r312914_fix",
+        "documentable": false
       },
       "id": "V-213854",
       "title": "SQL Server must be configured to separate user functionality (including user interface services) from database management functionality.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233-DB-000124",
         "gid": "V-213855",
         "rid": "SV-213855r397747_rule",
         "stig_id": "SQL4-00-021500",
-        "fix_id": "F-15072r312917_fix"
+        "fix_id": "F-15072r312917_fix",
+        "documentable": false
       },
       "id": "V-213855",
       "title": "SQL Server must isolate security functions from nonsecurity functions.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000080-DB-000063",
         "gid": "V-213856",
         "rid": "SV-213856r395691_rule",
         "stig_id": "SQL4-00-023700",
-        "fix_id": "F-15073r312920_fix"
+        "fix_id": "F-15073r312920_fix",
+        "documentable": false
       },
       "id": "V-213856",
       "title": "SQL Server must protect against an individual using a shared account from falsely denying having performed a particular action.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231-DB-000154",
         "gid": "V-213857",
         "rid": "SV-213857r397744_rule",
         "stig_id": "SQL4-00-024500",
-        "fix_id": "F-15074r312923_fix"
+        "fix_id": "F-15074r312923_fix",
+        "documentable": false
       },
       "id": "V-213857",
       "title": "The Service Master Key must be backed up, stored offline and off-site.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000023-DB-000001",
         "gid": "V-213858",
         "rid": "SV-213858r395475_rule",
         "stig_id": "SQL4-00-030300",
-        "fix_id": "F-15075r312926_fix"
+        "fix_id": "F-15075r312926_fix",
+        "documentable": false
       },
       "id": "V-213858",
       "title": "SQL Server authentication and identity management must be integrated with an organization-level authentication/access mechanism providing account management and automation for all users, groups, roles, and any other principals.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000325",
         "gid": "V-213859",
         "rid": "SV-213859r395712_rule",
         "stig_id": "SQL4-00-030410",
-        "fix_id": "F-15076r312929_fix"
+        "fix_id": "F-15076r312929_fix",
+        "documentable": false
       },
       "id": "V-213859",
       "title": "Where SQL Server Audit is in use, SQL Server must generate audit records when unsuccessful attempts to retrieve privileges/permissions occur.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000109-DB-000321",
         "gid": "V-213860",
         "rid": "SV-213860r495393_rule",
         "stig_id": "SQL4-00-030600",
-        "fix_id": "F-15077r312932_fix"
+        "fix_id": "F-15077r312932_fix",
+        "documentable": false
       },
       "id": "V-213860",
       "title": "Where availability is paramount, the SQL Server must continue processing (preferably overwriting existing records, oldest first), in the event of lack of space for more Audit/Trace log records; and must keep processing after any failure of an Audit/Trace.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000362",
         "gid": "V-213861",
         "rid": "SV-213861r531244_rule",
         "stig_id": "SQL4-00-030700",
-        "fix_id": "F-15078r312935_fix"
+        "fix_id": "F-15078r312935_fix",
+        "documentable": false
       },
       "id": "V-213861",
       "title": "The role(s)/group(s) used to modify database structure (including but not necessarily limited to tables, indexes, storage, etc.) and logic modules (stored procedures, functions, triggers, links to software external to SQL Server, etc.) must be restricted to authorized users.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179-DB-000114",
         "gid": "V-213862",
         "rid": "SV-213862r397606_rule",
         "stig_id": "SQL4-00-031100",
-        "fix_id": "F-15079r312938_fix"
+        "fix_id": "F-15079r312938_fix",
+        "documentable": false
       },
       "id": "V-213862",
       "title": "SQL Server must use NIST FIPS 140-2 validated cryptographic modules for cryptographic operations.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000374",
         "gid": "V-213863",
         "rid": "SV-213863r397765_rule",
         "stig_id": "SQL4-00-031400",
-        "fix_id": "F-15080r312941_fix"
+        "fix_id": "F-15080r312941_fix",
+        "documentable": false
       },
       "id": "V-213863",
       "title": "Access to database files must be limited to relevant processes and to authorized, administrative users.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295-DB-000305",
         "gid": "V-213864",
         "rid": "SV-213864r399523_rule",
         "stig_id": "SQL4-00-031700",
-        "fix_id": "F-15081r312944_fix"
+        "fix_id": "F-15081r312944_fix",
+        "documentable": false
       },
       "id": "V-213864",
       "title": "SQL Server must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340-DB-000304",
         "gid": "V-213865",
         "rid": "SV-213865r399775_rule",
         "stig_id": "SQL4-00-032500",
-        "fix_id": "F-15082r312947_fix"
+        "fix_id": "F-15082r312947_fix",
+        "documentable": false
       },
       "id": "V-213865",
       "title": "SQL Server must prevent non-privileged users from executing privileged functionality, to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000342-DB-000302",
         "gid": "V-213866",
         "rid": "SV-213866r399781_rule",
         "stig_id": "SQL4-00-032600",
-        "fix_id": "F-15083r312950_fix"
+        "fix_id": "F-15083r312950_fix",
+        "documentable": false
       },
       "id": "V-213866",
       "title": "Execution of software modules (to include stored procedures, functions, and triggers) with elevated privileges must be restricted to necessary cases only.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356-DB-000314",
         "gid": "V-213867",
         "rid": "SV-213867r401227_rule",
         "stig_id": "SQL4-00-032800",
-        "fix_id": "F-15084r312953_fix"
+        "fix_id": "F-15084r312953_fix",
+        "documentable": false
       },
       "id": "V-213867",
       "title": "SQL Server must utilize centralized management of the content captured in audit records generated by all components of the DBMS.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357-DB-000316",
         "gid": "V-213868",
         "rid": "SV-213868r399877_rule",
         "stig_id": "SQL4-00-033000",
-        "fix_id": "F-15085r312956_fix"
+        "fix_id": "F-15085r312956_fix",
+        "documentable": false
       },
       "id": "V-213868",
       "title": "SQL Server must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000359-DB-000319",
         "gid": "V-213869",
         "rid": "SV-213869r399883_rule",
         "stig_id": "SQL4-00-033400",
-        "fix_id": "F-15086r312959_fix"
+        "fix_id": "F-15086r312959_fix",
+        "documentable": false
       },
       "id": "V-213869",
       "title": "SQL Server, the operating system, or the storage system must provide a warning to appropriate support staff when allocated audit record storage volume reaches 75% of maximum audit record storage capacity.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360-DB-000320",
         "gid": "V-213870",
         "rid": "SV-213870r622558_rule",
         "stig_id": "SQL4-00-033500",
-        "fix_id": "F-15087r495396_fix"
+        "fix_id": "F-15087r495396_fix",
+        "documentable": false
       },
       "id": "V-213870",
       "title": "SQL Server or software monitoring SQL Server must provide an immediate real-time alert to appropriate support staff of all audit log failures.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000374-DB-000322",
         "gid": "V-213871",
         "rid": "SV-213871r399928_rule",
         "stig_id": "SQL4-00-033600",
-        "fix_id": "F-15088r312965_fix"
+        "fix_id": "F-15088r312965_fix",
+        "documentable": false
       },
       "id": "V-213871",
       "title": "SQL Server must produce time stamps that can be mapped to Coordinated Universal Time (UTC, formerly GMT).",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378-DB-000365",
         "gid": "V-213872",
         "rid": "SV-213872r400000_rule",
         "stig_id": "SQL4-00-033800",
-        "fix_id": "F-15089r312968_fix"
+        "fix_id": "F-15089r312968_fix",
+        "documentable": false
       },
       "id": "V-213872",
       "title": "SQL Server must prohibit user installation of logic modules (stored procedures, functions, triggers, views, etc.) without explicit privileged status.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-DB-000360",
         "gid": "V-213873",
         "rid": "SV-213873r400006_rule",
         "stig_id": "SQL4-00-033900",
-        "fix_id": "F-15090r312971_fix"
+        "fix_id": "F-15090r312971_fix",
+        "documentable": false
       },
       "id": "V-213873",
       "title": "SQL Server and Windows must enforce access restrictions associated with changes to the configuration of the SQL Server instance or database(s).",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000381-DB-000361",
         "gid": "V-213874",
         "rid": "SV-213874r400009_rule",
         "stig_id": "SQL4-00-034000",
-        "fix_id": "F-15091r312974_fix"
+        "fix_id": "F-15091r312974_fix",
+        "documentable": false
       },
       "id": "V-213874",
       "title": "SQL Server must produce Trace or Audit records of its enforcement of access restrictions associated with changes to the configuration of the DBMS or database(s).",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DB-000364",
         "gid": "V-213875",
         "rid": "SV-213875r400015_rule",
         "stig_id": "SQL4-00-034200",
-        "fix_id": "F-15092r312977_fix"
+        "fix_id": "F-15092r312977_fix",
+        "documentable": false
       },
       "id": "V-213875",
       "title": "SQL Server must disable communication protocols not required for operation.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429-DB-000387",
         "gid": "V-213876",
         "rid": "SV-213876r400384_rule",
         "stig_id": "SQL4-00-034800",
-        "fix_id": "F-15093r312980_fix"
+        "fix_id": "F-15093r312980_fix",
+        "documentable": false
       },
       "id": "V-213876",
       "title": "SQL Server must implement and/or support cryptographic mechanisms preventing the unauthorized disclosure of organization-defined information at rest on organization-defined information system components.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-DB-000378",
         "gid": "V-213877",
         "rid": "SV-213877r400480_rule",
         "stig_id": "SQL4-00-035000",
-        "fix_id": "F-15094r312983_fix"
+        "fix_id": "F-15094r312983_fix",
+        "documentable": false
       },
       "id": "V-213877",
       "title": "The confidentiality and integrity of information managed by SQL Server must be maintained during preparation for transmission.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-DB-000379",
         "gid": "V-213878",
         "rid": "SV-213878r400483_rule",
         "stig_id": "SQL4-00-035100",
-        "fix_id": "F-15095r312986_fix"
+        "fix_id": "F-15095r312986_fix",
+        "documentable": false
       },
       "id": "V-213878",
       "title": "The confidentiality and integrity of information managed by SQL Server must be maintained during reception.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-DB-000390",
         "gid": "V-213879",
         "rid": "SV-213879r400525_rule",
         "stig_id": "SQL4-00-035400",
-        "fix_id": "F-15096r312989_fix"
+        "fix_id": "F-15096r312989_fix",
+        "documentable": false
       },
       "id": "V-213879",
       "title": "Security-relevant software updates to SQL Server must be installed within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-DB-000390",
         "gid": "V-213880",
         "rid": "SV-213880r400525_rule",
         "stig_id": "SQL4-00-035500",
-        "fix_id": "F-15097r312992_fix"
+        "fix_id": "F-15097r312992_fix",
+        "documentable": false
       },
       "id": "V-213880",
       "title": "Software updates to SQL Server must be tested before being applied to production systems.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492-DB-000332",
         "gid": "V-213881",
         "rid": "SV-213881r400753_rule",
         "stig_id": "SQL4-00-035600",
-        "fix_id": "F-15098r312995_fix"
+        "fix_id": "F-15098r312995_fix",
+        "documentable": false
       },
       "id": "V-213881",
       "title": "SQL Server must produce Trace or Audit records when security objects are accessed.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492-DB-000333",
         "gid": "V-213882",
         "rid": "SV-213882r400753_rule",
         "stig_id": "SQL4-00-035700",
-        "fix_id": "F-15099r312998_fix"
+        "fix_id": "F-15099r312998_fix",
+        "documentable": false
       },
       "id": "V-213882",
       "title": "SQL Server must produce Trace or Audit records when unsuccessful attempts to access security objects occur.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000326",
         "gid": "V-213883",
         "rid": "SV-213883r400762_rule",
         "stig_id": "SQL4-00-036000",
-        "fix_id": "F-15100r313001_fix"
+        "fix_id": "F-15100r313001_fix",
+        "documentable": false
       },
       "id": "V-213883",
       "title": "SQL Server must generate Trace or Audit records when privileges/permissions are added.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000327",
         "gid": "V-213884",
         "rid": "SV-213884r400762_rule",
         "stig_id": "SQL4-00-036100",
-        "fix_id": "F-15101r313004_fix"
+        "fix_id": "F-15101r313004_fix",
+        "documentable": false
       },
       "id": "V-213884",
       "title": "SQL Server must generate Trace or Audit records when unsuccessful attempts to add privileges/permissions occur.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499-DB-000330",
         "gid": "V-213885",
         "rid": "SV-213885r400831_rule",
         "stig_id": "SQL4-00-036900",
-        "fix_id": "F-15102r313007_fix"
+        "fix_id": "F-15102r313007_fix",
+        "documentable": false
       },
       "id": "V-213885",
       "title": "SQL Server must generate Trace or Audit records when privileges/permissions are deleted.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499-DB-000331",
         "gid": "V-213886",
         "rid": "SV-213886r400831_rule",
         "stig_id": "SQL4-00-037000",
-        "fix_id": "F-15103r313010_fix"
+        "fix_id": "F-15103r313010_fix",
+        "documentable": false
       },
       "id": "V-213886",
       "title": "SQL Server must generate Trace or Audit records when unsuccessful attempts to delete privileges/permissions occur.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000350",
         "gid": "V-213887",
         "rid": "SV-213887r754860_rule",
         "stig_id": "SQL4-00-037500",
-        "fix_id": "F-15104r754861_fix"
+        "fix_id": "F-15104r754861_fix",
+        "documentable": false
       },
       "id": "V-213887",
       "title": "SQL Server must generate Trace or Audit records when successful logons or connections occur.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000351",
         "gid": "V-213888",
         "rid": "SV-213888r754858_rule",
         "stig_id": "SQL4-00-037600",
-        "fix_id": "F-15105r754857_fix"
+        "fix_id": "F-15105r754857_fix",
+        "documentable": false
       },
       "id": "V-213888",
       "title": "SQL Server must generate Trace or Audit records when unsuccessful logons or connection attempts occur.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DB-000354",
         "gid": "V-213889",
         "rid": "SV-213889r400846_rule",
         "stig_id": "SQL4-00-037700",
-        "fix_id": "F-15106r313019_fix"
+        "fix_id": "F-15106r313019_fix",
+        "documentable": false
       },
       "id": "V-213889",
       "title": "SQL Server must generate Trace or Audit records for all privileged activities or other system-level access.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DB-000355",
         "gid": "V-213890",
         "rid": "SV-213890r400846_rule",
         "stig_id": "SQL4-00-037800",
-        "fix_id": "F-15107r313022_fix"
+        "fix_id": "F-15107r313022_fix",
+        "documentable": false
       },
       "id": "V-213890",
       "title": "SQL Server must generate Trace or Audit records when unsuccessful attempts to execute privileged activities or other system-level access occur.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000505-DB-000352",
         "gid": "V-213891",
         "rid": "SV-213891r400849_rule",
         "stig_id": "SQL4-00-037900",
-        "fix_id": "F-15108r313025_fix"
+        "fix_id": "F-15108r313025_fix",
+        "documentable": false
       },
       "id": "V-213891",
       "title": "SQL Server must generate Trace or Audit records when logoffs or disconnections occur.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000506-DB-000353",
         "gid": "V-213892",
         "rid": "SV-213892r400852_rule",
         "stig_id": "SQL4-00-038000",
-        "fix_id": "F-15109r313028_fix"
+        "fix_id": "F-15109r313028_fix",
+        "documentable": false
       },
       "id": "V-213892",
       "title": "SQL Server must generate Trace or Audit records when concurrent logons/connections by the same user from different workstations occur.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000515-DB-000318",
         "gid": "V-213893",
         "rid": "SV-213893r400879_rule",
         "stig_id": "SQL4-00-038700",
-        "fix_id": "F-15110r313031_fix"
+        "fix_id": "F-15110r313031_fix",
+        "documentable": false
       },
       "id": "V-213893",
       "title": "SQL Server must off-load audit data to a separate log management facility; this must be continuous and in near real time for systems with a network connection to the storage facility and weekly or more often for stand-alone systems.",
@@ -1574,7 +1574,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000164-DB-000401",
         "gid": "V-213894",
         "rid": "SV-213894r397501_rule",
         "stig_id": "SQL4-00-038900",
@@ -1582,7 +1581,7 @@
       },
       "id": "V-213894",
       "title": "If SQL Server authentication, using passwords, is employed, SQL Server must enforce the DoD standards for password complexity.",
-      "desc": "<#text> Windows domain/enterprise authentication and identification must be used (SQL4-00-030300). Native SQL Server authentication may be used only when circumstances make it unavoidable; and must be documented and AO-approved. The DoD standard for authentication is DoD-approved PKI certificates. Authentication based on User ID and Password may be used only when it is not possible to employ a PKI certificate, and requires AO approval. In such cases, the DoD standards for password complexity must be implemented. The requirements for password complexity are: a. minimum of 15 Characters, 1 of each of the following character sets: - Upper-case - Lower-case - Numeric - Special characters (e.g. ~ ! @ # $ % ^ & * ( ) _ + = - ' [ ] / ? ><)]; b.> [object Object]",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "Run the statement: SELECT name FROM sys.sql_logins WHERE type_desc = 'SQL_LOGIN' AND is_disabled = 0 AND is_policy_checked = 0 ; If no account names are listed, this is not a finding. For each account name listed, determine whether it is documented as requiring exemption from the standard password complexity rules, if it is not, this is a finding.",
@@ -1592,11 +1591,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000164-DB-000401",
         "gid": "V-213895",
         "rid": "SV-213895r397501_rule",
         "stig_id": "SQL4-00-038910",
-        "fix_id": "F-15112r313037_fix"
+        "fix_id": "F-15112r313037_fix",
+        "documentable": false
       },
       "id": "V-213895",
       "title": "If SQL Server authentication, using passwords, is employed, SQL Server must enforce the DoD standards for password lifetime.",
@@ -1610,11 +1609,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000178-DB-000083",
         "gid": "V-213896",
         "rid": "SV-213896r397603_rule",
         "stig_id": "SQL4-00-039010",
-        "fix_id": "F-15113r313040_fix"
+        "fix_id": "F-15113r313040_fix",
+        "documentable": false
       },
       "id": "V-213896",
       "title": "Applications must obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
@@ -1628,11 +1627,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000178-DB-000083",
         "gid": "V-213897",
         "rid": "SV-213897r397603_rule",
         "stig_id": "SQL4-00-039020",
-        "fix_id": "F-15114r313043_fix"
+        "fix_id": "F-15114r313043_fix",
+        "documentable": false
       },
       "id": "V-213897",
       "title": "When using command-line tools such as SQLCMD in a mixed-mode authentication environment, users must use a logon method that does not expose the password.",
@@ -1646,11 +1645,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000516-DB-000363",
         "gid": "V-213898",
         "rid": "SV-213898r401224_rule",
         "stig_id": "SQL4-00-039100",
-        "fix_id": "F-15115r313046_fix"
+        "fix_id": "F-15115r313046_fix",
+        "documentable": false
       },
       "id": "V-213898",
       "title": "The SQL Server Browser service must be disabled if its use is not necessary..",
@@ -1662,7 +1661,5 @@
       }
     }
   ],
-  "name": "MS_SQL_Server_2014_Instance_STIG",
-  "title": "MS SQL Server 2014 Instance Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "MS_SQL_Server_2014_Instance_STIG"
 }

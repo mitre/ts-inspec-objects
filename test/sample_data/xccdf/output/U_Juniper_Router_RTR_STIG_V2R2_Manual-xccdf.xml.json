@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000001",
         "gid": "V-217011",
         "rid": "SV-217011r639663_rule",
         "stig_id": "JUNI-RT-000010",
-        "fix_id": "F-18238r296902_fix"
+        "fix_id": "F-18238r296902_fix",
+        "documentable": false
       },
       "id": "V-217011",
       "title": "The Juniper router must be configured to enforce approved authorizations for controlling the flow of information within the network based on organization-defined information flow control policies.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230-RTR-000001",
         "gid": "V-217012",
         "rid": "SV-217012r639663_rule",
         "stig_id": "JUNI-RT-000020",
-        "fix_id": "F-18239r296905_fix"
+        "fix_id": "F-18239r296905_fix",
+        "documentable": false
       },
       "id": "V-217012",
       "title": "The Juniper router must be configured to implement message authentication for all control plane protocols.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230-RTR-000003",
         "gid": "V-217013",
         "rid": "SV-217013r639663_rule",
         "stig_id": "JUNI-RT-000030",
-        "fix_id": "F-18240r296908_fix"
+        "fix_id": "F-18240r296908_fix",
+        "documentable": false
       },
       "id": "V-217013",
       "title": "The Juniper router must be configured to use keys with a duration not exceeding 180 days for authenticating routing protocol messages.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000168-RTR-000077",
         "gid": "V-217014",
         "rid": "SV-217014r639663_rule",
         "stig_id": "JUNI-RT-000040",
-        "fix_id": "F-18241r296911_fix"
+        "fix_id": "F-18241r296911_fix",
+        "documentable": false
       },
       "id": "V-217014",
       "title": "The Juniper router must be configured to use encryption for routing protocol authentication.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000168-RTR-000078",
         "gid": "V-217015",
         "rid": "SV-217015r639663_rule",
         "stig_id": "JUNI-RT-000050",
-        "fix_id": "F-18242r296914_fix"
+        "fix_id": "F-18242r296914_fix",
+        "documentable": false
       },
       "id": "V-217015",
       "title": "The Juniper router must be configured to authenticate all routing protocol messages using NIST-validated FIPS 140-2 message authentication code algorithm.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000007",
         "gid": "V-217016",
         "rid": "SV-217016r639663_rule",
         "stig_id": "JUNI-RT-000060",
-        "fix_id": "F-18243r296917_fix"
+        "fix_id": "F-18243r296917_fix",
+        "documentable": false
       },
       "id": "V-217016",
       "title": "The Juniper router must be configured to have all inactive interfaces disabled.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000131-RTR-000035",
         "gid": "V-217017",
         "rid": "SV-217017r639663_rule",
         "stig_id": "JUNI-RT-000070",
-        "fix_id": "F-18244r296920_fix"
+        "fix_id": "F-18244r296920_fix",
+        "documentable": false
       },
       "id": "V-217017",
       "title": "The Juniper router must be configured to have all non-essential capabilities disabled.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000110",
         "gid": "V-217018",
         "rid": "SV-217018r639663_rule",
         "stig_id": "JUNI-RT-000120",
-        "fix_id": "F-18245r296923_fix"
+        "fix_id": "F-18245r296923_fix",
+        "documentable": false
       },
       "id": "V-217018",
       "title": "The Juniper router must be configured to protect against or limit the effects of denial-of-service (DoS) attacks by employing control plane protection.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205-RTR-000001",
         "gid": "V-217019",
         "rid": "SV-217019r639663_rule",
         "stig_id": "JUNI-RT-000130",
-        "fix_id": "F-18246r296926_fix"
+        "fix_id": "F-18246r296926_fix",
+        "documentable": false
       },
       "id": "V-217019",
       "title": "The Juniper router must be configured to restrict traffic destined to itself.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000002",
         "gid": "V-217020",
         "rid": "SV-217020r639663_rule",
         "stig_id": "JUNI-RT-000140",
-        "fix_id": "F-18247r296929_fix"
+        "fix_id": "F-18247r296929_fix",
+        "documentable": false
       },
       "id": "V-217020",
       "title": "The Juniper router must be configured to drop all fragmented Internet Control Message Protocol (ICMP) packets destined to itself.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000111",
         "gid": "V-217021",
         "rid": "SV-217021r639663_rule",
         "stig_id": "JUNI-RT-000150",
-        "fix_id": "F-18248r296932_fix"
+        "fix_id": "F-18248r296932_fix",
+        "documentable": false
       },
       "id": "V-217021",
       "title": "The Juniper router must be configured to have Gratuitous ARP disabled on all external interfaces.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000113",
         "gid": "V-217022",
         "rid": "SV-217022r639663_rule",
         "stig_id": "JUNI-RT-000170",
-        "fix_id": "F-18249r296935_fix"
+        "fix_id": "F-18249r296935_fix",
+        "documentable": false
       },
       "id": "V-217022",
       "title": "The Juniper router must be configured to have Internet Control Message Protocol (ICMP) unreachable messages disabled on all external interfaces.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000114",
         "gid": "V-217023",
         "rid": "SV-217023r639663_rule",
         "stig_id": "JUNI-RT-000180",
-        "fix_id": "F-18250r296938_fix"
+        "fix_id": "F-18250r296938_fix",
+        "documentable": false
       },
       "id": "V-217023",
       "title": "The Juniper router must be configured to have Internet Control Message Protocol (ICMP) mask reply messages disabled on all external interfaces.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000115",
         "gid": "V-217024",
         "rid": "SV-217024r639663_rule",
         "stig_id": "JUNI-RT-000190",
-        "fix_id": "F-18251r296941_fix"
+        "fix_id": "F-18251r296941_fix",
+        "documentable": false
       },
       "id": "V-217024",
       "title": "The Juniper router must be configured to have Internet Control Message Protocol (ICMP) redirect messages disabled on all external interfaces.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000078-RTR-000001",
         "gid": "V-217025",
         "rid": "SV-217025r639663_rule",
         "stig_id": "JUNI-RT-000200",
-        "fix_id": "F-18252r296944_fix"
+        "fix_id": "F-18252r296944_fix",
+        "documentable": false
       },
       "id": "V-217025",
       "title": "The Juniper router must be configured to log all packets that have been dropped.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000076-RTR-000001",
         "gid": "V-217026",
         "rid": "SV-217026r639663_rule",
         "stig_id": "JUNI-RT-000210",
-        "fix_id": "F-18253r296947_fix"
+        "fix_id": "F-18253r296947_fix",
+        "documentable": false
       },
       "id": "V-217026",
       "title": "The Juniper router must be configured to produce audit records containing information to establish where the events occurred.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000077-RTR-000001",
         "gid": "V-217027",
         "rid": "SV-217027r639663_rule",
         "stig_id": "JUNI-RT-000220",
-        "fix_id": "F-18254r296950_fix"
+        "fix_id": "F-18254r296950_fix",
+        "documentable": false
       },
       "id": "V-217027",
       "title": "The Juniper router must be configured to produce audit records containing information to establish the source of the events.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000001",
         "gid": "V-217028",
         "rid": "SV-217028r639663_rule",
         "stig_id": "JUNI-RT-000230",
-        "fix_id": "F-18255r296953_fix"
+        "fix_id": "F-18255r296953_fix",
+        "documentable": false
       },
       "id": "V-217028",
       "title": "The Juniper router must be configured to disable the auxiliary port unless it is connected to a secured modem providing encryption and authentication.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000202-RTR-000001",
         "gid": "V-217029",
         "rid": "SV-217029r639663_rule",
         "stig_id": "JUNI-RT-000240",
-        "fix_id": "F-18256r296956_fix"
+        "fix_id": "F-18256r296956_fix",
+        "documentable": false
       },
       "id": "V-217029",
       "title": "The Juniper perimeter router must be configured to deny network traffic by default and allow network traffic by exception.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-RTR-000002",
         "gid": "V-217030",
         "rid": "SV-217030r639663_rule",
         "stig_id": "JUNI-RT-000250",
-        "fix_id": "F-18257r296959_fix"
+        "fix_id": "F-18257r296959_fix",
+        "documentable": false
       },
       "id": "V-217030",
       "title": "The Juniper perimeter router must be configured to enforce approved authorizations for controlling the flow of information between interconnected networks in accordance with applicable policy.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000109",
         "gid": "V-217031",
         "rid": "SV-217031r639663_rule",
         "stig_id": "JUNI-RT-000260",
-        "fix_id": "F-18258r296962_fix"
+        "fix_id": "F-18258r296962_fix",
+        "documentable": false
       },
       "id": "V-217031",
       "title": "The Juniper perimeter router must be configured to only allow incoming communications from authorized sources to be routed to authorized destinations.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000110",
         "gid": "V-217032",
         "rid": "SV-217032r639663_rule",
         "stig_id": "JUNI-RT-000270",
-        "fix_id": "F-18259r296965_fix"
+        "fix_id": "F-18259r296965_fix",
+        "documentable": false
       },
       "id": "V-217032",
       "title": "The Juniper perimeter router must be configured to block inbound packets with source Bogon IP address prefixes.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000019-RTR-000008",
         "gid": "V-217033",
         "rid": "SV-217033r639663_rule",
         "stig_id": "JUNI-RT-000280",
-        "fix_id": "F-18260r296968_fix"
+        "fix_id": "F-18260r296968_fix",
+        "documentable": false
       },
       "id": "V-217033",
       "title": "The Juniper perimeter router must be configured to protect an enclave connected to an alternate gateway by using an inbound filter that only permits packets with destination addresses within the sites address space.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000019-RTR-000009",
         "gid": "V-217034",
         "rid": "SV-217034r639663_rule",
         "stig_id": "JUNI-RT-000290",
-        "fix_id": "F-18261r296971_fix"
+        "fix_id": "F-18261r296971_fix",
+        "documentable": false
       },
       "id": "V-217034",
       "title": "The Juniper perimeter router must be configured to not be a Border Gateway Protocol (BGP) peer to an alternate gateway service provider.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000010",
         "gid": "V-217035",
         "rid": "SV-217035r639663_rule",
         "stig_id": "JUNI-RT-000300",
-        "fix_id": "F-18262r296974_fix"
+        "fix_id": "F-18262r296974_fix",
+        "documentable": false
       },
       "id": "V-217035",
       "title": "The Juniper perimeter router must be configured to not redistribute static routes to an alternate gateway service provider into BGP or an IGP peering with the NIPRNet or to other autonomous systems.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205-RTR-000014",
         "gid": "V-217036",
         "rid": "SV-217036r639663_rule",
         "stig_id": "JUNI-RT-000310",
-        "fix_id": "F-18263r296977_fix"
+        "fix_id": "F-18263r296977_fix",
+        "documentable": false
       },
       "id": "V-217036",
       "title": "The Juniper perimeter router must be configured to restrict it from accepting outbound IP packets that contain an illegitimate address in the source address field via egress filter or by enabling Unicast Reverse Path Forwarding (uRPF).",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000003",
         "gid": "V-217037",
         "rid": "SV-217037r639663_rule",
         "stig_id": "JUNI-RT-000320",
-        "fix_id": "F-18264r296980_fix"
+        "fix_id": "F-18264r296980_fix",
+        "documentable": false
       },
       "id": "V-217037",
       "title": "The Juniper perimeter router must be configured to filter traffic destined to the enclave in accordance with the guidelines contained in DoD Instruction 8551.1.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000004",
         "gid": "V-217038",
         "rid": "SV-217038r639663_rule",
         "stig_id": "JUNI-RT-000330",
-        "fix_id": "F-18265r296983_fix"
+        "fix_id": "F-18265r296983_fix",
+        "documentable": false
       },
       "id": "V-217038",
       "title": "The Juniper perimeter router must be configured to filter ingress traffic at the external interface on an inbound direction.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000005",
         "gid": "V-217039",
         "rid": "SV-217039r639663_rule",
         "stig_id": "JUNI-RT-000340",
-        "fix_id": "F-18266r296986_fix"
+        "fix_id": "F-18266r296986_fix",
+        "documentable": false
       },
       "id": "V-217039",
       "title": "The Juniper perimeter router must be configured to filter egress traffic at the internal interface on an inbound direction.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000015",
         "gid": "V-217040",
         "rid": "SV-217040r639663_rule",
         "stig_id": "JUNI-RT-000350",
-        "fix_id": "F-18267r296989_fix"
+        "fix_id": "F-18267r296989_fix",
+        "documentable": false
       },
       "id": "V-217040",
       "title": "The Juniper perimeter router must be configured to block all packets with any IP options.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000364-RTR-000111",
         "gid": "V-217041",
         "rid": "SV-217041r639663_rule",
         "stig_id": "JUNI-RT-000360",
-        "fix_id": "F-18268r296992_fix"
+        "fix_id": "F-18268r296992_fix",
+        "documentable": false
       },
       "id": "V-217041",
       "title": "The Juniper perimeter router must be configured to have Link Layer Discovery Protocol (LLDP) disabled on all external interfaces.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000112",
         "gid": "V-217042",
         "rid": "SV-217042r639663_rule",
         "stig_id": "JUNI-RT-000370",
-        "fix_id": "F-18269r296995_fix"
+        "fix_id": "F-18269r296995_fix",
+        "documentable": false
       },
       "id": "V-217042",
       "title": "The Juniper perimeter router must be configured to have Proxy ARP disabled on all external interfaces.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000113",
         "gid": "V-217043",
         "rid": "SV-217043r639663_rule",
         "stig_id": "JUNI-RT-000380",
-        "fix_id": "F-18270r296998_fix"
+        "fix_id": "F-18270r296998_fix",
+        "documentable": false
       },
       "id": "V-217043",
       "title": "The Juniper perimeter router must be configured to block all outbound management traffic.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000009",
         "gid": "V-217044",
         "rid": "SV-217044r639663_rule",
         "stig_id": "JUNI-RT-000390",
-        "fix_id": "F-18271r297001_fix"
+        "fix_id": "F-18271r297001_fix",
+        "documentable": false
       },
       "id": "V-217044",
       "title": "The Juniper out-of-band management (OOBM) gateway router must be configured to transport management traffic to the Network Operations Center (NOC) via dedicated circuit, MPLS/VPN service, or IPsec tunnel.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000010",
         "gid": "V-217045",
         "rid": "SV-217045r639663_rule",
         "stig_id": "JUNI-RT-000400",
-        "fix_id": "F-18272r297004_fix"
+        "fix_id": "F-18272r297004_fix",
+        "documentable": false
       },
       "id": "V-217045",
       "title": "The Juniper out-of-band management (OOBM) gateway router must be configured to forward only authorized management traffic to the Network Operations Center (NOC).",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-RTR-000011",
         "gid": "V-217046",
         "rid": "SV-217046r639663_rule",
         "stig_id": "JUNI-RT-000410",
-        "fix_id": "F-18273r297007_fix"
+        "fix_id": "F-18273r297007_fix",
+        "documentable": false
       },
       "id": "V-217046",
       "title": "The Juniper out-of-band management (OOBM) gateway router must be configured to have separate IGP instances for the managed network and management network.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-RTR-000012",
         "gid": "V-217047",
         "rid": "SV-217047r639663_rule",
         "stig_id": "JUNI-RT-000420",
-        "fix_id": "F-18274r297010_fix"
+        "fix_id": "F-18274r297010_fix",
+        "documentable": false
       },
       "id": "V-217047",
       "title": "The Juniper out-of-band management (OOBM) gateway router must be configured to not redistribute routes between the management network routing domain and the managed network routing domain.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000011",
         "gid": "V-217048",
         "rid": "SV-217048r639663_rule",
         "stig_id": "JUNI-RT-000430",
-        "fix_id": "F-18275r297013_fix"
+        "fix_id": "F-18275r297013_fix",
+        "documentable": false
       },
       "id": "V-217048",
       "title": "The Juniper out-of-band management (OOBM) gateway router must be configured to block any traffic destined to itself that is not sourced from the OOBM network or the NOC.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000012",
         "gid": "V-217049",
         "rid": "SV-217049r639663_rule",
         "stig_id": "JUNI-RT-000440",
-        "fix_id": "F-18276r297016_fix"
+        "fix_id": "F-18276r297016_fix",
+        "documentable": false
       },
       "id": "V-217049",
       "title": "The Juniper router must be configured to only permit management traffic that ingresses and egresses the OOBM interface.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000013",
         "gid": "V-217050",
         "rid": "SV-217050r639663_rule",
         "stig_id": "JUNI-RT-000450",
-        "fix_id": "F-18277r297019_fix"
+        "fix_id": "F-18277r297019_fix",
+        "documentable": false
       },
       "id": "V-217050",
       "title": "The Juniper router providing connectivity to the NOC must be configured to forward all in-band management traffic via an IPsec tunnel.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000124",
         "gid": "V-217051",
         "rid": "SV-217051r639663_rule",
         "stig_id": "JUNI-RT-000460",
-        "fix_id": "F-18278r297022_fix"
+        "fix_id": "F-18278r297022_fix",
+        "documentable": false
       },
       "id": "V-217051",
       "title": "The Juniper BGP router must be configured to enable the Generalized TTL Security Mechanism (GTSM).",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230-RTR-000002",
         "gid": "V-217052",
         "rid": "SV-217052r639663_rule",
         "stig_id": "JUNI-RT-000470",
-        "fix_id": "F-18279r297025_fix"
+        "fix_id": "F-18279r297025_fix",
+        "documentable": false
       },
       "id": "V-217052",
       "title": "The Juniper BGP router must be configured to use a unique key for each autonomous system (AS) that it peers with.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000002",
         "gid": "V-217053",
         "rid": "SV-217053r639663_rule",
         "stig_id": "JUNI-RT-000480",
-        "fix_id": "F-18280r297028_fix"
+        "fix_id": "F-18280r297028_fix",
+        "documentable": false
       },
       "id": "V-217053",
       "title": "The Juniper BGP router must be configured to reject inbound route advertisements for any Bogon prefixes.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000003",
         "gid": "V-217054",
         "rid": "SV-217054r639663_rule",
         "stig_id": "JUNI-RT-000490",
-        "fix_id": "F-18281r297031_fix"
+        "fix_id": "F-18281r297031_fix",
+        "documentable": false
       },
       "id": "V-217054",
       "title": "The Juniper BGP router must be configured to reject inbound route advertisements for any prefixes belonging to the local autonomous system (AS).",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000004",
         "gid": "V-217055",
         "rid": "SV-217055r639663_rule",
         "stig_id": "JUNI-RT-000500",
-        "fix_id": "F-18282r297034_fix"
+        "fix_id": "F-18282r297034_fix",
+        "documentable": false
       },
       "id": "V-217055",
       "title": "The Juniper BGP router must be configured to reject inbound route advertisements from a customer edge (CE) Juniper router for prefixes that are not allocated to that customer.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-RTR-000005",
         "gid": "V-217056",
         "rid": "SV-217056r639663_rule",
         "stig_id": "JUNI-RT-000510",
-        "fix_id": "F-18283r297037_fix"
+        "fix_id": "F-18283r297037_fix",
+        "documentable": false
       },
       "id": "V-217056",
       "title": "The Juniper BGP router must be configured to reject outbound route advertisements for any prefixes that do not belong to any customers or the local autonomous system (AS).",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000006",
         "gid": "V-217057",
         "rid": "SV-217057r639663_rule",
         "stig_id": "JUNI-RT-000520",
-        "fix_id": "F-18284r297040_fix"
+        "fix_id": "F-18284r297040_fix",
+        "documentable": false
       },
       "id": "V-217057",
       "title": "The Juniper BGP router must be configured to reject outbound route advertisements for any prefixes belonging to the IP core.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000006",
         "gid": "V-217058",
         "rid": "SV-217058r639663_rule",
         "stig_id": "JUNI-RT-000530",
-        "fix_id": "F-18285r297043_fix"
+        "fix_id": "F-18285r297043_fix",
+        "documentable": false
       },
       "id": "V-217058",
       "title": "The Juniper BGP router must be configured to reject route advertisements from BGP peers that do not list their autonomous system (AS) number as the first AS in the AS_PATH attribute.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000010",
         "gid": "V-217059",
         "rid": "SV-217059r639663_rule",
         "stig_id": "JUNI-RT-000535",
-        "fix_id": "F-18286r297046_fix"
+        "fix_id": "F-18286r297046_fix",
+        "documentable": false
       },
       "id": "V-217059",
       "title": "The Juniper BGP router must be configured to reject route advertisements from CE routers with an originating AS in the AS_PATH attribute that does not belong to that customer.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000117",
         "gid": "V-217060",
         "rid": "SV-217060r639663_rule",
         "stig_id": "JUNI-RT-000540",
-        "fix_id": "F-18287r297049_fix"
+        "fix_id": "F-18287r297049_fix",
+        "documentable": false
       },
       "id": "V-217060",
       "title": "The Juniper BGP router must be configured to use the maximum prefixes feature to protect against route table flooding and prefix de-aggregation attacks.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000118",
         "gid": "V-217061",
         "rid": "SV-217061r639663_rule",
         "stig_id": "JUNI-RT-000550",
-        "fix_id": "F-18288r297052_fix"
+        "fix_id": "F-18288r297052_fix",
+        "documentable": false
       },
       "id": "V-217061",
       "title": "The Juniper BGP router must be configured to limit the prefix size on any inbound route advertisement to /24 or the least significant prefixes issued to the customer.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000001",
         "gid": "V-217062",
         "rid": "SV-217062r639663_rule",
         "stig_id": "JUNI-RT-000560",
-        "fix_id": "F-18289r297055_fix"
+        "fix_id": "F-18289r297055_fix",
+        "documentable": false
       },
       "id": "V-217062",
       "title": "The Juniper BGP router must be configured to use its loopback address as the source address for iBGP peering sessions.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000002",
         "gid": "V-217063",
         "rid": "SV-217063r639663_rule",
         "stig_id": "JUNI-RT-000570",
-        "fix_id": "F-18290r297058_fix"
+        "fix_id": "F-18290r297058_fix",
+        "documentable": false
       },
       "id": "V-217063",
       "title": "The Juniper MPLS router must be configured to use its loopback address as the source address for LDP peering sessions.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000003",
         "gid": "V-217064",
         "rid": "SV-217064r639663_rule",
         "stig_id": "JUNI-RT-000580",
-        "fix_id": "F-18291r297061_fix"
+        "fix_id": "F-18291r297061_fix",
+        "documentable": false
       },
       "id": "V-217064",
       "title": "The Juniper MPLS router must be configured to synchronize IGP and LDP to minimize packet loss when an IGP adjacency is established prior to LDP peers completing label exchange.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193-RTR-000001",
         "gid": "V-217065",
         "rid": "SV-217065r639663_rule",
         "stig_id": "JUNI-RT-000590",
-        "fix_id": "F-18292r297064_fix"
+        "fix_id": "F-18292r297064_fix",
+        "documentable": false
       },
       "id": "V-217065",
       "title": "The Juniper MPLS router with RSVP-TE enabled must be configured to enable refresh reduction features.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000004",
         "gid": "V-217066",
         "rid": "SV-217066r639663_rule",
         "stig_id": "JUNI-RT-000600",
-        "fix_id": "F-18293r297067_fix"
+        "fix_id": "F-18293r297067_fix",
+        "documentable": false
       },
       "id": "V-217066",
       "title": "The Juniper MPLS router must be configured to have TTL Propagation disabled.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512-RTR-000005",
         "gid": "V-217067",
         "rid": "SV-217067r639663_rule",
         "stig_id": "JUNI-RT-000610",
-        "fix_id": "F-18294r297070_fix"
+        "fix_id": "F-18294r297070_fix",
+        "documentable": false
       },
       "id": "V-217067",
       "title": "The Juniper PE router must be configured to have each Virtual Routing and Forwarding (VRF) instance bound to the appropriate physical or logical interfaces to maintain traffic separation between all MPLS L3VPNs.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512-RTR-000006",
         "gid": "V-217068",
         "rid": "SV-217068r639663_rule",
         "stig_id": "JUNI-RT-000620",
-        "fix_id": "F-18295r297073_fix"
+        "fix_id": "F-18295r297073_fix",
+        "documentable": false
       },
       "id": "V-217068",
       "title": "The Juniper PE router must be configured to have each Virtual Routing and Forwarding (VRF) instance with the appropriate Route Target (RT).",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000007",
         "gid": "V-217069",
         "rid": "SV-217069r639663_rule",
         "stig_id": "JUNI-RT-000630",
-        "fix_id": "F-18296r297076_fix"
+        "fix_id": "F-18296r297076_fix",
+        "documentable": false
       },
       "id": "V-217069",
       "title": "The Juniper PE router must be configured to have each VRF with the appropriate Route Distinguisher (RD).",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000343-RTR-000001",
         "gid": "V-217070",
         "rid": "SV-217070r639663_rule",
         "stig_id": "JUNI-RT-000640",
-        "fix_id": "F-18297r297079_fix"
+        "fix_id": "F-18297r297079_fix",
+        "documentable": false
       },
       "id": "V-217070",
       "title": "The Juniper PE router providing MPLS Layer 2 Virtual Private Network (L2VPN) services must be configured to authenticate targeted Label Distribution Protocol (LDP) sessions used to exchange virtual circuit (VC) information using a FIPS-approved message authentication code algorithm.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512-RTR-000008",
         "gid": "V-217071",
         "rid": "SV-217071r639663_rule",
         "stig_id": "JUNI-RT-000650",
-        "fix_id": "F-18298r297082_fix"
+        "fix_id": "F-18298r297082_fix",
+        "documentable": false
       },
       "id": "V-217071",
       "title": "The Juniper PE router providing MPLS Virtual Private Wire Service (VPWS) must be configured to have the appropriate virtual circuit identification (VC ID) for each attachment circuit.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512-RTR-000009",
         "gid": "V-217072",
         "rid": "SV-217072r639663_rule",
         "stig_id": "JUNI-RT-000660",
-        "fix_id": "F-18299r297085_fix"
+        "fix_id": "F-18299r297085_fix",
+        "documentable": false
       },
       "id": "V-217072",
       "title": "The Juniper PE router providing Virtual Private LAN Services (VPLS) must be configured to have all attachment circuits defined to the routing instance with the globally unique VPLS ID assigned for each customer VLAN.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000193-RTR-000002",
         "gid": "V-217073",
         "rid": "SV-217073r639663_rule",
         "stig_id": "JUNI-RT-000680",
-        "fix_id": "F-18300r297088_fix"
+        "fix_id": "F-18300r297088_fix",
+        "documentable": false
       },
       "id": "V-217073",
       "title": "The Juniper PE router providing Virtual Private LAN Services (VPLS) must be configured to have traffic storm control thresholds on CE-facing interfaces.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000119",
         "gid": "V-217074",
         "rid": "SV-217074r639663_rule",
         "stig_id": "JUNI-RT-000690",
-        "fix_id": "F-18301r297091_fix"
+        "fix_id": "F-18301r297091_fix",
+        "documentable": false
       },
       "id": "V-217074",
       "title": "The Juniper PE router must be configured to implement Protocol Independent Multicast (PIM) snooping for each Virtual Private LAN Services (VPLS) bridge domain.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000192-RTR-000002",
         "gid": "V-217075",
         "rid": "SV-217075r639663_rule",
         "stig_id": "JUNI-RT-000700",
-        "fix_id": "F-18302r297094_fix"
+        "fix_id": "F-18302r297094_fix",
+        "documentable": false
       },
       "id": "V-217075",
       "title": "The Juniper PE router must be configured to limit the number of MAC addresses it can learn for each Virtual Private LAN Services (VPLS) bridge domain.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205-RTR-000007",
         "gid": "V-217076",
         "rid": "SV-217076r639663_rule",
         "stig_id": "JUNI-RT-000710",
-        "fix_id": "F-18303r297097_fix"
+        "fix_id": "F-18303r297097_fix",
+        "documentable": false
       },
       "id": "V-217076",
       "title": "The Juniper PE router must be configured to block any traffic that is destined to IP core infrastructure.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000008",
         "gid": "V-217077",
         "rid": "SV-217077r639663_rule",
         "stig_id": "JUNI-RT-000720",
-        "fix_id": "F-18304r297100_fix"
+        "fix_id": "F-18304r297100_fix",
+        "documentable": false
       },
       "id": "V-217077",
       "title": "The Juniper PE router must be configured with Unicast Reverse Path Forwarding (uRPF) loose mode enabled on all CE-facing interfaces.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205-RTR-000016",
         "gid": "V-217078",
         "rid": "SV-217078r639663_rule",
         "stig_id": "JUNI-RT-000730",
-        "fix_id": "F-18305r297103_fix"
+        "fix_id": "F-18305r297103_fix",
+        "documentable": false
       },
       "id": "V-217078",
       "title": "The Juniper PE router must be configured to ignore or block all packets with any IP options.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193-RTR-000113",
         "gid": "V-217079",
         "rid": "SV-217079r639663_rule",
         "stig_id": "JUNI-RT-000740",
-        "fix_id": "F-18306r297106_fix"
+        "fix_id": "F-18306r297106_fix",
+        "documentable": false
       },
       "id": "V-217079",
       "title": "The Juniper PE router must be configured to enforce a Quality-of-Service (QoS) policy in accordance with the QoS GIG Technical Profile.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193-RTR-000114",
         "gid": "V-217080",
         "rid": "SV-217080r639663_rule",
         "stig_id": "JUNI-RT-000750",
-        "fix_id": "F-18307r297109_fix"
+        "fix_id": "F-18307r297109_fix",
+        "documentable": false
       },
       "id": "V-217080",
       "title": "The Juniper P router must be configured to enforce a Quality-of-Service (QoS) policy in accordance with the QoS GIG Technical Profile.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000193-RTR-000112",
         "gid": "V-217081",
         "rid": "SV-217081r639663_rule",
         "stig_id": "JUNI-RT-000770",
-        "fix_id": "F-18308r297112_fix"
+        "fix_id": "F-18308r297112_fix",
+        "documentable": false
       },
       "id": "V-217081",
       "title": "The Juniper PE router must be configured to enforce a Quality-of-Service (QoS) policy to limit the effects of packet flooding denial-of-service (DoS) attacks.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-RTR-000003",
         "gid": "V-217082",
         "rid": "SV-217082r639663_rule",
         "stig_id": "JUNI-RT-000780",
-        "fix_id": "F-18309r297115_fix"
+        "fix_id": "F-18309r297115_fix",
+        "documentable": false
       },
       "id": "V-217082",
       "title": "The Juniper multicast router must be configured to disable Protocol Independent Multicast (PIM) on all interfaces that are not required to support multicast routing.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-RTR-000004",
         "gid": "V-217083",
         "rid": "SV-217083r639663_rule",
         "stig_id": "JUNI-RT-000790",
-        "fix_id": "F-18310r297118_fix"
+        "fix_id": "F-18310r297118_fix",
+        "documentable": false
       },
       "id": "V-217083",
       "title": "The Juniper multicast router must be configured to bind a Protocol Independent Multicast (PIM) neighbor filter to interfaces that have PIM enabled.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000005",
         "gid": "V-217084",
         "rid": "SV-217084r639663_rule",
         "stig_id": "JUNI-RT-000800",
-        "fix_id": "F-18311r297121_fix"
+        "fix_id": "F-18311r297121_fix",
+        "documentable": false
       },
       "id": "V-217084",
       "title": "The Juniper multicast edge router must be configured to establish boundaries for administratively scoped multicast traffic.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362-RTR-000120",
         "gid": "V-217085",
         "rid": "SV-217085r639663_rule",
         "stig_id": "JUNI-RT-000810",
-        "fix_id": "F-18312r297124_fix"
+        "fix_id": "F-18312r297124_fix",
+        "documentable": false
       },
       "id": "V-217085",
       "title": "The Juniper multicast Rendezvous Point (RP) router must be configured to limit the multicast forwarding cache so that its resources are not saturated by managing an overwhelming number of Protocol Independent Multicast (PIM) and Multicast Source Discovery Protocol (MSDP) source-active entries.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000013",
         "gid": "V-217086",
         "rid": "SV-217086r639663_rule",
         "stig_id": "JUNI-RT-000820",
-        "fix_id": "F-18313r297127_fix"
+        "fix_id": "F-18313r297127_fix",
+        "documentable": false
       },
       "id": "V-217086",
       "title": "The Juniper multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Register messages received from the Designated Router (DR) for any undesirable multicast groups and sources.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019-RTR-000014",
         "gid": "V-217087",
         "rid": "SV-217087r639663_rule",
         "stig_id": "JUNI-RT-000830",
-        "fix_id": "F-18314r297130_fix"
+        "fix_id": "F-18314r297130_fix",
+        "documentable": false
       },
       "id": "V-217087",
       "title": "The Juniper multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Join messages received from the Designated Juniper router (DR) for any undesirable multicast groups.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000121",
         "gid": "V-217088",
         "rid": "SV-217088r639663_rule",
         "stig_id": "JUNI-RT-000840",
-        "fix_id": "F-18315r297133_fix"
+        "fix_id": "F-18315r297133_fix",
+        "documentable": false
       },
       "id": "V-217088",
       "title": "The Juniper multicast Rendezvous Point (RP) must be configured to rate limit the number of Protocol Independent Multicast (PIM) Register messages.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000364-RTR-000114",
         "gid": "V-217089",
         "rid": "SV-217089r639663_rule",
         "stig_id": "JUNI-RT-000850",
-        "fix_id": "F-18316r297136_fix"
+        "fix_id": "F-18316r297136_fix",
+        "documentable": false
       },
       "id": "V-217089",
       "title": "The Juniper multicast Designated Router (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join only multicast groups that have been approved by the organization.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000115",
         "gid": "V-217090",
         "rid": "SV-217090r639663_rule",
         "stig_id": "JUNI-RT-000860",
-        "fix_id": "F-18317r297139_fix"
+        "fix_id": "F-18317r297139_fix",
+        "documentable": false
       },
       "id": "V-217090",
       "title": "The Juniper multicast Designated Router (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join a multicast group only from sources that have been approved by the organization.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000122",
         "gid": "V-217091",
         "rid": "SV-217091r639663_rule",
         "stig_id": "JUNI-RT-000870",
-        "fix_id": "F-18318r297142_fix"
+        "fix_id": "F-18318r297142_fix",
+        "documentable": false
       },
       "id": "V-217091",
       "title": "The Juniper multicast Designated Router (DR) must be configured to limit the number of mroute states resulting from Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Host Membership Reports.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-RTR-000123",
         "gid": "V-217092",
         "rid": "SV-217092r639663_rule",
         "stig_id": "JUNI-RT-000880",
-        "fix_id": "F-18319r297145_fix"
+        "fix_id": "F-18319r297145_fix",
+        "documentable": false
       },
       "id": "V-217092",
       "title": "The Juniper multicast Designated Router (DR) must be configured to set the shortest-path tree (SPT) threshold to infinity to minimalize source-group (S, G) state within the multicast topology where Any Source Multicast (ASM) is deployed.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000116",
         "gid": "V-217093",
         "rid": "SV-217093r639663_rule",
         "stig_id": "JUNI-RT-000890",
-        "fix_id": "F-18320r297148_fix"
+        "fix_id": "F-18320r297148_fix",
+        "documentable": false
       },
       "id": "V-217093",
       "title": "The Juniper Multicast Source Discovery Protocol (MSDP) router must be configured to only accept MSDP packets from known MSDP peers.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000343-RTR-000002",
         "gid": "V-217094",
         "rid": "SV-217094r639663_rule",
         "stig_id": "JUNI-RT-000900",
-        "fix_id": "F-18321r297151_fix"
+        "fix_id": "F-18321r297151_fix",
+        "documentable": false
       },
       "id": "V-217094",
       "title": "The Juniper Multicast Source Discovery Protocol (MSDP) router must be configured to authenticate all received MSDP packets.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000007",
         "gid": "V-217095",
         "rid": "SV-217095r639663_rule",
         "stig_id": "JUNI-RT-000910",
-        "fix_id": "F-18322r297154_fix"
+        "fix_id": "F-18322r297154_fix",
+        "documentable": false
       },
       "id": "V-217095",
       "title": "The Juniper Multicast Source Discovery Protocol (MSDP) router must be configured to filter received source-active multicast advertisements for any undesirable multicast groups and sources.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000008",
         "gid": "V-217096",
         "rid": "SV-217096r639663_rule",
         "stig_id": "JUNI-RT-000920",
-        "fix_id": "F-18323r297157_fix"
+        "fix_id": "F-18323r297157_fix",
+        "documentable": false
       },
       "id": "V-217096",
       "title": "The Juniper Multicast Source Discovery Protocol (MSDP) router must be configured to filter source-active multicast advertisements to external MSDP peers to avoid global visibility of local-only multicast sources and groups.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018-RTR-000009",
         "gid": "V-217097",
         "rid": "SV-217097r639663_rule",
         "stig_id": "JUNI-RT-000930",
-        "fix_id": "F-18324r297160_fix"
+        "fix_id": "F-18324r297160_fix",
+        "documentable": false
       },
       "id": "V-217097",
       "title": "The Juniper Multicast Source Discovery Protocol (MSDP) router must be configured to limit the amount of source-active messages it accepts on per-peer basis.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512-RTR-000011",
         "gid": "V-217098",
         "rid": "SV-217098r639663_rule",
         "stig_id": "JUNI-RT-000940",
-        "fix_id": "F-18325r297163_fix"
+        "fix_id": "F-18325r297163_fix",
+        "documentable": false
       },
       "id": "V-217098",
       "title": "The Juniper Multicast Source Discovery Protocol (MSDP) router must be configured to use its loopback address as the source address when originating MSDP traffic.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000014",
         "gid": "V-233292",
         "rid": "SV-233292r639663_rule",
         "stig_id": "JUNI-RT-000381",
-        "fix_id": "F-36196r622159_fix"
+        "fix_id": "F-36196r622159_fix",
+        "documentable": false
       },
       "id": "V-233292",
       "title": "The Juniper perimeter router must be configured to suppress Router Advertisements on all external IPv6-enabled interfaces.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-RTR-000013",
         "gid": "V-233293",
         "rid": "SV-233293r639663_rule",
         "stig_id": "JUNI-RT-000235",
-        "fix_id": "F-36195r622156_fix"
+        "fix_id": "F-36195r622156_fix",
+        "documentable": false
       },
       "id": "V-233293",
       "title": "The Juniper router must not be configured to use IPv6 Site Local Unicast addresses.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000201",
         "gid": "V-233294",
         "rid": "SV-233294r639663_rule",
         "stig_id": "JUNI-RT-000382",
-        "fix_id": "F-36197r639646_fix"
+        "fix_id": "F-36197r639646_fix",
+        "documentable": false
       },
       "id": "V-233294",
       "title": "The Juniper perimeter router must be configured drop IPv6 packets with a Routing Header type 0, 1, or 3255.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000202",
         "gid": "V-233295",
         "rid": "SV-233295r639663_rule",
         "stig_id": "JUNI-RT-000383",
-        "fix_id": "F-36199r639649_fix"
+        "fix_id": "F-36199r639649_fix",
+        "documentable": false
       },
       "id": "V-233295",
       "title": "The Juniper perimeter router must be configured to drop IPv6 packets containing a Hop-by-Hop header with invalid option type values.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000203",
         "gid": "V-233296",
         "rid": "SV-233296r639663_rule",
         "stig_id": "JUNI-RT-000384",
-        "fix_id": "F-36200r639652_fix"
+        "fix_id": "F-36200r639652_fix",
+        "documentable": false
       },
       "id": "V-233296",
       "title": "The Juniper perimeter router must be configured to drop IPv6 packets containing a Destination Option header with invalid option type values.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000204",
         "gid": "V-233297",
         "rid": "SV-233297r639663_rule",
         "stig_id": "JUNI-RT-000385",
-        "fix_id": "F-36201r639655_fix"
+        "fix_id": "F-36201r639655_fix",
+        "documentable": false
       },
       "id": "V-233297",
       "title": "The Juniper perimeter router must be configured to drop IPv6 packets containing an extension header with the Endpoint Identification option.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000205",
         "gid": "V-233298",
         "rid": "SV-233298r639663_rule",
         "stig_id": "JUNI-RT-000386",
-        "fix_id": "F-36202r639658_fix"
+        "fix_id": "F-36202r639658_fix",
+        "documentable": false
       },
       "id": "V-233298",
       "title": "The Juniper perimeter router must be configured to drop IPv6 packets containing the NSAP address option within Destination Option header.",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-RTR-000206",
         "gid": "V-233299",
         "rid": "SV-233299r639663_rule",
         "stig_id": "JUNI-RT-000387",
-        "fix_id": "F-36203r639661_fix"
+        "fix_id": "F-36203r639661_fix",
+        "documentable": false
       },
       "id": "V-233299",
       "title": "The Juniper perimeter router must be configured to drop IPv6 packets containing a Hop-by-Hop or Destination Option extension header with an undefined option type.",
@@ -1734,7 +1734,5 @@
       }
     }
   ],
-  "name": "Juniper_Router_RTR_STIG",
-  "title": "Juniper Router RTR Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Juniper_Router_RTR_STIG"
 }

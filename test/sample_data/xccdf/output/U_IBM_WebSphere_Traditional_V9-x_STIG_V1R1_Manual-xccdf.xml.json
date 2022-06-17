@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-AS-000001",
         "gid": "V-81193",
         "rid": "SV-95907r1_rule",
         "stig_id": "WBSP-AS-000010",
-        "fix_id": "F-87971r1_fix"
+        "fix_id": "F-87971r1_fix",
+        "documentable": false
       },
       "id": "V-81193",
       "title": "The WebSphere Application Server maximum in-memory session count must be set according to application requirements.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295-AS-000263",
         "gid": "V-81195",
         "rid": "SV-95909r1_rule",
         "stig_id": "WBSP-AS-000020",
-        "fix_id": "F-87973r1_fix"
+        "fix_id": "F-87973r1_fix",
+        "documentable": false
       },
       "id": "V-81195",
       "title": "The WebSphere Application Server admin console session timeout must be configured.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-AS-000013",
         "gid": "V-81197",
         "rid": "SV-95911r1_rule",
         "stig_id": "WBSP-AS-000120",
-        "fix_id": "F-87975r1_fix"
+        "fix_id": "F-87975r1_fix",
+        "documentable": false
       },
       "id": "V-81197",
       "title": "The WebSphere Application Server automatic repository checkpoints must be enabled to track configuration changes.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000315-AS-000094",
         "gid": "V-81199",
         "rid": "SV-95913r1_rule",
         "stig_id": "WBSP-AS-000130",
-        "fix_id": "F-87977r1_fix"
+        "fix_id": "F-87977r1_fix",
+        "documentable": false
       },
       "id": "V-81199",
       "title": "The WebSphere Application Server administrative security must be enabled.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000315-AS-000095",
         "gid": "V-81201",
         "rid": "SV-95915r1_rule",
         "stig_id": "WBSP-AS-000140",
-        "fix_id": "F-87979r1_fix"
+        "fix_id": "F-87979r1_fix",
+        "documentable": false
       },
       "id": "V-81201",
       "title": "The WebSphere Application Server bus security must be enabled.",
@@ -98,7 +98,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-AS-000013",
+        "gid": "V-81203",
+        "rid": "SV-95917r1_rule",
+        "stig_id": "WBSP-AS-000070",
+        "fix_id": "F-87981r1_fix",
         "satisfies": [
           "SRG-APP-000016-AS-000013",
           "SRG-APP-000343-AS-000030",
@@ -107,10 +110,7 @@
           "SRG-APP-000266-AS-000168",
           "SRG-APP-000267-AS-000170"
         ],
-        "gid": "V-81203",
-        "rid": "SV-95917r1_rule",
-        "stig_id": "WBSP-AS-000070",
-        "fix_id": "F-87981r1_fix"
+        "documentable": false
       },
       "id": "V-81203",
       "title": "The WebSphere Application Server security auditing must be enabled.",
@@ -124,15 +124,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-AS-000013",
+        "gid": "V-81205",
+        "rid": "SV-95919r1_rule",
+        "stig_id": "WBSP-AS-000080",
+        "fix_id": "F-87983r1_fix",
         "satisfies": [
           "SRG-APP-000016-AS-000013",
           "SRG-APP-000343-AS-000030"
         ],
-        "gid": "V-81205",
-        "rid": "SV-95919r1_rule",
-        "stig_id": "WBSP-AS-000080",
-        "fix_id": "F-87983r1_fix"
+        "documentable": false
       },
       "id": "V-81205",
       "title": "The WebSphere Application Server groups in the user registry mapped to WebSphere auditor roles must be configured in accordance with the security plan.",
@@ -146,16 +146,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-AS-000013",
+        "gid": "V-81207",
+        "rid": "SV-95921r1_rule",
+        "stig_id": "WBSP-AS-000090",
+        "fix_id": "F-87985r1_fix",
         "satisfies": [
           "SRG-APP-000016-AS-000013",
           "SRG-APP-000343-AS-000030",
           "SRG-APP-000090-AS-000051"
         ],
-        "gid": "V-81207",
-        "rid": "SV-95921r1_rule",
-        "stig_id": "WBSP-AS-000090",
-        "fix_id": "F-87985r1_fix"
+        "documentable": false
       },
       "id": "V-81207",
       "title": "The WebSphere Application Server users in the WebSphere auditor role must be configured in accordance with the System Security Plan.",
@@ -169,7 +169,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-AS-000013",
+        "gid": "V-81209",
+        "rid": "SV-95923r1_rule",
+        "stig_id": "WBSP-AS-000100",
+        "fix_id": "F-87987r1_fix",
         "satisfies": [
           "SRG-APP-000016-AS-000013",
           "SRG-APP-000343-AS-000030",
@@ -190,10 +193,7 @@
           "SRG-APP-000381-AS-000089",
           "SRG-APP-000080-AS-000045"
         ],
-        "gid": "V-81209",
-        "rid": "SV-95923r1_rule",
-        "stig_id": "WBSP-AS-000100",
-        "fix_id": "F-87987r1_fix"
+        "documentable": false
       },
       "id": "V-81209",
       "title": "The WebSphere Application Server audit event type filters must be configured.",
@@ -207,15 +207,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000016-AS-000013",
+        "gid": "V-81211",
+        "rid": "SV-95925r1_rule",
+        "stig_id": "WBSP-AS-000110",
+        "fix_id": "F-87989r1_fix",
         "satisfies": [
           "SRG-APP-000016-AS-000013",
           "SRG-APP-000343-AS-000030"
         ],
-        "gid": "V-81211",
-        "rid": "SV-95925r1_rule",
-        "stig_id": "WBSP-AS-000110",
-        "fix_id": "F-87989r1_fix"
+        "documentable": false
       },
       "id": "V-81211",
       "title": "The WebSphere Application Server audit service provider must be enabled.",
@@ -229,7 +229,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000315-AS-000094",
+        "gid": "V-81213",
+        "rid": "SV-95927r1_rule",
+        "stig_id": "WBSP-AS-000150",
+        "fix_id": "F-87991r2_fix",
         "satisfies": [
           "SRG-APP-000315-AS-000094",
           "SRG-APP-000380-AS-000088",
@@ -237,10 +240,7 @@
           "SRG-APP-000033-AS-000024",
           "SRG-APP-000153-AS-000104"
         ],
-        "gid": "V-81213",
-        "rid": "SV-95927r1_rule",
-        "stig_id": "WBSP-AS-000150",
-        "fix_id": "F-87991r2_fix"
+        "documentable": false
       },
       "id": "V-81213",
       "title": "The WebSphere Application Server users in a local user registry group must be authorized for that group.",
@@ -254,11 +254,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014-AS-000009",
         "gid": "V-81215",
         "rid": "SV-95929r1_rule",
         "stig_id": "WBSP-AS-000160",
-        "fix_id": "F-87995r3_fix"
+        "fix_id": "F-87995r3_fix",
+        "documentable": false
       },
       "id": "V-81215",
       "title": "The WebSphere Application Server Quality of Protection (QoP) must be set to use TLSv1.2 or higher.",
@@ -272,15 +272,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000014-AS-000009",
+        "gid": "V-81217",
+        "rid": "SV-95931r1_rule",
+        "stig_id": "WBSP-AS-000170",
+        "fix_id": "F-87997r2_fix",
         "satisfies": [
           "SRG-APP-000014-AS-000009",
           "SRG-APP-000172-AS-000120"
         ],
-        "gid": "V-81217",
-        "rid": "SV-95931r1_rule",
-        "stig_id": "WBSP-AS-000170",
-        "fix_id": "F-87997r2_fix"
+        "documentable": false
       },
       "id": "V-81217",
       "title": "The WebSphere Application Server global application security must be enabled.",
@@ -294,16 +294,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000014-AS-000009",
+        "gid": "V-81219",
+        "rid": "SV-95933r1_rule",
+        "stig_id": "WBSP-AS-000180",
+        "fix_id": "F-87999r1_fix",
         "satisfies": [
           "SRG-APP-000014-AS-000009",
           "SRG-APP-000172-AS-000120",
           "SRG-APP-000158-AS-000108"
         ],
-        "gid": "V-81219",
-        "rid": "SV-95933r1_rule",
-        "stig_id": "WBSP-AS-000180",
-        "fix_id": "F-87999r1_fix"
+        "documentable": false
       },
       "id": "V-81219",
       "title": "The WebSphere Application Server Single Sign On (SSO) must have SSL enabled for Web and SIP Security.",
@@ -317,11 +317,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015-AS-000010",
         "gid": "V-81221",
         "rid": "SV-95935r1_rule",
         "stig_id": "WBSP-AS-000190",
-        "fix_id": "F-88001r1_fix"
+        "fix_id": "F-88001r1_fix",
+        "documentable": false
       },
       "id": "V-81221",
       "title": "The WebSphere Application Server security cookies must be set to HTTPOnly.",
@@ -335,11 +335,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-AS-000024",
         "gid": "V-81223",
         "rid": "SV-95937r1_rule",
         "stig_id": "WBSP-AS-000211",
-        "fix_id": "F-88003r1_fix"
+        "fix_id": "F-88003r1_fix",
+        "documentable": false
       },
       "id": "V-81223",
       "title": "The WebSphere Application Server Java 2 security must be enabled.",
@@ -353,11 +353,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-AS-000024",
         "gid": "V-81225",
         "rid": "SV-95939r1_rule",
         "stig_id": "WBSP-AS-000212",
-        "fix_id": "F-88005r1_fix"
+        "fix_id": "F-88005r1_fix",
+        "documentable": false
       },
       "id": "V-81225",
       "title": "The WebSphere Application Server Java 2 security must not be bypassed.",
@@ -371,16 +371,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-AS-000024",
+        "gid": "V-81227",
+        "rid": "SV-95941r1_rule",
+        "stig_id": "WBSP-AS-000220",
+        "fix_id": "F-88007r1_fix",
         "satisfies": [
           "SRG-APP-000033-AS-000024",
           "SRG-APP-000380-AS-000088",
           "SRG-APP-000340-AS-000185"
         ],
-        "gid": "V-81227",
-        "rid": "SV-95941r1_rule",
-        "stig_id": "WBSP-AS-000220",
-        "fix_id": "F-88007r1_fix"
+        "documentable": false
       },
       "id": "V-81227",
       "title": "The WebSphere Application Server users in the admin role must be authorized.",
@@ -394,15 +394,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-AS-000024",
+        "gid": "V-81229",
+        "rid": "SV-95943r1_rule",
+        "stig_id": "WBSP-AS-000230",
+        "fix_id": "F-88009r1_fix",
         "satisfies": [
           "SRG-APP-000033-AS-000024",
           "SRG-APP-000267-AS-000170"
         ],
-        "gid": "V-81229",
-        "rid": "SV-95943r1_rule",
-        "stig_id": "WBSP-AS-000230",
-        "fix_id": "F-88009r1_fix"
+        "documentable": false
       },
       "id": "V-81229",
       "title": "The WebSphere Application Server LDAP groups must be authorized for the WebSphere role.",
@@ -416,11 +416,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340-AS-000185",
         "gid": "V-81231",
         "rid": "SV-95945r1_rule",
         "stig_id": "WBSP-AS-000240",
-        "fix_id": "F-88011r1_fix"
+        "fix_id": "F-88011r1_fix",
+        "documentable": false
       },
       "id": "V-81231",
       "title": "The WebSphere Application Server users in a LDAP user registry group must be authorized for that group.",
@@ -434,11 +434,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000068-AS-000035",
         "gid": "V-81233",
         "rid": "SV-95947r1_rule",
         "stig_id": "WBSP-AS-000310",
-        "fix_id": "F-88013r2_fix"
+        "fix_id": "F-88013r2_fix",
+        "documentable": false
       },
       "id": "V-81233",
       "title": "The WebSphere Application Server management interface must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the system.",
@@ -452,11 +452,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000069-AS-000036",
         "gid": "V-81235",
         "rid": "SV-95949r1_rule",
         "stig_id": "WBSP-AS-000320",
-        "fix_id": "F-88015r2_fix"
+        "fix_id": "F-88015r2_fix",
+        "documentable": false
       },
       "id": "V-81235",
       "title": "The WebSphere Application Server management interface must retain the Standard Mandatory DoD Notice and Consent Banner on the screen until users acknowledge the usage conditions and take explicit actions to log on for further access.",
@@ -470,11 +470,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000091-AS-000052",
         "gid": "V-81237",
         "rid": "SV-95951r1_rule",
         "stig_id": "WBSP-AS-000380",
-        "fix_id": "F-88017r1_fix"
+        "fix_id": "F-88017r1_fix",
+        "documentable": false
       },
       "id": "V-81237",
       "title": "The WebSphere Application Server must generate log records when successful/unsuccessful attempts to access subject privileges occur.",
@@ -488,11 +488,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357-AS-000038",
         "gid": "V-81239",
         "rid": "SV-95953r1_rule",
         "stig_id": "WBSP-AS-000580",
-        "fix_id": "F-88019r2_fix"
+        "fix_id": "F-88019r2_fix",
+        "documentable": false
       },
       "id": "V-81239",
       "title": "The WebSphere Application Server must allocate JVM log record storage capacity in accordance with organization-defined log record storage requirements.",
@@ -506,11 +506,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357-AS-000038",
         "gid": "V-81241",
         "rid": "SV-95955r1_rule",
         "stig_id": "WBSP-AS-000590",
-        "fix_id": "F-88021r2_fix"
+        "fix_id": "F-88021r2_fix",
+        "documentable": false
       },
       "id": "V-81241",
       "title": "The WebSphere Application Server must allocate audit log record storage capacity in accordance with organization-defined log record storage requirements.",
@@ -524,11 +524,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360-AS-000066",
         "gid": "V-81243",
         "rid": "SV-95957r1_rule",
         "stig_id": "WBSP-AS-000630",
-        "fix_id": "F-88023r1_fix"
+        "fix_id": "F-88023r1_fix",
+        "documentable": false
       },
       "id": "V-81243",
       "title": "The WebSphere Application Server must provide an immediate real-time alert to authorized users of all log failure events requiring real-time alerts.",
@@ -542,11 +542,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000108-AS-000067",
         "gid": "V-81245",
         "rid": "SV-95959r1_rule",
         "stig_id": "WBSP-AS-000640",
-        "fix_id": "F-88025r1_fix"
+        "fix_id": "F-88025r1_fix",
+        "documentable": false
       },
       "id": "V-81245",
       "title": "The WebSphere Application Server must alert the SA and ISSO, at a minimum, in the event of a log processing failure.",
@@ -560,11 +560,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000108-AS-000067",
         "gid": "V-81247",
         "rid": "SV-95961r1_rule",
         "stig_id": "WBSP-AS-000650",
-        "fix_id": "F-88027r1_fix"
+        "fix_id": "F-88027r1_fix",
+        "documentable": false
       },
       "id": "V-81247",
       "title": "The WebSphere Application Server audit subsystem failure action must be set to Log warning.",
@@ -578,11 +578,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000109-AS-000068",
         "gid": "V-81249",
         "rid": "SV-95963r1_rule",
         "stig_id": "WBSP-AS-000660",
-        "fix_id": "F-88029r1_fix"
+        "fix_id": "F-88029r1_fix",
+        "documentable": false
       },
       "id": "V-81249",
       "title": "The WebSphere Application Server must shut down by default upon log failure (unless availability is an overriding concern).",
@@ -596,11 +596,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000109-AS-000070",
         "gid": "V-81251",
         "rid": "SV-95965r1_rule",
         "stig_id": "WBSP-AS-000670",
-        "fix_id": "F-88031r1_fix"
+        "fix_id": "F-88031r1_fix",
+        "documentable": false
       },
       "id": "V-81251",
       "title": "The WebSphere Application Server high availability applications must be configured to fail over to another system in the event of log subsystem failure.",
@@ -614,11 +614,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000118-AS-000078",
         "gid": "V-81253",
         "rid": "SV-95967r1_rule",
         "stig_id": "WBSP-AS-000740",
-        "fix_id": "F-88033r2_fix"
+        "fix_id": "F-88033r2_fix",
+        "documentable": false
       },
       "id": "V-81253",
       "title": "The WebSphere Application Server must be configured to protect log information from any type of unauthorized read access.",
@@ -632,11 +632,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-AS-000079",
         "gid": "V-81255",
         "rid": "SV-95969r1_rule",
         "stig_id": "WBSP-AS-000750",
-        "fix_id": "F-88035r2_fix"
+        "fix_id": "F-88035r2_fix",
+        "documentable": false
       },
       "id": "V-81255",
       "title": "The WebSphere Application Server must protect log information from unauthorized modification.",
@@ -650,11 +650,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-AS-000080",
         "gid": "V-81257",
         "rid": "SV-95971r1_rule",
         "stig_id": "WBSP-AS-000760",
-        "fix_id": "F-88037r2_fix"
+        "fix_id": "F-88037r2_fix",
+        "documentable": false
       },
       "id": "V-81257",
       "title": "The WebSphere Application Server must protect log information from unauthorized deletion.",
@@ -668,11 +668,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121-AS-000081",
         "gid": "V-81259",
         "rid": "SV-95973r1_rule",
         "stig_id": "WBSP-AS-000770",
-        "fix_id": "F-88039r2_fix"
+        "fix_id": "F-88039r2_fix",
+        "documentable": false
       },
       "id": "V-81259",
       "title": "The WebSphere Application Server wsadmin file must be protected from unauthorized access.",
@@ -686,11 +686,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000122-AS-000082",
         "gid": "V-81261",
         "rid": "SV-95975r1_rule",
         "stig_id": "WBSP-AS-000780",
-        "fix_id": "F-88041r2_fix"
+        "fix_id": "F-88041r2_fix",
+        "documentable": false
       },
       "id": "V-81261",
       "title": "The WebSphere Application Server wsadmin file must be protected from unauthorized modification.",
@@ -704,11 +704,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000123-AS-000083",
         "gid": "V-81263",
         "rid": "SV-95977r1_rule",
         "stig_id": "WBSP-AS-000790",
-        "fix_id": "F-88043r2_fix"
+        "fix_id": "F-88043r2_fix",
+        "documentable": false
       },
       "id": "V-81263",
       "title": "The WebSphere Application Server wsadmin file must be protected from unauthorized deletion.",
@@ -722,11 +722,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000126-AS-000085",
         "gid": "V-81265",
         "rid": "SV-95979r1_rule",
         "stig_id": "WBSP-AS-000810",
-        "fix_id": "F-88045r3_fix"
+        "fix_id": "F-88045r3_fix",
+        "documentable": false
       },
       "id": "V-81265",
       "title": "The WebSphere Application Server must be configured to encrypt log information.",
@@ -740,11 +740,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000126-AS-000085",
         "gid": "V-81267",
         "rid": "SV-95981r1_rule",
         "stig_id": "WBSP-AS-000820",
-        "fix_id": "F-88047r3_fix"
+        "fix_id": "F-88047r3_fix",
+        "documentable": false
       },
       "id": "V-81267",
       "title": "The WebSphere Application Server must be configured to sign log information.",
@@ -758,11 +758,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-81269",
         "rid": "SV-95983r1_rule",
         "stig_id": "WBSP-AS-000910",
-        "fix_id": "F-88049r2_fix"
+        "fix_id": "F-88049r2_fix",
+        "documentable": false
       },
       "id": "V-81269",
       "title": "The WebSphere Application Server process must not be started from the command line with the -password option.",
@@ -776,11 +776,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-81271",
         "rid": "SV-95985r1_rule",
         "stig_id": "WBSP-AS-000920",
-        "fix_id": "F-88051r1_fix"
+        "fix_id": "F-88051r1_fix",
+        "documentable": false
       },
       "id": "V-81271",
       "title": "The WebSphere Application Server files must be owned by the non-root WebSphere user ID.",
@@ -794,11 +794,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-81273",
         "rid": "SV-95987r1_rule",
         "stig_id": "WBSP-AS-000930",
-        "fix_id": "F-88053r1_fix"
+        "fix_id": "F-88053r1_fix",
+        "documentable": false
       },
       "id": "V-81273",
       "title": "The WebSphere Application Server sample applications must be removed.",
@@ -812,11 +812,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-81275",
         "rid": "SV-95989r1_rule",
         "stig_id": "WBSP-AS-000940",
-        "fix_id": "F-88055r1_fix"
+        "fix_id": "F-88055r1_fix",
+        "documentable": false
       },
       "id": "V-81275",
       "title": "The WebSphere Application Server must remove JREs left by web server and plug-in installers for web servers and plugins running in the DMZ.",
@@ -830,11 +830,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-81277",
         "rid": "SV-95991r1_rule",
         "stig_id": "WBSP-AS-000960",
-        "fix_id": "F-88059r1_fix"
+        "fix_id": "F-88059r1_fix",
+        "documentable": false
       },
       "id": "V-81277",
       "title": "The WebSphere Application Server must be run as a non-admin user.",
@@ -848,11 +848,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AS-000095",
         "gid": "V-81279",
         "rid": "SV-95993r1_rule",
         "stig_id": "WBSP-AS-000970",
-        "fix_id": "F-88061r1_fix"
+        "fix_id": "F-88061r1_fix",
+        "documentable": false
       },
       "id": "V-81279",
       "title": "The WebSphere Application Server must disable JSP class reloading.",
@@ -866,11 +866,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-AS-000014",
         "gid": "V-81293",
         "rid": "SV-96007r1_rule",
         "stig_id": "WBSP-AS-000980",
-        "fix_id": "F-88075r1_fix"
+        "fix_id": "F-88075r1_fix",
+        "documentable": false
       },
       "id": "V-81293",
       "title": "The WebSphere Application Server must prohibit or restrict the use of nonsecure ports, protocols, modules, and/or services as defined in the PPSM CAL and vulnerability assessments.",
@@ -884,11 +884,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148-AS-000101",
         "gid": "V-81299",
         "rid": "SV-96013r1_rule",
         "stig_id": "WBSP-AS-001010",
-        "fix_id": "F-88079r2_fix"
+        "fix_id": "F-88079r2_fix",
+        "documentable": false
       },
       "id": "V-81299",
       "title": "The WebSphere Application Server LDAP user registry must be used.",
@@ -902,11 +902,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148-AS-000101",
         "gid": "V-81305",
         "rid": "SV-96019r1_rule",
         "stig_id": "WBSP-AS-001020",
-        "fix_id": "F-88087r2_fix"
+        "fix_id": "F-88087r2_fix",
+        "documentable": false
       },
       "id": "V-81305",
       "title": "The WebSphere Application Server local file-based user registry must not be used.",
@@ -920,7 +920,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000149-AS-000102",
+        "gid": "V-81311",
+        "rid": "SV-96025r1_rule",
+        "stig_id": "WBSP-AS-001030",
+        "fix_id": "F-88093r2_fix",
         "satisfies": [
           "SRG-APP-000149-AS-000102",
           "SRG-APP-000391-AS-000239",
@@ -932,10 +935,7 @@
           "SRG-APP-000404-AS-000249",
           "SRG-APP-000219-AS-000147"
         ],
-        "gid": "V-81311",
-        "rid": "SV-96025r1_rule",
-        "stig_id": "WBSP-AS-001030",
-        "fix_id": "F-88093r2_fix"
+        "documentable": false
       },
       "id": "V-81311",
       "title": "The WebSphere Application Server multifactor authentication for network access to privileged accounts must be used.",
@@ -949,11 +949,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000156-AS-000106",
         "gid": "V-81325",
         "rid": "SV-96039r1_rule",
         "stig_id": "WBSP-AS-001080",
-        "fix_id": "F-88109r1_fix"
+        "fix_id": "F-88109r1_fix",
+        "documentable": false
       },
       "id": "V-81325",
       "title": "The WebSphere Application Server must provide security extensions to extend the SOAP protocol and provide secure authentication when accessing sensitive data.",
@@ -967,11 +967,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000156-AS-000106",
         "gid": "V-81329",
         "rid": "SV-96043r1_rule",
         "stig_id": "WBSP-AS-001090",
-        "fix_id": "F-88113r1_fix"
+        "fix_id": "F-88113r1_fix",
+        "documentable": false
       },
       "id": "V-81329",
       "title": "The WebSphere Application Server must provide security extensions to extend the SOAP protocol and provide secure authentication when accessing sensitive data.",
@@ -985,11 +985,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000394-AS-000241",
-        "satisfies": [
-          "SRG-APP-000394-AS-000241",
-          "SRG-APP-000177-AS-000126"
-        ],
         "gid": "V-81333",
         "rid": "SV-96047r1_rule",
         "stig_id": "WBSP-AS-001110",
@@ -997,7 +992,7 @@
       },
       "id": "V-81333",
       "title": "The WebSphere Application Server must authenticate all network-connected endpoint devices before establishing any connection.",
-      "desc": "<#text> Device authentication requires unique identification and authentication that may be defined by type, by specific device, or by a combination of type and device. Device authentication is accomplished via the use of certificates and protocols such as SSL mutual authentication. Device authentication is performed when the application server is providing web services capabilities and data protection requirements mandate the need to establish the identity of the connecting device before the connection is established. Note: with LDAP registry, the entire DN in the certificate is used to look up LDAP. Filters may be configured. With other registries, only the first attribute after the first \"=\", e.g., CN=<user> is used. https://www.ibm.com/support/knowledgecenter/prodconn_1.0.0/com.ibm.scenarios.wmqwassecure.doc/topics/implementing.htm?cp=SSEQTP_8.0.0 ",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "Review System Security Plan documentation. Identify mutual authentication connection requirements. From the admin console, navigate to Security &gt;&gt; SSL Certificate and Key Management &gt;&gt; SSL Configuration. Select each [NodeDefaultSSLSettings] then go to Quality of Protection (QoP) Settings. If \"Client authentication\" is not set according to the security plan, this is a finding.",
@@ -1007,7 +1002,6 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000395-AS-000109",
         "gid": "V-81341",
         "rid": "SV-96055r1_rule",
         "stig_id": "WBSP-AS-001120",
@@ -1015,7 +1009,7 @@
       },
       "id": "V-81341",
       "title": "The WebSphere Application Server must authenticate all endpoint devices before establishing a local, remote, and/or network connection using bidirectional authentication that is cryptographically based.",
-      "desc": "<#text> Device authentication requires unique identification and authentication that may be defined by type, by specific device, or by a combination of type and device. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk. Device authentication is performed when the application server is providing web services capabilities and data protection requirements mandate the need to establish the identity of the connecting device before the connection is established. Because of the challenges of applying this requirement on a large scale, organizations are encouraged to only apply the requirement to those limited number (and type) of devices that truly need to support this capability. Note: with LDAP registry, the entire DN in the certificate is used to look up LDAP. Filters may be configured. With other registries, only the first attribute after the first \"=\", e.g., CN=<user> is used.",
+      "desc": "<0> [object Object]",
       "impact": 0.5,
       "descs": {
         "check": "Review System Security Plan documentation. Identify mutual authentication connection requirements. From the admin console, navigate to Security &gt;&gt; SSL Certificate and Key Management &gt;&gt; SSL Configuration. Select each [NodeDefaultSSLSettings] then go to Quality of Protection (QoP) Settings. If \"Client authentication\" is not set according to the security plan, this is a finding. Note: with LDAP registry, the entire DN in the certificate is used to look up LDAP. Filters may be configured. With other registries, only the first attribute after the first \"=\", e.g., CN=&lt;user&gt; is used.",
@@ -1025,11 +1019,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-AS-000120",
         "gid": "V-81343",
         "rid": "SV-96057r1_rule",
         "stig_id": "WBSP-AS-001180",
-        "fix_id": "F-88127r1_fix"
+        "fix_id": "F-88127r1_fix",
+        "documentable": false
       },
       "id": "V-81343",
       "title": "The WebSphere Application Server application security must be enabled for each security domain except for publicly available applications specified in the System Security Plan.",
@@ -1043,15 +1037,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-AS-000121",
+        "gid": "V-81347",
+        "rid": "SV-96061r1_rule",
+        "stig_id": "WBSP-AS-001200",
+        "fix_id": "F-88133r2_fix",
         "satisfies": [
           "SRG-APP-000172-AS-000121",
           "SRG-APP-000172-AS-000120"
         ],
-        "gid": "V-81347",
-        "rid": "SV-96061r1_rule",
-        "stig_id": "WBSP-AS-001200",
-        "fix_id": "F-88133r2_fix"
+        "documentable": false
       },
       "id": "V-81347",
       "title": "The WebSphere Application Server secure LDAP (LDAPS) must be used for authentication.",
@@ -1065,11 +1059,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000400-AS-000246",
         "gid": "V-81351",
         "rid": "SV-96065r1_rule",
         "stig_id": "WBSP-AS-001210",
-        "fix_id": "F-88137r1_fix"
+        "fix_id": "F-88137r1_fix",
+        "documentable": false
       },
       "id": "V-81351",
       "title": "The WebSphere Application Server must prohibit the use of cached authenticators after an organization-defined time period.",
@@ -1083,11 +1077,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000176-AS-000125",
         "gid": "V-81357",
         "rid": "SV-96071r1_rule",
         "stig_id": "WBSP-AS-001230",
-        "fix_id": "F-88143r2_fix"
+        "fix_id": "F-88143r2_fix",
+        "documentable": false
       },
       "id": "V-81357",
       "title": "The WebSphere Application Server default keystore passwords must be changed.",
@@ -1101,11 +1095,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000177-AS-000126",
         "gid": "V-81361",
         "rid": "SV-96075r1_rule",
         "stig_id": "WBSP-AS-001260",
-        "fix_id": "F-88147r2_fix"
+        "fix_id": "F-88147r2_fix",
+        "documentable": false
       },
       "id": "V-81361",
       "title": "The WebSphere Application Server must use signer for DoD-issued certificates.",
@@ -1119,7 +1113,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179-AS-000129",
+        "gid": "V-81365",
+        "rid": "SV-96079r1_rule",
+        "stig_id": "WBSP-AS-001290",
+        "fix_id": "F-88151r1_fix",
         "satisfies": [
           "SRG-APP-000179-AS-000129",
           "SRG-APP-000440-AS-000167",
@@ -1129,10 +1126,7 @@
           "SRG-APP-000514-AS-000136",
           "SRG-APP-000416-AS-000140"
         ],
-        "gid": "V-81365",
-        "rid": "SV-96079r1_rule",
-        "stig_id": "WBSP-AS-001290",
-        "fix_id": "F-88151r1_fix"
+        "documentable": false
       },
       "id": "V-81365",
       "title": "The WebSphere Application Server must utilize FIPS 140-2-approved encryption modules when authenticating users and processes.",
@@ -1146,11 +1140,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000402-AS-000247",
         "gid": "V-81367",
         "rid": "SV-96081r1_rule",
         "stig_id": "WBSP-AS-001300",
-        "fix_id": "F-88153r2_fix"
+        "fix_id": "F-88153r2_fix",
+        "documentable": false
       },
       "id": "V-81367",
       "title": "The WebSphere Application Server must accept Personal Identity Verification (PIV) credentials from other federal agencies to access the management interface.",
@@ -1164,11 +1158,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514-AS-000137",
         "gid": "V-81369",
         "rid": "SV-96083r1_rule",
         "stig_id": "WBSP-AS-001370",
-        "fix_id": "F-88155r3_fix"
+        "fix_id": "F-88155r3_fix",
+        "documentable": false
       },
       "id": "V-81369",
       "title": "The WebSphere Application Server must use DoD-approved Signer Certificates.",
@@ -1182,11 +1176,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-AS-000146",
         "gid": "V-81371",
         "rid": "SV-96085r1_rule",
         "stig_id": "WBSP-AS-001390",
-        "fix_id": "F-88157r1_fix"
+        "fix_id": "F-88157r1_fix",
+        "documentable": false
       },
       "id": "V-81371",
       "title": "The WebSphere Application Servers must not be in the DMZ.",
@@ -1200,11 +1194,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-AS-000147",
         "gid": "V-81373",
         "rid": "SV-96087r1_rule",
         "stig_id": "WBSP-AS-001410",
-        "fix_id": "F-88159r1_fix"
+        "fix_id": "F-88159r1_fix",
+        "documentable": false
       },
       "id": "V-81373",
       "title": "The WebSphere Application Server DoD root CAs must be in the trust store.",
@@ -1218,11 +1212,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-AS-000264",
         "gid": "V-81375",
         "rid": "SV-96089r1_rule",
         "stig_id": "WBSP-AS-001460",
-        "fix_id": "F-88161r2_fix"
+        "fix_id": "F-88161r2_fix",
+        "documentable": false
       },
       "id": "V-81375",
       "title": "The WebSphere Application Server personal certificates in all keystores must be issued by an approved DoD CA.",
@@ -1236,11 +1230,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000225-AS-000153",
         "gid": "V-81377",
         "rid": "SV-96091r1_rule",
         "stig_id": "WBSP-AS-001470",
-        "fix_id": "F-88163r1_fix"
+        "fix_id": "F-88163r1_fix",
+        "documentable": false
       },
       "id": "V-81377",
       "title": "The WebSphere Application Server must be configured to perform complete application deployments when using A/B clusters.",
@@ -1254,15 +1248,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000225-AS-000154",
+        "gid": "V-81379",
+        "rid": "SV-96093r1_rule",
+        "stig_id": "WBSP-AS-001480",
+        "fix_id": "F-88165r1_fix",
         "satisfies": [
           "SRG-APP-000225-AS-000154",
           "SRG-APP-000435-AS-000069"
         ],
-        "gid": "V-81379",
-        "rid": "SV-96093r1_rule",
-        "stig_id": "WBSP-AS-001480",
-        "fix_id": "F-88165r1_fix"
+        "documentable": false
       },
       "id": "V-81379",
       "title": "The WebSphere Application servers with an RMF categorization of high must be in a high-availability (HA) cluster.",
@@ -1276,11 +1270,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000428-AS-000265",
         "gid": "V-81381",
         "rid": "SV-96095r1_rule",
         "stig_id": "WBSP-AS-001520",
-        "fix_id": "F-88167r2_fix"
+        "fix_id": "F-88167r2_fix",
+        "documentable": false
       },
       "id": "V-81381",
       "title": "The WebSphere Application Server must not generate LTPA keys automatically.",
@@ -1294,11 +1288,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000428-AS-000265",
         "gid": "V-81383",
         "rid": "SV-96097r1_rule",
         "stig_id": "WBSP-AS-001530",
-        "fix_id": "F-88169r1_fix"
+        "fix_id": "F-88169r1_fix",
+        "documentable": false
       },
       "id": "V-81383",
       "title": "The WebSphere Application Server must periodically regenerate LTPA keys.",
@@ -1312,11 +1306,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435-AS-000163",
         "gid": "V-81385",
         "rid": "SV-96099r1_rule",
         "stig_id": "WBSP-AS-001570",
-        "fix_id": "F-88171r1_fix"
+        "fix_id": "F-88171r1_fix",
+        "documentable": false
       },
       "id": "V-81385",
       "title": "The WebSphere Application Server high availability applications must be installed on a cluster.",
@@ -1330,11 +1324,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000435-AS-000163",
         "gid": "V-81387",
         "rid": "SV-96101r1_rule",
         "stig_id": "WBSP-AS-001580",
-        "fix_id": "F-88173r1_fix"
+        "fix_id": "F-88173r1_fix",
+        "documentable": false
       },
       "id": "V-81387",
       "title": "The WebSphere Application Server memory session settings must be defined according to application load requirements.",
@@ -1348,11 +1342,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435-AS-000163",
         "gid": "V-81389",
         "rid": "SV-96103r1_rule",
         "stig_id": "WBSP-AS-001590",
-        "fix_id": "F-88175r1_fix"
+        "fix_id": "F-88175r1_fix",
+        "documentable": false
       },
       "id": "V-81389",
       "title": "The WebSphere Application Server thread pool size must be defined according to application load requirements.",
@@ -1366,11 +1360,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-AS-000274",
         "gid": "V-81391",
         "rid": "SV-96105r1_rule",
         "stig_id": "WBSP-AS-001610",
-        "fix_id": "F-88177r1_fix"
+        "fix_id": "F-88177r1_fix",
+        "documentable": false
       },
       "id": "V-81391",
       "title": "The WebSphere Application Server must remove all export ciphers to protect the confidentiality and integrity of transmitted information.",
@@ -1384,11 +1378,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000440-AS-000166",
         "gid": "V-81393",
         "rid": "SV-96107r1_rule",
         "stig_id": "WBSP-AS-001620",
-        "fix_id": "F-88179r1_fix"
+        "fix_id": "F-88179r1_fix",
+        "documentable": false
       },
       "id": "V-81393",
       "title": "The WebSphere Application Server distribution and consistency services (DCS) transport links must be encrypted.",
@@ -1402,11 +1396,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000440-AS-000167",
         "gid": "V-81395",
         "rid": "SV-96109r1_rule",
         "stig_id": "WBSP-AS-001630",
-        "fix_id": "F-88181r1_fix"
+        "fix_id": "F-88181r1_fix",
+        "documentable": false
       },
       "id": "V-81395",
       "title": "The WebSphere Application Server plugin must be configured to use HTTPS only.",
@@ -1420,11 +1414,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000454-AS-000268",
         "gid": "V-81397",
         "rid": "SV-96111r1_rule",
         "stig_id": "WBSP-AS-001740",
-        "fix_id": "F-88183r1_fix"
+        "fix_id": "F-88183r1_fix",
+        "documentable": false
       },
       "id": "V-81397",
       "title": "The WebSphere Application Server must remove organization-defined software components after updated versions have been installed.",
@@ -1438,11 +1432,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-AS-000266",
         "gid": "V-81399",
         "rid": "SV-96113r1_rule",
         "stig_id": "WBSP-AS-001750",
-        "fix_id": "F-88185r1_fix"
+        "fix_id": "F-88185r1_fix",
+        "documentable": false
       },
       "id": "V-81399",
       "title": "The WebSphere Application Server must apply the latest security fixes.",
@@ -1456,11 +1450,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-AS-000266",
         "gid": "V-81401",
         "rid": "SV-96115r1_rule",
         "stig_id": "WBSP-AS-001760",
-        "fix_id": "F-88187r2_fix"
+        "fix_id": "F-88187r2_fix",
+        "documentable": false
       },
       "id": "V-81401",
       "title": "The WebSphere Application Server must install security-relevant software updates within the time period directed by an authoritative source (e.g., IAVMs, CTOs, DTMs, and STIGs).",
@@ -1472,7 +1466,5 @@
       }
     }
   ],
-  "name": "IBM_WebSphere_Traditional_V9-x_STIG",
-  "title": "IBM WebSphere Traditional V9.x Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "IBM_WebSphere_Traditional_V9-x_STIG"
 }

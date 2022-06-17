@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI014-IE11-TLS setting",
         "gid": "V-46473",
         "rid": "SV-59337r8_rule",
         "stig_id": "DTBI014-IE11",
-        "fix_id": "F-50263r18_fix"
+        "fix_id": "F-50263r18_fix",
+        "documentable": false
       },
       "id": "V-46473",
       "title": "Turn off Encryption Support must be enabled.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI015-IE11-Warning of certificate mismatch",
         "gid": "V-46475",
         "rid": "SV-59339r1_rule",
         "stig_id": "DTBI015-IE11",
         "fix_id": "F-50265r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46475",
@@ -45,11 +45,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "DTBI018-IE11-Publishers Certificate Revocation",
         "gid": "V-46477",
         "rid": "SV-59341r4_rule",
         "stig_id": "DTBI018-IE11",
-        "fix_id": "F-50269r8_fix"
+        "fix_id": "F-50269r8_fix",
+        "documentable": false
       },
       "id": "V-46477",
       "title": "Check for publishers certificate revocation must be enforced.",
@@ -63,11 +63,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI022-IE11-Download signed ActiveX - Internet",
         "gid": "V-46481",
         "rid": "SV-59345r1_rule",
         "stig_id": "DTBI022-IE11",
         "fix_id": "F-50271r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46481",
@@ -82,11 +82,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI023-IE11-Download unsigned ActiveX - Internet",
         "gid": "V-46483",
         "rid": "SV-59347r1_rule",
         "stig_id": "DTBI023-IE11",
         "fix_id": "F-50275r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46483",
@@ -101,11 +101,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI024-IE11-Initialize and script ActiveX - Internet",
         "gid": "V-46501",
         "rid": "SV-59365r1_rule",
         "stig_id": "DTBI024-IE11",
         "fix_id": "F-50291r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46501",
@@ -120,11 +120,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI031-IE11-Java Permission - Internet",
         "gid": "V-46507",
         "rid": "SV-59371r1_rule",
         "stig_id": "DTBI031-IE11",
         "fix_id": "F-50297r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46507",
@@ -139,11 +139,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI032-IE11-Access data sources across domains - Internet",
         "gid": "V-46509",
         "rid": "SV-59373r1_rule",
         "stig_id": "DTBI032-IE11",
         "fix_id": "F-50299r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46509",
@@ -158,11 +158,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI036-IE11-Drag and drop or copy and paste - Internet",
         "gid": "V-46511",
         "rid": "SV-59375r1_rule",
         "stig_id": "DTBI036-IE11",
         "fix_id": "F-50301r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46511",
@@ -177,11 +177,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI038-IE11-Programs and files in IFRAME - Internet",
         "gid": "V-46513",
         "rid": "SV-59377r1_rule",
         "stig_id": "DTBI038-IE11",
         "fix_id": "F-50303r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46513",
@@ -196,11 +196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI039-IE11-Navigating across domains - Internet",
         "gid": "V-46515",
         "rid": "SV-59379r1_rule",
         "stig_id": "DTBI039-IE11",
         "fix_id": "F-50305r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46515",
@@ -215,11 +215,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI042-IE11-Userdata persistence - Internet",
         "gid": "V-46517",
         "rid": "SV-59381r1_rule",
         "stig_id": "DTBI042-IE11",
         "fix_id": "F-50307r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46517",
@@ -234,11 +234,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI044-IE11-Paste operations via script - Internet",
         "gid": "V-46521",
         "rid": "SV-59385r1_rule",
         "stig_id": "DTBI044-IE11",
         "fix_id": "F-50309r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46521",
@@ -253,11 +253,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI046-IE11-User Authentication-Logon - Internet",
         "gid": "V-46523",
         "rid": "SV-59387r1_rule",
         "stig_id": "DTBI046-IE11",
         "fix_id": "F-50311r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46523",
@@ -272,11 +272,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI061-IE11-Java Permission - Intranet",
         "gid": "V-46525",
         "rid": "SV-59389r1_rule",
         "stig_id": "DTBI061-IE11",
         "fix_id": "F-50313r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46525",
@@ -291,11 +291,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI091-IE11-Java Permission - Trusted Sites",
         "gid": "V-46543",
         "rid": "SV-59407r1_rule",
         "stig_id": "DTBI091-IE11",
         "fix_id": "F-50319r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46543",
@@ -310,11 +310,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1000-IE11-Content from different domains within windows - Internet",
         "gid": "V-46545",
         "rid": "SV-59409r1_rule",
         "stig_id": "DTBI1000-IE11",
         "fix_id": "F-50321r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46545",
@@ -329,11 +329,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1005-IE11-Content from different domains across windows - Restricted Sites",
         "gid": "V-46547",
         "rid": "SV-59411r1_rule",
         "stig_id": "DTBI1005-IE11",
         "fix_id": "F-50323r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46547",
@@ -348,11 +348,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1010-IE11-Restrict ActiveX Install - Explorer",
         "gid": "V-46549",
         "rid": "SV-59413r1_rule",
         "stig_id": "DTBI1010-IE11",
         "fix_id": "F-50325r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46549",
@@ -367,11 +367,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1020-IE11-Restrict ActiveX Install - iexplore",
         "gid": "V-46553",
         "rid": "SV-59417r1_rule",
         "stig_id": "DTBI1020-IE11",
         "fix_id": "F-50327r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46553",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1025-IE11-Content from different domains within windows - Restricted Sites",
         "gid": "V-46555",
         "rid": "SV-59419r1_rule",
         "stig_id": "DTBI1025-IE11",
         "fix_id": "F-50329r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46555",
@@ -405,11 +405,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI112-IE11-Download signed ActiveX - Restricted Sites",
         "gid": "V-46573",
         "rid": "SV-59437r1_rule",
         "stig_id": "DTBI112-IE11",
         "fix_id": "F-50343r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46573",
@@ -424,11 +424,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI113-IE11-Download unsigned ActiveX - Restricted Sites",
         "gid": "V-46575",
         "rid": "SV-59439r1_rule",
         "stig_id": "DTBI113-IE11",
         "fix_id": "F-50345r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46575",
@@ -443,11 +443,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI114-IE11-Initialize and script ActiveX - Restricted Sites",
         "gid": "V-46577",
         "rid": "SV-59441r1_rule",
         "stig_id": "DTBI114-IE11",
         "fix_id": "F-50347r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46577",
@@ -462,11 +462,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI115-IE11-ActiveX control and plugins - Restricted Sites",
         "gid": "V-46579",
         "rid": "SV-59443r1_rule",
         "stig_id": "DTBI115-IE11",
         "fix_id": "F-50349r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46579",
@@ -481,11 +481,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI116-IE11-ActiveX controls marked safe - Restricted Sites",
         "gid": "V-46581",
         "rid": "SV-59445r1_rule",
         "stig_id": "DTBI116-IE11",
         "fix_id": "F-50351r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46581",
@@ -500,11 +500,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI119-IE11-File download control - Restricted Sites",
         "gid": "V-46583",
         "rid": "SV-59447r1_rule",
         "stig_id": "DTBI119-IE11",
         "fix_id": "F-50353r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46583",
@@ -519,11 +519,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI121-IE11-Java Permission - Restricted Sites",
         "gid": "V-46587",
         "rid": "SV-59451r1_rule",
         "stig_id": "DTBI121-IE11",
         "fix_id": "F-50357r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46587",
@@ -538,11 +538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI122-IE11-Access data sources across domains - Restricted Sites",
         "gid": "V-46589",
         "rid": "SV-59453r1_rule",
         "stig_id": "DTBI122-IE11",
         "fix_id": "F-50359r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46589",
@@ -557,11 +557,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI123-IE11-META REFRESH - Restricted Sites",
         "gid": "V-46591",
         "rid": "SV-59455r1_rule",
         "stig_id": "DTBI123-IE11",
         "fix_id": "F-50361r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46591",
@@ -576,11 +576,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI126-IE11-Drag and drop or copy and paste - Restricted Sites",
         "gid": "V-46593",
         "rid": "SV-59457r1_rule",
         "stig_id": "DTBI126-IE11",
         "fix_id": "F-50363r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46593",
@@ -595,11 +595,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI128-IE11-Programs and files in IFRAME - Restricted Sites",
         "gid": "V-46597",
         "rid": "SV-59461r1_rule",
         "stig_id": "DTBI128-IE11",
         "fix_id": "F-50367r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46597",
@@ -614,11 +614,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI129-IE11-Navigating across domains - Restricted Sites",
         "gid": "V-46599",
         "rid": "SV-59463r1_rule",
         "stig_id": "DTBI129-IE11",
         "fix_id": "F-50369r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46599",
@@ -633,11 +633,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI132-IE11-Userdata persistence - Restricted Sites",
         "gid": "V-46601",
         "rid": "SV-59465r1_rule",
         "stig_id": "DTBI132-IE11",
         "fix_id": "F-50371r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46601",
@@ -652,11 +652,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI133-IE11-Active scripting - Restricted Sites",
         "gid": "V-46603",
         "rid": "SV-59467r1_rule",
         "stig_id": "DTBI133-IE11",
         "fix_id": "F-50373r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46603",
@@ -671,11 +671,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI134-IE11-Paste operations via script - Restricted Sites",
         "gid": "V-46605",
         "rid": "SV-59469r1_rule",
         "stig_id": "DTBI134-IE11",
         "fix_id": "F-50375r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46605",
@@ -690,11 +690,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI136-IE11-User Authentication-Logon - Restricted Sites",
         "gid": "V-46607",
         "rid": "SV-59471r1_rule",
         "stig_id": "DTBI136-IE11",
         "fix_id": "F-50377r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46607",
@@ -709,11 +709,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI300-IE11-Configuring History lists",
         "gid": "V-46609",
         "rid": "SV-59473r1_rule",
         "stig_id": "DTBI300-IE11",
         "fix_id": "F-50379r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46609",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI318-IE11-Addition and deletion of sites",
         "gid": "V-46615",
         "rid": "SV-59479r1_rule",
         "stig_id": "DTBI318-IE11",
         "fix_id": "F-50385r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46615",
@@ -747,11 +747,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI319-IE11-Changing of policies",
         "gid": "V-46617",
         "rid": "SV-59481r1_rule",
         "stig_id": "DTBI319-IE11",
         "fix_id": "F-50387r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46617",
@@ -766,11 +766,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI320-IE11-Security zone machine settings",
         "gid": "V-46619",
         "rid": "SV-59483r1_rule",
         "stig_id": "DTBI320-IE11",
         "fix_id": "F-50389r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46619",
@@ -785,11 +785,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI325-IE11-Security settings check feature",
         "gid": "V-46621",
         "rid": "SV-59485r1_rule",
         "stig_id": "DTBI325-IE11",
         "fix_id": "F-50391r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46621",
@@ -804,11 +804,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI350-IE11-Software with invalid signatures",
         "gid": "V-46625",
         "rid": "SV-59489r2_rule",
         "stig_id": "DTBI350-IE11",
         "fix_id": "F-50395r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46625",
@@ -823,11 +823,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "DTBI365-IE11-Check for server certificate revocation",
         "gid": "V-46629",
         "rid": "SV-59493r2_rule",
         "stig_id": "DTBI365-IE11",
-        "fix_id": "F-50399r1_fix"
+        "fix_id": "F-50399r1_fix",
+        "documentable": false
       },
       "id": "V-46629",
       "title": "Checking for server certificate revocation must be enforced.",
@@ -841,11 +841,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI370-IE11-Signature checking on downloaded programs",
         "gid": "V-46633",
         "rid": "SV-59497r1_rule",
         "stig_id": "DTBI370-IE11",
         "fix_id": "F-50403r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46633",
@@ -860,11 +860,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI375-IE11-Network paths (UNCs) for Intranet sites",
         "gid": "V-46635",
         "rid": "SV-59499r1_rule",
         "stig_id": "DTBI375-IE11",
         "fix_id": "F-50405r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46635",
@@ -879,11 +879,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI385-IE11-Script initiated windows - Internet",
         "gid": "V-46637",
         "rid": "SV-59501r1_rule",
         "stig_id": "DTBI385-IE11",
         "fix_id": "F-50407r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46637",
@@ -898,11 +898,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI390-IE11-Script initiated windows - Restricted Sites",
         "gid": "V-46639",
         "rid": "SV-59503r1_rule",
         "stig_id": "DTBI390-IE11",
         "fix_id": "F-50409r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46639",
@@ -917,11 +917,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI395-IE11-Scriptlets - Internet",
         "gid": "V-46641",
         "rid": "SV-59505r1_rule",
         "stig_id": "DTBI395-IE11",
         "fix_id": "F-50411r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46641",
@@ -936,11 +936,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI415-IE11-Prompt for file downloads - Internet",
         "gid": "V-46643",
         "rid": "SV-59507r1_rule",
         "stig_id": "DTBI415-IE11",
         "fix_id": "F-50413r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46643",
@@ -955,11 +955,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI425-IE11-Java permission - Local Machine",
         "gid": "V-46645",
         "rid": "SV-59509r1_rule",
         "stig_id": "DTBI425-IE11",
         "fix_id": "F-50415r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46645",
@@ -974,11 +974,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI430-IE11-Java permission - Locked Down Local Machine",
         "gid": "V-46647",
         "rid": "SV-59511r1_rule",
         "stig_id": "DTBI430-IE11",
         "fix_id": "F-50417r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46647",
@@ -993,11 +993,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI435-IE11-Java permission - Locked Down Intranet",
         "gid": "V-46649",
         "rid": "SV-59513r1_rule",
         "stig_id": "DTBI435-IE11",
         "fix_id": "F-50419r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46649",
@@ -1012,11 +1012,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI440-IE11-Java permission - Locked Down Trusted Sites",
         "gid": "V-46653",
         "rid": "SV-59517r1_rule",
         "stig_id": "DTBI440-IE11",
         "fix_id": "F-50423r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46653",
@@ -1031,11 +1031,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI450-IE11-Java permission - Locked Down Restricted Sites",
         "gid": "V-46663",
         "rid": "SV-59527r1_rule",
         "stig_id": "DTBI450-IE11",
         "fix_id": "F-50431r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46663",
@@ -1050,11 +1050,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI455-IE11-Loading of XAML files - Internet",
         "gid": "V-46665",
         "rid": "SV-59529r1_rule",
         "stig_id": "DTBI455-IE11",
         "fix_id": "F-50433r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46665",
@@ -1069,11 +1069,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI460-IE11-Loading of XAML files - Restricted Sites",
         "gid": "V-46669",
         "rid": "SV-59533r1_rule",
         "stig_id": "DTBI460-IE11",
         "fix_id": "F-50435r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46669",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI485-IE11-Protected Mode - Internet",
         "gid": "V-46681",
         "rid": "SV-59545r1_rule",
         "stig_id": "DTBI485-IE11",
         "fix_id": "F-50447r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46681",
@@ -1107,11 +1107,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI490-IE11-Protected Mode - Restricted Sites",
         "gid": "V-46685",
         "rid": "SV-59549r1_rule",
         "stig_id": "DTBI490-IE11",
         "fix_id": "F-50449r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46685",
@@ -1126,11 +1126,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI495-IE11-Pop-up blocker - Internet",
         "gid": "V-46689",
         "rid": "SV-59553r1_rule",
         "stig_id": "DTBI495-IE11",
         "fix_id": "F-50451r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46689",
@@ -1145,11 +1145,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI500-IE11-Pop-up Blocker - Restricted Sites",
         "gid": "V-46691",
         "rid": "SV-59555r1_rule",
         "stig_id": "DTBI500-IE11",
         "fix_id": "F-50453r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46691",
@@ -1164,11 +1164,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI515-IE11-Less privileged web content - Internet",
         "gid": "V-46693",
         "rid": "SV-59557r1_rule",
         "stig_id": "DTBI515-IE11",
         "fix_id": "F-50455r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46693",
@@ -1183,11 +1183,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI520-IE11-Less privileged web content - Restricted Sites",
         "gid": "V-46695",
         "rid": "SV-59559r1_rule",
         "stig_id": "DTBI520-IE11",
         "fix_id": "F-50457r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46695",
@@ -1202,11 +1202,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI575-IE11-Binary and script behaviors - Restricted Sites",
         "gid": "V-46701",
         "rid": "SV-59565r1_rule",
         "stig_id": "DTBI575-IE11",
         "fix_id": "F-50461r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46701",
@@ -1221,11 +1221,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI580-IE11-Prompt for file downloads - Restricted Sites",
         "gid": "V-46705",
         "rid": "SV-59569r1_rule",
         "stig_id": "DTBI580-IE11",
         "fix_id": "F-50463r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46705",
@@ -1240,11 +1240,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI590-IE11-MIME handling - Reserved",
         "gid": "V-46709",
         "rid": "SV-59573r1_rule",
         "stig_id": "DTBI590-IE11",
         "fix_id": "F-50465r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46709",
@@ -1259,11 +1259,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI592-IE11-MIME handling - Explorer",
         "gid": "V-46711",
         "rid": "SV-59575r1_rule",
         "stig_id": "DTBI592-IE11",
         "fix_id": "F-50467r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46711",
@@ -1278,11 +1278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI594-IE11-MIME handling - iexplore",
         "gid": "V-46713",
         "rid": "SV-59577r1_rule",
         "stig_id": "DTBI594-IE11",
         "fix_id": "F-50469r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46713",
@@ -1297,11 +1297,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI595-IE11-MIME sniffing - Reserved",
         "gid": "V-46715",
         "rid": "SV-59579r1_rule",
         "stig_id": "DTBI595-IE11",
         "fix_id": "F-50471r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46715",
@@ -1316,11 +1316,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI596-IE11-MIME sniffing - Explorer",
         "gid": "V-46717",
         "rid": "SV-59581r1_rule",
         "stig_id": "DTBI596-IE11",
         "fix_id": "F-50473r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46717",
@@ -1335,11 +1335,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI597-IE11-MIME sniffing - iexplore",
         "gid": "V-46719",
         "rid": "SV-59583r1_rule",
         "stig_id": "DTBI597-IE11",
         "fix_id": "F-50475r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46719",
@@ -1354,11 +1354,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI599-IE11-MK Protocol - Reserved",
         "gid": "V-46721",
         "rid": "SV-59585r1_rule",
         "stig_id": "DTBI599-IE11",
         "fix_id": "F-50477r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46721",
@@ -1373,11 +1373,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI600-IE11-MK Protocol - Explorer",
         "gid": "V-46723",
         "rid": "SV-59587r1_rule",
         "stig_id": "DTBI600-IE11",
         "fix_id": "F-50479r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46723",
@@ -1392,11 +1392,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI605-IE11-MK protocol - iexplore",
         "gid": "V-46725",
         "rid": "SV-59589r1_rule",
         "stig_id": "DTBI605-IE11",
         "fix_id": "F-50481r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46725",
@@ -1411,11 +1411,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI610-IE11-Zone elevation - Reserved",
         "gid": "V-46727",
         "rid": "SV-59591r1_rule",
         "stig_id": "DTBI610-IE11",
         "fix_id": "F-50483r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46727",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI612-IE11-Zone elevation - Explorer",
         "gid": "V-46729",
         "rid": "SV-59593r1_rule",
         "stig_id": "DTBI612-IE11",
         "fix_id": "F-50485r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46729",
@@ -1449,11 +1449,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI614-IE11-Zone elevation - iexplore",
         "gid": "V-46731",
         "rid": "SV-59595r1_rule",
         "stig_id": "DTBI614-IE11",
         "fix_id": "F-50487r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46731",
@@ -1468,11 +1468,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI630-IE11-Restrict File Download- Reserved",
         "gid": "V-46733",
         "rid": "SV-59597r1_rule",
         "stig_id": "DTBI630-IE11",
         "fix_id": "F-50489r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46733",
@@ -1487,11 +1487,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI635-IE11-Restrict File download - Explorer",
         "gid": "V-46779",
         "rid": "SV-59645r1_rule",
         "stig_id": "DTBI635-IE11",
         "fix_id": "F-50529r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46779",
@@ -1506,11 +1506,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI640-IE11-Restrict File download - iexplore",
         "gid": "V-46781",
         "rid": "SV-59647r1_rule",
         "stig_id": "DTBI640-IE11",
         "fix_id": "F-50531r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46781",
@@ -1525,11 +1525,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI645-IE11-Restricting pop-up windows - Reserved",
         "gid": "V-46787",
         "rid": "SV-59653r1_rule",
         "stig_id": "DTBI645-IE11",
         "fix_id": "F-50537r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46787",
@@ -1544,11 +1544,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI647-IE11-Restricting pop-up windows - Explorer",
         "gid": "V-46789",
         "rid": "SV-59655r1_rule",
         "stig_id": "DTBI647-IE11",
         "fix_id": "F-50539r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46789",
@@ -1563,11 +1563,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI649-IE11-Restricing pop-up windows - iexplore",
         "gid": "V-46791",
         "rid": "SV-59657r1_rule",
         "stig_id": "DTBI649-IE11",
         "fix_id": "F-50541r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46791",
@@ -1582,11 +1582,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI650-IE11-.NET w/Authenticode unsigned - Restricted Sites",
         "gid": "V-46797",
         "rid": "SV-59663r1_rule",
         "stig_id": "DTBI650-IE11",
         "fix_id": "F-50547r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46797",
@@ -1601,11 +1601,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI655-IE11-.NET w/Authenticode signed - Restricted Sites",
         "gid": "V-46799",
         "rid": "SV-59665r1_rule",
         "stig_id": "DTBI655-IE11",
         "fix_id": "F-50549r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46799",
@@ -1620,11 +1620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI670-IE11-Scripting of Java applets - Restricted Sites",
         "gid": "V-46801",
         "rid": "SV-59667r1_rule",
         "stig_id": "DTBI670-IE11",
         "fix_id": "F-50551r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46801",
@@ -1639,11 +1639,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI690-IE11-AutoComplete for forms",
         "gid": "V-46807",
         "rid": "SV-59673r1_rule",
         "stig_id": "DTBI690-IE11",
         "fix_id": "F-50557r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46807",
@@ -1658,11 +1658,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI715-IE11-Crash Detection",
         "gid": "V-46811",
         "rid": "SV-59677r1_rule",
         "stig_id": "DTBI715-IE11",
         "fix_id": "F-50561r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46811",
@@ -1677,11 +1677,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI725-IE11-Auto-complete feature for user names and passwords",
         "gid": "V-46815",
         "rid": "SV-59681r1_rule",
         "stig_id": "DTBI725-IE11",
         "fix_id": "F-50563r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46815",
@@ -1696,11 +1696,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI740-IE11-Managing SmartScreen Filter",
         "gid": "V-46819",
         "rid": "SV-59685r3_rule",
         "stig_id": "DTBI740-IE11",
-        "fix_id": "F-50565r4_fix"
+        "fix_id": "F-50565r4_fix",
+        "documentable": false
       },
       "id": "V-46819",
       "title": "Managing SmartScreen Filter use must be enforced.",
@@ -1714,11 +1714,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI760-IE11-Browser history on exit",
         "gid": "V-46829",
         "rid": "SV-59695r1_rule",
         "stig_id": "DTBI760-IE11",
         "fix_id": "F-50573r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46829",
@@ -1733,11 +1733,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI770-IE11-Website visit history",
         "gid": "V-46841",
         "rid": "SV-59707r1_rule",
         "stig_id": "DTBI770-IE11",
         "fix_id": "F-50579r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46841",
@@ -1752,11 +1752,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI780-IE11-InPrivate Browsing",
         "gid": "V-46847",
         "rid": "SV-59713r1_rule",
         "stig_id": "DTBI780-IE11",
         "fix_id": "F-50583r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46847",
@@ -1771,11 +1771,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI800-IE11-Scripting of WebBrowser control - Internet",
         "gid": "V-46849",
         "rid": "SV-59715r1_rule",
         "stig_id": "DTBI800-IE11",
         "fix_id": "F-50585r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46849",
@@ -1790,11 +1790,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI810-IE11-Local directory paths - Internet",
         "gid": "V-46853",
         "rid": "SV-59719r1_rule",
         "stig_id": "DTBI810-IE11",
         "fix_id": "F-50589r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46853",
@@ -1809,11 +1809,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI815-IE11-Notification Bars - Reserved",
         "gid": "V-46857",
         "rid": "SV-59723r1_rule",
         "stig_id": "DTBI815-IE11",
         "fix_id": "F-50591r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46857",
@@ -1828,11 +1828,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI820-IE11-Security warning for unsafe files - Internet",
         "gid": "V-46859",
         "rid": "SV-59725r1_rule",
         "stig_id": "DTBI820-IE11",
         "fix_id": "F-50595r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46859",
@@ -1847,11 +1847,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI825-IE11-Notification Bars - Explorer",
         "gid": "V-46861",
         "rid": "SV-59727r1_rule",
         "stig_id": "DTBI825-IE11",
         "fix_id": "F-50597r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46861",
@@ -1866,11 +1866,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI830-IE11-ActiveX controls without prompt - Internet",
         "gid": "V-46865",
         "rid": "SV-59729r1_rule",
         "stig_id": "DTBI830-IE11",
         "fix_id": "F-50603r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46865",
@@ -1885,11 +1885,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI835-IE11-Notification Bars - iexplore",
         "gid": "V-46869",
         "rid": "SV-59735r1_rule",
         "stig_id": "DTBI835-IE11",
         "fix_id": "F-50605r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46869",
@@ -1904,11 +1904,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI840-IE11-Cross-Site Scripting Filter- Internet",
         "gid": "V-46879",
         "rid": "SV-59745r1_rule",
         "stig_id": "DTBI840-IE11",
         "fix_id": "F-50615r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46879",
@@ -1923,11 +1923,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI850-IE11-Scripting of WebBrowser Control - Restricted Sites",
         "gid": "V-46883",
         "rid": "SV-59749r1_rule",
         "stig_id": "DTBI850-IE11",
         "fix_id": "F-50621r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46883",
@@ -1942,11 +1942,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI860-IE11-Local directory paths - Restricted Sites",
         "gid": "V-46885",
         "rid": "SV-59751r1_rule",
         "stig_id": "DTBI860-IE11",
         "fix_id": "F-50623r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46885",
@@ -1961,11 +1961,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI870-IE11-Security Warning for unsafe files - Restricted Sites",
         "gid": "V-46889",
         "rid": "SV-59755r1_rule",
         "stig_id": "DTBI870-IE11",
         "fix_id": "F-50625r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46889",
@@ -1980,11 +1980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI880-IE11-ActiveX controls without prompt - Restricted Sites",
         "gid": "V-46893",
         "rid": "SV-59759r1_rule",
         "stig_id": "DTBI880-IE11",
         "fix_id": "F-50627r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46893",
@@ -1999,11 +1999,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI890-IE11-Cross-Site Scripting Filter - Restricted Sites",
         "gid": "V-46895",
         "rid": "SV-59761r1_rule",
         "stig_id": "DTBI890-IE11",
         "fix_id": "F-50631r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46895",
@@ -2018,11 +2018,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI900-IE11-Restrict ActiveX Install - Reserved",
         "gid": "V-46897",
         "rid": "SV-59763r1_rule",
         "stig_id": "DTBI900-IE11",
         "fix_id": "F-50635r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46897",
@@ -2037,11 +2037,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI910-IE11-Status bar updates via script - Internet",
         "gid": "V-46903",
         "rid": "SV-59769r1_rule",
         "stig_id": "DTBI910-IE11",
         "fix_id": "F-50637r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46903",
@@ -2056,11 +2056,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI920-IE11-.NET w/Authenticode unsigned - Internet",
         "gid": "V-46907",
         "rid": "SV-59773r1_rule",
         "stig_id": "DTBI920-IE11",
         "fix_id": "F-50643r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46907",
@@ -2075,11 +2075,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI930-IE11-.NET w/Authenticode signed - Internet",
         "gid": "V-46921",
         "rid": "SV-59787r1_rule",
         "stig_id": "DTBI930-IE11",
         "fix_id": "F-50659r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46921",
@@ -2094,11 +2094,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI940-IE11-Scriptlets - Restricted Sites",
         "gid": "V-46927",
         "rid": "SV-59793r1_rule",
         "stig_id": "DTBI940-IE11",
         "fix_id": "F-50661r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46927",
@@ -2113,11 +2113,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI950-IE11-Status bar updates via script - Restricted Sites",
         "gid": "V-46939",
         "rid": "SV-59805r1_rule",
         "stig_id": "DTBI950-IE11",
         "fix_id": "F-50671r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46939",
@@ -2132,11 +2132,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI985-IE11-ActiveX controls in Enhanced Protected Mode",
         "gid": "V-46975",
         "rid": "SV-59841r2_rule",
         "stig_id": "DTBI985-IE11",
-        "fix_id": "F-50705r1_fix"
+        "fix_id": "F-50705r1_fix",
+        "documentable": false
       },
       "id": "V-46975",
       "title": "When Enhanced Protected Mode is enabled, ActiveX controls must be disallowed to run in Protected Mode.",
@@ -2150,11 +2150,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI990-IE11-Content from different domains across windows - Internet",
         "gid": "V-46981",
         "rid": "SV-59847r1_rule",
         "stig_id": "DTBI990-IE11",
         "fix_id": "F-50707r1_fix",
+        "documentable": false,
         "ia_controls": "ECSC-1"
       },
       "id": "V-46981",
@@ -2169,11 +2169,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI995-IE11-Enhanced Protected Mode",
         "gid": "V-46987",
         "rid": "SV-59853r3_rule",
         "stig_id": "DTBI995-IE11",
-        "fix_id": "F-50711r2_fix"
+        "fix_id": "F-50711r2_fix",
+        "documentable": false
       },
       "id": "V-46987",
       "title": "Enhanced Protected Mode functionality must be enforced.",
@@ -2187,11 +2187,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI356-IE11-Enhanced Protect Mode on 64-bit versions",
         "gid": "V-46995",
         "rid": "SV-59861r2_rule",
         "stig_id": "DTBI356-IE11",
-        "fix_id": "F-50715r1_fix"
+        "fix_id": "F-50715r1_fix",
+        "documentable": false
       },
       "id": "V-46995",
       "title": "The 64-bit tab processes, when running in Enhanced Protected Mode on 64-bit versions of Windows, must be turned on.",
@@ -2205,11 +2205,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1046-IE11-Anti-Malware programs against ActiveX controls - Internet",
         "gid": "V-46997",
         "rid": "SV-59863r1_rule",
         "stig_id": "DTBI1046-IE11",
         "fix_id": "F-50717r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46997",
@@ -2224,11 +2224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI062-IE11-Anti-Malware programs against ActiveX controls - Intranet",
         "gid": "V-46999",
         "rid": "SV-59865r1_rule",
         "stig_id": "DTBI062-IE11",
         "fix_id": "F-50719r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-46999",
@@ -2243,11 +2243,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI426-IE11-Anti-Malware programs against ActiveX controls - Local Machine",
         "gid": "V-47003",
         "rid": "SV-59869r1_rule",
         "stig_id": "DTBI426-IE11",
         "fix_id": "F-50721r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-47003",
@@ -2262,11 +2262,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1051-IE11-Anti-Malware programs against ActiveX controls - Restricted Sites",
         "gid": "V-47005",
         "rid": "SV-59871r1_rule",
         "stig_id": "DTBI1051-IE11",
         "fix_id": "F-50725r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-47005",
@@ -2281,11 +2281,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI092-IE11-Anti-Malware programs against ActiveX controls - Trusted Sites",
         "gid": "V-47009",
         "rid": "SV-59875r1_rule",
         "stig_id": "DTBI092-IE11",
         "fix_id": "F-50727r1_fix",
+        "documentable": false,
         "ia_controls": "DCMC-1"
       },
       "id": "V-47009",
@@ -2300,11 +2300,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1060-IE11-Managing SmartScreen Filter Warnings",
         "gid": "V-64711",
         "rid": "SV-79201r2_rule",
         "stig_id": "DTBI1060-IE11",
-        "fix_id": "F-70641r2_fix"
+        "fix_id": "F-70641r2_fix",
+        "documentable": false
       },
       "id": "V-64711",
       "title": "Prevent bypassing SmartScreen Filter warnings must be enabled.",
@@ -2318,11 +2318,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1065-IE11-Managing SmartScreen Filter Warnings",
         "gid": "V-64713",
         "rid": "SV-79203r2_rule",
         "stig_id": "DTBI1065-IE11",
-        "fix_id": "F-70643r2_fix"
+        "fix_id": "F-70643r2_fix",
+        "documentable": false
       },
       "id": "V-64713",
       "title": "Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the internet must be enabled.",
@@ -2336,11 +2336,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1070-IE11-Per-User ActiveX Controls",
         "gid": "V-64715",
         "rid": "SV-79205r1_rule",
         "stig_id": "DTBI1070-IE11",
-        "fix_id": "F-70645r1_fix"
+        "fix_id": "F-70645r1_fix",
+        "documentable": false
       },
       "id": "V-64715",
       "title": "Prevent per-user installation of ActiveX controls must be enabled.",
@@ -2354,11 +2354,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1075-IE11-Prevent Ignoring Certificate Errors",
         "gid": "V-64717",
         "rid": "SV-79207r2_rule",
         "stig_id": "DTBI1075-IE11",
-        "fix_id": "F-70647r1_fix"
+        "fix_id": "F-70647r1_fix",
+        "documentable": false
       },
       "id": "V-64717",
       "title": "Prevent ignoring certificate errors option must be enabled.",
@@ -2372,11 +2372,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1080-IE11-Managing SmartScreen Filter-Internet Zone",
         "gid": "V-64719",
         "rid": "SV-79209r1_rule",
         "stig_id": "DTBI1080-IE11",
-        "fix_id": "F-70649r1_fix"
+        "fix_id": "F-70649r1_fix",
+        "documentable": false
       },
       "id": "V-64719",
       "title": "Turn on SmartScreen Filter scan option for the Internet Zone must be enabled.",
@@ -2390,11 +2390,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1085-IE11-Managing SmartScreen Filter- Restricted Sites Zone",
         "gid": "V-64721",
         "rid": "SV-79211r1_rule",
         "stig_id": "DTBI1085-IE11",
-        "fix_id": "F-70651r1_fix"
+        "fix_id": "F-70651r1_fix",
+        "documentable": false
       },
       "id": "V-64721",
       "title": "Turn on SmartScreen Filter scan option for the Restricted Sites Zone must be enabled.",
@@ -2408,11 +2408,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1090-IE11-Initialize and script ActiveX-Intranet Zone",
         "gid": "V-64723",
         "rid": "SV-79213r1_rule",
         "stig_id": "DTBI1090-IE11",
-        "fix_id": "F-70653r1_fix"
+        "fix_id": "F-70653r1_fix",
+        "documentable": false
       },
       "id": "V-64723",
       "title": "The Initialize and script ActiveX controls not marked as safe must be disallowed (Intranet Zone).",
@@ -2426,11 +2426,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1095-IE11-Initialize and script ActiveX-Trusted Sites Zone",
         "gid": "V-64725",
         "rid": "SV-79215r1_rule",
         "stig_id": "DTBI1095-IE11",
-        "fix_id": "F-70655r1_fix"
+        "fix_id": "F-70655r1_fix",
+        "documentable": false
       },
       "id": "V-64725",
       "title": "The Initialize and script ActiveX controls not marked as safe must be disallowed (Trusted Sites Zone).",
@@ -2444,11 +2444,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1100-IE11-Allow Fallback to SSL 3.0 (Internet Explorer)",
         "gid": "V-64729",
         "rid": "SV-79219r3_rule",
         "stig_id": "DTBI1100-IE11",
-        "fix_id": "F-70659r6_fix"
+        "fix_id": "F-70659r6_fix",
+        "documentable": false
       },
       "id": "V-64729",
       "title": "Allow Fallback to SSL 3.0 (Internet Explorer) must be disabled.",
@@ -2462,11 +2462,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1105-IE11-Run once selection for running outdated ActiveX controls must be disabled.",
         "gid": "V-72757",
         "rid": "SV-87395r2_rule",
         "stig_id": "DTBI1105-IE11",
-        "fix_id": "F-79167r7_fix"
+        "fix_id": "F-79167r7_fix",
+        "documentable": false
       },
       "id": "V-72757",
       "title": "Run once selection for running outdated ActiveX controls must be disabled.",
@@ -2480,11 +2480,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1110-IE11-Enabling outdated ActiveX controls for Internet Explorer must be blocked.",
         "gid": "V-72759",
         "rid": "SV-87397r2_rule",
         "stig_id": "DTBI1110-IE11",
-        "fix_id": "F-79169r5_fix"
+        "fix_id": "F-79169r5_fix",
+        "documentable": false
       },
       "id": "V-72759",
       "title": "Enabling outdated ActiveX controls for Internet Explorer must be blocked.",
@@ -2498,11 +2498,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1115-IE11-Use of the Tabular Data Control (TDC) ActiveX control must be disabled for the Interne",
         "gid": "V-72761",
         "rid": "SV-87399r2_rule",
         "stig_id": "DTBI1115-IE11",
-        "fix_id": "F-79171r6_fix"
+        "fix_id": "F-79171r6_fix",
+        "documentable": false
       },
       "id": "V-72761",
       "title": "Use of the Tabular Data Control (TDC) ActiveX control must be disabled for the Internet Zone.",
@@ -2516,11 +2516,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1120-IE11-Use of the Tabular Data Control (TDC) ActiveX control must be disabled for the Restric",
         "gid": "V-72763",
         "rid": "SV-87401r2_rule",
         "stig_id": "DTBI1120-IE11",
-        "fix_id": "F-79173r5_fix"
+        "fix_id": "F-79173r5_fix",
+        "documentable": false
       },
       "id": "V-72763",
       "title": "Use of the Tabular Data Control (TDC) ActiveX control must be disabled for the Restricted Sites Zone.",
@@ -2534,11 +2534,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1125-IE11-VBScript",
         "gid": "V-75169",
         "rid": "SV-89849r1_rule",
         "stig_id": "DTBI1125-IE11",
-        "fix_id": "F-81781r1_fix"
+        "fix_id": "F-81781r1_fix",
+        "documentable": false
       },
       "id": "V-75169",
       "title": "VBScript must not be allowed to run in Internet Explorer (Internet zone).",
@@ -2552,11 +2552,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "DTBI1130-IE11-VBScript",
         "gid": "V-75171",
         "rid": "SV-89851r1_rule",
         "stig_id": "DTBI1130-IE11",
-        "fix_id": "F-81783r1_fix"
+        "fix_id": "F-81783r1_fix",
+        "documentable": false
       },
       "id": "V-75171",
       "title": "VBScript must not be allowed to run in Internet Explorer (Restricted Sites zone).",
@@ -2570,11 +2570,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "DTBI1135-IE11 - Developer Tools",
         "gid": "V-97527",
         "rid": "SV-106631r1_rule",
         "stig_id": "DTBI1135-IE11",
-        "fix_id": "F-103205r2_fix"
+        "fix_id": "F-103205r2_fix",
+        "documentable": false
       },
       "id": "V-97527",
       "title": "Internet Explorer Development Tools Must Be Disabled.",
@@ -2586,7 +2586,5 @@
       }
     }
   ],
-  "name": "IE_11_STIG",
-  "title": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
-  "summary": "The Microsoft Internet Explorer 11 Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil"
+  "name": "IE_11_STIG"
 }

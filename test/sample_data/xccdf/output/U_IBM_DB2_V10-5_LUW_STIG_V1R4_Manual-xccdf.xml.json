@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DB-000031",
         "gid": "V-74429",
         "rid": "SV-89103r1_rule",
         "stig_id": "DB2X-00-000200",
-        "fix_id": "F-81029r1_fix"
+        "fix_id": "F-81029r1_fix",
+        "documentable": false
       },
       "id": "V-74429",
       "title": "DB2 must limit the number of concurrent sessions to an organization-defined number per user for all accounts and/or account types.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000023-DB-000001",
         "gid": "V-74431",
         "rid": "SV-89105r1_rule",
         "stig_id": "DB2X-00-000300",
-        "fix_id": "F-81031r4_fix"
+        "fix_id": "F-81031r4_fix",
+        "documentable": false
       },
       "id": "V-74431",
       "title": "DB2 must integrate with an organization-level authentication/access mechanism providing account management and automation for all users, groups, roles, and any other principals.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-DB-000084",
         "gid": "V-74433",
         "rid": "SV-89107r2_rule",
         "stig_id": "DB2X-00-000400",
-        "fix_id": "F-81033r4_fix"
+        "fix_id": "F-81033r4_fix",
+        "documentable": false
       },
       "id": "V-74433",
       "title": "DB2 must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000080-DB-000063",
         "gid": "V-74435",
         "rid": "SV-89109r1_rule",
         "stig_id": "DB2X-00-000500",
-        "fix_id": "F-81035r1_fix"
+        "fix_id": "F-81035r1_fix",
+        "documentable": false
       },
       "id": "V-74435",
       "title": "DB2 must protect against a user falsely repudiating having performed organization-defined actions.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-DB-000064",
         "gid": "V-74437",
         "rid": "SV-89111r1_rule",
         "stig_id": "DB2X-00-000600",
-        "fix_id": "F-81037r1_fix"
+        "fix_id": "F-81037r1_fix",
+        "documentable": false
       },
       "id": "V-74437",
       "title": "DB2 must provide audit record generation capability for DoD-defined auditable events within all DBMS/database components.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090-DB-000065",
         "gid": "V-74439",
         "rid": "SV-89113r1_rule",
         "stig_id": "DB2X-00-000700",
-        "fix_id": "F-81039r1_fix"
+        "fix_id": "F-81039r1_fix",
+        "documentable": false
       },
       "id": "V-74439",
       "title": "DB2 must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000066",
         "gid": "V-74441",
         "rid": "SV-89115r2_rule",
         "stig_id": "DB2X-00-000800",
-        "fix_id": "F-81041r1_fix"
+        "fix_id": "F-81041r1_fix",
+        "documentable": false
       },
       "id": "V-74441",
       "title": "DB2 must generate audit records when privileges/permissions are retrieved.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000325",
         "gid": "V-74443",
         "rid": "SV-89117r2_rule",
         "stig_id": "DB2X-00-000900",
-        "fix_id": "F-81043r2_fix"
+        "fix_id": "F-81043r2_fix",
+        "documentable": false
       },
       "id": "V-74443",
       "title": "DB2 must generate audit records when unsuccessful attempts to retrieve privileges/permissions occur.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000092-DB-000208",
         "gid": "V-74445",
         "rid": "SV-89119r1_rule",
         "stig_id": "DB2X-00-001000",
-        "fix_id": "F-81045r1_fix"
+        "fix_id": "F-81045r1_fix",
+        "documentable": false
       },
       "id": "V-74445",
       "title": "DB2 must initiate session auditing upon startup.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099-DB-000043",
         "gid": "V-74447",
         "rid": "SV-89121r1_rule",
         "stig_id": "DB2X-00-001600",
-        "fix_id": "F-81047r1_fix"
+        "fix_id": "F-81047r1_fix",
+        "documentable": false
       },
       "id": "V-74447",
       "title": "DB2 must produce audit records containing sufficient information to establish the outcome (success or failure) of the events.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000101-DB-000044",
         "gid": "V-74449",
         "rid": "SV-89123r1_rule",
         "stig_id": "DB2X-00-001800",
-        "fix_id": "F-81049r3_fix"
+        "fix_id": "F-81049r3_fix",
+        "documentable": false
       },
       "id": "V-74449",
       "title": "DB2 must include additional, more detailed, organization-defined information in the audit records for audit events identified by type, location, or subject.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000109-DB-000049",
         "gid": "V-74451",
         "rid": "SV-89125r1_rule",
         "stig_id": "DB2X-00-001900",
-        "fix_id": "F-81051r1_fix"
+        "fix_id": "F-81051r1_fix",
+        "documentable": false
       },
       "id": "V-74451",
       "title": "Unless it has been determined that availability is paramount, DB2 must, upon audit failure, cease all auditable activity.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-DB-000059",
         "gid": "V-74453",
         "rid": "SV-89127r1_rule",
         "stig_id": "DB2X-00-002200",
-        "fix_id": "F-81053r1_fix"
+        "fix_id": "F-81053r1_fix",
+        "documentable": false
       },
       "id": "V-74453",
       "title": "The audit information produced by DB2 must be protected from unauthorized read access.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-DB-000060",
         "gid": "V-74455",
         "rid": "SV-89129r1_rule",
         "stig_id": "DB2X-00-002300",
-        "fix_id": "F-81055r1_fix"
+        "fix_id": "F-81055r1_fix",
+        "documentable": false
       },
       "id": "V-74455",
       "title": "The audit information produced by DB2 must be protected from unauthorized modification.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-DB-000061",
         "gid": "V-74457",
         "rid": "SV-89131r1_rule",
         "stig_id": "DB2X-00-002400",
-        "fix_id": "F-81057r1_fix"
+        "fix_id": "F-81057r1_fix",
+        "documentable": false
       },
       "id": "V-74457",
       "title": "The audit information produced by DB2 must be protected from unauthorized deletion.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121-DB-000202",
         "gid": "V-74459",
         "rid": "SV-89133r1_rule",
         "stig_id": "DB2X-00-002500",
-        "fix_id": "F-81059r1_fix"
+        "fix_id": "F-81059r1_fix",
+        "documentable": false
       },
       "id": "V-74459",
       "title": "DB2 must protect its audit features from unauthorized access.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000122-DB-000203",
         "gid": "V-74461",
         "rid": "SV-89135r1_rule",
         "stig_id": "DB2X-00-002600",
-        "fix_id": "F-81061r1_fix"
+        "fix_id": "F-81061r1_fix",
+        "documentable": false
       },
       "id": "V-74461",
       "title": "DB2 must protect its audit configuration from unauthorized modification.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000123-DB-000204",
         "gid": "V-74463",
         "rid": "SV-89137r1_rule",
         "stig_id": "DB2X-00-002700",
-        "fix_id": "F-81063r1_fix"
+        "fix_id": "F-81063r1_fix",
+        "documentable": false
       },
       "id": "V-74463",
       "title": "DB2 must protect its audit features from unauthorized removal.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-74465",
         "rid": "SV-89139r1_rule",
         "stig_id": "DB2X-00-002800",
-        "fix_id": "F-81065r1_fix"
+        "fix_id": "F-81065r1_fix",
+        "documentable": false
       },
       "id": "V-74465",
       "title": "DB2 must limit privileges to change software modules, to include stored procedures, functions and triggers, and links to software external to DB2.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-74467",
         "rid": "SV-89141r1_rule",
         "stig_id": "DB2X-00-002900",
-        "fix_id": "F-81067r1_fix"
+        "fix_id": "F-81067r1_fix",
+        "documentable": false
       },
       "id": "V-74467",
       "title": "The OS must limit privileges to change the DB2 software resident within software libraries (including privileged programs).",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000198",
         "gid": "V-74469",
         "rid": "SV-89143r1_rule",
         "stig_id": "DB2X-00-003000",
-        "fix_id": "F-81069r1_fix"
+        "fix_id": "F-81069r1_fix",
+        "documentable": false
       },
       "id": "V-74469",
       "title": "The DB2 software installation account must be restricted to authorized users.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000199",
         "gid": "V-74471",
         "rid": "SV-89145r1_rule",
         "stig_id": "DB2X-00-003100",
-        "fix_id": "F-81071r1_fix"
+        "fix_id": "F-81071r1_fix",
+        "documentable": false
       },
       "id": "V-74471",
       "title": "Database software, including DBMS configuration files, must be stored in dedicated directories, separate from the host OS and other applications.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000200",
         "gid": "V-74473",
         "rid": "SV-89147r1_rule",
         "stig_id": "DB2X-00-003200",
-        "fix_id": "F-81073r1_fix"
+        "fix_id": "F-81073r1_fix",
+        "documentable": false
       },
       "id": "V-74473",
       "title": "Database objects (including but not limited to tables, indexes, storage, stored procedures, functions, triggers, links to software external to DB2, etc.) must be owned by database/DBMS principals authorized for ownership.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000362",
         "gid": "V-74475",
         "rid": "SV-89149r1_rule",
         "stig_id": "DB2X-00-003300",
-        "fix_id": "F-81075r1_fix"
+        "fix_id": "F-81075r1_fix",
+        "documentable": false
       },
       "id": "V-74475",
       "title": "The role(s)/group(s) used to modify database structure (including but not necessarily limited to tables, indexes, storage, etc.) and logic modules (stored procedures, functions, triggers, links to software external to DB2, etc.) must be restricted to authorized users.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000090",
         "gid": "V-74477",
         "rid": "SV-89151r1_rule",
         "stig_id": "DB2X-00-003400",
-        "fix_id": "F-81077r1_fix"
+        "fix_id": "F-81077r1_fix",
+        "documentable": false
       },
       "id": "V-74477",
       "title": "Default demonstration and sample databases, database objects, and applications must be removed.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-74479",
         "rid": "SV-89153r1_rule",
         "stig_id": "DB2X-00-003500",
-        "fix_id": "F-81079r1_fix"
+        "fix_id": "F-81079r1_fix",
+        "documentable": false
       },
       "id": "V-74479",
       "title": "Unused database components, DBMS software, and database objects must be removed.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000092",
         "gid": "V-74481",
         "rid": "SV-89155r1_rule",
         "stig_id": "DB2X-00-003600",
-        "fix_id": "F-81081r1_fix"
+        "fix_id": "F-81081r1_fix",
+        "documentable": false
       },
       "id": "V-74481",
       "title": "Unused database components which are integrated in DB2 and cannot be uninstalled must be disabled.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000093",
         "gid": "V-74483",
         "rid": "SV-89157r1_rule",
         "stig_id": "DB2X-00-003700",
-        "fix_id": "F-81083r1_fix"
+        "fix_id": "F-81083r1_fix",
+        "documentable": false
       },
       "id": "V-74483",
       "title": "Access to external executables must be disabled or restricted.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DB-000094",
         "gid": "V-74485",
         "rid": "SV-89159r2_rule",
         "stig_id": "DB2X-00-003800",
-        "fix_id": "F-81085r2_fix"
+        "fix_id": "F-81085r2_fix",
+        "documentable": false
       },
       "id": "V-74485",
       "title": "DB2 must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000172-DB-000075",
         "gid": "V-74487",
         "rid": "SV-89161r2_rule",
         "stig_id": "DB2X-00-004100",
-        "fix_id": "F-81087r2_fix"
+        "fix_id": "F-81087r2_fix",
+        "documentable": false
       },
       "id": "V-74487",
       "title": "If passwords are used for authentication, DB2 must transmit only encrypted representations of passwords.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000178-DB-000083",
         "gid": "V-74489",
         "rid": "SV-89163r1_rule",
         "stig_id": "DB2X-00-004510",
-        "fix_id": "F-81089r1_fix"
+        "fix_id": "F-81089r1_fix",
+        "documentable": false
       },
       "id": "V-74489",
       "title": "Applications using the database must obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000178-DB-000083",
         "gid": "V-74491",
         "rid": "SV-89165r1_rule",
         "stig_id": "DB2X-00-004520",
-        "fix_id": "F-81091r1_fix"
+        "fix_id": "F-81091r1_fix",
+        "documentable": false
       },
       "id": "V-74491",
       "title": "When using command-line tools such as db2, users must use a Connect method that does not expose the password.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179-DB-000114",
         "gid": "V-74493",
         "rid": "SV-89167r1_rule",
         "stig_id": "DB2X-00-004600",
-        "fix_id": "F-81093r1_fix"
+        "fix_id": "F-81093r1_fix",
+        "documentable": false
       },
       "id": "V-74493",
       "title": "DB2 must use NIST FIPS 140-2 validated cryptographic modules for cryptographic operations.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-DB-000122",
         "gid": "V-74495",
         "rid": "SV-89169r1_rule",
         "stig_id": "DB2X-00-004800",
-        "fix_id": "F-81095r1_fix"
+        "fix_id": "F-81095r1_fix",
+        "documentable": false
       },
       "id": "V-74495",
       "title": "DB2 must separate user functionality (including user interface services) from database management functionality.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000224-DB-000384",
         "gid": "V-74497",
         "rid": "SV-89171r1_rule",
         "stig_id": "DB2X-00-005100",
-        "fix_id": "F-81097r1_fix"
+        "fix_id": "F-81097r1_fix",
+        "documentable": false
       },
       "id": "V-74497",
       "title": "DB2 must maintain the authenticity of communications sessions by guarding against man-in-the-middle attacks that guess at Session ID values.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000226-DB-000147",
         "gid": "V-74499",
         "rid": "SV-89173r1_rule",
         "stig_id": "DB2X-00-005300",
-        "fix_id": "F-81099r1_fix"
+        "fix_id": "F-81099r1_fix",
+        "documentable": false
       },
       "id": "V-74499",
       "title": "In the event of a system failure, DB2 must preserve any information necessary to determine cause of failure and any information necessary to return to operations with least disruption to mission processes.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231-DB-000154",
         "gid": "V-74501",
         "rid": "SV-89175r2_rule",
         "stig_id": "DB2X-00-005400",
-        "fix_id": "F-81101r1_fix"
+        "fix_id": "F-81101r1_fix",
+        "documentable": false
       },
       "id": "V-74501",
       "title": "DB2 must protect the confidentiality and integrity of all information at rest.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233-DB-000124",
         "gid": "V-74503",
         "rid": "SV-89177r1_rule",
         "stig_id": "DB2X-00-005500",
-        "fix_id": "F-81103r1_fix"
+        "fix_id": "F-81103r1_fix",
+        "documentable": false
       },
       "id": "V-74503",
       "title": "DB2 must isolate security functions from non-security functions.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000128",
         "gid": "V-74505",
         "rid": "SV-89179r1_rule",
         "stig_id": "DB2X-00-005600",
-        "fix_id": "F-81105r1_fix"
+        "fix_id": "F-81105r1_fix",
+        "documentable": false
       },
       "id": "V-74505",
       "title": "Database contents must be protected from unauthorized and unintended information transfer by enforcement of a data-transfer policy.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000374",
         "gid": "V-74507",
         "rid": "SV-89181r1_rule",
         "stig_id": "DB2X-00-005800",
-        "fix_id": "F-81107r1_fix"
+        "fix_id": "F-81107r1_fix",
+        "documentable": false
       },
       "id": "V-74507",
       "title": "Access to database files must be limited to relevant processes and to authorized, administrative users.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000160",
         "gid": "V-74509",
         "rid": "SV-89183r1_rule",
         "stig_id": "DB2X-00-005900",
-        "fix_id": "F-81109r1_fix"
+        "fix_id": "F-81109r1_fix",
+        "documentable": false
       },
       "id": "V-74509",
       "title": "DB2 must check the validity of all data inputs except those specifically identified by the organization.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000391",
         "gid": "V-74511",
         "rid": "SV-89185r1_rule",
         "stig_id": "DB2X-00-006000",
-        "fix_id": "F-81111r1_fix"
+        "fix_id": "F-81111r1_fix",
+        "documentable": false
       },
       "id": "V-74511",
       "title": "DB2 and associated applications must reserve the use of dynamic code execution for situations that require it.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000392",
         "gid": "V-74513",
         "rid": "SV-89187r1_rule",
         "stig_id": "DB2X-00-006100",
-        "fix_id": "F-81113r1_fix"
+        "fix_id": "F-81113r1_fix",
+        "documentable": false
       },
       "id": "V-74513",
       "title": "DB2 and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266-DB-000162",
         "gid": "V-74515",
         "rid": "SV-89189r1_rule",
         "stig_id": "DB2X-00-006200",
-        "fix_id": "F-81115r1_fix"
+        "fix_id": "F-81115r1_fix",
+        "documentable": false
       },
       "id": "V-74515",
       "title": "DB2 must provide non-privileged users with error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000267-DB-000163",
         "gid": "V-74517",
         "rid": "SV-89191r1_rule",
         "stig_id": "DB2X-00-006300",
-        "fix_id": "F-81117r1_fix"
+        "fix_id": "F-81117r1_fix",
+        "documentable": false
       },
       "id": "V-74517",
       "title": "DB2 must reveal detailed error messages only to the ISSO, ISSM, SA and DBA.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295-DB-000305",
         "gid": "V-74519",
         "rid": "SV-89193r1_rule",
         "stig_id": "DB2X-00-006400",
-        "fix_id": "F-81119r1_fix"
+        "fix_id": "F-81119r1_fix",
+        "documentable": false
       },
       "id": "V-74519",
       "title": "DB2 must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000311-DB-000308",
         "gid": "V-74561",
         "rid": "SV-89235r1_rule",
         "stig_id": "DB2X-00-006600",
-        "fix_id": "F-81161r1_fix"
+        "fix_id": "F-81161r1_fix",
+        "documentable": false
       },
       "id": "V-74561",
       "title": "When supporting applications that require security labeling of data, DB2 must associate organization-defined types of security labels having organization-defined security label values with information in storage.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000313-DB-000309",
         "gid": "V-74563",
         "rid": "SV-89237r1_rule",
         "stig_id": "DB2X-00-006700",
-        "fix_id": "F-81163r1_fix"
+        "fix_id": "F-81163r1_fix",
+        "documentable": false
       },
       "id": "V-74563",
       "title": "When supporting applications that require security labeling of data, DB2 must associate organization-defined types of security labels having organization-defined security label values with information in process.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000340-DB-000304",
         "gid": "V-74565",
         "rid": "SV-89239r1_rule",
         "stig_id": "DB2X-00-007000",
-        "fix_id": "F-81165r1_fix"
+        "fix_id": "F-81165r1_fix",
+        "documentable": false
       },
       "id": "V-74565",
       "title": "DB2 must prevent non-privileged users from executing privileged functions, to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356-DB-000314",
         "gid": "V-74567",
         "rid": "SV-89241r1_rule",
         "stig_id": "DB2X-00-007300",
-        "fix_id": "F-81167r1_fix"
+        "fix_id": "F-81167r1_fix",
+        "documentable": false
       },
       "id": "V-74567",
       "title": "DB2 must utilize centralized management of the content captured in audit records generated by all components of DB2.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357-DB-000316",
         "gid": "V-74569",
         "rid": "SV-89243r1_rule",
         "stig_id": "DB2X-00-007500",
-        "fix_id": "F-81169r1_fix"
+        "fix_id": "F-81169r1_fix",
+        "documentable": false
       },
       "id": "V-74569",
       "title": "DB2 must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000359-DB-000319",
         "gid": "V-74571",
         "rid": "SV-89245r1_rule",
         "stig_id": "DB2X-00-007600",
-        "fix_id": "F-81171r1_fix"
+        "fix_id": "F-81171r1_fix",
+        "documentable": false
       },
       "id": "V-74571",
       "title": "DB2 must provide a warning to appropriate support staff when allocated audit record storage volume reaches 75% of maximum audit record storage capacity.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360-DB-000320",
         "gid": "V-74573",
         "rid": "SV-89247r1_rule",
         "stig_id": "DB2X-00-007700",
-        "fix_id": "F-81173r1_fix"
+        "fix_id": "F-81173r1_fix",
+        "documentable": false
       },
       "id": "V-74573",
       "title": "DB2 must provide an immediate real-time alert to appropriate support staff of all audit failure events requiring real-time alerts.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000515-DB-000318",
         "gid": "V-74575",
         "rid": "SV-89249r1_rule",
         "stig_id": "DB2X-00-012600",
-        "fix_id": "F-81175r1_fix"
+        "fix_id": "F-81175r1_fix",
+        "documentable": false
       },
       "id": "V-74575",
       "title": "DB2 must off-load audit data to a separate log management facility; this must be continuous and in near real time for systems with a network connection to the storage facility and weekly or more often for stand-alone systems.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000508-DB-000358",
         "gid": "V-74577",
         "rid": "SV-89251r1_rule",
         "stig_id": "DB2X-00-012200",
-        "fix_id": "F-81177r1_fix"
+        "fix_id": "F-81177r1_fix",
+        "documentable": false
       },
       "id": "V-74577",
       "title": "DB2 must generate audit records for all direct access to the database(s).",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507-DB-000357",
         "gid": "V-74579",
         "rid": "SV-89253r1_rule",
         "stig_id": "DB2X-00-012100",
-        "fix_id": "F-81179r1_fix"
+        "fix_id": "F-81179r1_fix",
+        "documentable": false
       },
       "id": "V-74579",
       "title": "DB2 must generate audit records when unsuccessful accesses to objects occur.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507-DB-000356",
         "gid": "V-74581",
         "rid": "SV-89255r1_rule",
         "stig_id": "DB2X-00-012000",
-        "fix_id": "F-81181r1_fix"
+        "fix_id": "F-81181r1_fix",
+        "documentable": false
       },
       "id": "V-74581",
       "title": "DB2 must generate audit records when successful accesses to objects occur.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000506-DB-000353",
         "gid": "V-74583",
         "rid": "SV-89257r1_rule",
         "stig_id": "DB2X-00-011900",
-        "fix_id": "F-81183r1_fix"
+        "fix_id": "F-81183r1_fix",
+        "documentable": false
       },
       "id": "V-74583",
       "title": "DB2 must generate audit records when concurrent logons/connections by the same user from different workstations occur.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000505-DB-000352",
         "gid": "V-74585",
         "rid": "SV-89259r1_rule",
         "stig_id": "DB2X-00-011800",
-        "fix_id": "F-81185r1_fix"
+        "fix_id": "F-81185r1_fix",
+        "documentable": false
       },
       "id": "V-74585",
       "title": "DB2 must generate audit records showing starting and ending time for user access to the database(s).",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DB-000355",
         "gid": "V-74587",
         "rid": "SV-89261r1_rule",
         "stig_id": "DB2X-00-011700",
-        "fix_id": "F-81187r1_fix"
+        "fix_id": "F-81187r1_fix",
+        "documentable": false
       },
       "id": "V-74587",
       "title": "DB2 must generate audit records when unsuccessful attempts to execute privileged activities or other system-level access occur.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378-DB-000365",
         "gid": "V-74589",
         "rid": "SV-89263r1_rule",
         "stig_id": "DB2X-00-008000",
-        "fix_id": "F-81189r1_fix"
+        "fix_id": "F-81189r1_fix",
+        "documentable": false
       },
       "id": "V-74589",
       "title": "DB2 must prohibit user installation of logic modules (stored procedures, functions, triggers, views, etc.) without explicit privileged status.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-DB-000360",
         "gid": "V-74591",
         "rid": "SV-89265r1_rule",
         "stig_id": "DB2X-00-008100",
-        "fix_id": "F-81191r1_fix"
+        "fix_id": "F-81191r1_fix",
+        "documentable": false
       },
       "id": "V-74591",
       "title": "DB2 and the operating system must enforce access restrictions associated with changes to the configuration of DB2 or database(s).",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000381-DB-000361",
         "gid": "V-74593",
         "rid": "SV-89267r1_rule",
         "stig_id": "DB2X-00-008200",
-        "fix_id": "F-81193r1_fix"
+        "fix_id": "F-81193r1_fix",
+        "documentable": false
       },
       "id": "V-74593",
       "title": "DB2 must produce audit records of its enforcement of access restrictions associated with changes to the configuration of DB2 or database(s).",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DB-000364",
         "gid": "V-74595",
         "rid": "SV-89269r1_rule",
         "stig_id": "DB2X-00-008300",
-        "fix_id": "F-81195r1_fix"
+        "fix_id": "F-81195r1_fix",
+        "documentable": false
       },
       "id": "V-74595",
       "title": "DB2 must disable network functions, ports, protocols, and services deemed by the organization to be nonsecure, in accord with the Ports, Protocols, and Services Management (PPSM) guidance.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000416-DB-000380",
         "gid": "V-74597",
         "rid": "SV-89271r2_rule",
         "stig_id": "DB2X-00-008600",
-        "fix_id": "F-81197r2_fix"
+        "fix_id": "F-81197r2_fix",
+        "documentable": false
       },
       "id": "V-74597",
       "title": "DB2 must use NSA-approved cryptography to protect classified information in accordance with the data owners requirements.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-DB-000385",
         "gid": "V-74599",
         "rid": "SV-89273r1_rule",
         "stig_id": "DB2X-00-008700",
-        "fix_id": "F-81199r2_fix"
+        "fix_id": "F-81199r2_fix",
+        "documentable": false
       },
       "id": "V-74599",
       "title": "DB2 must only accept end entity certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs) for the establishment of all encrypted sessions.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000428-DB-000386",
         "gid": "V-74601",
         "rid": "SV-89275r1_rule",
         "stig_id": "DB2X-00-008800",
-        "fix_id": "F-81201r1_fix"
+        "fix_id": "F-81201r1_fix",
+        "documentable": false
       },
       "id": "V-74601",
       "title": "DB2 must implement cryptographic mechanisms to prevent unauthorized modification of organization-defined information at rest (to include, at a minimum, PII and classified information) on organization-defined information system components.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429-DB-000387",
         "gid": "V-74603",
         "rid": "SV-89277r1_rule",
         "stig_id": "DB2X-00-008900",
-        "fix_id": "F-81203r2_fix"
+        "fix_id": "F-81203r2_fix",
+        "documentable": false
       },
       "id": "V-74603",
       "title": "DB2 must implement and/or support cryptographic mechanisms preventing the unauthorized disclosure of organization-defined information at rest on organization-defined information system components.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-DB-000378",
         "gid": "V-74605",
         "rid": "SV-89279r2_rule",
         "stig_id": "DB2X-00-009100",
-        "fix_id": "F-81205r2_fix"
+        "fix_id": "F-81205r2_fix",
+        "documentable": false
       },
       "id": "V-74605",
       "title": "DB2 must maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-DB-000379",
         "gid": "V-74607",
         "rid": "SV-89281r2_rule",
         "stig_id": "DB2X-00-009200",
-        "fix_id": "F-81207r2_fix"
+        "fix_id": "F-81207r2_fix",
+        "documentable": false
       },
       "id": "V-74607",
       "title": "DB2 must maintain the confidentiality and integrity of information during reception.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000447-DB-000393",
         "gid": "V-74609",
         "rid": "SV-89283r1_rule",
         "stig_id": "DB2X-00-009300",
-        "fix_id": "F-81209r1_fix"
+        "fix_id": "F-81209r1_fix",
+        "documentable": false
       },
       "id": "V-74609",
       "title": "When invalid inputs are received, DB2 must behave in a predictable and documented manner that reflects organizational and system objectives.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000456-DB-000390",
         "gid": "V-74611",
         "rid": "SV-89285r1_rule",
         "stig_id": "DB2X-00-009500",
-        "fix_id": "F-81211r1_fix"
+        "fix_id": "F-81211r1_fix",
+        "documentable": false
       },
       "id": "V-74611",
       "title": "Security-relevant software updates to DB2 must be installed within the time period directed by an authoritative source (e.g. IAVM, CTOs, DTMs, and STIGs).",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492-DB-000332",
         "gid": "V-74613",
         "rid": "SV-89287r1_rule",
         "stig_id": "DB2X-00-009600",
-        "fix_id": "F-81213r1_fix"
+        "fix_id": "F-81213r1_fix",
+        "documentable": false
       },
       "id": "V-74613",
       "title": "DB2 must generate audit records when security objects are accessed.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492-DB-000333",
         "gid": "V-74615",
         "rid": "SV-89289r1_rule",
         "stig_id": "DB2X-00-009700",
-        "fix_id": "F-81215r1_fix"
+        "fix_id": "F-81215r1_fix",
+        "documentable": false
       },
       "id": "V-74615",
       "title": "DB2 must generate audit records when unsuccessful attempts to access security objects occur.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000494-DB-000344",
         "gid": "V-74617",
         "rid": "SV-89291r1_rule",
         "stig_id": "DB2X-00-009800",
-        "fix_id": "F-81217r1_fix"
+        "fix_id": "F-81217r1_fix",
+        "documentable": false
       },
       "id": "V-74617",
       "title": "DB2 must generate audit records when categorized information (e.g., classification levels/security levels) are accessed.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000494-DB-000345",
         "gid": "V-74619",
         "rid": "SV-89293r1_rule",
         "stig_id": "DB2X-00-009900",
-        "fix_id": "F-81219r1_fix"
+        "fix_id": "F-81219r1_fix",
+        "documentable": false
       },
       "id": "V-74619",
       "title": "DB2 must generate audit records when unsuccessful attempts to access categorized information (e.g., classification levels/security levels) occur.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000326",
         "gid": "V-74621",
         "rid": "SV-89295r1_rule",
         "stig_id": "DB2X-00-010000",
-        "fix_id": "F-81221r1_fix"
+        "fix_id": "F-81221r1_fix",
+        "documentable": false
       },
       "id": "V-74621",
       "title": "DB2 must generate audit records when privileges/permissions are added.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000327",
         "gid": "V-74623",
         "rid": "SV-89297r1_rule",
         "stig_id": "DB2X-00-010100",
-        "fix_id": "F-81223r1_fix"
+        "fix_id": "F-81223r1_fix",
+        "documentable": false
       },
       "id": "V-74623",
       "title": "DB2 must generate audit records when unsuccessful attempts to add privileges/permissions occur.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000328",
         "gid": "V-74625",
         "rid": "SV-89299r1_rule",
         "stig_id": "DB2X-00-010200",
-        "fix_id": "F-81225r1_fix"
+        "fix_id": "F-81225r1_fix",
+        "documentable": false
       },
       "id": "V-74625",
       "title": "DB2 must generate audit records when privileges/permissions are modified.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000329",
         "gid": "V-74627",
         "rid": "SV-89301r1_rule",
         "stig_id": "DB2X-00-010300",
-        "fix_id": "F-81227r1_fix"
+        "fix_id": "F-81227r1_fix",
+        "documentable": false
       },
       "id": "V-74627",
       "title": "DB2 must generate audit records when unsuccessful attempts to modify privileges/permissions occur.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496-DB-000334",
         "gid": "V-74629",
         "rid": "SV-89303r1_rule",
         "stig_id": "DB2X-00-010400",
-        "fix_id": "F-81229r1_fix"
+        "fix_id": "F-81229r1_fix",
+        "documentable": false
       },
       "id": "V-74629",
       "title": "DB2 must generate audit records when security objects are modified.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496-DB-000335",
         "gid": "V-74631",
         "rid": "SV-89305r1_rule",
         "stig_id": "DB2X-00-010500",
-        "fix_id": "F-81231r1_fix"
+        "fix_id": "F-81231r1_fix",
+        "documentable": false
       },
       "id": "V-74631",
       "title": "DB2 must generate audit records when unsuccessful attempts to modify security objects occur.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000498-DB-000346",
         "gid": "V-74633",
         "rid": "SV-89307r1_rule",
         "stig_id": "DB2X-00-010600",
-        "fix_id": "F-81233r1_fix"
+        "fix_id": "F-81233r1_fix",
+        "documentable": false
       },
       "id": "V-74633",
       "title": "DB2 must generate audit records when categorized information (e.g., classification levels/security levels) is modified.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000498-DB-000347",
         "gid": "V-74635",
         "rid": "SV-89309r1_rule",
         "stig_id": "DB2X-00-010700",
-        "fix_id": "F-81235r1_fix"
+        "fix_id": "F-81235r1_fix",
+        "documentable": false
       },
       "id": "V-74635",
       "title": "DB2 must generate audit records when unsuccessful attempts to modify categorized information (e.g., classification levels/security levels) occur.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499-DB-000330",
         "gid": "V-74637",
         "rid": "SV-89311r1_rule",
         "stig_id": "DB2X-00-010800",
-        "fix_id": "F-81237r1_fix"
+        "fix_id": "F-81237r1_fix",
+        "documentable": false
       },
       "id": "V-74637",
       "title": "DB2 must generate audit records when privileges/permissions are deleted.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499-DB-000331",
         "gid": "V-74639",
         "rid": "SV-89313r1_rule",
         "stig_id": "DB2X-00-010900",
-        "fix_id": "F-81239r1_fix"
+        "fix_id": "F-81239r1_fix",
+        "documentable": false
       },
       "id": "V-74639",
       "title": "DB2 must generate audit records when unsuccessful attempts to delete privileges/permissions occur.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501-DB-000336",
         "gid": "V-74641",
         "rid": "SV-89315r1_rule",
         "stig_id": "DB2X-00-011000",
-        "fix_id": "F-81241r1_fix"
+        "fix_id": "F-81241r1_fix",
+        "documentable": false
       },
       "id": "V-74641",
       "title": "DB2 must generate audit records when security objects are deleted.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DB-000354",
         "gid": "V-74643",
         "rid": "SV-89317r1_rule",
         "stig_id": "DB2X-00-011600",
-        "fix_id": "F-81243r1_fix"
+        "fix_id": "F-81243r1_fix",
+        "documentable": false
       },
       "id": "V-74643",
       "title": "DB2 must generate audit records for all privileged activities or other system-level access.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000351",
         "gid": "V-74645",
         "rid": "SV-89319r1_rule",
         "stig_id": "DB2X-00-011500",
-        "fix_id": "F-81245r1_fix"
+        "fix_id": "F-81245r1_fix",
+        "documentable": false
       },
       "id": "V-74645",
       "title": "DB2 must generate audit records when unsuccessful logons or connection attempts occur.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000350",
         "gid": "V-74647",
         "rid": "SV-89321r1_rule",
         "stig_id": "DB2X-00-011400",
-        "fix_id": "F-81247r1_fix"
+        "fix_id": "F-81247r1_fix",
+        "documentable": false
       },
       "id": "V-74647",
       "title": "DB2 must generate audit records when successful logons or connections occur.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501-DB-000337",
         "gid": "V-74649",
         "rid": "SV-89323r1_rule",
         "stig_id": "DB2X-00-011100",
-        "fix_id": "F-81249r1_fix"
+        "fix_id": "F-81249r1_fix",
+        "documentable": false
       },
       "id": "V-74649",
       "title": "DB2 must generate audit records when unsuccessful attempts to delete security objects occur.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000502-DB-000348",
         "gid": "V-74651",
         "rid": "SV-89325r1_rule",
         "stig_id": "DB2X-00-011200",
-        "fix_id": "F-81251r1_fix"
+        "fix_id": "F-81251r1_fix",
+        "documentable": false
       },
       "id": "V-74651",
       "title": "DB2 must generate audit records when categorized information (e.g., classification levels/security levels) is deleted.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000502-DB-000349",
         "gid": "V-74653",
         "rid": "SV-89327r1_rule",
         "stig_id": "DB2X-00-011300",
-        "fix_id": "F-81253r1_fix"
+        "fix_id": "F-81253r1_fix",
+        "documentable": false
       },
       "id": "V-74653",
       "title": "DB2 must generate audit records when unsuccessful attempts to delete categorized information (e.g., classification levels/security levels) occur.",
@@ -1680,7 +1680,5 @@
       }
     }
   ],
-  "name": "IBM_DB2_V10-5_LUW_STIG",
-  "title": "IBM DB2 V10.5 LUW Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "IBM_DB2_V10-5_LUW_STIG"
 }

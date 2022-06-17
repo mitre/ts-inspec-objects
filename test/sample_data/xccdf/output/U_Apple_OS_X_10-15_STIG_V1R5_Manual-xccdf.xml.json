@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
         "gid": "V-225118",
         "rid": "SV-225118r610901_rule",
         "stig_id": "AOSX-15-000001",
-        "fix_id": "F-26805r467523_fix"
+        "fix_id": "F-26805r467523_fix",
+        "documentable": false
       },
       "id": "V-225118",
       "title": "The macOS system must be configured to prevent Apple Watch from terminating a session lock.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
         "gid": "V-225119",
         "rid": "SV-225119r610901_rule",
         "stig_id": "AOSX-15-000002",
-        "fix_id": "F-26806r467526_fix"
+        "fix_id": "F-26806r467526_fix",
+        "documentable": false
       },
       "id": "V-225119",
       "title": "The macOS system must retain the session lock until the user reestablishes access using established identification and authentication procedures.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
         "gid": "V-225120",
         "rid": "SV-225120r610901_rule",
         "stig_id": "AOSX-15-000003",
-        "fix_id": "F-26807r467529_fix"
+        "fix_id": "F-26807r467529_fix",
+        "documentable": false
       },
       "id": "V-225120",
       "title": "The macOS system must initiate the session lock no more than five seconds after a screen saver is started.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-225121",
         "rid": "SV-225121r610901_rule",
         "stig_id": "AOSX-15-000004",
-        "fix_id": "F-26808r467532_fix"
+        "fix_id": "F-26808r467532_fix",
+        "documentable": false
       },
       "id": "V-225121",
       "title": "The macOS system must initiate a session lock after a 15-minute period of inactivity.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000030-GPOS-00011",
         "gid": "V-225122",
         "rid": "SV-225122r610901_rule",
         "stig_id": "AOSX-15-000005",
-        "fix_id": "F-26809r467535_fix"
+        "fix_id": "F-26809r467535_fix",
+        "documentable": false
       },
       "id": "V-225122",
       "title": "The macOS system must be configured to lock the user session when a smart token is removed.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000031-GPOS-00012",
         "gid": "V-225123",
         "rid": "SV-225123r610901_rule",
         "stig_id": "AOSX-15-000006",
-        "fix_id": "F-26810r467538_fix"
+        "fix_id": "F-26810r467538_fix",
+        "documentable": false
       },
       "id": "V-225123",
       "title": "The macOS system must conceal, via the session lock, information previously visible on the display with a publicly viewable image.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000031-GPOS-00012",
         "gid": "V-225124",
         "rid": "SV-225124r610901_rule",
         "stig_id": "AOSX-15-000007",
-        "fix_id": "F-26811r467541_fix"
+        "fix_id": "F-26811r467541_fix",
+        "documentable": false
       },
       "id": "V-225124",
       "title": "The macOS system must be configured to disable hot corners.",
@@ -134,16 +134,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000299-GPOS-00117",
+        "gid": "V-225125",
+        "rid": "SV-225125r610901_rule",
+        "stig_id": "AOSX-15-000008",
+        "fix_id": "F-26812r467544_fix",
         "satisfies": [
           "SRG-OS-000299-GPOS-00117",
           "SRG-OS-000300-GPOS-00118",
           "SRG-OS-000379-GPOS-00164"
         ],
-        "gid": "V-225125",
-        "rid": "SV-225125r610901_rule",
-        "stig_id": "AOSX-15-000008",
-        "fix_id": "F-26812r467544_fix"
+        "documentable": false
       },
       "id": "V-225125",
       "title": "The macOS system must be configured with Wi-Fi support software disabled.",
@@ -157,7 +157,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000250-GPOS-00093",
+        "gid": "V-225126",
+        "rid": "SV-225126r610901_rule",
+        "stig_id": "AOSX-15-000011",
+        "fix_id": "F-26813r485754_fix",
         "satisfies": [
           "SRG-OS-000250-GPOS-00093",
           "SRG-OS-000033-GPOS-00014",
@@ -170,10 +173,7 @@
           "SRG-OS-000425-GPOS-00189",
           "SRG-OS-000426-GPOS-00190"
         ],
-        "gid": "V-225126",
-        "rid": "SV-225126r610901_rule",
-        "stig_id": "AOSX-15-000011",
-        "fix_id": "F-26813r485754_fix"
+        "documentable": false
       },
       "id": "V-225126",
       "title": "The macOS system must implement DoD-approved encryption to protect the confidentiality and integrity of remote access sessions, including transmitted data and data during preparation for transmission, and use replay-resistant authentication mechanisms and implement cryptographic mechanisms to protect the integrity of and verify remote disconnection at the termination of nonlocal maintenance and diagnostic communications.",
@@ -187,15 +187,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000002-GPOS-00002",
+        "gid": "V-225127",
+        "rid": "SV-225127r610901_rule",
+        "stig_id": "AOSX-15-000012",
+        "fix_id": "F-26814r485756_fix",
         "satisfies": [
           "SRG-OS-000002-GPOS-00002",
           "SRG-OS-000123-GPOS-00064"
         ],
-        "gid": "V-225127",
-        "rid": "SV-225127r610901_rule",
-        "stig_id": "AOSX-15-000012",
-        "fix_id": "F-26814r485756_fix"
+        "documentable": false
       },
       "id": "V-225127",
       "title": "The macOS system must automatically remove or disable temporary and emergency user accounts after 72 hours.",
@@ -209,15 +209,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
+        "gid": "V-225128",
+        "rid": "SV-225128r610901_rule",
+        "stig_id": "AOSX-15-000014",
+        "fix_id": "F-26815r467553_fix",
         "satisfies": [
           "SRG-OS-000355-GPOS-00143",
           "SRG-OS-000356-GPOS-00144"
         ],
-        "gid": "V-225128",
-        "rid": "SV-225128r610901_rule",
-        "stig_id": "AOSX-15-000014",
-        "fix_id": "F-26815r467553_fix"
+        "documentable": false
       },
       "id": "V-225128",
       "title": "The macOS system must, for networked systems, compare internal information system clocks at least every 24 hours with a server that is synchronized to one of the redundant United States Naval Observatory (USNO) time servers or a time server designated for the appropriate DoD network (NIPRNet/SIPRNet) and/or the Global Positioning System (GPS).",
@@ -231,11 +231,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000191-GPOS-00080",
         "gid": "V-225129",
         "rid": "SV-225129r610901_rule",
         "stig_id": "AOSX-15-000015",
-        "fix_id": "F-26816r467556_fix"
+        "fix_id": "F-26816r467556_fix",
+        "documentable": false
       },
       "id": "V-225129",
       "title": "The macOS system must utilize an HBSS solution and implement all DoD required modules.",
@@ -249,11 +249,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225130",
         "rid": "SV-225130r610901_rule",
         "stig_id": "AOSX-15-000016",
-        "fix_id": "F-26817r467559_fix"
+        "fix_id": "F-26817r467559_fix",
+        "documentable": false
       },
       "id": "V-225130",
       "title": "The macOS system must be integrated into a directory services infrastructure.",
@@ -267,11 +267,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000021-GPOS-00005",
         "gid": "V-225131",
         "rid": "SV-225131r610901_rule",
         "stig_id": "AOSX-15-000020",
-        "fix_id": "F-26818r467562_fix"
+        "fix_id": "F-26818r467562_fix",
+        "documentable": false
       },
       "id": "V-225131",
       "title": "The macOS system must enforce the limit of three consecutive invalid logon attempts by a user.",
@@ -285,11 +285,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000329-GPOS-00128",
         "gid": "V-225132",
         "rid": "SV-225132r610901_rule",
         "stig_id": "AOSX-15-000021",
-        "fix_id": "F-26819r467565_fix"
+        "fix_id": "F-26819r467565_fix",
+        "documentable": false
       },
       "id": "V-225132",
       "title": "The macOS system must enforce an account lockout time period of 15 minutes in which a user makes three consecutive invalid logon attempts.",
@@ -303,11 +303,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000329-GPOS-00128",
         "gid": "V-225133",
         "rid": "SV-225133r610901_rule",
         "stig_id": "AOSX-15-000022",
-        "fix_id": "F-26820r467568_fix"
+        "fix_id": "F-26820r467568_fix",
+        "documentable": false
       },
       "id": "V-225133",
       "title": "The macOS system must enforce the limit of three consecutive invalid logon attempts by a user before the user account is locked.",
@@ -321,11 +321,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-225134",
         "rid": "SV-225134r610901_rule",
         "stig_id": "AOSX-15-000023",
-        "fix_id": "F-26821r467571_fix"
+        "fix_id": "F-26821r467571_fix",
+        "documentable": false
       },
       "id": "V-225134",
       "title": "The macOS system must display the Standard Mandatory DoD Notice and Consent Banner before granting remote access to the operating system.",
@@ -339,15 +339,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-225135",
+        "rid": "SV-225135r610901_rule",
+        "stig_id": "AOSX-15-000024",
+        "fix_id": "F-26822r467574_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007"
         ],
-        "gid": "V-225135",
-        "rid": "SV-225135r610901_rule",
-        "stig_id": "AOSX-15-000024",
-        "fix_id": "F-26822r467574_fix"
+        "documentable": false
       },
       "id": "V-225135",
       "title": "The macOS system must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the system via SSH.",
@@ -361,16 +361,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-225136",
+        "rid": "SV-225136r610901_rule",
+        "stig_id": "AOSX-15-000025",
+        "fix_id": "F-26823r467577_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "gid": "V-225136",
-        "rid": "SV-225136r610901_rule",
-        "stig_id": "AOSX-15-000025",
-        "fix_id": "F-26823r467577_fix"
+        "documentable": false
       },
       "id": "V-225136",
       "title": "The macOS system must be configured so that any connection to the system must display the Standard Mandatory DoD Notice and Consent Banner before granting GUI access to the system.",
@@ -384,15 +384,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-225137",
+        "rid": "SV-225137r610901_rule",
+        "stig_id": "AOSX-15-000030",
+        "fix_id": "F-26824r467580_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000206-GPOS-00084"
         ],
-        "gid": "V-225137",
-        "rid": "SV-225137r610901_rule",
-        "stig_id": "AOSX-15-000030",
-        "fix_id": "F-26824r467580_fix"
+        "documentable": false
       },
       "id": "V-225137",
       "title": "The macOS system must be configured so that log files must not contain access control lists (ACLs).",
@@ -406,11 +406,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-225138",
         "rid": "SV-225138r610901_rule",
         "stig_id": "AOSX-15-000031",
-        "fix_id": "F-26825r467583_fix"
+        "fix_id": "F-26825r467583_fix",
+        "documentable": false
       },
       "id": "V-225138",
       "title": "The macOS system must be configured so that log folders must not contain access control lists (ACLs).",
@@ -424,11 +424,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-225139",
         "rid": "SV-225139r610901_rule",
         "stig_id": "AOSX-15-000051",
-        "fix_id": "F-26826r467586_fix"
+        "fix_id": "F-26826r467586_fix",
+        "documentable": false
       },
       "id": "V-225139",
       "title": "The macOS system must be configured with the SSH daemon ClientAliveInterval option set to 900 or less.",
@@ -442,11 +442,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-225140",
         "rid": "SV-225140r610901_rule",
         "stig_id": "AOSX-15-000052",
-        "fix_id": "F-26827r467589_fix"
+        "fix_id": "F-26827r467589_fix",
+        "documentable": false
       },
       "id": "V-225140",
       "title": "The macOS system must be configured with the SSH daemon ClientAliveCountMax option set to 0.",
@@ -460,11 +460,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-225141",
         "rid": "SV-225141r610901_rule",
         "stig_id": "AOSX-15-000053",
-        "fix_id": "F-26828r467592_fix"
+        "fix_id": "F-26828r467592_fix",
+        "documentable": false
       },
       "id": "V-225141",
       "title": "The macOS system must be configured with the SSH daemon LoginGraceTime set to 30 or less.",
@@ -478,7 +478,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-225142",
+        "rid": "SV-225142r610901_rule",
+        "stig_id": "AOSX-15-001001",
+        "fix_id": "F-26829r485759_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -491,10 +494,7 @@
           "SRG-OS-000476-GPOS-00221",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-225142",
-        "rid": "SV-225142r610901_rule",
-        "stig_id": "AOSX-15-001001",
-        "fix_id": "F-26829r485759_fix"
+        "documentable": false
       },
       "id": "V-225142",
       "title": "The macOS system must generate audit records for all account creations, modifications, disabling, and termination events; privileged activities or other system-level access; all kernel module load, unload, and restart actions; all program initiations; and organizationally defined events for all non-local maintenance and diagnostic sessions.",
@@ -508,15 +508,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
+        "gid": "V-225143",
+        "rid": "SV-225143r610901_rule",
+        "stig_id": "AOSX-15-001002",
+        "fix_id": "F-26830r485761_fix",
         "satisfies": [
           "SRG-OS-000032-GPOS-00013",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "gid": "V-225143",
-        "rid": "SV-225143r610901_rule",
-        "stig_id": "AOSX-15-001002",
-        "fix_id": "F-26830r485761_fix"
+        "documentable": false
       },
       "id": "V-225143",
       "title": "The macOS system must monitor remote access methods and generate audit records when successful/unsuccessful attempts to access/modify privileges occur.",
@@ -530,7 +530,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-225144",
+        "rid": "SV-225144r610901_rule",
+        "stig_id": "AOSX-15-001003",
+        "fix_id": "F-26831r467601_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000038-GPOS-00016",
@@ -547,10 +550,7 @@
           "SRG-OS-000358-GPOS-00145",
           "SRG-OS-000359-GPOS-00146"
         ],
-        "gid": "V-225144",
-        "rid": "SV-225144r610901_rule",
-        "stig_id": "AOSX-15-001003",
-        "fix_id": "F-26831r467601_fix"
+        "documentable": false
       },
       "id": "V-225144",
       "title": "The macOS system must initiate session audits at system startup, using internal clocks with time stamps for audit records that meet a minimum granularity of one second and can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT), to generate audit records containing information to establish what type of events occurred; the identity of any individual or process associated with the event, including individual identities of group account users; and establish where the events occurred, source of the event, and outcome of the events, including all account enabling actions, full-text recording of privileged commands, and information about the use of encryption for access wireless access to and from the system.",
@@ -564,11 +564,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000047-GPOS-00023",
         "gid": "V-225145",
         "rid": "SV-225145r610901_rule",
         "stig_id": "AOSX-15-001010",
-        "fix_id": "F-26832r485786_fix"
+        "fix_id": "F-26832r485786_fix",
+        "documentable": false
       },
       "id": "V-225145",
       "title": "The macOS system must shut down by default upon audit failure (unless availability is an overriding concern).",
@@ -582,11 +582,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-225146",
         "rid": "SV-225146r610901_rule",
         "stig_id": "AOSX-15-001012",
-        "fix_id": "F-26833r467607_fix"
+        "fix_id": "F-26833r467607_fix",
+        "documentable": false
       },
       "id": "V-225146",
       "title": "The macOS system must be configured with audit log files owned by root.",
@@ -600,11 +600,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-225147",
         "rid": "SV-225147r610901_rule",
         "stig_id": "AOSX-15-001013",
-        "fix_id": "F-26834r467610_fix"
+        "fix_id": "F-26834r467610_fix",
+        "documentable": false
       },
       "id": "V-225147",
       "title": "The macOS system must be configured with audit log folders owned by root.",
@@ -618,11 +618,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-225148",
         "rid": "SV-225148r610901_rule",
         "stig_id": "AOSX-15-001014",
-        "fix_id": "F-26835r467613_fix"
+        "fix_id": "F-26835r467613_fix",
+        "documentable": false
       },
       "id": "V-225148",
       "title": "The macOS system must be configured with audit log files group-owned by wheel.",
@@ -636,11 +636,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-225149",
         "rid": "SV-225149r610901_rule",
         "stig_id": "AOSX-15-001015",
-        "fix_id": "F-26836r467616_fix"
+        "fix_id": "F-26836r467616_fix",
+        "documentable": false
       },
       "id": "V-225149",
       "title": "The macOS system must be configured with audit log folders group-owned by wheel.",
@@ -654,11 +654,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
         "gid": "V-225150",
         "rid": "SV-225150r610901_rule",
         "stig_id": "AOSX-15-001016",
-        "fix_id": "F-26837r467619_fix"
+        "fix_id": "F-26837r467619_fix",
+        "documentable": false
       },
       "id": "V-225150",
       "title": "The macOS system must be configured with audit log files set to mode 440 or less permissive.",
@@ -672,16 +672,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-225151",
+        "rid": "SV-225151r610901_rule",
+        "stig_id": "AOSX-15-001017",
+        "fix_id": "F-26838r467622_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-225151",
-        "rid": "SV-225151r610901_rule",
-        "stig_id": "AOSX-15-001017",
-        "fix_id": "F-26838r467622_fix"
+        "documentable": false
       },
       "id": "V-225151",
       "title": "The macOS system must be configured with audit log folders set to mode 700 or less permissive.",
@@ -695,7 +695,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-225152",
+        "rid": "SV-225152r610901_rule",
+        "stig_id": "AOSX-15-001020",
+        "fix_id": "F-26839r485764_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000365-GPOS-00152",
@@ -708,10 +711,7 @@
           "SRG-OS-000468-GPOS-00212",
           "SRG-OS-000474-GPOS-00219"
         ],
-        "gid": "V-225152",
-        "rid": "SV-225152r610901_rule",
-        "stig_id": "AOSX-15-001020",
-        "fix_id": "F-26839r485764_fix"
+        "documentable": false
       },
       "id": "V-225152",
       "title": "The macOS system must audit the enforcement actions used to restrict access associated with changes to the system.",
@@ -725,11 +725,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-225153",
         "rid": "SV-225153r610901_rule",
         "stig_id": "AOSX-15-001029",
-        "fix_id": "F-26840r485766_fix"
+        "fix_id": "F-26840r485766_fix",
+        "documentable": false
       },
       "id": "V-225153",
       "title": "The macOS system must allocate audit record storage capacity to store at least one week's worth of audit records when audit records are not immediately sent to a central audit record storage facility.",
@@ -743,11 +743,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000343-GPOS-00134",
         "gid": "V-225154",
         "rid": "SV-225154r610901_rule",
         "stig_id": "AOSX-15-001030",
-        "fix_id": "F-26841r485767_fix"
+        "fix_id": "F-26841r485767_fix",
+        "documentable": false
       },
       "id": "V-225154",
       "title": "The macOS system must provide an immediate warning to the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when allocated audit record storage volume reaches 75 percent of repository maximum audit record storage capacity.",
@@ -761,11 +761,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000344-GPOS-00135",
         "gid": "V-225155",
         "rid": "SV-225155r610901_rule",
         "stig_id": "AOSX-15-001031",
-        "fix_id": "F-26842r467634_fix"
+        "fix_id": "F-26842r467634_fix",
+        "documentable": false
       },
       "id": "V-225155",
       "title": "The macOS system must provide an immediate real-time alert to the System Administrator (SA) and Information System Security Officer (ISSO), at a minimum, of all audit failure events requiring real-time alerts.",
@@ -779,17 +779,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
+        "gid": "V-225156",
+        "rid": "SV-225156r610901_rule",
+        "stig_id": "AOSX-15-001044",
+        "fix_id": "F-26843r485769_fix",
         "satisfies": [
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000472-GPOS-00217",
           "SRG-OS-000473-GPOS-00218",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "gid": "V-225156",
-        "rid": "SV-225156r610901_rule",
-        "stig_id": "AOSX-15-001044",
-        "fix_id": "F-26843r485769_fix"
+        "documentable": false
       },
       "id": "V-225156",
       "title": "The macOS system must generate audit records for DoD-defined events such as successful/unsuccessful logon attempts, successful/unsuccessful direct access attempts, starting and ending time for user access, and concurrent logons to the same account from different sources.",
@@ -803,7 +803,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000376-GPOS-00161",
+        "gid": "V-225157",
+        "rid": "SV-225157r610901_rule",
+        "stig_id": "AOSX-15-001060",
+        "fix_id": "F-26844r467640_fix",
         "satisfies": [
           "SRG-OS-000376-GPOS-00161",
           "SRG-OS-000377-GPOS-00162",
@@ -811,10 +814,7 @@
           "SRG-OS-000403-GPOS-00182",
           "SRG-OS-000067-GPOS-00035"
         ],
-        "gid": "V-225157",
-        "rid": "SV-225157r610901_rule",
-        "stig_id": "AOSX-15-001060",
-        "fix_id": "F-26844r467640_fix"
+        "documentable": false
       },
       "id": "V-225157",
       "title": "The macOS system must accept and verify Personal Identity Verification (PIV) credentials, implement a local cache of revocation data to support path discovery and validation in case of the inability to access revocation information via the network, and only allow the use of DoD PKI-established certificate authorities for verification of the establishment of protected sessions.",
@@ -828,11 +828,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000109-GPOS-00056",
         "gid": "V-225158",
         "rid": "SV-225158r610901_rule",
         "stig_id": "AOSX-15-001100",
-        "fix_id": "F-26845r467643_fix"
+        "fix_id": "F-26845r467643_fix",
+        "documentable": false
       },
       "id": "V-225158",
       "title": "The macOS system must require individuals to be authenticated with an individual authenticator prior to using a group authenticator.",
@@ -846,11 +846,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225159",
         "rid": "SV-225159r610901_rule",
         "stig_id": "AOSX-15-002001",
-        "fix_id": "F-26846r467646_fix"
+        "fix_id": "F-26846r467646_fix",
+        "documentable": false
       },
       "id": "V-225159",
       "title": "The macOS system must be configured to disable SMB File Sharing unless it is required.",
@@ -864,11 +864,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225160",
         "rid": "SV-225160r610901_rule",
         "stig_id": "AOSX-15-002002",
-        "fix_id": "F-26847r467649_fix"
+        "fix_id": "F-26847r467649_fix",
+        "documentable": false
       },
       "id": "V-225160",
       "title": "The macOS system must be configured to disable Apple File (AFP) Sharing.",
@@ -882,11 +882,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225161",
         "rid": "SV-225161r610901_rule",
         "stig_id": "AOSX-15-002003",
-        "fix_id": "F-26848r467652_fix"
+        "fix_id": "F-26848r467652_fix",
+        "documentable": false
       },
       "id": "V-225161",
       "title": "The macOS system must be configured to disable the Network File System (NFS) daemon unless it is required.",
@@ -900,11 +900,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225162",
         "rid": "SV-225162r610901_rule",
         "stig_id": "AOSX-15-002004",
-        "fix_id": "F-26849r467655_fix"
+        "fix_id": "F-26849r467655_fix",
+        "documentable": false
       },
       "id": "V-225162",
       "title": "The macOS system must be configured to disable Location Services.",
@@ -918,11 +918,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225163",
         "rid": "SV-225163r610901_rule",
         "stig_id": "AOSX-15-002005",
-        "fix_id": "F-26850r467658_fix"
+        "fix_id": "F-26850r467658_fix",
+        "documentable": false
       },
       "id": "V-225163",
       "title": "The macOS system must be configured to disable Bonjour multicast advertising.",
@@ -936,11 +936,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225164",
         "rid": "SV-225164r610901_rule",
         "stig_id": "AOSX-15-002006",
-        "fix_id": "F-26851r467661_fix"
+        "fix_id": "F-26851r467661_fix",
+        "documentable": false
       },
       "id": "V-225164",
       "title": "The macOS system must be configured to disable the UUCP service.",
@@ -954,11 +954,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225165",
         "rid": "SV-225165r610901_rule",
         "stig_id": "AOSX-15-002007",
-        "fix_id": "F-26852r467664_fix"
+        "fix_id": "F-26852r467664_fix",
+        "documentable": false
       },
       "id": "V-225165",
       "title": "The macOS system must be configured to disable Internet Sharing.",
@@ -972,11 +972,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225166",
         "rid": "SV-225166r610901_rule",
         "stig_id": "AOSX-15-002008",
-        "fix_id": "F-26853r467667_fix"
+        "fix_id": "F-26853r467667_fix",
+        "documentable": false
       },
       "id": "V-225166",
       "title": "The macOS system must be configured to disable Web Sharing.",
@@ -990,11 +990,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225167",
         "rid": "SV-225167r610901_rule",
         "stig_id": "AOSX-15-002009",
-        "fix_id": "F-26854r467670_fix"
+        "fix_id": "F-26854r467670_fix",
+        "documentable": false
       },
       "id": "V-225167",
       "title": "The macOS system must be configured to disable AirDrop.",
@@ -1008,15 +1008,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225168",
+        "rid": "SV-225168r610901_rule",
+        "stig_id": "AOSX-15-002010",
+        "fix_id": "F-26855r467673_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225168",
-        "rid": "SV-225168r610901_rule",
-        "stig_id": "AOSX-15-002010",
-        "fix_id": "F-26855r467673_fix"
+        "documentable": false
       },
       "id": "V-225168",
       "title": "The macOS system must be configured to disable the application FaceTime.",
@@ -1030,15 +1030,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225169",
+        "rid": "SV-225169r610901_rule",
+        "stig_id": "AOSX-15-002011",
+        "fix_id": "F-26856r467676_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225169",
-        "rid": "SV-225169r610901_rule",
-        "stig_id": "AOSX-15-002011",
-        "fix_id": "F-26856r467676_fix"
+        "documentable": false
       },
       "id": "V-225169",
       "title": "The macOS system must be configured to disable the application Messages.",
@@ -1052,15 +1052,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225170",
+        "rid": "SV-225170r610901_rule",
+        "stig_id": "AOSX-15-002012",
+        "fix_id": "F-26857r467679_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225170",
-        "rid": "SV-225170r610901_rule",
-        "stig_id": "AOSX-15-002012",
-        "fix_id": "F-26857r467679_fix"
+        "documentable": false
       },
       "id": "V-225170",
       "title": "The macOS system must be configured to disable the iCloud Calendar services.",
@@ -1074,15 +1074,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225171",
+        "rid": "SV-225171r610901_rule",
+        "stig_id": "AOSX-15-002013",
+        "fix_id": "F-26858r467682_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225171",
-        "rid": "SV-225171r610901_rule",
-        "stig_id": "AOSX-15-002013",
-        "fix_id": "F-26858r467682_fix"
+        "documentable": false
       },
       "id": "V-225171",
       "title": "The macOS system must be configured to disable the iCloud Reminders services.",
@@ -1096,15 +1096,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225172",
+        "rid": "SV-225172r610901_rule",
+        "stig_id": "AOSX-15-002014",
+        "fix_id": "F-26859r467685_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225172",
-        "rid": "SV-225172r610901_rule",
-        "stig_id": "AOSX-15-002014",
-        "fix_id": "F-26859r467685_fix"
+        "documentable": false
       },
       "id": "V-225172",
       "title": "The macOS system must be configured to disable iCloud Address Book services.",
@@ -1118,15 +1118,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225173",
+        "rid": "SV-225173r610901_rule",
+        "stig_id": "AOSX-15-002015",
+        "fix_id": "F-26860r467688_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225173",
-        "rid": "SV-225173r610901_rule",
-        "stig_id": "AOSX-15-002015",
-        "fix_id": "F-26860r467688_fix"
+        "documentable": false
       },
       "id": "V-225173",
       "title": "The macOS system must be configured to disable the Mail iCloud services.",
@@ -1140,15 +1140,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225174",
+        "rid": "SV-225174r610901_rule",
+        "stig_id": "AOSX-15-002016",
+        "fix_id": "F-26861r467691_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225174",
-        "rid": "SV-225174r610901_rule",
-        "stig_id": "AOSX-15-002016",
-        "fix_id": "F-26861r467691_fix"
+        "documentable": false
       },
       "id": "V-225174",
       "title": "The macOS system must be configured to disable the iCloud Notes services.",
@@ -1162,15 +1162,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225175",
+        "rid": "SV-225175r610901_rule",
+        "stig_id": "AOSX-15-002017",
+        "fix_id": "F-26862r467694_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225175",
-        "rid": "SV-225175r610901_rule",
-        "stig_id": "AOSX-15-002017",
-        "fix_id": "F-26862r467694_fix"
+        "documentable": false
       },
       "id": "V-225175",
       "title": "The macOS system must cover or disable the built-in or attached camera when not in use.",
@@ -1184,11 +1184,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225176",
         "rid": "SV-225176r610901_rule",
         "stig_id": "AOSX-15-002019",
-        "fix_id": "F-26863r467697_fix"
+        "fix_id": "F-26863r467697_fix",
+        "documentable": false
       },
       "id": "V-225176",
       "title": "The macOS system must be configured to disable the application Mail.",
@@ -1202,15 +1202,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225177",
+        "rid": "SV-225177r610901_rule",
+        "stig_id": "AOSX-15-002020",
+        "fix_id": "F-26864r467700_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225177",
-        "rid": "SV-225177r610901_rule",
-        "stig_id": "AOSX-15-002020",
-        "fix_id": "F-26864r467700_fix"
+        "documentable": false
       },
       "id": "V-225177",
       "title": "The macOS system must be configured to disable Siri and dictation.",
@@ -1224,11 +1224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-225178",
         "rid": "SV-225178r610901_rule",
         "stig_id": "AOSX-15-002021",
-        "fix_id": "F-26865r485772_fix"
+        "fix_id": "F-26865r485772_fix",
+        "documentable": false
       },
       "id": "V-225178",
       "title": "The macOS system must be configured to disable sending diagnostic and usage data to Apple.",
@@ -1242,11 +1242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-225179",
         "rid": "SV-225179r610901_rule",
         "stig_id": "AOSX-15-002022",
-        "fix_id": "F-26866r467706_fix"
+        "fix_id": "F-26866r467706_fix",
+        "documentable": false
       },
       "id": "V-225179",
       "title": "The macOS system must be configured to disable Remote Apple Events.",
@@ -1260,11 +1260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225180",
         "rid": "SV-225180r610901_rule",
         "stig_id": "AOSX-15-002023",
-        "fix_id": "F-26867r467709_fix"
+        "fix_id": "F-26867r467709_fix",
+        "documentable": false
       },
       "id": "V-225180",
       "title": "The macOS system must be configured to disable the application Calendar.",
@@ -1278,11 +1278,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000370-GPOS-00155",
         "gid": "V-225181",
         "rid": "SV-225181r610901_rule",
         "stig_id": "AOSX-15-002031",
-        "fix_id": "F-26868r467712_fix"
+        "fix_id": "F-26868r467712_fix",
+        "documentable": false
       },
       "id": "V-225181",
       "title": "The macOS system must be configured to disable the system preference pane for iCloud.",
@@ -1296,15 +1296,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000370-GPOS-00155",
+        "gid": "V-225182",
+        "rid": "SV-225182r755165_rule",
+        "stig_id": "AOSX-15-002032",
+        "fix_id": "F-26869r467715_fix",
         "satisfies": [
           "SRG-OS-000370-GPOS-00155",
           "SRG-OS-000095-GPOS-00049"
         ],
-        "gid": "V-225182",
-        "rid": "SV-225182r755165_rule",
-        "stig_id": "AOSX-15-002032",
-        "fix_id": "F-26869r467715_fix"
+        "documentable": false
       },
       "id": "V-225182",
       "title": "The macOS system must be configured to disable the system preference pane for Internet Accounts.",
@@ -1318,11 +1318,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225183",
         "rid": "SV-225183r610901_rule",
         "stig_id": "AOSX-15-002034",
-        "fix_id": "F-26870r467718_fix"
+        "fix_id": "F-26870r467718_fix",
+        "documentable": false
       },
       "id": "V-225183",
       "title": "The macOS system must be configured to disable the Siri Setup services.",
@@ -1336,11 +1336,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225184",
         "rid": "SV-225184r610901_rule",
         "stig_id": "AOSX-15-002035",
-        "fix_id": "F-26871r467721_fix"
+        "fix_id": "F-26871r467721_fix",
+        "documentable": false
       },
       "id": "V-225184",
       "title": "The macOS system must be configured to disable the Cloud Setup services.",
@@ -1354,11 +1354,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225185",
         "rid": "SV-225185r610901_rule",
         "stig_id": "AOSX-15-002036",
-        "fix_id": "F-26872r467724_fix"
+        "fix_id": "F-26872r467724_fix",
+        "documentable": false
       },
       "id": "V-225185",
       "title": "The macOS system must be configured to disable the Privacy Setup services.",
@@ -1372,11 +1372,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-225186",
         "rid": "SV-225186r610901_rule",
         "stig_id": "AOSX-15-002037",
-        "fix_id": "F-26873r467727_fix"
+        "fix_id": "F-26873r467727_fix",
+        "documentable": false
       },
       "id": "V-225186",
       "title": "The macOS system must be configured to disable the Cloud Storage Setup services.",
@@ -1390,11 +1390,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-225187",
         "rid": "SV-225187r610901_rule",
         "stig_id": "AOSX-15-002038",
-        "fix_id": "F-26874r467730_fix"
+        "fix_id": "F-26874r467730_fix",
+        "documentable": false
       },
       "id": "V-225187",
       "title": "The macOS system must be configured to disable the tftp service.",
@@ -1408,15 +1408,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225188",
+        "rid": "SV-225188r610901_rule",
+        "stig_id": "AOSX-15-002039",
+        "fix_id": "F-26875r467733_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225188",
-        "rid": "SV-225188r610901_rule",
-        "stig_id": "AOSX-15-002039",
-        "fix_id": "F-26875r467733_fix"
+        "documentable": false
       },
       "id": "V-225188",
       "title": "The macOS system must disable Siri setup pop-ups.",
@@ -1430,15 +1430,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225189",
+        "rid": "SV-225189r610901_rule",
+        "stig_id": "AOSX-15-002040",
+        "fix_id": "F-26876r467736_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225189",
-        "rid": "SV-225189r610901_rule",
-        "stig_id": "AOSX-15-002040",
-        "fix_id": "F-26876r467736_fix"
+        "documentable": false
       },
       "id": "V-225189",
       "title": "The macOS system must disable iCloud Keychain synchronization.",
@@ -1452,15 +1452,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225190",
+        "rid": "SV-225190r610901_rule",
+        "stig_id": "AOSX-15-002041",
+        "fix_id": "F-26877r467739_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225190",
-        "rid": "SV-225190r610901_rule",
-        "stig_id": "AOSX-15-002041",
-        "fix_id": "F-26877r467739_fix"
+        "documentable": false
       },
       "id": "V-225190",
       "title": "The macOS system must disable iCloud document synchronization.",
@@ -1474,15 +1474,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225191",
+        "rid": "SV-225191r610901_rule",
+        "stig_id": "AOSX-15-002042",
+        "fix_id": "F-26878r467742_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225191",
-        "rid": "SV-225191r610901_rule",
-        "stig_id": "AOSX-15-002042",
-        "fix_id": "F-26878r467742_fix"
+        "documentable": false
       },
       "id": "V-225191",
       "title": "The macOS system must disable iCloud bookmark synchronization.",
@@ -1496,15 +1496,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-225192",
+        "rid": "SV-225192r610901_rule",
+        "stig_id": "AOSX-15-002043",
+        "fix_id": "F-26879r467745_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-225192",
-        "rid": "SV-225192r610901_rule",
-        "stig_id": "AOSX-15-002043",
-        "fix_id": "F-26879r467745_fix"
+        "documentable": false
       },
       "id": "V-225192",
       "title": "The macOS system must disable iCloud photo library.",
@@ -1518,11 +1518,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225193",
         "rid": "SV-225193r610901_rule",
         "stig_id": "AOSX-15-002050",
-        "fix_id": "F-26880r467748_fix"
+        "fix_id": "F-26880r467748_fix",
+        "documentable": false
       },
       "id": "V-225193",
       "title": "The macOS system must disable the Screen Sharing feature.",
@@ -1536,11 +1536,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225194",
         "rid": "SV-225194r648724_rule",
         "stig_id": "AOSX-15-002060",
-        "fix_id": "F-26881r467751_fix"
+        "fix_id": "F-26881r467751_fix",
+        "documentable": false
       },
       "id": "V-225194",
       "title": "The macOS system must allow only applications that have a valid digital signature to run.",
@@ -1554,11 +1554,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000481-GPOS-000481",
         "gid": "V-225196",
         "rid": "SV-225196r766587_rule",
         "stig_id": "AOSX-15-002062",
-        "fix_id": "F-26883r755167_fix"
+        "fix_id": "F-26883r755167_fix",
+        "documentable": false
       },
       "id": "V-225196",
       "title": "The macOS system must be configured with Bluetooth turned off unless approved by the organization.",
@@ -1572,11 +1572,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000364-GPOS-00151",
         "gid": "V-225197",
         "rid": "SV-225197r610901_rule",
         "stig_id": "AOSX-15-002063",
-        "fix_id": "F-26884r467760_fix"
+        "fix_id": "F-26884r467760_fix",
+        "documentable": false
       },
       "id": "V-225197",
       "title": "The macOS system must enforce access restrictions.",
@@ -1590,11 +1590,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000366-GPOS-00153",
         "gid": "V-225198",
         "rid": "SV-225198r610901_rule",
         "stig_id": "AOSX-15-002064",
-        "fix_id": "F-26885r467763_fix"
+        "fix_id": "F-26885r467763_fix",
+        "documentable": false
       },
       "id": "V-225198",
       "title": "The macOS system must have the security assessment policy subsystem enabled.",
@@ -1608,11 +1608,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-225199",
         "rid": "SV-225199r610901_rule",
         "stig_id": "AOSX-15-002066",
-        "fix_id": "F-26886r467766_fix"
+        "fix_id": "F-26886r467766_fix",
+        "documentable": false
       },
       "id": "V-225199",
       "title": "The macOS system must not allow an unattended or automatic logon to the system.",
@@ -1626,11 +1626,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000362-GPOS-00149",
         "gid": "V-225200",
         "rid": "SV-225200r610901_rule",
         "stig_id": "AOSX-15-002067",
-        "fix_id": "F-26887r467769_fix"
+        "fix_id": "F-26887r467769_fix",
+        "documentable": false
       },
       "id": "V-225200",
       "title": "The macOS system must prohibit user installation of software without explicit privileged status.",
@@ -1644,15 +1644,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00228",
+        "gid": "V-225201",
+        "rid": "SV-225201r610901_rule",
+        "stig_id": "AOSX-15-002068",
+        "fix_id": "F-26888r467772_fix",
         "satisfies": [
           "SRG-OS-000480-GPOS-00228",
           "SRG-OS-000480-GPOS-00230"
         ],
-        "gid": "V-225201",
-        "rid": "SV-225201r610901_rule",
-        "stig_id": "AOSX-15-002068",
-        "fix_id": "F-26888r467772_fix"
+        "documentable": false
       },
       "id": "V-225201",
       "title": "The macOS system must set permissions on user home directories to prevent users from having access to read or modify another users files.",
@@ -1666,11 +1666,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225203",
         "rid": "SV-225203r610901_rule",
         "stig_id": "AOSX-15-002070",
-        "fix_id": "F-26890r467778_fix"
+        "fix_id": "F-26890r467778_fix",
+        "documentable": false
       },
       "id": "V-225203",
       "title": "The macOS system must use an approved antivirus program.",
@@ -1684,15 +1684,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
+        "gid": "V-225204",
+        "rid": "SV-225204r610901_rule",
+        "stig_id": "AOSX-15-003001",
+        "fix_id": "F-26891r467781_fix",
         "satisfies": [
           "SRG-OS-000066-GPOS-00034",
           "SRG-OS-000478-GPOS-00223"
         ],
-        "gid": "V-225204",
-        "rid": "SV-225204r610901_rule",
-        "stig_id": "AOSX-15-003001",
-        "fix_id": "F-26891r467781_fix"
+        "documentable": false
       },
       "id": "V-225204",
       "title": "The macOS system must issue or obtain public key certificates under an appropriate certificate policy from an approved service provider.",
@@ -1706,11 +1706,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000071-GPOS-00039",
         "gid": "V-225205",
         "rid": "SV-225205r610901_rule",
         "stig_id": "AOSX-15-003007",
-        "fix_id": "F-26892r467784_fix"
+        "fix_id": "F-26892r467784_fix",
+        "documentable": false
       },
       "id": "V-225205",
       "title": "The macOS system must enforce password complexity by requiring that at least one numeric character be used.",
@@ -1724,11 +1724,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-225206",
         "rid": "SV-225206r610901_rule",
         "stig_id": "AOSX-15-003008",
-        "fix_id": "F-26893r467787_fix"
+        "fix_id": "F-26893r467787_fix",
+        "documentable": false
       },
       "id": "V-225206",
       "title": "The macOS system must enforce a 60-day maximum password lifetime restriction.",
@@ -1742,11 +1742,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-225207",
         "rid": "SV-225207r610901_rule",
         "stig_id": "AOSX-15-003009",
-        "fix_id": "F-26894r467790_fix"
+        "fix_id": "F-26894r467790_fix",
+        "documentable": false
       },
       "id": "V-225207",
       "title": "The macOS system must prohibit password reuse for a minimum of five generations.",
@@ -1760,11 +1760,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-225208",
         "rid": "SV-225208r610901_rule",
         "stig_id": "AOSX-15-003010",
-        "fix_id": "F-26895r467793_fix"
+        "fix_id": "F-26895r467793_fix",
+        "documentable": false
       },
       "id": "V-225208",
       "title": "The macOS system must enforce a minimum 15-character password length.",
@@ -1778,11 +1778,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000266-GPOS-00101",
         "gid": "V-225209",
         "rid": "SV-225209r610901_rule",
         "stig_id": "AOSX-15-003011",
-        "fix_id": "F-26896r467796_fix"
+        "fix_id": "F-26896r467796_fix",
+        "documentable": false
       },
       "id": "V-225209",
       "title": "The macOS system must enforce password complexity by requiring that at least one special character be used.",
@@ -1796,11 +1796,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225210",
         "rid": "SV-225210r610901_rule",
         "stig_id": "AOSX-15-003012",
-        "fix_id": "F-26897r467799_fix"
+        "fix_id": "F-26897r467799_fix",
+        "documentable": false
       },
       "id": "V-225210",
       "title": "The macOS system must be configured to prevent displaying password hints.",
@@ -1814,11 +1814,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225211",
         "rid": "SV-225211r610901_rule",
         "stig_id": "AOSX-15-003013",
-        "fix_id": "F-26898r485774_fix"
+        "fix_id": "F-26898r485774_fix",
+        "documentable": false
       },
       "id": "V-225211",
       "title": "The macOS system must be configured with a firmware password to prevent access to single user mode and booting from alternative media.",
@@ -1832,7 +1832,10 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000105-GPOS-00052",
+        "gid": "V-225212",
+        "rid": "SV-225212r610901_rule",
+        "stig_id": "AOSX-15-003020",
+        "fix_id": "F-26899r485796_fix",
         "satisfies": [
           "SRG-OS-000105-GPOS-00052",
           "SRG-OS-000106-GPOS-00053",
@@ -1842,10 +1845,7 @@
           "SRG-OS-000125-GPOS-00065",
           "SRG-OS-000375-GPOS-00160"
         ],
-        "gid": "V-225212",
-        "rid": "SV-225212r610901_rule",
-        "stig_id": "AOSX-15-003020",
-        "fix_id": "F-26899r485796_fix"
+        "documentable": false
       },
       "id": "V-225212",
       "title": "The macOS system must use multifactor authentication for local and network access to privileged and non-privileged accounts, the establishment of nonlocal maintenance and diagnostic sessions, and authentication for remote access to privileged accounts in such a way that one of the factors is provided by a device separate from the system gaining access.",
@@ -1859,11 +1859,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225213",
         "rid": "SV-225213r610901_rule",
         "stig_id": "AOSX-15-003050",
-        "fix_id": "F-26900r485776_fix"
+        "fix_id": "F-26900r485776_fix",
+        "documentable": false
       },
       "id": "V-225213",
       "title": "The macOS system must be configured so that the login command requires smart card authentication.",
@@ -1877,11 +1877,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225214",
         "rid": "SV-225214r610901_rule",
         "stig_id": "AOSX-15-003051",
-        "fix_id": "F-26901r485790_fix"
+        "fix_id": "F-26901r485790_fix",
+        "documentable": false
       },
       "id": "V-225214",
       "title": "The macOS system must be configured so that the su command requires smart card authentication.",
@@ -1895,11 +1895,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225215",
         "rid": "SV-225215r610901_rule",
         "stig_id": "AOSX-15-003052",
-        "fix_id": "F-26902r485778_fix"
+        "fix_id": "F-26902r485778_fix",
+        "documentable": false
       },
       "id": "V-225215",
       "title": "The macOS system must be configured so that the sudo command requires smart card authentication.",
@@ -1913,11 +1913,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-225216",
         "rid": "SV-225216r610901_rule",
         "stig_id": "AOSX-15-004001",
-        "fix_id": "F-26903r485780_fix"
+        "fix_id": "F-26903r485780_fix",
+        "documentable": false
       },
       "id": "V-225216",
       "title": "The macOS system must be configured with system log files owned by root and group-owned by wheel or admin.",
@@ -1931,11 +1931,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-225217",
         "rid": "SV-225217r610901_rule",
         "stig_id": "AOSX-15-004002",
-        "fix_id": "F-26904r485782_fix"
+        "fix_id": "F-26904r485782_fix",
+        "documentable": false
       },
       "id": "V-225217",
       "title": "The macOS system must be configured with system log files set to mode 640 or less permissive.",
@@ -1949,11 +1949,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225218",
         "rid": "SV-225218r610901_rule",
         "stig_id": "AOSX-15-004021",
-        "fix_id": "F-26905r467823_fix"
+        "fix_id": "F-26905r467823_fix",
+        "documentable": false
       },
       "id": "V-225218",
       "title": "The macOS system must be configured with the sudoers file configured to authenticate users on a per -tty basis.",
@@ -1967,7 +1967,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000051-GPOS-00024",
+        "gid": "V-225219",
+        "rid": "SV-225219r610901_rule",
+        "stig_id": "AOSX-15-005001",
+        "fix_id": "F-26906r467826_fix",
         "satisfies": [
           "SRG-OS-000051-GPOS-00024",
           "SRG-OS-000054-GPOS-00025",
@@ -1985,10 +1988,7 @@
           "SRG-OS-000353-GPOS-00141",
           "SRG-OS-000354-GPOS-00142"
         ],
-        "gid": "V-225219",
-        "rid": "SV-225219r610901_rule",
-        "stig_id": "AOSX-15-005001",
-        "fix_id": "F-26906r467826_fix"
+        "documentable": false
       },
       "id": "V-225219",
       "title": "The macOS system must enable System Integrity Protection.",
@@ -2002,16 +2002,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
+        "gid": "V-225220",
+        "rid": "SV-225220r610901_rule",
+        "stig_id": "AOSX-15-005020",
+        "fix_id": "F-26907r485784_fix",
         "satisfies": [
           "SRG-OS-000185-GPOS-00079",
           "SRG-OS-000404-GPOS-00183",
           "SRG-OS-000405-GPOS-00184"
         ],
-        "gid": "V-225220",
-        "rid": "SV-225220r610901_rule",
-        "stig_id": "AOSX-15-005020",
-        "fix_id": "F-26907r485784_fix"
+        "documentable": false
       },
       "id": "V-225220",
       "title": "The macOS system must implement cryptographic mechanisms to protect the confidentiality and integrity of all information at rest.",
@@ -2025,11 +2025,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00232",
         "gid": "V-225221",
         "rid": "SV-225221r610901_rule",
         "stig_id": "AOSX-15-005050",
-        "fix_id": "F-26908r467832_fix"
+        "fix_id": "F-26908r467832_fix",
+        "documentable": false
       },
       "id": "V-225221",
       "title": "The macOS Application Firewall must be enabled.",
@@ -2043,11 +2043,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-225222",
         "rid": "SV-225222r610901_rule",
         "stig_id": "AOSX-15-000032",
-        "fix_id": "F-26909r485632_fix"
+        "fix_id": "F-26909r485632_fix",
+        "documentable": false
       },
       "id": "V-225222",
       "title": "The macOS system must be configured with dedicated user accounts to decrypt the hard disk upon startup.",
@@ -2061,7 +2061,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-233776",
+        "rid": "SV-233776r610901_rule",
+        "stig_id": "AOSX-15-000054",
+        "fix_id": "F-36783r621603_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000120-GPOS-00061",
@@ -2070,10 +2073,7 @@
           "SRG-OS-000393-GPOS-00173",
           "SRG-OS-000394-GPOS-00174"
         ],
-        "gid": "V-233776",
-        "rid": "SV-233776r610901_rule",
-        "stig_id": "AOSX-15-000054",
-        "fix_id": "F-36783r621603_fix"
+        "documentable": false
       },
       "id": "V-233776",
       "title": "The macOS system must implement approved Ciphers to protect the confidentiality of SSH connections..",
@@ -2087,7 +2087,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-233777",
+        "rid": "SV-233777r610901_rule",
+        "stig_id": "AOSX-15-000055",
+        "fix_id": "F-36784r621606_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000120-GPOS-00061",
@@ -2096,10 +2099,7 @@
           "SRG-OS-000393-GPOS-00173",
           "SRG-OS-000394-GPOS-00174"
         ],
-        "gid": "V-233777",
-        "rid": "SV-233777r610901_rule",
-        "stig_id": "AOSX-15-000055",
-        "fix_id": "F-36784r621606_fix"
+        "documentable": false
       },
       "id": "V-233777",
       "title": "The macOS system must use only Message Authentication Codes (MACs) employing FIPS 140-2 validated cryptographic hash algorithms.",
@@ -2113,7 +2113,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-233778",
+        "rid": "SV-233778r610901_rule",
+        "stig_id": "AOSX-15-000056",
+        "fix_id": "F-36785r621609_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000120-GPOS-00061",
@@ -2122,10 +2125,7 @@
           "SRG-OS-000393-GPOS-00173",
           "SRG-OS-000394-GPOS-00174"
         ],
-        "gid": "V-233778",
-        "rid": "SV-233778r610901_rule",
-        "stig_id": "AOSX-15-000056",
-        "fix_id": "F-36785r621609_fix"
+        "documentable": false
       },
       "id": "V-233778",
       "title": "The macOS system must implement an approved Key Exchange Algorithm.",
@@ -2139,11 +2139,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000378-GPOS-00163",
         "gid": "V-234700",
         "rid": "SV-234700r615899_rule",
         "stig_id": "AOSX-15-002069",
-        "fix_id": "F-26889r485788_fix"
+        "fix_id": "F-26889r485788_fix",
+        "documentable": false
       },
       "id": "V-234700",
       "title": "The macOS system must authenticate peripherals before establishing a connection.",
@@ -2157,14 +2157,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000370-GPOS-00155",
-        "satisfies": [
-          "SRG-OS-000095-GPOS-00049"
-        ],
         "gid": "V-245554",
         "rid": "SV-245554r766583_rule",
         "stig_id": "AOSX-15-002051",
-        "fix_id": "F-48788r755102_fix"
+        "fix_id": "F-48788r755102_fix",
+        "satisfies": [
+          "SRG-OS-000095-GPOS-00049"
+        ],
+        "documentable": false
       },
       "id": "V-245554",
       "title": "The macOS system must be configured to disable the system preference pane for TouchID.",
@@ -2178,14 +2178,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000370-GPOS-00155",
-        "satisfies": [
-          "SRG-OS-000095-GPOS-00049"
-        ],
         "gid": "V-245555",
         "rid": "SV-245555r766584_rule",
         "stig_id": "AOSX-15-002052",
-        "fix_id": "F-48789r755105_fix"
+        "fix_id": "F-48789r755105_fix",
+        "satisfies": [
+          "SRG-OS-000095-GPOS-00049"
+        ],
+        "documentable": false
       },
       "id": "V-245555",
       "title": "The macOS system must be configured to disable the system preference pane for Wallet &amp; ApplePay.",
@@ -2199,14 +2199,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000370-GPOS-00155",
-        "satisfies": [
-          "SRG-OS-000095-GPOS-00049"
-        ],
         "gid": "V-245556",
         "rid": "SV-245556r766585_rule",
         "stig_id": "AOSX-15-002053",
-        "fix_id": "F-48790r755108_fix"
+        "fix_id": "F-48790r755108_fix",
+        "satisfies": [
+          "SRG-OS-000095-GPOS-00049"
+        ],
+        "documentable": false
       },
       "id": "V-245556",
       "title": "The macOS system must be configured to disable the system preference pane for Siri.",
@@ -2218,7 +2218,5 @@
       }
     }
   ],
-  "name": "Apple_OS_X_10-15_STIG",
-  "title": "Apple OS X 10.15 (Catalina) Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Apple_OS_X_10-15_STIG"
 }

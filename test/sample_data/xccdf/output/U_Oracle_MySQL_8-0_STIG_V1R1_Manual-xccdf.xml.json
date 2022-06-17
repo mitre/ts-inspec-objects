@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000023-DB-000001",
         "gid": "V-235095",
         "rid": "SV-235095r638812_rule",
         "stig_id": "MYS8-00-000100",
-        "fix_id": "F-38277r623406_fix"
+        "fix_id": "F-38277r623406_fix",
+        "documentable": false
       },
       "id": "V-235095",
       "title": "MySQL Database Server 8.0 must integrate with an organization-level authentication/access mechanism providing account management and automation for all users, groups, roles, and any other principals.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DB-000031",
         "gid": "V-235096",
         "rid": "SV-235096r638812_rule",
         "stig_id": "MYS8-00-000200",
-        "fix_id": "F-38278r623409_fix"
+        "fix_id": "F-38278r623409_fix",
+        "documentable": false
       },
       "id": "V-235096",
       "title": "MySQL Database Server 8.0 must limit the number of concurrent sessions to an organization-defined number per user for all accounts and/or account types.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095-DB-000039",
         "gid": "V-235097",
         "rid": "SV-235097r638812_rule",
         "stig_id": "MYS8-00-000300",
-        "fix_id": "F-38279r623412_fix"
+        "fix_id": "F-38279r623412_fix",
+        "documentable": false
       },
       "id": "V-235097",
       "title": "MySQL Database Server 8.0 must produce audit records containing sufficient information to establish what type of events occurred.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000101-DB-000044",
         "gid": "V-235098",
         "rid": "SV-235098r638812_rule",
         "stig_id": "MYS8-00-000800",
-        "fix_id": "F-38280r623415_fix"
+        "fix_id": "F-38280r623415_fix",
+        "documentable": false
       },
       "id": "V-235098",
       "title": "The MySQL Database Server 8.0 must include additional, more detailed, organizationally defined information in the audit records for audit events identified by type, location, or subject.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-DB-000059",
         "gid": "V-235099",
         "rid": "SV-235099r638812_rule",
         "stig_id": "MYS8-00-001200",
-        "fix_id": "F-38281r623418_fix"
+        "fix_id": "F-38281r623418_fix",
+        "documentable": false
       },
       "id": "V-235099",
       "title": "The audit information produced by the MySQL Database Server 8.0 must be protected from unauthorized read access.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-DB-000060",
         "gid": "V-235100",
         "rid": "SV-235100r638812_rule",
         "stig_id": "MYS8-00-001300",
-        "fix_id": "F-38282r623421_fix"
+        "fix_id": "F-38282r623421_fix",
+        "documentable": false
       },
       "id": "V-235100",
       "title": "The audit information produced by the MySQL Database Server 8.0 must be protected from unauthorized modification.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-DB-000061",
         "gid": "V-235101",
         "rid": "SV-235101r638812_rule",
         "stig_id": "MYS8-00-001400",
-        "fix_id": "F-38283r623424_fix"
+        "fix_id": "F-38283r623424_fix",
+        "documentable": false
       },
       "id": "V-235101",
       "title": "The audit information produced by the MySQL Database Server 8.0 must be protected from unauthorized deletion.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000080-DB-000063",
         "gid": "V-235102",
         "rid": "SV-235102r638812_rule",
         "stig_id": "MYS8-00-001500",
-        "fix_id": "F-38284r623427_fix"
+        "fix_id": "F-38284r623427_fix",
+        "documentable": false
       },
       "id": "V-235102",
       "title": "The MySQL Database Server 8.0 must protect against a user falsely repudiating having performed organization-defined actions.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-DB-000064",
         "gid": "V-235103",
         "rid": "SV-235103r638812_rule",
         "stig_id": "MYS8-00-001600",
-        "fix_id": "F-38285r623430_fix"
+        "fix_id": "F-38285r623430_fix",
+        "documentable": false
       },
       "id": "V-235103",
       "title": "The MySQL Database Server 8.0 must be configured to provide audit record generation capability for DoD-defined auditable events within all database components.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090-DB-000065",
         "gid": "V-235104",
         "rid": "SV-235104r638812_rule",
         "stig_id": "MYS8-00-001700",
-        "fix_id": "F-38286r623433_fix"
+        "fix_id": "F-38286r623433_fix",
+        "documentable": false
       },
       "id": "V-235104",
       "title": "The MySQL Database Server 8.0 must allow only the Information System Security Manager (ISSM) (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000066",
         "gid": "V-235105",
         "rid": "SV-235105r638812_rule",
         "stig_id": "MYS8-00-001800",
-        "fix_id": "F-38287r623436_fix"
+        "fix_id": "F-38287r623436_fix",
+        "documentable": false
       },
       "id": "V-235105",
       "title": "The MySQL Database Server 8.0 must be able to generate audit records when privileges/permissions are retrieved.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000325",
         "gid": "V-235106",
         "rid": "SV-235106r638812_rule",
         "stig_id": "MYS8-00-001900",
-        "fix_id": "F-38288r623439_fix"
+        "fix_id": "F-38288r623439_fix",
+        "documentable": false
       },
       "id": "V-235106",
       "title": "The MySQL Database Server 8.0 must be able to generate audit records when unsuccessful attempts to retrieve privileges/permissions occur.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492-DB-000332",
         "gid": "V-235107",
         "rid": "SV-235107r638812_rule",
         "stig_id": "MYS8-00-002000",
-        "fix_id": "F-38289r623442_fix"
+        "fix_id": "F-38289r623442_fix",
+        "documentable": false
       },
       "id": "V-235107",
       "title": "The MySQL Database Server 8.0 must be able to generate audit records when security objects are accessed.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492-DB-000333",
         "gid": "V-235108",
         "rid": "SV-235108r638812_rule",
         "stig_id": "MYS8-00-002100",
-        "fix_id": "F-38290r623445_fix"
+        "fix_id": "F-38290r623445_fix",
+        "documentable": false
       },
       "id": "V-235108",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to access security objects occur.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000494-DB-000344",
         "gid": "V-235109",
         "rid": "SV-235109r638812_rule",
         "stig_id": "MYS8-00-002200",
-        "fix_id": "F-38291r623448_fix"
+        "fix_id": "F-38291r623448_fix",
+        "documentable": false
       },
       "id": "V-235109",
       "title": "The MySQL Database Server 8.0 must generate audit records when categories of information (e.g., classification levels/security levels) are accessed.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000494-DB-000345",
         "gid": "V-235110",
         "rid": "SV-235110r638812_rule",
         "stig_id": "MYS8-00-002300",
-        "fix_id": "F-38292r623451_fix"
+        "fix_id": "F-38292r623451_fix",
+        "documentable": false
       },
       "id": "V-235110",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to access categories of information (e.g., classification levels/security levels) occur.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000326",
         "gid": "V-235111",
         "rid": "SV-235111r638812_rule",
         "stig_id": "MYS8-00-002400",
-        "fix_id": "F-38293r623454_fix"
+        "fix_id": "F-38293r623454_fix",
+        "documentable": false
       },
       "id": "V-235111",
       "title": "The MySQL Database Server 8.0 must generate audit records when privileges/permissions are added.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000327",
         "gid": "V-235112",
         "rid": "SV-235112r638812_rule",
         "stig_id": "MYS8-00-002500",
-        "fix_id": "F-38294r623457_fix"
+        "fix_id": "F-38294r623457_fix",
+        "documentable": false
       },
       "id": "V-235112",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to add privileges/permissions occur.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000328",
         "gid": "V-235113",
         "rid": "SV-235113r638812_rule",
         "stig_id": "MYS8-00-002600",
-        "fix_id": "F-38295r623460_fix"
+        "fix_id": "F-38295r623460_fix",
+        "documentable": false
       },
       "id": "V-235113",
       "title": "The MySQL Database Server 8.0 must generate audit records when privileges/permissions are modified.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000329",
         "gid": "V-235114",
         "rid": "SV-235114r638812_rule",
         "stig_id": "MYS8-00-002700",
-        "fix_id": "F-38296r623463_fix"
+        "fix_id": "F-38296r623463_fix",
+        "documentable": false
       },
       "id": "V-235114",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to modify privileges/permissions occur.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496-DB-000334",
         "gid": "V-235115",
         "rid": "SV-235115r638812_rule",
         "stig_id": "MYS8-00-002800",
-        "fix_id": "F-38297r623466_fix"
+        "fix_id": "F-38297r623466_fix",
+        "documentable": false
       },
       "id": "V-235115",
       "title": "The MySQL Database Server 8.0 must generate audit records when security objects are modified.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496-DB-000335",
         "gid": "V-235116",
         "rid": "SV-235116r638812_rule",
         "stig_id": "MYS8-00-002900",
-        "fix_id": "F-38298r623469_fix"
+        "fix_id": "F-38298r623469_fix",
+        "documentable": false
       },
       "id": "V-235116",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to modify security objects occur.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000498-DB-000346",
         "gid": "V-235117",
         "rid": "SV-235117r638812_rule",
         "stig_id": "MYS8-00-003000",
-        "fix_id": "F-38299r623472_fix"
+        "fix_id": "F-38299r623472_fix",
+        "documentable": false
       },
       "id": "V-235117",
       "title": "The MySQL Database Server 8.0 must generate audit records when categories of information (e.g., classification levels/security levels) are modified.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000498-DB-000347",
         "gid": "V-235118",
         "rid": "SV-235118r638812_rule",
         "stig_id": "MYS8-00-003100",
-        "fix_id": "F-38300r623475_fix"
+        "fix_id": "F-38300r623475_fix",
+        "documentable": false
       },
       "id": "V-235118",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to modify categories of information (e.g., classification levels/security levels) occur.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499-DB-000330",
         "gid": "V-235119",
         "rid": "SV-235119r638812_rule",
         "stig_id": "MYS8-00-003200",
-        "fix_id": "F-38301r623478_fix"
+        "fix_id": "F-38301r623478_fix",
+        "documentable": false
       },
       "id": "V-235119",
       "title": "The MySQL Database Server 8.0 must generate audit records when privileges/permissions are deleted.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499-DB-000331",
         "gid": "V-235120",
         "rid": "SV-235120r638812_rule",
         "stig_id": "MYS8-00-003300",
-        "fix_id": "F-38302r623481_fix"
+        "fix_id": "F-38302r623481_fix",
+        "documentable": false
       },
       "id": "V-235120",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to delete privileges/permissions occur.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501-DB-000336",
         "gid": "V-235121",
         "rid": "SV-235121r638812_rule",
         "stig_id": "MYS8-00-003400",
-        "fix_id": "F-38303r623484_fix"
+        "fix_id": "F-38303r623484_fix",
+        "documentable": false
       },
       "id": "V-235121",
       "title": "The MySQL Database Server 8.0 must generate audit records when security objects are deleted.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501-DB-000337",
         "gid": "V-235122",
         "rid": "SV-235122r638812_rule",
         "stig_id": "MYS8-00-003500",
-        "fix_id": "F-38304r623487_fix"
+        "fix_id": "F-38304r623487_fix",
+        "documentable": false
       },
       "id": "V-235122",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to delete security objects occur.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000502-DB-000348",
         "gid": "V-235123",
         "rid": "SV-235123r638812_rule",
         "stig_id": "MYS8-00-003600",
-        "fix_id": "F-38305r623490_fix"
+        "fix_id": "F-38305r623490_fix",
+        "documentable": false
       },
       "id": "V-235123",
       "title": "The MySQL Database Server 8.0 must generate audit records when categories of information (e.g., classification levels/security levels) are deleted.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000502-DB-000349",
         "gid": "V-235124",
         "rid": "SV-235124r638812_rule",
         "stig_id": "MYS8-00-003700",
-        "fix_id": "F-38306r623493_fix"
+        "fix_id": "F-38306r623493_fix",
+        "documentable": false
       },
       "id": "V-235124",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to delete categories of information (e.g., classification levels/security levels) occur.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000350",
         "gid": "V-235125",
         "rid": "SV-235125r638812_rule",
         "stig_id": "MYS8-00-003800",
-        "fix_id": "F-38307r623496_fix"
+        "fix_id": "F-38307r623496_fix",
+        "documentable": false
       },
       "id": "V-235125",
       "title": "The MySQL Database Server 8.0 must generate audit records when successful logons or connections occur.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000351",
         "gid": "V-235126",
         "rid": "SV-235126r638812_rule",
         "stig_id": "MYS8-00-003900",
-        "fix_id": "F-38308r623499_fix"
+        "fix_id": "F-38308r623499_fix",
+        "documentable": false
       },
       "id": "V-235126",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful logons or connection attempts occur.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DB-000354",
         "gid": "V-235127",
         "rid": "SV-235127r638812_rule",
         "stig_id": "MYS8-00-004000",
-        "fix_id": "F-38309r623502_fix"
+        "fix_id": "F-38309r623502_fix",
+        "documentable": false
       },
       "id": "V-235127",
       "title": "The MySQL Database Server 8.0 must generate audit records for all privileged activities or other system-level access.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DB-000355",
         "gid": "V-235128",
         "rid": "SV-235128r638812_rule",
         "stig_id": "MYS8-00-004100",
-        "fix_id": "F-38310r623505_fix"
+        "fix_id": "F-38310r623505_fix",
+        "documentable": false
       },
       "id": "V-235128",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful attempts to execute privileged activities or other system-level access occur.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000505-DB-000352",
         "gid": "V-235129",
         "rid": "SV-235129r638812_rule",
         "stig_id": "MYS8-00-004200",
-        "fix_id": "F-38311r623508_fix"
+        "fix_id": "F-38311r623508_fix",
+        "documentable": false
       },
       "id": "V-235129",
       "title": "The MySQL Database Server 8.0 must generate audit records showing starting and ending time for user access to the database(s).",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000506-DB-000353",
         "gid": "V-235130",
         "rid": "SV-235130r638812_rule",
         "stig_id": "MYS8-00-004300",
-        "fix_id": "F-38312r623511_fix"
+        "fix_id": "F-38312r623511_fix",
+        "documentable": false
       },
       "id": "V-235130",
       "title": "The MySQL Database Server 8.0 must generate audit records when concurrent logons/connections by the same user from different workstations.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507-DB-000356",
         "gid": "V-235131",
         "rid": "SV-235131r638812_rule",
         "stig_id": "MYS8-00-004400",
-        "fix_id": "F-38313r623514_fix"
+        "fix_id": "F-38313r623514_fix",
+        "documentable": false
       },
       "id": "V-235131",
       "title": "The MySQL Database Server 8.0 must be able to generate audit records when successful accesses to objects occur.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507-DB-000357",
         "gid": "V-235132",
         "rid": "SV-235132r638812_rule",
         "stig_id": "MYS8-00-004500",
-        "fix_id": "F-38314r623517_fix"
+        "fix_id": "F-38314r623517_fix",
+        "documentable": false
       },
       "id": "V-235132",
       "title": "The MySQL Database Server 8.0 must generate audit records when unsuccessful accesses to objects occur.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000508-DB-000358",
         "gid": "V-235133",
         "rid": "SV-235133r638812_rule",
         "stig_id": "MYS8-00-004600",
-        "fix_id": "F-38315r623520_fix"
+        "fix_id": "F-38315r623520_fix",
+        "documentable": false
       },
       "id": "V-235133",
       "title": "The MySQL Database Server 8.0 must generate audit records for all direct access to the database(s).",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-DB-000067",
         "gid": "V-235134",
         "rid": "SV-235134r638812_rule",
         "stig_id": "MYS8-00-004700",
-        "fix_id": "F-38316r623523_fix"
+        "fix_id": "F-38316r623523_fix",
+        "documentable": false
       },
       "id": "V-235134",
       "title": "The MySQL Database Server 8.0, when utilizing PKI-based authentication, must validate certificates by performing RFC 5280-compliant certification path validation.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000176-DB-000068",
         "gid": "V-235135",
         "rid": "SV-235135r638812_rule",
         "stig_id": "MYS8-00-004800",
-        "fix_id": "F-38317r623526_fix"
+        "fix_id": "F-38317r623526_fix",
+        "documentable": false
       },
       "id": "V-235135",
       "title": "The MySQL Database Server 8.0 must enforce authorized access to all PKI private keys stored/utilized by the MySQL Database Server 8.0.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000177-DB-000069",
         "gid": "V-235136",
         "rid": "SV-235136r638812_rule",
         "stig_id": "MYS8-00-004900",
-        "fix_id": "F-38318r623529_fix"
+        "fix_id": "F-38318r623529_fix",
+        "documentable": false
       },
       "id": "V-235136",
       "title": "The MySQL Database Server 8.0 must map the PKI-authenticated identity to an associated user account.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000164-DB-000401",
         "gid": "V-235137",
         "rid": "SV-235137r638812_rule",
         "stig_id": "MYS8-00-005000",
-        "fix_id": "F-38319r623532_fix"
+        "fix_id": "F-38319r623532_fix",
+        "documentable": false
       },
       "id": "V-235137",
       "title": "If Database Management System (DBMS) authentication using passwords is employed, the DBMS must enforce the DoD standards for password complexity and lifetime.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000171-DB-000074",
         "gid": "V-235138",
         "rid": "SV-235138r638812_rule",
         "stig_id": "MYS8-00-005100",
-        "fix_id": "F-38320r623535_fix"
+        "fix_id": "F-38320r623535_fix",
+        "documentable": false
       },
       "id": "V-235138",
       "title": "If passwords are used for authentication, the MySQL Database Server 8.0 must store only hashed, salted representations of passwords.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-DB-000075",
         "gid": "V-235139",
         "rid": "SV-235139r638812_rule",
         "stig_id": "MYS8-00-005200",
-        "fix_id": "F-38321r623538_fix"
+        "fix_id": "F-38321r623538_fix",
+        "documentable": false
       },
       "id": "V-235139",
       "title": "If passwords are used for authentication, the MySQL Database Server 8.0 must transmit only encrypted representations of passwords.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000178-DB-000083",
         "gid": "V-235140",
         "rid": "SV-235140r638812_rule",
         "stig_id": "MYS8-00-005300",
-        "fix_id": "F-38322r623541_fix"
+        "fix_id": "F-38322r623541_fix",
+        "documentable": false
       },
       "id": "V-235140",
       "title": "The MySQL Database Server 8.0 must obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-DB-000084",
         "gid": "V-235141",
         "rid": "SV-235141r638812_rule",
         "stig_id": "MYS8-00-005400",
-        "fix_id": "F-38323r623544_fix"
+        "fix_id": "F-38323r623544_fix",
+        "documentable": false
       },
       "id": "V-235141",
       "title": "The MySQL Database Server 8.0 must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DB-000363",
         "gid": "V-235142",
         "rid": "SV-235142r638812_rule",
         "stig_id": "MYS8-00-005500",
-        "fix_id": "F-38324r623547_fix"
+        "fix_id": "F-38324r623547_fix",
+        "documentable": false
       },
       "id": "V-235142",
       "title": "The MySQL Database Server 8.0 must be configured in accordance with the security configuration settings based on DoD security configuration and implementation guidance, including STIGs, NSA configuration guides, CTOs, DTMs, and IAVMs.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000090",
         "gid": "V-235143",
         "rid": "SV-235143r638812_rule",
         "stig_id": "MYS8-00-005600",
-        "fix_id": "F-38325r623550_fix"
+        "fix_id": "F-38325r623550_fix",
+        "documentable": false
       },
       "id": "V-235143",
       "title": "Default demonstration and sample databases, database objects, and applications must be removed.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-235144",
         "rid": "SV-235144r638812_rule",
         "stig_id": "MYS8-00-005700",
-        "fix_id": "F-38326r623553_fix"
+        "fix_id": "F-38326r623553_fix",
+        "documentable": false
       },
       "id": "V-235144",
       "title": "Unused database components, MySQL Database Server 8.0 software, and database objects must be removed.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000092",
         "gid": "V-235145",
         "rid": "SV-235145r638812_rule",
         "stig_id": "MYS8-00-005800",
-        "fix_id": "F-38327r623556_fix"
+        "fix_id": "F-38327r623556_fix",
+        "documentable": false
       },
       "id": "V-235145",
       "title": "Unused database components which are integrated in the MySQL Database Server 8.0 and cannot be uninstalled must be disabled.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DB-000094",
         "gid": "V-235146",
         "rid": "SV-235146r638812_rule",
         "stig_id": "MYS8-00-006000",
-        "fix_id": "F-38328r623559_fix"
+        "fix_id": "F-38328r623559_fix",
+        "documentable": false
       },
       "id": "V-235146",
       "title": "The MySQL Database Server 8.0 must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148-DB-000103",
         "gid": "V-235147",
         "rid": "SV-235147r638812_rule",
         "stig_id": "MYS8-00-006100",
-        "fix_id": "F-38329r623562_fix"
+        "fix_id": "F-38329r623562_fix",
+        "documentable": false
       },
       "id": "V-235147",
       "title": "The MySQL Database Server 8.0 must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179-DB-000114",
         "gid": "V-235148",
         "rid": "SV-235148r638812_rule",
         "stig_id": "MYS8-00-006200",
-        "fix_id": "F-38330r623565_fix"
+        "fix_id": "F-38330r623565_fix",
+        "documentable": false
       },
       "id": "V-235148",
       "title": "The MySQL Database Server 8.0 must use NIST FIPS 140-2 validated cryptographic modules for cryptographic operations.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000180-DB-000115",
         "gid": "V-235149",
         "rid": "SV-235149r638812_rule",
         "stig_id": "MYS8-00-006300",
-        "fix_id": "F-38331r623568_fix"
+        "fix_id": "F-38331r623568_fix",
+        "documentable": false
       },
       "id": "V-235149",
       "title": "The MySQL Database Server 8.0 must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-DB-000122",
         "gid": "V-235150",
         "rid": "SV-235150r638812_rule",
         "stig_id": "MYS8-00-006400",
-        "fix_id": "F-38332r623571_fix"
+        "fix_id": "F-38332r623571_fix",
+        "documentable": false
       },
       "id": "V-235150",
       "title": "The MySQL Database Server 8.0 must separate user functionality (including user interface services) from database management functionality.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233-DB-000124",
         "gid": "V-235151",
         "rid": "SV-235151r638812_rule",
         "stig_id": "MYS8-00-006500",
-        "fix_id": "F-38333r623574_fix"
+        "fix_id": "F-38333r623574_fix",
+        "documentable": false
       },
       "id": "V-235151",
       "title": "The MySQL Database Server 8.0 must isolate security functions from non-security functions.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000128",
         "gid": "V-235152",
         "rid": "SV-235152r638812_rule",
         "stig_id": "MYS8-00-006600",
-        "fix_id": "F-38334r623577_fix"
+        "fix_id": "F-38334r623577_fix",
+        "documentable": false
       },
       "id": "V-235152",
       "title": "Database contents must be protected from unauthorized and unintended information transfer by enforcement of a data-transfer policy.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000374",
         "gid": "V-235153",
         "rid": "SV-235153r638812_rule",
         "stig_id": "MYS8-00-006800",
-        "fix_id": "F-38335r623580_fix"
+        "fix_id": "F-38335r623580_fix",
+        "documentable": false
       },
       "id": "V-235153",
       "title": "Access to database files must be limited to relevant processes and to authorized, administrative users.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000224-DB-000384",
         "gid": "V-235154",
         "rid": "SV-235154r638812_rule",
         "stig_id": "MYS8-00-007000",
-        "fix_id": "F-38336r623583_fix"
+        "fix_id": "F-38336r623583_fix",
+        "documentable": false
       },
       "id": "V-235154",
       "title": "The MySQL Database Server 8.0 must maintain the authenticity of communications sessions by guarding against man-in-the-middle attacks that guess at Session ID values.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000231-DB-000154",
         "gid": "V-235155",
         "rid": "SV-235155r638812_rule",
         "stig_id": "MYS8-00-007200",
-        "fix_id": "F-38337r623586_fix"
+        "fix_id": "F-38337r623586_fix",
+        "documentable": false
       },
       "id": "V-235155",
       "title": "The MySQL Database Server 8.0 must protect the confidentiality and integrity of all information at rest.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000160",
         "gid": "V-235156",
         "rid": "SV-235156r638812_rule",
         "stig_id": "MYS8-00-007300",
-        "fix_id": "F-38338r623589_fix"
+        "fix_id": "F-38338r623589_fix",
+        "documentable": false
       },
       "id": "V-235156",
       "title": "The MySQL Database Server 8.0 must check the validity of all data inputs except those specifically identified by the organization.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000391",
         "gid": "V-235157",
         "rid": "SV-235157r638812_rule",
         "stig_id": "MYS8-00-007400",
-        "fix_id": "F-38339r623592_fix"
+        "fix_id": "F-38339r623592_fix",
+        "documentable": false
       },
       "id": "V-235157",
       "title": "The MySQL Database Server 8.0 and associated applications must reserve the use of dynamic code execution for situations that require it.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000392",
         "gid": "V-235158",
         "rid": "SV-235158r638812_rule",
         "stig_id": "MYS8-00-007500",
-        "fix_id": "F-38340r623595_fix"
+        "fix_id": "F-38340r623595_fix",
+        "documentable": false
       },
       "id": "V-235158",
       "title": "The MySQL Database Server 8.0 and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000092-DB-000208",
         "gid": "V-235159",
         "rid": "SV-235159r638812_rule",
         "stig_id": "MYS8-00-007800",
-        "fix_id": "F-38341r623598_fix"
+        "fix_id": "F-38341r623598_fix",
+        "documentable": false
       },
       "id": "V-235159",
       "title": "The MySQL Database Server 8.0 must initiate session auditing upon startup.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121-DB-000202",
         "gid": "V-235160",
         "rid": "SV-235160r638812_rule",
         "stig_id": "MYS8-00-008000",
-        "fix_id": "F-38342r623601_fix"
+        "fix_id": "F-38342r623601_fix",
+        "documentable": false
       },
       "id": "V-235160",
       "title": "The MySQL Database Server 8.0 must protect its audit features from unauthorized access.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000122-DB-000203",
         "gid": "V-235161",
         "rid": "SV-235161r638812_rule",
         "stig_id": "MYS8-00-008100",
-        "fix_id": "F-38343r623604_fix"
+        "fix_id": "F-38343r623604_fix",
+        "documentable": false
       },
       "id": "V-235161",
       "title": "The MySQL Database Server 8.0 must protect its audit configuration from unauthorized modification.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000123-DB-000204",
         "gid": "V-235162",
         "rid": "SV-235162r638812_rule",
         "stig_id": "MYS8-00-008200",
-        "fix_id": "F-38344r623607_fix"
+        "fix_id": "F-38344r623607_fix",
+        "documentable": false
       },
       "id": "V-235162",
       "title": "The MySQL Database Server 8.0 must protect its audit features from unauthorized removal.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-235163",
         "rid": "SV-235163r638812_rule",
         "stig_id": "MYS8-00-008300",
-        "fix_id": "F-38345r623610_fix"
+        "fix_id": "F-38345r623610_fix",
+        "documentable": false
       },
       "id": "V-235163",
       "title": "The MySQL Database Server 8.0 must limit privileges to change software modules, to include stored procedures, functions and triggers, and links to software external to the MySQL Database Server 8.0.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000198",
         "gid": "V-235164",
         "rid": "SV-235164r638812_rule",
         "stig_id": "MYS8-00-008400",
-        "fix_id": "F-38346r623613_fix"
+        "fix_id": "F-38346r623613_fix",
+        "documentable": false
       },
       "id": "V-235164",
       "title": "The MySQL Database Server 8.0 software installation account must be restricted to authorized users.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000199",
         "gid": "V-235165",
         "rid": "SV-235165r638812_rule",
         "stig_id": "MYS8-00-008500",
-        "fix_id": "F-38347r623616_fix"
+        "fix_id": "F-38347r623616_fix",
+        "documentable": false
       },
       "id": "V-235165",
       "title": "Database software, including MySQL Database Server 8.0 configuration files, must be stored in dedicated directories, or DASD pools (remove), separate from the host OS and other applications.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000362",
         "gid": "V-235166",
         "rid": "SV-235166r638812_rule",
         "stig_id": "MYS8-00-008700",
-        "fix_id": "F-38348r623619_fix"
+        "fix_id": "F-38348r623619_fix",
+        "documentable": false
       },
       "id": "V-235166",
       "title": "The role(s)/group(s) used to modify database structure (including but not necessarily limited to tables, indexes, storage, etc.) and logic modules (stored procedures, functions, triggers, links to software external to the MySQL Database Server 8.0, etc.) must be restricted to authorized users.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DB-000364",
         "gid": "V-235167",
         "rid": "SV-235167r638812_rule",
         "stig_id": "MYS8-00-009000",
-        "fix_id": "F-38349r623622_fix"
+        "fix_id": "F-38349r623622_fix",
+        "documentable": false
       },
       "id": "V-235167",
       "title": "The MySQL Database Server 8.0 must disable network functions, ports, protocols, and services deemed by the organization to be nonsecure, in accord with the Ports, Protocols, and Services Management (PPSM) guidance.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378-DB-000365",
         "gid": "V-235168",
         "rid": "SV-235168r638812_rule",
         "stig_id": "MYS8-00-009100",
-        "fix_id": "F-38350r623625_fix"
+        "fix_id": "F-38350r623625_fix",
+        "documentable": false
       },
       "id": "V-235168",
       "title": "The MySQL Database Server 8.0 must prohibit user installation of logic modules (stored procedures, functions, triggers, views, etc.) without explicit privileged status.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-DB-000360",
         "gid": "V-235169",
         "rid": "SV-235169r638812_rule",
         "stig_id": "MYS8-00-009200",
-        "fix_id": "F-38351r623628_fix"
+        "fix_id": "F-38351r623628_fix",
+        "documentable": false
       },
       "id": "V-235169",
       "title": "The MySQL Database Server 8.0 must enforce access restrictions associated with changes to the configuration of the MySQL Database Server 8.0 or database(s).",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000381-DB-000361",
         "gid": "V-235170",
         "rid": "SV-235170r638812_rule",
         "stig_id": "MYS8-00-009300",
-        "fix_id": "F-38352r623631_fix"
+        "fix_id": "F-38352r623631_fix",
+        "documentable": false
       },
       "id": "V-235170",
       "title": "The MySQL Database Server 8.0 must produce audit records of its enforcement of access restrictions associated with changes to the configuration of the MySQL Database Server 8.0 or database(s).",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356-DB-000314",
         "gid": "V-235171",
         "rid": "SV-235171r638812_rule",
         "stig_id": "MYS8-00-009400",
-        "fix_id": "F-38353r623634_fix"
+        "fix_id": "F-38353r623634_fix",
+        "documentable": false
       },
       "id": "V-235171",
       "title": "The MySQL Database Server 8.0 must utilize centralized management of the content captured in audit records generated by all components of the MySQL Database Server 8.0.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356-DB-000315",
         "gid": "V-235172",
         "rid": "SV-235172r638812_rule",
         "stig_id": "MYS8-00-009500",
-        "fix_id": "F-38354r623637_fix"
+        "fix_id": "F-38354r623637_fix",
+        "documentable": false
       },
       "id": "V-235172",
       "title": "The MySQL Database Server 8.0 must provide centralized configuration of the content to be captured in audit records generated by all components of the MySQL Database Server 8.0.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357-DB-000316",
         "gid": "V-235173",
         "rid": "SV-235173r638812_rule",
         "stig_id": "MYS8-00-009600",
-        "fix_id": "F-38355r623640_fix"
+        "fix_id": "F-38355r623640_fix",
+        "documentable": false
       },
       "id": "V-235173",
       "title": "The MySQL Database Server 8.0 must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000515-DB-000318",
         "gid": "V-235174",
         "rid": "SV-235174r638812_rule",
         "stig_id": "MYS8-00-009700",
-        "fix_id": "F-38356r623643_fix"
+        "fix_id": "F-38356r623643_fix",
+        "documentable": false
       },
       "id": "V-235174",
       "title": "The MySQL Database Server 8.0 must off-load audit data to a separate log management facility; this must be continuous and in near real time for systems with a network connection to the storage facility and weekly or more often for stand-alone systems.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000359-DB-000319",
         "gid": "V-235175",
         "rid": "SV-235175r638812_rule",
         "stig_id": "MYS8-00-009800",
-        "fix_id": "F-38357r623646_fix"
+        "fix_id": "F-38357r623646_fix",
+        "documentable": false
       },
       "id": "V-235175",
       "title": "The MySQL Database Server 8.0 must provide a warning to appropriate support staff when allocated audit record storage volume reaches 75 percent of maximum audit record storage capacity.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360-DB-000320",
         "gid": "V-235176",
         "rid": "SV-235176r638812_rule",
         "stig_id": "MYS8-00-009900",
-        "fix_id": "F-38358r623649_fix"
+        "fix_id": "F-38358r623649_fix",
+        "documentable": false
       },
       "id": "V-235176",
       "title": "The MySQL Database Server 8.0 must provide an immediate real-time alert to appropriate support staff of all audit log failures.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000400-DB-000367",
         "gid": "V-235177",
         "rid": "SV-235177r638812_rule",
         "stig_id": "MYS8-00-010300",
-        "fix_id": "F-38359r623652_fix"
+        "fix_id": "F-38359r623652_fix",
+        "documentable": false
       },
       "id": "V-235177",
       "title": "The MySQL Database Server 8.0 must prohibit the use of cached authenticators after an organization-defined time period.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000389-DB-000372",
         "gid": "V-235178",
         "rid": "SV-235178r638812_rule",
         "stig_id": "MYS8-00-010400",
-        "fix_id": "F-38360r623655_fix"
+        "fix_id": "F-38360r623655_fix",
+        "documentable": false
       },
       "id": "V-235178",
       "title": "The MySQL Database Server 8.0 must require users to reauthenticate when organization-defined circumstances or situations require reauthentication.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328-DB-000301",
         "gid": "V-235179",
         "rid": "SV-235179r638812_rule",
         "stig_id": "MYS8-00-010500",
-        "fix_id": "F-38361r623658_fix"
+        "fix_id": "F-38361r623658_fix",
+        "documentable": false
       },
       "id": "V-235179",
       "title": "The MySQL Database Server 8.0 must enforce discretionary access control policies, as defined by the data owner, over defined subjects and objects.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000342-DB-000302",
         "gid": "V-235180",
         "rid": "SV-235180r638812_rule",
         "stig_id": "MYS8-00-010600",
-        "fix_id": "F-38362r623661_fix"
+        "fix_id": "F-38362r623661_fix",
+        "documentable": false
       },
       "id": "V-235180",
       "title": "Execution of software modules (to include stored procedures, functions, and triggers) with elevated privileges must be restricted to necessary cases only.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340-DB-000304",
         "gid": "V-235181",
         "rid": "SV-235181r638812_rule",
         "stig_id": "MYS8-00-010700",
-        "fix_id": "F-38363r623664_fix"
+        "fix_id": "F-38363r623664_fix",
+        "documentable": false
       },
       "id": "V-235181",
       "title": "The MySQL Database Server 8.0 must prevent non-privileged users from executing privileged functions, to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000311-DB-000308",
         "gid": "V-235182",
         "rid": "SV-235182r638812_rule",
         "stig_id": "MYS8-00-010800",
-        "fix_id": "F-38364r623667_fix"
+        "fix_id": "F-38364r623667_fix",
+        "documentable": false
       },
       "id": "V-235182",
       "title": "The MySQL Database Server 8.0 must associate organization-defined types of security labels having organization-defined security label values with information in storage.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000313-DB-000309",
         "gid": "V-235183",
         "rid": "SV-235183r638812_rule",
         "stig_id": "MYS8-00-010900",
-        "fix_id": "F-38365r623670_fix"
+        "fix_id": "F-38365r623670_fix",
+        "documentable": false
       },
       "id": "V-235183",
       "title": "The MySQL Database Server 8.0 must associate organization-defined types of security labels having organization-defined security label values with information in process.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000314-DB-000310",
         "gid": "V-235184",
         "rid": "SV-235184r638812_rule",
         "stig_id": "MYS8-00-011000",
-        "fix_id": "F-38366r623673_fix"
+        "fix_id": "F-38366r623673_fix",
+        "documentable": false
       },
       "id": "V-235184",
       "title": "The MySQL Database Server 8.0 must associate organization-defined types of security labels having organization-defined security label values with information in transmission.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295-DB-000305",
         "gid": "V-235185",
         "rid": "SV-235185r638812_rule",
         "stig_id": "MYS8-00-011100",
-        "fix_id": "F-38367r623676_fix"
+        "fix_id": "F-38367r623676_fix",
+        "documentable": false
       },
       "id": "V-235185",
       "title": "The MySQL Database Server 8.0 must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-DB-000378",
         "gid": "V-235186",
         "rid": "SV-235186r638812_rule",
         "stig_id": "MYS8-00-011300",
-        "fix_id": "F-38368r623679_fix"
+        "fix_id": "F-38368r623679_fix",
+        "documentable": false
       },
       "id": "V-235186",
       "title": "The MySQL Database Server 8.0 must maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000416-DB-000380",
         "gid": "V-235187",
         "rid": "SV-235187r638812_rule",
         "stig_id": "MYS8-00-011500",
-        "fix_id": "F-38369r623682_fix"
+        "fix_id": "F-38369r623682_fix",
+        "documentable": false
       },
       "id": "V-235187",
       "title": "The MySQL Database Server 8.0 must use NSA-approved cryptography to protect classified information in accordance with the data owner's requirements.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514-DB-000381",
         "gid": "V-235188",
         "rid": "SV-235188r638812_rule",
         "stig_id": "MYS8-00-011600",
-        "fix_id": "F-38370r623685_fix"
+        "fix_id": "F-38370r623685_fix",
+        "documentable": false
       },
       "id": "V-235188",
       "title": "The MySQL Database Server 8.0 must implement NIST FIPS 140-2 validated cryptographic modules to provision digital signatures.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000514-DB-000382",
         "gid": "V-235189",
         "rid": "SV-235189r638812_rule",
         "stig_id": "MYS8-00-011700",
-        "fix_id": "F-38371r623688_fix"
+        "fix_id": "F-38371r623688_fix",
+        "documentable": false
       },
       "id": "V-235189",
       "title": "The MySQL Database Server 8.0 must implement NIST FIPS 140-2 validated cryptographic modules to generate and validate cryptographic hashes.",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514-DB-000383",
         "gid": "V-235190",
         "rid": "SV-235190r638812_rule",
         "stig_id": "MYS8-00-011800",
-        "fix_id": "F-38372r623691_fix"
+        "fix_id": "F-38372r623691_fix",
+        "documentable": false
       },
       "id": "V-235190",
       "title": "The MySQL Database Server 8.0 must implement NIST FIPS 140-2 validated cryptographic modules to protect unclassified information requiring confidentiality and cryptographic protection, in accordance with the data owner's requirements.",
@@ -1736,11 +1736,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-DB-000385",
         "gid": "V-235191",
         "rid": "SV-235191r638812_rule",
         "stig_id": "MYS8-00-011900",
-        "fix_id": "F-38373r623694_fix"
+        "fix_id": "F-38373r623694_fix",
+        "documentable": false
       },
       "id": "V-235191",
       "title": "The MySQL Database Server 8.0 must only accept end entity certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs) for the establishment of all encrypted sessions.",
@@ -1754,11 +1754,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000428-DB-000386",
         "gid": "V-235192",
         "rid": "SV-235192r638812_rule",
         "stig_id": "MYS8-00-012000",
-        "fix_id": "F-38374r623697_fix"
+        "fix_id": "F-38374r623697_fix",
+        "documentable": false
       },
       "id": "V-235192",
       "title": "The MySQL Database Server 8.0 must implement cryptographic mechanisms to prevent unauthorized modification of organization-defined information at rest (to include, at a minimum, PII and classified information) on organization-defined information system components.",
@@ -1772,11 +1772,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429-DB-000387",
         "gid": "V-235193",
         "rid": "SV-235193r638812_rule",
         "stig_id": "MYS8-00-012100",
-        "fix_id": "F-38375r623700_fix"
+        "fix_id": "F-38375r623700_fix",
+        "documentable": false
       },
       "id": "V-235193",
       "title": "The MySQL Database Server 8.0 must implement cryptographic mechanisms preventing the unauthorized disclosure of organization-defined information at rest on organization-defined information system components.",
@@ -1790,11 +1790,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-DB-000390",
         "gid": "V-235194",
         "rid": "SV-235194r638812_rule",
         "stig_id": "MYS8-00-012300",
-        "fix_id": "F-38376r623703_fix"
+        "fix_id": "F-38376r623703_fix",
+        "documentable": false
       },
       "id": "V-235194",
       "title": "Security-relevant software updates to the MySQL Database Server 8.0 must be installed within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).",
@@ -1808,11 +1808,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000447-DB-000393",
         "gid": "V-235195",
         "rid": "SV-235195r638812_rule",
         "stig_id": "MYS8-00-012500",
-        "fix_id": "F-38377r623706_fix"
+        "fix_id": "F-38377r623706_fix",
+        "documentable": false
       },
       "id": "V-235195",
       "title": "When invalid inputs are received, the MySQL Database Server 8.0 must behave in a predictable and documented manner that reflects organizational and system objectives.",
@@ -1824,7 +1824,5 @@
       }
     }
   ],
-  "name": "Oracle_MySQL_8.0_STIG",
-  "title": "Oracle MySQL 8.0 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Oracle_MySQL_8.0_STIG"
 }

@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000001-GPOS-00001",
         "gid": "V-215169",
         "rid": "SV-215169r508663_rule",
         "stig_id": "AIX7-00-001000",
-        "fix_id": "F-16365r293959_fix"
+        "fix_id": "F-16365r293959_fix",
+        "documentable": false
       },
       "id": "V-215169",
       "title": "AIX /etc/security/mkuser.sys.custom file must not exist unless it is needed for customizing a new user account.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000002-GPOS-00002",
         "gid": "V-215170",
         "rid": "SV-215170r508663_rule",
         "stig_id": "AIX7-00-001001",
-        "fix_id": "F-16366r293962_fix"
+        "fix_id": "F-16366r293962_fix",
+        "documentable": false
       },
       "id": "V-215170",
       "title": "AIX must automatically remove or disable temporary user accounts after 72 hours or sooner.",
@@ -44,15 +44,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000021-GPOS-00005",
+        "gid": "V-215171",
+        "rid": "SV-215171r508663_rule",
+        "stig_id": "AIX7-00-001003",
+        "fix_id": "F-16367r293965_fix",
         "satisfies": [
           "SRG-OS-000021-GPOS-00005",
           "SRG-OS-000329-GPOS-00128"
         ],
-        "gid": "V-215171",
-        "rid": "SV-215171r508663_rule",
-        "stig_id": "AIX7-00-001003",
-        "fix_id": "F-16367r293965_fix"
+        "documentable": false
       },
       "id": "V-215171",
       "title": "AIX must enforce the limit of three consecutive invalid login attempts by a user before the user account is locked and released by an administrator.",
@@ -66,11 +66,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000027-GPOS-00008",
         "gid": "V-215172",
         "rid": "SV-215172r508663_rule",
         "stig_id": "AIX7-00-001004",
-        "fix_id": "F-16368r293968_fix"
+        "fix_id": "F-16368r293968_fix",
+        "documentable": false
       },
       "id": "V-215172",
       "title": "AIX must limit the number of concurrent sessions to 10 for all accounts and/or account types.",
@@ -84,11 +84,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-215173",
         "rid": "SV-215173r508663_rule",
         "stig_id": "AIX7-00-001006",
-        "fix_id": "F-16369r293971_fix"
+        "fix_id": "F-16369r293971_fix",
+        "documentable": false
       },
       "id": "V-215173",
       "title": "If the AIX system is using LDAP for authentication or account information, the LDAP SSL, or TLS connection must require the server provide a certificate and this certificate must have a valid path to a trusted CA.",
@@ -102,11 +102,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-215174",
         "rid": "SV-215174r508663_rule",
         "stig_id": "AIX7-00-001007",
-        "fix_id": "F-16370r293974_fix"
+        "fix_id": "F-16370r293974_fix",
+        "documentable": false
       },
       "id": "V-215174",
       "title": "If AIX is using LDAP for authentication or account information, the /etc/ldap.conf file (or equivalent) must not contain passwords.",
@@ -120,11 +120,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-215175",
         "rid": "SV-215175r508663_rule",
         "stig_id": "AIX7-00-001008",
-        "fix_id": "F-16371r293977_fix"
+        "fix_id": "F-16371r293977_fix",
+        "documentable": false
       },
       "id": "V-215175",
       "title": "All accounts on AIX system must have unique account names.",
@@ -138,15 +138,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
+        "gid": "V-215176",
+        "rid": "SV-215176r508663_rule",
+        "stig_id": "AIX7-00-001009",
+        "fix_id": "F-16372r293980_fix",
         "satisfies": [
           "SRG-OS-000104-GPOS-00051",
           "SRG-OS-000121-GPOS-00062"
         ],
-        "gid": "V-215176",
-        "rid": "SV-215176r508663_rule",
-        "stig_id": "AIX7-00-001009",
-        "fix_id": "F-16372r293980_fix"
+        "documentable": false
       },
       "id": "V-215176",
       "title": "All accounts on AIX must be assigned unique User Identification Numbers (UIDs) and must authenticate organizational and non-organizational users (or processes acting on behalf of these users).",
@@ -160,11 +160,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-215177",
         "rid": "SV-215177r508663_rule",
         "stig_id": "AIX7-00-001010",
-        "fix_id": "F-16373r293983_fix"
+        "fix_id": "F-16373r293983_fix",
+        "documentable": false
       },
       "id": "V-215177",
       "title": "The AIX SYSTEM attribute must not be set to NONE for any account.",
@@ -178,11 +178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000109-GPOS-00056",
         "gid": "V-215178",
         "rid": "SV-215178r508663_rule",
         "stig_id": "AIX7-00-001011",
-        "fix_id": "F-16374r293986_fix"
+        "fix_id": "F-16374r293986_fix",
+        "documentable": false
       },
       "id": "V-215178",
       "title": "Direct logins to the AIX system must not be permitted to shared accounts, default accounts, application accounts, and utility accounts.",
@@ -196,15 +196,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000112-GPOS-00057",
+        "gid": "V-215179",
+        "rid": "SV-215179r508663_rule",
+        "stig_id": "AIX7-00-001012",
+        "fix_id": "F-16375r293989_fix",
         "satisfies": [
           "SRG-OS-000112-GPOS-00057",
           "SRG-OS-000113-GPOS-00058"
         ],
-        "gid": "V-215179",
-        "rid": "SV-215179r508663_rule",
-        "stig_id": "AIX7-00-001012",
-        "fix_id": "F-16375r293989_fix"
+        "documentable": false
       },
       "id": "V-215179",
       "title": "AIX must use the SSH server to implement replay-resistant authentication mechanisms for network access to privileged and non-privileged accounts.",
@@ -218,11 +218,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000123-GPOS-00064",
         "gid": "V-215180",
         "rid": "SV-215180r508663_rule",
         "stig_id": "AIX7-00-001014",
-        "fix_id": "F-16376r293992_fix"
+        "fix_id": "F-16376r293992_fix",
+        "documentable": false
       },
       "id": "V-215180",
       "title": "The AIX system must automatically remove or disable emergency accounts after the crisis is resolved or 72 hours.",
@@ -236,11 +236,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000001-GPOS-00001",
         "gid": "V-215181",
         "rid": "SV-215181r508663_rule",
         "stig_id": "AIX7-00-001015",
-        "fix_id": "F-16377r293995_fix"
+        "fix_id": "F-16377r293995_fix",
+        "documentable": false
       },
       "id": "V-215181",
       "title": "The shipped /etc/security/mkuser.sys file on AIX must not be customized directly.",
@@ -254,11 +254,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000001-GPOS-00001",
         "gid": "V-215182",
         "rid": "SV-215182r508663_rule",
         "stig_id": "AIX7-00-001016",
-        "fix_id": "F-16378r293998_fix"
+        "fix_id": "F-16378r293998_fix",
+        "documentable": false
       },
       "id": "V-215182",
       "title": "The regular users default primary group must be staff (or equivalent) on AIX.",
@@ -272,11 +272,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-215183",
         "rid": "SV-215183r508663_rule",
         "stig_id": "AIX7-00-001018",
-        "fix_id": "F-16379r294001_fix"
+        "fix_id": "F-16379r294001_fix",
+        "documentable": false
       },
       "id": "V-215183",
       "title": "All system files, programs, and directories must be owned by a system account.",
@@ -290,11 +290,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-215184",
         "rid": "SV-215184r508663_rule",
         "stig_id": "AIX7-00-001019",
-        "fix_id": "F-16380r294004_fix"
+        "fix_id": "F-16380r294004_fix",
+        "documentable": false
       },
       "id": "V-215184",
       "title": "AIX device files and directories must only be writable by users with a system account or as configured by the vendor.",
@@ -308,11 +308,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-215185",
         "rid": "SV-215185r508663_rule",
         "stig_id": "AIX7-00-001024",
-        "fix_id": "F-16381r294007_fix"
+        "fix_id": "F-16381r294007_fix",
+        "documentable": false
       },
       "id": "V-215185",
       "title": "SSH must display the date and time of the last successful account login to AIX system upon login.",
@@ -326,11 +326,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000114-GPOS-00059",
         "gid": "V-215186",
         "rid": "SV-215186r538429_rule",
         "stig_id": "AIX7-00-001025",
-        "fix_id": "F-16382r569436_fix"
+        "fix_id": "F-16382r569436_fix",
+        "documentable": false
       },
       "id": "V-215186",
       "title": "AIX must configure the ttys value for all interactive users.",
@@ -344,11 +344,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
         "gid": "V-215187",
         "rid": "SV-215187r508663_rule",
         "stig_id": "AIX7-00-001028",
-        "fix_id": "F-16383r294013_fix"
+        "fix_id": "F-16383r294013_fix",
+        "documentable": false
       },
       "id": "V-215187",
       "title": "AIX must provide the lock command to let users retain their session lock until users are reauthenticated.",
@@ -362,11 +362,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
         "gid": "V-215188",
         "rid": "SV-215188r508663_rule",
         "stig_id": "AIX7-00-001029",
-        "fix_id": "F-16384r294016_fix"
+        "fix_id": "F-16384r294016_fix",
+        "documentable": false
       },
       "id": "V-215188",
       "title": "AIX must provide xlock command in the CDE environment to let users retain their sessions lock until users are reauthenticated.",
@@ -380,11 +380,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215189",
         "rid": "SV-215189r508663_rule",
         "stig_id": "AIX7-00-001030",
-        "fix_id": "F-16385r294019_fix"
+        "fix_id": "F-16385r294019_fix",
+        "documentable": false
       },
       "id": "V-215189",
       "title": "AIX system must prevent the root account from directly logging in except from the system console.",
@@ -398,11 +398,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215190",
         "rid": "SV-215190r508663_rule",
         "stig_id": "AIX7-00-001031",
-        "fix_id": "F-16386r294022_fix"
+        "fix_id": "F-16386r294022_fix",
+        "documentable": false
       },
       "id": "V-215190",
       "title": "All AIX public directories must be owned by root or an application account.",
@@ -416,11 +416,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215191",
         "rid": "SV-215191r508663_rule",
         "stig_id": "AIX7-00-001032",
-        "fix_id": "F-16387r294025_fix"
+        "fix_id": "F-16387r294025_fix",
+        "documentable": false
       },
       "id": "V-215191",
       "title": "AIX administrative accounts must not run a web browser, except as needed for local service administration.",
@@ -434,11 +434,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215192",
         "rid": "SV-215192r508663_rule",
         "stig_id": "AIX7-00-001033",
-        "fix_id": "F-16388r294028_fix"
+        "fix_id": "F-16388r294028_fix",
+        "documentable": false
       },
       "id": "V-215192",
       "title": "AIX default system accounts (with the exception of root) must not be listed in the cron.allow file or must be included in the cron.deny file, if cron.allow does not exist.",
@@ -452,11 +452,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215193",
         "rid": "SV-215193r508663_rule",
         "stig_id": "AIX7-00-001034",
-        "fix_id": "F-16389r294031_fix"
+        "fix_id": "F-16389r294031_fix",
+        "documentable": false
       },
       "id": "V-215193",
       "title": "The AIX root account must not have world-writable directories in its executable search path.",
@@ -470,11 +470,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215194",
         "rid": "SV-215194r508663_rule",
         "stig_id": "AIX7-00-001035",
-        "fix_id": "F-16390r294034_fix"
+        "fix_id": "F-16390r294034_fix",
+        "documentable": false
       },
       "id": "V-215194",
       "title": "The Group Identifiers (GIDs) reserved for AIX system accounts must not be assigned to non-system accounts as their primary group GID.",
@@ -488,11 +488,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215195",
         "rid": "SV-215195r508663_rule",
         "stig_id": "AIX7-00-001036",
-        "fix_id": "F-16391r294037_fix"
+        "fix_id": "F-16391r294037_fix",
+        "documentable": false
       },
       "id": "V-215195",
       "title": "UIDs reserved for system accounts must not be assigned to non-system accounts on AIX systems.",
@@ -506,11 +506,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215196",
         "rid": "SV-215196r508663_rule",
         "stig_id": "AIX7-00-001037",
-        "fix_id": "F-16392r294040_fix"
+        "fix_id": "F-16392r294040_fix",
+        "documentable": false
       },
       "id": "V-215196",
       "title": "The AIX root accounts list of preloaded libraries must be empty.",
@@ -524,11 +524,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-215197",
         "rid": "SV-215197r508663_rule",
         "stig_id": "AIX7-00-001038",
-        "fix_id": "F-16393r294043_fix"
+        "fix_id": "F-16393r294043_fix",
+        "documentable": false
       },
       "id": "V-215197",
       "title": "AIX must not have accounts configured with blank or null passwords.",
@@ -542,11 +542,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215198",
         "rid": "SV-215198r508663_rule",
         "stig_id": "AIX7-00-001039",
-        "fix_id": "F-16394r294046_fix"
+        "fix_id": "F-16394r294046_fix",
+        "documentable": false
       },
       "id": "V-215198",
       "title": "The AIX root accounts home directory (other than /) must have mode 0700.",
@@ -560,11 +560,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215199",
         "rid": "SV-215199r508663_rule",
         "stig_id": "AIX7-00-001040",
-        "fix_id": "F-16395r294049_fix"
+        "fix_id": "F-16395r294049_fix",
+        "documentable": false
       },
       "id": "V-215199",
       "title": "The AIX root accounts home directory must not have an extended ACL.",
@@ -578,11 +578,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-215200",
         "rid": "SV-215200r508663_rule",
         "stig_id": "AIX7-00-001041",
-        "fix_id": "F-16396r294052_fix"
+        "fix_id": "F-16396r294052_fix",
+        "documentable": false
       },
       "id": "V-215200",
       "title": "AIX must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote login access to the system.",
@@ -596,11 +596,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-215201",
         "rid": "SV-215201r508663_rule",
         "stig_id": "AIX7-00-001042",
-        "fix_id": "F-16397r294055_fix"
+        "fix_id": "F-16397r294055_fix",
+        "documentable": false
       },
       "id": "V-215201",
       "title": "The Department of Defense (DoD) login banner must be displayed immediately prior to, or as part of, graphical desktop environment login prompts on AIX.",
@@ -614,11 +614,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-215202",
         "rid": "SV-215202r508663_rule",
         "stig_id": "AIX7-00-001043",
-        "fix_id": "F-16398r294058_fix"
+        "fix_id": "F-16398r294058_fix",
+        "documentable": false
       },
       "id": "V-215202",
       "title": "The Department of Defense (DoD) login banner must be displayed during SSH, sftp, and scp login sessions on AIX.",
@@ -632,11 +632,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
         "gid": "V-215203",
         "rid": "SV-215203r508663_rule",
         "stig_id": "AIX7-00-001044",
-        "fix_id": "F-16399r294061_fix"
+        "fix_id": "F-16399r294061_fix",
+        "documentable": false
       },
       "id": "V-215203",
       "title": "Any publically accessible connection to AIX operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the system.",
@@ -650,11 +650,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-215204",
         "rid": "SV-215204r508663_rule",
         "stig_id": "AIX7-00-001045",
-        "fix_id": "F-16400r294064_fix"
+        "fix_id": "F-16400r294064_fix",
+        "documentable": false
       },
       "id": "V-215204",
       "title": "IF LDAP is used, AIX LDAP client must use SSL to authenticate with LDAP server.",
@@ -668,11 +668,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000383-GPOS-00166",
         "gid": "V-215205",
         "rid": "SV-215205r508663_rule",
         "stig_id": "AIX7-00-001046",
-        "fix_id": "F-16401r294067_fix"
+        "fix_id": "F-16401r294067_fix",
+        "documentable": false
       },
       "id": "V-215205",
       "title": "If LDAP authentication is required, AIX must setup LDAP client to refresh user and group caches less than a day.",
@@ -686,11 +686,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215206",
         "rid": "SV-215206r508663_rule",
         "stig_id": "AIX7-00-001047",
-        "fix_id": "F-16402r294070_fix"
+        "fix_id": "F-16402r294070_fix",
+        "documentable": false
       },
       "id": "V-215206",
       "title": "The AIX /etc/passwd, /etc/security/passwd, and/or /etc/group files must not contain a plus (+) without defining entries for NIS+ netgroups or LDAP netgroups.",
@@ -704,11 +704,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
         "gid": "V-215207",
         "rid": "SV-215207r508663_rule",
         "stig_id": "AIX7-00-001048",
-        "fix_id": "F-16403r294073_fix"
+        "fix_id": "F-16403r294073_fix",
+        "documentable": false
       },
       "id": "V-215207",
       "title": "AIX must protect the confidentiality and integrity of all information at rest.",
@@ -722,15 +722,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
+        "gid": "V-215208",
+        "rid": "SV-215208r508663_rule",
+        "stig_id": "AIX7-00-001053",
+        "fix_id": "F-16404r294076_fix",
         "satisfies": [
           "SRG-OS-000355-GPOS-00143",
           "SRG-OS-000356-GPOS-00144"
         ],
-        "gid": "V-215208",
-        "rid": "SV-215208r508663_rule",
-        "stig_id": "AIX7-00-001053",
-        "fix_id": "F-16404r294076_fix"
+        "documentable": false
       },
       "id": "V-215208",
       "title": "AIX must provide time synchronization applications that can synchronize the system clock to external time sources at least every 24 hours.",
@@ -744,11 +744,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215209",
         "rid": "SV-215209r508663_rule",
         "stig_id": "AIX7-00-001055",
-        "fix_id": "F-16405r294079_fix"
+        "fix_id": "F-16405r294079_fix",
+        "documentable": false
       },
       "id": "V-215209",
       "title": "All AIX NFS anonymous UIDs and GIDs must be configured to values without permissions.",
@@ -762,11 +762,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215210",
         "rid": "SV-215210r508663_rule",
         "stig_id": "AIX7-00-001056",
-        "fix_id": "F-16406r294082_fix"
+        "fix_id": "F-16406r294082_fix",
+        "documentable": false
       },
       "id": "V-215210",
       "title": "AIX nosuid option must be enabled on all NFS client mounts.",
@@ -780,11 +780,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000030-GPOS-00011",
         "gid": "V-215211",
         "rid": "SV-215211r508663_rule",
         "stig_id": "AIX7-00-001100",
-        "fix_id": "F-16407r294085_fix"
+        "fix_id": "F-16407r294085_fix",
+        "documentable": false
       },
       "id": "V-215211",
       "title": "AIX must be configured to allow users to directly initiate a session lock for all connection types.",
@@ -798,11 +798,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000031-GPOS-00012",
         "gid": "V-215212",
         "rid": "SV-215212r508663_rule",
         "stig_id": "AIX7-00-001101",
-        "fix_id": "F-16408r294088_fix"
+        "fix_id": "F-16408r294088_fix",
+        "documentable": false
       },
       "id": "V-215212",
       "title": "AIX CDE must conceal, via the session lock, information previously visible on the display with a publicly viewable image.",
@@ -816,11 +816,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
         "gid": "V-215213",
         "rid": "SV-215213r508663_rule",
         "stig_id": "AIX7-00-001102",
-        "fix_id": "F-16409r294091_fix"
+        "fix_id": "F-16409r294091_fix",
+        "documentable": false
       },
       "id": "V-215213",
       "title": "AIX must employ strong authenticators in the establishment of nonlocal maintenance and diagnostic sessions.",
@@ -834,11 +834,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000250-GPOS-00093",
         "gid": "V-215214",
         "rid": "SV-215214r508663_rule",
         "stig_id": "AIX7-00-001104",
-        "fix_id": "F-16410r294094_fix"
+        "fix_id": "F-16410r294094_fix",
+        "documentable": false
       },
       "id": "V-215214",
       "title": "If LDAP authentication is required on AIX, SSL must be used between LDAP clients and the LDAP servers to protect the integrity of remote access sessions.",
@@ -852,11 +852,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000403-GPOS-00182",
         "gid": "V-215215",
         "rid": "SV-215215r508663_rule",
         "stig_id": "AIX7-00-001105",
-        "fix_id": "F-16411r294097_fix"
+        "fix_id": "F-16411r294097_fix",
+        "documentable": false
       },
       "id": "V-215215",
       "title": "AIX must only allow the use of DoD PKI-established certificate authorities for verification of the establishment of protected sessions.",
@@ -870,16 +870,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000120-GPOS-00061",
+        "gid": "V-215216",
+        "rid": "SV-215216r517598_rule",
+        "stig_id": "AIX7-00-001108",
+        "fix_id": "F-16412r294100_fix",
         "satisfies": [
           "SRG-OS-000120-GPOS-00061",
           "SRG-OS-000478-GPOS-00223",
           "SRG-OS-000396-GPOS-00176"
         ],
-        "gid": "V-215216",
-        "rid": "SV-215216r517598_rule",
-        "stig_id": "AIX7-00-001108",
-        "fix_id": "F-16412r294100_fix"
+        "documentable": false
       },
       "id": "V-215216",
       "title": "AIX must implement NIST FIPS-validated cryptography for the following: to provision digital signatures, to generate cryptographic hashes, and to protect unclassified information requiring confidentiality and cryptographic protection in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.",
@@ -893,11 +893,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-215217",
         "rid": "SV-215217r508663_rule",
         "stig_id": "AIX7-00-001120",
-        "fix_id": "F-16413r294103_fix"
+        "fix_id": "F-16413r294103_fix",
+        "documentable": false
       },
       "id": "V-215217",
       "title": "AIX must enforce password complexity by requiring that at least one upper-case character be used.",
@@ -911,11 +911,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000070-GPOS-00038",
         "gid": "V-215218",
         "rid": "SV-215218r508663_rule",
         "stig_id": "AIX7-00-001121",
-        "fix_id": "F-16414r294106_fix"
+        "fix_id": "F-16414r294106_fix",
+        "documentable": false
       },
       "id": "V-215218",
       "title": "AIX must enforce password complexity by requiring that at least one lower-case character be used.",
@@ -929,11 +929,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000071-GPOS-00039",
         "gid": "V-215219",
         "rid": "SV-215219r508663_rule",
         "stig_id": "AIX7-00-001122",
-        "fix_id": "F-16415r294109_fix"
+        "fix_id": "F-16415r294109_fix",
+        "documentable": false
       },
       "id": "V-215219",
       "title": "AIX must enforce password complexity by requiring that at least one numeric character be used.",
@@ -947,11 +947,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-215220",
         "rid": "SV-215220r508663_rule",
         "stig_id": "AIX7-00-001123",
-        "fix_id": "F-16416r294112_fix"
+        "fix_id": "F-16416r294112_fix",
+        "documentable": false
       },
       "id": "V-215220",
       "title": "AIX must require the change of at least 50% of the total number of characters when passwords are changed.",
@@ -965,11 +965,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-215221",
         "rid": "SV-215221r508663_rule",
         "stig_id": "AIX7-00-001124",
-        "fix_id": "F-16417r294115_fix"
+        "fix_id": "F-16417r294115_fix",
+        "documentable": false
       },
       "id": "V-215221",
       "title": "AIX root passwords must never be passed over a network in clear text form.",
@@ -983,11 +983,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-215222",
         "rid": "SV-215222r508663_rule",
         "stig_id": "AIX7-00-001125",
-        "fix_id": "F-16418r294118_fix"
+        "fix_id": "F-16418r294118_fix",
+        "documentable": false
       },
       "id": "V-215222",
       "title": "AIX Operating systems must enforce 24 hours/1 day as the minimum password lifetime.",
@@ -1001,11 +1001,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-215223",
         "rid": "SV-215223r508663_rule",
         "stig_id": "AIX7-00-001126",
-        "fix_id": "F-16419r294121_fix"
+        "fix_id": "F-16419r294121_fix",
+        "documentable": false
       },
       "id": "V-215223",
       "title": "AIX Operating systems must enforce a 60-day maximum password lifetime restriction.",
@@ -1019,11 +1019,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-215224",
         "rid": "SV-215224r508663_rule",
         "stig_id": "AIX7-00-001127",
-        "fix_id": "F-16420r294124_fix"
+        "fix_id": "F-16420r294124_fix",
+        "documentable": false
       },
       "id": "V-215224",
       "title": "AIX must prohibit password reuse for a minimum of five generations.",
@@ -1037,11 +1037,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-215225",
         "rid": "SV-215225r508663_rule",
         "stig_id": "AIX7-00-001128",
-        "fix_id": "F-16421r294127_fix"
+        "fix_id": "F-16421r294127_fix",
+        "documentable": false
       },
       "id": "V-215225",
       "title": "AIX must use Loadable Password Algorithm (LPA) password hashing algorithm.",
@@ -1055,11 +1055,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-215226",
         "rid": "SV-215226r508663_rule",
         "stig_id": "AIX7-00-001129",
-        "fix_id": "F-16422r294130_fix"
+        "fix_id": "F-16422r294130_fix",
+        "documentable": false
       },
       "id": "V-215226",
       "title": "AIX must enforce a minimum 15-character password length.",
@@ -1073,11 +1073,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000266-GPOS-00101",
         "gid": "V-215227",
         "rid": "SV-215227r508663_rule",
         "stig_id": "AIX7-00-001130",
-        "fix_id": "F-16423r294133_fix"
+        "fix_id": "F-16423r294133_fix",
+        "documentable": false
       },
       "id": "V-215227",
       "title": "AIX must enforce password complexity by requiring that at least one special character be used.",
@@ -1091,11 +1091,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000380-GPOS-00165",
         "gid": "V-215228",
         "rid": "SV-215228r508663_rule",
         "stig_id": "AIX7-00-001131",
-        "fix_id": "F-16424r294136_fix"
+        "fix_id": "F-16424r294136_fix",
+        "documentable": false
       },
       "id": "V-215228",
       "title": "AIX must implement a way to force an identified temporary user to renew their password at next login.",
@@ -1109,11 +1109,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00225",
         "gid": "V-215229",
         "rid": "SV-215229r508663_rule",
         "stig_id": "AIX7-00-001132",
-        "fix_id": "F-16425r294139_fix"
+        "fix_id": "F-16425r294139_fix",
+        "documentable": false
       },
       "id": "V-215229",
       "title": "AIX must prevent the use of dictionary words for passwords.",
@@ -1127,11 +1127,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215230",
         "rid": "SV-215230r508663_rule",
         "stig_id": "AIX7-00-001134",
-        "fix_id": "F-16426r294142_fix"
+        "fix_id": "F-16426r294142_fix",
+        "documentable": false
       },
       "id": "V-215230",
       "title": "The password hashes stored on AIX system must have been generated using a FIPS 140-2 approved cryptographic hashing algorithm.",
@@ -1145,11 +1145,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215231",
         "rid": "SV-215231r508663_rule",
         "stig_id": "AIX7-00-001135",
-        "fix_id": "F-16427r294145_fix"
+        "fix_id": "F-16427r294145_fix",
+        "documentable": false
       },
       "id": "V-215231",
       "title": "If SNMP service is enabled on AIX, the default SNMP password must not be used in the /etc/snmpd.conf config file.",
@@ -1163,11 +1163,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215232",
         "rid": "SV-215232r508663_rule",
         "stig_id": "AIX7-00-001136",
-        "fix_id": "F-16428r294148_fix"
+        "fix_id": "F-16428r294148_fix",
+        "documentable": false
       },
       "id": "V-215232",
       "title": "AIX must require passwords to contain no more than three consecutive repeating characters.",
@@ -1181,11 +1181,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-215233",
         "rid": "SV-215233r508663_rule",
         "stig_id": "AIX7-00-001137",
-        "fix_id": "F-16429r294151_fix"
+        "fix_id": "F-16429r294151_fix",
+        "documentable": false
       },
       "id": "V-215233",
       "title": "AIX must be able to control the ability of remote login for users.",
@@ -1199,11 +1199,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000326-GPOS-00126",
         "gid": "V-215234",
         "rid": "SV-215234r508663_rule",
         "stig_id": "AIX7-00-001138",
-        "fix_id": "F-16430r294154_fix"
+        "fix_id": "F-16430r294154_fix",
+        "documentable": false
       },
       "id": "V-215234",
       "title": "NFS file systems on AIX must be mounted with the nosuid option unless the NFS file systems contain approved setuid or setgid programs.",
@@ -1217,11 +1217,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215235",
         "rid": "SV-215235r508663_rule",
         "stig_id": "AIX7-00-001139",
-        "fix_id": "F-16431r294157_fix"
+        "fix_id": "F-16431r294157_fix",
+        "documentable": false
       },
       "id": "V-215235",
       "title": "AIX removable media, remote file systems, and any file system not containing approved device files must be mounted with the nodev option.",
@@ -1235,15 +1235,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-215236",
+        "rid": "SV-215236r508663_rule",
+        "stig_id": "AIX7-00-002001",
+        "fix_id": "F-16432r294160_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000038-GPOS-00016"
         ],
-        "gid": "V-215236",
-        "rid": "SV-215236r508663_rule",
-        "stig_id": "AIX7-00-002001",
-        "fix_id": "F-16432r294160_fix"
+        "documentable": false
       },
       "id": "V-215236",
       "title": "AIX must produce audit records containing information to establish what the date, time, and type of events that occurred.",
@@ -1257,11 +1257,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000039-GPOS-00017",
         "gid": "V-215237",
         "rid": "SV-215237r508663_rule",
         "stig_id": "AIX7-00-002003",
-        "fix_id": "F-16433r294163_fix"
+        "fix_id": "F-16433r294163_fix",
+        "documentable": false
       },
       "id": "V-215237",
       "title": "AIX must produce audit records containing information to establish where the events occurred.",
@@ -1275,15 +1275,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000040-GPOS-00018",
+        "gid": "V-215238",
+        "rid": "SV-215238r508663_rule",
+        "stig_id": "AIX7-00-002004",
+        "fix_id": "F-16434r294166_fix",
         "satisfies": [
           "SRG-OS-000040-GPOS-00018",
           "SRG-OS-000255-GPOS-00096"
         ],
-        "gid": "V-215238",
-        "rid": "SV-215238r508663_rule",
-        "stig_id": "AIX7-00-002004",
-        "fix_id": "F-16434r294166_fix"
+        "documentable": false
       },
       "id": "V-215238",
       "title": "AIX must produce audit records containing information to establish the source and the identity of any individual or process associated with an event.",
@@ -1297,11 +1297,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000041-GPOS-00019",
         "gid": "V-215239",
         "rid": "SV-215239r508663_rule",
         "stig_id": "AIX7-00-002005",
-        "fix_id": "F-16435r294169_fix"
+        "fix_id": "F-16435r294169_fix",
+        "documentable": false
       },
       "id": "V-215239",
       "title": "AIX must produce audit records containing information to establish the outcome of the events.",
@@ -1315,11 +1315,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
         "gid": "V-215240",
         "rid": "SV-215240r508663_rule",
         "stig_id": "AIX7-00-002006",
-        "fix_id": "F-16436r294172_fix"
+        "fix_id": "F-16436r294172_fix",
+        "documentable": false
       },
       "id": "V-215240",
       "title": "AIX must produce audit records containing the full-text recording of privileged commands.",
@@ -1333,11 +1333,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000046-GPOS-00022",
         "gid": "V-215241",
         "rid": "SV-215241r508663_rule",
         "stig_id": "AIX7-00-002008",
-        "fix_id": "F-16437r294175_fix"
+        "fix_id": "F-16437r294175_fix",
+        "documentable": false
       },
       "id": "V-215241",
       "title": "AIX must be configured to generate an audit record when 75% of the audit file system is full.",
@@ -1351,17 +1351,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000054-GPOS-00025",
+        "gid": "V-215242",
+        "rid": "SV-215242r517599_rule",
+        "stig_id": "AIX7-00-002011",
+        "fix_id": "F-16438r294178_fix",
         "satisfies": [
           "SRG-OS-000054-GPOS-00025",
           "SRG-OS-000122-GPOS-00063",
           "SRG-OS-000348-GPOS-00136",
           "SRG-OS-000349-GPOS-00137"
         ],
-        "gid": "V-215242",
-        "rid": "SV-215242r517599_rule",
-        "stig_id": "AIX7-00-002011",
-        "fix_id": "F-16438r294178_fix"
+        "documentable": false
       },
       "id": "V-215242",
       "title": "AIX must provide the function to filter audit records for events of interest based upon all audit fields within audit records, support on-demand reporting requirements, and an audit reduction function that supports on-demand audit review and analysis and after-the-fact investigations of security incidents.",
@@ -1375,16 +1375,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-215243",
+        "rid": "SV-215243r508663_rule",
+        "stig_id": "AIX7-00-002013",
+        "fix_id": "F-16439r294181_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-215243",
-        "rid": "SV-215243r508663_rule",
-        "stig_id": "AIX7-00-002013",
-        "fix_id": "F-16439r294181_fix"
+        "documentable": false
       },
       "id": "V-215243",
       "title": "Audit logs on the AIX system must be owned by root.",
@@ -1398,16 +1398,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-215244",
+        "rid": "SV-215244r508663_rule",
+        "stig_id": "AIX7-00-002014",
+        "fix_id": "F-16440r294184_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-215244",
-        "rid": "SV-215244r508663_rule",
-        "stig_id": "AIX7-00-002014",
-        "fix_id": "F-16440r294184_fix"
+        "documentable": false
       },
       "id": "V-215244",
       "title": "Audit logs on the AIX system must be group-owned by system.",
@@ -1421,16 +1421,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-215245",
+        "rid": "SV-215245r508663_rule",
+        "stig_id": "AIX7-00-002015",
+        "fix_id": "F-16441r294187_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-215245",
-        "rid": "SV-215245r508663_rule",
-        "stig_id": "AIX7-00-002015",
-        "fix_id": "F-16441r294187_fix"
+        "documentable": false
       },
       "id": "V-215245",
       "title": "Audit logs on the AIX system must be set to 660 or less permissive.",
@@ -1444,7 +1444,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000062-GPOS-00031",
+        "gid": "V-215246",
+        "rid": "SV-215246r508663_rule",
+        "stig_id": "AIX7-00-002016",
+        "fix_id": "F-16442r294190_fix",
         "satisfies": [
           "SRG-OS-000062-GPOS-00031",
           "SRG-OS-000004-GPOS-00004",
@@ -1478,10 +1481,7 @@
           "SRG-OS-000476-GPOS-00221",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-215246",
-        "rid": "SV-215246r508663_rule",
-        "stig_id": "AIX7-00-002016",
-        "fix_id": "F-16442r294190_fix"
+        "documentable": false
       },
       "id": "V-215246",
       "title": "AIX must provide audit record generation functionality for DoD-defined auditable events.",
@@ -1495,11 +1495,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000254-GPOS-00095",
         "gid": "V-215247",
         "rid": "SV-215247r508663_rule",
         "stig_id": "AIX7-00-002023",
-        "fix_id": "F-16443r294193_fix"
+        "fix_id": "F-16443r294193_fix",
+        "documentable": false
       },
       "id": "V-215247",
       "title": "AIX must start audit at boot.",
@@ -1513,16 +1513,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "gid": "V-215248",
+        "rid": "SV-215248r508663_rule",
+        "stig_id": "AIX7-00-002025",
+        "fix_id": "F-16444r294196_fix",
         "satisfies": [
           "SRG-OS-000256-GPOS-00097",
           "SRG-OS-000257-GPOS-00098",
           "SRG-OS-000258-GPOS-00099"
         ],
-        "gid": "V-215248",
-        "rid": "SV-215248r508663_rule",
-        "stig_id": "AIX7-00-002025",
-        "fix_id": "F-16444r294196_fix"
+        "documentable": false
       },
       "id": "V-215248",
       "title": "AIX audit tools must be owned by root.",
@@ -1536,16 +1536,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "gid": "V-215249",
+        "rid": "SV-215249r508663_rule",
+        "stig_id": "AIX7-00-002026",
+        "fix_id": "F-16445r294199_fix",
         "satisfies": [
           "SRG-OS-000256-GPOS-00097",
           "SRG-OS-000257-GPOS-00098",
           "SRG-OS-000258-GPOS-00099"
         ],
-        "gid": "V-215249",
-        "rid": "SV-215249r508663_rule",
-        "stig_id": "AIX7-00-002026",
-        "fix_id": "F-16445r294199_fix"
+        "documentable": false
       },
       "id": "V-215249",
       "title": "AIX audit tools must be group-owned by audit.",
@@ -1559,16 +1559,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "gid": "V-215250",
+        "rid": "SV-215250r508663_rule",
+        "stig_id": "AIX7-00-002027",
+        "fix_id": "F-16446r294202_fix",
         "satisfies": [
           "SRG-OS-000256-GPOS-00097",
           "SRG-OS-000257-GPOS-00098",
           "SRG-OS-000258-GPOS-00099"
         ],
-        "gid": "V-215250",
-        "rid": "SV-215250r508663_rule",
-        "stig_id": "AIX7-00-002027",
-        "fix_id": "F-16446r294202_fix"
+        "documentable": false
       },
       "id": "V-215250",
       "title": "AIX audit tools must be set to 4550 or less permissive.",
@@ -1582,11 +1582,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000278-GPOS-00108",
         "gid": "V-215251",
         "rid": "SV-215251r508663_rule",
         "stig_id": "AIX7-00-002028",
-        "fix_id": "F-16447r294205_fix"
+        "fix_id": "F-16447r294205_fix",
+        "documentable": false
       },
       "id": "V-215251",
       "title": "AIX must verify the hash of audit tools.",
@@ -1600,11 +1600,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000337-GPOS-00129",
         "gid": "V-215252",
         "rid": "SV-215252r508663_rule",
         "stig_id": "AIX7-00-002032",
-        "fix_id": "F-16448r294208_fix"
+        "fix_id": "F-16448r294208_fix",
+        "documentable": false
       },
       "id": "V-215252",
       "title": "AIX must provide the function for assigned ISSOs or designated SAs to change the auditing to be performed on all operating system components, based on all selectable event criteria in near real time.",
@@ -1618,11 +1618,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-215253",
         "rid": "SV-215253r508663_rule",
         "stig_id": "AIX7-00-002033",
-        "fix_id": "F-16449r294211_fix"
+        "fix_id": "F-16449r294211_fix",
+        "documentable": false
       },
       "id": "V-215253",
       "title": "AIX must allocate audit record storage capacity to store at least one weeks worth of audit records, when audit records are not immediately sent to a central audit record storage facility.",
@@ -1636,16 +1636,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000350-GPOS-00138",
+        "gid": "V-215254",
+        "rid": "SV-215254r508663_rule",
+        "stig_id": "AIX7-00-002036",
+        "fix_id": "F-16450r294214_fix",
         "satisfies": [
           "SRG-OS-000350-GPOS-00138",
           "SRG-OS-000351-GPOS-00139",
           "SRG-OS-000352-GPOS-00140"
         ],
-        "gid": "V-215254",
-        "rid": "SV-215254r508663_rule",
-        "stig_id": "AIX7-00-002036",
-        "fix_id": "F-16450r294214_fix"
+        "documentable": false
       },
       "id": "V-215254",
       "title": "AIX must provide a report generation function that supports on-demand audit review and analysis, on-demand reporting requirements, and after-the-fact investigations of security incidents.",
@@ -1659,11 +1659,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000359-GPOS-00146",
         "gid": "V-215255",
         "rid": "SV-215255r755151_rule",
         "stig_id": "AIX7-00-002038",
-        "fix_id": "F-16451r755150_fix"
+        "fix_id": "F-16451r755150_fix",
+        "documentable": false
       },
       "id": "V-215255",
       "title": "AIX must record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).",
@@ -1677,11 +1677,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215256",
         "rid": "SV-215256r508663_rule",
         "stig_id": "AIX7-00-002057",
-        "fix_id": "F-16452r294220_fix"
+        "fix_id": "F-16452r294220_fix",
+        "documentable": false
       },
       "id": "V-215256",
       "title": "AIX audit logs must be rotated daily.",
@@ -1695,11 +1695,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-215257",
         "rid": "SV-215257r508663_rule",
         "stig_id": "AIX7-00-002058",
-        "fix_id": "F-16453r294223_fix"
+        "fix_id": "F-16453r294223_fix",
+        "documentable": false
       },
       "id": "V-215257",
       "title": "The AIX rexec daemon must not be running.",
@@ -1713,11 +1713,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-215258",
         "rid": "SV-215258r508663_rule",
         "stig_id": "AIX7-00-002059",
-        "fix_id": "F-16454r294226_fix"
+        "fix_id": "F-16454r294226_fix",
+        "documentable": false
       },
       "id": "V-215258",
       "title": "AIX telnet daemon must not be running.",
@@ -1731,11 +1731,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-215259",
         "rid": "SV-215259r508663_rule",
         "stig_id": "AIX7-00-002060",
-        "fix_id": "F-16455r294229_fix"
+        "fix_id": "F-16455r294229_fix",
+        "documentable": false
       },
       "id": "V-215259",
       "title": "AIX ftpd daemon must not be running.",
@@ -1749,11 +1749,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
         "gid": "V-215260",
         "rid": "SV-215260r508663_rule",
         "stig_id": "AIX7-00-002061",
-        "fix_id": "F-16456r294232_fix"
+        "fix_id": "F-16456r294232_fix",
+        "documentable": false
       },
       "id": "V-215260",
       "title": "AIX must remove NOPASSWD tag from sudo config files.",
@@ -1767,11 +1767,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
         "gid": "V-215261",
         "rid": "SV-215261r508663_rule",
         "stig_id": "AIX7-00-002062",
-        "fix_id": "F-16457r294235_fix"
+        "fix_id": "F-16457r294235_fix",
+        "documentable": false
       },
       "id": "V-215261",
       "title": "AIX must remove !authenticate option from sudo config files.",
@@ -1785,11 +1785,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215262",
         "rid": "SV-215262r508663_rule",
         "stig_id": "AIX7-00-002063",
-        "fix_id": "F-16458r294238_fix"
+        "fix_id": "F-16458r294238_fix",
+        "documentable": false
       },
       "id": "V-215262",
       "title": "AIX must be configured with a default gateway for IPv4 if the system uses IPv4, unless the system is a router.",
@@ -1803,11 +1803,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215263",
         "rid": "SV-215263r508663_rule",
         "stig_id": "AIX7-00-002064",
-        "fix_id": "F-16459r294241_fix"
+        "fix_id": "F-16459r294241_fix",
+        "documentable": false
       },
       "id": "V-215263",
       "title": "IP forwarding for IPv4 must not be enabled on AIX unless the system is a router.",
@@ -1821,11 +1821,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215264",
         "rid": "SV-215264r508663_rule",
         "stig_id": "AIX7-00-002065",
-        "fix_id": "F-16460r294244_fix"
+        "fix_id": "F-16460r294244_fix",
+        "documentable": false
       },
       "id": "V-215264",
       "title": "AIX must be configured with a default gateway for IPv6 if the system uses IPv6 unless the system is a router.",
@@ -1839,11 +1839,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215265",
         "rid": "SV-215265r508663_rule",
         "stig_id": "AIX7-00-002066",
-        "fix_id": "F-16461r294247_fix"
+        "fix_id": "F-16461r294247_fix",
+        "documentable": false
       },
       "id": "V-215265",
       "title": "AIX must not have IP forwarding for IPv6 enabled unless the system is an IPv6 router.",
@@ -1857,11 +1857,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-215266",
         "rid": "SV-215266r508663_rule",
         "stig_id": "AIX7-00-002070",
-        "fix_id": "F-16462r569438_fix"
+        "fix_id": "F-16462r569438_fix",
+        "documentable": false
       },
       "id": "V-215266",
       "title": "AIX log files must be owned by a system account.",
@@ -1875,11 +1875,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-215267",
         "rid": "SV-215267r508663_rule",
         "stig_id": "AIX7-00-002071",
-        "fix_id": "F-16463r569441_fix"
+        "fix_id": "F-16463r569441_fix",
+        "documentable": false
       },
       "id": "V-215267",
       "title": "AIX log files must be owned by a system group.",
@@ -1893,11 +1893,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-215268",
         "rid": "SV-215268r508663_rule",
         "stig_id": "AIX7-00-002072",
-        "fix_id": "F-16464r294256_fix"
+        "fix_id": "F-16464r294256_fix",
+        "documentable": false
       },
       "id": "V-215268",
       "title": "AIX system files, programs, and directories must be group-owned by a system group.",
@@ -1911,11 +1911,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215269",
         "rid": "SV-215269r755154_rule",
         "stig_id": "AIX7-00-002077",
-        "fix_id": "F-16465r755153_fix"
+        "fix_id": "F-16465r755153_fix",
+        "documentable": false
       },
       "id": "V-215269",
       "title": "The inetd.conf file on AIX must be owned by root.",
@@ -1929,11 +1929,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215270",
         "rid": "SV-215270r508663_rule",
         "stig_id": "AIX7-00-002078",
-        "fix_id": "F-16466r294262_fix"
+        "fix_id": "F-16466r294262_fix",
+        "documentable": false
       },
       "id": "V-215270",
       "title": "AIX cron and crontab directories must be owned by root or bin.",
@@ -1947,11 +1947,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215271",
         "rid": "SV-215271r508663_rule",
         "stig_id": "AIX7-00-002079",
-        "fix_id": "F-16467r294265_fix"
+        "fix_id": "F-16467r294265_fix",
+        "documentable": false
       },
       "id": "V-215271",
       "title": "AIX audio devices must be group-owned by root, sys, bin, or system.",
@@ -1965,11 +1965,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215272",
         "rid": "SV-215272r508663_rule",
         "stig_id": "AIX7-00-002081",
-        "fix_id": "F-16468r294268_fix"
+        "fix_id": "F-16468r294268_fix",
+        "documentable": false
       },
       "id": "V-215272",
       "title": "AIX time synchronization configuration file must be owned by root.",
@@ -1983,11 +1983,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215273",
         "rid": "SV-215273r508663_rule",
         "stig_id": "AIX7-00-002082",
-        "fix_id": "F-16469r294271_fix"
+        "fix_id": "F-16469r294271_fix",
+        "documentable": false
       },
       "id": "V-215273",
       "title": "AIX time synchronization configuration file must be group-owned by bin, or system.",
@@ -2001,11 +2001,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215274",
         "rid": "SV-215274r508663_rule",
         "stig_id": "AIX7-00-002083",
-        "fix_id": "F-16470r294274_fix"
+        "fix_id": "F-16470r294274_fix",
+        "documentable": false
       },
       "id": "V-215274",
       "title": "The AIX /etc/group file must be owned by root.",
@@ -2019,11 +2019,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215275",
         "rid": "SV-215275r508663_rule",
         "stig_id": "AIX7-00-002084",
-        "fix_id": "F-16471r294277_fix"
+        "fix_id": "F-16471r294277_fix",
+        "documentable": false
       },
       "id": "V-215275",
       "title": "The AIX /etc/group file must be group-owned by security.",
@@ -2037,11 +2037,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215276",
         "rid": "SV-215276r508663_rule",
         "stig_id": "AIX7-00-002085",
-        "fix_id": "F-16472r294280_fix"
+        "fix_id": "F-16472r294280_fix",
+        "documentable": false
       },
       "id": "V-215276",
       "title": "All AIX interactive users home directories must be owned by their respective users.",
@@ -2055,11 +2055,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215277",
         "rid": "SV-215277r508663_rule",
         "stig_id": "AIX7-00-002086",
-        "fix_id": "F-16473r294283_fix"
+        "fix_id": "F-16473r294283_fix",
+        "documentable": false
       },
       "id": "V-215277",
       "title": "All AIX interactive users home directories must be group-owned by the home directory owner primary group.",
@@ -2073,11 +2073,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215278",
         "rid": "SV-215278r508663_rule",
         "stig_id": "AIX7-00-002087",
-        "fix_id": "F-16474r294286_fix"
+        "fix_id": "F-16474r294286_fix",
+        "documentable": false
       },
       "id": "V-215278",
       "title": "All files and directories contained in users home directories on AIX must be group-owned by a group in which the home directory owner is a member.",
@@ -2091,11 +2091,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-215279",
         "rid": "SV-215279r508663_rule",
         "stig_id": "AIX7-00-002088",
-        "fix_id": "F-16475r294289_fix"
+        "fix_id": "F-16475r294289_fix",
+        "documentable": false
       },
       "id": "V-215279",
       "title": "AIX library files must have mode 0755 or less permissive.",
@@ -2109,11 +2109,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215280",
         "rid": "SV-215280r508663_rule",
         "stig_id": "AIX7-00-002089",
-        "fix_id": "F-16476r294292_fix"
+        "fix_id": "F-16476r294292_fix",
+        "documentable": false
       },
       "id": "V-215280",
       "title": "Samba packages must be removed from AIX.",
@@ -2127,11 +2127,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215281",
         "rid": "SV-215281r508663_rule",
         "stig_id": "AIX7-00-002090",
-        "fix_id": "F-16477r294295_fix"
+        "fix_id": "F-16477r294295_fix",
+        "documentable": false
       },
       "id": "V-215281",
       "title": "AIX time synchronization configuration file must have mode 0640 or less permissive.",
@@ -2145,11 +2145,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215282",
         "rid": "SV-215282r508663_rule",
         "stig_id": "AIX7-00-002091",
-        "fix_id": "F-16478r294298_fix"
+        "fix_id": "F-16478r294298_fix",
+        "documentable": false
       },
       "id": "V-215282",
       "title": "The AIX /etc/group file must have mode 0644 or less permissive.",
@@ -2163,16 +2163,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "gid": "V-215283",
+        "rid": "SV-215283r508663_rule",
+        "stig_id": "AIX7-00-002096",
+        "fix_id": "F-16479r294301_fix",
         "satisfies": [
           "SRG-OS-000480-GPOS-00227",
           "SRG-OS-000405-GPOS-00184",
           "SRG-OS-000404-GPOS-00183"
         ],
-        "gid": "V-215283",
-        "rid": "SV-215283r508663_rule",
-        "stig_id": "AIX7-00-002096",
-        "fix_id": "F-16479r294301_fix"
+        "documentable": false
       },
       "id": "V-215283",
       "title": "AIX must encrypt user data at rest using AIX Encrypted File System (EFS) if it is required.",
@@ -2186,7 +2186,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-215284",
+        "rid": "SV-215284r508663_rule",
+        "stig_id": "AIX7-00-002097",
+        "fix_id": "F-16480r294304_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188",
@@ -2195,10 +2198,7 @@
           "SRG-OS-000393-GPOS-00173",
           "SRG-OS-000394-GPOS-00174"
         ],
-        "gid": "V-215284",
-        "rid": "SV-215284r508663_rule",
-        "stig_id": "AIX7-00-002097",
-        "fix_id": "F-16480r294304_fix"
+        "documentable": false
       },
       "id": "V-215284",
       "title": "AIX must protect the confidentiality and integrity of transmitted information during preparation for transmission and maintain the confidentiality and integrity of information during reception and disable all non-encryption network access methods.",
@@ -2212,11 +2212,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-215285",
         "rid": "SV-215285r508663_rule",
         "stig_id": "AIX7-00-002100",
-        "fix_id": "F-16481r294307_fix"
+        "fix_id": "F-16481r294307_fix",
+        "documentable": false
       },
       "id": "V-215285",
       "title": "AIX must monitor and record successful remote logins.",
@@ -2230,11 +2230,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-215286",
         "rid": "SV-215286r508663_rule",
         "stig_id": "AIX7-00-002101",
-        "fix_id": "F-16482r294310_fix"
+        "fix_id": "F-16482r294310_fix",
+        "documentable": false
       },
       "id": "V-215286",
       "title": "AIX must monitor and record unsuccessful remote logins.",
@@ -2248,11 +2248,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215287",
         "rid": "SV-215287r508663_rule",
         "stig_id": "AIX7-00-002102",
-        "fix_id": "F-16483r294313_fix"
+        "fix_id": "F-16483r294313_fix",
+        "documentable": false
       },
       "id": "V-215287",
       "title": "On AIX, the SSH server must not permit root logins using remote access programs.",
@@ -2266,11 +2266,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215288",
         "rid": "SV-215288r508663_rule",
         "stig_id": "AIX7-00-002103",
-        "fix_id": "F-16484r294316_fix"
+        "fix_id": "F-16484r294316_fix",
+        "documentable": false
       },
       "id": "V-215288",
       "title": "All AIX shells referenced in passwd file must be listed in /etc/shells file, except any shells specified for the purpose of preventing logins.",
@@ -2284,11 +2284,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
         "gid": "V-215289",
         "rid": "SV-215289r508663_rule",
         "stig_id": "AIX7-00-002104",
-        "fix_id": "F-16485r294319_fix"
+        "fix_id": "F-16485r294319_fix",
+        "documentable": false
       },
       "id": "V-215289",
       "title": "The AIX SSH server must use SSH Protocol 2.",
@@ -2302,14 +2302,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000279-GPOS-00109",
-        "satisfies": [
-          "SRG-OS-000163-GPOS-00072"
-        ],
         "gid": "V-215290",
         "rid": "SV-215290r648727_rule",
         "stig_id": "AIX7-00-002105",
-        "fix_id": "F-16486r648726_fix"
+        "fix_id": "F-16486r648726_fix",
+        "satisfies": [
+          "SRG-OS-000163-GPOS-00072"
+        ],
+        "documentable": false
       },
       "id": "V-215290",
       "title": "AIX must config the SSH idle timeout interval.",
@@ -2323,11 +2323,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000365-GPOS-00152",
         "gid": "V-215291",
         "rid": "SV-215291r508663_rule",
         "stig_id": "AIX7-00-002107",
-        "fix_id": "F-16487r294325_fix"
+        "fix_id": "F-16487r294325_fix",
+        "documentable": false
       },
       "id": "V-215291",
       "title": "AIX must disable Kerberos Authentication in ssh config file to enforce access restrictions.",
@@ -2341,11 +2341,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00158",
         "gid": "V-215292",
         "rid": "SV-215292r508663_rule",
         "stig_id": "AIX7-00-002108",
-        "fix_id": "F-16488r294328_fix"
+        "fix_id": "F-16488r294328_fix",
+        "documentable": false
       },
       "id": "V-215292",
       "title": "If GSSAPI authentication is not required on AIX, the SSH daemon must disable GSSAPI authentication.",
@@ -2359,11 +2359,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000384-GPOS-00167",
         "gid": "V-215293",
         "rid": "SV-215293r508663_rule",
         "stig_id": "AIX7-00-002110",
-        "fix_id": "F-16489r294331_fix"
+        "fix_id": "F-16489r294331_fix",
+        "documentable": false
       },
       "id": "V-215293",
       "title": "AIX must setup SSH daemon to disable revoked public keys.",
@@ -2377,11 +2377,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215294",
         "rid": "SV-215294r508663_rule",
         "stig_id": "AIX7-00-002111",
-        "fix_id": "F-16490r294334_fix"
+        "fix_id": "F-16490r294334_fix",
+        "documentable": false
       },
       "id": "V-215294",
       "title": "AIX SSH daemon must be configured to only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms.",
@@ -2395,11 +2395,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215295",
         "rid": "SV-215295r508663_rule",
         "stig_id": "AIX7-00-002112",
-        "fix_id": "F-16491r294337_fix"
+        "fix_id": "F-16491r294337_fix",
+        "documentable": false
       },
       "id": "V-215295",
       "title": "The AIX SSH daemon must be configured for IP filtering.",
@@ -2413,11 +2413,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215296",
         "rid": "SV-215296r508663_rule",
         "stig_id": "AIX7-00-002113",
-        "fix_id": "F-16492r294340_fix"
+        "fix_id": "F-16492r294340_fix",
+        "documentable": false
       },
       "id": "V-215296",
       "title": "The AIX SSH daemon must not allow compression.",
@@ -2431,11 +2431,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215297",
         "rid": "SV-215297r508663_rule",
         "stig_id": "AIX7-00-002114",
-        "fix_id": "F-16493r294343_fix"
+        "fix_id": "F-16493r294343_fix",
+        "documentable": false
       },
       "id": "V-215297",
       "title": "AIX must turn on SSH daemon privilege separation.",
@@ -2449,11 +2449,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215298",
         "rid": "SV-215298r508663_rule",
         "stig_id": "AIX7-00-002115",
-        "fix_id": "F-16494r294346_fix"
+        "fix_id": "F-16494r294346_fix",
+        "documentable": false
       },
       "id": "V-215298",
       "title": "AIX must turn on SSH daemon reverse name checking.",
@@ -2467,11 +2467,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215299",
         "rid": "SV-215299r508663_rule",
         "stig_id": "AIX7-00-002116",
-        "fix_id": "F-16495r294349_fix"
+        "fix_id": "F-16495r294349_fix",
+        "documentable": false
       },
       "id": "V-215299",
       "title": "AIX SSH daemon must perform strict mode checking of home directory configuration files.",
@@ -2485,11 +2485,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215300",
         "rid": "SV-215300r508663_rule",
         "stig_id": "AIX7-00-002117",
-        "fix_id": "F-16496r294352_fix"
+        "fix_id": "F-16496r294352_fix",
+        "documentable": false
       },
       "id": "V-215300",
       "title": "AIX must turn off X11 forwarding for the SSH daemon.",
@@ -2503,11 +2503,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215301",
         "rid": "SV-215301r508663_rule",
         "stig_id": "AIX7-00-002118",
-        "fix_id": "F-16497r294355_fix"
+        "fix_id": "F-16497r294355_fix",
+        "documentable": false
       },
       "id": "V-215301",
       "title": "AIX must turn off TCP forwarding for the SSH daemon.",
@@ -2521,11 +2521,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-215302",
         "rid": "SV-215302r508663_rule",
         "stig_id": "AIX7-00-002120",
-        "fix_id": "F-16498r294358_fix"
+        "fix_id": "F-16498r294358_fix",
+        "documentable": false
       },
       "id": "V-215302",
       "title": "The AIX SSH daemon must be configured to disable empty passwords.",
@@ -2539,11 +2539,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-215303",
         "rid": "SV-215303r508663_rule",
         "stig_id": "AIX7-00-002121",
-        "fix_id": "F-16499r294361_fix"
+        "fix_id": "F-16499r294361_fix",
+        "documentable": false
       },
       "id": "V-215303",
       "title": "The AIX SSH daemon must be configured to disable user .rhosts files.",
@@ -2557,11 +2557,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-215304",
         "rid": "SV-215304r508663_rule",
         "stig_id": "AIX7-00-002122",
-        "fix_id": "F-16500r294364_fix"
+        "fix_id": "F-16500r294364_fix",
+        "documentable": false
       },
       "id": "V-215304",
       "title": "The AIX SSH daemon must be configured to not use host-based authentication.",
@@ -2575,11 +2575,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-215305",
         "rid": "SV-215305r508663_rule",
         "stig_id": "AIX7-00-002123",
-        "fix_id": "F-16501r294367_fix"
+        "fix_id": "F-16501r294367_fix",
+        "documentable": false
       },
       "id": "V-215305",
       "title": "The AIX SSH daemon must not allow RhostsRSAAuthentication.",
@@ -2593,11 +2593,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00232",
         "gid": "V-215306",
         "rid": "SV-215306r508663_rule",
         "stig_id": "AIX7-00-002124",
-        "fix_id": "F-16502r294370_fix"
+        "fix_id": "F-16502r294370_fix",
+        "documentable": false
       },
       "id": "V-215306",
       "title": "If AIX SSH daemon is required, the SSH daemon must only listen on the approved listening IP addresses.",
@@ -2611,11 +2611,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215308",
         "rid": "SV-215308r508663_rule",
         "stig_id": "AIX7-00-002127",
-        "fix_id": "F-16504r294376_fix"
+        "fix_id": "F-16504r294376_fix",
+        "documentable": false
       },
       "id": "V-215308",
       "title": "AIX system must require authentication upon booting into single-user and maintenance modes.",
@@ -2629,11 +2629,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000281-GPOS-00111",
         "gid": "V-215309",
         "rid": "SV-215309r508663_rule",
         "stig_id": "AIX7-00-002128",
-        "fix_id": "F-16505r294379_fix"
+        "fix_id": "F-16505r294379_fix",
+        "documentable": false
       },
       "id": "V-215309",
       "title": "If bash is used, AIX must display logout messages.",
@@ -2647,11 +2647,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000281-GPOS-00111",
         "gid": "V-215310",
         "rid": "SV-215310r508663_rule",
         "stig_id": "AIX7-00-002129",
-        "fix_id": "F-16506r294382_fix"
+        "fix_id": "F-16506r294382_fix",
+        "documentable": false
       },
       "id": "V-215310",
       "title": "If Bourne / ksh shell is used, AIX must display logout messages.",
@@ -2665,11 +2665,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000281-GPOS-00111",
         "gid": "V-215311",
         "rid": "SV-215311r508663_rule",
         "stig_id": "AIX7-00-002130",
-        "fix_id": "F-16507r294385_fix"
+        "fix_id": "F-16507r294385_fix",
+        "documentable": false
       },
       "id": "V-215311",
       "title": "If csh/tcsh shell is used, AIX must display logout messages.",
@@ -2683,16 +2683,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "gid": "V-215312",
+        "rid": "SV-215312r508663_rule",
+        "stig_id": "AIX7-00-002131",
+        "fix_id": "F-16508r294388_fix",
         "satisfies": [
           "SRG-OS-000480-GPOS-00227",
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "gid": "V-215312",
-        "rid": "SV-215312r508663_rule",
-        "stig_id": "AIX7-00-002131",
-        "fix_id": "F-16508r294388_fix"
+        "documentable": false
       },
       "id": "V-215312",
       "title": "AIX must implement a remote syslog server that is documented using site-defined procedures.",
@@ -2706,11 +2706,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215313",
         "rid": "SV-215313r508663_rule",
         "stig_id": "AIX7-00-002132",
-        "fix_id": "F-16509r294391_fix"
+        "fix_id": "F-16509r294391_fix",
+        "documentable": false
       },
       "id": "V-215313",
       "title": "The AIX syslog daemon must not accept remote messages unless it is a syslog server documented using site-defined procedures.",
@@ -2724,11 +2724,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000365-GPOS-00152",
         "gid": "V-215314",
         "rid": "SV-215314r508663_rule",
         "stig_id": "AIX7-00-002133",
-        "fix_id": "F-16510r294394_fix"
+        "fix_id": "F-16510r294394_fix",
+        "documentable": false
       },
       "id": "V-215314",
       "title": "AIX must be configured to use syslogd to log events by TCPD.",
@@ -2742,11 +2742,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000063-GPOS-00032",
         "gid": "V-215315",
         "rid": "SV-215315r508663_rule",
         "stig_id": "AIX7-00-002200",
-        "fix_id": "F-16511r294397_fix"
+        "fix_id": "F-16511r294397_fix",
+        "documentable": false
       },
       "id": "V-215315",
       "title": "The AIX audit configuration files must be owned by root.",
@@ -2760,11 +2760,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000063-GPOS-00032",
         "gid": "V-215316",
         "rid": "SV-215316r508663_rule",
         "stig_id": "AIX7-00-002201",
-        "fix_id": "F-16512r294400_fix"
+        "fix_id": "F-16512r294400_fix",
+        "documentable": false
       },
       "id": "V-215316",
       "title": "The AIX audit configuration files must be group-owned by audit.",
@@ -2778,11 +2778,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000063-GPOS-00032",
         "gid": "V-215317",
         "rid": "SV-215317r508663_rule",
         "stig_id": "AIX7-00-002202",
-        "fix_id": "F-16513r294403_fix"
+        "fix_id": "F-16513r294403_fix",
+        "documentable": false
       },
       "id": "V-215317",
       "title": "The AIX audit configuration files must be set to 640 or less permissive.",
@@ -2796,11 +2796,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-215318",
         "rid": "SV-215318r508663_rule",
         "stig_id": "AIX7-00-003000",
-        "fix_id": "F-16514r294406_fix"
+        "fix_id": "F-16514r294406_fix",
+        "documentable": false
       },
       "id": "V-215318",
       "title": "AIX must automatically lock after 15 minutes of inactivity in the CDE Graphical desktop environment.",
@@ -2814,16 +2814,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000279-GPOS-00109",
+        "gid": "V-215320",
+        "rid": "SV-215320r508663_rule",
+        "stig_id": "AIX7-00-003003",
+        "fix_id": "F-16516r294412_fix",
         "satisfies": [
           "SRG-OS-000279-GPOS-00109",
           "SRG-OS-000163-GPOS-00072",
           "SRG-OS-000126-GPOS-00066"
         ],
-        "gid": "V-215320",
-        "rid": "SV-215320r508663_rule",
-        "stig_id": "AIX7-00-003003",
-        "fix_id": "F-16516r294412_fix"
+        "documentable": false
       },
       "id": "V-215320",
       "title": "AIX must set inactivity time-out on login sessions and terminate all login sessions after 10 minutes of inactivity.",
@@ -2837,11 +2837,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000067-GPOS-00035",
         "gid": "V-215321",
         "rid": "SV-215321r508663_rule",
         "stig_id": "AIX7-00-003004",
-        "fix_id": "F-16517r294415_fix"
+        "fix_id": "F-16517r294415_fix",
+        "documentable": false
       },
       "id": "V-215321",
       "title": "AIX SSH private host key files must have mode 0600 or less permissive.",
@@ -2855,11 +2855,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-215322",
         "rid": "SV-215322r508663_rule",
         "stig_id": "AIX7-00-003005",
-        "fix_id": "F-16518r294418_fix"
+        "fix_id": "F-16518r294418_fix",
+        "documentable": false
       },
       "id": "V-215322",
       "title": "AIX must disable /usr/bin/rcp, /usr/bin/rlogin, /usr/bin/rsh, /usr/bin/rexec and /usr/bin/telnet commands.",
@@ -2873,11 +2873,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-215323",
         "rid": "SV-215323r508663_rule",
         "stig_id": "AIX7-00-003006",
-        "fix_id": "F-16519r294421_fix"
+        "fix_id": "F-16519r294421_fix",
+        "documentable": false
       },
       "id": "V-215323",
       "title": "AIX log files must have mode 0640 or less permissive.",
@@ -2891,11 +2891,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-215324",
         "rid": "SV-215324r508663_rule",
         "stig_id": "AIX7-00-003007",
-        "fix_id": "F-16520r294424_fix"
+        "fix_id": "F-16520r294424_fix",
+        "documentable": false
       },
       "id": "V-215324",
       "title": "AIX log files must not have extended ACLs, except as needed to support authorized software.",
@@ -2909,11 +2909,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-215325",
         "rid": "SV-215325r508663_rule",
         "stig_id": "AIX7-00-003009",
-        "fix_id": "F-16521r294427_fix"
+        "fix_id": "F-16521r294427_fix",
+        "documentable": false
       },
       "id": "V-215325",
       "title": "All system command files must not have extended ACLs.",
@@ -2927,11 +2927,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-215326",
         "rid": "SV-215326r508663_rule",
         "stig_id": "AIX7-00-003010",
-        "fix_id": "F-16522r294430_fix"
+        "fix_id": "F-16522r294430_fix",
+        "documentable": false
       },
       "id": "V-215326",
       "title": "All library files must not have extended ACLs.",
@@ -2945,11 +2945,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215327",
         "rid": "SV-215327r508663_rule",
         "stig_id": "AIX7-00-003013",
-        "fix_id": "F-16523r294433_fix"
+        "fix_id": "F-16523r294433_fix",
+        "documentable": false
       },
       "id": "V-215327",
       "title": "AIX passwd.nntp file must have mode 0600 or less permissive.",
@@ -2963,11 +2963,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215328",
         "rid": "SV-215328r508663_rule",
         "stig_id": "AIX7-00-003015",
-        "fix_id": "F-16524r294436_fix"
+        "fix_id": "F-16524r294436_fix",
+        "documentable": false
       },
       "id": "V-215328",
       "title": "The AIX /etc/group file must not have an extended ACL.",
@@ -2981,11 +2981,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215329",
         "rid": "SV-215329r508663_rule",
         "stig_id": "AIX7-00-003016",
-        "fix_id": "F-16525r294439_fix"
+        "fix_id": "F-16525r294439_fix",
+        "documentable": false
       },
       "id": "V-215329",
       "title": "The AIX ldd command must be disabled.",
@@ -2999,11 +2999,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215330",
         "rid": "SV-215330r508663_rule",
         "stig_id": "AIX7-00-003017",
-        "fix_id": "F-16526r294442_fix"
+        "fix_id": "F-16526r294442_fix",
+        "documentable": false
       },
       "id": "V-215330",
       "title": "AIX NFS server must be configured to restrict file system access to local hosts.",
@@ -3017,11 +3017,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215331",
         "rid": "SV-215331r508663_rule",
         "stig_id": "AIX7-00-003018",
-        "fix_id": "F-16527r294445_fix"
+        "fix_id": "F-16527r294445_fix",
+        "documentable": false
       },
       "id": "V-215331",
       "title": "All AIX users home directories must have mode 0750 or less permissive.",
@@ -3035,11 +3035,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215332",
         "rid": "SV-215332r508663_rule",
         "stig_id": "AIX7-00-003019",
-        "fix_id": "F-16528r294448_fix"
+        "fix_id": "F-16528r294448_fix",
+        "documentable": false
       },
       "id": "V-215332",
       "title": "The AIX user home directories must not have extended ACLs.",
@@ -3053,11 +3053,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000312-GPOS-00124",
         "gid": "V-215333",
         "rid": "SV-215333r508663_rule",
         "stig_id": "AIX7-00-003020",
-        "fix_id": "F-16529r294451_fix"
+        "fix_id": "F-16529r294451_fix",
+        "documentable": false
       },
       "id": "V-215333",
       "title": "AIX must use Trusted Execution (TE) Check policy.",
@@ -3071,11 +3071,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000365-GPOS-00152",
         "gid": "V-215334",
         "rid": "SV-215334r508663_rule",
         "stig_id": "AIX7-00-003022",
-        "fix_id": "F-16530r294454_fix"
+        "fix_id": "F-16530r294454_fix",
+        "documentable": false
       },
       "id": "V-215334",
       "title": "AIX must disable trivial file transfer protocol.",
@@ -3089,15 +3089,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
+        "gid": "V-215335",
+        "rid": "SV-215335r508663_rule",
+        "stig_id": "AIX7-00-003025",
+        "fix_id": "F-16531r294457_fix",
         "satisfies": [
           "SRG-OS-000368-GPOS-00154",
           "SRG-OS-000370-GPOS-00155"
         ],
-        "gid": "V-215335",
-        "rid": "SV-215335r508663_rule",
-        "stig_id": "AIX7-00-003025",
-        "fix_id": "F-16531r294457_fix"
+        "documentable": false
       },
       "id": "V-215335",
       "title": "AIX must employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs.",
@@ -3111,11 +3111,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000437-GPOS-00194",
         "gid": "V-215336",
         "rid": "SV-215336r508663_rule",
         "stig_id": "AIX7-00-003028",
-        "fix_id": "F-16532r294460_fix"
+        "fix_id": "F-16532r294460_fix",
+        "documentable": false
       },
       "id": "V-215336",
       "title": "AIX must remove all software components after updated versions have been installed.",
@@ -3129,11 +3129,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00226",
         "gid": "V-215337",
         "rid": "SV-215337r508663_rule",
         "stig_id": "AIX7-00-003029",
-        "fix_id": "F-16533r294463_fix"
+        "fix_id": "F-16533r294463_fix",
+        "documentable": false
       },
       "id": "V-215337",
       "title": "AIX must enforce a delay of at least 4 seconds between login prompts following a failed login attempt.",
@@ -3147,11 +3147,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215338",
         "rid": "SV-215338r508663_rule",
         "stig_id": "AIX7-00-003030",
-        "fix_id": "F-16534r294466_fix"
+        "fix_id": "F-16534r294466_fix",
+        "documentable": false
       },
       "id": "V-215338",
       "title": "AIX system must restrict the ability to switch to the root user to members of a defined group.",
@@ -3165,11 +3165,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215339",
         "rid": "SV-215339r508663_rule",
         "stig_id": "AIX7-00-003033",
-        "fix_id": "F-16535r294469_fix"
+        "fix_id": "F-16535r294469_fix",
+        "documentable": false
       },
       "id": "V-215339",
       "title": "All AIX Group Identifiers (GIDs) referenced in the /etc/passwd file must be defined in the /etc/group file.",
@@ -3183,11 +3183,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215340",
         "rid": "SV-215340r508663_rule",
         "stig_id": "AIX7-00-003034",
-        "fix_id": "F-16536r294472_fix"
+        "fix_id": "F-16536r294472_fix",
+        "documentable": false
       },
       "id": "V-215340",
       "title": "All AIX files and directories must have a valid owner.",
@@ -3201,11 +3201,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215341",
         "rid": "SV-215341r508663_rule",
         "stig_id": "AIX7-00-003035",
-        "fix_id": "F-16537r294475_fix"
+        "fix_id": "F-16537r294475_fix",
+        "documentable": false
       },
       "id": "V-215341",
       "title": "The sticky bit must be set on all public directories on AIX systems.",
@@ -3219,11 +3219,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215342",
         "rid": "SV-215342r508663_rule",
         "stig_id": "AIX7-00-003036",
-        "fix_id": "F-16538r294478_fix"
+        "fix_id": "F-16538r294478_fix",
+        "documentable": false
       },
       "id": "V-215342",
       "title": "The AIX global initialization files must contain the mesg -n or mesg n commands.",
@@ -3237,11 +3237,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215343",
         "rid": "SV-215343r508663_rule",
         "stig_id": "AIX7-00-003037",
-        "fix_id": "F-16539r294481_fix"
+        "fix_id": "F-16539r294481_fix",
+        "documentable": false
       },
       "id": "V-215343",
       "title": "The AIX hosts.lpd file must not contain a + character.",
@@ -3255,11 +3255,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215344",
         "rid": "SV-215344r508663_rule",
         "stig_id": "AIX7-00-003038",
-        "fix_id": "F-16540r294484_fix"
+        "fix_id": "F-16540r294484_fix",
+        "documentable": false
       },
       "id": "V-215344",
       "title": "AIX sendmail logging must not be set to less than nine in the sendmail.cf file.",
@@ -3273,11 +3273,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215345",
         "rid": "SV-215345r508663_rule",
         "stig_id": "AIX7-00-003039",
-        "fix_id": "F-16541r294487_fix"
+        "fix_id": "F-16541r294487_fix",
+        "documentable": false
       },
       "id": "V-215345",
       "title": "AIX run control scripts executable search paths must contain only absolute paths.",
@@ -3291,11 +3291,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-215346",
         "rid": "SV-215346r508663_rule",
         "stig_id": "AIX7-00-003040",
-        "fix_id": "F-16542r294490_fix"
+        "fix_id": "F-16542r294490_fix",
+        "documentable": false
       },
       "id": "V-215346",
       "title": "The AIX rsh daemon must be disabled.",
@@ -3309,11 +3309,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-215347",
         "rid": "SV-215347r508663_rule",
         "stig_id": "AIX7-00-003041",
-        "fix_id": "F-16543r294493_fix"
+        "fix_id": "F-16543r294493_fix",
+        "documentable": false
       },
       "id": "V-215347",
       "title": "The AIX rlogind service must be disabled.",
@@ -3327,11 +3327,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215348",
         "rid": "SV-215348r508663_rule",
         "stig_id": "AIX7-00-003042",
-        "fix_id": "F-16544r294496_fix"
+        "fix_id": "F-16544r294496_fix",
+        "documentable": false
       },
       "id": "V-215348",
       "title": "The AIX qdaemon must be disabled if local or remote printing is not required.",
@@ -3345,11 +3345,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215349",
         "rid": "SV-215349r508663_rule",
         "stig_id": "AIX7-00-003043",
-        "fix_id": "F-16545r294499_fix"
+        "fix_id": "F-16545r294499_fix",
+        "documentable": false
       },
       "id": "V-215349",
       "title": "If AIX system does not act as a remote print server for other servers, the lpd daemon must be disabled.",
@@ -3363,11 +3363,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215350",
         "rid": "SV-215350r508663_rule",
         "stig_id": "AIX7-00-003044",
-        "fix_id": "F-16546r294502_fix"
+        "fix_id": "F-16546r294502_fix",
+        "documentable": false
       },
       "id": "V-215350",
       "title": "If AIX system does not support either local or remote printing, the piobe service must be disabled.",
@@ -3381,11 +3381,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215351",
         "rid": "SV-215351r508663_rule",
         "stig_id": "AIX7-00-003045",
-        "fix_id": "F-16547r294505_fix"
+        "fix_id": "F-16547r294505_fix",
+        "documentable": false
       },
       "id": "V-215351",
       "title": "If there are no X11 clients that require CDE on AIX, the dt service must be disabled.",
@@ -3399,11 +3399,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215352",
         "rid": "SV-215352r508663_rule",
         "stig_id": "AIX7-00-003046",
-        "fix_id": "F-16548r294508_fix"
+        "fix_id": "F-16548r294508_fix",
+        "documentable": false
       },
       "id": "V-215352",
       "title": "If NFS is not required on AIX, the NFS daemon must be disabled.",
@@ -3417,11 +3417,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215353",
         "rid": "SV-215353r508663_rule",
         "stig_id": "AIX7-00-003047",
-        "fix_id": "F-16549r294511_fix"
+        "fix_id": "F-16549r294511_fix",
+        "documentable": false
       },
       "id": "V-215353",
       "title": "If sendmail is not required on AIX, the sendmail service must be disabled.",
@@ -3435,11 +3435,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215354",
         "rid": "SV-215354r508663_rule",
         "stig_id": "AIX7-00-003048",
-        "fix_id": "F-16550r294514_fix"
+        "fix_id": "F-16550r294514_fix",
+        "documentable": false
       },
       "id": "V-215354",
       "title": "If SNMP is not required on AIX, the snmpd service must be disabled.",
@@ -3453,15 +3453,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "gid": "V-215355",
+        "rid": "SV-215355r508663_rule",
+        "stig_id": "AIX7-00-003049",
+        "fix_id": "F-16551r294517_fix",
         "satisfies": [
           "SRG-OS-000095-GPOS-00049",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-215355",
-        "rid": "SV-215355r508663_rule",
-        "stig_id": "AIX7-00-003049",
-        "fix_id": "F-16551r294517_fix"
+        "documentable": false
       },
       "id": "V-215355",
       "title": "The AIX DHCP client must be disabled.",
@@ -3475,11 +3475,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215356",
         "rid": "SV-215356r508663_rule",
         "stig_id": "AIX7-00-003050",
-        "fix_id": "F-16552r294520_fix"
+        "fix_id": "F-16552r294520_fix",
+        "documentable": false
       },
       "id": "V-215356",
       "title": "If DHCP is not enabled in the network on AIX, the dhcprd daemon must be disabled.",
@@ -3493,11 +3493,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215357",
         "rid": "SV-215357r513945_rule",
         "stig_id": "AIX7-00-003051",
-        "fix_id": "F-16553r569498_fix"
+        "fix_id": "F-16553r569498_fix",
+        "documentable": false
       },
       "id": "V-215357",
       "title": "If IPv6 is not utilized on AIX server, the autoconf6 daemon must be disabled.",
@@ -3511,11 +3511,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215358",
         "rid": "SV-215358r508663_rule",
         "stig_id": "AIX7-00-003052",
-        "fix_id": "F-16554r294526_fix"
+        "fix_id": "F-16554r294526_fix",
+        "documentable": false
       },
       "id": "V-215358",
       "title": "If AIX server is not functioning as a network router, the gated daemon must be disabled.",
@@ -3529,11 +3529,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215359",
         "rid": "SV-215359r508663_rule",
         "stig_id": "AIX7-00-003053",
-        "fix_id": "F-16555r294529_fix"
+        "fix_id": "F-16555r294529_fix",
+        "documentable": false
       },
       "id": "V-215359",
       "title": "If AIX server is not functioning as a multicast router, the mrouted daemon must be disabled.",
@@ -3547,11 +3547,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215360",
         "rid": "SV-215360r508663_rule",
         "stig_id": "AIX7-00-003054",
-        "fix_id": "F-16556r294532_fix"
+        "fix_id": "F-16556r294532_fix",
+        "documentable": false
       },
       "id": "V-215360",
       "title": "If AIX server is not functioning as a DNS server, the named daemon must be disabled.",
@@ -3565,11 +3565,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215361",
         "rid": "SV-215361r508663_rule",
         "stig_id": "AIX7-00-003055",
-        "fix_id": "F-16557r294535_fix"
+        "fix_id": "F-16557r294535_fix",
+        "documentable": false
       },
       "id": "V-215361",
       "title": "If AIX server is not functioning as a network router, the routed daemon must be disabled.",
@@ -3583,11 +3583,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215362",
         "rid": "SV-215362r508663_rule",
         "stig_id": "AIX7-00-003056",
-        "fix_id": "F-16558r294538_fix"
+        "fix_id": "F-16558r294538_fix",
+        "documentable": false
       },
       "id": "V-215362",
       "title": "If rwhod is not required on AIX, the rwhod daemon must be disabled.",
@@ -3601,11 +3601,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215363",
         "rid": "SV-215363r508663_rule",
         "stig_id": "AIX7-00-003057",
-        "fix_id": "F-16559r294541_fix"
+        "fix_id": "F-16559r294541_fix",
+        "documentable": false
       },
       "id": "V-215363",
       "title": "The timed daemon must be disabled on AIX.",
@@ -3619,11 +3619,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215364",
         "rid": "SV-215364r508663_rule",
         "stig_id": "AIX7-00-003058",
-        "fix_id": "F-16560r294544_fix"
+        "fix_id": "F-16560r294544_fix",
+        "documentable": false
       },
       "id": "V-215364",
       "title": "If AIX server does not host an SNMP agent, the dpid2 daemon must be disabled.",
@@ -3637,11 +3637,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215365",
         "rid": "SV-215365r508663_rule",
         "stig_id": "AIX7-00-003060",
-        "fix_id": "F-16561r294547_fix"
+        "fix_id": "F-16561r294547_fix",
+        "documentable": false
       },
       "id": "V-215365",
       "title": "If SNMP is not required on AIX, the snmpmibd daemon must be disabled.",
@@ -3655,11 +3655,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215366",
         "rid": "SV-215366r508663_rule",
         "stig_id": "AIX7-00-003061",
-        "fix_id": "F-16562r294550_fix"
+        "fix_id": "F-16562r294550_fix",
+        "documentable": false
       },
       "id": "V-215366",
       "title": "The aixmibd daemon must be disabled on AIX.",
@@ -3673,11 +3673,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215367",
         "rid": "SV-215367r508663_rule",
         "stig_id": "AIX7-00-003062",
-        "fix_id": "F-16563r294553_fix"
+        "fix_id": "F-16563r294553_fix",
+        "documentable": false
       },
       "id": "V-215367",
       "title": "The ndpd-host daemon must be disabled on AIX.",
@@ -3691,11 +3691,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215368",
         "rid": "SV-215368r508663_rule",
         "stig_id": "AIX7-00-003063",
-        "fix_id": "F-16564r294556_fix"
+        "fix_id": "F-16564r294556_fix",
+        "documentable": false
       },
       "id": "V-215368",
       "title": "The ndpd-router must be disabled on AIX.",
@@ -3709,11 +3709,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215369",
         "rid": "SV-215369r508663_rule",
         "stig_id": "AIX7-00-003064",
-        "fix_id": "F-16565r294559_fix"
+        "fix_id": "F-16565r294559_fix",
+        "documentable": false
       },
       "id": "V-215369",
       "title": "The daytime daemon must be disabled on AIX.",
@@ -3727,11 +3727,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215370",
         "rid": "SV-215370r508663_rule",
         "stig_id": "AIX7-00-003065",
-        "fix_id": "F-16566r294562_fix"
+        "fix_id": "F-16566r294562_fix",
+        "documentable": false
       },
       "id": "V-215370",
       "title": "The cmsd daemon must be disabled on AIX.",
@@ -3745,11 +3745,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215371",
         "rid": "SV-215371r508663_rule",
         "stig_id": "AIX7-00-003066",
-        "fix_id": "F-16567r294565_fix"
+        "fix_id": "F-16567r294565_fix",
+        "documentable": false
       },
       "id": "V-215371",
       "title": "The ttdbserver daemon must be disabled on AIX.",
@@ -3763,11 +3763,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215372",
         "rid": "SV-215372r508663_rule",
         "stig_id": "AIX7-00-003067",
-        "fix_id": "F-16568r294568_fix"
+        "fix_id": "F-16568r294568_fix",
+        "documentable": false
       },
       "id": "V-215372",
       "title": "The uucp (UNIX to UNIX Copy Program) daemon must be disabled on AIX.",
@@ -3781,11 +3781,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215373",
         "rid": "SV-215373r508663_rule",
         "stig_id": "AIX7-00-003068",
-        "fix_id": "F-16569r294571_fix"
+        "fix_id": "F-16569r294571_fix",
+        "documentable": false
       },
       "id": "V-215373",
       "title": "The time daemon must be disabled on AIX.",
@@ -3799,11 +3799,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215374",
         "rid": "SV-215374r508663_rule",
         "stig_id": "AIX7-00-003069",
-        "fix_id": "F-16570r294574_fix"
+        "fix_id": "F-16570r294574_fix",
+        "documentable": false
       },
       "id": "V-215374",
       "title": "The talk daemon must be disabled on AIX.",
@@ -3817,11 +3817,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215375",
         "rid": "SV-215375r508663_rule",
         "stig_id": "AIX7-00-003070",
-        "fix_id": "F-16571r294577_fix"
+        "fix_id": "F-16571r294577_fix",
+        "documentable": false
       },
       "id": "V-215375",
       "title": "The ntalk daemon must be disabled on AIX.",
@@ -3835,11 +3835,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215376",
         "rid": "SV-215376r508663_rule",
         "stig_id": "AIX7-00-003071",
-        "fix_id": "F-16572r294580_fix"
+        "fix_id": "F-16572r294580_fix",
+        "documentable": false
       },
       "id": "V-215376",
       "title": "The chargen daemon must be disabled on AIX.",
@@ -3853,11 +3853,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215377",
         "rid": "SV-215377r508663_rule",
         "stig_id": "AIX7-00-003072",
-        "fix_id": "F-16573r294583_fix"
+        "fix_id": "F-16573r294583_fix",
+        "documentable": false
       },
       "id": "V-215377",
       "title": "The discard daemon must be disabled on AIX.",
@@ -3871,11 +3871,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215378",
         "rid": "SV-215378r508663_rule",
         "stig_id": "AIX7-00-003073",
-        "fix_id": "F-16574r294586_fix"
+        "fix_id": "F-16574r294586_fix",
+        "documentable": false
       },
       "id": "V-215378",
       "title": "The dtspc daemon must be disabled on AIX.",
@@ -3889,11 +3889,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215379",
         "rid": "SV-215379r508663_rule",
         "stig_id": "AIX7-00-003074",
-        "fix_id": "F-16575r294589_fix"
+        "fix_id": "F-16575r294589_fix",
+        "documentable": false
       },
       "id": "V-215379",
       "title": "The pcnfsd daemon must be disabled on AIX.",
@@ -3907,11 +3907,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215380",
         "rid": "SV-215380r508663_rule",
         "stig_id": "AIX7-00-003075",
-        "fix_id": "F-16576r294592_fix"
+        "fix_id": "F-16576r294592_fix",
+        "documentable": false
       },
       "id": "V-215380",
       "title": "The rstatd daemon must be disabled on AIX.",
@@ -3925,11 +3925,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215381",
         "rid": "SV-215381r508663_rule",
         "stig_id": "AIX7-00-003076",
-        "fix_id": "F-16577r294595_fix"
+        "fix_id": "F-16577r294595_fix",
+        "documentable": false
       },
       "id": "V-215381",
       "title": "The rusersd daemon must be disabled on AIX.",
@@ -3943,11 +3943,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215382",
         "rid": "SV-215382r508663_rule",
         "stig_id": "AIX7-00-003077",
-        "fix_id": "F-16578r294598_fix"
+        "fix_id": "F-16578r294598_fix",
+        "documentable": false
       },
       "id": "V-215382",
       "title": "The sprayd daemon must be disabled on AIX.",
@@ -3961,11 +3961,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215383",
         "rid": "SV-215383r508663_rule",
         "stig_id": "AIX7-00-003078",
-        "fix_id": "F-16579r294601_fix"
+        "fix_id": "F-16579r294601_fix",
+        "documentable": false
       },
       "id": "V-215383",
       "title": "The klogin daemon must be disabled on AIX.",
@@ -3979,11 +3979,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215384",
         "rid": "SV-215384r508663_rule",
         "stig_id": "AIX7-00-003079",
-        "fix_id": "F-16580r294604_fix"
+        "fix_id": "F-16580r294604_fix",
+        "documentable": false
       },
       "id": "V-215384",
       "title": "The kshell daemon must be disabled on AIX.",
@@ -3997,11 +3997,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215385",
         "rid": "SV-215385r508663_rule",
         "stig_id": "AIX7-00-003080",
-        "fix_id": "F-16581r294607_fix"
+        "fix_id": "F-16581r294607_fix",
+        "documentable": false
       },
       "id": "V-215385",
       "title": "The rquotad daemon must be disabled on AIX.",
@@ -4015,11 +4015,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215386",
         "rid": "SV-215386r508663_rule",
         "stig_id": "AIX7-00-003081",
-        "fix_id": "F-16582r294610_fix"
+        "fix_id": "F-16582r294610_fix",
+        "documentable": false
       },
       "id": "V-215386",
       "title": "The tftp daemon must be disabled on AIX.",
@@ -4033,11 +4033,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215387",
         "rid": "SV-215387r508663_rule",
         "stig_id": "AIX7-00-003082",
-        "fix_id": "F-16583r294613_fix"
+        "fix_id": "F-16583r294613_fix",
+        "documentable": false
       },
       "id": "V-215387",
       "title": "The imap2 service must be disabled on AIX.",
@@ -4051,11 +4051,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215388",
         "rid": "SV-215388r508663_rule",
         "stig_id": "AIX7-00-003083",
-        "fix_id": "F-16584r294616_fix"
+        "fix_id": "F-16584r294616_fix",
+        "documentable": false
       },
       "id": "V-215388",
       "title": "The pop3 daemon must be disabled on AIX.",
@@ -4069,11 +4069,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215389",
         "rid": "SV-215389r508663_rule",
         "stig_id": "AIX7-00-003084",
-        "fix_id": "F-16585r294619_fix"
+        "fix_id": "F-16585r294619_fix",
+        "documentable": false
       },
       "id": "V-215389",
       "title": "The finger daemon must be disabled on AIX.",
@@ -4087,11 +4087,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215390",
         "rid": "SV-215390r508663_rule",
         "stig_id": "AIX7-00-003085",
-        "fix_id": "F-16586r294622_fix"
+        "fix_id": "F-16586r294622_fix",
+        "documentable": false
       },
       "id": "V-215390",
       "title": "The instsrv daemon must be disabled on AIX.",
@@ -4105,11 +4105,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215391",
         "rid": "SV-215391r508663_rule",
         "stig_id": "AIX7-00-003086",
-        "fix_id": "F-16587r294625_fix"
+        "fix_id": "F-16587r294625_fix",
+        "documentable": false
       },
       "id": "V-215391",
       "title": "The echo daemon must be disabled on AIX.",
@@ -4123,11 +4123,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215392",
         "rid": "SV-215392r508663_rule",
         "stig_id": "AIX7-00-003087",
-        "fix_id": "F-16588r294628_fix"
+        "fix_id": "F-16588r294628_fix",
+        "documentable": false
       },
       "id": "V-215392",
       "title": "The Internet Network News (INN) server must be disabled on AIX.",
@@ -4141,11 +4141,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-215393",
         "rid": "SV-215393r508663_rule",
         "stig_id": "AIX7-00-003088",
-        "fix_id": "F-16589r294631_fix"
+        "fix_id": "F-16589r294631_fix",
+        "documentable": false
       },
       "id": "V-215393",
       "title": "If Stream Control Transmission Protocol (SCTP) must be disabled on AIX.",
@@ -4159,11 +4159,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-215394",
         "rid": "SV-215394r508663_rule",
         "stig_id": "AIX7-00-003089",
-        "fix_id": "F-16590r294634_fix"
+        "fix_id": "F-16590r294634_fix",
+        "documentable": false
       },
       "id": "V-215394",
       "title": "The Reliable Datagram Sockets (RDS) protocol must be disabled on AIX.",
@@ -4177,11 +4177,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000378-GPOS-00163",
         "gid": "V-215395",
         "rid": "SV-215395r508663_rule",
         "stig_id": "AIX7-00-003090",
-        "fix_id": "F-16591r294637_fix"
+        "fix_id": "F-16591r294637_fix",
+        "documentable": false
       },
       "id": "V-215395",
       "title": "If automated file system mounting tool is not required on AIX, it must be disabled.",
@@ -4195,11 +4195,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215396",
         "rid": "SV-215396r508663_rule",
         "stig_id": "AIX7-00-003093",
-        "fix_id": "F-16592r294640_fix"
+        "fix_id": "F-16592r294640_fix",
+        "documentable": false
       },
       "id": "V-215396",
       "title": "AIX process core dumps must be disabled.",
@@ -4213,11 +4213,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215397",
         "rid": "SV-215397r508663_rule",
         "stig_id": "AIX7-00-003094",
-        "fix_id": "F-16593r294643_fix"
+        "fix_id": "F-16593r294643_fix",
+        "documentable": false
       },
       "id": "V-215397",
       "title": "AIX kernel core dumps must be disabled unless needed.",
@@ -4231,16 +4231,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000142-GPOS-00071",
+        "gid": "V-215398",
+        "rid": "SV-215398r508663_rule",
+        "stig_id": "AIX7-00-003096",
+        "fix_id": "F-16594r294646_fix",
         "satisfies": [
           "SRG-OS-000142-GPOS-00071",
           "SRG-OS-000480-GPOS-00227",
           "SRG-OS-000433-GPOS-00192"
         ],
-        "gid": "V-215398",
-        "rid": "SV-215398r508663_rule",
-        "stig_id": "AIX7-00-003096",
-        "fix_id": "F-16594r294646_fix"
+        "documentable": false
       },
       "id": "V-215398",
       "title": "AIX must set Stack Execution Disable (SED) system wide mode to all.",
@@ -4254,11 +4254,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000420-GPOS-00186",
         "gid": "V-215399",
         "rid": "SV-215399r508663_rule",
         "stig_id": "AIX7-00-003097",
-        "fix_id": "F-16595r294649_fix"
+        "fix_id": "F-16595r294649_fix",
+        "documentable": false
       },
       "id": "V-215399",
       "title": "AIX must protect against or limit the effects of Denial of Service (DoS) attacks by ensuring AIX is implementing rate-limiting measures on impacted network interfaces.",
@@ -4272,11 +4272,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000312-GPOS-00122",
         "gid": "V-215400",
         "rid": "SV-215400r508663_rule",
         "stig_id": "AIX7-00-003098",
-        "fix_id": "F-16596r294652_fix"
+        "fix_id": "F-16596r294652_fix",
+        "documentable": false
       },
       "id": "V-215400",
       "title": "AIX must allow admins to send a message to all the users who logged in currently.",
@@ -4290,11 +4290,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000312-GPOS-00122",
         "gid": "V-215401",
         "rid": "SV-215401r508663_rule",
         "stig_id": "AIX7-00-003099",
-        "fix_id": "F-16597r294655_fix"
+        "fix_id": "F-16597r294655_fix",
+        "documentable": false
       },
       "id": "V-215401",
       "title": "AIX must allow admins to send a message to a user who logged in currently.",
@@ -4308,11 +4308,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
         "gid": "V-215402",
         "rid": "SV-215402r508663_rule",
         "stig_id": "AIX7-00-003100",
-        "fix_id": "F-16598r294658_fix"
+        "fix_id": "F-16598r294658_fix",
+        "documentable": false
       },
       "id": "V-215402",
       "title": "The AIX SSH daemon must be configured to only use FIPS 140-2 approved ciphers.",
@@ -4326,11 +4326,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-215403",
         "rid": "SV-215403r508663_rule",
         "stig_id": "AIX7-00-003101",
-        "fix_id": "F-16599r294661_fix"
+        "fix_id": "F-16599r294661_fix",
+        "documentable": false
       },
       "id": "V-215403",
       "title": "The AIX system must have no .netrc files on the system.",
@@ -4344,17 +4344,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-215404",
+        "rid": "SV-215404r513948_rule",
+        "stig_id": "AIX7-00-003102",
+        "fix_id": "F-16600r569501_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000134-GPOS-00068",
           "SRG-OS-000312-GPOS-00123",
           "SRG-OS-000362-GPOS-00149"
         ],
-        "gid": "V-215404",
-        "rid": "SV-215404r513948_rule",
-        "stig_id": "AIX7-00-003102",
-        "fix_id": "F-16600r569501_fix"
+        "documentable": false
       },
       "id": "V-215404",
       "title": "AIX must turn on enhanced Role-Based Access Control (RBAC) to isolate security functions from nonsecurity functions, to grant system privileges to other operating system admins, and prohibit user installation of system software without explicit privileged status.",
@@ -4368,11 +4368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215405",
         "rid": "SV-215405r508663_rule",
         "stig_id": "AIX7-00-003104",
-        "fix_id": "F-16601r294667_fix"
+        "fix_id": "F-16601r294667_fix",
+        "documentable": false
       },
       "id": "V-215405",
       "title": "If DHCP server is not required on AIX, the DHCP server must be disabled.",
@@ -4386,11 +4386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-215406",
         "rid": "SV-215406r508663_rule",
         "stig_id": "AIX7-00-003105",
-        "fix_id": "F-16602r294670_fix"
+        "fix_id": "F-16602r294670_fix",
+        "documentable": false
       },
       "id": "V-215406",
       "title": "The rwalld daemon must be disabled on AIX.",
@@ -4404,11 +4404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000269-GPOS-00103",
         "gid": "V-215407",
         "rid": "SV-215407r508663_rule",
         "stig_id": "AIX7-00-003109",
-        "fix_id": "F-16603r294673_fix"
+        "fix_id": "F-16603r294673_fix",
+        "documentable": false
       },
       "id": "V-215407",
       "title": "In the event of a system failure, AIX must preserve any information necessary to determine cause of failure and any information necessary to return to operations with least disruption to mission processes.",
@@ -4422,11 +4422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215408",
         "rid": "SV-215408r508663_rule",
         "stig_id": "AIX7-00-003110",
-        "fix_id": "F-16604r294676_fix"
+        "fix_id": "F-16604r294676_fix",
+        "documentable": false
       },
       "id": "V-215408",
       "title": "The /etc/shells file must exist on AIX systems.",
@@ -4440,11 +4440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215409",
         "rid": "SV-215409r508663_rule",
         "stig_id": "AIX7-00-003111",
-        "fix_id": "F-16605r294679_fix"
+        "fix_id": "F-16605r294679_fix",
+        "documentable": false
       },
       "id": "V-215409",
       "title": "AIX public directories must be the only world-writable directories and world-writable files must be located only in public directories.",
@@ -4458,11 +4458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215410",
         "rid": "SV-215410r508663_rule",
         "stig_id": "AIX7-00-003112",
-        "fix_id": "F-16606r294682_fix"
+        "fix_id": "F-16606r294682_fix",
+        "documentable": false
       },
       "id": "V-215410",
       "title": "AIX must be configured to only boot from the system boot device.",
@@ -4476,11 +4476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215411",
         "rid": "SV-215411r508663_rule",
         "stig_id": "AIX7-00-003113",
-        "fix_id": "F-16607r294685_fix"
+        "fix_id": "F-16607r294685_fix",
+        "documentable": false
       },
       "id": "V-215411",
       "title": "AIX must not use removable media as the boot loader.",
@@ -4494,11 +4494,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215412",
         "rid": "SV-215412r508663_rule",
         "stig_id": "AIX7-00-003114",
-        "fix_id": "F-16608r294688_fix"
+        "fix_id": "F-16608r294688_fix",
+        "documentable": false
       },
       "id": "V-215412",
       "title": "If the AIX host is running an SMTP service, the SMTP greeting must not provide version information.",
@@ -4512,11 +4512,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215413",
         "rid": "SV-215413r508663_rule",
         "stig_id": "AIX7-00-003115",
-        "fix_id": "F-16609r294691_fix"
+        "fix_id": "F-16609r294691_fix",
+        "documentable": false
       },
       "id": "V-215413",
       "title": "AIX must contain no .forward files.",
@@ -4530,11 +4530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215414",
         "rid": "SV-215414r508663_rule",
         "stig_id": "AIX7-00-003116",
-        "fix_id": "F-16610r294694_fix"
+        "fix_id": "F-16610r294694_fix",
+        "documentable": false
       },
       "id": "V-215414",
       "title": "The sendmail server must have the debug feature disabled on AIX systems.",
@@ -4548,11 +4548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215415",
         "rid": "SV-215415r508663_rule",
         "stig_id": "AIX7-00-003117",
-        "fix_id": "F-16611r294697_fix"
+        "fix_id": "F-16611r294697_fix",
+        "documentable": false
       },
       "id": "V-215415",
       "title": "SMTP service must not have the EXPN or VRFY features active on AIX systems.",
@@ -4566,11 +4566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215416",
         "rid": "SV-215416r508663_rule",
         "stig_id": "AIX7-00-003120",
-        "fix_id": "F-16612r294700_fix"
+        "fix_id": "F-16612r294700_fix",
+        "documentable": false
       },
       "id": "V-215416",
       "title": "All global initialization file executable search paths must contain only absolute paths.",
@@ -4584,11 +4584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215417",
         "rid": "SV-215417r508663_rule",
         "stig_id": "AIX7-00-003122",
-        "fix_id": "F-16613r294703_fix"
+        "fix_id": "F-16613r294703_fix",
+        "documentable": false
       },
       "id": "V-215417",
       "title": "The SMTP service HELP command must not be enabled on AIX.",
@@ -4602,11 +4602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215418",
         "rid": "SV-215418r508663_rule",
         "stig_id": "AIX7-00-003123",
-        "fix_id": "F-16614r294706_fix"
+        "fix_id": "F-16614r294706_fix",
+        "documentable": false
       },
       "id": "V-215418",
       "title": "NIS maps must be protected through hard-to-guess domain names on AIX.",
@@ -4620,11 +4620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215419",
         "rid": "SV-215419r508663_rule",
         "stig_id": "AIX7-00-003124",
-        "fix_id": "F-16615r294709_fix"
+        "fix_id": "F-16615r294709_fix",
+        "documentable": false
       },
       "id": "V-215419",
       "title": "The AIX systems access control program must be configured to grant or deny system access to specific hosts.",
@@ -4638,11 +4638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215420",
         "rid": "SV-215420r508663_rule",
         "stig_id": "AIX7-00-003125",
-        "fix_id": "F-16616r294712_fix"
+        "fix_id": "F-16616r294712_fix",
+        "documentable": false
       },
       "id": "V-215420",
       "title": "All AIX files and directories must have a valid group owner.",
@@ -4656,11 +4656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215421",
         "rid": "SV-215421r508663_rule",
         "stig_id": "AIX7-00-003126",
-        "fix_id": "F-16617r294715_fix"
+        "fix_id": "F-16617r294715_fix",
+        "documentable": false
       },
       "id": "V-215421",
       "title": "AIX control scripts library search paths must contain only absolute paths.",
@@ -4674,11 +4674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215422",
         "rid": "SV-215422r508663_rule",
         "stig_id": "AIX7-00-003127",
-        "fix_id": "F-16618r294718_fix"
+        "fix_id": "F-16618r294718_fix",
+        "documentable": false
       },
       "id": "V-215422",
       "title": "The control script lists of preloaded libraries must contain only absolute paths on AIX systems.",
@@ -4692,11 +4692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215423",
         "rid": "SV-215423r508663_rule",
         "stig_id": "AIX7-00-003128",
-        "fix_id": "F-16619r294721_fix"
+        "fix_id": "F-16619r294721_fix",
+        "documentable": false
       },
       "id": "V-215423",
       "title": "The global initialization file lists of preloaded libraries must contain only absolute paths on AIX.",
@@ -4710,11 +4710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215424",
         "rid": "SV-215424r508663_rule",
         "stig_id": "AIX7-00-003129",
-        "fix_id": "F-16620r294724_fix"
+        "fix_id": "F-16620r294724_fix",
+        "documentable": false
       },
       "id": "V-215424",
       "title": "The local initialization file library search paths must contain only absolute paths on AIX.",
@@ -4728,11 +4728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215425",
         "rid": "SV-215425r508663_rule",
         "stig_id": "AIX7-00-003130",
-        "fix_id": "F-16621r294727_fix"
+        "fix_id": "F-16621r294727_fix",
+        "documentable": false
       },
       "id": "V-215425",
       "title": "The local initialization file lists of preloaded libraries must contain only absolute paths on AIX.",
@@ -4746,11 +4746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215426",
         "rid": "SV-215426r508663_rule",
         "stig_id": "AIX7-00-003131",
-        "fix_id": "F-16622r294730_fix"
+        "fix_id": "F-16622r294730_fix",
+        "documentable": false
       },
       "id": "V-215426",
       "title": "AIX package management tool must be used daily to verify system software.",
@@ -4764,11 +4764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215427",
         "rid": "SV-215427r508663_rule",
         "stig_id": "AIX7-00-003132",
-        "fix_id": "F-16623r294733_fix"
+        "fix_id": "F-16623r294733_fix",
+        "documentable": false
       },
       "id": "V-215427",
       "title": "The AIX DHCP client must not send dynamic DNS updates.",
@@ -4782,11 +4782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215428",
         "rid": "SV-215428r508663_rule",
         "stig_id": "AIX7-00-003133",
-        "fix_id": "F-16624r294736_fix"
+        "fix_id": "F-16624r294736_fix",
+        "documentable": false
       },
       "id": "V-215428",
       "title": "AIX must not run any routing protocol daemons unless the system is a router.",
@@ -4800,11 +4800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215429",
         "rid": "SV-215429r508663_rule",
         "stig_id": "AIX7-00-003134",
-        "fix_id": "F-16625r294739_fix"
+        "fix_id": "F-16625r294739_fix",
+        "documentable": false
       },
       "id": "V-215429",
       "title": "AIX must not process ICMP timestamp requests.",
@@ -4818,11 +4818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215430",
         "rid": "SV-215430r508663_rule",
         "stig_id": "AIX7-00-003135",
-        "fix_id": "F-16626r294742_fix"
+        "fix_id": "F-16626r294742_fix",
+        "documentable": false
       },
       "id": "V-215430",
       "title": "AIX must not respond to ICMPv6 echo requests sent to a broadcast address.",
@@ -4836,11 +4836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00228",
         "gid": "V-215431",
         "rid": "SV-215431r508663_rule",
         "stig_id": "AIX7-00-003137",
-        "fix_id": "F-16627r294745_fix"
+        "fix_id": "F-16627r294745_fix",
+        "documentable": false
       },
       "id": "V-215431",
       "title": "AIX must define default permissions for all authenticated users in such a way that the user can only read and modify their own files.",
@@ -4854,11 +4854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-215432",
         "rid": "SV-215432r508663_rule",
         "stig_id": "AIX7-00-003138",
-        "fix_id": "F-16628r294748_fix"
+        "fix_id": "F-16628r294748_fix",
+        "documentable": false
       },
       "id": "V-215432",
       "title": "There must be no .rhosts, .shosts, hosts.equiv, or shosts.equiv files on the AIX system.",
@@ -4872,11 +4872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-215433",
         "rid": "SV-215433r508663_rule",
         "stig_id": "AIX7-00-003139",
-        "fix_id": "F-16629r294751_fix"
+        "fix_id": "F-16629r294751_fix",
+        "documentable": false
       },
       "id": "V-215433",
       "title": "The .rhosts file must not be supported in AIX PAM.",
@@ -4890,11 +4890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215434",
         "rid": "SV-215434r508663_rule",
         "stig_id": "AIX7-00-003140",
-        "fix_id": "F-16630r294754_fix"
+        "fix_id": "F-16630r294754_fix",
+        "documentable": false
       },
       "id": "V-215434",
       "title": "The AIX root user home directory must not be the root directory (/).",
@@ -4908,11 +4908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00230",
         "gid": "V-215435",
         "rid": "SV-215435r508663_rule",
         "stig_id": "AIX7-00-003141",
-        "fix_id": "F-16631r294757_fix"
+        "fix_id": "F-16631r294757_fix",
+        "documentable": false
       },
       "id": "V-215435",
       "title": "All AIX interactive users must be assigned a home directory in the passwd file and the directory must exist.",
@@ -4926,7 +4926,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000105-GPOS-00052",
+        "gid": "V-215436",
+        "rid": "SV-215436r508663_rule",
+        "stig_id": "AIX7-00-003200",
+        "fix_id": "F-16632r294760_fix",
         "satisfies": [
           "SRG-OS-000105-GPOS-00052",
           "SRG-OS-000106-GPOS-00053",
@@ -4934,10 +4937,7 @@
           "SRG-OS-000108-GPOS-00055",
           "SRG-OS-000375-GPOS-00160"
         ],
-        "gid": "V-215436",
-        "rid": "SV-215436r508663_rule",
-        "stig_id": "AIX7-00-003200",
-        "fix_id": "F-16632r294760_fix"
+        "documentable": false
       },
       "id": "V-215436",
       "title": "The AIX operating system must use Multi Factor Authentication.",
@@ -4951,11 +4951,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215437",
         "rid": "SV-215437r508663_rule",
         "stig_id": "AIX7-00-003201",
-        "fix_id": "F-16633r294763_fix"
+        "fix_id": "F-16633r294763_fix",
+        "documentable": false
       },
       "id": "V-215437",
       "title": "The AIX operating system must be configured to authenticate using Multi Factor Authentication.",
@@ -4969,11 +4969,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215438",
         "rid": "SV-215438r508663_rule",
         "stig_id": "AIX7-00-003202",
-        "fix_id": "F-16634r294766_fix"
+        "fix_id": "F-16634r294766_fix",
+        "documentable": false
       },
       "id": "V-215438",
       "title": "The AIX operating system must be configured to use Multi Factor Authentication for remote connections.",
@@ -4987,11 +4987,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215439",
         "rid": "SV-215439r508663_rule",
         "stig_id": "AIX7-00-003203",
-        "fix_id": "F-16635r294769_fix"
+        "fix_id": "F-16635r294769_fix",
+        "documentable": false
       },
       "id": "V-215439",
       "title": "AIX must have the have the PowerSC Multi Factor Authentication Product configured.",
@@ -5005,11 +5005,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-215440",
         "rid": "SV-215440r508663_rule",
         "stig_id": "AIX7-00-003204",
-        "fix_id": "F-16636r294772_fix"
+        "fix_id": "F-16636r294772_fix",
+        "documentable": false
       },
       "id": "V-215440",
       "title": "The AIX operating system must be configured to use a valid server_ca.pem file.",
@@ -5023,15 +5023,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000376-GPOS-00161",
+        "gid": "V-215441",
+        "rid": "SV-215441r508663_rule",
+        "stig_id": "AIX7-00-003205",
+        "fix_id": "F-16637r294775_fix",
         "satisfies": [
           "SRG-OS-000376-GPOS-00161",
           "SRG-OS-000377-GPOS-00162"
         ],
-        "gid": "V-215441",
-        "rid": "SV-215441r508663_rule",
-        "stig_id": "AIX7-00-003205",
-        "fix_id": "F-16637r294775_fix"
+        "documentable": false
       },
       "id": "V-215441",
       "title": "The AIX operating system must accept and verify Personal Identity Verification (PIV) credentials.",
@@ -5045,11 +5045,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-219057",
         "rid": "SV-219057r508663_rule",
         "stig_id": "AIX7-00-003143",
-        "fix_id": "F-20867r294778_fix"
+        "fix_id": "F-20867r294778_fix",
+        "documentable": false
       },
       "id": "V-219057",
       "title": "AIX must employ a deny-all, allow-by-exception firewall policy for allowing connections to other systems.",
@@ -5063,11 +5063,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
         "gid": "V-219956",
         "rid": "SV-219956r508663_rule",
         "stig_id": "AIX7-00-002017",
-        "fix_id": "F-21666r364828_fix"
+        "fix_id": "F-21666r364828_fix",
+        "documentable": false
       },
       "id": "V-219956",
       "title": "AIX must be configured so that the audit system takes appropriate action when the audit storage volume is full.",
@@ -5081,11 +5081,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245557",
         "rid": "SV-245557r755112_rule",
         "stig_id": "AIX7-00-002140",
-        "fix_id": "F-48791r755111_fix"
+        "fix_id": "F-48791r755111_fix",
+        "documentable": false
       },
       "id": "V-245557",
       "title": "The AIX /etc/hosts file must be owned by root.",
@@ -5099,11 +5099,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245558",
         "rid": "SV-245558r755115_rule",
         "stig_id": "AIX7-00-002141",
-        "fix_id": "F-48792r755114_fix"
+        "fix_id": "F-48792r755114_fix",
+        "documentable": false
       },
       "id": "V-245558",
       "title": "The AIX /etc/hosts file must be group-owned by root.",
@@ -5117,11 +5117,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245559",
         "rid": "SV-245559r755118_rule",
         "stig_id": "AIX7-00-002142",
-        "fix_id": "F-48793r755117_fix"
+        "fix_id": "F-48793r755117_fix",
+        "documentable": false
       },
       "id": "V-245559",
       "title": "The AIX /etc/hosts file must have a mode of 0640 or less permissive.",
@@ -5135,11 +5135,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245560",
         "rid": "SV-245560r755121_rule",
         "stig_id": "AIX7-00-002143",
-        "fix_id": "F-48794r755120_fix"
+        "fix_id": "F-48794r755120_fix",
+        "documentable": false
       },
       "id": "V-245560",
       "title": "AIX cron and crontab directories must have a mode of 0640 or less permissive.",
@@ -5153,11 +5153,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245561",
         "rid": "SV-245561r755124_rule",
         "stig_id": "AIX7-00-002144",
-        "fix_id": "F-48795r755123_fix"
+        "fix_id": "F-48795r755123_fix",
+        "documentable": false
       },
       "id": "V-245561",
       "title": "The AIX /etc/syslog.conf file must be owned by root.",
@@ -5171,11 +5171,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245562",
         "rid": "SV-245562r755127_rule",
         "stig_id": "AIX7-00-002145",
-        "fix_id": "F-48796r755126_fix"
+        "fix_id": "F-48796r755126_fix",
+        "documentable": false
       },
       "id": "V-245562",
       "title": "The AIX /etc/syslog.conf file must be group-owned by root.",
@@ -5189,11 +5189,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245563",
         "rid": "SV-245563r755130_rule",
         "stig_id": "AIX7-00-002146",
-        "fix_id": "F-48797r755129_fix"
+        "fix_id": "F-48797r755129_fix",
+        "documentable": false
       },
       "id": "V-245563",
       "title": "The AIX /etc/syslog.conf file must have a mode of 0640 or less permissive.",
@@ -5207,11 +5207,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245564",
         "rid": "SV-245564r755133_rule",
         "stig_id": "AIX7-00-002092",
-        "fix_id": "F-48798r755132_fix"
+        "fix_id": "F-48798r755132_fix",
+        "documentable": false
       },
       "id": "V-245564",
       "title": "The inetd.conf file on AIX must be group owned by the \"system\" group.",
@@ -5225,11 +5225,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245565",
         "rid": "SV-245565r755136_rule",
         "stig_id": "AIX7-00-002093",
-        "fix_id": "F-48799r755135_fix"
+        "fix_id": "F-48799r755135_fix",
+        "documentable": false
       },
       "id": "V-245565",
       "title": "The AIX /etc/inetd.conf file must have a mode of 0640 or less permissive.",
@@ -5243,11 +5243,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245566",
         "rid": "SV-245566r755139_rule",
         "stig_id": "AIX7-00-002147",
-        "fix_id": "F-48800r755138_fix"
+        "fix_id": "F-48800r755138_fix",
+        "documentable": false
       },
       "id": "V-245566",
       "title": "The AIX /var/spool/cron/atjobs directory must be owned by daemon.",
@@ -5261,11 +5261,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245567",
         "rid": "SV-245567r755142_rule",
         "stig_id": "AIX7-00-002148",
-        "fix_id": "F-48801r755141_fix"
+        "fix_id": "F-48801r755141_fix",
+        "documentable": false
       },
       "id": "V-245567",
       "title": "The AIX /var/spool/cron/atjobs directory must be group-owned by daemon.",
@@ -5279,11 +5279,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245568",
         "rid": "SV-245568r755145_rule",
         "stig_id": "AIX7-00-002149",
-        "fix_id": "F-48802r755144_fix"
+        "fix_id": "F-48802r755144_fix",
+        "documentable": false
       },
       "id": "V-245568",
       "title": "The AIX /var/spool/cron/atjobs directory must have a mode of 0640 or less permissive.",
@@ -5297,11 +5297,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245569",
         "rid": "SV-245569r755148_rule",
         "stig_id": "AIX7-00-002150",
-        "fix_id": "F-48803r755147_fix"
+        "fix_id": "F-48803r755147_fix",
+        "documentable": false
       },
       "id": "V-245569",
       "title": "AIX cron and crontab directories must be group owned by cron.",
@@ -5313,7 +5313,5 @@
       }
     }
   ],
-  "name": "IBM_AIX_7-x_STIG",
-  "title": "IBM AIX 7.x Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "IBM_AIX_7-x_STIG"
 }

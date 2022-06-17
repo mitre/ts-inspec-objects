@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223419",
         "rid": "SV-223419r533198_rule",
         "stig_id": "ACF2-CE-000010",
-        "fix_id": "F-25080r500388_fix"
+        "fix_id": "F-25080r500388_fix",
+        "documentable": false
       },
       "id": "V-223419",
       "title": "IBM z/OS Certificate Name Filtering must be implemented with appropriate authorization and documentation.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-223420",
         "rid": "SV-223420r533198_rule",
         "stig_id": "ACF2-CE-000020",
-        "fix_id": "F-25081r500391_fix"
+        "fix_id": "F-25081r500391_fix",
+        "documentable": false
       },
       "id": "V-223420",
       "title": "IBM z/OS must not use Expired Digital Certificates.",
@@ -44,15 +44,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
+        "gid": "V-223421",
+        "rid": "SV-223421r767054_rule",
+        "stig_id": "ACF2-CE-000030",
+        "fix_id": "F-25082r504417_fix",
         "satisfies": [
           "SRG-OS-000066-GPOS-00034",
           "SRG-OS-000403-GPOS-00182"
         ],
-        "gid": "V-223421",
-        "rid": "SV-223421r767054_rule",
-        "stig_id": "ACF2-CE-000030",
-        "fix_id": "F-25082r504417_fix"
+        "documentable": false
       },
       "id": "V-223421",
       "title": "All IBM z/OS digital certificates in use must have a valid path to a trusted Certification authority.",
@@ -66,15 +66,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000001-GPOS-00001",
+        "gid": "V-223422",
+        "rid": "SV-223422r533198_rule",
+        "stig_id": "ACF2-ES-000010",
+        "fix_id": "F-25083r500397_fix",
         "satisfies": [
           "SRG-OS-000001-GPOS-00001",
           "SRG-OS-000480-GPOS-00229"
         ],
-        "gid": "V-223422",
-        "rid": "SV-223422r533198_rule",
-        "stig_id": "ACF2-ES-000010",
-        "fix_id": "F-25083r500397_fix"
+        "documentable": false
       },
       "id": "V-223422",
       "title": "CA-ACF2 OPTS GSO record must be set to ABORT mode.",
@@ -88,11 +88,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223423",
         "rid": "SV-223423r533198_rule",
         "stig_id": "ACF2-ES-000020",
-        "fix_id": "F-25084r500400_fix"
+        "fix_id": "F-25084r500400_fix",
+        "documentable": false
       },
       "id": "V-223423",
       "title": "The number of ACF2 users granted the special privilege PPGM must be justified.",
@@ -106,11 +106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223424",
         "rid": "SV-223424r533198_rule",
         "stig_id": "ACF2-ES-000030",
-        "fix_id": "F-25085r500403_fix"
+        "fix_id": "F-25085r500403_fix",
+        "documentable": false
       },
       "id": "V-223424",
       "title": "The number of ACF2 users granted the special privilege OPERATOR must be kept to a strictly controlled minimum.",
@@ -124,11 +124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223425",
         "rid": "SV-223425r533198_rule",
         "stig_id": "ACF2-ES-000040",
-        "fix_id": "F-25086r500406_fix"
+        "fix_id": "F-25086r500406_fix",
+        "documentable": false
       },
       "id": "V-223425",
       "title": "The number of ACF2 users granted the special privilege CONSOLE must be justified.",
@@ -142,11 +142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223426",
         "rid": "SV-223426r533198_rule",
         "stig_id": "ACF2-ES-000050",
-        "fix_id": "F-25087r500409_fix"
+        "fix_id": "F-25087r500409_fix",
+        "documentable": false
       },
       "id": "V-223426",
       "title": "The number of ACF2 users granted the special privilege ALLCMDS must be justified.",
@@ -160,11 +160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223427",
         "rid": "SV-223427r533198_rule",
         "stig_id": "ACF2-ES-000060",
-        "fix_id": "F-25088r504420_fix"
+        "fix_id": "F-25088r504420_fix",
+        "documentable": false
       },
       "id": "V-223427",
       "title": "IBM z/OS system commands must be properly protected.",
@@ -178,11 +178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223428",
         "rid": "SV-223428r533198_rule",
         "stig_id": "ACF2-ES-000070",
-        "fix_id": "F-25089r504423_fix"
+        "fix_id": "F-25089r504423_fix",
+        "documentable": false
       },
       "id": "V-223428",
       "title": "IBM z/OS Sensitive Utility Controls must be properly defined and protected.",
@@ -196,11 +196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223429",
         "rid": "SV-223429r533198_rule",
         "stig_id": "ACF2-ES-000080",
-        "fix_id": "F-25090r504426_fix"
+        "fix_id": "F-25090r504426_fix",
+        "documentable": false
       },
       "id": "V-223429",
       "title": "CA-ACF2 NJE GSO record value must indicate validation options that apply to jobs submitted through a network job entry subsystem (JES2, JES3, RSCS).",
@@ -214,11 +214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223430",
         "rid": "SV-223430r533198_rule",
         "stig_id": "ACF2-ES-000090",
-        "fix_id": "F-25091r504429_fix"
+        "fix_id": "F-25091r504429_fix",
+        "documentable": false
       },
       "id": "V-223430",
       "title": "CA-ACF2 must protect Memory and privileged program dumps in accordance with proper security requirements.",
@@ -232,11 +232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223431",
         "rid": "SV-223431r533198_rule",
         "stig_id": "ACF2-ES-000100",
-        "fix_id": "F-25092r504432_fix"
+        "fix_id": "F-25092r504432_fix",
+        "documentable": false
       },
       "id": "V-223431",
       "title": "CA-ACF2 must properly define users that have access to the CONSOLE resource in the TSOAUTH resource class.",
@@ -250,11 +250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223433",
         "rid": "SV-223433r533198_rule",
         "stig_id": "ACF2-ES-000120",
-        "fix_id": "F-25094r504435_fix"
+        "fix_id": "F-25094r504435_fix",
+        "documentable": false
       },
       "id": "V-223433",
       "title": "CA-ACF2 must limit access to SYSTEM DUMP data sets to appropriate authorized users.",
@@ -268,15 +268,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223434",
+        "rid": "SV-223434r533198_rule",
+        "stig_id": "ACF2-ES-000130",
+        "fix_id": "F-25095r504438_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223434",
-        "rid": "SV-223434r533198_rule",
-        "stig_id": "ACF2-ES-000130",
-        "fix_id": "F-25095r504438_fix"
+        "documentable": false
       },
       "id": "V-223434",
       "title": "CA-ACF2 must limit access to SYS(x).TRACE to system programmers only.",
@@ -290,11 +290,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223435",
         "rid": "SV-223435r560937_rule",
         "stig_id": "ACF2-ES-000140",
-        "fix_id": "F-25096r572040_fix"
+        "fix_id": "F-25096r572040_fix",
+        "documentable": false
       },
       "id": "V-223435",
       "title": "CA-ACF2 allocate access to system user catalogs must be properly protected.",
@@ -308,11 +308,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223436",
         "rid": "SV-223436r533198_rule",
         "stig_id": "ACF2-ES-000150",
-        "fix_id": "F-25097r504444_fix"
+        "fix_id": "F-25097r504444_fix",
+        "documentable": false
       },
       "id": "V-223436",
       "title": "ACF2 Classes required to properly security the z/OS UNIX environment must be ACTIVE.",
@@ -326,11 +326,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223437",
         "rid": "SV-223437r533198_rule",
         "stig_id": "ACF2-ES-000160",
-        "fix_id": "F-25098r504447_fix"
+        "fix_id": "F-25098r504447_fix",
+        "documentable": false
       },
       "id": "V-223437",
       "title": "Access to IBM z/OS special privilege TAPE-LBL or TAPE-BLP must be limited and/or justified.",
@@ -344,15 +344,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223438",
+        "rid": "SV-223438r533198_rule",
+        "stig_id": "ACF2-ES-000170",
+        "fix_id": "F-25099r500446_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223438",
-        "rid": "SV-223438r533198_rule",
-        "stig_id": "ACF2-ES-000170",
-        "fix_id": "F-25099r500446_fix"
+        "documentable": false
       },
       "id": "V-223438",
       "title": "CA-ACF2 must limit access to System page data sets (i.e., PLPA, COMMON, and LOCALx) to system programmers.",
@@ -366,15 +366,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223439",
+        "rid": "SV-223439r533198_rule",
+        "stig_id": "ACF2-ES-000180",
+        "fix_id": "F-25100r504450_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223439",
-        "rid": "SV-223439r533198_rule",
-        "stig_id": "ACF2-ES-000180",
-        "fix_id": "F-25100r504450_fix"
+        "documentable": false
       },
       "id": "V-223439",
       "title": "IBM z/OS must protect dynamic lists in accordance with proper security requirements.",
@@ -388,15 +388,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223440",
+        "rid": "SV-223440r533198_rule",
+        "stig_id": "ACF2-ES-000190",
+        "fix_id": "F-25101r504453_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223440",
-        "rid": "SV-223440r533198_rule",
-        "stig_id": "ACF2-ES-000190",
-        "fix_id": "F-25101r504453_fix"
+        "documentable": false
       },
       "id": "V-223440",
       "title": "IBM z/OS Libraries included in the system REXXLIB concatenation must be properly protected.",
@@ -410,15 +410,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223441",
+        "rid": "SV-223441r533198_rule",
+        "stig_id": "ACF2-ES-000200",
+        "fix_id": "F-25102r504456_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223441",
-        "rid": "SV-223441r533198_rule",
-        "stig_id": "ACF2-ES-000200",
-        "fix_id": "F-25102r504456_fix"
+        "documentable": false
       },
       "id": "V-223441",
       "title": "CA-ACF2 must limit Write or greater access to SYS1.UADS To system programmers only and read and update access must be limited to system programmer personnel and/or security personnel.",
@@ -432,15 +432,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223442",
+        "rid": "SV-223442r533198_rule",
+        "stig_id": "ACF2-ES-000210",
+        "fix_id": "F-25103r504459_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223442",
-        "rid": "SV-223442r533198_rule",
-        "stig_id": "ACF2-ES-000210",
-        "fix_id": "F-25103r504459_fix"
+        "documentable": false
       },
       "id": "V-223442",
       "title": "CA-ACF2 must limit all system PROCLIB data sets to appropriate authorized users.",
@@ -454,15 +454,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223443",
+        "rid": "SV-223443r560998_rule",
+        "stig_id": "ACF2-ES-000220",
+        "fix_id": "F-25104r572043_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223443",
-        "rid": "SV-223443r560998_rule",
-        "stig_id": "ACF2-ES-000220",
-        "fix_id": "F-25104r572043_fix"
+        "documentable": false
       },
       "id": "V-223443",
       "title": "CA-ACF2 access to the System Master Catalog must be properly protected.",
@@ -476,15 +476,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223444",
+        "rid": "SV-223444r533198_rule",
+        "stig_id": "ACF2-ES-000230",
+        "fix_id": "F-25105r504465_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223444",
-        "rid": "SV-223444r533198_rule",
-        "stig_id": "ACF2-ES-000230",
-        "fix_id": "F-25105r504465_fix"
+        "documentable": false
       },
       "id": "V-223444",
       "title": "IBM z/OS MCS consoles access authorization(s) for CONSOLE resource(s) must be properly protected.",
@@ -498,16 +498,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223445",
+        "rid": "SV-223445r533198_rule",
+        "stig_id": "ACF2-ES-000240",
+        "fix_id": "F-25106r504468_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223445",
-        "rid": "SV-223445r533198_rule",
-        "stig_id": "ACF2-ES-000240",
-        "fix_id": "F-25106r504468_fix"
+        "documentable": false
       },
       "id": "V-223445",
       "title": "CA-ACF2 must limit Write or greater access to SYS1.NUCLEUS to system programmers only.",
@@ -521,16 +521,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223446",
+        "rid": "SV-223446r533198_rule",
+        "stig_id": "ACF2-ES-000250",
+        "fix_id": "F-25107r504471_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223446",
-        "rid": "SV-223446r533198_rule",
-        "stig_id": "ACF2-ES-000250",
-        "fix_id": "F-25107r504471_fix"
+        "documentable": false
       },
       "id": "V-223446",
       "title": "CA-ACF2 must limit Write or greater access to SYS1.LPALIB to system programmers only.",
@@ -544,16 +544,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223447",
+        "rid": "SV-223447r533198_rule",
+        "stig_id": "ACF2-ES-000260",
+        "fix_id": "F-25108r504474_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223447",
-        "rid": "SV-223447r533198_rule",
-        "stig_id": "ACF2-ES-000260",
-        "fix_id": "F-25108r504474_fix"
+        "documentable": false
       },
       "id": "V-223447",
       "title": "CA-ACF2 must limit Write or greater access to SYS1.IMAGELIB to system programmers.",
@@ -567,16 +567,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223448",
+        "rid": "SV-223448r533198_rule",
+        "stig_id": "ACF2-ES-000270",
+        "fix_id": "F-25109r504477_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223448",
-        "rid": "SV-223448r533198_rule",
-        "stig_id": "ACF2-ES-000270",
-        "fix_id": "F-25109r504477_fix"
+        "documentable": false
       },
       "id": "V-223448",
       "title": "CA-ACF2 must limit Write or greater access to Libraries containing EXIT modules to system programmers only.",
@@ -590,16 +590,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223449",
+        "rid": "SV-223449r533198_rule",
+        "stig_id": "ACF2-ES-000280",
+        "fix_id": "F-25110r504480_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223449",
-        "rid": "SV-223449r533198_rule",
-        "stig_id": "ACF2-ES-000280",
-        "fix_id": "F-25110r504480_fix"
+        "documentable": false
       },
       "id": "V-223449",
       "title": "CA-ACF2 must limit Update and Allocate access to all APF-authorized libraries to system programmers only.",
@@ -613,16 +613,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223450",
+        "rid": "SV-223450r533198_rule",
+        "stig_id": "ACF2-ES-000290",
+        "fix_id": "F-25111r504483_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223450",
-        "rid": "SV-223450r533198_rule",
-        "stig_id": "ACF2-ES-000290",
-        "fix_id": "F-25111r504483_fix"
+        "documentable": false
       },
       "id": "V-223450",
       "title": "CA-ACF2 must limit Write or greater access to all LPA libraries to system programmers only.",
@@ -636,15 +636,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223451",
+        "rid": "SV-223451r533198_rule",
+        "stig_id": "ACF2-ES-000300",
+        "fix_id": "F-25112r504486_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223451",
-        "rid": "SV-223451r533198_rule",
-        "stig_id": "ACF2-ES-000300",
-        "fix_id": "F-25112r504486_fix"
+        "documentable": false
       },
       "id": "V-223451",
       "title": "CA-ACF2 must limit Update and Allocate access to LINKLIST libraries to system programmers only.",
@@ -658,16 +658,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223452",
+        "rid": "SV-223452r533198_rule",
+        "stig_id": "ACF2-ES-000310",
+        "fix_id": "F-25113r504489_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223452",
-        "rid": "SV-223452r533198_rule",
-        "stig_id": "ACF2-ES-000310",
-        "fix_id": "F-25113r504489_fix"
+        "documentable": false
       },
       "id": "V-223452",
       "title": "CA-ACF2 must limit update and allocate access to all system-level product installation libraries to system programmers only.",
@@ -681,16 +681,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223453",
+        "rid": "SV-223453r533198_rule",
+        "stig_id": "ACF2-ES-000320",
+        "fix_id": "F-25114r504492_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223453",
-        "rid": "SV-223453r533198_rule",
-        "stig_id": "ACF2-ES-000320",
-        "fix_id": "F-25114r504492_fix"
+        "documentable": false
       },
       "id": "V-223453",
       "title": "CA-ACF2 must limit Write or greater access to SYS1.SVCLIB to system programmers only.",
@@ -704,17 +704,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223454",
+        "rid": "SV-223454r533198_rule",
+        "stig_id": "ACF2-ES-000330",
+        "fix_id": "F-25115r504495_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125",
           "SRG-OS-000362-GPOS-00149"
         ],
-        "gid": "V-223454",
-        "rid": "SV-223454r533198_rule",
-        "stig_id": "ACF2-ES-000330",
-        "fix_id": "F-25115r504495_fix"
+        "documentable": false
       },
       "id": "V-223454",
       "title": "CA-ACF2 Access to SYS1.LINKLIB must be properly protected.",
@@ -728,16 +728,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223455",
+        "rid": "SV-223455r533198_rule",
+        "stig_id": "ACF2-ES-000340",
+        "fix_id": "F-25116r504498_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000206-GPOS-00084",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223455",
-        "rid": "SV-223455r533198_rule",
-        "stig_id": "ACF2-ES-000340",
-        "fix_id": "F-25116r504498_fix"
+        "documentable": false
       },
       "id": "V-223455",
       "title": "CA-ACF2 must limit access to data sets used to back up and/or dump SMF collection files to appropriate users and/or batch jobs that perform SMF dump processing.",
@@ -751,11 +751,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-223456",
         "rid": "SV-223456r533198_rule",
         "stig_id": "ACF2-ES-000350",
-        "fix_id": "F-25117r500500_fix"
+        "fix_id": "F-25117r500500_fix",
+        "documentable": false
       },
       "id": "V-223456",
       "title": "CA-ACF2 LOGONIDs must not be defined to SYS1.UADS for non-emergency use.",
@@ -769,11 +769,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-223457",
         "rid": "SV-223457r533198_rule",
         "stig_id": "ACF2-ES-000370",
-        "fix_id": "F-25118r504885_fix"
+        "fix_id": "F-25118r504885_fix",
+        "documentable": false
       },
       "id": "V-223457",
       "title": "IBM z/OS IEASYMUP resource must be protected in accordance with proper security requirements.",
@@ -787,11 +787,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-223458",
         "rid": "SV-223458r533198_rule",
         "stig_id": "ACF2-ES-000380",
-        "fix_id": "F-25119r504502_fix"
+        "fix_id": "F-25119r504502_fix",
+        "documentable": false
       },
       "id": "V-223458",
       "title": "CA-ACF2 must limit Update and Allocate access to system backup files to system programmers and/or batch jobs that perform DASD backups.",
@@ -805,11 +805,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-223459",
         "rid": "SV-223459r533198_rule",
         "stig_id": "ACF2-ES-000390",
-        "fix_id": "F-25120r504505_fix"
+        "fix_id": "F-25120r504505_fix",
+        "documentable": false
       },
       "id": "V-223459",
       "title": "ACF2 PPGM GSO record value must specify protected programs that are only executed by privileged users.",
@@ -823,11 +823,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000329-GPOS-00128",
         "gid": "V-223462",
         "rid": "SV-223462r533198_rule",
         "stig_id": "ACF2-ES-000430",
-        "fix_id": "F-25123r500519_fix"
+        "fix_id": "F-25123r500519_fix",
+        "documentable": false
       },
       "id": "V-223462",
       "title": "The CA-ACF2 PSWD GSO record values for MAXTRY and PASSLMT must be properly set.",
@@ -841,7 +841,10 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000063-GPOS-00032",
+        "gid": "V-223463",
+        "rid": "SV-223463r533198_rule",
+        "stig_id": "ACF2-ES-000440",
+        "fix_id": "F-25124r504511_fix",
         "satisfies": [
           "SRG-OS-000063-GPOS-00032",
           "SRG-OS-000080-GPOS-00048",
@@ -850,10 +853,7 @@
           "SRG-OS-000337-GPOS-00129",
           "SRG-OS-000362-GPOS-00149"
         ],
-        "gid": "V-223463",
-        "rid": "SV-223463r533198_rule",
-        "stig_id": "ACF2-ES-000440",
-        "fix_id": "F-25124r504511_fix"
+        "documentable": false
       },
       "id": "V-223463",
       "title": "IBM z/OS SYS1.PARMLIB must be properly protected.",
@@ -867,11 +867,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000364-GPOS-00151",
         "gid": "V-223464",
         "rid": "SV-223464r533198_rule",
         "stig_id": "ACF2-ES-000450",
-        "fix_id": "F-25125r500525_fix"
+        "fix_id": "F-25125r500525_fix",
+        "documentable": false
       },
       "id": "V-223464",
       "title": "CA-ACF2 must be installed, functional, and properly configured.",
@@ -885,16 +885,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223465",
+        "rid": "SV-223465r533198_rule",
+        "stig_id": "ACF2-ES-000470",
+        "fix_id": "F-25126r504514_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223465",
-        "rid": "SV-223465r533198_rule",
-        "stig_id": "ACF2-ES-000470",
-        "fix_id": "F-25126r504514_fix"
+        "documentable": false
       },
       "id": "V-223465",
       "title": "CA-ACF2 must limit update and allocate access to the JES2 System data sets (e.g., Spool, Checkpoint, and Initialization parameters) to system programmers only.",
@@ -908,16 +908,16 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223466",
+        "rid": "SV-223466r533198_rule",
+        "stig_id": "ACF2-ES-000480",
+        "fix_id": "F-25127r504517_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223466",
-        "rid": "SV-223466r533198_rule",
-        "stig_id": "ACF2-ES-000480",
-        "fix_id": "F-25127r504517_fix"
+        "documentable": false
       },
       "id": "V-223466",
       "title": "CA-ACF2 must limit Write or greater access to libraries that contain PPT modules to system programmers only.",
@@ -931,11 +931,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223467",
         "rid": "SV-223467r533198_rule",
         "stig_id": "ACF2-ES-000490",
-        "fix_id": "F-25128r504520_fix"
+        "fix_id": "F-25128r504520_fix",
+        "documentable": false
       },
       "id": "V-223467",
       "title": "The EXITS GSO record value must specify the module names of site written ACF2 exit routines.",
@@ -949,11 +949,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223468",
         "rid": "SV-223468r533198_rule",
         "stig_id": "ACF2-ES-000500",
-        "fix_id": "F-25129r504523_fix"
+        "fix_id": "F-25129r504523_fix",
+        "documentable": false
       },
       "id": "V-223468",
       "title": "The CA-ACF2 LOGONID with the REFRESH attribute must have procedures for utilization.",
@@ -967,11 +967,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223469",
         "rid": "SV-223469r533198_rule",
         "stig_id": "ACF2-ES-000510",
-        "fix_id": "F-25130r504526_fix"
+        "fix_id": "F-25130r504526_fix",
+        "documentable": false
       },
       "id": "V-223469",
       "title": "IBM z/OS TSO GSO record values must be set to the values specified.",
@@ -985,11 +985,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223470",
         "rid": "SV-223470r533198_rule",
         "stig_id": "ACF2-ES-000520",
-        "fix_id": "F-25131r504529_fix"
+        "fix_id": "F-25131r504529_fix",
+        "documentable": false
       },
       "id": "V-223470",
       "title": "IBM z/OS procedures must restrict ACF2 LOGONIDs with the READALL attribute to auditors and/or authorized users.",
@@ -1003,11 +1003,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223471",
         "rid": "SV-223471r533198_rule",
         "stig_id": "ACF2-ES-000530",
-        "fix_id": "F-25132r504532_fix"
+        "fix_id": "F-25132r504532_fix",
+        "documentable": false
       },
       "id": "V-223471",
       "title": "IBM z/OS must have the RULEVLD and RSRCVLD attributes specified for LOGONIDs with the SECURITY attribute.",
@@ -1021,11 +1021,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223472",
         "rid": "SV-223472r533198_rule",
         "stig_id": "ACF2-ES-000540",
-        "fix_id": "F-25133r504535_fix"
+        "fix_id": "F-25133r504535_fix",
+        "documentable": false
       },
       "id": "V-223472",
       "title": "IBM z/OS LOGONIDs with the AUDIT or CONSULT attribute must be properly scoped.",
@@ -1039,11 +1039,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223473",
         "rid": "SV-223473r533198_rule",
         "stig_id": "ACF2-ES-000550",
-        "fix_id": "F-25134r500552_fix"
+        "fix_id": "F-25134r500552_fix",
+        "documentable": false
       },
       "id": "V-223473",
       "title": "IBM z/OS LOGONID with the ACCTPRIV attribute must be restricted to the ISSO.",
@@ -1057,11 +1057,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223474",
         "rid": "SV-223474r533198_rule",
         "stig_id": "ACF2-ES-000560",
-        "fix_id": "F-25135r504538_fix"
+        "fix_id": "F-25135r504538_fix",
+        "documentable": false
       },
       "id": "V-223474",
       "title": "IBM z/OS batch jobs with restricted ACF2 LOGONIDs must have the PGM(xxxxxxxx) and SUBAUTH attributes or the SOURCE(xxxxxxxx) attribute assigned to the corresponding LOGONIDs.",
@@ -1075,11 +1075,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223475",
         "rid": "SV-223475r695416_rule",
         "stig_id": "ACF2-ES-000570",
-        "fix_id": "F-25136r695415_fix"
+        "fix_id": "F-25136r695415_fix",
+        "documentable": false
       },
       "id": "V-223475",
       "title": "CA-ACF2 RULEOPTS GSO record values must be set to the values specified.",
@@ -1093,11 +1093,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223476",
         "rid": "SV-223476r695413_rule",
         "stig_id": "ACF2-ES-000580",
-        "fix_id": "F-25137r695412_fix"
+        "fix_id": "F-25137r695412_fix",
+        "documentable": false
       },
       "id": "V-223476",
       "title": "The CA-ACF2 GSO OPTS record value must be properly specified.",
@@ -1111,11 +1111,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00225",
         "gid": "V-223477",
         "rid": "SV-223477r533198_rule",
         "stig_id": "ACF2-ES-000590",
-        "fix_id": "F-25138r500564_fix"
+        "fix_id": "F-25138r500564_fix",
+        "documentable": false
       },
       "id": "V-223477",
       "title": "CA-ACF2 must prevent the use of dictionary words for passwords.",
@@ -1129,11 +1129,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223478",
         "rid": "SV-223478r533198_rule",
         "stig_id": "ACF2-ES-000600",
-        "fix_id": "F-25139r504547_fix"
+        "fix_id": "F-25139r504547_fix",
+        "documentable": false
       },
       "id": "V-223478",
       "title": "CA-ACF2 database must be on a separate physical volume from its backup and recovery data sets.",
@@ -1147,11 +1147,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223479",
         "rid": "SV-223479r533198_rule",
         "stig_id": "ACF2-ES-000610",
-        "fix_id": "F-25140r504550_fix"
+        "fix_id": "F-25140r504550_fix",
+        "documentable": false
       },
       "id": "V-223479",
       "title": "CA-ACF2 database must be backed up on a scheduled basis.",
@@ -1165,11 +1165,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223480",
         "rid": "SV-223480r533198_rule",
         "stig_id": "ACF2-ES-000620",
-        "fix_id": "F-25141r500573_fix"
+        "fix_id": "F-25141r500573_fix",
+        "documentable": false
       },
       "id": "V-223480",
       "title": "ACF2 REFRESH attribute must be restricted to security administrators only.",
@@ -1183,11 +1183,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223481",
         "rid": "SV-223481r695419_rule",
         "stig_id": "ACF2-ES-000630",
-        "fix_id": "F-25142r695418_fix"
+        "fix_id": "F-25142r695418_fix",
+        "documentable": false
       },
       "id": "V-223481",
       "title": "ACF2 maintenance LOGONIDs must have corresponding GSO MAINT records.",
@@ -1201,11 +1201,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223482",
         "rid": "SV-223482r533198_rule",
         "stig_id": "ACF2-ES-000640",
-        "fix_id": "F-25143r504556_fix"
+        "fix_id": "F-25143r504556_fix",
+        "documentable": false
       },
       "id": "V-223482",
       "title": "ACF2 LOGONIDs with the NON-CNCL attribute specified in the associated LOGONID record must be listed as trusted and must be specifically approved.",
@@ -1219,11 +1219,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223483",
         "rid": "SV-223483r533198_rule",
         "stig_id": "ACF2-ES-000650",
-        "fix_id": "F-25144r504559_fix"
+        "fix_id": "F-25144r504559_fix",
+        "documentable": false
       },
       "id": "V-223483",
       "title": "ACF2 LOGONIDs with the ACCOUNT, LEADER, or SECURITY attribute must be properly scoped.",
@@ -1237,11 +1237,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223484",
         "rid": "SV-223484r533198_rule",
         "stig_id": "ACF2-ES-000660",
-        "fix_id": "F-25145r504562_fix"
+        "fix_id": "F-25145r504562_fix",
+        "documentable": false
       },
       "id": "V-223484",
       "title": "ACF2 LOGONIDs associated with started tasks that have the MUSASS attribute and the requirement to submit jobs on behalf of its users must have the JOBFROM attribute as required.",
@@ -1255,11 +1255,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223485",
         "rid": "SV-223485r533198_rule",
         "stig_id": "ACF2-ES-000670",
-        "fix_id": "F-25146r504565_fix"
+        "fix_id": "F-25146r504565_fix",
+        "documentable": false
       },
       "id": "V-223485",
       "title": "ACF2 LOGONIDs assigned for started tasks must have the STC attribute specified in the associated LOGONID record.",
@@ -1273,11 +1273,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223486",
         "rid": "SV-223486r533198_rule",
         "stig_id": "ACF2-ES-000680",
-        "fix_id": "F-25147r500591_fix"
+        "fix_id": "F-25147r500591_fix",
+        "documentable": false
       },
       "id": "V-223486",
       "title": "ACF2 emergency LOGONIDS with the REFRESH attribute must have the SUSPEND attribute specified.",
@@ -1291,11 +1291,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223487",
         "rid": "SV-223487r533198_rule",
         "stig_id": "ACF2-ES-000690",
-        "fix_id": "F-25148r504568_fix"
+        "fix_id": "F-25148r504568_fix",
+        "documentable": false
       },
       "id": "V-223487",
       "title": "ACF2 BACKUP GSO record must be defined with a TIME value specifies greater than 00 unless the database is shared and backed up on another system.",
@@ -1309,11 +1309,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223488",
         "rid": "SV-223488r533198_rule",
         "stig_id": "ACF2-ES-000700",
-        "fix_id": "F-25149r504571_fix"
+        "fix_id": "F-25149r504571_fix",
+        "documentable": false
       },
       "id": "V-223488",
       "title": "ACF2 APPLDEF GSO record if used must have supporting documentation indicating the reason it was used.",
@@ -1327,11 +1327,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-223489",
         "rid": "SV-223489r533198_rule",
         "stig_id": "ACF2-ES-000710",
-        "fix_id": "F-25150r504574_fix"
+        "fix_id": "F-25150r504574_fix",
+        "documentable": false
       },
       "id": "V-223489",
       "title": "ACF2 MAINT GSO record value if specified must be restricted to production storage management user.",
@@ -1345,11 +1345,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-223490",
         "rid": "SV-223490r533198_rule",
         "stig_id": "ACF2-ES-000720",
-        "fix_id": "F-25151r504577_fix"
+        "fix_id": "F-25151r504577_fix",
+        "documentable": false
       },
       "id": "V-223490",
       "title": "ACF2 LINKLST GSO record if specified must only contains trusted system data sets.",
@@ -1363,11 +1363,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-223491",
         "rid": "SV-223491r533198_rule",
         "stig_id": "ACF2-ES-000730",
-        "fix_id": "F-25152r504580_fix"
+        "fix_id": "F-25152r504580_fix",
+        "documentable": false
       },
       "id": "V-223491",
       "title": "IBM z/OS must properly protect MCS console userid(s).",
@@ -1381,11 +1381,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-223492",
         "rid": "SV-223492r533198_rule",
         "stig_id": "ACF2-ES-000740",
-        "fix_id": "F-25153r500609_fix"
+        "fix_id": "F-25153r500609_fix",
+        "documentable": false
       },
       "id": "V-223492",
       "title": "ACF2 BLPPGM GSO record must not be defined.",
@@ -1399,11 +1399,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223493",
         "rid": "SV-223493r695420_rule",
         "stig_id": "ACF2-ES-000750",
-        "fix_id": "F-25154r504583_fix"
+        "fix_id": "F-25154r504583_fix",
+        "documentable": false
       },
       "id": "V-223493",
       "title": "IBM z/OS UID(0) must be properly assigned.",
@@ -1417,11 +1417,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223494",
         "rid": "SV-223494r533198_rule",
         "stig_id": "ACF2-ES-000760",
-        "fix_id": "F-25155r504586_fix"
+        "fix_id": "F-25155r504586_fix",
+        "documentable": false
       },
       "id": "V-223494",
       "title": "IBM z/OS user account for the UNIX kernel (OMVS) must be properly defined to the security database.",
@@ -1435,11 +1435,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223495",
         "rid": "SV-223495r533198_rule",
         "stig_id": "ACF2-ES-000770",
-        "fix_id": "F-25156r500618_fix"
+        "fix_id": "F-25156r500618_fix",
+        "documentable": false
       },
       "id": "V-223495",
       "title": "IBM z/OS user account for the UNIX (RMFGAT) must be properly defined.",
@@ -1453,11 +1453,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223496",
         "rid": "SV-223496r533198_rule",
         "stig_id": "ACF2-ES-000780",
-        "fix_id": "F-25157r504589_fix"
+        "fix_id": "F-25157r504589_fix",
+        "documentable": false
       },
       "id": "V-223496",
       "title": "ACF2 LOGONIDs must be defined with the required fields completed.",
@@ -1471,16 +1471,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
+        "gid": "V-223497",
+        "rid": "SV-223497r533198_rule",
+        "stig_id": "ACF2-ES-000790",
+        "fix_id": "F-25158r504592_fix",
         "satisfies": [
           "SRG-OS-000104-GPOS-00051",
           "SRG-OS-000121-GPOS-00062",
           "SRG-OS-000125-GPOS-00065"
         ],
-        "gid": "V-223497",
-        "rid": "SV-223497r533198_rule",
-        "stig_id": "ACF2-ES-000790",
-        "fix_id": "F-25158r504592_fix"
+        "documentable": false
       },
       "id": "V-223497",
       "title": "CA-ACF2 defined user accounts must uniquely identify system users.",
@@ -1494,11 +1494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000118-GPOS-00060",
         "gid": "V-223498",
         "rid": "SV-223498r533198_rule",
         "stig_id": "ACF2-ES-000800",
-        "fix_id": "F-25159r504595_fix"
+        "fix_id": "F-25159r504595_fix",
+        "documentable": false
       },
       "id": "V-223498",
       "title": "CA-ACF2 userids found inactive for more than 35 days must be suspended.",
@@ -1512,11 +1512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000266-GPOS-00101",
         "gid": "V-223499",
         "rid": "SV-223499r695422_rule",
         "stig_id": "ACF2-ES-000810",
-        "fix_id": "F-25160r504598_fix"
+        "fix_id": "F-25160r504598_fix",
+        "documentable": false
       },
       "id": "V-223499",
       "title": "CA-ACF2 PWPHRASE GSO record must be properly defined.",
@@ -1530,11 +1530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000266-GPOS-00101",
         "gid": "V-223500",
         "rid": "SV-223500r695424_rule",
         "stig_id": "ACF2-ES-000820",
-        "fix_id": "F-25161r500634_fix"
+        "fix_id": "F-25161r500634_fix",
+        "documentable": false
       },
       "id": "V-223500",
       "title": "CA-ACF2 must enforce password complexity by requiring that at least one special character be used.",
@@ -1548,11 +1548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-223501",
         "rid": "SV-223501r695426_rule",
         "stig_id": "ACF2-ES-000840",
-        "fix_id": "F-25162r500637_fix"
+        "fix_id": "F-25162r500637_fix",
+        "documentable": false
       },
       "id": "V-223501",
       "title": "ACF2 PSWD GSO record value must be set to require at least one upper-case character be used.",
@@ -1566,11 +1566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000071-GPOS-00039",
         "gid": "V-223502",
         "rid": "SV-223502r695429_rule",
         "stig_id": "ACF2-ES-000850",
-        "fix_id": "F-25163r695428_fix"
+        "fix_id": "F-25163r695428_fix",
+        "documentable": false
       },
       "id": "V-223502",
       "title": "ACF2 PSWD GSO record value must be set to require at least one numeric character be used.",
@@ -1584,11 +1584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000070-GPOS-00038",
         "gid": "V-223503",
         "rid": "SV-223503r695431_rule",
         "stig_id": "ACF2-ES-000860",
-        "fix_id": "F-25164r500643_fix"
+        "fix_id": "F-25164r500643_fix",
+        "documentable": false
       },
       "id": "V-223503",
       "title": "ACF2 PSWD GSO record value must be set to require at least one lower-case character be used.",
@@ -1602,11 +1602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-223504",
         "rid": "SV-223504r695433_rule",
         "stig_id": "ACF2-ES-000870",
-        "fix_id": "F-25165r500646_fix"
+        "fix_id": "F-25165r500646_fix",
+        "documentable": false
       },
       "id": "V-223504",
       "title": "ACF2 PSWD GSO record value must be set to require the change of at least 50% of the total number of characters when passwords are changed.",
@@ -1620,15 +1620,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
+        "gid": "V-223505",
+        "rid": "SV-223505r695435_rule",
+        "stig_id": "ACF2-ES-000880",
+        "fix_id": "F-25166r504601_fix",
         "satisfies": [
           "SRG-OS-000073-GPOS-00041",
           "SRG-OS-000074-GPOS-00042"
         ],
-        "gid": "V-223505",
-        "rid": "SV-223505r695435_rule",
-        "stig_id": "ACF2-ES-000880",
-        "fix_id": "F-25166r504601_fix"
+        "documentable": false
       },
       "id": "V-223505",
       "title": "ACF2 must use NIST FIPS-validated cryptography to protect passwords in the security database.",
@@ -1642,11 +1642,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-223506",
         "rid": "SV-223506r695437_rule",
         "stig_id": "ACF2-ES-000890",
-        "fix_id": "F-25167r500652_fix"
+        "fix_id": "F-25167r500652_fix",
+        "documentable": false
       },
       "id": "V-223506",
       "title": "ACF2 PSWD GSO record value must be set to require a 60-day maximum password lifetime restriction.",
@@ -1660,11 +1660,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-223507",
         "rid": "SV-223507r695439_rule",
         "stig_id": "ACF2-ES-000900",
-        "fix_id": "F-25168r500655_fix"
+        "fix_id": "F-25168r500655_fix",
+        "documentable": false
       },
       "id": "V-223507",
       "title": "ACF2 PSWD GSO record value must be set to require 24 hours/1 day as the minimum password lifetime.",
@@ -1678,11 +1678,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-223508",
         "rid": "SV-223508r695441_rule",
         "stig_id": "ACF2-ES-000910",
-        "fix_id": "F-25169r500658_fix"
+        "fix_id": "F-25169r500658_fix",
+        "documentable": false
       },
       "id": "V-223508",
       "title": "ACF2 PSWD GSO record value must be set to prohibit password reuse for a minimum of five generations or more.",
@@ -1696,11 +1696,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000079-GPOS-00047",
         "gid": "V-223509",
         "rid": "SV-223509r695443_rule",
         "stig_id": "ACF2-ES-000920",
-        "fix_id": "F-25170r500661_fix"
+        "fix_id": "F-25170r500661_fix",
+        "documentable": false
       },
       "id": "V-223509",
       "title": "ACF2 TSOTWX GSO record values must be set to obliterate the logon password on TWX devices.",
@@ -1714,11 +1714,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000079-GPOS-00047",
         "gid": "V-223510",
         "rid": "SV-223510r533198_rule",
         "stig_id": "ACF2-ES-000930",
-        "fix_id": "F-25171r500664_fix"
+        "fix_id": "F-25171r500664_fix",
+        "documentable": false
       },
       "id": "V-223510",
       "title": "ACF2 TSOCRT GSO record values must be set to obliterate the logon to ASCII CRT devices.",
@@ -1732,11 +1732,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000079-GPOS-00047",
         "gid": "V-223511",
         "rid": "SV-223511r695445_rule",
         "stig_id": "ACF2-ES-000940",
-        "fix_id": "F-25172r504604_fix"
+        "fix_id": "F-25172r504604_fix",
+        "documentable": false
       },
       "id": "V-223511",
       "title": "ACF2 TSO2741 GSO record values must be set to obliterate the logon password on 2741 devices.",
@@ -1750,11 +1750,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
         "gid": "V-223512",
         "rid": "SV-223512r695447_rule",
         "stig_id": "ACF2-ES-000950",
-        "fix_id": "F-25173r504607_fix"
+        "fix_id": "F-25173r504607_fix",
+        "documentable": false
       },
       "id": "V-223512",
       "title": "ACF2 SECVOLS GSO record value must be set to VOLMASK(). Any local changes are justified and documented with the ISSO.",
@@ -1768,11 +1768,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
         "gid": "V-223513",
         "rid": "SV-223513r695449_rule",
         "stig_id": "ACF2-ES-000960",
-        "fix_id": "F-25174r504610_fix"
+        "fix_id": "F-25174r504610_fix",
+        "documentable": false
       },
       "id": "V-223513",
       "title": "ACF2 RESVOLS GSO record value must be set to Volmask(-). Any other setting requires documentation justifying the change.",
@@ -1786,17 +1786,17 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
+        "gid": "V-223514",
+        "rid": "SV-223514r533198_rule",
+        "stig_id": "ACF2-ES-000970",
+        "fix_id": "F-25175r504613_fix",
         "satisfies": [
           "SRG-OS-000134-GPOS-00068",
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223514",
-        "rid": "SV-223514r533198_rule",
-        "stig_id": "ACF2-ES-000970",
-        "fix_id": "F-25175r504613_fix"
+        "documentable": false
       },
       "id": "V-223514",
       "title": "ACF2 security data sets and/or databases must be properly protected.",
@@ -1810,11 +1810,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-223515",
         "rid": "SV-223515r533198_rule",
         "stig_id": "ACF2-ES-000980",
-        "fix_id": "F-25176r500679_fix"
+        "fix_id": "F-25176r500679_fix",
+        "documentable": false
       },
       "id": "V-223515",
       "title": "ACF2 AUTOERAS GSO record value must be set to indicate that ACF2 is controlling the automatic physical erasure of VSAM or non VSAM data sets.",
@@ -1828,11 +1828,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000481-GPOS-000481",
         "gid": "V-223516",
         "rid": "SV-223516r695451_rule",
         "stig_id": "ACF2-ES-000990",
-        "fix_id": "F-25177r500682_fix"
+        "fix_id": "F-25177r500682_fix",
+        "documentable": false
       },
       "id": "V-223516",
       "title": "The operating system must enforce a minimum 8-character password length.",
@@ -1846,15 +1846,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
+        "gid": "V-223517",
+        "rid": "SV-223517r533198_rule",
+        "stig_id": "ACF2-FT-000010",
+        "fix_id": "F-25178r504616_fix",
         "satisfies": [
           "SRG-OS-000032-GPOS-00013",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-223517",
-        "rid": "SV-223517r533198_rule",
-        "stig_id": "ACF2-FT-000010",
-        "fix_id": "F-25178r504616_fix"
+        "documentable": false
       },
       "id": "V-223517",
       "title": "IBM z/OS SMF recording options for the FTP Server must be configured to write SMF records for all eligible events.",
@@ -1868,11 +1868,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223518",
         "rid": "SV-223518r533198_rule",
         "stig_id": "ACF2-FT-000020",
-        "fix_id": "F-25179r504619_fix"
+        "fix_id": "F-25179r504619_fix",
+        "documentable": false
       },
       "id": "V-223518",
       "title": "IBM z/OS data sets for the FTP Server must be properly protected.",
@@ -1886,11 +1886,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223519",
         "rid": "SV-223519r533198_rule",
         "stig_id": "ACF2-FT-000030",
-        "fix_id": "F-25180r504622_fix"
+        "fix_id": "F-25180r504622_fix",
+        "documentable": false
       },
       "id": "V-223519",
       "title": "IBM z/OS permission bits and user audit bits for HFS objects that are part of the FTP Server component must be properly configured.",
@@ -1904,15 +1904,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-223520",
+        "rid": "SV-223520r533198_rule",
+        "stig_id": "ACF2-FT-000040",
+        "fix_id": "F-25181r504625_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007"
         ],
-        "gid": "V-223520",
-        "rid": "SV-223520r533198_rule",
-        "stig_id": "ACF2-FT-000040",
-        "fix_id": "F-25181r504625_fix"
+        "documentable": false
       },
       "id": "V-223520",
       "title": "IBM z/OS FTP.DATA configuration statements must have a proper BANNER statement with the Standard Mandatory DoD Notice and Consent Banner.",
@@ -1926,11 +1926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
         "gid": "V-223521",
         "rid": "SV-223521r533198_rule",
         "stig_id": "ACF2-FT-000050",
-        "fix_id": "F-25182r500698_fix"
+        "fix_id": "F-25182r500698_fix",
+        "documentable": false
       },
       "id": "V-223521",
       "title": "IBM z/OS warning banner for the FTP Server must be properly specified.",
@@ -1944,11 +1944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
         "gid": "V-223522",
         "rid": "SV-223522r533198_rule",
         "stig_id": "ACF2-FT-000060",
-        "fix_id": "F-25183r500701_fix"
+        "fix_id": "F-25183r500701_fix",
+        "documentable": false
       },
       "id": "V-223522",
       "title": "IBM z/OS FTP.DATA configuration statements for the FTP Server must specify the BANNER statement.",
@@ -1962,11 +1962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223523",
         "rid": "SV-223523r533198_rule",
         "stig_id": "ACF2-FT-000070",
-        "fix_id": "F-25184r504628_fix"
+        "fix_id": "F-25184r504628_fix",
+        "documentable": false
       },
       "id": "V-223523",
       "title": "IBM z/OS FTP Control cards must be properly stored in a secure PDS file.",
@@ -1980,11 +1980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-223524",
         "rid": "SV-223524r533198_rule",
         "stig_id": "ACF2-FT-000080",
-        "fix_id": "F-25185r504631_fix"
+        "fix_id": "F-25185r504631_fix",
+        "documentable": false
       },
       "id": "V-223524",
       "title": "The IBM z/OS TFTP Server program must be properly protected.",
@@ -1998,11 +1998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223525",
         "rid": "SV-223525r533198_rule",
         "stig_id": "ACF2-FT-000090",
-        "fix_id": "F-25186r504634_fix"
+        "fix_id": "F-25186r504634_fix",
+        "documentable": false
       },
       "id": "V-223525",
       "title": "IBM z/OS FTP Server daemon must be defined with proper security parameters.",
@@ -2016,11 +2016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-223526",
         "rid": "SV-223526r533198_rule",
         "stig_id": "ACF2-FT-000100",
-        "fix_id": "F-25187r504637_fix"
+        "fix_id": "F-25187r504637_fix",
+        "documentable": false
       },
       "id": "V-223526",
       "title": "IBM z/OS startup parameters for the FTP Server must be defined in the SYSTCPD and SYSFTPD DD statements for configuration files.",
@@ -2034,11 +2034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-223527",
         "rid": "SV-223527r533198_rule",
         "stig_id": "ACF2-FT-000110",
-        "fix_id": "F-25188r500716_fix"
+        "fix_id": "F-25188r500716_fix",
+        "documentable": false
       },
       "id": "V-223527",
       "title": "IBM z/OS FTP.DATA configuration for the FTP Server must have INACTIVE statement properly set.",
@@ -2052,11 +2052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223528",
         "rid": "SV-223528r533198_rule",
         "stig_id": "ACF2-JS-000010",
-        "fix_id": "F-25189r504640_fix"
+        "fix_id": "F-25189r504640_fix",
+        "documentable": false
       },
       "id": "V-223528",
       "title": "IBM z/OS JESTRACE and/or SYSLOG resources must be protected in accordance with security requirements.",
@@ -2070,11 +2070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223529",
         "rid": "SV-223529r533198_rule",
         "stig_id": "ACF2-JS-000020",
-        "fix_id": "F-25190r504643_fix"
+        "fix_id": "F-25190r504643_fix",
+        "documentable": false
       },
       "id": "V-223529",
       "title": "IBM z/OS JESSPOOL resources must be protected in accordance with security requirements.",
@@ -2088,11 +2088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223530",
         "rid": "SV-223530r533198_rule",
         "stig_id": "ACF2-JS-000030",
-        "fix_id": "F-25191r504646_fix"
+        "fix_id": "F-25191r504646_fix",
+        "documentable": false
       },
       "id": "V-223530",
       "title": "IBM z/OS JESNEWS resources must be protected in accordance with security requirements.",
@@ -2106,11 +2106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223531",
         "rid": "SV-223531r533198_rule",
         "stig_id": "ACF2-JS-000040",
-        "fix_id": "F-25192r504649_fix"
+        "fix_id": "F-25192r504649_fix",
+        "documentable": false
       },
       "id": "V-223531",
       "title": "IBM z/OS JES2 system commands must be protected in accordance with security requirements.",
@@ -2124,11 +2124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223532",
         "rid": "SV-223532r533198_rule",
         "stig_id": "ACF2-JS-000050",
-        "fix_id": "F-25193r504652_fix"
+        "fix_id": "F-25193r504652_fix",
+        "documentable": false
       },
       "id": "V-223532",
       "title": "IBM z/OS JES2 spool resources must be controlled in accordance with security requirements.",
@@ -2142,11 +2142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223533",
         "rid": "SV-223533r533198_rule",
         "stig_id": "ACF2-JS-000060",
-        "fix_id": "F-25194r504655_fix"
+        "fix_id": "F-25194r504655_fix",
+        "documentable": false
       },
       "id": "V-223533",
       "title": "IBM z/OS JES2 output devices must be properly controlled for Classified Systems.",
@@ -2160,11 +2160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223534",
         "rid": "SV-223534r533198_rule",
         "stig_id": "ACF2-JS-000070",
-        "fix_id": "F-25195r504658_fix"
+        "fix_id": "F-25195r504658_fix",
+        "documentable": false
       },
       "id": "V-223534",
       "title": "IBM z/OS JES2 output devices must be controlled in accordance with the proper security requirements.",
@@ -2178,11 +2178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223535",
         "rid": "SV-223535r767056_rule",
         "stig_id": "ACF2-JS-000080",
-        "fix_id": "F-25196r504661_fix"
+        "fix_id": "F-25196r504661_fix",
+        "documentable": false
       },
       "id": "V-223535",
       "title": "IBM z/OS JES2 input sources must be controlled in accordance with the proper security requirements.",
@@ -2196,15 +2196,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223536",
+        "rid": "SV-223536r533198_rule",
+        "stig_id": "ACF2-JS-000090",
+        "fix_id": "F-25197r504664_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000326-GPOS-00126"
         ],
-        "gid": "V-223536",
-        "rid": "SV-223536r533198_rule",
-        "stig_id": "ACF2-JS-000090",
-        "fix_id": "F-25197r504664_fix"
+        "documentable": false
       },
       "id": "V-223536",
       "title": "IBM z/OS Surrogate users must be controlled in accordance with proper security requirements.",
@@ -2218,11 +2218,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-223537",
         "rid": "SV-223537r767058_rule",
         "stig_id": "ACF2-OS-000010",
-        "fix_id": "F-25198r504667_fix"
+        "fix_id": "F-25198r504667_fix",
+        "documentable": false
       },
       "id": "V-223537",
       "title": "The IBM z/OS BPX.SMF resource must be properly configured.",
@@ -2236,11 +2236,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000250-GPOS-00093",
         "gid": "V-223538",
         "rid": "SV-223538r533198_rule",
         "stig_id": "ACF2-OS-000020",
-        "fix_id": "F-25199r504670_fix"
+        "fix_id": "F-25199r504670_fix",
+        "documentable": false
       },
       "id": "V-223538",
       "title": "IBM z/OS must implement DoD-approved encryption to protect the confidentiality of remote access sessions.",
@@ -2254,11 +2254,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-223539",
         "rid": "SV-223539r533198_rule",
         "stig_id": "ACF2-OS-000030",
-        "fix_id": "F-25200r504673_fix"
+        "fix_id": "F-25200r504673_fix",
+        "documentable": false
       },
       "id": "V-223539",
       "title": "IBM z/OS Inapplicable PPT entries must be invalidated.",
@@ -2272,11 +2272,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000277-GPOS-00107",
         "gid": "V-223540",
         "rid": "SV-223540r533198_rule",
         "stig_id": "ACF2-OS-000040",
-        "fix_id": "F-25201r500756_fix"
+        "fix_id": "F-25201r500756_fix",
+        "documentable": false
       },
       "id": "V-223540",
       "title": "IBM z/OS system administrator must develop a process notify appropriate personnel when accounts are removed.",
@@ -2290,11 +2290,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000275-GPOS-00105",
         "gid": "V-223541",
         "rid": "SV-223541r533198_rule",
         "stig_id": "ACF2-OS-000050",
-        "fix_id": "F-25202r500759_fix"
+        "fix_id": "F-25202r500759_fix",
+        "documentable": false
       },
       "id": "V-223541",
       "title": "IBM z/OS system administrator must develop a process notify appropriate personnel when accounts are modified.",
@@ -2308,11 +2308,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000276-GPOS-00106",
         "gid": "V-223542",
         "rid": "SV-223542r533198_rule",
         "stig_id": "ACF2-OS-000060",
-        "fix_id": "F-25203r500762_fix"
+        "fix_id": "F-25203r500762_fix",
+        "documentable": false
       },
       "id": "V-223542",
       "title": "IBM z/OS system administrator must develop a process notify appropriate personnel when accounts are deleted.",
@@ -2326,11 +2326,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000274-GPOS-00104",
         "gid": "V-223543",
         "rid": "SV-223543r533198_rule",
         "stig_id": "ACF2-OS-000070",
-        "fix_id": "F-25204r500765_fix"
+        "fix_id": "F-25204r500765_fix",
+        "documentable": false
       },
       "id": "V-223543",
       "title": "IBM z/OS system administrator must develop a process notify appropriate personnel when accounts are created.",
@@ -2344,7 +2344,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-223544",
+        "rid": "SV-223544r767061_rule",
+        "stig_id": "ACF2-OS-000080",
+        "fix_id": "F-25205r767060_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000038-GPOS-00016",
@@ -2379,10 +2382,7 @@
           "SRG-OS-000476-GPOS-00221",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-223544",
-        "rid": "SV-223544r767061_rule",
-        "stig_id": "ACF2-OS-000080",
-        "fix_id": "F-25205r767060_fix"
+        "documentable": false
       },
       "id": "V-223544",
       "title": "IBM z/OS Required SMF data record types must be collected.",
@@ -2396,11 +2396,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223545",
         "rid": "SV-223545r533198_rule",
         "stig_id": "ACF2-OS-000090",
-        "fix_id": "F-25206r504679_fix"
+        "fix_id": "F-25206r504679_fix",
+        "documentable": false
       },
       "id": "V-223545",
       "title": "IBM z/OS special privileges must be assigned on an as-needed basis to LOGONIDs associated with STCs and LOGONIDs that need to execute TSO in batch.",
@@ -2414,7 +2414,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000038-GPOS-00016",
+        "gid": "V-223546",
+        "rid": "SV-223546r533198_rule",
+        "stig_id": "ACF2-OS-000100",
+        "fix_id": "F-25207r504682_fix",
         "satisfies": [
           "SRG-OS-000038-GPOS-00016",
           "SRG-OS-000039-GPOS-00017",
@@ -2424,10 +2427,7 @@
           "SRG-OS-000254-GPOS-00095",
           "SRG-OS-000269-GPOS-00103"
         ],
-        "gid": "V-223546",
-        "rid": "SV-223546r533198_rule",
-        "stig_id": "ACF2-OS-000100",
-        "fix_id": "F-25207r504682_fix"
+        "documentable": false
       },
       "id": "V-223546",
       "title": "IBM z/OS must specify SMF data options to assure appropriate activation.",
@@ -2441,11 +2441,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-223547",
         "rid": "SV-223547r533198_rule",
         "stig_id": "ACF2-OS-000110",
-        "fix_id": "F-25208r500777_fix"
+        "fix_id": "F-25208r500777_fix",
+        "documentable": false
       },
       "id": "V-223547",
       "title": "IBM z/OS SMF collection files (system MANx data sets or LOGSTREAM DASD) must have storage capacity to store at least one weeks worth of audit data.",
@@ -2459,11 +2459,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
         "gid": "V-223548",
         "rid": "SV-223548r533198_rule",
         "stig_id": "ACF2-OS-000120",
-        "fix_id": "F-25209r504684_fix"
+        "fix_id": "F-25209r504684_fix",
+        "documentable": false
       },
       "id": "V-223548",
       "title": "IBM z/OS system administrators must develop an automated process to collect and retain SMF data.",
@@ -2477,16 +2477,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000046-GPOS-00022",
+        "gid": "V-223549",
+        "rid": "SV-223549r533198_rule",
+        "stig_id": "ACF2-OS-000130",
+        "fix_id": "F-25210r504687_fix",
         "satisfies": [
           "SRG-OS-000046-GPOS-00022",
           "SRG-OS-000343-GPOS-00134",
           "SRG-OS-000344-GPOS-00135"
         ],
-        "gid": "V-223549",
-        "rid": "SV-223549r533198_rule",
-        "stig_id": "ACF2-OS-000130",
-        "fix_id": "F-25210r504687_fix"
+        "documentable": false
       },
       "id": "V-223549",
       "title": "IBM z/OS BUFUSEWARN in the SMFPRMxx must be properly set.",
@@ -2500,11 +2500,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000047-GPOS-00023",
         "gid": "V-223550",
         "rid": "SV-223550r533198_rule",
         "stig_id": "ACF2-OS-000140",
-        "fix_id": "F-25211r500786_fix"
+        "fix_id": "F-25211r500786_fix",
+        "documentable": false
       },
       "id": "V-223550",
       "title": "IBM z/OS NOBUFFS in SMFPRMxx must be properly set (Default is MSG).",
@@ -2518,11 +2518,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
         "gid": "V-223551",
         "rid": "SV-223551r533198_rule",
         "stig_id": "ACF2-OS-000150",
-        "fix_id": "F-25212r500789_fix"
+        "fix_id": "F-25212r500789_fix",
+        "documentable": false
       },
       "id": "V-223551",
       "title": "IBM z/OS SNTP daemon (SNTPD) permission bits must be properly configured.",
@@ -2536,11 +2536,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
         "gid": "V-223552",
         "rid": "SV-223552r533198_rule",
         "stig_id": "ACF2-OS-000160",
-        "fix_id": "F-25213r504690_fix"
+        "fix_id": "F-25213r504690_fix",
+        "documentable": false
       },
       "id": "V-223552",
       "title": "IBM z/OS SNTP daemon (SNTPD) must be active.",
@@ -2554,11 +2554,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000356-GPOS-00144",
         "gid": "V-223553",
         "rid": "SV-223553r533198_rule",
         "stig_id": "ACF2-OS-000170",
-        "fix_id": "F-25214r500795_fix"
+        "fix_id": "F-25214r500795_fix",
+        "documentable": false
       },
       "id": "V-223553",
       "title": "IBM z/OS PARMLIB CLOCKxx must have the Accuracy PARM coded properly.",
@@ -2572,7 +2572,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-223554",
+        "rid": "SV-223554r533198_rule",
+        "stig_id": "ACF2-OS-000180",
+        "fix_id": "F-25215r504693_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
@@ -2585,10 +2588,7 @@
           "SRG-OS-000206-GPOS-00084",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223554",
-        "rid": "SV-223554r533198_rule",
-        "stig_id": "ACF2-OS-000180",
-        "fix_id": "F-25215r504693_fix"
+        "documentable": false
       },
       "id": "V-223554",
       "title": "IBM z/OS SMF collection files (i.e., SYS1.MANx) access must be limited to appropriate users and/or batch jobs that perform SMF dump processing.",
@@ -2602,11 +2602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223555",
         "rid": "SV-223555r533198_rule",
         "stig_id": "ACF2-OS-000190",
-        "fix_id": "F-25216r500801_fix"
+        "fix_id": "F-25216r500801_fix",
+        "documentable": false
       },
       "id": "V-223555",
       "title": "IBM z/OS system administrator must develop a process to notify ISSOs of account enabling actions.",
@@ -2620,11 +2620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223556",
         "rid": "SV-223556r533198_rule",
         "stig_id": "ACF2-OS-000200",
-        "fix_id": "F-25217r504696_fix"
+        "fix_id": "F-25217r504696_fix",
+        "documentable": false
       },
       "id": "V-223556",
       "title": "IBM z/OS PASSWORD data set and OS passwords must not be used.",
@@ -2638,11 +2638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223557",
         "rid": "SV-223557r533198_rule",
         "stig_id": "ACF2-OS-000210",
-        "fix_id": "F-25218r504699_fix"
+        "fix_id": "F-25218r504699_fix",
+        "documentable": false
       },
       "id": "V-223557",
       "title": "IBM z/OS must configure system waittimes to protect resource availability based on site priorities.",
@@ -2656,11 +2656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223558",
         "rid": "SV-223558r533198_rule",
         "stig_id": "ACF2-OS-000220",
-        "fix_id": "F-25219r504702_fix"
+        "fix_id": "F-25219r504702_fix",
+        "documentable": false
       },
       "id": "V-223558",
       "title": "IBM z/OS Emergency LOGONIDs must be properly defined.",
@@ -2674,11 +2674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223559",
         "rid": "SV-223559r533198_rule",
         "stig_id": "ACF2-OS-000230",
-        "fix_id": "F-25220r504705_fix"
+        "fix_id": "F-25220r504705_fix",
+        "documentable": false
       },
       "id": "V-223559",
       "title": "IBM z/OS DFSMS control data sets must reside on separate storage volumes.",
@@ -2692,11 +2692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00232",
         "gid": "V-223560",
         "rid": "SV-223560r533198_rule",
         "stig_id": "ACF2-OS-000240",
-        "fix_id": "F-25221r504708_fix"
+        "fix_id": "F-25221r504708_fix",
+        "documentable": false
       },
       "id": "V-223560",
       "title": "IBM z/OS Policy Agent must employ a deny-all, allow-by-exception firewall policy for allowing connections to other systems.",
@@ -2710,11 +2710,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-223561",
         "rid": "SV-223561r533198_rule",
         "stig_id": "ACF2-OS-000250",
-        "fix_id": "F-25222r504711_fix"
+        "fix_id": "F-25222r504711_fix",
+        "documentable": false
       },
       "id": "V-223561",
       "title": "Unsupported IBM z/OS system software must not be installed and/or active on the system.",
@@ -2728,11 +2728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-223562",
         "rid": "SV-223562r533198_rule",
         "stig_id": "ACF2-OS-000260",
-        "fix_id": "F-25223r504714_fix"
+        "fix_id": "F-25223r504714_fix",
+        "documentable": false
       },
       "id": "V-223562",
       "title": "IBM z/OS must not allow non-existent or inaccessible LINKLIST libraries.",
@@ -2746,11 +2746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-223563",
         "rid": "SV-223563r533198_rule",
         "stig_id": "ACF2-OS-000270",
-        "fix_id": "F-25224r504717_fix"
+        "fix_id": "F-25224r504717_fix",
+        "documentable": false
       },
       "id": "V-223563",
       "title": "IBM z/OS must not allow non-existent or inaccessible Link Pack Area (LPA) libraries.",
@@ -2764,11 +2764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-223564",
         "rid": "SV-223564r533198_rule",
         "stig_id": "ACF2-OS-000280",
-        "fix_id": "F-25225r500828_fix"
+        "fix_id": "F-25225r500828_fix",
+        "documentable": false
       },
       "id": "V-223564",
       "title": "IBM z/OS must not have inaccessible APF libraries defined.",
@@ -2782,11 +2782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-223565",
         "rid": "SV-223565r533198_rule",
         "stig_id": "ACF2-OS-000290",
-        "fix_id": "F-25226r500831_fix"
+        "fix_id": "F-25226r500831_fix",
+        "documentable": false
       },
       "id": "V-223565",
       "title": "IBM z/OS LNKAUTH=APFTAB must be specified in the IEASYSxx member(s) in the currently active parmlib data set(s).",
@@ -2800,11 +2800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-223566",
         "rid": "SV-223566r533198_rule",
         "stig_id": "ACF2-OS-000310",
-        "fix_id": "F-25227r504720_fix"
+        "fix_id": "F-25227r504720_fix",
+        "documentable": false
       },
       "id": "V-223566",
       "title": "Duplicated IBM z/OS sensitive utilities and/or programs must not exist in APF libraries.",
@@ -2818,11 +2818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-223567",
         "rid": "SV-223567r533198_rule",
         "stig_id": "ACF2-OS-000320",
-        "fix_id": "F-25228r504723_fix"
+        "fix_id": "F-25228r504723_fix",
+        "documentable": false
       },
       "id": "V-223567",
       "title": "IBM z/OS must properly configure CONSOLxx members.",
@@ -2836,15 +2836,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000067-GPOS-00035",
+        "gid": "V-223568",
+        "rid": "SV-223568r695454_rule",
+        "stig_id": "ACF2-OS-000330",
+        "fix_id": "F-25229r695453_fix",
         "satisfies": [
           "SRG-OS-000067-GPOS-00035",
           "SRG-OS-000068-GPOS-00036"
         ],
-        "gid": "V-223568",
-        "rid": "SV-223568r695454_rule",
-        "stig_id": "ACF2-OS-000330",
-        "fix_id": "F-25229r695453_fix"
+        "documentable": false
       },
       "id": "V-223568",
       "title": "IBM z/OS must use SAF Key Rings for key management.",
@@ -2858,17 +2858,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
+        "gid": "V-223569",
+        "rid": "SV-223569r533198_rule",
+        "stig_id": "ACF2-OS-000340",
+        "fix_id": "F-25230r504729_fix",
         "satisfies": [
           "SRG-OS-000185-GPOS-00079",
           "SRG-OS-000405-GPOS-00184",
           "SRG-OS-000404-GPOS-00183",
           "SRG-OS-000396-GPOS-00176"
         ],
-        "gid": "V-223569",
-        "rid": "SV-223569r533198_rule",
-        "stig_id": "ACF2-OS-000340",
-        "fix_id": "F-25230r504729_fix"
+        "documentable": false
       },
       "id": "V-223569",
       "title": "The IBM z/OS systems requiring data at rest protection must properly employ IBM DS8880 for full disk encryption.",
@@ -2882,11 +2882,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-223570",
         "rid": "SV-223570r533198_rule",
         "stig_id": "ACF2-OS-000350",
-        "fix_id": "F-25231r504732_fix"
+        "fix_id": "F-25231r504732_fix",
+        "documentable": false
       },
       "id": "V-223570",
       "title": "IBM z/OS sensitive and critical system data sets must not exist on shared DASD.",
@@ -2900,11 +2900,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000420-GPOS-00186",
         "gid": "V-223571",
         "rid": "SV-223571r533198_rule",
         "stig_id": "ACF2-OS-000360",
-        "fix_id": "F-25232r500849_fix"
+        "fix_id": "F-25232r500849_fix",
+        "documentable": false
       },
       "id": "V-223571",
       "title": "IBM z/OS Policy agent must contain a policy that protects against or limits the effects of Denial of Service (DoS) attacks by ensuring the operating system is implementing rate-limiting measures on impacted network interfaces.",
@@ -2918,11 +2918,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000142-GPOS-00071",
         "gid": "V-223572",
         "rid": "SV-223572r533198_rule",
         "stig_id": "ACF2-OS-000370",
-        "fix_id": "F-25233r500852_fix"
+        "fix_id": "F-25233r500852_fix",
+        "documentable": false
       },
       "id": "V-223572",
       "title": "IBM z/OS Policy agent must contain a policy that manages excess capacity, bandwidth, or other redundancy to limit the effects of information flooding types of Denial of Service (DoS) attacks.",
@@ -2936,11 +2936,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
         "gid": "V-223573",
         "rid": "SV-223573r533198_rule",
         "stig_id": "ACF2-OS-002240",
-        "fix_id": "F-25234r500855_fix"
+        "fix_id": "F-25234r500855_fix",
+        "documentable": false
       },
       "id": "V-223573",
       "title": "IBM z/OS must employ a session manager to manage retaining a users session lock until that user reestablishes access using established identification and authentication procedures.",
@@ -2954,11 +2954,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000363-GPOS-00150",
         "gid": "V-223574",
         "rid": "SV-223574r533198_rule",
         "stig_id": "ACF2-OS-002330",
-        "fix_id": "F-25235r500858_fix"
+        "fix_id": "F-25235r500858_fix",
+        "documentable": false
       },
       "id": "V-223574",
       "title": "IBM z/OS system administrator must develop a procedure to notify designated personnel if baseline configurations are changed in an unauthorized manner.",
@@ -2972,11 +2972,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000031-GPOS-00012",
         "gid": "V-223575",
         "rid": "SV-223575r533198_rule",
         "stig_id": "ACF2-OS-002350",
-        "fix_id": "F-25236r500861_fix"
+        "fix_id": "F-25236r500861_fix",
+        "documentable": false
       },
       "id": "V-223575",
       "title": "IBM z/OS must employ a session manager that conceal, via the session lock, information previously visible on the display with a publicly viewable image.",
@@ -2990,11 +2990,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-223576",
         "rid": "SV-223576r533198_rule",
         "stig_id": "ACF2-OS-002360",
-        "fix_id": "F-25237r500864_fix"
+        "fix_id": "F-25237r500864_fix",
+        "documentable": false
       },
       "id": "V-223576",
       "title": "IBM z/OS must employ a session manager to manage session lock after a 15-minute period of inactivity.",
@@ -3008,11 +3008,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000002-GPOS-00002",
         "gid": "V-223577",
         "rid": "SV-223577r533198_rule",
         "stig_id": "ACF2-OS-002370",
-        "fix_id": "F-25238r500867_fix"
+        "fix_id": "F-25238r500867_fix",
+        "documentable": false
       },
       "id": "V-223577",
       "title": "IBM z/OS System Administrator must develop a procedure to automatically remove or disable temporary user accounts after 72 hours.",
@@ -3026,11 +3026,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000123-GPOS-00064",
         "gid": "V-223578",
         "rid": "SV-223578r533198_rule",
         "stig_id": "ACF2-OS-002380",
-        "fix_id": "F-25239r500870_fix"
+        "fix_id": "F-25239r500870_fix",
+        "documentable": false
       },
       "id": "V-223578",
       "title": "IBM z/OS system administrator must develop a procedure to automatically remove or disable emergency accounts after the crisis is resolved or 72 hours.",
@@ -3044,11 +3044,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000304-GPOS-00121",
         "gid": "V-223579",
         "rid": "SV-223579r533198_rule",
         "stig_id": "ACF2-OS-002390",
-        "fix_id": "F-25240r500873_fix"
+        "fix_id": "F-25240r500873_fix",
+        "documentable": false
       },
       "id": "V-223579",
       "title": "IBM z/OS system administrator must develop a procedure to notify system administrators and ISSOs of account enabling actions.",
@@ -3062,11 +3062,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000126-GPOS-00066",
         "gid": "V-223580",
         "rid": "SV-223580r533198_rule",
         "stig_id": "ACF2-OS-002410",
-        "fix_id": "F-25241r500876_fix"
+        "fix_id": "F-25241r500876_fix",
+        "documentable": false
       },
       "id": "V-223580",
       "title": "IBM z/OS system administrator must develop a procedure to terminate all sessions and network connections related to nonlocal maintenance when nonlocal maintenance is completed.",
@@ -3080,11 +3080,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000437-GPOS-00194",
         "gid": "V-223581",
         "rid": "SV-223581r533198_rule",
         "stig_id": "ACF2-OS-002420",
-        "fix_id": "F-25242r500879_fix"
+        "fix_id": "F-25242r500879_fix",
+        "documentable": false
       },
       "id": "V-223581",
       "title": "IBM z/OS system administrator must develop a procedure to remove all software components after updated versions have been installed.",
@@ -3098,11 +3098,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000447-GPOS-00201",
         "gid": "V-223582",
         "rid": "SV-223582r533198_rule",
         "stig_id": "ACF2-OS-002430",
-        "fix_id": "F-25243r500882_fix"
+        "fix_id": "F-25243r500882_fix",
+        "documentable": false
       },
       "id": "V-223582",
       "title": "IBM z/OS system administrator must develop a procedure to shut down the information system, restart the information system, and/or notify the system administrator when anomalies in the operation of any security functions are discovered.",
@@ -3116,11 +3116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000030-GPOS-00011",
         "gid": "V-223583",
         "rid": "SV-223583r533198_rule",
         "stig_id": "ACF2-OS-002440",
-        "fix_id": "F-25244r500885_fix"
+        "fix_id": "F-25244r500885_fix",
+        "documentable": false
       },
       "id": "V-223583",
       "title": "IBM z/OS must employ a session manager configured for users to directly initiate a session lock for all connection types.",
@@ -3134,11 +3134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000118-GPOS-00060",
         "gid": "V-223584",
         "rid": "SV-223584r533198_rule",
         "stig_id": "ACF2-OS-002470",
-        "fix_id": "F-25245r500888_fix"
+        "fix_id": "F-25245r500888_fix",
+        "documentable": false
       },
       "id": "V-223584",
       "title": "ACF2 system administrator must develop a procedure to disable account identifiers (individuals, groups, roles, and devices) after 35 days of inactivity.",
@@ -3152,11 +3152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000479-GPOS-00224",
         "gid": "V-223585",
         "rid": "SV-223585r533198_rule",
         "stig_id": "ACF2-OS-003430",
-        "fix_id": "F-25246r500891_fix"
+        "fix_id": "F-25246r500891_fix",
+        "documentable": false
       },
       "id": "V-223585",
       "title": "IBM z/OS system administrator must develop a procedure to offload SMF files to a different system or media than the system being audited.",
@@ -3170,15 +3170,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
+        "gid": "V-223586",
+        "rid": "SV-223586r533198_rule",
+        "stig_id": "ACF2-SH-000010",
+        "fix_id": "F-25247r504735_fix",
         "satisfies": [
           "SRG-OS-000032-GPOS-00013",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "gid": "V-223586",
-        "rid": "SV-223586r533198_rule",
-        "stig_id": "ACF2-SH-000010",
-        "fix_id": "F-25247r504735_fix"
+        "documentable": false
       },
       "id": "V-223586",
       "title": "IBM z/OS SMF recording options for the SSH daemon must be configured to write SMF records for all eligible events.",
@@ -3192,15 +3192,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
+        "gid": "V-223587",
+        "rid": "SV-223587r533198_rule",
+        "stig_id": "ACF2-SH-000030",
+        "fix_id": "F-25248r504738_fix",
         "satisfies": [
           "SRG-OS-000228-GPOS-00088",
           "SRG-OS-000023-GPOS-00006"
         ],
-        "gid": "V-223587",
-        "rid": "SV-223587r533198_rule",
-        "stig_id": "ACF2-SH-000030",
-        "fix_id": "F-25248r504738_fix"
+        "documentable": false
       },
       "id": "V-223587",
       "title": "IBM z/OS SSH daemon must be configured with the Department of Defense (DoD) logon banner.",
@@ -3214,11 +3214,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-223588",
         "rid": "SV-223588r533198_rule",
         "stig_id": "ACF2-SH-000040",
-        "fix_id": "F-25249r500900_fix"
+        "fix_id": "F-25249r500900_fix",
+        "documentable": false
       },
       "id": "V-223588",
       "title": "IBM z/OS SSH daemon must be configured to only use the SSHv2 protocol.",
@@ -3232,15 +3232,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-223589",
+        "rid": "SV-223589r533198_rule",
+        "stig_id": "ACF2-SH-000050",
+        "fix_id": "F-25250r504741_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000120-GPOS-00061"
         ],
-        "gid": "V-223589",
-        "rid": "SV-223589r533198_rule",
-        "stig_id": "ACF2-SH-000050",
-        "fix_id": "F-25250r504741_fix"
+        "documentable": false
       },
       "id": "V-223589",
       "title": "IBM z/OS SSH daemon must be configured to use a FIPS 140-2 compliant cryptographic algorithm.",
@@ -3254,11 +3254,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223590",
         "rid": "SV-223590r533198_rule",
         "stig_id": "ACF2-SL-000010",
-        "fix_id": "F-25251r504744_fix"
+        "fix_id": "F-25251r504744_fix",
+        "documentable": false
       },
       "id": "V-223590",
       "title": "IBM z/OS permission bits and user audit bits for HFS objects that are part of the Syslog daemon component must be configured properly.",
@@ -3272,11 +3272,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223591",
         "rid": "SV-223591r533198_rule",
         "stig_id": "ACF2-SL-000020",
-        "fix_id": "F-25252r504747_fix"
+        "fix_id": "F-25252r504747_fix",
+        "documentable": false
       },
       "id": "V-223591",
       "title": "IBM z/OS Syslog daemon must be started at z/OS initialization.",
@@ -3290,11 +3290,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223592",
         "rid": "SV-223592r533198_rule",
         "stig_id": "ACF2-SL-000030",
-        "fix_id": "F-25253r504750_fix"
+        "fix_id": "F-25253r504750_fix",
+        "documentable": false
       },
       "id": "V-223592",
       "title": "IBM z/OS Syslog daemon must be properly defined and secured.",
@@ -3308,11 +3308,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223593",
         "rid": "SV-223593r533198_rule",
         "stig_id": "ACF2-SM-000010",
-        "fix_id": "F-25254r500915_fix"
+        "fix_id": "F-25254r500915_fix",
+        "documentable": false
       },
       "id": "V-223593",
       "title": "IBM z/OS DFSMS resource class(es) must be defined to the GSO CLASMAP record in accordance with security requirements.",
@@ -3326,11 +3326,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223594",
         "rid": "SV-223594r767064_rule",
         "stig_id": "ACF2-SM-000020",
-        "fix_id": "F-25255r767063_fix"
+        "fix_id": "F-25255r767063_fix",
+        "documentable": false
       },
       "id": "V-223594",
       "title": "IBM z/OS DFSMS Program Resources must be properly defined and protected.",
@@ -3344,11 +3344,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223595",
         "rid": "SV-223595r533198_rule",
         "stig_id": "ACF2-SM-000030",
-        "fix_id": "F-25256r504756_fix"
+        "fix_id": "F-25256r504756_fix",
+        "documentable": false
       },
       "id": "V-223595",
       "title": "IBM z/OS DFSMS control data sets must be protected in accordance with security requirements.",
@@ -3362,11 +3362,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223596",
         "rid": "SV-223596r533198_rule",
         "stig_id": "ACF2-SM-000040",
-        "fix_id": "F-25257r504759_fix"
+        "fix_id": "F-25257r504759_fix",
+        "documentable": false
       },
       "id": "V-223596",
       "title": "IBM z/OS DFMSM resource class(es)must be defined to the GSO SAFDEF record in accordance with security requirements.",
@@ -3380,15 +3380,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223597",
+        "rid": "SV-223597r533198_rule",
+        "stig_id": "ACF2-SM-000050",
+        "fix_id": "F-25258r504762_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223597",
-        "rid": "SV-223597r533198_rule",
-        "stig_id": "ACF2-SM-000050",
-        "fix_id": "F-25258r504762_fix"
+        "documentable": false
       },
       "id": "V-223597",
       "title": "IBM z/OS DFSMS resources must be protected in accordance with the proper security requirements.",
@@ -3402,11 +3402,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223598",
         "rid": "SV-223598r533198_rule",
         "stig_id": "ACF2-SM-000060",
-        "fix_id": "F-25259r500930_fix"
+        "fix_id": "F-25259r500930_fix",
+        "documentable": false
       },
       "id": "V-223598",
       "title": "IBM z/OS using DFSMS must properly specify SYS(x).PARMLIB(IGDSMSxx), SMS parameter settings.",
@@ -3420,11 +3420,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-223599",
         "rid": "SV-223599r533198_rule",
         "stig_id": "ACF2-TC-000010",
-        "fix_id": "F-25260r504765_fix"
+        "fix_id": "F-25260r504765_fix",
+        "documentable": false
       },
       "id": "V-223599",
       "title": "IBM z/OS PROFILE.TCPIP configuration statements for the TCP/IP stack must be coded properly.",
@@ -3438,11 +3438,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-223600",
         "rid": "SV-223600r533198_rule",
         "stig_id": "ACF2-TC-000020",
-        "fix_id": "F-25261r500936_fix"
+        "fix_id": "F-25261r500936_fix",
+        "documentable": false
       },
       "id": "V-223600",
       "title": "IBM z//OS must be configured to restrict all TCP/IP ports to ports, protocols, and/or services as defined in the PPSM CAL and vulnerability assessments.",
@@ -3456,11 +3456,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223601",
         "rid": "SV-223601r533198_rule",
         "stig_id": "ACF2-TC-000030",
-        "fix_id": "F-25262r504768_fix"
+        "fix_id": "F-25262r504768_fix",
+        "documentable": false
       },
       "id": "V-223601",
       "title": "IBM z/OS TCP/IP resources must be properly protected.",
@@ -3474,11 +3474,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223602",
         "rid": "SV-223602r533198_rule",
         "stig_id": "ACF2-TC-000040",
-        "fix_id": "F-25263r504771_fix"
+        "fix_id": "F-25263r504771_fix",
+        "documentable": false
       },
       "id": "V-223602",
       "title": "IBM z/OS permission bits and user audit bits for HFS objects that are part of the Base TCP/IP component must be configured properly.",
@@ -3492,15 +3492,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223603",
+        "rid": "SV-223603r767690_rule",
+        "stig_id": "ACF2-TC-000050",
+        "fix_id": "F-25264r767689_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223603",
-        "rid": "SV-223603r767690_rule",
-        "stig_id": "ACF2-TC-000050",
-        "fix_id": "F-25264r767689_fix"
+        "documentable": false
       },
       "id": "V-223603",
       "title": "IBM z/OS data sets for the Base TCP/IP component must be properly protected.",
@@ -3514,11 +3514,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223604",
         "rid": "SV-223604r768719_rule",
         "stig_id": "ACF2-TC-000060",
-        "fix_id": "F-25265r768718_fix"
+        "fix_id": "F-25265r768718_fix",
+        "documentable": false
       },
       "id": "V-223604",
       "title": "IBM z/OS Configuration files for the TCP/IP stack must be properly specified.",
@@ -3532,11 +3532,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223605",
         "rid": "SV-223605r533198_rule",
         "stig_id": "ACF2-TC-000070",
-        "fix_id": "F-25266r504780_fix"
+        "fix_id": "F-25266r504780_fix",
+        "documentable": false
       },
       "id": "V-223605",
       "title": "IBM z/OS Started tasks for the Base TCP/IP component must be defined in accordance with security requirements.",
@@ -3550,11 +3550,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
         "gid": "V-223606",
         "rid": "SV-223606r533198_rule",
         "stig_id": "ACF2-TC-000080",
-        "fix_id": "F-25267r504783_fix"
+        "fix_id": "F-25267r504783_fix",
+        "documentable": false
       },
       "id": "V-223606",
       "title": "IBM z/OS PROFILE.TCPIP configuration statement must include SMFPARMS and/or SMFCONFIG statement for each TCP/IP stack.",
@@ -3568,11 +3568,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000279-GPOS-00109",
         "gid": "V-223608",
         "rid": "SV-223608r533198_rule",
         "stig_id": "ACF2-TN-000010",
-        "fix_id": "F-25269r504786_fix"
+        "fix_id": "F-25269r504786_fix",
+        "documentable": false
       },
       "id": "V-223608",
       "title": "IBM z/OS PROFILE.TCPIP configuration INACTIVITY statement must be configured to 900 seconds.",
@@ -3586,15 +3586,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000392-GPOS-00172",
+        "gid": "V-223609",
+        "rid": "SV-223609r533198_rule",
+        "stig_id": "ACF2-TN-000020",
+        "fix_id": "F-25270r504789_fix",
         "satisfies": [
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000032-GPOS-00013"
         ],
-        "gid": "V-223609",
-        "rid": "SV-223609r533198_rule",
-        "stig_id": "ACF2-TN-000020",
-        "fix_id": "F-25270r504789_fix"
+        "documentable": false
       },
       "id": "V-223609",
       "title": "IBM z/OS SMF recording options for the TN3270 Telnet Server must be properly specified.",
@@ -3608,7 +3608,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-223610",
+        "rid": "SV-223610r533198_rule",
+        "stig_id": "ACF2-TN-000030",
+        "fix_id": "F-25271r504792_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000120-GPOS-00061",
@@ -3622,10 +3625,7 @@
           "SRG-OS-000426-GPOS-00190",
           "SRG-OS-000478-GPOS-00223"
         ],
-        "gid": "V-223610",
-        "rid": "SV-223610r533198_rule",
-        "stig_id": "ACF2-TN-000030",
-        "fix_id": "F-25271r504792_fix"
+        "documentable": false
       },
       "id": "V-223610",
       "title": "IBM z/OS SSL encryption options for the TN3270 Telnet Server must be specified properly for each statement that defines a SECUREPORT or within the TELNETGLOBALS.",
@@ -3639,15 +3639,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-223611",
+        "rid": "SV-223611r533198_rule",
+        "stig_id": "ACF2-TN-000040",
+        "fix_id": "F-25272r504795_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007"
         ],
-        "gid": "V-223611",
-        "rid": "SV-223611r533198_rule",
-        "stig_id": "ACF2-TN-000040",
-        "fix_id": "F-25272r504795_fix"
+        "documentable": false
       },
       "id": "V-223611",
       "title": "IBM z/OS TN3270 Telnet Server configuration statement MSG10 text must have the Standard Mandatory DoD Notice and Consent Banner.",
@@ -3661,11 +3661,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
         "gid": "V-223612",
         "rid": "SV-223612r533198_rule",
         "stig_id": "ACF2-TN-000050",
-        "fix_id": "F-25273r504798_fix"
+        "fix_id": "F-25273r504798_fix",
+        "documentable": false
       },
       "id": "V-223612",
       "title": "IBM z/OS warning banner for the TN3270 Telnet Server must be properly specified.",
@@ -3679,11 +3679,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223613",
         "rid": "SV-223613r533198_rule",
         "stig_id": "ACF2-TN-000060",
-        "fix_id": "F-25274r504801_fix"
+        "fix_id": "F-25274r504801_fix",
+        "documentable": false
       },
       "id": "V-223613",
       "title": "IBM z/OS VTAM session setup controls for the TN3270 Telnet Server must be properly specified.",
@@ -3697,11 +3697,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-223614",
         "rid": "SV-223614r533198_rule",
         "stig_id": "ACF2-TN-000070",
-        "fix_id": "F-25275r504804_fix"
+        "fix_id": "F-25275r504804_fix",
+        "documentable": false
       },
       "id": "V-223614",
       "title": "IBM z/OS PROFILE.TCPIP configuration for the TN3270 Telnet Server must have INACTIVE statement properly specified.",
@@ -3715,11 +3715,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223615",
         "rid": "SV-223615r533198_rule",
         "stig_id": "ACF2-TS-000010",
-        "fix_id": "F-25276r504807_fix"
+        "fix_id": "F-25276r504807_fix",
+        "documentable": false
       },
       "id": "V-223615",
       "title": "IBM z/OS TSOAUTH resources must be restricted to authorized users.",
@@ -3733,11 +3733,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223616",
         "rid": "SV-223616r533198_rule",
         "stig_id": "ACF2-US-000010",
-        "fix_id": "F-25277r504810_fix"
+        "fix_id": "F-25277r504810_fix",
+        "documentable": false
       },
       "id": "V-223616",
       "title": "IBM z/OS UNIX SUPERUSER resource must be protected in accordance with guidelines.",
@@ -3751,11 +3751,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223617",
         "rid": "SV-223617r533198_rule",
         "stig_id": "ACF2-US-000020",
-        "fix_id": "F-25278r500987_fix"
+        "fix_id": "F-25278r500987_fix",
+        "documentable": false
       },
       "id": "V-223617",
       "title": "IBM z/OS UNIX security parameters in etc/profile must be properly specified.",
@@ -3769,11 +3769,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223618",
         "rid": "SV-223618r533198_rule",
         "stig_id": "ACF2-US-000030",
-        "fix_id": "F-25279r504813_fix"
+        "fix_id": "F-25279r504813_fix",
+        "documentable": false
       },
       "id": "V-223618",
       "title": "IBM z/OS UNIX security parameters in /etc/rc must be properly specified.",
@@ -3787,11 +3787,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223619",
         "rid": "SV-223619r767073_rule",
         "stig_id": "ACF2-US-000040",
-        "fix_id": "F-25280r767072_fix"
+        "fix_id": "F-25280r767072_fix",
+        "documentable": false
       },
       "id": "V-223619",
       "title": "IBM z/OS UNIX resources must be protected in accordance with security requirements.",
@@ -3805,11 +3805,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223620",
         "rid": "SV-223620r533198_rule",
         "stig_id": "ACF2-US-000050",
-        "fix_id": "F-25281r504819_fix"
+        "fix_id": "F-25281r504819_fix",
+        "documentable": false
       },
       "id": "V-223620",
       "title": "IBM z/OS UNIX MVS HFS directory(s) with other write permission bit set must be properly defined.",
@@ -3823,11 +3823,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223621",
         "rid": "SV-223621r533198_rule",
         "stig_id": "ACF2-US-000060",
-        "fix_id": "F-25282r504822_fix"
+        "fix_id": "F-25282r504822_fix",
+        "documentable": false
       },
       "id": "V-223621",
       "title": "IBM z/OS BPX resource(s) must be protected in accordance with security requirements.",
@@ -3841,15 +3841,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223622",
+        "rid": "SV-223622r533198_rule",
+        "stig_id": "ACF2-US-000070",
+        "fix_id": "F-25283r504825_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223622",
-        "rid": "SV-223622r533198_rule",
-        "stig_id": "ACF2-US-000070",
-        "fix_id": "F-25283r504825_fix"
+        "documentable": false
       },
       "id": "V-223622",
       "title": "IBM z/OS UNIX SYSTEM FILE SECURITY SETTINGS must be properly protected or specified.",
@@ -3863,15 +3863,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223623",
+        "rid": "SV-223623r533198_rule",
+        "stig_id": "ACF2-US-000080",
+        "fix_id": "F-25284r504828_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223623",
-        "rid": "SV-223623r533198_rule",
-        "stig_id": "ACF2-US-000080",
-        "fix_id": "F-25284r504828_fix"
+        "documentable": false
       },
       "id": "V-223623",
       "title": "IBM z/OS UNIX MVS data sets with z/OS UNIX components must be properly protected.",
@@ -3885,15 +3885,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223624",
+        "rid": "SV-223624r533198_rule",
+        "stig_id": "ACF2-US-000090",
+        "fix_id": "F-25285r504831_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223624",
-        "rid": "SV-223624r533198_rule",
-        "stig_id": "ACF2-US-000090",
-        "fix_id": "F-25285r504831_fix"
+        "documentable": false
       },
       "id": "V-223624",
       "title": "IBM z/OS UNIX MVS data sets or HFS objects must be properly protected.",
@@ -3907,15 +3907,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223625",
+        "rid": "SV-223625r533198_rule",
+        "stig_id": "ACF2-US-000100",
+        "fix_id": "F-25286r504834_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223625",
-        "rid": "SV-223625r533198_rule",
-        "stig_id": "ACF2-US-000100",
-        "fix_id": "F-25286r504834_fix"
+        "documentable": false
       },
       "id": "V-223625",
       "title": "IBM z/OS UNIX HFS permission bits and audit bits for each directory must be properly protected.",
@@ -3929,16 +3929,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223626",
+        "rid": "SV-223626r533198_rule",
+        "stig_id": "ACF2-US-000110",
+        "fix_id": "F-25287r504837_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100",
           "SRG-OS-000324-GPOS-00125"
         ],
-        "gid": "V-223626",
-        "rid": "SV-223626r533198_rule",
-        "stig_id": "ACF2-US-000110",
-        "fix_id": "F-25287r504837_fix"
+        "documentable": false
       },
       "id": "V-223626",
       "title": "IBM z/OS UNIX MVS data sets used as step libraries in /etc/steplib must be properly protected.",
@@ -3952,11 +3952,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-223627",
         "rid": "SV-223627r533198_rule",
         "stig_id": "ACF2-US-000120",
-        "fix_id": "F-25288r504840_fix"
+        "fix_id": "F-25288r504840_fix",
+        "documentable": false
       },
       "id": "V-223627",
       "title": "IBM z/OS UNIX SYSTEM FILE SECURITY SETTINGS must be properly protected or specified.",
@@ -3970,11 +3970,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-223628",
         "rid": "SV-223628r533198_rule",
         "stig_id": "ACF2-US-000130",
-        "fix_id": "F-25289r504843_fix"
+        "fix_id": "F-25289r504843_fix",
+        "documentable": false
       },
       "id": "V-223628",
       "title": "IBM z/OS UNIX HFS permission bits and audit bits for each directory must be properly protected or specified.",
@@ -3988,11 +3988,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223629",
         "rid": "SV-223629r533198_rule",
         "stig_id": "ACF2-US-000140",
-        "fix_id": "F-25290r504846_fix"
+        "fix_id": "F-25290r504846_fix",
+        "documentable": false
       },
       "id": "V-223629",
       "title": "IBM z/OS UNIX OMVS parameters in PARMLIB must be properly specified.",
@@ -4006,11 +4006,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223630",
         "rid": "SV-223630r533198_rule",
         "stig_id": "ACF2-US-000150",
-        "fix_id": "F-25291r504849_fix"
+        "fix_id": "F-25291r504849_fix",
+        "documentable": false
       },
       "id": "V-223630",
       "title": "IBM z/OS UNIX HFS MapName files security parameters must be properly specified.",
@@ -4024,11 +4024,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-223631",
         "rid": "SV-223631r533198_rule",
         "stig_id": "ACF2-US-000160",
-        "fix_id": "F-25292r504852_fix"
+        "fix_id": "F-25292r504852_fix",
+        "documentable": false
       },
       "id": "V-223631",
       "title": "IBM z/OS UNIX BPXPRMxx security parameters in PARMLIB must be properly specified.",
@@ -4042,11 +4042,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-223632",
         "rid": "SV-223632r533198_rule",
         "stig_id": "ACF2-US-000170",
-        "fix_id": "F-25293r504855_fix"
+        "fix_id": "F-25293r504855_fix",
+        "documentable": false
       },
       "id": "V-223632",
       "title": "IBM z/OS User exits for the FTP Server must not be used without proper approval and documentation.",
@@ -4060,11 +4060,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-223633",
         "rid": "SV-223633r695457_rule",
         "stig_id": "ACF2-US-000180",
-        "fix_id": "F-25294r695456_fix"
+        "fix_id": "F-25294r695456_fix",
+        "documentable": false
       },
       "id": "V-223633",
       "title": "IBM z/OS UNIX security parameters for restricted network service(s) in /etc/inetd.conf must be properly specified.",
@@ -4078,11 +4078,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223634",
         "rid": "SV-223634r533198_rule",
         "stig_id": "ACF2-US-000190",
-        "fix_id": "F-25295r504861_fix"
+        "fix_id": "F-25295r504861_fix",
+        "documentable": false
       },
       "id": "V-223634",
       "title": "IBM z/OS user account for the z/OS UNIX SUPERSUSER userid must be properly defined.",
@@ -4096,11 +4096,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223635",
         "rid": "SV-223635r767075_rule",
         "stig_id": "ACF2-US-000200",
-        "fix_id": "F-25296r504864_fix"
+        "fix_id": "F-25296r504864_fix",
+        "documentable": false
       },
       "id": "V-223635",
       "title": "IBM z/OS UNIX user accounts must be properly defined.",
@@ -4114,11 +4114,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223636",
         "rid": "SV-223636r533198_rule",
         "stig_id": "ACF2-US-000210",
-        "fix_id": "F-25297r501046_fix"
+        "fix_id": "F-25297r501046_fix",
+        "documentable": false
       },
       "id": "V-223636",
       "title": "IBM z/OS UNIX groups must be defined with a unique GID.",
@@ -4132,11 +4132,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223637",
         "rid": "SV-223637r533198_rule",
         "stig_id": "ACF2-US-000220",
-        "fix_id": "F-25298r504867_fix"
+        "fix_id": "F-25298r504867_fix",
+        "documentable": false
       },
       "id": "V-223637",
       "title": "IBM z/OS Attributes of z/OS UNIX user accounts must have a unique GID in the range of 1-99.",
@@ -4150,11 +4150,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-223638",
         "rid": "SV-223638r533198_rule",
         "stig_id": "ACF2-US-000230",
-        "fix_id": "F-25299r504870_fix"
+        "fix_id": "F-25299r504870_fix",
+        "documentable": false
       },
       "id": "V-223638",
       "title": "IBM z/OS Attributes of UNIX user accounts used for account modeling must be defined in accordance with security requirements.",
@@ -4168,11 +4168,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-223639",
         "rid": "SV-223639r533198_rule",
         "stig_id": "ACF2-UT-000010",
-        "fix_id": "F-25300r501055_fix"
+        "fix_id": "F-25300r501055_fix",
+        "documentable": false
       },
       "id": "V-223639",
       "title": "IBM z/OS startup user account for the z/OS UNIX Telnet Server must be defined properly.",
@@ -4186,15 +4186,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223640",
+        "rid": "SV-223640r533198_rule",
+        "stig_id": "ACF2-UT-000020",
+        "fix_id": "F-25301r504873_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223640",
-        "rid": "SV-223640r533198_rule",
-        "stig_id": "ACF2-UT-000020",
-        "fix_id": "F-25301r504873_fix"
+        "documentable": false
       },
       "id": "V-223640",
       "title": "IBM z/OS HFS objects for the z/OS UNIX Telnet Server must be properly protected.",
@@ -4208,15 +4208,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000024-GPOS-00007",
+        "gid": "V-223641",
+        "rid": "SV-223641r560914_rule",
+        "stig_id": "ACF2-UT-000030",
+        "fix_id": "F-25302r572049_fix",
         "satisfies": [
           "SRG-OS-000024-GPOS-00007",
           "SRG-OS-000023-GPOS-00006"
         ],
-        "gid": "V-223641",
-        "rid": "SV-223641r560914_rule",
-        "stig_id": "ACF2-UT-000030",
-        "fix_id": "F-25302r572049_fix"
+        "documentable": false
       },
       "id": "V-223641",
       "title": "IBM z/OS UNIX Telnet Server etc/banner file must have the Standard Mandatory DoD Notice and Consent Banner.",
@@ -4230,11 +4230,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
         "gid": "V-223642",
         "rid": "SV-223642r533198_rule",
         "stig_id": "ACF2-UT-000040",
-        "fix_id": "F-25303r501064_fix"
+        "fix_id": "F-25303r501064_fix",
+        "documentable": false
       },
       "id": "V-223642",
       "title": "IBM z/OS UNIX Telnet Server warning banner must be properly specified.",
@@ -4248,11 +4248,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
         "gid": "V-223643",
         "rid": "SV-223643r533198_rule",
         "stig_id": "ACF2-UT-000050",
-        "fix_id": "F-25304r501067_fix"
+        "fix_id": "F-25304r501067_fix",
+        "documentable": false
       },
       "id": "V-223643",
       "title": "IBM z/OS UNIX Telnet Server Startup parameters must be properly specified to display the banner.",
@@ -4266,15 +4266,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "gid": "V-223644",
+        "rid": "SV-223644r533198_rule",
+        "stig_id": "ACF2-VT-000010",
+        "fix_id": "F-25305r504879_fix",
         "satisfies": [
           "SRG-OS-000080-GPOS-00048",
           "SRG-OS-000259-GPOS-00100"
         ],
-        "gid": "V-223644",
-        "rid": "SV-223644r533198_rule",
-        "stig_id": "ACF2-VT-000010",
-        "fix_id": "F-25305r504879_fix"
+        "documentable": false
       },
       "id": "V-223644",
       "title": "IBM z/OS System data sets used to support the VTAM network must be properly secured.",
@@ -4288,11 +4288,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-223645",
         "rid": "SV-223645r533198_rule",
         "stig_id": "ACF2-VT-000020",
-        "fix_id": "F-25306r504882_fix"
+        "fix_id": "F-25306r504882_fix",
+        "documentable": false
       },
       "id": "V-223645",
       "title": "IBM z/OS VTAM USSTAB definitions must not be used for unsecured terminals.",
@@ -4306,11 +4306,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-245535",
         "rid": "SV-245535r768734_rule",
         "stig_id": "ACF2-TC-000090",
-        "fix_id": "F-48766r768733_fix"
+        "fix_id": "F-48766r768733_fix",
+        "documentable": false
       },
       "id": "V-245535",
       "title": "IBM z/OS TCPIP.DATA configuration statement must contain the DOMAINORIGIN or DOMAIN specified for each TCP/IP defined.",
@@ -4322,7 +4322,5 @@
       }
     }
   ],
-  "name": "IBM_zOS_ACF2_STIG",
-  "title": "IBM z/OS ACF2 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "IBM_zOS_ACF2_STIG"
 }

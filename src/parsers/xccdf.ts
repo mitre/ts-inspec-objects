@@ -27,11 +27,13 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
     return rules
 }
 
+export function extractCheck(): string {
+    return ""
+}
+
 export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
     const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
     const rules = extractAllRules(parsedXML.Benchmark[0].Group)
-
-    console.log(parsedXML.Benchmark[0]['@_id'])
 
     const profile = new Profile({
         name: parsedXML.Benchmark[0]['@_id'],
@@ -52,38 +54,66 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
         control.title = rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`
         control.desc = typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0]
         control.impact = severityStringToImpact(rule['@_severity'] || 'critical', rule.group['@_id'])
+        
         if (!control.descs || Array.isArray(control.descs)) {
             control.descs = {}
         }
-        control.descs.check = rule.check ? rule.check[0]['check-content'] : 'Missing description'
+
+        if (rule.check) {
+            if (rule.check.some((ruleValue) => 'check-content' in ruleValue)) {
+                control.descs.check = rule.check ? rule.check[0]['check-content'] : 'Missing description'
+            } else if (rule.check.some((ruleValue) => 'check-content-ref' in ruleValue) && ovalDefinitions) {
+                let referenceID: string | null = null;
+                for (const checkContent of rule.check) {
+                    if ('check-content-ref' in checkContent && checkContent['@_system'].includes('oval')) {
+                        for (const checkContentRef of checkContent['check-content-ref']) {
+                            if (checkContentRef['@_name']) {
+                                referenceID = checkContentRef['@_name']
+                            }
+                        }
+                    }
+                }
+                if (referenceID && referenceID in ovalDefinitions) {
+                    control.descs.check = ovalDefinitions[referenceID].metadata[0].title
+                } else if (referenceID) {
+                    // console.log('Alert')
+                    // console.log(referenceID)
+                }
+            }
+        }
+        
         control.descs.fix = rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text')
         control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'critical', control.id))
-        control.tags.gtitle = _.get(rule.group, 'title[0].#text')
         control.tags.gid = rule.group['@_id'],
         control.tags.rid = rule['@_id']
         control.tags.stig_id = rule['version']
+
+        if (typeof rule.group.title === "string") {
+            control.tags.gtitle = rule.group.title
+        } else {
+            control.tags.gtitle = _.get(rule.group, 'title[0].#text')
+        }
         
         if (rule['fix'] && rule['fix'].length > 0) {
             control.tags.fix_id = rule['fix'][0]['@_id']
-            console.log(control.tags.fix_id)
         }
-
-        
 
         if (typeof extractedDescription === 'object') {
             control.tags.satisfies = extractedDescription.VulnDiscussion?.includes('Satisfies: ') && extractedDescription.VulnDiscussion.split('Satisfies: ').length >= 1 ? extractedDescription.VulnDiscussion.split('Satisfies: ')[1].split(',').map(satisfaction => satisfaction.trim()) : undefined
-            control.tags.false_negatives = extractedDescription.FalseNegatives
-            control.tags.false_positives = extractedDescription.FalsePositives
-            control.tags.documentable = extractedDescription.Documentable
-            control.tags.mitigations = extractedDescription.Mitigations
-            control.tags.severity_override_guidance = extractedDescription.SeverityOverrideGuidance
-            control.tags.potential_impacts = extractedDescription.PotentialImpacts
-            control.tags.third_party_tools = extractedDescription.ThirdPartyTools
-            control.tags.mitigation_control = extractedDescription.MitigationControl
-            control.tags.mitigation_controls = extractedDescription.MitigationControls
-            control.tags.responsibility = extractedDescription.Responsibility
-            control.tags.ia_controls = extractedDescription.IAControls
+            control.tags.false_negatives = extractedDescription.FalseNegatives || undefined
+            control.tags.false_positives = extractedDescription.FalsePositives || undefined
+            control.tags.documentable = typeof extractedDescription.Documentable === 'boolean' ? extractedDescription.Documentable : undefined
+            control.tags.mitigations = extractedDescription.Mitigations || undefined
+            control.tags.severity_override_guidance = extractedDescription.SeverityOverrideGuidance || undefined
+            control.tags.potential_impacts = extractedDescription.PotentialImpacts || undefined
+            control.tags.third_party_tools = extractedDescription.ThirdPartyTools || undefined
+            control.tags.mitigation_control = extractedDescription.MitigationControl || undefined
+            control.tags.mitigation_controls = extractedDescription.MitigationControls || undefined
+            control.tags.responsibility = extractedDescription.Responsibility || undefined
+            control.tags.ia_controls = extractedDescription.IAControls || undefined
         }
+
+        control.tags = _.omitBy(control.tags, (value) => value === undefined)
 
     //     if ('ident' in group.Rule) {
     //         const identifiers = Array.isArray(group.Rule.ident) ? group.Rule.ident : [group.Rule.ident]
@@ -102,10 +132,10 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
     //         })
     //       }
 
-    //     profile.controls.push(control)
+         profile.controls.push(control)
     })
 
-    // profile.controls = _.sortBy(profile.controls, 'id')
+    profile.controls = _.sortBy(profile.controls, 'id')
 
     return profile.toUnformattedObject()
 }

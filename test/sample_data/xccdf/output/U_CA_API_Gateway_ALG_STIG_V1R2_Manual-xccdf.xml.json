@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000015-ALG-000016",
         "gid": "V-71283",
         "rid": "SV-85907r1_rule",
         "stig_id": "CAGW-GW-000100",
-        "fix_id": "F-77589r1_fix"
+        "fix_id": "F-77589r1_fix",
+        "documentable": false
       },
       "id": "V-71283",
       "title": "The CA API Gateway must enforce approved authorizations for logical access to information and system resources by employing identity-based, role-based, and/or attribute-based security policies.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-ALG-000017",
         "gid": "V-71285",
         "rid": "SV-85909r1_rule",
         "stig_id": "CAGW-GW-000110",
-        "fix_id": "F-77591r1_fix"
+        "fix_id": "F-77591r1_fix",
+        "documentable": false
       },
       "id": "V-71285",
       "title": "The CA API Gateway must enforce approved authorizations for controlling the flow of information within the network based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-ALG-000018",
         "gid": "V-71287",
         "rid": "SV-85911r1_rule",
         "stig_id": "CAGW-GW-000120",
-        "fix_id": "F-77593r1_fix"
+        "fix_id": "F-77593r1_fix",
+        "documentable": false
       },
       "id": "V-71287",
       "title": "The CA API Gateway must restrict or block harmful or suspicious communications traffic by controlling the flow of information between interconnected networks based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000041-ALG-000022",
         "gid": "V-71289",
         "rid": "SV-85913r1_rule",
         "stig_id": "CAGW-GW-000130",
-        "fix_id": "F-77595r1_fix"
+        "fix_id": "F-77595r1_fix",
+        "documentable": false
       },
       "id": "V-71289",
       "title": "The CA API Gateway providing user access control intermediary services must display the Standard Mandatory DoD-approved Notice and Consent Banner before granting access to the network.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000042-ALG-000023",
         "gid": "V-71291",
         "rid": "SV-85915r1_rule",
         "stig_id": "CAGW-GW-000140",
-        "fix_id": "F-77597r1_fix"
+        "fix_id": "F-77597r1_fix",
+        "documentable": false
       },
       "id": "V-71291",
       "title": "The CA API Gateway providing user access control intermediary services must retain the Standard Mandatory DoD-approved Notice and Consent Banner on the screen until users acknowledge the usage conditions and take explicit actions to log on for further access.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000043-ALG-000024",
         "gid": "V-71293",
         "rid": "SV-85917r1_rule",
         "stig_id": "CAGW-GW-000150",
-        "fix_id": "F-77599r1_fix"
+        "fix_id": "F-77599r1_fix",
+        "documentable": false
       },
       "id": "V-71293",
       "title": "The CA API Gateway providing user access control intermediary services for publicly accessible applications must display the Standard Mandatory DoD-approved Notice and Consent Banner before granting access to the system.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000053-ALG-000001",
         "gid": "V-71295",
         "rid": "SV-85919r1_rule",
         "stig_id": "CAGW-GW-000160",
-        "fix_id": "F-77605r1_fix"
+        "fix_id": "F-77605r1_fix",
+        "documentable": false
       },
       "id": "V-71295",
       "title": "The CA API Gateway providing user access control intermediary services must limit users to two concurrent sessions.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000062-ALG-000011",
         "gid": "V-71299",
         "rid": "SV-85923r1_rule",
         "stig_id": "CAGW-GW-000170",
-        "fix_id": "F-77611r1_fix"
+        "fix_id": "F-77611r1_fix",
+        "documentable": false
       },
       "id": "V-71299",
       "title": "The CA API Gateway providing intermediary services for remote access communications traffic must use encryption services that implement NIST FIPS-validated cryptography to protect the confidentiality of remote access sessions.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000062-ALG-000092",
         "gid": "V-71307",
         "rid": "SV-85931r1_rule",
         "stig_id": "CAGW-GW-000180",
-        "fix_id": "F-77617r1_fix"
+        "fix_id": "F-77617r1_fix",
+        "documentable": false
       },
       "id": "V-71307",
       "title": "The CA API Gateway that stores secret or private keys must use FIPS-approved key management technology and processes in the production and control of private/secret cryptographic keys.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000062-ALG-000150",
         "gid": "V-71315",
         "rid": "SV-85939r1_rule",
         "stig_id": "CAGW-GW-000190",
-        "fix_id": "F-77625r1_fix"
+        "fix_id": "F-77625r1_fix",
+        "documentable": false
       },
       "id": "V-71315",
       "title": "The CA API Gateway that provides intermediary services for TLS must be configured to comply with the required TLS settings in NIST SP 800-52.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000063-ALG-000012",
         "gid": "V-71325",
         "rid": "SV-85949r2_rule",
         "stig_id": "CAGW-GW-000200",
-        "fix_id": "F-77633r1_fix"
+        "fix_id": "F-77633r1_fix",
+        "documentable": false
       },
       "id": "V-71325",
       "title": "The CA API Gateway providing intermediary services for remote access communications traffic must use NIST FIPS-validated cryptography to protect the integrity of remote access sessions.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000077-ALG-000046",
         "gid": "V-71329",
         "rid": "SV-85953r1_rule",
         "stig_id": "CAGW-GW-000210",
-        "fix_id": "F-77639r1_fix"
+        "fix_id": "F-77639r1_fix",
+        "documentable": false
       },
       "id": "V-71329",
       "title": "The CA API Gateway must produce audit records containing information to establish the source of the events.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000078-ALG-000047",
         "gid": "V-71333",
         "rid": "SV-85957r1_rule",
         "stig_id": "CAGW-GW-000220",
-        "fix_id": "F-77641r1_fix"
+        "fix_id": "F-77641r1_fix",
+        "documentable": false
       },
       "id": "V-71333",
       "title": "The CA API Gateway must produce audit records containing information to establish the outcome of the events.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000079-ALG-000048",
         "gid": "V-71335",
         "rid": "SV-85959r1_rule",
         "stig_id": "CAGW-GW-000230",
-        "fix_id": "F-77645r1_fix"
+        "fix_id": "F-77645r1_fix",
+        "documentable": false
       },
       "id": "V-71335",
       "title": "The CA API Gateway must generate audit records containing information to establish the identity of any individual or process associated with the event.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000098-ALG-000056",
         "gid": "V-71337",
         "rid": "SV-85961r1_rule",
         "stig_id": "CAGW-GW-000240",
-        "fix_id": "F-77647r1_fix"
+        "fix_id": "F-77647r1_fix",
+        "documentable": false
       },
       "id": "V-71337",
       "title": "The CA API Gateway must protect audit information from unauthorized read access.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000100-ALG-000058",
         "gid": "V-71339",
         "rid": "SV-85963r1_rule",
         "stig_id": "CAGW-GW-000250",
-        "fix_id": "F-77649r1_fix"
+        "fix_id": "F-77649r1_fix",
+        "documentable": false
       },
       "id": "V-71339",
       "title": "The CA API Gateway must protect audit information from unauthorized deletion.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000101-ALG-000059",
         "gid": "V-71341",
         "rid": "SV-85965r1_rule",
         "stig_id": "CAGW-GW-000260",
-        "fix_id": "F-77651r1_fix"
+        "fix_id": "F-77651r1_fix",
+        "documentable": false
       },
       "id": "V-71341",
       "title": "The CA API Gateway must protect audit tools from unauthorized access.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000131-ALG-000085",
         "gid": "V-71343",
         "rid": "SV-85967r1_rule",
         "stig_id": "CAGW-GW-000270",
-        "fix_id": "F-77653r1_fix"
+        "fix_id": "F-77653r1_fix",
+        "documentable": false
       },
       "id": "V-71343",
       "title": "The CA API Gateway must not have unnecessary services and functions enabled.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000131-ALG-000086",
         "gid": "V-71345",
         "rid": "SV-85969r1_rule",
         "stig_id": "CAGW-GW-000280",
-        "fix_id": "F-77655r1_fix"
+        "fix_id": "F-77655r1_fix",
+        "documentable": false
       },
       "id": "V-71345",
       "title": "The CA API Gateway must be configured to remove or disable unrelated or unneeded application proxy services.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000132-ALG-000087",
         "gid": "V-71347",
         "rid": "SV-85971r1_rule",
         "stig_id": "CAGW-GW-000290",
-        "fix_id": "F-77657r1_fix"
+        "fix_id": "F-77657r1_fix",
+        "documentable": false
       },
       "id": "V-71347",
       "title": "The CA API Gateway must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services as defined in the PPSM CAL and vulnerability assessments.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000138-ALG-000063",
         "gid": "V-71349",
         "rid": "SV-85973r1_rule",
         "stig_id": "CAGW-GW-000300",
-        "fix_id": "F-77659r1_fix"
+        "fix_id": "F-77659r1_fix",
+        "documentable": false
       },
       "id": "V-71349",
       "title": "The CA API Gateway providing user authentication intermediary services must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000138-ALG-000088",
         "gid": "V-71351",
         "rid": "SV-85975r1_rule",
         "stig_id": "CAGW-GW-000310",
-        "fix_id": "F-77661r1_fix"
+        "fix_id": "F-77661r1_fix",
+        "documentable": false
       },
       "id": "V-71351",
       "title": "The CA API Gateway providing user access control intermediary services must be configured with a pre-established trust relationship and mechanisms with appropriate authorities (e.g., Active Directory or AAA server) that validate user account access authorizations and privileges.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000138-ALG-000089",
         "gid": "V-71353",
         "rid": "SV-85977r1_rule",
         "stig_id": "CAGW-GW-000320",
-        "fix_id": "F-77663r1_fix"
+        "fix_id": "F-77663r1_fix",
+        "documentable": false
       },
       "id": "V-71353",
       "title": "The CA API Gateway providing user authentication intermediary services must restrict user authentication traffic to specific authentication server(s).",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000140-ALG-000094",
         "gid": "V-71355",
         "rid": "SV-85979r1_rule",
         "stig_id": "CAGW-GW-000330",
-        "fix_id": "F-77665r1_fix"
+        "fix_id": "F-77665r1_fix",
+        "documentable": false
       },
       "id": "V-71355",
       "title": "The ALG providing user authentication intermediary services must use multifactor authentication for network access to non-privileged accounts.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000147-ALG-000095",
         "gid": "V-71357",
         "rid": "SV-85981r1_rule",
         "stig_id": "CAGW-GW-000340",
-        "fix_id": "F-77667r1_fix"
+        "fix_id": "F-77667r1_fix",
+        "documentable": false
       },
       "id": "V-71357",
       "title": "The CA API Gateway providing user authentication intermediary services must implement replay-resistant authentication mechanisms for network access to non-privileged accounts.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000166-ALG-000101",
         "gid": "V-71359",
         "rid": "SV-85983r1_rule",
         "stig_id": "CAGW-GW-000350",
-        "fix_id": "F-77669r1_fix"
+        "fix_id": "F-77669r1_fix",
+        "documentable": false
       },
       "id": "V-71359",
       "title": "The CA API Gateway providing PKI-based user authentication intermediary services must map authenticated identities to the user account.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000169-ALG-000102",
         "gid": "V-71361",
         "rid": "SV-85985r1_rule",
         "stig_id": "CAGW-GW-000360",
-        "fix_id": "F-77671r1_fix"
+        "fix_id": "F-77671r1_fix",
+        "documentable": false
       },
       "id": "V-71361",
       "title": "The CA API Gateway providing user authentication intermediary services must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000192-ALG-000121",
         "gid": "V-71363",
         "rid": "SV-85987r1_rule",
         "stig_id": "CAGW-GW-000370",
-        "fix_id": "F-77673r1_fix"
+        "fix_id": "F-77673r1_fix",
+        "documentable": false
       },
       "id": "V-71363",
       "title": "The CA API Gateway providing content filtering must block outbound traffic containing known and unknown Denial of Service (DoS) attacks to protect against the use of internal information systems to launch any DoS attacks against other networks or endpoints.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000213-ALG-000107",
         "gid": "V-71365",
         "rid": "SV-85989r1_rule",
         "stig_id": "CAGW-GW-000380",
-        "fix_id": "F-77675r1_fix"
+        "fix_id": "F-77675r1_fix",
+        "documentable": false
       },
       "id": "V-71365",
       "title": "The CA API Gateway must terminate all network connections associated with a Policy Manager session at the end of the session or as follows: for in-band management sessions (privileged sessions), the session must be terminated after 10 minutes of inactivity within the Policy Manager, and for user sessions simply viewing the contents of Policy Manager or viewing Audit Logs for tracking purposes (non-privileged session), the session must be terminated after 15 minutes of inactivity.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000228-ALG-000108",
         "gid": "V-71367",
         "rid": "SV-85991r1_rule",
         "stig_id": "CAGW-GW-000390",
-        "fix_id": "F-77677r1_fix"
+        "fix_id": "F-77677r1_fix",
+        "documentable": false
       },
       "id": "V-71367",
       "title": "The CA API Gateway must detect, at a minimum, mobile code that is unsigned or exhibiting unusual behavior, has not undergone a risk assessment, or is prohibited for use based on a risk assessment.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230-ALG-000113",
         "gid": "V-71369",
         "rid": "SV-85993r1_rule",
         "stig_id": "CAGW-GW-000400",
-        "fix_id": "F-77679r1_fix"
+        "fix_id": "F-77679r1_fix",
+        "documentable": false
       },
       "id": "V-71369",
       "title": "The CA API Gateway must protect the authenticity of communications sessions.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000231-ALG-000114",
         "gid": "V-71371",
         "rid": "SV-85995r1_rule",
         "stig_id": "CAGW-GW-000410",
-        "fix_id": "F-77685r1_fix"
+        "fix_id": "F-77685r1_fix",
+        "documentable": false
       },
       "id": "V-71371",
       "title": "The CA API Gateway must invalidate session identifiers upon user logout or other session termination.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000234-ALG-000116",
         "gid": "V-71373",
         "rid": "SV-85997r1_rule",
         "stig_id": "CAGW-GW-000420",
-        "fix_id": "F-77687r1_fix"
+        "fix_id": "F-77687r1_fix",
+        "documentable": false
       },
       "id": "V-71373",
       "title": "The CA API Gateway must generate unique session identifiers using a FIPS 140-2 approved random number generator.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000246-ALG-000132",
         "gid": "V-71375",
         "rid": "SV-85999r1_rule",
         "stig_id": "CAGW-GW-000430",
-        "fix_id": "F-77689r1_fix"
+        "fix_id": "F-77689r1_fix",
+        "documentable": false
       },
       "id": "V-71375",
       "title": "The CA API Gateway providing content filtering must integrate with an ICAP-enabled Intrusion Detection System that updates malicious code protection mechanisms and signature definitions whenever new releases are available in accordance with organizational configuration management policy and procedures.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000248-ALG-000133",
         "gid": "V-71377",
         "rid": "SV-86001r1_rule",
         "stig_id": "CAGW-GW-000440",
-        "fix_id": "F-77695r1_fix"
+        "fix_id": "F-77695r1_fix",
+        "documentable": false
       },
       "id": "V-71377",
       "title": "The CA API Gateway providing content filtering must be configured to perform real-time scans of files from external sources at network entry/exit points as they are downloaded and prior to being opened or executed.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000249-ALG-000134",
         "gid": "V-71379",
         "rid": "SV-86003r1_rule",
         "stig_id": "CAGW-GW-000450",
-        "fix_id": "F-77697r1_fix"
+        "fix_id": "F-77697r1_fix",
+        "documentable": false
       },
       "id": "V-71379",
       "title": "The CA API Gateway providing content filtering must block malicious code upon detection.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000249-ALG-000145",
         "gid": "V-71381",
         "rid": "SV-86005r1_rule",
         "stig_id": "CAGW-GW-000460",
-        "fix_id": "F-77699r1_fix"
+        "fix_id": "F-77699r1_fix",
+        "documentable": false
       },
       "id": "V-71381",
       "title": "The CA API Gateway providing content filtering must delete or quarantine malicious code in response to malicious code detection.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000249-ALG-000146",
         "gid": "V-71383",
         "rid": "SV-86007r1_rule",
         "stig_id": "CAGW-GW-000470",
-        "fix_id": "F-77701r1_fix"
+        "fix_id": "F-77701r1_fix",
+        "documentable": false
       },
       "id": "V-71383",
       "title": "The CA API Gateway providing content filtering must send an immediate (within seconds) alert to the system administrator, at a minimum, in response to malicious code detection.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000251-ALG-000131",
         "gid": "V-71385",
         "rid": "SV-86009r1_rule",
         "stig_id": "CAGW-GW-000480",
-        "fix_id": "F-77703r1_fix"
+        "fix_id": "F-77703r1_fix",
+        "documentable": false
       },
       "id": "V-71385",
       "title": "The CA API Gateway providing content filtering must automatically update malicious code protection mechanisms.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000273-ALG-000129",
         "gid": "V-71387",
         "rid": "SV-86011r1_rule",
         "stig_id": "CAGW-GW-000490",
-        "fix_id": "F-77705r1_fix"
+        "fix_id": "F-77705r1_fix",
+        "documentable": false
       },
       "id": "V-71387",
       "title": "The CA API Gateway must generate error messages that provide the information necessary for corrective actions without revealing information that could be exploited by adversaries.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000288-ALG-000109",
         "gid": "V-71389",
         "rid": "SV-86013r1_rule",
         "stig_id": "CAGW-GW-000500",
-        "fix_id": "F-77707r1_fix"
+        "fix_id": "F-77707r1_fix",
+        "documentable": false
       },
       "id": "V-71389",
       "title": "The CA API Gateway providing content filtering must block or restrict detected prohibited mobile code.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000289-ALG-000110",
         "gid": "V-71391",
         "rid": "SV-86015r1_rule",
         "stig_id": "CAGW-GW-000510",
-        "fix_id": "F-77709r1_fix"
+        "fix_id": "F-77709r1_fix",
+        "documentable": false
       },
       "id": "V-71391",
       "title": "The CA API Gateway providing content filtering must prevent the download of prohibited mobile code.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000313-ALG-000010",
         "gid": "V-71393",
         "rid": "SV-86017r1_rule",
         "stig_id": "CAGW-GW-000520",
-        "fix_id": "F-77711r1_fix"
+        "fix_id": "F-77711r1_fix",
+        "documentable": false
       },
       "id": "V-71393",
       "title": "The CA API Gateway providing intermediary services for remote access communications traffic must control remote access methods.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000318-ALG-000014",
         "gid": "V-71395",
         "rid": "SV-86019r1_rule",
         "stig_id": "CAGW-GW-000530",
-        "fix_id": "F-77713r1_fix"
+        "fix_id": "F-77713r1_fix",
+        "documentable": false
       },
       "id": "V-71395",
       "title": "To protect against data mining, the CA API Gateway providing content filtering must prevent code injection attacks from being launched against data storage objects, including, at a minimum, databases, database records, queries, and fields.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000318-ALG-000151",
         "gid": "V-71397",
         "rid": "SV-86021r1_rule",
         "stig_id": "CAGW-GW-000540",
-        "fix_id": "F-77715r1_fix"
+        "fix_id": "F-77715r1_fix",
+        "documentable": false
       },
       "id": "V-71397",
       "title": "To protect against data mining, the CA API Gateway providing content filtering must prevent code injection attacks launched against application objects including, at a minimum, application URLs and application code.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000318-ALG-000152",
         "gid": "V-71399",
         "rid": "SV-86023r1_rule",
         "stig_id": "CAGW-GW-000550",
-        "fix_id": "F-77717r1_fix"
+        "fix_id": "F-77717r1_fix",
+        "documentable": false
       },
       "id": "V-71399",
       "title": "To protect against data mining, the CA API Gateway providing content filtering must prevent SQL injection attacks launched against data storage objects, including, at a minimum, databases, database records, and database fields.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000319-ALG-000015",
         "gid": "V-71421",
         "rid": "SV-86045r1_rule",
         "stig_id": "CAGW-GW-000560",
-        "fix_id": "F-77739r1_fix"
+        "fix_id": "F-77739r1_fix",
+        "documentable": false
       },
       "id": "V-71421",
       "title": "To protect against data mining, the CA API Gateway providing content filtering must detect code injection attacks from being launched against data storage objects, including, at a minimum, databases, database records, queries, and fields.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000319-ALG-000020",
         "gid": "V-71423",
         "rid": "SV-86047r1_rule",
         "stig_id": "CAGW-GW-000570",
-        "fix_id": "F-77741r1_fix"
+        "fix_id": "F-77741r1_fix",
+        "documentable": false
       },
       "id": "V-71423",
       "title": "To protect against data mining, the CA API Gateway providing content filtering must detect SQL injection attacks launched against data storage objects, including, at a minimum, databases, database records, and database fields.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000319-ALG-000153",
         "gid": "V-71425",
         "rid": "SV-86049r1_rule",
         "stig_id": "CAGW-GW-000580",
-        "fix_id": "F-77743r1_fix"
+        "fix_id": "F-77743r1_fix",
+        "documentable": false
       },
       "id": "V-71425",
       "title": "To protect against data mining, the CA API Gateway providing content filtering as part of its intermediary services must detect code injection attacks launched against application objects including, at a minimum, application URLs and application code.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000334-ALG-000050",
         "gid": "V-71427",
         "rid": "SV-86051r1_rule",
         "stig_id": "CAGW-GW-000590",
-        "fix_id": "F-77745r1_fix"
+        "fix_id": "F-77745r1_fix",
+        "documentable": false
       },
       "id": "V-71427",
       "title": "The CA API Gateway must off-load audit records onto a centralized log server.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000337-ALG-000096",
         "gid": "V-71429",
         "rid": "SV-86053r1_rule",
         "stig_id": "CAGW-GW-000600",
-        "fix_id": "F-77747r1_fix"
+        "fix_id": "F-77747r1_fix",
+        "documentable": false
       },
       "id": "V-71429",
       "title": "The CA API Gateway providing user authentication intermediary services must require users to reauthenticate when organization-defined circumstances or situations require reauthentication.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000339-ALG-000090",
         "gid": "V-71431",
         "rid": "SV-86055r1_rule",
         "stig_id": "CAGW-GW-000610",
-        "fix_id": "F-77749r1_fix"
+        "fix_id": "F-77749r1_fix",
+        "documentable": false
       },
       "id": "V-71431",
       "title": "The CA API Gateway providing user authentication intermediary services must implement multifactor authentication for remote access to non-privileged accounts such that one of the factors is provided by a device separate from the system gaining access.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000340-ALG-000091",
         "gid": "V-71433",
         "rid": "SV-86057r1_rule",
         "stig_id": "CAGW-GW-000620",
-        "fix_id": "F-77751r1_fix"
+        "fix_id": "F-77751r1_fix",
+        "documentable": false
       },
       "id": "V-71433",
       "title": "The CA API Gateway providing user authentication intermediary services must implement multifactor authentication for remote access to privileged accounts such that one of the factors is provided by a device separate from the system gaining access.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000344-ALG-000098",
         "gid": "V-71435",
         "rid": "SV-86059r1_rule",
         "stig_id": "CAGW-GW-000630",
-        "fix_id": "F-77753r1_fix"
+        "fix_id": "F-77753r1_fix",
+        "documentable": false
       },
       "id": "V-71435",
       "title": "The CA API Gateway must prohibit the use of cached authenticators after an organization-defined time period.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000345-ALG-000099",
         "gid": "V-71437",
         "rid": "SV-86061r1_rule",
         "stig_id": "CAGW-GW-000640",
-        "fix_id": "F-77755r1_fix"
+        "fix_id": "F-77755r1_fix",
+        "documentable": false
       },
       "id": "V-71437",
       "title": "The CA API Gateway providing user authentication intermediary services using PKI-based user authentication must implement a local cache of revocation data to support path discovery and validation in case of the inability to access revocation information via the network.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000349-ALG-000106",
         "gid": "V-71439",
         "rid": "SV-86063r1_rule",
         "stig_id": "CAGW-GW-000650",
-        "fix_id": "F-77757r1_fix"
+        "fix_id": "F-77757r1_fix",
+        "documentable": false
       },
       "id": "V-71439",
       "title": "The CA API Gateway providing user authentication intermediary services must conform to Federal Identity, Credential, and Access Management (FICAM) issued profiles.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000355-ALG-000117",
         "gid": "V-71441",
         "rid": "SV-86065r1_rule",
         "stig_id": "CAGW-GW-000660",
-        "fix_id": "F-77759r1_fix"
+        "fix_id": "F-77759r1_fix",
+        "documentable": false
       },
       "id": "V-71441",
       "title": "The CA API Gateway providing user authentication intermediary services using PKI-based user authentication must only accept end entity certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs) for the establishment of protected sessions.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-ALG-000112",
         "gid": "V-71443",
         "rid": "SV-86067r1_rule",
         "stig_id": "CAGW-GW-000670",
-        "fix_id": "F-77761r1_fix"
+        "fix_id": "F-77761r1_fix",
+        "documentable": false
       },
       "id": "V-71443",
       "title": "The CA API Gateway providing content filtering must protect against known and unknown types of Denial of Service (DoS) attacks by employing rate-based attack prevention behavior analysis.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-ALG-000120",
         "gid": "V-71445",
         "rid": "SV-86069r1_rule",
         "stig_id": "CAGW-GW-000680",
-        "fix_id": "F-77763r1_fix"
+        "fix_id": "F-77763r1_fix",
+        "documentable": false
       },
       "id": "V-71445",
       "title": "The CA API Gateway must implement load balancing to limit the effects of known and unknown types of Denial of Service (DoS) attacks.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-ALG-000122",
         "gid": "V-71447",
         "rid": "SV-86071r1_rule",
         "stig_id": "CAGW-GW-000700",
-        "fix_id": "F-77765r1_fix"
+        "fix_id": "F-77765r1_fix",
+        "documentable": false
       },
       "id": "V-71447",
       "title": "The CA API Gateway must only allow incoming communications from organization-defined authorized sources routed to organization-defined authorized destinations.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000380-ALG-000128",
         "gid": "V-71449",
         "rid": "SV-86073r1_rule",
         "stig_id": "CAGW-GW-000710",
-        "fix_id": "F-77767r1_fix"
+        "fix_id": "F-77767r1_fix",
+        "documentable": false
       },
       "id": "V-71449",
       "title": "The CA API Gateway must behave in a predictable and documented manner that reflects organizational and system objectives when invalid inputs are received.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000383-ALG-000135",
         "gid": "V-71451",
         "rid": "SV-86075r1_rule",
         "stig_id": "CAGW-GW-000720",
-        "fix_id": "F-77771r1_fix"
+        "fix_id": "F-77771r1_fix",
+        "documentable": false
       },
       "id": "V-71451",
       "title": "The CA API Gateway providing content filtering must be configured to integrate with a system-wide intrusion detection system.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000141",
         "gid": "V-71453",
         "rid": "SV-86077r1_rule",
         "stig_id": "CAGW-GW-000770",
-        "fix_id": "F-77773r1_fix"
+        "fix_id": "F-77773r1_fix",
+        "documentable": false
       },
       "id": "V-71453",
       "title": "The CA API Gateway providing content filtering must send an alert to, at a minimum, the ISSO and ISSM when detection events occur.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000143",
         "gid": "V-71455",
         "rid": "SV-86079r1_rule",
         "stig_id": "CAGW-GW-000790",
-        "fix_id": "F-77775r1_fix"
+        "fix_id": "F-77775r1_fix",
+        "documentable": false
       },
       "id": "V-71455",
       "title": "The CA API Gateway providing content filtering must generate a notification on the console when root-level intrusion events that attempt to provide unauthorized privileged access are detected.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000392-ALG-000147",
         "gid": "V-71457",
         "rid": "SV-86081r1_rule",
         "stig_id": "CAGW-GW-000800",
-        "fix_id": "F-77777r1_fix"
+        "fix_id": "F-77777r1_fix",
+        "documentable": false
       },
       "id": "V-71457",
       "title": "The CA API Gateway providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when user-level intrusions that provide non-privileged access are detected.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000392-ALG-000148",
         "gid": "V-71459",
         "rid": "SV-86083r1_rule",
         "stig_id": "CAGW-GW-000810",
-        "fix_id": "F-77779r1_fix"
+        "fix_id": "F-77779r1_fix",
+        "documentable": false
       },
       "id": "V-71459",
       "title": "The CA API Gateway providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when Denial of Service (DoS) incidents are detected.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000149",
         "gid": "V-71461",
         "rid": "SV-86085r1_rule",
         "stig_id": "CAGW-GW-000820",
-        "fix_id": "F-77781r1_fix"
+        "fix_id": "F-77781r1_fix",
+        "documentable": false
       },
       "id": "V-71461",
       "title": "The ALG providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when new active propagation of malware infecting DoD systems or malicious code adversely affecting the operations and/or security of DoD systems is detected.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000400-ALG-000097",
         "gid": "V-71463",
         "rid": "SV-86087r1_rule",
         "stig_id": "CAGW-GW-000830",
-        "fix_id": "F-77783r1_fix"
+        "fix_id": "F-77783r1_fix",
+        "documentable": false
       },
       "id": "V-71463",
       "title": "The CA API Gateway providing user authentication intermediary services must transmit only encrypted representations of passwords.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000401-ALG-000127",
         "gid": "V-71465",
         "rid": "SV-86089r1_rule",
         "stig_id": "CAGW-GW-000840",
-        "fix_id": "F-77785r1_fix"
+        "fix_id": "F-77785r1_fix",
+        "documentable": false
       },
       "id": "V-71465",
       "title": "The CA API Gateway must check the validity of all data inputs except those specifically identified by the organization.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000402-ALG-000130",
         "gid": "V-71467",
         "rid": "SV-86091r1_rule",
         "stig_id": "CAGW-GW-000850",
-        "fix_id": "F-77787r1_fix"
+        "fix_id": "F-77787r1_fix",
+        "documentable": false
       },
       "id": "V-71467",
       "title": "The CA API Gateway must reveal error messages only to the ISSO, ISSM, and SCA.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000503-ALG-000038",
         "gid": "V-71469",
         "rid": "SV-86093r1_rule",
         "stig_id": "CAGW-GW-000860",
-        "fix_id": "F-77789r1_fix"
+        "fix_id": "F-77789r1_fix",
+        "documentable": false
       },
       "id": "V-71469",
       "title": "The CA API Gateway providing user access control intermediary services must generate audit records when successful/unsuccessful logon attempts occur.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000505-ALG-000039",
         "gid": "V-71471",
         "rid": "SV-86095r1_rule",
         "stig_id": "CAGW-GW-000870",
-        "fix_id": "F-77791r1_fix"
+        "fix_id": "F-77791r1_fix",
+        "documentable": false
       },
       "id": "V-71471",
       "title": "The CA API Gateway providing user access control intermediary services must generate audit records showing starting and ending time for user access to the system.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000025",
         "gid": "V-71473",
         "rid": "SV-86097r1_rule",
         "stig_id": "CAGW-GW-000880",
-        "fix_id": "F-77793r1_fix"
+        "fix_id": "F-77793r1_fix",
+        "documentable": false
       },
       "id": "V-71473",
       "title": "The CA API Gateway providing encryption intermediary services must implement NIST FIPS-validated cryptography to generate cryptographic hashes.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000040",
         "gid": "V-71475",
         "rid": "SV-86099r1_rule",
         "stig_id": "CAGW-GW-000890",
-        "fix_id": "F-77795r1_fix"
+        "fix_id": "F-77795r1_fix",
+        "documentable": false
       },
       "id": "V-71475",
       "title": "The CA API Gateway providing encryption intermediary services must implement NIST FIPS-validated cryptography for digital signatures.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-ALG-000065",
         "gid": "V-71477",
         "rid": "SV-86101r1_rule",
         "stig_id": "CAGW-GW-000930",
-        "fix_id": "F-77797r1_fix"
+        "fix_id": "F-77797r1_fix",
+        "documentable": false
       },
       "id": "V-71477",
       "title": "The CA API Gateway that provides intermediary services for FTP must inspect inbound and outbound FTP communications traffic for protocol compliance and protocol anomalies.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-ALG-000066",
         "gid": "V-71479",
         "rid": "SV-86103r1_rule",
         "stig_id": "CAGW-GW-000940",
-        "fix_id": "F-77799r1_fix"
+        "fix_id": "F-77799r1_fix",
+        "documentable": false
       },
       "id": "V-71479",
       "title": "The CA API Gateway that provides intermediary services for HTTP must inspect inbound and outbound HTTP traffic for protocol compliance and protocol anomalies.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000517-ALG-000006",
         "gid": "V-71481",
         "rid": "SV-86105r1_rule",
         "stig_id": "CAGW-GW-000950",
-        "fix_id": "F-77801r1_fix"
+        "fix_id": "F-77801r1_fix",
+        "documentable": false
       },
       "id": "V-71481",
       "title": "The CA API Gateway providing user access control intermediary services must automatically terminate a user session when organization-defined conditions or trigger events that require a session disconnect occur.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000518-ALG-000007",
         "gid": "V-71483",
         "rid": "SV-86107r1_rule",
         "stig_id": "CAGW-GW-000960",
-        "fix_id": "F-77803r1_fix"
+        "fix_id": "F-77803r1_fix",
+        "documentable": false
       },
       "id": "V-71483",
       "title": "The CA API Gateway providing user access control intermediary services must provide a logoff capability for user-initiated communications sessions.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000519-ALG-000008",
         "gid": "V-71485",
         "rid": "SV-86109r1_rule",
         "stig_id": "CAGW-GW-000970",
-        "fix_id": "F-77805r1_fix"
+        "fix_id": "F-77805r1_fix",
+        "documentable": false
       },
       "id": "V-71485",
       "title": "The CA API Gateway providing user access control intermediary services must display an explicit logoff message to users indicating the reliable termination of authenticated communications sessions.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000111",
         "gid": "V-71487",
         "rid": "SV-86111r1_rule",
         "stig_id": "CAGW-GW-000900",
-        "fix_id": "F-77807r1_fix"
+        "fix_id": "F-77807r1_fix",
+        "documentable": false
       },
       "id": "V-71487",
       "title": "The CA API Gateway providing encryption intermediary services must use NIST FIPS-validated cryptography to implement encryption services.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000511-ALG-000051",
         "gid": "V-71489",
         "rid": "SV-86113r1_rule",
         "stig_id": "CAGW-GW-000910",
-        "fix_id": "F-77809r1_fix"
+        "fix_id": "F-77809r1_fix",
+        "documentable": false
       },
       "id": "V-71489",
       "title": "The CA API Gateway must off-load audit records onto a centralized log server in real time.",
@@ -1464,7 +1464,5 @@
       }
     }
   ],
-  "name": "CA_API_Gateway_ALG_STIG",
-  "title": "CA API Gateway ALG Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "CA_API_Gateway_ALG_STIG"
 }

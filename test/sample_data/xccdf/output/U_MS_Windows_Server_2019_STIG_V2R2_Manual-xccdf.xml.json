@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000002-GPOS-00002",
         "gid": "V-205624",
         "rid": "SV-205624r569188_rule",
         "stig_id": "WN19-00-000300",
-        "fix_id": "F-5889r354791_fix"
+        "fix_id": "F-5889r354791_fix",
+        "documentable": false
       },
       "id": "V-205624",
       "title": "Windows Server 2019 must automatically remove or disable temporary user accounts after 72 hours.",
@@ -26,7 +26,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-205625",
+        "rid": "SV-205625r569188_rule",
+        "stig_id": "WN19-AU-000100",
+        "fix_id": "F-5890r354794_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -35,10 +38,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-205625",
-        "rid": "SV-205625r569188_rule",
-        "stig_id": "WN19-AU-000100",
-        "fix_id": "F-5890r354794_fix"
+        "documentable": false
       },
       "id": "V-205625",
       "title": "Windows Server 2019 must be configured to audit Account Management - Security Group Management successes.",
@@ -52,7 +52,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-205626",
+        "rid": "SV-205626r569188_rule",
+        "stig_id": "WN19-AU-000110",
+        "fix_id": "F-5891r354797_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -61,10 +64,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-205626",
-        "rid": "SV-205626r569188_rule",
-        "stig_id": "WN19-AU-000110",
-        "fix_id": "F-5891r354797_fix"
+        "documentable": false
       },
       "id": "V-205626",
       "title": "Windows Server 2019 must be configured to audit Account Management - User Account Management successes.",
@@ -78,7 +78,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-205627",
+        "rid": "SV-205627r569188_rule",
+        "stig_id": "WN19-AU-000120",
+        "fix_id": "F-5892r354800_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -87,10 +90,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-205627",
-        "rid": "SV-205627r569188_rule",
-        "stig_id": "WN19-AU-000120",
-        "fix_id": "F-5892r354800_fix"
+        "documentable": false
       },
       "id": "V-205627",
       "title": "Windows Server 2019 must be configured to audit Account Management - User Account Management failures.",
@@ -104,7 +104,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-205628",
+        "rid": "SV-205628r569188_rule",
+        "stig_id": "WN19-DC-000230",
+        "fix_id": "F-5893r354803_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -113,10 +116,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-205628",
-        "rid": "SV-205628r569188_rule",
-        "stig_id": "WN19-DC-000230",
-        "fix_id": "F-5893r354803_fix"
+        "documentable": false
       },
       "id": "V-205628",
       "title": "Windows Server 2019 must be configured to audit Account Management - Computer Account Management successes.",
@@ -130,11 +130,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000021-GPOS-00005",
         "gid": "V-205629",
         "rid": "SV-205629r569188_rule",
         "stig_id": "WN19-AC-000020",
-        "fix_id": "F-5894r354806_fix"
+        "fix_id": "F-5894r354806_fix",
+        "documentable": false
       },
       "id": "V-205629",
       "title": "Windows Server 2019 must have the number of allowed bad logon attempts configured to three or less.",
@@ -148,15 +148,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000021-GPOS-00005",
+        "gid": "V-205630",
+        "rid": "SV-205630r569188_rule",
+        "stig_id": "WN19-AC-000030",
+        "fix_id": "F-5895r354809_fix",
         "satisfies": [
           "SRG-OS-000021-GPOS-00005",
           "SRG-OS-000329-GPOS-00128"
         ],
-        "gid": "V-205630",
-        "rid": "SV-205630r569188_rule",
-        "stig_id": "WN19-AC-000030",
-        "fix_id": "F-5895r354809_fix"
+        "documentable": false
       },
       "id": "V-205630",
       "title": "Windows Server 2019 must have the period of time before the bad logon counter is reset configured to 15 minutes or greater.",
@@ -170,16 +170,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-205631",
+        "rid": "SV-205631r569188_rule",
+        "stig_id": "WN19-SO-000130",
+        "fix_id": "F-5896r354812_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "gid": "V-205631",
-        "rid": "SV-205631r569188_rule",
-        "stig_id": "WN19-SO-000130",
-        "fix_id": "F-5896r354812_fix"
+        "documentable": false
       },
       "id": "V-205631",
       "title": "Windows Server 2019 required legal notice must be configured to display before console logon.",
@@ -193,15 +193,15 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-205632",
+        "rid": "SV-205632r569188_rule",
+        "stig_id": "WN19-SO-000140",
+        "fix_id": "F-5897r354815_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "gid": "V-205632",
-        "rid": "SV-205632r569188_rule",
-        "stig_id": "WN19-SO-000140",
-        "fix_id": "F-5897r354815_fix"
+        "documentable": false
       },
       "id": "V-205632",
       "title": "Windows Server 2019 title for legal banner dialog box must be configured with the appropriate text.",
@@ -215,16 +215,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
+        "gid": "V-205633",
+        "rid": "SV-205633r569188_rule",
+        "stig_id": "WN19-SO-000120",
+        "fix_id": "F-5898r354818_fix",
         "satisfies": [
           "SRG-OS-000028-GPOS-00009",
           "SRG-OS-000029-GPOS-00010",
           "SRG-OS-000031-GPOS-00012"
         ],
-        "gid": "V-205633",
-        "rid": "SV-205633r569188_rule",
-        "stig_id": "WN19-SO-000120",
-        "fix_id": "F-5898r354818_fix"
+        "documentable": false
       },
       "id": "V-205633",
       "title": "Windows Server 2019 machine inactivity limit must be set to 15 minutes or less, locking the system with the screen saver.",
@@ -238,7 +238,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
+        "gid": "V-205634",
+        "rid": "SV-205634r569188_rule",
+        "stig_id": "WN19-AU-000190",
+        "fix_id": "F-5899r354821_fix",
         "satisfies": [
           "SRG-OS-000032-GPOS-00013",
           "SRG-OS-000470-GPOS-00214",
@@ -246,10 +249,7 @@
           "SRG-OS-000473-GPOS-00218",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "gid": "V-205634",
-        "rid": "SV-205634r569188_rule",
-        "stig_id": "WN19-AU-000190",
-        "fix_id": "F-5899r354821_fix"
+        "documentable": false
       },
       "id": "V-205634",
       "title": "Windows Server 2019 must be configured to audit logon successes.",
@@ -263,7 +263,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
+        "gid": "V-205635",
+        "rid": "SV-205635r569188_rule",
+        "stig_id": "WN19-AU-000200",
+        "fix_id": "F-5900r354824_fix",
         "satisfies": [
           "SRG-OS-000032-GPOS-00013",
           "SRG-OS-000470-GPOS-00214",
@@ -271,10 +274,7 @@
           "SRG-OS-000473-GPOS-00218",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "gid": "V-205635",
-        "rid": "SV-205635r569188_rule",
-        "stig_id": "WN19-AU-000200",
-        "fix_id": "F-5900r354824_fix"
+        "documentable": false
       },
       "id": "V-205635",
       "title": "Windows Server 2019 must be configured to audit logon failures.",
@@ -288,15 +288,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-205636",
+        "rid": "SV-205636r569188_rule",
+        "stig_id": "WN19-CC-000370",
+        "fix_id": "F-5901r354827_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000250-GPOS-00093"
         ],
-        "gid": "V-205636",
-        "rid": "SV-205636r569188_rule",
-        "stig_id": "WN19-CC-000370",
-        "fix_id": "F-5901r354827_fix"
+        "documentable": false
       },
       "id": "V-205636",
       "title": "Windows Server 2019 Remote Desktop Services must require secure Remote Procedure Call (RPC) communications.",
@@ -310,15 +310,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-205637",
+        "rid": "SV-205637r569188_rule",
+        "stig_id": "WN19-CC-000380",
+        "fix_id": "F-5902r354830_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000250-GPOS-00093"
         ],
-        "gid": "V-205637",
-        "rid": "SV-205637r569188_rule",
-        "stig_id": "WN19-CC-000380",
-        "fix_id": "F-5902r354830_fix"
+        "documentable": false
       },
       "id": "V-205637",
       "title": "Windows Server 2019 Remote Desktop Services must be configured with the client connection encryption set to High Level.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
         "gid": "V-205638",
         "rid": "SV-205638r569188_rule",
         "stig_id": "WN19-CC-000090",
-        "fix_id": "F-5903r354833_fix"
+        "fix_id": "F-5903r354833_fix",
+        "documentable": false
       },
       "id": "V-205638",
       "title": "Windows Server 2019 command line data must be included in process creation events.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000042-GPOS-00020",
         "gid": "V-205639",
         "rid": "SV-205639r569188_rule",
         "stig_id": "WN19-CC-000460",
-        "fix_id": "F-5904r354836_fix"
+        "fix_id": "F-5904r354836_fix",
+        "documentable": false
       },
       "id": "V-205639",
       "title": "Windows Server 2019 PowerShell script block logging must be enabled.",
@@ -368,16 +368,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-205640",
+        "rid": "SV-205640r569188_rule",
+        "stig_id": "WN19-AU-000030",
+        "fix_id": "F-5905r354839_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-205640",
-        "rid": "SV-205640r569188_rule",
-        "stig_id": "WN19-AU-000030",
-        "fix_id": "F-5905r354839_fix"
+        "documentable": false
       },
       "id": "V-205640",
       "title": "Windows Server 2019 permissions for the Application event log must prevent access by non-privileged accounts.",
@@ -391,16 +391,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-205641",
+        "rid": "SV-205641r569188_rule",
+        "stig_id": "WN19-AU-000040",
+        "fix_id": "F-5906r354842_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-205641",
-        "rid": "SV-205641r569188_rule",
-        "stig_id": "WN19-AU-000040",
-        "fix_id": "F-5906r354842_fix"
+        "documentable": false
       },
       "id": "V-205641",
       "title": "Windows Server 2019 permissions for the Security event log must prevent access by non-privileged accounts.",
@@ -414,16 +414,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-205642",
+        "rid": "SV-205642r569188_rule",
+        "stig_id": "WN19-AU-000050",
+        "fix_id": "F-5907r354845_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-205642",
-        "rid": "SV-205642r569188_rule",
-        "stig_id": "WN19-AU-000050",
-        "fix_id": "F-5907r354845_fix"
+        "documentable": false
       },
       "id": "V-205642",
       "title": "Windows Server 2019 permissions for the System event log must prevent access by non-privileged accounts.",
@@ -437,7 +437,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-205643",
+        "rid": "SV-205643r569188_rule",
+        "stig_id": "WN19-UR-000170",
+        "fix_id": "F-5908r354848_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
@@ -445,10 +448,7 @@
           "SRG-OS-000063-GPOS-00032",
           "SRG-OS-000337-GPOS-00129"
         ],
-        "gid": "V-205643",
-        "rid": "SV-205643r569188_rule",
-        "stig_id": "WN19-UR-000170",
-        "fix_id": "F-5908r354848_fix"
+        "documentable": false
       },
       "id": "V-205643",
       "title": "Windows Server 2019 Manage auditing and security log user right must only be assigned to the Administrators group.",
@@ -462,11 +462,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000062-GPOS-00031",
         "gid": "V-205644",
         "rid": "SV-205644r569188_rule",
         "stig_id": "WN19-SO-000050",
-        "fix_id": "F-5909r354851_fix"
+        "fix_id": "F-5909r354851_fix",
+        "documentable": false
       },
       "id": "V-205644",
       "title": "Windows Server 2019 must force audit policy subcategory settings to override audit policy category settings.",
@@ -480,11 +480,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-205645",
         "rid": "SV-205645r569188_rule",
         "stig_id": "WN19-DC-000280",
-        "fix_id": "F-5910r354854_fix"
+        "fix_id": "F-5910r354854_fix",
+        "documentable": false
       },
       "id": "V-205645",
       "title": "Windows Server 2019 domain controllers must have a PKI server certificate.",
@@ -498,11 +498,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-205646",
         "rid": "SV-205646r569188_rule",
         "stig_id": "WN19-DC-000290",
-        "fix_id": "F-5911r354857_fix"
+        "fix_id": "F-5911r354857_fix",
+        "documentable": false
       },
       "id": "V-205646",
       "title": "Windows Server 2019 domain Controller PKI certificates must be issued by the DoD PKI or an approved External Certificate Authority (ECA).",
@@ -516,11 +516,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
         "gid": "V-205647",
         "rid": "SV-205647r569188_rule",
         "stig_id": "WN19-DC-000300",
-        "fix_id": "F-5912r354860_fix"
+        "fix_id": "F-5912r354860_fix",
+        "documentable": false
       },
       "id": "V-205647",
       "title": "Windows Server 2019 PKI certificates associated with user accounts must be issued by a DoD PKI or an approved External Certificate Authority (ECA).",
@@ -534,15 +534,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
+        "gid": "V-205648",
+        "rid": "SV-205648r569280_rule",
+        "stig_id": "WN19-PK-000010",
+        "fix_id": "F-5913r603203_fix",
         "satisfies": [
           "SRG-OS-000066-GPOS-00034",
           "SRG-OS-000403-GPOS-00182"
         ],
-        "gid": "V-205648",
-        "rid": "SV-205648r569280_rule",
-        "stig_id": "WN19-PK-000010",
-        "fix_id": "F-5913r603203_fix"
+        "documentable": false
       },
       "id": "V-205648",
       "title": "Windows Server 2019 must have the DoD Root Certificate Authority (CA) certificates installed in the Trusted Root Store.",
@@ -556,15 +556,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
+        "gid": "V-205649",
+        "rid": "SV-205649r573795_rule",
+        "stig_id": "WN19-PK-000020",
+        "fix_id": "F-5914r603253_fix",
         "satisfies": [
           "SRG-OS-000066-GPOS-00034",
           "SRG-OS-000403-GPOS-00182"
         ],
-        "gid": "V-205649",
-        "rid": "SV-205649r573795_rule",
-        "stig_id": "WN19-PK-000020",
-        "fix_id": "F-5914r603253_fix"
+        "documentable": false
       },
       "id": "V-205649",
       "title": "Windows Server 2019 must have the DoD Interoperability Root Certificate Authority (CA) cross-certificates installed in the Untrusted Certificates Store on unclassified systems.",
@@ -578,15 +578,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
+        "gid": "V-205650",
+        "rid": "SV-205650r573797_rule",
+        "stig_id": "WN19-PK-000030",
+        "fix_id": "F-5915r603250_fix",
         "satisfies": [
           "SRG-OS-000066-GPOS-00034",
           "SRG-OS-000403-GPOS-00182"
         ],
-        "gid": "V-205650",
-        "rid": "SV-205650r573797_rule",
-        "stig_id": "WN19-PK-000030",
-        "fix_id": "F-5915r603250_fix"
+        "documentable": false
       },
       "id": "V-205650",
       "title": "Windows Server 2019 must have the US DoD CCEB Interoperability Root CA cross-certificates in the Untrusted Certificates Store on unclassified systems.",
@@ -600,11 +600,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000067-GPOS-00035",
         "gid": "V-205651",
         "rid": "SV-205651r569188_rule",
         "stig_id": "WN19-SO-000350",
-        "fix_id": "F-5916r354872_fix"
+        "fix_id": "F-5916r354872_fix",
+        "documentable": false
       },
       "id": "V-205651",
       "title": "Windows Server 2019 users must be required to enter a password to access private keys stored on the computer.",
@@ -618,17 +618,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
+        "gid": "V-205652",
+        "rid": "SV-205652r569188_rule",
+        "stig_id": "WN19-AC-000080",
+        "fix_id": "F-5917r354875_fix",
         "satisfies": [
           "SRG-OS-000069-GPOS-00037",
           "SRG-OS-000070-GPOS-00038",
           "SRG-OS-000071-GPOS-00039",
           "SRG-OS-000266-GPOS-00101"
         ],
-        "gid": "V-205652",
-        "rid": "SV-205652r569188_rule",
-        "stig_id": "WN19-AC-000080",
-        "fix_id": "F-5917r354875_fix"
+        "documentable": false
       },
       "id": "V-205652",
       "title": "Windows Server 2019 must have the built-in Windows password complexity policy enabled.",
@@ -642,11 +642,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-205653",
         "rid": "SV-205653r569188_rule",
         "stig_id": "WN19-AC-000090",
-        "fix_id": "F-5918r354878_fix"
+        "fix_id": "F-5918r354878_fix",
+        "documentable": false
       },
       "id": "V-205653",
       "title": "Windows Server 2019 reversible password encryption must be disabled.",
@@ -660,11 +660,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-205654",
         "rid": "SV-205654r569188_rule",
         "stig_id": "WN19-SO-000300",
-        "fix_id": "F-5919r354881_fix"
+        "fix_id": "F-5919r354881_fix",
+        "documentable": false
       },
       "id": "V-205654",
       "title": "Windows Server 2019 must be configured to prevent the storage of the LAN Manager hash of passwords.",
@@ -678,11 +678,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-205655",
         "rid": "SV-205655r569188_rule",
         "stig_id": "WN19-SO-000180",
-        "fix_id": "F-5920r354884_fix"
+        "fix_id": "F-5920r354884_fix",
+        "documentable": false
       },
       "id": "V-205655",
       "title": "Windows Server 2019 unencrypted passwords must not be sent to third-party Server Message Block (SMB) servers.",
@@ -696,11 +696,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-205656",
         "rid": "SV-205656r569188_rule",
         "stig_id": "WN19-AC-000060",
-        "fix_id": "F-5921r354887_fix"
+        "fix_id": "F-5921r354887_fix",
+        "documentable": false
       },
       "id": "V-205656",
       "title": "Windows Server 2019 minimum password age must be configured to at least one day.",
@@ -714,11 +714,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-205657",
         "rid": "SV-205657r569188_rule",
         "stig_id": "WN19-00-000020",
-        "fix_id": "F-5922r354890_fix"
+        "fix_id": "F-5922r354890_fix",
+        "documentable": false
       },
       "id": "V-205657",
       "title": "Windows Server 2019 passwords for the built-in Administrator account must be changed at least every 60 days.",
@@ -732,11 +732,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-205658",
         "rid": "SV-205658r569188_rule",
         "stig_id": "WN19-00-000210",
-        "fix_id": "F-5923r354893_fix"
+        "fix_id": "F-5923r354893_fix",
+        "documentable": false
       },
       "id": "V-205658",
       "title": "Windows Server 2019 passwords must be configured to expire.",
@@ -750,11 +750,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-205659",
         "rid": "SV-205659r569188_rule",
         "stig_id": "WN19-AC-000050",
-        "fix_id": "F-5924r354896_fix"
+        "fix_id": "F-5924r354896_fix",
+        "documentable": false
       },
       "id": "V-205659",
       "title": "Windows Server 2019 maximum password age must be configured to 60 days or less.",
@@ -768,11 +768,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-205660",
         "rid": "SV-205660r569188_rule",
         "stig_id": "WN19-AC-000040",
-        "fix_id": "F-5925r354899_fix"
+        "fix_id": "F-5925r354899_fix",
+        "documentable": false
       },
       "id": "V-205660",
       "title": "Windows Server 2019 password history must be configured to 24 passwords remembered.",
@@ -786,11 +786,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-205661",
         "rid": "SV-205661r569188_rule",
         "stig_id": "WN19-00-000050",
-        "fix_id": "F-5926r354902_fix"
+        "fix_id": "F-5926r354902_fix",
+        "documentable": false
       },
       "id": "V-205661",
       "title": "Windows Server 2019 manually managed application account passwords must be at least 15 characters in length.",
@@ -804,11 +804,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-205662",
         "rid": "SV-205662r569188_rule",
         "stig_id": "WN19-AC-000070",
-        "fix_id": "F-5927r354905_fix"
+        "fix_id": "F-5927r354905_fix",
+        "documentable": false
       },
       "id": "V-205662",
       "title": "Windows Server 2019 minimum password length must be configured to 14 characters.",
@@ -822,11 +822,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205663",
         "rid": "SV-205663r569188_rule",
         "stig_id": "WN19-00-000130",
-        "fix_id": "F-5928r354908_fix"
+        "fix_id": "F-5928r354908_fix",
+        "documentable": false
       },
       "id": "V-205663",
       "title": "Windows Server 2019 local volumes must use a format that supports NTFS attributes.",
@@ -840,11 +840,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205664",
         "rid": "SV-205664r569188_rule",
         "stig_id": "WN19-00-000180",
-        "fix_id": "F-5929r354911_fix"
+        "fix_id": "F-5929r354911_fix",
+        "documentable": false
       },
       "id": "V-205664",
       "title": "Windows Server 2019 non-administrative accounts or groups must only have print permissions on printer shares.",
@@ -858,11 +858,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205665",
         "rid": "SV-205665r569188_rule",
         "stig_id": "WN19-DC-000340",
-        "fix_id": "F-5930r354914_fix"
+        "fix_id": "F-5930r354914_fix",
+        "documentable": false
       },
       "id": "V-205665",
       "title": "Windows Server 2019 Access this computer from the network user right must only be assigned to the Administrators, Authenticated Users, and Enterprise Domain Controllers groups on domain controllers.",
@@ -876,11 +876,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205666",
         "rid": "SV-205666r569188_rule",
         "stig_id": "WN19-DC-000360",
-        "fix_id": "F-5931r354917_fix"
+        "fix_id": "F-5931r354917_fix",
+        "documentable": false
       },
       "id": "V-205666",
       "title": "Windows Server 2019 Allow log on through Remote Desktop Services user right must only be assigned to the Administrators group on domain controllers.",
@@ -894,11 +894,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205667",
         "rid": "SV-205667r569188_rule",
         "stig_id": "WN19-DC-000370",
-        "fix_id": "F-5932r354920_fix"
+        "fix_id": "F-5932r354920_fix",
+        "documentable": false
       },
       "id": "V-205667",
       "title": "Windows Server 2019 Deny access to this computer from the network user right on domain controllers must be configured to prevent unauthenticated access.",
@@ -912,11 +912,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205668",
         "rid": "SV-205668r569188_rule",
         "stig_id": "WN19-DC-000380",
-        "fix_id": "F-5933r354923_fix"
+        "fix_id": "F-5933r354923_fix",
+        "documentable": false
       },
       "id": "V-205668",
       "title": "Windows Server 2019 Deny log on as a batch job user right on domain controllers must be configured to prevent unauthenticated access.",
@@ -930,11 +930,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205669",
         "rid": "SV-205669r569188_rule",
         "stig_id": "WN19-DC-000390",
-        "fix_id": "F-5934r354926_fix"
+        "fix_id": "F-5934r354926_fix",
+        "documentable": false
       },
       "id": "V-205669",
       "title": "Windows Server 2019 Deny log on as a service user right must be configured to include no accounts or groups (blank) on domain controllers.",
@@ -948,11 +948,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205670",
         "rid": "SV-205670r569188_rule",
         "stig_id": "WN19-DC-000400",
-        "fix_id": "F-5935r354929_fix"
+        "fix_id": "F-5935r354929_fix",
+        "documentable": false
       },
       "id": "V-205670",
       "title": "Windows Server 2019 Deny log on locally user right on domain controllers must be configured to prevent unauthenticated access.",
@@ -966,11 +966,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205671",
         "rid": "SV-205671r569188_rule",
         "stig_id": "WN19-MS-000070",
-        "fix_id": "F-5936r354932_fix"
+        "fix_id": "F-5936r354932_fix",
+        "documentable": false
       },
       "id": "V-205671",
       "title": "Windows Server 2019 Access this computer from the network user right must only be assigned to the Administrators and Authenticated Users groups on domain-joined member servers and standalone systems.",
@@ -984,11 +984,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205672",
         "rid": "SV-205672r569188_rule",
         "stig_id": "WN19-MS-000080",
-        "fix_id": "F-5937r354935_fix"
+        "fix_id": "F-5937r354935_fix",
+        "documentable": false
       },
       "id": "V-205672",
       "title": "Windows Server 2019 Deny access to this computer from the network user right on domain-joined member servers must be configured to prevent access from highly privileged domain accounts and local accounts and from unauthenticated access on all systems.",
@@ -1002,11 +1002,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205673",
         "rid": "SV-205673r569188_rule",
         "stig_id": "WN19-MS-000090",
-        "fix_id": "F-5938r354938_fix"
+        "fix_id": "F-5938r354938_fix",
+        "documentable": false
       },
       "id": "V-205673",
       "title": "Windows Server 2019 Deny log on as a batch job user right on domain-joined member servers must be configured to prevent access from highly privileged domain accounts and from unauthenticated access on all systems.",
@@ -1020,11 +1020,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205674",
         "rid": "SV-205674r569188_rule",
         "stig_id": "WN19-MS-000100",
-        "fix_id": "F-5939r354941_fix"
+        "fix_id": "F-5939r354941_fix",
+        "documentable": false
       },
       "id": "V-205674",
       "title": "Windows Server 2019 Deny log on as a service user right on domain-joined member servers must be configured to prevent access from highly privileged domain accounts. No other groups or accounts must be assigned this right.",
@@ -1038,11 +1038,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205675",
         "rid": "SV-205675r569188_rule",
         "stig_id": "WN19-MS-000110",
-        "fix_id": "F-5940r354944_fix"
+        "fix_id": "F-5940r354944_fix",
+        "documentable": false
       },
       "id": "V-205675",
       "title": "Windows Server 2019 Deny log on locally user right on domain-joined member servers must be configured to prevent access from highly privileged domain accounts and from unauthenticated access on all systems.",
@@ -1056,11 +1056,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-205676",
         "rid": "SV-205676r569188_rule",
         "stig_id": "WN19-UR-000030",
-        "fix_id": "F-5941r354947_fix"
+        "fix_id": "F-5941r354947_fix",
+        "documentable": false
       },
       "id": "V-205676",
       "title": "Windows Server 2019 Allow log on locally user right must only be assigned to the Administrators group.",
@@ -1074,11 +1074,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205677",
         "rid": "SV-205677r569188_rule",
         "stig_id": "WN19-00-000270",
-        "fix_id": "F-5942r354950_fix"
+        "fix_id": "F-5942r354950_fix",
+        "documentable": false
       },
       "id": "V-205677",
       "title": "Windows Server 2019 must have the roles and features required by the system documented.",
@@ -1092,11 +1092,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205678",
         "rid": "SV-205678r569188_rule",
         "stig_id": "WN19-00-000320",
-        "fix_id": "F-5943r354953_fix"
+        "fix_id": "F-5943r354953_fix",
+        "documentable": false
       },
       "id": "V-205678",
       "title": "Windows Server 2019 must not have the Fax Server role installed.",
@@ -1110,11 +1110,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205679",
         "rid": "SV-205679r569188_rule",
         "stig_id": "WN19-00-000340",
-        "fix_id": "F-5944r354956_fix"
+        "fix_id": "F-5944r354956_fix",
+        "documentable": false
       },
       "id": "V-205679",
       "title": "Windows Server 2019 must not have the Peer Name Resolution Protocol installed.",
@@ -1128,11 +1128,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205680",
         "rid": "SV-205680r569188_rule",
         "stig_id": "WN19-00-000350",
-        "fix_id": "F-5945r354959_fix"
+        "fix_id": "F-5945r354959_fix",
+        "documentable": false
       },
       "id": "V-205680",
       "title": "Windows Server 2019 must not have Simple TCP/IP Services installed.",
@@ -1146,11 +1146,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205681",
         "rid": "SV-205681r569188_rule",
         "stig_id": "WN19-00-000370",
-        "fix_id": "F-5946r354962_fix"
+        "fix_id": "F-5946r354962_fix",
+        "documentable": false
       },
       "id": "V-205681",
       "title": "Windows Server 2019 must not have the TFTP Client installed.",
@@ -1164,11 +1164,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205682",
         "rid": "SV-205682r569188_rule",
         "stig_id": "WN19-00-000380",
-        "fix_id": "F-5947r354965_fix"
+        "fix_id": "F-5947r354965_fix",
+        "documentable": false
       },
       "id": "V-205682",
       "title": "Windows Server 2019 must not the Server Message Block (SMB) v1 protocol installed.",
@@ -1182,11 +1182,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205683",
         "rid": "SV-205683r569188_rule",
         "stig_id": "WN19-00-000390",
-        "fix_id": "F-5948r354968_fix"
+        "fix_id": "F-5948r354968_fix",
+        "documentable": false
       },
       "id": "V-205683",
       "title": "Windows Server 2019 must have the Server Message Block (SMB) v1 protocol disabled on the SMB server.",
@@ -1200,11 +1200,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205684",
         "rid": "SV-205684r569188_rule",
         "stig_id": "WN19-00-000400",
-        "fix_id": "F-5949r354971_fix"
+        "fix_id": "F-5949r354971_fix",
+        "documentable": false
       },
       "id": "V-205684",
       "title": "Windows Server 2019 must have the Server Message Block (SMB) v1 protocol disabled on the SMB client.",
@@ -1218,11 +1218,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205685",
         "rid": "SV-205685r569188_rule",
         "stig_id": "WN19-00-000410",
-        "fix_id": "F-5950r354974_fix"
+        "fix_id": "F-5950r354974_fix",
+        "documentable": false
       },
       "id": "V-205685",
       "title": "Windows Server 2019 must not have Windows PowerShell 2.0 installed.",
@@ -1236,11 +1236,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205686",
         "rid": "SV-205686r569188_rule",
         "stig_id": "WN19-CC-000010",
-        "fix_id": "F-5951r354977_fix"
+        "fix_id": "F-5951r354977_fix",
+        "documentable": false
       },
       "id": "V-205686",
       "title": "Windows Server 2019 must prevent the display of slide shows on the lock screen.",
@@ -1254,11 +1254,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205687",
         "rid": "SV-205687r569188_rule",
         "stig_id": "WN19-CC-000020",
-        "fix_id": "F-5952r354980_fix"
+        "fix_id": "F-5952r354980_fix",
+        "documentable": false
       },
       "id": "V-205687",
       "title": "Windows Server 2019 must have WDigest Authentication disabled.",
@@ -1272,11 +1272,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205688",
         "rid": "SV-205688r569188_rule",
         "stig_id": "WN19-CC-000150",
-        "fix_id": "F-5953r354983_fix"
+        "fix_id": "F-5953r354983_fix",
+        "documentable": false
       },
       "id": "V-205688",
       "title": "Windows Server 2019 downloading print driver packages over HTTP must be turned off.",
@@ -1290,11 +1290,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205689",
         "rid": "SV-205689r569188_rule",
         "stig_id": "WN19-CC-000160",
-        "fix_id": "F-5954r354986_fix"
+        "fix_id": "F-5954r354986_fix",
+        "documentable": false
       },
       "id": "V-205689",
       "title": "Windows Server 2019 printing over HTTP must be turned off.",
@@ -1308,11 +1308,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205690",
         "rid": "SV-205690r569188_rule",
         "stig_id": "WN19-CC-000170",
-        "fix_id": "F-5955r354989_fix"
+        "fix_id": "F-5955r354989_fix",
+        "documentable": false
       },
       "id": "V-205690",
       "title": "Windows Server 2019 network selection user interface (UI) must not be displayed on the logon screen.",
@@ -1326,11 +1326,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205691",
         "rid": "SV-205691r569188_rule",
         "stig_id": "WN19-CC-000200",
-        "fix_id": "F-5956r354992_fix"
+        "fix_id": "F-5956r354992_fix",
+        "documentable": false
       },
       "id": "V-205691",
       "title": "Windows Server 2019 Application Compatibility Program Inventory must be prevented from collecting data and sending the information to Microsoft.",
@@ -1344,11 +1344,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205692",
         "rid": "SV-205692r569188_rule",
         "stig_id": "WN19-CC-000300",
-        "fix_id": "F-5957r354995_fix"
+        "fix_id": "F-5957r354995_fix",
+        "documentable": false
       },
       "id": "V-205692",
       "title": "Windows Server 2019 Windows Defender SmartScreen must be enabled.",
@@ -1362,11 +1362,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205693",
         "rid": "SV-205693r569188_rule",
         "stig_id": "WN19-CC-000400",
-        "fix_id": "F-5958r354998_fix"
+        "fix_id": "F-5958r354998_fix",
+        "documentable": false
       },
       "id": "V-205693",
       "title": "Windows Server 2019 must disable Basic authentication for RSS feeds over HTTP.",
@@ -1380,11 +1380,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205694",
         "rid": "SV-205694r569188_rule",
         "stig_id": "WN19-CC-000410",
-        "fix_id": "F-5959r355001_fix"
+        "fix_id": "F-5959r355001_fix",
+        "documentable": false
       },
       "id": "V-205694",
       "title": "Windows Server 2019 must prevent Indexing of encrypted files.",
@@ -1398,11 +1398,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205695",
         "rid": "SV-205695r569188_rule",
         "stig_id": "WN19-DC-000130",
-        "fix_id": "F-5960r355004_fix"
+        "fix_id": "F-5960r355004_fix",
+        "documentable": false
       },
       "id": "V-205695",
       "title": "Windows Server 2019 domain controllers must run on a machine dedicated to that function.",
@@ -1416,11 +1416,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-205696",
         "rid": "SV-205696r569188_rule",
         "stig_id": "WN19-MS-000030",
-        "fix_id": "F-5961r355007_fix"
+        "fix_id": "F-5961r355007_fix",
+        "documentable": false
       },
       "id": "V-205696",
       "title": "Windows Server 2019 local users on domain-joined member servers must not be enumerated.",
@@ -1434,11 +1434,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-205697",
         "rid": "SV-205697r569188_rule",
         "stig_id": "WN19-00-000330",
-        "fix_id": "F-5962r355010_fix"
+        "fix_id": "F-5962r355010_fix",
+        "documentable": false
       },
       "id": "V-205697",
       "title": "Windows Server 2019 must not have the Microsoft FTP service installed unless required by the organization.",
@@ -1452,11 +1452,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
         "gid": "V-205698",
         "rid": "SV-205698r569188_rule",
         "stig_id": "WN19-00-000360",
-        "fix_id": "F-5963r355013_fix"
+        "fix_id": "F-5963r355013_fix",
+        "documentable": false
       },
       "id": "V-205698",
       "title": "Windows Server 2019 must not have the Telnet Client installed.",
@@ -1470,11 +1470,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-205699",
         "rid": "SV-205699r569188_rule",
         "stig_id": "WN19-00-000070",
-        "fix_id": "F-5964r355016_fix"
+        "fix_id": "F-5964r355016_fix",
+        "documentable": false
       },
       "id": "V-205699",
       "title": "Windows Server 2019 shared user accounts must not be permitted.",
@@ -1488,11 +1488,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
         "gid": "V-205700",
         "rid": "SV-205700r569188_rule",
         "stig_id": "WN19-00-000200",
-        "fix_id": "F-5965r355019_fix"
+        "fix_id": "F-5965r355019_fix",
+        "documentable": false
       },
       "id": "V-205700",
       "title": "Windows Server 2019 accounts must require passwords.",
@@ -1506,7 +1506,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000105-GPOS-00052",
+        "gid": "V-205701",
+        "rid": "SV-205701r569188_rule",
+        "stig_id": "WN19-DC-000310",
+        "fix_id": "F-5966r355022_fix",
         "satisfies": [
           "SRG-OS-000105-GPOS-00052",
           "SRG-OS-000106-GPOS-00053",
@@ -1514,10 +1517,7 @@
           "SRG-OS-000108-GPOS-00055",
           "SRG-OS-000375-GPOS-00160"
         ],
-        "gid": "V-205701",
-        "rid": "SV-205701r569188_rule",
-        "stig_id": "WN19-DC-000310",
-        "fix_id": "F-5966r355022_fix"
+        "documentable": false
       },
       "id": "V-205701",
       "title": "Windows Server 2019 Active Directory user accounts, including administrators, must be configured to require the use of a Common Access Card (CAC), Personal Identity Verification (PIV)-compliant hardware token, or Alternate Logon Token (ALT) for user authentication.",
@@ -1531,15 +1531,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000112-GPOS-00057",
+        "gid": "V-205702",
+        "rid": "SV-205702r569188_rule",
+        "stig_id": "WN19-DC-000020",
+        "fix_id": "F-5967r355025_fix",
         "satisfies": [
           "SRG-OS-000112-GPOS-00057",
           "SRG-OS-000113-GPOS-00058"
         ],
-        "gid": "V-205702",
-        "rid": "SV-205702r569188_rule",
-        "stig_id": "WN19-DC-000020",
-        "fix_id": "F-5967r355025_fix"
+        "documentable": false
       },
       "id": "V-205702",
       "title": "Windows Server 2019 Kerberos user logon restrictions must be enforced.",
@@ -1553,15 +1553,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000112-GPOS-00057",
+        "gid": "V-205703",
+        "rid": "SV-205703r569188_rule",
+        "stig_id": "WN19-DC-000030",
+        "fix_id": "F-5968r355028_fix",
         "satisfies": [
           "SRG-OS-000112-GPOS-00057",
           "SRG-OS-000113-GPOS-00058"
         ],
-        "gid": "V-205703",
-        "rid": "SV-205703r569188_rule",
-        "stig_id": "WN19-DC-000030",
-        "fix_id": "F-5968r355028_fix"
+        "documentable": false
       },
       "id": "V-205703",
       "title": "Windows Server 2019 Kerberos service ticket maximum lifetime must be limited to 600 minutes or less.",
@@ -1575,15 +1575,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000112-GPOS-00057",
+        "gid": "V-205704",
+        "rid": "SV-205704r569188_rule",
+        "stig_id": "WN19-DC-000040",
+        "fix_id": "F-5969r355031_fix",
         "satisfies": [
           "SRG-OS-000112-GPOS-00057",
           "SRG-OS-000113-GPOS-00058"
         ],
-        "gid": "V-205704",
-        "rid": "SV-205704r569188_rule",
-        "stig_id": "WN19-DC-000040",
-        "fix_id": "F-5969r355031_fix"
+        "documentable": false
       },
       "id": "V-205704",
       "title": "Windows Server 2019 Kerberos user ticket lifetime must be limited to 10 hours or less.",
@@ -1597,15 +1597,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000112-GPOS-00057",
+        "gid": "V-205705",
+        "rid": "SV-205705r569188_rule",
+        "stig_id": "WN19-DC-000050",
+        "fix_id": "F-5970r355034_fix",
         "satisfies": [
           "SRG-OS-000112-GPOS-00057",
           "SRG-OS-000113-GPOS-00058"
         ],
-        "gid": "V-205705",
-        "rid": "SV-205705r569188_rule",
-        "stig_id": "WN19-DC-000050",
-        "fix_id": "F-5970r355034_fix"
+        "documentable": false
       },
       "id": "V-205705",
       "title": "Windows Server 2019 Kerberos policy user ticket renewal maximum lifetime must be limited to seven days or less.",
@@ -1619,15 +1619,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000112-GPOS-00057",
+        "gid": "V-205706",
+        "rid": "SV-205706r569188_rule",
+        "stig_id": "WN19-DC-000060",
+        "fix_id": "F-5971r355037_fix",
         "satisfies": [
           "SRG-OS-000112-GPOS-00057",
           "SRG-OS-000113-GPOS-00058"
         ],
-        "gid": "V-205706",
-        "rid": "SV-205706r569188_rule",
-        "stig_id": "WN19-DC-000060",
-        "fix_id": "F-5971r355037_fix"
+        "documentable": false
       },
       "id": "V-205706",
       "title": "Windows Server 2019 computer clock synchronization tolerance must be limited to five minutes or less.",
@@ -1641,11 +1641,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000118-GPOS-00060",
         "gid": "V-205707",
         "rid": "SV-205707r569188_rule",
         "stig_id": "WN19-00-000190",
-        "fix_id": "F-5972r355040_fix"
+        "fix_id": "F-5972r355040_fix",
+        "documentable": false
       },
       "id": "V-205707",
       "title": "Windows Server 2019 outdated or unused accounts must be removed or disabled.",
@@ -1659,11 +1659,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000120-GPOS-00061",
         "gid": "V-205708",
         "rid": "SV-205708r569188_rule",
         "stig_id": "WN19-SO-000290",
-        "fix_id": "F-5973r355043_fix"
+        "fix_id": "F-5973r355043_fix",
+        "documentable": false
       },
       "id": "V-205708",
       "title": "Windows Server 2019 Kerberos encryption types must be configured to prevent the use of DES and RC4 encryption suites.",
@@ -1677,11 +1677,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000121-GPOS-00062",
         "gid": "V-205709",
         "rid": "SV-205709r569188_rule",
         "stig_id": "WN19-SO-000010",
-        "fix_id": "F-5974r355046_fix"
+        "fix_id": "F-5974r355046_fix",
+        "documentable": false
       },
       "id": "V-205709",
       "title": "Windows Server 2019 must have the built-in guest account disabled.",
@@ -1695,11 +1695,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000123-GPOS-00064",
         "gid": "V-205710",
         "rid": "SV-205710r569188_rule",
         "stig_id": "WN19-00-000310",
-        "fix_id": "F-5975r355049_fix"
+        "fix_id": "F-5975r355049_fix",
+        "documentable": false
       },
       "id": "V-205710",
       "title": "Windows Server 2019 must automatically remove or disable emergency accounts after the crisis is resolved or within 72 hours.",
@@ -1713,11 +1713,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
         "gid": "V-205711",
         "rid": "SV-205711r569188_rule",
         "stig_id": "WN19-CC-000470",
-        "fix_id": "F-5976r355052_fix"
+        "fix_id": "F-5976r355052_fix",
+        "documentable": false
       },
       "id": "V-205711",
       "title": "Windows Server 2019 Windows Remote Management (WinRM) client must not use Basic authentication.",
@@ -1731,11 +1731,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
         "gid": "V-205712",
         "rid": "SV-205712r569188_rule",
         "stig_id": "WN19-CC-000490",
-        "fix_id": "F-5977r355055_fix"
+        "fix_id": "F-5977r355055_fix",
+        "documentable": false
       },
       "id": "V-205712",
       "title": "Windows Server 2019 Windows Remote Management (WinRM) client must not use Digest authentication.",
@@ -1749,11 +1749,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
         "gid": "V-205713",
         "rid": "SV-205713r569188_rule",
         "stig_id": "WN19-CC-000500",
-        "fix_id": "F-5978r355058_fix"
+        "fix_id": "F-5978r355058_fix",
+        "documentable": false
       },
       "id": "V-205713",
       "title": "Windows Server 2019 Windows Remote Management (WinRM) service must not use Basic authentication.",
@@ -1767,11 +1767,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-205714",
         "rid": "SV-205714r569188_rule",
         "stig_id": "WN19-CC-000240",
-        "fix_id": "F-5979r355061_fix"
+        "fix_id": "F-5979r355061_fix",
+        "documentable": false
       },
       "id": "V-205714",
       "title": "Windows Server 2019 administrator accounts must not be enumerated during elevation.",
@@ -1785,11 +1785,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-205715",
         "rid": "SV-205715r569188_rule",
         "stig_id": "WN19-MS-000020",
-        "fix_id": "F-5980r355064_fix"
+        "fix_id": "F-5980r355064_fix",
+        "documentable": false
       },
       "id": "V-205715",
       "title": "Windows Server 2019 local administrator accounts must have their privileged token filtered to prevent elevated privileges from being used over the network on domain-joined member servers.",
@@ -1803,11 +1803,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-205716",
         "rid": "SV-205716r569188_rule",
         "stig_id": "WN19-SO-000390",
-        "fix_id": "F-5981r355067_fix"
+        "fix_id": "F-5981r355067_fix",
+        "documentable": false
       },
       "id": "V-205716",
       "title": "Windows Server 2019 UIAccess applications must not be allowed to prompt for elevation without using the secure desktop.",
@@ -1821,11 +1821,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-205717",
         "rid": "SV-205717r569188_rule",
         "stig_id": "WN19-SO-000400",
-        "fix_id": "F-5982r355070_fix"
+        "fix_id": "F-5982r355070_fix",
+        "documentable": false
       },
       "id": "V-205717",
       "title": "Windows Server 2019 User Account Control must, at a minimum, prompt administrators for consent on the secure desktop.",
@@ -1839,11 +1839,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-205718",
         "rid": "SV-205718r569188_rule",
         "stig_id": "WN19-SO-000420",
-        "fix_id": "F-5983r355073_fix"
+        "fix_id": "F-5983r355073_fix",
+        "documentable": false
       },
       "id": "V-205718",
       "title": "Windows Server 2019 User Account Control must be configured to detect application installations and prompt for elevation.",
@@ -1857,11 +1857,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-205719",
         "rid": "SV-205719r569188_rule",
         "stig_id": "WN19-SO-000430",
-        "fix_id": "F-5984r355076_fix"
+        "fix_id": "F-5984r355076_fix",
+        "documentable": false
       },
       "id": "V-205719",
       "title": "Windows Server 2019 User Account Control (UAC) must only elevate UIAccess applications that are installed in secure locations.",
@@ -1875,11 +1875,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000134-GPOS-00068",
         "gid": "V-205720",
         "rid": "SV-205720r569188_rule",
         "stig_id": "WN19-SO-000450",
-        "fix_id": "F-5985r355079_fix"
+        "fix_id": "F-5985r355079_fix",
+        "documentable": false
       },
       "id": "V-205720",
       "title": "Windows Server 2019 User Account Control (UAC) must virtualize file and registry write failures to per-user locations.",
@@ -1893,11 +1893,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-205721",
         "rid": "SV-205721r569188_rule",
         "stig_id": "WN19-00-000230",
-        "fix_id": "F-5986r355082_fix"
+        "fix_id": "F-5986r355082_fix",
+        "documentable": false
       },
       "id": "V-205721",
       "title": "Windows Server 2019 non-system-created file shares must limit access to groups that require it.",
@@ -1911,11 +1911,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-205722",
         "rid": "SV-205722r569188_rule",
         "stig_id": "WN19-CC-000350",
-        "fix_id": "F-5987r355085_fix"
+        "fix_id": "F-5987r355085_fix",
+        "documentable": false
       },
       "id": "V-205722",
       "title": "Windows Server 2019 Remote Desktop Services must prevent drive redirection.",
@@ -1929,11 +1929,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-205723",
         "rid": "SV-205723r569188_rule",
         "stig_id": "WN19-DC-000120",
-        "fix_id": "F-5988r355088_fix"
+        "fix_id": "F-5988r355088_fix",
+        "documentable": false
       },
       "id": "V-205723",
       "title": "Windows Server 2019 data files owned by users must be on a different logical partition from the directory server data files.",
@@ -1947,11 +1947,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-205724",
         "rid": "SV-205724r569188_rule",
         "stig_id": "WN19-SO-000230",
-        "fix_id": "F-5989r355091_fix"
+        "fix_id": "F-5989r355091_fix",
+        "documentable": false
       },
       "id": "V-205724",
       "title": "Windows Server 2019 must not allow anonymous enumeration of shares.",
@@ -1965,11 +1965,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-205725",
         "rid": "SV-205725r569188_rule",
         "stig_id": "WN19-SO-000250",
-        "fix_id": "F-5990r355094_fix"
+        "fix_id": "F-5990r355094_fix",
+        "documentable": false
       },
       "id": "V-205725",
       "title": "Windows Server 2019 must restrict anonymous access to Named Pipes and Shares.",
@@ -1983,11 +1983,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-205726",
         "rid": "SV-205726r569188_rule",
         "stig_id": "WN19-DC-000160",
-        "fix_id": "F-5991r355097_fix"
+        "fix_id": "F-5991r355097_fix",
+        "documentable": false
       },
       "id": "V-205726",
       "title": "Windows Server 2019 directory service must be configured to terminate LDAP-based network connections to the directory server after five minutes of inactivity.",
@@ -2001,16 +2001,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
+        "gid": "V-205727",
+        "rid": "SV-205727r569188_rule",
+        "stig_id": "WN19-00-000250",
+        "fix_id": "F-5992r355100_fix",
         "satisfies": [
           "SRG-OS-000185-GPOS-00079",
           "SRG-OS-000404-GPOS-00183",
           "SRG-OS-000405-GPOS-00184"
         ],
-        "gid": "V-205727",
-        "rid": "SV-205727r569188_rule",
-        "stig_id": "WN19-00-000250",
-        "fix_id": "F-5992r355100_fix"
+        "documentable": false
       },
       "id": "V-205727",
       "title": "Windows Server 2019 systems requiring data at rest protections must employ cryptographic mechanisms to prevent unauthorized disclosure and modification of the information at rest.",
@@ -2024,11 +2024,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000191-GPOS-00080",
         "gid": "V-205728",
         "rid": "SV-205728r569188_rule",
         "stig_id": "WN19-00-000290",
-        "fix_id": "F-5993r641887_fix"
+        "fix_id": "F-5993r641887_fix",
+        "documentable": false
       },
       "id": "V-205728",
       "title": "Windows Server 2019 must employ automated mechanisms to determine the state of system components with regard to flaw remediation using the following frequency: continuously, where Host Based Security System (HBSS) is used; 30 days, for any additional internal network scans not covered by HBSS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP).",
@@ -2042,15 +2042,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000240-GPOS-00090",
+        "gid": "V-205729",
+        "rid": "SV-205729r569188_rule",
+        "stig_id": "WN19-AU-000150",
+        "fix_id": "F-5994r355106_fix",
         "satisfies": [
           "SRG-OS-000240-GPOS-00090",
           "SRG-OS-000470-GPOS-00214"
         ],
-        "gid": "V-205729",
-        "rid": "SV-205729r569188_rule",
-        "stig_id": "WN19-AU-000150",
-        "fix_id": "F-5994r355106_fix"
+        "documentable": false
       },
       "id": "V-205729",
       "title": "Windows Server 2019 must be configured to audit Logon/Logoff - Account Lockout successes.",
@@ -2064,15 +2064,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000240-GPOS-00090",
+        "gid": "V-205730",
+        "rid": "SV-205730r569188_rule",
+        "stig_id": "WN19-AU-000160",
+        "fix_id": "F-5995r355109_fix",
         "satisfies": [
           "SRG-OS-000240-GPOS-00090",
           "SRG-OS-000470-GPOS-00214"
         ],
-        "gid": "V-205730",
-        "rid": "SV-205730r569188_rule",
-        "stig_id": "WN19-AU-000160",
-        "fix_id": "F-5995r355109_fix"
+        "documentable": false
       },
       "id": "V-205730",
       "title": "Windows Server 2019 must be configured to audit Logon/Logoff - Account Lockout failures.",
@@ -2086,15 +2086,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000257-GPOS-00098",
+        "gid": "V-205731",
+        "rid": "SV-205731r569188_rule",
+        "stig_id": "WN19-AU-000060",
+        "fix_id": "F-5996r355112_fix",
         "satisfies": [
           "SRG-OS-000257-GPOS-00098",
           "SRG-OS-000258-GPOS-00099"
         ],
-        "gid": "V-205731",
-        "rid": "SV-205731r569188_rule",
-        "stig_id": "WN19-AU-000060",
-        "fix_id": "F-5996r355112_fix"
+        "documentable": false
       },
       "id": "V-205731",
       "title": "Windows Server 2019 Event Viewer must be protected from unauthorized modification and deletion.",
@@ -2108,11 +2108,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-205732",
         "rid": "SV-205732r569188_rule",
         "stig_id": "WN19-DC-000410",
-        "fix_id": "F-5997r355115_fix"
+        "fix_id": "F-5997r355115_fix",
+        "documentable": false
       },
       "id": "V-205732",
       "title": "Windows Server 2019 Deny log on through Remote Desktop Services user right on domain controllers must be configured to prevent unauthenticated access.",
@@ -2126,11 +2126,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-205733",
         "rid": "SV-205733r569188_rule",
         "stig_id": "WN19-MS-000120",
-        "fix_id": "F-5998r355118_fix"
+        "fix_id": "F-5998r355118_fix",
+        "documentable": false
       },
       "id": "V-205733",
       "title": "Windows Server 2019 Deny log on through Remote Desktop Services user right on domain-joined member servers must be configured to prevent access from highly privileged domain accounts and all local accounts and from unauthenticated access on all systems.",
@@ -2144,16 +2144,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000312-GPOS-00122",
+        "gid": "V-205734",
+        "rid": "SV-205734r569188_rule",
+        "stig_id": "WN19-00-000140",
+        "fix_id": "F-5999r355121_fix",
         "satisfies": [
           "SRG-OS-000312-GPOS-00122",
           "SRG-OS-000312-GPOS-00123",
           "SRG-OS-000312-GPOS-00124"
         ],
-        "gid": "V-205734",
-        "rid": "SV-205734r569188_rule",
-        "stig_id": "WN19-00-000140",
-        "fix_id": "F-5999r355121_fix"
+        "documentable": false
       },
       "id": "V-205734",
       "title": "Windows Server 2019 permissions for the system drive root directory (usually C:\\) must conform to minimum requirements.",
@@ -2167,16 +2167,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000312-GPOS-00122",
+        "gid": "V-205735",
+        "rid": "SV-205735r569188_rule",
+        "stig_id": "WN19-00-000150",
+        "fix_id": "F-6000r355124_fix",
         "satisfies": [
           "SRG-OS-000312-GPOS-00122",
           "SRG-OS-000312-GPOS-00123",
           "SRG-OS-000312-GPOS-00124"
         ],
-        "gid": "V-205735",
-        "rid": "SV-205735r569188_rule",
-        "stig_id": "WN19-00-000150",
-        "fix_id": "F-6000r355124_fix"
+        "documentable": false
       },
       "id": "V-205735",
       "title": "Windows Server 2019 permissions for program file directories must conform to minimum requirements.",
@@ -2190,16 +2190,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000312-GPOS-00122",
+        "gid": "V-205736",
+        "rid": "SV-205736r569188_rule",
+        "stig_id": "WN19-00-000160",
+        "fix_id": "F-6001r355127_fix",
         "satisfies": [
           "SRG-OS-000312-GPOS-00122",
           "SRG-OS-000312-GPOS-00123",
           "SRG-OS-000312-GPOS-00124"
         ],
-        "gid": "V-205736",
-        "rid": "SV-205736r569188_rule",
-        "stig_id": "WN19-00-000160",
-        "fix_id": "F-6001r355127_fix"
+        "documentable": false
       },
       "id": "V-205736",
       "title": "Windows Server 2019 permissions for the Windows installation directory must conform to minimum requirements.",
@@ -2213,11 +2213,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205737",
         "rid": "SV-205737r569188_rule",
         "stig_id": "WN19-00-000170",
-        "fix_id": "F-6002r355130_fix"
+        "fix_id": "F-6002r355130_fix",
+        "documentable": false
       },
       "id": "V-205737",
       "title": "Windows Server 2019 default permissions for the HKEY_LOCAL_MACHINE registry hive must be maintained.",
@@ -2231,11 +2231,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205738",
         "rid": "SV-205738r569188_rule",
         "stig_id": "WN19-DC-000010",
-        "fix_id": "F-6003r355133_fix"
+        "fix_id": "F-6003r355133_fix",
+        "documentable": false
       },
       "id": "V-205738",
       "title": "Windows Server 2019 must only allow administrators responsible for the domain controller to have Administrator rights on the system.",
@@ -2249,11 +2249,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205739",
         "rid": "SV-205739r569188_rule",
         "stig_id": "WN19-DC-000070",
-        "fix_id": "F-6004r355136_fix"
+        "fix_id": "F-6004r355136_fix",
+        "documentable": false
       },
       "id": "V-205739",
       "title": "Windows Server 2019 permissions on the Active Directory data files must only allow System and Administrators access.",
@@ -2267,11 +2267,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205740",
         "rid": "SV-205740r569188_rule",
         "stig_id": "WN19-DC-000080",
-        "fix_id": "F-6005r355139_fix"
+        "fix_id": "F-6005r355139_fix",
+        "documentable": false
       },
       "id": "V-205740",
       "title": "Windows Server 2019 Active Directory SYSVOL directory must have the proper access control permissions.",
@@ -2285,11 +2285,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205741",
         "rid": "SV-205741r569188_rule",
         "stig_id": "WN19-DC-000090",
-        "fix_id": "F-6006r355142_fix"
+        "fix_id": "F-6006r355142_fix",
+        "documentable": false
       },
       "id": "V-205741",
       "title": "Windows Server 2019 Active Directory Group Policy objects must have proper access control permissions.",
@@ -2303,11 +2303,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205742",
         "rid": "SV-205742r569188_rule",
         "stig_id": "WN19-DC-000100",
-        "fix_id": "F-6007r355145_fix"
+        "fix_id": "F-6007r355145_fix",
+        "documentable": false
       },
       "id": "V-205742",
       "title": "Windows Server 2019 Active Directory Domain Controllers Organizational Unit (OU) object must have the proper access control permissions.",
@@ -2321,11 +2321,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205743",
         "rid": "SV-205743r569188_rule",
         "stig_id": "WN19-DC-000110",
-        "fix_id": "F-6008r355148_fix"
+        "fix_id": "F-6008r355148_fix",
+        "documentable": false
       },
       "id": "V-205743",
       "title": "Windows Server 2019 organization created Active Directory Organizational Unit (OU) objects must have proper access control permissions.",
@@ -2339,11 +2339,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205744",
         "rid": "SV-205744r569188_rule",
         "stig_id": "WN19-DC-000350",
-        "fix_id": "F-6009r355151_fix"
+        "fix_id": "F-6009r355151_fix",
+        "documentable": false
       },
       "id": "V-205744",
       "title": "Windows Server 2019 Add workstations to domain user right must only be assigned to the Administrators group on domain controllers.",
@@ -2357,11 +2357,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205745",
         "rid": "SV-205745r569188_rule",
         "stig_id": "WN19-DC-000420",
-        "fix_id": "F-6010r355154_fix"
+        "fix_id": "F-6010r355154_fix",
+        "documentable": false
       },
       "id": "V-205745",
       "title": "Windows Server 2019 Enable computer and user accounts to be trusted for delegation user right must only be assigned to the Administrators group on domain controllers.",
@@ -2375,11 +2375,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205746",
         "rid": "SV-205746r569188_rule",
         "stig_id": "WN19-MS-000010",
-        "fix_id": "F-6011r355157_fix"
+        "fix_id": "F-6011r355157_fix",
+        "documentable": false
       },
       "id": "V-205746",
       "title": "Windows Server 2019 must only allow administrators responsible for the member server or standalone system to have Administrator rights on the system.",
@@ -2393,11 +2393,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205747",
         "rid": "SV-205747r569188_rule",
         "stig_id": "WN19-MS-000060",
-        "fix_id": "F-6012r355160_fix"
+        "fix_id": "F-6012r355160_fix",
+        "documentable": false
       },
       "id": "V-205747",
       "title": "Windows Server 2019 must restrict remote calls to the Security Account Manager (SAM) to Administrators on domain-joined member servers and standalone systems.",
@@ -2411,11 +2411,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205748",
         "rid": "SV-205748r569188_rule",
         "stig_id": "WN19-MS-000130",
-        "fix_id": "F-6013r355163_fix"
+        "fix_id": "F-6013r355163_fix",
+        "documentable": false
       },
       "id": "V-205748",
       "title": "Windows Server 2019 Enable computer and user accounts to be trusted for delegation user right must not be assigned to any groups or accounts on domain-joined member servers and standalone systems.",
@@ -2429,11 +2429,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205749",
         "rid": "SV-205749r569188_rule",
         "stig_id": "WN19-UR-000010",
-        "fix_id": "F-6014r355166_fix"
+        "fix_id": "F-6014r355166_fix",
+        "documentable": false
       },
       "id": "V-205749",
       "title": "Windows Server 2019 Access Credential Manager as a trusted caller user right must not be assigned to any groups or accounts.",
@@ -2447,11 +2447,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205750",
         "rid": "SV-205750r569188_rule",
         "stig_id": "WN19-UR-000020",
-        "fix_id": "F-6015r355169_fix"
+        "fix_id": "F-6015r355169_fix",
+        "documentable": false
       },
       "id": "V-205750",
       "title": "Windows Server 2019 Act as part of the operating system user right must not be assigned to any groups or accounts.",
@@ -2465,11 +2465,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205751",
         "rid": "SV-205751r569188_rule",
         "stig_id": "WN19-UR-000040",
-        "fix_id": "F-6016r355172_fix"
+        "fix_id": "F-6016r355172_fix",
+        "documentable": false
       },
       "id": "V-205751",
       "title": "Windows Server 2019 Back up files and directories user right must only be assigned to the Administrators group.",
@@ -2483,11 +2483,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205752",
         "rid": "SV-205752r569188_rule",
         "stig_id": "WN19-UR-000050",
-        "fix_id": "F-6017r355175_fix"
+        "fix_id": "F-6017r355175_fix",
+        "documentable": false
       },
       "id": "V-205752",
       "title": "Windows Server 2019 Create a pagefile user right must only be assigned to the Administrators group.",
@@ -2501,11 +2501,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205753",
         "rid": "SV-205753r569188_rule",
         "stig_id": "WN19-UR-000060",
-        "fix_id": "F-6018r355178_fix"
+        "fix_id": "F-6018r355178_fix",
+        "documentable": false
       },
       "id": "V-205753",
       "title": "Windows Server 2019 Create a token object user right must not be assigned to any groups or accounts.",
@@ -2519,11 +2519,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205754",
         "rid": "SV-205754r569188_rule",
         "stig_id": "WN19-UR-000070",
-        "fix_id": "F-6019r355181_fix"
+        "fix_id": "F-6019r355181_fix",
+        "documentable": false
       },
       "id": "V-205754",
       "title": "Windows Server 2019 Create global objects user right must only be assigned to Administrators, Service, Local Service, and Network Service.",
@@ -2537,11 +2537,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205755",
         "rid": "SV-205755r569188_rule",
         "stig_id": "WN19-UR-000080",
-        "fix_id": "F-6020r355184_fix"
+        "fix_id": "F-6020r355184_fix",
+        "documentable": false
       },
       "id": "V-205755",
       "title": "Windows Server 2019 Create permanent shared objects user right must not be assigned to any groups or accounts.",
@@ -2555,11 +2555,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205756",
         "rid": "SV-205756r569188_rule",
         "stig_id": "WN19-UR-000090",
-        "fix_id": "F-6021r355187_fix"
+        "fix_id": "F-6021r355187_fix",
+        "documentable": false
       },
       "id": "V-205756",
       "title": "Windows Server 2019 Create symbolic links user right must only be assigned to the Administrators group.",
@@ -2573,11 +2573,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205757",
         "rid": "SV-205757r569188_rule",
         "stig_id": "WN19-UR-000100",
-        "fix_id": "F-6022r355190_fix"
+        "fix_id": "F-6022r355190_fix",
+        "documentable": false
       },
       "id": "V-205757",
       "title": "Windows Server 2019 Debug programs: user right must only be assigned to the Administrators group.",
@@ -2591,11 +2591,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205758",
         "rid": "SV-205758r569188_rule",
         "stig_id": "WN19-UR-000110",
-        "fix_id": "F-6023r355193_fix"
+        "fix_id": "F-6023r355193_fix",
+        "documentable": false
       },
       "id": "V-205758",
       "title": "Windows Server 2019 Force shutdown from a remote system user right must only be assigned to the Administrators group.",
@@ -2609,11 +2609,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205759",
         "rid": "SV-205759r569188_rule",
         "stig_id": "WN19-UR-000120",
-        "fix_id": "F-6024r355196_fix"
+        "fix_id": "F-6024r355196_fix",
+        "documentable": false
       },
       "id": "V-205759",
       "title": "Windows Server 2019 Generate security audits user right must only be assigned to Local Service and Network Service.",
@@ -2627,11 +2627,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205760",
         "rid": "SV-205760r569188_rule",
         "stig_id": "WN19-UR-000130",
-        "fix_id": "F-6025r355199_fix"
+        "fix_id": "F-6025r355199_fix",
+        "documentable": false
       },
       "id": "V-205760",
       "title": "Windows Server 2019 Impersonate a client after authentication user right must only be assigned to Administrators, Service, Local Service, and Network Service.",
@@ -2645,11 +2645,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205761",
         "rid": "SV-205761r569188_rule",
         "stig_id": "WN19-UR-000140",
-        "fix_id": "F-6026r355202_fix"
+        "fix_id": "F-6026r355202_fix",
+        "documentable": false
       },
       "id": "V-205761",
       "title": "Windows Server 2019 Increase scheduling priority: user right must only be assigned to the Administrators group.",
@@ -2663,11 +2663,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205762",
         "rid": "SV-205762r569188_rule",
         "stig_id": "WN19-UR-000150",
-        "fix_id": "F-6027r355205_fix"
+        "fix_id": "F-6027r355205_fix",
+        "documentable": false
       },
       "id": "V-205762",
       "title": "Windows Server 2019 Load and unload device drivers user right must only be assigned to the Administrators group.",
@@ -2681,11 +2681,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205763",
         "rid": "SV-205763r569188_rule",
         "stig_id": "WN19-UR-000160",
-        "fix_id": "F-6028r355208_fix"
+        "fix_id": "F-6028r355208_fix",
+        "documentable": false
       },
       "id": "V-205763",
       "title": "Windows Server 2019 Lock pages in memory user right must not be assigned to any groups or accounts.",
@@ -2699,11 +2699,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205764",
         "rid": "SV-205764r569188_rule",
         "stig_id": "WN19-UR-000180",
-        "fix_id": "F-6029r355211_fix"
+        "fix_id": "F-6029r355211_fix",
+        "documentable": false
       },
       "id": "V-205764",
       "title": "Windows Server 2019 Modify firmware environment values user right must only be assigned to the Administrators group.",
@@ -2717,11 +2717,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205765",
         "rid": "SV-205765r569188_rule",
         "stig_id": "WN19-UR-000190",
-        "fix_id": "F-6030r355214_fix"
+        "fix_id": "F-6030r355214_fix",
+        "documentable": false
       },
       "id": "V-205765",
       "title": "Windows Server 2019 Perform volume maintenance tasks user right must only be assigned to the Administrators group.",
@@ -2735,11 +2735,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205766",
         "rid": "SV-205766r569188_rule",
         "stig_id": "WN19-UR-000200",
-        "fix_id": "F-6031r355217_fix"
+        "fix_id": "F-6031r355217_fix",
+        "documentable": false
       },
       "id": "V-205766",
       "title": "Windows Server 2019 Profile single process user right must only be assigned to the Administrators group.",
@@ -2753,11 +2753,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205767",
         "rid": "SV-205767r569188_rule",
         "stig_id": "WN19-UR-000210",
-        "fix_id": "F-6032r355220_fix"
+        "fix_id": "F-6032r355220_fix",
+        "documentable": false
       },
       "id": "V-205767",
       "title": "Windows Server 2019 Restore files and directories user right must only be assigned to the Administrators group.",
@@ -2771,11 +2771,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000324-GPOS-00125",
         "gid": "V-205768",
         "rid": "SV-205768r569188_rule",
         "stig_id": "WN19-UR-000220",
-        "fix_id": "F-6033r355223_fix"
+        "fix_id": "F-6033r355223_fix",
+        "documentable": false
       },
       "id": "V-205768",
       "title": "Windows Server 2019 Take ownership of files or other objects user right must only be assigned to the Administrators group.",
@@ -2789,17 +2789,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205769",
+        "rid": "SV-205769r569188_rule",
+        "stig_id": "WN19-AU-000090",
+        "fix_id": "F-6034r355226_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000466-GPOS-00210"
         ],
-        "gid": "V-205769",
-        "rid": "SV-205769r569188_rule",
-        "stig_id": "WN19-AU-000090",
-        "fix_id": "F-6034r355226_fix"
+        "documentable": false
       },
       "id": "V-205769",
       "title": "Windows Server 2019 must be configured to audit Account Management - Other Account Management Events successes.",
@@ -2813,15 +2813,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205770",
+        "rid": "SV-205770r569188_rule",
+        "stig_id": "WN19-AU-000140",
+        "fix_id": "F-6035r355229_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-205770",
-        "rid": "SV-205770r569188_rule",
-        "stig_id": "WN19-AU-000140",
-        "fix_id": "F-6035r355229_fix"
+        "documentable": false
       },
       "id": "V-205770",
       "title": "Windows Server 2019 must be configured to audit Detailed Tracking - Process Creation successes.",
@@ -2835,17 +2835,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205771",
+        "rid": "SV-205771r569188_rule",
+        "stig_id": "WN19-AU-000260",
+        "fix_id": "F-6036r355232_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205771",
-        "rid": "SV-205771r569188_rule",
-        "stig_id": "WN19-AU-000260",
-        "fix_id": "F-6036r355232_fix"
+        "documentable": false
       },
       "id": "V-205771",
       "title": "Windows Server 2019 must be configured to audit Policy Change - Audit Policy Change successes.",
@@ -2859,17 +2859,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205772",
+        "rid": "SV-205772r569188_rule",
+        "stig_id": "WN19-AU-000270",
+        "fix_id": "F-6037r355235_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205772",
-        "rid": "SV-205772r569188_rule",
-        "stig_id": "WN19-AU-000270",
-        "fix_id": "F-6037r355235_fix"
+        "documentable": false
       },
       "id": "V-205772",
       "title": "Windows Server 2019 must be configured to audit Policy Change - Audit Policy Change failures.",
@@ -2883,17 +2883,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205773",
+        "rid": "SV-205773r569188_rule",
+        "stig_id": "WN19-AU-000280",
+        "fix_id": "F-6038r355238_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000466-GPOS-00210"
         ],
-        "gid": "V-205773",
-        "rid": "SV-205773r569188_rule",
-        "stig_id": "WN19-AU-000280",
-        "fix_id": "F-6038r355238_fix"
+        "documentable": false
       },
       "id": "V-205773",
       "title": "Windows Server 2019 must be configured to audit Policy Change - Authentication Policy Change successes.",
@@ -2907,17 +2907,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205774",
+        "rid": "SV-205774r569188_rule",
+        "stig_id": "WN19-AU-000290",
+        "fix_id": "F-6039r355241_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000466-GPOS-00210"
         ],
-        "gid": "V-205774",
-        "rid": "SV-205774r569188_rule",
-        "stig_id": "WN19-AU-000290",
-        "fix_id": "F-6039r355241_fix"
+        "documentable": false
       },
       "id": "V-205774",
       "title": "Windows Server 2019 must be configured to audit Policy Change - Authorization Policy Change successes.",
@@ -2931,17 +2931,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205775",
+        "rid": "SV-205775r569188_rule",
+        "stig_id": "WN19-AU-000300",
+        "fix_id": "F-6040r355244_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000466-GPOS-00210"
         ],
-        "gid": "V-205775",
-        "rid": "SV-205775r569188_rule",
-        "stig_id": "WN19-AU-000300",
-        "fix_id": "F-6040r355244_fix"
+        "documentable": false
       },
       "id": "V-205775",
       "title": "Windows Server 2019 must be configured to audit Privilege Use - Sensitive Privilege Use successes.",
@@ -2955,17 +2955,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205776",
+        "rid": "SV-205776r569188_rule",
+        "stig_id": "WN19-AU-000310",
+        "fix_id": "F-6041r355247_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000466-GPOS-00210"
         ],
-        "gid": "V-205776",
-        "rid": "SV-205776r569188_rule",
-        "stig_id": "WN19-AU-000310",
-        "fix_id": "F-6041r355247_fix"
+        "documentable": false
       },
       "id": "V-205776",
       "title": "Windows Server 2019 must be configured to audit Privilege Use - Sensitive Privilege Use failures.",
@@ -2979,17 +2979,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205777",
+        "rid": "SV-205777r569188_rule",
+        "stig_id": "WN19-AU-000320",
+        "fix_id": "F-6042r355250_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205777",
-        "rid": "SV-205777r569188_rule",
-        "stig_id": "WN19-AU-000320",
-        "fix_id": "F-6042r355250_fix"
+        "documentable": false
       },
       "id": "V-205777",
       "title": "Windows Server 2019 must be configured to audit System - IPsec Driver successes.",
@@ -3003,17 +3003,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205778",
+        "rid": "SV-205778r569188_rule",
+        "stig_id": "WN19-AU-000330",
+        "fix_id": "F-6043r355253_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205778",
-        "rid": "SV-205778r569188_rule",
-        "stig_id": "WN19-AU-000330",
-        "fix_id": "F-6043r355253_fix"
+        "documentable": false
       },
       "id": "V-205778",
       "title": "Windows Server 2019 must be configured to audit System - IPsec Driver failures.",
@@ -3027,17 +3027,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205779",
+        "rid": "SV-205779r569188_rule",
+        "stig_id": "WN19-AU-000340",
+        "fix_id": "F-6044r355700_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205779",
-        "rid": "SV-205779r569188_rule",
-        "stig_id": "WN19-AU-000340",
-        "fix_id": "F-6044r355700_fix"
+        "documentable": false
       },
       "id": "V-205779",
       "title": "Windows Server 2019 must be configured to audit System - Other System Events successes.",
@@ -3051,17 +3051,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205780",
+        "rid": "SV-205780r569188_rule",
+        "stig_id": "WN19-AU-000350",
+        "fix_id": "F-6045r355703_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205780",
-        "rid": "SV-205780r569188_rule",
-        "stig_id": "WN19-AU-000350",
-        "fix_id": "F-6045r355703_fix"
+        "documentable": false
       },
       "id": "V-205780",
       "title": "Windows Server 2019 must be configured to audit System - Other System Events failures.",
@@ -3075,17 +3075,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205781",
+        "rid": "SV-205781r569188_rule",
+        "stig_id": "WN19-AU-000360",
+        "fix_id": "F-6046r355706_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205781",
-        "rid": "SV-205781r569188_rule",
-        "stig_id": "WN19-AU-000360",
-        "fix_id": "F-6046r355706_fix"
+        "documentable": false
       },
       "id": "V-205781",
       "title": "Windows Server 2019 must be configured to audit System - Security State Change successes.",
@@ -3099,17 +3099,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205782",
+        "rid": "SV-205782r569188_rule",
+        "stig_id": "WN19-AU-000370",
+        "fix_id": "F-6047r355709_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205782",
-        "rid": "SV-205782r569188_rule",
-        "stig_id": "WN19-AU-000370",
-        "fix_id": "F-6047r355709_fix"
+        "documentable": false
       },
       "id": "V-205782",
       "title": "Windows Server 2019 must be configured to audit System - Security System Extension successes.",
@@ -3123,17 +3123,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205783",
+        "rid": "SV-205783r569188_rule",
+        "stig_id": "WN19-AU-000380",
+        "fix_id": "F-6048r355712_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000471-GPOS-00215",
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-205783",
-        "rid": "SV-205783r569188_rule",
-        "stig_id": "WN19-AU-000380",
-        "fix_id": "F-6048r355712_fix"
+        "documentable": false
       },
       "id": "V-205783",
       "title": "Windows Server 2019 must be configured to audit System - System Integrity successes.",
@@ -3147,17 +3147,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205784",
+        "rid": "SV-205784r569188_rule",
+        "stig_id": "WN19-AU-000390",
+        "fix_id": "F-6049r355715_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000471-GPOS-00215",
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "gid": "V-205784",
-        "rid": "SV-205784r569188_rule",
-        "stig_id": "WN19-AU-000390",
-        "fix_id": "F-6049r355715_fix"
+        "documentable": false
       },
       "id": "V-205784",
       "title": "Windows Server 2019 must be configured to audit System - System Integrity failures.",
@@ -3171,17 +3171,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205785",
+        "rid": "SV-205785r569188_rule",
+        "stig_id": "WN19-DC-000170",
+        "fix_id": "F-6050r355718_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205785",
-        "rid": "SV-205785r569188_rule",
-        "stig_id": "WN19-DC-000170",
-        "fix_id": "F-6050r355718_fix"
+        "documentable": false
       },
       "id": "V-205785",
       "title": "Windows Server 2019 Active Directory Group Policy objects must be configured with proper audit settings.",
@@ -3195,17 +3195,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205786",
+        "rid": "SV-205786r569188_rule",
+        "stig_id": "WN19-DC-000180",
+        "fix_id": "F-6051r355721_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205786",
-        "rid": "SV-205786r569188_rule",
-        "stig_id": "WN19-DC-000180",
-        "fix_id": "F-6051r355721_fix"
+        "documentable": false
       },
       "id": "V-205786",
       "title": "Windows Server 2019 Active Directory Domain object must be configured with proper audit settings.",
@@ -3219,17 +3219,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205787",
+        "rid": "SV-205787r569188_rule",
+        "stig_id": "WN19-DC-000190",
+        "fix_id": "F-6052r355724_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205787",
-        "rid": "SV-205787r569188_rule",
-        "stig_id": "WN19-DC-000190",
-        "fix_id": "F-6052r355724_fix"
+        "documentable": false
       },
       "id": "V-205787",
       "title": "Windows Server 2019 Active Directory Infrastructure object must be configured with proper audit settings.",
@@ -3243,17 +3243,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205788",
+        "rid": "SV-205788r569188_rule",
+        "stig_id": "WN19-DC-000200",
+        "fix_id": "F-6053r355727_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205788",
-        "rid": "SV-205788r569188_rule",
-        "stig_id": "WN19-DC-000200",
-        "fix_id": "F-6053r355727_fix"
+        "documentable": false
       },
       "id": "V-205788",
       "title": "Windows Server 2019 Active Directory Domain Controllers Organizational Unit (OU) object must be configured with proper audit settings.",
@@ -3267,17 +3267,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205789",
+        "rid": "SV-205789r569188_rule",
+        "stig_id": "WN19-DC-000210",
+        "fix_id": "F-6054r355730_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205789",
-        "rid": "SV-205789r569188_rule",
-        "stig_id": "WN19-DC-000210",
-        "fix_id": "F-6054r355730_fix"
+        "documentable": false
       },
       "id": "V-205789",
       "title": "Windows Server 2019 Active Directory AdminSDHolder object must be configured with proper audit settings.",
@@ -3291,17 +3291,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205790",
+        "rid": "SV-205790r569188_rule",
+        "stig_id": "WN19-DC-000220",
+        "fix_id": "F-6055r355733_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205790",
-        "rid": "SV-205790r569188_rule",
-        "stig_id": "WN19-DC-000220",
-        "fix_id": "F-6055r355733_fix"
+        "documentable": false
       },
       "id": "V-205790",
       "title": "Windows Server 2019 Active Directory RID Manager$ object must be configured with proper audit settings.",
@@ -3315,17 +3315,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205791",
+        "rid": "SV-205791r569188_rule",
+        "stig_id": "WN19-DC-000240",
+        "fix_id": "F-6056r355736_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205791",
-        "rid": "SV-205791r569188_rule",
-        "stig_id": "WN19-DC-000240",
-        "fix_id": "F-6056r355736_fix"
+        "documentable": false
       },
       "id": "V-205791",
       "title": "Windows Server 2019 must be configured to audit DS Access - Directory Service Access successes.",
@@ -3339,17 +3339,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205792",
+        "rid": "SV-205792r569188_rule",
+        "stig_id": "WN19-DC-000250",
+        "fix_id": "F-6057r355739_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205792",
-        "rid": "SV-205792r569188_rule",
-        "stig_id": "WN19-DC-000250",
-        "fix_id": "F-6057r355739_fix"
+        "documentable": false
       },
       "id": "V-205792",
       "title": "Windows Server 2019 must be configured to audit DS Access - Directory Service Access failures.",
@@ -3363,17 +3363,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205793",
+        "rid": "SV-205793r569188_rule",
+        "stig_id": "WN19-DC-000260",
+        "fix_id": "F-6058r355742_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205793",
-        "rid": "SV-205793r569188_rule",
-        "stig_id": "WN19-DC-000260",
-        "fix_id": "F-6058r355742_fix"
+        "documentable": false
       },
       "id": "V-205793",
       "title": "Windows Server 2019 must be configured to audit DS Access - Directory Service Changes successes.",
@@ -3387,17 +3387,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-205794",
+        "rid": "SV-205794r569188_rule",
+        "stig_id": "WN19-DC-000270",
+        "fix_id": "F-6059r355745_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "gid": "V-205794",
-        "rid": "SV-205794r569188_rule",
-        "stig_id": "WN19-DC-000270",
-        "fix_id": "F-6059r355745_fix"
+        "documentable": false
       },
       "id": "V-205794",
       "title": "Windows Server 2019 must be configured to audit DS Access - Directory Service Changes failures.",
@@ -3411,11 +3411,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000329-GPOS-00128",
         "gid": "V-205795",
         "rid": "SV-205795r569188_rule",
         "stig_id": "WN19-AC-000010",
-        "fix_id": "F-6060r355748_fix"
+        "fix_id": "F-6060r355748_fix",
+        "documentable": false
       },
       "id": "V-205795",
       "title": "Windows Server 2019 account lockout duration must be configured to 15 minutes or greater.",
@@ -3429,11 +3429,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-205796",
         "rid": "SV-205796r569188_rule",
         "stig_id": "WN19-CC-000270",
-        "fix_id": "F-6061r355751_fix"
+        "fix_id": "F-6061r355751_fix",
+        "documentable": false
       },
       "id": "V-205796",
       "title": "Windows Server 2019 Application event log size must be configured to 32768 KB or greater.",
@@ -3447,11 +3447,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-205797",
         "rid": "SV-205797r569188_rule",
         "stig_id": "WN19-CC-000280",
-        "fix_id": "F-6062r355754_fix"
+        "fix_id": "F-6062r355754_fix",
+        "documentable": false
       },
       "id": "V-205797",
       "title": "Windows Server 2019 Security event log size must be configured to 196608 KB or greater.",
@@ -3465,11 +3465,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-205798",
         "rid": "SV-205798r569188_rule",
         "stig_id": "WN19-CC-000290",
-        "fix_id": "F-6063r355757_fix"
+        "fix_id": "F-6063r355757_fix",
+        "documentable": false
       },
       "id": "V-205798",
       "title": "Windows Server 2019 System event log size must be configured to 32768 KB or greater.",
@@ -3483,11 +3483,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
         "gid": "V-205799",
         "rid": "SV-205799r569188_rule",
         "stig_id": "WN19-AU-000010",
-        "fix_id": "F-6064r355760_fix"
+        "fix_id": "F-6064r355760_fix",
+        "documentable": false
       },
       "id": "V-205799",
       "title": "Windows Server 2019 audit records must be backed up to a different system or media than the system being audited.",
@@ -3501,11 +3501,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
         "gid": "V-205800",
         "rid": "SV-205800r569188_rule",
         "stig_id": "WN19-00-000440",
-        "fix_id": "F-6065r355763_fix"
+        "fix_id": "F-6065r355763_fix",
+        "documentable": false
       },
       "id": "V-205800",
       "title": "The Windows Server 2019 time service must synchronize with an appropriate DoD time source.",
@@ -3519,11 +3519,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000362-GPOS-00149",
         "gid": "V-205801",
         "rid": "SV-205801r569188_rule",
         "stig_id": "WN19-CC-000420",
-        "fix_id": "F-6066r355766_fix"
+        "fix_id": "F-6066r355766_fix",
+        "documentable": false
       },
       "id": "V-205801",
       "title": "Windows Server 2019 must prevent users from changing installation options.",
@@ -3537,11 +3537,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000362-GPOS-00149",
         "gid": "V-205802",
         "rid": "SV-205802r569188_rule",
         "stig_id": "WN19-CC-000430",
-        "fix_id": "F-6067r355769_fix"
+        "fix_id": "F-6067r355769_fix",
+        "documentable": false
       },
       "id": "V-205802",
       "title": "Windows Server 2019 must disable the Windows Installer Always install with elevated privileges option.",
@@ -3555,11 +3555,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000363-GPOS-00150",
         "gid": "V-205803",
         "rid": "SV-205803r569241_rule",
         "stig_id": "WN19-00-000220",
-        "fix_id": "F-6068r355772_fix"
+        "fix_id": "F-6068r355772_fix",
+        "documentable": false
       },
       "id": "V-205803",
       "title": "Windows Server 2019 system files must be monitored for unauthorized changes.",
@@ -3573,11 +3573,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-205804",
         "rid": "SV-205804r569188_rule",
         "stig_id": "WN19-CC-000210",
-        "fix_id": "F-6069r355775_fix"
+        "fix_id": "F-6069r355775_fix",
+        "documentable": false
       },
       "id": "V-205804",
       "title": "Windows Server 2019 Autoplay must be turned off for non-volume devices.",
@@ -3591,11 +3591,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-205805",
         "rid": "SV-205805r569188_rule",
         "stig_id": "WN19-CC-000220",
-        "fix_id": "F-6070r355778_fix"
+        "fix_id": "F-6070r355778_fix",
+        "documentable": false
       },
       "id": "V-205805",
       "title": "Windows Server 2019 default AutoRun behavior must be configured to prevent AutoRun commands.",
@@ -3609,11 +3609,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000368-GPOS-00154",
         "gid": "V-205806",
         "rid": "SV-205806r569188_rule",
         "stig_id": "WN19-CC-000230",
-        "fix_id": "F-6071r355781_fix"
+        "fix_id": "F-6071r355781_fix",
+        "documentable": false
       },
       "id": "V-205806",
       "title": "Windows Server 2019 AutoPlay must be disabled for all drives.",
@@ -3627,11 +3627,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000370-GPOS-00155",
         "gid": "V-205807",
         "rid": "SV-205807r569188_rule",
         "stig_id": "WN19-00-000080",
-        "fix_id": "F-6072r355784_fix"
+        "fix_id": "F-6072r355784_fix",
+        "documentable": false
       },
       "id": "V-205807",
       "title": "Windows Server 2019 must employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs.",
@@ -3645,15 +3645,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
+        "gid": "V-205808",
+        "rid": "SV-205808r569188_rule",
+        "stig_id": "WN19-CC-000340",
+        "fix_id": "F-6073r355787_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00156"
         ],
-        "gid": "V-205808",
-        "rid": "SV-205808r569188_rule",
-        "stig_id": "WN19-CC-000340",
-        "fix_id": "F-6073r355787_fix"
+        "documentable": false
       },
       "id": "V-205808",
       "title": "Windows Server 2019 must not save passwords in the Remote Desktop Client.",
@@ -3667,15 +3667,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
+        "gid": "V-205809",
+        "rid": "SV-205809r569188_rule",
+        "stig_id": "WN19-CC-000360",
+        "fix_id": "F-6074r355790_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00156"
         ],
-        "gid": "V-205809",
-        "rid": "SV-205809r569188_rule",
-        "stig_id": "WN19-CC-000360",
-        "fix_id": "F-6074r355790_fix"
+        "documentable": false
       },
       "id": "V-205809",
       "title": "Windows Server 2019 Remote Desktop Services must always prompt a client for passwords upon connection.",
@@ -3689,15 +3689,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
+        "gid": "V-205810",
+        "rid": "SV-205810r569188_rule",
+        "stig_id": "WN19-CC-000520",
+        "fix_id": "F-6075r355793_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00156"
         ],
-        "gid": "V-205810",
-        "rid": "SV-205810r569188_rule",
-        "stig_id": "WN19-CC-000520",
-        "fix_id": "F-6075r355793_fix"
+        "documentable": false
       },
       "id": "V-205810",
       "title": "Windows Server 2019 Windows Remote Management (WinRM) service must not store RunAs credentials.",
@@ -3711,15 +3711,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
+        "gid": "V-205811",
+        "rid": "SV-205811r569188_rule",
+        "stig_id": "WN19-SO-000380",
+        "fix_id": "F-6076r355796_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00156"
         ],
-        "gid": "V-205811",
-        "rid": "SV-205811r569188_rule",
-        "stig_id": "WN19-SO-000380",
-        "fix_id": "F-6076r355796_fix"
+        "documentable": false
       },
       "id": "V-205811",
       "title": "Windows Server 2019 User Account Control approval mode for the built-in Administrator must be enabled.",
@@ -3733,15 +3733,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
+        "gid": "V-205812",
+        "rid": "SV-205812r569188_rule",
+        "stig_id": "WN19-SO-000410",
+        "fix_id": "F-6077r355799_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00156"
         ],
-        "gid": "V-205812",
-        "rid": "SV-205812r569188_rule",
-        "stig_id": "WN19-SO-000410",
-        "fix_id": "F-6077r355799_fix"
+        "documentable": false
       },
       "id": "V-205812",
       "title": "Windows Server 2019 User Account Control must automatically deny standard user requests for elevation.",
@@ -3755,15 +3755,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00157",
+        "gid": "V-205813",
+        "rid": "SV-205813r569188_rule",
+        "stig_id": "WN19-SO-000440",
+        "fix_id": "F-6078r355802_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00156"
         ],
-        "gid": "V-205813",
-        "rid": "SV-205813r569188_rule",
-        "stig_id": "WN19-SO-000440",
-        "fix_id": "F-6078r355802_fix"
+        "documentable": false
       },
       "id": "V-205813",
       "title": "Windows Server 2019 User Account Control must run all administrators in Admin Approval Mode, enabling UAC.",
@@ -3777,11 +3777,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000379-GPOS-00164",
         "gid": "V-205814",
         "rid": "SV-205814r569188_rule",
         "stig_id": "WN19-MS-000040",
-        "fix_id": "F-6079r355805_fix"
+        "fix_id": "F-6079r355805_fix",
+        "documentable": false
       },
       "id": "V-205814",
       "title": "Windows Server 2019 must restrict unauthenticated Remote Procedure Call (RPC) clients from connecting to the RPC server on domain-joined member servers and standalone systems.",
@@ -3795,11 +3795,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000379-GPOS-00164",
         "gid": "V-205815",
         "rid": "SV-205815r569188_rule",
         "stig_id": "WN19-SO-000090",
-        "fix_id": "F-6080r355808_fix"
+        "fix_id": "F-6080r355808_fix",
+        "documentable": false
       },
       "id": "V-205815",
       "title": "Windows Server 2019 computer account password must not be prevented from being reset.",
@@ -3813,15 +3813,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000393-GPOS-00173",
+        "gid": "V-205816",
+        "rid": "SV-205816r569188_rule",
+        "stig_id": "WN19-CC-000480",
+        "fix_id": "F-6081r355811_fix",
         "satisfies": [
           "SRG-OS-000393-GPOS-00173",
           "SRG-OS-000394-GPOS-00174"
         ],
-        "gid": "V-205816",
-        "rid": "SV-205816r569188_rule",
-        "stig_id": "WN19-CC-000480",
-        "fix_id": "F-6081r355811_fix"
+        "documentable": false
       },
       "id": "V-205816",
       "title": "Windows Server 2019 Windows Remote Management (WinRM) client must not allow unencrypted traffic.",
@@ -3835,15 +3835,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000393-GPOS-00173",
+        "gid": "V-205817",
+        "rid": "SV-205817r569188_rule",
+        "stig_id": "WN19-CC-000510",
+        "fix_id": "F-6082r355814_fix",
         "satisfies": [
           "SRG-OS-000393-GPOS-00173",
           "SRG-OS-000394-GPOS-00174"
         ],
-        "gid": "V-205817",
-        "rid": "SV-205817r569188_rule",
-        "stig_id": "WN19-CC-000510",
-        "fix_id": "F-6082r355814_fix"
+        "documentable": false
       },
       "id": "V-205817",
       "title": "Windows Server 2019 Windows Remote Management (WinRM) service must not allow unencrypted traffic.",
@@ -3857,11 +3857,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000396-GPOS-00176",
         "gid": "V-205818",
         "rid": "SV-205818r569188_rule",
         "stig_id": "WN19-DC-000140",
-        "fix_id": "F-6083r355817_fix"
+        "fix_id": "F-6083r355817_fix",
+        "documentable": false
       },
       "id": "V-205818",
       "title": "Windows Server 2019 must use separate, NSA-approved (Type 1) cryptography to protect the directory data in transit for directory service implementations at a classified confidentiality level when replication data traverses a network cleared to a lower level than the data.",
@@ -3875,11 +3875,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000420-GPOS-00186",
         "gid": "V-205819",
         "rid": "SV-205819r569188_rule",
         "stig_id": "WN19-CC-000060",
-        "fix_id": "F-6084r355820_fix"
+        "fix_id": "F-6084r355820_fix",
+        "documentable": false
       },
       "id": "V-205819",
       "title": "Windows Server 2019 must be configured to ignore NetBIOS name release requests except from WINS servers.",
@@ -3893,15 +3893,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205820",
+        "rid": "SV-205820r569188_rule",
+        "stig_id": "WN19-DC-000320",
+        "fix_id": "F-6085r355823_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205820",
-        "rid": "SV-205820r569188_rule",
-        "stig_id": "WN19-DC-000320",
-        "fix_id": "F-6085r355823_fix"
+        "documentable": false
       },
       "id": "V-205820",
       "title": "Windows Server 2019 domain controllers must require LDAP access signing.",
@@ -3915,15 +3915,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205821",
+        "rid": "SV-205821r569188_rule",
+        "stig_id": "WN19-SO-000060",
+        "fix_id": "F-6086r355826_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205821",
-        "rid": "SV-205821r569188_rule",
-        "stig_id": "WN19-SO-000060",
-        "fix_id": "F-6086r355826_fix"
+        "documentable": false
       },
       "id": "V-205821",
       "title": "Windows Server 2019 setting Domain member: Digitally encrypt or sign secure channel data (always) must be configured to Enabled.",
@@ -3937,15 +3937,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205822",
+        "rid": "SV-205822r569188_rule",
+        "stig_id": "WN19-SO-000070",
+        "fix_id": "F-6087r355829_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205822",
-        "rid": "SV-205822r569188_rule",
-        "stig_id": "WN19-SO-000070",
-        "fix_id": "F-6087r355829_fix"
+        "documentable": false
       },
       "id": "V-205822",
       "title": "Windows Server 2019 setting Domain member: Digitally encrypt secure channel data (when possible) must be configured to enabled.",
@@ -3959,15 +3959,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205823",
+        "rid": "SV-205823r569188_rule",
+        "stig_id": "WN19-SO-000080",
+        "fix_id": "F-6088r355832_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205823",
-        "rid": "SV-205823r569188_rule",
-        "stig_id": "WN19-SO-000080",
-        "fix_id": "F-6088r355832_fix"
+        "documentable": false
       },
       "id": "V-205823",
       "title": "Windows Server 2019 setting Domain member: Digitally sign secure channel data (when possible) must be configured to Enabled.",
@@ -3981,15 +3981,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205824",
+        "rid": "SV-205824r569188_rule",
+        "stig_id": "WN19-SO-000110",
+        "fix_id": "F-6089r355835_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205824",
-        "rid": "SV-205824r569188_rule",
-        "stig_id": "WN19-SO-000110",
-        "fix_id": "F-6089r355835_fix"
+        "documentable": false
       },
       "id": "V-205824",
       "title": "Windows Server 2019 must be configured to require a strong session key.",
@@ -4003,15 +4003,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205825",
+        "rid": "SV-205825r569188_rule",
+        "stig_id": "WN19-SO-000160",
+        "fix_id": "F-6090r355838_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205825",
-        "rid": "SV-205825r569188_rule",
-        "stig_id": "WN19-SO-000160",
-        "fix_id": "F-6090r355838_fix"
+        "documentable": false
       },
       "id": "V-205825",
       "title": "Windows Server 2019 setting Microsoft network client: Digitally sign communications (always) must be configured to Enabled.",
@@ -4025,15 +4025,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205826",
+        "rid": "SV-205826r569188_rule",
+        "stig_id": "WN19-SO-000170",
+        "fix_id": "F-6091r355841_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205826",
-        "rid": "SV-205826r569188_rule",
-        "stig_id": "WN19-SO-000170",
-        "fix_id": "F-6091r355841_fix"
+        "documentable": false
       },
       "id": "V-205826",
       "title": "Windows Server 2019 setting Microsoft network client: Digitally sign communications (if server agrees) must be configured to Enabled.",
@@ -4047,15 +4047,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205827",
+        "rid": "SV-205827r569188_rule",
+        "stig_id": "WN19-SO-000190",
+        "fix_id": "F-6092r355844_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205827",
-        "rid": "SV-205827r569188_rule",
-        "stig_id": "WN19-SO-000190",
-        "fix_id": "F-6092r355844_fix"
+        "documentable": false
       },
       "id": "V-205827",
       "title": "Windows Server 2019 setting Microsoft network server: Digitally sign communications (always) must be configured to Enabled.",
@@ -4069,15 +4069,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-205828",
+        "rid": "SV-205828r569188_rule",
+        "stig_id": "WN19-SO-000200",
+        "fix_id": "F-6093r355847_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188"
         ],
-        "gid": "V-205828",
-        "rid": "SV-205828r569188_rule",
-        "stig_id": "WN19-SO-000200",
-        "fix_id": "F-6093r355847_fix"
+        "documentable": false
       },
       "id": "V-205828",
       "title": "Windows Server 2019 setting Microsoft network server: Digitally sign communications (if client agrees) must be configured to Enabled.",
@@ -4091,15 +4091,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000425-GPOS-00189",
+        "gid": "V-205829",
+        "rid": "SV-205829r569188_rule",
+        "stig_id": "WN19-00-000260",
+        "fix_id": "F-6094r355850_fix",
         "satisfies": [
           "SRG-OS-000425-GPOS-00189",
           "SRG-OS-000426-GPOS-00190"
         ],
-        "gid": "V-205829",
-        "rid": "SV-205829r569188_rule",
-        "stig_id": "WN19-00-000260",
-        "fix_id": "F-6094r355850_fix"
+        "documentable": false
       },
       "id": "V-205829",
       "title": "Windows Server 2019 must implement protection methods such as TLS, encrypted VPNs, or IPsec if the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process.",
@@ -4113,11 +4113,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00192",
         "gid": "V-205830",
         "rid": "SV-205830r569188_rule",
         "stig_id": "WN19-CC-000310",
-        "fix_id": "F-6095r355853_fix"
+        "fix_id": "F-6095r355853_fix",
+        "documentable": false
       },
       "id": "V-205830",
       "title": "Windows Server 2019 Explorer Data Execution Prevention must be enabled.",
@@ -4131,11 +4131,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00193",
         "gid": "V-205831",
         "rid": "SV-205831r569188_rule",
         "stig_id": "WN19-EP-000020",
-        "fix_id": "F-6096r355856_fix"
+        "fix_id": "F-6096r355856_fix",
+        "documentable": false
       },
       "id": "V-205831",
       "title": "Windows Server 2019 Exploit Protection system-level mitigation, Randomize memory allocations (Bottom-Up ASLR), must be on.",
@@ -4149,11 +4149,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-205832",
         "rid": "SV-205832r569188_rule",
         "stig_id": "WN19-AU-000070",
-        "fix_id": "F-6097r355859_fix"
+        "fix_id": "F-6097r355859_fix",
+        "documentable": false
       },
       "id": "V-205832",
       "title": "Windows Server 2019 must be configured to audit Account Logon - Credential Validation successes.",
@@ -4167,11 +4167,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-205833",
         "rid": "SV-205833r569188_rule",
         "stig_id": "WN19-AU-000080",
-        "fix_id": "F-6098r355862_fix"
+        "fix_id": "F-6098r355862_fix",
+        "documentable": false
       },
       "id": "V-205833",
       "title": "Windows Server 2019 must be configured to audit Account Logon - Credential Validation failures.",
@@ -4185,11 +4185,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-205834",
         "rid": "SV-205834r569188_rule",
         "stig_id": "WN19-AU-000170",
-        "fix_id": "F-6099r355865_fix"
+        "fix_id": "F-6099r355865_fix",
+        "documentable": false
       },
       "id": "V-205834",
       "title": "Windows Server 2019 must be configured to audit Logon/Logoff - Group Membership successes.",
@@ -4203,17 +4203,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
+        "gid": "V-205835",
+        "rid": "SV-205835r569188_rule",
+        "stig_id": "WN19-AU-000210",
+        "fix_id": "F-6100r355868_fix",
         "satisfies": [
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000472-GPOS-00217",
           "SRG-OS-000473-GPOS-00218",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "gid": "V-205835",
-        "rid": "SV-205835r569188_rule",
-        "stig_id": "WN19-AU-000210",
-        "fix_id": "F-6100r355868_fix"
+        "documentable": false
       },
       "id": "V-205835",
       "title": "Windows Server 2019 must be configured to audit Logon/Logoff - Special Logon successes.",
@@ -4227,11 +4227,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-205836",
         "rid": "SV-205836r569188_rule",
         "stig_id": "WN19-AU-000220",
-        "fix_id": "F-6101r355871_fix"
+        "fix_id": "F-6101r355871_fix",
+        "documentable": false
       },
       "id": "V-205836",
       "title": "Windows Server 2019 must be configured to audit Object Access - Other Object Access Events successes.",
@@ -4245,11 +4245,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000470-GPOS-00214",
         "gid": "V-205837",
         "rid": "SV-205837r569188_rule",
         "stig_id": "WN19-AU-000230",
-        "fix_id": "F-6102r355874_fix"
+        "fix_id": "F-6102r355874_fix",
+        "documentable": false
       },
       "id": "V-205837",
       "title": "Windows Server 2019 must be configured to audit Object Access - Other Object Access Events failures.",
@@ -4263,15 +4263,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000472-GPOS-00217",
+        "gid": "V-205838",
+        "rid": "SV-205838r569188_rule",
+        "stig_id": "WN19-AU-000180",
+        "fix_id": "F-6103r355877_fix",
         "satisfies": [
           "SRG-OS-000472-GPOS-00217",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-205838",
-        "rid": "SV-205838r569188_rule",
-        "stig_id": "WN19-AU-000180",
-        "fix_id": "F-6103r355877_fix"
+        "documentable": false
       },
       "id": "V-205838",
       "title": "Windows Server 2019 must be configured to audit logoff successes.",
@@ -4285,11 +4285,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-205839",
         "rid": "SV-205839r569188_rule",
         "stig_id": "WN19-AU-000130",
-        "fix_id": "F-6104r355880_fix"
+        "fix_id": "F-6104r355880_fix",
+        "documentable": false
       },
       "id": "V-205839",
       "title": "Windows Server 2019 must be configured to audit Detailed Tracking - Plug and Play Events successes.",
@@ -4303,11 +4303,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-205840",
         "rid": "SV-205840r569188_rule",
         "stig_id": "WN19-AU-000240",
-        "fix_id": "F-6105r355883_fix"
+        "fix_id": "F-6105r355883_fix",
+        "documentable": false
       },
       "id": "V-205840",
       "title": "Windows Server 2019 must be configured to audit Object Access - Removable Storage successes.",
@@ -4321,11 +4321,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000474-GPOS-00219",
         "gid": "V-205841",
         "rid": "SV-205841r569188_rule",
         "stig_id": "WN19-AU-000250",
-        "fix_id": "F-6106r355886_fix"
+        "fix_id": "F-6106r355886_fix",
+        "documentable": false
       },
       "id": "V-205841",
       "title": "Windows Server 2019 must be configured to audit Object Access - Removable Storage failures.",
@@ -4339,11 +4339,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000478-GPOS-00223",
         "gid": "V-205842",
         "rid": "SV-205842r569188_rule",
         "stig_id": "WN19-SO-000360",
-        "fix_id": "F-6107r355889_fix"
+        "fix_id": "F-6107r355889_fix",
+        "documentable": false
       },
       "id": "V-205842",
       "title": "Windows Server 2019 must be configured to use FIPS-compliant algorithms for encryption, hashing, and signing.",
@@ -4357,11 +4357,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000479-GPOS-00224",
         "gid": "V-205843",
         "rid": "SV-205843r569188_rule",
         "stig_id": "WN19-AU-000020",
-        "fix_id": "F-6108r355892_fix"
+        "fix_id": "F-6108r355892_fix",
+        "documentable": false
       },
       "id": "V-205843",
       "title": "Windows Server 2019 must, at a minimum, off-load audit records of interconnected systems in real time and off-load standalone systems weekly.",
@@ -4375,11 +4375,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205844",
         "rid": "SV-205844r569188_rule",
         "stig_id": "WN19-00-000010",
-        "fix_id": "F-6109r355895_fix"
+        "fix_id": "F-6109r355895_fix",
+        "documentable": false
       },
       "id": "V-205844",
       "title": "Windows Server 2019 users with Administrative privileges must have separate accounts for administrative duties and normal operational tasks.",
@@ -4393,11 +4393,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205845",
         "rid": "SV-205845r569188_rule",
         "stig_id": "WN19-00-000030",
-        "fix_id": "F-6110r355898_fix"
+        "fix_id": "F-6110r355898_fix",
+        "documentable": false
       },
       "id": "V-205845",
       "title": "Windows Server 2019 administrative accounts must not be used with applications that access the Internet, such as web browsers, or with potential Internet sources, such as email.",
@@ -4411,11 +4411,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205846",
         "rid": "SV-205846r569188_rule",
         "stig_id": "WN19-00-000040",
-        "fix_id": "F-6111r355901_fix"
+        "fix_id": "F-6111r355901_fix",
+        "documentable": false
       },
       "id": "V-205846",
       "title": "Windows Server 2019 members of the Backup Operators group must have separate accounts for backup duties and normal operational tasks.",
@@ -4429,11 +4429,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205847",
         "rid": "SV-205847r569188_rule",
         "stig_id": "WN19-00-000060",
-        "fix_id": "F-6112r355904_fix"
+        "fix_id": "F-6112r355904_fix",
+        "documentable": false
       },
       "id": "V-205847",
       "title": "Windows Server 2019 manually managed application account passwords must be changed at least annually or when a system administrator with knowledge of the password leaves the organization.",
@@ -4447,11 +4447,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205848",
         "rid": "SV-205848r569188_rule",
         "stig_id": "WN19-00-000090",
-        "fix_id": "F-6113r355907_fix"
+        "fix_id": "F-6113r355907_fix",
+        "documentable": false
       },
       "id": "V-205848",
       "title": "Windows Server 2019 domain-joined systems must have a Trusted Platform Module (TPM) enabled and ready for use.",
@@ -4465,11 +4465,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205849",
         "rid": "SV-205849r569188_rule",
         "stig_id": "WN19-00-000100",
-        "fix_id": "F-6114r355910_fix"
+        "fix_id": "F-6114r355910_fix",
+        "documentable": false
       },
       "id": "V-205849",
       "title": "Windows Server 2019 must be maintained at a supported servicing level.",
@@ -4483,11 +4483,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205850",
         "rid": "SV-205850r569245_rule",
         "stig_id": "WN19-00-000110",
-        "fix_id": "F-6115r603168_fix"
+        "fix_id": "F-6115r603168_fix",
+        "documentable": false
       },
       "id": "V-205850",
       "title": "Windows Server 2019 must use an anti-virus program.",
@@ -4501,11 +4501,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205851",
         "rid": "SV-205851r569188_rule",
         "stig_id": "WN19-00-000120",
-        "fix_id": "F-6116r355916_fix"
+        "fix_id": "F-6116r355916_fix",
+        "documentable": false
       },
       "id": "V-205851",
       "title": "Windows Server 2019 must have a host-based intrusion detection or prevention system.",
@@ -4519,11 +4519,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205852",
         "rid": "SV-205852r569188_rule",
         "stig_id": "WN19-00-000240",
-        "fix_id": "F-6117r355919_fix"
+        "fix_id": "F-6117r355919_fix",
+        "documentable": false
       },
       "id": "V-205852",
       "title": "Windows Server 2019 must have software certificate installation files removed.",
@@ -4537,11 +4537,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205853",
         "rid": "SV-205853r569188_rule",
         "stig_id": "WN19-00-000420",
-        "fix_id": "F-6118r355922_fix"
+        "fix_id": "F-6118r355922_fix",
+        "documentable": false
       },
       "id": "V-205853",
       "title": "Windows Server 2019 FTP servers must be configured to prevent anonymous logons.",
@@ -4555,11 +4555,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205854",
         "rid": "SV-205854r569188_rule",
         "stig_id": "WN19-00-000430",
-        "fix_id": "F-6119r355925_fix"
+        "fix_id": "F-6119r355925_fix",
+        "documentable": false
       },
       "id": "V-205854",
       "title": "Windows Server 2019 FTP servers must be configured to prevent access to the system drive.",
@@ -4573,11 +4573,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205855",
         "rid": "SV-205855r569188_rule",
         "stig_id": "WN19-00-000450",
-        "fix_id": "F-6120r355928_fix"
+        "fix_id": "F-6120r355928_fix",
+        "documentable": false
       },
       "id": "V-205855",
       "title": "Windows Server 2019 must have orphaned security identifiers (SIDs) removed from user rights.",
@@ -4591,11 +4591,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205856",
         "rid": "SV-205856r569188_rule",
         "stig_id": "WN19-00-000460",
-        "fix_id": "F-6121r355931_fix"
+        "fix_id": "F-6121r355931_fix",
+        "documentable": false
       },
       "id": "V-205856",
       "title": "Windows Server 2019 systems must have Unified Extensible Firmware Interface (UEFI) firmware and be configured to run in UEFI mode, not Legacy BIOS.",
@@ -4609,11 +4609,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205857",
         "rid": "SV-205857r569188_rule",
         "stig_id": "WN19-00-000470",
-        "fix_id": "F-6122r355934_fix"
+        "fix_id": "F-6122r355934_fix",
+        "documentable": false
       },
       "id": "V-205857",
       "title": "Windows Server 2019 must have Secure Boot enabled.",
@@ -4627,11 +4627,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205858",
         "rid": "SV-205858r569188_rule",
         "stig_id": "WN19-CC-000030",
-        "fix_id": "F-6123r355937_fix"
+        "fix_id": "F-6123r355937_fix",
+        "documentable": false
       },
       "id": "V-205858",
       "title": "Windows Server 2019 Internet Protocol version 6 (IPv6) source routing must be configured to the highest protection level to prevent IP source routing.",
@@ -4645,11 +4645,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205859",
         "rid": "SV-205859r569188_rule",
         "stig_id": "WN19-CC-000040",
-        "fix_id": "F-6124r355940_fix"
+        "fix_id": "F-6124r355940_fix",
+        "documentable": false
       },
       "id": "V-205859",
       "title": "Windows Server 2019 source routing must be configured to the highest protection level to prevent Internet Protocol (IP) source routing.",
@@ -4663,11 +4663,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205860",
         "rid": "SV-205860r569188_rule",
         "stig_id": "WN19-CC-000050",
-        "fix_id": "F-6125r355943_fix"
+        "fix_id": "F-6125r355943_fix",
+        "documentable": false
       },
       "id": "V-205860",
       "title": "Windows Server 2019 must be configured to prevent Internet Control Message Protocol (ICMP) redirects from overriding Open Shortest Path First (OSPF)-generated routes.",
@@ -4681,11 +4681,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205861",
         "rid": "SV-205861r569188_rule",
         "stig_id": "WN19-CC-000070",
-        "fix_id": "F-6126r355946_fix"
+        "fix_id": "F-6126r355946_fix",
+        "documentable": false
       },
       "id": "V-205861",
       "title": "Windows Server 2019 insecure logons to an SMB server must be disabled.",
@@ -4699,11 +4699,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205862",
         "rid": "SV-205862r569188_rule",
         "stig_id": "WN19-CC-000080",
-        "fix_id": "F-6127r355949_fix"
+        "fix_id": "F-6127r355949_fix",
+        "documentable": false
       },
       "id": "V-205862",
       "title": "Windows Server 2019 hardened Universal Naming Convention (UNC) paths must be defined to require mutual authentication and integrity for at least the \\\\*\\SYSVOL and \\\\*\\NETLOGON shares.",
@@ -4717,11 +4717,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205863",
         "rid": "SV-205863r569188_rule",
         "stig_id": "WN19-CC-000100",
-        "fix_id": "F-6128r355952_fix"
+        "fix_id": "F-6128r355952_fix",
+        "documentable": false
       },
       "id": "V-205863",
       "title": "Windows Server 2019 must be configured to enable Remote host allows delegation of non-exportable credentials.",
@@ -4735,11 +4735,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205864",
         "rid": "SV-205864r569188_rule",
         "stig_id": "WN19-CC-000110",
-        "fix_id": "F-6129r355955_fix"
+        "fix_id": "F-6129r355955_fix",
+        "documentable": false
       },
       "id": "V-205864",
       "title": "Windows Server 2019 virtualization-based security must be enabled with the platform security level configured to Secure Boot or Secure Boot with DMA Protection.",
@@ -4753,11 +4753,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205865",
         "rid": "SV-205865r569188_rule",
         "stig_id": "WN19-CC-000130",
-        "fix_id": "F-6130r355958_fix"
+        "fix_id": "F-6130r355958_fix",
+        "documentable": false
       },
       "id": "V-205865",
       "title": "Windows Server 2019 Early Launch Antimalware, Boot-Start Driver Initialization Policy must prevent boot drivers identified as bad.",
@@ -4771,11 +4771,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205866",
         "rid": "SV-205866r569188_rule",
         "stig_id": "WN19-CC-000140",
-        "fix_id": "F-6131r355961_fix"
+        "fix_id": "F-6131r355961_fix",
+        "documentable": false
       },
       "id": "V-205866",
       "title": "Windows Server 2019 group policy objects must be reprocessed even if they have not changed.",
@@ -4789,11 +4789,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205867",
         "rid": "SV-205867r569188_rule",
         "stig_id": "WN19-CC-000180",
-        "fix_id": "F-6132r355964_fix"
+        "fix_id": "F-6132r355964_fix",
+        "documentable": false
       },
       "id": "V-205867",
       "title": "Windows Server 2019 users must be prompted to authenticate when the system wakes from sleep (on battery).",
@@ -4807,11 +4807,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205868",
         "rid": "SV-205868r569188_rule",
         "stig_id": "WN19-CC-000190",
-        "fix_id": "F-6133r355967_fix"
+        "fix_id": "F-6133r355967_fix",
+        "documentable": false
       },
       "id": "V-205868",
       "title": "Windows Server 2019 users must be prompted to authenticate when the system wakes from sleep (plugged in).",
@@ -4825,11 +4825,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205869",
         "rid": "SV-205869r569188_rule",
         "stig_id": "WN19-CC-000250",
-        "fix_id": "F-6134r355970_fix"
+        "fix_id": "F-6134r355970_fix",
+        "documentable": false
       },
       "id": "V-205869",
       "title": "Windows Server 2019 Telemetry must be configured to Security or Basic.",
@@ -4843,11 +4843,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205870",
         "rid": "SV-205870r569188_rule",
         "stig_id": "WN19-CC-000260",
-        "fix_id": "F-6135r355973_fix"
+        "fix_id": "F-6135r355973_fix",
+        "documentable": false
       },
       "id": "V-205870",
       "title": "Windows Server 2019 Windows Update must not obtain updates from other PCs on the Internet.",
@@ -4861,11 +4861,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205871",
         "rid": "SV-205871r569188_rule",
         "stig_id": "WN19-CC-000320",
-        "fix_id": "F-6136r355976_fix"
+        "fix_id": "F-6136r355976_fix",
+        "documentable": false
       },
       "id": "V-205871",
       "title": "Windows Server 2019 Turning off File Explorer heap termination on corruption must be disabled.",
@@ -4879,11 +4879,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205872",
         "rid": "SV-205872r569188_rule",
         "stig_id": "WN19-CC-000330",
-        "fix_id": "F-6137r355979_fix"
+        "fix_id": "F-6137r355979_fix",
+        "documentable": false
       },
       "id": "V-205872",
       "title": "Windows Server 2019 File Explorer shell protocol must run in protected mode.",
@@ -4897,11 +4897,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205873",
         "rid": "SV-205873r569188_rule",
         "stig_id": "WN19-CC-000390",
-        "fix_id": "F-6138r355982_fix"
+        "fix_id": "F-6138r355982_fix",
+        "documentable": false
       },
       "id": "V-205873",
       "title": "Windows Server 2019 must prevent attachments from being downloaded from RSS feeds.",
@@ -4915,11 +4915,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205874",
         "rid": "SV-205874r569188_rule",
         "stig_id": "WN19-CC-000440",
-        "fix_id": "F-6139r355985_fix"
+        "fix_id": "F-6139r355985_fix",
+        "documentable": false
       },
       "id": "V-205874",
       "title": "Windows Server 2019 users must be notified if a web-based program attempts to install software.",
@@ -4933,11 +4933,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205875",
         "rid": "SV-205875r569188_rule",
         "stig_id": "WN19-DC-000150",
-        "fix_id": "F-6140r355988_fix"
+        "fix_id": "F-6140r355988_fix",
+        "documentable": false
       },
       "id": "V-205875",
       "title": "Windows Server 2019 directory data (outside the root DSE) of a non-public directory must be configured to prevent anonymous access.",
@@ -4951,11 +4951,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205876",
         "rid": "SV-205876r569188_rule",
         "stig_id": "WN19-DC-000330",
-        "fix_id": "F-6141r355991_fix"
+        "fix_id": "F-6141r355991_fix",
+        "documentable": false
       },
       "id": "V-205876",
       "title": "Windows Server 2019 domain controllers must be configured to allow reset of machine account passwords.",
@@ -4969,11 +4969,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205877",
         "rid": "SV-205877r569188_rule",
         "stig_id": "WN19-DC-000430",
-        "fix_id": "F-6142r355994_fix"
+        "fix_id": "F-6142r355994_fix",
+        "documentable": false
       },
       "id": "V-205877",
       "title": "The password for the krbtgt account on a domain must be reset at least every 180 days.",
@@ -4987,11 +4987,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205878",
         "rid": "SV-205878r569188_rule",
         "stig_id": "WN19-EP-000010",
-        "fix_id": "F-6143r355997_fix"
+        "fix_id": "F-6143r355997_fix",
+        "documentable": false
       },
       "id": "V-205878",
       "title": "Windows Server 2019 Exploit Protection system-level mitigation, Data Execution Prevention (DEP), must be on.",
@@ -5005,11 +5005,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205879",
         "rid": "SV-205879r569188_rule",
         "stig_id": "WN19-EP-000030",
-        "fix_id": "F-6144r356000_fix"
+        "fix_id": "F-6144r356000_fix",
+        "documentable": false
       },
       "id": "V-205879",
       "title": "Windows Server 2019 Exploit Protection system-level mitigation, Control flow guard (CFG), must be on.",
@@ -5023,11 +5023,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205880",
         "rid": "SV-205880r569188_rule",
         "stig_id": "WN19-EP-000040",
-        "fix_id": "F-6145r356003_fix"
+        "fix_id": "F-6145r356003_fix",
+        "documentable": false
       },
       "id": "V-205880",
       "title": "Windows Server 2019 Exploit Protection system-level mitigation, Validate exception chains (SEHOP), must be on.",
@@ -5041,11 +5041,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205881",
         "rid": "SV-205881r569188_rule",
         "stig_id": "WN19-EP-000050",
-        "fix_id": "F-6146r356006_fix"
+        "fix_id": "F-6146r356006_fix",
+        "documentable": false
       },
       "id": "V-205881",
       "title": "Windows Server 2019 Exploit Protection system-level mitigation, Validate heap integrity, must be on.",
@@ -5059,11 +5059,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205882",
         "rid": "SV-205882r569188_rule",
         "stig_id": "WN19-EP-000060",
-        "fix_id": "F-6147r356009_fix"
+        "fix_id": "F-6147r356009_fix",
+        "documentable": false
       },
       "id": "V-205882",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for Acrobat.exe.",
@@ -5077,11 +5077,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205883",
         "rid": "SV-205883r569188_rule",
         "stig_id": "WN19-EP-000070",
-        "fix_id": "F-6148r356012_fix"
+        "fix_id": "F-6148r356012_fix",
+        "documentable": false
       },
       "id": "V-205883",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for AcroRd32.exe.",
@@ -5095,11 +5095,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205884",
         "rid": "SV-205884r569188_rule",
         "stig_id": "WN19-EP-000080",
-        "fix_id": "F-6149r356015_fix"
+        "fix_id": "F-6149r356015_fix",
+        "documentable": false
       },
       "id": "V-205884",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for chrome.exe.",
@@ -5113,11 +5113,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205885",
         "rid": "SV-205885r569188_rule",
         "stig_id": "WN19-EP-000090",
-        "fix_id": "F-6150r356018_fix"
+        "fix_id": "F-6150r356018_fix",
+        "documentable": false
       },
       "id": "V-205885",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for EXCEL.EXE.",
@@ -5131,11 +5131,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205886",
         "rid": "SV-205886r569188_rule",
         "stig_id": "WN19-EP-000100",
-        "fix_id": "F-6151r356021_fix"
+        "fix_id": "F-6151r356021_fix",
+        "documentable": false
       },
       "id": "V-205886",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for firefox.exe.",
@@ -5149,11 +5149,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205887",
         "rid": "SV-205887r569188_rule",
         "stig_id": "WN19-EP-000110",
-        "fix_id": "F-6152r356024_fix"
+        "fix_id": "F-6152r356024_fix",
+        "documentable": false
       },
       "id": "V-205887",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for FLTLDR.EXE.",
@@ -5167,11 +5167,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205888",
         "rid": "SV-205888r569188_rule",
         "stig_id": "WN19-EP-000120",
-        "fix_id": "F-6153r356027_fix"
+        "fix_id": "F-6153r356027_fix",
+        "documentable": false
       },
       "id": "V-205888",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for GROOVE.EXE.",
@@ -5185,11 +5185,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205889",
         "rid": "SV-205889r569188_rule",
         "stig_id": "WN19-EP-000130",
-        "fix_id": "F-6154r356030_fix"
+        "fix_id": "F-6154r356030_fix",
+        "documentable": false
       },
       "id": "V-205889",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for iexplore.exe.",
@@ -5203,11 +5203,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205890",
         "rid": "SV-205890r569188_rule",
         "stig_id": "WN19-EP-000140",
-        "fix_id": "F-6155r356033_fix"
+        "fix_id": "F-6155r356033_fix",
+        "documentable": false
       },
       "id": "V-205890",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for INFOPATH.EXE.",
@@ -5221,11 +5221,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205891",
         "rid": "SV-205891r569188_rule",
         "stig_id": "WN19-EP-000150",
-        "fix_id": "F-6156r356036_fix"
+        "fix_id": "F-6156r356036_fix",
+        "documentable": false
       },
       "id": "V-205891",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for java.exe, javaw.exe, and javaws.exe.",
@@ -5239,11 +5239,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205892",
         "rid": "SV-205892r569188_rule",
         "stig_id": "WN19-EP-000160",
-        "fix_id": "F-6157r356039_fix"
+        "fix_id": "F-6157r356039_fix",
+        "documentable": false
       },
       "id": "V-205892",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for lync.exe.",
@@ -5257,11 +5257,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205893",
         "rid": "SV-205893r569188_rule",
         "stig_id": "WN19-EP-000170",
-        "fix_id": "F-6158r356042_fix"
+        "fix_id": "F-6158r356042_fix",
+        "documentable": false
       },
       "id": "V-205893",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for MSACCESS.EXE.",
@@ -5275,11 +5275,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205894",
         "rid": "SV-205894r569188_rule",
         "stig_id": "WN19-EP-000180",
-        "fix_id": "F-6159r356045_fix"
+        "fix_id": "F-6159r356045_fix",
+        "documentable": false
       },
       "id": "V-205894",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for MSPUB.EXE.",
@@ -5293,11 +5293,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205895",
         "rid": "SV-205895r569188_rule",
         "stig_id": "WN19-EP-000190",
-        "fix_id": "F-6160r356048_fix"
+        "fix_id": "F-6160r356048_fix",
+        "documentable": false
       },
       "id": "V-205895",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for OIS.EXE.",
@@ -5311,11 +5311,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205896",
         "rid": "SV-205896r569188_rule",
         "stig_id": "WN19-EP-000200",
-        "fix_id": "F-6161r356051_fix"
+        "fix_id": "F-6161r356051_fix",
+        "documentable": false
       },
       "id": "V-205896",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for OneDrive.exe.",
@@ -5329,11 +5329,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205897",
         "rid": "SV-205897r569188_rule",
         "stig_id": "WN19-EP-000210",
-        "fix_id": "F-6162r356054_fix"
+        "fix_id": "F-6162r356054_fix",
+        "documentable": false
       },
       "id": "V-205897",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for OUTLOOK.EXE.",
@@ -5347,11 +5347,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205898",
         "rid": "SV-205898r569188_rule",
         "stig_id": "WN19-EP-000220",
-        "fix_id": "F-6163r356057_fix"
+        "fix_id": "F-6163r356057_fix",
+        "documentable": false
       },
       "id": "V-205898",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for plugin-container.exe.",
@@ -5365,11 +5365,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205899",
         "rid": "SV-205899r569188_rule",
         "stig_id": "WN19-EP-000230",
-        "fix_id": "F-6164r356060_fix"
+        "fix_id": "F-6164r356060_fix",
+        "documentable": false
       },
       "id": "V-205899",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for POWERPNT.EXE.",
@@ -5383,11 +5383,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205900",
         "rid": "SV-205900r569188_rule",
         "stig_id": "WN19-EP-000240",
-        "fix_id": "F-6165r356063_fix"
+        "fix_id": "F-6165r356063_fix",
+        "documentable": false
       },
       "id": "V-205900",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for PPTVIEW.EXE.",
@@ -5401,11 +5401,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205901",
         "rid": "SV-205901r569188_rule",
         "stig_id": "WN19-EP-000250",
-        "fix_id": "F-6166r356066_fix"
+        "fix_id": "F-6166r356066_fix",
+        "documentable": false
       },
       "id": "V-205901",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for VISIO.EXE.",
@@ -5419,11 +5419,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205902",
         "rid": "SV-205902r569188_rule",
         "stig_id": "WN19-EP-000260",
-        "fix_id": "F-6167r356069_fix"
+        "fix_id": "F-6167r356069_fix",
+        "documentable": false
       },
       "id": "V-205902",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for VPREVIEW.EXE.",
@@ -5437,11 +5437,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205903",
         "rid": "SV-205903r569188_rule",
         "stig_id": "WN19-EP-000270",
-        "fix_id": "F-6168r356072_fix"
+        "fix_id": "F-6168r356072_fix",
+        "documentable": false
       },
       "id": "V-205903",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for WINWORD.EXE.",
@@ -5455,11 +5455,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205904",
         "rid": "SV-205904r569188_rule",
         "stig_id": "WN19-EP-000280",
-        "fix_id": "F-6169r356075_fix"
+        "fix_id": "F-6169r356075_fix",
+        "documentable": false
       },
       "id": "V-205904",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for wmplayer.exe.",
@@ -5473,11 +5473,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205905",
         "rid": "SV-205905r569188_rule",
         "stig_id": "WN19-EP-000290",
-        "fix_id": "F-6170r356078_fix"
+        "fix_id": "F-6170r356078_fix",
+        "documentable": false
       },
       "id": "V-205905",
       "title": "Windows Server 2019 Exploit Protection mitigations must be configured for wordpad.exe.",
@@ -5491,11 +5491,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205906",
         "rid": "SV-205906r569188_rule",
         "stig_id": "WN19-MS-000050",
-        "fix_id": "F-6171r356081_fix"
+        "fix_id": "F-6171r356081_fix",
+        "documentable": false
       },
       "id": "V-205906",
       "title": "Windows Server 2019 must limit the caching of logon credentials to four or less on domain-joined member servers.",
@@ -5509,11 +5509,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205907",
         "rid": "SV-205907r569188_rule",
         "stig_id": "WN19-MS-000140",
-        "fix_id": "F-6172r603101_fix"
+        "fix_id": "F-6172r603101_fix",
+        "documentable": false
       },
       "id": "V-205907",
       "title": "Windows Server 2019 must be running Credential Guard on domain-joined member servers.",
@@ -5527,11 +5527,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205908",
         "rid": "SV-205908r569188_rule",
         "stig_id": "WN19-SO-000020",
-        "fix_id": "F-6173r356087_fix"
+        "fix_id": "F-6173r356087_fix",
+        "documentable": false
       },
       "id": "V-205908",
       "title": "Windows Server 2019 must prevent local accounts with blank passwords from being used from the network.",
@@ -5545,11 +5545,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205909",
         "rid": "SV-205909r569188_rule",
         "stig_id": "WN19-SO-000030",
-        "fix_id": "F-6174r356090_fix"
+        "fix_id": "F-6174r356090_fix",
+        "documentable": false
       },
       "id": "V-205909",
       "title": "Windows Server 2019 built-in administrator account must be renamed.",
@@ -5563,11 +5563,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205910",
         "rid": "SV-205910r569188_rule",
         "stig_id": "WN19-SO-000040",
-        "fix_id": "F-6175r356093_fix"
+        "fix_id": "F-6175r356093_fix",
+        "documentable": false
       },
       "id": "V-205910",
       "title": "Windows Server 2019 built-in guest account must be renamed.",
@@ -5581,11 +5581,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205911",
         "rid": "SV-205911r569188_rule",
         "stig_id": "WN19-SO-000100",
-        "fix_id": "F-6176r356096_fix"
+        "fix_id": "F-6176r356096_fix",
+        "documentable": false
       },
       "id": "V-205911",
       "title": "Windows Server 2019 maximum age for machine account passwords must be configured to 30 days or less.",
@@ -5599,11 +5599,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205912",
         "rid": "SV-205912r569188_rule",
         "stig_id": "WN19-SO-000150",
-        "fix_id": "F-6177r356099_fix"
+        "fix_id": "F-6177r356099_fix",
+        "documentable": false
       },
       "id": "V-205912",
       "title": "Windows Server 2019 Smart Card removal option must be configured to Force Logoff or Lock Workstation.",
@@ -5617,11 +5617,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205913",
         "rid": "SV-205913r569188_rule",
         "stig_id": "WN19-SO-000210",
-        "fix_id": "F-6178r356102_fix"
+        "fix_id": "F-6178r356102_fix",
+        "documentable": false
       },
       "id": "V-205913",
       "title": "Windows Server 2019 must not allow anonymous SID/Name translation.",
@@ -5635,11 +5635,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205914",
         "rid": "SV-205914r569188_rule",
         "stig_id": "WN19-SO-000220",
-        "fix_id": "F-6179r356105_fix"
+        "fix_id": "F-6179r356105_fix",
+        "documentable": false
       },
       "id": "V-205914",
       "title": "Windows Server 2019 must not allow anonymous enumeration of Security Account Manager (SAM) accounts.",
@@ -5653,11 +5653,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205915",
         "rid": "SV-205915r569188_rule",
         "stig_id": "WN19-SO-000240",
-        "fix_id": "F-6180r356108_fix"
+        "fix_id": "F-6180r356108_fix",
+        "documentable": false
       },
       "id": "V-205915",
       "title": "Windows Server 2019 must be configured to prevent anonymous users from having the same permissions as the Everyone group.",
@@ -5671,11 +5671,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205916",
         "rid": "SV-205916r569188_rule",
         "stig_id": "WN19-SO-000260",
-        "fix_id": "F-6181r356111_fix"
+        "fix_id": "F-6181r356111_fix",
+        "documentable": false
       },
       "id": "V-205916",
       "title": "Windows Server 2019 services using Local System that use Negotiate when reverting to NTLM authentication must use the computer identity instead of authenticating anonymously.",
@@ -5689,11 +5689,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205917",
         "rid": "SV-205917r569188_rule",
         "stig_id": "WN19-SO-000270",
-        "fix_id": "F-6182r356114_fix"
+        "fix_id": "F-6182r356114_fix",
+        "documentable": false
       },
       "id": "V-205917",
       "title": "Windows Server 2019 must prevent NTLM from falling back to a Null session.",
@@ -5707,11 +5707,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205918",
         "rid": "SV-205918r569188_rule",
         "stig_id": "WN19-SO-000280",
-        "fix_id": "F-6183r356117_fix"
+        "fix_id": "F-6183r356117_fix",
+        "documentable": false
       },
       "id": "V-205918",
       "title": "Windows Server 2019 must prevent PKU2U authentication using online identities.",
@@ -5725,11 +5725,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205919",
         "rid": "SV-205919r569188_rule",
         "stig_id": "WN19-SO-000310",
-        "fix_id": "F-6184r356120_fix"
+        "fix_id": "F-6184r356120_fix",
+        "documentable": false
       },
       "id": "V-205919",
       "title": "Windows Server 2019 LAN Manager authentication level must be configured to send NTLMv2 response only and to refuse LM and NTLM.",
@@ -5743,11 +5743,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205920",
         "rid": "SV-205920r569188_rule",
         "stig_id": "WN19-SO-000320",
-        "fix_id": "F-6185r356123_fix"
+        "fix_id": "F-6185r356123_fix",
+        "documentable": false
       },
       "id": "V-205920",
       "title": "Windows Server 2019 must be configured to at least negotiate signing for LDAP client signing.",
@@ -5761,11 +5761,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205921",
         "rid": "SV-205921r569188_rule",
         "stig_id": "WN19-SO-000330",
-        "fix_id": "F-6186r356126_fix"
+        "fix_id": "F-6186r356126_fix",
+        "documentable": false
       },
       "id": "V-205921",
       "title": "Windows Server 2019 session security for NTLM SSP-based clients must be configured to require NTLMv2 session security and 128-bit encryption.",
@@ -5779,11 +5779,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205922",
         "rid": "SV-205922r569188_rule",
         "stig_id": "WN19-SO-000340",
-        "fix_id": "F-6187r356129_fix"
+        "fix_id": "F-6187r356129_fix",
+        "documentable": false
       },
       "id": "V-205922",
       "title": "Windows Server 2019 session security for NTLM SSP-based servers must be configured to require NTLMv2 session security and 128-bit encryption.",
@@ -5797,11 +5797,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205923",
         "rid": "SV-205923r569188_rule",
         "stig_id": "WN19-SO-000370",
-        "fix_id": "F-6188r356132_fix"
+        "fix_id": "F-6188r356132_fix",
+        "documentable": false
       },
       "id": "V-205923",
       "title": "Windows Server 2019 default permissions of global system objects must be strengthened.",
@@ -5815,11 +5815,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-205924",
         "rid": "SV-205924r569188_rule",
         "stig_id": "WN19-UC-000010",
-        "fix_id": "F-6189r356135_fix"
+        "fix_id": "F-6189r356135_fix",
+        "documentable": false
       },
       "id": "V-205924",
       "title": "Windows Server 2019 must preserve zone information when saving attachments.",
@@ -5833,11 +5833,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-205925",
         "rid": "SV-205925r569188_rule",
         "stig_id": "WN19-CC-000450",
-        "fix_id": "F-6190r356138_fix"
+        "fix_id": "F-6190r356138_fix",
+        "documentable": false
       },
       "id": "V-205925",
       "title": "Windows Server 2019 must disable automatically signing in the last interactive user after a system-initiated restart.",
@@ -5851,11 +5851,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-214936",
         "rid": "SV-214936r569188_rule",
         "stig_id": "WN19-00-000280",
-        "fix_id": "F-16134r356141_fix"
+        "fix_id": "F-16134r356141_fix",
+        "documentable": false
       },
       "id": "V-214936",
       "title": "Windows Server 2019 must have a host-based firewall installed and enabled.",
@@ -5869,11 +5869,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000095-GPOS-00049",
         "gid": "V-236001",
         "rid": "SV-236001r641821_rule",
         "stig_id": "WN19-CC-000451",
-        "fix_id": "F-39183r641820_fix"
+        "fix_id": "F-39183r641820_fix",
+        "documentable": false
       },
       "id": "V-236001",
       "title": "The Windows Explorer Preview pane must be disabled for Windows Server 2019.",
@@ -5885,7 +5885,5 @@
       }
     }
   ],
-  "name": "Windows_Server_2019_STIG",
-  "title": "Microsoft Windows Server 2019 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Windows_Server_2019_STIG"
 }

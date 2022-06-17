@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "COMSEC Account Management - Equipment and Key Storage",
         "gid": "V-30837",
         "rid": "SV-40855r3_rule",
         "stig_id": "CS-01.01.01",
-        "fix_id": "F-34702r8_fix"
+        "fix_id": "F-34702r8_fix",
+        "documentable": false
       },
       "id": "V-30837",
       "title": "COMSEC Account Management - Equipment and Key Storage",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "COMSEC Account Management - Appointment of Responsible Person",
         "gid": "V-30885",
         "rid": "SV-40925r3_rule",
         "stig_id": "CS-01.03.01",
-        "fix_id": "F-7853r8_fix"
+        "fix_id": "F-7853r8_fix",
+        "documentable": false
       },
       "id": "V-30885",
       "title": "COMSEC Account Management - Appointment of Responsible Person",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "COMSEC Account Management - Program Management and Standards Compliance",
         "gid": "V-30928",
         "rid": "SV-40970r3_rule",
         "stig_id": "CS-01.03.02",
-        "fix_id": "F-34739r3_fix"
+        "fix_id": "F-34739r3_fix",
+        "documentable": false
       },
       "id": "V-30928",
       "title": "COMSEC Account Management - Program Management and Standards Compliance",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "COMSEC Training - Custodian or Hand Receipt Holder",
         "gid": "V-30931",
         "rid": "SV-40973r3_rule",
         "stig_id": "CS-02.02.01",
-        "fix_id": "F-34740r2_fix"
+        "fix_id": "F-34740r2_fix",
+        "documentable": false
       },
       "id": "V-30931",
       "title": "COMSEC Training - COMSEC Custodian or Hand Receipt Holder",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "COMSEC Training - COMSEC User",
         "gid": "V-30933",
         "rid": "SV-40975r3_rule",
         "stig_id": "CS-02.02.02",
-        "fix_id": "F-34744r10_fix"
+        "fix_id": "F-34744r10_fix",
+        "documentable": false
       },
       "id": "V-30933",
       "title": "COMSEC Training - COMSEC User",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Classified Transmission - Encryption of Classified Data in Transit",
         "gid": "V-30934",
         "rid": "SV-40976r4_rule",
         "stig_id": "CS-03.01.01",
-        "fix_id": "F-34745r5_fix"
+        "fix_id": "F-34745r5_fix",
+        "documentable": false
       },
       "id": "V-30934",
       "title": "Classified Transmission - Electronic Means using Cryptographic System Authorized by the Director, NSA",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "PDS Construction - PoP and Terminal Equipment Protection",
         "gid": "V-30938",
         "rid": "SV-40980r4_rule",
         "stig_id": "CS-04.01.01",
-        "fix_id": "F-34749r11_fix"
+        "fix_id": "F-34749r11_fix",
+        "documentable": false
       },
       "id": "V-30938",
       "title": "Protected Distribution System (PDS) Construction - Point of Presence (PoP) and Terminal Equipment Protection. This requirement concerns security of both the starting and ending points for PDS within proper physically protected and access controlled environments.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "PDS Construction - Visible for Inspection and Marked",
         "gid": "V-30940",
         "rid": "SV-40982r4_rule",
         "stig_id": "CS-04.02.01",
         "fix_id": "F-34750r6_fix",
+        "documentable": false,
         "severity_override_guidance": "Category II Severity Level is the default. This requirement is not a finding if there is a properly alarmed carrier being used for the SIPRNet cable run. An alarmed carrier does not need to be completely visible for inspection; however, a properly alarmed carrier does include the requirement to conduct periodic tests of the alarm functionality. Therefore, portions of the alarmed PDS, while not necessarily visible, must still be accessible for alarm testing."
       },
       "id": "V-30940",
@@ -153,11 +153,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "PDS Construction - Hardened Carrier",
         "gid": "V-30942",
         "rid": "SV-40984r4_rule",
         "stig_id": "CS-04.01.02",
         "fix_id": "F-34756r10_fix",
+        "documentable": false,
         "potential_impacts": "There are five types of Category 2 PDS: 1. Hardened Carrier (STIG ID: CS-04.01.02) 2. Alarmed Carrier (STIG ID: CS-04.01.08) 3. Continuously Viewed Carrier. (STIG ID: CS-04.01.06) 4. Buried Carrier (STIG ID: CS-04.01.04) and 5. Suspended Carrier (STIG ID: CS-04.01.05) This Rule covering Hardened Carriers (STIG ID CS-04.01.02) may be used in conjunction with the other Category 2 carriers. Different requirements apply to each type of Category 2 carrier and must be assessed under their respective STIG Rules."
       },
       "id": "V-30942",
@@ -172,11 +172,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "PDS Construction - Sealed Joints",
         "gid": "V-30949",
         "rid": "SV-40991r4_rule",
         "stig_id": "CS-04.02.02",
         "fix_id": "F-34761r6_fix",
+        "documentable": false,
         "severity_override_guidance": "None - the default CAT II severity level applies to all checks."
       },
       "id": "V-30949",
@@ -191,11 +191,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "PDS Construction - Pull Boxes",
         "gid": "V-30958",
         "rid": "SV-41000r3_rule",
         "stig_id": "CS-04.01.03",
         "fix_id": "F-34768r10_fix",
+        "documentable": false,
         "potential_impacts": "The CNSSI 7003 definition of a PDS Lock includes allowance for use of a Tamper Indicative Padlock with a wire loop seal. A Tamper Evident Seal is also defined as a possible alternative for use on Pull Boxes. NOTE: The USD (I) Policy has determined the Tamper Indicative Padlock with a wire loop seal and Tamper Evident Seal ARE NOT permitted for use in the DoD. Basically this is because neither product was properly vetted and listed by the DoD Lock Program. ONLY the SG 8077 Changeable Combination Padlock is to be used for securing PDS Pull Boxes protecting SIPRNet within the DoD."
       },
       "id": "V-30958",
@@ -210,11 +210,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "PDS Construction - Buried Carrier",
         "gid": "V-30969",
         "rid": "SV-41011r4_rule",
         "stig_id": "CS-04.01.04",
         "fix_id": "F-34778r11_fix",
+        "documentable": false,
         "potential_impacts": "The CNSSI 7003 definition of a PDS Lock includes allowance for use of a Tamper Indicative Padlock with a wire loop seal. A Tamper Evident Seal is also defined as a possible alternative for use on Pull Boxes. NOTE: The USD(I) Policy has determined the Tamper Indicative Padlock with a wire loop seal and Tamper Evident Seal ARE NOT permitted for use in the DoD. Basically this is because neither product was properly vetted and listed by the DoD Lock Program. ONLY the SG 8077 Changeable Combination Padlock is to be used for securing Buried PDS manhole covers protecting SIPRNet within the DoD. The DoD Lock and Key Program has recommended using clear plastic bags (sealed with weather resistant tape) over exterior locks (such as the SG 8077) placed on manhole covers to mitigate the effects of weather. The bags enable the locks to be visually inspected while protecting them from the elements."
       },
       "id": "V-30969",
@@ -229,11 +229,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "PDS Construction - External Suspended PDS",
         "gid": "V-30970",
         "rid": "SV-41012r3_rule",
         "stig_id": "CS-04.01.05",
         "fix_id": "F-34780r11_fix",
+        "documentable": false,
         "potential_impacts": "There are five types of Category 2 PDS: 1. Hardened Carrier (STIG ID: CS-04.01.02) 2. Alarmed Carrier (STIG ID: CS-04.01.08) 3. Continuously viewed Carrier. (STIG ID: CS-04.01.06) 4. Buried Carrier (STIG ID: CS-04.01.04) and 5. Suspended Carrier (STIG ID: CS-04.01.05). This Rule covering (External) Suspended Carriers (STIG ID: CS-04.01.05) may be used in conjunction with the other Category 2 carriers. Different requirements apply to each type of Category 2 carrier and must be assessed under their respective STIG Rules."
       },
       "id": "V-30970",
@@ -248,11 +248,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "PDS Construction - Continuously Viewed Carrier",
         "gid": "V-30971",
         "rid": "SV-41013r3_rule",
         "stig_id": "CS-04.01.06",
         "fix_id": "F-34782r9_fix",
+        "documentable": false,
         "severity_override_guidance": "The default severity level is a Category I based on a transmission line not under continuous observation, 24 hours per day, including when operational. (CAT I) If it is determined that the unencrypted SIPRNet transmission cable is under proper continuous observation and control 24 hours per day, including when operational and the following is found to be the only discrepancy, the finding may be reduced as follows: The carrier does not have an SOP that includes the requirement to investigate any attempt to disturb the PDS and/or the SOP does not include procedures for appropriate security personnel to investigate the area of attempted penetration within 15 minutes of discovery. (CAT II) The Continuously Viewed Carrier is not separated from all non-continuously viewed circuits ensuring an open field of view. (CAT III)",
         "potential_impacts": "There are five types of Category 2 PDS: 1. Hardened Carrier (STIG ID: CS-04.01.02) 2. Alarmed Carrier (STIG ID: CS-04.01.08) 3. Continuously Viewed Carrier. (STIG ID: CS-04.01.06) 4. Buried Carrier (STIG ID: CS-04.01.04) and 5. Suspended Carrier (STIG ID: CS-04.01.05). This Rule covering Continuously Viewed Carriers (STIG ID CS-04.01.06) may be used in conjunction with the other Category 2 carriers. Different requirements apply to each type of Category 2 carrier and must be assessed under their respective STIG Rules."
       },
@@ -268,11 +268,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "PDS Construction - Tactical Environment",
         "gid": "V-30973",
         "rid": "SV-41015r3_rule",
         "stig_id": "CS-04.01.07",
         "fix_id": "F-34783r8_fix",
+        "documentable": false,
         "potential_impacts": "This requirements ONLY FOR USE IN TACTICAL ENVIRONMENTS. It is NOT APPLICABLE (NA) for all other locations."
       },
       "id": "V-30973",
@@ -287,11 +287,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "PDS Documentation - Signed Approval",
         "gid": "V-30974",
         "rid": "SV-41017r3_rule",
         "stig_id": "CS-05.03.01",
-        "fix_id": "F-34784r6_fix"
+        "fix_id": "F-34784r6_fix",
+        "documentable": false
       },
       "id": "V-30974",
       "title": "Protected Distribution System (PDS) Documentation - Signed Approval",
@@ -305,11 +305,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "PDS Documentation - Request for Approval Documentation",
         "gid": "V-30975",
         "rid": "SV-41019r3_rule",
         "stig_id": "CS-05.03.02",
-        "fix_id": "F-34786r7_fix"
+        "fix_id": "F-34786r7_fix",
+        "documentable": false
       },
       "id": "V-30975",
       "title": "Protected Distribution System (PDS) Documentation - Request for Approval Documentation",
@@ -323,11 +323,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "PDS Monitoring - Daily Visual Checks",
         "gid": "V-30976",
         "rid": "SV-41020r3_rule",
         "stig_id": "CS-06.02.01",
         "fix_id": "F-34787r7_fix",
+        "documentable": false,
         "severity_override_guidance": "This finding may be lowered to a CAT III if checks are conducted and recorded but there is no roster or written appointment of who is to conduct the checks."
       },
       "id": "V-30976",
@@ -342,11 +342,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "PDS Monitoring - Technical Inspections",
         "gid": "V-30977",
         "rid": "SV-41021r3_rule",
         "stig_id": "CS-06.03.01",
-        "fix_id": "F-34788r9_fix"
+        "fix_id": "F-34788r9_fix",
+        "documentable": false
       },
       "id": "V-30977",
       "title": "Protected Distribution System (PDS) Monitoring - Technical Inspections",
@@ -360,11 +360,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "PDS Monitoring - Initial Inspection",
         "gid": "V-30978",
         "rid": "SV-41022r3_rule",
         "stig_id": "CS-06.03.02",
-        "fix_id": "F-34789r8_fix"
+        "fix_id": "F-34789r8_fix",
+        "documentable": false
       },
       "id": "V-30978",
       "title": "Protected Distribution System (PDS) Monitoring - Initial Inspection",
@@ -378,11 +378,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "PDS Monitoring - Reporting Incidents",
         "gid": "V-30979",
         "rid": "SV-41023r3_rule",
         "stig_id": "CS-06.02.02",
         "fix_id": "F-34790r7_fix",
+        "documentable": false,
         "severity_override_guidance": "CAT II is the default severity level when finding an incident that has not been properly reported and investigated. CAT III is the severity level if the ONLY finding is that a written procedure for reporting PDS anomalies is not available and no anomaly in the PDS has been discovered."
       },
       "id": "V-30979",
@@ -397,11 +397,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "TEMPEST Countermeasures",
         "gid": "V-30980",
         "rid": "SV-41024r3_rule",
         "stig_id": "EM-01.02.01",
-        "fix_id": "F-34791r6_fix"
+        "fix_id": "F-34791r6_fix",
+        "documentable": false
       },
       "id": "V-30980",
       "title": "TEMPEST Countermeasures",
@@ -415,11 +415,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "TEMPEST - Red/Black separation (Processors)",
         "gid": "V-30981",
         "rid": "SV-41025r3_rule",
         "stig_id": "EM-02.02.01",
-        "fix_id": "F-34792r5_fix"
+        "fix_id": "F-34792r5_fix",
+        "documentable": false
       },
       "id": "V-30981",
       "title": "TEMPEST - Red/Black separation (Processors)",
@@ -433,11 +433,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "TEMPEST - Red/Black Separation (Cables)",
         "gid": "V-30982",
         "rid": "SV-41026r3_rule",
         "stig_id": "EM-03.02.01",
-        "fix_id": "F-34793r14_fix"
+        "fix_id": "F-34793r14_fix",
+        "documentable": false
       },
       "id": "V-30982",
       "title": "TEMPEST - Red/Black Separation (Cables)",
@@ -451,11 +451,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Environmental IA Controls - Emergency Power Shut-Off",
         "gid": "V-30983",
         "rid": "SV-41027r3_rule",
         "stig_id": "EC-01.02.01",
-        "fix_id": "F-34794r5_fix"
+        "fix_id": "F-34794r5_fix",
+        "documentable": false
       },
       "id": "V-30983",
       "title": "Environmental IA Controls - Emergency Power Shut-Off (EPO)",
@@ -469,11 +469,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Environmental IA Controls - Emergency Lighting and Exits - Properly Installed",
         "gid": "V-30984",
         "rid": "SV-41028r3_rule",
         "stig_id": "EC-02.02.01",
-        "fix_id": "F-34795r5_fix"
+        "fix_id": "F-34795r5_fix",
+        "documentable": false
       },
       "id": "V-30984",
       "title": "Environmental IA Controls - Emergency Lighting and Exits - Properly Installed",
@@ -487,11 +487,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Environmental IA Controls - Emergency Lighting and Exits - Documentation and Testing",
         "gid": "V-30985",
         "rid": "SV-41029r3_rule",
         "stig_id": "EC-02.03.01",
-        "fix_id": "F-34796r5_fix"
+        "fix_id": "F-34796r5_fix",
+        "documentable": false
       },
       "id": "V-30985",
       "title": "Environmental IA Controls - Emergency Lighting and Exits - Documentation and Testing",
@@ -505,11 +505,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Environmental IA Controls - Voltage Control (power)",
         "gid": "V-30987",
         "rid": "SV-41031r3_rule",
         "stig_id": "EC-03.03.01",
-        "fix_id": "F-34797r4_fix"
+        "fix_id": "F-34797r4_fix",
+        "documentable": false
       },
       "id": "V-30987",
       "title": "Environmental IA Controls - Voltage Control (power)",
@@ -523,11 +523,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Environmental IA Controls - Training",
         "gid": "V-30988",
         "rid": "SV-41032r3_rule",
         "stig_id": "EC-04.03.01",
-        "fix_id": "F-34798r8_fix"
+        "fix_id": "F-34798r8_fix",
+        "documentable": false
       },
       "id": "V-30988",
       "title": "Environmental IA Controls - Training",
@@ -541,11 +541,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Environmental IA Controls - Temperature",
         "gid": "V-30989",
         "rid": "SV-41033r3_rule",
         "stig_id": "EC-05.03.01",
-        "fix_id": "F-34799r5_fix"
+        "fix_id": "F-34799r5_fix",
+        "documentable": false
       },
       "id": "V-30989",
       "title": "Environmental IA Controls - Temperature",
@@ -559,11 +559,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Environmental IA Controls - Humidity",
         "gid": "V-30990",
         "rid": "SV-41034r3_rule",
         "stig_id": "EC-06.03.01",
-        "fix_id": "F-34801r5_fix"
+        "fix_id": "F-34801r5_fix",
+        "documentable": false
       },
       "id": "V-30990",
       "title": "Environmental IA Controls - Humidity",
@@ -577,11 +577,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Environmental IA Controls - Fire Inspections/ Discrepancies",
         "gid": "V-30991",
         "rid": "SV-41036r3_rule",
         "stig_id": "EC-07.03.01",
-        "fix_id": "F-34802r4_fix"
+        "fix_id": "F-34802r4_fix",
+        "documentable": false
       },
       "id": "V-30991",
       "title": "Environmental IA Controls - Fire Inspections/ Discrepancies",
@@ -595,11 +595,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Environmental IA Controls - Fire Detection and Suppression",
         "gid": "V-30992",
         "rid": "SV-41037r3_rule",
         "stig_id": "EC-08.03.01",
-        "fix_id": "F-34804r6_fix"
+        "fix_id": "F-34804r6_fix",
+        "documentable": false
       },
       "id": "V-30992",
       "title": "Environmental IA Controls - Fire Detection and Suppression",
@@ -613,11 +613,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Industrial Security - DD Form 254",
         "gid": "V-30993",
         "rid": "SV-41039r3_rule",
         "stig_id": "ID-01.02.01",
-        "fix_id": "F-34805r6_fix"
+        "fix_id": "F-34805r6_fix",
+        "documentable": false
       },
       "id": "V-30993",
       "title": "Industrial Security - DD Form 254",
@@ -631,11 +631,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Industrial Security - Contractor VALs",
         "gid": "V-30994",
         "rid": "SV-41040r3_rule",
         "stig_id": "ID-02.03.01",
-        "fix_id": "F-34806r5_fix"
+        "fix_id": "F-34806r5_fix",
+        "documentable": false
       },
       "id": "V-30994",
       "title": "Industrial Security - Contractor Visit Authorization Letters (VALs)",
@@ -649,11 +649,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Industrial Security - Contract Guard Vetting",
         "gid": "V-30995",
         "rid": "SV-41041r3_rule",
         "stig_id": "ID-03.02.01",
-        "fix_id": "F-34807r6_fix"
+        "fix_id": "F-34807r6_fix",
+        "documentable": false
       },
       "id": "V-30995",
       "title": "Industrial Security - Contract Guard Vetting",
@@ -667,11 +667,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Information Assurance - System Security SOPs",
         "gid": "V-30996",
         "rid": "SV-41042r3_rule",
         "stig_id": "IA-01.03.01",
-        "fix_id": "F-34809r12_fix"
+        "fix_id": "F-34809r12_fix",
+        "documentable": false
       },
       "id": "V-30996",
       "title": "Information Assurance - System Security Operating Procedures (SOPs)",
@@ -685,11 +685,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - COOP Plan and Testing",
         "gid": "V-30997",
         "rid": "SV-41043r3_rule",
         "stig_id": "IA-02.02.01",
-        "fix_id": "F-34810r5_fix"
+        "fix_id": "F-34810r5_fix",
+        "documentable": false
       },
       "id": "V-30997",
       "title": "Information Assurance - COOP Plan and Testing (Not in Place for Information Technology Systems or Not Considered in the organizational Holistic Risk Assessment)",
@@ -703,11 +703,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Information Assurance - COOP Plan or Testing (Incomplete)",
         "gid": "V-31004",
         "rid": "SV-41051r3_rule",
         "stig_id": "IA-02.03.01",
-        "fix_id": "F-34814r7_fix"
+        "fix_id": "F-34814r7_fix",
+        "documentable": false
       },
       "id": "V-31004",
       "title": "Information Assurance - COOP Plan or Testing (Incomplete)",
@@ -721,11 +721,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - System Security Incidents",
         "gid": "V-31008",
         "rid": "SV-41055r3_rule",
         "stig_id": "IA-03.02.01",
-        "fix_id": "F-34815r5_fix"
+        "fix_id": "F-34815r5_fix",
+        "documentable": false
       },
       "id": "V-31008",
       "title": "Information Assurance - System Security Incidents (Identifying, Reporting, and Handling)",
@@ -739,11 +739,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - System Access Control Records",
         "gid": "V-31011",
         "rid": "SV-41058r3_rule",
         "stig_id": "IA-05.02.01",
-        "fix_id": "F-34824r12_fix"
+        "fix_id": "F-34824r12_fix",
+        "documentable": false
       },
       "id": "V-31011",
       "title": "Information Assurance - System Access Control Records (DD Form 2875 or equivalent)",
@@ -757,11 +757,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - System Training and Certification/ IA Personnel",
         "gid": "V-31013",
         "rid": "SV-41060r3_rule",
         "stig_id": "IA-06.02.01",
-        "fix_id": "F-34826r4_fix"
+        "fix_id": "F-34826r4_fix",
+        "documentable": false
       },
       "id": "V-31013",
       "title": "Information Assurance - System Training and Certification/ IA Personnel",
@@ -775,11 +775,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance/Cybersecurity Training for System Users",
         "gid": "V-31082",
         "rid": "SV-41133r3_rule",
         "stig_id": "IA-06.02.02",
-        "fix_id": "F-34887r6_fix"
+        "fix_id": "F-34887r6_fix",
+        "documentable": false
       },
       "id": "V-31082",
       "title": "Information Assurance/Cybersecurity Training for System Users",
@@ -793,11 +793,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - Accreditation Documentation",
         "gid": "V-31084",
         "rid": "SV-41139r3_rule",
         "stig_id": "IA-07.02.01",
-        "fix_id": "F-34892r4_fix"
+        "fix_id": "F-34892r4_fix",
+        "documentable": false
       },
       "id": "V-31084",
       "title": "Information Assurance - Accreditation Documentation",
@@ -811,11 +811,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - NIPRNET Connection Approval (CAP)",
         "gid": "V-31090",
         "rid": "SV-41177r3_rule",
         "stig_id": "IA-08.02.01",
-        "fix_id": "F-34921r5_fix"
+        "fix_id": "F-34921r5_fix",
+        "documentable": false
       },
       "id": "V-31090",
       "title": "Information Assurance - NIPRNET Connection Approval (CAP)",
@@ -829,11 +829,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - SIPRNET CAP",
         "gid": "V-31091",
         "rid": "SV-41178r3_rule",
         "stig_id": "IA-09.02.01",
-        "fix_id": "F-34922r4_fix"
+        "fix_id": "F-34922r4_fix",
+        "documentable": false
       },
       "id": "V-31091",
       "title": "Information Assurance - SIPRNET Connection Approval Process (CAP)",
@@ -847,11 +847,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - KVM or A/B Switch Not NIAP Validated",
         "gid": "V-31115",
         "rid": "SV-41244r3_rule",
         "stig_id": "IA-10.02.01",
-        "fix_id": "F-34994r6_fix"
+        "fix_id": "F-34994r6_fix",
+        "documentable": false
       },
       "id": "V-31115",
       "title": "Information Assurance - KVM or A/B Switch not listed on the NIAP U.S. Government Approved Protection Products Compliance List (PCL) for Peripheral Sharing Switches",
@@ -865,11 +865,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - KVM Switch (Port Separation)",
         "gid": "V-31124",
         "rid": "SV-41259r4_rule",
         "stig_id": "IA-10.02.02",
-        "fix_id": "F-35002r4_fix"
+        "fix_id": "F-35002r4_fix",
+        "documentable": false
       },
       "id": "V-31124",
       "title": "Information Assurance - KVM Switch (Port Separation) on CYBEX/Avocent 4 or 8 port",
@@ -883,11 +883,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - KVM Switch (Hot-Keys)",
         "gid": "V-31125",
         "rid": "SV-41260r3_rule",
         "stig_id": "IA-10.02.03",
-        "fix_id": "F-35008r4_fix"
+        "fix_id": "F-35008r4_fix",
+        "documentable": false
       },
       "id": "V-31125",
       "title": "Information Assurance - KVM Switch Use of Hot-Keys on SIPRNet Connected Devices",
@@ -901,11 +901,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Information Assurance - KVM Switch (Approval Documentation)",
         "gid": "V-31126",
         "rid": "SV-41267r3_rule",
         "stig_id": "IA-10.03.01",
-        "fix_id": "F-35009r11_fix"
+        "fix_id": "F-35009r11_fix",
+        "documentable": false
       },
       "id": "V-31126",
       "title": "Information Assurance - Authorizing Official (AO) and DoDIN Connection Approval Office (CAO) Approval Documentation for use of KVM and A/B switches for Sharing of Classified and Unclassified Peripheral Devices",
@@ -919,11 +919,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Assurance - Wireless Devices Connected to SIPRNet",
         "gid": "V-31127",
         "rid": "SV-41269r3_rule",
         "stig_id": "IA-11.01.01",
-        "fix_id": "F-35016r8_fix"
+        "fix_id": "F-35016r8_fix",
+        "documentable": false
       },
       "id": "V-31127",
       "title": "Information Assurance - Classified Portable Electronic Devices (PEDs) Connected to the SIPRNet must be Authorized, Compliant with NSA Guidelines, and be Configured for Data at Rest (DAR) Protection",
@@ -937,11 +937,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - Unauthorized Wireless Devices - Classified Areas",
         "gid": "V-31128",
         "rid": "SV-41275r3_rule",
         "stig_id": "IA-11.02.01",
         "fix_id": "F-35021r11_fix",
+        "documentable": false,
         "mitigations": "Information Assurance",
         "mitigation_control": "Official PDA/Blackberries must be allowed to sync. Recommend they only be powered up for syncing and the classified system not be running during that time. Devices may be allowed if they are powered off while in the facility, employees are initially briefed and periodically reminded of the policy and there is strict enforcement of not using wireless devices in classified processing areas."
       },
@@ -957,11 +957,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Information Assurance - Unauthorized Wireless Devices - No Policy or Warning Signs",
         "gid": "V-31129",
         "rid": "SV-41280r3_rule",
         "stig_id": "IA-11.03.01",
-        "fix_id": "F-35025r4_fix"
+        "fix_id": "F-35025r4_fix",
+        "documentable": false
       },
       "id": "V-31129",
       "title": "Information Assurance - Unauthorized Wireless Devices - No Formal Policy and/or Warning Signs",
@@ -975,11 +975,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Assurance - Network Connections - Physical Protection of SIPRNet Network Devices",
         "gid": "V-31132",
         "rid": "SV-41289r3_rule",
         "stig_id": "IA-12.01.01",
         "fix_id": "F-35081r7_fix",
+        "documentable": false,
         "severity_override_guidance": "CAT I is the default severity level for when SIPRNet network connections/equipment is found not to be properly protected in a proper safe, vault, secure room, SCIF or under continuous observation and control. CAT II severity level may be assigned when the equipment is properly housed in an area or container approved for classified storage or under continuous observation and control of a properly cleared employee; however, persons other than the Network Administrators and other (authorized) personnel have unimpeded access to the Network Connections,. CAT II severity level may also be assigned when documentation does not exist to justify unimpeded access to network equipment by other (authorized) personnel (e.g., other than assigned network/system administrators). Documentation must be signed by the site commander/director or J6/ISSM primary staff officer with responsibility for oversight of security on information systems AND provide mission essential justification for allowing unimpeded/unescorted access."
       },
       "id": "V-31132",
@@ -994,11 +994,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Assurance - Network Connections - SIPRNet Wall Jack Security",
         "gid": "V-31171",
         "rid": "SV-41344r3_rule",
         "stig_id": "IA-12.01.02",
-        "fix_id": "F-35093r3_fix"
+        "fix_id": "F-35093r3_fix",
+        "documentable": false
       },
       "id": "V-31171",
       "title": "Information Assurance - Network Connections - Wall Jack Security on Classified Networks (SIPRNet or other Inspected Classified Network or System) Where Port Authentication Using IEEE 802.1X IS NOT Implemented",
@@ -1012,11 +1012,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance - Network Connections -Unclassified Network Devices",
         "gid": "V-31190",
         "rid": "SV-41372r3_rule",
         "stig_id": "IA-12.02.01",
-        "fix_id": "F-35098r8_fix"
+        "fix_id": "F-35098r8_fix",
+        "documentable": false
       },
       "id": "V-31190",
       "title": "Information Assurance - Network Connections - Physical Protection of Unclassified (NIPRNet) Network Devices such as Routers, Switches and Hubs",
@@ -1030,11 +1030,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Foreign National System Access - Procedures",
         "gid": "V-31199",
         "rid": "SV-41387r3_rule",
         "stig_id": "FN-01.03.01",
-        "fix_id": "F-35103r6_fix"
+        "fix_id": "F-35103r6_fix",
+        "documentable": false
       },
       "id": "V-31199",
       "title": "Foreign National System Access - Local Access Control Procedures",
@@ -1048,11 +1048,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Foreign National System Access - Email ID",
         "gid": "V-31210",
         "rid": "SV-41407r3_rule",
         "stig_id": "FN-01.02.01",
-        "fix_id": "F-35110r7_fix"
+        "fix_id": "F-35110r7_fix",
+        "documentable": false
       },
       "id": "V-31210",
       "title": "Foreign National System Access - Identification as FN in E-mail Address",
@@ -1066,11 +1066,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Foreign National (FN) Systems Access - Local Nationals Overseas System Access - NIPRNet",
         "gid": "V-31211",
         "rid": "SV-41411r3_rule",
         "stig_id": "FN-02.02.01",
-        "fix_id": "F-39500r6_fix"
+        "fix_id": "F-39500r6_fix",
+        "documentable": false
       },
       "id": "V-31211",
       "title": "Foreign National (FN) Systems Access - Local Nationals Overseas System Access - (NIPRNet User)",
@@ -1084,11 +1084,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Foreign national (FN) Systems Access - Local Nationals Overseas System Access - SIPRNet",
         "gid": "V-31215",
         "rid": "SV-41417r3_rule",
         "stig_id": "FN-02.01.01",
-        "fix_id": "F-35117r7_fix"
+        "fix_id": "F-35117r7_fix",
+        "documentable": false
       },
       "id": "V-31215",
       "title": "Foreign National (FN) Systems Access - Local Nationals Overseas System Access - (SIPRNet or Other Classified System or Classified Network being Reviewed)",
@@ -1102,11 +1102,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "FN System Access - Local Nationals (LN) Overseas Systems Access - (Privileged Access)",
         "gid": "V-31221",
         "rid": "SV-41430r3_rule",
         "stig_id": "FN-02.01.02",
-        "fix_id": "F-35118r4_fix"
+        "fix_id": "F-35118r4_fix",
+        "documentable": false
       },
       "id": "V-31221",
       "title": "Foreign National (FN) Systems Access - Local Nationals (LN) Overseas System Access - Vetting for Privileged Access",
@@ -1120,11 +1120,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Foreign National (FN) Systems Access - DDL",
         "gid": "V-31223",
         "rid": "SV-41432r3_rule",
         "stig_id": "FN-02.02.02",
-        "fix_id": "F-35122r4_fix"
+        "fix_id": "F-35122r4_fix",
+        "documentable": false
       },
       "id": "V-31223",
       "title": "Foreign National (FN) Systems Access - Delegation of Disclosure Authority Letter (DDL)",
@@ -1138,11 +1138,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Foreign National (FN) System Access - FN or Immigrant Aliens - LAA",
         "gid": "V-31225",
         "rid": "SV-41434r3_rule",
         "stig_id": "FN-03.01.01",
-        "fix_id": "F-35125r6_fix"
+        "fix_id": "F-35125r6_fix",
+        "documentable": false
       },
       "id": "V-31225",
       "title": "Foreign National System Access - FN or Immigrant Aliens (not representing a foreign government or entity) System Access - Limited Access Authorization (LAA)",
@@ -1156,11 +1156,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Foreign National (FN) System Access/Immigrant Aliens with LAA -Uncontrolled Access",
         "gid": "V-31227",
         "rid": "SV-41436r3_rule",
         "stig_id": "FN-03.01.02",
-        "fix_id": "F-35131r5_fix"
+        "fix_id": "F-35131r5_fix",
+        "documentable": false
       },
       "id": "V-31227",
       "title": "Foreign National (FN) System Access - FN or Immigrant Aliens (not representing a foreign government or entity) with LAA Granted Uncontrolled Access",
@@ -1174,11 +1174,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "FN Physical Access Control - Areas Containing Classified US Only Information Systems",
         "gid": "V-31242",
         "rid": "SV-41465r3_rule",
         "stig_id": "FN-04.01.01",
         "fix_id": "F-35136r6_fix",
+        "documentable": false,
         "severity_override_guidance": "The default severity level is Category I and there is no mitigation allow to a lower severity level. This check is to assess physical access control measures and control and internal control procedures for classified information system equipment and removable storage media in areas in which there are US Only terminals/monitors/documents/media or other US Only system/network equipment. Even though there may also be terminals/monitors/documents/media or other system/network equipment present in the same area to which FN have been granted access, the fact the FN do not have access to the US Only equipment requires that the FN are not granted unescorted physical access to such areas. Therefore, if there are absolutely no US Only classified / sensitive work stations, monitors, documents or media in an area (with FN presence) and the FN employee or partner has been granted access to all systems in the physical environment - then this requirement is NA and should be annotated to the VMS report as Not a Finding. This requirement is also NA if there is no routine FN presence in the classified work area.",
         "potential_impacts": "RELATED VULS (STIG ID): 1. STIG ID: FN-05.02.01. This requirement is specifically focused on checking written policy/procedures and initial/recurring training concerning US employee interactions with FN employees assigned to the organization OR frequent and recurring FN visitors. Even if there are procedures and training a finding may still be written when it is clear from interviews and observation of the environment by traditional security reviewers that a lack of employee understanding of the rules and procedures are evident and are not being exercised. 2. STIG ID: IS-08.01.01. Classified Monitors/Displays (Physical Control of Classified Monitors From Unauthorized Viewing). This requirement is specifically focused on checking physical controls in place to protect classified work stations (monitor screens) from unauthorized viewing. This requirement includes positioning and control of classified monitors and covers environments where Foreign Nationals are present and US Only work stations/monitor screens are present. 3. STIG ID: IS-08.03.01. This requirement is specifically focused on checking written policy/procedures and initial/recurring training concerning cleared employee responsibilities and actions to protect classified work stations (monitor screens) under their control from unauthorized viewing. This requirement includes positioning and control of classified monitors and covers environments containing US Only work stations/monitor screens where Foreign Nationals are present. 4. STIG ID: IS-08.01.02. This requirement concerns maintaining control of Common Access Cards (CACs), SIPRNet tokens and locking of computer work stations/monitor screens when unattended by removal of CACs, SIPRNet tokens or using Clt/Alt/Del. This requirement includes environments containing US Only work stations/monitor screens where Foreign Nationals are present."
       },
@@ -1194,11 +1194,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Foreign National (FN) Physical Access Control - (ID Badges)",
         "gid": "V-31243",
         "rid": "SV-41466r3_rule",
         "stig_id": "FN-04.03.01",
-        "fix_id": "F-35137r4_fix"
+        "fix_id": "F-35137r4_fix",
+        "documentable": false
       },
       "id": "V-31243",
       "title": "Foreign National (FN) Physical Access Control - (Identification Badges)",
@@ -1212,11 +1212,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Foreign National (FN) Administrative Controls - Contact Officer Appointment",
         "gid": "V-31262",
         "rid": "SV-41496r3_rule",
         "stig_id": "FN-05.03.01",
-        "fix_id": "F-35149r5_fix"
+        "fix_id": "F-35149r5_fix",
+        "documentable": false
       },
       "id": "V-31262",
       "title": "Foreign National (FN) Administrative Controls - Contact Officer Appointment",
@@ -1230,11 +1230,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Foreign National (FN) Administrative Controls - Procedures Training",
         "gid": "V-31263",
         "rid": "SV-41502r3_rule",
         "stig_id": "FN-05.02.01",
-        "fix_id": "F-35158r3_fix"
+        "fix_id": "F-35158r3_fix",
+        "documentable": false
       },
       "id": "V-31263",
       "title": "Foreign National (FN) Administrative Controls - Written Procedures and Employee Training",
@@ -1248,11 +1248,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Foreign National (FN) Administrative Controls - Investig. Clearance",
         "gid": "V-31264",
         "rid": "SV-41506r3_rule",
         "stig_id": "FN-05.01.01",
-        "fix_id": "F-35159r4_fix"
+        "fix_id": "F-35159r4_fix",
+        "documentable": false
       },
       "id": "V-31264",
       "title": "Foreign National (FN) Administrative Controls - Proper Investigation and Clearance for Access to Classified Systems and/or Information Assurance (IA) Positions of Trust",
@@ -1266,11 +1266,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Foreign National (FN) Administrative Controls - System Access Request Procedure",
         "gid": "V-31265",
         "rid": "SV-41516r3_rule",
         "stig_id": "FN-05.02.02",
         "fix_id": "F-35162r5_fix",
+        "documentable": false,
         "severity_override_guidance": "Finding is a CAT II by default. Reduce to CAT III if no local policy and procedures exist for adding foreign nationals to systems - but no inappropriate system access was found to be granted IAW DoD 8570.01-M as follows: C3.2.4.8.2. ...LNs and Foreign Nationals (FNs) must comply with background investigation requirements and cannot be assigned to IAT Level III positions."
       },
       "id": "V-31265",
@@ -1285,11 +1285,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Security (INFOSEC) - Safe/Vault/Secure Room Management",
         "gid": "V-31266",
         "rid": "SV-41522r3_rule",
         "stig_id": "IS-01.02.01",
-        "fix_id": "F-35163r6_fix"
+        "fix_id": "F-35163r6_fix",
+        "documentable": false
       },
       "id": "V-31266",
       "title": "Information Security (INFOSEC) - Safe/Vault/Secure Room Management",
@@ -1303,11 +1303,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Vault/Secure Room Standards - Combination Lock",
         "gid": "V-31267",
         "rid": "SV-41529r3_rule",
         "stig_id": "IS-02.01.01",
         "fix_id": "F-35164r6_fix",
+        "documentable": false,
         "severity_override_guidance": "The default severity level is CAT I but may be reduced to a CAT II finding at DoD Industry sites ONLY if compliance with NISPOM standards are met. This allows for the use of either an approved built-in combination lock or an approved combination or key-operated padlock. Particular attention must be given to control of key operated padlocks and keys IAW the NISPOM paragraph 5-310. If proper key control is not maintained the downgrade to CAT II should not be allowed."
       },
       "id": "V-31267",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Standards - Door Construction",
         "gid": "V-31268",
         "rid": "SV-41531r3_rule",
         "stig_id": "IS-02.01.02",
         "fix_id": "F-35165r5_fix",
+        "documentable": false,
         "severity_override_guidance": "Category I is the default severity level for this requirement. There are four separate checks under this requirement and a deficiency found in all the checks - except for check # 1 will result in a CAT I finding. If check #1 is the ONLY deficiency found pertaining to door construction then the severity level of the finding may be reduced to CAT II. Following is the referenced CAT II requirement: The doors to the room (primary and secondary) are not substantially constructed of wood or metal. (CAT II) If any or all of the other three checks under this requirement are found to be deficient the severity level will be CAT I."
       },
       "id": "V-31268",
@@ -1341,11 +1341,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Standards - Perimeter Construction Materials",
         "gid": "V-31269",
         "rid": "SV-41535r3_rule",
         "stig_id": "IS-02.02.11",
         "fix_id": "F-35166r3_fix",
+        "documentable": false,
         "mitigations": "Information Security",
         "mitigation_control": "For DoD Industry sites ONLY the following guidance concerning use of \"modular partitions\" is acceptable: If insert-type panels are used, a method shall be devised to prevent the removal of such panels without leaving visual evidence of tampering. If visual access is a factor, area barrier walls up to a height of 8 feet shall be of opaque or translucent construction."
       },
@@ -1361,11 +1361,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Standards Wall Ceiling Integrity",
         "gid": "V-31270",
         "rid": "SV-41537r3_rule",
         "stig_id": "IS-02.01.03",
-        "fix_id": "F-35167r7_fix"
+        "fix_id": "F-35167r7_fix",
+        "documentable": false
       },
       "id": "V-31270",
       "title": "Information Security (INFOSEC) - Secure Room Storage Standards Wall and Ceiling Structural Integrity (AKA: True Floor to True Ceiling Connection)",
@@ -1379,11 +1379,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Vault/Secure Room Standards- Openings in Perimeter",
         "gid": "V-31271",
         "rid": "SV-41538r3_rule",
         "stig_id": "IS-02.01.04",
-        "fix_id": "F-35168r5_fix"
+        "fix_id": "F-35168r5_fix",
+        "documentable": false
       },
       "id": "V-31271",
       "title": "Information Security (INFOSEC) - Vault/Secure Room Storage Standards - Openings in Perimeter Exceeding 96 Square Inches",
@@ -1397,11 +1397,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Storage Standards Windows",
         "gid": "V-31272",
         "rid": "SV-41539r3_rule",
         "stig_id": "IS-02.01.05",
         "fix_id": "F-35169r5_fix",
+        "documentable": false,
         "potential_impacts": "Associated Traditional Security STIG Rules are: Rule Title: Information Security (INFOSEC) - Secure Room Storage Standards - Intrusion Detection System (IDS), STIG ID: IS-02.01.07 Rule ID: SV-41541r3_rule Vuln ID: V-31274 Rule Title: Risk Assessment -Holistic Review (site/environment/information systems) STIG ID: PH-02.02.01 Rule ID: SV-42878r3_rule Vuln ID: V-32541"
       },
       "id": "V-31272",
@@ -1416,11 +1416,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Vault Storage/Construction Standards",
         "gid": "V-31273",
         "rid": "SV-41540r3_rule",
         "stig_id": "IS-02.01.06",
         "fix_id": "F-35174r5_fix",
+        "documentable": false,
         "mitigations": "INFOSEC-Vault Storage/Construction Standards",
         "mitigation_control": "For Industry sites ONLY that are not located within the bounds of a DoD installation the standards for vault construction found in the NISPOM under Section 8, paragraph 5-802. Construction Required for Vaults - may be used."
       },
@@ -1436,11 +1436,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Standards - IDS",
         "gid": "V-31274",
         "rid": "SV-41541r3_rule",
         "stig_id": "IS-02.01.07",
         "fix_id": "F-35185r9_fix",
+        "documentable": false,
         "severity_override_guidance": "1. The default when no IDS is used in secure rooms or classified open storage areas housing SIPRNet equipment is a CAT I finding. 2. Where IDS is being used properly BUT there is NO RISK ASSESSMENT and/or a SECURITY-IN-DEPTH DETERMINATION * IN WRITING by the C/S/A senior agency (security) official that specifically addresses the secure room or open storage space - then the severity level is a CAT II. 3. This requirement/check is NA if random checks not exceeding 4-hours are used in lieu of IDS, but only if the use of random checks is supported by a valid risk assessment and a security-in-depth determination. 4. This requirement/check for IDS (IS-02.01.07) cannot be used together with the requirement/check for 4-hour random checks (IS-02.01.10). Only one or the other is applicable to any individual secure room or collateral classified open storage area."
       },
       "id": "V-31274",
@@ -1455,11 +1455,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Standards - BMS on Perimeter Doors",
         "gid": "V-31275",
         "rid": "SV-41542r3_rule",
         "stig_id": "IS-02.01.08",
         "fix_id": "F-35186r3_fix",
+        "documentable": false,
         "severity_override_guidance": "Default severity level is a CAT I: Secure Rooms containing SIPRNet assets that use an Intrusion Detection System (IDS) do not have all doors (primary and secondary) monitored with an alarm contact. Reduction to CAT II: Secure Rooms containing SIPRNet assets using an IDS have all doors monitored with alarm contacts; however, the alarm contacts are not Balanced Magnetic Switches (BMS) meeting UL Standard 634. This particular requirement for BMS (IS-02.01.08) can only be used when the IDS requirement (IS-02.01.07) is the supplemental control selected for secure rooms. It is not applicable (NA) if the requirement for 4-hour random checks (IS-02.01.10) is used in lieu of IS-02.01.07."
       },
       "id": "V-31275",
@@ -1474,11 +1474,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Storage Standards - Interior Motion Detection",
         "gid": "V-31276",
         "rid": "SV-41543r3_rule",
         "stig_id": "IS-02.01.09",
         "fix_id": "F-35187r10_fix",
+        "documentable": false,
         "severity_override_guidance": "The default severity level for a finding is CAT I for either no motion detection or lack of adequate interior motion detection (defined as when classified SIPRNet assets are not directly covered by motion detection) or the employment of motion detection sensors is not addressed in the organizations risk assessment or placement of motions sensors is not IAW the risk assessment considerations . There is no mitigation provided for reduction to a CAT II or CAT III severity level.",
         "potential_impacts": "This particular requirement/check for motion detection (IS-02.01.09) can only be used when the IDS requirement (IS-02.01.07) is the supplemental control selected for secure rooms or collateral classified open storage areas areas containing classified SIPRNet assets. It is not applicable (NA) if the requirement for 4-hour random checks (IS-02.01.10) is used in lieu of IS-02.01.07."
       },
@@ -1494,11 +1494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Standards - Structural Integrity Check",
         "gid": "V-31277",
         "rid": "SV-41544r3_rule",
         "stig_id": "IS-02.02.01",
         "fix_id": "F-35188r9_fix",
+        "documentable": false,
         "severity_override_guidance": "The default finding is a CAT II. It may be lowered to a CAT III finding if it can be determined the perimeter checks are actually conducted as specified, but written procedures or documentation covering results of the checks are not developed or maintained."
       },
       "id": "V-31277",
@@ -1513,11 +1513,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (INFOSEC) - Secure Room Standards - Random Checks",
         "gid": "V-31278",
         "rid": "SV-41545r3_rule",
         "stig_id": "IS-02.01.10",
         "fix_id": "F-35190r6_fix",
+        "documentable": false,
         "severity_override_guidance": "The default severity level for a finding is Category I (CAT I): A site does not employ IDS for protection of secret secure rooms protecting SIPRNet assets and random guard checks not to exceed 4-hours are not *properly conducted*. A proper check of the secure room or area will consist of ensuring all doors, ground level windows capable of being opened, and openings exceeding 96 square inches are checked. Physical Checks will ensure doors, windows and openings are still locked and/or supplemental security measures (bars, grills, etc. are still intact). Checks MUST BE made on a RANDOM basis rather than just once every 4-hours to be proper and effective. A Documented Record of all checks must be made and maintained on file for 90 days for checks to be considered proper. If use of random checks is not supported by both a risk assessment and a security-in-depth determination in writing by the Agency (C/S/A) senior security official is not available - this is also a CAT I finding. If guards or employees conducting the checks do not have at least a Secret clearance this is not a proper check and is a CAT I finding. Downgrade to CAT II: If random checks are properly conducted: 1. but documented procedures are not provided for checkers to follow OR 2. a record of checks is not maintained. This requirement/check (random checks) is Not Applicable (NA) if IDS is used as the supplemental control. This requirement, 4-hour random checks (IS-02.01.10) cannot be used together with the requirement/check for IDS (IS-02.01.07). Only one or the other is applicable to any individual secure room or collateral classified open storage area."
       },
       "id": "V-31278",
@@ -1532,11 +1532,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Standards - IDS Verification",
         "gid": "V-31279",
         "rid": "SV-41547r3_rule",
         "stig_id": "IS-02.02.02",
         "fix_id": "F-35191r4_fix",
+        "documentable": false,
         "severity_override_guidance": "Default CAT II: If IDS functionality checks are not conducted at least semi-annually using industry best practices or other DoD standards this is a CAT II finding. Downgrade to CAT III: If IDS functionality testing is conducted at least semi-annually but there is a lack of adequate written procedures for the process or results of testing are not maintained for audit purposes this finding may be downgraded to CAT III. Downgrade to CAT III: If IDS functionality testing is conducted at a frequency less than semi-annually but at least annually this finding may be downgraded to CAT III. NOTE: There is NO reduction of severity level from the default level of CAT II if testing is not conducted at least annually. Not Applicable (NA) if 4-hour random checks of secure room spaces are conducted in lieu of IDS."
       },
       "id": "V-31279",
@@ -1551,11 +1551,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Vault/Secure Room Standards - IDS Line Security",
         "gid": "V-31284",
         "rid": "SV-41552r3_rule",
         "stig_id": "IS-02.01.11",
-        "fix_id": "F-35201r4_fix"
+        "fix_id": "F-35201r4_fix",
+        "documentable": false
       },
       "id": "V-31284",
       "title": "Vault/Secure Room Storage Standards - IDS Transmission Line Security",
@@ -1569,11 +1569,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Standards - Masked IDS Sensors",
         "gid": "V-31286",
         "rid": "SV-41554r3_rule",
         "stig_id": "IS-02.02.03",
-        "fix_id": "F-35203r2_fix"
+        "fix_id": "F-35203r2_fix",
+        "documentable": false
       },
       "id": "V-31286",
       "title": "Vault/Secure Room Storage Standards - Masking of IDS Sensors Displayed at the Intrusion Detection System (IDS) Monitoring Station",
@@ -1587,11 +1587,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Standards - IDS Alarm Status (Audible and Visual Indicators)",
         "gid": "V-31289",
         "rid": "SV-41560r3_rule",
         "stig_id": "IS-02.02.04",
         "fix_id": "F-35207r2_fix",
+        "documentable": false,
         "severity_override_guidance": "Default CAT II: Alarm activations do not provide BOTH visual and audible indicators."
       },
       "id": "V-31289",
@@ -1606,11 +1606,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Standards - IDS/AECS Power Supply",
         "gid": "V-31290",
         "rid": "SV-41561r3_rule",
         "stig_id": "IS-02.02.05",
-        "fix_id": "F-35209r5_fix"
+        "fix_id": "F-35209r5_fix",
+        "documentable": false
       },
       "id": "V-31290",
       "title": "Vault/Secure Room Storage Standards - Intrusion Detection System (IDS) / Automated Entry Control System (AECS) Primary and Emergency Power Supply",
@@ -1624,11 +1624,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Standards - IDS/AECS Component Tamper Protection",
         "gid": "V-31291",
         "rid": "SV-41562r3_rule",
         "stig_id": "IS-02.02.06",
-        "fix_id": "F-35210r6_fix"
+        "fix_id": "F-35210r6_fix",
+        "documentable": false
       },
       "id": "V-31291",
       "title": "Vault/Secure Room Storage Standards - Intrusion Detection System and Automated Entry Control System (IDS/AECS) Component Tamper Protection",
@@ -1642,11 +1642,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Vault/Secure Room Standards - IDS Access/Secure Control Unit Location",
         "gid": "V-31292",
         "rid": "SV-41563r3_rule",
         "stig_id": "IS-02.01.12",
         "fix_id": "F-35211r4_fix",
+        "documentable": false,
         "potential_impacts": "IA Controls: PESS-1 Storage PEPF-2 (IDS)"
       },
       "id": "V-31292",
@@ -1661,11 +1661,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Standards - IDS Monitor Location",
         "gid": "V-31293",
         "rid": "SV-41564r3_rule",
         "stig_id": "IS-02.02.07",
-        "fix_id": "F-35212r1_fix"
+        "fix_id": "F-35212r1_fix",
+        "documentable": false
       },
       "id": "V-31293",
       "title": "Vault/Secure Room Storage Standards - Primary IDS Monitoring Location Outside the Monitored Space",
@@ -1679,11 +1679,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Information Security (IS) - Continuous Operations Facility",
         "gid": "V-31294",
         "rid": "SV-41565r3_rule",
         "stig_id": "IS-02.01.13",
         "fix_id": "F-35254r13_fix",
+        "documentable": false,
         "severity_override_guidance": "Default severity level for this requirement is a Category I (CAT I). If one or more of the following six checks are the *ONLY* findings (no CAT I checks are found to be deficient), the finding under this requirement may be downgraded to a CAT II severity level.: *Method 1/Check #4. Appendix to Enclosure 3, para 2.e(6) -- If there is no Intrusion Detection System (IDS) employed in the Continuous Operations Facility: Check to ensure that a duress device is available for occupants inside the facility, IF DETERMINED NECESSARY BY A DOCUMENTED RISK ASSESSMENT (RA). If there is no duress device and no RA to validate that there is no need for duress, it is a finding. (CAT II) ** Method 2/Check #5. Appendix to Enclosure 3, para 2.e(6) -- If there is no IDS employed in the Continuous Operations Facility: Check to ensure that a duress device is available for occupants inside the facility, IF DETERMINED NECESSARY BY A DOCUMENTED RISK ASSESSMENT (RA). If there is no duress device and no RA to validate that there is no need for duress, it is a finding. (CAT II) ***Method 3/Check #4. Appendix to Enclosure 3, para 2.e(6)-- If there is no IDS employed in the Continuous Operations Facility: Check to ensure that a duress device is available for occupants inside the facility, IF DETERMINED NECESSARY BY A DOCUMENTED RISK ASSESSMENT (RA). If there is no duress device and no RA to validate that there is no need for duress, it is a finding. (CAT II) ****Method 4/Check #2. Appendix to Enclosure 3, para 3.a. - Check to ensure that cleared employees working outside the Continuous Operations Facility are located directly adjacent to a particular door or set of doors being monitored and are informed concerning their specific responsibilities for monitoring door security/access control. Written procedures must be available to substantiate this. (CAT II) *****Method 4/Check #4. Appendix to Enclosure 3, para 2.e(6) If there is no IDS employed in the Continuous Operations Facility: Check to ensure that a duress device is available for cleared employees monitoring door access from outside the facility, IF DETERMINED NECESSARY BY A DOCUMENTED RISK ASSESSMENT (RA). If there is no duress device and no RA to validate that there is no need for duress, it is a finding. (CAT II) ******Method 5/Check #2. Appendix to Enclosure 3, 3.a.(7) - Check to ensure that CCTV activity is recorded and maintained on file for a minimum of 90 days. (CAT II)"
       },
       "id": "V-31294",
@@ -1698,11 +1698,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Vault/Secure Room Storage Standards - Access Control During Working Hours",
         "gid": "V-31529",
         "rid": "SV-41811r3_rule",
         "stig_id": "IS-02.01.14",
         "fix_id": "F-35421r13_fix",
+        "documentable": false,
         "severity_override_guidance": "Default severity level is a Category I (CAT I). The severity level may be decreased to either CAT II or CAT III if the following 4- check(s) are the ONLY findings under this Rule (no findings against CAT I checks found): Check #3. Check to ensure that in addition to the swipe or proximity card or badge - that a personal identification number (PIN) is used. This is required WHEN VISUAL (MONITORING) of the entrance IS NOT USED during working hours. (CAT II when an AECS card and reader is used w/o PIN or biometrics) Check #4. Check the PINs are separately entered into the system by each individual using a keypad device and consist of four or more digits, randomly selected, with no known or logical association with the individuals. (CAT II only when an AECS with card and PIN is used) Check #5. Check to ensure there is a procedure to cover changing PINs when it is believed they have been compromised or subjected to compromise. (CAT III) NOTE: This check pertains only to situations where access is controlled by use of a swipe or proximity card (using an AECS card reader) along with a Personal Identity Number (PIN). Check #6. Biometrics Devices, which identify an individual requesting access by some unique personal characteristic, such as Fingerprinting, Hand Geometry, Handwriting, Retina scans, or Voice recognition may be used in conjunction with an ID badge or card in lieu of a PIN. (CAT II when an AECS card and reader is used w/o PIN or biometrics)"
       },
       "id": "V-31529",
@@ -1717,11 +1717,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Storage Standards - Automated Entry Control System (AECS) Records Maintenance",
         "gid": "V-31548",
         "rid": "SV-41831r3_rule",
         "stig_id": "IS-02.02.08",
         "fix_id": "F-35460r5_fix",
+        "documentable": false,
         "severity_override_guidance": "Default is a CAT II for a finding that records reflecting active assignment of ID badge/card, PIN, level of access, and similar system-related records are not accurately maintained. May be reduced to a CAT III severity level if one or both of the following checks are the only findings: Check to ensure there is a documented procedure for granting access and removal of persons from the Automated Entry Control System.(CAT III - for lack of written procedures) Check to ensure that records concerning personnel removed from the system are retained for a minimum of 90 days. (CAT III - if records are maintained for less than 90 days)"
       },
       "id": "V-31548",
@@ -1736,11 +1736,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Vault/Secure Room Storage Standards - AECS/IDS Head-End Equipment Protection",
         "gid": "V-31549",
         "rid": "SV-41832r3_rule",
         "stig_id": "IS-02.01.15",
         "fix_id": "F-35513r6_fix",
+        "documentable": false,
         "severity_override_guidance": "Severity level is CAT I if either of the following three checks are found to be non-compliant: 1. Check to ensure the physical location containing the primary IDS head-end equipment (server and/or work station/monitoring equipment) is in a continuously occupied location (eg., guard monitoring station for alarms and CCTV). (CAT I) 6. A secondary or supplemental AECS server/workstation or IDS data/monitoring workstation might not be located in a 24/7 occupied work space. In instances when AECS or IDS secondary head-end equipment is not continuously attended by employees responsible for monitoring or controlling it - Check to ensure it is protected minimally within a room with a BMS alarm contact on each door, window or opening and interior motion detection sensors are installed and activated at the end of each duty day. (CAT I) 8. Check to ensure that alarms from sensors in the room protecting secondary IDS or AECS head-end equipment are monitored at the primary IDS monitoring location. (CAT I) This VUL may be downgraded to severity level CAT II if all of the CAT I checks are compliant and any or all of the following checks are found to be non-compliant: 2. Check to ensure the continuously occupied space limits unescorted access to only those employees responsible for monitoring or controlling the IDS and/or AECS. Access control system card/badge readers or cipher locks may be used to fulfill this requirement. (CAT II) 3. If not co-located with the IDS head-end equipment; check to ensure the physical location containing the primary AECS head-end equipment is in a continuously occupied location OR protected minimally within a room with a BMS alarm contact on each door, window or opening and with interior motion detection sensors that are activated at the end of each duty day. (CAT II) 4. Check to ensure that AECS system card readers with coded access cards or badges (not cipher locks or keyed locks) are used to secure the doors to rooms protecting AECS head-end equipment that are not located within a continuously occupied location. (CAT II) 5. Check to ensure that alarms from sensors in the room protecting AECS head-end equipment are monitored at the primary IDS monitoring location. (CAT II) 7. Check to ensure that AECS system card readers with coded access cards or badges (not cipher locks or keyed locks) are used to secure the doors to rooms protecting secondary IDS or AECS head-end equipment that are not located within a continuously occupied location. (CAT II) 9. If 4-hour checks are used in lieu of IDS for vaults, secure rooms or collateral classified open storage areas; then 4-hour checks of the room or area used to house the (secondary) IDS and/or (primary/secondary) AECS head-end equipment may also be used. Check to ensure the use of 4-hour checks for protection of (secondary) IDS and/or (primary/secondary) AECS head-end equipment in lieu of IDS is based on a documented risk assessment. (CAT II) 10. If used, check to ensure that random checks (not to exceed 4-hours) of the room or area used to house the IDS or ACS head-end equipment are documented and maintained on file for a minimum of 90 days. (CAT II)"
       },
       "id": "V-31549",
@@ -1755,11 +1755,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Vault/Secure Room Storage Standards - Automated Entry Control System (AECS) Keypad Device Protection",
         "gid": "V-31657",
         "rid": "SV-41944r3_rule",
         "stig_id": "IS-02.03.01",
-        "fix_id": "F-35582r2_fix"
+        "fix_id": "F-35582r2_fix",
+        "documentable": false
       },
       "id": "V-31657",
       "title": "Vault/Secure Room Storage Standards - Automated Entry Control System (AECS) Keypad Device Protection: Keypad devices designed or installed in a manner that an unauthorized person in the immediate vicinity cannot observe the selection of input numbers.",
@@ -1773,11 +1773,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Storage Standards - Automated Entry Control System Transmission Line Security",
         "gid": "V-31897",
         "rid": "SV-42194r3_rule",
         "stig_id": "IS-02.02.09",
-        "fix_id": "F-35835r7_fix"
+        "fix_id": "F-35835r7_fix",
+        "documentable": false
       },
       "id": "V-31897",
       "title": "Vault/Secure Room Storage Standards - Automated Entry Control System (AECS) Transmission Line Security: AECS Transmission lines traversing an uncontrolled area (not within at least a Secret Controlled Access Area (CAA) ) shall use line supervision OR Electrical, mechanical, or electromechanical access control devices, which do not constitute an AECS that are used to control access during duty hours must have all electrical components, that traverse outside minimally a Secret Controlled Access Area (CAA), secured within conduit.",
@@ -1791,11 +1791,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Vault/Secure Room Storage Standards - Automated Entry Control System (AECS) Door Locks",
         "gid": "V-31908",
         "rid": "SV-42205r3_rule",
         "stig_id": "IS-02.02.10",
-        "fix_id": "F-35846r4_fix"
+        "fix_id": "F-35846r4_fix",
+        "documentable": false
       },
       "id": "V-31908",
       "title": "Vault/Secure Room Storage Standards - Automated Entry Control System (AECS) Door Locks: Electric Strikes and/or Magnetic Locking devices used in access control systems shall be heavy duty, industrial grade and be configured to fail secure in the event of a total loss of power (primary and backup).",
@@ -1809,11 +1809,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Marking Classified - Local or Enclave Classified Marking Procedures",
         "gid": "V-31909",
         "rid": "SV-42206r3_rule",
         "stig_id": "IS-03.03.01",
-        "fix_id": "F-35847r2_fix"
+        "fix_id": "F-35847r2_fix",
+        "documentable": false
       },
       "id": "V-31909",
       "title": "Marking Classified - Local or Enclave Classified Marking Procedures must be developed to ensure employees are familiar with appropriate organization Security Classification Guides (SCG), how to obtain guidance for marking classified documents, media and equipment, and where associated forms, classified cover sheets, labels, stamps, wrapping material for classified shipment, etc. can be obtained.",
@@ -1827,11 +1827,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Marking Classified - Equipment, Documents or Media",
         "gid": "V-31910",
         "rid": "SV-42207r3_rule",
         "stig_id": "IS-03.02.01",
-        "fix_id": "F-35848r4_fix"
+        "fix_id": "F-35848r4_fix",
+        "documentable": false
       },
       "id": "V-31910",
       "title": "Marking Classified - Equipment, Documents or Media: In a classified operating environment, all unclassified items must be marked in addition to all classified items.",
@@ -1845,11 +1845,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Classified Working Papers",
         "gid": "V-31976",
         "rid": "SV-42275r3_rule",
         "stig_id": "IS-04.03.01",
-        "fix_id": "F-35910r4_fix"
+        "fix_id": "F-35910r4_fix",
+        "documentable": false
       },
       "id": "V-31976",
       "title": "Classified Working Papers are properly marked, destroyed when no longer needed, or treated as a finished document after 180 days.",
@@ -1863,11 +1863,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Storage/Handling of Classified Documents, Media, Equipment",
         "gid": "V-31986",
         "rid": "SV-42285r3_rule",
         "stig_id": "IS-05.01.01",
         "fix_id": "F-35915r6_fix",
+        "documentable": false,
         "severity_override_guidance": "There are 3 individual checks and 4 sub-checks associated with this finding. The default finding severity level is Category I (CAT I) for check #1: 1. In areas containing SIPRNet assets - Check to ensure that classified documents, information system (IS) equipment and removable media that is not under the direct personal control and observation of an authorized person is guarded or stored in a locked security container (GSA approved safe), vault, secure room, collateral classified open storage area or SCIF with protection equal to or exceeding the highest classification of the material/equipment. (CAT I) If a finding under check #1 or check # 3 is not found the severity level may be reduced to CAT III for a finding under check #2 or any one of the four sub checks (2.a through 2.d.): 2. Check to ensure that site security personnel develop written procedures for response to incidents of classified materials found not in secure storage or under continuous observation and control of a cleared employee and make the procedures readily available to each employee via electronic means, such as in space on an organizational intranet, shared folders or other means available. (CAT III) Procedures for response to classified materials discovered that are not in proper storage or under proper control of a cleared person must include the following: a. Site security personnel, security reviewers/inspectors, employees or anyone making discovery of classified material not in secure storage or under continuous observation and control of a cleared employee immediately take control and properly secure the classified materials not under proper control when not in approved storage. Second they must report the discovery to their supervisory chain and/or site security officials. (CAT III) b. Site security personnel must initiate a preliminary inquiry if appropriate to determine the cause of the improperly secure material and to determine if any material was lost or compromised (security incident). (CAT III) c. Site security personnel must conduct remedial training action subsequent to incidents of classified materials found not in secure storage or under continuous observation and control of a cleared employee to remind employees of procedures and requirements to maintain positive control of classified materials removed from approved storage. (CAT III) d. Site managers/supervisors must discipline employees, as appropriate who do not comply with appropriate requirements to maintain positive control of classified material they have removed from secure storage. (CAT III) If a finding under check #1 or check # 2 is not found the severity level may be reduced to CAT II for a finding under check #3: 3. Check to ensure thats site security personnel conduct initial and annual training to indoctrinate and remind employees of procedures and requirements to maintain positive control of classified materials removed from approved storage and measures to take upon discovery of classified material not in proper storage or under proper control of a cleared person. (CAT II)"
       },
       "id": "V-31986",
@@ -1882,11 +1882,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Non-Disclosure Agreement - Standard Form 312",
         "gid": "V-31987",
         "rid": "SV-42286r3_rule",
         "stig_id": "IS-06.03.01",
-        "fix_id": "F-35916r6_fix"
+        "fix_id": "F-35916r6_fix",
+        "documentable": false
       },
       "id": "V-31987",
       "title": "Non-Disclosure Agreement - Standard Form 312: no person may have access to classified information unless that person has a security clearance in accordance with DoDM 5200.02 and has signed a Standard Form (SF) 312, Classified Information Non-Disclosure Agreement (NDA), and access is essential to the accomplishment of a lawful and authorized Government function (i.e., has a need to know).",
@@ -1900,11 +1900,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Handling of Classified Documents, Media, Equipment - Written Procedures and Training",
         "gid": "V-31988",
         "rid": "SV-42287r3_rule",
         "stig_id": "IS-07.03.01",
-        "fix_id": "F-35917r8_fix"
+        "fix_id": "F-35917r8_fix",
+        "documentable": false
       },
       "id": "V-31988",
       "title": "Handling of Classified Documents, Media, Equipment - Written Procedures and Training for when classified material/equipment is removed from a security container and/or secure room.",
@@ -1918,11 +1918,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Handling of Classified - Use of Cover Sheets on Documents",
         "gid": "V-31989",
         "rid": "SV-42288r3_rule",
         "stig_id": "IS-07.03.02",
-        "fix_id": "F-35918r3_fix"
+        "fix_id": "F-35918r3_fix",
+        "documentable": false
       },
       "id": "V-31989",
       "title": "Handling of Classified - Use of Cover Sheets on Documents Removed from Secure Storage",
@@ -1936,11 +1936,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Classified Monitors/Displays (Physical Control of Classified Monitors)",
         "gid": "V-31991",
         "rid": "SV-42290r3_rule",
         "stig_id": "IS-08.01.01",
         "fix_id": "F-35923r6_fix",
+        "documentable": false,
         "severity_override_guidance": "The default finding for this requirement is a Category I severity level, but the following override guidance should be followed: There are ten individual checks and sub-checks associated with this requirement with five of these checks defaulting as CAT I. The other five checks, which are associated only with classified (SIPRNet) environments with a FN presence default as a CAT II finding. If just one or all of the five CAT I default checks is found to be deficient then the finding will be a CAT I severity level. If just one or all of the CAT II default checks is found to be deficient (*and none of the CAT I checks are found to be deficient) then the finding will be listed as a CAT II severity level.",
         "potential_impacts": "RELATED VULS (STIG ID): 1. STIG ID: FN-04.01.01. This requirement concerns two related concerns. First is control of physical access to areas containing US Only workstations/monitor screens, equipment, media or documents in working environments where Foreign Nationals are employed or present. Second, It also covers maintaining continuous observation and control of US Only classified information system removable storage media and documents within classified storage locations (such as SCIFs, secure rooms or vaults) where foreign nationals are present OR placement in an approved safe. 2. STIG ID: IS-08.01.02. This requirement concerns maintaining control of Common Access Cards (CACs), SIPRNet tokens AND locking of computer work stations/monitor screens when unattended by removal of CACs, SIPRNet tokens or using Ctrl/Alt/Del. 3. STIG ID: IS-08.03.01. This requirement is specifically focused on checking written policy/procedures and initial/recurring training concerning cleared employee responsibilities and actions to protect classified work stations (monitor screens) under their control from unauthorized viewing. This requirement includes environments where US Only monitors or Foreign Nationals are present."
       },
@@ -1956,11 +1956,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Classified Monitors/Displays (Procedures for Obscuration of Classified Monitors)",
         "gid": "V-31992",
         "rid": "SV-42291r3_rule",
         "stig_id": "IS-08.03.01",
         "fix_id": "F-35924r2_fix",
+        "documentable": false,
         "potential_impacts": "RELATED VULS (STIG ID): 1. STIG ID: FN-04.01.01. This requirement concerns two related concerns. First is control of physical access to areas containing US Only workstations/monitor screens, equipment, media or documents in working environments where Foreign Nationals are employed or present. Second, It also covers maintaining continuous observation and control of US Only classified information system removable storage media and documents within classified storage locations (such as SCIFs, secure rooms or vaults) where foreign nationals are present OR or placement in an approved safe. 2. STIG ID: IS-08.01.01. This requirement is specifically focused on checking physical controls in place to protect classified work stations (monitor screens/displays) from unauthorized viewing. This check does cover considerations for environments with US Only monitors and Foreign National (FN) presence but is not specific to only FN work environments. It is also applicable to ALL environments where classified work stations (monitor screens/displays) are being used and there is a possibility of unauthorized viewing of the monitor screens by uncleared persons or those without a need-to-know. 3. STIG ID: IS-08.01.02. This requirement concerns maintaining control of Common Access Cards (CACs), SIPRNet tokens AND locking of computer work stations/monitor screens when unattended by removal of CACs, SIPRNet tokens or using Ctrl/Alt/Del."
       },
       "id": "V-31992",
@@ -1975,11 +1975,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Monitor Screens - Disable Access by CAC or Token Removal, or Lock Computer via Ctrl/Alt/Del",
         "gid": "V-31993",
         "rid": "SV-42292r3_rule",
         "stig_id": "IS-08.01.02",
         "fix_id": "F-35925r5_fix",
+        "documentable": false,
         "severity_override_guidance": "The default severity level is Category I (CAT I) based on the following requirement to lock server, work station and monitor screens connected to the DISN (SIPRNet and NIPRNet) when not physically attended: SIPRNet servers and/or work station hard drives/monitors/keyboards are disabled (locked) by CAC or Token Removal, or where CACs or tokens are not used the Computer must be locked via Ctrl/Alt/Del - when not personally and physically attended by properly vetted and cleared US personnel. (CAT I) NIPRNet servers and/or work station hard drives/monitors/keyboards (*used by system administrators with privileged access) are disabled (locked) by CAC or Token Removal, or where CACs or tokens are not used the Computer must be locked via Ctrl/Alt/Del - when not personally and physically attended by properly vetted US personnel. (CAT I) If the above deficiencies are not discovered (All SIPRNet workstations, and/or NIPRNet workstations with privileged access are properly locked when unattended ) but a CAC or SIPRNet Token is discovered not under the personal control of the person to whom it was issued then the finding may be reduced to CAT II. Following is the applicable finding relative to a CAT II severity level: CACs and other tokens are not left unattended and are in the physical custody of the person to whom they were issued. (CAT II) Additionally the following finding may default as a CAT II if a CAC is found unattended in a NIPRNet workstation card reader, where the CAC holder has only non-privileged access: NIPRNet work station hard drives/monitors/keyboards (*used by general users or individuals without privileged systems access) are disabled (locked) by CAC or Token Removal, or where CACs or tokens are not used the Computer must be locked via Ctrl/Alt/Del - when not personally and physically attended by properly vetted US personnel. (CAT II)",
         "potential_impacts": "RELATED VULS (STIG ID): 1. STIG ID: FN-04.01.01. This requirement concerns two related concerns. First is control of physical access to areas containing US Only workstations/monitor screens, equipment, media or documents in working environments where Foreign Nationals are employed or present. Second, It also covers maintaining continuous observation and control of US Only classified information system removable storage media and documents within classified storage locations (such as SCIFs, secure rooms or vaults) where foreign nationals are present OR or placement in an approved safe. 2. STIG ID: IS-08.01.01. Classified Monitors/Displays (Physical Control of Classified Monitors From Unauthorized Viewing) . This requirement is specifically focused on checking physical controls in place to protect classified work stations (monitor screens) from unauthorized viewing. This requirement includes positioning and control of classified monitors and covers environments where Foreign Nationals are present and US Only work stations/monitor screens are present. 3. STIG ID: IS-08.03.01. This requirement is specifically focused on checking written policy/procedures and initial/recurring training concerning cleared employee responsibilities and actions to protect classified work stations (monitor screens) under their control from unauthorized viewing. This requirement includes positioning and control of classified monitors and covers environments where Foreign Nationals are present and US Only work stations/monitor screens are present."
       },
@@ -1995,11 +1995,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "End-of-Day Checks",
         "gid": "V-31994",
         "rid": "SV-42293r3_rule",
         "stig_id": "IS-09.02.01",
-        "fix_id": "F-35926r7_fix"
+        "fix_id": "F-35926r7_fix",
+        "documentable": false
       },
       "id": "V-31994",
       "title": "End-of-Day Checks - Organizations that process or store classified information must establish a system of security checks at the close of each duty and/or business day to ensure that any area where classified information is used or stored is secure. SF 701, Activity Security Checklist, shall be used to record such checks.",
@@ -2013,11 +2013,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Classified Reproduction - Written Procedures for SIPRNet Connected MFD",
         "gid": "V-31995",
         "rid": "SV-42294r3_rule",
         "stig_id": "IS-10.03.01",
-        "fix_id": "F-35927r6_fix"
+        "fix_id": "F-35927r6_fix",
+        "documentable": false
       },
       "id": "V-31995",
       "title": "Classified Reproduction - Written Procedures for SIPRNet Connected Classified Multi-Functional Devices (MFD) located in Space Not Approved for Collateral Classified Open Storage. NOTE: This STIG Rule (AKA: Vulnerability (Vul)) concerns only PROCEDURES for the reproduction (printing, copying, scanning, faxing) of classified documents on Multi-Functional Devices (MFD) connected to the DoDIN.",
@@ -2031,11 +2031,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Classified Reproduction - System to Media Transfer from SIPRNet IAW US CYBERCOM CTO 10-133A",
         "gid": "V-31996",
         "rid": "SV-42295r3_rule",
         "stig_id": "IS-10.02.01",
-        "fix_id": "F-35930r5_fix"
+        "fix_id": "F-35930r5_fix",
+        "documentable": false
       },
       "id": "V-31996",
       "title": "Classified Reproduction - Following guidance for System to Media Transfer of Data from systems connected specifically to the SIPRNet In-Accordance-With (IAW) US CYBERCOM CTO 10-133A .",
@@ -2049,11 +2049,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Classified Reproduction - SIPRNet Connected Classified MFD in Space not Approved for Open Storage",
         "gid": "V-32008",
         "rid": "SV-42324r3_rule",
         "stig_id": "IS-10.01.01",
         "fix_id": "F-35957r6_fix",
+        "documentable": false,
         "severity_override_guidance": "Default finding is CAT I. When a MFD (copier/printer/fax/scanner) connected to the SIPRNet is not properly located within a secret or higher collateral classified open storage area but is located within a secret or higher Controlled Access Area (CAA) the finding severity level may be reduced if the following procedures are accomplished: May be mitigated to CAT II if it can be positively demonstrated there is no hard drive containing non-volatile memory in the device and that the volatile memory is purged/sanitized of all classified data or images after each use. Powering down the machine will be a necessary part of this procedure to ensure that volatile memory is totally erased and sanitized so that it can be considered to be an unclassified device. Documented procedures will also need to be available to support this process. If a hard drive is present it may also be mitigated to a CAT II finding if the hard drive is promptly removed after each use and stored in an appropriate GSA approved container (safe). Powering down the machine will also be a necessary part of this procedure to ensure that volatile memory is also erased and sanitized. Documented procedures will also need to be available to support this process. NOTE: Clearing of hard drives (such as by overwriting) is not adequate to sanitize a classified hard drive (magnetic or solid state) so that it can be deemed unclassified and left unattended in an area not approved for classified open storage. This is regardless of the number of times the drive is over-written. A hard drive (magnetic or solid state) can only be sanitized (made unclassified) by degaussing and/or physical destruction, thereby rending the drive no longer usable. ONLY volatile memory can be sanitized by removal of power without rendering the MFD unusable."
       },
       "id": "V-32008",
@@ -2068,11 +2068,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Destruction of Classified Documents Printed from SIPRNet",
         "gid": "V-32009",
         "rid": "SV-42325r3_rule",
         "stig_id": "IS-11.01.01",
-        "fix_id": "F-35958r8_fix"
+        "fix_id": "F-35958r8_fix",
+        "documentable": false
       },
       "id": "V-32009",
       "title": "Destruction of Classified Documents Printed from the SIPRNet Using Approved Devices on NSA Evaluated Products Lists (EPL).",
@@ -2086,11 +2086,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Destruction of Classified and Unclassified Documents, Equipment and Media - Policy/Procedure",
         "gid": "V-32090",
         "rid": "SV-42407r3_rule",
         "stig_id": "IS-11.03.01",
-        "fix_id": "F-36047r4_fix"
+        "fix_id": "F-36047r4_fix",
+        "documentable": false
       },
       "id": "V-32090",
       "title": "Destruction of Classified and Unclassified Documents, Equipment and Media - Availability of Local Policy and Procedures",
@@ -2104,11 +2104,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Classified Destruction - Media Sanitization Devices and Plans not Available for AIS On-Hand",
         "gid": "V-32102",
         "rid": "SV-42419r3_rule",
         "stig_id": "IS-11.02.01",
-        "fix_id": "F-36053r7_fix"
+        "fix_id": "F-36053r7_fix",
+        "documentable": false
       },
       "id": "V-32102",
       "title": "Classified Destruction - Hard Drive and Storage Media Sanitization Devices and Plans are not Available for disposal of Automated Information System (AIS) Equipment On-Hand",
@@ -2122,11 +2122,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Classified Material Destruction - Improper Disposal of AIS Hard Drives and Storage Media",
         "gid": "V-32111",
         "rid": "SV-42428r3_rule",
         "stig_id": "IS-11.01.02",
         "fix_id": "F-36067r12_fix",
+        "documentable": false,
         "potential_impacts": "This rule and associated checks apply to Classified (SIPRNet) hard drives and storage media that contain either volatile or non-volatile memory or both. Volatile memory is generally completely purged/sanitized from a storage device upon removal of power (over a period of time depending on the storage device). The primary concern is with Non-volatile memory, which remains on a storage device permanently unless properly removed by NSA approved methods and/or they are physically destroyed."
       },
       "id": "V-32111",
@@ -2141,11 +2141,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Classified Emergency Destruction Plans",
         "gid": "V-32132",
         "rid": "SV-42449r3_rule",
         "stig_id": "IS-13.02.01",
         "fix_id": "F-36073r4_fix",
+        "documentable": false,
         "severity_override_guidance": "CAT II if there are not any plans developed for emergency destruction, removal, etc. CAT III if plans have been developed but are not readily available for reference by employees."
       },
       "id": "V-32132",
@@ -2160,11 +2160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Security Incident/Spillage - Handling and Reporting",
         "gid": "V-32138",
         "rid": "SV-42455r3_rule",
         "stig_id": "IS-14.02.01",
         "fix_id": "F-36074r3_fix",
+        "documentable": false,
         "responsibility": "Security Manager"
       },
       "id": "V-32138",
@@ -2179,11 +2179,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Classification Guides",
         "gid": "V-32150",
         "rid": "SV-42467r3_rule",
         "stig_id": "IS-15.02.01",
-        "fix_id": "F-36079r5_fix"
+        "fix_id": "F-36079r5_fix",
+        "documentable": false
       },
       "id": "V-32150",
       "title": "Classification Guides Must be Available for Programs and Systems for an Organization or Site",
@@ -2197,11 +2197,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Controlled Unclassified Information (CUI) - Local Policy and Procedure",
         "gid": "V-32156",
         "rid": "SV-42473r3_rule",
         "stig_id": "IS-16.03.01",
-        "fix_id": "F-36080r3_fix"
+        "fix_id": "F-36080r3_fix",
+        "documentable": false
       },
       "id": "V-32156",
       "title": "Controlled Unclassified Information (CUI) - Local Policy and Procedure",
@@ -2215,11 +2215,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Controlled Unclassified Information (CUI) - Employee Education and Training",
         "gid": "V-32159",
         "rid": "SV-42476r3_rule",
         "stig_id": "IS-16.02.01",
-        "fix_id": "F-36088r3_fix"
+        "fix_id": "F-36088r3_fix",
+        "documentable": false
       },
       "id": "V-32159",
       "title": "Controlled Unclassified Information (CUI) - Employee Education and Training",
@@ -2233,11 +2233,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Controlled Unclassified Information - Document, Hard Drive and Media Disposal",
         "gid": "V-32180",
         "rid": "SV-42497r3_rule",
         "stig_id": "IS-16.02.02",
-        "fix_id": "F-36106r5_fix"
+        "fix_id": "F-36106r5_fix",
+        "documentable": false
       },
       "id": "V-32180",
       "title": "Controlled Unclassified Information - Document, Hard Drive and Media Disposal",
@@ -2251,11 +2251,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Controlled Unclassified Information - Handling and Storage",
         "gid": "V-32261",
         "rid": "SV-42578r3_rule",
         "stig_id": "IS-16.02.03",
-        "fix_id": "F-36186r8_fix"
+        "fix_id": "F-36186r8_fix",
+        "documentable": false
       },
       "id": "V-32261",
       "title": "Controlled Unclassified Information - Handling, Storage and Controlling Access to Areas where CUI is Processed or Maintained",
@@ -2269,11 +2269,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Controlled Unclassified Information - Marking/Labeling Media",
         "gid": "V-32262",
         "rid": "SV-42579r3_rule",
         "stig_id": "IS-16.03.02",
-        "fix_id": "F-36187r4_fix"
+        "fix_id": "F-36187r4_fix",
+        "documentable": false
       },
       "id": "V-32262",
       "title": "Controlled Unclassified Information - Marking/Labeling Media within Unclassified Environments (Not Mixed with Classified)",
@@ -2287,11 +2287,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Controlled Unclassified Information - Encryption of Data at Rest",
         "gid": "V-32263",
         "rid": "SV-42580r3_rule",
         "stig_id": "IS-16.02.04",
-        "fix_id": "F-36188r5_fix"
+        "fix_id": "F-36188r5_fix",
+        "documentable": false
       },
       "id": "V-32263",
       "title": "Controlled Unclassified Information - Encryption of Data at Rest",
@@ -2305,11 +2305,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Controlled Unclassified Information - Transmission",
         "gid": "V-32264",
         "rid": "SV-42581r3_rule",
         "stig_id": "IS-16.02.05",
-        "fix_id": "F-36189r4_fix"
+        "fix_id": "F-36189r4_fix",
+        "documentable": false
       },
       "id": "V-32264",
       "title": "Controlled Unclassified Information - Transmission by either Physical or Electronic Means",
@@ -2323,11 +2323,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Controlled Unclassified Information - Web-Site Encryption",
         "gid": "V-32265",
         "rid": "SV-42582r3_rule",
         "stig_id": "IS-16.02.06",
-        "fix_id": "F-36190r4_fix"
+        "fix_id": "F-36190r4_fix",
+        "documentable": false
       },
       "id": "V-32265",
       "title": "Controlled Unclassified Information - Posting Only on Web-Sites with Appropriate Encryption; not on Publicly Accessible Web-Sites.",
@@ -2341,11 +2341,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Classified Annual Review",
         "gid": "V-32321",
         "rid": "SV-42658r3_rule",
         "stig_id": "IS-17.03.01",
-        "fix_id": "F-36248r3_fix"
+        "fix_id": "F-36248r3_fix",
+        "documentable": false
       },
       "id": "V-32321",
       "title": "Classified Annual Review",
@@ -2359,11 +2359,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Position of Trust - Knowledge of Responsibility to Report Derogatory Information",
         "gid": "V-32336",
         "rid": "SV-42673r3_rule",
         "stig_id": "PE-01.03.01",
-        "fix_id": "F-36252r5_fix"
+        "fix_id": "F-36252r5_fix",
+        "documentable": false
       },
       "id": "V-32336",
       "title": "Position of Trust - Knowledge of Responsibility to Self Report Derogatory Information",
@@ -2377,11 +2377,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Position of Trust - Local Policy Covering Employee Personal Standards of Conduct Responsibilities",
         "gid": "V-32340",
         "rid": "SV-42677r3_rule",
         "stig_id": "PE-01.03.02",
-        "fix_id": "F-36253r4_fix"
+        "fix_id": "F-36253r4_fix",
+        "documentable": false
       },
       "id": "V-32340",
       "title": "Position of Trust - Local Policy Covering Employee Personal Standards of Conduct and Responsibilities",
@@ -2395,11 +2395,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Position of Trust - Training Covering Employee Standards of Conduct and Personal Responsibilities",
         "gid": "V-32341",
         "rid": "SV-42678r3_rule",
         "stig_id": "PE-01.03.03",
-        "fix_id": "F-36254r2_fix"
+        "fix_id": "F-36254r2_fix",
+        "documentable": false
       },
       "id": "V-32341",
       "title": "Position of Trust - Training Covering Employee Standards of Conduct and Personal Responsibilities",
@@ -2413,11 +2413,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Position Sensitivity",
         "gid": "V-32342",
         "rid": "SV-42679r3_rule",
         "stig_id": "PE-02.02.01",
         "fix_id": "F-36255r7_fix",
+        "documentable": false,
         "potential_impacts": "Related STIG rules: PE-03.02.01 - Validation Procedures for Security Clearance Issuance (Classified Systems and/or Physical Access Granted) PE-04.02.01 - Information Assurance (IA) Positions of Trust - Identification of Positions or Duties with Privileged Access to Information Systems or Responsibility for Security Oversight of Information Systems PE-05.02.01 - Background Investigations PE-06.03.01 - Periodic Reinvestigations"
       },
       "id": "V-32342",
@@ -2432,11 +2432,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Validation Procedures for Clearance Issuance and Access Granted",
         "gid": "V-32343",
         "rid": "SV-42680r3_rule",
         "stig_id": "PE-03.02.01",
         "fix_id": "F-36256r7_fix",
+        "documentable": false,
         "responsibility": [
           "Information Assurance Manager",
           "Security Manager"
@@ -2454,11 +2454,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Information Assurance Positions of Trust",
         "gid": "V-32372",
         "rid": "SV-42709r3_rule",
         "stig_id": "PE-04.02.01",
         "fix_id": "F-36294r6_fix",
+        "documentable": false,
         "potential_impacts": "Related STIG rules: PE-02-02-01 - Position Sensitivity - Based on Security Clearance and/or Information Technology (IT) Systems Access Level or Responsibility for Security Oversight on Assigned Information Systems (IS) PE-03.02.01 - Validation Procedures for Security Clearance Issuance (Classified Systems and/or Physical Access Granted) PE-05.02.01 - Background Investigations PE-06.03.01 - Periodic Reinvestigations"
       },
       "id": "V-32372",
@@ -2473,11 +2473,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Background Investigations",
         "gid": "V-32396",
         "rid": "SV-42733r3_rule",
         "stig_id": "PE-05.02.01",
         "fix_id": "F-36313r5_fix",
+        "documentable": false,
         "potential_impacts": "Related STIG rules: PE-02-02-01 - Position Sensitivity - Based on Security Clearance and/or Information Technology (IT) Systems Access Level or Responsibility for Security Oversight on Assigned Information Systems (IS) PE-03.02.01 - Validation Procedures for Security Clearance Issuance (Classified Systems and/or Physical Access Granted) PE-04.02.01 - Information Assurance (IA) Positions of Trust - Identification of Positions or Duties with Privileged Access to Information Systems or Responsibility for Security Oversight of Information Systems PE-06.03.01 - Periodic Reinvestigations"
       },
       "id": "V-32396",
@@ -2492,11 +2492,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Periodic Reinvestigations",
         "gid": "V-32408",
         "rid": "SV-42745r3_rule",
         "stig_id": "PE-06.03.01",
         "fix_id": "F-36326r6_fix",
+        "documentable": false,
         "potential_impacts": "Related STIG rules: PE-02-02-01 - Position Sensitivity - Based on Security Clearance and/or Information Technology (IT) Systems Access Level or Responsibility for Security Oversight on Assigned Information Systems (IS) PE-03.02.01 - Validation Procedures for Security Clearance Issuance (Classified Systems and/or Physical Access Granted) PE-04.02.01 - Information Assurance (IA) Positions of Trust - Identification of Positions or Duties with Privileged Access to Information Systems or Responsibility for Security Oversight of Information Systems PE-05.02.01 - Background Investigations"
       },
       "id": "V-32408",
@@ -2511,11 +2511,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Outprocessing Procedures",
         "gid": "V-32425",
         "rid": "SV-42762r3_rule",
         "stig_id": "PE-07.03.01",
-        "fix_id": "F-36347r4_fix"
+        "fix_id": "F-36347r4_fix",
+        "documentable": false
       },
       "id": "V-32425",
       "title": "Out-processing Procedures for Departing or Terminated Employees (Military, Government Civilian and Contractor)",
@@ -2529,11 +2529,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Intrusion Detection System (IDS) Monitoring Station Personnel - Suitability Checks",
         "gid": "V-32457",
         "rid": "SV-42794r3_rule",
         "stig_id": "PE-08.02.01",
-        "fix_id": "F-36380r5_fix"
+        "fix_id": "F-36380r5_fix",
+        "documentable": false
       },
       "id": "V-32457",
       "title": "Intrusion Detection System (IDS) Monitoring Station Personnel - Suitability Checks",
@@ -2547,11 +2547,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Intrusion Detection System (IDS) Installation and Maintenance Personnel - Suitability Checks",
         "gid": "V-32477",
         "rid": "SV-42814r3_rule",
         "stig_id": "PE-08.02.02",
-        "fix_id": "F-36394r4_fix"
+        "fix_id": "F-36394r4_fix",
+        "documentable": false
       },
       "id": "V-32477",
       "title": "Intrusion Detection System (IDS) Installation and Maintenance Personnel - Suitability Checks",
@@ -2565,11 +2565,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Physical Security Program - Physical Security Plan",
         "gid": "V-32482",
         "rid": "SV-42819r3_rule",
         "stig_id": "PH-01.03.01",
-        "fix_id": "F-36407r4_fix"
+        "fix_id": "F-36407r4_fix",
+        "documentable": false
       },
       "id": "V-32482",
       "title": "Physical Security Program - Physical Security Plan (PSP) and/or Systems Security Plan (SSP) Development and Implementation with Consideration/Focus on Protection of Information System Assets in the Physical Environment",
@@ -2583,11 +2583,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Risk Assessment -Holistic Review (site/environment/information systems)",
         "gid": "V-32541",
         "rid": "SV-42878r3_rule",
         "stig_id": "PH-02.02.01",
-        "fix_id": "F-36459r6_fix"
+        "fix_id": "F-36459r6_fix",
+        "documentable": false
       },
       "id": "V-32541",
       "title": "Risk Assessment -Holistic Review (site/environment/information systems)",
@@ -2601,11 +2601,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Physical Protection of Unclassified Key System Devices",
         "gid": "V-32580",
         "rid": "SV-42917r3_rule",
         "stig_id": "PH-03.02.01",
-        "fix_id": "F-36507r3_fix"
+        "fix_id": "F-36507r3_fix",
+        "documentable": false
       },
       "id": "V-32580",
       "title": "Physical Protection of Unclassified Key System Devices/Computer Rooms in Large Processing Facilities",
@@ -2619,11 +2619,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Restricted Area and Controlled Area Designation",
         "gid": "V-32600",
         "rid": "SV-42937r3_rule",
         "stig_id": "PH-04.02.01",
         "fix_id": "F-36515r2_fix",
+        "documentable": false,
         "responsibility": "Security Manager"
       },
       "id": "V-32600",
@@ -2638,11 +2638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Security-in-Depth - Minimum Physical Barriers and Access Control Measures for DoDIN Connected Assets",
         "gid": "V-32601",
         "rid": "SV-42938r3_rule",
         "stig_id": "PH-05.02.01",
-        "fix_id": "F-36516r9_fix"
+        "fix_id": "F-36516r9_fix",
+        "documentable": false
       },
       "id": "V-32601",
       "title": "Security-in-Depth (AKA: Defense-in-Depth) - Minimum Physical Barriers and Access Control Measures for Facilities or Buildings Containing DoDIN (SIPRNet/NIPRNet) Connected Assets.",
@@ -2656,11 +2656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Visitor Control - To Facility or Organization",
         "gid": "V-32602",
         "rid": "SV-42939r3_rule",
         "stig_id": "PH-06.02.01",
-        "fix_id": "F-36517r5_fix"
+        "fix_id": "F-36517r5_fix",
+        "documentable": false
       },
       "id": "V-32602",
       "title": "Visitor Control - To Facility or Organization with Information System Assets Connected to the DISN",
@@ -2674,11 +2674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sensitive Item Control - Keys, Locks and Access Cards",
         "gid": "V-32603",
         "rid": "SV-42940r3_rule",
         "stig_id": "PH-07.02.01",
-        "fix_id": "F-36518r4_fix"
+        "fix_id": "F-36518r4_fix",
+        "documentable": false
       },
       "id": "V-32603",
       "title": "Sensitive Item Control - Keys, Locks and Access Cards Controlling Access to Information Systems (IS) or IS Assets Connected to the DISN",
@@ -2692,11 +2692,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Physical Penetration Testing",
         "gid": "V-32604",
         "rid": "SV-42941r3_rule",
         "stig_id": "PH-09.03.01",
-        "fix_id": "F-36519r2_fix"
+        "fix_id": "F-36519r2_fix",
+        "documentable": false
       },
       "id": "V-32604",
       "title": "Physical Penetration Testing - of Facilities or Buildings Containing Information Systems (IS) Connected to the DISN",
@@ -2710,11 +2710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Security and Cybersecurity Staff Appointment, Training/Certification and Suitability",
         "gid": "V-32605",
         "rid": "SV-42942r3_rule",
         "stig_id": "SM-01.03.01",
         "fix_id": "F-36520r4_fix",
+        "documentable": false,
         "severity_override_guidance": "Default is CAT II based on Check #4 below. If check #4 is compliant then reduce to CAT III for checks #1 through #3 as follows: Check #1. Check to ensure there are appointment letters for all security staff members including the SM, AO, ISSM, ISSOs, System Administrators (SA), and Network Security Officers (NSO). (CAT III) Check #2. Check to ensure the appointments are current and an appropriate authority has made the appointments. (CAT III) Check #3. Check to ensure that pertinent duties, responsibilities, training/certification and other suitability requirements for the appointed positions are contained in the appointment order. (CAT III) Check # 4. Check supporting documentation to ensure that security staff have been properly trained and certified for the positions to which they are appointed and that they meet all applicable requirements for the positions. For instance the AO and ISSM must be US Citizens. (CAT II)"
       },
       "id": "V-32605",
@@ -2729,11 +2729,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Security Training - Information Security (INFOSEC)",
         "gid": "V-32606",
         "rid": "SV-42943r3_rule",
         "stig_id": "SM-02.02.01",
-        "fix_id": "F-36521r8_fix"
+        "fix_id": "F-36521r8_fix",
+        "documentable": false
       },
       "id": "V-32606",
       "title": "Security Training - Information Security (INFOSEC) for ALL Employees; Military, Government Civilian and Contractor",
@@ -2747,11 +2747,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Counter-Intelligence Program - Training, Procedures and Incident Reporting",
         "gid": "V-32607",
         "rid": "SV-42944r3_rule",
         "stig_id": "SM-03.03.01",
-        "fix_id": "F-36522r3_fix"
+        "fix_id": "F-36522r3_fix",
+        "documentable": false
       },
       "id": "V-32607",
       "title": "Counter-Intelligence Program - Training, Procedures and Incident Reporting",
@@ -2765,11 +2765,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "PDS Construction - Alarmed Carrier",
         "gid": "V-33456",
         "rid": "SV-43876r3_rule",
         "stig_id": "CS-04.01.08",
         "fix_id": "F-37378r9_fix",
+        "documentable": false,
         "severity_override_guidance": "The default is a Category I severity level when the physical make-up of the alarmed PDS is found to be inadequate, non-functional or otherwise vulnerable to undetected intrusion. Not conducting any checks of the PDS alarm functionality will also result in a CAT I finding. Alarms not continuously monitored by properly cleared US Personnel at a 24/7 monitoring location will also result in a CAT I finding. If the alarmed PDS is located within an Uncontrolled Access Area (UAA) and/or National Manager (NSA) approved encryption solutions are not employed a CAT I finding will result. May be reduced to CAT II if the PDS alarm system functions properly and checks of the alarm system are conducted at a frequency less than on a weekly basis. Checks must be conduct at least every 3-months or a CAT I severity level must be applied. May be reduced to a CAT II if the PDS alarm functions properly and checks of the alarm system are conducted on a weekly basis and the monitor station is capable of notifying security forces but the security forces are not capable of responding within 15 minutes. May be reduced to a CAT II if the PDS alarm functions properly and checks of the alarm system are conducted on a weekly basis but the alarm system sensor employed is not approved by the cognizant COMSEC and/or physical security authorities and/or documentation does not exist to support this approval. May be reduced to a CAT III if the PDS alarm functions properly and checks of the alarm system are conducted on at least a weekly basis but there is no SOP detailing actions for checking the system functionality or response to alarms.",
         "potential_impacts": "There are five types of PDS classified as Category 2 Distribution Systems using one of the following carriers: hardened, buried, suspended, alarmed, or continuously viewed. This requirement (Alarmed Carrier, STIG ID CS-04.01.08) may be used as an alternative Category 2 carrier in lieu of the following two types of distribution systems: (Hardened STIG ID: CS-04.01.02 and Continuously Viewed STIG ID: CS-04.01.06). An alarmed carrier is not a suitable alternative to either buried or suspended (external) PDS. If an alarmed carrier is used the requirements for hardened and continuously viewed carriers are NA."
       },
@@ -2785,11 +2785,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Environmental IA Controls - Emergency Power",
         "gid": "V-61629",
         "rid": "SV-76119r1_rule",
         "stig_id": "EC-03.03.02",
         "fix_id": "F-67557r2_fix",
+        "documentable": false,
         "severity_override_guidance": "The default finding is CAT II where a short-term uninterruptible power supply (UPS) is not available. If a UPS is available but there are no other longer term power sources such as secondary commercial power or generators and the organizations Holistic Risk Assessment has not specifically considered the impact of not having a long term alternate power source the finding severity level can be lowered to a CAT III. NOTE: It is not necessary for the risk assessment to specifically address the need for long term alternative power if it is actually available at the site.",
         "potential_impacts": "Related STIG Rules: Rule Title: Risk Assessment -Holistic Review (site/environment/information systems) STIG ID: PH-02.02.01, Rule ID: SV-42878r1_rule, Vuln ID: V-32541 Rule Title: Environmental IA Controls - Voltage Control (power) STIG ID: EC-03.03.01 Rule ID: SV-41031r1_rule Vuln ID: V-30987"
       },
@@ -2803,7 +2803,5 @@
       }
     }
   ],
-  "name": "Traditional",
-  "title": "Traditional Security Checklist",
-  "summary": "Summary of Changes: This third release of the Traditional Security Checklist provides updates to all existing rules using the identical rule format from Version 1, Release 2. The framework of the previous rules has not been altered. Hence, the content and flow of the checklist does not change significantly. For instance, most of the rule titles remain unchanged; however, individual checks and fixes (AKA: requirements) have been modified to incorporate changes in supporting/referenced Federal or DoD-level publications. Additionally, some checks and fixes have been modified to remedy problems or incorporate recommendations received from Command Cyber Readiness Inspection (CCRI) reviewers and/or organizational customers via the STIG Customer Support issue resolution system. A few rule titles were modified to more accurately reflect the intent of the requirements being evaluated by the rule. Default severity levels for each rule remain unchanged. There is only one new rule, increasing the total from 151 to 152 rules. The added rule is: Rule Title: Environmental IA Controls - Emergency Power, STIG ID: EC-03.03.02, Rule ID: SV-6119r1_rule, Vuln ID: V-61629, Severity: CAT II. For more details on revisions in Version 1, Release 3, see the accompanying Summary of Changes document."
+  "name": "Traditional"
 }

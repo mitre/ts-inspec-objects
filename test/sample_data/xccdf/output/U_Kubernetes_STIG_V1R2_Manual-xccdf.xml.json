@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014-CTR-000035",
         "gid": "V-242376",
         "rid": "SV-242376r712484_rule",
         "stig_id": "CNTR-K8-000150",
-        "fix_id": "F-45609r712483_fix"
+        "fix_id": "F-45609r712483_fix",
+        "documentable": false
       },
       "id": "V-242376",
       "title": "The Kubernetes Controller Manager must use TLS 1.2, at a minimum, to protect the confidentiality of sensitive data during electronic dissemination.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014-CTR-000035",
         "gid": "V-242377",
         "rid": "SV-242377r712487_rule",
         "stig_id": "CNTR-K8-000160",
-        "fix_id": "F-45610r712486_fix"
+        "fix_id": "F-45610r712486_fix",
+        "documentable": false
       },
       "id": "V-242377",
       "title": "The Kubernetes Scheduler must use TLS 1.2, at a minimum, to protect the confidentiality of sensitive data during electronic dissemination.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014-CTR-000040",
         "gid": "V-242378",
         "rid": "SV-242378r712490_rule",
         "stig_id": "CNTR-K8-000170",
-        "fix_id": "F-45611r712489_fix"
+        "fix_id": "F-45611r712489_fix",
+        "documentable": false
       },
       "id": "V-242378",
       "title": "The Kubernetes API Server must use TLS 1.2, at a minimum, to protect the confidentiality of sensitive data during electronic dissemination.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014-CTR-000035",
         "gid": "V-242379",
         "rid": "SV-242379r754799_rule",
         "stig_id": "CNTR-K8-000180",
-        "fix_id": "F-45612r712492_fix"
+        "fix_id": "F-45612r712492_fix",
+        "documentable": false
       },
       "id": "V-242379",
       "title": "The Kubernetes etcd must use TLS to protect the confidentiality of sensitive data during electronic dissemination.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000014-CTR-000035",
         "gid": "V-242380",
         "rid": "SV-242380r754800_rule",
         "stig_id": "CNTR-K8-000190",
-        "fix_id": "F-45613r712495_fix"
+        "fix_id": "F-45613r712495_fix",
+        "documentable": false
       },
       "id": "V-242380",
       "title": "The Kubernetes etcd must use TLS to protect the confidentiality of sensitive data during electronic dissemination.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000023-CTR-000055",
         "gid": "V-242381",
         "rid": "SV-242381r712499_rule",
         "stig_id": "CNTR-K8-000220",
-        "fix_id": "F-45614r712498_fix"
+        "fix_id": "F-45614r712498_fix",
+        "documentable": false
       },
       "id": "V-242381",
       "title": "The Kubernetes Controller Manager must create unique service accounts for each work payload.",
@@ -116,15 +116,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000090",
+        "gid": "V-242382",
+        "rid": "SV-242382r712502_rule",
+        "stig_id": "CNTR-K8-000270",
+        "fix_id": "F-45615r712501_fix",
         "satisfies": [
           "SRG-APP-000033-CTR-000090",
           "SRG-APP-000033-CTR-000095"
         ],
-        "gid": "V-242382",
-        "rid": "SV-242382r712502_rule",
-        "stig_id": "CNTR-K8-000270",
-        "fix_id": "F-45615r712501_fix"
+        "documentable": false
       },
       "id": "V-242382",
       "title": "The Kubernetes API Server must enable Node,RBAC as the authorization mode.",
@@ -138,11 +138,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000038-CTR-000105",
         "gid": "V-242383",
         "rid": "SV-242383r712505_rule",
         "stig_id": "CNTR-K8-000290",
-        "fix_id": "F-45616r712504_fix"
+        "fix_id": "F-45616r712504_fix",
+        "documentable": false
       },
       "id": "V-242383",
       "title": "User-managed resources must be created in dedicated namespaces.",
@@ -156,11 +156,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000090",
         "gid": "V-242384",
         "rid": "SV-242384r712508_rule",
         "stig_id": "CNTR-K8-000300",
-        "fix_id": "F-45617r712507_fix"
+        "fix_id": "F-45617r712507_fix",
+        "documentable": false
       },
       "id": "V-242384",
       "title": "The Kubernetes Scheduler must have secure binding.",
@@ -174,11 +174,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000090",
         "gid": "V-242385",
         "rid": "SV-242385r712511_rule",
         "stig_id": "CNTR-K8-000310",
-        "fix_id": "F-45618r712510_fix"
+        "fix_id": "F-45618r712510_fix",
+        "documentable": false
       },
       "id": "V-242385",
       "title": "The Kubernetes Controller Manager must have secure binding.",
@@ -192,11 +192,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-CTR-000095",
         "gid": "V-242386",
         "rid": "SV-242386r712514_rule",
         "stig_id": "CNTR-K8-000320",
-        "fix_id": "F-45619r712513_fix"
+        "fix_id": "F-45619r712513_fix",
+        "documentable": false
       },
       "id": "V-242386",
       "title": "The Kubernetes API server must have the insecure port flag disabled.",
@@ -210,11 +210,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-CTR-000095",
         "gid": "V-242387",
         "rid": "SV-242387r717013_rule",
         "stig_id": "CNTR-K8-000330",
-        "fix_id": "F-45620r717012_fix"
+        "fix_id": "F-45620r717012_fix",
+        "documentable": false
       },
       "id": "V-242387",
       "title": "The Kubernetes Kubelet must have the read-only port flag disabled.",
@@ -228,11 +228,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-CTR-000095",
         "gid": "V-242388",
         "rid": "SV-242388r712520_rule",
         "stig_id": "CNTR-K8-000340",
-        "fix_id": "F-45621r712519_fix"
+        "fix_id": "F-45621r712519_fix",
+        "documentable": false
       },
       "id": "V-242388",
       "title": "The Kubernetes API server must have the insecure bind address not set.",
@@ -246,11 +246,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000100",
         "gid": "V-242389",
         "rid": "SV-242389r712523_rule",
         "stig_id": "CNTR-K8-000350",
-        "fix_id": "F-45622r712522_fix"
+        "fix_id": "F-45622r712522_fix",
+        "documentable": false
       },
       "id": "V-242389",
       "title": "The Kubernetes API server must have the secure port set.",
@@ -264,11 +264,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-CTR-000100",
         "gid": "V-242390",
         "rid": "SV-242390r712526_rule",
         "stig_id": "CNTR-K8-000360",
-        "fix_id": "F-45623r712525_fix"
+        "fix_id": "F-45623r712525_fix",
+        "documentable": false
       },
       "id": "V-242390",
       "title": "The Kubernetes API server must have anonymous authentication disabled.",
@@ -282,11 +282,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-CTR-000090",
         "gid": "V-242391",
         "rid": "SV-242391r712529_rule",
         "stig_id": "CNTR-K8-000370",
-        "fix_id": "F-45624r712528_fix"
+        "fix_id": "F-45624r712528_fix",
+        "documentable": false
       },
       "id": "V-242391",
       "title": "The Kubernetes Kubelet must have anonymous authentication disabled.",
@@ -300,11 +300,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-CTR-000095",
         "gid": "V-242392",
         "rid": "SV-242392r712532_rule",
         "stig_id": "CNTR-K8-000380",
-        "fix_id": "F-45625r717029_fix"
+        "fix_id": "F-45625r717029_fix",
+        "documentable": false
       },
       "id": "V-242392",
       "title": "The Kubernetes kubelet must enable explicit authorization.",
@@ -318,11 +318,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000095",
         "gid": "V-242393",
         "rid": "SV-242393r717015_rule",
         "stig_id": "CNTR-K8-000400",
-        "fix_id": "F-45626r717014_fix"
+        "fix_id": "F-45626r717014_fix",
+        "documentable": false
       },
       "id": "V-242393",
       "title": "Kubernetes Worker Nodes must not have sshd service running.",
@@ -336,11 +336,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000095",
         "gid": "V-242394",
         "rid": "SV-242394r717017_rule",
         "stig_id": "CNTR-K8-000410",
-        "fix_id": "F-45627r717016_fix"
+        "fix_id": "F-45627r717016_fix",
+        "documentable": false
       },
       "id": "V-242394",
       "title": "Kubernetes Worker Nodes must not have the sshd service enabled.",
@@ -354,11 +354,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000095",
         "gid": "V-242395",
         "rid": "SV-242395r712541_rule",
         "stig_id": "CNTR-K8-000420",
-        "fix_id": "F-45628r712540_fix"
+        "fix_id": "F-45628r712540_fix",
+        "documentable": false
       },
       "id": "V-242395",
       "title": "Kubernetes dashboard must not be enabled.",
@@ -372,11 +372,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000090",
         "gid": "V-242396",
         "rid": "SV-242396r712544_rule",
         "stig_id": "CNTR-K8-000430",
-        "fix_id": "F-45629r712543_fix"
+        "fix_id": "F-45629r712543_fix",
+        "documentable": false
       },
       "id": "V-242396",
       "title": "Kubernetes Kubectl cp command must give expected access and results.",
@@ -390,11 +390,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-CTR-000090",
         "gid": "V-242397",
         "rid": "SV-242397r712547_rule",
         "stig_id": "CNTR-K8-000440",
-        "fix_id": "F-45630r712546_fix"
+        "fix_id": "F-45630r712546_fix",
+        "documentable": false
       },
       "id": "V-242397",
       "title": "The Kubernetes kubelet static PodPath must not enable static pods.",
@@ -408,11 +408,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000100",
         "gid": "V-242398",
         "rid": "SV-242398r717019_rule",
         "stig_id": "CNTR-K8-000450",
-        "fix_id": "F-45631r717018_fix"
+        "fix_id": "F-45631r717018_fix",
+        "documentable": false
       },
       "id": "V-242398",
       "title": "Kubernetes DynamicAuditing must not be enabled.",
@@ -426,11 +426,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000095",
         "gid": "V-242399",
         "rid": "SV-242399r717021_rule",
         "stig_id": "CNTR-K8-000460",
-        "fix_id": "F-45632r717020_fix"
+        "fix_id": "F-45632r717020_fix",
+        "documentable": false
       },
       "id": "V-242399",
       "title": "Kubernetes DynamicKubeletConfig must not be enabled.",
@@ -444,11 +444,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-CTR-000090",
         "gid": "V-242400",
         "rid": "SV-242400r712556_rule",
         "stig_id": "CNTR-K8-000470",
-        "fix_id": "F-45633r712555_fix"
+        "fix_id": "F-45633r712555_fix",
+        "documentable": false
       },
       "id": "V-242400",
       "title": "The Kubernetes API server must have Alpha APIs disabled.",
@@ -462,11 +462,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000092-CTR-000165",
         "gid": "V-242401",
         "rid": "SV-242401r712559_rule",
         "stig_id": "CNTR-K8-000600",
-        "fix_id": "F-45634r717023_fix"
+        "fix_id": "F-45634r717023_fix",
+        "documentable": false
       },
       "id": "V-242401",
       "title": "The Kubernetes API Server must have an audit policy set.",
@@ -480,11 +480,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000092-CTR-000165",
         "gid": "V-242402",
         "rid": "SV-242402r712562_rule",
         "stig_id": "CNTR-K8-000610",
-        "fix_id": "F-45635r717024_fix"
+        "fix_id": "F-45635r717024_fix",
+        "documentable": false
       },
       "id": "V-242402",
       "title": "The Kubernetes API Server must have an audit log path set.",
@@ -498,7 +498,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000026-CTR-000070",
+        "gid": "V-242403",
+        "rid": "SV-242403r712565_rule",
+        "stig_id": "CNTR-K8-000700",
+        "fix_id": "F-45636r712564_fix",
         "satisfies": [
           "SRG-APP-000026-CTR-000070",
           "SRG-APP-000027-CTR-000075",
@@ -523,10 +526,7 @@
           "SRG-APP-000343-CTR-000780",
           "SRG-APP-000381-CTR-000905"
         ],
-        "gid": "V-242403",
-        "rid": "SV-242403r712565_rule",
-        "stig_id": "CNTR-K8-000700",
-        "fix_id": "F-45636r712564_fix"
+        "documentable": false
       },
       "id": "V-242403",
       "title": "Kubernetes API Server must generate audit records that identify what type of event has occurred, identify the source of the event, contain the event results, identify any users, and identify any containers associated with the event.",
@@ -540,11 +540,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-CTR-000290",
         "gid": "V-242404",
         "rid": "SV-242404r712568_rule",
         "stig_id": "CNTR-K8-000850",
-        "fix_id": "F-45637r712567_fix"
+        "fix_id": "F-45637r712567_fix",
+        "documentable": false
       },
       "id": "V-242404",
       "title": "Kubernetes Kubelet must deny hostname override.",
@@ -558,11 +558,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-CTR-000295",
         "gid": "V-242405",
         "rid": "SV-242405r712571_rule",
         "stig_id": "CNTR-K8-000860",
-        "fix_id": "F-45638r712570_fix"
+        "fix_id": "F-45638r712570_fix",
+        "documentable": false
       },
       "id": "V-242405",
       "title": "The Kubernetes manifests must be owned by root.",
@@ -576,11 +576,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-CTR-000300",
         "gid": "V-242406",
         "rid": "SV-242406r712574_rule",
         "stig_id": "CNTR-K8-000880",
-        "fix_id": "F-45639r712573_fix"
+        "fix_id": "F-45639r712573_fix",
+        "documentable": false
       },
       "id": "V-242406",
       "title": "The Kubernetes kubelet configuration file must be owned by root.",
@@ -594,11 +594,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-CTR-000305",
         "gid": "V-242407",
         "rid": "SV-242407r712577_rule",
         "stig_id": "CNTR-K8-000890",
-        "fix_id": "F-45640r712576_fix"
+        "fix_id": "F-45640r712576_fix",
+        "documentable": false
       },
       "id": "V-242407",
       "title": "The Kubernetes kubelet configuration file must be owned by root.",
@@ -612,15 +612,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-CTR-000310",
+        "gid": "V-242408",
+        "rid": "SV-242408r712580_rule",
+        "stig_id": "CNTR-K8-000900",
+        "fix_id": "F-45641r712579_fix",
         "satisfies": [
           "SRG-APP-000133-CTR-000310",
           "SRG-APP-000133-CTR-000295"
         ],
-        "gid": "V-242408",
-        "rid": "SV-242408r712580_rule",
-        "stig_id": "CNTR-K8-000900",
-        "fix_id": "F-45641r712579_fix"
+        "documentable": false
       },
       "id": "V-242408",
       "title": "The Kubernetes manifests must have least privileges.",
@@ -634,11 +634,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-CTR-000315",
         "gid": "V-242409",
         "rid": "SV-242409r712583_rule",
         "stig_id": "CNTR-K8-000910",
-        "fix_id": "F-45642r712582_fix"
+        "fix_id": "F-45642r712582_fix",
+        "documentable": false
       },
       "id": "V-242409",
       "title": "Kubernetes Controller Manager must disable profiling.",
@@ -652,11 +652,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-CTR-000325",
         "gid": "V-242410",
         "rid": "SV-242410r712586_rule",
         "stig_id": "CNTR-K8-000920",
-        "fix_id": "F-45643r712585_fix"
+        "fix_id": "F-45643r712585_fix",
+        "documentable": false
       },
       "id": "V-242410",
       "title": "The Kubernetes API Server must enforce ports, protocols, and services (PPS) that adhere to the Ports, Protocols, and Services Management Category Assurance List (PPSM CAL).",
@@ -670,11 +670,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-CTR-000325",
         "gid": "V-242411",
         "rid": "SV-242411r712589_rule",
         "stig_id": "CNTR-K8-000930",
-        "fix_id": "F-45644r712588_fix"
+        "fix_id": "F-45644r712588_fix",
+        "documentable": false
       },
       "id": "V-242411",
       "title": "The Kubernetes Scheduler must enforce ports, protocols, and services (PPS) that adhere to the Ports, Protocols, and Services Management Category Assurance List (PPSM CAL).",
@@ -688,11 +688,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-CTR-000330",
         "gid": "V-242412",
         "rid": "SV-242412r712592_rule",
         "stig_id": "CNTR-K8-000940",
-        "fix_id": "F-45645r712591_fix"
+        "fix_id": "F-45645r712591_fix",
+        "documentable": false
       },
       "id": "V-242412",
       "title": "The Kubernetes Controllers must enforce ports, protocols, and services (PPS) that adhere to the Ports, Protocols, and Services Management Category Assurance List (PPSM CAL).",
@@ -706,11 +706,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-CTR-000325",
         "gid": "V-242413",
         "rid": "SV-242413r712595_rule",
         "stig_id": "CNTR-K8-000950",
-        "fix_id": "F-45646r712594_fix"
+        "fix_id": "F-45646r712594_fix",
+        "documentable": false
       },
       "id": "V-242413",
       "title": "The Kubernetes etcd must enforce ports, protocols, and services (PPS) that adhere to the Ports, Protocols, and Services Management Category Assurance List (PPSM CAL).",
@@ -724,11 +724,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-CTR-000330",
         "gid": "V-242414",
         "rid": "SV-242414r717030_rule",
         "stig_id": "CNTR-K8-000960",
-        "fix_id": "F-45647r717032_fix"
+        "fix_id": "F-45647r717032_fix",
+        "documentable": false
       },
       "id": "V-242414",
       "title": "The Kubernetes cluster must use non-privileged host ports for user pods.",
@@ -742,11 +742,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000171-CTR-000435",
         "gid": "V-242415",
         "rid": "SV-242415r712601_rule",
         "stig_id": "CNTR-K8-001160",
-        "fix_id": "F-45648r712600_fix"
+        "fix_id": "F-45648r712600_fix",
+        "documentable": false
       },
       "id": "V-242415",
       "title": "Secrets in Kubernetes must not be stored as environment variables.",
@@ -760,11 +760,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-CTR-000530",
         "gid": "V-242417",
         "rid": "SV-242417r712607_rule",
         "stig_id": "CNTR-K8-001360",
-        "fix_id": "F-45650r712606_fix"
+        "fix_id": "F-45650r712606_fix",
+        "documentable": false
       },
       "id": "V-242417",
       "title": "Kubernetes must separate user functionality.",
@@ -778,11 +778,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242418",
         "rid": "SV-242418r712610_rule",
         "stig_id": "CNTR-K8-001400",
-        "fix_id": "F-45651r717025_fix"
+        "fix_id": "F-45651r717025_fix",
+        "documentable": false
       },
       "id": "V-242418",
       "title": "The Kubernetes API server must use approved cipher suites.",
@@ -796,11 +796,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242419",
         "rid": "SV-242419r712613_rule",
         "stig_id": "CNTR-K8-001410",
-        "fix_id": "F-45652r712612_fix"
+        "fix_id": "F-45652r712612_fix",
+        "documentable": false
       },
       "id": "V-242419",
       "title": "Kubernetes API Server must have the SSL Certificate Authority set.",
@@ -814,11 +814,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242420",
         "rid": "SV-242420r712616_rule",
         "stig_id": "CNTR-K8-001420",
-        "fix_id": "F-45653r717026_fix"
+        "fix_id": "F-45653r717026_fix",
+        "documentable": false
       },
       "id": "V-242420",
       "title": "Kubernetes Kubelet must have the SSL Certificate Authority set.",
@@ -832,11 +832,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242421",
         "rid": "SV-242421r717033_rule",
         "stig_id": "CNTR-K8-001430",
-        "fix_id": "F-45654r712618_fix"
+        "fix_id": "F-45654r712618_fix",
+        "documentable": false
       },
       "id": "V-242421",
       "title": "Kubernetes Controller Manager must have the SSL Certificate Authority set.",
@@ -850,11 +850,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242422",
         "rid": "SV-242422r712622_rule",
         "stig_id": "CNTR-K8-001440",
-        "fix_id": "F-45655r712621_fix"
+        "fix_id": "F-45655r712621_fix",
+        "documentable": false
       },
       "id": "V-242422",
       "title": "Kubernetes API Server must have a certificate for communication.",
@@ -868,11 +868,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242423",
         "rid": "SV-242423r712625_rule",
         "stig_id": "CNTR-K8-001450",
-        "fix_id": "F-45656r712624_fix"
+        "fix_id": "F-45656r712624_fix",
+        "documentable": false
       },
       "id": "V-242423",
       "title": "Kubernetes etcd must enable client authentication to secure service.",
@@ -886,11 +886,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242424",
         "rid": "SV-242424r712628_rule",
         "stig_id": "CNTR-K8-001460",
-        "fix_id": "F-45657r712627_fix"
+        "fix_id": "F-45657r712627_fix",
+        "documentable": false
       },
       "id": "V-242424",
       "title": "Kubernetes Kubelet must enable tls-private-key-file for client authentication to secure service.",
@@ -904,11 +904,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242425",
         "rid": "SV-242425r712631_rule",
         "stig_id": "CNTR-K8-001470",
-        "fix_id": "F-45658r712630_fix"
+        "fix_id": "F-45658r712630_fix",
+        "documentable": false
       },
       "id": "V-242425",
       "title": "Kubernetes Kubelet must enable tls-cert-file for client authentication to secure service.",
@@ -922,11 +922,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242426",
         "rid": "SV-242426r754813_rule",
         "stig_id": "CNTR-K8-001480",
-        "fix_id": "F-45659r754812_fix"
+        "fix_id": "F-45659r754812_fix",
+        "documentable": false
       },
       "id": "V-242426",
       "title": "Kubernetes etcd must enable client authentication to secure service.",
@@ -940,11 +940,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242427",
         "rid": "SV-242427r712637_rule",
         "stig_id": "CNTR-K8-001490",
-        "fix_id": "F-45660r712636_fix"
+        "fix_id": "F-45660r712636_fix",
+        "documentable": false
       },
       "id": "V-242427",
       "title": "Kubernetes etcd must have a key file for secure communication.",
@@ -958,11 +958,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242428",
         "rid": "SV-242428r754816_rule",
         "stig_id": "CNTR-K8-001500",
-        "fix_id": "F-45661r754815_fix"
+        "fix_id": "F-45661r754815_fix",
+        "documentable": false
       },
       "id": "V-242428",
       "title": "Kubernetes etcd must have a certificate for communication.",
@@ -976,11 +976,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242429",
         "rid": "SV-242429r712643_rule",
         "stig_id": "CNTR-K8-001510",
-        "fix_id": "F-45662r712642_fix"
+        "fix_id": "F-45662r712642_fix",
+        "documentable": false
       },
       "id": "V-242429",
       "title": "Kubernetes etcd must have the SSL Certificate Authority set.",
@@ -994,11 +994,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242430",
         "rid": "SV-242430r712646_rule",
         "stig_id": "CNTR-K8-001520",
-        "fix_id": "F-45663r712645_fix"
+        "fix_id": "F-45663r712645_fix",
+        "documentable": false
       },
       "id": "V-242430",
       "title": "Kubernetes etcd must have a certificate for communication.",
@@ -1012,11 +1012,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242431",
         "rid": "SV-242431r712649_rule",
         "stig_id": "CNTR-K8-001530",
-        "fix_id": "F-45664r712648_fix"
+        "fix_id": "F-45664r712648_fix",
+        "documentable": false
       },
       "id": "V-242431",
       "title": "Kubernetes etcd must have a key file for secure communication.",
@@ -1030,11 +1030,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242432",
         "rid": "SV-242432r712652_rule",
         "stig_id": "CNTR-K8-001540",
-        "fix_id": "F-45665r712651_fix"
+        "fix_id": "F-45665r712651_fix",
+        "documentable": false
       },
       "id": "V-242432",
       "title": "Kubernetes etcd must have peer-cert-file set for secure communication.",
@@ -1048,11 +1048,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-CTR-000550",
         "gid": "V-242433",
         "rid": "SV-242433r712655_rule",
         "stig_id": "CNTR-K8-001550",
-        "fix_id": "F-45666r712654_fix"
+        "fix_id": "F-45666r712654_fix",
+        "documentable": false
       },
       "id": "V-242433",
       "title": "Kubernetes etcd must have a peer-key-file set for secure communication.",
@@ -1066,11 +1066,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000233-CTR-000585",
         "gid": "V-242434",
         "rid": "SV-242434r712658_rule",
         "stig_id": "CNTR-K8-001620",
-        "fix_id": "F-45667r712657_fix"
+        "fix_id": "F-45667r712657_fix",
+        "documentable": false
       },
       "id": "V-242434",
       "title": "Kubernetes Kubelet must enable kernel protection.",
@@ -1084,16 +1084,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000340-CTR-000770",
+        "gid": "V-242435",
+        "rid": "SV-242435r712661_rule",
+        "stig_id": "CNTR-K8-001990",
+        "fix_id": "F-45668r712660_fix",
         "satisfies": [
           "SRG-APP-000340-CTR-000770",
           "SRG-APP-000033-CTR-000095",
           "SRG-APP-000378-CTR-000880"
         ],
-        "gid": "V-242435",
-        "rid": "SV-242435r712661_rule",
-        "stig_id": "CNTR-K8-001990",
-        "fix_id": "F-45668r712660_fix"
+        "documentable": false
       },
       "id": "V-242435",
       "title": "Kubernetes must prevent non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures or the installation of patches and updates.",
@@ -1107,11 +1107,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000342-CTR-000775",
         "gid": "V-242436",
         "rid": "SV-242436r712664_rule",
         "stig_id": "CNTR-K8-002000",
-        "fix_id": "F-45669r717027_fix"
+        "fix_id": "F-45669r717027_fix",
+        "documentable": false
       },
       "id": "V-242436",
       "title": "The Kubernetes API server must have the ValidatingAdmissionWebhook enabled.",
@@ -1125,11 +1125,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000342-CTR-000775",
         "gid": "V-242437",
         "rid": "SV-242437r712667_rule",
         "stig_id": "CNTR-K8-002010",
-        "fix_id": "F-45670r717028_fix"
+        "fix_id": "F-45670r717028_fix",
+        "documentable": false
       },
       "id": "V-242437",
       "title": "Kubernetes must have a pod security policy set.",
@@ -1143,11 +1143,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435-CTR-001070",
         "gid": "V-242438",
         "rid": "SV-242438r754802_rule",
         "stig_id": "CNTR-K8-002600",
-        "fix_id": "F-45671r712669_fix"
+        "fix_id": "F-45671r712669_fix",
+        "documentable": false
       },
       "id": "V-242438",
       "title": "Kubernetes API Server must configure timeouts to limit attack surface.",
@@ -1161,11 +1161,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000454-CTR-001110",
         "gid": "V-242442",
         "rid": "SV-242442r712682_rule",
         "stig_id": "CNTR-K8-002700",
-        "fix_id": "F-45675r712681_fix"
+        "fix_id": "F-45675r712681_fix",
+        "documentable": false
       },
       "id": "V-242442",
       "title": "Kubernetes must remove old components after updated versions have been installed.",
@@ -1179,11 +1179,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-CTR-001125",
         "gid": "V-242443",
         "rid": "SV-242443r712685_rule",
         "stig_id": "CNTR-K8-002720",
-        "fix_id": "F-45676r712684_fix"
+        "fix_id": "F-45676r712684_fix",
+        "documentable": false
       },
       "id": "V-242443",
       "title": "Kubernetes must contain the latest updates as authorized by IAVMs, CTOs, DTMs, and STIGs.",
@@ -1197,11 +1197,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242444",
         "rid": "SV-242444r712688_rule",
         "stig_id": "CNTR-K8-003110",
-        "fix_id": "F-45677r712687_fix"
+        "fix_id": "F-45677r712687_fix",
+        "documentable": false
       },
       "id": "V-242444",
       "title": "The Kubernetes component manifests must be owned by root.",
@@ -1215,11 +1215,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242445",
         "rid": "SV-242445r712691_rule",
         "stig_id": "CNTR-K8-003120",
-        "fix_id": "F-45678r712690_fix"
+        "fix_id": "F-45678r712690_fix",
+        "documentable": false
       },
       "id": "V-242445",
       "title": "The Kubernetes component etcd must be owned by etcd.",
@@ -1233,11 +1233,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242446",
         "rid": "SV-242446r712694_rule",
         "stig_id": "CNTR-K8-003130",
-        "fix_id": "F-45679r712693_fix"
+        "fix_id": "F-45679r712693_fix",
+        "documentable": false
       },
       "id": "V-242446",
       "title": "The Kubernetes conf files must be owned by root.",
@@ -1251,11 +1251,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242447",
         "rid": "SV-242447r712697_rule",
         "stig_id": "CNTR-K8-003140",
-        "fix_id": "F-45680r712696_fix"
+        "fix_id": "F-45680r712696_fix",
+        "documentable": false
       },
       "id": "V-242447",
       "title": "The Kubernetes Kube Proxy must have file permissions set to 644 or more restrictive.",
@@ -1269,11 +1269,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242448",
         "rid": "SV-242448r712700_rule",
         "stig_id": "CNTR-K8-003150",
-        "fix_id": "F-45681r712699_fix"
+        "fix_id": "F-45681r712699_fix",
+        "documentable": false
       },
       "id": "V-242448",
       "title": "The Kubernetes Kube Proxy must be owned by root.",
@@ -1287,11 +1287,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242449",
         "rid": "SV-242449r712703_rule",
         "stig_id": "CNTR-K8-003160",
-        "fix_id": "F-45682r712702_fix"
+        "fix_id": "F-45682r712702_fix",
+        "documentable": false
       },
       "id": "V-242449",
       "title": "The Kubernetes Kubelet certificate authority file must have file permissions set to 644 or more restrictive.",
@@ -1305,11 +1305,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242450",
         "rid": "SV-242450r754804_rule",
         "stig_id": "CNTR-K8-003170",
-        "fix_id": "F-45683r712705_fix"
+        "fix_id": "F-45683r712705_fix",
+        "documentable": false
       },
       "id": "V-242450",
       "title": "The Kubernetes Kubelet certificate authority must be owned by root.",
@@ -1323,11 +1323,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242451",
         "rid": "SV-242451r712709_rule",
         "stig_id": "CNTR-K8-003180",
-        "fix_id": "F-45684r712708_fix"
+        "fix_id": "F-45684r712708_fix",
+        "documentable": false
       },
       "id": "V-242451",
       "title": "The Kubernetes component PKI must be owned by root.",
@@ -1341,11 +1341,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242452",
         "rid": "SV-242452r712712_rule",
         "stig_id": "CNTR-K8-003190",
-        "fix_id": "F-45685r712711_fix"
+        "fix_id": "F-45685r712711_fix",
+        "documentable": false
       },
       "id": "V-242452",
       "title": "The Kubernetes kubelet config must have file permissions set to 644 or more restrictive.",
@@ -1359,11 +1359,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242453",
         "rid": "SV-242453r712715_rule",
         "stig_id": "CNTR-K8-003200",
-        "fix_id": "F-45686r712714_fix"
+        "fix_id": "F-45686r712714_fix",
+        "documentable": false
       },
       "id": "V-242453",
       "title": "The Kubernetes kubelet config must be owned by root.",
@@ -1377,11 +1377,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242454",
         "rid": "SV-242454r754819_rule",
         "stig_id": "CNTR-K8-003210",
-        "fix_id": "F-45687r754818_fix"
+        "fix_id": "F-45687r754818_fix",
+        "documentable": false
       },
       "id": "V-242454",
       "title": "The Kubernetes kubeadm.conf must be owned by root.",
@@ -1395,11 +1395,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001325",
         "gid": "V-242455",
         "rid": "SV-242455r754822_rule",
         "stig_id": "CNTR-K8-003220",
-        "fix_id": "F-45688r754821_fix"
+        "fix_id": "F-45688r754821_fix",
+        "documentable": false
       },
       "id": "V-242455",
       "title": "The Kubernetes kubeadm.conf must have file permissions set to 644 or more restrictive.",
@@ -1413,11 +1413,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001330",
         "gid": "V-242456",
         "rid": "SV-242456r712724_rule",
         "stig_id": "CNTR-K8-003230",
-        "fix_id": "F-45689r712723_fix"
+        "fix_id": "F-45689r712723_fix",
+        "documentable": false
       },
       "id": "V-242456",
       "title": "The Kubernetes kubelet config must have file permissions set to 644 or more restrictive.",
@@ -1431,11 +1431,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001330",
         "gid": "V-242457",
         "rid": "SV-242457r712727_rule",
         "stig_id": "CNTR-K8-003240",
-        "fix_id": "F-45690r712726_fix"
+        "fix_id": "F-45690r712726_fix",
+        "documentable": false
       },
       "id": "V-242457",
       "title": "The Kubernetes kubelet config must be owned by root.",
@@ -1449,11 +1449,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242458",
         "rid": "SV-242458r754806_rule",
         "stig_id": "CNTR-K8-003250",
-        "fix_id": "F-45691r754805_fix"
+        "fix_id": "F-45691r754805_fix",
+        "documentable": false
       },
       "id": "V-242458",
       "title": "The Kubernetes API Server must have file permissions set to 644 or more restrictive.",
@@ -1467,11 +1467,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242459",
         "rid": "SV-242459r712733_rule",
         "stig_id": "CNTR-K8-003260",
-        "fix_id": "F-45692r712732_fix"
+        "fix_id": "F-45692r712732_fix",
+        "documentable": false
       },
       "id": "V-242459",
       "title": "The Kubernetes etcd must have file permissions set to 644 or more restrictive.",
@@ -1485,11 +1485,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242460",
         "rid": "SV-242460r712736_rule",
         "stig_id": "CNTR-K8-003270",
-        "fix_id": "F-45693r712735_fix"
+        "fix_id": "F-45693r712735_fix",
+        "documentable": false
       },
       "id": "V-242460",
       "title": "The Kubernetes admin.conf must have file permissions set to 644 or more restrictive.",
@@ -1503,11 +1503,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242461",
         "rid": "SV-242461r712739_rule",
         "stig_id": "CNTR-K8-003280",
-        "fix_id": "F-45694r712738_fix"
+        "fix_id": "F-45694r712738_fix",
+        "documentable": false
       },
       "id": "V-242461",
       "title": "Kubernetes API Server audit logs must be enabled.",
@@ -1521,11 +1521,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242462",
         "rid": "SV-242462r712742_rule",
         "stig_id": "CNTR-K8-003290",
-        "fix_id": "F-45695r712741_fix"
+        "fix_id": "F-45695r712741_fix",
+        "documentable": false
       },
       "id": "V-242462",
       "title": "The Kubernetes API Server must be set to audit log max size.",
@@ -1539,11 +1539,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242463",
         "rid": "SV-242463r712745_rule",
         "stig_id": "CNTR-K8-003300",
-        "fix_id": "F-45696r712744_fix"
+        "fix_id": "F-45696r712744_fix",
+        "documentable": false
       },
       "id": "V-242463",
       "title": "The Kubernetes API Server must be set to audit log maximum backup.",
@@ -1557,11 +1557,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242464",
         "rid": "SV-242464r754808_rule",
         "stig_id": "CNTR-K8-003310",
-        "fix_id": "F-45697r712747_fix"
+        "fix_id": "F-45697r712747_fix",
+        "documentable": false
       },
       "id": "V-242464",
       "title": "The Kubernetes API Server audit log retention must be set.",
@@ -1575,11 +1575,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242465",
         "rid": "SV-242465r754810_rule",
         "stig_id": "CNTR-K8-003320",
-        "fix_id": "F-45698r712750_fix"
+        "fix_id": "F-45698r712750_fix",
+        "documentable": false
       },
       "id": "V-242465",
       "title": "The Kubernetes API Server audit log path must be set.",
@@ -1593,11 +1593,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242466",
         "rid": "SV-242466r712754_rule",
         "stig_id": "CNTR-K8-003330",
-        "fix_id": "F-45699r712753_fix"
+        "fix_id": "F-45699r712753_fix",
+        "documentable": false
       },
       "id": "V-242466",
       "title": "The Kubernetes PKI CRT must have file permissions set to 644 or more restrictive.",
@@ -1611,11 +1611,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-CTR-001335",
         "gid": "V-242467",
         "rid": "SV-242467r712757_rule",
         "stig_id": "CNTR-K8-003340",
-        "fix_id": "F-45700r712756_fix"
+        "fix_id": "F-45700r712756_fix",
+        "documentable": false
       },
       "id": "V-242467",
       "title": "The Kubernetes PKI keys must have file permissions set to 600 or more restrictive.",
@@ -1629,11 +1629,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000560-CTR-001340",
         "gid": "V-242468",
         "rid": "SV-242468r712760_rule",
         "stig_id": "CNTR-K8-003350",
-        "fix_id": "F-45701r712759_fix"
+        "fix_id": "F-45701r712759_fix",
+        "documentable": false
       },
       "id": "V-242468",
       "title": "The Kubernetes API Server must prohibit communication using TLS version 1.0 and 1.1, and SSL 2.0 and 3.0.",
@@ -1647,11 +1647,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000190-CTR-000500",
         "gid": "V-245541",
         "rid": "SV-245541r754888_rule",
         "stig_id": "CNTR-K8-001300",
-        "fix_id": "F-48771r754887_fix"
+        "fix_id": "F-48771r754887_fix",
+        "documentable": false
       },
       "id": "V-245541",
       "title": "Kubernetes Kubelet must not disable timeouts.",
@@ -1665,11 +1665,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000439-CTR-001080",
         "gid": "V-245542",
         "rid": "SV-245542r754891_rule",
         "stig_id": "CNTR-K8-002620",
-        "fix_id": "F-48772r754890_fix"
+        "fix_id": "F-48772r754890_fix",
+        "documentable": false
       },
       "id": "V-245542",
       "title": "Kubernetes API Server must disable basic authentication to protect information in transit.",
@@ -1683,11 +1683,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-CTR-001080",
         "gid": "V-245543",
         "rid": "SV-245543r754894_rule",
         "stig_id": "CNTR-K8-002630",
-        "fix_id": "F-48773r754893_fix"
+        "fix_id": "F-48773r754893_fix",
+        "documentable": false
       },
       "id": "V-245543",
       "title": "Kubernetes API Server must disable token authentication to protect information in transit.",
@@ -1701,11 +1701,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-CTR-001080",
         "gid": "V-245544",
         "rid": "SV-245544r754897_rule",
         "stig_id": "CNTR-K8-002640",
-        "fix_id": "F-48774r754896_fix"
+        "fix_id": "F-48774r754896_fix",
+        "documentable": false
       },
       "id": "V-245544",
       "title": "Kubernetes endpoints must use approved organizational certificate and key pair to protect information in transit.",
@@ -1717,7 +1717,5 @@
       }
     }
   ],
-  "name": "Kubernetes_STIG",
-  "title": "Kubernetes Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Kubernetes_STIG"
 }

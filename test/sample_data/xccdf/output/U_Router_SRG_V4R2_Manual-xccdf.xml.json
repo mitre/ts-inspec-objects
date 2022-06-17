@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207097",
         "rid": "SV-207097r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000001",
-        "fix_id": "F-7358r382137_fix"
+        "fix_id": "F-7358r382137_fix",
+        "documentable": false
       },
       "id": "V-207097",
       "title": "The router must be configured to enforce approved authorizations for controlling the flow of information within the network based on organization-defined information flow control policies.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207098",
         "rid": "SV-207098r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000002",
-        "fix_id": "F-7359r382140_fix"
+        "fix_id": "F-7359r382140_fix",
+        "documentable": false
       },
       "id": "V-207098",
       "title": "The BGP router must be configured to reject inbound route advertisements for any Bogon prefixes.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207099",
         "rid": "SV-207099r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000003",
-        "fix_id": "F-7360r382143_fix"
+        "fix_id": "F-7360r382143_fix",
+        "documentable": false
       },
       "id": "V-207099",
       "title": "The BGP router must be configured to reject inbound route advertisements for any prefixes belonging to the local autonomous system (AS).",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207100",
         "rid": "SV-207100r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000004",
-        "fix_id": "F-7361r382146_fix"
+        "fix_id": "F-7361r382146_fix",
+        "documentable": false
       },
       "id": "V-207100",
       "title": "The BGP router must be configured to reject inbound route advertisements from a customer edge (CE) router for prefixes that are not allocated to that customer.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207101",
         "rid": "SV-207101r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000005",
-        "fix_id": "F-7362r382149_fix"
+        "fix_id": "F-7362r382149_fix",
+        "documentable": false
       },
       "id": "V-207101",
       "title": "The BGP router must be configured to reject outbound route advertisements for any prefixes that do not belong to any customers or the local autonomous system (AS).",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207102",
         "rid": "SV-207102r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000006",
-        "fix_id": "F-7363r382152_fix"
+        "fix_id": "F-7363r382152_fix",
+        "documentable": false
       },
       "id": "V-207102",
       "title": "The BGP router must be configured to reject route advertisements from BGP peers that do not list their autonomous system (AS) number as the first AS in the AS_PATH attribute.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207103",
         "rid": "SV-207103r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000007",
-        "fix_id": "F-7364r382155_fix"
+        "fix_id": "F-7364r382155_fix",
+        "documentable": false
       },
       "id": "V-207103",
       "title": "The Multicast Source Discovery Protocol (MSDP) router must be configured to filter received source-active multicast advertisements for any undesirable multicast groups and sources.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207104",
         "rid": "SV-207104r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000008",
-        "fix_id": "F-7365r382158_fix"
+        "fix_id": "F-7365r382158_fix",
+        "documentable": false
       },
       "id": "V-207104",
       "title": "The Multicast Source Discovery Protocol (MSDP) router must be configured to filter source-active multicast advertisements to external MSDP peers to avoid global visibility of local-only multicast sources and groups.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207105",
         "rid": "SV-207105r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000009",
-        "fix_id": "F-7366r382161_fix"
+        "fix_id": "F-7366r382161_fix",
+        "documentable": false
       },
       "id": "V-207105",
       "title": "The MSDP router must be configured to limit the amount of source-active messages it accepts on per-peer basis.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000018",
         "gid": "V-207106",
         "rid": "SV-207106r604135_rule",
         "stig_id": "SRG-NET-000018-RTR-000010",
-        "fix_id": "F-7367r382164_fix"
+        "fix_id": "F-7367r382164_fix",
+        "documentable": false
       },
       "id": "V-207106",
       "title": "The BGP router must be configured to reject route advertisements from CE routers with an originating AS in the AS_PATH attribute that does not belong to that customer.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207107",
         "rid": "SV-207107r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000001",
-        "fix_id": "F-7368r382167_fix"
+        "fix_id": "F-7368r382167_fix",
+        "documentable": false
       },
       "id": "V-207107",
       "title": "The router must be configured to disable the auxiliary port unless it is connected to a secured modem providing encryption and authentication.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207108",
         "rid": "SV-207108r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000002",
-        "fix_id": "F-7369r382170_fix"
+        "fix_id": "F-7369r382170_fix",
+        "documentable": false
       },
       "id": "V-207108",
       "title": "The perimeter router must be configured to enforce approved authorizations for controlling the flow of information between interconnected networks in accordance with applicable policy.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207109",
         "rid": "SV-207109r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000003",
-        "fix_id": "F-7370r382173_fix"
+        "fix_id": "F-7370r382173_fix",
+        "documentable": false
       },
       "id": "V-207109",
       "title": "The multicast router must be configured to disable Protocol Independent Multicast (PIM) on all interfaces that are not required to support multicast routing.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207110",
         "rid": "SV-207110r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000004",
-        "fix_id": "F-7371r382176_fix"
+        "fix_id": "F-7371r382176_fix",
+        "documentable": false
       },
       "id": "V-207110",
       "title": "The multicast router must be configured to bind a Protocol Independent Multicast (PIM) neighbor filter to interfaces that have PIM enabled.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207111",
         "rid": "SV-207111r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000005",
-        "fix_id": "F-7372r382227_fix"
+        "fix_id": "F-7372r382227_fix",
+        "documentable": false
       },
       "id": "V-207111",
       "title": "The multicast edge router must be configured to establish boundaries for administratively scoped multicast traffic.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207112",
         "rid": "SV-207112r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000007",
-        "fix_id": "F-7373r382230_fix"
+        "fix_id": "F-7373r382230_fix",
+        "documentable": false
       },
       "id": "V-207112",
       "title": "The router must be configured to have all inactive interfaces disabled.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207113",
         "rid": "SV-207113r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000008",
-        "fix_id": "F-7374r382233_fix"
+        "fix_id": "F-7374r382233_fix",
+        "documentable": false
       },
       "id": "V-207113",
       "title": "The perimeter router must be configured to protect an enclave connected to an alternate gateway by using an inbound filter that only permits packets with destination addresses within the sites address space.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207114",
         "rid": "SV-207114r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000009",
-        "fix_id": "F-7375r382236_fix"
+        "fix_id": "F-7375r382236_fix",
+        "documentable": false
       },
       "id": "V-207114",
       "title": "The perimeter router must be configured to not be a Border Gateway Protocol (BGP) peer to an alternate gateway service provider.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207115",
         "rid": "SV-207115r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000010",
-        "fix_id": "F-7376r382239_fix"
+        "fix_id": "F-7376r382239_fix",
+        "documentable": false
       },
       "id": "V-207115",
       "title": "The perimeter router must be configured to not redistribute static routes to an alternate gateway service provider into BGP or an IGP peering with the NIPRNet or to other autonomous systems.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207116",
         "rid": "SV-207116r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000011",
-        "fix_id": "F-7377r382242_fix"
+        "fix_id": "F-7377r382242_fix",
+        "documentable": false
       },
       "id": "V-207116",
       "title": "The out-of-band management (OOBM) gateway router must be configured to have separate IGP instances for the managed network and management network.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207117",
         "rid": "SV-207117r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000012",
-        "fix_id": "F-7378r382245_fix"
+        "fix_id": "F-7378r382245_fix",
+        "documentable": false
       },
       "id": "V-207117",
       "title": "The out-of-band management (OOBM) gateway router must be configured to not redistribute routes between the management network routing domain and the managed network routing domain.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207118",
         "rid": "SV-207118r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000013",
-        "fix_id": "F-7379r382248_fix"
+        "fix_id": "F-7379r382248_fix",
+        "documentable": false
       },
       "id": "V-207118",
       "title": "The multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Register messages received from the Designated Router (DR) for any undesirable multicast groups and sources.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000019",
         "gid": "V-207119",
         "rid": "SV-207119r604135_rule",
         "stig_id": "SRG-NET-000019-RTR-000014",
-        "fix_id": "F-7380r382251_fix"
+        "fix_id": "F-7380r382251_fix",
+        "documentable": false
       },
       "id": "V-207119",
       "title": "The multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Join messages received from the Designated Router (DR) for any undesirable multicast groups.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000076",
         "gid": "V-207120",
         "rid": "SV-207120r604135_rule",
         "stig_id": "SRG-NET-000076-RTR-000001",
-        "fix_id": "F-7381r382254_fix"
+        "fix_id": "F-7381r382254_fix",
+        "documentable": false
       },
       "id": "V-207120",
       "title": "The router must be configured to produce audit records containing information to establish where the events occurred.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000077",
         "gid": "V-207121",
         "rid": "SV-207121r604135_rule",
         "stig_id": "SRG-NET-000077-RTR-000001",
-        "fix_id": "F-7382r382257_fix"
+        "fix_id": "F-7382r382257_fix",
+        "documentable": false
       },
       "id": "V-207121",
       "title": "The router must be configured to produce audit records containing information to establish the source of the events.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000078",
         "gid": "V-207122",
         "rid": "SV-207122r604135_rule",
         "stig_id": "SRG-NET-000078-RTR-000001",
-        "fix_id": "F-7383r382260_fix"
+        "fix_id": "F-7383r382260_fix",
+        "documentable": false
       },
       "id": "V-207122",
       "title": "The router must be configured to log all packets that have been dropped.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000131",
         "gid": "V-207123",
         "rid": "SV-207123r604135_rule",
         "stig_id": "SRG-NET-000131-RTR-000035",
-        "fix_id": "F-7384r382263_fix"
+        "fix_id": "F-7384r382263_fix",
+        "documentable": false
       },
       "id": "V-207123",
       "title": "The router must be configured to have all non-essential capabilities disabled.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000168",
         "gid": "V-207124",
         "rid": "SV-207124r604135_rule",
         "stig_id": "SRG-NET-000168-RTR-000077",
-        "fix_id": "F-7385r382266_fix"
+        "fix_id": "F-7385r382266_fix",
+        "documentable": false
       },
       "id": "V-207124",
       "title": "The router must be configured to use encryption for routing protocol authentication.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000168",
         "gid": "V-207125",
         "rid": "SV-207125r604135_rule",
         "stig_id": "SRG-NET-000168-RTR-000078",
-        "fix_id": "F-7386r382269_fix"
+        "fix_id": "F-7386r382269_fix",
+        "documentable": false
       },
       "id": "V-207125",
       "title": "The router must be configured to authenticate all routing protocol messages using NIST-validated FIPS 198-1 message authentication code algorithm.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000192",
         "gid": "V-207126",
         "rid": "SV-207126r604135_rule",
         "stig_id": "SRG-NET-000192-RTR-000002",
-        "fix_id": "F-7387r382272_fix"
+        "fix_id": "F-7387r382272_fix",
+        "documentable": false
       },
       "id": "V-207126",
       "title": "The PE router must be configured to limit the number of MAC addresses it can learn for each Virtual Private LAN Services (VPLS) bridge domain.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193",
         "gid": "V-207127",
         "rid": "SV-207127r604135_rule",
         "stig_id": "SRG-NET-000193-RTR-000001",
-        "fix_id": "F-7388r382320_fix"
+        "fix_id": "F-7388r382320_fix",
+        "documentable": false
       },
       "id": "V-207127",
       "title": "The MPLS router with RSVP-TE enabled must be configured with message pacing or refresh reduction to adjust maximum number of RSVP messages to an output queue based on the link speed and input queue size of adjacent core routers.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000193",
         "gid": "V-207128",
         "rid": "SV-207128r604135_rule",
         "stig_id": "SRG-NET-000193-RTR-000002",
-        "fix_id": "F-7389r382323_fix"
+        "fix_id": "F-7389r382323_fix",
+        "documentable": false
       },
       "id": "V-207128",
       "title": "The PE router providing Virtual Private LAN Services (VPLS) must be configured to have traffic storm control thresholds on CE-facing interfaces.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000193",
         "gid": "V-207129",
         "rid": "SV-207129r604135_rule",
         "stig_id": "SRG-NET-000193-RTR-000112",
-        "fix_id": "F-7390r382326_fix"
+        "fix_id": "F-7390r382326_fix",
+        "documentable": false
       },
       "id": "V-207129",
       "title": "The PE router must be configured to enforce a Quality-of-Service (QoS) policy to limit the effects of packet flooding denial-of-service (DoS) attacks.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193",
         "gid": "V-207130",
         "rid": "SV-207130r604135_rule",
         "stig_id": "SRG-NET-000193-RTR-000113",
-        "fix_id": "F-7391r539641_fix"
+        "fix_id": "F-7391r539641_fix",
+        "documentable": false
       },
       "id": "V-207130",
       "title": "The PE router must be configured to enforce a Quality-of-Service (QoS) policy in accordance with the QoS DoDIN Technical Profile.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000193",
         "gid": "V-207131",
         "rid": "SV-207131r604135_rule",
         "stig_id": "SRG-NET-000193-RTR-000114",
-        "fix_id": "F-7392r539644_fix"
+        "fix_id": "F-7392r539644_fix",
+        "documentable": false
       },
       "id": "V-207131",
       "title": "The P router must be configured to enforce a Quality-of-Service (QoS) policy in accordance with the QoS GIG Technical Profile.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000202",
         "gid": "V-207132",
         "rid": "SV-207132r604135_rule",
         "stig_id": "SRG-NET-000202-RTR-000001",
-        "fix_id": "F-7393r382335_fix"
+        "fix_id": "F-7393r382335_fix",
+        "documentable": false
       },
       "id": "V-207132",
       "title": "The perimeter router must be configured to deny network traffic by default and allow network traffic by exception.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207133",
         "rid": "SV-207133r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000001",
-        "fix_id": "F-7394r382338_fix"
+        "fix_id": "F-7394r382338_fix",
+        "documentable": false
       },
       "id": "V-207133",
       "title": "The router must be configured to restrict traffic destined to itself.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207134",
         "rid": "SV-207134r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000002",
-        "fix_id": "F-7395r382341_fix"
+        "fix_id": "F-7395r382341_fix",
+        "documentable": false
       },
       "id": "V-207134",
       "title": "The router must be configured to drop all fragmented Internet Control Message Protocol (ICMP) packets destined to itself.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207135",
         "rid": "SV-207135r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000003",
-        "fix_id": "F-7396r539636_fix"
+        "fix_id": "F-7396r539636_fix",
+        "documentable": false
       },
       "id": "V-207135",
       "title": "The perimeter router must be configured to filter traffic destined to the enclave in accordance with the guidelines contained in DoD Instruction 8551.1.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207136",
         "rid": "SV-207136r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000004",
-        "fix_id": "F-7397r382347_fix"
+        "fix_id": "F-7397r382347_fix",
+        "documentable": false
       },
       "id": "V-207136",
       "title": "The perimeter router must be configured to filter ingress traffic at the external interface on an inbound direction.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207137",
         "rid": "SV-207137r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000005",
-        "fix_id": "F-7398r382350_fix"
+        "fix_id": "F-7398r382350_fix",
+        "documentable": false
       },
       "id": "V-207137",
       "title": "The perimeter router must be configured to filter egress traffic at the internal interface on an inbound direction.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207138",
         "rid": "SV-207138r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000006",
-        "fix_id": "F-7399r382353_fix"
+        "fix_id": "F-7399r382353_fix",
+        "documentable": false
       },
       "id": "V-207138",
       "title": "The BGP router must be configured to reject outbound route advertisements for any prefixes belonging to the IP core.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207139",
         "rid": "SV-207139r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000007",
-        "fix_id": "F-7400r382356_fix"
+        "fix_id": "F-7400r382356_fix",
+        "documentable": false
       },
       "id": "V-207139",
       "title": "The PE router must be configured to block any traffic that is destined to IP core infrastructure.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207140",
         "rid": "SV-207140r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000008",
-        "fix_id": "F-7401r382359_fix"
+        "fix_id": "F-7401r382359_fix",
+        "documentable": false
       },
       "id": "V-207140",
       "title": "The PE router must be configured with Unicast Reverse Path Forwarding (uRPF) loose mode enabled on all CE-facing interfaces..",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207141",
         "rid": "SV-207141r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000009",
-        "fix_id": "F-7402r382362_fix"
+        "fix_id": "F-7402r382362_fix",
+        "documentable": false
       },
       "id": "V-207141",
       "title": "The out-of-band management (OOBM) gateway must be configured to transport management traffic to the Network Operations Center (NOC) via dedicated circuit, MPLS/VPN service, or IPsec tunnel.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207142",
         "rid": "SV-207142r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000010",
-        "fix_id": "F-7403r382410_fix"
+        "fix_id": "F-7403r382410_fix",
+        "documentable": false
       },
       "id": "V-207142",
       "title": "The out-of-band management (OOBM) gateway router must be configured to forward only authorized management traffic to the Network Operations Center (NOC).",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207143",
         "rid": "SV-207143r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000011",
-        "fix_id": "F-7404r382413_fix"
+        "fix_id": "F-7404r382413_fix",
+        "documentable": false
       },
       "id": "V-207143",
       "title": "The out-of-band management (OOBM) gateway router must be configured to block any traffic destined to itself that is not sourced from the OOBM network or the NOC.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207144",
         "rid": "SV-207144r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000012",
-        "fix_id": "F-7405r382416_fix"
+        "fix_id": "F-7405r382416_fix",
+        "documentable": false
       },
       "id": "V-207144",
       "title": "The router must be configured to only permit management traffic that ingresses and egresses the OOBM interface.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-207145",
         "rid": "SV-207145r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000013",
-        "fix_id": "F-7406r382419_fix"
+        "fix_id": "F-7406r382419_fix",
+        "documentable": false
       },
       "id": "V-207145",
       "title": "The router providing connectivity to the NOC must be configured to forward all in-band management traffic via an IPsec tunnel.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000235",
         "gid": "V-207146",
         "rid": "SV-207146r604135_rule",
         "stig_id": "SRG-NET-000235-RTR-000114",
-        "fix_id": "F-7407r382422_fix"
+        "fix_id": "F-7407r382422_fix",
+        "documentable": false
       },
       "id": "V-207146",
       "title": "The router must be configured to stop forwarding traffic upon the failure of the following actions: system initialization, shutdown, or system abort.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000343",
         "gid": "V-207147",
         "rid": "SV-207147r604135_rule",
         "stig_id": "SRG-NET-000343-RTR-000001",
-        "fix_id": "F-7408r382425_fix"
+        "fix_id": "F-7408r382425_fix",
+        "documentable": false
       },
       "id": "V-207147",
       "title": "The PE router providing MPLS Layer 2 Virtual Private Network (L2VPN) services must be configured to authenticate targeted Label Distribution Protocol (LDP) sessions used to exchange virtual circuit (VC) information using a FIPS-approved message authentication code algorithm.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000343",
         "gid": "V-207148",
         "rid": "SV-207148r604135_rule",
         "stig_id": "SRG-NET-000343-RTR-000002",
-        "fix_id": "F-7409r382428_fix"
+        "fix_id": "F-7409r382428_fix",
+        "documentable": false
       },
       "id": "V-207148",
       "title": "The Multicast Source Discovery Protocol (MSDP) router must be configured to authenticate all received MSDP packets.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207149",
         "rid": "SV-207149r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000109",
-        "fix_id": "F-7410r382431_fix"
+        "fix_id": "F-7410r382431_fix",
+        "documentable": false
       },
       "id": "V-207149",
       "title": "The router must not be configured to have any zero-touch deployment feature enabled when connected to an operational network.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207150",
         "rid": "SV-207150r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000110",
-        "fix_id": "F-7411r382434_fix"
+        "fix_id": "F-7411r382434_fix",
+        "documentable": false
       },
       "id": "V-207150",
       "title": "The router must be configured to protect against or limit the effects of denial-of-service (DoS) attacks by employing control plane protection.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207151",
         "rid": "SV-207151r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000111",
-        "fix_id": "F-7412r382437_fix"
+        "fix_id": "F-7412r382437_fix",
+        "documentable": false
       },
       "id": "V-207151",
       "title": "The router must be configured to have Gratuitous ARP disabled on all external interfaces.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207152",
         "rid": "SV-207152r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000112",
-        "fix_id": "F-7413r382440_fix"
+        "fix_id": "F-7413r382440_fix",
+        "documentable": false
       },
       "id": "V-207152",
       "title": "The router must be configured to have IP directed broadcast disabled on all interfaces.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207153",
         "rid": "SV-207153r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000113",
-        "fix_id": "F-7414r382443_fix"
+        "fix_id": "F-7414r382443_fix",
+        "documentable": false
       },
       "id": "V-207153",
       "title": "The router must be configured to have Internet Control Message Protocol (ICMP) unreachable notifications disabled on all external interfaces.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207154",
         "rid": "SV-207154r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000114",
-        "fix_id": "F-7415r382446_fix"
+        "fix_id": "F-7415r382446_fix",
+        "documentable": false
       },
       "id": "V-207154",
       "title": "The router must be configured to have Internet Control Message Protocol (ICMP) mask replies disabled on all external interfaces.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207155",
         "rid": "SV-207155r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000115",
-        "fix_id": "F-7416r382449_fix"
+        "fix_id": "F-7416r382449_fix",
+        "documentable": false
       },
       "id": "V-207155",
       "title": "The router must be configured to have Internet Control Message Protocol (ICMP) redirects disabled on all external interfaces.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207156",
         "rid": "SV-207156r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000117",
-        "fix_id": "F-7417r382452_fix"
+        "fix_id": "F-7417r382452_fix",
+        "documentable": false
       },
       "id": "V-207156",
       "title": "The BGP router must be configured to use the maximum prefixes feature to protect against route table flooding and prefix de-aggregation attacks.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207157",
         "rid": "SV-207157r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000118",
-        "fix_id": "F-7418r382500_fix"
+        "fix_id": "F-7418r382500_fix",
+        "documentable": false
       },
       "id": "V-207157",
       "title": "The BGP router must be configured to limit the prefix size on any inbound route advertisement to /24 or the least significant prefixes issued to the customer.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207158",
         "rid": "SV-207158r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000119",
-        "fix_id": "F-7419r382503_fix"
+        "fix_id": "F-7419r382503_fix",
+        "documentable": false
       },
       "id": "V-207158",
       "title": "The PE router must be configured to implement Internet Group Management Protocol (IGMP) or Multicast Listener Discovery (MLD) snooping for each Virtual Private LAN Services (VPLS) bridge domain.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207159",
         "rid": "SV-207159r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000120",
-        "fix_id": "F-7420r382506_fix"
+        "fix_id": "F-7420r382506_fix",
+        "documentable": false
       },
       "id": "V-207159",
       "title": "The multicast Rendezvous Point (RP) router must be configured to limit the multicast forwarding cache so that its resources are not saturated by managing an overwhelming number of Protocol Independent Multicast (PIM) and Multicast Source Discovery Protocol (MSDP) source-active entries.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207160",
         "rid": "SV-207160r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000121",
-        "fix_id": "F-7421r382509_fix"
+        "fix_id": "F-7421r382509_fix",
+        "documentable": false
       },
       "id": "V-207160",
       "title": "The multicast Rendezvous Point (RP) must be configured to rate limit the number of Protocol Independent Multicast (PIM) Register messages.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207161",
         "rid": "SV-207161r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000122",
-        "fix_id": "F-7422r382512_fix"
+        "fix_id": "F-7422r382512_fix",
+        "documentable": false
       },
       "id": "V-207161",
       "title": "The multicast Designated Router (DR) must be configured to limit the number of mroute states resulting from Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Host Membership Reports.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-207162",
         "rid": "SV-207162r648772_rule",
         "stig_id": "SRG-NET-000362-RTR-000123",
-        "fix_id": "F-7423r382515_fix"
+        "fix_id": "F-7423r382515_fix",
+        "documentable": false
       },
       "id": "V-207162",
       "title": "The multicast Designated Router (DR) must be configured to increase the shortest-path tree (SPT) threshold or set it to infinity to minimalize source-group (S, G) state within the multicast topology where Any Source Multicast (ASM) is deployed.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-207163",
         "rid": "SV-207163r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000109",
-        "fix_id": "F-7424r382518_fix"
+        "fix_id": "F-7424r382518_fix",
+        "documentable": false
       },
       "id": "V-207163",
       "title": "The perimeter router must be configured to only allow incoming communications from authorized sources to be routed to authorized destinations.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-207164",
         "rid": "SV-207164r648771_rule",
         "stig_id": "SRG-NET-000364-RTR-000110",
-        "fix_id": "F-7425r457792_fix"
+        "fix_id": "F-7425r457792_fix",
+        "documentable": false
       },
       "id": "V-207164",
       "title": "The perimeter router must be configured to block inbound packets with source Bogon IP address prefixes.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-207165",
         "rid": "SV-207165r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000111",
-        "fix_id": "F-7426r382524_fix"
+        "fix_id": "F-7426r382524_fix",
+        "documentable": false
       },
       "id": "V-207165",
       "title": "The perimeter router must be configured to have Link Layer Discovery Protocols (LLDPs) disabled on all external interfaces.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-207166",
         "rid": "SV-207166r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000112",
-        "fix_id": "F-7427r382527_fix"
+        "fix_id": "F-7427r382527_fix",
+        "documentable": false
       },
       "id": "V-207166",
       "title": "The perimeter router must be configured to have Proxy ARP disabled on all external interfaces.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-207167",
         "rid": "SV-207167r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000113",
-        "fix_id": "F-7428r382530_fix"
+        "fix_id": "F-7428r382530_fix",
+        "documentable": false
       },
       "id": "V-207167",
       "title": "The perimeter router must be configured to block all outbound management traffic.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-207168",
         "rid": "SV-207168r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000114",
-        "fix_id": "F-7429r382533_fix"
+        "fix_id": "F-7429r382533_fix",
+        "documentable": false
       },
       "id": "V-207168",
       "title": "The multicast Designated Router (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join only multicast groups that have been approved by the organization.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-207169",
         "rid": "SV-207169r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000115",
-        "fix_id": "F-7430r382536_fix"
+        "fix_id": "F-7430r382536_fix",
+        "documentable": false
       },
       "id": "V-207169",
       "title": "The multicast Designated Router (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join a multicast group only from sources that have been approved by the organization.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-207170",
         "rid": "SV-207170r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000116",
-        "fix_id": "F-7431r382539_fix"
+        "fix_id": "F-7431r382539_fix",
+        "documentable": false
       },
       "id": "V-207170",
       "title": "The Multicast Source Discovery Protocol (MSDP) router must be configured to only accept MSDP packets from known MSDP peers.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000365",
         "gid": "V-207171",
         "rid": "SV-207171r604135_rule",
         "stig_id": "SRG-NET-000365-RTR-000112",
-        "fix_id": "F-7432r382542_fix"
+        "fix_id": "F-7432r382542_fix",
+        "documentable": false
       },
       "id": "V-207171",
       "title": "The router must be configured to fail securely in the event of an operational failure.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207172",
         "rid": "SV-207172r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000001",
-        "fix_id": "F-7433r382605_fix"
+        "fix_id": "F-7433r382605_fix",
+        "documentable": false
       },
       "id": "V-207172",
       "title": "The BGP router must be configured to use its loopback address as the source address for iBGP peering sessions.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207173",
         "rid": "SV-207173r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000002",
-        "fix_id": "F-7434r382608_fix"
+        "fix_id": "F-7434r382608_fix",
+        "documentable": false
       },
       "id": "V-207173",
       "title": "The MPLS router must be configured to use its loopback address as the source address for LDP peering sessions.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207174",
         "rid": "SV-207174r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000003",
-        "fix_id": "F-7435r382611_fix"
+        "fix_id": "F-7435r382611_fix",
+        "documentable": false
       },
       "id": "V-207174",
       "title": "The MPLS router must be configured to synchronize IGP and LDP to minimize packet loss when an IGP adjacency is established prior to LDP peers completing label exchange.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207175",
         "rid": "SV-207175r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000004",
-        "fix_id": "F-7436r382614_fix"
+        "fix_id": "F-7436r382614_fix",
+        "documentable": false
       },
       "id": "V-207175",
       "title": "The MPLS router must be configured to have TTL Propagation disabled.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207176",
         "rid": "SV-207176r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000005",
-        "fix_id": "F-7437r382617_fix"
+        "fix_id": "F-7437r382617_fix",
+        "documentable": false
       },
       "id": "V-207176",
       "title": "The PE router must be configured to have each Virtual Routing and Forwarding (VRF) instance bound to the appropriate physical or logical interfaces to maintain traffic separation between all MPLS L3VPNs.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207177",
         "rid": "SV-207177r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000006",
-        "fix_id": "F-7438r382620_fix"
+        "fix_id": "F-7438r382620_fix",
+        "documentable": false
       },
       "id": "V-207177",
       "title": "The PE router must be configured to have each Virtual Routing and Forwarding (VRF) instance with the appropriate Route Target (RT).",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207178",
         "rid": "SV-207178r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000007",
-        "fix_id": "F-7439r382623_fix"
+        "fix_id": "F-7439r382623_fix",
+        "documentable": false
       },
       "id": "V-207178",
       "title": "The PE router must be configured to have each VRF with the appropriate Route Distinguisher (RD).",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207179",
         "rid": "SV-207179r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000008",
-        "fix_id": "F-7440r382626_fix"
+        "fix_id": "F-7440r382626_fix",
+        "documentable": false
       },
       "id": "V-207179",
       "title": "The PE router providing MPLS Virtual Private Wire Service (VPWS) must be configured to have the appropriate virtual circuit identification (VC ID) for each attachment circuit.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207180",
         "rid": "SV-207180r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000009",
-        "fix_id": "F-7441r382629_fix"
+        "fix_id": "F-7441r382629_fix",
+        "documentable": false
       },
       "id": "V-207180",
       "title": "The PE router providing Virtual Private LAN Services (VPLS) must be configured to have all attachment circuits defined to the virtual forwarding instance (VFI) with the globally unique VPN ID assigned for each customer VLAN.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207181",
         "rid": "SV-207181r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000010",
-        "fix_id": "F-7442r382632_fix"
+        "fix_id": "F-7442r382632_fix",
+        "documentable": false
       },
       "id": "V-207181",
       "title": "The PE router must be configured to enforce the split-horizon rule for all pseudowires within a Virtual Private LAN Services (VPLS) bridge domain.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-207182",
         "rid": "SV-207182r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000011",
-        "fix_id": "F-7443r382635_fix"
+        "fix_id": "F-7443r382635_fix",
+        "documentable": false
       },
       "id": "V-207182",
       "title": "The Multicast Source Discovery Protocol (MSDP) router must be configured to use its loopback address as the source address when originating MSDP traffic.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-216506",
         "rid": "SV-216506r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000100",
-        "fix_id": "F-17739r382638_fix"
+        "fix_id": "F-17739r382638_fix",
+        "documentable": false
       },
       "id": "V-216506",
       "title": "The router must be configured in accordance with the security configuration settings based on DoD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000131",
         "gid": "V-216978",
         "rid": "SV-216978r604135_rule",
         "stig_id": "SRG-NET-000131-RTR-000083",
-        "fix_id": "F-18206r382641_fix"
+        "fix_id": "F-18206r382641_fix",
+        "documentable": false
       },
       "id": "V-216978",
       "title": "The router must not be configured to have any feature enabled that calls home to the vendor.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-216979",
         "rid": "SV-216979r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000014",
-        "fix_id": "F-18207r382644_fix"
+        "fix_id": "F-18207r382644_fix",
+        "documentable": false
       },
       "id": "V-216979",
       "title": "The perimeter router must be configured to restrict it from accepting outbound IP packets that contain an illegitimate address in the source address field via egress filter or by enabling Unicast Reverse Path Forwarding (uRPF).",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-216980",
         "rid": "SV-216980r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000015",
-        "fix_id": "F-18208r382647_fix"
+        "fix_id": "F-18208r382647_fix",
+        "documentable": false
       },
       "id": "V-216980",
       "title": "The perimeter router must be configured to block all packets with any IP options.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000205",
         "gid": "V-216981",
         "rid": "SV-216981r604135_rule",
         "stig_id": "SRG-NET-000205-RTR-000016",
-        "fix_id": "F-18209r382650_fix"
+        "fix_id": "F-18209r382650_fix",
+        "documentable": false
       },
       "id": "V-216981",
       "title": "The PE router must be configured to ignore or block all packets with any IP options.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230",
         "gid": "V-216982",
         "rid": "SV-216982r604135_rule",
         "stig_id": "SRG-NET-000230-RTR-000001",
-        "fix_id": "F-18210r382653_fix"
+        "fix_id": "F-18210r382653_fix",
+        "documentable": false
       },
       "id": "V-216982",
       "title": "The router must be configured to implement message authentication for all control plane protocols.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230",
         "gid": "V-216983",
         "rid": "SV-216983r604135_rule",
         "stig_id": "SRG-NET-000230-RTR-000002",
-        "fix_id": "F-18211r382656_fix"
+        "fix_id": "F-18211r382656_fix",
+        "documentable": false
       },
       "id": "V-216983",
       "title": "The BGP router must be configured to use a unique key for each autonomous system (AS) that it peers with.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000230",
         "gid": "V-216984",
         "rid": "SV-216984r604135_rule",
         "stig_id": "SRG-NET-000230-RTR-000003",
-        "fix_id": "F-18212r382659_fix"
+        "fix_id": "F-18212r382659_fix",
+        "documentable": false
       },
       "id": "V-216984",
       "title": "The router must be configured to use keys with a duration not exceeding 180 days for authenticating routing protocol messages.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000362",
         "gid": "V-216985",
         "rid": "SV-216985r604135_rule",
         "stig_id": "SRG-NET-000362-RTR-000124",
-        "fix_id": "F-18213r382662_fix"
+        "fix_id": "F-18213r382662_fix",
+        "documentable": false
       },
       "id": "V-216985",
       "title": "The BGP router must be configured to enable the Generalized TTL Security Mechanism (GTSM).",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-220144",
         "rid": "SV-220144r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000012",
-        "fix_id": "F-21851r457760_fix"
+        "fix_id": "F-21851r457760_fix",
+        "documentable": false
       },
       "id": "V-220144",
       "title": "The router must be configured to advertise a hop limit of at least 32 in Router Advertisement messages for IPv6 stateless auto-configuration deployments.",
@@ -1736,11 +1736,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-220145",
         "rid": "SV-220145r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000013",
-        "fix_id": "F-21852r539651_fix"
+        "fix_id": "F-21852r539651_fix",
+        "documentable": false
       },
       "id": "V-220145",
       "title": "The router must not be configured to use IPv6 Site Local Unicast addresses.",
@@ -1754,11 +1754,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512",
         "gid": "V-220146",
         "rid": "SV-220146r604135_rule",
         "stig_id": "SRG-NET-000512-RTR-000014",
-        "fix_id": "F-21853r457766_fix"
+        "fix_id": "F-21853r457766_fix",
+        "documentable": false
       },
       "id": "V-220146",
       "title": "The perimeter router must be configured to suppress Router Advertisements on all external IPv6-enabled interfaces.",
@@ -1772,11 +1772,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-220147",
         "rid": "SV-220147r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000200",
-        "fix_id": "F-21855r457770_fix"
+        "fix_id": "F-21855r457770_fix",
+        "documentable": false
       },
       "id": "V-220147",
       "title": "The perimeter router must be configured to drop IPv6 undetermined transport packets.",
@@ -1790,11 +1790,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-220148",
         "rid": "SV-220148r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000201",
-        "fix_id": "F-21856r457774_fix"
+        "fix_id": "F-21856r457774_fix",
+        "documentable": false
       },
       "id": "V-220148",
       "title": "The perimeter router must be configured drop IPv6 packets with a Routing Header type 0, 1, or 3255.",
@@ -1808,11 +1808,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-220149",
         "rid": "SV-220149r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000202",
-        "fix_id": "F-21857r457777_fix"
+        "fix_id": "F-21857r457777_fix",
+        "documentable": false
       },
       "id": "V-220149",
       "title": "The perimeter router must be configured to drop IPv6 packets containing a Hop-by-Hop header with invalid option type values.",
@@ -1826,11 +1826,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-220150",
         "rid": "SV-220150r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000203",
-        "fix_id": "F-21858r457780_fix"
+        "fix_id": "F-21858r457780_fix",
+        "documentable": false
       },
       "id": "V-220150",
       "title": "The perimeter router must be configured to drop IPv6 packets containing a Destination Option header with invalid option type values.",
@@ -1844,11 +1844,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-220151",
         "rid": "SV-220151r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000204",
-        "fix_id": "F-21859r457783_fix"
+        "fix_id": "F-21859r457783_fix",
+        "documentable": false
       },
       "id": "V-220151",
       "title": "The perimeter router must be configured to drop IPv6 packets containing an extension header with the Endpoint Identification option.",
@@ -1862,11 +1862,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-220152",
         "rid": "SV-220152r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000205",
-        "fix_id": "F-21860r457786_fix"
+        "fix_id": "F-21860r457786_fix",
+        "documentable": false
       },
       "id": "V-220152",
       "title": "The perimeter router must be configured to drop IPv6 packets containing the NSAP address option within Destination Option header.",
@@ -1880,11 +1880,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364",
         "gid": "V-220153",
         "rid": "SV-220153r604135_rule",
         "stig_id": "SRG-NET-000364-RTR-000206",
-        "fix_id": "F-21861r539656_fix"
+        "fix_id": "F-21861r539656_fix",
+        "documentable": false
       },
       "id": "V-220153",
       "title": "The perimeter router must be configured to drop IPv6 packets containing a Hop-by-Hop or Destination Option extension header with an undefined option type.",
@@ -1896,7 +1896,5 @@
       }
     }
   ],
-  "name": "Router_SRG",
-  "title": "Router Security Requirements Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Router_SRG"
 }

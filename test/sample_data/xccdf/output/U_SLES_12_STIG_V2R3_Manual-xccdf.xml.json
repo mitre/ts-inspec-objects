@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217101",
         "rid": "SV-217101r603262_rule",
         "stig_id": "SLES-12-010000",
-        "fix_id": "F-18327r369460_fix"
+        "fix_id": "F-18327r369460_fix",
+        "documentable": false
       },
       "id": "V-217101",
       "title": "The SUSE operating system must be a vendor-supported release.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217102",
         "rid": "SV-217102r603262_rule",
         "stig_id": "SLES-12-010010",
-        "fix_id": "F-18328r369463_fix"
+        "fix_id": "F-18328r369463_fix",
+        "documentable": false
       },
       "id": "V-217102",
       "title": "Vendor-packaged SUSE operating system security patches and updates must be installed and up to date.",
@@ -44,15 +44,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "gid": "V-217103",
+        "rid": "SV-217103r603262_rule",
+        "stig_id": "SLES-12-010020",
+        "fix_id": "F-18329r369466_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000024-GPOS-00007"
         ],
-        "gid": "V-217103",
-        "rid": "SV-217103r603262_rule",
-        "stig_id": "SLES-12-010020",
-        "fix_id": "F-18329r369466_fix"
+        "documentable": false
       },
       "id": "V-217103",
       "title": "The SUSE operating system must display the Standard Mandatory DoD Notice and Consent Banner until users acknowledge the usage conditions and take explicit actions to log on for further access to the local graphical user interface.",
@@ -66,11 +66,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
         "gid": "V-217104",
         "rid": "SV-217104r603262_rule",
         "stig_id": "SLES-12-010030",
-        "fix_id": "F-18330r369469_fix"
+        "fix_id": "F-18330r369469_fix",
+        "documentable": false
       },
       "id": "V-217104",
       "title": "The SUSE operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting access via local console.",
@@ -84,11 +84,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
         "gid": "V-217105",
         "rid": "SV-217105r646678_rule",
         "stig_id": "SLES-12-010040",
-        "fix_id": "F-36319r646677_fix"
+        "fix_id": "F-36319r646677_fix",
+        "documentable": false
       },
       "id": "V-217105",
       "title": "The SUSE operating system must display a banner before granting local or remote access to the system via a graphical user logon.",
@@ -102,11 +102,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000228-GPOS-00088",
         "gid": "V-217106",
         "rid": "SV-217106r646681_rule",
         "stig_id": "SLES-12-010050",
-        "fix_id": "F-18332r646680_fix"
+        "fix_id": "F-18332r646680_fix",
+        "documentable": false
       },
       "id": "V-217106",
       "title": "The SUSE operating system must display the approved Standard Mandatory DoD Notice before granting local or remote access to the system via a graphical user logon.",
@@ -120,15 +120,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
+        "gid": "V-217107",
+        "rid": "SV-217107r603262_rule",
+        "stig_id": "SLES-12-010060",
+        "fix_id": "F-18333r369478_fix",
         "satisfies": [
           "SRG-OS-000028-GPOS-00009",
           "SRG-OS-000030-GPOS-00011"
         ],
-        "gid": "V-217107",
-        "rid": "SV-217107r603262_rule",
-        "stig_id": "SLES-12-010060",
-        "fix_id": "F-18333r369478_fix"
+        "documentable": false
       },
       "id": "V-217107",
       "title": "The SUSE operating system must be able to lock the graphical user interface (GUI).",
@@ -142,16 +142,16 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000028-GPOS-00009",
+        "gid": "V-217108",
+        "rid": "SV-217108r603262_rule",
+        "stig_id": "SLES-12-010070",
+        "fix_id": "F-36320r602673_fix",
         "satisfies": [
           "SRG-OS-000028-GPOS-00009",
           "SRG-OS-000030-GPOS-00011",
           "SRG-OS-000031-GPOS-00012"
         ],
-        "gid": "V-217108",
-        "rid": "SV-217108r603262_rule",
-        "stig_id": "SLES-12-010070",
-        "fix_id": "F-36320r602673_fix"
+        "documentable": false
       },
       "id": "V-217108",
       "title": "The SUSE operating system must utilize vlock to allow for session locking.",
@@ -165,11 +165,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-217109",
         "rid": "SV-217109r646684_rule",
         "stig_id": "SLES-12-010080",
-        "fix_id": "F-18335r646683_fix"
+        "fix_id": "F-18335r646683_fix",
+        "documentable": false
       },
       "id": "V-217109",
       "title": "The SUSE operating system must initiate a session lock after a 15-minute period of inactivity for the graphical user interface.",
@@ -183,11 +183,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000029-GPOS-00010",
         "gid": "V-217110",
         "rid": "SV-217110r603262_rule",
         "stig_id": "SLES-12-010090",
-        "fix_id": "F-18336r369487_fix"
+        "fix_id": "F-18336r369487_fix",
+        "documentable": false
       },
       "id": "V-217110",
       "title": "The SUSE operating system must initiate a session lock after a 15-minute period of inactivity.",
@@ -201,11 +201,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000031-GPOS-00012",
         "gid": "V-217111",
         "rid": "SV-217111r603262_rule",
         "stig_id": "SLES-12-010100",
-        "fix_id": "F-18337r369490_fix"
+        "fix_id": "F-18337r369490_fix",
+        "documentable": false
       },
       "id": "V-217111",
       "title": "The SUSE operating system must conceal, via the session lock, information previously visible on the display with a publicly viewable image in the graphical user interface.",
@@ -219,16 +219,16 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
+        "gid": "V-217112",
+        "rid": "SV-217112r646686_rule",
+        "stig_id": "SLES-12-010110",
+        "fix_id": "F-18338r369493_fix",
         "satisfies": [
           "SRG-OS-000373-GPOS-00156",
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00158"
         ],
-        "gid": "V-217112",
-        "rid": "SV-217112r646686_rule",
-        "stig_id": "SLES-12-010110",
-        "fix_id": "F-18338r369493_fix"
+        "documentable": false
       },
       "id": "V-217112",
       "title": "The SUSE operating system must reauthenticate users when changing authenticators, roles, or escalating privileges.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000027-GPOS-00008",
         "gid": "V-217113",
         "rid": "SV-217113r603262_rule",
         "stig_id": "SLES-12-010120",
-        "fix_id": "F-18339r369496_fix"
+        "fix_id": "F-18339r369496_fix",
+        "documentable": false
       },
       "id": "V-217113",
       "title": "The SUSE operating system must limit the number of concurrent sessions to 10 for all accounts and/or account types.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000021-GPOS-00005",
         "gid": "V-217114",
         "rid": "SV-217114r603262_rule",
         "stig_id": "SLES-12-010130",
-        "fix_id": "F-36321r602676_fix"
+        "fix_id": "F-36321r602676_fix",
+        "documentable": false
       },
       "id": "V-217114",
       "title": "The SUSE operating system must lock an account after three consecutive invalid access attempts.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00226",
         "gid": "V-217116",
         "rid": "SV-217116r603262_rule",
         "stig_id": "SLES-12-010140",
-        "fix_id": "F-18342r369505_fix"
+        "fix_id": "F-18342r369505_fix",
+        "documentable": false
       },
       "id": "V-217116",
       "title": "The SUSE operating system must enforce a delay of at least four (4) seconds between logon prompts following a failed logon attempt.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000069-GPOS-00037",
         "gid": "V-217117",
         "rid": "SV-217117r603262_rule",
         "stig_id": "SLES-12-010150",
-        "fix_id": "F-18343r369508_fix"
+        "fix_id": "F-18343r369508_fix",
+        "documentable": false
       },
       "id": "V-217117",
       "title": "The SUSE operating system must enforce passwords that contain at least one upper-case character.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000070-GPOS-00038",
         "gid": "V-217118",
         "rid": "SV-217118r603262_rule",
         "stig_id": "SLES-12-010160",
-        "fix_id": "F-18344r369511_fix"
+        "fix_id": "F-18344r369511_fix",
+        "documentable": false
       },
       "id": "V-217118",
       "title": "The SUSE operating system must enforce passwords that contain at least one lower-case character.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000071-GPOS-00039",
         "gid": "V-217119",
         "rid": "SV-217119r603262_rule",
         "stig_id": "SLES-12-010170",
-        "fix_id": "F-18345r369514_fix"
+        "fix_id": "F-18345r369514_fix",
+        "documentable": false
       },
       "id": "V-217119",
       "title": "The SUSE operating system must enforce passwords that contain at least one numeric character.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000266-GPOS-00101",
         "gid": "V-217120",
         "rid": "SV-217120r603262_rule",
         "stig_id": "SLES-12-010180",
-        "fix_id": "F-18346r369517_fix"
+        "fix_id": "F-18346r369517_fix",
+        "documentable": false
       },
       "id": "V-217120",
       "title": "The SUSE operating system must enforce passwords that contain at least one special character.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000072-GPOS-00040",
         "gid": "V-217121",
         "rid": "SV-217121r603262_rule",
         "stig_id": "SLES-12-010190",
-        "fix_id": "F-18347r369520_fix"
+        "fix_id": "F-18347r369520_fix",
+        "documentable": false
       },
       "id": "V-217121",
       "title": "The SUSE operating system must require the change of at least eight (8) of the total number of characters when passwords are changed.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000120-GPOS-00061",
         "gid": "V-217122",
         "rid": "SV-217122r646689_rule",
         "stig_id": "SLES-12-010210",
-        "fix_id": "F-18348r646688_fix"
+        "fix_id": "F-18348r646688_fix",
+        "documentable": false
       },
       "id": "V-217122",
       "title": "The SUSE operating system must employ FIPS 140-2 approved cryptographic hashing algorithm for system authentication (login.defs).",
@@ -404,15 +404,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
+        "gid": "V-217123",
+        "rid": "SV-217123r646692_rule",
+        "stig_id": "SLES-12-010220",
+        "fix_id": "F-18349r646691_fix",
         "satisfies": [
           "SRG-OS-000073-GPOS-00041",
           "SRG-OS-000120-GPOS-00061"
         ],
-        "gid": "V-217123",
-        "rid": "SV-217123r646692_rule",
-        "stig_id": "SLES-12-010220",
-        "fix_id": "F-18349r646691_fix"
+        "documentable": false
       },
       "id": "V-217123",
       "title": "The SUSE operating system must employ FIPS 140-2-approved cryptographic hashing algorithms for all stored passwords.",
@@ -426,14 +426,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
-        "satisfies": [
-          "SRG-OS-000120-GPOS-00061"
-        ],
         "gid": "V-217124",
         "rid": "SV-217124r603262_rule",
         "stig_id": "SLES-12-010230",
-        "fix_id": "F-18350r369529_fix"
+        "fix_id": "F-18350r369529_fix",
+        "satisfies": [
+          "SRG-OS-000120-GPOS-00061"
+        ],
+        "documentable": false
       },
       "id": "V-217124",
       "title": "The SUSE operating system must configure the Linux Pluggable Authentication Modules (PAM) to only store encrypted representations of passwords.",
@@ -447,11 +447,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217125",
         "rid": "SV-217125r603262_rule",
         "stig_id": "SLES-12-010231",
-        "fix_id": "F-18351r369532_fix"
+        "fix_id": "F-18351r369532_fix",
+        "documentable": false
       },
       "id": "V-217125",
       "title": "The SUSE operating system must not be configured to allow blank or null passwords.",
@@ -465,15 +465,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
+        "gid": "V-217126",
+        "rid": "SV-217126r603262_rule",
+        "stig_id": "SLES-12-010240",
+        "fix_id": "F-18352r369535_fix",
         "satisfies": [
           "SRG-OS-000073-GPOS-00041",
           "SRG-OS-000120-GPOS-00061"
         ],
-        "gid": "V-217126",
-        "rid": "SV-217126r603262_rule",
-        "stig_id": "SLES-12-010240",
-        "fix_id": "F-18352r369535_fix"
+        "documentable": false
       },
       "id": "V-217126",
       "title": "The SUSE operating system must employ FIPS 140-2-approved cryptographic hashing algorithms for all stored passwords.",
@@ -487,11 +487,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000078-GPOS-00046",
         "gid": "V-217127",
         "rid": "SV-217127r603262_rule",
         "stig_id": "SLES-12-010250",
-        "fix_id": "F-18353r369538_fix"
+        "fix_id": "F-18353r369538_fix",
+        "documentable": false
       },
       "id": "V-217127",
       "title": "The SUSE operating system must employ passwords with a minimum of 15 characters.",
@@ -505,11 +505,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-217128",
         "rid": "SV-217128r646695_rule",
         "stig_id": "SLES-12-010260",
-        "fix_id": "F-18354r646694_fix"
+        "fix_id": "F-18354r646694_fix",
+        "documentable": false
       },
       "id": "V-217128",
       "title": "The SUSE operating system must be configured to create or update passwords with a minimum lifetime of 24 hours (one day).",
@@ -523,11 +523,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000075-GPOS-00043",
         "gid": "V-217129",
         "rid": "SV-217129r646698_rule",
         "stig_id": "SLES-12-010270",
-        "fix_id": "F-18355r646697_fix"
+        "fix_id": "F-18355r646697_fix",
+        "documentable": false
       },
       "id": "V-217129",
       "title": "The SUSE operating system must employ user passwords with a minimum lifetime of 24 hours (one day).",
@@ -541,11 +541,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-217130",
         "rid": "SV-217130r646701_rule",
         "stig_id": "SLES-12-010280",
-        "fix_id": "F-18356r646700_fix"
+        "fix_id": "F-18356r646700_fix",
+        "documentable": false
       },
       "id": "V-217130",
       "title": "The SUSE operating system must be configured to create or update passwords with a maximum lifetime of 60 days.",
@@ -559,11 +559,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000076-GPOS-00044",
         "gid": "V-217131",
         "rid": "SV-217131r646704_rule",
         "stig_id": "SLES-12-010290",
-        "fix_id": "F-18357r646703_fix"
+        "fix_id": "F-18357r646703_fix",
+        "documentable": false
       },
       "id": "V-217131",
       "title": "The SUSE operating system must employ user passwords with a maximum lifetime of 60 days.",
@@ -577,11 +577,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-217132",
         "rid": "SV-217132r603262_rule",
         "stig_id": "SLES-12-010300",
-        "fix_id": "F-18358r369553_fix"
+        "fix_id": "F-18358r369553_fix",
+        "documentable": false
       },
       "id": "V-217132",
       "title": "The SUSE operating system must employ a password history file.",
@@ -595,11 +595,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000077-GPOS-00045",
         "gid": "V-217133",
         "rid": "SV-217133r603262_rule",
         "stig_id": "SLES-12-010310",
-        "fix_id": "F-18359r369556_fix"
+        "fix_id": "F-18359r369556_fix",
+        "documentable": false
       },
       "id": "V-217133",
       "title": "The SUSE operating system must not allow passwords to be reused for a minimum of five (5) generations.",
@@ -613,11 +613,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00225",
         "gid": "V-217134",
         "rid": "SV-217134r603262_rule",
         "stig_id": "SLES-12-010320",
-        "fix_id": "F-18360r369559_fix"
+        "fix_id": "F-18360r369559_fix",
+        "documentable": false
       },
       "id": "V-217134",
       "title": "The SUSE operating system must prevent the use of dictionary words for passwords.",
@@ -631,11 +631,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000123-GPOS-00064",
         "gid": "V-217135",
         "rid": "SV-217135r603262_rule",
         "stig_id": "SLES-12-010330",
-        "fix_id": "F-18361r369562_fix"
+        "fix_id": "F-18361r369562_fix",
+        "documentable": false
       },
       "id": "V-217135",
       "title": "The SUSE operating system must never automatically remove or disable emergency administrator accounts.",
@@ -649,11 +649,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000118-GPOS-00060",
         "gid": "V-217136",
         "rid": "SV-217136r603262_rule",
         "stig_id": "SLES-12-010340",
-        "fix_id": "F-18362r369565_fix"
+        "fix_id": "F-18362r369565_fix",
+        "documentable": false
       },
       "id": "V-217136",
       "title": "The SUSE operating system must disable account identifiers (individuals, groups, roles, and devices) after 35 days of inactivity after password expiration.",
@@ -667,11 +667,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000002-GPOS-00002",
         "gid": "V-217137",
         "rid": "SV-217137r603262_rule",
         "stig_id": "SLES-12-010360",
-        "fix_id": "F-18363r369568_fix"
+        "fix_id": "F-18363r369568_fix",
+        "documentable": false
       },
       "id": "V-217137",
       "title": "The SUSE operating system must provision temporary accounts with an expiration date for 72 hours.",
@@ -685,11 +685,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00226",
         "gid": "V-217138",
         "rid": "SV-217138r603262_rule",
         "stig_id": "SLES-12-010370",
-        "fix_id": "F-18364r369571_fix"
+        "fix_id": "F-18364r369571_fix",
+        "documentable": false
       },
       "id": "V-217138",
       "title": "The SUSE operating system must enforce a delay of at least four seconds between logon prompts following a failed logon attempt.",
@@ -703,11 +703,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-217139",
         "rid": "SV-217139r646707_rule",
         "stig_id": "SLES-12-010380",
-        "fix_id": "F-18365r646706_fix"
+        "fix_id": "F-18365r646706_fix",
+        "documentable": false
       },
       "id": "V-217139",
       "title": "The SUSE operating system must not allow unattended or automatic logon via the graphical user interface.",
@@ -721,11 +721,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217140",
         "rid": "SV-217140r646709_rule",
         "stig_id": "SLES-12-010390",
-        "fix_id": "F-18366r369577_fix"
+        "fix_id": "F-18366r369577_fix",
+        "documentable": false
       },
       "id": "V-217140",
       "title": "The SUSE operating system must display the date and time of the last successful account logon upon logon.",
@@ -739,11 +739,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217141",
         "rid": "SV-217141r603262_rule",
         "stig_id": "SLES-12-010400",
-        "fix_id": "F-18367r369580_fix"
+        "fix_id": "F-18367r369580_fix",
+        "documentable": false
       },
       "id": "V-217141",
       "title": "There must be no .shosts files on the SUSE operating system.",
@@ -757,11 +757,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217142",
         "rid": "SV-217142r603262_rule",
         "stig_id": "SLES-12-010410",
-        "fix_id": "F-18368r369583_fix"
+        "fix_id": "F-18368r369583_fix",
+        "documentable": false
       },
       "id": "V-217142",
       "title": "There must be no shosts.equiv files on the SUSE operating system.",
@@ -775,15 +775,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000478-GPOS-00223",
+        "gid": "V-217143",
+        "rid": "SV-217143r603262_rule",
+        "stig_id": "SLES-12-010420",
+        "fix_id": "F-18369r369586_fix",
         "satisfies": [
           "SRG-OS-000396-GPOS-00176",
           "SRG-OS-000478-GPOS-00223"
         ],
-        "gid": "V-217143",
-        "rid": "SV-217143r603262_rule",
-        "stig_id": "SLES-12-010420",
-        "fix_id": "F-18369r369586_fix"
+        "documentable": false
       },
       "id": "V-217143",
       "title": "FIPS 140-2 mode must be enabled on the SUSE operating system.",
@@ -797,11 +797,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-217144",
         "rid": "SV-217144r603262_rule",
         "stig_id": "SLES-12-010430",
-        "fix_id": "F-18370r369589_fix"
+        "fix_id": "F-18370r369589_fix",
+        "documentable": false
       },
       "id": "V-217144",
       "title": "SUSE operating systems with a basic input/output system (BIOS) must require authentication upon booting into single-user and maintenance modes.",
@@ -815,11 +815,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-217145",
         "rid": "SV-217145r603262_rule",
         "stig_id": "SLES-12-010440",
-        "fix_id": "F-18371r369592_fix"
+        "fix_id": "F-18371r369592_fix",
+        "documentable": false
       },
       "id": "V-217145",
       "title": "SUSE operating systems with Unified Extensible Firmware Interface (UEFI) implemented must require authentication upon booting into single-user mode and maintenance.",
@@ -833,16 +833,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000185-GPOS-00079",
+        "gid": "V-217146",
+        "rid": "SV-217146r603262_rule",
+        "stig_id": "SLES-12-010450",
+        "fix_id": "F-18372r369595_fix",
         "satisfies": [
           "SRG-OS-000185-GPOS-00079",
           "SRG-OS-000404-GPOS-00183",
           "SRG-OS-000405-GPOS-00184"
         ],
-        "gid": "V-217146",
-        "rid": "SV-217146r603262_rule",
-        "stig_id": "SLES-12-010450",
-        "fix_id": "F-18372r369595_fix"
+        "documentable": false
       },
       "id": "V-217146",
       "title": "All SUSE operating system persistent disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at rest protection.",
@@ -856,11 +856,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000138-GPOS-00069",
         "gid": "V-217147",
         "rid": "SV-217147r603262_rule",
         "stig_id": "SLES-12-010460",
-        "fix_id": "F-18373r369598_fix"
+        "fix_id": "F-18373r369598_fix",
+        "documentable": false
       },
       "id": "V-217147",
       "title": "The sticky bit must be set on all SUSE operating system world-writable directories.",
@@ -874,11 +874,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000363-GPOS-00150",
         "gid": "V-217148",
         "rid": "SV-217148r603262_rule",
         "stig_id": "SLES-12-010500",
-        "fix_id": "F-18374r369601_fix"
+        "fix_id": "F-18374r369601_fix",
+        "documentable": false
       },
       "id": "V-217148",
       "title": "Advanced Intrusion Detection Environment (AIDE) must verify the baseline SUSE operating system configuration at least weekly.",
@@ -892,11 +892,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000447-GPOS-00201",
         "gid": "V-217149",
         "rid": "SV-217149r603262_rule",
         "stig_id": "SLES-12-010510",
-        "fix_id": "F-18375r369604_fix"
+        "fix_id": "F-18375r369604_fix",
+        "documentable": false
       },
       "id": "V-217149",
       "title": "The SUSE operating system must notify the System Administrator (SA) when AIDE discovers anomalies in the operation of any security functions.",
@@ -910,11 +910,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217150",
         "rid": "SV-217150r646711_rule",
         "stig_id": "SLES-12-010520",
-        "fix_id": "F-18376r369607_fix"
+        "fix_id": "F-18376r369607_fix",
+        "documentable": false
       },
       "id": "V-217150",
       "title": "The SUSE operating system file integrity tool must be configured to verify Access Control Lists (ACLs).",
@@ -928,11 +928,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217151",
         "rid": "SV-217151r646713_rule",
         "stig_id": "SLES-12-010530",
-        "fix_id": "F-18377r369610_fix"
+        "fix_id": "F-18377r369610_fix",
+        "documentable": false
       },
       "id": "V-217151",
       "title": "The SUSE operating system file integrity tool must be configured to verify extended attributes.",
@@ -946,11 +946,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000278-GPOS-00108",
         "gid": "V-217152",
         "rid": "SV-217152r603262_rule",
         "stig_id": "SLES-12-010540",
-        "fix_id": "F-18378r369613_fix"
+        "fix_id": "F-18378r369613_fix",
+        "documentable": false
       },
       "id": "V-217152",
       "title": "The SUSE operating system file integrity tool must be configured to protect the integrity of the audit tools.",
@@ -964,11 +964,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000366-GPOS-00153",
         "gid": "V-217153",
         "rid": "SV-217153r646716_rule",
         "stig_id": "SLES-12-010550",
-        "fix_id": "F-18379r646715_fix"
+        "fix_id": "F-18379r646715_fix",
+        "documentable": false
       },
       "id": "V-217153",
       "title": "The SUSE operating system tool zypper must have gpgcheck enabled.",
@@ -982,11 +982,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000437-GPOS-00194",
         "gid": "V-217154",
         "rid": "SV-217154r603262_rule",
         "stig_id": "SLES-12-010570",
-        "fix_id": "F-18380r369619_fix"
+        "fix_id": "F-18380r369619_fix",
+        "documentable": false
       },
       "id": "V-217154",
       "title": "The SUSE operating system must remove all outdated software components after updated versions have been installed.",
@@ -1000,11 +1000,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000378-GPOS-00163",
         "gid": "V-217155",
         "rid": "SV-217155r603262_rule",
         "stig_id": "SLES-12-010580",
-        "fix_id": "F-18381r369622_fix"
+        "fix_id": "F-18381r369622_fix",
+        "documentable": false
       },
       "id": "V-217155",
       "title": "The SUSE operating system must disable the USB mass storage kernel module.",
@@ -1018,16 +1018,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000114-GPOS-00059",
+        "gid": "V-217156",
+        "rid": "SV-217156r603262_rule",
+        "stig_id": "SLES-12-010590",
+        "fix_id": "F-18382r369625_fix",
         "satisfies": [
           "SRG-OS-000114-GPOS-00059",
           "SRG-OS-000378-GPOS-00163",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-217156",
-        "rid": "SV-217156r603262_rule",
-        "stig_id": "SLES-12-010590",
-        "fix_id": "F-18382r369625_fix"
+        "documentable": false
       },
       "id": "V-217156",
       "title": "The SUSE operating system must disable the file system automounter unless required.",
@@ -1041,7 +1041,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000312-GPOS-00122",
+        "gid": "V-217158",
+        "rid": "SV-217158r646719_rule",
+        "stig_id": "SLES-12-010600",
+        "fix_id": "F-18384r646718_fix",
         "satisfies": [
           "SRG-OS-000312-GPOS-00122",
           "SRG-OS-000312-GPOS-00123SRG-OS-000312-GPOS-00124",
@@ -1050,10 +1053,7 @@
           "SRG-OS-000370-GPOS-00155",
           "SRG-OS-000480-GPOS-00230"
         ],
-        "gid": "V-217158",
-        "rid": "SV-217158r646719_rule",
-        "stig_id": "SLES-12-010600",
-        "fix_id": "F-18384r646718_fix"
+        "documentable": false
       },
       "id": "V-217158",
       "title": "The SUSE operating system Apparmor tool must be configured to control whitelisted applications and user home directory access control.",
@@ -1067,11 +1067,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217159",
         "rid": "SV-217159r646722_rule",
         "stig_id": "SLES-12-010610",
-        "fix_id": "F-18385r646721_fix"
+        "fix_id": "F-18385r646721_fix",
+        "documentable": false
       },
       "id": "V-217159",
       "title": "The SUSE operating system must disable the x86 Ctrl-Alt-Delete key sequence.",
@@ -1085,11 +1085,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217160",
         "rid": "SV-217160r646725_rule",
         "stig_id": "SLES-12-010611",
-        "fix_id": "F-18386r646724_fix"
+        "fix_id": "F-18386r646724_fix",
+        "documentable": false
       },
       "id": "V-217160",
       "title": "The SUSE operating system must disable the x86 Ctrl-Alt-Delete key sequence for Graphical User Interfaces.",
@@ -1103,11 +1103,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00228",
         "gid": "V-217161",
         "rid": "SV-217161r603262_rule",
         "stig_id": "SLES-12-010620",
-        "fix_id": "F-18387r369640_fix"
+        "fix_id": "F-18387r369640_fix",
+        "documentable": false
       },
       "id": "V-217161",
       "title": "The SUSE operating system default permissions must be defined in such a way that all authenticated users can only read and modify their own files.",
@@ -1121,11 +1121,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217162",
         "rid": "SV-217162r603262_rule",
         "stig_id": "SLES-12-010630",
-        "fix_id": "F-18388r369643_fix"
+        "fix_id": "F-18388r369643_fix",
+        "documentable": false
       },
       "id": "V-217162",
       "title": "The SUSE operating system must not have unnecessary accounts.",
@@ -1139,15 +1139,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000104-GPOS-00051",
+        "gid": "V-217163",
+        "rid": "SV-217163r603262_rule",
+        "stig_id": "SLES-12-010640",
+        "fix_id": "F-18389r369646_fix",
         "satisfies": [
           "SRG-OS-000104-GPOS-00051",
           "SRG-OS-000121-GPOS-00062"
         ],
-        "gid": "V-217163",
-        "rid": "SV-217163r603262_rule",
-        "stig_id": "SLES-12-010640",
-        "fix_id": "F-18389r369646_fix"
+        "documentable": false
       },
       "id": "V-217163",
       "title": "The SUSE operating system must not have duplicate User IDs (UIDs) for interactive users.",
@@ -1161,11 +1161,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217164",
         "rid": "SV-217164r603262_rule",
         "stig_id": "SLES-12-010650",
-        "fix_id": "F-18390r369649_fix"
+        "fix_id": "F-18390r369649_fix",
+        "documentable": false
       },
       "id": "V-217164",
       "title": "The SUSE operating system root account must be the only account having unrestricted access to the system.",
@@ -1179,11 +1179,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000383-GPOS-00166",
         "gid": "V-217166",
         "rid": "SV-217166r603262_rule",
         "stig_id": "SLES-12-010670",
-        "fix_id": "F-18392r369655_fix"
+        "fix_id": "F-18392r369655_fix",
+        "documentable": false
       },
       "id": "V-217166",
       "title": "If Network Security Services (NSS) is being used by the SUSE operating system it must prohibit the use of cached authentications after one day.",
@@ -1197,11 +1197,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000383-GPOS-00166",
         "gid": "V-217167",
         "rid": "SV-217167r603262_rule",
         "stig_id": "SLES-12-010680",
-        "fix_id": "F-18393r369658_fix"
+        "fix_id": "F-18393r369658_fix",
+        "documentable": false
       },
       "id": "V-217167",
       "title": "The SUSE operating system must configure the Linux Pluggable Authentication Modules (PAM) to prohibit the use of cached offline authentications after one day.",
@@ -1215,11 +1215,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217168",
         "rid": "SV-217168r603262_rule",
         "stig_id": "SLES-12-010690",
-        "fix_id": "F-18394r369661_fix"
+        "fix_id": "F-18394r369661_fix",
+        "documentable": false
       },
       "id": "V-217168",
       "title": "All SUSE operating system files and directories must have a valid owner.",
@@ -1233,11 +1233,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217169",
         "rid": "SV-217169r603262_rule",
         "stig_id": "SLES-12-010700",
-        "fix_id": "F-18395r369664_fix"
+        "fix_id": "F-18395r369664_fix",
+        "documentable": false
       },
       "id": "V-217169",
       "title": "All SUSE operating system files and directories must have a valid group owner.",
@@ -1251,11 +1251,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217170",
         "rid": "SV-217170r646728_rule",
         "stig_id": "SLES-12-010710",
-        "fix_id": "F-18396r646727_fix"
+        "fix_id": "F-18396r646727_fix",
+        "documentable": false
       },
       "id": "V-217170",
       "title": "All SUSE operating system local interactive users must have a home directory assigned in the /etc/passwd file.",
@@ -1269,11 +1269,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217171",
         "rid": "SV-217171r603262_rule",
         "stig_id": "SLES-12-010720",
-        "fix_id": "F-18397r369670_fix"
+        "fix_id": "F-18397r369670_fix",
+        "documentable": false
       },
       "id": "V-217171",
       "title": "All SUSE operating system local interactive user accounts, upon creation, must be assigned a home directory.",
@@ -1287,11 +1287,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217172",
         "rid": "SV-217172r603885_rule",
         "stig_id": "SLES-12-010730",
-        "fix_id": "F-18398r369673_fix"
+        "fix_id": "F-18398r369673_fix",
+        "documentable": false
       },
       "id": "V-217172",
       "title": "All SUSE operating system local interactive user home directories defined in the /etc/passwd file must exist.",
@@ -1305,11 +1305,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217173",
         "rid": "SV-217173r603887_rule",
         "stig_id": "SLES-12-010740",
-        "fix_id": "F-18399r369676_fix"
+        "fix_id": "F-18399r369676_fix",
+        "documentable": false
       },
       "id": "V-217173",
       "title": "All SUSE operating system local interactive user home directories must have mode 0750 or less permissive.",
@@ -1323,11 +1323,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217174",
         "rid": "SV-217174r603889_rule",
         "stig_id": "SLES-12-010750",
-        "fix_id": "F-18400r369679_fix"
+        "fix_id": "F-18400r369679_fix",
+        "documentable": false
       },
       "id": "V-217174",
       "title": "All SUSE operating system local interactive user home directories must be group-owned by the home directory owners primary group.",
@@ -1341,11 +1341,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217175",
         "rid": "SV-217175r603262_rule",
         "stig_id": "SLES-12-010760",
-        "fix_id": "F-18401r369682_fix"
+        "fix_id": "F-18401r369682_fix",
+        "documentable": false
       },
       "id": "V-217175",
       "title": "All SUSE operating system local initialization files must have mode 0740 or less permissive.",
@@ -1359,11 +1359,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217176",
         "rid": "SV-217176r603262_rule",
         "stig_id": "SLES-12-010770",
-        "fix_id": "F-18402r369685_fix"
+        "fix_id": "F-18402r369685_fix",
+        "documentable": false
       },
       "id": "V-217176",
       "title": "All SUSE operating system local interactive user initialization files executable search paths must contain only paths that resolve to the users home directory.",
@@ -1377,11 +1377,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217177",
         "rid": "SV-217177r646731_rule",
         "stig_id": "SLES-12-010780",
-        "fix_id": "F-18403r646730_fix"
+        "fix_id": "F-18403r646730_fix",
+        "documentable": false
       },
       "id": "V-217177",
       "title": "All SUSE operating system local initialization files must not execute world-writable programs.",
@@ -1395,11 +1395,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217178",
         "rid": "SV-217178r603891_rule",
         "stig_id": "SLES-12-010790",
-        "fix_id": "F-18404r369691_fix"
+        "fix_id": "F-18404r369691_fix",
+        "documentable": false
       },
       "id": "V-217178",
       "title": "SUSE operating system file systems that contain user home directories must be mounted to prevent files with the setuid and setgid bit set from being executed.",
@@ -1413,11 +1413,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217179",
         "rid": "SV-217179r603262_rule",
         "stig_id": "SLES-12-010800",
-        "fix_id": "F-18405r369694_fix"
+        "fix_id": "F-18405r369694_fix",
+        "documentable": false
       },
       "id": "V-217179",
       "title": "SUSE operating system file systems that are used with removable media must be mounted to prevent files with the setuid and setgid bit set from being executed.",
@@ -1431,11 +1431,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217180",
         "rid": "SV-217180r603262_rule",
         "stig_id": "SLES-12-010810",
-        "fix_id": "F-18406r369697_fix"
+        "fix_id": "F-18406r369697_fix",
+        "documentable": false
       },
       "id": "V-217180",
       "title": "SUSE operating system file systems that are being imported via Network File System (NFS) must be mounted to prevent files with the setuid and setgid bit set from being executed.",
@@ -1449,11 +1449,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217181",
         "rid": "SV-217181r603262_rule",
         "stig_id": "SLES-12-010820",
-        "fix_id": "F-18407r369700_fix"
+        "fix_id": "F-18407r369700_fix",
+        "documentable": false
       },
       "id": "V-217181",
       "title": "SUSE operating system file systems that are being imported via Network File System (NFS) must be mounted to prevent binary files from being executed.",
@@ -1467,11 +1467,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217182",
         "rid": "SV-217182r603262_rule",
         "stig_id": "SLES-12-010830",
-        "fix_id": "F-18408r369703_fix"
+        "fix_id": "F-18408r369703_fix",
+        "documentable": false
       },
       "id": "V-217182",
       "title": "All SUSE operating system world-writable directories must be group-owned by root, sys, bin, or an application group.",
@@ -1485,11 +1485,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217183",
         "rid": "SV-217183r603262_rule",
         "stig_id": "SLES-12-010840",
-        "fix_id": "F-18409r369706_fix"
+        "fix_id": "F-18409r369706_fix",
+        "documentable": false
       },
       "id": "V-217183",
       "title": "SUSE operating system kernel core dumps must be disabled unless needed.",
@@ -1503,11 +1503,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217184",
         "rid": "SV-217184r603893_rule",
         "stig_id": "SLES-12-010850",
-        "fix_id": "F-18410r369709_fix"
+        "fix_id": "F-18410r369709_fix",
+        "documentable": false
       },
       "id": "V-217184",
       "title": "A separate file system must be used for SUSE operating system user home directories (such as /home or an equivalent).",
@@ -1521,11 +1521,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217185",
         "rid": "SV-217185r603262_rule",
         "stig_id": "SLES-12-010860",
-        "fix_id": "F-18411r369712_fix"
+        "fix_id": "F-18411r369712_fix",
+        "documentable": false
       },
       "id": "V-217185",
       "title": "The SUSE operating system must use a separate file system for /var.",
@@ -1539,11 +1539,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217186",
         "rid": "SV-217186r603262_rule",
         "stig_id": "SLES-12-010870",
-        "fix_id": "F-18412r369715_fix"
+        "fix_id": "F-18412r369715_fix",
+        "documentable": false
       },
       "id": "V-217186",
       "title": "The SUSE operating system must use a separate file system for the system audit data path.",
@@ -1557,11 +1557,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000206-GPOS-00084",
         "gid": "V-217188",
         "rid": "SV-217188r646734_rule",
         "stig_id": "SLES-12-010890",
-        "fix_id": "F-18414r646733_fix"
+        "fix_id": "F-18414r646733_fix",
+        "documentable": false
       },
       "id": "V-217188",
       "title": "The SUSE operating system must prevent unauthorized users from accessing system error messages.",
@@ -1575,11 +1575,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217189",
         "rid": "SV-217189r646737_rule",
         "stig_id": "SLES-12-010910",
-        "fix_id": "F-18415r646736_fix"
+        "fix_id": "F-18415r646736_fix",
+        "documentable": false
       },
       "id": "V-217189",
       "title": "The SUSE operating system must be configured to not overwrite Pluggable Authentication Modules (PAM) configuration on package changes.",
@@ -1593,7 +1593,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000337-GPOS-00129",
+        "gid": "V-217190",
+        "rid": "SV-217190r603262_rule",
+        "stig_id": "SLES-12-020000",
+        "fix_id": "F-18416r369727_fix",
         "satisfies": [
           "SRG-OS-000337-GPOS-00129",
           "SRG-OS-000348-GPOS-00136",
@@ -1609,10 +1612,7 @@
           "SRG-OS-000474-GPOS-00219",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "gid": "V-217190",
-        "rid": "SV-217190r603262_rule",
-        "stig_id": "SLES-12-020000",
-        "fix_id": "F-18416r369727_fix"
+        "documentable": false
       },
       "id": "V-217190",
       "title": "The SUSE operating system must have the auditing package installed.",
@@ -1626,7 +1626,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217191",
+        "rid": "SV-217191r603262_rule",
+        "stig_id": "SLES-12-020010",
+        "fix_id": "F-18417r369730_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000038-GPOS-00016",
@@ -1642,10 +1645,7 @@
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-217191",
-        "rid": "SV-217191r603262_rule",
-        "stig_id": "SLES-12-020010",
-        "fix_id": "F-18417r369730_fix"
+        "documentable": false
       },
       "id": "V-217191",
       "title": "SUSE operating system audit records must contain information to establish what type of events occurred, the source of events, where events occurred, and the outcome of events.",
@@ -1659,11 +1659,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000341-GPOS-00132",
         "gid": "V-217192",
         "rid": "SV-217192r603262_rule",
         "stig_id": "SLES-12-020020",
-        "fix_id": "F-18418r369733_fix"
+        "fix_id": "F-18418r369733_fix",
+        "documentable": false
       },
       "id": "V-217192",
       "title": "The SUSE operating system must allocate audit record storage capacity to store at least one weeks worth of audit records when audit records are not immediately sent to a central audit record storage facility.",
@@ -1677,11 +1677,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000343-GPOS-00134",
         "gid": "V-217193",
         "rid": "SV-217193r603262_rule",
         "stig_id": "SLES-12-020030",
-        "fix_id": "F-18419r369736_fix"
+        "fix_id": "F-18419r369736_fix",
+        "documentable": false
       },
       "id": "V-217193",
       "title": "The SUSE operating system auditd service must notify the System Administrator (SA) and Information System Security Officer (ISSO) immediately when audit storage capacity is 75 percent full.",
@@ -1695,11 +1695,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000046-GPOS-00022",
         "gid": "V-217194",
         "rid": "SV-217194r603262_rule",
         "stig_id": "SLES-12-020040",
-        "fix_id": "F-18420r369739_fix"
+        "fix_id": "F-18420r369739_fix",
+        "documentable": false
       },
       "id": "V-217194",
       "title": "The Information System Security Officer (ISSO) and System Administrator (SA), at a minimum, must be alerted of a SUSE operating system audit processing failure event.",
@@ -1713,11 +1713,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000046-GPOS-00022",
         "gid": "V-217195",
         "rid": "SV-217195r646740_rule",
         "stig_id": "SLES-12-020050",
-        "fix_id": "F-18421r646739_fix"
+        "fix_id": "F-18421r646739_fix",
+        "documentable": false
       },
       "id": "V-217195",
       "title": "The Information System Security Officer (ISSO) and System Administrator (SA), at a minimum, must have mail aliases to be notified of a SUSE operating system audit processing failure.",
@@ -1731,11 +1731,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000047-GPOS-00023",
         "gid": "V-217196",
         "rid": "SV-217196r603262_rule",
         "stig_id": "SLES-12-020060",
-        "fix_id": "F-18422r369745_fix"
+        "fix_id": "F-18422r369745_fix",
+        "documentable": false
       },
       "id": "V-217196",
       "title": "The SUSE operating system audit system must take appropriate action when the audit storage volume is full.",
@@ -1749,11 +1749,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
         "gid": "V-217197",
         "rid": "SV-217197r603262_rule",
         "stig_id": "SLES-12-020070",
-        "fix_id": "F-18423r369748_fix"
+        "fix_id": "F-18423r369748_fix",
+        "documentable": false
       },
       "id": "V-217197",
       "title": "The audit-audispd-plugins must be installed on the SUSE operating system.",
@@ -1767,11 +1767,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
         "gid": "V-217198",
         "rid": "SV-217198r603262_rule",
         "stig_id": "SLES-12-020080",
-        "fix_id": "F-18424r369751_fix"
+        "fix_id": "F-18424r369751_fix",
+        "documentable": false
       },
       "id": "V-217198",
       "title": "The SUSE operating system audit event multiplexor must be configured to use Kerberos.",
@@ -1785,11 +1785,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000342-GPOS-00133",
         "gid": "V-217199",
         "rid": "SV-217199r603262_rule",
         "stig_id": "SLES-12-020090",
-        "fix_id": "F-18425r369754_fix"
+        "fix_id": "F-18425r369754_fix",
+        "documentable": false
       },
       "id": "V-217199",
       "title": "Audispd must off-load audit records onto a different system or media from the SUSE operating system being audited.",
@@ -1803,11 +1803,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000479-GPOS-00224",
         "gid": "V-217200",
         "rid": "SV-217200r603262_rule",
         "stig_id": "SLES-12-020100",
-        "fix_id": "F-18426r369757_fix"
+        "fix_id": "F-18426r369757_fix",
+        "documentable": false
       },
       "id": "V-217200",
       "title": "The audit system must take appropriate action when the network cannot be used to off-load audit records.",
@@ -1821,11 +1821,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000479-GPOS-00224",
         "gid": "V-217201",
         "rid": "SV-217201r603262_rule",
         "stig_id": "SLES-12-020110",
-        "fix_id": "F-18427r369760_fix"
+        "fix_id": "F-18427r369760_fix",
+        "documentable": false
       },
       "id": "V-217201",
       "title": "Audispd must take appropriate action when the SUSE operating system audit storage is full.",
@@ -1839,16 +1839,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "gid": "V-217202",
+        "rid": "SV-217202r603262_rule",
+        "stig_id": "SLES-12-020120",
+        "fix_id": "F-18428r369763_fix",
         "satisfies": [
           "SRG-OS-000057-GPOS-00027",
           "SRG-OS-000058-GPOS-00028",
           "SRG-OS-000059-GPOS-00029"
         ],
-        "gid": "V-217202",
-        "rid": "SV-217202r603262_rule",
-        "stig_id": "SLES-12-020120",
-        "fix_id": "F-18428r369763_fix"
+        "documentable": false
       },
       "id": "V-217202",
       "title": "The SUSE operating system must protect audit rules from unauthorized modification.",
@@ -1862,16 +1862,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "gid": "V-217203",
+        "rid": "SV-217203r646743_rule",
+        "stig_id": "SLES-12-020130",
+        "fix_id": "F-18429r646742_fix",
         "satisfies": [
           "SRG-OS-000256-GPOS-00097",
           "SRG-OS-000257-GPOS-00098",
           "SRG-OS-000258-GPOS-00099"
         ],
-        "gid": "V-217203",
-        "rid": "SV-217203r646743_rule",
-        "stig_id": "SLES-12-020130",
-        "fix_id": "F-18429r646742_fix"
+        "documentable": false
       },
       "id": "V-217203",
       "title": "The SUSE operating system audit tools must have the proper permissions configured to protect against unauthorized access.",
@@ -1885,11 +1885,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217204",
         "rid": "SV-217204r646746_rule",
         "stig_id": "SLES-12-020199",
-        "fix_id": "F-18430r646745_fix"
+        "fix_id": "F-18430r646745_fix",
+        "documentable": false
       },
       "id": "V-217204",
       "title": "The SUSE operating system must not disable syscall auditing.",
@@ -1903,7 +1903,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-217205",
+        "rid": "SV-217205r603262_rule",
+        "stig_id": "SLES-12-020200",
+        "fix_id": "F-18431r369772_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -1914,10 +1917,7 @@
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-217205",
-        "rid": "SV-217205r603262_rule",
-        "stig_id": "SLES-12-020200",
-        "fix_id": "F-18431r369772_fix"
+        "documentable": false
       },
       "id": "V-217205",
       "title": "The SUSE operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/passwd.",
@@ -1931,7 +1931,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-217206",
+        "rid": "SV-217206r603262_rule",
+        "stig_id": "SLES-12-020210",
+        "fix_id": "F-18432r369775_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -1940,10 +1943,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-217206",
-        "rid": "SV-217206r603262_rule",
-        "stig_id": "SLES-12-020210",
-        "fix_id": "F-18432r369775_fix"
+        "documentable": false
       },
       "id": "V-217206",
       "title": "The SUSE operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/group.",
@@ -1957,7 +1957,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-217207",
+        "rid": "SV-217207r603262_rule",
+        "stig_id": "SLES-12-020220",
+        "fix_id": "F-18433r369778_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -1966,10 +1969,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-217207",
-        "rid": "SV-217207r603262_rule",
-        "stig_id": "SLES-12-020220",
-        "fix_id": "F-18433r369778_fix"
+        "documentable": false
       },
       "id": "V-217207",
       "title": "The SUSE operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/shadow.",
@@ -1983,7 +1983,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-217208",
+        "rid": "SV-217208r603262_rule",
+        "stig_id": "SLES-12-020230",
+        "fix_id": "F-18434r369781_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -1992,10 +1995,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-217208",
-        "rid": "SV-217208r603262_rule",
-        "stig_id": "SLES-12-020230",
-        "fix_id": "F-18434r369781_fix"
+        "documentable": false
       },
       "id": "V-217208",
       "title": "The SUSE operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/opasswd.",
@@ -2009,7 +2009,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "gid": "V-217209",
+        "rid": "SV-217209r603262_rule",
+        "stig_id": "SLES-12-020240",
+        "fix_id": "F-18435r369784_fix",
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000337-GPOS-00129",
@@ -2024,10 +2027,7 @@
           "SRG-OS-000359-GPOS-00146",
           "SRG-OS-000365-GPOS-00152"
         ],
-        "gid": "V-217209",
-        "rid": "SV-217209r603262_rule",
-        "stig_id": "SLES-12-020240",
-        "fix_id": "F-18435r369784_fix"
+        "documentable": false
       },
       "id": "V-217209",
       "title": "The SUSE operating system must generate audit records for all uses of the privileged functions.",
@@ -2041,7 +2041,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217210",
+        "rid": "SV-217210r603896_rule",
+        "stig_id": "SLES-12-020250",
+        "fix_id": "F-18436r622359_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2049,10 +2052,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217210",
-        "rid": "SV-217210r603896_rule",
-        "stig_id": "SLES-12-020250",
-        "fix_id": "F-18436r622359_fix"
+        "documentable": false
       },
       "id": "V-217210",
       "title": "The SUSE operating system must generate audit records for all uses of the su command.",
@@ -2066,7 +2066,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217211",
+        "rid": "SV-217211r603899_rule",
+        "stig_id": "SLES-12-020260",
+        "fix_id": "F-18437r622362_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2074,10 +2077,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217211",
-        "rid": "SV-217211r603899_rule",
-        "stig_id": "SLES-12-020260",
-        "fix_id": "F-18437r622362_fix"
+        "documentable": false
       },
       "id": "V-217211",
       "title": "The SUSE operating system must generate audit records for all uses of the sudo command.",
@@ -2091,7 +2091,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217212",
+        "rid": "SV-217212r603902_rule",
+        "stig_id": "SLES-12-020280",
+        "fix_id": "F-18438r622365_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2099,10 +2102,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217212",
-        "rid": "SV-217212r603902_rule",
-        "stig_id": "SLES-12-020280",
-        "fix_id": "F-18438r622365_fix"
+        "documentable": false
       },
       "id": "V-217212",
       "title": "The SUSE operating system must generate audit records for all uses of the chfn command.",
@@ -2116,7 +2116,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217213",
+        "rid": "SV-217213r603262_rule",
+        "stig_id": "SLES-12-020290",
+        "fix_id": "F-18439r369796_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2124,10 +2127,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217213",
-        "rid": "SV-217213r603262_rule",
-        "stig_id": "SLES-12-020290",
-        "fix_id": "F-18439r369796_fix"
+        "documentable": false
       },
       "id": "V-217213",
       "title": "The SUSE operating system must generate audit records for all uses of the mount command.",
@@ -2141,7 +2141,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217214",
+        "rid": "SV-217214r603262_rule",
+        "stig_id": "SLES-12-020300",
+        "fix_id": "F-18440r369799_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2149,10 +2152,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217214",
-        "rid": "SV-217214r603262_rule",
-        "stig_id": "SLES-12-020300",
-        "fix_id": "F-18440r369799_fix"
+        "documentable": false
       },
       "id": "V-217214",
       "title": "The SUSE operating system must generate audit records for all uses of the umount command.",
@@ -2166,7 +2166,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217215",
+        "rid": "SV-217215r603905_rule",
+        "stig_id": "SLES-12-020310",
+        "fix_id": "F-18441r622368_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2174,10 +2177,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217215",
-        "rid": "SV-217215r603905_rule",
-        "stig_id": "SLES-12-020310",
-        "fix_id": "F-18441r622368_fix"
+        "documentable": false
       },
       "id": "V-217215",
       "title": "The SUSE operating system must generate audit records for all uses of the ssh-agent command.",
@@ -2191,7 +2191,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217216",
+        "rid": "SV-217216r603908_rule",
+        "stig_id": "SLES-12-020320",
+        "fix_id": "F-18442r622371_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2199,10 +2202,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217216",
-        "rid": "SV-217216r603908_rule",
-        "stig_id": "SLES-12-020320",
-        "fix_id": "F-18442r622371_fix"
+        "documentable": false
       },
       "id": "V-217216",
       "title": "The SUSE operating system must generate audit records for all uses of the ssh-keysign command.",
@@ -2216,7 +2216,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217217",
+        "rid": "SV-217217r603262_rule",
+        "stig_id": "SLES-12-020360",
+        "fix_id": "F-18443r369808_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2224,10 +2227,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217217",
-        "rid": "SV-217217r603262_rule",
-        "stig_id": "SLES-12-020360",
-        "fix_id": "F-18443r369808_fix"
+        "documentable": false
       },
       "id": "V-217217",
       "title": "The SUSE operating system must generate audit records for all uses of the kmod command.",
@@ -2241,7 +2241,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217218",
+        "rid": "SV-217218r603262_rule",
+        "stig_id": "SLES-12-020370",
+        "fix_id": "F-18444r369811_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2249,10 +2252,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217218",
-        "rid": "SV-217218r603262_rule",
-        "stig_id": "SLES-12-020370",
-        "fix_id": "F-18444r369811_fix"
+        "documentable": false
       },
       "id": "V-217218",
       "title": "The SUSE operating system must generate audit records for all uses of the setxattr command.",
@@ -2266,7 +2266,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217219",
+        "rid": "SV-217219r603262_rule",
+        "stig_id": "SLES-12-020380",
+        "fix_id": "F-18445r369814_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2274,10 +2277,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217219",
-        "rid": "SV-217219r603262_rule",
-        "stig_id": "SLES-12-020380",
-        "fix_id": "F-18445r369814_fix"
+        "documentable": false
       },
       "id": "V-217219",
       "title": "The SUSE operating system must generate audit records for all uses of the fsetxattr command.",
@@ -2291,7 +2291,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217220",
+        "rid": "SV-217220r603262_rule",
+        "stig_id": "SLES-12-020390",
+        "fix_id": "F-18446r369817_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2299,10 +2302,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217220",
-        "rid": "SV-217220r603262_rule",
-        "stig_id": "SLES-12-020390",
-        "fix_id": "F-18446r369817_fix"
+        "documentable": false
       },
       "id": "V-217220",
       "title": "The SUSE operating system must generate audit records for all uses of the removexattr command.",
@@ -2316,7 +2316,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217221",
+        "rid": "SV-217221r603262_rule",
+        "stig_id": "SLES-12-020400",
+        "fix_id": "F-18447r369820_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2324,10 +2327,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217221",
-        "rid": "SV-217221r603262_rule",
-        "stig_id": "SLES-12-020400",
-        "fix_id": "F-18447r369820_fix"
+        "documentable": false
       },
       "id": "V-217221",
       "title": "The SUSE operating system must generate audit records for all uses of the lremovexattr command.",
@@ -2341,7 +2341,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217222",
+        "rid": "SV-217222r603262_rule",
+        "stig_id": "SLES-12-020410",
+        "fix_id": "F-18448r369823_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2349,10 +2352,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217222",
-        "rid": "SV-217222r603262_rule",
-        "stig_id": "SLES-12-020410",
-        "fix_id": "F-18448r369823_fix"
+        "documentable": false
       },
       "id": "V-217222",
       "title": "The SUSE operating system must generate audit records for all uses of the fremovexattr command.",
@@ -2366,7 +2366,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217223",
+        "rid": "SV-217223r603262_rule",
+        "stig_id": "SLES-12-020420",
+        "fix_id": "F-18449r369826_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2374,10 +2377,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217223",
-        "rid": "SV-217223r603262_rule",
-        "stig_id": "SLES-12-020420",
-        "fix_id": "F-18449r369826_fix"
+        "documentable": false
       },
       "id": "V-217223",
       "title": "The SUSE operating system must generate audit records for all uses of the chown command.",
@@ -2391,7 +2391,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217224",
+        "rid": "SV-217224r603262_rule",
+        "stig_id": "SLES-12-020430",
+        "fix_id": "F-18450r369829_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2399,10 +2402,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217224",
-        "rid": "SV-217224r603262_rule",
-        "stig_id": "SLES-12-020430",
-        "fix_id": "F-18450r369829_fix"
+        "documentable": false
       },
       "id": "V-217224",
       "title": "The SUSE operating system must generate audit records for all uses of the fchown command.",
@@ -2416,7 +2416,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217225",
+        "rid": "SV-217225r603262_rule",
+        "stig_id": "SLES-12-020440",
+        "fix_id": "F-18451r369832_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2424,10 +2427,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217225",
-        "rid": "SV-217225r603262_rule",
-        "stig_id": "SLES-12-020440",
-        "fix_id": "F-18451r369832_fix"
+        "documentable": false
       },
       "id": "V-217225",
       "title": "The SUSE operating system must generate audit records for all uses of the lchown command.",
@@ -2441,7 +2441,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217226",
+        "rid": "SV-217226r603262_rule",
+        "stig_id": "SLES-12-020450",
+        "fix_id": "F-18452r369835_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2449,10 +2452,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217226",
-        "rid": "SV-217226r603262_rule",
-        "stig_id": "SLES-12-020450",
-        "fix_id": "F-18452r369835_fix"
+        "documentable": false
       },
       "id": "V-217226",
       "title": "The SUSE operating system must generate audit records for all uses of the fchownat command.",
@@ -2466,7 +2466,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217227",
+        "rid": "SV-217227r603262_rule",
+        "stig_id": "SLES-12-020460",
+        "fix_id": "F-18453r369838_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2474,10 +2477,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217227",
-        "rid": "SV-217227r603262_rule",
-        "stig_id": "SLES-12-020460",
-        "fix_id": "F-18453r369838_fix"
+        "documentable": false
       },
       "id": "V-217227",
       "title": "The SUSE operating system must generate audit records for all uses of the chmod command.",
@@ -2491,7 +2491,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217228",
+        "rid": "SV-217228r603262_rule",
+        "stig_id": "SLES-12-020470",
+        "fix_id": "F-18454r369841_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2499,10 +2502,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217228",
-        "rid": "SV-217228r603262_rule",
-        "stig_id": "SLES-12-020470",
-        "fix_id": "F-18454r369841_fix"
+        "documentable": false
       },
       "id": "V-217228",
       "title": "The SUSE operating system must generate audit records for all uses of the fchmod command.",
@@ -2516,7 +2516,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217229",
+        "rid": "SV-217229r603262_rule",
+        "stig_id": "SLES-12-020480",
+        "fix_id": "F-18455r369844_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2524,10 +2527,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217229",
-        "rid": "SV-217229r603262_rule",
-        "stig_id": "SLES-12-020480",
-        "fix_id": "F-18455r369844_fix"
+        "documentable": false
       },
       "id": "V-217229",
       "title": "The SUSE operating system must generate audit records for all uses of the fchmodat command.",
@@ -2541,7 +2541,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217230",
+        "rid": "SV-217230r603262_rule",
+        "stig_id": "SLES-12-020490",
+        "fix_id": "F-18456r369847_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2549,10 +2552,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217230",
-        "rid": "SV-217230r603262_rule",
-        "stig_id": "SLES-12-020490",
-        "fix_id": "F-18456r369847_fix"
+        "documentable": false
       },
       "id": "V-217230",
       "title": "The SUSE operating system must generate audit records for all uses of the open command.",
@@ -2566,15 +2566,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "gid": "V-217231",
+        "rid": "SV-217231r603262_rule",
+        "stig_id": "SLES-12-020500",
+        "fix_id": "F-18457r369850_fix",
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000458-GPOS-00203"
         ],
-        "gid": "V-217231",
-        "rid": "SV-217231r603262_rule",
-        "stig_id": "SLES-12-020500",
-        "fix_id": "F-18457r369850_fix"
+        "documentable": false
       },
       "id": "V-217231",
       "title": "The SUSE operating system must generate audit records for all uses of the truncate command.",
@@ -2588,7 +2588,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217232",
+        "rid": "SV-217232r603262_rule",
+        "stig_id": "SLES-12-020510",
+        "fix_id": "F-18458r369853_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2596,10 +2599,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217232",
-        "rid": "SV-217232r603262_rule",
-        "stig_id": "SLES-12-020510",
-        "fix_id": "F-18458r369853_fix"
+        "documentable": false
       },
       "id": "V-217232",
       "title": "The SUSE operating system must generate audit records for all uses of the ftruncate command.",
@@ -2613,7 +2613,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217233",
+        "rid": "SV-217233r603262_rule",
+        "stig_id": "SLES-12-020520",
+        "fix_id": "F-18459r369856_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2621,10 +2624,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217233",
-        "rid": "SV-217233r603262_rule",
-        "stig_id": "SLES-12-020520",
-        "fix_id": "F-18459r369856_fix"
+        "documentable": false
       },
       "id": "V-217233",
       "title": "The SUSE operating system must generate audit records for all uses of the creat command.",
@@ -2638,7 +2638,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217234",
+        "rid": "SV-217234r603262_rule",
+        "stig_id": "SLES-12-020530",
+        "fix_id": "F-18460r369859_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2646,10 +2649,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217234",
-        "rid": "SV-217234r603262_rule",
-        "stig_id": "SLES-12-020530",
-        "fix_id": "F-18460r369859_fix"
+        "documentable": false
       },
       "id": "V-217234",
       "title": "The SUSE operating system must generate audit records for all uses of the openat command.",
@@ -2663,7 +2663,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217235",
+        "rid": "SV-217235r603262_rule",
+        "stig_id": "SLES-12-020540",
+        "fix_id": "F-18461r369862_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2671,10 +2674,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217235",
-        "rid": "SV-217235r603262_rule",
-        "stig_id": "SLES-12-020540",
-        "fix_id": "F-18461r369862_fix"
+        "documentable": false
       },
       "id": "V-217235",
       "title": "The SUSE operating system must generate audit records for all uses of the open_by_handle_at command.",
@@ -2688,7 +2688,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217236",
+        "rid": "SV-217236r603911_rule",
+        "stig_id": "SLES-12-020550",
+        "fix_id": "F-18462r622374_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2696,10 +2699,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217236",
-        "rid": "SV-217236r603911_rule",
-        "stig_id": "SLES-12-020550",
-        "fix_id": "F-18462r622374_fix"
+        "documentable": false
       },
       "id": "V-217236",
       "title": "The SUSE operating system must generate audit records for all uses of the passwd command.",
@@ -2713,7 +2713,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217237",
+        "rid": "SV-217237r603914_rule",
+        "stig_id": "SLES-12-020560",
+        "fix_id": "F-18463r622377_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2721,10 +2724,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217237",
-        "rid": "SV-217237r603914_rule",
-        "stig_id": "SLES-12-020560",
-        "fix_id": "F-18463r622377_fix"
+        "documentable": false
       },
       "id": "V-217237",
       "title": "The SUSE operating system must generate audit records for all uses of the gpasswd command.",
@@ -2738,7 +2738,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217238",
+        "rid": "SV-217238r603917_rule",
+        "stig_id": "SLES-12-020570",
+        "fix_id": "F-18464r622380_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2746,10 +2749,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217238",
-        "rid": "SV-217238r603917_rule",
-        "stig_id": "SLES-12-020570",
-        "fix_id": "F-18464r622380_fix"
+        "documentable": false
       },
       "id": "V-217238",
       "title": "The SUSE operating system must generate audit records for all uses of the newgrp command.",
@@ -2763,7 +2763,10 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217239",
+        "rid": "SV-217239r603920_rule",
+        "stig_id": "SLES-12-020580",
+        "fix_id": "F-18465r622383_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2771,10 +2774,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217239",
-        "rid": "SV-217239r603920_rule",
-        "stig_id": "SLES-12-020580",
-        "fix_id": "F-18465r622383_fix"
+        "documentable": false
       },
       "id": "V-217239",
       "title": "The SUSE operating system must generate audit records for a uses of the chsh command.",
@@ -2788,7 +2788,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "gid": "V-217240",
+        "rid": "SV-217240r603262_rule",
+        "stig_id": "SLES-12-020590",
+        "fix_id": "F-18466r369877_fix",
         "satisfies": [
           "SRG-OS-000004-GPOS-00004",
           "SRG-OS-000239-GPOS-00089",
@@ -2797,10 +2800,7 @@
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000476-GPOS-00221"
         ],
-        "gid": "V-217240",
-        "rid": "SV-217240r603262_rule",
-        "stig_id": "SLES-12-020590",
-        "fix_id": "F-18466r369877_fix"
+        "documentable": false
       },
       "id": "V-217240",
       "title": "The SUSE operating system must generate audit records for all account creations, modifications, disabling, and termination events that affect /etc/gshadow.",
@@ -2814,7 +2814,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217241",
+        "rid": "SV-217241r603923_rule",
+        "stig_id": "SLES-12-020600",
+        "fix_id": "F-18467r622386_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2822,10 +2825,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217241",
-        "rid": "SV-217241r603923_rule",
-        "stig_id": "SLES-12-020600",
-        "fix_id": "F-18467r622386_fix"
+        "documentable": false
       },
       "id": "V-217241",
       "title": "The SUSE operating system must generate audit records for all uses of the chmod command.",
@@ -2839,7 +2839,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217242",
+        "rid": "SV-217242r603926_rule",
+        "stig_id": "SLES-12-020610",
+        "fix_id": "F-18468r622389_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2847,10 +2850,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217242",
-        "rid": "SV-217242r603926_rule",
-        "stig_id": "SLES-12-020610",
-        "fix_id": "F-18468r622389_fix"
+        "documentable": false
       },
       "id": "V-217242",
       "title": "The SUSE operating system must generate audit records for all uses of the setfacl command.",
@@ -2864,7 +2864,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217243",
+        "rid": "SV-217243r603929_rule",
+        "stig_id": "SLES-12-020620",
+        "fix_id": "F-18469r622392_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2872,10 +2875,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217243",
-        "rid": "SV-217243r603929_rule",
-        "stig_id": "SLES-12-020620",
-        "fix_id": "F-18469r622392_fix"
+        "documentable": false
       },
       "id": "V-217243",
       "title": "The SUSE operating system must generate audit records for all uses of the chacl command.",
@@ -2889,7 +2889,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217244",
+        "rid": "SV-217244r603932_rule",
+        "stig_id": "SLES-12-020630",
+        "fix_id": "F-18470r622395_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2897,10 +2900,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217244",
-        "rid": "SV-217244r603932_rule",
-        "stig_id": "SLES-12-020630",
-        "fix_id": "F-18470r622395_fix"
+        "documentable": false
       },
       "id": "V-217244",
       "title": "Successful/unsuccessful attempts to modify categories of information (e.g., classification levels) must generate audit records.",
@@ -2914,7 +2914,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217245",
+        "rid": "SV-217245r603935_rule",
+        "stig_id": "SLES-12-020640",
+        "fix_id": "F-18471r622398_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2922,10 +2925,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217245",
-        "rid": "SV-217245r603935_rule",
-        "stig_id": "SLES-12-020640",
-        "fix_id": "F-18471r622398_fix"
+        "documentable": false
       },
       "id": "V-217245",
       "title": "The SUSE operating system must generate audit records for all uses of the rm command.",
@@ -2939,7 +2939,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217246",
+        "rid": "SV-217246r603262_rule",
+        "stig_id": "SLES-12-020650",
+        "fix_id": "F-18472r369895_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2948,10 +2951,7 @@
           "SRG-OS-000471-GPOS-00215",
           "SRG-OS-000473-GPOS-00218"
         ],
-        "gid": "V-217246",
-        "rid": "SV-217246r603262_rule",
-        "stig_id": "SLES-12-020650",
-        "fix_id": "F-18472r369895_fix"
+        "documentable": false
       },
       "id": "V-217246",
       "title": "The SUSE operating system must generate audit records for all modifications to the tallylog file must generate an audit record.",
@@ -2965,7 +2965,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217247",
+        "rid": "SV-217247r603262_rule",
+        "stig_id": "SLES-12-020660",
+        "fix_id": "F-18473r369898_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2973,10 +2976,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217247",
-        "rid": "SV-217247r603262_rule",
-        "stig_id": "SLES-12-020660",
-        "fix_id": "F-18473r369898_fix"
+        "documentable": false
       },
       "id": "V-217247",
       "title": "The SUSE operating system must generate audit records for all modifications to the lastlog file.",
@@ -2990,7 +2990,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217248",
+        "rid": "SV-217248r603938_rule",
+        "stig_id": "SLES-12-020670",
+        "fix_id": "F-18474r622401_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -2998,10 +3001,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217248",
-        "rid": "SV-217248r603938_rule",
-        "stig_id": "SLES-12-020670",
-        "fix_id": "F-18474r622401_fix"
+        "documentable": false
       },
       "id": "V-217248",
       "title": "The SUSE operating system must generate audit records for all uses of the passmass command.",
@@ -3015,7 +3015,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217249",
+        "rid": "SV-217249r603941_rule",
+        "stig_id": "SLES-12-020680",
+        "fix_id": "F-18475r622404_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3023,10 +3026,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217249",
-        "rid": "SV-217249r603941_rule",
-        "stig_id": "SLES-12-020680",
-        "fix_id": "F-18475r622404_fix"
+        "documentable": false
       },
       "id": "V-217249",
       "title": "The SUSE operating system must generate audit records for all uses of the unix_chkpwd command.",
@@ -3040,7 +3040,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217250",
+        "rid": "SV-217250r603944_rule",
+        "stig_id": "SLES-12-020690",
+        "fix_id": "F-18476r622407_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3048,10 +3051,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217250",
-        "rid": "SV-217250r603944_rule",
-        "stig_id": "SLES-12-020690",
-        "fix_id": "F-18476r622407_fix"
+        "documentable": false
       },
       "id": "V-217250",
       "title": "The SUSE operating system must generate audit records for all uses of the chage command.",
@@ -3065,7 +3065,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217251",
+        "rid": "SV-217251r603947_rule",
+        "stig_id": "SLES-12-020700",
+        "fix_id": "F-18477r622410_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3073,10 +3076,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217251",
-        "rid": "SV-217251r603947_rule",
-        "stig_id": "SLES-12-020700",
-        "fix_id": "F-18477r622410_fix"
+        "documentable": false
       },
       "id": "V-217251",
       "title": "The SUSE operating system must generate audit records for all uses of the usermod command.",
@@ -3090,7 +3090,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217252",
+        "rid": "SV-217252r603950_rule",
+        "stig_id": "SLES-12-020710",
+        "fix_id": "F-18478r622413_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3098,10 +3101,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217252",
-        "rid": "SV-217252r603950_rule",
-        "stig_id": "SLES-12-020710",
-        "fix_id": "F-18478r622413_fix"
+        "documentable": false
       },
       "id": "V-217252",
       "title": "The SUSE operating system must generate audit records for all uses of the crontab command.",
@@ -3115,7 +3115,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217253",
+        "rid": "SV-217253r603953_rule",
+        "stig_id": "SLES-12-020720",
+        "fix_id": "F-18479r622416_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3123,10 +3126,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217253",
-        "rid": "SV-217253r603953_rule",
-        "stig_id": "SLES-12-020720",
-        "fix_id": "F-18479r622416_fix"
+        "documentable": false
       },
       "id": "V-217253",
       "title": "The SUSE operating system must generate audit records for all uses of the pam_timestamp_check command.",
@@ -3140,7 +3140,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217254",
+        "rid": "SV-217254r603262_rule",
+        "stig_id": "SLES-12-020730",
+        "fix_id": "F-18480r369919_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3148,10 +3151,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217254",
-        "rid": "SV-217254r603262_rule",
-        "stig_id": "SLES-12-020730",
-        "fix_id": "F-18480r369919_fix"
+        "documentable": false
       },
       "id": "V-217254",
       "title": "The SUSE operating system must generate audit records for all uses of the delete_module command.",
@@ -3165,7 +3165,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217255",
+        "rid": "SV-217255r603262_rule",
+        "stig_id": "SLES-12-020740",
+        "fix_id": "F-18481r369922_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3173,10 +3176,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217255",
-        "rid": "SV-217255r603262_rule",
-        "stig_id": "SLES-12-020740",
-        "fix_id": "F-18481r369922_fix"
+        "documentable": false
       },
       "id": "V-217255",
       "title": "The SUSE operating system must generate audit records for all uses of the finit_module command.",
@@ -3190,7 +3190,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217256",
+        "rid": "SV-217256r603262_rule",
+        "stig_id": "SLES-12-020750",
+        "fix_id": "F-18482r369925_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3198,10 +3201,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217256",
-        "rid": "SV-217256r603262_rule",
-        "stig_id": "SLES-12-020750",
-        "fix_id": "F-18482r369925_fix"
+        "documentable": false
       },
       "id": "V-217256",
       "title": "The SUSE operating system must generate audit records for all uses of the init_module command.",
@@ -3215,7 +3215,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "gid": "V-217257",
+        "rid": "SV-217257r603262_rule",
+        "stig_id": "SLES-12-020760",
+        "fix_id": "F-18483r369928_fix",
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000062-GPOS-00031",
@@ -3223,10 +3226,7 @@
           "SRG-OS-000462-GPOS-00206",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "gid": "V-217257",
-        "rid": "SV-217257r603262_rule",
-        "stig_id": "SLES-12-020760",
-        "fix_id": "F-18483r369928_fix"
+        "documentable": false
       },
       "id": "V-217257",
       "title": "The SUSE operating system must generate audit records for all modifications to the faillog file.",
@@ -3240,15 +3240,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
+        "gid": "V-217258",
+        "rid": "SV-217258r603262_rule",
+        "stig_id": "SLES-12-030000",
+        "fix_id": "F-18484r369931_fix",
         "satisfies": [
           "SRG-OS-000074-GPOS-00042",
           "SRG-OS-000095-GPOS-00049"
         ],
-        "gid": "V-217258",
-        "rid": "SV-217258r603262_rule",
-        "stig_id": "SLES-12-030000",
-        "fix_id": "F-18484r369931_fix"
+        "documentable": false
       },
       "id": "V-217258",
       "title": "The SUSE operating system must not have the telnet-server package installed.",
@@ -3262,11 +3262,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000024-GPOS-00007",
         "gid": "V-217260",
         "rid": "SV-217260r603262_rule",
         "stig_id": "SLES-12-030020",
-        "fix_id": "F-18486r369937_fix"
+        "fix_id": "F-18486r369937_fix",
+        "documentable": false
       },
       "id": "V-217260",
       "title": "The SUSE operating system file /etc/gdm/banner must contain the Standard Mandatory DoD Notice and Consent banner text.",
@@ -3280,17 +3280,17 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000096-GPOS-00050",
+        "gid": "V-217261",
+        "rid": "SV-217261r603262_rule",
+        "stig_id": "SLES-12-030030",
+        "fix_id": "F-18487r369940_fix",
         "satisfies": [
           "SRG-OS-000096-GPOS-00050",
           "SRG-OS-000297-GPOS-00115",
           "SRG-OS-000480-GPOS-00231",
           "SRG-OS-000480-GPOS-00232"
         ],
-        "gid": "V-217261",
-        "rid": "SV-217261r603262_rule",
-        "stig_id": "SLES-12-030030",
-        "fix_id": "F-18487r369940_fix"
+        "documentable": false
       },
       "id": "V-217261",
       "title": "The SUSE operating system must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services as defined in the Ports, Protocols, and Services Management (PPSM) Category Assignments List (CAL) and vulnerability assessments.",
@@ -3304,11 +3304,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000420-GPOS-00186",
         "gid": "V-217262",
         "rid": "SV-217262r603262_rule",
         "stig_id": "SLES-12-030040",
-        "fix_id": "F-18488r369943_fix"
+        "fix_id": "F-18488r369943_fix",
+        "documentable": false
       },
       "id": "V-217262",
       "title": "SuSEfirewall2 must protect against or limit the effects of Denial-of-Service (DoS) attacks on the SUSE operating system by implementing rate-limiting measures on impacted network interfaces.",
@@ -3322,14 +3322,14 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000023-GPOS-00006",
-        "satisfies": [
-          "SRG-OS-000228-GPOS-00088"
-        ],
         "gid": "V-217263",
         "rid": "SV-217263r603262_rule",
         "stig_id": "SLES-12-030050",
-        "fix_id": "F-18489r369946_fix"
+        "fix_id": "F-18489r369946_fix",
+        "satisfies": [
+          "SRG-OS-000228-GPOS-00088"
+        ],
+        "documentable": false
       },
       "id": "V-217263",
       "title": "The SUSE operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting access via SSH.",
@@ -3343,17 +3343,17 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000423-GPOS-00187",
+        "gid": "V-217264",
+        "rid": "SV-217264r603262_rule",
+        "stig_id": "SLES-12-030100",
+        "fix_id": "F-18490r369949_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188",
           "SRG-OS-000425-GPOS-00189",
           "SRG-OS-000426-GPOS-00190"
         ],
-        "gid": "V-217264",
-        "rid": "SV-217264r603262_rule",
-        "stig_id": "SLES-12-030100",
-        "fix_id": "F-18490r369949_fix"
+        "documentable": false
       },
       "id": "V-217264",
       "title": "All networked SUSE operating systems must have and implement SSH to protect the confidentiality and integrity of transmitted and received information, as well as information during preparation for transmission.",
@@ -3367,11 +3367,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000032-GPOS-00013",
         "gid": "V-217265",
         "rid": "SV-217265r603262_rule",
         "stig_id": "SLES-12-030110",
-        "fix_id": "F-18491r369952_fix"
+        "fix_id": "F-18491r369952_fix",
+        "documentable": false
       },
       "id": "V-217265",
       "title": "The SUSE operating system must log SSH connection attempts and failures to the server.",
@@ -3385,11 +3385,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217266",
         "rid": "SV-217266r603262_rule",
         "stig_id": "SLES-12-030130",
-        "fix_id": "F-18492r369955_fix"
+        "fix_id": "F-18492r369955_fix",
+        "documentable": false
       },
       "id": "V-217266",
       "title": "The SUSE operating system must display the date and time of the last successful account logon upon an SSH logon.",
@@ -3403,11 +3403,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000109-GPOS-00056",
         "gid": "V-217267",
         "rid": "SV-217267r603262_rule",
         "stig_id": "SLES-12-030140",
-        "fix_id": "F-18493r369958_fix"
+        "fix_id": "F-18493r369958_fix",
+        "documentable": false
       },
       "id": "V-217267",
       "title": "The SUSE operating system must deny direct logons to the root account using remote access via SSH.",
@@ -3421,11 +3421,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-217268",
         "rid": "SV-217268r603262_rule",
         "stig_id": "SLES-12-030150",
-        "fix_id": "F-18494r369961_fix"
+        "fix_id": "F-18494r369961_fix",
+        "documentable": false
       },
       "id": "V-217268",
       "title": "The SUSE operating system must not allow automatic logon via SSH.",
@@ -3439,11 +3439,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00229",
         "gid": "V-217269",
         "rid": "SV-217269r646747_rule",
         "stig_id": "SLES-12-030151",
-        "fix_id": "F-18495r369964_fix"
+        "fix_id": "F-18495r369964_fix",
+        "documentable": false
       },
       "id": "V-217269",
       "title": "The SUSE operating system must not allow users to override SSH environment variables.",
@@ -3457,7 +3457,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "gid": "V-217270",
+        "rid": "SV-217270r603956_rule",
+        "stig_id": "SLES-12-030170",
+        "fix_id": "F-18496r622419_fix",
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000120-GPOS-00061",
@@ -3465,10 +3468,7 @@
           "SRG-OS-000250-GPOS-00093",
           "SRG-OS-000393-GPOS-00173"
         ],
-        "gid": "V-217270",
-        "rid": "SV-217270r603956_rule",
-        "stig_id": "SLES-12-030170",
-        "fix_id": "F-18496r622419_fix"
+        "documentable": false
       },
       "id": "V-217270",
       "title": "The SUSE operating system must implement DoD-approved encryption to protect the confidentiality of SSH remote connections.",
@@ -3482,15 +3482,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000125-GPOS-00065",
+        "gid": "V-217271",
+        "rid": "SV-217271r603959_rule",
+        "stig_id": "SLES-12-030180",
+        "fix_id": "F-18497r622422_fix",
         "satisfies": [
           "SRG-OS-000125-GPOS-00065",
           "SRG-OS-000394-GPOS-00174"
         ],
-        "gid": "V-217271",
-        "rid": "SV-217271r603959_rule",
-        "stig_id": "SLES-12-030180",
-        "fix_id": "F-18497r622422_fix"
+        "documentable": false
       },
       "id": "V-217271",
       "title": "The SUSE operating system SSH daemon must be configured to only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms.",
@@ -3504,16 +3504,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000126-GPOS-00066",
+        "gid": "V-217272",
+        "rid": "SV-217272r603262_rule",
+        "stig_id": "SLES-12-030190",
+        "fix_id": "F-18498r369973_fix",
         "satisfies": [
           "SRG-OS-000126-GPOS-00066",
           "SRG-OS-000163-GPOS-00072",
           "SRG-OS-000279-GPOS-00109"
         ],
-        "gid": "V-217272",
-        "rid": "SV-217272r603262_rule",
-        "stig_id": "SLES-12-030190",
-        "fix_id": "F-18498r369973_fix"
+        "documentable": false
       },
       "id": "V-217272",
       "title": "The SUSE operating system SSH daemon must be configured with a timeout interval.",
@@ -3527,11 +3527,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000163-GPOS-00072",
         "gid": "V-217273",
         "rid": "SV-217273r603961_rule",
         "stig_id": "SLES-12-030191",
-        "fix_id": "F-18499r369976_fix"
+        "fix_id": "F-18499r369976_fix",
+        "documentable": false
       },
       "id": "V-217273",
       "title": "The SUSE operating system for all network connections associated with SSH traffic must immediately terminate at the end of the session or after 10 minutes of inactivity.",
@@ -3545,11 +3545,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217274",
         "rid": "SV-217274r603262_rule",
         "stig_id": "SLES-12-030200",
-        "fix_id": "F-18500r369979_fix"
+        "fix_id": "F-18500r369979_fix",
+        "documentable": false
       },
       "id": "V-217274",
       "title": "The SUSE operating system SSH daemon must be configured to not allow authentication using known hosts authentication.",
@@ -3563,11 +3563,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217275",
         "rid": "SV-217275r646750_rule",
         "stig_id": "SLES-12-030210",
-        "fix_id": "F-18501r646749_fix"
+        "fix_id": "F-18501r646749_fix",
+        "documentable": false
       },
       "id": "V-217275",
       "title": "The SUSE operating system SSH daemon public host key files must have mode 0644 or less permissive.",
@@ -3581,11 +3581,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217276",
         "rid": "SV-217276r646753_rule",
         "stig_id": "SLES-12-030220",
-        "fix_id": "F-18502r646752_fix"
+        "fix_id": "F-18502r646752_fix",
+        "documentable": false
       },
       "id": "V-217276",
       "title": "The SUSE operating system SSH daemon private host key files must have mode 0600 or less permissive.",
@@ -3599,11 +3599,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217277",
         "rid": "SV-217277r603262_rule",
         "stig_id": "SLES-12-030230",
-        "fix_id": "F-18503r369988_fix"
+        "fix_id": "F-18503r369988_fix",
+        "documentable": false
       },
       "id": "V-217277",
       "title": "The SUSE operating system SSH daemon must perform strict mode checking of home directory configuration files.",
@@ -3617,11 +3617,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217278",
         "rid": "SV-217278r603262_rule",
         "stig_id": "SLES-12-030240",
-        "fix_id": "F-18504r369991_fix"
+        "fix_id": "F-18504r369991_fix",
+        "documentable": false
       },
       "id": "V-217278",
       "title": "The SUSE operating system SSH daemon must use privilege separation.",
@@ -3635,11 +3635,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217279",
         "rid": "SV-217279r603262_rule",
         "stig_id": "SLES-12-030250",
-        "fix_id": "F-18505r369994_fix"
+        "fix_id": "F-18505r369994_fix",
+        "documentable": false
       },
       "id": "V-217279",
       "title": "The SUSE operating system SSH daemon must not allow compression or must only allow compression after successful authentication.",
@@ -3653,11 +3653,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217280",
         "rid": "SV-217280r603964_rule",
         "stig_id": "SLES-12-030260",
-        "fix_id": "F-18506r622427_fix"
+        "fix_id": "F-18506r622427_fix",
+        "documentable": false
       },
       "id": "V-217280",
       "title": "The SUSE operating system SSH daemon must disable forwarded remote X connections for interactive users, unless to fulfill documented and validated mission requirements.",
@@ -3671,15 +3671,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000355-GPOS-00143",
+        "gid": "V-217281",
+        "rid": "SV-217281r646755_rule",
+        "stig_id": "SLES-12-030300",
+        "fix_id": "F-18507r370000_fix",
         "satisfies": [
           "SRG-OS-000355-GPOS-00143",
           "SRG-OS-000356-GPOS-00144"
         ],
-        "gid": "V-217281",
-        "rid": "SV-217281r646755_rule",
-        "stig_id": "SLES-12-030300",
-        "fix_id": "F-18507r370000_fix"
+        "documentable": false
       },
       "id": "V-217281",
       "title": "The SUSE operating system clock must, for networked systems, be synchronized to an authoritative DoD time source at least every 24 hours.",
@@ -3693,11 +3693,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000359-GPOS-00146",
         "gid": "V-217282",
         "rid": "SV-217282r646758_rule",
         "stig_id": "SLES-12-030310",
-        "fix_id": "F-18508r646757_fix"
+        "fix_id": "F-18508r646757_fix",
+        "documentable": false
       },
       "id": "V-217282",
       "title": "The SUSE operating system must be configured to use Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).",
@@ -3711,11 +3711,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00192",
         "gid": "V-217283",
         "rid": "SV-217283r646761_rule",
         "stig_id": "SLES-12-030320",
-        "fix_id": "F-18509r646760_fix"
+        "fix_id": "F-18509r646760_fix",
+        "documentable": false
       },
       "id": "V-217283",
       "title": "The SUSE operating system must implement kptr-restrict to prevent the leaking of internal kernel addresses.",
@@ -3729,11 +3729,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000433-GPOS-00193",
         "gid": "V-217284",
         "rid": "SV-217284r646764_rule",
         "stig_id": "SLES-12-030330",
-        "fix_id": "F-18510r646763_fix"
+        "fix_id": "F-18510r646763_fix",
+        "documentable": false
       },
       "id": "V-217284",
       "title": "Address space layout randomization (ASLR) must be implemented by the SUSE operating system to protect memory from unauthorized code execution.",
@@ -3747,11 +3747,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000479-GPOS-00224",
         "gid": "V-217285",
         "rid": "SV-217285r603262_rule",
         "stig_id": "SLES-12-030340",
-        "fix_id": "F-18511r370012_fix"
+        "fix_id": "F-18511r370012_fix",
+        "documentable": false
       },
       "id": "V-217285",
       "title": "The SUSE operating system must off-load rsyslog messages for networked systems in real time and off-load standalone systems at least weekly.",
@@ -3765,11 +3765,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000142-GPOS-00071",
         "gid": "V-217286",
         "rid": "SV-217286r603262_rule",
         "stig_id": "SLES-12-030350",
-        "fix_id": "F-18512r370015_fix"
+        "fix_id": "F-18512r370015_fix",
+        "documentable": false
       },
       "id": "V-217286",
       "title": "The SUSE operating system must be configured to use TCP syncookies.",
@@ -3783,11 +3783,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217287",
         "rid": "SV-217287r603262_rule",
         "stig_id": "SLES-12-030360",
-        "fix_id": "F-18513r370018_fix"
+        "fix_id": "F-18513r370018_fix",
+        "documentable": false
       },
       "id": "V-217287",
       "title": "The SUSE operating system must not forward Internet Protocol version 4 (IPv4) source-routed packets.",
@@ -3801,11 +3801,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217288",
         "rid": "SV-217288r603262_rule",
         "stig_id": "SLES-12-030361",
-        "fix_id": "F-18514r370021_fix"
+        "fix_id": "F-18514r370021_fix",
+        "documentable": false
       },
       "id": "V-217288",
       "title": "The SUSE operating system must not forward Internet Protocol version 6 (IPv6) source-routed packets.",
@@ -3819,11 +3819,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217289",
         "rid": "SV-217289r603262_rule",
         "stig_id": "SLES-12-030370",
-        "fix_id": "F-18515r370024_fix"
+        "fix_id": "F-18515r370024_fix",
+        "documentable": false
       },
       "id": "V-217289",
       "title": "The SUSE operating system must not forward Internet Protocol version 4 (IPv4) source-routed packets by default.",
@@ -3837,11 +3837,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217290",
         "rid": "SV-217290r603262_rule",
         "stig_id": "SLES-12-030380",
-        "fix_id": "F-18516r370027_fix"
+        "fix_id": "F-18516r370027_fix",
+        "documentable": false
       },
       "id": "V-217290",
       "title": "The SUSE operating system must not respond to Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) echoes sent to a broadcast address.",
@@ -3855,11 +3855,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217291",
         "rid": "SV-217291r603262_rule",
         "stig_id": "SLES-12-030390",
-        "fix_id": "F-18517r370030_fix"
+        "fix_id": "F-18517r370030_fix",
+        "documentable": false
       },
       "id": "V-217291",
       "title": "The SUSE operating system must prevent Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) redirect messages from being accepted.",
@@ -3873,11 +3873,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217292",
         "rid": "SV-217292r603262_rule",
         "stig_id": "SLES-12-030400",
-        "fix_id": "F-18518r370033_fix"
+        "fix_id": "F-18518r370033_fix",
+        "documentable": false
       },
       "id": "V-217292",
       "title": "The SUSE operating system must not allow interfaces to accept Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) redirect messages by default.",
@@ -3891,11 +3891,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217293",
         "rid": "SV-217293r603262_rule",
         "stig_id": "SLES-12-030401",
-        "fix_id": "F-18519r370036_fix"
+        "fix_id": "F-18519r370036_fix",
+        "documentable": false
       },
       "id": "V-217293",
       "title": "The SUSE operating system must not allow interfaces to accept Internet Protocol version 6 (IPv6) Internet Control Message Protocol (ICMP) redirect messages by default.",
@@ -3909,11 +3909,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217294",
         "rid": "SV-217294r603262_rule",
         "stig_id": "SLES-12-030410",
-        "fix_id": "F-18520r370039_fix"
+        "fix_id": "F-18520r370039_fix",
+        "documentable": false
       },
       "id": "V-217294",
       "title": "The SUSE operating system must not allow interfaces to send Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) redirect messages by default.",
@@ -3927,11 +3927,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217295",
         "rid": "SV-217295r603262_rule",
         "stig_id": "SLES-12-030420",
-        "fix_id": "F-18521r370042_fix"
+        "fix_id": "F-18521r370042_fix",
+        "documentable": false
       },
       "id": "V-217295",
       "title": "The SUSE operating system must not send Internet Protocol version 4 (IPv4) Internet Control Message Protocol (ICMP) redirects.",
@@ -3945,11 +3945,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217296",
         "rid": "SV-217296r646767_rule",
         "stig_id": "SLES-12-030430",
-        "fix_id": "F-18522r646766_fix"
+        "fix_id": "F-18522r646766_fix",
+        "documentable": false
       },
       "id": "V-217296",
       "title": "The SUSE operating system must not be performing Internet Protocol version 4 (IPv4) packet forwarding unless the system is a router.",
@@ -3963,11 +3963,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-217297",
         "rid": "SV-217297r603262_rule",
         "stig_id": "SLES-12-030440",
-        "fix_id": "F-18523r370048_fix"
+        "fix_id": "F-18523r370048_fix",
+        "documentable": false
       },
       "id": "V-217297",
       "title": "The SUSE operating system must not have network interfaces in promiscuous mode unless approved and documented.",
@@ -3981,16 +3981,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000299-GPOS-00117",
+        "gid": "V-217298",
+        "rid": "SV-217298r603262_rule",
+        "stig_id": "SLES-12-030450",
+        "fix_id": "F-18524r370051_fix",
         "satisfies": [
           "SRG-OS-000299-GPOS-00117",
           "SRG-OS-000300-GPOS-00118",
           "SRG-OS-000481-GPOS-000481"
         ],
-        "gid": "V-217298",
-        "rid": "SV-217298r603262_rule",
-        "stig_id": "SLES-12-030450",
-        "fix_id": "F-18524r370051_fix"
+        "documentable": false
       },
       "id": "V-217298",
       "title": "The SUSE operating system wireless network adapters must be disabled unless approved and documented.",
@@ -4004,16 +4004,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000375-GPOS-00160",
+        "gid": "V-217299",
+        "rid": "SV-217299r603262_rule",
+        "stig_id": "SLES-12-030500",
+        "fix_id": "F-18525r370054_fix",
         "satisfies": [
           "SRG-OS-000375-GPOS-00160",
           "SRG-OS-000376-GPOS-00161",
           "SRG-OS-000377-GPOS-00162"
         ],
-        "gid": "V-217299",
-        "rid": "SV-217299r603262_rule",
-        "stig_id": "SLES-12-030500",
-        "fix_id": "F-18525r370054_fix"
+        "documentable": false
       },
       "id": "V-217299",
       "title": "The SUSE operating system must have the packages required for multifactor authentication to be installed.",
@@ -4027,16 +4027,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000375-GPOS-00160",
+        "gid": "V-217300",
+        "rid": "SV-217300r603262_rule",
+        "stig_id": "SLES-12-030510",
+        "fix_id": "F-18526r370057_fix",
         "satisfies": [
           "SRG-OS-000375-GPOS-00160",
           "SRG-OS-000376-GPOS-00161",
           "SRG-OS-000377-GPOS-00162"
         ],
-        "gid": "V-217300",
-        "rid": "SV-217300r603262_rule",
-        "stig_id": "SLES-12-030510",
-        "fix_id": "F-18526r370057_fix"
+        "documentable": false
       },
       "id": "V-217300",
       "title": "The SUSE operating system must implement certificate status checking for multifactor authentication.",
@@ -4050,7 +4050,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000068-GPOS-00036",
+        "gid": "V-217301",
+        "rid": "SV-217301r603262_rule",
+        "stig_id": "SLES-12-030520",
+        "fix_id": "F-18527r370060_fix",
         "satisfies": [
           "SRG-OS-000068-GPOS-00036",
           "SRG-OS-000105-GPOS-00052",
@@ -4061,10 +4064,7 @@
           "SRG-OS-000375-GPOS-00161",
           "SRG-OS-000375-GPOS-00162"
         ],
-        "gid": "V-217301",
-        "rid": "SV-217301r603262_rule",
-        "stig_id": "SLES-12-030520",
-        "fix_id": "F-18527r370060_fix"
+        "documentable": false
       },
       "id": "V-217301",
       "title": "The SUSE operating system must implement multifactor authentication for access to privileged accounts via pluggable authentication modules (PAM).",
@@ -4078,15 +4078,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000066-GPOS-00034",
+        "gid": "V-217302",
+        "rid": "SV-217302r646769_rule",
+        "stig_id": "SLES-12-030530",
+        "fix_id": "F-18528r370063_fix",
         "satisfies": [
           "SRG-OS-000066-GPOS-00034",
           "SRG-OS-000384-GPOS-00167"
         ],
-        "gid": "V-217302",
-        "rid": "SV-217302r646769_rule",
-        "stig_id": "SLES-12-030530",
-        "fix_id": "F-18528r370063_fix"
+        "documentable": false
       },
       "id": "V-217302",
       "title": "The SUSE operating system, for PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor.",
@@ -4100,11 +4100,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000191-GPOS-00080",
         "gid": "V-222385",
         "rid": "SV-222385r603262_rule",
         "stig_id": "SLES-12-010599",
-        "fix_id": "F-36322r602678_fix"
+        "fix_id": "F-36322r602678_fix",
+        "documentable": false
       },
       "id": "V-222385",
       "title": "The SUSE operating system must have a host-based intrusion detection tool installed.",
@@ -4118,11 +4118,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-222386",
         "rid": "SV-222386r603262_rule",
         "stig_id": "SLES-12-030611",
-        "fix_id": "F-21313r466211_fix"
+        "fix_id": "F-21313r466211_fix",
+        "documentable": false
       },
       "id": "V-222386",
       "title": "The SUSE operating system must use a virus scan program.",
@@ -4136,11 +4136,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-233308",
         "rid": "SV-233308r603331_rule",
         "stig_id": "SLES-12-030261",
-        "fix_id": "F-36467r622237_fix"
+        "fix_id": "F-36467r622237_fix",
+        "documentable": false
       },
       "id": "V-233308",
       "title": "The SUSE operating system SSH daemon must prevent remote hosts from connecting to the proxy display.",
@@ -4154,11 +4154,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-237603",
         "rid": "SV-237603r646772_rule",
         "stig_id": "SLES-12-010111",
-        "fix_id": "F-40785r646771_fix"
+        "fix_id": "F-40785r646771_fix",
+        "documentable": false
       },
       "id": "V-237603",
       "title": "The SUSE operating system must restrict privilege elevation to authorized personnel.",
@@ -4172,11 +4172,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-237604",
         "rid": "SV-237604r646775_rule",
         "stig_id": "SLES-12-010112",
-        "fix_id": "F-40786r646774_fix"
+        "fix_id": "F-40786r646774_fix",
+        "documentable": false
       },
       "id": "V-237604",
       "title": "The SUSE operating system must use the invoking user's password for privilege escalation when using \"sudo\".",
@@ -4190,11 +4190,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000373-GPOS-00156",
         "gid": "V-237605",
         "rid": "SV-237605r646778_rule",
         "stig_id": "SLES-12-010113",
-        "fix_id": "F-40787r646777_fix"
+        "fix_id": "F-40787r646777_fix",
+        "documentable": false
       },
       "id": "V-237605",
       "title": "The SUSE operating system must require re-authentication when using the \"sudo\" command.",
@@ -4208,11 +4208,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-237606",
         "rid": "SV-237606r646781_rule",
         "stig_id": "SLES-12-010631",
-        "fix_id": "F-40788r646780_fix"
+        "fix_id": "F-40788r646780_fix",
+        "documentable": false
       },
       "id": "V-237606",
       "title": "The SUSE operating system must not have unnecessary account capabilities.",
@@ -4226,11 +4226,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237607",
         "rid": "SV-237607r646784_rule",
         "stig_id": "SLES-12-010871",
-        "fix_id": "F-40789r646783_fix"
+        "fix_id": "F-40789r646783_fix",
+        "documentable": false
       },
       "id": "V-237607",
       "title": "The SUSE operating system library files must have mode 0755 or less permissive.",
@@ -4244,11 +4244,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237608",
         "rid": "SV-237608r646787_rule",
         "stig_id": "SLES-12-010872",
-        "fix_id": "F-40790r646786_fix"
+        "fix_id": "F-40790r646786_fix",
+        "documentable": false
       },
       "id": "V-237608",
       "title": "The SUSE operating system library directories must have mode 0755 or less permissive.",
@@ -4262,11 +4262,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237609",
         "rid": "SV-237609r646790_rule",
         "stig_id": "SLES-12-010873",
-        "fix_id": "F-40791r646789_fix"
+        "fix_id": "F-40791r646789_fix",
+        "documentable": false
       },
       "id": "V-237609",
       "title": "The SUSE operating system library files must be owned by root.",
@@ -4280,11 +4280,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237610",
         "rid": "SV-237610r646793_rule",
         "stig_id": "SLES-12-010874",
-        "fix_id": "F-40792r646792_fix"
+        "fix_id": "F-40792r646792_fix",
+        "documentable": false
       },
       "id": "V-237610",
       "title": "The SUSE operating system library directories must be owned by root.",
@@ -4298,11 +4298,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237611",
         "rid": "SV-237611r646796_rule",
         "stig_id": "SLES-12-010875",
-        "fix_id": "F-40793r646795_fix"
+        "fix_id": "F-40793r646795_fix",
+        "documentable": false
       },
       "id": "V-237611",
       "title": "The SUSE operating system library files must be group-owned by root.",
@@ -4316,11 +4316,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237612",
         "rid": "SV-237612r646799_rule",
         "stig_id": "SLES-12-010876",
-        "fix_id": "F-40794r646798_fix"
+        "fix_id": "F-40794r646798_fix",
+        "documentable": false
       },
       "id": "V-237612",
       "title": "The SUSE operating system library directories must be group-owned by root.",
@@ -4334,11 +4334,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237613",
         "rid": "SV-237613r646802_rule",
         "stig_id": "SLES-12-010877",
-        "fix_id": "F-40795r646801_fix"
+        "fix_id": "F-40795r646801_fix",
+        "documentable": false
       },
       "id": "V-237613",
       "title": "The SUSE operating system must have system commands set to a mode of 0755 or less permissive.",
@@ -4352,11 +4352,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237614",
         "rid": "SV-237614r646805_rule",
         "stig_id": "SLES-12-010878",
-        "fix_id": "F-40796r646804_fix"
+        "fix_id": "F-40796r646804_fix",
+        "documentable": false
       },
       "id": "V-237614",
       "title": "The SUSE operating system must have directories that contain system commands set to a mode of 0755 or less permissive.",
@@ -4370,11 +4370,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237615",
         "rid": "SV-237615r646808_rule",
         "stig_id": "SLES-12-010879",
-        "fix_id": "F-40797r646807_fix"
+        "fix_id": "F-40797r646807_fix",
+        "documentable": false
       },
       "id": "V-237615",
       "title": "The SUSE operating system must have system commands owned by root.",
@@ -4388,11 +4388,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237616",
         "rid": "SV-237616r646811_rule",
         "stig_id": "SLES-12-010881",
-        "fix_id": "F-40798r646810_fix"
+        "fix_id": "F-40798r646810_fix",
+        "documentable": false
       },
       "id": "V-237616",
       "title": "The SUSE operating system must have directories that contain system commands owned by root.",
@@ -4406,11 +4406,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237617",
         "rid": "SV-237617r646814_rule",
         "stig_id": "SLES-12-010882",
-        "fix_id": "F-40799r646813_fix"
+        "fix_id": "F-40799r646813_fix",
+        "documentable": false
       },
       "id": "V-237617",
       "title": "The SUSE operating system must have system commands group-owned by root.",
@@ -4424,11 +4424,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000259-GPOS-00100",
         "gid": "V-237618",
         "rid": "SV-237618r646817_rule",
         "stig_id": "SLES-12-010883",
-        "fix_id": "F-40800r646816_fix"
+        "fix_id": "F-40800r646816_fix",
+        "documentable": false
       },
       "id": "V-237618",
       "title": "The SUSE operating system must have directories that contain system commands group-owned by root.",
@@ -4442,11 +4442,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000074-GPOS-00042",
         "gid": "V-237619",
         "rid": "SV-237619r646820_rule",
         "stig_id": "SLES-12-030011",
-        "fix_id": "F-40801r646819_fix"
+        "fix_id": "F-40801r646819_fix",
+        "documentable": false
       },
       "id": "V-237619",
       "title": "The SUSE operating system must not have the vsftpd package installed if not required for operational support.",
@@ -4460,11 +4460,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-237620",
         "rid": "SV-237620r646823_rule",
         "stig_id": "SLES-12-030362",
-        "fix_id": "F-40802r646822_fix"
+        "fix_id": "F-40802r646822_fix",
+        "documentable": false
       },
       "id": "V-237620",
       "title": "The SUSE operating system must not forward Internet Protocol version 6 (IPv6) source-routed packets by default.",
@@ -4478,11 +4478,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-237621",
         "rid": "SV-237621r646826_rule",
         "stig_id": "SLES-12-030363",
-        "fix_id": "F-40803r646825_fix"
+        "fix_id": "F-40803r646825_fix",
+        "documentable": false
       },
       "id": "V-237621",
       "title": "The SUSE operating system must prevent Internet Protocol version 6 (IPv6) Internet Control Message Protocol (ICMP) redirect messages from being accepted.",
@@ -4496,11 +4496,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-237622",
         "rid": "SV-237622r646829_rule",
         "stig_id": "SLES-12-030364",
-        "fix_id": "F-40804r646828_fix"
+        "fix_id": "F-40804r646828_fix",
+        "documentable": false
       },
       "id": "V-237622",
       "title": "The SUSE operating system must not be performing Internet Protocol version 6 (IPv6) packet forwarding unless the system is a router.",
@@ -4514,11 +4514,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-237623",
         "rid": "SV-237623r646832_rule",
         "stig_id": "SLES-12-030365",
-        "fix_id": "F-40805r646831_fix"
+        "fix_id": "F-40805r646831_fix",
+        "documentable": false
       },
       "id": "V-237623",
       "title": "The SUSE operating system must not be performing Internet Protocol version 6 (IPv6) packet forwarding by default unless the system is a router.",
@@ -4530,7 +4530,5 @@
       }
     }
   ],
-  "name": "SLES_12_STIG",
-  "title": "SLES 12 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "SLES_12_STIG"
 }

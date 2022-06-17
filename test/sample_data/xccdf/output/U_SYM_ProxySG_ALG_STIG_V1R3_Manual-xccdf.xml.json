@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000061-ALG-000009",
         "gid": "V-94217",
         "rid": "SV-104171r1_rule",
         "stig_id": "SYMP-AG-000010",
-        "fix_id": "F-100333r1_fix"
+        "fix_id": "F-100333r1_fix",
+        "documentable": false
       },
       "id": "V-94217",
       "title": "If Symantec ProxySG filters externally initiated traffic, reverse proxy services must be configured.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000061-ALG-000009",
         "gid": "V-94219",
         "rid": "SV-104173r1_rule",
         "stig_id": "SYMP-AG-000020",
-        "fix_id": "F-100335r1_fix"
+        "fix_id": "F-100335r1_fix",
+        "documentable": false
       },
       "id": "V-94219",
       "title": "Symantec ProxySG providing intermediary services for remote access communications traffic must ensure outbound traffic is monitored for compliance with remote access security policies.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000062-ALG-000150",
         "gid": "V-94221",
         "rid": "SV-104175r1_rule",
         "stig_id": "SYMP-AG-000030",
-        "fix_id": "F-100337r1_fix"
+        "fix_id": "F-100337r1_fix",
+        "documentable": false
       },
       "id": "V-94221",
       "title": "Symantec ProxySG providing forward proxy intermediary services for TLS must be configured to comply with the required TLS settings in NIST SP 800-52.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000062-ALG-000150",
         "gid": "V-94223",
         "rid": "SV-104177r1_rule",
         "stig_id": "SYMP-AG-000040",
-        "fix_id": "F-100339r1_fix"
+        "fix_id": "F-100339r1_fix",
+        "documentable": false
       },
       "id": "V-94223",
       "title": "Symantec ProxySG providing reverse proxy intermediary services for TLS must be configured to version 1.1 or higher with an approved cipher suite.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000062-ALG-000092",
         "gid": "V-94225",
         "rid": "SV-104179r2_rule",
         "stig_id": "SYMP-AG-000050",
-        "fix_id": "F-100341r2_fix"
+        "fix_id": "F-100341r2_fix",
+        "documentable": false
       },
       "id": "V-94225",
       "title": "Symantec ProxySG storing secret or private keys must use FIPS-approved key management technology and processes in the production and control of private/secret cryptographic keys.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000015-ALG-000016",
         "gid": "V-94227",
         "rid": "SV-104181r1_rule",
         "stig_id": "SYMP-AG-000060",
-        "fix_id": "F-100343r1_fix"
+        "fix_id": "F-100343r1_fix",
+        "documentable": false
       },
       "id": "V-94227",
       "title": "Symantec ProxySG must implement security policies that enforce approved authorizations for logical access to information and system resources by employing identity-based, role-based, and/or attribute-based security policies.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000019-ALG-000018",
         "gid": "V-94229",
         "rid": "SV-104183r1_rule",
         "stig_id": "SYMP-AG-000070",
-        "fix_id": "F-100345r3_fix"
+        "fix_id": "F-100345r3_fix",
+        "documentable": false
       },
       "id": "V-94229",
       "title": "Symantec ProxySG must restrict or block harmful or suspicious communications traffic by controlling the flow of information between interconnected networks based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000018-ALG-000017",
         "gid": "V-94231",
         "rid": "SV-104185r1_rule",
         "stig_id": "SYMP-AG-000080",
-        "fix_id": "F-100347r1_fix"
+        "fix_id": "F-100347r1_fix",
+        "documentable": false
       },
       "id": "V-94231",
       "title": "Symantec ProxySG must enforce approved authorizations for controlling the flow of information within the network based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000019-ALG-000019",
         "gid": "V-94233",
         "rid": "SV-104187r1_rule",
         "stig_id": "SYMP-AG-000090",
-        "fix_id": "F-100349r1_fix"
+        "fix_id": "F-100349r1_fix",
+        "documentable": false
       },
       "id": "V-94233",
       "title": "Symantec ProxySG must immediately use updates made to policy enforcement mechanisms such as policies and rules.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000041-ALG-000022",
         "gid": "V-94235",
         "rid": "SV-104189r2_rule",
         "stig_id": "SYMP-AG-000100",
-        "fix_id": "F-100351r2_fix"
+        "fix_id": "F-100351r2_fix",
+        "documentable": false
       },
       "id": "V-94235",
       "title": "Symantec ProxySG providing user access control intermediary services must display the Standard Mandatory DoD-approved Notice and Consent Banner before granting access to the network.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000043-ALG-000024",
         "gid": "V-94237",
         "rid": "SV-104191r1_rule",
         "stig_id": "SYMP-AG-000110",
-        "fix_id": "F-100353r1_fix"
+        "fix_id": "F-100353r1_fix",
+        "documentable": false
       },
       "id": "V-94237",
       "title": "Symantec ProxySG providing user access control intermediary services for publicly accessible applications must display the Standard Mandatory DoD-approved Notice and Consent Banner before granting access to the system.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000503-ALG-000038",
         "gid": "V-94239",
         "rid": "SV-104193r1_rule",
         "stig_id": "SYMP-AG-000120",
-        "fix_id": "F-100355r1_fix"
+        "fix_id": "F-100355r1_fix",
+        "documentable": false
       },
       "id": "V-94239",
       "title": "Symantec ProxySG providing user access control intermediary services must generate audit records when successful/unsuccessful logon attempts occur.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000505-ALG-000039",
         "gid": "V-94241",
         "rid": "SV-104195r1_rule",
         "stig_id": "SYMP-AG-000130",
-        "fix_id": "F-100357r1_fix"
+        "fix_id": "F-100357r1_fix",
+        "documentable": false
       },
       "id": "V-94241",
       "title": "Symantec ProxySG providing user access control intermediary services must generate audit records showing starting and ending time for user access to the system.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000513-ALG-000026",
         "gid": "V-94243",
         "rid": "SV-104197r1_rule",
         "stig_id": "SYMP-AG-000140",
-        "fix_id": "F-100359r1_fix"
+        "fix_id": "F-100359r1_fix",
+        "documentable": false
       },
       "id": "V-94243",
       "title": "Symantec ProxySG providing user access control intermediary services must generate audit records when successful/unsuccessful attempts to access web resources occur.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000074-ALG-000043",
         "gid": "V-94245",
         "rid": "SV-104199r1_rule",
         "stig_id": "SYMP-AG-000150",
-        "fix_id": "F-100361r1_fix"
+        "fix_id": "F-100361r1_fix",
+        "documentable": false
       },
       "id": "V-94245",
       "title": "Symantec ProxySG must produce audit records containing information to establish what type of events occurred.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000075-ALG-000044",
         "gid": "V-94247",
         "rid": "SV-104201r1_rule",
         "stig_id": "SYMP-AG-000160",
-        "fix_id": "F-100363r1_fix"
+        "fix_id": "F-100363r1_fix",
+        "documentable": false
       },
       "id": "V-94247",
       "title": "Symantec ProxySG must produce audit records containing information to establish when (date and time) the events occurred.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000076-ALG-000045",
         "gid": "V-94249",
         "rid": "SV-104203r1_rule",
         "stig_id": "SYMP-AG-000170",
-        "fix_id": "F-100365r1_fix"
+        "fix_id": "F-100365r1_fix",
+        "documentable": false
       },
       "id": "V-94249",
       "title": "Symantec ProxySG must produce audit records containing information to establish where the events occurred.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000077-ALG-000046",
         "gid": "V-94251",
         "rid": "SV-104205r1_rule",
         "stig_id": "SYMP-AG-000180",
-        "fix_id": "F-100367r1_fix"
+        "fix_id": "F-100367r1_fix",
+        "documentable": false
       },
       "id": "V-94251",
       "title": "Symantec ProxySG must produce audit records containing information to establish the source of the events.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000078-ALG-000047",
         "gid": "V-94253",
         "rid": "SV-104207r1_rule",
         "stig_id": "SYMP-AG-000190",
-        "fix_id": "F-100369r1_fix"
+        "fix_id": "F-100369r1_fix",
+        "documentable": false
       },
       "id": "V-94253",
       "title": "Symantec ProxySG must produce audit records containing information to establish the outcome of the events.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000079-ALG-000048",
         "gid": "V-94255",
         "rid": "SV-104209r1_rule",
         "stig_id": "SYMP-AG-000200",
-        "fix_id": "F-100371r1_fix"
+        "fix_id": "F-100371r1_fix",
+        "documentable": false
       },
       "id": "V-94255",
       "title": "Symantec ProxySG must generate audit records containing information to establish the identity of any individual or process associated with the event.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000334-ALG-000050",
         "gid": "V-94257",
         "rid": "SV-104211r1_rule",
         "stig_id": "SYMP-AG-000210",
-        "fix_id": "F-100373r1_fix"
+        "fix_id": "F-100373r1_fix",
+        "documentable": false
       },
       "id": "V-94257",
       "title": "Symantec ProxySG must use a centralized log server.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000511-ALG-000051",
         "gid": "V-94259",
         "rid": "SV-104213r1_rule",
         "stig_id": "SYMP-AG-000220",
-        "fix_id": "F-100375r1_fix"
+        "fix_id": "F-100375r1_fix",
+        "documentable": false
       },
       "id": "V-94259",
       "title": "Symantec ProxySG must be configured to send the access logs to the centralized log server continuously.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000335-ALG-000053",
         "gid": "V-94261",
         "rid": "SV-104215r1_rule",
         "stig_id": "SYMP-AG-000230",
-        "fix_id": "F-100377r1_fix"
+        "fix_id": "F-100377r1_fix",
+        "documentable": false
       },
       "id": "V-94261",
       "title": "Symantec ProxySG must provide an alert to, at a minimum, the SCA and ISSO of all audit failure events where the detection and/or prevention function is unable to write events to either local storage or the centralized server.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-ALG-000065",
         "gid": "V-94263",
         "rid": "SV-104217r1_rule",
         "stig_id": "SYMP-AG-000240",
-        "fix_id": "F-100379r1_fix"
+        "fix_id": "F-100379r1_fix",
+        "documentable": false
       },
       "id": "V-94263",
       "title": "The reverse proxy Symantec ProxySG providing intermediary services for FTP must inspect inbound FTP communications traffic for protocol compliance and protocol anomalies.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-ALG-000065",
         "gid": "V-94265",
         "rid": "SV-104219r1_rule",
         "stig_id": "SYMP-AG-000250",
-        "fix_id": "F-100381r1_fix"
+        "fix_id": "F-100381r1_fix",
+        "documentable": false
       },
       "id": "V-94265",
       "title": "Symantec ProxySG providing intermediary services for FTP must inspect outbound FTP communications traffic for protocol compliance and protocol anomalies.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-ALG-000066",
         "gid": "V-94267",
         "rid": "SV-104221r1_rule",
         "stig_id": "SYMP-AG-000260",
-        "fix_id": "F-100383r1_fix"
+        "fix_id": "F-100383r1_fix",
+        "documentable": false
       },
       "id": "V-94267",
       "title": "Symantec ProxySG providing intermediary services for HTTP must inspect inbound HTTP traffic for protocol compliance and protocol anomalies.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000512-ALG-000066",
         "gid": "V-94269",
         "rid": "SV-104223r1_rule",
         "stig_id": "SYMP-AG-000270",
-        "fix_id": "F-100385r1_fix"
+        "fix_id": "F-100385r1_fix",
+        "documentable": false
       },
       "id": "V-94269",
       "title": "Symantec ProxySG providing intermediary services for HTTP must inspect outbound HTTP traffic for protocol compliance and protocol anomalies.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000131-ALG-000085",
         "gid": "V-94271",
         "rid": "SV-104225r1_rule",
         "stig_id": "SYMP-AG-000280",
-        "fix_id": "F-100387r2_fix"
+        "fix_id": "F-100387r2_fix",
+        "documentable": false
       },
       "id": "V-94271",
       "title": "Symantec ProxySG must not have unnecessary services and functions enabled.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000131-ALG-000086",
         "gid": "V-94273",
         "rid": "SV-104227r1_rule",
         "stig_id": "SYMP-AG-000290",
-        "fix_id": "F-100389r1_fix"
+        "fix_id": "F-100389r1_fix",
+        "documentable": false
       },
       "id": "V-94273",
       "title": "Symantec ProxySG must be configured to remove or disable unrelated or unneeded application proxy services.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000132-ALG-000087",
         "gid": "V-94275",
         "rid": "SV-104229r1_rule",
         "stig_id": "SYMP-AG-000300",
-        "fix_id": "F-100391r1_fix"
+        "fix_id": "F-100391r1_fix",
+        "documentable": false
       },
       "id": "V-94275",
       "title": "Symantec ProxySG must be configured to prohibit or restrict the use of network services as defined in the PPSM CAL and vulnerability assessments.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000337-ALG-000096",
         "gid": "V-94277",
         "rid": "SV-104231r1_rule",
         "stig_id": "SYMP-AG-000310",
-        "fix_id": "F-100393r1_fix"
+        "fix_id": "F-100393r1_fix",
+        "documentable": false
       },
       "id": "V-94277",
       "title": "Symantec ProxySG providing user authentication intermediary services must require users to reauthenticate every 900 seconds when organization-defined circumstances or situations require reauthentication.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000138-ALG-000063",
         "gid": "V-94279",
         "rid": "SV-104233r1_rule",
         "stig_id": "SYMP-AG-000320",
-        "fix_id": "F-100395r1_fix"
+        "fix_id": "F-100395r1_fix",
+        "documentable": false
       },
       "id": "V-94279",
       "title": "Symantec ProxySG must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000138-ALG-000088",
         "gid": "V-94281",
         "rid": "SV-104235r1_rule",
         "stig_id": "SYMP-AG-000330",
-        "fix_id": "F-100397r1_fix"
+        "fix_id": "F-100397r1_fix",
+        "documentable": false
       },
       "id": "V-94281",
       "title": "Symantec ProxySG must be configured with a pre-established trust relationship and mechanisms with appropriate authorities that validate user account access authorizations and privileges.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000138-ALG-000089",
         "gid": "V-94283",
         "rid": "SV-104237r1_rule",
         "stig_id": "SYMP-AG-000340",
-        "fix_id": "F-100399r1_fix"
+        "fix_id": "F-100399r1_fix",
+        "documentable": false
       },
       "id": "V-94283",
       "title": "Symantec ProxySG providing user authentication intermediary services must restrict user authentication traffic to specific authentication servers.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000339-ALG-000090",
         "gid": "V-94285",
         "rid": "SV-104239r2_rule",
         "stig_id": "SYMP-AG-000350",
-        "fix_id": "F-100401r1_fix"
+        "fix_id": "F-100401r1_fix",
+        "documentable": false
       },
       "id": "V-94285",
       "title": "Symantec ProxySG providing user authentication intermediary services must implement multifactor authentication for remote access to nonprivileged accounts such that one of the factors is provided by a device separate from the system gaining access.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000340-ALG-000091",
         "gid": "V-94287",
         "rid": "SV-104241r2_rule",
         "stig_id": "SYMP-AG-000360",
-        "fix_id": "F-100403r1_fix"
+        "fix_id": "F-100403r1_fix",
+        "documentable": false
       },
       "id": "V-94287",
       "title": "Symantec ProxySG providing user authentication intermediary services must implement multifactor authentication for remote access to privileged accounts such that one of the factors is provided by a device separate from the system gaining access.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000140-ALG-000094",
         "gid": "V-94289",
         "rid": "SV-104243r1_rule",
         "stig_id": "SYMP-AG-000370",
-        "fix_id": "F-100405r1_fix"
+        "fix_id": "F-100405r1_fix",
+        "documentable": false
       },
       "id": "V-94289",
       "title": "Symantec ProxySG providing user authentication intermediary services must use multifactor authentication for network access to nonprivileged accounts.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000147-ALG-000095",
         "gid": "V-94291",
         "rid": "SV-104245r1_rule",
         "stig_id": "SYMP-AG-000380",
-        "fix_id": "F-100407r1_fix"
+        "fix_id": "F-100407r1_fix",
+        "documentable": false
       },
       "id": "V-94291",
       "title": "Symantec ProxySG providing user authentication intermediary services must implement replay-resistant authentication mechanisms for network access to nonprivileged accounts.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000344-ALG-000098",
         "gid": "V-94293",
         "rid": "SV-104247r1_rule",
         "stig_id": "SYMP-AG-000390",
-        "fix_id": "F-100409r1_fix"
+        "fix_id": "F-100409r1_fix",
+        "documentable": false
       },
       "id": "V-94293",
       "title": "Symantec ProxySG must prohibit the use of cached authenticators after 300 seconds at a minimum.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000166-ALG-000101",
         "gid": "V-94295",
         "rid": "SV-104249r1_rule",
         "stig_id": "SYMP-AG-000410",
-        "fix_id": "F-100411r2_fix"
+        "fix_id": "F-100411r2_fix",
+        "documentable": false
       },
       "id": "V-94295",
       "title": "Symantec ProxySG, when configured for reverse proxy/WAF services and providing PKI-based user authentication intermediary services, must map the client certificate to the authentication server store.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000345-ALG-000099",
         "gid": "V-94297",
         "rid": "SV-104251r1_rule",
         "stig_id": "SYMP-AG-000420",
-        "fix_id": "F-100413r1_fix"
+        "fix_id": "F-100413r1_fix",
+        "documentable": false
       },
       "id": "V-94297",
       "title": "Symantec ProxySG providing user authentication intermediary services using PKI-based user authentication must implement a local cache of revocation data to support path discovery and validation in case of the inability to access revocation information via the network.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000349-ALG-000106",
         "gid": "V-94299",
         "rid": "SV-104253r1_rule",
         "stig_id": "SYMP-AG-000430",
-        "fix_id": "F-100415r1_fix"
+        "fix_id": "F-100415r1_fix",
+        "documentable": false
       },
       "id": "V-94299",
       "title": "Symantec ProxySG providing user authentication intermediary services must conform to Federal Identity, Credential, and Access Management (FICAM)-issued profiles.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000213-ALG-000107",
         "gid": "V-94301",
         "rid": "SV-104255r1_rule",
         "stig_id": "SYMP-AG-000440",
-        "fix_id": "F-100417r2_fix"
+        "fix_id": "F-100417r2_fix",
+        "documentable": false
       },
       "id": "V-94301",
       "title": "Symantec ProxySG must terminate all network connections associated with a communications session at the end of the session or terminate user sessions (nonprivileged session) after 15 minutes of inactivity.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000111",
         "gid": "V-94303",
         "rid": "SV-104257r1_rule",
         "stig_id": "SYMP-AG-000450",
-        "fix_id": "F-100419r1_fix"
+        "fix_id": "F-100419r1_fix",
+        "documentable": false
       },
       "id": "V-94303",
       "title": "Symantec ProxySG providing forward proxy encryption intermediary services must use NIST FIPS-validated cryptography to implement encryption services.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000025",
         "gid": "V-94305",
         "rid": "SV-104259r1_rule",
         "stig_id": "SYMP-AG-000460",
-        "fix_id": "F-100421r1_fix"
+        "fix_id": "F-100421r1_fix",
+        "documentable": false
       },
       "id": "V-94305",
       "title": "Symantec ProxySG providing reverse proxy encryption intermediary services must implement NIST FIPS-validated cryptography to generate cryptographic hashes.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000040",
         "gid": "V-94307",
         "rid": "SV-104261r1_rule",
         "stig_id": "SYMP-AG-000470",
-        "fix_id": "F-100423r1_fix"
+        "fix_id": "F-100423r1_fix",
+        "documentable": false
       },
       "id": "V-94307",
       "title": "Symantec ProxySG providing reverse proxy encryption intermediary services must implement NIST FIPS-validated cryptography for digital signatures.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000510-ALG-000111",
         "gid": "V-94309",
         "rid": "SV-104263r1_rule",
         "stig_id": "SYMP-AG-000480",
-        "fix_id": "F-100425r1_fix"
+        "fix_id": "F-100425r1_fix",
+        "documentable": false
       },
       "id": "V-94309",
       "title": "Symantec ProxySG providing reverse proxy encryption intermediary services must use NIST FIPS-validated cryptography to implement encryption services.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-NET-000230-ALG-000113",
         "gid": "V-94311",
         "rid": "SV-104265r1_rule",
         "stig_id": "SYMP-AG-000490",
-        "fix_id": "F-100427r1_fix"
+        "fix_id": "F-100427r1_fix",
+        "documentable": false
       },
       "id": "V-94311",
       "title": "Symantec ProxySG must use Transport Layer Security (TLS) to protect the authenticity of communications sessions.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000355-ALG-000117",
         "gid": "V-94313",
         "rid": "SV-104267r1_rule",
         "stig_id": "SYMP-AG-000500",
-        "fix_id": "F-100429r1_fix"
+        "fix_id": "F-100429r1_fix",
+        "documentable": false
       },
       "id": "V-94313",
       "title": "If reverse proxy is used for validating and restricting certs from external entities, and this function is required by the SSP, Symantec ProxySG providing user authentication intermediary services using PKI-based user authentication must only accept end entity certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs) for the establishment of protected sessions.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000235-ALG-000118",
         "gid": "V-94315",
         "rid": "SV-104269r1_rule",
         "stig_id": "SYMP-AG-000510",
-        "fix_id": "F-100431r1_fix"
+        "fix_id": "F-100431r1_fix",
+        "documentable": false
       },
       "id": "V-94315",
       "title": "Symantec ProxySG must fail to a secure state upon failure of initialization, shutdown, or abort actions.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-ALG-000112",
         "gid": "V-94317",
         "rid": "SV-104271r1_rule",
         "stig_id": "SYMP-AG-000520",
-        "fix_id": "F-100433r1_fix"
+        "fix_id": "F-100433r1_fix",
+        "documentable": false
       },
       "id": "V-94317",
       "title": "Symantec ProxySG providing content filtering must protect against known and unknown types of denial-of-service (DoS) attacks by employing rate-based attack prevention behavior analysis.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000362-ALG-000120",
         "gid": "V-94319",
         "rid": "SV-104273r1_rule",
         "stig_id": "SYMP-AG-000530",
-        "fix_id": "F-100435r1_fix"
+        "fix_id": "F-100435r1_fix",
+        "documentable": false
       },
       "id": "V-94319",
       "title": "Symantec ProxySG must implement load balancing to limit the effects of known and unknown types of denial-of-service (DoS) attacks.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000192-ALG-000121",
         "gid": "V-94321",
         "rid": "SV-104275r1_rule",
         "stig_id": "SYMP-AG-000540",
-        "fix_id": "F-100437r1_fix"
+        "fix_id": "F-100437r1_fix",
+        "documentable": false
       },
       "id": "V-94321",
       "title": "Symantec ProxySG must block outbound traffic containing known and unknown denial-of-service (DoS) attacks to protect against the use of internal information systems to launch any DoS attacks against other networks or endpoints.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000364-ALG-000122",
         "gid": "V-94323",
         "rid": "SV-104277r1_rule",
         "stig_id": "SYMP-AG-000550",
-        "fix_id": "F-100439r1_fix"
+        "fix_id": "F-100439r1_fix",
+        "documentable": false
       },
       "id": "V-94323",
       "title": "Symantec ProxySG must allow incoming communications only from organization-defined authorized sources routed to organization-defined authorized destinations.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000365-ALG-000123",
         "gid": "V-94325",
         "rid": "SV-104279r1_rule",
         "stig_id": "SYMP-AG-000560",
-        "fix_id": "F-100441r2_fix"
+        "fix_id": "F-100441r2_fix",
+        "documentable": false
       },
       "id": "V-94325",
       "title": "Symantec ProxySG must fail securely in the event of an operational failure.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000202-ALG-000124",
         "gid": "V-94327",
         "rid": "SV-104281r1_rule",
         "stig_id": "SYMP-AG-000570",
-        "fix_id": "F-100443r1_fix"
+        "fix_id": "F-100443r1_fix",
+        "documentable": false
       },
       "id": "V-94327",
       "title": "Symantec ProxySG must deny network communications traffic by default and allow network communications traffic by exception (i.e., deny all, permit by exception).",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000370-ALG-000125",
         "gid": "V-94329",
         "rid": "SV-104283r1_rule",
         "stig_id": "SYMP-AG-000580",
-        "fix_id": "F-100445r1_fix"
+        "fix_id": "F-100445r1_fix",
+        "documentable": false
       },
       "id": "V-94329",
       "title": "Symantec ProxySG must identify and log internal users associated with denied outgoing communications traffic posing a threat to external information systems.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000273-ALG-000129",
         "gid": "V-94331",
         "rid": "SV-104285r1_rule",
         "stig_id": "SYMP-AG-000590",
-        "fix_id": "F-100447r1_fix"
+        "fix_id": "F-100447r1_fix",
+        "documentable": false
       },
       "id": "V-94331",
       "title": "Symantec ProxySG must tailor the Exceptions messages to generate error messages that provide the information necessary for corrective actions without revealing information that could be exploited by adversaries.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000383-ALG-000135",
         "gid": "V-94333",
         "rid": "SV-104287r1_rule",
         "stig_id": "SYMP-AG-000600",
-        "fix_id": "F-100449r1_fix"
+        "fix_id": "F-100449r1_fix",
+        "documentable": false
       },
       "id": "V-94333",
       "title": "Symantec ProxySG providing content filtering must be configured to integrate with a system-wide intrusion detection system.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000384-ALG-000136",
         "gid": "V-94335",
         "rid": "SV-104289r1_rule",
         "stig_id": "SYMP-AG-000610",
-        "fix_id": "F-100451r1_fix"
+        "fix_id": "F-100451r1_fix",
+        "documentable": false
       },
       "id": "V-94335",
       "title": "Symantec ProxySG providing content filtering must detect use of network services that have not been authorized or approved by the ISSM and ISSO, at a minimum.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000385-ALG-000137",
         "gid": "V-94337",
         "rid": "SV-104291r1_rule",
         "stig_id": "SYMP-AG-000620",
-        "fix_id": "F-100453r2_fix"
+        "fix_id": "F-100453r2_fix",
+        "documentable": false
       },
       "id": "V-94337",
       "title": "Symantec ProxySG providing content filtering must generate a log record when access attempts to unauthorized websites and/or services are detected.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000385-ALG-000138",
         "gid": "V-94339",
         "rid": "SV-104293r1_rule",
         "stig_id": "SYMP-AG-000630",
-        "fix_id": "F-100455r1_fix"
+        "fix_id": "F-100455r1_fix",
+        "documentable": false
       },
       "id": "V-94339",
       "title": "Symantec ProxySG providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when access attempts to unauthorized websites and/or services are detected.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000390-ALG-000139",
         "gid": "V-94341",
         "rid": "SV-104295r1_rule",
         "stig_id": "SYMP-AG-000640",
-        "fix_id": "F-100457r1_fix"
+        "fix_id": "F-100457r1_fix",
+        "documentable": false
       },
       "id": "V-94341",
       "title": "Reverse proxy Symantec ProxySG providing content filtering must continuously monitor inbound communications traffic crossing internal security boundaries for unusual or unauthorized activities or conditions.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000391-ALG-000140",
         "gid": "V-94343",
         "rid": "SV-104297r1_rule",
         "stig_id": "SYMP-AG-000650",
-        "fix_id": "F-100459r1_fix"
+        "fix_id": "F-100459r1_fix",
+        "documentable": false
       },
       "id": "V-94343",
       "title": "Symantec ProxySG providing content filtering must continuously monitor outbound communications traffic crossing internal security boundaries for unusual/unauthorized activities or conditions.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000141",
         "gid": "V-94345",
         "rid": "SV-104299r1_rule",
         "stig_id": "SYMP-AG-000660",
-        "fix_id": "F-100461r1_fix"
+        "fix_id": "F-100461r1_fix",
+        "documentable": false
       },
       "id": "V-94345",
       "title": "Symantec ProxySG providing content filtering must send an alert to, at a minimum, the ISSO and ISSM when detection events occur.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-NET-000392-ALG-000148",
         "gid": "V-94347",
         "rid": "SV-104301r1_rule",
         "stig_id": "SYMP-AG-000670",
-        "fix_id": "F-100463r2_fix"
+        "fix_id": "F-100463r2_fix",
+        "documentable": false
       },
       "id": "V-94347",
       "title": "Symantec ProxySG providing content filtering must generate an alert to, at a minimum, the ISSO and ISSM when denial-of-service (DoS) incidents are detected.",
@@ -1194,7 +1194,5 @@
       }
     }
   ],
-  "name": "Symantec_ProxySG_ALG_STIG",
-  "title": "Symantec ProxySG ALG Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Symantec_ProxySG_ALG_STIG"
 }

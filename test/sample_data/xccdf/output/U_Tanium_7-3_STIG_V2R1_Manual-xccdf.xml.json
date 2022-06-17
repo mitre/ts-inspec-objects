@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000111",
         "gid": "V-234031",
         "rid": "SV-234031r612749_rule",
         "stig_id": "TANS-00-000155",
-        "fix_id": "F-37181r610594_fix"
+        "fix_id": "F-37181r610594_fix",
+        "documentable": false
       },
       "id": "V-234031",
       "title": "Tanium must centrally review and analyze audit records from multiple components within the system.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000379",
         "gid": "V-234032",
         "rid": "SV-234032r612749_rule",
         "stig_id": "TANS-00-000655",
-        "fix_id": "F-37182r610597_fix"
+        "fix_id": "F-37182r610597_fix",
+        "documentable": false
       },
       "id": "V-234032",
       "title": "Tanium must implement organization-defined automated security responses if baseline configurations are changed in an unauthorized manner.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000386",
         "gid": "V-234033",
         "rid": "SV-234033r612749_rule",
         "stig_id": "TANS-00-000670",
-        "fix_id": "F-37183r610600_fix"
+        "fix_id": "F-37183r610600_fix",
+        "documentable": false
       },
       "id": "V-234033",
       "title": "Tanium must employ a deny-all, permit-by-exception (whitelist) policy to allow the execution of authorized software programs.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000414",
         "gid": "V-234034",
         "rid": "SV-234034r612749_rule",
         "stig_id": "TANS-00-000755",
-        "fix_id": "F-37184r610603_fix"
+        "fix_id": "F-37184r610603_fix",
+        "documentable": false
       },
       "id": "V-234034",
       "title": "The vulnerability scanning application must implement privileged access authorization to all Tanium information systems and infrastructure components for selected organization-defined vulnerability scanning activities.",
@@ -80,16 +80,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015",
+        "gid": "V-234035",
+        "rid": "SV-234035r612749_rule",
+        "stig_id": "TANS-CL-000001",
+        "fix_id": "F-37185r610606_fix",
         "satisfies": [
           "SRG-APP-000015",
           "SRG-APP-000158",
           "SRG-APP-000394"
         ],
-        "gid": "V-234035",
-        "rid": "SV-234035r612749_rule",
-        "stig_id": "TANS-CL-000001",
-        "fix_id": "F-37185r610606_fix"
+        "documentable": false
       },
       "id": "V-234035",
       "title": "The Tanium endpoint must have the Tanium Servers public key in its installation.",
@@ -103,11 +103,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119",
         "gid": "V-234036",
         "rid": "SV-234036r612749_rule",
         "stig_id": "TANS-CL-000002",
-        "fix_id": "F-37186r610609_fix"
+        "fix_id": "F-37186r610609_fix",
+        "documentable": false
       },
       "id": "V-234036",
       "title": "Access to Tanium logs on each endpoint must be restricted by permissions.",
@@ -121,15 +121,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
+        "gid": "V-234037",
+        "rid": "SV-234037r612749_rule",
+        "stig_id": "TANS-CL-000003",
+        "fix_id": "F-37187r610612_fix",
         "satisfies": [
           "SRG-APP-000131",
           "SRG-APP-000219"
         ],
-        "gid": "V-234037",
-        "rid": "SV-234037r612749_rule",
-        "stig_id": "TANS-CL-000003",
-        "fix_id": "F-37187r610612_fix"
+        "documentable": false
       },
       "id": "V-234037",
       "title": "The Tanium cryptographic signing capabilities must be enabled on the Tanium Clients to safeguard the authenticity of communications sessions when answering requests from the Tanium Server.",
@@ -143,11 +143,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-234038",
         "rid": "SV-234038r612749_rule",
         "stig_id": "TANS-CL-000004",
-        "fix_id": "F-37188r610615_fix"
+        "fix_id": "F-37188r610615_fix",
+        "documentable": false
       },
       "id": "V-234038",
       "title": "Firewall rules must be configured on the Tanium Endpoints for Client-to-Server communications.",
@@ -161,11 +161,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328",
         "gid": "V-234039",
         "rid": "SV-234039r612749_rule",
         "stig_id": "TANS-CL-000005",
-        "fix_id": "F-37189r610618_fix"
+        "fix_id": "F-37189r610618_fix",
+        "documentable": false
       },
       "id": "V-234039",
       "title": "Control of the Tanium Client service must be restricted to SYSTEM access only for all managed clients.",
@@ -179,11 +179,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328",
         "gid": "V-234040",
         "rid": "SV-234040r612749_rule",
         "stig_id": "TANS-CL-000006",
-        "fix_id": "F-37190r610621_fix"
+        "fix_id": "F-37190r610621_fix",
+        "documentable": false
       },
       "id": "V-234040",
       "title": "The ability to uninstall the Tanium Client service must be disabled on all managed clients.",
@@ -197,11 +197,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328",
         "gid": "V-234041",
         "rid": "SV-234041r612749_rule",
         "stig_id": "TANS-CL-000007",
-        "fix_id": "F-37191r610624_fix"
+        "fix_id": "F-37191r610624_fix",
+        "documentable": false
       },
       "id": "V-234041",
       "title": "The permissions on the Tanium Client directory must be restricted to only the SYSTEM account on all managed clients.",
@@ -215,11 +215,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234042",
         "rid": "SV-234042r612749_rule",
         "stig_id": "TANS-CL-000008",
-        "fix_id": "F-37192r610627_fix"
+        "fix_id": "F-37192r610627_fix",
+        "documentable": false
       },
       "id": "V-234042",
       "title": "Tanium endpoint files must be excluded from on-access antivirus actions.",
@@ -233,11 +233,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234043",
         "rid": "SV-234043r612749_rule",
         "stig_id": "TANS-CL-000010",
-        "fix_id": "F-37193r610630_fix"
+        "fix_id": "F-37193r610630_fix",
+        "documentable": false
       },
       "id": "V-234043",
       "title": "The Tanium Client Deployment Tool (CDT) must not be configured to use the psexec method of deployment.",
@@ -251,11 +251,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234044",
         "rid": "SV-234044r612749_rule",
         "stig_id": "TANS-CL-000012",
-        "fix_id": "F-37194r610633_fix"
+        "fix_id": "F-37194r610633_fix",
+        "documentable": false
       },
       "id": "V-234044",
       "title": "Tanium endpoint files must be protected from file encryption actions.",
@@ -269,11 +269,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246",
         "gid": "V-234045",
         "rid": "SV-234045r612749_rule",
         "stig_id": "TANS-CL-000013",
-        "fix_id": "F-37195r610636_fix"
+        "fix_id": "F-37195r610636_fix",
+        "documentable": false
       },
       "id": "V-234045",
       "title": "The Tanium application must restrict the ability of individuals to place too much impact upon the network, which might result in a Denial of Service (DoS) event on the network by using RandomSensorDelayInSeconds.",
@@ -287,11 +287,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234046",
         "rid": "SV-234046r612749_rule",
         "stig_id": "TANS-CL-000014",
-        "fix_id": "F-37196r610639_fix"
+        "fix_id": "F-37196r610639_fix",
+        "documentable": false
       },
       "id": "V-234046",
       "title": "Tanium endpoint files must be excluded from host-based intrusion prevention intervention.",
@@ -305,11 +305,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000002",
         "gid": "V-234047",
         "rid": "SV-234047r612749_rule",
         "stig_id": "TANS-CN-000001",
-        "fix_id": "F-37197r610642_fix"
+        "fix_id": "F-37197r610642_fix",
+        "documentable": false
       },
       "id": "V-234047",
       "title": "The Tanium application must retain the session lock until the user reestablishes access using established identification and authentication procedures.",
@@ -323,15 +323,15 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233",
+        "gid": "V-234048",
+        "rid": "SV-234048r612749_rule",
+        "stig_id": "TANS-CN-000002",
+        "fix_id": "F-37198r610645_fix",
         "satisfies": [
           "SRG-APP-000233",
           "SRG-APP-000317"
         ],
-        "gid": "V-234048",
-        "rid": "SV-234048r612749_rule",
-        "stig_id": "TANS-CN-000002",
-        "fix_id": "F-37198r610645_fix"
+        "documentable": false
       },
       "id": "V-234048",
       "title": "The Tanium Application Server must be configured with a connector to sync to Microsoft Active Directory for account management functions.",
@@ -345,11 +345,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000023",
         "gid": "V-234049",
         "rid": "SV-234049r612749_rule",
         "stig_id": "TANS-CN-000003",
-        "fix_id": "F-37199r610648_fix"
+        "fix_id": "F-37199r610648_fix",
+        "documentable": false
       },
       "id": "V-234049",
       "title": "The Tanium Application Server must be configured to only use Microsoft Active Directory for account management functions.",
@@ -363,11 +363,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-234050",
         "rid": "SV-234050r612749_rule",
         "stig_id": "TANS-CN-000004",
-        "fix_id": "F-37200r610651_fix"
+        "fix_id": "F-37200r610651_fix",
+        "documentable": false
       },
       "id": "V-234050",
       "title": "Tanium Computer Groups must be used to restrict console users from affecting changes to unauthorized computers.",
@@ -381,11 +381,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-234051",
         "rid": "SV-234051r612749_rule",
         "stig_id": "TANS-CN-000005",
-        "fix_id": "F-37201r610654_fix"
+        "fix_id": "F-37201r610654_fix",
+        "documentable": false
       },
       "id": "V-234051",
       "title": "Documentation identifying Tanium console users, their respective functional roles, and computer groups must be maintained.",
@@ -399,11 +399,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-234052",
         "rid": "SV-234052r612749_rule",
         "stig_id": "TANS-CN-000006",
-        "fix_id": "F-37202r610657_fix"
+        "fix_id": "F-37202r610657_fix",
+        "documentable": false
       },
       "id": "V-234052",
       "title": "Role-based system access must be configured to least privileged access to Tanium Server functions through the Tanium interface.",
@@ -417,11 +417,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-234053",
         "rid": "SV-234053r612749_rule",
         "stig_id": "TANS-CN-000007",
-        "fix_id": "F-37203r610660_fix"
+        "fix_id": "F-37203r610660_fix",
+        "documentable": false
       },
       "id": "V-234053",
       "title": "Tanium console users User Roles must be validated against the documentation for User Roles.",
@@ -435,11 +435,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-234054",
         "rid": "SV-234054r612749_rule",
         "stig_id": "TANS-CN-000008",
-        "fix_id": "F-37204r610663_fix"
+        "fix_id": "F-37204r610663_fix",
+        "documentable": false
       },
       "id": "V-234054",
       "title": "Documentation identifying Tanium console users and their respective Computer Group rights must be maintained.",
@@ -453,11 +453,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-234055",
         "rid": "SV-234055r612749_rule",
         "stig_id": "TANS-CN-000009",
-        "fix_id": "F-37205r610666_fix"
+        "fix_id": "F-37205r610666_fix",
+        "documentable": false
       },
       "id": "V-234055",
       "title": "Tanium console users Computer Group rights must be validated against the documentation for Computer Group rights.",
@@ -471,15 +471,15 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000149",
+        "gid": "V-234056",
+        "rid": "SV-234056r612749_rule",
+        "stig_id": "TANS-CN-000010",
+        "fix_id": "F-37206r610669_fix",
         "satisfies": [
           "SRG-APP-000149",
           "SRG-APP-000151"
         ],
-        "gid": "V-234056",
-        "rid": "SV-234056r612749_rule",
-        "stig_id": "TANS-CN-000010",
-        "fix_id": "F-37206r610669_fix"
+        "documentable": false
       },
       "id": "V-234056",
       "title": "Common Access Card (CAC)-based authentication must be enabled on the Tanium Server for network access with privileged accounts.",
@@ -493,11 +493,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383",
         "gid": "V-234057",
         "rid": "SV-234057r612749_rule",
         "stig_id": "TANS-CN-000014",
-        "fix_id": "F-37207r610672_fix"
+        "fix_id": "F-37207r610672_fix",
+        "documentable": false
       },
       "id": "V-234057",
       "title": "Firewall rules must be configured on the Tanium Server for Console-to-Server communications.",
@@ -511,16 +511,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000070",
+        "gid": "V-234058",
+        "rid": "SV-234058r612749_rule",
+        "stig_id": "TANS-CN-000015",
+        "fix_id": "F-37208r610675_fix",
         "satisfies": [
           "SRG-APP-000070",
           "SRG-APP-000068",
           "SRG-APP-000069"
         ],
-        "gid": "V-234058",
-        "rid": "SV-234058r612749_rule",
-        "stig_id": "TANS-CN-000015",
-        "fix_id": "F-37208r610675_fix"
+        "documentable": false
       },
       "id": "V-234058",
       "title": "The publicly accessible Tanium application must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the application.",
@@ -534,11 +534,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000108",
         "gid": "V-234059",
         "rid": "SV-234059r612749_rule",
         "stig_id": "TANS-CN-000016",
-        "fix_id": "F-37209r610678_fix"
+        "fix_id": "F-37209r610678_fix",
+        "documentable": false
       },
       "id": "V-234059",
       "title": "Tanium must alert the ISSO and SA (at a minimum) in the event of an audit processing failure.",
@@ -552,11 +552,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000270",
         "gid": "V-234060",
         "rid": "SV-234060r612749_rule",
         "stig_id": "TANS-CN-000018",
-        "fix_id": "F-37210r610681_fix"
+        "fix_id": "F-37210r610681_fix",
+        "documentable": false
       },
       "id": "V-234060",
       "title": "Flaw remediation Tanium applications must employ automated mechanisms to determine the state of information system components with regard to flaw remediation using the following frequency: continuously, where HBSS is used; 30 days, for any additional internal network scans not covered by HBSS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP).",
@@ -570,11 +570,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000291",
         "gid": "V-234061",
         "rid": "SV-234061r612749_rule",
         "stig_id": "TANS-CN-000019",
-        "fix_id": "F-37211r610684_fix"
+        "fix_id": "F-37211r610684_fix",
+        "documentable": false
       },
       "id": "V-234061",
       "title": "Tanium must notify SA and ISSO when accounts are created.",
@@ -588,11 +588,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000292",
         "gid": "V-234062",
         "rid": "SV-234062r612749_rule",
         "stig_id": "TANS-CN-000020",
-        "fix_id": "F-37212r610687_fix"
+        "fix_id": "F-37212r610687_fix",
+        "documentable": false
       },
       "id": "V-234062",
       "title": "Tanium must notify SA and ISSO when accounts are modified.",
@@ -606,11 +606,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000320",
         "gid": "V-234063",
         "rid": "SV-234063r612749_rule",
         "stig_id": "TANS-CN-000021",
-        "fix_id": "F-37213r610690_fix"
+        "fix_id": "F-37213r610690_fix",
+        "documentable": false
       },
       "id": "V-234063",
       "title": "The Tanium application must notify SA and ISSO of account enabling actions.",
@@ -624,11 +624,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000359",
         "gid": "V-234064",
         "rid": "SV-234064r612749_rule",
         "stig_id": "TANS-CN-000022",
-        "fix_id": "F-37214r610693_fix"
+        "fix_id": "F-37214r610693_fix",
+        "documentable": false
       },
       "id": "V-234064",
       "title": "The Tanium application must provide an immediate warning to the SA and ISSO (at a minimum) when allocated audit record storage volume reaches 75% of repository maximum audit record storage capacity.",
@@ -642,11 +642,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360",
         "gid": "V-234065",
         "rid": "SV-234065r612749_rule",
         "stig_id": "TANS-CN-000023",
-        "fix_id": "F-37215r610696_fix"
+        "fix_id": "F-37215r610696_fix",
+        "documentable": false
       },
       "id": "V-234065",
       "title": "The Tanium enterprise audit log reduction option must be configured to provide alerts based off Tanium audit data.",
@@ -660,7 +660,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148",
+        "gid": "V-234066",
+        "rid": "SV-234066r612749_rule",
+        "stig_id": "TANS-CN-000027",
+        "fix_id": "F-37216r610699_fix",
         "satisfies": [
           "SRG-APP-000148",
           "SRG-APP-000005",
@@ -679,10 +682,7 @@
           "SRG-APP-000402",
           "SRG-APP-000403"
         ],
-        "gid": "V-234066",
-        "rid": "SV-234066r612749_rule",
-        "stig_id": "TANS-CN-000027",
-        "fix_id": "F-37216r610699_fix"
+        "documentable": false
       },
       "id": "V-234066",
       "title": "Common Access Card (CAC)-based authentication must be enabled and enforced on the Tanium Server for all access and all accounts.",
@@ -696,11 +696,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000293",
         "gid": "V-234067",
         "rid": "SV-234067r612749_rule",
         "stig_id": "TANS-CN-000032",
-        "fix_id": "F-37217r610702_fix"
+        "fix_id": "F-37217r610702_fix",
+        "documentable": false
       },
       "id": "V-234067",
       "title": "Tanium must notify SA and ISSO for account disabling actions.",
@@ -714,11 +714,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000294",
         "gid": "V-234068",
         "rid": "SV-234068r612749_rule",
         "stig_id": "TANS-CN-000033",
-        "fix_id": "F-37218r610705_fix"
+        "fix_id": "F-37218r610705_fix",
+        "documentable": false
       },
       "id": "V-234068",
       "title": "Tanium must notify SA and ISSO for account removal actions.",
@@ -732,7 +732,10 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378",
+        "gid": "V-234069",
+        "rid": "SV-234069r612749_rule",
+        "stig_id": "TANS-CN-000036",
+        "fix_id": "F-37219r610708_fix",
         "satisfies": [
           "SRG-APP-000378",
           "SRG-APP-000380",
@@ -740,10 +743,7 @@
           "SRG-APP-000122",
           "SRG-APP-000123"
         ],
-        "gid": "V-234069",
-        "rid": "SV-234069r612749_rule",
-        "stig_id": "TANS-CN-000036",
-        "fix_id": "F-37219r610708_fix"
+        "documentable": false
       },
       "id": "V-234069",
       "title": "The Tanium application must prohibit user installation of software without explicit privileged status.",
@@ -757,11 +757,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-234070",
         "rid": "SV-234070r612749_rule",
         "stig_id": "TANS-CN-000037",
-        "fix_id": "F-37220r610711_fix"
+        "fix_id": "F-37220r610711_fix",
+        "documentable": false
       },
       "id": "V-234070",
       "title": "Documentation defining Tanium functional roles must be maintained.",
@@ -775,11 +775,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000323",
         "gid": "V-234071",
         "rid": "SV-234071r612749_rule",
         "stig_id": "TANS-DB-000001",
-        "fix_id": "F-37221r610714_fix"
+        "fix_id": "F-37221r610714_fix",
+        "documentable": false
       },
       "id": "V-234071",
       "title": "The Tanium database(s) must be installed on a separate system.",
@@ -793,11 +793,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000323",
         "gid": "V-234072",
         "rid": "SV-234072r612749_rule",
         "stig_id": "TANS-DB-000002",
-        "fix_id": "F-37222r610717_fix"
+        "fix_id": "F-37222r610717_fix",
+        "documentable": false
       },
       "id": "V-234072",
       "title": "The Tanium application database must be dedicated to only the Tanium application.",
@@ -811,11 +811,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000381",
         "gid": "V-234073",
         "rid": "SV-234073r612749_rule",
         "stig_id": "TANS-DB-000003",
-        "fix_id": "F-37223r610720_fix"
+        "fix_id": "F-37223r610720_fix",
+        "documentable": false
       },
       "id": "V-234073",
       "title": "The access to the Tanium SQL database must be restricted. Only the designated database administrator(s) can have elevated privileges to the Tanium SQL database.",
@@ -829,11 +829,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000381",
         "gid": "V-234074",
         "rid": "SV-234074r612749_rule",
         "stig_id": "TANS-DB-000004",
-        "fix_id": "F-37224r610723_fix"
+        "fix_id": "F-37224r610723_fix",
+        "documentable": false
       },
       "id": "V-234074",
       "title": "The Tanium Server installers account database permissions must be reduced to an appropriate level.",
@@ -847,11 +847,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383",
         "gid": "V-234075",
         "rid": "SV-234075r612749_rule",
         "stig_id": "TANS-DB-000005",
-        "fix_id": "F-37225r610726_fix"
+        "fix_id": "F-37225r610726_fix",
+        "documentable": false
       },
       "id": "V-234075",
       "title": "Firewall rules must be configured on the Tanium Server for Server-to-Database communications.",
@@ -865,11 +865,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000454",
         "gid": "V-234076",
         "rid": "SV-234076r612749_rule",
         "stig_id": "TANS-DB-000006",
-        "fix_id": "F-37226r610729_fix"
+        "fix_id": "F-37226r610729_fix",
+        "documentable": false
       },
       "id": "V-234076",
       "title": "SQL stored queries or procedures installed during Tanium installation must be removed from the Tanium Server.",
@@ -883,16 +883,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429",
+        "gid": "V-234077",
+        "rid": "SV-234077r612749_rule",
+        "stig_id": "TANS-SV-000001",
+        "fix_id": "F-37227r612218_fix",
         "satisfies": [
           "SRG-APP-000429",
           "SRG-APP-000440",
           "SRG-APP-000441"
         ],
-        "gid": "V-234077",
-        "rid": "SV-234077r612749_rule",
-        "stig_id": "TANS-SV-000001",
-        "fix_id": "F-37227r612218_fix"
+        "documentable": false
       },
       "id": "V-234077",
       "title": "The Tanium Server must protect the confidentiality and integrity of transmitted information, in preparation to be transmitted and data at rest, with cryptographic signing capabilities enabled to protect the authenticity of communications sessions when making requests from Tanium Clients.",
@@ -906,11 +906,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000003",
         "gid": "V-234078",
         "rid": "SV-234078r612749_rule",
         "stig_id": "TANS-SV-000002",
-        "fix_id": "F-37228r610735_fix"
+        "fix_id": "F-37228r610735_fix",
+        "documentable": false
       },
       "id": "V-234078",
       "title": "The Tanium Application Server console must be configured to initiate a session lock after a 15-minute period of inactivity.",
@@ -924,11 +924,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015",
         "gid": "V-234079",
         "rid": "SV-234079r612749_rule",
         "stig_id": "TANS-SV-000003",
-        "fix_id": "F-37229r610738_fix"
+        "fix_id": "F-37229r610738_fix",
+        "documentable": false
       },
       "id": "V-234079",
       "title": "Tanium Trusted Content providers must be documented.",
@@ -942,11 +942,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015",
         "gid": "V-234080",
         "rid": "SV-234080r612749_rule",
         "stig_id": "TANS-SV-000004",
-        "fix_id": "F-37230r610741_fix"
+        "fix_id": "F-37230r610741_fix",
+        "documentable": false
       },
       "id": "V-234080",
       "title": "Content providers must provide their public key to the Tanium administrator to import for validating signed content.",
@@ -960,11 +960,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000015",
         "gid": "V-234081",
         "rid": "SV-234081r612749_rule",
         "stig_id": "TANS-SV-000005",
-        "fix_id": "F-37231r610744_fix"
+        "fix_id": "F-37231r610744_fix",
+        "documentable": false
       },
       "id": "V-234081",
       "title": "Tanium public keys of content providers must be validated against documented trusted content providers.",
@@ -978,11 +978,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-234082",
         "rid": "SV-234082r612749_rule",
         "stig_id": "TANS-SV-000006",
-        "fix_id": "F-37232r610747_fix"
+        "fix_id": "F-37232r610747_fix",
+        "documentable": false
       },
       "id": "V-234082",
       "title": "The Tanium Action Approval feature must be enabled for two-person integrity when deploying actions to endpoints.",
@@ -996,11 +996,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-234083",
         "rid": "SV-234083r612749_rule",
         "stig_id": "TANS-SV-000007",
-        "fix_id": "F-37233r610750_fix"
+        "fix_id": "F-37233r610750_fix",
+        "documentable": false
       },
       "id": "V-234083",
       "title": "The Tanium documentation identifying recognized and trusted Intel streams must be maintained.",
@@ -1014,11 +1014,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-234084",
         "rid": "SV-234084r612749_rule",
         "stig_id": "TANS-SV-000008",
-        "fix_id": "F-37234r610753_fix"
+        "fix_id": "F-37234r610753_fix",
+        "documentable": false
       },
       "id": "V-234084",
       "title": "The Tanium Detect must be configured to receive IOC streams only from trusted sources.",
@@ -1032,11 +1032,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000115",
         "gid": "V-234085",
         "rid": "SV-234085r612749_rule",
         "stig_id": "TANS-SV-000010",
-        "fix_id": "F-37235r610756_fix"
+        "fix_id": "F-37235r610756_fix",
+        "documentable": false
       },
       "id": "V-234085",
       "title": "The Tanium Connect module must be configured to forward Tanium Detect events to identified destinations.",
@@ -1050,16 +1050,16 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
+        "gid": "V-234086",
+        "rid": "SV-234086r612749_rule",
+        "stig_id": "TANS-SV-000014",
+        "fix_id": "F-37236r610759_fix",
         "satisfies": [
           "SRG-APP-000131",
           "SRG-APP-000233",
           "SRG-APP-000317"
         ],
-        "gid": "V-234086",
-        "rid": "SV-234086r612749_rule",
-        "stig_id": "TANS-SV-000014",
-        "fix_id": "F-37236r610759_fix"
+        "documentable": false
       },
       "id": "V-234086",
       "title": "The Tanium cryptographic signing capabilities must be enabled on the Tanium Server.",
@@ -1073,11 +1073,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000131",
         "gid": "V-234087",
         "rid": "SV-234087r612749_rule",
         "stig_id": "TANS-SV-000015",
-        "fix_id": "F-37237r610762_fix"
+        "fix_id": "F-37237r610762_fix",
+        "documentable": false
       },
       "id": "V-234087",
       "title": "The Tanium Server must be configured to only allow signed content to be imported.",
@@ -1091,11 +1091,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133",
         "gid": "V-234088",
         "rid": "SV-234088r612749_rule",
         "stig_id": "TANS-SV-000016",
-        "fix_id": "F-37238r610765_fix"
+        "fix_id": "F-37238r610765_fix",
+        "documentable": false
       },
       "id": "V-234088",
       "title": "All installation files originally downloaded to the Tanium Server must be configured to download to a location other than the Tanium Server directory.",
@@ -1109,11 +1109,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-234089",
         "rid": "SV-234089r612749_rule",
         "stig_id": "TANS-SV-000017",
-        "fix_id": "F-37239r610768_fix"
+        "fix_id": "F-37239r610768_fix",
+        "documentable": false
       },
       "id": "V-234089",
       "title": "Firewall rules must be configured on the Tanium Server for Client-to-Server communications.",
@@ -1127,11 +1127,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-234090",
         "rid": "SV-234090r612749_rule",
         "stig_id": "TANS-SV-000018",
-        "fix_id": "F-37240r610771_fix"
+        "fix_id": "F-37240r610771_fix",
+        "documentable": false
       },
       "id": "V-234090",
       "title": "Firewall rules must be configured on the Tanium Zone Server for Client-to-Zone Server communications.",
@@ -1145,11 +1145,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-234091",
         "rid": "SV-234091r612749_rule",
         "stig_id": "TANS-SV-000019",
-        "fix_id": "F-37241r610774_fix"
+        "fix_id": "F-37241r610774_fix",
+        "documentable": false
       },
       "id": "V-234091",
       "title": "The Tanium Application Server must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -1163,11 +1163,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175",
         "gid": "V-234092",
         "rid": "SV-234092r612749_rule",
         "stig_id": "TANS-SV-000020",
-        "fix_id": "F-37242r610777_fix"
+        "fix_id": "F-37242r610777_fix",
+        "documentable": false
       },
       "id": "V-234092",
       "title": "The Tanium Server certificates must have Extended Key Usage entries for the serverAuth object TLS Web Server Authentication and the clientAuth object TLS Web Client Authentication.",
@@ -1181,11 +1181,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000176",
         "gid": "V-234093",
         "rid": "SV-234093r612749_rule",
         "stig_id": "TANS-SV-000021",
-        "fix_id": "F-37243r610780_fix"
+        "fix_id": "F-37243r610780_fix",
+        "documentable": false
       },
       "id": "V-234093",
       "title": "The Tanium Server certificate and private/public keys directory must be protected with appropriate permissions.",
@@ -1199,11 +1199,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211",
         "gid": "V-234094",
         "rid": "SV-234094r612749_rule",
         "stig_id": "TANS-SV-000023",
-        "fix_id": "F-37244r610783_fix"
+        "fix_id": "F-37244r610783_fix",
+        "documentable": false
       },
       "id": "V-234094",
       "title": "The Tanium Module server must be installed on a separate system.",
@@ -1217,11 +1217,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328",
         "gid": "V-234095",
         "rid": "SV-234095r612749_rule",
         "stig_id": "TANS-SV-000024",
-        "fix_id": "F-37245r610786_fix"
+        "fix_id": "F-37245r610786_fix",
+        "documentable": false
       },
       "id": "V-234095",
       "title": "The Tanium Server directory must be restricted with appropriate permissions.",
@@ -1235,11 +1235,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328",
         "gid": "V-234096",
         "rid": "SV-234096r612749_rule",
         "stig_id": "TANS-SV-000025",
-        "fix_id": "F-37246r610789_fix"
+        "fix_id": "F-37246r610789_fix",
+        "documentable": false
       },
       "id": "V-234096",
       "title": "The Tanium Server http directory and sub-directories must be restricted with appropriate permissions.",
@@ -1253,11 +1253,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328",
         "gid": "V-234097",
         "rid": "SV-234097r612749_rule",
         "stig_id": "TANS-SV-000026",
-        "fix_id": "F-37247r610792_fix"
+        "fix_id": "F-37247r610792_fix",
+        "documentable": false
       },
       "id": "V-234097",
       "title": "The permissions on the Tanium Server registry keys must be restricted to only the Tanium service account and the [Tanium Admins] group.",
@@ -1271,11 +1271,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328",
         "gid": "V-234098",
         "rid": "SV-234098r612749_rule",
         "stig_id": "TANS-SV-000027",
-        "fix_id": "F-37248r610795_fix"
+        "fix_id": "F-37248r610795_fix",
+        "documentable": false
       },
       "id": "V-234098",
       "title": "The Tanium Server Logs and TDL_Logs directories must be restricted with appropriate permissions.",
@@ -1289,11 +1289,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340",
         "gid": "V-234099",
         "rid": "SV-234099r612749_rule",
         "stig_id": "TANS-SV-000028",
-        "fix_id": "F-37249r610798_fix"
+        "fix_id": "F-37249r610798_fix",
+        "documentable": false
       },
       "id": "V-234099",
       "title": "All Active Directory accounts synchronized with Tanium for non-privileged functions must be non-privileged domain accounts.",
@@ -1307,11 +1307,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000358",
         "gid": "V-234100",
         "rid": "SV-234100r612749_rule",
         "stig_id": "TANS-SV-000029",
-        "fix_id": "F-37250r610801_fix"
+        "fix_id": "F-37250r610801_fix",
+        "documentable": false
       },
       "id": "V-234100",
       "title": "A Tanium connector must be configured to send log data to an external audit log reduction capable system.",
@@ -1325,11 +1325,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000377",
         "gid": "V-234101",
         "rid": "SV-234101r612749_rule",
         "stig_id": "TANS-SV-000030",
-        "fix_id": "F-37251r610804_fix"
+        "fix_id": "F-37251r610804_fix",
+        "documentable": false
       },
       "id": "V-234101",
       "title": "File integrity monitoring of critical executables that Tanium uses must be configured.",
@@ -1343,11 +1343,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383",
         "gid": "V-234102",
         "rid": "SV-234102r612749_rule",
         "stig_id": "TANS-SV-000031",
-        "fix_id": "F-37252r610807_fix"
+        "fix_id": "F-37252r610807_fix",
+        "documentable": false
       },
       "id": "V-234102",
       "title": "Firewall rules must be configured on the Tanium module server to allow Server-to-Module Server communications from the Tanium Server.",
@@ -1361,11 +1361,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383",
         "gid": "V-234103",
         "rid": "SV-234103r612749_rule",
         "stig_id": "TANS-SV-000032",
-        "fix_id": "F-37253r610810_fix"
+        "fix_id": "F-37253r610810_fix",
+        "documentable": false
       },
       "id": "V-234103",
       "title": "Firewall rules must be configured on the Tanium Server for Server-to-Module Server communications.",
@@ -1379,11 +1379,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383",
         "gid": "V-234104",
         "rid": "SV-234104r612749_rule",
         "stig_id": "TANS-SV-000033",
-        "fix_id": "F-37254r610813_fix"
+        "fix_id": "F-37254r610813_fix",
+        "documentable": false
       },
       "id": "V-234104",
       "title": "Firewall rules must be configured on the Tanium Server for Server-to-Zone Server communications.",
@@ -1397,11 +1397,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000416",
         "gid": "V-234105",
         "rid": "SV-234105r612749_rule",
         "stig_id": "TANS-SV-000035",
-        "fix_id": "F-37255r610816_fix"
+        "fix_id": "F-37255r610816_fix",
+        "documentable": false
       },
       "id": "V-234105",
       "title": "The SSLHonorCipherOrder must be configured to disable weak encryption algorithms on the Tanium Server.",
@@ -1415,11 +1415,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427",
         "gid": "V-234106",
         "rid": "SV-234106r612749_rule",
         "stig_id": "TANS-SV-000036",
-        "fix_id": "F-37256r610819_fix"
+        "fix_id": "F-37256r610819_fix",
+        "documentable": false
       },
       "id": "V-234106",
       "title": "The Tanium Server certificate must be signed by a DoD Certificate Authority.",
@@ -1433,11 +1433,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442",
         "gid": "V-234107",
         "rid": "SV-234107r612749_rule",
         "stig_id": "TANS-SV-000037",
-        "fix_id": "F-37257r610822_fix"
+        "fix_id": "F-37257r610822_fix",
+        "documentable": false
       },
       "id": "V-234107",
       "title": "Any Tanium configured EMAIL RESULTS connectors must be configured to enable TLS/SSL to encrypt communications.",
@@ -1451,11 +1451,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234108",
         "rid": "SV-234108r612749_rule",
         "stig_id": "TANS-SV-000040",
-        "fix_id": "F-37258r610825_fix"
+        "fix_id": "F-37258r610825_fix",
+        "documentable": false
       },
       "id": "V-234108",
       "title": "Tanium Server files must be excluded from on-access antivirus actions.",
@@ -1469,11 +1469,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234109",
         "rid": "SV-234109r612749_rule",
         "stig_id": "TANS-SV-000043",
-        "fix_id": "F-37259r610828_fix"
+        "fix_id": "F-37259r610828_fix",
+        "documentable": false
       },
       "id": "V-234109",
       "title": "Tanium Server files must be protected from file encryption actions.",
@@ -1487,11 +1487,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000416",
         "gid": "V-234110",
         "rid": "SV-234110r612749_rule",
         "stig_id": "TANS-SV-000044",
-        "fix_id": "F-37260r610831_fix"
+        "fix_id": "F-37260r610831_fix",
+        "documentable": false
       },
       "id": "V-234110",
       "title": "The SSLCipherSuite must be configured to disable weak encryption algorithms on the Tanium Server.",
@@ -1505,11 +1505,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001",
         "gid": "V-234111",
         "rid": "SV-234111r612749_rule",
         "stig_id": "TANS-SV-000045",
-        "fix_id": "F-37261r610834_fix"
+        "fix_id": "F-37261r610834_fix",
+        "documentable": false
       },
       "id": "V-234111",
       "title": "The Tanium max_soap_sessions_total setting must be explicitly enabled to limit the number of simultaneous sessions.",
@@ -1523,11 +1523,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001",
         "gid": "V-234112",
         "rid": "SV-234112r612749_rule",
         "stig_id": "TANS-SV-000046",
-        "fix_id": "F-37262r610837_fix"
+        "fix_id": "F-37262r610837_fix",
+        "documentable": false
       },
       "id": "V-234112",
       "title": "The Tanium max_soap_sessions_per_user setting must be explicitly enabled to limit the number of simultaneous sessions.",
@@ -1541,11 +1541,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001",
         "gid": "V-234113",
         "rid": "SV-234113r612749_rule",
         "stig_id": "TANS-SV-000047",
-        "fix_id": "F-37263r610840_fix"
+        "fix_id": "F-37263r610840_fix",
+        "documentable": false
       },
       "id": "V-234113",
       "title": "The Tanium soap_max_keep_alive setting must be explicitly enabled to limit the number of simultaneous sessions.",
@@ -1559,11 +1559,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-234114",
         "rid": "SV-234114r612749_rule",
         "stig_id": "TANS-SV-000048",
-        "fix_id": "F-37264r610843_fix"
+        "fix_id": "F-37264r610843_fix",
+        "documentable": false
       },
       "id": "V-234114",
       "title": "The Tanium documentation identifying recognized and trusted folders for Detect Local Directory Source must be maintained.",
@@ -1577,11 +1577,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-234115",
         "rid": "SV-234115r612749_rule",
         "stig_id": "TANS-SV-000049",
-        "fix_id": "F-37265r610846_fix"
+        "fix_id": "F-37265r610846_fix",
+        "documentable": false
       },
       "id": "V-234115",
       "title": "The Tanium Detect Local Directory Source must be configured to restrict access to only authorized maintainers of Intel.",
@@ -1595,11 +1595,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-234116",
         "rid": "SV-234116r612749_rule",
         "stig_id": "TANS-SV-000050",
-        "fix_id": "F-37266r610849_fix"
+        "fix_id": "F-37266r610849_fix",
+        "documentable": false
       },
       "id": "V-234116",
       "title": "The Tanium documentation identifying recognized and trusted SCAP sources must be maintained.",
@@ -1613,11 +1613,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-234117",
         "rid": "SV-234117r612749_rule",
         "stig_id": "TANS-SV-000051",
-        "fix_id": "F-37267r610852_fix"
+        "fix_id": "F-37267r610852_fix",
+        "documentable": false
       },
       "id": "V-234117",
       "title": "The Tanium documentation identifying recognized and trusted OVAL feeds must be maintained.",
@@ -1631,11 +1631,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-234118",
         "rid": "SV-234118r612749_rule",
         "stig_id": "TANS-SV-000052",
-        "fix_id": "F-37268r610855_fix"
+        "fix_id": "F-37268r610855_fix",
+        "documentable": false
       },
       "id": "V-234118",
       "title": "Tanium Comply must be configured to receive SCAP content only from trusted sources.",
@@ -1649,11 +1649,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000039",
         "gid": "V-234119",
         "rid": "SV-234119r612749_rule",
         "stig_id": "TANS-SV-000053",
-        "fix_id": "F-37269r610858_fix"
+        "fix_id": "F-37269r610858_fix",
+        "documentable": false
       },
       "id": "V-234119",
       "title": "Tanium Comply must be configured to receive OVAL feeds only from trusted sources.",
@@ -1667,11 +1667,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000226",
         "gid": "V-234120",
         "rid": "SV-234120r612749_rule",
         "stig_id": "TANS-SV-000054",
-        "fix_id": "F-37270r610861_fix"
+        "fix_id": "F-37270r610861_fix",
+        "documentable": false
       },
       "id": "V-234120",
       "title": "The Tanium application must be configured in a High-Availability (HA) setup to ensure minimal loss of data and minimal disruption to mission processes in the event of a system failure.",
@@ -1685,11 +1685,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000247",
         "gid": "V-234121",
         "rid": "SV-234121r612749_rule",
         "stig_id": "TANS-SV-000055",
-        "fix_id": "F-37271r610864_fix"
+        "fix_id": "F-37271r610864_fix",
+        "documentable": false
       },
       "id": "V-234121",
       "title": "The bandwidth consumption for the Tanium Application server must be limited.",
@@ -1703,11 +1703,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357",
         "gid": "V-234122",
         "rid": "SV-234122r612749_rule",
         "stig_id": "TANS-SV-000056",
-        "fix_id": "F-37272r610867_fix"
+        "fix_id": "F-37272r610867_fix",
+        "documentable": false
       },
       "id": "V-234122",
       "title": "The Tanium SQL Server RDBMS must be configured with sufficient free space to ensure audit logging is not impacted.",
@@ -1721,11 +1721,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435",
         "gid": "V-234123",
         "rid": "SV-234123r612749_rule",
         "stig_id": "TANS-SV-000062",
-        "fix_id": "F-37273r610870_fix"
+        "fix_id": "F-37273r610870_fix",
+        "documentable": false
       },
       "id": "V-234123",
       "title": "The Tanium application must limit the bandwidth used in communicating with endpoints to prevent a Denial of Service (DoS) condition at the server.",
@@ -1739,11 +1739,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456",
         "gid": "V-234124",
         "rid": "SV-234124r612749_rule",
         "stig_id": "TANS-SV-000064",
-        "fix_id": "F-37274r610873_fix"
+        "fix_id": "F-37274r610873_fix",
+        "documentable": false
       },
       "id": "V-234124",
       "title": "The Tanium Application Server must install security-relevant software updates within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).",
@@ -1757,11 +1757,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-234125",
         "rid": "SV-234125r612749_rule",
         "stig_id": "TANS-SV-000065",
-        "fix_id": "F-37275r610876_fix"
+        "fix_id": "F-37275r610876_fix",
+        "documentable": false
       },
       "id": "V-234125",
       "title": "Tanium Server files must be excluded from host-based intrusion prevention intervention.",
@@ -1775,11 +1775,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295",
         "gid": "V-234126",
         "rid": "SV-234126r612749_rule",
         "stig_id": "TANS-SV-000066",
-        "fix_id": "F-37276r610879_fix"
+        "fix_id": "F-37276r610879_fix",
+        "documentable": false
       },
       "id": "V-234126",
       "title": "The Tanium application must set an absolute timeout for sessions.",
@@ -1793,11 +1793,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295",
         "gid": "V-234127",
         "rid": "SV-234127r612749_rule",
         "stig_id": "TANS-SV-000067",
-        "fix_id": "F-37277r610882_fix"
+        "fix_id": "F-37277r610882_fix",
+        "documentable": false
       },
       "id": "V-234127",
       "title": "The Tanium application must set an inactive timeout for sessions.",
@@ -1811,11 +1811,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435",
         "gid": "V-234128",
         "rid": "SV-234128r612749_rule",
         "stig_id": "TANS-SV-000068",
-        "fix_id": "F-37278r610885_fix"
+        "fix_id": "F-37278r610885_fix",
+        "documentable": false
       },
       "id": "V-234128",
       "title": "The Tanium application service must be protected from being stopped by a non-privileged user.",
@@ -1829,11 +1829,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000435",
         "gid": "V-234129",
         "rid": "SV-234129r612749_rule",
         "stig_id": "TANS-SV-000069",
-        "fix_id": "F-37279r610888_fix"
+        "fix_id": "F-37279r610888_fix",
+        "documentable": false
       },
       "id": "V-234129",
       "title": "The Tanium web server must be tuned to handle the operational requirements of the hosted application.",
@@ -1847,11 +1847,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439",
         "gid": "V-234130",
         "rid": "SV-234130r612749_rule",
         "stig_id": "TANS-SV-000070",
-        "fix_id": "F-37280r610891_fix"
+        "fix_id": "F-37280r610891_fix",
+        "documentable": false
       },
       "id": "V-234130",
       "title": "The Tanium application, SQL and Module servers must all be configured to communicate using TLS 1.2 Strict Only.",
@@ -1865,11 +1865,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439",
         "gid": "V-234131",
         "rid": "SV-234131r612749_rule",
         "stig_id": "TANS-SV-000101",
-        "fix_id": "F-37281r610894_fix"
+        "fix_id": "F-37281r610894_fix",
+        "documentable": false
       },
       "id": "V-234131",
       "title": "The Tanium application must be configured to communicate using TLS 1.2 Strict Only.",
@@ -1883,11 +1883,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439",
         "gid": "V-234132",
         "rid": "SV-234132r612749_rule",
         "stig_id": "TANS-SV-000107",
-        "fix_id": "F-37282r610897_fix"
+        "fix_id": "F-37282r610897_fix",
+        "documentable": false
       },
       "id": "V-234132",
       "title": "The Tanium application must be configured to communicate using TLS 1.2 Strict Only.",
@@ -1899,7 +1899,5 @@
       }
     }
   ],
-  "name": "Tanium_7.3_STIG",
-  "title": "Tanium 7.3 Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Tanium_7.3_STIG"
 }

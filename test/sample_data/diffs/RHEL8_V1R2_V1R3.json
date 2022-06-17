@@ -45,15 +45,16 @@
     "V-244519": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244519",
+        "rid": "SV-244519r743806_rule",
+        "stig_id": "RHEL-08-010049",
         "gtitle": "SRG-OS-000023-GPOS-00006",
+        "fix_id": "F-47751r743805_fix",
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "gid": "V-244519",
-        "rid": "SV-244519r743806_rule",
-        "stig_id": "RHEL-08-010049",
-        "fix_id": "F-47751r743805_fix"
+        "documentable": false
       },
       "id": "V-244519",
       "title": "RHEL 8 must display a banner before granting local or remote access to the system via a graphical user logon.",
@@ -67,11 +68,12 @@
     "V-244520": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000073-GPOS-00041",
         "gid": "V-244520",
         "rid": "SV-244520r743809_rule",
         "stig_id": "RHEL-08-010131",
-        "fix_id": "F-47752r743808_fix"
+        "gtitle": "SRG-OS-000073-GPOS-00041",
+        "fix_id": "F-47752r743808_fix",
+        "documentable": false
       },
       "id": "V-244520",
       "title": "The RHEL 8 system-auth file must be configured to use a sufficient number of hashing rounds.",
@@ -85,11 +87,12 @@
     "V-244521": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-244521",
         "rid": "SV-244521r743812_rule",
         "stig_id": "RHEL-08-010141",
-        "fix_id": "F-47753r743811_fix"
+        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "fix_id": "F-47753r743811_fix",
+        "documentable": false
       },
       "id": "V-244521",
       "title": "RHEL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must require a unique superusers name upon booting into single-user mode and maintenance.",
@@ -103,11 +106,12 @@
     "V-244522": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-244522",
         "rid": "SV-244522r743815_rule",
         "stig_id": "RHEL-08-010149",
-        "fix_id": "F-47754r743814_fix"
+        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "fix_id": "F-47754r743814_fix",
+        "documentable": false
       },
       "id": "V-244522",
       "title": "RHEL 8 operating systems booted with a BIOS must require a unique superusers name upon booting into single-user and maintenance modes.",
@@ -121,11 +125,12 @@
     "V-244523": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000080-GPOS-00048",
         "gid": "V-244523",
         "rid": "SV-244523r743818_rule",
         "stig_id": "RHEL-08-010152",
-        "fix_id": "F-47755r743817_fix"
+        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "fix_id": "F-47755r743817_fix",
+        "documentable": false
       },
       "id": "V-244523",
       "title": "RHEL 8 operating systems must require authentication upon booting into emergency mode.",
@@ -139,11 +144,12 @@
     "V-244524": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000120-GPOS-00061",
         "gid": "V-244524",
         "rid": "SV-244524r743821_rule",
         "stig_id": "RHEL-08-010159",
-        "fix_id": "F-47756r743820_fix"
+        "gtitle": "SRG-OS-000120-GPOS-00061",
+        "fix_id": "F-47756r743820_fix",
+        "documentable": false
       },
       "id": "V-244524",
       "title": "The RHEL 8 pam_unix.so module must be configured in the system-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication.",
@@ -157,16 +163,17 @@
     "V-244525": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244525",
+        "rid": "SV-244525r743824_rule",
+        "stig_id": "RHEL-08-010201",
         "gtitle": "SRG-OS-000163-GPOS-00072",
+        "fix_id": "F-47757r743823_fix",
         "satisfies": [
           "SRG-OS-000163-GPOS-00072",
           "SRG-OS-000126-GPOS-00066",
           "SRG-OS-000279-GPOS-00109"
         ],
-        "gid": "V-244525",
-        "rid": "SV-244525r743824_rule",
-        "stig_id": "RHEL-08-010201",
-        "fix_id": "F-47757r743823_fix"
+        "documentable": false
       },
       "id": "V-244525",
       "title": "The RHEL 8 SSH daemon must be configured with a timeout interval.",
@@ -180,17 +187,18 @@
     "V-244526": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244526",
+        "rid": "SV-244526r743827_rule",
+        "stig_id": "RHEL-08-010287",
         "gtitle": "SRG-OS-000250-GPOS-00093",
+        "fix_id": "F-47758r743826_fix",
         "satisfies": [
           "SRG-OS-000250-GPOS-00093",
           "SRG-OS-000393-GPOS-00173",
           "SRG-OS-000394-GPOS-00174",
           "SRG-OS-000125-GPOS-00065"
         ],
-        "gid": "V-244526",
-        "rid": "SV-244526r743827_rule",
-        "stig_id": "RHEL-08-010287",
-        "fix_id": "F-47758r743826_fix"
+        "documentable": false
       },
       "id": "V-244526",
       "title": "The RHEL 8 SSH daemon must be configured to use system-wide crypto policies.",
@@ -204,11 +212,12 @@
     "V-244527": {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244527",
         "rid": "SV-244527r743830_rule",
         "stig_id": "RHEL-08-010472",
-        "fix_id": "F-47759r743829_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47759r743829_fix",
+        "documentable": false
       },
       "id": "V-244527",
       "title": "RHEL 8 must have the packages required to use the hardware random number generator entropy gatherer service.",
@@ -222,11 +231,12 @@
     "V-244528": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244528",
         "rid": "SV-244528r743833_rule",
         "stig_id": "RHEL-08-010522",
-        "fix_id": "F-47760r743832_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47760r743832_fix",
+        "documentable": false
       },
       "id": "V-244528",
       "title": "The RHEL 8 SSH daemon must not allow GSSAPI authentication, except to fulfill documented and validated mission requirements.",
@@ -240,11 +250,12 @@
     "V-244529": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244529",
         "rid": "SV-244529r743836_rule",
         "stig_id": "RHEL-08-010544",
-        "fix_id": "F-47761r743835_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47761r743835_fix",
+        "documentable": false
       },
       "id": "V-244529",
       "title": "RHEL 8 must use a separate file system for /var/tmp.",
@@ -258,11 +269,12 @@
     "V-244530": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244530",
         "rid": "SV-244530r743839_rule",
         "stig_id": "RHEL-08-010572",
-        "fix_id": "F-47762r743838_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47762r743838_fix",
+        "documentable": false
       },
       "id": "V-244530",
       "title": "RHEL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot/efi directory.",
@@ -276,11 +288,12 @@
     "V-244531": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244531",
         "rid": "SV-244531r743842_rule",
         "stig_id": "RHEL-08-010731",
-        "fix_id": "F-47763r743841_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47763r743841_fix",
+        "documentable": false
       },
       "id": "V-244531",
       "title": "All RHEL 8 local interactive user home directory files must have mode 0750 or less permissive.",
@@ -294,11 +307,12 @@
     "V-244532": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244532",
         "rid": "SV-244532r743845_rule",
         "stig_id": "RHEL-08-010741",
-        "fix_id": "F-47764r743844_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47764r743844_fix",
+        "documentable": false
       },
       "id": "V-244532",
       "title": "RHEL 8 must be configured so that all files and directories contained in local interactive user home directories are group-owned by a group of which the home directory owner is a member.",
@@ -312,15 +326,16 @@
     "V-244533": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244533",
+        "rid": "SV-244533r743848_rule",
+        "stig_id": "RHEL-08-020025",
         "gtitle": "SRG-OS-000021-GPOS-00005",
+        "fix_id": "F-47765r743847_fix",
         "satisfies": [
           "SRG-OS-000021-GPOS-00005",
           "SRG-OS-000329-GPOS-00128"
         ],
-        "gid": "V-244533",
-        "rid": "SV-244533r743848_rule",
-        "stig_id": "RHEL-08-020025",
-        "fix_id": "F-47765r743847_fix"
+        "documentable": false
       },
       "id": "V-244533",
       "title": "RHEL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/system-auth file.",
@@ -334,15 +349,16 @@
     "V-244534": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244534",
+        "rid": "SV-244534r743851_rule",
+        "stig_id": "RHEL-08-020026",
         "gtitle": "SRG-OS-000021-GPOS-00005",
+        "fix_id": "F-47766r743850_fix",
         "satisfies": [
           "SRG-OS-000021-GPOS-00005",
           "SRG-OS-000329-GPOS-00128"
         ],
-        "gid": "V-244534",
-        "rid": "SV-244534r743851_rule",
-        "stig_id": "RHEL-08-020026",
-        "fix_id": "F-47766r743850_fix"
+        "documentable": false
       },
       "id": "V-244534",
       "title": "RHEL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/password-auth file.",
@@ -356,16 +372,17 @@
     "V-244535": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244535",
+        "rid": "SV-244535r743854_rule",
+        "stig_id": "RHEL-08-020031",
         "gtitle": "SRG-OS-000029-GPOS-00010",
+        "fix_id": "F-47767r743853_fix",
         "satisfies": [
           "SRG-OS-000029-GPOS-00010",
           "SRG-OS-000031-GPOS-00012",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-244535",
-        "rid": "SV-244535r743854_rule",
-        "stig_id": "RHEL-08-020031",
-        "fix_id": "F-47767r743853_fix"
+        "documentable": false
       },
       "id": "V-244535",
       "title": "RHEL 8 must initiate a session lock for graphical user interfaces when the screensaver is activated.",
@@ -379,11 +396,12 @@
     "V-244536": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244536",
         "rid": "SV-244536r743857_rule",
         "stig_id": "RHEL-08-020032",
-        "fix_id": "F-47768r743856_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47768r743856_fix",
+        "documentable": false
       },
       "id": "V-244536",
       "title": "RHEL 8 must disable the user list at logon for graphical user interfaces.",
@@ -397,15 +415,16 @@
     "V-244537": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244537",
+        "rid": "SV-244537r743860_rule",
+        "stig_id": "RHEL-08-020039",
         "gtitle": "SRG-OS-000028-GPOS-00009",
+        "fix_id": "F-47769r743859_fix",
         "satisfies": [
           "SRG-OS-000028-GPOS-00009",
           "SRG-OS-000030-GPOS-00011"
         ],
-        "gid": "V-244537",
-        "rid": "SV-244537r743860_rule",
-        "stig_id": "RHEL-08-020039",
-        "fix_id": "F-47769r743859_fix"
+        "documentable": false
       },
       "id": "V-244537",
       "title": "RHEL 8 must have the tmux package installed.",
@@ -419,16 +438,17 @@
     "V-244538": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244538",
+        "rid": "SV-244538r743863_rule",
+        "stig_id": "RHEL-08-020081",
         "gtitle": "SRG-OS-000029-GPOS-00010",
+        "fix_id": "F-47770r743862_fix",
         "satisfies": [
           "SRG-OS-000029-GPOS-00010",
           "SRG-OS-000031-GPOS-00012",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-244538",
-        "rid": "SV-244538r743863_rule",
-        "stig_id": "RHEL-08-020081",
-        "fix_id": "F-47770r743862_fix"
+        "documentable": false
       },
       "id": "V-244538",
       "title": "RHEL 8 must prevent a user from overriding the session idle-delay setting for the graphical user interface.",
@@ -442,16 +462,17 @@
     "V-244539": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244539",
+        "rid": "SV-244539r743866_rule",
+        "stig_id": "RHEL-08-020082",
         "gtitle": "SRG-OS-000029-GPOS-00010",
+        "fix_id": "F-47771r743865_fix",
         "satisfies": [
           "SRG-OS-000029-GPOS-00010",
           "SRG-OS-000031-GPOS-00012",
           "SRG-OS-000480-GPOS-00227"
         ],
-        "gid": "V-244539",
-        "rid": "SV-244539r743866_rule",
-        "stig_id": "RHEL-08-020082",
-        "fix_id": "F-47771r743865_fix"
+        "documentable": false
       },
       "id": "V-244539",
       "title": "RHEL 8 must prevent a user from overriding the screensaver lock-enabled setting for the graphical user interface.",
@@ -465,11 +486,12 @@
     "V-244540": {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244540",
         "rid": "SV-244540r743869_rule",
         "stig_id": "RHEL-08-020331",
-        "fix_id": "F-47772r743868_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47772r743868_fix",
+        "documentable": false
       },
       "id": "V-244540",
       "title": "RHEL 8 must not allow blank or null passwords in the system-auth file.",
@@ -483,11 +505,12 @@
     "V-244541": {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244541",
         "rid": "SV-244541r743872_rule",
         "stig_id": "RHEL-08-020332",
-        "fix_id": "F-47773r743871_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47773r743871_fix",
+        "documentable": false
       },
       "id": "V-244541",
       "title": "RHEL 8 must not allow blank or null passwords in the password-auth file.",
@@ -501,7 +524,11 @@
     "V-244542": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244542",
+        "rid": "SV-244542r743875_rule",
+        "stig_id": "RHEL-08-030181",
         "gtitle": "SRG-OS-000062-GPOS-00031",
+        "fix_id": "F-47774r743874_fix",
         "satisfies": [
           "SRG-OS-000062-GPOS-00031",
           "SRG-OS-000037-GPOS-00015",
@@ -528,10 +555,7 @@
           "SRG-OS-000392-GPOS-00172",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "gid": "V-244542",
-        "rid": "SV-244542r743875_rule",
-        "stig_id": "RHEL-08-030181",
-        "fix_id": "F-47774r743874_fix"
+        "documentable": false
       },
       "id": "V-244542",
       "title": "RHEL 8 audit records must contain information to establish what type of events occurred, the source of events, where events occurred, and the outcome of events.",
@@ -545,11 +569,12 @@
     "V-244543": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000343-GPOS-00134",
         "gid": "V-244543",
         "rid": "SV-244543r743878_rule",
         "stig_id": "RHEL-08-030731",
-        "fix_id": "F-47775r743877_fix"
+        "gtitle": "SRG-OS-000343-GPOS-00134",
+        "fix_id": "F-47775r743877_fix",
+        "documentable": false
       },
       "id": "V-244543",
       "title": "RHEL 8 must notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when allocated audit record storage volume 75 percent utilization.",
@@ -563,11 +588,12 @@
     "V-244544": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000297-GPOS-00115",
         "gid": "V-244544",
         "rid": "SV-244544r743881_rule",
         "stig_id": "RHEL-08-040101",
-        "fix_id": "F-47776r743880_fix"
+        "gtitle": "SRG-OS-000297-GPOS-00115",
+        "fix_id": "F-47776r743880_fix",
+        "documentable": false
       },
       "id": "V-244544",
       "title": "A firewall must be active on RHEL 8.",
@@ -581,16 +607,17 @@
     "V-244545": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244545",
+        "rid": "SV-244545r743884_rule",
+        "stig_id": "RHEL-08-040136",
         "gtitle": "SRG-OS-000368-GPOS-00154",
+        "fix_id": "F-47777r743883_fix",
         "satisfies": [
           "SRG-OS-000368-GPOS-00154",
           "SRG-OS-000370-GPOS-00155",
           "SRG-OS-000480-GPOS-00232"
         ],
-        "gid": "V-244545",
-        "rid": "SV-244545r743884_rule",
-        "stig_id": "RHEL-08-040136",
-        "fix_id": "F-47777r743883_fix"
+        "documentable": false
       },
       "id": "V-244545",
       "title": "The RHEL 8 fapolicy module must be enabled.",
@@ -604,16 +631,17 @@
     "V-244546": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244546",
+        "rid": "SV-244546r743887_rule",
+        "stig_id": "RHEL-08-040137",
         "gtitle": "SRG-OS-000368-GPOS-00154",
+        "fix_id": "F-47778r743886_fix",
         "satisfies": [
           "SRG-OS-000368-GPOS-00154",
           "SRG-OS-000370-GPOS-00155",
           "SRG-OS-000480-GPOS-00232"
         ],
-        "gid": "V-244546",
-        "rid": "SV-244546r743887_rule",
-        "stig_id": "RHEL-08-040137",
-        "fix_id": "F-47778r743886_fix"
+        "documentable": false
       },
       "id": "V-244546",
       "title": "The RHEL 8 fapolicy module must be configured to employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs.",
@@ -627,11 +655,12 @@
     "V-244547": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000378-GPOS-00163",
         "gid": "V-244547",
         "rid": "SV-244547r743890_rule",
         "stig_id": "RHEL-08-040139",
-        "fix_id": "F-47779r743889_fix"
+        "gtitle": "SRG-OS-000378-GPOS-00163",
+        "fix_id": "F-47779r743889_fix",
+        "documentable": false
       },
       "id": "V-244547",
       "title": "RHEL 8 must have the USBGuard installed.",
@@ -645,11 +674,12 @@
     "V-244548": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000378-GPOS-00163",
         "gid": "V-244548",
         "rid": "SV-244548r743893_rule",
         "stig_id": "RHEL-08-040141",
-        "fix_id": "F-47780r743892_fix"
+        "gtitle": "SRG-OS-000378-GPOS-00163",
+        "fix_id": "F-47780r743892_fix",
+        "documentable": false
       },
       "id": "V-244548",
       "title": "RHEL 8 must enable the USBGuard.",
@@ -663,17 +693,18 @@
     "V-244549": {
       "tags": {
         "severity": "medium",
+        "gid": "V-244549",
+        "rid": "SV-244549r743896_rule",
+        "stig_id": "RHEL-08-040159",
         "gtitle": "SRG-OS-000423-GPOS-00187",
+        "fix_id": "F-47781r743895_fix",
         "satisfies": [
           "SRG-OS-000423-GPOS-00187",
           "SRG-OS-000424-GPOS-00188",
           "SRG-OS-000425-GPOS-00189",
           "SRG-OS-000426-GPOS-00190"
         ],
-        "gid": "V-244549",
-        "rid": "SV-244549r743896_rule",
-        "stig_id": "RHEL-08-040159",
-        "fix_id": "F-47781r743895_fix"
+        "documentable": false
       },
       "id": "V-244549",
       "title": "All RHEL 8 networked systems must have SSH installed.",
@@ -687,11 +718,12 @@
     "V-244550": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244550",
         "rid": "SV-244550r743899_rule",
         "stig_id": "RHEL-08-040209",
-        "fix_id": "F-47782r743898_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47782r743898_fix",
+        "documentable": false
       },
       "id": "V-244550",
       "title": "RHEL 8 must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted.",
@@ -705,11 +737,12 @@
     "V-244551": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244551",
         "rid": "SV-244551r743902_rule",
         "stig_id": "RHEL-08-040239",
-        "fix_id": "F-47783r743901_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47783r743901_fix",
+        "documentable": false
       },
       "id": "V-244551",
       "title": "RHEL 8 must not forward IPv4 source-routed packets.",
@@ -723,11 +756,12 @@
     "V-244552": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244552",
         "rid": "SV-244552r743905_rule",
         "stig_id": "RHEL-08-040249",
-        "fix_id": "F-47784r743904_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47784r743904_fix",
+        "documentable": false
       },
       "id": "V-244552",
       "title": "RHEL 8 must not forward IPv4 source-routed packets by default.",
@@ -741,11 +775,12 @@
     "V-244553": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244553",
         "rid": "SV-244553r743908_rule",
         "stig_id": "RHEL-08-040279",
-        "fix_id": "F-47785r743907_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47785r743907_fix",
+        "documentable": false
       },
       "id": "V-244553",
       "title": "RHEL 8 must ignore IPv4 Internet Control Message Protocol (ICMP) redirect messages.",
@@ -759,11 +794,12 @@
     "V-244554": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000480-GPOS-00227",
         "gid": "V-244554",
         "rid": "SV-244554r743911_rule",
         "stig_id": "RHEL-08-040286",
-        "fix_id": "F-47786r743910_fix"
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-47786r743910_fix",
+        "documentable": false
       },
       "id": "V-244554",
       "title": "RHEL 8 must enable hardening for the Berkeley Packet Filter Just-in-time compiler.",
@@ -777,11 +813,12 @@
     "V-245540": {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-OS-000191-GPOS-00080",
         "gid": "V-245540",
         "rid": "SV-245540r754730_rule",
         "stig_id": "RHEL-08-010001",
-        "fix_id": "F-48770r754729_fix"
+        "gtitle": "SRG-OS-000191-GPOS-00080",
+        "fix_id": "F-48770r754729_fix",
+        "documentable": false
       },
       "id": "V-245540",
       "title": "The RHEL 8 operating system must implement the Endpoint Security for Linux Threat Prevention tool.",

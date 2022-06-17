@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DNS-000001",
         "gid": "V-233855",
         "rid": "SV-233855r621666_rule",
         "stig_id": "IDNS-8X-100001",
-        "fix_id": "F-37005r611086_fix"
+        "fix_id": "F-37005r611086_fix",
+        "documentable": false
       },
       "id": "V-233855",
       "title": "Infoblox systems that perform zone transfers to non-Grid DNS servers must limit the number of concurrent sessions for zone transfers.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DNS-000115",
         "gid": "V-233856",
         "rid": "SV-233856r621666_rule",
         "stig_id": "IDNS-8X-100002",
-        "fix_id": "F-37006r611089_fix"
+        "fix_id": "F-37006r611089_fix",
+        "documentable": false
       },
       "id": "V-233856",
       "title": "The Infoblox system must limit the number of concurrent client connections to the number of allowed dynamic update clients.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000333-DNS-000107",
         "gid": "V-233857",
         "rid": "SV-233857r621666_rule",
         "stig_id": "IDNS-8X-200001",
-        "fix_id": "F-37007r611092_fix"
+        "fix_id": "F-37007r611092_fix",
+        "documentable": false
       },
       "id": "V-233857",
       "title": "The Infoblox DNS server must not reveal sensitive information to an attacker. This includes HINFO, RP, LOC resource, and sensitive TXT record data.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000125-DNS-000012",
         "gid": "V-233858",
         "rid": "SV-233858r621666_rule",
         "stig_id": "IDNS-8X-300002",
-        "fix_id": "F-37008r611095_fix"
+        "fix_id": "F-37008r611095_fix",
+        "documentable": false
       },
       "id": "V-233858",
       "title": "The Infoblox system audit records must be backed up at least every seven days onto a different system or system component than the system or component being audited.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000218-DNS-000027",
         "gid": "V-233859",
         "rid": "SV-233859r621666_rule",
         "stig_id": "IDNS-8X-400001",
-        "fix_id": "F-37009r611098_fix"
+        "fix_id": "F-37009r611098_fix",
+        "documentable": false
       },
       "id": "V-233859",
       "title": "All authoritative name servers for a zone must be geographically disbursed.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DNS-000047",
         "gid": "V-233860",
         "rid": "SV-233860r621666_rule",
         "stig_id": "IDNS-8X-400002",
-        "fix_id": "F-37010r611101_fix"
+        "fix_id": "F-37010r611101_fix",
+        "documentable": false
       },
       "id": "V-233860",
       "title": "Recursion must be disabled on Infoblox DNS servers that are configured as authoritative name servers.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000078",
         "gid": "V-233861",
         "rid": "SV-233861r621666_rule",
         "stig_id": "IDNS-8X-400003",
-        "fix_id": "F-37011r611104_fix"
+        "fix_id": "F-37011r611104_fix",
+        "documentable": false
       },
       "id": "V-233861",
       "title": "The validity period for the Resource Record Signatures (RRSIGs) covering a zone's DNSKEY RRSet must be no less than two days and no more than one week.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000084",
         "gid": "V-233862",
         "rid": "SV-233862r621666_rule",
         "stig_id": "IDNS-8X-400004",
-        "fix_id": "F-37012r611107_fix"
+        "fix_id": "F-37012r611107_fix",
+        "documentable": false
       },
       "id": "V-233862",
       "title": "NSEC3 must be used for all DNSSEC signed zones.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000085",
         "gid": "V-233863",
         "rid": "SV-233863r621666_rule",
         "stig_id": "IDNS-8X-400005",
-        "fix_id": "F-37013r611110_fix"
+        "fix_id": "F-37013r611110_fix",
+        "documentable": false
       },
       "id": "V-233863",
       "title": "The Infoblox DNS server must be configured so that each name server (NS) record in a zone file points to an active name server authoritative for the domain specified in that record.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000087",
         "gid": "V-233864",
         "rid": "SV-233864r621666_rule",
         "stig_id": "IDNS-8X-400006",
-        "fix_id": "F-37014r611113_fix"
+        "fix_id": "F-37014r611113_fix",
+        "documentable": false
       },
       "id": "V-233864",
       "title": "All authoritative name servers for a zone must be located on different network segments.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000088",
         "gid": "V-233865",
         "rid": "SV-233865r621666_rule",
         "stig_id": "IDNS-8X-400007",
-        "fix_id": "F-37015r611116_fix"
+        "fix_id": "F-37015r611116_fix",
+        "documentable": false
       },
       "id": "V-233865",
       "title": "All authoritative name servers for a zone must have the same version of zone information.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000089",
         "gid": "V-233866",
         "rid": "SV-233866r621666_rule",
         "stig_id": "IDNS-8X-400008",
-        "fix_id": "F-37016r611119_fix"
+        "fix_id": "F-37016r611119_fix",
+        "documentable": false
       },
       "id": "V-233866",
       "title": "An authoritative name server must be configured to enable DNSSEC resource records.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-DNS-000090",
         "gid": "V-233867",
         "rid": "SV-233867r621666_rule",
         "stig_id": "IDNS-8X-400009",
-        "fix_id": "F-37017r611122_fix"
+        "fix_id": "F-37017r611122_fix",
+        "documentable": false
       },
       "id": "V-233867",
       "title": "The digital signature algorithm used for DNSSEC-enabled zones must be FIPS compatible.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000091",
         "gid": "V-233868",
         "rid": "SV-233868r621666_rule",
         "stig_id": "IDNS-8X-400010",
-        "fix_id": "F-37018r611125_fix"
+        "fix_id": "F-37018r611125_fix",
+        "documentable": false
       },
       "id": "V-233868",
       "title": "For zones split between the external and internal sides of a network, the resource records (RRs) for the external hosts must be separate from the RRs for the internal hosts.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000092",
         "gid": "V-233869",
         "rid": "SV-233869r621666_rule",
         "stig_id": "IDNS-8X-400011",
-        "fix_id": "F-37019r611128_fix"
+        "fix_id": "F-37019r611128_fix",
+        "documentable": false
       },
       "id": "V-233869",
       "title": "In a split DNS configuration, where separate name servers are used between the external and internal networks, the external name server must be configured to not be reachable from inside resolvers.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000093",
         "gid": "V-233870",
         "rid": "SV-233870r621666_rule",
         "stig_id": "IDNS-8X-400012",
-        "fix_id": "F-37020r611131_fix"
+        "fix_id": "F-37020r611131_fix",
+        "documentable": false
       },
       "id": "V-233870",
       "title": "In a split DNS configuration, where separate name servers are used between the external and internal networks, the internal name server must be configured to not be reachable from outside resolvers.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000095",
         "gid": "V-233871",
         "rid": "SV-233871r621666_rule",
         "stig_id": "IDNS-8X-400013",
-        "fix_id": "F-37021r611134_fix"
+        "fix_id": "F-37021r611134_fix",
+        "documentable": false
       },
       "id": "V-233871",
       "title": "Primary authoritative name servers must be configured to only receive zone transfer requests from specified secondary name servers.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000099",
         "gid": "V-233872",
         "rid": "SV-233872r621666_rule",
         "stig_id": "IDNS-8X-400014",
-        "fix_id": "F-37022r611137_fix"
+        "fix_id": "F-37022r611137_fix",
+        "documentable": false
       },
       "id": "V-233872",
       "title": "The Infoblox system must use a security policy that limits the propagation of access rights.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000101",
         "gid": "V-233873",
         "rid": "SV-233873r621666_rule",
         "stig_id": "IDNS-8X-400015",
-        "fix_id": "F-37023r611140_fix"
+        "fix_id": "F-37023r611140_fix",
+        "documentable": false
       },
       "id": "V-233873",
       "title": "The DNS implementation must implement internal/external role separation.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000102",
         "gid": "V-233874",
         "rid": "SV-233874r621666_rule",
         "stig_id": "IDNS-8X-400016",
-        "fix_id": "F-37024r611143_fix"
+        "fix_id": "F-37024r611143_fix",
+        "documentable": false
       },
       "id": "V-233874",
       "title": "The Infoblox DNS server must use current and valid root name servers.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000103",
         "gid": "V-233875",
         "rid": "SV-233875r621666_rule",
         "stig_id": "IDNS-8X-400017",
-        "fix_id": "F-37025r611146_fix"
+        "fix_id": "F-37025r611146_fix",
+        "documentable": false
       },
       "id": "V-233875",
       "title": "The Infoblox NIOS version must be at the appropriate version.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000108",
         "gid": "V-233876",
         "rid": "SV-233876r621666_rule",
         "stig_id": "IDNS-8X-400018",
-        "fix_id": "F-37026r611149_fix"
+        "fix_id": "F-37026r611149_fix",
+        "documentable": false
       },
       "id": "V-233876",
       "title": "The IP address for hidden master authoritative name servers must not appear in the name servers set in the zone database.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000109",
         "gid": "V-233877",
         "rid": "SV-233877r621666_rule",
         "stig_id": "IDNS-8X-400019",
-        "fix_id": "F-37027r611152_fix"
+        "fix_id": "F-37027r611152_fix",
+        "documentable": false
       },
       "id": "V-233877",
       "title": "The Infoblox system must be configured to respond to DNS traffic only.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000110",
         "gid": "V-233878",
         "rid": "SV-233878r621666_rule",
         "stig_id": "IDNS-8X-400020",
-        "fix_id": "F-37028r611155_fix"
+        "fix_id": "F-37028r611155_fix",
+        "documentable": false
       },
       "id": "V-233878",
       "title": "The Infoblox DNS server must send outgoing DNS messages from a random port.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-DNS-000112",
         "gid": "V-233879",
         "rid": "SV-233879r621666_rule",
         "stig_id": "IDNS-8X-400021",
-        "fix_id": "F-37029r611158_fix"
+        "fix_id": "F-37029r611158_fix",
+        "documentable": false
       },
       "id": "V-233879",
       "title": "The private keys corresponding to both the Zone Signing Key (ZSK) and the Key Signing Key (KSK) must not be kept on the DNSSEC-aware primary authoritative name server when the name server does not support dynamic updates.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000114",
         "gid": "V-233880",
         "rid": "SV-233880r621666_rule",
         "stig_id": "IDNS-8X-400022",
-        "fix_id": "F-37030r611161_fix"
+        "fix_id": "F-37030r611161_fix",
+        "documentable": false
       },
       "id": "V-233880",
       "title": "CNAME records must not point to a zone with lesser security for more than six months.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-233881",
         "rid": "SV-233881r621666_rule",
         "stig_id": "IDNS-8X-400023",
-        "fix_id": "F-37031r611164_fix"
+        "fix_id": "F-37031r611164_fix",
+        "documentable": false
       },
       "id": "V-233881",
       "title": "The Infoblox system must use the security configuration settings based on DoD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-233882",
         "rid": "SV-233882r621666_rule",
         "stig_id": "IDNS-8X-400024",
-        "fix_id": "F-37032r611167_fix"
+        "fix_id": "F-37032r611167_fix",
+        "documentable": false
       },
       "id": "V-233882",
       "title": "A secure out-of-band (OOB) network must be used for management of Infoblox Grid Members.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-233883",
         "rid": "SV-233883r621666_rule",
         "stig_id": "IDNS-8X-400025",
-        "fix_id": "F-37033r611170_fix"
+        "fix_id": "F-37033r611170_fix",
+        "documentable": false
       },
       "id": "V-233883",
       "title": "Infoblox systems must enforce current DoD password restrictions.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-233884",
         "rid": "SV-233884r621666_rule",
         "stig_id": "IDNS-8X-400026",
-        "fix_id": "F-37034r611173_fix"
+        "fix_id": "F-37034r611173_fix",
+        "documentable": false
       },
       "id": "V-233884",
       "title": "Infoblox Grid configuration must be backed up on a regular basis.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-233885",
         "rid": "SV-233885r621666_rule",
         "stig_id": "IDNS-8X-400027",
-        "fix_id": "F-37035r611176_fix"
+        "fix_id": "F-37035r611176_fix",
+        "documentable": false
       },
       "id": "V-233885",
       "title": "The Infoblox system must display the approved DoD notice and consent banner.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-233886",
         "rid": "SV-233886r621666_rule",
         "stig_id": "IDNS-8X-400028",
-        "fix_id": "F-37036r611179_fix"
+        "fix_id": "F-37036r611179_fix",
+        "documentable": false
       },
       "id": "V-233886",
       "title": "The Infoblox system must display the appropriate security classification information.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-233887",
         "rid": "SV-233887r621666_rule",
         "stig_id": "IDNS-8X-400029",
-        "fix_id": "F-37037r611182_fix"
+        "fix_id": "F-37037r611182_fix",
+        "documentable": false
       },
       "id": "V-233887",
       "title": "The Infoblox system must be configured in accordance with the security configuration settings based on DoD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DNS-000500",
         "gid": "V-233888",
         "rid": "SV-233888r621666_rule",
         "stig_id": "IDNS-8X-400030",
-        "fix_id": "F-37038r611185_fix"
+        "fix_id": "F-37038r611185_fix",
+        "documentable": false
       },
       "id": "V-233888",
       "title": "The Infoblox system must present only approved TLS and SSL cipher suites.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000347-DNS-000041",
         "gid": "V-233889",
         "rid": "SV-233889r621666_rule",
         "stig_id": "IDNS-8X-400031",
-        "fix_id": "F-37039r611188_fix"
+        "fix_id": "F-37039r611188_fix",
+        "documentable": false
       },
       "id": "V-233889",
       "title": "An Infoblox DNS server must strongly bind the identity of the DNS server with the DNS information using DNSSEC.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000348-DNS-000042",
         "gid": "V-233890",
         "rid": "SV-233890r621666_rule",
         "stig_id": "IDNS-8X-400032",
-        "fix_id": "F-37040r611191_fix"
+        "fix_id": "F-37040r611191_fix",
+        "documentable": false
       },
       "id": "V-233890",
       "title": "The Infoblox system must provide the means for authorized individuals to determine the identity of the source of the DNS server-provided information.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000349-DNS-000043",
         "gid": "V-233891",
         "rid": "SV-233891r621666_rule",
         "stig_id": "IDNS-8X-400033",
-        "fix_id": "F-37041r611194_fix"
+        "fix_id": "F-37041r611194_fix",
+        "documentable": false
       },
       "id": "V-233891",
       "title": "The Infoblox system must validate the binding of the other DNS servers' identity to the DNS information for a server-to-server transaction (e.g., zone transfer).",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000350-DNS-000044",
         "gid": "V-233892",
         "rid": "SV-233892r621666_rule",
         "stig_id": "IDNS-8X-400034",
-        "fix_id": "F-37042r611197_fix"
+        "fix_id": "F-37042r611197_fix",
+        "documentable": false
       },
       "id": "V-233892",
       "title": "The Infoblox system must send a notification in the event of an error when validating the binding of another DNS server’s identity to the DNS information.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000420-DNS-000053",
         "gid": "V-233893",
         "rid": "SV-233893r621666_rule",
         "stig_id": "IDNS-8X-400035",
-        "fix_id": "F-37043r611200_fix"
+        "fix_id": "F-37043r611200_fix",
+        "documentable": false
       },
       "id": "V-233893",
       "title": "The Infoblox DNS server must provide data origin artifacts for internal name/address resolution queries.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000421-DNS-000054",
         "gid": "V-233894",
         "rid": "SV-233894r621666_rule",
         "stig_id": "IDNS-8X-400036",
-        "fix_id": "F-37044r611203_fix"
+        "fix_id": "F-37044r611203_fix",
+        "documentable": false
       },
       "id": "V-233894",
       "title": "The Infoblox DNS server must provide data integrity protection artifacts for internal name/address resolution queries.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000268-DNS-000039",
         "gid": "V-233895",
         "rid": "SV-233895r621666_rule",
         "stig_id": "IDNS-8X-400037",
-        "fix_id": "F-37045r611206_fix"
+        "fix_id": "F-37045r611206_fix",
+        "documentable": false
       },
       "id": "V-233895",
       "title": "The Infoblox system must notify the system administrator when a component failure is detected.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000451-DNS-000069",
         "gid": "V-233896",
         "rid": "SV-233896r621666_rule",
         "stig_id": "IDNS-8X-400038",
-        "fix_id": "F-37046r611209_fix"
+        "fix_id": "F-37046r611209_fix",
+        "documentable": false
       },
       "id": "V-233896",
       "title": "The Infoblox DNS server implementation must follow procedures to re-role a secondary name server as the master name server should the master name server permanently lose functionality.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DNS-000014",
         "gid": "V-233897",
         "rid": "SV-233897r621666_rule",
         "stig_id": "IDNS-8X-400039",
-        "fix_id": "F-37047r611212_fix"
+        "fix_id": "F-37047r611212_fix",
+        "documentable": false
       },
       "id": "V-233897",
       "title": "The Infoblox system must prohibit or restrict unapproved services, ports, and protocols.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000390-DNS-000048",
         "gid": "V-233898",
         "rid": "SV-233898r621666_rule",
         "stig_id": "IDNS-8X-500001",
-        "fix_id": "F-37048r611215_fix"
+        "fix_id": "F-37048r611215_fix",
+        "documentable": false
       },
       "id": "V-233898",
       "title": "The Infoblox system must require devices to reauthenticate for each zone transfer and dynamic update request connection attempt.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000158-DNS-000015",
         "gid": "V-233899",
         "rid": "SV-233899r621666_rule",
         "stig_id": "IDNS-8X-500002",
-        "fix_id": "F-37049r611218_fix"
+        "fix_id": "F-37049r611218_fix",
+        "documentable": false
       },
       "id": "V-233899",
       "title": "When using non-Grid DNS servers for zone transfers, each name server must use TSIG to uniquely identify the other server.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000394-DNS-000049",
         "gid": "V-233900",
         "rid": "SV-233900r621666_rule",
         "stig_id": "IDNS-8X-500003",
-        "fix_id": "F-37050r611221_fix"
+        "fix_id": "F-37050r611221_fix",
+        "documentable": false
       },
       "id": "V-233900",
       "title": "The Infoblox DNS server must authenticate to any external (non-Grid) DNS servers before responding to a server-to-server transaction.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000395-DNS-000050",
         "gid": "V-233901",
         "rid": "SV-233901r621666_rule",
         "stig_id": "IDNS-8X-500004",
-        "fix_id": "F-37051r611224_fix"
+        "fix_id": "F-37051r611224_fix",
+        "documentable": false
       },
       "id": "V-233901",
       "title": "The Infoblox DNS server must authenticate another DNS server before establishing a remote and/or network connection using bidirectional authentication that is cryptographically based.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176-DNS-000076",
         "gid": "V-233902",
         "rid": "SV-233902r621666_rule",
         "stig_id": "IDNS-8X-500005",
-        "fix_id": "F-37052r611227_fix"
+        "fix_id": "F-37052r611227_fix",
+        "documentable": false
       },
       "id": "V-233902",
       "title": "Infoblox systems that communicate with non-Grid name servers must use a unique Transaction Signature (TSIG).",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000176-DNS-000094",
         "gid": "V-233903",
         "rid": "SV-233903r621666_rule",
         "stig_id": "IDNS-8X-500006",
-        "fix_id": "F-37053r611230_fix"
+        "fix_id": "F-37053r611230_fix",
+        "documentable": false
       },
       "id": "V-233903",
       "title": "The Infoblox Grid Master must be configured as a stealth (hidden) domain name server in order to protect the Key Signing Key (KSK) residing on it.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000176-DNS-000096",
         "gid": "V-233904",
         "rid": "SV-233904r621666_rule",
         "stig_id": "IDNS-8X-500007",
-        "fix_id": "F-37054r611233_fix"
+        "fix_id": "F-37054r611233_fix",
+        "documentable": false
       },
       "id": "V-233904",
       "title": "The Infoblox Grid Master must be configured as a stealth (hidden) domain name server in order to protect the Zone Signing Key (ZSK) residing on it.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000185-DNS-000021",
         "gid": "V-233905",
         "rid": "SV-233905r621666_rule",
         "stig_id": "IDNS-8X-600001",
-        "fix_id": "F-37055r611236_fix"
+        "fix_id": "F-37055r611236_fix",
+        "documentable": false
       },
       "id": "V-233905",
       "title": "The Infoblox system must employ strong authenticators in the establishment of non-local maintenance and diagnostic sessions.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000514-DNS-000075",
         "gid": "V-233906",
         "rid": "SV-233906r621666_rule",
         "stig_id": "IDNS-8X-700001",
-        "fix_id": "F-37056r611239_fix"
+        "fix_id": "F-37056r611239_fix",
+        "documentable": false
       },
       "id": "V-233906",
       "title": "The Infoblox DNS server must implement NIST FIPS-validated cryptography for provisioning digital signatures, generating cryptographic hashes, and protecting unclassified information requiring confidentiality.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000213-DNS-000024",
         "gid": "V-233907",
         "rid": "SV-233907r621666_rule",
         "stig_id": "IDNS-8X-700002",
-        "fix_id": "F-37057r611242_fix"
+        "fix_id": "F-37057r611242_fix",
+        "documentable": false
       },
       "id": "V-233907",
       "title": "The Infoblox system must provide additional data origin artifacts along with the authoritative data the system returns in response to external name/address resolution queries.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000422-DNS-000055",
         "gid": "V-233908",
         "rid": "SV-233908r621666_rule",
         "stig_id": "IDNS-8X-700003",
-        "fix_id": "F-37058r611245_fix"
+        "fix_id": "F-37058r611245_fix",
+        "documentable": false
       },
       "id": "V-233908",
       "title": "The Infoblox DNS Server must provide additional integrity artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000214-DNS-000025",
         "gid": "V-233909",
         "rid": "SV-233909r621666_rule",
         "stig_id": "IDNS-8X-700004",
-        "fix_id": "F-37059r611248_fix"
+        "fix_id": "F-37059r611248_fix",
+        "documentable": false
       },
       "id": "V-233909",
       "title": "The Infoblox DNS server implementation must provide the means to indicate the security status of child zones.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000214-DNS-000079",
         "gid": "V-233910",
         "rid": "SV-233910r621666_rule",
         "stig_id": "IDNS-8X-700005",
-        "fix_id": "F-37060r611251_fix"
+        "fix_id": "F-37060r611251_fix",
+        "documentable": false
       },
       "id": "V-233910",
       "title": "The validity period for the Resource Record Signatures (RRSIGs) covering the Delegation Signer (DS) RR for a zone's delegated children must be no less than two days and no more than one week.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000003",
         "gid": "V-233911",
         "rid": "SV-233911r621666_rule",
         "stig_id": "IDNS-8X-700006",
-        "fix_id": "F-37061r611254_fix"
+        "fix_id": "F-37061r611254_fix",
+        "documentable": false
       },
       "id": "V-233911",
       "title": "The Infoblox DNS server implementation must enforce approved authorizations for controlling the flow of information between DNS servers and between DNS servers and DNS clients based on DNSSEC policies.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000215-DNS-000026",
         "gid": "V-233912",
         "rid": "SV-233912r621666_rule",
         "stig_id": "IDNS-8X-700007",
-        "fix_id": "F-37062r611257_fix"
+        "fix_id": "F-37062r611257_fix",
+        "documentable": false
       },
       "id": "V-233912",
       "title": "The Infoblox DNS server must enable verification of a chain of trust among parent and child domains (if the child supports secure resolution services).",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000423-DNS-000056",
         "gid": "V-233913",
         "rid": "SV-233913r621666_rule",
         "stig_id": "IDNS-8X-700008",
-        "fix_id": "F-37063r611260_fix"
+        "fix_id": "F-37063r611260_fix",
+        "documentable": false
       },
       "id": "V-233913",
       "title": "The Infoblox DNS server must request data origin authentication verification on the name/address resolution responses the system receives from authoritative sources.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000424-DNS-000057",
         "gid": "V-233914",
         "rid": "SV-233914r621666_rule",
         "stig_id": "IDNS-8X-700009",
-        "fix_id": "F-37064r611263_fix"
+        "fix_id": "F-37064r611263_fix",
+        "documentable": false
       },
       "id": "V-233914",
       "title": "The Infoblox DNS server must request data integrity verification on the name/address resolution responses the system receives from authoritative sources.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000425-DNS-000058",
         "gid": "V-233915",
         "rid": "SV-233915r621666_rule",
         "stig_id": "IDNS-8X-700010",
-        "fix_id": "F-37065r611266_fix"
+        "fix_id": "F-37065r611266_fix",
+        "documentable": false
       },
       "id": "V-233915",
       "title": "The Infoblox DNS server must perform data integrity verification on the name/address resolution responses the system receives from authoritative sources.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000426-DNS-000059",
         "gid": "V-233916",
         "rid": "SV-233916r621666_rule",
         "stig_id": "IDNS-8X-700011",
-        "fix_id": "F-37066r611269_fix"
+        "fix_id": "F-37066r611269_fix",
+        "documentable": false
       },
       "id": "V-233916",
       "title": "The Infoblox DNS server must perform data origin verification authentication on the name/address resolution responses the system receives from authoritative sources.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-DNS-000028",
         "gid": "V-233917",
         "rid": "SV-233917r621666_rule",
         "stig_id": "IDNS-8X-700012",
-        "fix_id": "F-37067r611272_fix"
+        "fix_id": "F-37067r611272_fix",
+        "documentable": false
       },
       "id": "V-233917",
       "title": "Infoblox DNS servers must protect the authenticity of communications sessions for zone transfers when communicating with external DNS servers.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-DNS-000029",
         "gid": "V-233918",
         "rid": "SV-233918r621666_rule",
         "stig_id": "IDNS-8X-700013",
-        "fix_id": "F-37068r611275_fix"
+        "fix_id": "F-37068r611275_fix",
+        "documentable": false
       },
       "id": "V-233918",
       "title": "Infoblox DNS servers must protect the authenticity of communications sessions for dynamic updates.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000219-DNS-000030",
         "gid": "V-233919",
         "rid": "SV-233919r621666_rule",
         "stig_id": "IDNS-8X-700014",
-        "fix_id": "F-37069r611278_fix"
+        "fix_id": "F-37069r611278_fix",
+        "documentable": false
       },
       "id": "V-233919",
       "title": "Infoblox DNS servers must protect the authenticity of communications sessions for queries.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000226-DNS-000032",
         "gid": "V-233920",
         "rid": "SV-233920r621666_rule",
         "stig_id": "IDNS-8X-700015",
-        "fix_id": "F-37070r611281_fix"
+        "fix_id": "F-37070r611281_fix",
+        "documentable": false
       },
       "id": "V-233920",
       "title": "In the event of a system failure, the Infoblox system must preserve any information necessary to determine cause of failure and any information necessary to return to operations with least disruption to mission processes.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000246-DNS-000035",
         "gid": "V-233921",
         "rid": "SV-233921r621666_rule",
         "stig_id": "IDNS-8X-700016",
-        "fix_id": "F-37071r611284_fix"
+        "fix_id": "F-37071r611284_fix",
+        "documentable": false
       },
       "id": "V-233921",
       "title": "The Infoblox system must restrict the ability of individuals to use the DNS server to launch denial-of-Service (DoS) attacks against other information systems.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000247-DNS-000036",
         "gid": "V-233922",
         "rid": "SV-233922r621666_rule",
         "stig_id": "IDNS-8X-700017",
-        "fix_id": "F-37072r611287_fix"
+        "fix_id": "F-37072r611287_fix",
+        "documentable": false
       },
       "id": "V-233922",
       "title": "The Infoblox system must manage excess capacity, bandwidth, or other redundancy to limit the effects of information-flooding types of denial-of-service (DoS) attacks.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000439-DNS-000063",
         "gid": "V-233923",
         "rid": "SV-233923r621666_rule",
         "stig_id": "IDNS-8X-700018",
-        "fix_id": "F-37073r611290_fix"
+        "fix_id": "F-37073r611290_fix",
+        "documentable": false
       },
       "id": "V-233923",
       "title": "The Infoblox DNS server must protect the integrity of transmitted information.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000440-DNS-000065",
         "gid": "V-233924",
         "rid": "SV-233924r621666_rule",
         "stig_id": "IDNS-8X-700019",
-        "fix_id": "F-37074r611293_fix"
+        "fix_id": "F-37074r611293_fix",
+        "documentable": false
       },
       "id": "V-233924",
       "title": "The Infoblox DNS server must implement cryptographic mechanisms to detect changes to information during transmission unless otherwise protected by alternative physical safeguards, such as, at a minimum, a Protected Distribution System (PDS).",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-DNS-000066",
         "gid": "V-233925",
         "rid": "SV-233925r621666_rule",
         "stig_id": "IDNS-8X-700020",
-        "fix_id": "F-37075r611296_fix"
+        "fix_id": "F-37075r611296_fix",
+        "documentable": false
       },
       "id": "V-233925",
       "title": "The Infoblox DNS server implementation must maintain the integrity of information during preparation for transmission.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-DNS-000067",
         "gid": "V-233926",
         "rid": "SV-233926r621666_rule",
         "stig_id": "IDNS-8X-700021",
-        "fix_id": "F-37076r611299_fix"
+        "fix_id": "F-37076r611299_fix",
+        "documentable": false
       },
       "id": "V-233926",
       "title": "The Infoblox DNS server implementation must maintain the integrity of information during reception.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000275-DNS-000040",
         "gid": "V-233927",
         "rid": "SV-233927r621666_rule",
         "stig_id": "IDNS-8X-800001",
-        "fix_id": "F-37077r611302_fix"
+        "fix_id": "F-37077r611302_fix",
+        "documentable": false
       },
       "id": "V-233927",
       "title": "The Infoblox system must notify the ISSO and ISSM in the event of failed security verification tests.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000474-DNS-000073",
         "gid": "V-233928",
         "rid": "SV-233928r621666_rule",
         "stig_id": "IDNS-8X-800002",
-        "fix_id": "F-37078r611305_fix"
+        "fix_id": "F-37078r611305_fix",
+        "documentable": false
       },
       "id": "V-233928",
       "title": "The Infoblox DNS server implementation must log the event and notify the system administrator when anomalies in the operation of the signed zone transfers are discovered.",
@@ -1338,7 +1338,5 @@
       }
     }
   ],
-  "name": "Infoblox_8_DNS_STIG",
-  "title": "Infoblox 8.x DNS Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Infoblox_8_DNS_STIG"
 }

@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142-DB-000094",
         "gid": "V-233511",
         "rid": "SV-233511r617335_rule",
         "stig_id": "CD12-00-000100",
-        "fix_id": "F-36670r617334_fix"
+        "fix_id": "F-36670r617334_fix",
+        "documentable": false
       },
       "id": "V-233511",
       "title": "PostgreSQL must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099-DB-000043",
         "gid": "V-233512",
         "rid": "SV-233512r617333_rule",
         "stig_id": "CD12-00-000200",
-        "fix_id": "F-36671r606760_fix"
+        "fix_id": "F-36671r606760_fix",
+        "documentable": false
       },
       "id": "V-233512",
       "title": "PostgreSQL must produce audit records containing sufficient information to establish the outcome (success or failure) of the events.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-DB-000390",
         "gid": "V-233513",
         "rid": "SV-233513r617333_rule",
         "stig_id": "CD12-00-000300",
-        "fix_id": "F-36672r606763_fix"
+        "fix_id": "F-36672r606763_fix",
+        "documentable": false
       },
       "id": "V-233513",
       "title": "Security-relevant software updates to PostgreSQL must be installed within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-DB-000060",
         "gid": "V-233514",
         "rid": "SV-233514r617333_rule",
         "stig_id": "CD12-00-000400",
-        "fix_id": "F-36673r606766_fix"
+        "fix_id": "F-36673r606766_fix",
+        "documentable": false
       },
       "id": "V-233514",
       "title": "The audit information produced by PostgreSQL must be protected from unauthorized modification.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000023-DB-000001",
         "gid": "V-233515",
         "rid": "SV-233515r617333_rule",
         "stig_id": "CD12-00-000500",
-        "fix_id": "F-36674r606769_fix"
+        "fix_id": "F-36674r606769_fix",
+        "documentable": false
       },
       "id": "V-233515",
       "title": "PostgreSQL must integrate with an organization-level authentication/access mechanism providing account management and automation for all users, groups, roles, and any other principals.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266-DB-000162",
         "gid": "V-233516",
         "rid": "SV-233516r617333_rule",
         "stig_id": "CD12-00-000600",
-        "fix_id": "F-36675r606772_fix"
+        "fix_id": "F-36675r606772_fix",
+        "documentable": false
       },
       "id": "V-233516",
       "title": "PostgreSQL must provide non-privileged users with error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-233517",
         "rid": "SV-233517r617333_rule",
         "stig_id": "CD12-00-000700",
-        "fix_id": "F-36676r606775_fix"
+        "fix_id": "F-36676r606775_fix",
+        "documentable": false
       },
       "id": "V-233517",
       "title": "Privileges to change PostgreSQL software modules must be limited.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000179",
         "gid": "V-233518",
         "rid": "SV-233518r617333_rule",
         "stig_id": "CD12-00-000710",
-        "fix_id": "F-36677r606778_fix"
+        "fix_id": "F-36677r606778_fix",
+        "documentable": false
       },
       "id": "V-233518",
       "title": "PostgreSQL must limit privileges to change functions and triggers, and links to software external to PostgreSQL.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000172-DB-000075",
         "gid": "V-233519",
         "rid": "SV-233519r617333_rule",
         "stig_id": "CD12-00-000800",
-        "fix_id": "F-36678r606781_fix"
+        "fix_id": "F-36678r606781_fix",
+        "documentable": false
       },
       "id": "V-233519",
       "title": "If passwords are used for authentication, PostgreSQL must transmit only encrypted representations of passwords.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033-DB-000084",
         "gid": "V-233520",
         "rid": "SV-233520r617333_rule",
         "stig_id": "CD12-00-000900",
-        "fix_id": "F-36679r606784_fix"
+        "fix_id": "F-36679r606784_fix",
+        "documentable": false
       },
       "id": "V-233520",
       "title": "PostgreSQL must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000314-DB-000310",
         "gid": "V-233521",
         "rid": "SV-233521r617333_rule",
         "stig_id": "CD12-00-001100",
-        "fix_id": "F-36680r606787_fix"
+        "fix_id": "F-36680r606787_fix",
+        "documentable": false
       },
       "id": "V-233521",
       "title": "PostgreSQL must associate organization-defined types of security labels having organization-defined security label values with information in transmission.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001-DB-000031",
         "gid": "V-233522",
         "rid": "SV-233522r617333_rule",
         "stig_id": "CD12-00-001200",
-        "fix_id": "F-36681r606790_fix"
+        "fix_id": "F-36681r606790_fix",
+        "documentable": false
       },
       "id": "V-233522",
       "title": "PostgreSQL must limit the number of concurrent sessions to an organization-defined number per user for all accounts and/or account types.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000362",
         "gid": "V-233523",
         "rid": "SV-233523r617333_rule",
         "stig_id": "CD12-00-001300",
-        "fix_id": "F-36682r606793_fix"
+        "fix_id": "F-36682r606793_fix",
+        "documentable": false
       },
       "id": "V-233523",
       "title": "The role(s)/group(s) used to modify database structure (including but not necessarily limited to tables, indexes, storage, etc.) and logic modules (functions, trigger procedures, links to software external to PostgreSQL, etc.) must be restricted to authorized users.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000180-DB-000115",
         "gid": "V-233524",
         "rid": "SV-233524r617333_rule",
         "stig_id": "CD12-00-001400",
-        "fix_id": "F-36683r606796_fix"
+        "fix_id": "F-36683r606796_fix",
+        "documentable": false
       },
       "id": "V-233524",
       "title": "PostgreSQL must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000311-DB-000308",
         "gid": "V-233525",
         "rid": "SV-233525r617333_rule",
         "stig_id": "CD12-00-001700",
-        "fix_id": "F-36684r606799_fix"
+        "fix_id": "F-36684r606799_fix",
+        "documentable": false
       },
       "id": "V-233525",
       "title": "PostgreSQL must associate organization-defined types of security labels having organization-defined security label values with information in storage.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000160",
         "gid": "V-233526",
         "rid": "SV-233526r617333_rule",
         "stig_id": "CD12-00-001800",
-        "fix_id": "F-36685r606802_fix"
+        "fix_id": "F-36685r606802_fix",
+        "documentable": false
       },
       "id": "V-233526",
       "title": "PostgreSQL must check the validity of all data inputs except those specifically identified by the organization.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000391",
         "gid": "V-233527",
         "rid": "SV-233527r617333_rule",
         "stig_id": "CD12-00-001900",
-        "fix_id": "F-36686r606805_fix"
+        "fix_id": "F-36686r606805_fix",
+        "documentable": false
       },
       "id": "V-233527",
       "title": "PostgreSQL and associated applications must reserve the use of dynamic code execution for situations that require it.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251-DB-000392",
         "gid": "V-233528",
         "rid": "SV-233528r617333_rule",
         "stig_id": "CD12-00-002000",
-        "fix_id": "F-36687r606808_fix"
+        "fix_id": "F-36687r606808_fix",
+        "documentable": false
       },
       "id": "V-233528",
       "title": "PostgreSQL and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357-DB-000316",
         "gid": "V-233529",
         "rid": "SV-233529r617333_rule",
         "stig_id": "CD12-00-002100",
-        "fix_id": "F-36688r606811_fix"
+        "fix_id": "F-36688r606811_fix",
+        "documentable": false
       },
       "id": "V-233529",
       "title": "PostgreSQL must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328-DB-000301",
         "gid": "V-233530",
         "rid": "SV-233530r617333_rule",
         "stig_id": "CD12-00-002200",
-        "fix_id": "F-36689r606814_fix"
+        "fix_id": "F-36689r606814_fix",
+        "documentable": false
       },
       "id": "V-233530",
       "title": "PostgreSQL must enforce discretionary access control policies, as defined by the data owner, over defined subjects and objects.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-DB-000061",
         "gid": "V-233531",
         "rid": "SV-233531r617333_rule",
         "stig_id": "CD12-00-002300",
-        "fix_id": "F-36690r606817_fix"
+        "fix_id": "F-36690r606817_fix",
+        "documentable": false
       },
       "id": "V-233531",
       "title": "The audit information produced by PostgreSQL must be protected from unauthorized deletion.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000374-DB-000322",
         "gid": "V-233532",
         "rid": "SV-233532r617333_rule",
         "stig_id": "CD12-00-002400",
-        "fix_id": "F-36691r606820_fix"
+        "fix_id": "F-36691r606820_fix",
+        "documentable": false
       },
       "id": "V-233532",
       "title": "PostgreSQL must record time stamps, in audit records and application data that can be mapped to Coordinated Universal Time (UTC, formerly GMT).",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000267-DB-000163",
         "gid": "V-233533",
         "rid": "SV-233533r617333_rule",
         "stig_id": "CD12-00-002500",
-        "fix_id": "F-36692r606823_fix"
+        "fix_id": "F-36692r606823_fix",
+        "documentable": false
       },
       "id": "V-233533",
       "title": "PostgreSQL must reveal detailed error messages only to the ISSO, ISSM, SA, and DBA.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090-DB-000065",
         "gid": "V-233534",
         "rid": "SV-233534r617333_rule",
         "stig_id": "CD12-00-002600",
-        "fix_id": "F-36693r606826_fix"
+        "fix_id": "F-36693r606826_fix",
+        "documentable": false
       },
       "id": "V-233534",
       "title": "PostgreSQL must allow only the Information System Security Manager (ISSM), or individuals or roles appointed by the ISSM, to select which auditable events are to be audited.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360-DB-000320",
         "gid": "V-233535",
         "rid": "SV-233535r617333_rule",
         "stig_id": "CD12-00-002700",
-        "fix_id": "F-36694r606829_fix"
+        "fix_id": "F-36694r606829_fix",
+        "documentable": false
       },
       "id": "V-233535",
       "title": "PostgreSQL must provide an immediate alert to appropriate support staff of all audit log failures.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000109-DB-000321",
         "gid": "V-233536",
         "rid": "SV-233536r617333_rule",
         "stig_id": "CD12-00-002800",
-        "fix_id": "F-36695r606832_fix"
+        "fix_id": "F-36695r606832_fix",
+        "documentable": false
       },
       "id": "V-233536",
       "title": "PostgreSQL must be configurable to overwrite audit log records, oldest first (First-In-First-Out [FIFO]), in the event of unavailability of space for more audit log records.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000109-DB-000049",
         "gid": "V-233537",
         "rid": "SV-233537r617333_rule",
         "stig_id": "CD12-00-002900",
-        "fix_id": "F-36696r606835_fix"
+        "fix_id": "F-36696r606835_fix",
+        "documentable": false
       },
       "id": "V-233537",
       "title": "PostgreSQL must by default shut down upon audit failure, to include the unavailability of space for more audit log records; or must be configurable to shut down upon audit failure.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442-DB-000379",
         "gid": "V-233538",
         "rid": "SV-233538r617333_rule",
         "stig_id": "CD12-00-003000",
-        "fix_id": "F-36697r606838_fix"
+        "fix_id": "F-36697r606838_fix",
+        "documentable": false
       },
       "id": "V-233538",
       "title": "PostgreSQL must maintain the confidentiality and integrity of information during reception.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000200",
         "gid": "V-233539",
         "rid": "SV-233539r617333_rule",
         "stig_id": "CD12-00-003100",
-        "fix_id": "F-36698r606841_fix"
+        "fix_id": "F-36698r606841_fix",
+        "documentable": false
       },
       "id": "V-233539",
       "title": "Database objects (including but not limited to tables, indexes, storage, trigger procedures, functions, links to software external to PostgreSQL, etc.) must be owned by database/DBMS principals authorized for ownership.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000198",
         "gid": "V-233540",
         "rid": "SV-233540r617333_rule",
         "stig_id": "CD12-00-003200",
-        "fix_id": "F-36699r606844_fix"
+        "fix_id": "F-36699r606844_fix",
+        "documentable": false
       },
       "id": "V-233540",
       "title": "The PostgreSQL software installation account must be restricted to authorized users.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133-DB-000199",
         "gid": "V-233541",
         "rid": "SV-233541r617333_rule",
         "stig_id": "CD12-00-003300",
-        "fix_id": "F-36700r606847_fix"
+        "fix_id": "F-36700r606847_fix",
+        "documentable": false
       },
       "id": "V-233541",
       "title": "Database software, including PostgreSQL configuration files, must be stored in dedicated directories separate from the host OS and other applications.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000101-DB-000044",
         "gid": "V-233542",
         "rid": "SV-233542r617333_rule",
         "stig_id": "CD12-00-003500",
-        "fix_id": "F-36701r606850_fix"
+        "fix_id": "F-36701r606850_fix",
+        "documentable": false
       },
       "id": "V-233542",
       "title": "PostgreSQL must include additional, more detailed, organization-defined information in the audit records for audit events identified by type, location, or subject.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000342-DB-000302",
         "gid": "V-233543",
         "rid": "SV-233543r617333_rule",
         "stig_id": "CD12-00-003600",
-        "fix_id": "F-36702r606853_fix"
+        "fix_id": "F-36702r606853_fix",
+        "documentable": false
       },
       "id": "V-233543",
       "title": "Execution of software modules (to include functions and trigger procedures) with elevated privileges must be restricted to necessary cases only.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000447-DB-000393",
         "gid": "V-233544",
         "rid": "SV-233544r617333_rule",
         "stig_id": "CD12-00-003700",
-        "fix_id": "F-36703r606856_fix"
+        "fix_id": "F-36703r606856_fix",
+        "documentable": false
       },
       "id": "V-233544",
       "title": "When invalid inputs are received, PostgreSQL must behave in a predictable and documented manner that reflects organizational and system objectives.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356-DB-000314",
         "gid": "V-233545",
         "rid": "SV-233545r617333_rule",
         "stig_id": "CD12-00-003800",
-        "fix_id": "F-36704r606859_fix"
+        "fix_id": "F-36704r606859_fix",
+        "documentable": false
       },
       "id": "V-233545",
       "title": "PostgreSQL must utilize centralized management of the content captured in audit records generated by all components of PostgreSQL.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233-DB-000124",
         "gid": "V-233546",
         "rid": "SV-233546r617333_rule",
         "stig_id": "CD12-00-004000",
-        "fix_id": "F-36705r606862_fix"
+        "fix_id": "F-36705r606862_fix",
+        "documentable": false
       },
       "id": "V-233546",
       "title": "PostgreSQL must isolate security functions from non-security functions.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000381-DB-000361",
         "gid": "V-233547",
         "rid": "SV-233547r617333_rule",
         "stig_id": "CD12-00-004100",
-        "fix_id": "F-36706r606865_fix"
+        "fix_id": "F-36706r606865_fix",
+        "documentable": false
       },
       "id": "V-233547",
       "title": "PostgreSQL must produce audit records of its enforcement of access restrictions associated with changes to the configuration of PostgreSQL or database(s).",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383-DB-000364",
         "gid": "V-233548",
         "rid": "SV-233548r617333_rule",
         "stig_id": "CD12-00-004150",
-        "fix_id": "F-36707r606868_fix"
+        "fix_id": "F-36707r606868_fix",
+        "documentable": false
       },
       "id": "V-233548",
       "title": "PostgreSQL must disable network functions, ports, protocols, and services deemed by the organization to be nonsecure, in accord with the Ports, Protocols, and Services Management (PPSM) guidance.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-DB-000059",
         "gid": "V-233549",
         "rid": "SV-233549r617333_rule",
         "stig_id": "CD12-00-004200",
-        "fix_id": "F-36708r606871_fix"
+        "fix_id": "F-36708r606871_fix",
+        "documentable": false
       },
       "id": "V-233549",
       "title": "The audit information produced by PostgreSQL must be protected from unauthorized read access.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000454-DB-000389",
         "gid": "V-233550",
         "rid": "SV-233550r617333_rule",
         "stig_id": "CD12-00-004300",
-        "fix_id": "F-36709r606874_fix"
+        "fix_id": "F-36709r606874_fix",
+        "documentable": false
       },
       "id": "V-233550",
       "title": "When updates are applied to PostgreSQL software, any software components that have been replaced or made unnecessary must be removed.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000494-DB-000344",
         "gid": "V-233551",
         "rid": "SV-233551r617333_rule",
         "stig_id": "CD12-00-004400",
-        "fix_id": "F-36710r606877_fix"
+        "fix_id": "F-36710r606877_fix",
+        "documentable": false
       },
       "id": "V-233551",
       "title": "PostgreSQL must generate audit records when categorized information (e.g., classification levels/security levels) is accessed.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492-DB-000333",
         "gid": "V-233552",
         "rid": "SV-233552r617333_rule",
         "stig_id": "CD12-00-004500",
-        "fix_id": "F-36711r606880_fix"
+        "fix_id": "F-36711r606880_fix",
+        "documentable": false
       },
       "id": "V-233552",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to access security objects occur.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000351",
         "gid": "V-233553",
         "rid": "SV-233553r617333_rule",
         "stig_id": "CD12-00-004600",
-        "fix_id": "F-36712r606883_fix"
+        "fix_id": "F-36712r606883_fix",
+        "documentable": false
       },
       "id": "V-233553",
       "title": "PostgreSQL must generate audit records when unsuccessful logons or connection attempts occur.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000505-DB-000352",
         "gid": "V-233554",
         "rid": "SV-233554r617333_rule",
         "stig_id": "CD12-00-004700",
-        "fix_id": "F-36713r606886_fix"
+        "fix_id": "F-36713r606886_fix",
+        "documentable": false
       },
       "id": "V-233554",
       "title": "PostgreSQL must generate audit records showing starting and ending time for user access to the database(s).",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496-DB-000335",
         "gid": "V-233555",
         "rid": "SV-233555r617333_rule",
         "stig_id": "CD12-00-004800",
-        "fix_id": "F-36714r606889_fix"
+        "fix_id": "F-36714r606889_fix",
+        "documentable": false
       },
       "id": "V-233555",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to modify security objects occur.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000326",
         "gid": "V-233556",
         "rid": "SV-233556r617333_rule",
         "stig_id": "CD12-00-004900",
-        "fix_id": "F-36715r606892_fix"
+        "fix_id": "F-36715r606892_fix",
+        "documentable": false
       },
       "id": "V-233556",
       "title": "PostgreSQL must generate audit records when privileges/permissions are added.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000502-DB-000349",
         "gid": "V-233557",
         "rid": "SV-233557r617333_rule",
         "stig_id": "CD12-00-005000",
-        "fix_id": "F-36716r606895_fix"
+        "fix_id": "F-36716r606895_fix",
+        "documentable": false
       },
       "id": "V-233557",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to delete categorized information (e.g., classification levels/security levels) occur.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-DB-000350",
         "gid": "V-233558",
         "rid": "SV-233558r617333_rule",
         "stig_id": "CD12-00-005100",
-        "fix_id": "F-36717r606898_fix"
+        "fix_id": "F-36717r606898_fix",
+        "documentable": false
       },
       "id": "V-233558",
       "title": "PostgreSQL must generate audit records when successful logons or connections occur.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501-DB-000336",
         "gid": "V-233559",
         "rid": "SV-233559r617333_rule",
         "stig_id": "CD12-00-005200",
-        "fix_id": "F-36718r606901_fix"
+        "fix_id": "F-36718r606901_fix",
+        "documentable": false
       },
       "id": "V-233559",
       "title": "PostgreSQL must generate audit records when security objects are deleted.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000325",
         "gid": "V-233560",
         "rid": "SV-233560r617333_rule",
         "stig_id": "CD12-00-005300",
-        "fix_id": "F-36719r606904_fix"
+        "fix_id": "F-36719r606904_fix",
+        "documentable": false
       },
       "id": "V-233560",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to retrieve privileges/permissions occur.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499-DB-000331",
         "gid": "V-233561",
         "rid": "SV-233561r617333_rule",
         "stig_id": "CD12-00-005400",
-        "fix_id": "F-36720r606907_fix"
+        "fix_id": "F-36720r606907_fix",
+        "documentable": false
       },
       "id": "V-233561",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to delete privileges/permissions occur.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091-DB-000066",
         "gid": "V-233562",
         "rid": "SV-233562r617333_rule",
         "stig_id": "CD12-00-005500",
-        "fix_id": "F-36721r606910_fix"
+        "fix_id": "F-36721r606910_fix",
+        "documentable": false
       },
       "id": "V-233562",
       "title": "PostgreSQL must be able to generate audit records when privileges/permissions are retrieved.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000498-DB-000347",
         "gid": "V-233563",
         "rid": "SV-233563r617333_rule",
         "stig_id": "CD12-00-005600",
-        "fix_id": "F-36722r606913_fix"
+        "fix_id": "F-36722r606913_fix",
+        "documentable": false
       },
       "id": "V-233563",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to modify categorized information (e.g., classification levels/security levels) occur.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507-DB-000357",
         "gid": "V-233564",
         "rid": "SV-233564r617333_rule",
         "stig_id": "CD12-00-005700",
-        "fix_id": "F-36723r606916_fix"
+        "fix_id": "F-36723r606916_fix",
+        "documentable": false
       },
       "id": "V-233564",
       "title": "PostgreSQL must generate audit records when unsuccessful accesses to objects occur.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DB-000354",
         "gid": "V-233565",
         "rid": "SV-233565r617333_rule",
         "stig_id": "CD12-00-005800",
-        "fix_id": "F-36724r606919_fix"
+        "fix_id": "F-36724r606919_fix",
+        "documentable": false
       },
       "id": "V-233565",
       "title": "PostgreSQL must generate audit records for all privileged activities or other system-level access.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000494-DB-000345",
         "gid": "V-233566",
         "rid": "SV-233566r617333_rule",
         "stig_id": "CD12-00-005900",
-        "fix_id": "F-36725r606922_fix"
+        "fix_id": "F-36725r606922_fix",
+        "documentable": false
       },
       "id": "V-233566",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to access categorized information (e.g., classification levels/security levels) occur.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492-DB-000332",
         "gid": "V-233567",
         "rid": "SV-233567r617333_rule",
         "stig_id": "CD12-00-006000",
-        "fix_id": "F-36726r606925_fix"
+        "fix_id": "F-36726r606925_fix",
+        "documentable": false
       },
       "id": "V-233567",
       "title": "PostgreSQL must be able to generate audit records when security objects are accessed.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499-DB-000330",
         "gid": "V-233568",
         "rid": "SV-233568r617333_rule",
         "stig_id": "CD12-00-006100",
-        "fix_id": "F-36727r606928_fix"
+        "fix_id": "F-36727r606928_fix",
+        "documentable": false
       },
       "id": "V-233568",
       "title": "PostgreSQL must generate audit records when privileges/permissions are deleted.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000506-DB-000353",
         "gid": "V-233569",
         "rid": "SV-233569r617333_rule",
         "stig_id": "CD12-00-006200",
-        "fix_id": "F-36728r606931_fix"
+        "fix_id": "F-36728r606931_fix",
+        "documentable": false
       },
       "id": "V-233569",
       "title": "PostgreSQL must generate audit records when concurrent logons/connections by the same user from different workstations occur.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501-DB-000337",
         "gid": "V-233570",
         "rid": "SV-233570r617333_rule",
         "stig_id": "CD12-00-006300",
-        "fix_id": "F-36729r606934_fix"
+        "fix_id": "F-36729r606934_fix",
+        "documentable": false
       },
       "id": "V-233570",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to delete security objects occur.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000328",
         "gid": "V-233571",
         "rid": "SV-233571r617333_rule",
         "stig_id": "CD12-00-006400",
-        "fix_id": "F-36730r606937_fix"
+        "fix_id": "F-36730r606937_fix",
+        "documentable": false
       },
       "id": "V-233571",
       "title": "PostgreSQL must generate audit records when privileges/permissions are modified.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504-DB-000355",
         "gid": "V-233572",
         "rid": "SV-233572r617333_rule",
         "stig_id": "CD12-00-006500",
-        "fix_id": "F-36731r606940_fix"
+        "fix_id": "F-36731r606940_fix",
+        "documentable": false
       },
       "id": "V-233572",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to execute privileged activities or other system-level access occur.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496-DB-000334",
         "gid": "V-233573",
         "rid": "SV-233573r617333_rule",
         "stig_id": "CD12-00-006600",
-        "fix_id": "F-36732r606943_fix"
+        "fix_id": "F-36732r606943_fix",
+        "documentable": false
       },
       "id": "V-233573",
       "title": "PostgreSQL must generate audit records when security objects are modified.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000498-DB-000346",
         "gid": "V-233574",
         "rid": "SV-233574r617333_rule",
         "stig_id": "CD12-00-006700",
-        "fix_id": "F-36733r606946_fix"
+        "fix_id": "F-36733r606946_fix",
+        "documentable": false
       },
       "id": "V-233574",
       "title": "PostgreSQL must generate audit records when categories of information (e.g., classification levels/security levels) is modified.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000329",
         "gid": "V-233575",
         "rid": "SV-233575r617333_rule",
         "stig_id": "CD12-00-006800",
-        "fix_id": "F-36734r606949_fix"
+        "fix_id": "F-36734r606949_fix",
+        "documentable": false
       },
       "id": "V-233575",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to modify privileges/permissions occur.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495-DB-000327",
         "gid": "V-233576",
         "rid": "SV-233576r617333_rule",
         "stig_id": "CD12-00-006900",
-        "fix_id": "F-36735r606952_fix"
+        "fix_id": "F-36735r606952_fix",
+        "documentable": false
       },
       "id": "V-233576",
       "title": "PostgreSQL must generate audit records when unsuccessful attempts to add privileges/permissions occur.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175-DB-000067",
         "gid": "V-233577",
         "rid": "SV-233577r617333_rule",
         "stig_id": "CD12-00-007000",
-        "fix_id": "F-36736r606955_fix"
+        "fix_id": "F-36736r606955_fix",
+        "documentable": false
       },
       "id": "V-233577",
       "title": "PostgreSQL, when utilizing PKI-based authentication, must validate certificates by performing RFC 5280-compliant certification path validation.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097-DB-000041",
         "gid": "V-233578",
         "rid": "SV-233578r617333_rule",
         "stig_id": "CD12-00-007100",
-        "fix_id": "F-36737r606958_fix"
+        "fix_id": "F-36737r606958_fix",
+        "documentable": false
       },
       "id": "V-233578",
       "title": "PostgreSQL must produce audit records containing sufficient information to establish where the events occurred.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441-DB-000378",
         "gid": "V-233579",
         "rid": "SV-233579r617333_rule",
         "stig_id": "CD12-00-007200",
-        "fix_id": "F-36738r606961_fix"
+        "fix_id": "F-36738r606961_fix",
+        "documentable": false
       },
       "id": "V-233579",
       "title": "PostgreSQL must maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-DB-000064",
         "gid": "V-233580",
         "rid": "SV-233580r617333_rule",
         "stig_id": "CD12-00-007400",
-        "fix_id": "F-36739r606964_fix"
+        "fix_id": "F-36739r606964_fix",
+        "documentable": false
       },
       "id": "V-233580",
       "title": "PostgreSQL must be configured to provide audit record generation for DoD-defined auditable events within all DBMS/database components.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000375-DB-000323",
         "gid": "V-233581",
         "rid": "SV-233581r617333_rule",
         "stig_id": "CD12-00-007700",
-        "fix_id": "F-36740r606967_fix"
+        "fix_id": "F-36740r606967_fix",
+        "documentable": false
       },
       "id": "V-233581",
       "title": "PostgreSQL must generate time stamps, for audit records and application data, with a minimum granularity of one second.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000100-DB-000201",
         "gid": "V-233582",
         "rid": "SV-233582r617333_rule",
         "stig_id": "CD12-00-007800",
-        "fix_id": "F-36741r606970_fix"
+        "fix_id": "F-36741r606970_fix",
+        "documentable": false
       },
       "id": "V-233582",
       "title": "PostgreSQL must produce audit records containing sufficient information to establish the identity of any user/subject or process associated with the event.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000514-DB-000382",
         "gid": "V-233583",
         "rid": "SV-233583r617333_rule",
         "stig_id": "CD12-00-008000",
-        "fix_id": "F-36742r606973_fix"
+        "fix_id": "F-36742r606973_fix",
+        "documentable": false
       },
       "id": "V-233583",
       "title": "PostgreSQL must implement NIST FIPS 140-2 validated cryptographic modules to generate and validate cryptographic hashes.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000416-DB-000380",
         "gid": "V-233584",
         "rid": "SV-233584r617333_rule",
         "stig_id": "CD12-00-008100",
-        "fix_id": "F-36743r606976_fix"
+        "fix_id": "F-36743r606976_fix",
+        "documentable": false
       },
       "id": "V-233584",
       "title": "PostgreSQL must use NSA-approved cryptography to protect classified information in accordance with the data owner’s requirements.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000514-DB-000383",
         "gid": "V-233585",
         "rid": "SV-233585r617333_rule",
         "stig_id": "CD12-00-008200",
-        "fix_id": "F-36744r606979_fix"
+        "fix_id": "F-36744r606979_fix",
+        "documentable": false
       },
       "id": "V-233585",
       "title": "PostgreSQL must implement NIST FIPS 140-2 validated cryptographic modules to protect unclassified information requiring confidentiality and cryptographic protection, in accordance with the data owner’s requirements.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231-DB-000154",
         "gid": "V-233586",
         "rid": "SV-233586r617333_rule",
         "stig_id": "CD12-00-008300",
-        "fix_id": "F-36745r606982_fix"
+        "fix_id": "F-36745r606982_fix",
+        "documentable": false
       },
       "id": "V-233586",
       "title": "PostgreSQL must protect the confidentiality and integrity of all information at rest.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378-DB-000365",
         "gid": "V-233587",
         "rid": "SV-233587r617333_rule",
         "stig_id": "CD12-00-008400",
-        "fix_id": "F-36746r606985_fix"
+        "fix_id": "F-36746r606985_fix",
+        "documentable": false
       },
       "id": "V-233587",
       "title": "PostgreSQL must prohibit user installation of logic modules (functions, trigger procedures, views, etc.) without explicit privileged status.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211-DB-000122",
         "gid": "V-233588",
         "rid": "SV-233588r617333_rule",
         "stig_id": "CD12-00-008500",
-        "fix_id": "F-36747r606988_fix"
+        "fix_id": "F-36747r606988_fix",
+        "documentable": false
       },
       "id": "V-233588",
       "title": "PostgreSQL must separate user functionality (including user interface services) from database management functionality.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000092-DB-000208",
         "gid": "V-233589",
         "rid": "SV-233589r617333_rule",
         "stig_id": "CD12-00-008600",
-        "fix_id": "F-36748r606991_fix"
+        "fix_id": "F-36748r606991_fix",
+        "documentable": false
       },
       "id": "V-233589",
       "title": "PostgreSQL must initiate session auditing upon startup.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000428-DB-000386",
         "gid": "V-233590",
         "rid": "SV-233590r617333_rule",
         "stig_id": "CD12-00-008700",
-        "fix_id": "F-36749r606994_fix"
+        "fix_id": "F-36749r606994_fix",
+        "documentable": false
       },
       "id": "V-233590",
       "title": "PostgreSQL must implement cryptographic mechanisms to prevent unauthorized modification of organization-defined information at rest (to include, at a minimum, PII and classified information) on organization-defined information system components.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098-DB-000042",
         "gid": "V-233591",
         "rid": "SV-233591r617333_rule",
         "stig_id": "CD12-00-008800",
-        "fix_id": "F-36750r606997_fix"
+        "fix_id": "F-36750r606997_fix",
+        "documentable": false
       },
       "id": "V-233591",
       "title": "PostgreSQL must produce audit records containing sufficient information to establish the sources (origins) of the events.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000091",
         "gid": "V-233592",
         "rid": "SV-233592r617333_rule",
         "stig_id": "CD12-00-008900",
-        "fix_id": "F-36751r607000_fix"
+        "fix_id": "F-36751r607000_fix",
+        "documentable": false
       },
       "id": "V-233592",
       "title": "Unused database components, PostgreSQL software, and database objects must be removed.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000093",
         "gid": "V-233593",
         "rid": "SV-233593r617333_rule",
         "stig_id": "CD12-00-009100",
-        "fix_id": "F-36752r607003_fix"
+        "fix_id": "F-36752r607003_fix",
+        "documentable": false
       },
       "id": "V-233593",
       "title": "Access to external executables must be disabled or restricted.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-DB-000092",
         "gid": "V-233594",
         "rid": "SV-233594r617333_rule",
         "stig_id": "CD12-00-009200",
-        "fix_id": "F-36753r607006_fix"
+        "fix_id": "F-36753r607006_fix",
+        "documentable": false
       },
       "id": "V-233594",
       "title": "Unused database components that are integrated in PostgreSQL and cannot be uninstalled must be disabled.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000313-DB-000309",
         "gid": "V-233595",
         "rid": "SV-233595r617333_rule",
         "stig_id": "CD12-00-009400",
-        "fix_id": "F-36754r607009_fix"
+        "fix_id": "F-36754r607009_fix",
+        "documentable": false
       },
       "id": "V-233595",
       "title": "PostgreSQL must associate organization-defined types of security labels having organization-defined security label values with information in process.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000171-DB-000074",
         "gid": "V-233596",
         "rid": "SV-233596r617333_rule",
         "stig_id": "CD12-00-009500",
-        "fix_id": "F-36755r607012_fix"
+        "fix_id": "F-36755r607012_fix",
+        "documentable": false
       },
       "id": "V-233596",
       "title": "If passwords are used for authentication, PostgreSQL must store only hashed, salted representations of passwords.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380-DB-000360",
         "gid": "V-233597",
         "rid": "SV-233597r617333_rule",
         "stig_id": "CD12-00-009600",
-        "fix_id": "F-36756r607015_fix"
+        "fix_id": "F-36756r607015_fix",
+        "documentable": false
       },
       "id": "V-233597",
       "title": "PostgreSQL must enforce access restrictions associated with changes to the configuration of PostgreSQL or database(s).",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000080-DB-000063",
         "gid": "V-233598",
         "rid": "SV-233598r617333_rule",
         "stig_id": "CD12-00-009700",
-        "fix_id": "F-36757r607018_fix"
+        "fix_id": "F-36757r607018_fix",
+        "documentable": false
       },
       "id": "V-233598",
       "title": "PostgreSQL must protect against a user falsely repudiating having performed organization-defined actions.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000359-DB-000319",
         "gid": "V-233599",
         "rid": "SV-233599r617333_rule",
         "stig_id": "CD12-00-009900",
-        "fix_id": "F-36758r607021_fix"
+        "fix_id": "F-36758r607021_fix",
+        "documentable": false
       },
       "id": "V-233599",
       "title": "The system must provide a warning to appropriate support staff when allocated audit record storage volume reaches 75 percent of maximum audit record storage capacity.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-DB-000363",
         "gid": "V-233600",
         "rid": "SV-233600r617339_rule",
         "stig_id": "CD12-00-010000",
-        "fix_id": "F-36759r617338_fix"
+        "fix_id": "F-36759r617338_fix",
+        "documentable": false
       },
       "id": "V-233600",
       "title": "PostgreSQL must provide the means for individuals in authorized roles to change the auditing to be performed on all application components, based on all selectable event criteria within organization-defined time thresholds.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000389-DB-000372",
         "gid": "V-233601",
         "rid": "SV-233601r617333_rule",
         "stig_id": "CD12-00-010100",
-        "fix_id": "F-36760r607027_fix"
+        "fix_id": "F-36760r607027_fix",
+        "documentable": false
       },
       "id": "V-233601",
       "title": "PostgreSQL must require users to reauthenticate when organization-defined circumstances or situations require reauthentication.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000176-DB-000068",
         "gid": "V-233602",
         "rid": "SV-233602r617333_rule",
         "stig_id": "CD12-00-010200",
-        "fix_id": "F-36761r607030_fix"
+        "fix_id": "F-36761r607030_fix",
+        "documentable": false
       },
       "id": "V-233602",
       "title": "PostgreSQL must enforce authorized access to all PKI private keys stored/utilized by PostgreSQL.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-DB-000385",
         "gid": "V-233603",
         "rid": "SV-233603r617340_rule",
         "stig_id": "CD12-00-010300",
-        "fix_id": "F-36762r607033_fix"
+        "fix_id": "F-36762r607033_fix",
+        "documentable": false
       },
       "id": "V-233603",
       "title": "PostgreSQL must only accept end entity certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs) for the establishment of all encrypted sessions.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095-DB-000039",
         "gid": "V-233604",
         "rid": "SV-233604r617333_rule",
         "stig_id": "CD12-00-010400",
-        "fix_id": "F-36763r607036_fix"
+        "fix_id": "F-36763r607036_fix",
+        "documentable": false
       },
       "id": "V-233604",
       "title": "PostgreSQL must produce audit records containing sufficient information to establish what type of events occurred.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429-DB-000387",
         "gid": "V-233605",
         "rid": "SV-233605r617333_rule",
         "stig_id": "CD12-00-010500",
-        "fix_id": "F-36764r607039_fix"
+        "fix_id": "F-36764r607039_fix",
+        "documentable": false
       },
       "id": "V-233605",
       "title": "PostgreSQL must implement cryptographic mechanisms preventing the unauthorized disclosure of organization-defined information at rest on organization-defined information system components.",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000220-DB-000149",
         "gid": "V-233606",
         "rid": "SV-233606r617333_rule",
         "stig_id": "CD12-00-010600",
-        "fix_id": "F-36765r607042_fix"
+        "fix_id": "F-36765r607042_fix",
+        "documentable": false
       },
       "id": "V-233606",
       "title": "PostgreSQL must invalidate session identifiers upon user logout or other session termination.",
@@ -1736,11 +1736,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121-DB-000202",
         "gid": "V-233607",
         "rid": "SV-233607r617333_rule",
         "stig_id": "CD12-00-010700",
-        "fix_id": "F-36766r607045_fix"
+        "fix_id": "F-36766r607045_fix",
+        "documentable": false
       },
       "id": "V-233607",
       "title": "PostgreSQL must protect its audit features from unauthorized access.",
@@ -1754,11 +1754,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096-DB-000040",
         "gid": "V-233608",
         "rid": "SV-233608r617333_rule",
         "stig_id": "CD12-00-011100",
-        "fix_id": "F-36767r607048_fix"
+        "fix_id": "F-36767r607048_fix",
+        "documentable": false
       },
       "id": "V-233608",
       "title": "PostgreSQL must produce audit records containing time stamps to establish when the events occurred.",
@@ -1772,11 +1772,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000123-DB-000204",
         "gid": "V-233609",
         "rid": "SV-233609r617333_rule",
         "stig_id": "CD12-00-011200",
-        "fix_id": "F-36768r607051_fix"
+        "fix_id": "F-36768r607051_fix",
+        "documentable": false
       },
       "id": "V-233609",
       "title": "PostgreSQL must protect its audit features from unauthorized removal.",
@@ -1790,11 +1790,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000515-DB-000318",
         "gid": "V-233610",
         "rid": "SV-233610r617333_rule",
         "stig_id": "CD12-00-011300",
-        "fix_id": "F-36769r607054_fix"
+        "fix_id": "F-36769r607054_fix",
+        "documentable": false
       },
       "id": "V-233610",
       "title": "PostgreSQL must off-load audit data to a separate log management facility; this must be continuous and in near real time for systems with a network connection to the storage facility and weekly or more often for stand-alone systems.",
@@ -1808,11 +1808,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000224-DB-000384",
         "gid": "V-233611",
         "rid": "SV-233611r617333_rule",
         "stig_id": "CD12-00-011400",
-        "fix_id": "F-36770r607057_fix"
+        "fix_id": "F-36770r607057_fix",
+        "documentable": false
       },
       "id": "V-233611",
       "title": "PostgreSQL must maintain the authenticity of communications sessions by guarding against man-in-the-middle attacks that guess at Session ID values.",
@@ -1826,11 +1826,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148-DB-000103",
         "gid": "V-233612",
         "rid": "SV-233612r617333_rule",
         "stig_id": "CD12-00-011500",
-        "fix_id": "F-36771r607060_fix"
+        "fix_id": "F-36771r607060_fix",
+        "documentable": false
       },
       "id": "V-233612",
       "title": "PostgreSQL must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -1844,11 +1844,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295-DB-000305",
         "gid": "V-233613",
         "rid": "SV-233613r617333_rule",
         "stig_id": "CD12-00-011600",
-        "fix_id": "F-36772r607063_fix"
+        "fix_id": "F-36772r607063_fix",
+        "documentable": false
       },
       "id": "V-233613",
       "title": "PostgreSQL must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.",
@@ -1862,11 +1862,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000340-DB-000304",
         "gid": "V-233614",
         "rid": "SV-233614r617333_rule",
         "stig_id": "CD12-00-011700",
-        "fix_id": "F-36773r607066_fix"
+        "fix_id": "F-36773r607066_fix",
+        "documentable": false
       },
       "id": "V-233614",
       "title": "PostgreSQL must prevent non-privileged users from executing privileged functions, to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
@@ -1880,11 +1880,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000177-DB-000069",
         "gid": "V-233615",
         "rid": "SV-233615r617333_rule",
         "stig_id": "CD12-00-011800",
-        "fix_id": "F-36774r607069_fix"
+        "fix_id": "F-36774r607069_fix",
+        "documentable": false
       },
       "id": "V-233615",
       "title": "PostgreSQL must map the PKI-authenticated identity to an associated user account.",
@@ -1898,11 +1898,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000128",
         "gid": "V-233616",
         "rid": "SV-233616r617333_rule",
         "stig_id": "CD12-00-011900",
-        "fix_id": "F-36775r607072_fix"
+        "fix_id": "F-36775r607072_fix",
+        "documentable": false
       },
       "id": "V-233616",
       "title": "Database contents must be protected from unauthorized and unintended information transfer by enforcement of a data-transfer policy.",
@@ -1916,11 +1916,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243-DB-000374",
         "gid": "V-233617",
         "rid": "SV-233617r617333_rule",
         "stig_id": "CD12-00-012000",
-        "fix_id": "F-36776r607075_fix"
+        "fix_id": "F-36776r607075_fix",
+        "documentable": false
       },
       "id": "V-233617",
       "title": "Access to database files must be limited to relevant processes and to authorized, administrative users.",
@@ -1934,11 +1934,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000122-DB-000203",
         "gid": "V-233618",
         "rid": "SV-233618r617333_rule",
         "stig_id": "CD12-00-012200",
-        "fix_id": "F-36777r607078_fix"
+        "fix_id": "F-36777r607078_fix",
+        "documentable": false
       },
       "id": "V-233618",
       "title": "PostgreSQL must protect its audit configuration from unauthorized modification.",
@@ -1952,11 +1952,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179-DB-000114",
         "gid": "V-233619",
         "rid": "SV-233619r617333_rule",
         "stig_id": "CD12-00-012300",
-        "fix_id": "F-36778r607081_fix"
+        "fix_id": "F-36778r607081_fix",
+        "documentable": false
       },
       "id": "V-233619",
       "title": "PostgreSQL must use NIST FIPS 140-2 validated cryptographic modules for cryptographic operations.",
@@ -1970,11 +1970,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000502-DB-000348",
         "gid": "V-233620",
         "rid": "SV-233620r617333_rule",
         "stig_id": "CD12-00-012500",
-        "fix_id": "F-36779r607084_fix"
+        "fix_id": "F-36779r607084_fix",
+        "documentable": false
       },
       "id": "V-233620",
       "title": "Audit records must be generated when categorized information (e.g., classification levels/security levels) is deleted.",
@@ -1988,11 +1988,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507-DB-000356",
         "gid": "V-233621",
         "rid": "SV-233621r617333_rule",
         "stig_id": "CD12-00-012600",
-        "fix_id": "F-36780r607087_fix"
+        "fix_id": "F-36780r607087_fix",
+        "documentable": false
       },
       "id": "V-233621",
       "title": "PostgreSQL must generate audit records when successful accesses to objects occur.",
@@ -2006,11 +2006,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000508-DB-000358",
         "gid": "V-233622",
         "rid": "SV-233622r617333_rule",
         "stig_id": "CD12-00-012700",
-        "fix_id": "F-36781r607090_fix"
+        "fix_id": "F-36781r607090_fix",
+        "documentable": false
       },
       "id": "V-233622",
       "title": "PostgreSQL must generate audit records for all direct access to the database(s).",
@@ -2024,11 +2024,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179-DB-000114",
         "gid": "V-233623",
         "rid": "SV-233623r617333_rule",
         "stig_id": "CD12-00-012800",
-        "fix_id": "F-36782r607093_fix"
+        "fix_id": "F-36782r607093_fix",
+        "documentable": false
       },
       "id": "V-233623",
       "title": "The DBMS must be configured on a platform that has a NIST certified FIPS 140-2 installation of OpenSSL.",
@@ -2040,7 +2040,5 @@
       }
     }
   ],
-  "name": "Crunchy_Data_PostgreSQL_STIG",
-  "title": "Crunchy Data PostgreSQL Security Technical Implementation Guide",
-  "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Crunchy_Data_PostgreSQL_STIG"
 }

@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000001",
         "gid": "V-206519",
         "rid": "SV-206519r617447_rule",
         "stig_id": "SRG-APP-000001-DB-000031",
-        "fix_id": "F-6779r291226_fix"
+        "fix_id": "F-6779r291226_fix",
+        "documentable": false
       },
       "id": "V-206519",
       "title": "The DBMS must limit the number of concurrent sessions to an organization-defined number per user for all accounts and/or account types.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000023",
         "gid": "V-206520",
         "rid": "SV-206520r617447_rule",
         "stig_id": "SRG-APP-000023-DB-000001",
-        "fix_id": "F-6780r291229_fix"
+        "fix_id": "F-6780r291229_fix",
+        "documentable": false
       },
       "id": "V-206520",
       "title": "The DBMS must integrate with an organization-level authentication/access mechanism providing account management and automation for all users, groups, roles, and any other principals.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000033",
         "gid": "V-206521",
         "rid": "SV-206521r617447_rule",
         "stig_id": "SRG-APP-000033-DB-000084",
-        "fix_id": "F-6781r291232_fix"
+        "fix_id": "F-6781r291232_fix",
+        "documentable": false
       },
       "id": "V-206521",
       "title": "The DBMS must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000080",
         "gid": "V-206522",
         "rid": "SV-206522r617447_rule",
         "stig_id": "SRG-APP-000080-DB-000063",
-        "fix_id": "F-6782r291235_fix"
+        "fix_id": "F-6782r291235_fix",
+        "documentable": false
       },
       "id": "V-206522",
       "title": "The DBMS must protect against a user falsely repudiating having performed organization-defined actions.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089",
         "gid": "V-206523",
         "rid": "SV-206523r617447_rule",
         "stig_id": "SRG-APP-000089-DB-000064",
-        "fix_id": "F-6783r291238_fix"
+        "fix_id": "F-6783r291238_fix",
+        "documentable": false
       },
       "id": "V-206523",
       "title": "The DBMS must provide audit record generation capability for DoD-defined auditable events within all DBMS/database components.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000090",
         "gid": "V-206524",
         "rid": "SV-206524r617447_rule",
         "stig_id": "SRG-APP-000090-DB-000065",
-        "fix_id": "F-6784r291241_fix"
+        "fix_id": "F-6784r291241_fix",
+        "documentable": false
       },
       "id": "V-206524",
       "title": "The DBMS must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091",
         "gid": "V-206525",
         "rid": "SV-206525r617447_rule",
         "stig_id": "SRG-APP-000091-DB-000066",
-        "fix_id": "F-6785r291244_fix"
+        "fix_id": "F-6785r291244_fix",
+        "documentable": false
       },
       "id": "V-206525",
       "title": "The DBMS must be able to generate audit records when privileges/permissions are retrieved.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000091",
         "gid": "V-206526",
         "rid": "SV-206526r617447_rule",
         "stig_id": "SRG-APP-000091-DB-000325",
-        "fix_id": "F-6786r291247_fix"
+        "fix_id": "F-6786r291247_fix",
+        "documentable": false
       },
       "id": "V-206526",
       "title": "The DBMS must be able to generate audit records when unsuccessful attempts to retrieve privileges/permissions occur.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000092",
         "gid": "V-206527",
         "rid": "SV-206527r617447_rule",
         "stig_id": "SRG-APP-000092-DB-000208",
-        "fix_id": "F-6787r291250_fix"
+        "fix_id": "F-6787r291250_fix",
+        "documentable": false
       },
       "id": "V-206527",
       "title": "The DBMS must initiate session auditing upon startup.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000095",
         "gid": "V-206528",
         "rid": "SV-206528r617447_rule",
         "stig_id": "SRG-APP-000095-DB-000039",
-        "fix_id": "F-6788r291253_fix"
+        "fix_id": "F-6788r291253_fix",
+        "documentable": false
       },
       "id": "V-206528",
       "title": "The DBMS must produce audit records containing sufficient information to establish what type of events occurred.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000096",
         "gid": "V-206529",
         "rid": "SV-206529r617447_rule",
         "stig_id": "SRG-APP-000096-DB-000040",
-        "fix_id": "F-6789r291256_fix"
+        "fix_id": "F-6789r291256_fix",
+        "documentable": false
       },
       "id": "V-206529",
       "title": "The DBMS must produce audit records containing time stamps to establish when the events occurred.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000097",
         "gid": "V-206530",
         "rid": "SV-206530r617447_rule",
         "stig_id": "SRG-APP-000097-DB-000041",
-        "fix_id": "F-6790r291259_fix"
+        "fix_id": "F-6790r291259_fix",
+        "documentable": false
       },
       "id": "V-206530",
       "title": "The DBMS must produce audit records containing sufficient information to establish where the events occurred.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000098",
         "gid": "V-206531",
         "rid": "SV-206531r617447_rule",
         "stig_id": "SRG-APP-000098-DB-000042",
-        "fix_id": "F-6791r291262_fix"
+        "fix_id": "F-6791r291262_fix",
+        "documentable": false
       },
       "id": "V-206531",
       "title": "The DBMS must produce audit records containing sufficient information to establish the sources (origins) of the events.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000099",
         "gid": "V-206532",
         "rid": "SV-206532r617447_rule",
         "stig_id": "SRG-APP-000099-DB-000043",
-        "fix_id": "F-6792r291265_fix"
+        "fix_id": "F-6792r291265_fix",
+        "documentable": false
       },
       "id": "V-206532",
       "title": "The DBMS must produce audit records containing sufficient information to establish the outcome (success or failure) of the events.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000100",
         "gid": "V-206533",
         "rid": "SV-206533r617447_rule",
         "stig_id": "SRG-APP-000100-DB-000201",
-        "fix_id": "F-6793r291268_fix"
+        "fix_id": "F-6793r291268_fix",
+        "documentable": false
       },
       "id": "V-206533",
       "title": "The DBMS must produce audit records containing sufficient information to establish the identity of any user/subject or process associated with the event.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000101",
         "gid": "V-206534",
         "rid": "SV-206534r617447_rule",
         "stig_id": "SRG-APP-000101-DB-000044",
-        "fix_id": "F-6794r291271_fix"
+        "fix_id": "F-6794r291271_fix",
+        "documentable": false
       },
       "id": "V-206534",
       "title": "The DBMS must include additional, more detailed, organization-defined information in the audit records for audit events identified by type, location, or subject.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000109",
         "gid": "V-206535",
         "rid": "SV-206535r617447_rule",
         "stig_id": "SRG-APP-000109-DB-000049",
-        "fix_id": "F-6795r291274_fix"
+        "fix_id": "F-6795r291274_fix",
+        "documentable": false
       },
       "id": "V-206535",
       "title": "The DBMS must by default shut down upon audit failure, to include the unavailability of space for more audit log records; or must be configurable to shut down upon audit failure.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000109",
         "gid": "V-206536",
         "rid": "SV-206536r617447_rule",
         "stig_id": "SRG-APP-000109-DB-000321",
-        "fix_id": "F-6796r291277_fix"
+        "fix_id": "F-6796r291277_fix",
+        "documentable": false
       },
       "id": "V-206536",
       "title": "The DBMS must be configurable to overwrite audit log records, oldest first (First-In-First-Out - FIFO), in the event of unavailability of space for more audit log records.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000116",
         "gid": "V-206537",
         "rid": "SV-206537r617447_rule",
         "stig_id": "SRG-APP-000116-DB-000057",
-        "fix_id": "F-6797r291280_fix"
+        "fix_id": "F-6797r291280_fix",
+        "documentable": false
       },
       "id": "V-206537",
       "title": "The DBMS must use system clocks to generate time stamps for use in audit records and application data.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118",
         "gid": "V-206538",
         "rid": "SV-206538r617447_rule",
         "stig_id": "SRG-APP-000118-DB-000059",
-        "fix_id": "F-6798r291283_fix"
+        "fix_id": "F-6798r291283_fix",
+        "documentable": false
       },
       "id": "V-206538",
       "title": "The audit information produced by the DBMS must be protected from unauthorized read access.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119",
         "gid": "V-206539",
         "rid": "SV-206539r617447_rule",
         "stig_id": "SRG-APP-000119-DB-000060",
-        "fix_id": "F-6799r291286_fix"
+        "fix_id": "F-6799r291286_fix",
+        "documentable": false
       },
       "id": "V-206539",
       "title": "The audit information produced by the DBMS must be protected from unauthorized modification.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120",
         "gid": "V-206540",
         "rid": "SV-206540r617447_rule",
         "stig_id": "SRG-APP-000120-DB-000061",
-        "fix_id": "F-6800r291289_fix"
+        "fix_id": "F-6800r291289_fix",
+        "documentable": false
       },
       "id": "V-206540",
       "title": "The audit information produced by the DBMS must be protected from unauthorized deletion.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121",
         "gid": "V-206541",
         "rid": "SV-206541r617447_rule",
         "stig_id": "SRG-APP-000121-DB-000202",
-        "fix_id": "F-6801r291292_fix"
+        "fix_id": "F-6801r291292_fix",
+        "documentable": false
       },
       "id": "V-206541",
       "title": "The DBMS must protect its audit features from unauthorized access.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000122",
         "gid": "V-206542",
         "rid": "SV-206542r617447_rule",
         "stig_id": "SRG-APP-000122-DB-000203",
-        "fix_id": "F-6802r291295_fix"
+        "fix_id": "F-6802r291295_fix",
+        "documentable": false
       },
       "id": "V-206542",
       "title": "The DBMS must protect its audit configuration from unauthorized modification.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000123",
         "gid": "V-206543",
         "rid": "SV-206543r617447_rule",
         "stig_id": "SRG-APP-000123-DB-000204",
-        "fix_id": "F-6803r291298_fix"
+        "fix_id": "F-6803r291298_fix",
+        "documentable": false
       },
       "id": "V-206543",
       "title": "The DBMS must protect its audit features from unauthorized removal.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133",
         "gid": "V-206544",
         "rid": "SV-206544r617447_rule",
         "stig_id": "SRG-APP-000133-DB-000179",
-        "fix_id": "F-6804r291301_fix"
+        "fix_id": "F-6804r291301_fix",
+        "documentable": false
       },
       "id": "V-206544",
       "title": "The DBMS must limit privileges to change software modules, to include stored procedures, functions and triggers, and links to software external to the DBMS.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133",
         "gid": "V-206545",
         "rid": "SV-206545r617447_rule",
         "stig_id": "SRG-APP-000133-DB-000198",
-        "fix_id": "F-6805r291304_fix"
+        "fix_id": "F-6805r291304_fix",
+        "documentable": false
       },
       "id": "V-206545",
       "title": "The DBMS software installation account must be restricted to authorized users.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133",
         "gid": "V-206546",
         "rid": "SV-206546r617447_rule",
         "stig_id": "SRG-APP-000133-DB-000199",
-        "fix_id": "F-6806r291307_fix"
+        "fix_id": "F-6806r291307_fix",
+        "documentable": false
       },
       "id": "V-206546",
       "title": "Database software, including DBMS configuration files, must be stored in dedicated directories, or DASD pools, separate from the host OS and other applications.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133",
         "gid": "V-206547",
         "rid": "SV-206547r617447_rule",
         "stig_id": "SRG-APP-000133-DB-000200",
-        "fix_id": "F-6807r291310_fix"
+        "fix_id": "F-6807r291310_fix",
+        "documentable": false
       },
       "id": "V-206547",
       "title": "Database objects (including but not limited to tables, indexes, storage, stored procedures, functions, triggers, links to software external to the DBMS, etc.) must be owned by database/DBMS principals authorized for ownership.",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000133",
         "gid": "V-206548",
         "rid": "SV-206548r617447_rule",
         "stig_id": "SRG-APP-000133-DB-000362",
-        "fix_id": "F-6808r291313_fix"
+        "fix_id": "F-6808r291313_fix",
+        "documentable": false
       },
       "id": "V-206548",
       "title": "The role(s)/group(s) used to modify database structure (including but not necessarily limited to tables, indexes, storage, etc.) and logic modules (stored procedures, functions, triggers, links to software external to the DBMS, etc.) must be restricted to authorized users.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-206549",
         "rid": "SV-206549r617447_rule",
         "stig_id": "SRG-APP-000141-DB-000090",
-        "fix_id": "F-6809r291316_fix"
+        "fix_id": "F-6809r291316_fix",
+        "documentable": false
       },
       "id": "V-206549",
       "title": "Default demonstration and sample databases, database objects, and applications must be removed.",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-206550",
         "rid": "SV-206550r617447_rule",
         "stig_id": "SRG-APP-000141-DB-000091",
-        "fix_id": "F-6810r291319_fix"
+        "fix_id": "F-6810r291319_fix",
+        "documentable": false
       },
       "id": "V-206550",
       "title": "Unused database components, DBMS software, and database objects must be removed.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-206551",
         "rid": "SV-206551r617447_rule",
         "stig_id": "SRG-APP-000141-DB-000092",
-        "fix_id": "F-6811r291322_fix"
+        "fix_id": "F-6811r291322_fix",
+        "documentable": false
       },
       "id": "V-206551",
       "title": "Unused database components that are integrated in the DBMS and cannot be uninstalled must be disabled.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141",
         "gid": "V-206552",
         "rid": "SV-206552r617447_rule",
         "stig_id": "SRG-APP-000141-DB-000093",
-        "fix_id": "F-6812r291325_fix"
+        "fix_id": "F-6812r291325_fix",
+        "documentable": false
       },
       "id": "V-206552",
       "title": "Access to external executables must be disabled or restricted.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000142",
         "gid": "V-206553",
         "rid": "SV-206553r617447_rule",
         "stig_id": "SRG-APP-000142-DB-000094",
-        "fix_id": "F-6813r291328_fix"
+        "fix_id": "F-6813r291328_fix",
+        "documentable": false
       },
       "id": "V-206553",
       "title": "The DBMS must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000148",
         "gid": "V-206554",
         "rid": "SV-206554r617447_rule",
         "stig_id": "SRG-APP-000148-DB-000103",
-        "fix_id": "F-6814r291331_fix"
+        "fix_id": "F-6814r291331_fix",
+        "documentable": false
       },
       "id": "V-206554",
       "title": "The DBMS must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000164",
         "gid": "V-206555",
         "rid": "SV-206555r617447_rule",
         "stig_id": "SRG-APP-000164-DB-000401",
-        "fix_id": "F-6815r291334_fix"
+        "fix_id": "F-6815r291334_fix",
+        "documentable": false
       },
       "id": "V-206555",
       "title": "If DBMS authentication, using passwords, is employed, the DBMS must enforce the DoD standards for password complexity and lifetime.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000171",
         "gid": "V-206556",
         "rid": "SV-206556r617447_rule",
         "stig_id": "SRG-APP-000171-DB-000074",
-        "fix_id": "F-6816r291337_fix"
+        "fix_id": "F-6816r291337_fix",
+        "documentable": false
       },
       "id": "V-206556",
       "title": "If passwords are used for authentication, the DBMS must store only hashed, salted representations of passwords.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000172",
         "gid": "V-206557",
         "rid": "SV-206557r617447_rule",
         "stig_id": "SRG-APP-000172-DB-000075",
-        "fix_id": "F-6817r291340_fix"
+        "fix_id": "F-6817r291340_fix",
+        "documentable": false
       },
       "id": "V-206557",
       "title": "If passwords are used for authentication, the DBMS must transmit only encrypted representations of passwords.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000175",
         "gid": "V-206558",
         "rid": "SV-206558r617447_rule",
         "stig_id": "SRG-APP-000175-DB-000067",
-        "fix_id": "F-6818r291343_fix"
+        "fix_id": "F-6818r291343_fix",
+        "documentable": false
       },
       "id": "V-206558",
       "title": "The DBMS, when utilizing PKI-based authentication, must validate certificates by performing RFC 5280-compliant certification path validation.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000176",
         "gid": "V-206559",
         "rid": "SV-206559r617447_rule",
         "stig_id": "SRG-APP-000176-DB-000068",
-        "fix_id": "F-6819r291346_fix"
+        "fix_id": "F-6819r291346_fix",
+        "documentable": false
       },
       "id": "V-206559",
       "title": "The DBMS must enforce authorized access to all PKI private keys stored/utilized by the DBMS.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000177",
         "gid": "V-206560",
         "rid": "SV-206560r617447_rule",
         "stig_id": "SRG-APP-000177-DB-000069",
-        "fix_id": "F-6820r291349_fix"
+        "fix_id": "F-6820r291349_fix",
+        "documentable": false
       },
       "id": "V-206560",
       "title": "The DBMS must map the PKI-authenticated identity to an associated user account.",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000178",
         "gid": "V-206561",
         "rid": "SV-206561r617447_rule",
         "stig_id": "SRG-APP-000178-DB-000083",
-        "fix_id": "F-6821r291352_fix"
+        "fix_id": "F-6821r291352_fix",
+        "documentable": false
       },
       "id": "V-206561",
       "title": "The DBMS must obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000179",
         "gid": "V-206562",
         "rid": "SV-206562r617447_rule",
         "stig_id": "SRG-APP-000179-DB-000114",
-        "fix_id": "F-6822r291355_fix"
+        "fix_id": "F-6822r291355_fix",
+        "documentable": false
       },
       "id": "V-206562",
       "title": "The DBMS must use NIST FIPS 140-2 validated cryptographic modules for cryptographic operations.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000180",
         "gid": "V-206563",
         "rid": "SV-206563r617447_rule",
         "stig_id": "SRG-APP-000180-DB-000115",
-        "fix_id": "F-6823r291358_fix"
+        "fix_id": "F-6823r291358_fix",
+        "documentable": false
       },
       "id": "V-206563",
       "title": "The DBMS must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000211",
         "gid": "V-206564",
         "rid": "SV-206564r617447_rule",
         "stig_id": "SRG-APP-000211-DB-000122",
-        "fix_id": "F-6824r291361_fix"
+        "fix_id": "F-6824r291361_fix",
+        "documentable": false
       },
       "id": "V-206564",
       "title": "The DBMS must separate user functionality (including user interface services) from database management functionality.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000220",
         "gid": "V-206565",
         "rid": "SV-206565r617447_rule",
         "stig_id": "SRG-APP-000220-DB-000149",
-        "fix_id": "F-6825r291364_fix"
+        "fix_id": "F-6825r291364_fix",
+        "documentable": false
       },
       "id": "V-206565",
       "title": "The DBMS must invalidate session identifiers upon user logout or other session termination.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000223",
         "gid": "V-206566",
         "rid": "SV-206566r617447_rule",
         "stig_id": "SRG-APP-000223-DB-000168",
-        "fix_id": "F-6826r291367_fix"
+        "fix_id": "F-6826r291367_fix",
+        "documentable": false
       },
       "id": "V-206566",
       "title": "The DBMS must recognize only system-generated session identifiers.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000224",
         "gid": "V-206567",
         "rid": "SV-206567r617447_rule",
         "stig_id": "SRG-APP-000224-DB-000384",
-        "fix_id": "F-6827r291370_fix"
+        "fix_id": "F-6827r291370_fix",
+        "documentable": false
       },
       "id": "V-206567",
       "title": "The DBMS must maintain the authenticity of communications sessions by guarding against man-in-the-middle attacks that guess at Session ID values.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000225",
         "gid": "V-206568",
         "rid": "SV-206568r617447_rule",
         "stig_id": "SRG-APP-000225-DB-000153",
-        "fix_id": "F-6828r291373_fix"
+        "fix_id": "F-6828r291373_fix",
+        "documentable": false
       },
       "id": "V-206568",
       "title": "The DBMS must fail to a secure state if system initialization fails, shutdown fails, or aborts fail.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000226",
         "gid": "V-206569",
         "rid": "SV-206569r617447_rule",
         "stig_id": "SRG-APP-000226-DB-000147",
-        "fix_id": "F-6829r291376_fix"
+        "fix_id": "F-6829r291376_fix",
+        "documentable": false
       },
       "id": "V-206569",
       "title": "In the event of a system failure, the DBMS must preserve any information necessary to determine cause of failure and any information necessary to return to operations with least disruption to mission processes.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000231",
         "gid": "V-206570",
         "rid": "SV-206570r617447_rule",
         "stig_id": "SRG-APP-000231-DB-000154",
-        "fix_id": "F-6830r291379_fix"
+        "fix_id": "F-6830r291379_fix",
+        "documentable": false
       },
       "id": "V-206570",
       "title": "The DBMS must protect the confidentiality and integrity of all information at rest.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000233",
         "gid": "V-206571",
         "rid": "SV-206571r617447_rule",
         "stig_id": "SRG-APP-000233-DB-000124",
-        "fix_id": "F-6831r291382_fix"
+        "fix_id": "F-6831r291382_fix",
+        "documentable": false
       },
       "id": "V-206571",
       "title": "The DBMS must isolate security functions from non-security functions.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243",
         "gid": "V-206572",
         "rid": "SV-206572r617447_rule",
         "stig_id": "SRG-APP-000243-DB-000128",
-        "fix_id": "F-6832r291385_fix"
+        "fix_id": "F-6832r291385_fix",
+        "documentable": false
       },
       "id": "V-206572",
       "title": "Database contents must be protected from unauthorized and unintended information transfer by enforcement of a data-transfer policy.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243",
         "gid": "V-206573",
         "rid": "SV-206573r617447_rule",
         "stig_id": "SRG-APP-000243-DB-000373",
-        "fix_id": "F-6833r291388_fix"
+        "fix_id": "F-6833r291388_fix",
+        "documentable": false
       },
       "id": "V-206573",
       "title": "The DBMS must prevent unauthorized and unintended information transfer via shared system resources.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000243",
         "gid": "V-206574",
         "rid": "SV-206574r617447_rule",
         "stig_id": "SRG-APP-000243-DB-000374",
-        "fix_id": "F-6834r291391_fix"
+        "fix_id": "F-6834r291391_fix",
+        "documentable": false
       },
       "id": "V-206574",
       "title": "Access to database files must be limited to relevant processes and to authorized, administrative users.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251",
         "gid": "V-206575",
         "rid": "SV-206575r617447_rule",
         "stig_id": "SRG-APP-000251-DB-000160",
-        "fix_id": "F-6835r291394_fix"
+        "fix_id": "F-6835r291394_fix",
+        "documentable": false
       },
       "id": "V-206575",
       "title": "The DBMS must check the validity of all data inputs except those specifically identified by the organization.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251",
         "gid": "V-206576",
         "rid": "SV-206576r617447_rule",
         "stig_id": "SRG-APP-000251-DB-000391",
-        "fix_id": "F-6836r291397_fix"
+        "fix_id": "F-6836r291397_fix",
+        "documentable": false
       },
       "id": "V-206576",
       "title": "The DBMS and associated applications must reserve the use of dynamic code execution for situations that require it.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000251",
         "gid": "V-206577",
         "rid": "SV-206577r617447_rule",
         "stig_id": "SRG-APP-000251-DB-000392",
-        "fix_id": "F-6837r291400_fix"
+        "fix_id": "F-6837r291400_fix",
+        "documentable": false
       },
       "id": "V-206577",
       "title": "The DBMS and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000266",
         "gid": "V-206578",
         "rid": "SV-206578r617447_rule",
         "stig_id": "SRG-APP-000266-DB-000162",
-        "fix_id": "F-6838r291403_fix"
+        "fix_id": "F-6838r291403_fix",
+        "documentable": false
       },
       "id": "V-206578",
       "title": "The DBMS must provide non-privileged users with error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000267",
         "gid": "V-206579",
         "rid": "SV-206579r617447_rule",
         "stig_id": "SRG-APP-000267-DB-000163",
-        "fix_id": "F-6839r291406_fix"
+        "fix_id": "F-6839r291406_fix",
+        "documentable": false
       },
       "id": "V-206579",
       "title": "The DBMS must reveal detailed error messages only to the ISSO, ISSM, SA and DBA.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295",
         "gid": "V-206580",
         "rid": "SV-206580r617447_rule",
         "stig_id": "SRG-APP-000295-DB-000305",
-        "fix_id": "F-6840r291409_fix"
+        "fix_id": "F-6840r291409_fix",
+        "documentable": false
       },
       "id": "V-206580",
       "title": "The DBMS must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000296",
         "gid": "V-206581",
         "rid": "SV-206581r617447_rule",
         "stig_id": "SRG-APP-000296-DB-000306",
-        "fix_id": "F-6841r291412_fix"
+        "fix_id": "F-6841r291412_fix",
+        "documentable": false
       },
       "id": "V-206581",
       "title": "The DBMS must provide logout functionality to allow the user to manually terminate a session initiated by that user.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000311",
         "gid": "V-206582",
         "rid": "SV-206582r617447_rule",
         "stig_id": "SRG-APP-000311-DB-000308",
-        "fix_id": "F-6842r291415_fix"
+        "fix_id": "F-6842r291415_fix",
+        "documentable": false
       },
       "id": "V-206582",
       "title": "The DBMS must associate organization-defined types of security labels having organization-defined security label values with information in storage.",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000313",
         "gid": "V-206583",
         "rid": "SV-206583r617447_rule",
         "stig_id": "SRG-APP-000313-DB-000309",
-        "fix_id": "F-6843r291418_fix"
+        "fix_id": "F-6843r291418_fix",
+        "documentable": false
       },
       "id": "V-206583",
       "title": "The DBMS must associate organization-defined types of security labels having organization-defined security label values with information in process.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000314",
         "gid": "V-206584",
         "rid": "SV-206584r617447_rule",
         "stig_id": "SRG-APP-000314-DB-000310",
-        "fix_id": "F-6844r291421_fix"
+        "fix_id": "F-6844r291421_fix",
+        "documentable": false
       },
       "id": "V-206584",
       "title": "The DBMS must associate organization-defined types of security labels having organization-defined security label values with information in transmission.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000328",
         "gid": "V-206585",
         "rid": "SV-206585r617447_rule",
         "stig_id": "SRG-APP-000328-DB-000301",
-        "fix_id": "F-6845r291424_fix"
+        "fix_id": "F-6845r291424_fix",
+        "documentable": false
       },
       "id": "V-206585",
       "title": "The DBMS must enforce discretionary access control policies, as defined by the data owner, over defined subjects and objects.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000340",
         "gid": "V-206586",
         "rid": "SV-206586r617447_rule",
         "stig_id": "SRG-APP-000340-DB-000304",
-        "fix_id": "F-6846r291427_fix"
+        "fix_id": "F-6846r291427_fix",
+        "documentable": false
       },
       "id": "V-206586",
       "title": "The DBMS must prevent non-privileged users from executing privileged functions, to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000342",
         "gid": "V-206587",
         "rid": "SV-206587r617447_rule",
         "stig_id": "SRG-APP-000342-DB-000302",
-        "fix_id": "F-6847r291430_fix"
+        "fix_id": "F-6847r291430_fix",
+        "documentable": false
       },
       "id": "V-206587",
       "title": "Execution of software modules (to include stored procedures, functions, and triggers) with elevated privileges must be restricted to necessary cases only.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356",
         "gid": "V-206589",
         "rid": "SV-206589r617447_rule",
         "stig_id": "SRG-APP-000356-DB-000314",
-        "fix_id": "F-6849r291436_fix"
+        "fix_id": "F-6849r291436_fix",
+        "documentable": false
       },
       "id": "V-206589",
       "title": "The DBMS must utilize centralized management of the content captured in audit records generated by all components of the DBMS.",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000356",
         "gid": "V-206590",
         "rid": "SV-206590r617447_rule",
         "stig_id": "SRG-APP-000356-DB-000315",
-        "fix_id": "F-6850r291439_fix"
+        "fix_id": "F-6850r291439_fix",
+        "documentable": false
       },
       "id": "V-206590",
       "title": "The DBMS must provide centralized configuration of the content to be captured in audit records generated by all components of the DBMS.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000357",
         "gid": "V-206591",
         "rid": "SV-206591r617447_rule",
         "stig_id": "SRG-APP-000357-DB-000316",
-        "fix_id": "F-6851r291442_fix"
+        "fix_id": "F-6851r291442_fix",
+        "documentable": false
       },
       "id": "V-206591",
       "title": "The DBMS must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000359",
         "gid": "V-206592",
         "rid": "SV-206592r617447_rule",
         "stig_id": "SRG-APP-000359-DB-000319",
-        "fix_id": "F-6852r291445_fix"
+        "fix_id": "F-6852r291445_fix",
+        "documentable": false
       },
       "id": "V-206592",
       "title": "The DBMS must provide a warning to appropriate support staff when allocated audit record storage volume reaches 75% of maximum audit record storage capacity.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000360",
         "gid": "V-206593",
         "rid": "SV-206593r617447_rule",
         "stig_id": "SRG-APP-000360-DB-000320",
-        "fix_id": "F-6853r531242_fix"
+        "fix_id": "F-6853r531242_fix",
+        "documentable": false
       },
       "id": "V-206593",
       "title": "The DBMS must provide an immediate real-time alert to appropriate support staff of all audit log failures.",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000374",
         "gid": "V-206594",
         "rid": "SV-206594r617447_rule",
         "stig_id": "SRG-APP-000374-DB-000322",
-        "fix_id": "F-6854r291451_fix"
+        "fix_id": "F-6854r291451_fix",
+        "documentable": false
       },
       "id": "V-206594",
       "title": "The DBMS must record time stamps, in audit records and application data, that can be mapped to Coordinated Universal Time (UTC, formerly GMT).",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000375",
         "gid": "V-206595",
         "rid": "SV-206595r617447_rule",
         "stig_id": "SRG-APP-000375-DB-000323",
-        "fix_id": "F-6855r291454_fix"
+        "fix_id": "F-6855r291454_fix",
+        "documentable": false
       },
       "id": "V-206595",
       "title": "The DBMS must generate time stamps, for audit records and application data, with a minimum granularity of one second.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000378",
         "gid": "V-206596",
         "rid": "SV-206596r617447_rule",
         "stig_id": "SRG-APP-000378-DB-000365",
-        "fix_id": "F-6856r291457_fix"
+        "fix_id": "F-6856r291457_fix",
+        "documentable": false
       },
       "id": "V-206596",
       "title": "The DBMS must prohibit user installation of logic modules (stored procedures, functions, triggers, views, etc.) without explicit privileged status.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000380",
         "gid": "V-206597",
         "rid": "SV-206597r617447_rule",
         "stig_id": "SRG-APP-000380-DB-000360",
-        "fix_id": "F-6857r291460_fix"
+        "fix_id": "F-6857r291460_fix",
+        "documentable": false
       },
       "id": "V-206597",
       "title": "The DBMS must enforce access restrictions associated with changes to the configuration of the DBMS or database(s).",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000381",
         "gid": "V-206598",
         "rid": "SV-206598r617447_rule",
         "stig_id": "SRG-APP-000381-DB-000361",
-        "fix_id": "F-6858r291463_fix"
+        "fix_id": "F-6858r291463_fix",
+        "documentable": false
       },
       "id": "V-206598",
       "title": "The DBMS must produce audit records of its enforcement of access restrictions associated with changes to the configuration of the DBMS or database(s).",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000383",
         "gid": "V-206599",
         "rid": "SV-206599r617447_rule",
         "stig_id": "SRG-APP-000383-DB-000364",
-        "fix_id": "F-6859r291466_fix"
+        "fix_id": "F-6859r291466_fix",
+        "documentable": false
       },
       "id": "V-206599",
       "title": "The DBMS must disable network functions, ports, protocols, and services deemed by the organization to be nonsecure, in accord with the Ports, Protocols, and Services Management (PPSM) guidance.",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000389",
         "gid": "V-206600",
         "rid": "SV-206600r617447_rule",
         "stig_id": "SRG-APP-000389-DB-000372",
-        "fix_id": "F-6860r291469_fix"
+        "fix_id": "F-6860r291469_fix",
+        "documentable": false
       },
       "id": "V-206600",
       "title": "The DBMS must require users to re-authenticate when organization-defined circumstances or situations require re-authentication.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000400",
         "gid": "V-206601",
         "rid": "SV-206601r617447_rule",
         "stig_id": "SRG-APP-000400-DB-000367",
-        "fix_id": "F-6861r291472_fix"
+        "fix_id": "F-6861r291472_fix",
+        "documentable": false
       },
       "id": "V-206601",
       "title": "The DBMS must prohibit the use of cached authenticators after an organization-defined time period.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427",
         "gid": "V-206603",
         "rid": "SV-206603r617447_rule",
         "stig_id": "SRG-APP-000427-DB-000385",
-        "fix_id": "F-6863r291478_fix"
+        "fix_id": "F-6863r291478_fix",
+        "documentable": false
       },
       "id": "V-206603",
       "title": "The DBMS must only accept end entity certificates issued by DoD PKI or DoD-approved PKI Certification Authorities (CAs) for the establishment of all encrypted sessions.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000428",
         "gid": "V-206604",
         "rid": "SV-206604r617447_rule",
         "stig_id": "SRG-APP-000428-DB-000386",
-        "fix_id": "F-6864r291481_fix"
+        "fix_id": "F-6864r291481_fix",
+        "documentable": false
       },
       "id": "V-206604",
       "title": "The DBMS must implement cryptographic mechanisms to prevent unauthorized modification of organization-defined information at rest (to include, at a minimum, PII and classified information) on organization-defined information system components.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000429",
         "gid": "V-206605",
         "rid": "SV-206605r617447_rule",
         "stig_id": "SRG-APP-000429-DB-000387",
-        "fix_id": "F-6865r291484_fix"
+        "fix_id": "F-6865r291484_fix",
+        "documentable": false
       },
       "id": "V-206605",
       "title": "The DBMS must implement cryptographic mechanisms preventing the unauthorized disclosure of organization-defined information at rest on organization-defined information system components.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000431",
         "gid": "V-206606",
         "rid": "SV-206606r617447_rule",
         "stig_id": "SRG-APP-000431-DB-000388",
-        "fix_id": "F-6866r291487_fix"
+        "fix_id": "F-6866r291487_fix",
+        "documentable": false
       },
       "id": "V-206606",
       "title": "The DBMS must maintain a separate execution domain for each executing process.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000441",
         "gid": "V-206607",
         "rid": "SV-206607r617447_rule",
         "stig_id": "SRG-APP-000441-DB-000378",
-        "fix_id": "F-6867r291490_fix"
+        "fix_id": "F-6867r291490_fix",
+        "documentable": false
       },
       "id": "V-206607",
       "title": "The DBMS must maintain the confidentiality and integrity of information during preparation for transmission.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000442",
         "gid": "V-206608",
         "rid": "SV-206608r617447_rule",
         "stig_id": "SRG-APP-000442-DB-000379",
-        "fix_id": "F-6868r291493_fix"
+        "fix_id": "F-6868r291493_fix",
+        "documentable": false
       },
       "id": "V-206608",
       "title": "The DBMS must maintain the confidentiality and integrity of information during reception.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000447",
         "gid": "V-206609",
         "rid": "SV-206609r617447_rule",
         "stig_id": "SRG-APP-000447-DB-000393",
-        "fix_id": "F-6869r291496_fix"
+        "fix_id": "F-6869r291496_fix",
+        "documentable": false
       },
       "id": "V-206609",
       "title": "When invalid inputs are received, the DBMS must behave in a predictable and documented manner that reflects organizational and system objectives.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000454",
         "gid": "V-206610",
         "rid": "SV-206610r617447_rule",
         "stig_id": "SRG-APP-000454-DB-000389",
-        "fix_id": "F-6870r291499_fix"
+        "fix_id": "F-6870r291499_fix",
+        "documentable": false
       },
       "id": "V-206610",
       "title": "When updates are applied to the DBMS software, any software components that have been replaced or made unnecessary must be removed.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456",
         "gid": "V-206611",
         "rid": "SV-206611r617447_rule",
         "stig_id": "SRG-APP-000456-DB-000390",
-        "fix_id": "F-6871r291502_fix"
+        "fix_id": "F-6871r291502_fix",
+        "documentable": false
       },
       "id": "V-206611",
       "title": "Security-relevant software updates to the DBMS must be installed within the time period directed by an authoritative source (e.g. IAVM, CTOs, DTMs, and STIGs).",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492",
         "gid": "V-206612",
         "rid": "SV-206612r617447_rule",
         "stig_id": "SRG-APP-000492-DB-000332",
-        "fix_id": "F-6872r291505_fix"
+        "fix_id": "F-6872r291505_fix",
+        "documentable": false
       },
       "id": "V-206612",
       "title": "The DBMS must be able to generate audit records when security objects are accessed.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000492",
         "gid": "V-206613",
         "rid": "SV-206613r617447_rule",
         "stig_id": "SRG-APP-000492-DB-000333",
-        "fix_id": "F-6873r291508_fix"
+        "fix_id": "F-6873r291508_fix",
+        "documentable": false
       },
       "id": "V-206613",
       "title": "The DBMS must generate audit records when unsuccessful attempts to access security objects occur.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000494",
         "gid": "V-206614",
         "rid": "SV-206614r617447_rule",
         "stig_id": "SRG-APP-000494-DB-000344",
-        "fix_id": "F-6874r291511_fix"
+        "fix_id": "F-6874r291511_fix",
+        "documentable": false
       },
       "id": "V-206614",
       "title": "The DBMS must generate audit records when categories of information (e.g., classification levels/security levels) are accessed.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000494",
         "gid": "V-206615",
         "rid": "SV-206615r617447_rule",
         "stig_id": "SRG-APP-000494-DB-000345",
-        "fix_id": "F-6875r291514_fix"
+        "fix_id": "F-6875r291514_fix",
+        "documentable": false
       },
       "id": "V-206615",
       "title": "The DBMS must generate audit records when unsuccessful attempts to access categories of information (e.g., classification levels/security levels) occur.",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495",
         "gid": "V-206616",
         "rid": "SV-206616r617447_rule",
         "stig_id": "SRG-APP-000495-DB-000326",
-        "fix_id": "F-6876r291517_fix"
+        "fix_id": "F-6876r291517_fix",
+        "documentable": false
       },
       "id": "V-206616",
       "title": "The DBMS must generate audit records when privileges/permissions are added.",
@@ -1736,11 +1736,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495",
         "gid": "V-206617",
         "rid": "SV-206617r617447_rule",
         "stig_id": "SRG-APP-000495-DB-000327",
-        "fix_id": "F-6877r291520_fix"
+        "fix_id": "F-6877r291520_fix",
+        "documentable": false
       },
       "id": "V-206617",
       "title": "The DBMS must generate audit records when unsuccessful attempts to add privileges/permissions occur.",
@@ -1754,11 +1754,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495",
         "gid": "V-206618",
         "rid": "SV-206618r617447_rule",
         "stig_id": "SRG-APP-000495-DB-000328",
-        "fix_id": "F-6878r291523_fix"
+        "fix_id": "F-6878r291523_fix",
+        "documentable": false
       },
       "id": "V-206618",
       "title": "The DBMS must generate audit records when privileges/permissions are modified.",
@@ -1772,11 +1772,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000495",
         "gid": "V-206619",
         "rid": "SV-206619r617447_rule",
         "stig_id": "SRG-APP-000495-DB-000329",
-        "fix_id": "F-6879r291526_fix"
+        "fix_id": "F-6879r291526_fix",
+        "documentable": false
       },
       "id": "V-206619",
       "title": "The DBMS must generate audit records when unsuccessful attempts to modify privileges/permissions occur.",
@@ -1790,11 +1790,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496",
         "gid": "V-206620",
         "rid": "SV-206620r617447_rule",
         "stig_id": "SRG-APP-000496-DB-000334",
-        "fix_id": "F-6880r291529_fix"
+        "fix_id": "F-6880r291529_fix",
+        "documentable": false
       },
       "id": "V-206620",
       "title": "The DBMS must generate audit records when security objects are modified.",
@@ -1808,11 +1808,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000496",
         "gid": "V-206621",
         "rid": "SV-206621r617447_rule",
         "stig_id": "SRG-APP-000496-DB-000335",
-        "fix_id": "F-6881r291532_fix"
+        "fix_id": "F-6881r291532_fix",
+        "documentable": false
       },
       "id": "V-206621",
       "title": "The DBMS must generate audit records when unsuccessful attempts to modify security objects occur.",
@@ -1826,11 +1826,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000498",
         "gid": "V-206622",
         "rid": "SV-206622r617447_rule",
         "stig_id": "SRG-APP-000498-DB-000346",
-        "fix_id": "F-6882r291535_fix"
+        "fix_id": "F-6882r291535_fix",
+        "documentable": false
       },
       "id": "V-206622",
       "title": "The DBMS must generate audit records when categories of information (e.g., classification levels/security levels) are modified.",
@@ -1844,11 +1844,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000498",
         "gid": "V-206623",
         "rid": "SV-206623r617447_rule",
         "stig_id": "SRG-APP-000498-DB-000347",
-        "fix_id": "F-6883r291538_fix"
+        "fix_id": "F-6883r291538_fix",
+        "documentable": false
       },
       "id": "V-206623",
       "title": "The DBMS must generate audit records when unsuccessful attempts to modify categories of information (e.g., classification levels/security levels) occur.",
@@ -1862,11 +1862,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499",
         "gid": "V-206624",
         "rid": "SV-206624r617447_rule",
         "stig_id": "SRG-APP-000499-DB-000330",
-        "fix_id": "F-6884r291541_fix"
+        "fix_id": "F-6884r291541_fix",
+        "documentable": false
       },
       "id": "V-206624",
       "title": "The DBMS must generate audit records when privileges/permissions are deleted.",
@@ -1880,11 +1880,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000499",
         "gid": "V-206625",
         "rid": "SV-206625r617447_rule",
         "stig_id": "SRG-APP-000499-DB-000331",
-        "fix_id": "F-6885r291544_fix"
+        "fix_id": "F-6885r291544_fix",
+        "documentable": false
       },
       "id": "V-206625",
       "title": "The DBMS must generate audit records when unsuccessful attempts to delete privileges/permissions occur.",
@@ -1898,11 +1898,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501",
         "gid": "V-206626",
         "rid": "SV-206626r617447_rule",
         "stig_id": "SRG-APP-000501-DB-000336",
-        "fix_id": "F-6886r291547_fix"
+        "fix_id": "F-6886r291547_fix",
+        "documentable": false
       },
       "id": "V-206626",
       "title": "The DBMS must generate audit records when security objects are deleted.",
@@ -1916,11 +1916,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000501",
         "gid": "V-206627",
         "rid": "SV-206627r617447_rule",
         "stig_id": "SRG-APP-000501-DB-000337",
-        "fix_id": "F-6887r291550_fix"
+        "fix_id": "F-6887r291550_fix",
+        "documentable": false
       },
       "id": "V-206627",
       "title": "The DBMS must generate audit records when unsuccessful attempts to delete security objects occur.",
@@ -1934,11 +1934,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000502",
         "gid": "V-206628",
         "rid": "SV-206628r617447_rule",
         "stig_id": "SRG-APP-000502-DB-000348",
-        "fix_id": "F-6888r291553_fix"
+        "fix_id": "F-6888r291553_fix",
+        "documentable": false
       },
       "id": "V-206628",
       "title": "The DBMS must generate audit records when categories of information (e.g., classification levels/security levels) are deleted.",
@@ -1952,11 +1952,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000502",
         "gid": "V-206629",
         "rid": "SV-206629r617447_rule",
         "stig_id": "SRG-APP-000502-DB-000349",
-        "fix_id": "F-6889r291556_fix"
+        "fix_id": "F-6889r291556_fix",
+        "documentable": false
       },
       "id": "V-206629",
       "title": "The DBMS must generate audit records when unsuccessful attempts to delete categories of information (e.g., classification levels/security levels) occur.",
@@ -1970,11 +1970,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503",
         "gid": "V-206630",
         "rid": "SV-206630r617447_rule",
         "stig_id": "SRG-APP-000503-DB-000350",
-        "fix_id": "F-6890r291559_fix"
+        "fix_id": "F-6890r291559_fix",
+        "documentable": false
       },
       "id": "V-206630",
       "title": "The DBMS must generate audit records when successful logons or connections occur.",
@@ -1988,11 +1988,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503",
         "gid": "V-206631",
         "rid": "SV-206631r617447_rule",
         "stig_id": "SRG-APP-000503-DB-000351",
-        "fix_id": "F-6891r291562_fix"
+        "fix_id": "F-6891r291562_fix",
+        "documentable": false
       },
       "id": "V-206631",
       "title": "The DBMS must generate audit records when unsuccessful logons or connection attempts occur.",
@@ -2006,11 +2006,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504",
         "gid": "V-206632",
         "rid": "SV-206632r617447_rule",
         "stig_id": "SRG-APP-000504-DB-000354",
-        "fix_id": "F-6892r291565_fix"
+        "fix_id": "F-6892r291565_fix",
+        "documentable": false
       },
       "id": "V-206632",
       "title": "The DBMS must generate audit records for all privileged activities or other system-level access.",
@@ -2024,11 +2024,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000504",
         "gid": "V-206633",
         "rid": "SV-206633r617447_rule",
         "stig_id": "SRG-APP-000504-DB-000355",
-        "fix_id": "F-6893r291568_fix"
+        "fix_id": "F-6893r291568_fix",
+        "documentable": false
       },
       "id": "V-206633",
       "title": "The DBMS must generate audit records when unsuccessful attempts to execute privileged activities or other system-level access occur.",
@@ -2042,11 +2042,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000505",
         "gid": "V-206634",
         "rid": "SV-206634r617447_rule",
         "stig_id": "SRG-APP-000505-DB-000352",
-        "fix_id": "F-6894r291571_fix"
+        "fix_id": "F-6894r291571_fix",
+        "documentable": false
       },
       "id": "V-206634",
       "title": "The DBMS must generate audit records showing starting and ending time for user access to the database(s).",
@@ -2060,11 +2060,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000506",
         "gid": "V-206635",
         "rid": "SV-206635r617447_rule",
         "stig_id": "SRG-APP-000506-DB-000353",
-        "fix_id": "F-6895r291574_fix"
+        "fix_id": "F-6895r291574_fix",
+        "documentable": false
       },
       "id": "V-206635",
       "title": "The DBMS must generate audit records when concurrent logons/connections by the same user from different workstations occur.",
@@ -2078,11 +2078,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507",
         "gid": "V-206636",
         "rid": "SV-206636r617447_rule",
         "stig_id": "SRG-APP-000507-DB-000356",
-        "fix_id": "F-6896r291577_fix"
+        "fix_id": "F-6896r291577_fix",
+        "documentable": false
       },
       "id": "V-206636",
       "title": "The DBMS must be able to generate audit records when successful accesses to objects occur.",
@@ -2096,11 +2096,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000507",
         "gid": "V-206637",
         "rid": "SV-206637r617447_rule",
         "stig_id": "SRG-APP-000507-DB-000357",
-        "fix_id": "F-6897r291580_fix"
+        "fix_id": "F-6897r291580_fix",
+        "documentable": false
       },
       "id": "V-206637",
       "title": "The DBMS must generate audit records when unsuccessful accesses to objects occur.",
@@ -2114,11 +2114,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000508",
         "gid": "V-206638",
         "rid": "SV-206638r617447_rule",
         "stig_id": "SRG-APP-000508-DB-000358",
-        "fix_id": "F-6898r291583_fix"
+        "fix_id": "F-6898r291583_fix",
+        "documentable": false
       },
       "id": "V-206638",
       "title": "The DBMS must generate audit records for all direct access to the database(s).",
@@ -2132,11 +2132,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514",
         "gid": "V-206639",
         "rid": "SV-206639r617447_rule",
         "stig_id": "SRG-APP-000514-DB-000381",
-        "fix_id": "F-6899r291586_fix"
+        "fix_id": "F-6899r291586_fix",
+        "documentable": false
       },
       "id": "V-206639",
       "title": "The DBMS must implement NIST FIPS 140-2 validated cryptographic modules to provision digital signatures.",
@@ -2150,11 +2150,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514",
         "gid": "V-206640",
         "rid": "SV-206640r617447_rule",
         "stig_id": "SRG-APP-000514-DB-000382",
-        "fix_id": "F-6900r291589_fix"
+        "fix_id": "F-6900r291589_fix",
+        "documentable": false
       },
       "id": "V-206640",
       "title": "The DBMS must implement NIST FIPS 140-2 validated cryptographic modules to generate and validate cryptographic hashes.",
@@ -2168,11 +2168,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000514",
         "gid": "V-206641",
         "rid": "SV-206641r617447_rule",
         "stig_id": "SRG-APP-000514-DB-000383",
-        "fix_id": "F-6901r291592_fix"
+        "fix_id": "F-6901r291592_fix",
+        "documentable": false
       },
       "id": "V-206641",
       "title": "The DBMS must implement NIST FIPS 140-2 validated cryptographic modules to protect unclassified information requiring confidentiality and cryptographic protection, in accordance with the data owners requirements.",
@@ -2186,11 +2186,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000515",
         "gid": "V-206642",
         "rid": "SV-206642r617447_rule",
         "stig_id": "SRG-APP-000515-DB-000318",
-        "fix_id": "F-6902r291595_fix"
+        "fix_id": "F-6902r291595_fix",
+        "documentable": false
       },
       "id": "V-206642",
       "title": "The DBMS must off-load audit data to a separate log management facility; this shall be continuous and in near real time for systems with a network connection to the storage facility and weekly or more often for stand-alone systems.",
@@ -2204,11 +2204,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516",
         "gid": "V-206643",
         "rid": "SV-206643r617447_rule",
         "stig_id": "SRG-APP-000516-DB-000363",
-        "fix_id": "F-6903r291598_fix"
+        "fix_id": "F-6903r291598_fix",
+        "documentable": false
       },
       "id": "V-206643",
       "title": "The DBMS must be configured in accordance with the security configuration settings based on DoD security configuration and implementation guidance, including STIGs, NSA configuration guides, CTOs, DTMs, and IAVMs.",
@@ -2222,11 +2222,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000456-DB-000400",
         "gid": "V-233492",
         "rid": "SV-233492r617447_rule",
         "stig_id": "SRG-APP-000456-DB-000400",
-        "fix_id": "F-36652r604895_fix"
+        "fix_id": "F-36652r604895_fix",
+        "documentable": false
       },
       "id": "V-233492",
       "title": "DBMS products must be a version supported by the vendor.",
@@ -2238,7 +2238,5 @@
       }
     }
   ],
-  "name": "Database_Generic",
-  "title": "Database Security Requirements Guide",
-  "summary": "This Security Requirements Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Database_Generic"
 }

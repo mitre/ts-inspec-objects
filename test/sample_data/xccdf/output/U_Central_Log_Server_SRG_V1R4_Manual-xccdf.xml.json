@@ -8,11 +8,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000295-AU-000190",
         "gid": "V-100015",
         "rid": "SV-109119r1_rule",
         "stig_id": "SRG-APP-000295-AU-000190",
-        "fix_id": "F-105699r1_fix"
+        "fix_id": "F-105699r1_fix",
+        "documentable": false
       },
       "id": "V-100015",
       "title": "The Central Log Server must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.",
@@ -26,11 +26,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000296-AU-000560",
         "gid": "V-100017",
         "rid": "SV-109121r1_rule",
         "stig_id": "SRG-APP-000296-AU-000560",
-        "fix_id": "F-105701r1_fix"
+        "fix_id": "F-105701r1_fix",
+        "documentable": false
       },
       "id": "V-100017",
       "title": "The Central Log Server must provide a logout capability for user initiated communication session.",
@@ -44,11 +44,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000297-AU-000570",
         "gid": "V-100019",
         "rid": "SV-109123r1_rule",
         "stig_id": "SRG-APP-000297-AU-000570",
-        "fix_id": "F-105703r1_fix"
+        "fix_id": "F-105703r1_fix",
+        "documentable": false
       },
       "id": "V-100019",
       "title": "The Central Log Server must display an explicit logout message to users indicating the reliable termination of authenticated communications sessions.",
@@ -62,11 +62,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000291-AU-000200",
         "gid": "V-100021",
         "rid": "SV-109125r1_rule",
         "stig_id": "SRG-APP-000291-AU-000200",
-        "fix_id": "F-105705r1_fix"
+        "fix_id": "F-105705r1_fix",
+        "documentable": false
       },
       "id": "V-100021",
       "title": "The Central Log Server must notify system administrators and ISSO when accounts are created.",
@@ -80,11 +80,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000026-AU-000580",
         "gid": "V-100025",
         "rid": "SV-109129r1_rule",
         "stig_id": "SRG-APP-000026-AU-000580",
-        "fix_id": "F-105709r1_fix"
+        "fix_id": "F-105709r1_fix",
+        "documentable": false
       },
       "id": "V-100025",
       "title": "The Central Log Server must automatically audit account creation.",
@@ -98,11 +98,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000027-AU-000590",
         "gid": "V-100027",
         "rid": "SV-109131r1_rule",
         "stig_id": "SRG-APP-000027-AU-000590",
-        "fix_id": "F-105711r1_fix"
+        "fix_id": "F-105711r1_fix",
+        "documentable": false
       },
       "id": "V-100027",
       "title": "The Central Log Server must automatically audit account modification.",
@@ -116,11 +116,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000028-AU-000600",
         "gid": "V-100029",
         "rid": "SV-109133r1_rule",
         "stig_id": "SRG-APP-000028-AU-000600",
-        "fix_id": "F-105713r1_fix"
+        "fix_id": "F-105713r1_fix",
+        "documentable": false
       },
       "id": "V-100029",
       "title": "The Central Log Server must automatically audit account disabling actions.",
@@ -134,11 +134,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000029-AU-000610",
         "gid": "V-100031",
         "rid": "SV-109135r1_rule",
         "stig_id": "SRG-APP-000029-AU-000610",
-        "fix_id": "F-105715r1_fix"
+        "fix_id": "F-105715r1_fix",
+        "documentable": false
       },
       "id": "V-100031",
       "title": "The Central Log Server must automatically audit account removal actions.",
@@ -152,11 +152,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000065-AU-000240",
         "gid": "V-100033",
         "rid": "SV-109137r1_rule",
         "stig_id": "SRG-APP-000065-AU-000240",
-        "fix_id": "F-105717r1_fix"
+        "fix_id": "F-105717r1_fix",
+        "documentable": false
       },
       "id": "V-100033",
       "title": "The Central Log Server must enforce the limit of three consecutive invalid logon attempts by a user during a 15 minute time period.",
@@ -170,11 +170,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000345-AU-000400",
         "gid": "V-100035",
         "rid": "SV-109139r1_rule",
         "stig_id": "SRG-APP-000345-AU-000400",
-        "fix_id": "F-105719r1_fix"
+        "fix_id": "F-105719r1_fix",
+        "documentable": false
       },
       "id": "V-100035",
       "title": "The Central Log Server must automatically lock the account until the locked account is released by an administrator when three unsuccessful login attempts in 15 minutes are exceeded.",
@@ -188,11 +188,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000068-AU-000035",
         "gid": "V-100037",
         "rid": "SV-109141r1_rule",
         "stig_id": "SRG-APP-000068-AU-000035",
-        "fix_id": "F-105721r1_fix"
+        "fix_id": "F-105721r1_fix",
+        "documentable": false
       },
       "id": "V-100037",
       "title": "The Central Log Server must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the Central Log Server.",
@@ -206,11 +206,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000069-AU-000420",
         "gid": "V-100039",
         "rid": "SV-109143r1_rule",
         "stig_id": "SRG-APP-000069-AU-000420",
-        "fix_id": "F-105723r1_fix"
+        "fix_id": "F-105723r1_fix",
+        "documentable": false
       },
       "id": "V-100039",
       "title": "The Central Log Server must retain the Standard Mandatory DoD Notice and Consent Banner on the screen until users acknowledge the usage conditions and take explicit actions to log on for further access.",
@@ -224,11 +224,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000503-AU-000280",
         "gid": "V-100041",
         "rid": "SV-109145r1_rule",
         "stig_id": "SRG-APP-000503-AU-000280",
-        "fix_id": "F-105725r1_fix"
+        "fix_id": "F-105725r1_fix",
+        "documentable": false
       },
       "id": "V-100041",
       "title": "The Central Log Server must generate audit records when successful/unsuccessful logon attempts occur.",
@@ -242,11 +242,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000092-AU-000670",
         "gid": "V-100043",
         "rid": "SV-109147r1_rule",
         "stig_id": "SRG-APP-000092-AU-000670",
-        "fix_id": "F-105727r1_fix"
+        "fix_id": "F-105727r1_fix",
+        "documentable": false
       },
       "id": "V-100043",
       "title": "The Central Log Server must initiate session auditing upon startup.",
@@ -260,11 +260,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000095-AU-000680",
         "gid": "V-100045",
         "rid": "SV-109149r1_rule",
         "stig_id": "SRG-APP-000095-AU-000680",
-        "fix_id": "F-105729r1_fix"
+        "fix_id": "F-105729r1_fix",
+        "documentable": false
       },
       "id": "V-100045",
       "title": "The Central Log Server must produce audit records containing information to establish what type of events occurred.",
@@ -278,11 +278,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000096-AU-000690",
         "gid": "V-100047",
         "rid": "SV-109151r1_rule",
         "stig_id": "SRG-APP-000096-AU-000690",
-        "fix_id": "F-105731r1_fix"
+        "fix_id": "F-105731r1_fix",
+        "documentable": false
       },
       "id": "V-100047",
       "title": "The Central Log Server must produce audit records containing information to establish when (date and time) the events occurred.",
@@ -296,11 +296,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000097-AU-000700",
         "gid": "V-100049",
         "rid": "SV-109153r1_rule",
         "stig_id": "SRG-APP-000097-AU-000700",
-        "fix_id": "F-105733r1_fix"
+        "fix_id": "F-105733r1_fix",
+        "documentable": false
       },
       "id": "V-100049",
       "title": "The Central Log Server must produce audit records containing information to establish where the events occurred.",
@@ -314,11 +314,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000098-AU-000710",
         "gid": "V-100051",
         "rid": "SV-109155r1_rule",
         "stig_id": "SRG-APP-000098-AU-000710",
-        "fix_id": "F-105735r1_fix"
+        "fix_id": "F-105735r1_fix",
+        "documentable": false
       },
       "id": "V-100051",
       "title": "The Central Log Server must produce audit records containing information to establish the source of the events.",
@@ -332,11 +332,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000099-AU-000720",
         "gid": "V-100053",
         "rid": "SV-109157r1_rule",
         "stig_id": "SRG-APP-000099-AU-000720",
-        "fix_id": "F-105737r1_fix"
+        "fix_id": "F-105737r1_fix",
+        "documentable": false
       },
       "id": "V-100053",
       "title": "The Central Log Server must produce audit records that contain information to establish the outcome of the events.",
@@ -350,11 +350,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000100-AU-000730",
         "gid": "V-100055",
         "rid": "SV-109159r1_rule",
         "stig_id": "SRG-APP-000100-AU-000730",
-        "fix_id": "F-105739r1_fix"
+        "fix_id": "F-105739r1_fix",
+        "documentable": false
       },
       "id": "V-100055",
       "title": "The Central Log Server must generate audit records containing information that establishes the identity of any individual or process associated with the event.",
@@ -368,11 +368,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000118-AU-000100",
         "gid": "V-100057",
         "rid": "SV-109161r1_rule",
         "stig_id": "SRG-APP-000118-AU-000100",
-        "fix_id": "F-105741r1_fix"
+        "fix_id": "F-105741r1_fix",
+        "documentable": false
       },
       "id": "V-100057",
       "title": "The Central Log Server must protect audit information from any type of unauthorized read access.",
@@ -386,11 +386,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000119-AU-000110",
         "gid": "V-100059",
         "rid": "SV-109163r1_rule",
         "stig_id": "SRG-APP-000119-AU-000110",
-        "fix_id": "F-105743r1_fix"
+        "fix_id": "F-105743r1_fix",
+        "documentable": false
       },
       "id": "V-100059",
       "title": "The Central Log Server must protect audit information from unauthorized modification.",
@@ -404,11 +404,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000120-AU-000120",
         "gid": "V-100061",
         "rid": "SV-109165r1_rule",
         "stig_id": "SRG-APP-000120-AU-000120",
-        "fix_id": "F-105745r1_fix"
+        "fix_id": "F-105745r1_fix",
+        "documentable": false
       },
       "id": "V-100061",
       "title": "The Central Log Server must protect audit information from unauthorized deletion.",
@@ -422,11 +422,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000121-AU-000130",
         "gid": "V-100063",
         "rid": "SV-109167r1_rule",
         "stig_id": "SRG-APP-000121-AU-000130",
-        "fix_id": "F-105747r1_fix"
+        "fix_id": "F-105747r1_fix",
+        "documentable": false
       },
       "id": "V-100063",
       "title": "The Central Log Server must protect audit tools from unauthorized access.",
@@ -440,11 +440,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000122-AU-000140",
         "gid": "V-100065",
         "rid": "SV-109169r1_rule",
         "stig_id": "SRG-APP-000122-AU-000140",
-        "fix_id": "F-105749r1_fix"
+        "fix_id": "F-105749r1_fix",
+        "documentable": false
       },
       "id": "V-100065",
       "title": "The Central Log Server must protect audit tools from unauthorized modification.",
@@ -458,11 +458,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000123-AU-000150",
         "gid": "V-100067",
         "rid": "SV-109171r1_rule",
         "stig_id": "SRG-APP-000123-AU-000150",
-        "fix_id": "F-105751r1_fix"
+        "fix_id": "F-105751r1_fix",
+        "documentable": false
       },
       "id": "V-100067",
       "title": "The Central Log Server must protect audit tools from unauthorized deletion.",
@@ -476,11 +476,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000141-AU-000090",
         "gid": "V-100069",
         "rid": "SV-109173r1_rule",
         "stig_id": "SRG-APP-000141-AU-000090",
-        "fix_id": "F-105753r1_fix"
+        "fix_id": "F-105753r1_fix",
+        "documentable": false
       },
       "id": "V-100069",
       "title": "The Central Log Server must be configured to disable non-essential capabilities.",
@@ -494,11 +494,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000389-AU-000180",
         "gid": "V-100071",
         "rid": "SV-109175r1_rule",
         "stig_id": "SRG-APP-000389-AU-000180",
-        "fix_id": "F-105757r1_fix"
+        "fix_id": "F-105757r1_fix",
+        "documentable": false
       },
       "id": "V-100071",
       "title": "The Central Log Server must require users to reauthenticate when organization-defined circumstances or situations require reauthentication.",
@@ -512,11 +512,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000610-AU-000050",
         "gid": "V-100073",
         "rid": "SV-109177r1_rule",
         "stig_id": "SRG-APP-000610-AU-000050",
-        "fix_id": "F-105759r1_fix"
+        "fix_id": "F-105759r1_fix",
+        "documentable": false
       },
       "id": "V-100073",
       "title": "The Central Log Server must use FIPS-validated SHA-2 or higher hash function for digital signature generation and verification (non-legacy use).",
@@ -530,11 +530,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000427-AU-000040",
         "gid": "V-100075",
         "rid": "SV-109179r1_rule",
         "stig_id": "SRG-APP-000427-AU-000040",
-        "fix_id": "F-105761r1_fix"
+        "fix_id": "F-105761r1_fix",
+        "documentable": false
       },
       "id": "V-100075",
       "title": "The Central Log Server must only allow the use of DoD PKI established certificate authorities for verification of the establishment of protected sessions.",
@@ -548,11 +548,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000080-AU-000010",
         "gid": "V-81105",
         "rid": "SV-95819r1_rule",
         "stig_id": "SRG-APP-000080-AU-000010",
-        "fix_id": "F-87877r1_fix"
+        "fix_id": "F-87877r1_fix",
+        "documentable": false
       },
       "id": "V-81105",
       "title": "The Central Log Server must be configured to protect the data sent from hosts and devices from being altered in a way that may prevent the attribution of an action to an individual (or process acting on behalf of an individual).",
@@ -566,11 +566,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000086-AU-000020",
         "gid": "V-81107",
         "rid": "SV-95821r1_rule",
         "stig_id": "SRG-APP-000086-AU-000020",
-        "fix_id": "F-87879r1_fix"
+        "fix_id": "F-87879r1_fix",
+        "documentable": false
       },
       "id": "V-81107",
       "title": "The Central Log Server must be configured to aggregate log records from organization-defined devices and hosts within its scope of coverage.",
@@ -584,11 +584,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000086-AU-000030",
         "gid": "V-81109",
         "rid": "SV-95823r1_rule",
         "stig_id": "SRG-APP-000086-AU-000030",
-        "fix_id": "F-87881r1_fix"
+        "fix_id": "F-87881r1_fix",
+        "documentable": false
       },
       "id": "V-81109",
       "title": "Time stamps recorded on the log records in the Central Log Server must be configured to synchronize to within one second of the host server or, if NTP is configured directly in the log server, the NTP time source must be the same as the host and devices within its scope of coverage.",
@@ -602,11 +602,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000086-AU-000390",
         "gid": "V-81111",
         "rid": "SV-95825r1_rule",
         "stig_id": "SRG-APP-000086-AU-000390",
-        "fix_id": "F-87883r1_fix"
+        "fix_id": "F-87883r1_fix",
+        "documentable": false
       },
       "id": "V-81111",
       "title": "Where multiple log servers are installed in the enclave, each log server must be configured to aggregate log records to a central aggregation server or other consolidated events repository.",
@@ -620,11 +620,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000088-AU-000040",
         "gid": "V-81113",
         "rid": "SV-95827r1_rule",
         "stig_id": "SRG-APP-000088-AU-000040",
-        "fix_id": "F-87885r1_fix"
+        "fix_id": "F-87885r1_fix",
+        "documentable": false
       },
       "id": "V-81113",
       "title": "The Central Log Server log records must be configured to use the syslog protocol or another industry standard format (e.g., Windows event protocol) that can be used by typical analysis tools.",
@@ -638,11 +638,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000089-AU-000400",
         "gid": "V-81115",
         "rid": "SV-95829r1_rule",
         "stig_id": "SRG-APP-000089-AU-000400",
-        "fix_id": "F-87887r1_fix"
+        "fix_id": "F-87887r1_fix",
+        "documentable": false
       },
       "id": "V-81115",
       "title": "The Central Log Server must be configured to retain the DoD-defined attributes of the log records sent by the devices and hosts.",
@@ -656,11 +656,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000090-AU-000070",
         "gid": "V-81117",
         "rid": "SV-95831r1_rule",
         "stig_id": "SRG-APP-000090-AU-000070",
-        "fix_id": "F-87889r1_fix"
+        "fix_id": "F-87889r1_fix",
+        "documentable": false
       },
       "id": "V-81117",
       "title": "The Central Log Server must be configured to allow only the Information System Security Manager (ISSM) (or individuals or roles appointed by the ISSM) to select which auditable events are to be retained.",
@@ -674,11 +674,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000111-AU-000150",
         "gid": "V-81119",
         "rid": "SV-95833r1_rule",
         "stig_id": "SRG-APP-000111-AU-000150",
-        "fix_id": "F-87891r1_fix"
+        "fix_id": "F-87891r1_fix",
+        "documentable": false
       },
       "id": "V-81119",
       "title": "The Central Log Server must be configured to perform analysis of log records across multiple devices and hosts in the enclave that can be reviewed by authorized individuals.",
@@ -692,11 +692,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000115-AU-000160",
         "gid": "V-81121",
         "rid": "SV-95835r1_rule",
         "stig_id": "SRG-APP-000115-AU-000160",
-        "fix_id": "F-87893r1_fix"
+        "fix_id": "F-87893r1_fix",
+        "documentable": false
       },
       "id": "V-81121",
       "title": "The Central Log Server must be configured to perform on-demand filtering of the log records for events of interest based on organization-defined criteria.",
@@ -710,11 +710,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000116-AU-000270",
         "gid": "V-81123",
         "rid": "SV-95837r1_rule",
         "stig_id": "SRG-APP-000116-AU-000270",
-        "fix_id": "F-87895r1_fix"
+        "fix_id": "F-87895r1_fix",
+        "documentable": false
       },
       "id": "V-81123",
       "title": "The Central Log Server must be configured to use internal system clocks to generate time stamps for log records.",
@@ -728,11 +728,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000125-AU-000300",
         "gid": "V-81125",
         "rid": "SV-95839r1_rule",
         "stig_id": "SRG-APP-000125-AU-000300",
-        "fix_id": "F-87899r1_fix"
+        "fix_id": "F-87899r1_fix",
+        "documentable": false
       },
       "id": "V-81125",
       "title": "The Central Log Server must be configured to back up the log records repository at least every seven days onto a different system or system component other than the system or component being audited.",
@@ -746,11 +746,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000125-AU-000310",
         "gid": "V-81127",
         "rid": "SV-95841r2_rule",
         "stig_id": "SRG-APP-000125-AU-000310",
-        "fix_id": "F-87901r1_fix"
+        "fix_id": "F-87901r1_fix",
+        "documentable": false
       },
       "id": "V-81127",
       "title": "The Central Log Server system backups must be retained for a minimum of 5 years for SAML and a minimum of 7 days for on media capable of guaranteeing file integrity for a minimum of five years (SAML) and 7 days (non-SAML).",
@@ -764,11 +764,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000181-AU-000200",
         "gid": "V-81129",
         "rid": "SV-95843r1_rule",
         "stig_id": "SRG-APP-000181-AU-000200",
-        "fix_id": "F-87903r1_fix"
+        "fix_id": "F-87903r1_fix",
+        "documentable": false
       },
       "id": "V-81129",
       "title": "The Central Log Server must be configured to perform audit reduction that supports on-demand reporting requirements.",
@@ -782,11 +782,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000292-AU-000420",
         "gid": "V-81131",
         "rid": "SV-95845r1_rule",
         "stig_id": "SRG-APP-000292-AU-000420",
-        "fix_id": "F-87905r1_fix"
+        "fix_id": "F-87905r1_fix",
+        "documentable": false
       },
       "id": "V-81131",
       "title": "For devices and hosts within its scope of coverage, the Central Log Server must be configured to notify the System Administrator (SA) and Information System Security Officer (ISSO) when account modification events are received.",
@@ -800,11 +800,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000293-AU-000430",
         "gid": "V-81133",
         "rid": "SV-95847r1_rule",
         "stig_id": "SRG-APP-000293-AU-000430",
-        "fix_id": "F-87907r1_fix"
+        "fix_id": "F-87907r1_fix",
+        "documentable": false
       },
       "id": "V-81133",
       "title": "For devices and hosts within its scope of coverage, the Central Log Server must notify the System Administrator (SA) and Information System Security Officer (ISSO) when events indicating account disabling actions are received.",
@@ -818,11 +818,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000294-AU-000440",
         "gid": "V-81135",
         "rid": "SV-95849r1_rule",
         "stig_id": "SRG-APP-000294-AU-000440",
-        "fix_id": "F-87909r1_fix"
+        "fix_id": "F-87909r1_fix",
+        "documentable": false
       },
       "id": "V-81135",
       "title": "For devices and hosts within its scope of coverage, the Central Log Server must notify the System Administrator (SA) and Information System Security Officer (ISSO) when events indicating account removal actions are received.",
@@ -836,11 +836,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000353-AU-000050",
         "gid": "V-81137",
         "rid": "SV-95851r1_rule",
         "stig_id": "SRG-APP-000353-AU-000050",
-        "fix_id": "F-87911r1_fix"
+        "fix_id": "F-87911r1_fix",
+        "documentable": false
       },
       "id": "V-81137",
       "title": "The System Administrator (SA) and Information System Security Manager (ISSM) must configure the retention of the log records based on criticality level, event type, and/or retention period, at a minimum.",
@@ -854,11 +854,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000353-AU-000060",
         "gid": "V-81139",
         "rid": "SV-95853r1_rule",
         "stig_id": "SRG-APP-000353-AU-000060",
-        "fix_id": "F-87913r1_fix"
+        "fix_id": "F-87913r1_fix",
+        "documentable": false
       },
       "id": "V-81139",
       "title": "The Central Log Server must be configured so changes made to the level and type of log records stored in the centralized repository must take effect immediately without the need to reboot or restart the application.",
@@ -872,11 +872,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000354-AU-000080",
         "gid": "V-81141",
         "rid": "SV-95855r1_rule",
         "stig_id": "SRG-APP-000354-AU-000080",
-        "fix_id": "F-87915r1_fix"
+        "fix_id": "F-87915r1_fix",
+        "documentable": false
       },
       "id": "V-81141",
       "title": "The Central Log Server must be configured to allow selection, capture, and view of all events related to a user session, host, or device when required by authorized users.",
@@ -890,11 +890,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000356-AU-000090",
         "gid": "V-81143",
         "rid": "SV-95857r1_rule",
         "stig_id": "SRG-APP-000356-AU-000090",
-        "fix_id": "F-87917r1_fix"
+        "fix_id": "F-87917r1_fix",
+        "documentable": false
       },
       "id": "V-81143",
       "title": "The Central Log Server must be configured for centralized management of the events repository for the purposes of configuration, analysis, and reporting.",
@@ -908,11 +908,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000358-AU-000100",
         "gid": "V-81145",
         "rid": "SV-95859r1_rule",
         "stig_id": "SRG-APP-000358-AU-000100",
-        "fix_id": "F-87921r1_fix"
+        "fix_id": "F-87921r1_fix",
+        "documentable": false
       },
       "id": "V-81145",
       "title": "The Central Log Server must be configured to off-load log records onto a different system or media than the system being audited.",
@@ -926,11 +926,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000359-AU-000120",
         "gid": "V-81147",
         "rid": "SV-95861r1_rule",
         "stig_id": "SRG-APP-000359-AU-000120",
-        "fix_id": "F-87923r1_fix"
+        "fix_id": "F-87923r1_fix",
+        "documentable": false
       },
       "id": "V-81147",
       "title": "The Central Log Server must be configured to send an immediate alert to the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when allocated log record storage volume reaches 75 percent of the repository maximum log record storage capacity.",
@@ -944,11 +944,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000360-AU-000130",
         "gid": "V-81149",
         "rid": "SV-95863r1_rule",
         "stig_id": "SRG-APP-000360-AU-000130",
-        "fix_id": "F-87925r1_fix"
+        "fix_id": "F-87925r1_fix",
+        "documentable": false
       },
       "id": "V-81149",
       "title": "For the host and devices within its scope of coverage, the Central Log Server must be configured to send a real-time alert to the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) of all audit failure events, such as loss of communications with hosts and devices, or if log records are no longer being received.",
@@ -962,11 +962,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000361-AU-000140",
         "gid": "V-81151",
         "rid": "SV-95865r1_rule",
         "stig_id": "SRG-APP-000361-AU-000140",
-        "fix_id": "F-87927r1_fix"
+        "fix_id": "F-87927r1_fix",
+        "documentable": false
       },
       "id": "V-81151",
       "title": "The Central Log Server must be configured to send an immediate alert to the System Administrator (SA) or Information System Security Officer (ISSO) if communication with the host and devices within its scope of coverage is lost.",
@@ -980,11 +980,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000362-AU-000170",
         "gid": "V-81153",
         "rid": "SV-95867r1_rule",
         "stig_id": "SRG-APP-000362-AU-000170",
-        "fix_id": "F-87929r1_fix"
+        "fix_id": "F-87929r1_fix",
+        "documentable": false
       },
       "id": "V-81153",
       "title": "The Central Log Server must be configured to perform on-demand sorting of log records for events of interest based on the content of organization-defined audit fields within log records.",
@@ -998,11 +998,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000363-AU-000180",
         "gid": "V-81155",
         "rid": "SV-95869r1_rule",
         "stig_id": "SRG-APP-000363-AU-000180",
-        "fix_id": "F-87969r1_fix"
+        "fix_id": "F-87969r1_fix",
+        "documentable": false
       },
       "id": "V-81155",
       "title": "The Central Log Server must be configured to perform on-demand searches of log records for events of interest based on the content of organization-defined audit fields within log records.",
@@ -1016,11 +1016,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000364-AU-000190",
         "gid": "V-81157",
         "rid": "SV-95871r1_rule",
         "stig_id": "SRG-APP-000364-AU-000190",
-        "fix_id": "F-87931r1_fix"
+        "fix_id": "F-87931r1_fix",
+        "documentable": false
       },
       "id": "V-81157",
       "title": "The Central Log Server must be configured to perform audit reduction that supports on-demand audit review and analysis.",
@@ -1034,11 +1034,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000365-AU-000210",
         "gid": "V-81159",
         "rid": "SV-95873r1_rule",
         "stig_id": "SRG-APP-000365-AU-000210",
-        "fix_id": "F-87933r1_fix"
+        "fix_id": "F-87933r1_fix",
+        "documentable": false
       },
       "id": "V-81159",
       "title": "The Central Log Server must be configured to perform audit reduction that supports after-the-fact investigations of security incidents.",
@@ -1052,11 +1052,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000366-AU-000220",
         "gid": "V-81161",
         "rid": "SV-95875r1_rule",
         "stig_id": "SRG-APP-000366-AU-000220",
-        "fix_id": "F-87935r1_fix"
+        "fix_id": "F-87935r1_fix",
+        "documentable": false
       },
       "id": "V-81161",
       "title": "The Central Log Server must be configured to generate on-demand audit review and analysis reports.",
@@ -1070,11 +1070,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000367-AU-000230",
         "gid": "V-81163",
         "rid": "SV-95877r1_rule",
         "stig_id": "SRG-APP-000367-AU-000230",
-        "fix_id": "F-87939r1_fix"
+        "fix_id": "F-87939r1_fix",
+        "documentable": false
       },
       "id": "V-81163",
       "title": "The Central Log Server must be configured to generate reports that support on-demand reporting requirements.",
@@ -1088,11 +1088,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000368-AU-000240",
         "gid": "V-81165",
         "rid": "SV-95879r1_rule",
         "stig_id": "SRG-APP-000368-AU-000240",
-        "fix_id": "F-87941r1_fix"
+        "fix_id": "F-87941r1_fix",
+        "documentable": false
       },
       "id": "V-81165",
       "title": "The Central Log Server must be configured to generate reports that support after-the-fact investigations of security incidents.",
@@ -1106,11 +1106,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000369-AU-000250",
         "gid": "V-81167",
         "rid": "SV-95881r1_rule",
         "stig_id": "SRG-APP-000369-AU-000250",
-        "fix_id": "F-87943r1_fix"
+        "fix_id": "F-87943r1_fix",
+        "documentable": false
       },
       "id": "V-81167",
       "title": "The Central Log Server must be configured to perform audit reduction that does not alter original content or time ordering of log records.",
@@ -1124,11 +1124,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000370-AU-000260",
         "gid": "V-81169",
         "rid": "SV-95883r1_rule",
         "stig_id": "SRG-APP-000370-AU-000260",
-        "fix_id": "F-87945r1_fix"
+        "fix_id": "F-87945r1_fix",
+        "documentable": false
       },
       "id": "V-81169",
       "title": "The Central Log Server must be configured to generate reports that do not alter original content or time ordering of log records.",
@@ -1142,11 +1142,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000374-AU-000290",
         "gid": "V-81171",
         "rid": "SV-95885r1_rule",
         "stig_id": "SRG-APP-000374-AU-000290",
-        "fix_id": "F-87947r1_fix"
+        "fix_id": "F-87947r1_fix",
+        "documentable": false
       },
       "id": "V-81171",
       "title": "Upon receipt of the log record from hosts and devices, the Central Log Server must be configured to record time stamps of the time of receipt that can be mapped to Coordinated Universal Time (UTC).",
@@ -1160,11 +1160,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000375-AU-000280",
         "gid": "V-81173",
         "rid": "SV-95887r1_rule",
         "stig_id": "SRG-APP-000375-AU-000280",
-        "fix_id": "F-87949r1_fix"
+        "fix_id": "F-87949r1_fix",
+        "documentable": false
       },
       "id": "V-81173",
       "title": "The Central Log Server must be configured to record time stamps for when log records are received by the log server that meet a granularity of one second for a minimum degree of precision.",
@@ -1178,11 +1178,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000515-AU-000110",
         "gid": "V-81177",
         "rid": "SV-95891r1_rule",
         "stig_id": "SRG-APP-000515-AU-000110",
-        "fix_id": "F-87953r1_fix"
+        "fix_id": "F-87953r1_fix",
+        "documentable": false
       },
       "id": "V-81177",
       "title": "The Central Log Server must be configured to off-load interconnected systems in real time and off-load standalone systems weekly, at a minimum.",
@@ -1196,11 +1196,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AU-000330",
         "gid": "V-81179",
         "rid": "SV-95893r1_rule",
         "stig_id": "SRG-APP-000516-AU-000330",
-        "fix_id": "F-87955r1_fix"
+        "fix_id": "F-87955r1_fix",
+        "documentable": false
       },
       "id": "V-81179",
       "title": "The Central Log Server must be configured to retain the identity of the original source host or device where the event occurred as part of the log record.",
@@ -1214,11 +1214,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AU-000340",
         "gid": "V-81181",
         "rid": "SV-95895r2_rule",
         "stig_id": "SRG-APP-000516-AU-000340",
-        "fix_id": "F-87957r2_fix"
+        "fix_id": "F-87957r2_fix",
+        "documentable": false
       },
       "id": "V-81181",
       "title": "The Central Log Server that aggregates log records from hosts and devices must be configured to use TCP for transmission.",
@@ -1232,11 +1232,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AU-000350",
         "gid": "V-81183",
         "rid": "SV-95897r1_rule",
         "stig_id": "SRG-APP-000516-AU-000350",
-        "fix_id": "F-87959r1_fix"
+        "fix_id": "F-87959r1_fix",
+        "documentable": false
       },
       "id": "V-81183",
       "title": "The Central Log Server must be configured to notify the System Administrator (SA) and Information System Security Officer (ISSO), at a minimum, when an attack is detected on multiple devices and hosts within its scope of coverage.",
@@ -1250,11 +1250,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AU-000360",
         "gid": "V-81185",
         "rid": "SV-95899r1_rule",
         "stig_id": "SRG-APP-000516-AU-000360",
-        "fix_id": "F-87961r1_fix"
+        "fix_id": "F-87961r1_fix",
+        "documentable": false
       },
       "id": "V-81185",
       "title": "The Central Log Server must be configured to automatically create trouble tickets for organization-defined threats and events of interest as they are detected in real time (within seconds).",
@@ -1268,11 +1268,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AU-000370",
         "gid": "V-81187",
         "rid": "SV-95901r1_rule",
         "stig_id": "SRG-APP-000516-AU-000370",
-        "fix_id": "F-87963r1_fix"
+        "fix_id": "F-87963r1_fix",
+        "documentable": false
       },
       "id": "V-81187",
       "title": "For devices and hosts within the scope of coverage, the Central Log Server must be configured to automatically aggregate events that indicate account actions.",
@@ -1286,11 +1286,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AU-000380",
         "gid": "V-81189",
         "rid": "SV-95903r2_rule",
         "stig_id": "SRG-APP-000516-AU-000380",
-        "fix_id": "F-87965r1_fix"
+        "fix_id": "F-87965r1_fix",
+        "documentable": false
       },
       "id": "V-81189",
       "title": "The Central Log Server must be configured with the organization-defined severity or criticality levels of each event that is being sent from individual devices or hosts.",
@@ -1304,11 +1304,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000516-AU-000410",
         "gid": "V-81191",
         "rid": "SV-95905r1_rule",
         "stig_id": "SRG-APP-000516-AU-000410",
-        "fix_id": "F-87967r1_fix"
+        "fix_id": "F-87967r1_fix",
+        "documentable": false
       },
       "id": "V-81191",
       "title": "Analysis, viewing, and indexing functions, services, and applications used as part of the Central Log Server must be configured to comply with DoD-trusted path and access requirements.",
@@ -1322,11 +1322,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000148-AU-002270",
         "gid": "V-81281",
         "rid": "SV-95995r1_rule",
         "stig_id": "SRG-APP-000148-AU-002270",
-        "fix_id": "F-88063r1_fix"
+        "fix_id": "F-88063r1_fix",
+        "documentable": false
       },
       "id": "V-81281",
       "title": "The Central Log Server must be configured to uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
@@ -1340,11 +1340,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000171-AU-002540",
         "gid": "V-81283",
         "rid": "SV-95997r1_rule",
         "stig_id": "SRG-APP-000171-AU-002540",
-        "fix_id": "F-88065r1_fix"
+        "fix_id": "F-88065r1_fix",
+        "documentable": false
       },
       "id": "V-81283",
       "title": "For accounts using password authentication, the Central Log Server must be configured to store only cryptographic representations of passwords.",
@@ -1358,11 +1358,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000172-AU-002550",
         "gid": "V-81285",
         "rid": "SV-95999r1_rule",
         "stig_id": "SRG-APP-000172-AU-002550",
-        "fix_id": "F-88067r1_fix"
+        "fix_id": "F-88067r1_fix",
+        "documentable": false
       },
       "id": "V-81285",
       "title": "For accounts using password authentication, the Central Log Server must use FIPS-validated SHA-1 or later protocol to protect the integrity of the password authentication process.",
@@ -1376,11 +1376,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000175-AU-002630",
         "gid": "V-81287",
         "rid": "SV-96001r1_rule",
         "stig_id": "SRG-APP-000175-AU-002630",
-        "fix_id": "F-88069r1_fix"
+        "fix_id": "F-88069r1_fix",
+        "documentable": false
       },
       "id": "V-81287",
       "title": "The Central Log Server, when utilizing PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor.",
@@ -1394,11 +1394,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000176-AU-002640",
         "gid": "V-81289",
         "rid": "SV-96003r1_rule",
         "stig_id": "SRG-APP-000176-AU-002640",
-        "fix_id": "F-88071r1_fix"
+        "fix_id": "F-88071r1_fix",
+        "documentable": false
       },
       "id": "V-81289",
       "title": "The Central Log Server, when using PKI-based authentication, must enforce authorized access to the corresponding private key.",
@@ -1412,11 +1412,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000178-AU-002660",
         "gid": "V-81291",
         "rid": "SV-96005r1_rule",
         "stig_id": "SRG-APP-000178-AU-002660",
-        "fix_id": "F-88073r1_fix"
+        "fix_id": "F-88073r1_fix",
+        "documentable": false
       },
       "id": "V-81291",
       "title": "The Central Log Server must obfuscate authentication information during the authentication process so that the authentication is not visible.",
@@ -1430,11 +1430,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000179-AU-002670",
         "gid": "V-81295",
         "rid": "SV-96009r1_rule",
         "stig_id": "SRG-APP-000179-AU-002670",
-        "fix_id": "F-88077r1_fix"
+        "fix_id": "F-88077r1_fix",
+        "documentable": false
       },
       "id": "V-81295",
       "title": "The Central Log Server must use FIPS-validated SHA-1 or higher hash function to protect the integrity of keyed-hash message authentication code (HMAC), Key Derivation Functions (KDFs), Random Bit Generation, hash-only applications, and digital signature verification (legacy use only).",
@@ -1448,11 +1448,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000033-AU-001610",
         "gid": "V-81297",
         "rid": "SV-96011r1_rule",
         "stig_id": "SRG-APP-000033-AU-001610",
-        "fix_id": "F-88081r1_fix"
+        "fix_id": "F-88081r1_fix",
+        "documentable": false
       },
       "id": "V-81297",
       "title": "The Central Log Server must be configured to enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
@@ -1466,11 +1466,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000439-AU-004310",
         "gid": "V-81301",
         "rid": "SV-96015r1_rule",
         "stig_id": "SRG-APP-000439-AU-004310",
-        "fix_id": "F-88083r1_fix"
+        "fix_id": "F-88083r1_fix",
+        "documentable": false
       },
       "id": "V-81301",
       "title": "The Central Log Server must be configured to protect the confidentiality and integrity of transmitted information.",
@@ -1484,11 +1484,11 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "SRG-APP-000514-AU-002890",
         "gid": "V-81303",
         "rid": "SV-96017r1_rule",
         "stig_id": "SRG-APP-000514-AU-002890",
-        "fix_id": "F-88085r1_fix"
+        "fix_id": "F-88085r1_fix",
+        "documentable": false
       },
       "id": "V-81303",
       "title": "The Central Log Server must implement NIST FIPS-validated cryptography for the following: to provision digital signatures; to generate cryptographic hashes; and/or to protect unclassified information requiring confidentiality and cryptographic protection.",
@@ -1502,11 +1502,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000149-AU-002280",
         "gid": "V-81307",
         "rid": "SV-96021r1_rule",
         "stig_id": "SRG-APP-000149-AU-002280",
-        "fix_id": "F-88089r1_fix"
+        "fix_id": "F-88089r1_fix",
+        "documentable": false
       },
       "id": "V-81307",
       "title": "The Central Log Server must use multifactor authentication for network access to privileged user accounts.",
@@ -1520,11 +1520,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000150-AU-002320",
         "gid": "V-81309",
         "rid": "SV-96023r1_rule",
         "stig_id": "SRG-APP-000150-AU-002320",
-        "fix_id": "F-88091r1_fix"
+        "fix_id": "F-88091r1_fix",
+        "documentable": false
       },
       "id": "V-81309",
       "title": "The Central Log Server must use multifactor authentication for network access to non-privileged user accounts.",
@@ -1538,11 +1538,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000151-AU-002330",
         "gid": "V-81313",
         "rid": "SV-96027r1_rule",
         "stig_id": "SRG-APP-000151-AU-002330",
-        "fix_id": "F-88095r1_fix"
+        "fix_id": "F-88095r1_fix",
+        "documentable": false
       },
       "id": "V-81313",
       "title": "The Central Log Server must use multifactor authentication for local access using privileged user accounts.",
@@ -1556,11 +1556,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000154-AU-002360",
         "gid": "V-81315",
         "rid": "SV-96029r1_rule",
         "stig_id": "SRG-APP-000154-AU-002360",
-        "fix_id": "F-88097r1_fix"
+        "fix_id": "F-88097r1_fix",
+        "documentable": false
       },
       "id": "V-81315",
       "title": "The Central Log Server must be configured to use multifactor authentication for network access to privileged accounts such that one of the factors is provided by a device separate from the system gaining access.",
@@ -1574,11 +1574,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000156-AU-002380",
         "gid": "V-81317",
         "rid": "SV-96031r1_rule",
         "stig_id": "SRG-APP-000156-AU-002380",
-        "fix_id": "F-88099r1_fix"
+        "fix_id": "F-88099r1_fix",
+        "documentable": false
       },
       "id": "V-81317",
       "title": "The Central Log Server must use FIPS-validated SHA-1 or higher hash function to provide replay-resistant authentication mechanisms for network access to privileged accounts.",
@@ -1592,11 +1592,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000163-AU-002470",
         "gid": "V-81319",
         "rid": "SV-96033r1_rule",
         "stig_id": "SRG-APP-000163-AU-002470",
-        "fix_id": "F-88101r1_fix"
+        "fix_id": "F-88101r1_fix",
+        "documentable": false
       },
       "id": "V-81319",
       "title": "The Central Log Server must disable accounts (individuals, groups, roles, and devices) after 35 days of inactivity.",
@@ -1610,11 +1610,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000164-AU-002480",
         "gid": "V-81321",
         "rid": "SV-96035r1_rule",
         "stig_id": "SRG-APP-000164-AU-002480",
-        "fix_id": "F-88105r1_fix"
+        "fix_id": "F-88105r1_fix",
+        "documentable": false
       },
       "id": "V-81321",
       "title": "The Central Log Server must be configured to enforce a minimum 15-character password length.",
@@ -1628,11 +1628,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000391-AU-002290",
         "gid": "V-81323",
         "rid": "SV-96037r1_rule",
         "stig_id": "SRG-APP-000391-AU-002290",
-        "fix_id": "F-88107r1_fix"
+        "fix_id": "F-88107r1_fix",
+        "documentable": false
       },
       "id": "V-81323",
       "title": "The Central Log Server must be configured to accept the DoD CAC credential to support identity management and personal authentication.",
@@ -1646,11 +1646,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000392-AU-002300",
         "gid": "V-81327",
         "rid": "SV-96041r1_rule",
         "stig_id": "SRG-APP-000392-AU-002300",
-        "fix_id": "F-88111r1_fix"
+        "fix_id": "F-88111r1_fix",
+        "documentable": false
       },
       "id": "V-81327",
       "title": "The Central Log Server must be configured to electronically verify the DoD CAC credential.",
@@ -1664,11 +1664,11 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SRG-APP-000397-AU-002590",
         "gid": "V-81331",
         "rid": "SV-96045r1_rule",
         "stig_id": "SRG-APP-000397-AU-002590",
-        "fix_id": "F-88115r1_fix"
+        "fix_id": "F-88115r1_fix",
+        "documentable": false
       },
       "id": "V-81331",
       "title": "For locally created accounts in the application, the Central Log Server must be configured to allow the use of a temporary password for system logons with an immediate change to a permanent password.",
@@ -1682,11 +1682,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000165-AU-002580",
         "gid": "V-81335",
         "rid": "SV-96049r1_rule",
         "stig_id": "SRG-APP-000165-AU-002580",
-        "fix_id": "F-88119r1_fix"
+        "fix_id": "F-88119r1_fix",
+        "documentable": false
       },
       "id": "V-81335",
       "title": "The Central Log Server must be configured to prohibit password reuse for a minimum of five generations.",
@@ -1700,11 +1700,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000166-AU-002490",
         "gid": "V-81337",
         "rid": "SV-96051r1_rule",
         "stig_id": "SRG-APP-000166-AU-002490",
-        "fix_id": "F-88121r1_fix"
+        "fix_id": "F-88121r1_fix",
+        "documentable": false
       },
       "id": "V-81337",
       "title": "The Central Log Server must be configured to enforce password complexity by requiring that at least one upper-case character be used.",
@@ -1718,11 +1718,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000167-AU-002500",
         "gid": "V-81339",
         "rid": "SV-96053r1_rule",
         "stig_id": "SRG-APP-000167-AU-002500",
-        "fix_id": "F-88123r1_fix"
+        "fix_id": "F-88123r1_fix",
+        "documentable": false
       },
       "id": "V-81339",
       "title": "The Central Log Server must be configured to enforce password complexity by requiring that at least one lower-case character be used.",
@@ -1736,11 +1736,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000168-AU-002510",
         "gid": "V-81345",
         "rid": "SV-96059r1_rule",
         "stig_id": "SRG-APP-000168-AU-002510",
-        "fix_id": "F-88131r1_fix"
+        "fix_id": "F-88131r1_fix",
+        "documentable": false
       },
       "id": "V-81345",
       "title": "The Central Log Server must be configured to enforce password complexity by requiring that at least one numeric character be used.",
@@ -1754,11 +1754,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000169-AU-002520",
         "gid": "V-81349",
         "rid": "SV-96063r1_rule",
         "stig_id": "SRG-APP-000169-AU-002520",
-        "fix_id": "F-88135r1_fix"
+        "fix_id": "F-88135r1_fix",
+        "documentable": false
       },
       "id": "V-81349",
       "title": "The Central Log Server must be configured to enforce password complexity by requiring that at least one special character be used.",
@@ -1772,11 +1772,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000170-AU-002530",
         "gid": "V-81353",
         "rid": "SV-96067r1_rule",
         "stig_id": "SRG-APP-000170-AU-002530",
-        "fix_id": "F-88139r1_fix"
+        "fix_id": "F-88139r1_fix",
+        "documentable": false
       },
       "id": "V-81353",
       "title": "The Central Log Server must be configured to require the change of at least 8 of the total number of characters when passwords are changed.",
@@ -1790,11 +1790,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000173-AU-002560",
         "gid": "V-81355",
         "rid": "SV-96069r1_rule",
         "stig_id": "SRG-APP-000173-AU-002560",
-        "fix_id": "F-88141r1_fix"
+        "fix_id": "F-88141r1_fix",
+        "documentable": false
       },
       "id": "V-81355",
       "title": "The Central Log Server must be configured to enforce 24 hours/1 day as the minimum password lifetime.",
@@ -1808,11 +1808,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000174-AU-002570",
         "gid": "V-81359",
         "rid": "SV-96073r1_rule",
         "stig_id": "SRG-APP-000174-AU-002570",
-        "fix_id": "F-88145r1_fix"
+        "fix_id": "F-88145r1_fix",
+        "documentable": false
       },
       "id": "V-81359",
       "title": "The Central Log Server must be configured to enforce a 60-day maximum password lifetime restriction.",
@@ -1826,11 +1826,11 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "SRG-APP-000177-AU-002650",
         "gid": "V-81363",
         "rid": "SV-96077r1_rule",
         "stig_id": "SRG-APP-000177-AU-002650",
-        "fix_id": "F-88149r1_fix"
+        "fix_id": "F-88149r1_fix",
+        "documentable": false
       },
       "id": "V-81363",
       "title": "The Central Log Server must map the authenticated identity to the individual user or group account for PKI-based authentication.",
@@ -1842,7 +1842,5 @@
       }
     }
   ],
-  "name": "Central_Log_Server_SRG",
-  "title": "Central Log Server Security Requirements Guide",
-  "summary": "This Security Requirements Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+  "name": "Central_Log_Server_SRG"
 }
