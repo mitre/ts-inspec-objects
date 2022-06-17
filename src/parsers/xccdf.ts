@@ -40,7 +40,7 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
     });
 
     rules.forEach(rule => {
-        let extractedDescription;
+        let extractedDescription: string | DecodedDescription;
         if (Array.isArray(rule.description)) {
             extractedDescription = rule.description[0]['#text']
         } else {
@@ -50,36 +50,40 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
 
         control.id = rule.group['@_id']
         control.title = rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`
-        control.desc = typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion.split('Satisfies: ')[0]
+        control.desc = typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0]
         control.impact = severityStringToImpact(rule['@_severity'] || 'critical', rule.group['@_id'])
         if (!control.descs || Array.isArray(control.descs)) {
             control.descs = {}
         }
-        console.log(rule.check)
         control.descs.check = rule.check ? rule.check[0]['check-content'] : 'Missing description'
         control.descs.fix = rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text')
-        new Control({
-    //         tags: _.omitBy({
-    //             severity: impactNumberToSeverityString(severityStringToImpact(group.Rule['@_severity'] || 'critical')),
-    //             gtitle: group.title,
-    //             satisfies: extractedDescription.VulnDiscussion?.includes('Satisfies: ') && extractedDescription.VulnDiscussion.split('Satisfies: ').length >= 1 ? extractedDescription.VulnDiscussion.split('Satisfies: ')[1].split(',').map(satisfaction => satisfaction.trim()) : undefined,
-    //             gid: group['@_id'],
-    //             rid: group.Rule['@_id'],
-    //             stig_id: group.Rule.version,
-    //             fix_id: group.Rule.fix['@_id'],
-    //             false_negatives: extractedDescription.FalseNegatives,
-    //             false_positives: extractedDescription.FalsePositives,
-    //             documentable: extractedDescription.Documentable,
-    //             mitigations: extractedDescription.Mitigations,
-    //             severity_override_guidance: extractedDescription.SeverityOverrideGuidance,
-    //             potential_impacts: extractedDescription.PotentialImpacts,
-    //             third_party_tools: extractedDescription.ThirdPartyTools,
-    //             mitigation_control: extractedDescription.MitigationControl, // This exists as mitigation_controls in inspec_tools, but is called mitigation_control in the xccdf, this shouldn't ever be defined but is still here for backwards compatibility
-    //             mitigation_controls: extractedDescription.MitigationControls,
-    //             responsibility: extractedDescription.Responsibility,
-    //             ia_controls: extractedDescription.IAControls
-    //         }, i => !Boolean(i))
-        })
+        control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'critical', control.id))
+        control.tags.gtitle = _.get(rule.group, 'title[0].#text')
+        control.tags.gid = rule.group['@_id'],
+        control.tags.rid = rule['@_id']
+        control.tags.stig_id = rule['version']
+        
+        if (rule['fix'] && rule['fix'].length > 0) {
+            control.tags.fix_id = rule['fix'][0]['@_id']
+            console.log(control.tags.fix_id)
+        }
+
+        
+
+        if (typeof extractedDescription === 'object') {
+            control.tags.satisfies = extractedDescription.VulnDiscussion?.includes('Satisfies: ') && extractedDescription.VulnDiscussion.split('Satisfies: ').length >= 1 ? extractedDescription.VulnDiscussion.split('Satisfies: ')[1].split(',').map(satisfaction => satisfaction.trim()) : undefined
+            control.tags.false_negatives = extractedDescription.FalseNegatives
+            control.tags.false_positives = extractedDescription.FalsePositives
+            control.tags.documentable = extractedDescription.Documentable
+            control.tags.mitigations = extractedDescription.Mitigations
+            control.tags.severity_override_guidance = extractedDescription.SeverityOverrideGuidance
+            control.tags.potential_impacts = extractedDescription.PotentialImpacts
+            control.tags.third_party_tools = extractedDescription.ThirdPartyTools
+            control.tags.mitigation_control = extractedDescription.MitigationControl
+            control.tags.mitigation_controls = extractedDescription.MitigationControls
+            control.tags.responsibility = extractedDescription.Responsibility
+            control.tags.ia_controls = extractedDescription.IAControls
+        }
 
     //     if ('ident' in group.Rule) {
     //         const identifiers = Array.isArray(group.Rule.ident) ? group.Rule.ident : [group.Rule.ident]
