@@ -8,9 +8,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Set Account Expiration Parameters",
         "gid": "account_expiration",
-        "rid": "account_unique_name"
+        "rid": "account_unique_name",
+        "gtitle": "Set Account Expiration Parameters"
       },
       "id": "account_expiration",
       "title": [
@@ -28,9 +28,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Set Account Expiration Parameters",
         "gid": "account_expiration",
-        "rid": "account_use_centralized_automated_auth"
+        "rid": "account_use_centralized_automated_auth",
+        "gtitle": "Set Account Expiration Parameters"
       },
       "id": "account_expiration",
       "title": [
@@ -48,9 +48,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Protect Accounts by Configuring PAM",
         "gid": "accounts-pam",
         "rid": "display_login_attempts",
+        "gtitle": "Protect Accounts by Configuring PAM",
         "fix_id": "display_login_attempts"
       },
       "id": "accounts-pam",
@@ -69,9 +69,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Secure Session Configuration Files for Login Accounts",
         "gid": "accounts-session",
-        "rid": "accounts_logon_fail_delay"
+        "rid": "accounts_logon_fail_delay",
+        "gtitle": "Secure Session Configuration Files for Login Accounts"
       },
       "id": "accounts-session",
       "title": [
@@ -89,9 +89,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Secure Session Configuration Files for Login Accounts",
         "gid": "accounts-session",
-        "rid": "accounts_max_concurrent_login_sessions"
+        "rid": "accounts_max_concurrent_login_sessions",
+        "gtitle": "Secure Session Configuration Files for Login Accounts"
       },
       "id": "accounts-session",
       "title": [
@@ -109,9 +109,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Secure Session Configuration Files for Login Accounts",
         "gid": "accounts-session",
         "rid": "accounts_polyinstantiated_tmp",
+        "gtitle": "Secure Session Configuration Files for Login Accounts",
         "fix_id": "accounts_polyinstantiated_tmp"
       },
       "id": "accounts-session",
@@ -130,9 +130,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Secure Session Configuration Files for Login Accounts",
         "gid": "accounts-session",
         "rid": "accounts_polyinstantiated_var_tmp",
+        "gtitle": "Secure Session Configuration Files for Login Accounts",
         "fix_id": "accounts_polyinstantiated_var_tmp"
       },
       "id": "accounts-session",
@@ -151,9 +151,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Secure Session Configuration Files for Login Accounts",
         "gid": "accounts-session",
-        "rid": "file_permissions_home_dirs"
+        "rid": "file_permissions_home_dirs",
+        "gtitle": "Secure Session Configuration Files for Login Accounts"
       },
       "id": "accounts-session",
       "title": [
@@ -170,10 +170,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "APT service configuration",
+        "severity": "medium",
         "gid": "apt",
-        "rid": "apt_conf_disallow_unauthenticated"
+        "rid": "apt_conf_disallow_unauthenticated",
+        "gtitle": "APT service configuration"
       },
       "id": "apt",
       "title": [
@@ -183,7 +183,7 @@
         }
       ],
       "desc": "Unauthenticated repositories should not be used for updates.",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -191,9 +191,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_chmod"
+        "rid": "audit_rules_dac_modification_chmod",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -211,9 +211,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_chown"
+        "rid": "audit_rules_dac_modification_chown",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -231,9 +231,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_fchmod"
+        "rid": "audit_rules_dac_modification_fchmod",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -251,9 +251,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_fchmodat"
+        "rid": "audit_rules_dac_modification_fchmodat",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -271,9 +271,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_fchown"
+        "rid": "audit_rules_dac_modification_fchown",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -291,9 +291,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_fchownat"
+        "rid": "audit_rules_dac_modification_fchownat",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -311,9 +311,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_fremovexattr"
+        "rid": "audit_rules_dac_modification_fremovexattr",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -331,9 +331,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_fsetxattr"
+        "rid": "audit_rules_dac_modification_fsetxattr",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -351,9 +351,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_lchown"
+        "rid": "audit_rules_dac_modification_lchown",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -371,9 +371,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_lremovexattr"
+        "rid": "audit_rules_dac_modification_lremovexattr",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -391,9 +391,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_lsetxattr"
+        "rid": "audit_rules_dac_modification_lsetxattr",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -411,9 +411,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_removexattr"
+        "rid": "audit_rules_dac_modification_removexattr",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -431,9 +431,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_setxattr"
+        "rid": "audit_rules_dac_modification_setxattr",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -451,9 +451,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
         "rid": "audit_rules_dac_modification_umount",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "fix_id": "audit_rules_dac_modification_umount"
       },
       "id": "audit_dac_actions",
@@ -472,9 +472,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Events that Modify the System's Discretionary Access Controls",
         "gid": "audit_dac_actions",
-        "rid": "audit_rules_dac_modification_umount2"
+        "rid": "audit_rules_dac_modification_umount2",
+        "gtitle": "Record Events that Modify the System's Discretionary Access Controls"
       },
       "id": "audit_dac_actions",
       "title": [
@@ -492,9 +492,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record File Deletion Events by User",
         "gid": "audit_file_deletion_events",
-        "rid": "audit_rules_file_deletion_events_rename"
+        "rid": "audit_rules_file_deletion_events_rename",
+        "gtitle": "Record File Deletion Events by User"
       },
       "id": "audit_file_deletion_events",
       "title": [
@@ -512,9 +512,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record File Deletion Events by User",
         "gid": "audit_file_deletion_events",
-        "rid": "audit_rules_file_deletion_events_renameat"
+        "rid": "audit_rules_file_deletion_events_renameat",
+        "gtitle": "Record File Deletion Events by User"
       },
       "id": "audit_file_deletion_events",
       "title": [
@@ -532,9 +532,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record File Deletion Events by User",
         "gid": "audit_file_deletion_events",
-        "rid": "audit_rules_file_deletion_events_rmdir"
+        "rid": "audit_rules_file_deletion_events_rmdir",
+        "gtitle": "Record File Deletion Events by User"
       },
       "id": "audit_file_deletion_events",
       "title": [
@@ -552,9 +552,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record File Deletion Events by User",
         "gid": "audit_file_deletion_events",
-        "rid": "audit_rules_file_deletion_events_unlink"
+        "rid": "audit_rules_file_deletion_events_unlink",
+        "gtitle": "Record File Deletion Events by User"
       },
       "id": "audit_file_deletion_events",
       "title": [
@@ -572,9 +572,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record File Deletion Events by User",
         "gid": "audit_file_deletion_events",
-        "rid": "audit_rules_file_deletion_events_unlinkat"
+        "rid": "audit_rules_file_deletion_events_unlinkat",
+        "gtitle": "Record File Deletion Events by User"
       },
       "id": "audit_file_deletion_events",
       "title": [
@@ -592,9 +592,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Record Information on the Use of Privileged Commands",
         "gid": "audit_privileged_commands",
-        "rid": "audit_rules_privileged_commands"
+        "rid": "audit_rules_privileged_commands",
+        "gtitle": "Record Information on the Use of Privileged Commands"
       },
       "id": "audit_privileged_commands",
       "title": [
@@ -612,9 +612,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Records Events that Modify Date and Time Information",
         "gid": "audit_time_rules",
         "rid": "audit_rules_time_adjtimex",
+        "gtitle": "Records Events that Modify Date and Time Information",
         "fix_id": "audit_rules_time_adjtimex"
       },
       "id": "audit_time_rules",
@@ -633,9 +633,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Records Events that Modify Date and Time Information",
         "gid": "audit_time_rules",
         "rid": "audit_rules_time_clock_settime",
+        "gtitle": "Records Events that Modify Date and Time Information",
         "fix_id": "audit_rules_time_clock_settime"
       },
       "id": "audit_time_rules",
@@ -654,9 +654,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Records Events that Modify Date and Time Information",
         "gid": "audit_time_rules",
         "rid": "audit_rules_time_settimeofday",
+        "gtitle": "Records Events that Modify Date and Time Information",
         "fix_id": "audit_rules_time_settimeofday"
       },
       "id": "audit_time_rules",
@@ -675,9 +675,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Records Events that Modify Date and Time Information",
         "gid": "audit_time_rules",
         "rid": "audit_rules_time_stime",
+        "gtitle": "Records Events that Modify Date and Time Information",
         "fix_id": "audit_rules_time_stime"
       },
       "id": "audit_time_rules",
@@ -696,9 +696,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Records Events that Modify Date and Time Information",
         "gid": "audit_time_rules",
         "rid": "audit_rules_time_watch_localtime",
+        "gtitle": "Records Events that Modify Date and Time Information",
         "fix_id": "audit_rules_time_watch_localtime"
       },
       "id": "audit_time_rules",
@@ -717,9 +717,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
         "rid": "audit_rules_immutable",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "fix_id": "audit_rules_immutable"
       },
       "id": "auditd_configure_rules",
@@ -738,9 +738,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
-        "rid": "audit_rules_mac_modification"
+        "rid": "audit_rules_mac_modification",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing"
       },
       "id": "auditd_configure_rules",
       "title": [
@@ -758,9 +758,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
-        "rid": "audit_rules_media_export"
+        "rid": "audit_rules_media_export",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing"
       },
       "id": "auditd_configure_rules",
       "title": [
@@ -778,9 +778,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
-        "rid": "audit_rules_networkconfig_modification"
+        "rid": "audit_rules_networkconfig_modification",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing"
       },
       "id": "auditd_configure_rules",
       "title": [
@@ -798,9 +798,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
-        "rid": "audit_rules_session_events"
+        "rid": "audit_rules_session_events",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing"
       },
       "id": "auditd_configure_rules",
       "title": [
@@ -818,9 +818,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
         "rid": "audit_rules_sysadmin_actions",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "fix_id": "audit_rules_sysadmin_actions"
       },
       "id": "auditd_configure_rules",
@@ -839,9 +839,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
-        "rid": "audit_rules_usergroup_modification"
+        "rid": "audit_rules_usergroup_modification",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing"
       },
       "id": "auditd_configure_rules",
       "title": [
@@ -859,9 +859,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
         "rid": "directory_access_var_log_audit",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "fix_id": "directory_access_var_log_audit"
       },
       "id": "auditd_configure_rules",
@@ -880,9 +880,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
-        "rid": "directory_permissions_var_log_audit"
+        "rid": "directory_permissions_var_log_audit",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing"
       },
       "id": "auditd_configure_rules",
       "title": [
@@ -900,9 +900,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "gid": "auditd_configure_rules",
         "rid": "file_ownership_var_log_audit",
+        "gtitle": "Configure auditd Rules for Comprehensive Auditing",
         "fix_id": "file_ownership_var_log_audit"
       },
       "id": "auditd_configure_rules",
@@ -921,9 +921,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "System Accounting with auditd",
         "gid": "auditing",
         "rid": "package_audit-audispd-plugins_installed",
+        "gtitle": "System Accounting with auditd",
         "fix_id": "package_audit-audispd-plugins_installed"
       },
       "id": "auditing",
@@ -942,9 +942,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "System Accounting with auditd",
         "gid": "auditing",
         "rid": "package_audit_installed",
+        "gtitle": "System Accounting with auditd",
         "fix_id": "package_audit_installed"
       },
       "id": "auditing",
@@ -963,9 +963,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "System Accounting with auditd",
         "gid": "auditing",
         "rid": "service_auditd_enabled",
+        "gtitle": "System Accounting with auditd",
         "fix_id": "service_auditd_enabled"
       },
       "id": "auditing",
@@ -984,9 +984,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Configure Avahi if Necessary",
         "gid": "avahi_configuration",
-        "rid": "avahi_disable_publishing"
+        "rid": "avahi_disable_publishing",
+        "gtitle": "Configure Avahi if Necessary"
       },
       "id": "avahi_configuration",
       "title": [
@@ -1003,10 +1003,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "GRUB2 bootloader configuration",
+        "severity": "medium",
         "gid": "bootloader-grub2",
         "rid": "grub2_enable_iommu_force",
+        "gtitle": "GRUB2 bootloader configuration",
         "fix_id": "grub2_enable_iommu_force"
       },
       "id": "bootloader-grub2",
@@ -1017,7 +1017,7 @@
         }
       ],
       "desc": "On x86 architecture supporting VT-d, the IOMMU manages the access control policy between the hardware devices and some of the system critical units such as the memory.",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "# Remediation is applicable only in certain platforms if dpkg-query --show --showformat='${db:Status-Status} ' 'grub2-common' 2&gt;/dev/null | grep -q installed &amp;&amp; { [ ! -f /.dockerenv ] &amp;&amp; [ ! -f /run/.containerenv ]; }; then # Correct the form of default kernel command line in GRUB if grep -q '^GRUB_CMDLINE_LINUX=.*iommu=.*\"' '/etc/default/grub' ; then  # modify the GRUB command-line if an iommu= arg already exists  sed -i 's/\\(^GRUB_CMDLINE_LINUX=\".*\\)iommu=[^[:space:]]*\\(.*\"\\)/\\1 iommu=force \\2/' '/etc/default/grub' else  # no iommu=arg is present, append it  sed -i 's/\\(^GRUB_CMDLINE_LINUX=\".*\\)\"/\\1 iommu=force\"/' '/etc/default/grub' fi update-grub else &gt;&amp;2 echo 'Remediation is not applicable, nothing was done' fi"
       }
@@ -1025,9 +1025,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Operating System Vendor Support and Certification",
         "gid": "certified-vendor",
-        "rid": "installed_OS_is_FIPS_certified"
+        "rid": "installed_OS_is_FIPS_certified",
+        "gtitle": "Operating System Vendor Support and Certification"
       },
       "id": "certified-vendor",
       "title": [
@@ -1045,9 +1045,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
         "rid": "auditd_audispd_syslog_plugin_activated",
+        "gtitle": "Configure auditd Data Retention",
         "fix_id": "auditd_audispd_syslog_plugin_activated"
       },
       "id": "configure_auditd_data_retention",
@@ -1066,9 +1066,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
-        "rid": "auditd_data_disk_error_action"
+        "rid": "auditd_data_disk_error_action",
+        "gtitle": "Configure auditd Data Retention"
       },
       "id": "configure_auditd_data_retention",
       "title": [
@@ -1086,9 +1086,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
-        "rid": "auditd_data_disk_full_action"
+        "rid": "auditd_data_disk_full_action",
+        "gtitle": "Configure auditd Data Retention"
       },
       "id": "configure_auditd_data_retention",
       "title": [
@@ -1106,9 +1106,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
-        "rid": "auditd_data_retention_action_mail_acct"
+        "rid": "auditd_data_retention_action_mail_acct",
+        "gtitle": "Configure auditd Data Retention"
       },
       "id": "configure_auditd_data_retention",
       "title": [
@@ -1126,9 +1126,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
-        "rid": "auditd_data_retention_admin_space_left_action"
+        "rid": "auditd_data_retention_admin_space_left_action",
+        "gtitle": "Configure auditd Data Retention"
       },
       "id": "configure_auditd_data_retention",
       "title": [
@@ -1146,9 +1146,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
-        "rid": "auditd_data_retention_max_log_file"
+        "rid": "auditd_data_retention_max_log_file",
+        "gtitle": "Configure auditd Data Retention"
       },
       "id": "configure_auditd_data_retention",
       "title": [
@@ -1166,9 +1166,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
-        "rid": "auditd_data_retention_max_log_file_action"
+        "rid": "auditd_data_retention_max_log_file_action",
+        "gtitle": "Configure auditd Data Retention"
       },
       "id": "configure_auditd_data_retention",
       "title": [
@@ -1186,9 +1186,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
         "rid": "auditd_data_retention_num_logs",
+        "gtitle": "Configure auditd Data Retention",
         "fix_id": "auditd_data_retention_num_logs"
       },
       "id": "configure_auditd_data_retention",
@@ -1207,9 +1207,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
-        "rid": "auditd_data_retention_space_left_action"
+        "rid": "auditd_data_retention_space_left_action",
+        "gtitle": "Configure auditd Data Retention"
       },
       "id": "configure_auditd_data_retention",
       "title": [
@@ -1227,9 +1227,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
         "rid": "auditd_freq",
+        "gtitle": "Configure auditd Data Retention",
         "fix_id": "auditd_freq"
       },
       "id": "configure_auditd_data_retention",
@@ -1248,9 +1248,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
         "rid": "auditd_local_events",
+        "gtitle": "Configure auditd Data Retention",
         "fix_id": "auditd_local_events"
       },
       "id": "configure_auditd_data_retention",
@@ -1269,9 +1269,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
         "rid": "auditd_log_format",
+        "gtitle": "Configure auditd Data Retention",
         "fix_id": "auditd_log_format"
       },
       "id": "configure_auditd_data_retention",
@@ -1290,9 +1290,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
         "rid": "auditd_name_format",
+        "gtitle": "Configure auditd Data Retention",
         "fix_id": "auditd_name_format"
       },
       "id": "configure_auditd_data_retention",
@@ -1311,9 +1311,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
-        "rid": "auditd_overflow_action"
+        "rid": "auditd_overflow_action",
+        "gtitle": "Configure auditd Data Retention"
       },
       "id": "configure_auditd_data_retention",
       "title": [
@@ -1331,9 +1331,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure auditd Data Retention",
         "gid": "configure_auditd_data_retention",
         "rid": "auditd_write_logs",
+        "gtitle": "Configure auditd Data Retention",
         "fix_id": "auditd_write_logs"
       },
       "id": "configure_auditd_data_retention",
@@ -1352,9 +1352,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Disable Core Dumps",
         "gid": "coredumps",
         "rid": "coredump_disable_backtraces",
+        "gtitle": "Disable Core Dumps",
         "fix_id": "coredump_disable_backtraces"
       },
       "id": "coredumps",
@@ -1373,9 +1373,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Disable Core Dumps",
         "gid": "coredumps",
         "rid": "coredump_disable_storage",
+        "gtitle": "Disable Core Dumps",
         "fix_id": "coredump_disable_storage"
       },
       "id": "coredumps",
@@ -1394,9 +1394,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Disable Core Dumps",
         "gid": "coredumps",
         "rid": "sysctl_fs_suid_dumpable",
+        "gtitle": "Disable Core Dumps",
         "fix_id": "sysctl_fs_suid_dumpable"
       },
       "id": "coredumps",
@@ -1415,9 +1415,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Cron and At Daemons",
         "gid": "cron_and_at",
         "rid": "package_cron_installed",
+        "gtitle": "Cron and At Daemons",
         "fix_id": "package_cron_installed"
       },
       "id": "cron_and_at",
@@ -1436,9 +1436,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Cron and At Daemons",
         "gid": "cron_and_at",
         "rid": "service_cron_enabled",
+        "gtitle": "Cron and At Daemons",
         "fix_id": "service_cron_enabled"
       },
       "id": "cron_and_at",
@@ -1457,9 +1457,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "System Cryptographic Policies",
         "gid": "crypto",
         "rid": "harden_ssh_client_crypto_policy",
+        "gtitle": "System Cryptographic Policies",
         "fix_id": "harden_ssh_client_crypto_policy"
       },
       "id": "crypto",
@@ -1478,9 +1478,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Deprecated services",
         "gid": "deprecated",
         "rid": "package_inetutils-telnetd_removed",
+        "gtitle": "Deprecated services",
         "fix_id": "package_inetutils-telnetd_removed"
       },
       "id": "deprecated",
@@ -1499,9 +1499,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Deprecated services",
         "gid": "deprecated",
         "rid": "package_nis_removed",
+        "gtitle": "Deprecated services",
         "fix_id": "package_nis_removed"
       },
       "id": "deprecated",
@@ -1520,9 +1520,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Deprecated services",
         "gid": "deprecated",
         "rid": "package_ntpdate_removed",
+        "gtitle": "Deprecated services",
         "fix_id": "package_ntpdate_removed"
       },
       "id": "deprecated",
@@ -1541,9 +1541,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Deprecated services",
         "gid": "deprecated",
         "rid": "package_telnetd-ssl_removed",
+        "gtitle": "Deprecated services",
         "fix_id": "package_telnetd-ssl_removed"
       },
       "id": "deprecated",
@@ -1562,9 +1562,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Deprecated services",
         "gid": "deprecated",
         "rid": "package_telnetd_removed",
+        "gtitle": "Deprecated services",
         "fix_id": "package_telnetd_removed"
       },
       "id": "deprecated",
@@ -1582,10 +1582,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Configure DHCP Client if Necessary",
+        "severity": "medium",
         "gid": "dhcp_client_configuration",
-        "rid": "dhcp_client_restrict_options"
+        "rid": "dhcp_client_restrict_options",
+        "gtitle": "Configure DHCP Client if Necessary"
       },
       "id": "dhcp_client_configuration",
       "title": [
@@ -1595,17 +1595,17 @@
         }
       ],
       "desc": "Create the file, and add an appropriate setting for each of the ten configuration settings which can be obtained via DHCP. For each setting, do one of the following:If the setting shouldbe configured remotely by the DHCP server, select an appropriate static value, and add the line:If the setting should be configured remotely by the DHCP server, add the lines:For example, suppose the DHCP server should provide only the IP address itself and the subnet mask. Then the entire file should look like:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Configure DHCP Server",
+        "severity": "medium",
         "gid": "dhcp_server_configuration",
-        "rid": "dhcp_server_minimize_served_info"
+        "rid": "dhcp_server_minimize_served_info",
+        "gtitle": "Configure DHCP Server"
       },
       "id": "dhcp_server_configuration",
       "title": [
@@ -1615,7 +1615,7 @@
         }
       ],
       "desc": "Edit /etc/dhcp/dhcpd.conf. Examine each address range section within the file, and ensure that the following options are not defined unless there is an operational need to provide this information via DHCP:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -1623,9 +1623,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Disable Support for IPv6 Unless Needed",
         "gid": "disabling_ipv6",
         "rid": "kernel_module_ipv6_option_disabled",
+        "gtitle": "Disable Support for IPv6 Unless Needed",
         "fix_id": "kernel_module_ipv6_option_disabled"
       },
       "id": "disabling_ipv6",
@@ -1644,9 +1644,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Disable Support for IPv6 Unless Needed",
         "gid": "disabling_ipv6",
         "rid": "sysctl_net_ipv6_conf_all_disable_ipv6",
+        "gtitle": "Disable Support for IPv6 Unless Needed",
         "fix_id": "sysctl_net_ipv6_conf_all_disable_ipv6"
       },
       "id": "disabling_ipv6",
@@ -1665,9 +1665,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Disable Support for IPv6 Unless Needed",
         "gid": "disabling_ipv6",
         "rid": "sysctl_net_ipv6_conf_default_disable_ipv6",
+        "gtitle": "Disable Support for IPv6 Unless Needed",
         "fix_id": "sysctl_net_ipv6_conf_default_disable_ipv6"
       },
       "id": "disabling_ipv6",
@@ -1685,10 +1685,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Disable netfs if Possible",
+        "severity": "medium",
         "gid": "disabling_netfs",
         "rid": "service_netfs_disabled",
+        "gtitle": "Disable netfs if Possible",
         "fix_id": "service_netfs_disabled"
       },
       "id": "disabling_netfs",
@@ -1699,7 +1699,7 @@
         }
       ],
       "desc": "The netfs script manages the boot-time mounting of several types of networked filesystems, of which NFS and Samba are the most common. If these filesystem types are not in use, the script can be disabled, protecting the system somewhat against accidental or malicious changes toand against flaws in the netfs script itself. Theservice can be disabled with the following command:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "# Remediation is applicable only in certain platforms if [ ! -f /.dockerenv ] &amp;&amp; [ ! -f /run/.containerenv ]; then SYSTEMCTL_EXEC='/usr/bin/systemctl' \"$SYSTEMCTL_EXEC\" stop 'netfs.service' \"$SYSTEMCTL_EXEC\" disable 'netfs.service' \"$SYSTEMCTL_EXEC\" mask 'netfs.service' # Disable socket activation if we have a unit file for it if \"$SYSTEMCTL_EXEC\" list-unit-files | grep -q '^netfs.socket'; then \"$SYSTEMCTL_EXEC\" stop 'netfs.socket' \"$SYSTEMCTL_EXEC\" mask 'netfs.socket' fi # The service may not be running because it has been started and failed, # so let's reset the state so OVAL checks pass. # Service should be 'inactive', not 'failed' after reboot though. \"$SYSTEMCTL_EXEC\" reset-failed 'netfs.service' || true else &gt;&amp;2 echo 'Remediation is not applicable, nothing was done' fi"
       }
@@ -1707,9 +1707,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Disk Partitioning",
         "gid": "disk_partitioning",
-        "rid": "partition_for_home"
+        "rid": "partition_for_home",
+        "gtitle": "Disk Partitioning"
       },
       "id": "disk_partitioning",
       "title": [
@@ -1726,10 +1726,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Disk Partitioning",
+        "severity": "medium",
         "gid": "disk_partitioning",
-        "rid": "partition_for_srv"
+        "rid": "partition_for_srv",
+        "gtitle": "Disk Partitioning"
       },
       "id": "disk_partitioning",
       "title": [
@@ -1739,7 +1739,7 @@
         }
       ],
       "desc": "If a file server (FTP, TFTP...) is hosted locally, create a separate partition forat installation time (or migrate it later using LVM). Ifwill be mounted from another system such as an NFS server, then creating a separate partition is not necessary at installation time, and the mountpoint can instead be configured later.",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -1747,9 +1747,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Disk Partitioning",
         "gid": "disk_partitioning",
-        "rid": "partition_for_tmp"
+        "rid": "partition_for_tmp",
+        "gtitle": "Disk Partitioning"
       },
       "id": "disk_partitioning",
       "title": [
@@ -1767,9 +1767,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Disk Partitioning",
         "gid": "disk_partitioning",
-        "rid": "partition_for_var"
+        "rid": "partition_for_var",
+        "gtitle": "Disk Partitioning"
       },
       "id": "disk_partitioning",
       "title": [
@@ -1787,9 +1787,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Disk Partitioning",
         "gid": "disk_partitioning",
-        "rid": "partition_for_var_log"
+        "rid": "partition_for_var_log",
+        "gtitle": "Disk Partitioning"
       },
       "id": "disk_partitioning",
       "title": [
@@ -1807,9 +1807,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Disk Partitioning",
         "gid": "disk_partitioning",
-        "rid": "partition_for_var_log_audit"
+        "rid": "partition_for_var_log_audit",
+        "gtitle": "Disk Partitioning"
       },
       "id": "disk_partitioning",
       "title": [
@@ -1827,9 +1827,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Enable ExecShield",
         "gid": "enable_execshield_settings",
         "rid": "sysctl_kernel_kptr_restrict",
+        "gtitle": "Enable ExecShield",
         "fix_id": "sysctl_kernel_kptr_restrict"
       },
       "id": "enable_execshield_settings",
@@ -1848,9 +1848,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Enable ExecShield",
         "gid": "enable_execshield_settings",
         "rid": "sysctl_kernel_randomize_va_space",
+        "gtitle": "Enable ExecShield",
         "fix_id": "sysctl_kernel_randomize_va_space"
       },
       "id": "enable_execshield_settings",
@@ -1869,9 +1869,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Endpoint Protection Software",
         "gid": "endpoint_security_software",
-        "rid": "configure_user_data_backups"
+        "rid": "configure_user_data_backups",
+        "gtitle": "Endpoint Protection Software"
       },
       "id": "endpoint_security_software",
       "title": [
@@ -1889,9 +1889,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure Proper Configuration of Log Files",
         "gid": "ensure_rsyslog_log_file_configuration",
-        "rid": "rsyslog_encrypt_offload_actionsendstreamdriverauthmode"
+        "rid": "rsyslog_encrypt_offload_actionsendstreamdriverauthmode",
+        "gtitle": "Ensure Proper Configuration of Log Files"
       },
       "id": "ensure_rsyslog_log_file_configuration",
       "title": [
@@ -1909,9 +1909,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure Proper Configuration of Log Files",
         "gid": "ensure_rsyslog_log_file_configuration",
-        "rid": "rsyslog_encrypt_offload_actionsendstreamdrivermode"
+        "rid": "rsyslog_encrypt_offload_actionsendstreamdrivermode",
+        "gtitle": "Ensure Proper Configuration of Log Files"
       },
       "id": "ensure_rsyslog_log_file_configuration",
       "title": [
@@ -1929,9 +1929,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure Proper Configuration of Log Files",
         "gid": "ensure_rsyslog_log_file_configuration",
-        "rid": "rsyslog_encrypt_offload_defaultnetstreamdriver"
+        "rid": "rsyslog_encrypt_offload_defaultnetstreamdriver",
+        "gtitle": "Ensure Proper Configuration of Log Files"
       },
       "id": "ensure_rsyslog_log_file_configuration",
       "title": [
@@ -1949,9 +1949,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure Proper Configuration of Log Files",
         "gid": "ensure_rsyslog_log_file_configuration",
-        "rid": "rsyslog_files_groupownership"
+        "rid": "rsyslog_files_groupownership",
+        "gtitle": "Ensure Proper Configuration of Log Files"
       },
       "id": "ensure_rsyslog_log_file_configuration",
       "title": [
@@ -1969,9 +1969,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure Proper Configuration of Log Files",
         "gid": "ensure_rsyslog_log_file_configuration",
-        "rid": "rsyslog_files_ownership"
+        "rid": "rsyslog_files_ownership",
+        "gtitle": "Ensure Proper Configuration of Log Files"
       },
       "id": "ensure_rsyslog_log_file_configuration",
       "title": [
@@ -1989,9 +1989,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure Proper Configuration of Log Files",
         "gid": "ensure_rsyslog_log_file_configuration",
-        "rid": "rsyslog_files_permissions"
+        "rid": "rsyslog_files_permissions",
+        "gtitle": "Ensure Proper Configuration of Log Files"
       },
       "id": "ensure_rsyslog_log_file_configuration",
       "title": [
@@ -2009,9 +2009,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Protect Random-Number Entropy Pool",
         "gid": "entropy",
-        "rid": "kernel_disable_entropy_contribution_for_solid_state_drives"
+        "rid": "kernel_disable_entropy_contribution_for_solid_state_drives",
+        "gtitle": "Protect Random-Number Entropy Pool"
       },
       "id": "entropy",
       "title": [
@@ -2029,9 +2029,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Important Files and Directories",
         "gid": "files",
-        "rid": "dir_perms_world_writable_sticky_bits"
+        "rid": "dir_perms_world_writable_sticky_bits",
+        "gtitle": "Verify Permissions on Important Files and Directories"
       },
       "id": "files",
       "title": [
@@ -2048,10 +2048,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Verify Permissions on Important Files and Directories",
+        "severity": "medium",
         "gid": "files",
-        "rid": "file_permissions_systemmap"
+        "rid": "file_permissions_systemmap",
+        "gtitle": "Verify Permissions on Important Files and Directories"
       },
       "id": "files",
       "title": [
@@ -2061,7 +2061,7 @@
         }
       ],
       "desc": "Files containing sensitive informations should be protected by restrictive permissions. Most of the time, there is no need that these files need to be read by any non-root user To properly set the permissions of, run the command:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -2069,9 +2069,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Important Files and Directories",
         "gid": "files",
         "rid": "file_permissions_unauthorized_world_writable",
+        "gtitle": "Verify Permissions on Important Files and Directories",
         "fix_id": "file_permissions_unauthorized_world_writable"
       },
       "id": "files",
@@ -2090,9 +2090,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Important Files and Directories",
         "gid": "files",
         "rid": "sysctl_fs_protected_hardlinks",
+        "gtitle": "Verify Permissions on Important Files and Directories",
         "fix_id": "sysctl_fs_protected_hardlinks"
       },
       "id": "files",
@@ -2111,9 +2111,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Important Files and Directories",
         "gid": "files",
         "rid": "sysctl_fs_protected_symlinks",
+        "gtitle": "Verify Permissions on Important Files and Directories",
         "fix_id": "sysctl_fs_protected_symlinks"
       },
       "id": "files",
@@ -2131,10 +2131,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Configure vsftpd to Provide FTP Service if Necessary",
+        "severity": "medium",
         "gid": "ftp_configure_vsftpd",
-        "rid": "ftp_configure_firewall"
+        "rid": "ftp_configure_firewall",
+        "gtitle": "Configure vsftpd to Provide FTP Service if Necessary"
       },
       "id": "ftp_configure_vsftpd",
       "title": [
@@ -2144,17 +2144,17 @@
         }
       ],
       "desc": "By default,blocks access to the ports used by the web server. To configureto allow port 21 traffic, one must editand(if IPv6 is in use). Add the following line, ensuring that it appears before the final LOG and DROP lines for the INPUT chain:Edit the file. Ensure that the space-separated list of modules contains the FTP connection tracking module:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Restrict the Set of Users Allowed to Access FTP",
+        "severity": "medium",
         "gid": "ftp_restrict_users",
-        "rid": "ftp_limit_users"
+        "rid": "ftp_limit_users",
+        "gtitle": "Restrict the Set of Users Allowed to Access FTP"
       },
       "id": "ftp_restrict_users",
       "title": [
@@ -2164,7 +2164,7 @@
         }
       ],
       "desc": "If there is a mission-critical reason for users to access their accounts via the insecure FTP protocol, limit the set of users who are allowed this access. Edit the vsftpd configuration file. Add or correct the following configuration options:Edit the file. For each user USERNAME who should be allowed to access the system via FTP, add a line containing that user's name:If anonymous access is also required, add the anonymous usernames toas well.",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -2172,9 +2172,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Configure GNOME Login Screen",
         "gid": "gnome_login_screen",
         "rid": "gnome_gdm_disable_xdmcp",
+        "gtitle": "Configure GNOME Login Screen",
         "fix_id": "gnome_gdm_disable_xdmcp"
       },
       "id": "gnome_login_screen",
@@ -2193,9 +2193,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Inspect and Activate Default Rules",
         "gid": "iptables_activation",
         "rid": "service_ip6tables_enabled",
+        "gtitle": "Inspect and Activate Default Rules",
         "fix_id": "service_ip6tables_enabled"
       },
       "id": "iptables_activation",
@@ -2214,9 +2214,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Inspect and Activate Default Rules",
         "gid": "iptables_activation",
         "rid": "service_iptables_enabled",
+        "gtitle": "Inspect and Activate Default Rules",
         "fix_id": "service_iptables_enabled"
       },
       "id": "iptables_activation",
@@ -2235,9 +2235,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Inspect and Activate Default Rules",
         "gid": "iptables_activation",
         "rid": "set_ip6tables_default_rule",
+        "gtitle": "Inspect and Activate Default Rules",
         "fix_id": "set_ip6tables_default_rule"
       },
       "id": "iptables_activation",
@@ -2256,9 +2256,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Strengthen the Default Ruleset",
         "gid": "iptables_ruleset_modifications",
         "rid": "set_iptables_default_rule",
+        "gtitle": "Strengthen the Default Ruleset",
         "fix_id": "set_iptables_default_rule"
       },
       "id": "iptables_ruleset_modifications",
@@ -2277,9 +2277,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Strengthen the Default Ruleset",
         "gid": "iptables_ruleset_modifications",
         "rid": "set_iptables_default_rule_forward",
+        "gtitle": "Strengthen the Default Ruleset",
         "fix_id": "set_iptables_default_rule_forward"
       },
       "id": "iptables_ruleset_modifications",
@@ -2298,9 +2298,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Kerberos",
         "gid": "kerberos",
         "rid": "kerberos_disable_no_keytab",
+        "gtitle": "Kerberos",
         "fix_id": "kerberos_disable_no_keytab"
       },
       "id": "kerberos",
@@ -2319,9 +2319,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure All Logs are Rotated by logrotate",
         "gid": "log_rotation",
         "rid": "ensure_logrotate_activated",
+        "gtitle": "Ensure All Logs are Rotated by logrotate",
         "fix_id": "ensure_logrotate_activated"
       },
       "id": "log_rotation",
@@ -2340,9 +2340,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure Syslog",
         "gid": "logging",
         "rid": "package_rsyslog_installed",
+        "gtitle": "Configure Syslog",
         "fix_id": "package_rsyslog_installed"
       },
       "id": "logging",
@@ -2361,9 +2361,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure Syslog",
         "gid": "logging",
         "rid": "service_rsyslog_enabled",
+        "gtitle": "Configure Syslog",
         "fix_id": "service_rsyslog_enabled"
       },
       "id": "logging",
@@ -2382,9 +2382,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "McAfee Host-Based Intrusion Detection Software (HBSS)",
         "gid": "mcafee_hbss_software",
         "rid": "package_MFEhiplsm_installed",
+        "gtitle": "McAfee Host-Based Intrusion Detection Software (HBSS)",
         "fix_id": "package_MFEhiplsm_installed"
       },
       "id": "mcafee_hbss_software",
@@ -2403,9 +2403,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Uncommon Network Protocols",
         "gid": "network-uncommon",
         "rid": "kernel_module_rds_disabled",
+        "gtitle": "Uncommon Network Protocols",
         "fix_id": "kernel_module_rds_disabled"
       },
       "id": "network-uncommon",
@@ -2424,9 +2424,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Uncommon Network Protocols",
         "gid": "network-uncommon",
         "rid": "kernel_module_tipc_disabled",
+        "gtitle": "Uncommon Network Protocols",
         "fix_id": "kernel_module_tipc_disabled"
       },
       "id": "network-uncommon",
@@ -2445,9 +2445,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Configure NFS Servers",
         "gid": "nfs_configuring_servers",
-        "rid": "no_all_squash_exports"
+        "rid": "no_all_squash_exports",
+        "gtitle": "Configure NFS Servers"
       },
       "id": "nfs_configuring_servers",
       "title": [
@@ -2465,9 +2465,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Network Time Protocol",
         "gid": "ntp",
         "rid": "package_chrony_installed",
+        "gtitle": "Network Time Protocol",
         "fix_id": "package_chrony_installed"
       },
       "id": "ntp",
@@ -2486,9 +2486,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Network Time Protocol",
         "gid": "ntp",
         "rid": "package_ntp_installed",
+        "gtitle": "Network Time Protocol",
         "fix_id": "package_ntp_installed"
       },
       "id": "ntp",
@@ -2507,9 +2507,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Network Time Protocol",
         "gid": "ntp",
         "rid": "service_chronyd_enabled",
+        "gtitle": "Network Time Protocol",
         "fix_id": "service_chronyd_enabled"
       },
       "id": "ntp",
@@ -2528,9 +2528,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Network Time Protocol",
         "gid": "ntp",
         "rid": "service_ntp_enabled",
+        "gtitle": "Network Time Protocol",
         "fix_id": "service_ntp_enabled"
       },
       "id": "ntp",
@@ -2549,9 +2549,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Network Time Protocol",
         "gid": "ntp",
         "rid": "service_ntpd_enabled",
+        "gtitle": "Network Time Protocol",
         "fix_id": "service_ntpd_enabled"
       },
       "id": "ntp",
@@ -2570,9 +2570,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Network Time Protocol",
         "gid": "ntp",
         "rid": "service_timesyncd_enabled",
+        "gtitle": "Network Time Protocol",
         "fix_id": "service_timesyncd_enabled"
       },
       "id": "ntp",
@@ -2591,9 +2591,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Network Time Protocol",
         "gid": "ntp",
         "rid": "chronyd_specify_remote_server",
+        "gtitle": "Network Time Protocol",
         "fix_id": "chronyd_specify_remote_server"
       },
       "id": "ntp",
@@ -2611,10 +2611,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Network Time Protocol",
+        "severity": "medium",
         "gid": "ntp",
-        "rid": "ntpd_specify_multiple_servers"
+        "rid": "ntpd_specify_multiple_servers",
+        "gtitle": "Network Time Protocol"
       },
       "id": "ntp",
       "title": [
@@ -2624,7 +2624,7 @@
         }
       ],
       "desc": "Additional NTP servers can be specified for time synchronization in the file. To do so, add additional lines of the following form, substituting the IP address or hostname of a remote NTP server for:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -2632,9 +2632,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Network Time Protocol",
         "gid": "ntp",
-        "rid": "ntpd_specify_remote_server"
+        "rid": "ntpd_specify_remote_server",
+        "gtitle": "Network Time Protocol"
       },
       "id": "ntp",
       "title": [
@@ -2652,9 +2652,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Restrict Partition Mount Options",
         "gid": "partitions",
         "rid": "mount_option_dev_shm_nodev",
+        "gtitle": "Restrict Partition Mount Options",
         "fix_id": "mount_option_dev_shm_nodev"
       },
       "id": "partitions",
@@ -2673,9 +2673,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Restrict Partition Mount Options",
         "gid": "partitions",
         "rid": "mount_option_dev_shm_nosuid",
+        "gtitle": "Restrict Partition Mount Options",
         "fix_id": "mount_option_dev_shm_nosuid"
       },
       "id": "partitions",
@@ -2694,9 +2694,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Set Password Expiration Parameters",
         "gid": "password_expiration",
-        "rid": "accounts_maximum_age_login_defs"
+        "rid": "accounts_maximum_age_login_defs",
+        "gtitle": "Set Password Expiration Parameters"
       },
       "id": "password_expiration",
       "title": [
@@ -2714,9 +2714,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Set Password Expiration Parameters",
         "gid": "password_expiration",
         "rid": "accounts_minimum_age_login_defs",
+        "gtitle": "Set Password Expiration Parameters",
         "fix_id": "accounts_minimum_age_login_defs"
       },
       "id": "password_expiration",
@@ -2735,9 +2735,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Set Password Expiration Parameters",
         "gid": "password_expiration",
-        "rid": "accounts_password_minlen_login_defs"
+        "rid": "accounts_password_minlen_login_defs",
+        "gtitle": "Set Password Expiration Parameters"
       },
       "id": "password_expiration",
       "title": [
@@ -2755,9 +2755,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Set Password Expiration Parameters",
         "gid": "password_expiration",
         "rid": "accounts_password_warn_age_login_defs",
+        "gtitle": "Set Password Expiration Parameters",
         "fix_id": "accounts_password_warn_age_login_defs"
       },
       "id": "password_expiration",
@@ -2776,9 +2776,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Proper Storage and Existence of Password Hashes",
         "gid": "password_storage",
-        "rid": "accounts_password_all_shadowed"
+        "rid": "accounts_password_all_shadowed",
+        "gtitle": "Verify Proper Storage and Existence of Password Hashes"
       },
       "id": "password_storage",
       "title": [
@@ -2796,9 +2796,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Verify Proper Storage and Existence of Password Hashes",
         "gid": "password_storage",
-        "rid": "gid_passwd_group_same"
+        "rid": "gid_passwd_group_same",
+        "gtitle": "Verify Proper Storage and Existence of Password Hashes"
       },
       "id": "password_storage",
       "title": [
@@ -2815,50 +2815,10 @@
     },
     {
       "tags": {
-        "severity": "high",
-        "gtitle": "Verify Proper Storage and Existence of Password Hashes",
-        "gid": "password_storage",
-        "rid": "no_empty_passwords"
-      },
-      "id": "password_storage",
-      "title": [
-        {
-          "#text": "Prevent Login to Accounts With Empty Password",
-          "@_lang": "en-US"
-        }
-      ],
-      "desc": "If an account is configured for password authentication but does not have an assigned password, it may be possible to log into the account without authentication. Remove any instances of theinto prevent logins with empty passwords. Note that this rule is not applicable for systems running within a container. Having user with empty password within a container is not considered a risk, because it should not be possible to directly login into a container anyway.",
-      "impact": 0.7,
-      "descs": {
-        "fix": "Missing fix text"
-      }
-    },
-    {
-      "tags": {
         "severity": "medium",
-        "gtitle": "Verify Proper Storage and Existence of Password Hashes",
-        "gid": "password_storage",
-        "rid": "no_netrc_files"
-      },
-      "id": "password_storage",
-      "title": [
-        {
-          "#text": "Verify No netrc Files Exist",
-          "@_lang": "en-US"
-        }
-      ],
-      "desc": "Thefiles contain login information used to auto-login into FTP servers and reside in the user's home directory. These files may contain unencrypted passwords to remote FTP servers making them susceptible to access by unauthorized users and should not be used. Anyfiles should be removed.",
-      "impact": 0.5,
-      "descs": {
-        "fix": "Missing fix text"
-      }
-    },
-    {
-      "tags": {
-        "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_groupowner_backup_etc_group",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_groupowner_backup_etc_group"
       },
       "id": "permissions_important_account_files",
@@ -2877,9 +2837,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_groupowner_backup_etc_gshadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_groupowner_backup_etc_gshadow"
       },
       "id": "permissions_important_account_files",
@@ -2898,9 +2858,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_groupowner_backup_etc_passwd",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_groupowner_backup_etc_passwd"
       },
       "id": "permissions_important_account_files",
@@ -2919,9 +2879,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_groupowner_backup_etc_shadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_groupowner_backup_etc_shadow"
       },
       "id": "permissions_important_account_files",
@@ -2940,9 +2900,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_groupowner_etc_group",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_groupowner_etc_group"
       },
       "id": "permissions_important_account_files",
@@ -2961,9 +2921,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_groupowner_etc_gshadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_groupowner_etc_gshadow"
       },
       "id": "permissions_important_account_files",
@@ -2982,9 +2942,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_groupowner_etc_passwd",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_groupowner_etc_passwd"
       },
       "id": "permissions_important_account_files",
@@ -3003,9 +2963,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_groupowner_etc_shadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_groupowner_etc_shadow"
       },
       "id": "permissions_important_account_files",
@@ -3024,9 +2984,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_owner_backup_etc_group",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_owner_backup_etc_group"
       },
       "id": "permissions_important_account_files",
@@ -3045,9 +3005,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_owner_backup_etc_gshadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_owner_backup_etc_gshadow"
       },
       "id": "permissions_important_account_files",
@@ -3066,9 +3026,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_owner_backup_etc_passwd",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_owner_backup_etc_passwd"
       },
       "id": "permissions_important_account_files",
@@ -3087,9 +3047,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_owner_backup_etc_shadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_owner_backup_etc_shadow"
       },
       "id": "permissions_important_account_files",
@@ -3108,9 +3068,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_owner_etc_group",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_owner_etc_group"
       },
       "id": "permissions_important_account_files",
@@ -3129,9 +3089,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_owner_etc_gshadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_owner_etc_gshadow"
       },
       "id": "permissions_important_account_files",
@@ -3150,9 +3110,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_owner_etc_passwd",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_owner_etc_passwd"
       },
       "id": "permissions_important_account_files",
@@ -3171,9 +3131,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_owner_etc_shadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_owner_etc_shadow"
       },
       "id": "permissions_important_account_files",
@@ -3192,9 +3152,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_permissions_backup_etc_group",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_permissions_backup_etc_group"
       },
       "id": "permissions_important_account_files",
@@ -3213,9 +3173,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_permissions_backup_etc_gshadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_permissions_backup_etc_gshadow"
       },
       "id": "permissions_important_account_files",
@@ -3234,9 +3194,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_permissions_backup_etc_passwd",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_permissions_backup_etc_passwd"
       },
       "id": "permissions_important_account_files",
@@ -3255,9 +3215,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_permissions_backup_etc_shadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_permissions_backup_etc_shadow"
       },
       "id": "permissions_important_account_files",
@@ -3276,9 +3236,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_permissions_etc_group",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_permissions_etc_group"
       },
       "id": "permissions_important_account_files",
@@ -3297,9 +3257,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_permissions_etc_gshadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_permissions_etc_gshadow"
       },
       "id": "permissions_important_account_files",
@@ -3318,9 +3278,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_permissions_etc_passwd",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_permissions_etc_passwd"
       },
       "id": "permissions_important_account_files",
@@ -3339,9 +3299,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "gid": "permissions_important_account_files",
         "rid": "file_permissions_etc_shadow",
+        "gtitle": "Verify Permissions on Files with Local Account Information and Credentials",
         "fix_id": "file_permissions_etc_shadow"
       },
       "id": "permissions_important_account_files",
@@ -3360,9 +3320,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "gid": "permissions_var_log_dir",
         "rid": "file_groupowner_var_log",
+        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "fix_id": "file_groupowner_var_log"
       },
       "id": "permissions_var_log_dir",
@@ -3381,9 +3341,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "gid": "permissions_var_log_dir",
         "rid": "file_groupowner_var_log_messages",
+        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "fix_id": "file_groupowner_var_log_messages"
       },
       "id": "permissions_var_log_dir",
@@ -3402,9 +3362,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "gid": "permissions_var_log_dir",
         "rid": "file_owner_var_log",
+        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "fix_id": "file_owner_var_log"
       },
       "id": "permissions_var_log_dir",
@@ -3423,9 +3383,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "gid": "permissions_var_log_dir",
         "rid": "file_owner_var_log_messages",
+        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "fix_id": "file_owner_var_log_messages"
       },
       "id": "permissions_var_log_dir",
@@ -3444,9 +3404,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "gid": "permissions_var_log_dir",
         "rid": "file_permissions_var_log",
+        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "fix_id": "file_permissions_var_log"
       },
       "id": "permissions_var_log_dir",
@@ -3465,9 +3425,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "gid": "permissions_var_log_dir",
         "rid": "file_permissions_var_log_messages",
+        "gtitle": "Verify Permissions on Files within /var/log Directory",
         "fix_id": "file_permissions_var_log_messages"
       },
       "id": "permissions_var_log_dir",
@@ -3486,9 +3446,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify File Permissions Within Some Important Directories",
         "gid": "permissions_within_important_dirs",
-        "rid": "dir_ownership_library_dirs"
+        "rid": "dir_ownership_library_dirs",
+        "gtitle": "Verify File Permissions Within Some Important Directories"
       },
       "id": "permissions_within_important_dirs",
       "title": [
@@ -3506,9 +3466,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify File Permissions Within Some Important Directories",
         "gid": "permissions_within_important_dirs",
         "rid": "dir_permissions_library_dirs",
+        "gtitle": "Verify File Permissions Within Some Important Directories",
         "fix_id": "dir_permissions_library_dirs"
       },
       "id": "permissions_within_important_dirs",
@@ -3527,9 +3487,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify File Permissions Within Some Important Directories",
         "gid": "permissions_within_important_dirs",
-        "rid": "file_ownership_binary_dirs"
+        "rid": "file_ownership_binary_dirs",
+        "gtitle": "Verify File Permissions Within Some Important Directories"
       },
       "id": "permissions_within_important_dirs",
       "title": [
@@ -3547,9 +3507,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify File Permissions Within Some Important Directories",
         "gid": "permissions_within_important_dirs",
-        "rid": "file_ownership_library_dirs"
+        "rid": "file_ownership_library_dirs",
+        "gtitle": "Verify File Permissions Within Some Important Directories"
       },
       "id": "permissions_within_important_dirs",
       "title": [
@@ -3567,9 +3527,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify File Permissions Within Some Important Directories",
         "gid": "permissions_within_important_dirs",
-        "rid": "file_permissions_binary_dirs"
+        "rid": "file_permissions_binary_dirs",
+        "gtitle": "Verify File Permissions Within Some Important Directories"
       },
       "id": "permissions_within_important_dirs",
       "title": [
@@ -3587,9 +3547,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Verify File Permissions Within Some Important Directories",
         "gid": "permissions_within_important_dirs",
         "rid": "file_permissions_library_dirs",
+        "gtitle": "Verify File Permissions Within Some Important Directories",
         "fix_id": "file_permissions_library_dirs"
       },
       "id": "permissions_within_important_dirs",
@@ -3608,9 +3568,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Configure SMTP For Mail Clients",
         "gid": "postfix_client",
         "rid": "postfix_client_configure_mail_alias",
+        "gtitle": "Configure SMTP For Mail Clients",
         "fix_id": "postfix_client_configure_mail_alias"
       },
       "id": "postfix_client",
@@ -3629,9 +3589,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure SMTP For Mail Clients",
         "gid": "postfix_client",
-        "rid": "postfix_client_configure_relayhost"
+        "rid": "postfix_client_configure_relayhost",
+        "gtitle": "Configure SMTP For Mail Clients"
       },
       "id": "postfix_client",
       "title": [
@@ -3649,9 +3609,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Rlogin, Rsh, and Rexec",
         "gid": "r_services",
-        "rid": "no_rsh_trust_files"
+        "rid": "no_rsh_trust_files",
+        "gtitle": "Rlogin, Rsh, and Rexec"
       },
       "id": "r_services",
       "title": [
@@ -3669,9 +3629,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Restrict Root Logins",
         "gid": "root_logins",
         "rid": "accounts_no_uid_except_zero",
+        "gtitle": "Restrict Root Logins",
         "fix_id": "accounts_no_uid_except_zero"
       },
       "id": "root_logins",
@@ -3690,9 +3650,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Restrict Root Logins",
         "gid": "root_logins",
         "rid": "no_direct_root_logins",
+        "gtitle": "Restrict Root Logins",
         "fix_id": "no_direct_root_logins"
       },
       "id": "root_logins",
@@ -3711,9 +3671,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Restrict Root Logins",
         "gid": "root_logins",
-        "rid": "no_password_auth_for_systemaccounts"
+        "rid": "no_password_auth_for_systemaccounts",
+        "gtitle": "Restrict Root Logins"
       },
       "id": "root_logins",
       "title": [
@@ -3731,9 +3691,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Restrict Root Logins",
         "gid": "root_logins",
         "rid": "restrict_serial_port_logins",
+        "gtitle": "Restrict Root Logins",
         "fix_id": "restrict_serial_port_logins"
       },
       "id": "root_logins",
@@ -3752,9 +3712,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Restrict Root Logins",
         "gid": "root_logins",
         "rid": "securetty_root_login_console_only",
+        "gtitle": "Restrict Root Logins",
         "fix_id": "securetty_root_login_console_only"
       },
       "id": "root_logins",
@@ -3773,9 +3733,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure that No Dangerous Directories Exist in Root's Path",
         "gid": "root_paths",
-        "rid": "accounts_root_path_dirs_no_write"
+        "rid": "accounts_root_path_dirs_no_write",
+        "gtitle": "Ensure that No Dangerous Directories Exist in Root's Path"
       },
       "id": "root_paths",
       "title": [
@@ -3792,10 +3752,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Ensure that No Dangerous Directories Exist in Root's Path",
+        "severity": "medium",
         "gid": "root_paths",
-        "rid": "root_path_no_dot"
+        "rid": "root_path_no_dot",
+        "gtitle": "Ensure that No Dangerous Directories Exist in Root's Path"
       },
       "id": "root_paths",
       "title": [
@@ -3805,7 +3765,7 @@
         }
       ],
       "desc": "Ensure that none of the directories in root's path is equal to a singlecharacter, or that it contains any instances that lead to relative path traversal, such asor beginning a path without the slash () character. Also ensure that there are no \"empty\" elements in the path, such as in these examples:These empty elements have the same effect as a singlecharacter.",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -3813,9 +3773,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure rsyslogd to Accept Remote Messages If Acting as a Log Server",
         "gid": "rsyslog_accepting_remote_messages",
         "rid": "package_syslogng_installed",
+        "gtitle": "Configure rsyslogd to Accept Remote Messages If Acting as a Log Server",
         "fix_id": "package_syslogng_installed"
       },
       "id": "rsyslog_accepting_remote_messages",
@@ -3834,9 +3794,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure rsyslogd to Accept Remote Messages If Acting as a Log Server",
         "gid": "rsyslog_accepting_remote_messages",
         "rid": "service_syslogng_enabled",
+        "gtitle": "Configure rsyslogd to Accept Remote Messages If Acting as a Log Server",
         "fix_id": "service_syslogng_enabled"
       },
       "id": "rsyslog_accepting_remote_messages",
@@ -3854,10 +3814,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Configure rsyslogd to Accept Remote Messages If Acting as a Log Server",
+        "severity": "medium",
         "gid": "rsyslog_accepting_remote_messages",
-        "rid": "rsyslog_accept_remote_messages_tcp"
+        "rid": "rsyslog_accept_remote_messages_tcp",
+        "gtitle": "Configure rsyslogd to Accept Remote Messages If Acting as a Log Server"
       },
       "id": "rsyslog_accepting_remote_messages",
       "title": [
@@ -3867,17 +3827,17 @@
         }
       ],
       "desc": "Thedaemon should not accept remote messages unless the system acts as a log server. If the system needs to act as a central log server, add the following lines toto enable reception of messages over TCP:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Configure rsyslogd to Accept Remote Messages If Acting as a Log Server",
+        "severity": "medium",
         "gid": "rsyslog_accepting_remote_messages",
-        "rid": "rsyslog_accept_remote_messages_udp"
+        "rid": "rsyslog_accept_remote_messages_udp",
+        "gtitle": "Configure rsyslogd to Accept Remote Messages If Acting as a Log Server"
       },
       "id": "rsyslog_accepting_remote_messages",
       "title": [
@@ -3887,7 +3847,7 @@
         }
       ],
       "desc": "Thedaemon should not accept remote messages unless the system acts as a log server. If the system needs to act as a central log server, add the following lines toto enable reception of messages over UDP:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -3895,9 +3855,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Rsyslog Logs Sent To Remote Host",
         "gid": "rsyslog_sending_messages",
-        "rid": "rsyslog_remote_loghost"
+        "rid": "rsyslog_remote_loghost",
+        "gtitle": "Rsyslog Logs Sent To Remote Host"
       },
       "id": "rsyslog_sending_messages",
       "title": [
@@ -3915,9 +3875,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SELinux",
         "gid": "selinux",
-        "rid": "selinux_state"
+        "rid": "selinux_state",
+        "gtitle": "SELinux"
       },
       "id": "selinux",
       "title": [
@@ -3935,9 +3895,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Installing and Maintaining Software",
         "gid": "software",
-        "rid": "prefer_64bit_os"
+        "rid": "prefer_64bit_os",
+        "gtitle": "Installing and Maintaining Software"
       },
       "id": "software",
       "title": [
@@ -3955,9 +3915,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SSH Server",
         "gid": "ssh",
         "rid": "package_openssh-server_installed",
+        "gtitle": "SSH Server",
         "fix_id": "package_openssh-server_installed"
       },
       "id": "ssh",
@@ -3976,9 +3936,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SSH Server",
         "gid": "ssh",
         "rid": "package_openssh-server_removed",
+        "gtitle": "SSH Server",
         "fix_id": "package_openssh-server_removed"
       },
       "id": "ssh",
@@ -3996,10 +3956,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "SSH Server",
+        "severity": "medium",
         "gid": "ssh",
         "rid": "service_sshd_disabled",
+        "gtitle": "SSH Server",
         "fix_id": "service_sshd_disabled"
       },
       "id": "ssh",
@@ -4010,7 +3970,7 @@
         }
       ],
       "desc": "The SSH server service, sshd, is commonly needed. However, if it can be disabled, do so. Theservice can be disabled with the following command:This is unusual, as SSH is a common method for encrypted and authenticated remote access.",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "# Remediation is applicable only in certain platforms if [ ! -f /.dockerenv ] &amp;&amp; [ ! -f /run/.containerenv ]; then SYSTEMCTL_EXEC='/usr/bin/systemctl' \"$SYSTEMCTL_EXEC\" stop 'ssh.service' \"$SYSTEMCTL_EXEC\" disable 'ssh.service' \"$SYSTEMCTL_EXEC\" mask 'ssh.service' # Disable socket activation if we have a unit file for it if \"$SYSTEMCTL_EXEC\" list-unit-files | grep -q '^ssh.socket'; then \"$SYSTEMCTL_EXEC\" stop 'ssh.socket' \"$SYSTEMCTL_EXEC\" mask 'ssh.socket' fi # The service may not be running because it has been started and failed, # so let's reset the state so OVAL checks pass. # Service should be 'inactive', not 'failed' after reboot though. \"$SYSTEMCTL_EXEC\" reset-failed 'ssh.service' || true else &gt;&amp;2 echo 'Remediation is not applicable, nothing was done' fi"
       }
@@ -4018,9 +3978,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SSH Server",
         "gid": "ssh",
         "rid": "file_permissions_sshd_private_key",
+        "gtitle": "SSH Server",
         "fix_id": "file_permissions_sshd_private_key"
       },
       "id": "ssh",
@@ -4039,9 +3999,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "SSH Server",
         "gid": "ssh",
         "rid": "file_permissions_sshd_pub_key",
+        "gtitle": "SSH Server",
         "fix_id": "file_permissions_sshd_pub_key"
       },
       "id": "ssh",
@@ -4059,10 +4019,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "SSH Server",
+        "severity": "medium",
         "gid": "ssh",
-        "rid": "iptables_sshd_disabled"
+        "rid": "iptables_sshd_disabled",
+        "gtitle": "SSH Server"
       },
       "id": "ssh",
       "title": [
@@ -4072,7 +4032,7 @@
         }
       ],
       "desc": "By default, inbound connections to SSH's port are allowed. If the SSH server is not being used, this exception should be removed from the firewall configuration.Edit the filesand(if IPv6 is in use). In each file, locate and delete the line:This is unusual, as SSH is a common method for encrypted and authenticated remote access.",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -4080,9 +4040,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "disable_host_auth",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "disable_host_auth"
       },
       "id": "ssh_server",
@@ -4101,9 +4061,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
-        "rid": "sshd_allow_only_protocol2"
+        "rid": "sshd_allow_only_protocol2",
+        "gtitle": "Configure OpenSSH Server if Necessary"
       },
       "id": "ssh_server",
       "title": [
@@ -4121,9 +4081,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
-        "rid": "sshd_disable_compression"
+        "rid": "sshd_disable_compression",
+        "gtitle": "Configure OpenSSH Server if Necessary"
       },
       "id": "ssh_server",
       "title": [
@@ -4141,9 +4101,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_empty_passwords",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_empty_passwords"
       },
       "id": "ssh_server",
@@ -4162,9 +4122,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_gssapi_auth",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_gssapi_auth"
       },
       "id": "ssh_server",
@@ -4183,9 +4143,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_kerb_auth",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_kerb_auth"
       },
       "id": "ssh_server",
@@ -4204,9 +4164,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_pubkey_auth",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_pubkey_auth"
       },
       "id": "ssh_server",
@@ -4225,9 +4185,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_rhosts",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_rhosts"
       },
       "id": "ssh_server",
@@ -4246,9 +4206,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
-        "rid": "sshd_disable_rhosts_rsa"
+        "rid": "sshd_disable_rhosts_rsa",
+        "gtitle": "Configure OpenSSH Server if Necessary"
       },
       "id": "ssh_server",
       "title": [
@@ -4266,9 +4226,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_root_login",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_root_login"
       },
       "id": "ssh_server",
@@ -4287,9 +4247,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_root_password_login",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_root_password_login"
       },
       "id": "ssh_server",
@@ -4308,9 +4268,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_tcp_forwarding",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_tcp_forwarding"
       },
       "id": "ssh_server",
@@ -4329,9 +4289,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_user_known_hosts",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_user_known_hosts"
       },
       "id": "ssh_server",
@@ -4350,9 +4310,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_disable_x11_forwarding",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_disable_x11_forwarding"
       },
       "id": "ssh_server",
@@ -4371,9 +4331,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_do_not_permit_user_env",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_do_not_permit_user_env"
       },
       "id": "ssh_server",
@@ -4392,9 +4352,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_enable_gssapi_auth",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_enable_gssapi_auth"
       },
       "id": "ssh_server",
@@ -4413,9 +4373,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_enable_strictmodes",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_enable_strictmodes"
       },
       "id": "ssh_server",
@@ -4434,9 +4394,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_enable_warning_banner",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_enable_warning_banner"
       },
       "id": "ssh_server",
@@ -4455,9 +4415,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_enable_x11_forwarding",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_enable_x11_forwarding"
       },
       "id": "ssh_server",
@@ -4475,10 +4435,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Configure OpenSSH Server if Necessary",
+        "severity": "medium",
         "gid": "ssh_server",
-        "rid": "sshd_limit_user_access"
+        "rid": "sshd_limit_user_access",
+        "gtitle": "Configure OpenSSH Server if Necessary"
       },
       "id": "ssh_server",
       "title": [
@@ -4488,7 +4448,7 @@
         }
       ],
       "desc": "By default, the SSH configuration allows any user with an account to access the system. In order to specify the users that are allowed to login via SSH and deny all other users, add or correct the following line in thefile:Whereandare valid user names.",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "Missing fix text"
       }
@@ -4496,9 +4456,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_print_last_log",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_print_last_log"
       },
       "id": "ssh_server",
@@ -4517,9 +4477,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_rekey_limit",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_rekey_limit"
       },
       "id": "ssh_server",
@@ -4538,9 +4498,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_set_idle_timeout",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_set_idle_timeout"
       },
       "id": "ssh_server",
@@ -4559,9 +4519,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_set_keepalive",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_set_keepalive"
       },
       "id": "ssh_server",
@@ -4580,9 +4540,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_set_keepalive_0",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_set_keepalive_0"
       },
       "id": "ssh_server",
@@ -4601,9 +4561,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_set_loglevel_info",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_set_loglevel_info"
       },
       "id": "ssh_server",
@@ -4622,9 +4582,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_set_loglevel_verbose",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_set_loglevel_verbose"
       },
       "id": "ssh_server",
@@ -4643,9 +4603,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
-        "rid": "sshd_set_max_auth_tries"
+        "rid": "sshd_set_max_auth_tries",
+        "gtitle": "Configure OpenSSH Server if Necessary"
       },
       "id": "ssh_server",
       "title": [
@@ -4663,9 +4623,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_set_max_sessions",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_set_max_sessions"
       },
       "id": "ssh_server",
@@ -4684,9 +4644,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_set_maxstartups",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_set_maxstartups"
       },
       "id": "ssh_server",
@@ -4705,9 +4665,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Configure OpenSSH Server if Necessary",
         "gid": "ssh_server",
         "rid": "sshd_use_priv_separation",
+        "gtitle": "Configure OpenSSH Server if Necessary",
         "fix_id": "sshd_use_priv_separation"
       },
       "id": "ssh_server",
@@ -4726,9 +4686,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Sudo",
         "gid": "sudo",
         "rid": "sudo_add_noexec",
+        "gtitle": "Sudo",
         "fix_id": "sudo_add_noexec"
       },
       "id": "sudo",
@@ -4747,9 +4707,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
         "rid": "sudo_add_requiretty",
+        "gtitle": "Sudo",
         "fix_id": "sudo_add_requiretty"
       },
       "id": "sudo",
@@ -4768,9 +4728,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
         "rid": "sudo_add_use_pty",
+        "gtitle": "Sudo",
         "fix_id": "sudo_add_use_pty"
       },
       "id": "sudo",
@@ -4789,9 +4749,9 @@
     {
       "tags": {
         "severity": "low",
-        "gtitle": "Sudo",
         "gid": "sudo",
         "rid": "sudo_custom_logfile",
+        "gtitle": "Sudo",
         "fix_id": "sudo_custom_logfile"
       },
       "id": "sudo",
@@ -4810,9 +4770,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
         "rid": "sudo_remove_no_authenticate",
+        "gtitle": "Sudo",
         "fix_id": "sudo_remove_no_authenticate"
       },
       "id": "sudo",
@@ -4831,9 +4791,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
         "rid": "sudo_remove_nopasswd",
+        "gtitle": "Sudo",
         "fix_id": "sudo_remove_nopasswd"
       },
       "id": "sudo",
@@ -4852,9 +4812,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
         "rid": "sudo_require_authentication",
+        "gtitle": "Sudo",
         "fix_id": "sudo_require_authentication"
       },
       "id": "sudo",
@@ -4873,9 +4833,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
-        "rid": "sudo_vdsm_nopasswd"
+        "rid": "sudo_vdsm_nopasswd",
+        "gtitle": "Sudo"
       },
       "id": "sudo",
       "title": [
@@ -4893,9 +4853,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
-        "rid": "sudoers_explicit_command_args"
+        "rid": "sudoers_explicit_command_args",
+        "gtitle": "Sudo"
       },
       "id": "sudo",
       "title": [
@@ -4913,9 +4873,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
-        "rid": "sudoers_no_command_negation"
+        "rid": "sudoers_no_command_negation",
+        "gtitle": "Sudo"
       },
       "id": "sudo",
       "title": [
@@ -4933,9 +4893,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Sudo",
         "gid": "sudo",
-        "rid": "sudoers_no_root_target"
+        "rid": "sudoers_no_root_target",
+        "gtitle": "Sudo"
       },
       "id": "sudo",
       "title": [
@@ -4953,9 +4913,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "System Tooling / Utilities",
         "gid": "system-tools",
         "rid": "package_gnutls-utils_installed",
+        "gtitle": "System Tooling / Utilities",
         "fix_id": "package_gnutls-utils_installed"
       },
       "id": "system-tools",
@@ -4974,9 +4934,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "System Tooling / Utilities",
         "gid": "system-tools",
         "rid": "package_nss-tools_installed",
+        "gtitle": "System Tooling / Utilities",
         "fix_id": "package_nss-tools_installed"
       },
       "id": "system-tools",
@@ -4995,9 +4955,9 @@
     {
       "tags": {
         "severity": "high",
-        "gtitle": "Updating Software",
         "gid": "updating",
         "rid": "security_patches_up_to_date",
+        "gtitle": "Updating Software",
         "fix_id": "security_patches_up_to_date"
       },
       "id": "updating",
@@ -5016,9 +4976,9 @@
     {
       "tags": {
         "severity": "medium",
-        "gtitle": "Ensure that Users Have Sensible Umask Values",
         "gid": "user_umask",
-        "rid": "accounts_umask_etc_login_defs"
+        "rid": "accounts_umask_etc_login_defs",
+        "gtitle": "Ensure that Users Have Sensible Umask Values"
       },
       "id": "user_umask",
       "title": [
@@ -5035,10 +4995,10 @@
     },
     {
       "tags": {
-        "severity": "critical",
-        "gtitle": "Ensure that Users Have Sensible Umask Values",
+        "severity": "medium",
         "gid": "user_umask",
         "rid": "accounts_umask_etc_profile",
+        "gtitle": "Ensure that Users Have Sensible Umask Values",
         "fix_id": "accounts_umask_etc_profile"
       },
       "id": "user_umask",
@@ -5049,7 +5009,7 @@
         }
       ],
       "desc": "To ensure the default umask controlled byis set properly, add or correct thesetting into read as follows:",
-      "impact": 1,
+      "impact": 0.5,
       "descs": {
         "fix": "var_accounts_user_umask=\"\" grep -q umask /etc/profile &amp;&amp; \\ sed -i \"s/umask.*/umask $var_accounts_user_umask/g\" /etc/profile if ! [ $? -eq 0 ]; then echo \"umask $var_accounts_user_umask\" &gt;&gt; /etc/profile fi"
       }

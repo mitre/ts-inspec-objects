@@ -11,7 +11,11 @@ export default class Control {
   descs?: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null;
   impact?: number;
   ref?: string;
-  refs?: string[];
+  refs?: (string | {
+    ref?: string;
+    url?: string;
+    uri?: string;
+  })[];
   tags: {
     check?: string;
     fix?: string;
@@ -102,7 +106,12 @@ export default class Control {
 
     if (this.refs) {
       this.refs.forEach((ref) => {
-        result += `  ref '${escapeQuotes(ref)}'\n`;
+        if (typeof ref === 'string') {
+          result += `  ref '${escapeQuotes(ref)}'\n`;
+        } else {
+          result += `  ref '${escapeQuotes(ref.ref || '')}', url: '${escapeQuotes(ref.url || '')}'`
+        }
+        
       });
     }
 

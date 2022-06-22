@@ -4858,7 +4858,7 @@ which is readable by all users.</rationale>
             <reference href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf">PR.AC-7</reference>
             <reference href="https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf">Req-8.5.a</reference>
             <reference href="https://public.cyber.mil/stigs/downloads/?_dl_facet_stigs=operating-systems%2Cgeneral-purpose-os">SRG-OS-000104-GPOS-00051</reference>
-            <rationale xmlns:xhtml="http://www.w3.org/1999/xhtml" xml:lang="en-US">If a user is assigned the Group Identifier (GID) of a group not existing on the system, and a group
+            <rationale xmlns:xhtml="http://www.w3.org/1999/xhtml" xml:lang="en-US">If a user is assigned the Group <Identifier> (GID) of a group not existing on the system, and a group
 with the Gruop Identifier (GID) is subsequently created, the user may have unintended rights to
 any files associated with the group.</rationale>
             <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">

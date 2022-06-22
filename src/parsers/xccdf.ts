@@ -115,6 +115,46 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
 
         control.tags = _.omitBy(control.tags, (value) => value === undefined)
 
+        rule.ident?.forEach((identifier) => {
+            if (identifier['@_system'].toLowerCase().includes('cci')) {
+                if (!('cci' in control.tags)) {
+                    control.tags.cci = []
+                }
+                control.tags.cci?.push(identifier['#text'])
+            } else if (identifier['@_system'].toLowerCase().includes('legacy')) {
+                if (!('legacy' in control.tags)) {
+                    control.tags.legacy = []
+                }
+                control.tags.legacy?.push(identifier['#text'])
+            } else {
+                console.log(identifier)
+            }
+        })
+
+        rule.reference?.forEach((reference) => {
+            if (_.get(reference, '@_href') === '') {
+                control.refs?.push(_.get(reference, '#text'))
+            } else {
+                try {
+                    const parsedURL = new URL(_.get(reference, '@_href'))
+                    if (parsedURL.protocol.toLowerCase().includes('http') || parsedURL.protocol.toLowerCase().includes('https')) {
+                        control.refs?.push({
+                            ref: _.get(reference, '#text') as string,
+                            url: _.get(reference, '@_href') as string
+                        })
+                    } else {
+                        control.refs?.push({
+                            ref: _.get(reference, '#text') as string,
+                            uri: _.get(reference, '@_href') as string
+                        })
+                    }
+                } catch {
+                    console.warn(`Error parsing ref for control ${control.id}: `)
+                    console.warn(JSON.stringify(reference, null, 2))
+                }
+            }
+        })
+
     //     if ('ident' in group.Rule) {
     //         const identifiers = Array.isArray(group.Rule.ident) ? group.Rule.ident : [group.Rule.ident]
     //         // Grab CCI/NIST/Legacy identifiers

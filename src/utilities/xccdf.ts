@@ -8,14 +8,12 @@ import { randomUUID } from 'crypto'
 export function convertEncodedXmlIntoJson(
     encodedXml: string
   ): any {
-    const ret = parser.parse(encodedXml, {
+    return parser.parse(encodedXml, {
       ignoreAttributes: false,
       ignoreNameSpace: true,
       attributeNamePrefix: '@_',
       arrayMode: true
     })
-  
-    return ret
 }
 
 export function severityStringToImpact(string: string, id: string): number {
@@ -39,8 +37,8 @@ export function severityStringToImpact(string: string, id: string): number {
     return 1.0
   }
 
-  console.log(`${string} is not a valid severity value. It should be one of the approved keywords. ${id} will be treated as critical severity`)
-  return 1.0;
+  console.log(`${string} is not a valid severity value. It should be one of the approved keywords. ${id} will be treated as medium severity`)
+  return 0.5;
 }
 
 export function impactNumberToSeverityString(impact: number): string {
