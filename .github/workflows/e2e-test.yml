@@ -32,10 +32,7 @@ jobs:
         node-version: '16.x'
 
      - name: Install dependencies
-       run: yarn install
-     
-     - name: Prepack
-       run: yarn prepack
+       run: npm install
 
      - name: Run e2e tests
        run: yarn test
