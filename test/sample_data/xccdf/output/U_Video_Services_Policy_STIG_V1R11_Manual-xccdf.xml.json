@@ -11,7 +11,9 @@
         "gid": "V-16074",
         "rid": "SV-17061r2_rule",
         "stig_id": "VVoIP/VTC 1900 (GENERAL)",
+        "gtitle": "Deficient SOP: Camera operations / pickup",
         "fix_id": "F-16179r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "responsibility": [
@@ -20,6 +22,9 @@
         ],
         "ia_controls": "DCBP-1, ECND-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-16074",
       "title": "Deficient Policy or SOP for VTC and PC camera operations regarding their ability to pickup and transmit sensitive or classified information in visual form.",
       "desc": "Users of conference room or office based VTC systems and PC based communications applications that employ a camera must not inadvertently display information of a sensitive or classified nature that is not part of the communications session while the camera is active. This can happen if information in the form of charts, pictures, or maps are displayed on a wall within the viewing, or capture range of a camera. Any Pan, Tilt, and Zoom (PTZ) capabilities of the camera must be considered. One may consider visual information out of range, but it may be in range considering camera capabilities such as high definition, PTZ, and video enhancement possibilities for captured frames. Inadvertent display of classified information could also happen if the information is laying on a desk or table unprotected. NOTE: Vulnerability awareness and operational training will be provided to users of VTC and video/collaboration communications related camera(s) regarding these requirements. NOTE: This requirement is relevant no matter what the classification level of the session. In an IP environment the classification of VTC or PC communications is dependent upon the classification of the network to which the VTU or PC is attached and the classification of the facility in which it is located. While classified communications can occur at the same level of classification as the network and facility, communications having a lower classification or no classification (e.g., unclassified or FOUO) may also occur in the same environment. As such, sensitive or classified information that is not part of the communications session might be improperly disclosed without proper controls in place.",
@@ -35,7 +40,9 @@
         "gid": "V-16076",
         "rid": "SV-17063r2_rule",
         "stig_id": "VVT/VTC 1905",
+        "gtitle": "Microphone operations policy",
         "fix_id": "F-16180r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
@@ -43,6 +50,9 @@
         ],
         "ia_controls": "DCBP-1, ECND-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-16076",
       "title": "VTC, Unified Capability (UC) soft client, and speakerphone microphone operations policy must prevent the pickup and transmission of sensitive or classified information over non-secure systems.",
       "desc": "Microphones used with VTC systems and devices are designed to be extremely sensitive such that people speaking anywhere within a conference room is picked up and amplified so they can be heard clearly and understood at the remote location on the call. This same sensitivity is included in VTUs that are used in office spaces. This has one disadvantage. The microphones can pick up sidebar conversations that have no relationship to the conference or call in progress. Likewise, in an open area, received conference audio can be broadcast to others in the area that are not part of the conference, and possibly should not be exposed to the conference information for need-to-know reasons. Speakerphones exhibit a similar vulnerability. This is the same confidentiality vulnerability posed to audible sound information in the environment as discussed above with the added twist that the conference audio is vulnerable to others in the environment. While this is more of an issue in environments where classified conversations normally occur, it is also an issue in any environment. This is of particularly concern in open work areas or open offices where multiple people work in near proximity. Users or operators of VTC systems of any type must take care regarding who can hear what is being said during a conference call and what unrelated conversations can be picked up by the sensitive microphone. Where a VTU is used by a single person in an open area, a partial mitigation for this could be the use of a headset with earphones and a microphone. While this would limit the ability of others to hear audio from the conference and could also limit the audio pickup of unrelated conversations, it may not be fully effective. In some instances, such as when a VTU is located in a SCIF, a Push-to-Talk (PTT) handset/headset may be required Microphones embedded in or connected to a communications endpoint, PC, or PC monitor can be sensitive enough to pick up sound that is not related to a given communications session. They could pick up nearby conversations and other sounds. This capability could compromise sensitive or classified information that is not related to the communications in progress. Speakers embedded in or connected to a communications endpoint or PC can be made loud enough to be heard across a room or in the next workspace. This capability could compromise sensitive or classified information that is being communicated during a session. Users must be aware of other conversations in the area and their sensitivity when using any communications endpoint, not only a PC based voice, video, or collaboration communications application. This awareness must then translate into protecting or eliminating these other conversations. A short range, reduced gain, or noise canceling microphone may be required. A push to talk microphone may also be required for classified areas. The microphone should be muted when the user is not speaking as both mitigation for this issue, and for proper etiquette when participating in a conference. The muting function should be performed using a positively controlled disconnect, shorting switch, or mechanism instead of a software controlled mute function on the PC. Users must be aware of other people in the area that could hear what is being communicated. This is particularly an issue if the communicated information is sensitive or classified since the parties overhearing the information may not have proper clearance or a need-to-know. To mitigate this issue, a headset or speakers should be used and at a volume that only the user can hear.",
@@ -58,7 +68,9 @@
         "gid": "V-16077",
         "rid": "SV-17064r1_rule",
         "stig_id": "VVoIP/VTC 1910 (GENERAL)",
+        "gtitle": "Deficient SOP; Video Display Positioning",
         "fix_id": "F-16182r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent and/or improper disclosure of sensitive or classified visual information.",
@@ -67,6 +79,9 @@
           "Information Assurance Manager"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-16077",
       "title": "Deficient Policy or SOP regarding PC communications video display positioning.",
       "desc": "When communicating using a PC based voice, video, UC, or collaboration communications application, the user must protect the information displayed from being viewed by individuals that do not have a need-to-know for the information. This is of additional concern if the information is classified and the viewing party does not have proper clearance. This is also a vulnerability for hardware based communications endpoints that display visual information. The mitigation for this is to position the display such that it cannot be viewed by a passerby.",
@@ -82,7 +97,9 @@
         "gid": "V-16078",
         "rid": "SV-17065r1_rule",
         "stig_id": "VVoIP/VTC 1915 (GENERAL)",
+        "gtitle": "Deficient SOP; Presentation/App Sharing",
         "fix_id": "F-16183r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent and/or improper disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -92,6 +109,9 @@
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-16078",
       "title": "Deficient SOP or enforcement regarding presentation and application sharing via a PC or VTC.",
       "desc": "Visual collaboration often requires the sharing or display of presentations, open documents, and white board information to one or more communicating endpoints. While the technology for doing this is different between hardware based VTC endpoints and PC based application endpoints, the vulnerability is the same. In both cases, the displayed information typically resides on a PC. While in presentation/sharing mode, care must be exercised so that the PC user does not inadvertently display and transmit information on their workstation which is not part of the communications session and not intended to be viewed by the other communicating parties. Users must be aware that anything they display on their PC monitor while presenting to a communications session may be displayed on the other communicating endpoints. This is particularly true when the PC video output is connected to a VTC CODEC since the information will be displayed on all of the conference monitors. This presentation/sharing feature could result in the disclosure of sensitive or classified information to individuals that do not have a validated need-to-know or have the proper clearance to view the information. Thus the presentation/sharing feature presents a vulnerability to other information displayed on the PC if the feature is misused. This is a problem when sharing (displaying) a PC desktop via any collaboration tool using any connection method. There is little that can be done to mitigate this vulnerability other than to develop policy and procedures to present to collaborative communications sessions. All users which perform this function must have awareness of the issues and be trained in the proper operational procedures. Such procedures may require that there be no non-session related documents or windows open or minimized on the PC while presenting or sharing. An additional requirement may be that the user may not permit others in a session to remotely control their PC. A SOP is needed that addresses mitigations for the vulnerabilities posed by PC data and presentation sharing. Such an SOP could include the following discussion. If a user needs to view non meeting related information while presenting to a conference, the PC external display port must be turned off or better yet, the cable disconnected. Dual monitor operation of the PC could mitigate this problem somewhat. The second monitor output would be connected to the CODEC which would serve as the second monitor. Using this method, any information may be viewed on the native PC monitor while the presentation can be displayed on the VTU presentation screen.",
@@ -107,7 +127,9 @@
         "gid": "V-16557",
         "rid": "SV-17556r1_rule",
         "stig_id": "RTS-VTC 2325.00",
+        "gtitle": "RTS-VTC 2325.00 [IP][ISDN]",
         "fix_id": "F-16526r1_fix",
+        "rationale": null,
         "documentable": false,
         "mitigations": "RTS-VTC 2325.00",
         "severity_override_guidance": "NONE",
@@ -119,6 +141,9 @@
           "System Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-16557",
       "title": "Administrative sessions with the VTU do not timeout within a maximum of 15 minutes.",
       "desc": "An established and/or open configuration/administration (user or administrator) session that is inactive, idle, or unattended is an avenue for unauthorized access to the management port/interface of the VTU. This can lead to compromise of the system’s/device’s configuration and/or denial of service. Idle sessions can be caused simply by a user or administrator being distracted or diverted from a configuration/administration session/task or by forgetting to log out of the management session when finished with his/her tasks. To ensure that the capability for unauthorized access in the event of an idle/inactive session is mitigated; an idle/inactive session timeout/logout capability must exist and be used. The timeout duration must be configurable to adjust for changing policies and requirements. Typically this duration should be set for 15 minutes as a maximum; however it can be shortened for tighter security. This requirement applies to all types of local and remote management connections/sessions and all management session protocols. While not specifically related to VTC, this requirement can work against or inhibit certain management functions. System/device configuration backups or software upgrades requiring file transfers may exceed the idle timeout duration. In this case, the operation might fail if the idle timer disconnected the session midway through. During such events, the idle timer should recognize this activity as the session not being idle. Alternately, the idle timer duration may be extended or may be disabled as long as it is re-enabled/reset after the file transfer. Another management function that can be inhibited by an idle session timeout is when a session is required to be established for the continuous monitoring of the system/device. In this case, the idle timer may be disabled as long as it is re-enabled after the monitoring is no longer needed.",
@@ -134,7 +159,9 @@
         "gid": "V-16560",
         "rid": "SV-17559r1_rule",
         "stig_id": "RTS-VTC 2340.00",
+        "gtitle": "RTS-VTC 2340.00 [IP]",
         "fix_id": "F-16528r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent or improper disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -143,6 +170,9 @@
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-16560",
       "title": "Use of media streaming is not documented properly or is not configured securely.",
       "desc": "Media Streaming as it is related to VTC systems permits a VTU to engage in a normal IP or ISDN connected conference with other VTUs while broadcasting (streaming) the conference audio and video to PC workstations over an IP based LAN to which it is connected. This permits a workstation user to view the conference in near real time but not to participate in it. VTUs may also stream other content such as pre-recorded media played from a VCR or similar media source and some VTUs support streaming while others do not. It seems that as vendors mature their streaming server technology and more products become available, they are removing the streaming capability from the CODEC where it presents greater vulnerability. Streaming from a VTU’s CODEC can also be used to record a conference by sending the stream to a recording/streaming server that can perform the recording function. These servers also serve as streaming distribution points. Recording/Streaming servers are discussed later. While streaming from a CODEC most often uses IP multicast, streams can also be sent to one receiver (e.g., PC or recording/distribution server), or to multiple receivers in the local broadcast domain IP multicast or broadcast streaming works best within a LAN where ample bandwidth is available and IP multicast is supported. While multicast streaming is conceivable across a WAN such as the Internet, it is much less feasible and less reliable due to limited multicast support and access circuit bandwidth constraints. To use IP multicast, the network elements must be configured to support it. To enable streaming, the following configuration items are needed: - Destination address, unicast (address of specific destination, client or server), broadcast (local subnet or global), multicast (address configured on a router in the range 224.0.0.1-239.255.255.255) - IP port(s) (some CODECs may require one port for audio and one for video) - Time-To-Live (TTL) (i.e., number of router hops or routers to traverse) VTU Streaming can typically be activated by a user selecting it from a menu. It could also be possible to activate it by the simple press of a button on the remote control. As such, it could be possible to activate streaming by accident when it is not desired or required. Additionally, some VTUs permit a remote user to activate the feature. The “broadcast” or stream is received by a compatible client running on a PC. Examples of clients used are RealMedia Player™, Apple Quicktime™, VIC, or Cisco IP/TV. To receive a multicast stream, the recipient can do one of the following two things: - First, they can use a web browser to access the IP address of the CODEC that is streaming. The user accesses the CODEC’s web page and clicks a link to receive the stream. This causes the browser to download an .sdp file (e.g., filename.sdp) that contains information about the stream and launch the streaming client. The .sdp file tells the client what IP address and port the stream can be found on as well as the compression types (protocols) being used. Accessing the streaming web page or .sdp file typically requires the use of a password before gaining access. Some vendors use the administrator password (not acceptable) while others use a “meeting password” In some cases the recipient (remote user) can also activate streaming (i.e., cause the CODEC to begin streaming) from this web page if it is not already activated. - The second method of access is essentially direct. The recipient uses the streaming client to retrieve the .sdp file from the CODECs IP address. Some streaming clients can access a multicast stream without the use of an .sdp file. The only access control for streaming is that imposed by the CODEC for accessing its web page and/or retrieving the .sdp file. While this is effective using clients such as RealMedia Player™, Apple Quicktime™, which require the .sdp file information to function, there are other clients that do not. Using a client that does not, once the CODEC is streaming, anyone knowing the IP address and port for the stream can view the stream. There is no access control for viewing a media stream in this manner because IP provides no access control for joining an IP multicast group. When streaming, there is no way of knowing who or how many recipients are viewing a conference. The number of possible recipients is virtually unlimited. Typically, there is only an indication on the VTU screen that the CODEC is streaming. Again, some VTUs permit streaming to be activated remotely by anybody who knows the IP address of the VTU and can access its streaming web page. As such, it could be possible for an unauthorized person to activate streaming and eavesdrop on the room or a conference in session. These vulnerabilities can greatly jeopardize the confidentiality of any given conference by broadcasting it on the connected LAN to indeterminate numbers of unknown recipients. An additional vulnerability that streaming presents to any conference, whether hosted on a central MCU, point-to-point, or a MCU integrated unto a VTU is that any meeting participant could accidentally or maliciously stream the meeting from their VTU if their VTU supports streaming. For these reasons, the activation and use of streaming from a VTU/CODEC is discouraged and must be tightly controlled by all IAOs who are responsible for any streaming capable VTU that might participate in a conference. CODECs must be configured in such a way that if streaming is activated, the stream can only be accessed by authorized individuals or be non-functional or inaccessible if activated by accident. Generally speaking, the use of streaming to an IP multicast or broadcast address should never be used or activated unless it is required to fulfill a specific, validated, authorized, and documented mission requirement. This applies to both streaming from a CODEC or a recording/streaming server because of the inherent lack of full user/recipient access control. Streaming to a unicast address, i.e., one recipient, from a CODEC should be the only method used. The one recipient should only be a recording/streaming server. The best method for streaming to a number of recipients is to use a recording/streaming/web server where media can be encrypted and DoD compliant access control and auditing can be enforced via individual (unicast) viewer sessions with the server. IP multicast or broadcast should not be used. In the event IP multicast must be used, the media stream must be encrypted and a secure key exchange process employed. Full DoD compliant access control and auditing is required to gain access to the .sdp file that contains the information required to decrypt the stream. Encryption will prevent a streaming client that does not require the .sdp file from viewing the content after accessing the stream.",
@@ -158,7 +188,9 @@
         "gid": "V-16562",
         "rid": "SV-17561r1_rule",
         "stig_id": "RTS-VTC 2350.00",
+        "gtitle": "RTS-VTC 2350.00 [IP]",
         "fix_id": "F-16532r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent or improper disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -168,6 +200,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-16562",
       "title": "No indicator is displayed on the VTU screen when CODEC streaming is activated.",
       "desc": "It is imperative that the operator of a VTU know if his/her CODEC is streaming. This is due the ease with which streaming can be activated accidentally or intentionally and that it can be activated remotely by various methods or individuals with different privilege levels. The VTU must display an indication on the screen if it is actively streaming so that the VTU user/operator can be aware of the fact and take action to stop the streaming or disconnect the call if the CODEC should not be streaming. Note: For additional information regarding the vulnerabilities associated with VTC streaming, see the discussion under RTS-VTC 2340",
@@ -183,7 +218,9 @@
         "gid": "V-16564",
         "rid": "SV-17563r2_rule",
         "stig_id": "RTS-VTC 2360.00",
+        "gtitle": "RTS-VTC 2360.00 [IP]",
         "fix_id": "F-16534r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent or improper disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -194,6 +231,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1, IAAC-1, IAIA-1, IAIA-2"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-16564",
       "title": "Deficient SOP or enforcement for VTC/CODEC streaming.",
       "desc": "To control streaming from a VTU/CODEC, the site must have a policy and procedure regarding the use of streaming. This could be very simple if streaming will never be used or more complex if there is the potential for its use. Such an SOP will reflect the requirements of this STIG regarding streaming. Note: For additional information regarding the vulnerabilities associated with VTC streaming, see the discussion under RTS-VTC 2340",
@@ -209,7 +249,9 @@
         "gid": "V-17589",
         "rid": "SV-18715r2_rule",
         "stig_id": "RTS-VTC 1000.00",
+        "gtitle": "RTS-VTC 1000",
         "fix_id": "F-17507r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
@@ -218,6 +260,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17589",
       "title": "The VTC endpoints and system components must be configured in accordance with the security configuration settings based on DoD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.",
       "desc": "Configuring the network device to implement organization-wide security implementation guides and security checklists ensures compliance with federal standards and establishes a common security baseline across DoD that reflects the most restrictive security posture consistent with operational requirements. Configuration settings are the set of parameters that can be changed that affect the security posture and/or functionality of the network device. Security-related parameters are those parameters impacting the security state of the network device, including the parameters required to satisfy other security control requirements. Traditionally, VTC systems and devices do not support DoD requirements on all access points and features. However, DoD VTC systems are subject to these policies that provide access controls, address vulnerabilities, and provide for user and administrator accountability. This requirement highlights the lack of IA support in security readiness review as well as in certification and accreditation reports. The remaining requirements attempt to define mitigations to this lack of policy compliance to the greatest extent possible.",
@@ -233,7 +278,9 @@
         "gid": "V-17591",
         "rid": "SV-18718r1_rule",
         "stig_id": "RTS-VTC 1020.00",
+        "gtitle": "RTS-VTC 1020.00 [IP][ISDN]",
         "fix_id": "F-17509r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "This can be deemed N/A or “Not a Finding” in the event there are validated, approved, and documented mission requirements; however, the VTU is still subject to RTS-VTC 1025.00. An example of a mission requirement needing validation, approval, and documentation would be a requirement for nightly testing of the VTU from a central location or a need to regularly answer incoming calls. This is N/A if the VTU is located in a conference room that is only used for VTC conferences the room is empty when not preparing for or participating in a VTC; the room contains no sensitive or classified information when not in use; no other meetings are held there; and no other work or activities occur there.",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -243,6 +290,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17591",
       "title": "Deficient SOP or enforcement regarding how to power-off the VTU when it is not actively participating in a conference.",
       "desc": "When the VTU is not active, it is best to power it off to mitigate its vulnerabilities. This may not be practical, particularly if the VTU is intended, or required, to receive un-scheduled incoming calls or is to be remotely managed and monitored in an un-scheduled manner. Receiving un-scheduled incoming calls that are automatically answered is, in itself, a vulnerability. This is an issue for IP and ISDN connected systems if auto-answer is on. The auto-answer feature is discussed later. Remote access and monitoring are also vulnerabilities due to the lack of strong access control mechanisms and the ease with which a VTU can be compromised if it is connected to an IP network. These vulnerabilities are discussed later. The point of this and the next requirement is to disable the capability of the VTU to “see and hear” information and activities located or occurring near the VTU when it is not actively participating in a call. While these vulnerabilities are of particular concern in an office or other work area, it may be of less concern in a conference room except if meetings occur in the facility that do not require the use of the VTC system.",
@@ -258,7 +308,9 @@
         "gid": "V-17592",
         "rid": "SV-18719r1_rule",
         "stig_id": "RTS-VTC 1025.00",
+        "gtitle": "RTS-VTC 1025.00 [IP][ISDN]",
         "fix_id": "F-17510r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -269,6 +321,9 @@
         ],
         "ia_controls": "DCBP-1, DCSD-1, ECSC-1, PEDI-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17592",
       "title": "Deficient SOP or enforcement for microphone and camera disablement when the VTU is required to be powered and inactive (in standby).",
       "desc": "In the event that mission requirements dictate the VTU be in a powered-on state when inactive (thereby making RTS-VTC 1020 N/A or “Not a Finding”), other measures are required to mitigate the vulnerability of possible VTU compromise and establish a defense in depth posture. These mitigations are, 1 - to mute the microphone and 2 – to disable the viewing capability of the camera in some manner. If the camera is movable, it could be aimed at the nearest corner of the room; however, this is no mitigation if the VTU is compromised or remotely controlled and the camera can be re-aimed into the room. The best mitigation for the camera is to cover the lens of the camera. This is applicable to both movable and fixed cameras.",
@@ -284,7 +339,9 @@
         "gid": "V-17593",
         "rid": "SV-18720r1_rule",
         "stig_id": "RTS-VTC 1027.00",
+        "gtitle": "RTS-VTC 1027.00 [IP][ISDN]",
         "fix_id": "F-17511r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -295,6 +352,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17593",
       "title": "Deficient VTU sleep mode configuration or operation.",
       "desc": "Sleep mode is the power conservation and semi-disabled state that some VTUs can enter after being on standby for a period of time. While in sleep mode, the VTU is still minimally powered and thereby could be remotely accessed, managed, compromised, or easily activated. For the purpose of our discussions, sleep mode is different from standby mode by the fact that in standby mode, by our definition, the VTU is not actively participating in a call but is ready to receive or place a call. Sleep mode, is a semi off state whereby most functions of the VTU are disabled to conserve power. If used to mitigate vulnerabilities and not just conserve power, sleep mode must have the characteristics noted in this requirement.",
@@ -310,7 +370,9 @@
         "gid": "V-17594",
         "rid": "SV-18721r1_rule",
         "stig_id": "RTS-VTC 1030.00",
+        "gtitle": "RTS-VTC 1030.00 [IP][ISDN]",
         "fix_id": "F-17512r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "responsibility": [
@@ -320,6 +382,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17594",
       "title": "Inadequate display of an incoming call notification such that the VTU user can make an informed decision to answer the call or not.",
       "desc": "In the event that mission requirements dictate the VTU be in a powered-on state when inactive the VTU becomes available to receive incoming calls (except possibly when sleeping). Additionally, if a VTU is connected to an IP network, it may be capable of receiving incoming calls while active. When a VTU receives an incoming call; the normal operation is that a notification of the incoming call is provided both audibly and visually. The visual notification typically includes a display of the source of the call. This can be a phone number or IP address. This information should be accompanied by an identification of the caller. While the source information is typically available from the network, the identity of the calling party associated with that information is typically contained in a locally accessible directory. If the source information is in the directory, the associated identity information is located and added to the display or displayed by itself. This directory is typically on the VTU or can be on a locally associated management or directory server. Directories must therefore be kept up to date with user information related to other VTUs with which any given VTU is expected to communicate. Ideally, the full identity of the caller is sent from the calling system for display on the called system even if there is no local directory entry. Based upon the displayed information, the user of the VTU can make an informed decision and take appropriate action to answer the call, or not. Users must be trained to not answer calls from unknown sources in the event doing so could disclose sensitive or classified information in the area of the VTU or while engaged in a VTC session.",
@@ -335,7 +400,9 @@
         "gid": "V-17595",
         "rid": "SV-18722r1_rule",
         "stig_id": "RTS-VTC 1040.00",
+        "gtitle": "RTS-VTC 1040.00 [IP][ISDN]",
         "fix_id": "F-17513r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -347,6 +414,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17595",
       "title": "Auto-answer feature is not administratively disabled.",
       "desc": "Some VTC endpoints have a user selectable feature that provides the capability to automatically answer an incoming call. This would be akin to your speakerphone picking up a call each time the phone rang allowing an ongoing conversation to be heard by the caller. This feature, if activated, is highly detrimental to the confidentiality of information in a room in which a VTU is installed. In fact, a security incident could result from “auto-answer” being enabled. Such would be the case in the event a VTU automatically answered a call when a classified meeting or discussion (not via VTC) was being held in a conference room or an office having VTC capability. The auto-answer feature must not be activated by a user unless the feature is required to satisfy mission requirements. Furthermore, users must be trained in the vulnerabilities associated with the auto-answer feature and in its proper use if it is to be used. The ideal mitigation for this vulnerability is for the auto-answer feature to not be supported by the VTU or there be an administrator setting that can disable the feature preventing a user from activating it.",
@@ -362,7 +432,9 @@
         "gid": "V-17596",
         "rid": "SV-18723r1_rule",
         "stig_id": "RTS-VTC 1060.00",
+        "gtitle": "RTS-VTC 1060.00 [IP][ISDN]",
         "fix_id": "F-17514r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -373,6 +445,9 @@
         ],
         "ia_controls": "DCBP-1, DCSD-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17596",
       "title": "Deficient SOP for, enforcement, usage, or configuration of the auto-answer feature.",
       "desc": "In the event the auto-answer feature is approved for use or cannot be administratively disabled and thus is available for users to activate, several mitigating requirements must be met. The first of these is that the user(s) to which the feature is available must be trained in its proper use and in the vulnerabilities it presents because the user is the one that must implement the operational mitigations. The second is the VTU must answer the call with the microphone muted and with the camera covered or disabled. This will prevent an ongoing conversation from being heard and room activities seen by the caller. This will also prevent the room from being audibly and visually monitored if a call is automatically answered when the VTU is un-attended. The third mitigating requirement is that the user must be notified that the VTU has received and answered a call such that the user may be viewed if the camera is not/cannot be covered or listened to if the microphone is not/cannot be muted. This means that a noticeable visual indication must be provided and any available audible signal must be maintained at an audible level so that it can be heard.",
@@ -388,7 +463,9 @@
         "gid": "V-17598",
         "rid": "SV-18725r1_rule",
         "stig_id": "RTS-VTC 1140.00",
+        "gtitle": "RTS-VTC 1140.00 [IP][ISDN]",
         "fix_id": "F-17516r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -399,6 +476,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17598",
       "title": "Deficient SOP or enforcement regarding handling of incoming calls while in a conference.",
       "desc": "Whether active or inactive, a VTU must display the source of an incoming call and the caller’s identity so that the user can decide to answer the call or not. This decision must also be based upon what information would be made available to the caller when call is answered. The information that would be placed at risk is what can be picked up in the physical area of the VTU or what is being carried by the conference in which it is participating. If the VTU is participating in a conference already, answering a call while in a conference would activate the VTU’s integrated MCU and join the caller to the conference. The possibility of an incoming call being automatically joined to a meeting in progress in this manner places the confidentiality of that meeting at risk. The caller could become a participant of a meeting to which they were not invited and subsequently receive sensitive or classified information for which the caller may or may not have a need-to-know or appropriate security clearance. As with a VTU in standby mode, an “auto-answer” feature is of great concern during a VTC session. A VTU must be configured in such a way that it cannot automatically answer a call and join the call to an active session without some form of access control. Either user intervention or a properly managed “local meeting” password is required to join such an incoming call to an active session. In some instances the “do-not-disturb” feature may be used by the user to block such calls by returning a “busy” signal. The capability of joining a conference on a VTU using its integrated MCU through the use of a “local meeting” password must be used only when the VTU user needs to pre-schedule and host a multipoint conference on his/her VTU. This capability must not be available at all times. The VTU should have the capability to disable this kind of access when it is not needed. Local meeting passwords must be used one time and not repeated. This requirement is discussed later.",
@@ -414,7 +494,9 @@
         "gid": "V-17599",
         "rid": "SV-18726r1_rule",
         "stig_id": "RTS-VTC 1160.00",
+        "gtitle": "RTS-VTC 1160.00 [IP]",
         "fix_id": "F-17517r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a SA that is monitoring a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -424,6 +506,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1, PEDI-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17599",
       "title": "Remote monitoring is not disabled while connected to an IP Network.",
       "desc": "Some VTC endpoints support the capability for an administrator or facilitator to view or monitor the VTU location (i.e., the room where it is located) remotely via a web interface. Some VTUs provide this feature via snapshots, while others provide the capability in real time. This feature can also include control capabilities and is used for troubleshooting, checking endpoints and rooms for operational readiness, or active monitoring of a call for quality control, etc. This capability poses a confidentiality issue for active conferences and the information in the proximity of the endpoints. Remote monitoring must be disabled as a general rule unless required to satisfy validated and approved mission requirements to prevent unauthorized access. This discussion also applies to administrator’s endpoints fully participating in a call for reasons of troubleshooting or quality control.",
@@ -439,7 +524,9 @@
         "gid": "V-17600",
         "rid": "SV-18727r1_rule",
         "stig_id": "RTS-VTC 1162.00",
+        "gtitle": "RTS-VTC 1162.00 [IP]",
         "fix_id": "F-17518r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a SA that is monitoring a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -449,6 +536,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1, IAIA-1, IAIA-2"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17600",
       "title": "Inadequate “operator/facilitator/administrator” access control for remote monitoring of a VTU connected to an IP network.",
       "desc": "Activation and use of remote monitoring and control features such as those discussed here and in RTS-VTC 1160.00 must be protected by access control. Minimally this must be the administrator password; however, access to this feature should not give full administrator access.",
@@ -464,7 +554,9 @@
         "gid": "V-17680",
         "rid": "SV-18854r1_rule",
         "stig_id": "RTS-VTC 1164.00",
+        "gtitle": "RTS-VTC 1164.00 [IP][ISDN]",
         "fix_id": "F-17577r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a SA that is monitoring a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -474,6 +566,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1, PEDI-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17680",
       "title": "Inadequate notification to conference participants (manual or automatic) of monitoring activity by someone that is not a direct participant in a VTC session/conference.",
       "desc": "Monitoring of a conference or VTC system can be performed in various ways. This can be by accessing the monitoring capabilities of a particular VTU via IP as discussed above, or using a capability of a centralized MCU, or an administrator or “operator/facilitator” can participate in a conference using a VTU. No matter how monitoring is being performed, participants in a call must be notified or be made aware that the call is being monitored by someone that is not a direct participant of the call or conference who therefore may not have a need-to-know regarding the conference information. This is a particular concern if the monitored conference contains classified information. If the monitoring is done by remotely accessing a VTU, typically, an automated notification is displayed on the VTU being monitored. This indication should also be displayed on all connected endpoints. Minimally, there is a SOP that requires the presence of a person monitoring a conference be announced to the conferees. Note: This can minimally be accomplished via the enforcement of a SOP whereby the person performing the monitoring notifies the conference of their presence. Alternately, if an automated monitoring indicator is displayed on one VTU, the SOP must require that the participant or conferee seeing the indication announce the monitoring activity to the conference unless the indication appears on all participating endpoints.",
@@ -489,7 +584,9 @@
         "gid": "V-17681",
         "rid": "SV-18855r1_rule",
         "stig_id": "RTS-VTC 1168.00",
+        "gtitle": "RTS-VTC 1168.00 [IP][ISDN]",
         "fix_id": "F-17578r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a SA that is monitoring a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -498,6 +595,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17681",
       "title": "Insufficient security clearance held by an “operator/facilitator/administrator” performing remote monitoring activities during a VTC session/conference.",
       "desc": "Administrators or “operators/facilitators” that perform monitoring as discussed in this section must have an appropriate security clearance commensurate with or higher than the classification level of the system and/or the information to which they are exposed.",
@@ -513,7 +613,9 @@
         "gid": "V-17682",
         "rid": "SV-18856r1_rule",
         "stig_id": "RTS-VTC 1180.00",
+        "gtitle": "RTS-VTC 1180.00 [IP][ISDN]",
         "fix_id": "F-17579r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -523,6 +625,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17682",
       "title": "Far end camera control is not disabled.",
       "desc": "Many VTC endpoints support Far End Camera Control (FECC). This feature uses H.281 protocol which must be supported by both VTUs. Typically, this is only available during an active VTC session but could be available if the VTU is compromised or if a call is automatically answered. Allowing another conference attendee to take control of your camera can place the confidentiality of non conference related information at risk. FECC should be disabled to prevent the control of the near end camera by the far end unless required to satisfy validated mission requirements.",
@@ -538,12 +643,17 @@
         "gid": "V-17683",
         "rid": "SV-18857r2_rule",
         "stig_id": "RTS-VTC 1220.00",
+        "gtitle": "RTS-VTC 1220",
         "fix_id": "F-17580r2_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "[ISDN] Reduce to CAT III for legacy ISDN/dialup MCUs or VTUs when these will not interoperate using native/internal encryption options. This is typical between equipment of different vendors legacy equipment. Mitigation using external encryption devices is acceptable. [Unclassified IP] Reduce to CAT III for VTC systems when every information owner designates their information is publicly releasable or their non-public information does not require encryption. Each conference information owner must provide written confirmation that encryption is not necessary. During APL testing: - This is a CAT I finding in the event the CODEC does not support multi-vendor interoperable encryption or it supports DES encryption only. (This applies only to new, non-legacy products submitted for testing.)",
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECCT-1, ECNK-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17683",
       "title": "VTC data in transit must be encrypted.",
       "desc": "Early VTC CODECs did not support confidentiality of the media or signaling streams directly. As security and conference confidentiality have become an IA concern, VTU vendors have standardized on DES and AES encryption standards for VTC media streams. H.235 has been developed to help to secure the signaling protocols used in the H.323 suite of protocols. Most VTC media traffic is considered to be sensitive information requiring protection. Minimally all endpoints and MCUs must employ FIPS-validated or NSA-approved cryptography for data in transit, including both media and signaling. Much of the legacy VTC gear used today either supports DES or has no encryption. Newer CODECs support FIPS 140-2 encryption for media and signaling and typically have three encryption options on, off or automatic/negotiate. The preferred setting is ON and used when the other VTUs that a VTU needs to communicate with support encryption. Auto/negotiate is the preferred setting when this is not known.",
@@ -559,12 +669,17 @@
         "gid": "V-17684",
         "rid": "SV-18858r2_rule",
         "stig_id": "RTS-VTC 1230.00",
+        "gtitle": "RTS-VTC 1230",
         "fix_id": "F-17581r2_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "For APL testing and new installations of new (non-legacy) equipment, this finding can be reduced to a CAT III in the event the crypto module in use is in the FIPS validation process as listed on the NIST CMVP modules in Process web site. http://csrc.nist.gov/groups/STM/cmvp/inprocess.html. The POAM for closing the finding must indicate the expected date that the module will achieve validation and the process to ensure the module in use is the validated module.",
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECCT-1, ECNK-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17684",
       "title": "The VTU must use FIPS 140-2 validated encryption module.",
       "desc": "The current DoD requirement for commercial grade encryption is that the encryption module, which includes a FIPS 197 validated encryption algorithm plus approved functions (i.e., key management and sharing/distribution functions), be NIST validated to FIPS 140-2. It must be noted that legacy equipment validated to FIPS 140-1 may still be used and FIPS 140-3 is in development. While many VTU vendors support AES, they have only validated the algorithm to FIPS-197, if at all. This does not meet the FIPS 140-2 requirement because the additional approved functions have not been addressed.",
@@ -580,7 +695,9 @@
         "gid": "V-17685",
         "rid": "SV-18859r1_rule",
         "stig_id": "RTS-VTC 1250.00",
+        "gtitle": "RTS-VTC 1250.00 [IP][ISDN]",
         "fix_id": "F-17582r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "This is not a finding in the event encryption is provided by external devices (not the CODEC), AND an external indicator is used to display encryption status in place of an on-screen indicator provided by the CODEC.",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -590,6 +707,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17685",
       "title": "VTU encryption indicator is not enabled.",
       "desc": "In support of the need for encryption and the need for the VTU user to be aware that in fact his/her conference session is being encrypted, the VTU must display an indicator that encryption is indeed occurring.",
@@ -605,7 +725,9 @@
         "gid": "V-17686",
         "rid": "SV-18860r1_rule",
         "stig_id": "RTS-VTC 1260.00",
+        "gtitle": "RTS-VTC 1260.00 [IP][ISDN]",
         "fix_id": "F-17583r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -615,6 +737,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17686",
       "title": "Deficient SOP or enforcement for user validation that encryption is on when required",
       "desc": "When encryption is enabled via automatic/negotiate, and one endpoint does not support encryption or supports DES and not AES, the entire conference defaults to the lower capability level. This is not acceptable for some conferences depending upon the sensitivity of the information discussed or presented. As noted above, the stated DoD IA controls require encryption. To ensure this requirement is met, when it is unknown whether all endpoints in a conference support encryption and whether it is turned on, the VTU user must provide the final check that encryption is being used. If a conference is to be encrypted, the user must check that all participants are using encryption and have enabled the encryption on their devices. When the conference has begun, the user must ensure that the conference is encrypted. The alternate to this is to exclude the endpoint that does not support the required encryption or not proceed with the conference session.",
@@ -630,13 +755,18 @@
         "gid": "V-17687",
         "rid": "SV-18861r2_rule",
         "stig_id": "RTS-VTC 2020.00",
+        "gtitle": "RTS-VTC 2020",
         "fix_id": "F-17584r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17687",
       "title": "The VTC system and components must not have default or factory passwords.",
       "desc": "Factory default, well-known, and manufacturer backdoor accounts and their associated passwords provide easy unauthorized access to systems and devices. Leaving such accounts and passwords active on a system or device makes it extremely vulnerable to attack and unauthorized access. As such, they must be removed, changed, renamed, or otherwise disabled. Also covered by this policy are “community strings”, which act as passwords for monitoring and management of network devices and attached systems via SNMP. The universal default SNMP community strings are “public” and private” and are well known. Default access for VTC operation, local and remote control, management, and configuration purposes is typically unrestricted or minimally protected by well-known default passwords. It has been demonstrated that not changing these passwords is the most common cause of VTC system compromise.",
@@ -652,13 +782,18 @@
         "gid": "V-17688",
         "rid": "SV-18862r3_rule",
         "stig_id": "RTS-VTC 2022.00",
+        "gtitle": "RTS-VTC 2022",
         "fix_id": "F-17585r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17688",
       "title": "The VTC system and components must not display passwords in clear text.",
       "desc": "As any information is entered on a keyboard, the keyboard sends each keystroke to the processing unit which, typically, echoes the character represented by the keystroke to the display device as feedback to the system’s user. Such echoing is done in what is called “clear text” in that you can read what was entered. This process is used for normal typing, but must be changed when entering passwords. When passwords are displayed (echoed) during logon, the risk of password compromise is increased and password confidentiality is greatly reduced. If the password is displayed during logon, it can easily be compromised through the use of a simple technique of shoulder surfing, i.e., a third party witnessing the logon could view the echoed password and remember it or write it down. This could also happen through surveillance methods. This presents a major vulnerability to the security or confidential nature of the password. To mitigate this, when entering a password, the characters that are echoed to the display must be something other than the clear text characters. Typically an asterisk or other punctuation character is used to replace the actual characters in an echoed password.",
@@ -674,7 +809,9 @@
         "gid": "V-17689",
         "rid": "SV-18863r4_rule",
         "stig_id": "RTS-VTC 2024.00",
+        "gtitle": "RTS-VTC 2024",
         "fix_id": "F-17586r3_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "Reduced to CAT III when a five-digit PIN is used for video endpoint local access from the hand-held remote control. Reduced to CAT III when an eight-character password is used for video endpoint remote access and contains a mix of upper case letters, lower case letters, numbers, and special characters. Reduced to CAT III when the site develops and enforces a policy or procedure to manage password length and complexity to mitigate deficiencies in video endpoint enforcement of password complexity and length.",
         "responsibility": [
@@ -683,6 +820,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17689",
       "title": "The Videoconferencing system and components passwords must meet complexity and strength policy.",
       "desc": "DoD policy mandates the use of strong passwords. The minimum password length is 15 characters. The minimum password complexity when not using DoD PKI is at least one lowercase letter, one uppercase letter, one number, and one special character must be present in the password. When a password is changed, at least half the characters in the password must change; for a 15-character password this mandates eight positions, and for a four-digit PIN at least two numbers would change. While videoconferencing endpoints typically do not require a username, they do require a password for user access and authentication. The strength of these passwords is an issue for video endpoints and is dependent upon the method of entry. Strong passwords, along with other measures noted in DoD policy, are required for any access method that is received by the video endpoint across a network. This is because of the potential that a password could be broken by a variety of high-speed cracking attacks. Due to the inability to use letters, PINs are very weak passwords. Typically, a local video endpoint PIN entered from a hand-held remote control can support five or more characters.",
@@ -698,13 +838,18 @@
         "gid": "V-17690",
         "rid": "SV-18864r4_rule",
         "stig_id": "RTS-VTC 2026.00",
+        "gtitle": "RTS-VTC 2026",
         "fix_id": "F-17587r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17690",
       "title": "A VTU password must be used for each VTU function.",
       "desc": "Passwords are required for access control to various functions provided by a VTU. The following is a list of possible functions: 1. Local user device use/activation (not typically supported). 2. Local user call accounting code. 3. Local user access to user configurable settings. 4. Local user or machine access from the VTU to the user’s networked or otherwise attached PC running a presentation or desktop sharing application (or vice versa i.e., PC to VTU) (discussed later). 5. Local administrator access to configuration settings. 6. Remote administrator access to configuration settings. 7. Remote/centralized VTU management/control system access to the VTU (identifies the management server to the VTU, alternately restricted by IP address). 8. Remote caller access to a VTU integrated MCU conference without local user intervention. 9. Remote user access to media streamed from a VTU CODEC. 10. Local VTU access to a centralized MCU for joining conferences hosted remotely (i.e., the password sent to the remote MCU). 11. Local VTU access to gatekeeper services (automatically identifies the VTU to the gatekeeper). The passwords or PINs used for various differing functions must be logically grouped and be unique among other passwords implemented on the system. For example, local user password/PINs such as those in items 1, 2, and 3 could be the same. These would be entered manually using the hand-held remote control. Another logical grouping might be items 10 and 11. The other functions are logically separate because they perform different functions and are used by different entities. One vendor uses a single password pre-configured in the VTU for functions 8 (bi-directionally), 9, 10 and possibly 11. This is a problem for two reasons. The first was stated above, it is used for different functions, and secondly, it is preprogrammed into the VTU. While a VTU can have an identity or password that identifies itself to another machine for passing control information, such a password cannot be used to provide user level access to information. The user must enter this password manually. A VTC related application of machine to machine authentication would be the VTU identifying itself to a gateway or a centralized VTU management or control system to a VTU.",
@@ -720,7 +865,9 @@
         "gid": "V-17691",
         "rid": "SV-18865r2_rule",
         "stig_id": "RTS-VTC 2028.00",
+        "gtitle": "RTS-VTC 2028",
         "fix_id": "F-17588r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
@@ -728,6 +875,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17691",
       "title": "Classified videoconferencing systems must authenticate with a unique user logon prior to performing functions and services.",
       "desc": "DoD policy requires users to authenticate prior to being authorized to use available services. While requiring a user to authenticate to the video endpoint before it can be used to make or receive calls may detract from the video endpoint's “ease of use” and the “user experience” the capability should exist, be used where needed, and be configurable. Users should authenticate to activate the video endpoint for general use, make a call, or answer a call. Minimally, authentication should be a password unique to the user and recorded in session logs. Preferably, the video endpoint should support the use of DoD PKI for user authentication. To comply with DoD access control requirements for both users and administrators, a video endpoint should use a remote authentication server that can provide centralized management of passwords and accounts. This controls access to the videoconferencing system and limits the user’s privileges or authorizations. Many videoconferencing endpoints today do not provide sufficient identification, authorization, or auditing capabilities regarding their activation and use. While at least one vendor’s system can be configured to require the entry of a PIN to place a call, the feature is only a call accounting feature and not a security feature. While gatekeepers and gateways provide some access control, this control only relates to access to their services. They do not play a part in endpoint activation or use of the endpoint for point-to-point calls. The ITU developed H.235 as the security recommendation for H.323 and other H.245-based systems. H.323 provides for user identification rather than device identification, using simple passwords/PINs or DoD PKI. H.235 has the capability of negotiating encryption and key exchange. The use of H.350 can improve security by providing standardized management and storage of authentication credentials, as well as multilevel authorization. The use of H.245 and H.350 in combination could be the solution to the endpoint activation and user identification deficiency currently exhibited by videoconferencing endpoints. While it seems debatable whether a videoconferencing endpoint is, or should be, subject to DoD access control and auditing policies, particularly in unclassified environments, there are use cases where such compliance would be beneficial to the protection of DoD information. This is particularly in cases where a video endpoint is located in an area where classified materials, information, or discussions occur because an active video endpoint could generate a security incident. This issue could be more of a concern if the video endpoint was located in a classified work area while connected to an unclassified network or network having a lower classification than the work area. Compliance would also be beneficial for video endpoints in areas processing sensitive information. To protect the information, the video endpoint should remain dormant (even while powered on) and not capable of placing or answering a call unless it is activated by a user logging onto the system.",
@@ -743,7 +893,9 @@
         "gid": "V-17692",
         "rid": "SV-18866r1_rule",
         "stig_id": "RTS-VTC 2040.00",
+        "gtitle": "RTS-VTC 2040.00 [IP][ISDN]",
         "fix_id": "F-17589r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Access to the VTU by unauthorized individuals possibly leading to the disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -753,6 +905,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1, IAAC-1, IAGA-1, IAIA-1, IAIA-2"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17692",
       "title": "Deficient SOP or enforcement of the SOP for manual password management.",
       "desc": "DoD password and account management policies and requirements that are not supported by the CODEC must be addressed and enforced by a site policy or SOP that provides compliance to the greatest extent possible within the capabilities of the system/device. Typically a CODEC supports only one administrative password and therefore a group administrator account/password must be used. Some CODECs can support multiple user passwords or PINs for accounting purposes. Additionally, there are other passwords used to access certain features of the system and for the system and user to access other systems and devices.",
@@ -768,7 +923,9 @@
         "gid": "V-17693",
         "rid": "SV-18867r1_rule",
         "stig_id": "RTS-VTC 2320.00",
+        "gtitle": "RTS-VTC 2320.00 [IP][ISDN]",
         "fix_id": "F-17590r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -777,6 +934,9 @@
           "Information Assurance Manager"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17693",
       "title": "Deficient SOP or enforcement of One Time Use local meeting password",
       "desc": "A “local meeting password” must be used one time only. Once any meeting password is distributed to conferees, it is known by them. If a different and unique meeting password is not used for subsequent meetings, someone that has knowledge of (i.e., remembered or recorded) a previously used password could join a conference to which they were not invited to or in which they should not be included. This capability could violate requirements for access to information based on need-to-know and/or could lead to the disclosure of sensitive or classified information. While the setting of the “local meeting password” password could be an administrator function, most often it is set by the VTU user hosting the conference since the integrated MCU may be used in an ad hoc manner. Ideally, its use would be prescheduled. As noted above, the capability that uses this password should not be functional at all times. Of additional concern is; in the event a local meeting password is not set on the VTU, the VTU might provide no access control to the services that use it. This cannot be permitted if the VTU performs in this manner. As such this issue must be mitigated by configuration of a “blocking” password that is kept confidential. An additional consideration when using a “meeting password” is that such passwords should be used one time only. Once a meeting password is distributed to conferees, it is known by them. If a different and unique meeting password is not used for subsequent meetings, someone that has knowledge of a previously used password could join a conference that they were not invited to or should not be included. This capability could violate access to information based on need-to-know which could lead to the disclosure of sensitive or classified information. Note: This requirement applies to VTC CODECs that can host a multipoint meeting or conference using an integral MCU. This is typically capable of supporting four to six endpoints. A “local meeting password” typically controls access to the MCU. In some cases, this password is also used to access conference streaming.",
@@ -792,7 +952,9 @@
         "gid": "V-17694",
         "rid": "SV-18868r1_rule",
         "stig_id": "RTS-VTC 2365.00",
+        "gtitle": "RTS-VTC 2365.00 [IP]",
         "fix_id": "F-17591r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent or improper disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -802,6 +964,9 @@
         ],
         "ia_controls": "DCBP-1, IAAC-1, IAIA-1, IAIA-2, PRTN-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17694",
       "title": "Deficient user or administrator training regarding the vulnerabilities with, and operation of, CODEC streaming",
       "desc": "In conjunction with the SOP for VTU/CODEC streaming, users must be trained in the vulnerabilities of streaming, how to recognize if their CODEC is streaming, and how to deactivate streaming if it should not be active. Note: For additional information regarding the vulnerabilities associated with VTC streaming, see the discussion under RTS-VTC 2340",
@@ -817,7 +982,9 @@
         "gid": "V-17695",
         "rid": "SV-18869r1_rule",
         "stig_id": "RTS-VTC 2380.00",
+        "gtitle": "RTS-VTC 2380.00 [IP]",
         "fix_id": "F-17592r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent or improper disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -827,6 +994,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17695",
       "title": "CODEC streaming is not disabled when it is not required.",
       "desc": "When a CODEC is not required to be streaming, the capability will be disabled. The preferred method for this is via an administrator configurable setting. Both user activation and remote start must be addressed. In lieu of this, a streaming configuration must be implemented on the VTU that inhibits the ability to stream such that streaming will not be able to effectively be used to view a room or conference. Note: For additional information regarding the vulnerabilities associated with VTC streaming, see the discussion under RTS-VTC 2340",
@@ -842,7 +1012,9 @@
         "gid": "V-17696",
         "rid": "SV-18870r1_rule",
         "stig_id": "RTS-VTC 2420.00",
+        "gtitle": "RTS-VTC 2420.00 [IP]",
         "fix_id": "F-17593r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent or improper disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -851,6 +1023,9 @@
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17696",
       "title": "VTU/CODEC is not properly configured to support streaming.",
       "desc": "In the event conference streaming directly from a VTU/CODEC is approved for a given conference, the administrator will need to properly configure the VTU to support the streamed conference. One of these measures is to set a one-time-use password for the streamed media. Another measure is to install configuration settings to limit the reach of the streamed media across the network to only those portions that are to receive it. This is done by setting the TTL as low as possible. A mitigation that can be used for the lack of access control for IP multicast is to use different multicast addresses and IP ports each time a streaming session is configured. First these should never be the default address(es) or ports used by the vendor’s system and they should be randomly selected. Note: Streaming is a feature of the VTU that could be turned on and configured for monitoring purposes by an adversary if the administrative access to the VTU is compromised. This is another reason why it is imperative to change all access codes and passwords on the VTU as required earlier. Additionally, users must be trained to recognize any displayed indication provided by the VTU that it is in streaming mode. Note: For additional information regarding the vulnerabilities associated with VTC streaming, see the discussion under RTS-VTC 2340",
@@ -866,7 +1041,9 @@
         "gid": "V-17697",
         "rid": "SV-18871r1_rule",
         "stig_id": "RTS-VTC 2460.00",
+        "gtitle": "RTS-VTC 2460.00 [IP][ISDN]",
         "fix_id": "F-17594r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -876,6 +1053,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1, PRTN-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17697",
       "title": "inadequate user training for pc presentation sharing that could lead to compromise of other information on the presenting PC",
       "desc": "Users must be trained regarding the display of information that is not part of the conference. Such training must be based on the SOP discussed under RTS-VTC 2440.01 that is designed to mitigate the vulnerability.",
@@ -891,7 +1071,9 @@
         "gid": "V-17698",
         "rid": "SV-18872r2_rule",
         "stig_id": "RTS-VTC 2480.00",
+        "gtitle": "RTS-VTC 2480.00 [IP]",
         "fix_id": "F-17595r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The inadvertent disclosure of sensitive or classified information to a caller of a VTU that may not have an appropriate need-to-know or proper security clearance.",
@@ -903,6 +1085,9 @@
         ],
         "ia_controls": "DCBP-1, ECND-1, ECSC-1, ECSD-2, VIVM-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17698",
       "title": "Deficient SOP or enforcement regarding the use of software based virtual connection between the PC and the VTC CODEC.",
       "desc": "VTC CODECs provide various means and methods to permit the display of presentations and various other forms of data to all of the endpoints in a conference. Typically, this involves connecting a PC workstation, on which the presentation is displayed and controlled, to a CODEC which distributes the presentation to the conferees. Care in operating this feature must be exercised so that the PC user does not inadvertently display information on their workstation that is not part of the conference and is not intended to be viewed by the conferees. Users must be aware that anything that they display on their PC workstation display while connected to the CODEC will be displayed on all of the conference monitors. This collaboration/display feature could result in the disclosure of sensitive or classified information to individuals that do not have a validated need-to-know or have the proper clearance to view the information. This is a problem when sharing a PC desktop via any collaboration tool using any connection method. The first of the PC-CODEC interconnection methods, supported by most (but not all) CODECs, is the direct connection of the PC video output to an external video input on the CODEC. This method is most common interconnection method, is most secure, and is the recommended method for DoD. This is the only method available to users of VTUs connected to ISDN only (i.e., not connected to an IP network in addition to the ISDN lines).The second method for PC-CODEC interconnection for data/presentation sharing is to establish a virtual connection between the CODEC and PC workstation across an IP based LAN. While this method is implemented in different ways by different vendors, most if not all methods require the installation of an application or a utility on the PC workstation that is to share its data or display. While this method is convenient, since it does not require a cable connected to the CODEC, it presents varying degrees of vulnerability to the PC and the data it contains depending upon the particular application or utility installed. Additionally, the installation of such software is contrary to most DoD policy regarding approved workstation applications. All such software must be thoroughly evaluated and approved before installation. Most vendors provide a proprietary application or utility that is loaded on the PC workstation to establish the virtual connection between the PC and CODEC. The main purpose and capability of this utility is to capture the PC’s display graphics and send it to the CODEC. Typically, these utilities require only the IP address of the CODEC. The CODEC may or may not require a password to accept this input. When reading the documentation on these utilities there is no indication that the media stream generated by these utilities is encrypted. This may or may not be an issue depending upon the protocols used by the utility. Sniffing the stream may or may not reveal the displayed information. One vendor provides a utility to upload MS PowerPoint files to the CODEC and display them using an embedded viewer. This same vendor provides another utility to integrate with MS NetMeeting on the PC and stream content from there using T.120 protocol. An additional feature of some of these utilities is the capability of conferees to share and work on files across the connection between CODECs. This feature brings a larger set of collaboration tool features to the VTC arena. At least one vendor’s virtual connection method requires the installation of PC remote control desktop sharing software on the PC. Once the remote control/access server application is running, anybody with the matching or compatible viewer/control application and the access password can connect to the PC workstation from another PC workstation. This provides full control of its resources and access to all of its files since this is the purpose of this type of application. This type of application can receive remote keyboard and mouse inputs as if the user was sitting at the PC itself controlling it. As such this method is capable of much more than capturing the graphics displayed on the PC monitor and sending it to a CODEC. As such an adversary could gain full control of the PC workstation at any time when the server application is running, whether there is a conference being displayed or not. Many such server applications are started as a service when the workstation is booted. This means that the connection is available to an adversary any time the PC is running. This is a huge vulnerability for the PC workstation. As such, the use of virtual connection methods must first be approved by the DAA and must be tightly controlled. Another issue that must be addressed is the access control between the VTU and the PC. This discussion and/or requirements are dependent upon the direction of the access. (i.e., PC to VTU or VTU to PC) Access to a PC (from a VTU), by policy, requires a strong policy compliant password (and other measures, supported or not). Such a password cannot be entered from a VTU remote control unless an on screen keyboard (or cell phone text entry requiring password display) is used thus opening the password to shoulder surfing or being viewed by a conference room full of people (discussed earlier). If the VTU is to initiate the connection to the PC, it is best to store a strong password on the VTU that will identify the VTU to the PC sharing application. The sharing application is only run when needed when the PC is required to interface with the VTU; it is not run as a service that is constantly available. Other constraints could apply. The recommended alternative is to initiate all VTU - PC connections from the PC and implementing the appropriate access control in the VTU in compliance with password policy if a virtual connection is to be used. Better yet, use a direct connection using a video out connection on the PC. Furthermore, it is recommended that, if the remote control/access method is used, a PC workstation be dedicated to the purpose of displaying presentations on the CODEC. No other information should be placed on this PC. The PC should be turned off or disconnected from the LAN when a presentation is not being displayed to a conference. In this way, the installation of the remote control/access software will not place non conference information at risk.",
@@ -918,13 +1103,18 @@
         "gid": "V-17699",
         "rid": "SV-18873r3_rule",
         "stig_id": "RTS-VTC 2820.00",
+        "gtitle": "RTS-VTC 2820",
         "fix_id": "F-17596r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17699",
       "title": "A CODECs local Application Programmers Interface (API) must prevent unrestricted access to user or administrator configuration settings and CODEC controls without a password.",
       "desc": "Large conference room VTC systems may be built into the conference room in such a way that a hand-held remote control cannot directly access or control the CODEC because it is located in another room such as an AV control room. While there are systems and methods for extending the control signals from the hand-held remote control to the CODEC, many times the CODEC is connected to an AV control panel (typically called a “touch panel”) that sits on the conference table or possibly a podium. While this panel can be connected to the CODEC wirelessly (as discussed later) or via a wired IP connection, typically the connection is via an EIA-232 serial connection on the CODEC. To give the “touch panel” the ability to control the CODEC, the CODEC contains an API control program. All functions that are available on the hand-held remote control are typically duplicated on the “touch panel” Typically a VTC CODEC’s API provides full access to all configuration settings and control commands supported but the CODEC. This can be a big problem if the command channel is compromised because this would give the attacker the ability to reconfigure the CODEC or its features and capabilities and not just control them. To mitigate this problem, the CODEC’s API must provide a separation of the commands that control the system from the commands related to user and administrator configuration settings. If a password/PIN is implemented for user settings as required above, the touch panel must support the manual entry of the user configuration password/PIN assuming they will need to be accessed via the touch panel. Similarly, administrator settings should not be accessible from the touch panel or the interface on the CODEC that it uses without the use of an administrator password/PIN.",
@@ -940,7 +1130,9 @@
         "gid": "V-17700",
         "rid": "SV-18874r2_rule",
         "stig_id": "RTS-VTC 2840.00",
+        "gtitle": "RTS-VTC 2840.00 [IP][ISDN]",
         "fix_id": "F-17597r1_fix",
+        "rationale": null,
         "documentable": false,
         "mitigations": "RTS-VTC 2840.00",
         "severity_override_guidance": "This finding can be reduced to a CAT III (as opposed to not-a finding) for direct connections using the Ethernet connection on the CODEC. This is because, in this case, direct connection is only a partial mitigation since there is the potential that the VTU could still be connected to a LAN. This is not a finding for direct connections using the EIA-232 serial connection on the CODEC.",
@@ -952,6 +1144,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17700",
       "title": "CODEC control / configuration messages received via the local Application Programmers Interface (API) are not encrypted or authenticated.",
       "desc": "The commands passed between the “touch panel” and CODEC are typically in a human readable clear text format. While older touch panels required a physical and direct connection to the EIA-232 serial connection on the CODEC, newer models are being developed to make use of Ethernet networks and associated IP protocols. Wireless models are also becoming available using wireless networking technologies. Sending clear text commands across these types of connections is an issue because it places the CODEC at risk of hijack i.e., being controlled by an entity other than the authorized touch panel in the conference room. Due to these issues, if the touch panel is implemented using a networking technology, the API commands must be encrypted in transit and the CODEC must authenticate the source of the commands.",
@@ -967,7 +1162,9 @@
         "gid": "V-17701",
         "rid": "SV-18875r2_rule",
         "stig_id": "RTS-VTC 3120.00",
+        "gtitle": "RTS-VTC 3120",
         "fix_id": "F-17598r2_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "Reduced to no finding when unencrypted management protocols are passed through an encrypted VPN between the managing workstation and the managed device.",
         "responsibility": [
@@ -975,6 +1172,9 @@
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17701",
       "title": "Secure protocols must be implemented for CODEC remote control and management.",
       "desc": "Many VTC Endpoints are remotely accessed across a network using nonsecure protocols such as telnet, FTP, and HTTP. This is a confidentiality issue since these protocols do not meet DoD requirements for password encryption while in transit. They also do not meet the encryption requirements for sensitive information in transit. Therefore, non-secure protocols should not be used. Some devices provide the option to select the secure versions of these protocols such as HTTPS and SSH for remote access. Secure protocols are required over non-secure protocols if available. Of additional concern is that remote control/management/configuration is performed in-band. In other words, it is performed using the same Ethernet port as the VTC traffic utilizes. If non-secure protocols must be utilized, the VTC production and CODEC remote access traffic must be segregated on the LAN from the normal data traffic. This is so that the confidentiality of the remote access password and sensitive management/configuration information is protected to the greatest extent possible by limiting access to it. Segregation requirements are discussed later under the LAN configuration section.",
@@ -990,7 +1190,9 @@
         "gid": "V-17702",
         "rid": "SV-18876r1_rule",
         "stig_id": "RTS-VTC 3130.00",
+        "gtitle": "RTS-VTC 3130.00 [IP]",
         "fix_id": "F-17599r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "The availability of unused or unneeded ports, protocols, and services used to configure and manage or otherwise access a VTC system/device could lead to the disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance.",
@@ -1000,6 +1202,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17702",
       "title": "Unnecessary/unused remote control/management/configuration protocols are not disabled.",
       "desc": "Management or other protocols, secure or not, that are not required or used for management of, or access to, a device in a given implementation, but are active and available for a connection, places the device at risk of compromise and unauthorized access. These protocols must be disabled or turned off.",
@@ -1015,7 +1220,9 @@
         "gid": "V-17703",
         "rid": "SV-18877r1_rule",
         "stig_id": "RTS-VTC 3140.00",
+        "gtitle": "RTS-VTC 3140.00 [IP]",
         "fix_id": "F-17600r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Improperly configured SNMP monitoring and management protocols used to monitor or control/manage/configure a VTC system/device could lead to the disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance.",
@@ -1025,6 +1232,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17703",
       "title": "SNMP is not being used in accordance with the Network Infrastructure STIG.",
       "desc": "Some VTC endpoints can be monitored using SNMP. It is also possible that if not today, in the future, VTC endpoints could be configured via SNMP. SNMP is typically used by vendor’s VTU/MCU management applications but it is conceivable that SNMP traps could be sent to any SNMP compatible network management system. At the time of this writing, applicable STIG requirements for the use of SNMP are contained in the Network Infrastructure STIG.",
@@ -1040,7 +1250,9 @@
         "gid": "V-17704",
         "rid": "SV-18878r2_rule",
         "stig_id": "RTS-VTC 3160.00",
+        "gtitle": "RTS-VTC 3160.00 [IP]",
         "fix_id": "F-17601r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Not limiting the source and/or destination of VTC system/device “Remote Control/Management/Configuration” traffic to/from authorized IP addresses could lead to the disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance.",
@@ -1050,6 +1262,9 @@
         ],
         "ia_controls": "DCBP-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17704",
       "title": "Remote management access and SNMP access and reporting are not restricted by IP address and/or subnet.",
       "desc": "In any network device management system, it is best practice to limit the IP address or addresses from which a network attached device can be accessed and to which device status information can be sent.",
@@ -1065,7 +1280,9 @@
         "gid": "V-17705",
         "rid": "SV-18879r2_rule",
         "stig_id": "RTS-VTC 3320.00",
+        "gtitle": "RTS-VTC 3320",
         "fix_id": "F-17602r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
@@ -1073,6 +1290,9 @@
         ],
         "ia_controls": "DCBP-1, ECND-1, ECND-2, VIVM-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17705",
       "title": "VTC systems and devices must run the latest DoD-approved patches/firmware/software from the system/device vendor.",
       "desc": "Some of today’s VTUs do not appropriately protect their passwords or access codes. Best practice and DoD policy dictates that authenticators are to be protected. This includes user account names, passwords, PINs, access codes, etc. The primary method used to protect these bits of information is encryption in transit for both the username and the password, and encryption of passwords in storage. It has been found that some VTC endpoint vendors do not provide this protection for passwords in storage, or at least, have not in the past. The first such vulnerability to be aware of is one where the administrator password can be obtained across the network by requesting certain files from the CODEC using a web browser. Once the file is accessed, the admin password is displayed in the clear within the source code for the page. The second such vulnerability to be aware of is one where, in one vendor’s product line, the user access codes are stored in a clear text file that is uploaded to the CODEC. This file is accessible from the FTP server on the CODEC. Access is, however, protected by the remote access password. One can only assume the vendor does not value these access codes as an IA measure since the discussion of their use relates to call accounting. Vulnerabilities like these and other issues are typically addressed by vendors like most issues are addressed, via patches to software, firmware upgrades, and major new releases of code. As such, it is good practice and a widely used DoD requirement that DoD systems should be running the latest version of software and install all patches to mitigate IA issues. Such is the purpose of the DoD IAVM program.",
@@ -1088,13 +1308,18 @@
         "gid": "V-17706",
         "rid": "SV-18880r3_rule",
         "stig_id": "RTS-VTC 3420.00",
+        "gtitle": "RTS-VTC 3420",
         "fix_id": "F-17603r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17706",
       "title": "Video Teleconferencing system components must display the Standard Mandatory DoD Notice and Consent Banner exactly as specified prior to logon or initial access.",
       "desc": "The operating system and remotely accessed information systems are required to display the DoD-approved system use notification message or banner before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. This ensures the legal requirements for auditing and monitoring are met. System use notification messages must be displayed when individuals log on to the information system. The approved DoD text must be used as specified in the DoD Instruction 8500.01 dated March 14, 2014.",
@@ -1110,7 +1335,9 @@
         "gid": "V-17707",
         "rid": "SV-18881r1_rule",
         "stig_id": "RTS-VTC 3460.00",
+        "gtitle": "RTS-VTC 3460.00 [IP]",
         "fix_id": "F-17604r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Not using DoD STIG guidance to secure VTC system/device management systems/servers could lead to denial of service or the disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance.",
@@ -1120,6 +1347,9 @@
         ],
         "ia_controls": "ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17707",
       "title": "All VTC system management systems/servers are not configured in compliance with all applicable STIGs",
       "desc": "Most VTC system vendors offer a range of centralized VTC system management applications and application suites. These include VTC endpoint and MCU managers, gatekeeper, gateway, and scheduling software. Gateways, gatekeepers, and scheduling systems are discussed later in this document. The advantage of implementing a management system for the management of VTC endpoints is that all endpoints can be managed from a central location and their configuration can be standardized. This is a good thing in that configuration changes made on any given endpoint for temporary purposes can be discovered and corrected easily. The disadvantage is that their use makes all managed VTC endpoints vulnerable and at risk of compromise if the management system is compromised. While compliance with all applicable STIGs is covered in the next subsection, additional guidance may be provided in a future release of this or a related document. Typically, VTC vendors provide their management applications and other infrastructure products on appliances with embedded operating systems (modified/scaled down, general purpose, or proprietary) and other application and database code (proprietary or otherwise). Some of these applications may be provided to run on a general purpose platform. In general, to mitigate risks, all VTC system management applications and application suites, including endpoint and MCU managers, gateways, gatekeepers, and scheduling systems must be operated on secure or hardened platforms and comply with all applicable DoD STIGs with specific emphasis on user accounts, roles/permissions, access control, and auditing.",
@@ -1135,7 +1365,9 @@
         "gid": "V-17708",
         "rid": "SV-18882r2_rule",
         "stig_id": "RTS-VTC 3620.00",
+        "gtitle": "RTS-VTC 3620.00 [IP][ISDN]",
         "fix_id": "F-17605r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Without a local policy giving guidance to proper use and deployment of office-based VTUs, desktop VTUs, and PC software based VTC applications could lead to the disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance.",
@@ -1145,6 +1377,9 @@
         ],
         "ia_controls": "DCBP-1, ECND-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17708",
       "title": "Deficient SOP or enforcement regarding the approval and deployment of VTC capabilities.",
       "desc": "Due to the various IA issues surrounding VTC endpoint operation, they should only be installed or deployed where there is a validated requirement for their use. Conference room systems are easily justified and beneficial to an organization. General deployment to every desk in an organization is more difficult to justify. Deployments of office-based VTUs, desktop VTUs, and PC software based VTC applications must be considered on the basis of a validated need for the user to have this capability. Such needs should be revalidated annually In general, when VTC systems are implemented, consideration must be given to mission benefit weighed against the operational risks and the possibility of improper disclosure of information as discussed throughout this document. While this is important for ISDN only connected VTUs, this is most important for IP connected VTUs. The site must develop policies and enforce them regarding the deployment of VTC endpoints in support of IA control DCSD-1, which requires IA documentation be maintained, and IA control DCPR-1 which requires a change management process be instituted.",
@@ -1160,10 +1395,15 @@
         "gid": "V-17709",
         "rid": "SV-18883r3_rule",
         "stig_id": "RTS-VTC 3640.00",
+        "gtitle": "RTS-VTC 3640",
         "fix_id": "F-17606r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17709",
       "title": "A VTC management system or endpoint must have risk approval and acceptance in writing by the responsible Authorizing Official (AO).",
       "desc": "The risk of operating any DoD system or application must be assessed, defined, and formally accepted before use. The person responsible for the enclave’s network and system’s or application’s accreditation is the AO. The AO must approve changes to an existing system or the implementation of a new system having an affect the IA posture and accreditation of a system. The IA issues surrounding the use of VTC endpoints warrant AO approval. The AO must be made aware of the issues and vulnerabilities presented to the network, the area, and information processed as well as the mitigations for same. The AO approval for the addition of IP based VTC endpoints or VTC infrastructure devices (MCUs, gatekeepers, gateways etc.) to the base network or organization’s intranet. This is not intended to require separate approval for each individual endpoint in a multi-endpoint system. However, if the system is a single endpoint, it may require an individual approval.",
@@ -1179,7 +1419,9 @@
         "gid": "V-17710",
         "rid": "SV-18884r2_rule",
         "stig_id": "RTS-VTC 3660.00",
+        "gtitle": "RTS-VTC 3660",
         "fix_id": "F-17607r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
@@ -1188,6 +1430,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17710",
       "title": "VTC system and endpoint users, administrators, and helpdesk representatives must receive cybersecurity training.",
       "desc": "All users and administrators of VTC systems and endpoints must receive training covering the vulnerabilities and other cybersecurity issues associated with operating a VTC system or endpoint. Users and administrators must be trained in the proper configuration, installation techniques, and approved connections for the VTC system or endpoint applicable to their exposure to the system. Also, users and administrators must be trained in the proper operating procedures for the system so that meeting information is properly protected and other non-meeting related information in the area near a VTC endpoint is not improperly disclosed or compromised. Helpdesk representatives supporting a VTC system or endpoints must also be appropriately trained in all aspects of VTC operation and cybersecurity. Without proper and periodic training to those directly responsible for VTC and VTU equipment and applications could lead to improper use and eventually lead to the disclosure of sensitive or classified information.",
@@ -1203,7 +1448,9 @@
         "gid": "V-17711",
         "rid": "SV-18885r2_rule",
         "stig_id": "RTS-VTC 3720.00",
+        "gtitle": "RTS-VTC 3720",
         "fix_id": "F-17608r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
@@ -1211,6 +1458,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17711",
       "title": "VTC system and endpoint users must sign a user agreement when accepting an endpoint or obtaining approval to use an endpoint.",
       "desc": "Users must read and sign a user agreement before receiving their government furnished hardware, software, or gaining access to a system, application, or additional privilege on a VTC system or endpoint. The rules of use and operational procedures for VTC endpoints of all types must be affirmed by users. Each endpoint type will or may require different rules and procedures. Users must be informed of the vulnerabilities and risks of VTC endpoint use and trained in the procedures required to mitigate them as described in the training requirement. Furthermore, users must acknowledge their awareness of the IA issues and mitigating requirements and their agreement to abide by the rules of operation of the VTC endpoint or system. This user agreement must restate the elements of the required training and serve as an acknowledgement that the training was received. This user agreement can also include a statement of the penalties for non-compliance with the rules of operation.",
@@ -1226,7 +1476,9 @@
         "gid": "V-17712",
         "rid": "SV-18886r2_rule",
         "stig_id": "RTS-VTC 3740.00",
+        "gtitle": "RTS-VTC 3740",
         "fix_id": "F-17609r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
@@ -1234,6 +1486,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17712",
       "title": "User Guides and documentation packages must be developed and distributed to users operating VTC endpoints.",
       "desc": "User documentation packages should include user agreements, training documentation, and endpoint user guides that reiterate the training information and the agreed upon User Agreement policies. The Endpoint User Guides should also provide additional information to include system or device operations, usage procedures for features, and IA measures as required to address the protection of both meeting related and non-meeting related information",
@@ -1249,13 +1504,18 @@
         "gid": "V-17713",
         "rid": "SV-18887r3_rule",
         "stig_id": "RTS-VTC 4120.00",
+        "gtitle": "RTS-VTC 4120",
         "fix_id": "F-48631r6_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17713",
       "title": "VTC systems must be logically or physically segregated on the LAN from data systems, other non-integrated voice communication (VoIP) systems, and by VTC system type.",
       "desc": "A common practice in traditional LAN design is the use and implementation of VLANs and IP subnets to segregate services and organizational workgroups, including their traffic as it traverses the LAN. This has the effect of providing confidentiality for the workgroup traffic by limiting the ability of users in other workgroups to see and access the traffic during normal operations. It also enhances the ability to control traffic flows for, and access to, LAN services. Another benefit of using VLANs is that they can improve network performance if they are properly pruned. Typically, when a VLAN is configured on one LAN switch, the other switches in the network will “learn” that VLAN, thus it will propagate throughout the network. This property is not what enhances network performance since it allows broadcast traffic in the VLAN to traverse the entire network. Also, if the number of allowable VLANs that a switch has configured or learns is exceeded, the LAN can become unstable. VLAN pruning eliminates this problem and is actually what can enhance network performance by limiting the traffic that devices in the LAN must process. The use of a separate IP address space and properly pruned separate VLANs for VTC systems will have the following effects: - Enhance the confidentiality of unencrypted VTC traffic. - Enhance the confidentiality of the VTC device management traffic, particularly if secure protocols are not available for use. - Limit the ability of LAN users to see the VTC devices in other VLANs, which limits the possibility of compromise from user or machine induced malicious activity. Some VTC systems should be protected using other VLAN structures as follows: - Primary conference room systems should have their own closely pruned VLAN and IP subnet. This could be a single conference room or several conference rooms if they are required to communicate with each other or are part of an overall managed VTC network within the enclave. This will provide the maximum protection from compromise for the conference room systems. - Hardware-based desktop and office VTUs should be grouped into their own VLAN and IP subnet. This could be the same VLAN and subnet as the one used for conference rooms if these devices are to communicate with them or if they are part of an overall managed VTC network within the enclave. - Hardware-based desktop and office VTUs that integrate and signal with the site’s VoIP telephone system may be grouped separately or utilize the Voice system VLAN structure and IP subnet. - PC-based soft-VTUs are to be implemented or segregated/controlled as described in the related document covering softphones and soft-VTUs. - Local MCUs and VTU management stations must reside in the VTC VLAN and IP subnet with the devices they manage or conference. - If WAN access is required, the VLANs can be extended to the enclave boundary.",
@@ -1271,7 +1531,9 @@
         "gid": "V-17714",
         "rid": "SV-18888r1_rule",
         "stig_id": "RTS-VTC 4220.00",
+        "gtitle": "RTS-VTC 4220.00 [IP]",
         "fix_id": "F-17611r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Unregulated and improperly configured wireless adapters have the potential to provide backdoor connectivity, which ultimately can lead to the inadvertent disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance.",
@@ -1280,6 +1542,9 @@
           "System Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17714",
       "title": "VTC endpoint connectivity is established via an unapproved DoD Wireless LAN infrastructure",
       "desc": "In the event wireless LAN connectivity is to be used for VTC endpoints, it must be implemented via an established and approved wireless LAN infrastructure which is configured, along with its connected devices, in compliance with the Wireless STIG. Key requirements include WiFi and WPA2 certification of the VTC wireless LAN Network Interface Card (NIC) and FIPS 140-2 certification of the wireless encryption module.",
@@ -1295,11 +1560,16 @@
         "gid": "V-17715",
         "rid": "SV-18889r2_rule",
         "stig_id": "RTS-VTC 4320.00",
+        "gtitle": "RTS-VTC 4320.00 [IP]",
         "fix_id": "F-17612r2_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "If the wired LAN and wireless LAN are in the same security domain and have the same classification, this finding may be downgraded to CAT II.",
         "responsibility": "System Administrator"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17715",
       "title": "A VTC endpoint must not bridge a wired LAN and a wireless LAN.",
       "desc": "With increased use of wireless networks by DoD, the risk of accidentally or intentionally bridging networks of different security levels and requirements is rising. Unwanted network bridging is the act of connecting different IP networks against security policies and/or the intended network design. The network perimeter is changing and so are the possible vectors security threats can use. Improperly configured wireless adapters have the potential to provide backdoor connectivity, which ultimately can lead to the inadvertent disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance. A VTC system connected simultaneously to a wired LAN and an active wireless LAN/connection may permit traffic or control information to pass traffic between the two networks, thereby providing a bridge between the wired and wireless LAN connections. The unwanted network bridge is especially dangerous for VTC systems because often networks of different security policies and levels are used by the same equipment.",
@@ -1315,7 +1585,9 @@
         "gid": "V-17716",
         "rid": "SV-18890r1_rule",
         "stig_id": "RTS-VTC 4360.00",
+        "gtitle": "RTS-VTC 4360.00 [IP]",
         "fix_id": "F-17613r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "In the event a configuration setting is not available for a PCMCIA WLAN card that will disable it when one is plugged in, this finding can be reduced to a CAT III if the PCMCIA slot is fitted with a hard to remove device that prevents the insertion of a card into the slot.",
         "potential_impacts": "Unregulated and improperly configured wireless adapters have the potential to provide backdoor connectivity, which ultimately can lead to the inadvertent disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance.",
@@ -1324,6 +1596,9 @@
           "System Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17716",
       "title": "A VTU endpoint does not have the wireless LAN capability disabled.",
       "desc": "The proper mitigation for the vulnerabilities discussed above is to disable the wireless capability available or included in a VTC endpoint. Typically, one would expect a configuration setting that says something like “Disable Wireless” that would disable any onboard wireless capability whether integrated or reliant on a plug-in card. The Wireless STIG in WIR0167 requires all wireless LAN NICs to be turned-off by default after system boot-up or whenever a wireless network connection is not required. Additionally WIR0130 requires that the NIC have the capability to disable ad hoc connectivity. While these requirements are addressed toward PCs and PEDs, they are applicable to VTC endpoints. Support for these requirements does not seem to be available with at least some VTC endpoint’s PCMCIA wireless LAN card implementations. It is conceivable that a WLAN card could be inserted into the PCMCIA slot and activated with basic default settings and no security. To prevent this, the VTU’s PCMCIA slot must be physically blocked, making it difficult to insert a WLAN card.",
@@ -1339,7 +1614,9 @@
         "gid": "V-17717",
         "rid": "SV-18891r2_rule",
         "stig_id": "RTS-VTC 4420.00",
+        "gtitle": "RTS-VTC 4420",
         "fix_id": "F-17614r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
@@ -1347,6 +1624,9 @@
         ],
         "ia_controls": "ECSC-1, ECWN-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17717",
       "title": "A VTU or conference room implemented using wireless components must be protected from external control or compromise.",
       "desc": "Conference room VTC systems, and particularly large ones, can require multiple microphones, cameras, and displays along with AV control systems. These systems typically require a significant amount of wiring. This can be a problem when retrofitting a well-appointed conference room without damaging the room’s walls, ceilings, furniture, and finishes. As a result, conference room VTC systems as well as other VTC endpoint systems can utilize various wireless communication technologies to interconnect its microphones, cameras, speakers, desktop audio conferencing units, and displays to the VTC CODEC and control panels to the AV control system and CODEC. The wireless communications technologies used are 802.11, Bluetooth, standard radio (cordless telephone and wireless microphone frequencies/technology) as well as infrared. The use of wireless technologies to implement a conference room in a DoD facility could pose an eavesdropping vulnerability to VTC conferences and other meetings held in the facility. This could place sensitive or classified DoD information at risk. To mitigate this, all audio, video, white boarding, and data sharing communications within the conference room system must be encrypted. Furthermore, those technologies covered by the Wireless STIG and other DoD wireless policies, must be in compliance with them.",
@@ -1362,7 +1642,9 @@
         "gid": "V-17718",
         "rid": "SV-18892r1_rule",
         "stig_id": "RTS-VTC 4520.00",
+        "gtitle": "RTS-VTC 4520.00 [IP]",
         "fix_id": "F-17615r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "NONE",
         "potential_impacts": "Unrestricted and undocumented traffic crossing enclave boundaries can lead to the inadvertent disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance as well as denial-of-service and the inability for the operators of the GIG to properly defend it and its interconnected enclaves.",
@@ -1371,6 +1653,9 @@
           "System Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17718",
       "title": "VTC ports and protocols cross DoD/Enclave boundaries without prior registration in the DoD Ports and Protocols Database.",
       "desc": "A portion of the DoDI 8550.1 PPS policy requires registration of those PPS that cross any of the boundaries defined by the policy that are “visible to DoD-managed components”. The following PPS registration requirement applies to VTC traffic that crosses the IP based Enclave boundary to the DISN WAN or another enclave.",
@@ -1386,7 +1671,9 @@
         "gid": "V-17719",
         "rid": "SV-18893r2_rule",
         "stig_id": "RTS-VTC 5020.00",
+        "gtitle": "RTS-VTC 5020",
         "fix_id": "F-17616r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
@@ -1394,6 +1681,9 @@
           "Other"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17719",
       "title": "Access control measures must be implemented for all conferences hosted on a centralized MCU appliance.",
       "desc": "Access control must be exercised over participants joining multipoint conferences. Attendees and endpoints must be authorized or registered in advance. This way the conference organizers can control who has access to sensitive or classified information based upon validated clearance and need-to-know. Unrestricted access or the use of a meeting password that is reused or well-known can lead to a security incident where information is improperly disclosed to unauthorized individuals not having appropriate clearance or need-to-know. Additionally, if call-in access is supported and approved, a one-time use meeting password is required. H.323 gatekeepers provide access control for VTC network infrastructure devices such as MCUs and gateways to VTC endpoints. Using H.225 an endpoint can discover a gatekeeper and register with it. The endpoint is identified by the gatekeeper by a “gatekeeper password” which is essentially the endpoint ID. The gatekeeper provides address translation and bandwidth management. Once registered with the gatekeeper an endpoint must ask permission of the gatekeeper to make a call. If the available VTC bandwidth is used or limited, the gatekeeper can reject the request or negotiate a lower bandwidth. This acts as part of the access control mechanism for the MCU and works in combination with a scheduling application. The rest of the MCU access control equation is pre-registration of the endpoint IDs when scheduling a conference. Pre-registration of endpoint IDs for specific conferences is required because there are typically no meeting passwords and the phone numbers or IP addresses of the MCU ports don’t change between sessions. Additionally (and here’s the issue mentioned above) people are not authenticated only endpoints are. The endpoint ID is critical in this access control process. The endpoint ID is entered (pre-configured) in the system for a specific scheduled conference. The system only permits the endpoint to access the MCU during the scheduled time of the conference. This discussion also applies to ad hoc conferences and “standing” conferences. A standing conference is one where MCU facilities are dedicated to a conference that is operational all of the time or one that is regularly scheduled to be operational for certain time periods. The implementation of a standing conference permits conferees to join the conference at will or as needed to discuss a current topic or mission. Standing conferences are implemented for many reasons. Standing conferences are more vulnerable to compromise than one time scheduled events. Extra care must be exercised regarding access control to these conferences.",
@@ -1409,13 +1699,18 @@
         "gid": "V-17720",
         "rid": "SV-18894r2_rule",
         "stig_id": "RTS-VTC 5120.00",
+        "gtitle": "RTS-VTC 5120",
         "fix_id": "F-17617r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-17720",
       "title": "Access control measures must be implemented for all conferences hosted on a centralized MCU appliance.",
       "desc": "nregulated access to conference scheduling by any individual who is not authorized can lead to the inadvertent disclosure of sensitive or classified information to individuals that may not have an appropriate need-to-know or proper security clearance or may lead to a denial-of-service for MCU facilities. Scheduling systems accessed by users or administrators via a web interface must comply with all of the requirements for a web server or applications server to include DoD PKI access control and auditing requirements for such devices and systems. Scheduling systems accessed via a collaboration tool must minimally utilize the access control required for accessing the collaboration application. Since an authorized user of a collaboration tool may or may not have the right to schedule VTC conferences, the scheduling application should receive user credentials from the collaboration application to determine authorization or the right must be controlled by the collaboration application. Scheduling systems accessed by administrators using other methods must also employ access control and auditing meeting DoD requirements.",
@@ -1431,11 +1726,16 @@
         "gid": "V-43015",
         "rid": "SV-55744r1_rule",
         "stig_id": "RTS-VTC 7000",
+        "gtitle": "RTS-VTC 7000 [IP]",
         "fix_id": "F-48599r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "DCCS-2, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43015",
       "title": "An IP-based VTC system implementing a single CODEC supporting conferences on multiple networks having different classification levels (i.e., unclassified, SECRET, TOP SECRET, TS-SCI) must support Periods Processing by being sanitized of all information while transitioning from one period/network to the next.",
       "desc": "All residual data (data that is unintentionally left behind on computer media) must be cleared before transitioning from one period/network to the next. Since the equipment is reused, non-destructive techniques are used. According to NIST Special Publication 800-88: Clearing information is a level of media sanitization that would protect the confidentiality of information against a robust keyboard attack. Simple deletion of items would not suffice for clearing. Clearing must not allow information to be retrieved by data, disk, or file recovery utilities. It must be resistant to keystroke recovery attempts executed from standard input devices and from data scavenging tools. For example, overwriting is an acceptable method for clearing media.",
@@ -1451,11 +1751,16 @@
         "gid": "V-43016",
         "rid": "SV-55745r1_rule",
         "stig_id": "RTS-VTC 7020",
+        "gtitle": "RTS-VTC 7020 [IP]",
         "fix_id": "F-48600r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "EBCR-1, ECIC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43016",
       "title": "An IP-based VTC system implementing a single CODEC supporting conferences on multiple networks having different classification levels (i.e., unclassified, SECRET, TOP SECRET, TS-SCI) must support Periods Processing by connecting the CODEC to one network at a time, matching the classification level of the session to the classification level of the network.",
       "desc": "Connecting to networks of different classifications simultaneously incurs the risk of data from a higher classification being released to a network of a lower classification, referred to as a “spill”. It is imperative that networks of differing classification levels or with differing handling caveats not be interconnected at any time. Separation in a multinetwork VTC system is maintained by the use of an A/B, A/B/C, or A/B/C/D switch that meets requirements for channel isolation, or by manual connection of the CODEC to one network at a time.",
@@ -1471,11 +1776,16 @@
         "gid": "V-43017",
         "rid": "SV-55746r2_rule",
         "stig_id": "RTS-VTC 7040",
+        "gtitle": "RTS-VTC 7040",
         "fix_id": "F-48601r4_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "EBCR-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43017",
       "title": "IP-based VTC systems must not connect to ISDN lines when connected to a classified network.",
       "desc": "Most CODECs have a built-in IMUX such that multiple ISDN lines can terminate directly on the CODEC. ISDN lines used for VTC transport are provided by a traditional telephone switch on an unclassified network. Connecting a classified IP network to an unclassified telephone network through a VTC CODEC while in a conference could lead to disclosure of classified information to the unclassified network and unclassified VTC endpoints. While this issue might be mitigated by using a Type 1 encryptor between the CODEC and an external IMUX, an SOP would need to be in place which would dictate that the ISDN connection must be established and the Type 1 encryptor synced with the other end BEFORE the CODEC was connected to the classified IP network. This type of operation is risky and prone to error and is therefore not recommended.",
@@ -1491,10 +1801,15 @@
         "gid": "V-43018",
         "rid": "SV-55747r1_rule",
         "stig_id": "RTS-VTC 7060",
+        "gtitle": "RTS-VTC 7060 [IP]",
         "fix_id": "F-48602r5_fix",
+        "rationale": null,
         "documentable": false,
         "ia_controls": "DCCS-2, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43018",
       "title": "An IP-based VTC system implementing a single CODEC supporting conferences on multiple networks having different classification levels (i.e., unclassified, SECRET, TOP SECRET, TS-SCI) must support Periods Processing sanitization by purging/clearing volatile memory within the CODEC by powering the CODEC off for a minimum of 60 seconds.",
       "desc": "Volatile memory requires power to maintain the stored information. It retains its contents while powered, but when power is interrupted, stored data is immediately lost. Dynamic random-access memory (DRAM) is a type of random-access memory that stores each bit of data in a separate capacitor within an integrated circuit. Since capacitors leak charge, data fades unless the capacitor charge is refreshed periodically. Static random-access memory (SRAM) has a different configuration from DRAM which allows it to retain data longer when power is no longer applied (data remanence). Powering off the CODEC for 60 seconds is sufficient to discharge the capacitors and erase all data.",
@@ -1510,12 +1825,17 @@
         "gid": "V-43019",
         "rid": "SV-55748r1_rule",
         "stig_id": "RTS-VTC 7080",
+        "gtitle": "RTS-VTC 7080 [IP]",
         "fix_id": "F-48603r4_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "This can be downgraded from a CAT II to a CAT III if a manual procedure is used to perform a factory reset and/or overwrite all configurable parameters with null settings before reconfiguring the CODEC for connection to the next network.",
         "responsibility": "Information Assurance Officer",
         "ia_controls": "DCSS-2, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43019",
       "title": "IP-based VTC systems implementing a single CODEC supporting conferences on multiple networks having different classification levels must sanitize non-volatile memory while transitioning between networks by overwriting all configurable parameters with null settings before reconfiguring the CODEC for connection to the next network.",
       "desc": "A factory reset is the software restore of an electronic device to its original system state by erasing all of the information stored on the device to restore the device to its original factory or unconfigured settings. This erases all of the data, settings, and applications that were previously on the device. Factory reset may be used as part of the sanitization process. This requirement is satisfied by the use of either a properly configured automated configuration management system or by the use of an inherent sanitization capability of the unit. However, this requirement results in a CAT III finding if a manual procedure is used.",
@@ -1531,11 +1851,16 @@
         "gid": "V-43020",
         "rid": "SV-55749r1_rule",
         "stig_id": "RTS-VTC 7100",
+        "gtitle": "RTS-VTC 7100 [IP]",
         "fix_id": "F-48604r4_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "EBCR-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43020",
       "title": "The A/B, A/B/C, or A/B/C/D switch within an IP-based VTC system supporting conferences on multiple networks having different classification levels must be based on optical technologies to maintain electrical isolation between the various networks to which it connects.",
       "desc": "The A/B, A/B/C, or A/B/C/D switch is physically connected to multiple networks having different classification levels. Copper-based switches provide minimal or no electrical isolation due to capacitance between the wires in the switch box and the switch contacts. This can permit information on one network to bleed or leak over to the other network, which can lead to the disclosure of classified information on a classified network to a network of lower classification. This must be prevented. Optical fiber is an insulator, thus it carries no electrical current and generates no electromagnetic field, eliminating the capacitance issue. As such, it provides excellent electrical isolation between the networks to which it connects.",
@@ -1551,11 +1876,16 @@
         "gid": "V-43021",
         "rid": "SV-55750r1_rule",
         "stig_id": "RTS-VTC 7120",
+        "gtitle": "RTS-VTC 7120 [IP]",
         "fix_id": "F-48605r8_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "EBCR-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43021",
       "title": "An IP-based VTC system implementing a single CODEC supporting conferences on multiple networks having different classification levels must be implemented in a manner such that configuration information for a network having a higher classification level is not disclosed to a network having a lower classification level.",
       "desc": "Connecting the CODEC to a network while it is being reconfigured could lead to the disclosure of sensitive configuration information for a network having a higher classification level to a network having a lower classification level. Ideally, the CODEC will be disconnected from any network while it is being reconfigured. However, the requirement can be met by using a procedure that purges the configuration for the currently connected network, power cycling the CODEC as required (for a minimum of 60 seconds per another requirement) as the CODEC is switched to the next network, then reconfigures the CODEC for the next session.",
@@ -1571,11 +1901,16 @@
         "gid": "V-43022",
         "rid": "SV-55751r1_rule",
         "stig_id": "RTS-VTC 7140",
+        "gtitle": "RTS-VTC 7140 [IP]",
         "fix_id": "F-48606r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "DCAS-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43022",
       "title": "The A/B, A/B/C, or A/B/C/D switch used for network switching in IP-based VTC systems implementing a single CODEC supporting conferences on multiple networks having different classification levels must be Common Criteria certified.",
       "desc": "Common Criteria provides assurance that the process of specification, implementation, and evaluation of a computer security product has been conducted in a rigorous, standard, and repeatable manner at a level that is commensurate with the target environment for use. The DSAWG mandated that the A/B, A/B/C, or A/B/C/D switches used in VTC systems implementing a single CODEC supporting conferences on multiple networks having different classification levels, where these networks are simultaneously and permanently connected to these networks, must receive NIAP approval in accordance with CNSSP #11. This was primarily due to the potential interconnection of separate networks designated as National Security Systems through the switch. This was a prerequisite to their approval of the multinetwork VTC system architecture. Therefore, the A/B, A/B/C, or A/B/C/D switch must be satisfactorily evaluated and validated in accordance with the provisions of the NIAP Common Criteria Evaluation and Validation Scheme.",
@@ -1591,11 +1926,16 @@
         "gid": "V-43023",
         "rid": "SV-55752r2_rule",
         "stig_id": "RTS-VTC 7160",
+        "gtitle": "RTS-VTC 7160",
         "fix_id": "F-48607r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECTC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43023",
       "title": "The A/B, A/B/C, or A/B/C/D switch used for network switching in IP-based VTC systems implementing a single CODEC supporting conferences on multiple networks having different classification levels must be TEMPEST certified.",
       "desc": "Committee on National Security Systems Advisory Memorandum (CNSSAM) TEMPEST/01-13, RED/BLACK Installation Guidance, provides criteria for the installation of electronic equipment, cabling, and facility support for the processing of secure information. National policy requires that systems and facilities processing NSI must be reviewed by a Certified TEMPEST Technical Authority (CTTA) to achieve TEMPEST security. The RED/BLACK guidance contained in TEMPEST/01-13will be considered by the CTTA along with other measures (e.g., TEMPEST Zoning, TEMPEST-suppressed equipment and shielding) to determine the most cost-effective countermeasures to achieve TEMPEST security. Only those RED/BLACK criteria specifically identified by the CTTA will be implemented.",
@@ -1611,11 +1951,16 @@
         "gid": "V-43024",
         "rid": "SV-55753r1_rule",
         "stig_id": "RTS-VTC 7180",
+        "gtitle": "RTS-VTC 7180 [IP]",
         "fix_id": "F-48608r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "DCSP-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43024",
       "title": "An IP-based VTC system implementing a single set of input/output devices (cameras, microphones, speakers, control system), an A/V switcher, and multiple CODECs connected to multiple IP networks having different classification levels must provide automatic mutually exclusive power control for the CODECs or their network connections such that only one CODEC is powered on or one CODEC is connected to any network at any given time.",
       "desc": "If a VTC system is implemented using multiple CODECs, each connected to a network having a different classification level, along with an A/V switcher, a potential path exists through the CODECs and A/V switcher that could permit classified information to be exposed/released from one classified network to a network having a lower classification. Minimally powering off the CODEC will provide a level of isolation that will prevent active passage of data. The above solution could still provide an electrical leakage path between the networks whereby classified information could leak onto another network. To improve on the electrical isolation between networks and as an alternative to powering off the CODECs, an optical link using fiber optic to Ethernet media adaptors/converters/modems between the CODEC and each of the networks it serves could be implemented. In this case, the fiber optic media adaptors would be powered in a mutually exclusive manner. Mutually exclusive power means that only one CODEC or fiber optic adaptor can be powered at a time. Turning on one CODEC or fiber optic adaptor turns off power for all others.",
@@ -1631,11 +1976,16 @@
         "gid": "V-43025",
         "rid": "SV-55754r2_rule",
         "stig_id": "RTS-VTC 7200",
+        "gtitle": "RTS-VTC 7200",
         "fix_id": "F-48609r5_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECTC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43025",
       "title": "The implementation of an IP-based VTC system supporting conferences on multiple networks having different classification levels must maintain isolation between the networks to which it connects by implementing separation of equipment and cabling between the various networks having differing classification levels in accordance with CNSSAM TEMPEST/01-13, RED/BLACK Installation Guidance.",
       "desc": "Information leakage is the intentional or unintentional release of information to an untrusted environment from electromagnetic signals emanations. Security categories or classifications of information systems (with respect to confidentiality) and organizational security policies guide the selection of security controls employed to protect systems against information leakage due to electromagnetic signals emanations. The Committee on National Security Systems Advisory Memorandum (CNSSAM) TEMPEST/01-13, RED/BLACK Installation Guidance, provides criteria for the installation of electronic equipment, cabling, and facility support for the processing of secure information. The TEMPEST/01-13 requires the facility housing the secure VTC equipment (i.e., the secure conference room) must meet the TEMPEST requirements for such rooms. The appropriate and required separations between RED and BLACK equipment and cables must be met. This includes cable routing inside equipment cabinets. Depending on the TEMPEST ZONE, the separation requirements are: - Minimum equipment separation - 50 cm or 1m - Minimum cable separation - 5 cm or 15 cm National policy requires that systems and facilities processing NSI must be reviewed by a Certified TEMPEST Technical Authority (CTTA) to achieve TEMPEST security. The CTTA may require separate power sources for RED equipment and BLACK equipment.",
@@ -1651,12 +2001,17 @@
         "gid": "V-43027",
         "rid": "SV-55756r1_rule",
         "stig_id": "RTS-VTC 6000",
+        "gtitle": "RTS-VTC 6000 [IP]",
         "fix_id": "F-48611r2_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "This can be downgraded from a CAT I to a CAT III if this requirement cannot be met and IP ports are statically opened on a standard firewall to accommodate VTC traffic such that the IP ports are restricted by the internal IP address(es) of the internal CODEC(s) and the external address(es) of a central MCU or a limited set of remote endpoints using an any-any statement. This CAT III can be eliminated in the event these ports are not statically opened, but are manually opened and closed by the firewall administrator for the duration of VTC sessions. This CAT III can also be eliminated in the event the inbound permit statements are restricted to a limited range of UDP ports and external IP addresses, while routing/outbound permit statements force all outbound VTC traffic to these external addresses.",
         "responsibility": "Information Assurance Officer",
         "ia_controls": "DCPP-1, EBBD-2"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43027",
       "title": "An enclave supporting an IP-based VTC system that must communicate across an IP WAN must implement a VTC/VVoIP-aware firewall or H.460-based firewall traversal solution at its boundary with the WAN.",
       "desc": "To support a VTC session through a standard non H.323 aware firewall, the administrator must open a wide range (from 16000 to 65000) of UDP ports. If the VTU only connects with one other endpoint CODEC or MCU, this port opening can be limited to the IP address of the other end. While a hole has been opened in the firewall, the risk is somewhat mitigated by the address restriction. However, if a VTC call can come from any endpoint, with any IP address, then the hole resulting from opening the UDP ports to a large range of IP addresses negates the effectiveness of the firewall. To mitigate this issue, an H.460 border controller is required rather than opening all UDP ports to all or many IP addresses. This device effectively limits all of the UDP and TCP ports required to support H.323 VTC sessions to a very small number (3-7), the connections through which are initiated from within the enclave thus requiring little or no firewall reconfiguration to accommodate. H.460 is a set of extensions to the ITU H.323 standard that includes methods to traverse firewalls. In order for a video conference to take place across a secure firewall using H.460, a server or appliance using H.460 must be available and reachable by video conferencing endpoints. Video conference endpoints need to register with an H.460 server and in order to do this they must be enabled for this by their respective manufacturers. This requirement results in a CAT III finding in the event this requirement cannot be met and IP ports are statically opened on a standard firewall to accommodate VTC traffic such that the IP ports are restricted by the internal IP address(es) of the internal CODEC(s) and the external address(es) of a central MCU or a limited set of remote endpoints using an any-any statement. This CAT III can be eliminated in the event these ports are not statically opened, but are manually opened and closed by the firewall administrator for the duration of VTC sessions. This CAT III can also be eliminated in the event the inbound permit statements are restricted to a limited range of UDP ports and external IP addresses, while routing/outbound permit statements forces all outbound VTC traffic to these external addresses.",
@@ -1672,11 +2027,16 @@
         "gid": "V-43028",
         "rid": "SV-55757r1_rule",
         "stig_id": "RTS-VTC 6020",
+        "gtitle": "RTS-VTC 6020 [IP]",
         "fix_id": "F-48612r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "EBBD-2"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43028",
       "title": "An IDS/IPS must protect the IP-based VTC system within the enclave.",
       "desc": "An enclave supporting an IP-based VTC system that must communicate across an IP WAN must be protected by the existing network IDS/IPS or by the implementation of an IDS/IPS that is dedicated to the VTC enclave. The IDS/IPS must comply with the requirements of the IDS/IPS Security Technical Implementation Guide. Please refer to the “IDPS Security Guidance at a Glance” for additional implementation guidance for Network Intrusion Detection/Prevention Systems.",
@@ -1692,11 +2052,16 @@
         "gid": "V-43030",
         "rid": "SV-55759r1_rule",
         "stig_id": "RTS-VTC 5040",
+        "gtitle": "RTS-VTC 5040 [IP]",
         "fix_id": "F-48614r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "IAIA-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43030",
       "title": "The IP-based VTC system must authenticate to an H.323 Gatekeeper or VVoIP session/call controller.",
       "desc": "An IP-based VTC system must authenticate itself to an H.323 Gatekeeper or VVoIP session/call controller for the purposes of access control, authorization, and WAN access bandwidth management. An H.323 Gatekeeper or VVoIP session/call controller is a dedicated device or application that controls the manner in which phone calls are initiated, conducted, and terminated and is often one of the main components in H.323 systems. It serves the purpose of Call Admission Control and translation services from E.164 IDs (commonly a phone number) to IP addresses in an H.323 telephony network. It also provides bandwidth control. In general, all VTC system management applications and application suites, including endpoint and MCU managers, gateways, gatekeepers, controllers, and scheduling systems must be operated on secure or hardened platforms and comply with all applicable DoD STIGs with specific emphasis on user accounts, roles/permissions, access control, and auditing.",
@@ -1712,11 +2077,16 @@
         "gid": "V-43035",
         "rid": "SV-55764r1_rule",
         "stig_id": "RTS-VTC 1240",
+        "gtitle": "RTS-VTC 1240 [IP]",
         "fix_id": "F-48617r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECCT-1, ECNK-1, ECSC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43035",
       "title": "The IP-based VTC system must use H.235-based signaling encryption.",
       "desc": "An IP/H.323-based VTC system as a whole (including CODECs, MCUs, Gatekeepers, Gateways, firewall traversal border elements, etc.) must implement H.235-based signaling encryption. H.235 has been developed to help secure the signaling protocols used in the H.323 suite of protocols. H.235 uses the Advanced Encryption Standard (AES) for encryption and the Diffie-Hellman key exchange protocol for key exchange. AES is supported under H.235 version 3. Technical details of H.235 are set forth in the ITU-T Recommendation H.235.6 (2005), H.323 security: Voice encryption profile with native H.235/H.245 key management.",
@@ -1732,11 +2102,16 @@
         "gid": "V-43038",
         "rid": "SV-55767r1_rule",
         "stig_id": "RTS-VTC 7320",
+        "gtitle": "RTS-VTC 7320 [IP] [ISDN]",
         "fix_id": "F-48619r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECCM-1, PESS-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43038",
       "title": "The operator of an ISDN-based VTC system utilizing a Type 1 encryptor for classified sessions must ensure any removable Keying Material (KEYMAT) (e.g., Cryptographic Ignition Key (CIK)) for the encryptor is secured in an appropriate secure facility or GSA-approved container when the system is not in use.",
       "desc": "Removable Keying Material (KEYMAT) and each CIK must be handled in accordance with the Operational Security Doctrine of the encryptor as well as all applicable policies and guidance, such as the National Security Telecommunications and Information Systems Security Instruction 4000 series policies. When the CIK is not in use, it must be stored so that unauthorized personnel are unable to access it. This may mean that it is kept in a safe or in a locked desk behind a locked door to which only authorized personnel have access. The CIK can be stored in the same room as the encryptor; however, the CIK must be protected to the same classification level as the encryptor. The CIK may be stored in a separate room from the TACLANE in a secure container that will afford sufficient protection (e.g., a locked cabinet or desk will be sufficient).",
@@ -1752,11 +2127,16 @@
         "gid": "V-43040",
         "rid": "SV-55769r1_rule",
         "stig_id": "RTS-VTC 7340",
+        "gtitle": "RTS-VTC 7340 [IP] [ISDN]",
         "fix_id": "F-48620r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "PEPF-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43040",
       "title": "An ISDN-based or IP-based VTC system supporting conferences on multiple networks having different classification levels must utilize approved automatically controlled signage to indicate the secure/non-secure status or classification level of the conference/session. Such signage will be placed within the conference room and outside each entrance.",
       "desc": "VTC system users within the room must be informed when the system is actively engaged in a classified session and the classification level of that session if multiple classification levels are supported by the system. This will inform the participants regarding the information they may discuss during the session, thus preventing information having higher classification being discussed in a session having a lower classification level. Additionally, persons entering a room where classified VTC sessions occur must be informed of the status and classification level of the session so that persons without the appropriate clearance level for the information being discussed/presented do not enter the room. Both situations can lead to improper disclosure of classified information. System signage must minimally reflect secure/non-secure status of the system. The signage in IP-based systems connected to multiple classified networks must additionally reflect the classification of the network to which the system is connected. Signage must be controlled by the A/B, A/B/C, or A/B/C/D switch position.",
@@ -1772,10 +2152,15 @@
         "gid": "V-43041",
         "rid": "SV-55770r1_rule",
         "stig_id": "RTS-VTC 7360",
+        "gtitle": "RTS-VTC 7360 [ISDN]",
         "fix_id": "F-48621r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43041",
       "title": "An ISDN-based VTC system supporting secure (classified) and non-secure (unclassified) conferences must utilize an approved pair of EIA-530 A/B switches operated in tandem or a dual A/B switch to switch the Type 1 encryptor in/out of the circuit between the CODEC and IMUX.",
       "desc": "ISDN-based VTC systems supporting secure (classified) and non-secure (unclassified) conferences operate in an unclassified manner while connecting a call. If the call is to be classified or “secure” at any level, the Type 1 encryptor is switched into the circuit between the CODEC and IMUX, then synced with the other end before the conference discussions can “go secure”. This is typically performed using approved A/B switches on both sides of the encryptor operated in tandem. The use of the word “tandem” here does not refer to public switched telephone network (PSTN) tandem switches. This refers to a pair of A/B switches that are operated at the same time.",
@@ -1791,11 +2176,16 @@
         "gid": "V-43043",
         "rid": "SV-55772r1_rule",
         "stig_id": "RTS-VTC 7380",
+        "gtitle": "RTS-VTC 7380 [ISDN]",
         "fix_id": "F-48623r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECSC-1, ECTC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43043",
       "title": "An ISDN-based VTC system supporting secure (classified) and non-secure (unclassified) conferences while implementing dialing capability from the CODEC must utilize an approved EIA-366-A dial isolator that disconnects the dialing channel between the CODEC and IMUX when the IMUX signals it is connected to another IMUX (i.e., the session is connected).",
       "desc": "When dialing is performed from the CODEC, an EIA-366 connection is made between the CODEC and the IMUX to carry the dialing instructions to the IMUX which actually performs the dialing function. This is not an issue if there is no EIA-366-A connection between the CODEC and the IMUX and all dialing is performed from the IMUX.",
@@ -1811,11 +2201,16 @@
         "gid": "V-43045",
         "rid": "SV-55774r2_rule",
         "stig_id": "RTS-VTC 7400",
+        "gtitle": "RTS-VTC 7400",
         "fix_id": "F-48625r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECTC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43045",
       "title": "An ISDN-based VTC system supporting secure (classified) and non-secure (unclassified) conferences must be cabled to maintain a minimum of 5 or 15 centimeters RED/BLACK separation on either side of any Type 1 encryptor and any dial isolator (depending on the TEMPEST zone).",
       "desc": "Information leakage is the intentional or unintentional release of information to an untrusted environment from electromagnetic signals emanations. Security categories or classifications of information systems (with respect to confidentiality) and organizational security policies guide the selection of security controls employed to protect systems against information leakage due to electromagnetic signals emanations. The Committee on National Security Systems Advisory Memorandum (CNSSAM) TEMPEST/01-13, RED/BLACK Installation Guidance, provides criteria for the installation of electronic equipment, cabling, and facility support for the processing of secure information. The TEMPEST/01-13 requires separation between RED and BLACK equipment and cables, to include cable routing inside equipment cabinets. Depending on TEMPEST ZONE, the separation requirements are: - Minimum equipment separation - 50 cm or 1m - Minimum cable separation - 5 cm or 15 cm The unencrypted information, wiring, and processing equipment are considered RED while the encrypted information, wiring, and processing equipment are considered BLACK.",
@@ -1831,11 +2226,16 @@
         "gid": "V-43049",
         "rid": "SV-55778r1_rule",
         "stig_id": "RTS-VTC 7420",
+        "gtitle": "RTS-VTC 7420 [ISDN]",
         "fix_id": "F-48626r6_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECTC-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-43049",
       "title": "ISDN-based VTC equipment supporting secure (classified) and non-secure (unclassified) conferences which implement dial isolators and A/B switches must meet minimum port-to-port isolation standards.",
       "desc": "ISDN-based VTC system A/B switches, Dial Isolators, and/or other devices used to interface between RED and BLACK circuits/equipment shall exhibit the following port-to-port isolation characteristics, as applicable: • 100 dB over the baseband audio frequency range between 0.3 and 15 kHz. • 80 dB over the baseband video frequency range up to 5 MHz. • 60 dB over the frequency range from one times (Rd) to ten times the basic data rate (10Rd) of the digital signal(s) processed. DISN Video Services (DVS) maintains a list of A/B switches and Dial Isolators that have been TEMPEST certified to meet the above requirements at http://disa.mil/Services/Network-Services/Video/~/media/Files/DISA/Services/DVS/red_black_peripherals.xls",
@@ -1851,10 +2251,15 @@
         "gid": "V-54695",
         "rid": "SV-68941r1_rule",
         "stig_id": "RTS-VTC 3425.00",
+        "gtitle": "RTS-VTC 3425",
         "fix_id": "F-59551r2_fix",
+        "rationale": null,
         "documentable": false,
         "ia_controls": "ECWM-1"
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-54695",
       "title": "Video teleconferencing system components Standard Mandatory DoD Notice and Consent Banner must be acknowledged by the user prior to logon or initial access.",
       "desc": "The operating system and remotely accessed information systems are required to display the DoD-approved system use notification message or banner before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. This ensures the legal requirements for auditing and monitoring are met. System use notification messages must be displayed when individuals log on to the information system. The approved DoD text must be used as specified in the DoD Instruction 8500.01 dated March 14, 2014.",
@@ -1870,9 +2275,14 @@
         "gid": "V-79051",
         "rid": "SV-93757r2_rule",
         "stig_id": "VVT/VTC 1906",
+        "gtitle": "Speaker operations policy",
         "fix_id": "F-85801r1_fix",
+        "rationale": null,
         "documentable": false
       },
+      "refs": [
+        "DPMS Target VTC Endpoint Site/System/Enclave"
+      ],
       "id": "V-79051",
       "title": "Video conferencing, Unified Capability (UC) soft client, and speakerphone speaker operations policy must prevent disclosure of sensitive or classified information over non-secure systems.",
       "desc": "Speakers used with Voice Video systems and devices may be heard by people and microphones with no relationship to the conference or call in progress. In open areas, conference audio may be overheard by others in the area without a need-to-know. A policy must be in place and enforced regarding the placement and use of speakers connected to secure Voice Video systems (video conferencing, EVoIP, ECVoIP, etc.) and secure Voice Video endpoints (STU-III, STE, etc.) located in areas or rooms where classified meetings, conversations, or work normally occur. The policy must be in accordance with NSA and DCI guidance and address, at a minimum, the following: - Location if instruments must be limited to sole-use offices, conference rooms, and similar areas that afford sound attenuation. - Notification to all room occupants of the use of the speaker. - Notification to all room occupants for awareness of the classification of conversations taking place. - The room occupant assuming responsibility for taking the necessary precautions to ensure that the classified discussion is not overheard. - Secure Voice Video endpoints must be configured to prevent speaker enablement in the non-secure mode. Speakerphone use on secure telecommunications systems requires special consideration regarding placement and operating policy. NSA S412 approves the installation/enablement of speakerphones on National Secure Telephone Systems (NSTS) and STU-III/STE instruments. The intent of speakerphone approval rests with the room occupant assuming responsibility for taking the necessary precautions to ensure that the classified discussion is not overheard by individuals outside the conversation who may not have a need-to-know for the information discussed and/or that the speakerphone will not pick up and transmit other classified conversations in the area that are not part of the call in progress.",

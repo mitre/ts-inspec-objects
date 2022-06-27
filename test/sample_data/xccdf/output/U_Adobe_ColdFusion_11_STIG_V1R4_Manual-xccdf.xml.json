@@ -11,9 +11,17 @@
         "gid": "V-62075",
         "rid": "SV-76565r1_rule",
         "stig_id": "CF11-01-000001",
+        "gtitle": "SRG-APP-000001-AS-000001",
         "fix_id": "F-67995r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62075",
       "title": "ColdFusion must limit concurrent sessions to the Administrator Console.",
       "desc": "The ColdFusion Administrator Console is used to manage the ColdFusion application server. The console allows a user to configure settings used by hosted applications, maintain connections to external resources, review logs, etc. By disallowing concurrent logons, a user has a method to determine if his account has been comprised (The user will be unable to log into the Administrator Console.) and deters a user from having an open idle session from different work stations which can also be used by an attacker.",
@@ -29,9 +37,17 @@
         "gid": "V-62349",
         "rid": "SV-76839r1_rule",
         "stig_id": "CF11-01-000004",
+        "gtitle": "SRG-APP-000015-AS-000010",
         "fix_id": "F-68269r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001453"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62349",
       "title": "ColdFusion must use cryptography mechanisms to protect the integrity of data sent to the PDF Service.",
       "desc": "Protecting data being sent to the PDF Service for PDF document creation protects the data from being read or modified before the document is created and returned to the requesting application. This protection can be implemented by using https over the plaintext transport protocol of http.",
@@ -47,9 +63,17 @@
         "gid": "V-62351",
         "rid": "SV-76841r1_rule",
         "stig_id": "CF11-01-000005",
+        "gtitle": "SRG-APP-000015-AS-000010",
         "fix_id": "F-68271r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001453"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62351",
       "title": "ColdFusion must implement cryptography mechanisms to protect the integrity of the remote access session.",
       "desc": "Protecting the data by not allowing unsecure non-FIPS 140-2 modules to be used and forcing FIPS 140-2 approved encryption modules limits the attack vector for an attacker. Several attacks, such as the POODLE attack and variants of the POODLE attack, take advantage of forcing an https communication to back down to an unsecure encryption module allowing the attacker to then read the encrypted data.",
@@ -65,9 +89,17 @@
         "gid": "V-62353",
         "rid": "SV-76843r1_rule",
         "stig_id": "CF11-01-000007",
+        "gtitle": "SRG-APP-000033-AS-000024",
         "fix_id": "F-68273r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62353",
       "title": "ColdFusion must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
       "desc": "Controlling what a user can see or change is important within the ColdFusion application server. Allowing non-privileged users to change administrative type data can cause errors within the system or DoS situations. By forcing users to identify themselves and then tying roles to that identity, an individual is presented with only those options needed to perform their duties.",
@@ -83,9 +115,17 @@
         "gid": "V-62355",
         "rid": "SV-76845r1_rule",
         "stig_id": "CF11-01-000010",
+        "gtitle": "SRG-APP-000295-AS-000263",
         "fix_id": "F-68275r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62355",
       "title": "ColdFusion must automatically terminate a user session after user inactivity.",
       "desc": "An attacker can take advantage of user sessions that are left open, thus bypassing the user authentication process. To thwart the vulnerability of open and unused user sessions, the application server must be configured to close the sessions when a configured condition or trigger event is met. Such an event is user inactivity. ColdFusion offers an inactivity parameter that allows the setting of a system-wide timeout for sessions. If this parameter is set too large, the usefulness of the parameter is lost. Care must be taken to not allow sessions to be open longer than needed, but also not set so short that users are unable to use the hosted applications.",
@@ -101,9 +141,17 @@
         "gid": "V-62357",
         "rid": "SV-76847r1_rule",
         "stig_id": "CF11-01-000011",
+        "gtitle": "SRG-APP-000295-AS-000263",
         "fix_id": "F-68277r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62357",
       "title": "ColdFusion must set a maximum session time-out value.",
       "desc": "An attacker can take advantage of user sessions that are left open, thus bypassing the user authentication process. To thwart the vulnerability of open and unused user sessions, the application server must be configured to close the sessions when a configured condition or trigger event is met. Such an event is user inactivity. ColdFusion offers an inactivity parameter that allows the setting system-wide for session timeout. ColdFusion also allows a developer to override the default timeout setting and set a new timeout. To control how large a developer can set the timeout to, a maximum setting is provided.",
@@ -119,9 +167,17 @@
         "gid": "V-62359",
         "rid": "SV-76849r1_rule",
         "stig_id": "CF11-01-000016",
+        "gtitle": "SRG-APP-000315-AS-000094",
         "fix_id": "F-68279r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002314"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62359",
       "title": "ColdFusion must control remote access to the Administrator Console.",
       "desc": "Application servers provide remote access capability and must be able to enforce remote access policy requirements or work in conjunction with enterprise tools designed to enforce policy requirements. Automated monitoring and control of remote access sessions allows organizations to detect cyber attacks and also ensure ongoing compliance with remote access policies by logging connection activities of remote users. By default, localhost and all IP addresses can access the Administrator Console. Depending on the authentication method (i.e. single password, separate user name and password per user, or no authentication needed), any user from any network is capable of accessing the console and making changes to the server configuration relying only on the authentication method configured for the installation. By limiting the IP addresses that can connect, the administration console can be hosted to a management network and only accessed via that network, further reducing the exposure of the Administrator Console.",
@@ -137,9 +193,17 @@
         "gid": "V-62361",
         "rid": "SV-76851r1_rule",
         "stig_id": "CF11-01-000017",
+        "gtitle": "SRG-APP-000315-AS-000094",
         "fix_id": "F-68281r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002314"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62361",
       "title": "ColdFusion must control remote access to Exposed Services.",
       "desc": "ColdFusion exposes many existing services as web services. These services, such as cfpdf, cfmail, and cfpop, can be accessed by users and applications written in other languages and technologies than ColdFusion CFML. To invoke the services, the client must be on the allowed IP list and have a user account with the proper privileges to the exposed services. Exposing these services expands the security risk and potential for compromise of the ColdFusion application server. If a need arises for these services, then the list of allowed IP addresses must be specified and limited to only those requiring access.",
@@ -155,9 +219,17 @@
         "gid": "V-62363",
         "rid": "SV-76853r1_rule",
         "stig_id": "CF11-01-000018",
+        "gtitle": "SRG-APP-000315-AS-000094",
         "fix_id": "F-68283r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002314"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62363",
       "title": "ColdFusion must control user access to Exposed Services.",
       "desc": "ColdFusion exposes many existing services as web services. These services, such as cfpdf, cfmail and cfpop, can be accessed by users and applications written in other languages and technologies than ColdFusion CFML. To invoke the services, the client must be on the allowed IP list and have a user account with the proper privileges to the exposed services. Exposing these services expands the security risk and potential for compromise of the ColdFusion application server. If a need arises for these services, then only those user accounts requiring access to perform the user's duties must be given access.",
@@ -173,9 +245,17 @@
         "gid": "V-62365",
         "rid": "SV-76855r1_rule",
         "stig_id": "CF11-02-000030",
+        "gtitle": "SRG-APP-000080-AS-000045",
         "fix_id": "F-68285r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000166"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62365",
       "title": "ColdFusion must require a username and password for access by each authorized user access.",
       "desc": "Non-repudiation of actions taken is required in order to maintain application integrity. Examples of particular actions taken by individuals include creating information, sending a message, approving information (e.g., indicating concurrence or signing a contract), and receiving a message. Non-repudiation protects individuals against later claims by an author of not having authored a particular document, a sender of not having transmitted a message, a receiver of not having received a message, or a signatory of not having signed a document. Enforcing non-repudiation of actions requires that each user be identified. Without this identification, events cannot be traced to a user, and a forensic investigation cannot be conducted to determine what exactly happened and who caused the event to occur. By forcing users to authenticate, each auditable event can be tied to a user, and a sequence of events for the user can be determined. This is critical when investigating an issue or an attack.",
@@ -191,9 +271,17 @@
         "gid": "V-62367",
         "rid": "SV-76857r1_rule",
         "stig_id": "CF11-02-000031",
+        "gtitle": "SRG-APP-000080-AS-000045",
         "fix_id": "F-68287r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000166"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62367",
       "title": "ColdFusion must require each user to authenticate with a unique account.",
       "desc": "Non-repudiation of actions taken is required in order to maintain application integrity. Examples of particular actions taken by individuals include creating information, sending a message, approving information (e.g., indicating concurrence or signing a contract), and receiving a message. Non-repudiation protects individuals against later claims by an author of not having authored a particular document, a sender of not having transmitted a message, a receiver of not having received a message, or a signatory of not having signed a document. Enforcing non-repudiation of actions requires that each user be uniquely identified. Without this identification, events cannot be traced to a particular user, and a forensic investigation cannot be conducted to determine what exactly happened and who caused the event to occur. By forcing each user to authenticate using a unique account, each auditable event can be tied to a user, and a sequence of events for the user can be determined. This is critical when investigating an issue or an attack.",
@@ -209,9 +297,17 @@
         "gid": "V-62369",
         "rid": "SV-76859r1_rule",
         "stig_id": "CF11-02-000032",
+        "gtitle": "SRG-APP-000086-AS-000048",
         "fix_id": "F-68289r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000174"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62369",
       "title": "When ColdFusion is configured in a clustered configuration, ColdFusion must be configured to write log records from the clustered system components into a system-wide log trail that can be correlated.",
       "desc": "Log generation and log records can be generated from various components within the application server. The list of logged events is the set of events for which logs are to be generated. This set of events is typically a subset of the list of all events for which the system is capable of generating log records (e.g., logable events, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, filenames involved, and access control or flow control rules invoked). The events occurring must be time-correlated in order to conduct accurate forensic analysis. In addition, the correlation must meet certain tolerance criteria. For instance, DoD may define that the time stamps of different logged events must not differ by any amount greater than ten seconds. It is also acceptable for the application server to utilize an external logging tool that provides this capability.",
@@ -227,9 +323,17 @@
         "gid": "V-62371",
         "rid": "SV-76861r1_rule",
         "stig_id": "CF11-02-000034",
+        "gtitle": "SRG-APP-000090-AS-000051",
         "fix_id": "F-68291r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000171"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62371",
       "title": "ColdFusion must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which logable events are to be logged.",
       "desc": "ColdFusion utilizes role-based access controls in order to specify those individuals who are able to configure logable events. Allowing users other than the ISSM and appointed individuals access to turn logged events on or off allows a user to mask their actions by disabling logging. By enabling excessive logging or by enabling debugging, a user can generate logged events containing information that can be used to later attack the system or gain access to Personally Identifiable Information (PII).",
@@ -245,9 +349,17 @@
         "gid": "V-62373",
         "rid": "SV-76863r1_rule",
         "stig_id": "CF11-02-000040",
+        "gtitle": "SRG-APP-000097-AS-000060",
         "fix_id": "F-68293r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000132"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62373",
       "title": "ColdFusion must log scheduled tasks.",
       "desc": "Application server logging capability is critical for accurate forensic analysis. Without sufficient and accurate information, a correct replay of the events cannot be determined. Ascertaining the correct location or process within the application server where the events occurred is important during forensic analysis. To determine where an event occurred, the log data must contain data such as application components, modules, session identifiers, filenames, host names, and functionality. ColdFusion inherently logs the location of events that take place during the normal operation of the application server, but the Executive task scheduler is not logged by default. Logging the execution of a task through the scheduler helps the administrator understand how a task was executed and also aides the administrator recognize if unauthorized scheduled tasks have been created.",
@@ -263,9 +375,17 @@
         "gid": "V-62375",
         "rid": "SV-76865r1_rule",
         "stig_id": "CF11-02-000049",
+        "gtitle": "SRG-APP-000118-AS-000078",
         "fix_id": "F-68295r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000162"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62375",
       "title": "The ColdFusion log information must be protected from any type of unauthorized read access through the Administrator Console.",
       "desc": "Allowing any user to view log messages provides information to individuals that may be used to compromise the system. This information may provide system design, user access/IP addresses, interconnected systems, and security settings such as encryption used and version numbers. Controlling read access to this data, either through the Administrator Console or through the OS, must be controlled or limited to only those individuals who need access to fulfill their responsibilities.",
@@ -281,9 +401,17 @@
         "gid": "V-62377",
         "rid": "SV-76867r1_rule",
         "stig_id": "CF11-02-000050",
+        "gtitle": "SRG-APP-000118-AS-000078",
         "fix_id": "F-68297r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000162"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62377",
       "title": "The ColdFusion log information must be protected from any type of unauthorized read access by having file permissions set properly.",
       "desc": "Allowing any user to view log messages provides information to individuals that may be used to compromise the system. This information may provide system design, user access/IP addresses, interconnected systems, and security settings such as encryption used and version numbers. Controlling read access to this data, either through the Administrator Console or through the OS, must be controlled or limited to only those individuals who need access to fulfill their responsibilities.",
@@ -299,9 +427,17 @@
         "gid": "V-62379",
         "rid": "SV-76869r1_rule",
         "stig_id": "CF11-02-000051",
+        "gtitle": "SRG-APP-000119-AS-000079",
         "fix_id": "F-68299r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000163"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62379",
       "title": "The ColdFusion log information must be protected from any type of unauthorized modification by having file permissions set properly.",
       "desc": "Allowing any user to modify log messages provides a method for an attacker to hide his attack and go unnoticed. Log modification also makes forensic investigation difficult, if not impossible, as the information needed to recreate the event is either deleted or modified to hide what actions took place. Users are unable to modify log data through the Administrator Console, so the protection from modification is only relevant by enforcing protections from modification at the OS level. This is performed by properly setting file permissions and enforcing user logons that match each user's job role.",
@@ -317,9 +453,17 @@
         "gid": "V-62381",
         "rid": "SV-76871r1_rule",
         "stig_id": "CF11-02-000052",
+        "gtitle": "SRG-APP-000120-AS-000080",
         "fix_id": "F-68301r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000164"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62381",
       "title": "The ColdFusion log information must be protected from any type of unauthorized deletion through the Administrator Console.",
       "desc": "When a system is attacked, one of the tasks of the attacker is to cover his tracks by deleting log files or log data. This enables the attacker to go unnoticed and to make later forensic analysis of the attack difficult, if not impossible. To protect the log information from deletion and discover the attacker quickly, the log files must be protected. This protection must take place at both the Administrator Console and at the OS level. Within the Administrator Console, the protection can be performed by giving users the proper roles and only giving log deletion to those that need that capability to perform their job duties. At the OS level, protecting the logs from deletion is performed by assigned the proper privileges to the log files and also giving OS users limited roles.",
@@ -335,9 +479,17 @@
         "gid": "V-62383",
         "rid": "SV-76873r1_rule",
         "stig_id": "CF11-02-000053",
+        "gtitle": "SRG-APP-000120-AS-000080",
         "fix_id": "F-68303r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000164"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62383",
       "title": "The ColdFusion log information must be protected from any type of unauthorized deletion by having file permissions set properly.",
       "desc": "When a system is attacked, one of the tasks of the attacker is to cover his tracks by deleting log files or log data. This enables the attacker to go unnoticed and to make later forensic analysis of the attack difficult, if not impossible. To protect the log information from deletion and discover the attacker quickly, the log files must be protected. This protection must take place at both the Administrator Console and at the OS level. Within the Administrator Console, the protection can be performed by giving users the proper roles and only giving log deletion to those that need that capability to perform their job duties. At the OS level, protecting the logs from deletion is performed by assigned the proper privileges to the log files and also giving OS users limited roles.",
@@ -353,9 +505,17 @@
         "gid": "V-62385",
         "rid": "SV-76875r1_rule",
         "stig_id": "CF11-02-000057",
+        "gtitle": "SRG-APP-000125-AS-000084",
         "fix_id": "F-68305r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001348"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62385",
       "title": "ColdFusion must send log records to the operating system logging facility.",
       "desc": "Protection of log data includes assuring log data is not accidentally lost or deleted. By sending some of the log messages to the operating system logging facilities, these log messages become part of the OS log history, become part of the log review performed by the OS administrator, and become part of the backup of OS log data. Note: This feature is only available for Linux installations.",
@@ -371,9 +531,17 @@
         "gid": "V-62387",
         "rid": "SV-76877r1_rule",
         "stig_id": "CF11-02-000064",
+        "gtitle": "SRG-APP-000357-AS-000038",
         "fix_id": "F-68307r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001849"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62387",
       "title": "ColdFusion must allocate log record storage capacity in accordance with organization-defined log record storage requirements.",
       "desc": "The proper management of log records not only dictates proper archiving processes and procedures be established, it also requires allocating enough storage space to maintain the logs online for a defined period of time. If adequate online log storage capacity is not maintained, intrusion monitoring, security investigations, and forensic analysis can be negatively affected. It is important to keep a defined amount of logs online and readily available for investigative purposes. The logs may be stored on the application server until they can be archived to a log system or, in some instances, a Storage Area Network (SAN). Regardless of the method used, log record storage capacity must be sufficient to store log data when the data cannot be off-loaded to a log system or a SAN. ColdFusion handles logs by allowing the administrator to specify a log file size and how many archives to keep online. This allows the administrator to correctly size the storage needed to meet the requirements of the organization for how log audit files should be available online and configure the storage needed to meet the requirement before off-loading archives to off-line storage.",
@@ -389,9 +557,17 @@
         "gid": "V-62389",
         "rid": "SV-76879r1_rule",
         "stig_id": "CF11-02-000065",
+        "gtitle": "SRG-APP-000358-AS-000064",
         "fix_id": "F-68309r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001851"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62389",
       "title": "ColdFusion log records must be off-loaded onto a different system or media from the system being logged.",
       "desc": "Information system logging capability is critical for accurate forensic analysis. Off-loading is a common process in information systems with limited log storage capacity. Centralized management of log records provides for efficiency in maintenance and management of records, as well as the backup and archiving of those records. Application servers and their related components are required to off-load log records on to a different system or media than the system being logged. ColdFusion offers the capability to set the number of archived log files to keep before overwriting the file along with the maximum file size before generating an archive. This allows the administrator to set up a scheduled task or a centralized log management system to pull the log files.",
@@ -407,9 +583,17 @@
         "gid": "V-62391",
         "rid": "SV-76881r1_rule",
         "stig_id": "CF11-02-000079",
+        "gtitle": "SRG-APP-000515-AS-000203",
         "fix_id": "F-68311r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001851"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62391",
       "title": "ColdFusion logs must, at a minimum, be transferred simultaneously for interconnected systems and transferred weekly for standalone systems.",
       "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Protecting log data is important during a forensic investigation to ensure investigators can track and understand what may have occurred. ColdFusion does not offer an automated mechanism to off-load logs, but ColdFusion does have the capability to create archive log files. By using the archive capability, off-loading can be set up using a weekly scheduled task for standalone systems. For interconnected systems, applications such as syslog on Linux can be used to off-load data simultaneously.",
@@ -425,9 +609,17 @@
         "gid": "V-62393",
         "rid": "SV-76883r1_rule",
         "stig_id": "CF11-02-000080",
+        "gtitle": "SRG-APP-000118-AS-000078",
         "fix_id": "F-68313r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000162"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62393",
       "title": "The ColdFusion log information must be protected from any type of unauthorized read access by having file ownership set properly.",
       "desc": "Allowing any user to view log messages provides information to individuals that may be used to compromise the system. This information may provide system design, user access/IP addresses, interconnected systems, and security settings such as encryption used and version numbers. Controlling read access to this data, either through the Administrator Console or through the OS, must be controlled or limited to only those individuals who need access to fulfill their responsibilities.",
@@ -443,9 +635,17 @@
         "gid": "V-62395",
         "rid": "SV-76885r1_rule",
         "stig_id": "CF11-02-000081",
+        "gtitle": "SRG-APP-000119-AS-000079",
         "fix_id": "F-68315r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000163"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62395",
       "title": "The ColdFusion log information must be protected from any type of unauthorized modification by having file ownership set properly.",
       "desc": "Allowing any user to modify log messages provides a method for an attacker to hide his attack and go unnoticed. Log modification also makes forensic investigation difficult, if not impossible, as the information needed to recreate the event is either deleted or modified to hide what actions took place. Users are unable to modify log data through the Administrator Console, so the protection from modification is only relevant by enforcing protections from modification at the OS level. This is performed by properly setting file permissions and enforcing user logons that match each user's job role.",
@@ -461,9 +661,17 @@
         "gid": "V-62397",
         "rid": "SV-76887r1_rule",
         "stig_id": "CF11-02-000082",
+        "gtitle": "SRG-APP-000120-AS-000080",
         "fix_id": "F-68317r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000164"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62397",
       "title": "The ColdFusion log information must be protected from any type of unauthorized deletion by having file ownership set properly.",
       "desc": "When a system is attacked, one of the tasks of the attacker is to cover his tracks by deleting log files or log data. This enables the attacker to go unnoticed and to make later forensic analysis of the attack difficult, if not impossible. To protect the log information from deletion and discover the attacker quickly, the log files must be protected. This protection must take place at both the Administrator Console and at the OS level. Within the Administrator Console, the protection can be performed by giving users the proper roles and only giving log deletion to those that need that capability to perform their job duties. At the OS level, protecting the logs from deletion is performed by assigned the proper privileges to the log files and also giving OS users limited roles.",
@@ -479,9 +687,17 @@
         "gid": "V-62399",
         "rid": "SV-76889r1_rule",
         "stig_id": "CF11-03-000091",
+        "gtitle": "SRG-APP-000133-AS-000092",
         "fix_id": "F-68319r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62399",
       "title": "ColdFusion must limit applications from changing shared Java components.",
       "desc": "Application servers have the ability to specify that the hosted applications utilize shared libraries. Within ColdFusion, these shared libraries are often Java components along with server settings. By allowing programmers or attackers to write CFML code that can directly access these components and settings, the programmer can change how shared Java components work and create new Java components. By disabling this option, the programmer is unable to read or modify administration and configuration information for the server and shared Java components.",
@@ -497,9 +713,17 @@
         "gid": "V-62401",
         "rid": "SV-76891r1_rule",
         "stig_id": "CF11-03-000092",
+        "gtitle": "SRG-APP-000133-AS-000092",
         "fix_id": "F-68321r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62401",
       "title": "ColdFusion must limit privileges, within the Administrator Console, to change the software resident within software libraries.",
       "desc": "Controlling the overall security posture of the server encompasses controlling the patches and versions of the software running within the production environment. Patches are installed to fix security and bug issues. Vendors will often supply a feature to uninstall the patch in the event the patch does not install correctly, if the patch causes issues with hosted applications, or if the patch contains issues not found during testing. The uninstall feature is meant to be used by an SA to maintain a secure and stable system. In the event an attacker gains access to the uninstall functionality, he can then attempt to revert the system to an unsecure version which may have known and documented attacks that can be successful to compromise ColdFusion. To protect against this type of attack and to further define roles for users, access to the patch management functionality is important. Proper protection is performed through assigning the appropriate roles to the users of the Administrator Console and through the least privileged permissions assigned at the OS level.",
@@ -515,9 +739,17 @@
         "gid": "V-62403",
         "rid": "SV-76893r1_rule",
         "stig_id": "CF11-03-000093",
+        "gtitle": "SRG-APP-000133-AS-000092",
         "fix_id": "F-68323r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62403",
       "title": "ColdFusion must protect software libraries from being changed by OS users.",
       "desc": "Controlling the overall security posture of the server encompasses controlling the patches and versions of the software running within the production environment. Patches are installed to fix security and bug issues. Vendors will often supply a feature to uninstall the patch in the event the patch does not install correctly, if the patch causes issues with hosted applications, or if the patch contains issues not found during testing. The uninstall feature is meant to be used by an SA to maintain a secure and stable system. In the event an attacker gains access to the uninstall functionality, he can then attempt to revert the system to an unsecure version which may have known and documented attacks that can be successful to compromise ColdFusion. To protect against this type of attack and to further define roles for users, access to the patch management functionality is important. Proper protection is performed through assigning the appropriate roles to the users of the Administrator Console and through the least privileged permissions assigned at the OS level.",
@@ -533,9 +765,17 @@
         "gid": "V-62405",
         "rid": "SV-76895r1_rule",
         "stig_id": "CF11-03-000096",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68325r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62405",
       "title": "ColdFusion must only allow approved file extensions.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. One area of concern is the file types that can be included in cfm and cfml files by programmers. To control what types of technologies are used in the development of hosted applications, a default whitelist can be created and approved by the ISSO. This list includes only those file extensions that are used by the hosted applications. By default, cfm and cfml are included and do not have to be specified. The list must not contain the wildcard string \"*.*\".",
@@ -551,9 +791,17 @@
         "gid": "V-62407",
         "rid": "SV-76897r1_rule",
         "stig_id": "CF11-03-000097",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68327r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62407",
       "title": "ColdFusion must disable Flash Remoting support.",
       "desc": "Application servers provide a myriad of differing processes, features and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. Flash Remoting allows a Flash client to connect to the ColdFusion server and invoke ColdFusion Components (CFCs). Allowing this service to be enabled when not needed by hosted applications and when ColdFusion server monitoring is not being used provides an avenue for an attacker to gain access to the server.",
@@ -569,9 +817,17 @@
         "gid": "V-62409",
         "rid": "SV-76899r1_rule",
         "stig_id": "CF11-03-000098",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68329r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62409",
       "title": "ColdFusion must disable the In-Memory File System.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. ColdFusion offers an in-memory file system. This feature can be used to have dynamic code execute quickly which in turns enables an application to execute quicker. This feature can also be used by an attacker to execute dynamic code that is erased and unrecoverable on system reboot making forensic analysis impossible.",
@@ -587,9 +843,17 @@
         "gid": "V-62411",
         "rid": "SV-76901r1_rule",
         "stig_id": "CF11-03-000099",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68331r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62411",
       "title": "ColdFusion must have Event Gateway Services disabled.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. Event Gateway Services are used to pass events from external sources to ColdFusion components that are specified. Since this gateway is accepting events from external sources, a listener must be present. When enabled, along with the listener, memory, queues, and processes are available for gateway processes. These resources can be used by an attacker and should be disabled if the feature is not being used for hosted applications.",
@@ -605,9 +869,17 @@
         "gid": "V-62413",
         "rid": "SV-76903r1_rule",
         "stig_id": "CF11-03-000100",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68333r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62413",
       "title": "ColdFusion must have Remote Development Services (RDS) disabled.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. Remote Development Services (RDS) is used in a development environment to allow authenticated users access to the server using special features within code editors like Dreamweaver, HomeSite+, ColdFusion Studio, and Eclipse to obtain information from the server. For example, developers can determine what data sources exist, query them, build code based on them, and more. RDS also enables access from within the editors to files on the server (even remotely) over HTTP, as an alternative to FTP. This feature is not meant for production environments.",
@@ -623,9 +895,17 @@
         "gid": "V-62415",
         "rid": "SV-76905r1_rule",
         "stig_id": "CF11-03-000101",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68335r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62415",
       "title": "ColdFusion must have Remote Adobe LiveCycle Data Management access disabled.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. Remote Adobe LiveCycle Data Management access allows LiveCycle Data Services ES to connect to the ColdFusion server through RMI and use CFCs to read and update data that supports a Flex application. If this feature is not needed for hosted applications and is enabled, an attacker could use this feature to compromise the ColdFusion server.",
@@ -641,9 +921,17 @@
         "gid": "V-62417",
         "rid": "SV-76907r1_rule",
         "stig_id": "CF11-03-000102",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68337r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62417",
       "title": "ColdFusion must have the WebSocket Service disabled.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. The WebSocket Service is used to develop real-time applications for stock, charting, online gaming, social networking, dashboard for various purposes, and monitoring. The service uses http or https for communication either to a proxy server or to the built-in WebSocket Server. When the service is enabled and not used, resources are used but set idle. To allow the idle resources to be used for other services, if the WebSocket service is not be used by hosted applications, the service must be disabled.",
@@ -659,9 +947,17 @@
         "gid": "V-62419",
         "rid": "SV-76909r1_rule",
         "stig_id": "CF11-03-000103",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68339r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62419",
       "title": "ColdFusion must have example data sources removed.",
       "desc": "ColdFusion is installed with sample data services, gateway services, and collections. These can be used in a development environment to learn how to use and develop applications and services, but these samples are not tested and patched for security issues. Allowing them to be available on a production system provides a gateway to an attacker to the application server and to those systems connected to ColdFusion. To alleviate this issue, sample code and services must be deleted.",
@@ -677,9 +973,17 @@
         "gid": "V-62421",
         "rid": "SV-76911r1_rule",
         "stig_id": "CF11-03-000104",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68341r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62421",
       "title": "The ColdFusion built-in TomCat Web Server must be disabled.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. The built-in TomCat Web Server is used to host the Administrator Console and is used for initial setup. While the built-in server can be used to continually host the Administrator Console, this is not the best practice since the server is not guaranteed to be patched and upgraded, implementing TLS is not well documented, allowing for poor implementations, and commercial web servers offer better logging. To enable the Administrator Console to still operate and disable the built-in TomCat Web Server, the Administrator Console application must be moved to the web server (i.e., IIS, Apache, IBM HTTP Server, etc.) hosting the ColdFusion applications. Moving the Administrator Console to Apache and IIS is well documented in the Adobe ColdFusion Lockdown Guide.",
@@ -695,9 +999,17 @@
         "gid": "V-62423",
         "rid": "SV-76913r1_rule",
         "stig_id": "CF11-03-000105",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68343r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62423",
       "title": "ColdFusion must have Remote Inspection disabled.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. Remote Inspection is used to debug mobile applications and may contain sensitive information. This feature may be necessary as applications are built and tested, but once in a production environment, this setting is not necessary for daily operations and must be disabled.",
@@ -713,9 +1025,17 @@
         "gid": "V-62425",
         "rid": "SV-76915r1_rule",
         "stig_id": "CF11-03-000106",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68345r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62425",
       "title": "ColdFusion must protect internal cookies from being updated by hosted applications.",
       "desc": "Application servers provide a myriad of differing processes, features, and functionalities. Some of these processes may be deemed to be unnecessary or too unsecure to run on a production DoD system. Allowing developers to override global session cookie security settings is used to allow a hosted application to change the security posture of the application server. This feature may be necessary as applications are built and tested, but once in a production environment, this functionality is not necessary for daily operations and must be disabled.",
@@ -731,9 +1051,17 @@
         "gid": "V-62427",
         "rid": "SV-76917r1_rule",
         "stig_id": "CF11-03-000107",
+        "gtitle": "SRG-APP-000142-AS-000014",
         "fix_id": "F-68347r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62427",
       "title": "ColdFusion must prohibit or restrict the use of nonsecure ports, protocols, modules, and/or services as defined in the PPSM CAL and vulnerability assessments.",
       "desc": "Some networking protocols may not meet organizational security requirements to protect data and components. ColdFusion may host a number of various features, such as the Administrator Console, data sources and various services. These features all run on TCPIP ports and protocols. This creates the potential that the vendor or ColdFusion administrator may choose to utilize port numbers or protocols that have been deemed unusable by the organization. When ports or protocols are used that are not secure or authorized by the organization, the ColdFusion feature must be reconfigured to use an authorized port and protocol. For a list of approved ports and protocols, reference the DoD ports and protocols web site at https://powhatan.iiie.disa.mil/ports/cal.html.",
@@ -749,9 +1077,17 @@
         "gid": "V-62429",
         "rid": "SV-76919r1_rule",
         "stig_id": "CF11-03-000108",
+        "gtitle": "SRG-APP-000380-AS-000088",
         "fix_id": "F-68349r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62429",
       "title": "ColdFusion must disable auto reloading of configuration files on file changes.",
       "desc": "When dealing with access restrictions pertaining to change control, it should be noted that any changes to the software and/or application server configuration can potentially have significant effects on the overall security of the system. Allowing ColdFusion to watch for configuration file changes and reloading the new configuration gives an attacker an easy way to make modifications and have those changes become part of the executing production system quickly.",
@@ -767,9 +1103,17 @@
         "gid": "V-62431",
         "rid": "SV-76921r1_rule",
         "stig_id": "CF11-03-000110",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-68351r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62431",
       "title": "The ColdFusion Root Administrator account must have a unique username.",
       "desc": "The ColdFusion Root Administrator account is an administrative account setup during the installation process. This account has privileges to view, update and delete data within the entire ColdFusion Administrator Console. The account is meant to be used to setup ColdFusion after installation, but should only be used in emergency situations once user accounts are created. The account is similar to the Administrator account in Windows or the root account in Linux. To help protect the account, the account username should not be admin or administrator. If setup with these usernames, an attacker already knows 50% of the information needed to gain access. A unique and not easily guessable username must be used to hinder the discovery of the account credentials.",
@@ -785,9 +1129,17 @@
         "gid": "V-62433",
         "rid": "SV-76923r1_rule",
         "stig_id": "CF11-03-000111",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-68353r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62433",
       "title": "ColdFusion must execute as a non-privileged user.",
       "desc": "Privileged user accounts are accounts that have access to all the system resources. These accounts are reserved for administrative users and applications that have a need for such unfettered access. Because ColdFusion does not need to run with access to all the system resources, the ColdFusion services must be setup to execute as unprivileged users. This protects server resources, OS hosted applications, and organization resources should the ColdFusion application server become compromised.",
@@ -803,9 +1155,17 @@
         "gid": "V-62435",
         "rid": "SV-76925r1_rule",
         "stig_id": "CF11-03-000112",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-68355r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62435",
       "title": "ColdFusion accounts with access to the Administrator Console must be approved.",
       "desc": "ColdFusion offers an Administrator Console that is used to setup ColdFusion. The console allows the administrator to setup user accounts, user privileges, logging, data sources, etc. These accounts, once setup, do not automatically lock after a set duration of inactivity or any other security event that would require automatic locking or deletion. This would enable an account for a user who either left the organization or changed job roles, to continue access the console until the account is manually deleted. To make certain that the user accounts are only those that are needed, the accounts must be approved by the ISSM.",
@@ -821,9 +1181,17 @@
         "gid": "V-62437",
         "rid": "SV-76927r1_rule",
         "stig_id": "CF11-03-000113",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-68357r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62437",
       "title": "ColdFusion must protect newly created objects.",
       "desc": "During operation, ColdFusion may create objects such as files to store parameters or log data, or pipes to share data between objects. When the objects are created, it is important that the newly created object has the correct permissions. This can be performed by assigning the proper umask value to the running process. For the ColdFusion service, the umask must be set to 007 or more restrictive.",
@@ -839,9 +1207,17 @@
         "gid": "V-62439",
         "rid": "SV-76929r1_rule",
         "stig_id": "CF11-03-000114",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-68359r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62439",
       "title": "ColdFusion must have Sandbox Security enabled.",
       "desc": "Application isolation allows multiple applications to run on the same hosting operating system, web server and application server. Typical reasons to isolate applications are to separate different application user bases, data security levels, protect application resources, and to give least privileges to each application to system resources. Application isolation will also contain an application that has been compromised from compromising other hosted applications. To allow sandboxing to be implemented, the feature must be enabled.",
@@ -857,9 +1233,17 @@
         "gid": "V-62441",
         "rid": "SV-76931r1_rule",
         "stig_id": "CF11-03-000115",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-68361r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62441",
       "title": "ColdFusion must have Sandboxes defined for application execution.",
       "desc": "Application isolation allows multiple applications to run on the same hosting operating system, web server and application server. Typical reasons to isolate applications are to separate different application user bases, data security levels, protect application resources, and to give least privileges to each application to system resources. Application isolation will also contain an application that has been compromised from compromising other hosted applications. To implement sandboxing, sandboxes must be setup to separate applications. Enabling the feature without implementing sandboxes does not secure the system.",
@@ -875,9 +1259,17 @@
         "gid": "V-62443",
         "rid": "SV-76933r1_rule",
         "stig_id": "CF11-03-000116",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-68363r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62443",
       "title": "ColdFusion must have the Default ScriptSrc Directory set to a non-default value.",
       "desc": "The scripts directory contains common javascript code that may be used by the hosted applications. This code is offered to help the developer with common data controls and functions aiding in the quick development of applications. Unfortunately, this code has also been known to have security vulnerabilities. Because of this, many of the ColdFusion hacking tools look for this directory in the default location searching for files with known vulnerabilities. By moving the directory to a non-default location, the hacking tools are unable to find the directory making it more difficult for the attacker.",
@@ -893,9 +1285,17 @@
         "gid": "V-62445",
         "rid": "SV-76935r1_rule",
         "stig_id": "CF11-03-000117",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-68365r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62445",
       "title": "ColdFusion must contain the most recent update.",
       "desc": "ColdFusion releases updates to ColdFusion 11 to add support, fix bugs and close security issues. Without the current update installed, the product may be unstable or become a target for an attacker who can take advantage of a known exploit. The updates, when available, must be tested and installed as soon as possible.",
@@ -911,9 +1311,17 @@
         "gid": "V-62447",
         "rid": "SV-76937r1_rule",
         "stig_id": "CF11-03-000118",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68367r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62447",
       "title": "ColdFusion must have example collections removed.",
       "desc": "ColdFusion is installed with sample data services, gateway services, and collections. These can be used in a development environment to learn how to use and develop applications and services, but these samples are not tested and patched for security issues. Allowing them to be available on a production system provides a gateway to an attacker to the application server and to those systems connected to ColdFusion. To alleviate this issue, sample code and services must be deleted.",
@@ -929,9 +1337,17 @@
         "gid": "V-62449",
         "rid": "SV-76939r1_rule",
         "stig_id": "CF11-03-000119",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-68369r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62449",
       "title": "ColdFusion must have example gateway instances removed.",
       "desc": "ColdFusion is installed with sample data services, gateway services, and collections. These can be used in a development environment to learn how to use and develop applications and services, but these samples are not tested and patched for security issues. Allowing them to be available on a production system provides a gateway to an attacker to the application server and to those systems connected to ColdFusion. To alleviate this issue, sample code and services must be deleted.",
@@ -947,9 +1363,17 @@
         "gid": "V-62451",
         "rid": "SV-76941r1_rule",
         "stig_id": "CF11-04-000128",
+        "gtitle": "SRG-APP-000153-AS-000104",
         "fix_id": "F-68371r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000770"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62451",
       "title": "ColdFusion must authenticate users individually.",
       "desc": "To assure individual accountability and prevent unauthorized access, application server users must be individually identified and authenticated. A group authenticator is a generic account used by multiple individuals. Use of a group authenticator alone does not uniquely identify individual users. ColdFusion is installed with a Root Administrator Account. This account is configured during the installation phase. This account should only be used for initial setup before user accounts are created and should not be used for day-to-day operations. When used as a group account, accountability, along with least privileges for the users, is lost.",
@@ -965,9 +1389,17 @@
         "gid": "V-62453",
         "rid": "SV-76943r1_rule",
         "stig_id": "CF11-04-000129",
+        "gtitle": "SRG-APP-000156-AS-000106",
         "fix_id": "F-68373r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001941"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62453",
       "title": "ColdFusion must provide security extensions to extend the SOAP protocol and provide secure authentication when accessing sensitive data.",
       "desc": "Application servers may provide a web services capability that could be leveraged to allow remote access to sensitive application data. Many web services utilize SOAP, which in turn utilizes XML and HTTP as a transport. Natively, SOAP does not provide security protections. As such, the application server must provide security extensions to enhance SOAP capabilities to ensure that secure authentication mechanisms are employed to protect sensitive data. The ws-security suite is a widely used and acceptable SOAP security extension. ColdFusion offers SOAP capabilities but does not offer any type of security for these services. In order to extend the security of the SOAP protocol, an administrator must install the ws-security suite to enhance SOAP through Java Web Services and configure the ws-security features within the new object. This new object then becomes the wrapper for the SOAP communication, securing the sensitive data.",
@@ -983,9 +1415,17 @@
         "gid": "V-62455",
         "rid": "SV-76945r1_rule",
         "stig_id": "CF11-04-000133",
+        "gtitle": "SRG-APP-000172-AS-000120",
         "fix_id": "F-68375r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000197"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62455",
       "title": "ColdFusion must transmit only encrypted representations of passwords for Flex Integration.",
       "desc": "Passwords need to be protected at all times, and encryption is the standard method for protecting passwords during transmission. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. ColdFusion offers RMI communication between Flex and ColdFusion. The communication between the two will require authentication data. When authentication data is transmitted, the data must be encrypted to protect it from discovery. This can be done by enabling RMI over SSL within the Administrator Console.",
@@ -1001,9 +1441,17 @@
         "gid": "V-62457",
         "rid": "SV-76947r1_rule",
         "stig_id": "CF11-04-000134",
+        "gtitle": "SRG-APP-000172-AS-000120",
         "fix_id": "F-68377r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000197"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62457",
       "title": "The ColdFusion Administrator Console must transmit only encrypted representations of passwords.",
       "desc": "Passwords need to be protected at all times, and encryption is the standard method for protecting passwords during transmission. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. ColdFusion uses username and password for users to authenticate to the Administrator Console. When these credentials are sent in plaintext, an attacker can capture the information and use the credentials to log on to the console, creating objects, connections, and accounts for later use. The attacker will also have access to information stored for connections to other systems that ColdFusion may be connected to for data retrieval.",
@@ -1019,9 +1467,17 @@
         "gid": "V-62459",
         "rid": "SV-76949r1_rule",
         "stig_id": "CF11-04-000135",
+        "gtitle": "SRG-APP-000172-AS-000120",
         "fix_id": "F-68379r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000197"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62459",
       "title": "ColdFusion must transmit only encrypted representations of passwords to the mail server.",
       "desc": "Passwords need to be protected at all times, and encryption is the standard method for protecting passwords during transmission. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. ColdFusion may use username/password to connect to a mail server. When this authentication method is used, it is important that the credentials be protected when transmitted by being encrypted. While TLS encryption is the preferred method by DoD, SSL can be used when the mail server does not offer any other method of encryption.",
@@ -1037,9 +1493,17 @@
         "gid": "V-62461",
         "rid": "SV-76951r1_rule",
         "stig_id": "CF11-04-000138",
+        "gtitle": "SRG-APP-000176-AS-000125",
         "fix_id": "F-68381r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000186"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62461",
       "title": "Only authenticated system administrators or the designated PKI Sponsor for ColdFusion must have access to ColdFusions private key.",
       "desc": "The cornerstone of PKI is the private key used to encrypt or digitally sign information. If the private key is stolen, this will lead to the compromise of the authentication and non-repudiation gained through PKI because the attacker can use the private key to digitally sign documents and can pretend to be the authorized user. Both the holders of a digital certificate and the issuing authority must protect the private keys. Java-based application servers, such as ColdFusion, utilize the Java keystore, which provides storage for cryptographic keys and certificates. ColdFusion uses the keystore to store private keys for ColdFusion WebSockets and for Flex Integration.",
@@ -1055,9 +1519,17 @@
         "gid": "V-62463",
         "rid": "SV-76953r1_rule",
         "stig_id": "CF11-05-000161",
+        "gtitle": "SRG-APP-000211-AS-000146",
         "fix_id": "F-68383r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62463",
       "title": "The ColdFusion Administrator Console must be hosted on a management network.",
       "desc": "ColdFusion consists of the Administrator Console and hosted applications. By separating the Administrator Console from hosted applications, the user must authenticate as a privileged user to the Administrator Console before being presented with management functionality. This prevents non-privileged users from having visibility to functions not available to the user. By limiting visibility, a compromised non-privileged account does not offer information to the attacker to functionality and information needed to further the attack on the application server. By hosting the Administrator Console on a management-only network, the console is protected from hosted application users, is isolated to only management devices, is not vulnerable to accidental discovery, and most management networks encrypt all traffic protecting management data from accidental disclosure.",
@@ -1073,9 +1545,17 @@
         "gid": "V-62465",
         "rid": "SV-76955r1_rule",
         "stig_id": "CF11-05-000162",
+        "gtitle": "SRG-APP-000211-AS-000146",
         "fix_id": "F-68385r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62465",
       "title": "The ColdFusion Administrator Console must be hosted in a management sandbox.",
       "desc": "ColdFusion consists of the Administrator Console and hosted applications. By separating the Administrator Console from hosted applications, the user must authenticate as a privileged user to the Administrator Console before being presented with management functionality. This prevents non-privileged users from having visibility to functions not available to the user. By limiting visibility, a compromised non-privileged account does not offer information to the attacker to functionality and information needed to further the attack on the application server. By hosting the Administrator Console within its own sandbox from other hosted applications, the administrative objects are protected from reuse and modification by the other hosted applications.",
@@ -1091,9 +1571,17 @@
         "gid": "V-62467",
         "rid": "SV-76957r1_rule",
         "stig_id": "CF11-05-000163",
+        "gtitle": "SRG-APP-000211-AS-000146",
         "fix_id": "F-68387r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62467",
       "title": "ColdFusion must disable creation of unnamed applications.",
       "desc": "ColdFusion allows applications to be named or unnamed. The application name allows the developer to scope the application or define a logical application and allows for the separation of applications. When an application is unnamed, the application scope corresponds to the ColdFusion JEE servlet context. This also means that the application session corresponds directly to the session object of the JEE application server. Having unnamed applications is only necessary when the ColdFusion pages must share application or session scope data with existing JSP pages and servlets. Disabling the ability for unnamed applications allows the Administrator Console and all the other hosted applications to be isolated from each other.",
@@ -1109,9 +1597,17 @@
         "gid": "V-62469",
         "rid": "SV-76959r1_rule",
         "stig_id": "CF11-05-000164",
+        "gtitle": "SRG-APP-000211-AS-000146",
         "fix_id": "F-68389r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62469",
       "title": "ColdFusion must not allow application variables to be added to Servlet Context.",
       "desc": "ColdFusion allows applications to add application variables to the Servlet Context. This allows an application to add data or change configuration data for all hosted applications. By sharing data across applications, the applications are no longer isolated with one application affecting other applications. By disabling this capability, the hosted applications, including the Administrator Console, are isolated.",
@@ -1127,9 +1623,17 @@
         "gid": "V-62471",
         "rid": "SV-76961r1_rule",
         "stig_id": "CF11-05-000167",
+        "gtitle": "SRG-APP-000223-AS-000150",
         "fix_id": "F-68391r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001664"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62471",
       "title": "ColdFusion must enable UUID for session identifier generation.",
       "desc": "Unique session IDs are the opposite of sequentially generated session IDs, which can be easily guessed by an attacker. Unique session identifiers help to reduce predictability of session identifiers. Unique session IDs address man-in-the-middle attacks, including session hijacking or insertion of false information into a session. If the attacker is unable to identify or guess the session information related to pending application traffic, they will have more difficulty in hijacking the session or otherwise manipulating valid sessions. ColdFusion offers session ID randomness and uniqueness by enabling UUID for the session ID. Without this option enabled, session values are sequential and become easy to hijack through guessing.",
@@ -1145,9 +1649,17 @@
         "gid": "V-62473",
         "rid": "SV-76963r1_rule",
         "stig_id": "CF11-05-000168",
+        "gtitle": "SRG-APP-000223-AS-000150",
         "fix_id": "F-68393r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001664"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62473",
       "title": "ColdFusion must use J2EE session variables.",
       "desc": "Unique session IDs are the opposite of sequentially generated session IDs, which can be easily guessed by an attacker. Unique session identifiers help to reduce predictability of session identifiers. Unique session IDs address man-in-the-middle attacks, including session hijacking or insertion of false information into a session. If the attacker is unable to identify or guess the session information related to pending application traffic, they will have more difficulty in hijacking the session or otherwise manipulating valid sessions. By enabling J2EE session management, each session is given a unique and non-sequential session id which is shared between the JVM and the ColdFusion application allowing for easier session management. J2EE session management stores the session data within a cookie stored in memory which will only exist while the session is valid. When J2EE sessions management is not used, the cookie is stored on the hard drive allowing for a cookie that can be easily harvested by an attacker.",
@@ -1163,9 +1675,17 @@
         "gid": "V-62475",
         "rid": "SV-76965r1_rule",
         "stig_id": "CF11-05-000169",
+        "gtitle": "SRG-APP-000223-AS-000150",
         "fix_id": "F-68395r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001664"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62475",
       "title": "ColdFusion must set session cookies as browser session cookies.",
       "desc": "Generating a unique session identifier for each session inhibits an attacker from using an already authenticated session identifier that has not been invalidated. If an attacker is able to use an authenticated session, the attacker is given the privileges of the user who created the session. This may allow the attacker to generate user accounts for later use, change configuration settings, deploy an application or change application modules and code for already hosted applications, or see usernames for trusted relationships to other resources. It is important that each new session is given a new and unique session identifier and that old identifiers are discarded quickly. ColdFusion offers the capability to set session Cookies and all other Cookies to browser cookies. This means all cookies become invalid once the browser window is closed instead of setting a time to live to the cookie. Setting the cookies to browser cookies will ensure the session identifier is invalidated once the user ends the session through closing the browser.",
@@ -1181,9 +1701,17 @@
         "gid": "V-62477",
         "rid": "SV-76967r1_rule",
         "stig_id": "CF11-05-000173",
+        "gtitle": "SRG-APP-000225-AS-000154",
         "fix_id": "F-68397r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001190"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62477",
       "title": "ColdFusion must provide a clustering capability.",
       "desc": "Failure to a known secure state helps prevent a loss of confidentiality, integrity, or availability in the event of a failure of the information system or a component of the system. When application failure is encountered, preserving application state facilitates application restart and return to the operational mode of the organization with less disruption of mission/business processes. Clustering of multiple ColdFusion servers is a common approach to providing fail-safe application availability when the system criticality requires redundancy.",
@@ -1199,9 +1727,17 @@
         "gid": "V-62479",
         "rid": "SV-76969r2_rule",
         "stig_id": "CF11-05-000178",
+        "gtitle": "SRG-APP-000427-AS-000264",
         "fix_id": "F-68399r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002470"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62479",
       "title": "ColdFusion must only allow the use of DoD PKI-established certificate authorities for verification of the establishment of protected sessions.",
       "desc": "Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DoD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DoD-approved CA, trust of this CA has not been established. The DoD will only accept PKI certificates obtained from a DoD-approved internal or external certificate authority. Reliance on CAs for the establishment of secure sessions includes, for example, the use of SSL/TLS certificates. The application server must only allow the use of DoD PKI-established certificate authorities for verification. DoD-approved CAs can be found in the “installroot” tool on https://iase.disa.mil or in the Windows certificate store of the Windows Secure Host Baseline image. ColdFusion uses the underlying JVM and keystore for storing and certificates and for use within connections for data transfer. These certificates must be checked to ensure the certificates are from DoD PKI-established certificate authorities.",
@@ -1217,9 +1753,17 @@
         "gid": "V-62481",
         "rid": "SV-76971r1_rule",
         "stig_id": "CF11-05-000181",
+        "gtitle": "SRG-APP-000435-AS-000069",
         "fix_id": "F-68401r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62481",
       "title": "ColdFusion, when part of a mission critical system, must be in a high-availability (HA) cluster.",
       "desc": "A mission critical system is a system that handles data vital to the organization's operational readiness or effectiveness of deployed or contingency forces. A mission critical system must maintain the highest level of integrity and availability. By High Availability (HA) clustering the ColdFusion application server, the hosted application and data are given a platform that is load-balanced and provides high-availability. Most HA clusters consist of two nodes, which is the minimum required for redundancy, but HA clusters can consist of many more nodes. ColdFusion does offer a clustering capability that must be used when the ColdFusion application server is part of a mission critical system.",
@@ -1235,9 +1779,17 @@
         "gid": "V-62483",
         "rid": "SV-76973r1_rule",
         "stig_id": "CF11-05-000182",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68403r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62483",
       "title": "ColdFusion must not store user information in the server registry.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. One way to cause a DoS for ColdFusion is to fill the server hard drive with data or to cause registry purges on a large registry. Filling the drive with data can be achieved if applications have client management enabled and client data is stored within the registry. If a scheduled purge is performed on the registry, ColdFusion must load the entire registry into memory and look at each entry to determine if the entry needs to be purged. The purging process can use all of the available memory and 100% of the CPU for a process that may only delete a few entries. Also, the registry is typically located on the system partition. Because of these factors, the use of the registry to store client sessions must not be used.",
@@ -1253,9 +1805,17 @@
         "gid": "V-62485",
         "rid": "SV-76975r1_rule",
         "stig_id": "CF11-05-000183",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68405r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62485",
       "title": "ColdFusion must limit the maximum number of Flash Remoting requests.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. One way to cause a DoS for ColdFusion is to exhaust resources by using services that are not being monitored because of their nonuse by hosted applications. One of these services is Flash Remoting. Flash Remoting is a service that allows flash applications to interact with ColdFusion pages and, if being used, the number of simultaneous requests should be tuned using load testing to find the optimal value for the setting. When not in use, this setting must be set to 1.",
@@ -1271,9 +1831,17 @@
         "gid": "V-62487",
         "rid": "SV-76977r1_rule",
         "stig_id": "CF11-05-000184",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68407r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62487",
       "title": "ColdFusion must limit the SQL commands available.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. Allowing hosted applications to execute SQL commands that create tables, change permissions on objects, create stored procedures, or drop objects allow an attacker to put the hosted application into a posture where it may not work correctly, display error messages that contains sensitive data that was not tested for during development, or cause an application to be unable to authenticate users. Any of these situations puts the system into a situation where the user is denied service to the application. Giving applications only those SQL commands needed to operate on data reduces this risk.",
@@ -1289,9 +1857,17 @@
         "gid": "V-62489",
         "rid": "SV-76979r1_rule",
         "stig_id": "CF11-05-000185",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68409r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62489",
       "title": "ColdFusion must set a query timeout for Data Sources.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. One way to cause a DoS for ColdFusion is to exhaust resources by executing a query that will never return or timeout. By having no timeout set, this type of DoS would be available to an attacker. By setting a value greater than 0 (0 means no timeout), the query would be stopped and the resources released.",
@@ -1307,9 +1883,17 @@
         "gid": "V-62491",
         "rid": "SV-76981r2_rule",
         "stig_id": "CF11-05-000186",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68411r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62491",
       "title": "ColdFusion must limit the maximum number of Web Service requests.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. One way to cause a DoS for ColdFusion is to exhaust resources by using services that are not being monitored because of their nonuse by hosted applications. One of these services is Web Services. Web Services are services that allow an application to publish SOAP web services and when being used, the number of simultaneous requests should be tuned using load testing to find the optimal value for the setting. When not in use, this setting must be set to 1.",
@@ -1325,9 +1909,17 @@
         "gid": "V-62493",
         "rid": "SV-76983r2_rule",
         "stig_id": "CF11-05-000187",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68413r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62493",
       "title": "ColdFusion must limit the maximum number of CFC function requests.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. One way to cause a DoS for ColdFusion is to exhaust resources by using services that are not being monitored because of their nonuse by hosted applications. One of these services is remote ColdFusion Component (CFC) requests. Remote CFC requests allow ColdFusion components to be called directly from an http/https url. If this feature is being used, the number of simultaneous requests should be tuned using load testing to find the optimal value for the setting. When the feature is not in use, the maximum number must be set to 1.",
@@ -1343,9 +1935,17 @@
         "gid": "V-62495",
         "rid": "SV-76985r1_rule",
         "stig_id": "CF11-05-000188",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68415r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62495",
       "title": "ColdFusion must limit the maximum number of simultaneous Report threads.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. Report threads are used to process reports concurrently. Since reporting in most applications is a process that is not time sensitive or heavily used, this setting should be minimized to minimize resource use on the application server and to minimize a method that could be used to exhaust resources by an attacker. Unless reporting is heavily used, the number of simultaneous report threads must be set to 1.",
@@ -1361,9 +1961,17 @@
         "gid": "V-62497",
         "rid": "SV-76987r1_rule",
         "stig_id": "CF11-05-000189",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68417r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62497",
       "title": "ColdFusion must limit the maximum number of threads available for CFTHREAD.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. One way to cause a DoS for ColdFusion is to exhaust resources by using services that are not being monitored because of their nonuse by hosted applications. One of these services is the CFTHREAD function. CFTHREAD allows a programmer to create threads of code that execute independently. If this feature is being used, the maximum number of threads should be tuned. If set to high, this may lead to a context-switching situation. When this feature is not in use, the maximum number of threads must be 1.",
@@ -1379,9 +1987,17 @@
         "gid": "V-62499",
         "rid": "SV-76989r2_rule",
         "stig_id": "CF11-05-000190",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68419r3_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62499",
       "title": "ColdFusion must set a timeout for requests.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. The \"Timeout Requests after\" setting is used to terminate requests that have not been fulfilled within the set time. This parameter prevents unusually long requests from occupying server resources and impairing performance or denying other requests. This setting is system dependent and may be changed based on the performance capabilities of the underlying system hardware. Unless custom system tuning parameters are required and specifically documented, this value should be set to \"5\" or less. The vendor also recommends the \"Timeout requests waiting in queue after\" setting be set to the same value.",
@@ -1397,9 +2013,17 @@
         "gid": "V-62501",
         "rid": "SV-76991r1_rule",
         "stig_id": "CF11-05-000191",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68421r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62501",
       "title": "ColdFusion must set a timeout for logins.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. The \"Login Timeout\" setting is used to terminate login attempts on data sources that have not been fulfilled in the set time. This parameter prevents unusually long logins from occupying server resources and impairing performance. This value should be set to 5 or less and be less than or equal to the value for \"Timeout Requests after\" setting.",
@@ -1415,9 +2039,17 @@
         "gid": "V-62503",
         "rid": "SV-76993r1_rule",
         "stig_id": "CF11-05-000192",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68423r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62503",
       "title": "ColdFusion must limit the time-out for requests waiting in the queue.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. By setting a timeout for requests in queue, the queue is kept clear and not filled by requests that can never be filled. If an attacker were able to fill the queue with requests that never expired, the system would eventually fail. For DoD systems, this setting must be set to 5 or lower and should match the \"Timeout Requests After\" value.",
@@ -1433,9 +2065,17 @@
         "gid": "V-62505",
         "rid": "SV-76995r1_rule",
         "stig_id": "CF11-05-000193",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68425r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62505",
       "title": "ColdFusion must have a custom request queue time-out page.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. Limiting the knowledge given to an attacker about the effects of his attack and possible solutions to further his attack is important. This is especially important when the attacker is trying to find the limits needed to exhaust resources and cause a DoS. To limit feedback to the attacker on his efforts, a custom time-out page should be used. The message returned should only inform the user that they should wait and retry their request again. The message must not disclose that the queue timed out.",
@@ -1451,9 +2091,17 @@
         "gid": "V-62507",
         "rid": "SV-76997r2_rule",
         "stig_id": "CF11-05-000194",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-68427r4_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62507",
       "title": "ColdFusion must limit the maximum number of POST requests parameters.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. To reduce the possibility or effect of a DoS, the application server must employ defined security safeguards. These safeguards will be determined by the placement of the application server and the type of applications being hosted within the application server framework. Limiting the number of POST requests to the maximum number of form fields on any given page within the hosted application is used to mitigate the DoS attack known as HashDOS. ColdFusion provides the postParameterLimit setting to address this risk. This is a tunable parameter that should be set as low as the application and the hardware will allow. If the system administrator has not documented and identified the specific setting value based on their specific application and system tuning requirements, this parameter must be set to \"50\" or less.",
@@ -1469,9 +2117,17 @@
         "gid": "V-62509",
         "rid": "SV-76999r1_rule",
         "stig_id": "CF11-05-000195",
+        "gtitle": "SRG-APP-000439-AS-000155",
         "fix_id": "F-68429r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62509",
       "title": "ColdFusion must protect the confidentiality and integrity of transmitted information through the use of an approved TLS version.",
       "desc": "Preventing the disclosure of transmitted information requires that the application server take measures to employ some form of cryptographic mechanism in order to protect the information during transmission. This is usually achieved through the use of Transport Layer Security (TLS), but care must also be taken to safeguard against non-FIPS approved SSL versions being used. These older versions contain vulnerabilities that have been addressed in the newer FIPS 140-2 approved TLS releases. FIPS 140-2 approved TLS versions include TLS V1.0 or greater. TLS must be enabled, and non-FIPS-approved SSL versions must be disabled. NIST SP 800-52 specifies the preferred configurations for government systems. ColdFusion uses JVM to control the encryption of transmitted data. Settings for JVM can be controlled within the Administrator Console to configure the JVM to only use FIPS 140-2 approved TLS and disable non-FIPS SSL versions.",
@@ -1487,9 +2143,17 @@
         "gid": "V-62511",
         "rid": "SV-77001r1_rule",
         "stig_id": "CF11-05-000196",
+        "gtitle": "SRG-APP-000439-AS-000155",
         "fix_id": "F-68431r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62511",
       "title": "ColdFusion must encrypt cookies.",
       "desc": "Preventing the disclosure of transmitted information requires that the application server take measures to employ some form of cryptographic mechanism in order to protect the information during transmission. This is usually achieved through the use of Transport Layer Security (TLS). Transmission of session cookies is especially important since an attacker can grab the session id and hijack the already authenticated session. There are several methods to protect cookie data, and one of those methods is to encrypt the cookie. This can only be done if all the hosted sites are SSL/TLS enabled.",
@@ -1505,9 +2169,17 @@
         "gid": "V-62513",
         "rid": "SV-77003r1_rule",
         "stig_id": "CF11-05-000197",
+        "gtitle": "SRG-APP-000440-AS-000167",
         "fix_id": "F-68433r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002421"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62513",
       "title": "ColdFusion must employ approved cryptographic mechanisms to prevent unauthorized disclosure of information and/or detect changes to information during transmission.",
       "desc": "Preventing the disclosure or modification of transmitted information requires that application servers take measures to employ approved cryptography in order to protect the information during transmission over the network. This is usually achieved through the use of Transport Layer Security (TLS), SSL VPN, or IPSec tunnel. If data in transit is unencrypted, it is vulnerable to disclosure and modification. If approved cryptographic algorithms are not used, encryption strength cannot be assured. ColdFusion uses the underlying JVM to handle transmission and receiving of data, but ColdFusion does offer to the programmer an encrypt API call to protect the data. This call can use multiple crypto methods, but using FIPS 140-2 is superior to those non-FIPS crypto methods to protect and detect changes to the data. Through JVM arguments set within ColdFusion, the programmer can be forced to only FIPS crypto methods.",
@@ -1523,9 +2195,17 @@
         "gid": "V-62515",
         "rid": "SV-77005r1_rule",
         "stig_id": "CF11-05-000198",
+        "gtitle": "SRG-APP-000440-AS-000167",
         "fix_id": "F-68435r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002421"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62515",
       "title": "ColdFusion must encrypt patch retrieval.",
       "desc": "Checking for patches and downloading those patches for installation must be done through an encrypted connection to protect the patch from modification during transmission and to avoid spoofed updates.",
@@ -1541,9 +2221,17 @@
         "gid": "V-62517",
         "rid": "SV-77007r1_rule",
         "stig_id": "CF11-05-000199",
+        "gtitle": "SRG-APP-000441-AS-000258",
         "fix_id": "F-68437r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002420"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62517",
       "title": "ColdFusion must protect Session Cookies from being read by scripts.",
       "desc": "A cookie can be read by client-side scripts easily if cookie properties are not set properly during preparation for transmission. By allowing cookies to be read by the client-side scripts, information such as session identifiers could be compromised and used by an attacker who intercepts the cookie. Setting cookie properties (i.e., HTTPOnly property) to disallow client-side scripts from reading cookies better protects the information inside the cookie.",
@@ -1559,9 +2247,17 @@
         "gid": "V-62519",
         "rid": "SV-77009r1_rule",
         "stig_id": "CF11-05-000200",
+        "gtitle": "SRG-APP-000441-AS-000258",
         "fix_id": "F-68439r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002420"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62519",
       "title": "ColdFusion must prevent JavaScript Object Notation (JSON) hijacking of data.",
       "desc": "Information can be either unintentionally or maliciously disclosed if not protected during preparation for transmission. An easy way to protect data during preparation for transmission is to use non-default identifiers for data. An example is for JavaScript Object Notation (JSON) to use a prefix other than the default \"JSON\" prefix, signifying to an attacker an array of data is following. JSON is a lightweight data-interchange format.",
@@ -1577,9 +2273,17 @@
         "gid": "V-62521",
         "rid": "SV-77011r1_rule",
         "stig_id": "CF11-05-000203",
+        "gtitle": "SRG-APP-000514-AS-000137",
         "fix_id": "F-68441r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62521",
       "title": "ColdFusion must use DoD- or CNSS-approved PKI Class 3 or Class 4 certificates.",
       "desc": "Class 3 PKI certificates are used for servers and software signing rather than for identifying individuals. Class 4 certificates are used for business-to-business transactions. Utilizing unapproved certificates not issued or approved by DoD or CNS creates an integrity risk. The application server must utilize approved DoD or CNS Class 3 or Class 4 certificates for software signing and business-to-business transactions. ColdFusion uses an underlying JVM for communication and certificate storage. To validate that the proper certificates are in use, the keystore must be checked.",
@@ -1595,9 +2299,17 @@
         "gid": "V-62523",
         "rid": "SV-77013r1_rule",
         "stig_id": "CF11-06-000216",
+        "gtitle": "SRG-APP-000266-AS-000168",
         "fix_id": "F-68443r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001312"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62523",
       "title": "The ColdFusion missing template handler must be valid.",
       "desc": "The structure and content of error messages need to be carefully considered by the organization and development team. Any application providing too much information in error logs and in administrative messages to the screen risks compromising the data and security of the application and system. The missing template handler is used much like the 404 handler for a web server. When the missing template handler is blank, a potential attacker may be sent information that reveals the ColdFusion version number. Once the attacker has the version of ColdFusion being used, he can begin looking for specific attacks the version may be vulnerable to if not patched and secured properly.",
@@ -1613,9 +2325,17 @@
         "gid": "V-62525",
         "rid": "SV-77015r1_rule",
         "stig_id": "CF11-06-000217",
+        "gtitle": "SRG-APP-000266-AS-000168",
         "fix_id": "F-68445r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001312"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62525",
       "title": "The ColdFusion site-wide error handler must be valid.",
       "desc": "The structure and content of error messages need to be carefully considered by the organization and development team. Any application providing too much information in error logs and in administrative messages to the screen risks compromising the data and security of the application and system. When the site-wide error handler is blank, information can be presented to an attacker that may expose the cause of exceptions. Having this information, the attacker can then begin attacking this error trying to get the server to fail and cause a DoS, expose PII, or gain access to server resources. A custom site-wide error handler should be created and used that discloses the same generic message to the user for all exceptions and the error must be logged so that the error can be investigated.",
@@ -1631,9 +2351,17 @@
         "gid": "V-62527",
         "rid": "SV-77017r1_rule",
         "stig_id": "CF11-06-000218",
+        "gtitle": "SRG-APP-000266-AS-000169",
         "fix_id": "F-68447r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001312"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62527",
       "title": "ColdFusion must have Robust Exception Information disabled.",
       "desc": "Any application providing too much information in error logs and in administrative messages to the screen risks compromising the data and security of the application and system. The structure and content of error messages needs to be carefully considered by the organization and development team. ColdFusion is a development and deployment framework. To handle this role properly, ColdFusion offers several debugging and logging facilities that must be disabled in a production environment. If left enabled, these settings can expose sensitive data within error and log messages.",
@@ -1649,9 +2377,17 @@
         "gid": "V-62529",
         "rid": "SV-77019r1_rule",
         "stig_id": "CF11-06-000219",
+        "gtitle": "SRG-APP-000266-AS-000169",
         "fix_id": "F-68449r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001312"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62529",
       "title": "ColdFusion must have AJAX Debug Log Window disabled.",
       "desc": "Any application providing too much information in error logs and in administrative messages to the screen risks compromising the data and security of the application and system. The structure and content of error messages needs to be carefully considered by the organization and development team. Allowing the AJAX Debug Log Window to be enabled allows a user to send AJAX debug messages back to a client. The log data sent is meant to be used in a development environment and used to fix errors in AJAX code. Once the application is developed and is moved to production, debugging is not needed and this feature must be disabled.",
@@ -1667,9 +2403,17 @@
         "gid": "V-62531",
         "rid": "SV-77021r1_rule",
         "stig_id": "CF11-06-000220",
+        "gtitle": "SRG-APP-000266-AS-000169",
         "fix_id": "F-68451r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001312"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62531",
       "title": "ColdFusion must have Request Debugging Output disabled.",
       "desc": "Any application providing too much information in error logs and in administrative messages to the screen risks compromising the data and security of the application and system. The structure and content of error messages needs to be carefully considered by the organization and development team. The option to enable request debugging output is another tool that a developer can use during the development phase of the hosted application. This feature appends debugging information to the end of each CFML request. Once a hosted application is moved from the development phase to production, the need for debug information is no longer valid.",
@@ -1685,9 +2429,17 @@
         "gid": "V-62533",
         "rid": "SV-77023r1_rule",
         "stig_id": "CF11-06-000221",
+        "gtitle": "SRG-APP-000266-AS-000169",
         "fix_id": "F-68453r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001312"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62533",
       "title": "ColdFusion must have Allow Line Debugging disabled.",
       "desc": "Any application providing too much information in error logs and in administrative messages to the screen risks compromising the data and security of the application and system. The structure and content of error messages needs to be carefully considered by the organization and development team. The option to allow line debugging is enabled when a developer wants to trace code through a debugger such as Eclipse. Debugging must not be performed on a production server, and this option must be disabled.",
@@ -1703,9 +2455,17 @@
         "gid": "V-62535",
         "rid": "SV-77025r1_rule",
         "stig_id": "CF11-06-000222",
+        "gtitle": "SRG-APP-000267-AS-000170",
         "fix_id": "F-68455r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001314"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62535",
       "title": "The ColdFusion error messages must be restricted to only authorized users.",
       "desc": "If the application provides too much information in error logs and administrative messages to the screen, this could lead to compromise. The structure and content of error messages need to be carefully considered by the organization and development team. The extent to which the information system is able to identify and handle error conditions is guided by organizational policy and operational requirements. Application servers must protect the error messages that are created by the application server. All application server users' accounts are used for the management of the server and the applications residing on the application server. All accounts are assigned to a certain role with corresponding access rights. The application server must restrict access to error messages so only authorized users may view them. Error messages are usually written to logs contained on the file system. The application server will usually create new log files as needed and must take steps to ensure that the proper file permissions are utilized when the log files are created.",
@@ -1721,9 +2481,17 @@
         "gid": "V-62537",
         "rid": "SV-77027r1_rule",
         "stig_id": "CF11-06-000223",
+        "gtitle": "SRG-APP-000447-AS-000273",
         "fix_id": "F-68457r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002754"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62537",
       "title": "ColdFusion must have ColdFusion component (CFC) type checking enabled.",
       "desc": "Invalid user input occurs when a user inserts data or characters into an application's data entry field and the application is unprepared to process that data. This results in unanticipated application behavior, potentially leading to an application or information system compromise. Invalid user input is one of the primary methods employed when attempting to compromise an application. Invalid input can also occur within applications to ColdFusion components. The parameters can be input from users that are not properly type checked or from data computed within the application. When the data is not type checked, the receiving component may cause an error that is unhandled or throw an exception that puts the application server and/or hosted application into an unsecure posture. To limit invalid calls, ColdFusion component (CFC) type checking must be disabled.",
@@ -1739,9 +2507,17 @@
         "gid": "V-62539",
         "rid": "SV-77029r1_rule",
         "stig_id": "CF11-06-000224",
+        "gtitle": "SRG-APP-000447-AS-000273",
         "fix_id": "F-68459r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002754"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62539",
       "title": "ColdFusion must enable Global Script Protection.",
       "desc": "Invalid user input occurs when a user inserts data or characters into an application's data entry field and the application is unprepared to process that data. This results in unanticipated application behavior, potentially leading to an application or information system compromise. Invalid user input is one of the primary methods employed when attempting to compromise an application. Invalid inputs are also used for Cross-Site Scripting (XSS) attacks. This type of attack relies on the attacker being able to insert script code into an input field and having the script executed on the client machine. By enabling Global Script Protection, there is a very limited protection against certain Cross-Site Scripting attack vectors. It is important to understand that enabling this setting does not protect hosted applications from all possible Cross-Site Scripting attacks. When this setting is turned on, it uses a regular expression defined in the file neo-security.xml to replace input variables containing the following tags: object, embed, script, applet, and meta with Invalid Tag. This setting does not restrict any JavaScript strings that may be injected and executed, iframe tags, or any XSS obfuscation techniques.",
@@ -1757,9 +2533,17 @@
         "gid": "V-62541",
         "rid": "SV-77031r1_rule",
         "stig_id": "CF11-06-000225",
+        "gtitle": "SRG-APP-000454-AS-000268",
         "fix_id": "F-68461r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002617"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62541",
       "title": "ColdFusion must remove software components after updated versions have been installed.",
       "desc": "Installation of patches and updates is performed when there are errors or security vulnerabilities in the current release of the software. When previous versions of software components are not removed from the application server after updates have been installed, an attacker may use the older components to exploit the system. ColdFusion creates a backup directory for an update when installed. This backup directory allows the SA to uninstall the update if an error occurs or incompatibility is found with the hosted applications. Once the update is tested and found to work correctly, the backup directory must be removed so that the update cannot be uninstalled.",
@@ -1775,9 +2559,17 @@
         "gid": "V-62543",
         "rid": "SV-77033r1_rule",
         "stig_id": "CF11-06-000226",
+        "gtitle": "SRG-APP-000456-AS-000266",
         "fix_id": "F-68463r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002605"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62543",
       "title": "ColdFusion must be set to automatically check for updates.",
       "desc": "Security flaws with software applications are discovered daily. Vendors are constantly updating and patching their products to address newly discovered security vulnerabilities. To configure the software to discover that a new patch is available is important since administrators may be responsible for multiple servers running different applications and services, making it difficult for the administrator to constantly check for updates. Enabling the automatic check informs the administrator, allows him to investigate the patch and what is needed to apply the patch and schedule any outages that might be needed, thereby permitting the patch to be installed quickly and efficiently. Having \"Automatically Check for Updates\" checked causes ColdFusion to look for updates on every logon.",
@@ -1793,9 +2585,17 @@
         "gid": "V-62545",
         "rid": "SV-77035r1_rule",
         "stig_id": "CF11-06-000227",
+        "gtitle": "SRG-APP-000456-AS-000266",
         "fix_id": "F-68465r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002605"
+        ]
       },
+      "refs": [
+        "DPMS Target ColdFusion 11"
+      ],
       "id": "V-62545",
       "title": "ColdFusion must have notifications enabled when a server update is available.",
       "desc": "Security flaws with software applications are discovered daily. Vendors are constantly updating and patching their products to address newly discovered security vulnerabilities. To configure the software to discover that a new patch is available is important since administrators may be responsible for multiple servers running different applications and services, making it difficult for the administrator to constantly check for updates. Enabling the automatic check informs the administrator, allows him to investigate the patch and what is needed to apply the patch and schedule any outages that might be needed, thereby permitting the patch to be installed quickly and efficiently. Having \"Check for updates every\" checked causes ColdFusion to look for updates every set number of days. Entering a list of email addresses to notify guarantees a notification is sent to the administrator.",

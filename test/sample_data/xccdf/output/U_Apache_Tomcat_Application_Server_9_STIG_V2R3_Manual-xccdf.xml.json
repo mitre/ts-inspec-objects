@@ -11,9 +11,21 @@
         "gid": "V-222926",
         "rid": "SV-222926r615938_rule",
         "stig_id": "TCAT-AS-000010",
+        "gtitle": "SRG-APP-000001-AS-000001",
         "fix_id": "F-24587r426223_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111371",
+          "V-102427"
+        ],
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222926",
       "title": "The number of allowed simultaneous sessions to the manager application must be limited.",
       "desc": "The manager application provides configuration access to the Tomcat server. Access to the manager application must be limited and that includes the number of sessions allowed to access the management application. A balance must be struck between the number of simultaneous connections allowed to the management application and the number of authorized admins requiring access at any given time. Determine the number of authorized admins requiring simultaneous access and increase the number of allowed simultaneous sessions by a small percentage in order to help prevent potential lockouts. Document that value in the System Security Plan (SSP).",
@@ -29,8 +41,20 @@
         "gid": "V-222927",
         "rid": "SV-222927r615938_rule",
         "stig_id": "TCAT-AS-000020",
-        "fix_id": "F-24588r426226_fix"
+        "gtitle": "SRG-APP-000014-AS-000009",
+        "fix_id": "F-24588r426226_fix",
+        "rationale": null,
+        "legacy": [
+          "SV-111373",
+          "V-102429"
+        ],
+        "cci": [
+          "CCI-000068"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222927",
       "title": "Secured connectors must be configured to use strong encryption ciphers.",
       "desc": "<0> [object Object]",
@@ -46,9 +70,21 @@
         "gid": "V-222928",
         "rid": "SV-222928r754865_rule",
         "stig_id": "TCAT-AS-000030",
+        "gtitle": "SRG-APP-000015-AS-000010",
         "fix_id": "F-37850r754863_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111375",
+          "V-102431"
+        ],
+        "cci": [
+          "CCI-001453"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222928",
       "title": "HTTP Strict Transport Security (HSTS) must be enabled.",
       "desc": "HTTP Strict Transport Security (HSTS) instructs web browsers to only use secure connections for all future requests when communicating with a website. Doing so helps prevent SSL protocol attacks, SSL stripping, cookie hijacking, and other attempts to circumvent SSL protection. Implementing HSTS requires testing of your web applications to ensure SSL certificates align correctly with application requirements and sub-domains if sub-domains are used. Ensure certificates are installed and working correctly. If sub-domains are in use, all sub-domains must be covered in the SSL/TLS certificate and the includeSubDomains directive must be specified in order for HSTS to function properly.",
@@ -64,14 +100,28 @@
         "gid": "V-222929",
         "rid": "SV-222929r615938_rule",
         "stig_id": "TCAT-AS-000040",
+        "gtitle": "SRG-APP-000015-AS-000010",
         "fix_id": "F-24590r426232_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000015-AS-000010",
           "SRG-APP-000172-AS-000120",
           "SRG-APP-000439-AS-000155"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-111547",
+          "V-102433"
+        ],
+        "cci": [
+          "CCI-000197",
+          "CCI-001453",
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222929",
       "title": "TLS 1.2 must be used on secured HTTP connectors.",
       "desc": "Using older versions of TLS introduces security vulnerabilities that exist in the older versions of the protocol. Tomcat by default will use all available versions of the SSL/TLS protocols unless the version is explicitly defined in the SSL configuration attribute for the associated connector. This introduces the opportunity for the client to negotiate the use of an older protocol version and increases the risk of compromise of the Tomcat server. All connectors must use TLS 1.2. While this check specifically verifies the use of TLSv1.2, it does not provide all of the steps required to successfully configure a secured TLS connection. That task involves multiple additional steps that are not included here. Refer to Tomcat documentation for all of the steps needed to create a TLS protected connector. ",
@@ -87,8 +137,26 @@
         "gid": "V-222930",
         "rid": "SV-222930r615938_rule",
         "stig_id": "TCAT-AS-000050",
-        "fix_id": "F-24591r426235_fix"
+        "gtitle": "SRG-APP-000016-AS-000013",
+        "fix_id": "F-24591r426235_fix",
+        "rationale": null,
+        "legacy": [
+          "SV-111379",
+          "V-102435"
+        ],
+        "cci": [
+          "CCI-000067",
+          "CCI-000130",
+          "CCI-000133",
+          "CCI-000134",
+          "CCI-000166",
+          "CCI-000169",
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222930",
       "title": "AccessLogValve must be configured for each application context.",
       "desc": "<0> [object Object]",
@@ -104,13 +172,26 @@
         "gid": "V-222931",
         "rid": "SV-222931r615938_rule",
         "stig_id": "TCAT-AS-000060",
+        "gtitle": "SRG-APP-000033-AS-000024",
         "fix_id": "F-24592r426238_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000033-AS-000023",
           "SRG-APP-000176-AS-000125"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-111393",
+          "V-102445"
+        ],
+        "cci": [
+          "CCI-000186",
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222931",
       "title": "Default password for keystore must be changed.",
       "desc": "Tomcat currently operates only on JKS, PKCS11, or PKCS12 format keystores. The JKS format is Java's standard \"Java KeyStore\" format, and is the format created by the keytool command-line utility which is included in the JDK. The PKCS12 format is an internet standard, and is managed using OpenSSL or Microsoft's Key-Manager. This requirement only applies to JKS keystores. When a new JKS keystore is created, if a password is not specified during creation the default password used by Tomcat is \"changeit\" (all lower case). If the default password is not changed, the keystore is at risk of compromise. ",
@@ -126,8 +207,20 @@
         "gid": "V-222932",
         "rid": "SV-222932r615938_rule",
         "stig_id": "TCAT-AS-000070",
-        "fix_id": "F-24593r426241_fix"
+        "gtitle": "SRG-APP-000033-AS-000024",
+        "fix_id": "F-24593r426241_fix",
+        "rationale": null,
+        "legacy": [
+          "SV-111395",
+          "V-102447"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222932",
       "title": "Cookies must have secure flag set.",
       "desc": "<0> [object Object]",
@@ -143,8 +236,20 @@
         "gid": "V-222933",
         "rid": "SV-222933r615938_rule",
         "stig_id": "TCAT-AS-000080",
-        "fix_id": "F-24594r426244_fix"
+        "gtitle": "SRG-APP-000033-AS-000024",
+        "fix_id": "F-24594r426244_fix",
+        "rationale": null,
+        "legacy": [
+          "SV-111397",
+          "V-102449"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222933",
       "title": "Cookies must have http-only flag set.",
       "desc": "<0> [object Object]",
@@ -160,9 +265,21 @@
         "gid": "V-222934",
         "rid": "SV-222934r615938_rule",
         "stig_id": "TCAT-AS-000090",
+        "gtitle": "SRG-APP-000033-AS-000024",
         "fix_id": "F-24595r622486_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111399",
+          "V-102451"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222934",
       "title": "DefaultServlet must be set to readonly for PUT and DELETE.",
       "desc": "The DefaultServlet is a servlet provided with Tomcat. It is called when no other suitable page can be displayed to the client. The DefaultServlet serves static resources as well as directory listings and is declared globally in $CATALINA_BASE/conf/web.xml. By default, Tomcat behaves as if the DefaultServlet is set to \"true\" (HTTP commands like PUT and DELETE are rejected). However, the readonly parameter is not in the web.xml file by default so to ensure proper configuration and system operation, the \"readonly\" parameter in web.xml must be created and set to \"true\". Creating the setting in web.xml provides assurances the system is operating as required. Changing the readonly parameter to false could allow clients to delete or modify static resources on the server and upload new resources.",
@@ -178,9 +295,21 @@
         "gid": "V-222935",
         "rid": "SV-222935r615938_rule",
         "stig_id": "TCAT-AS-000100",
+        "gtitle": "SRG-APP-000033-AS-000024",
         "fix_id": "F-24596r426250_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111401",
+          "V-102453"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222935",
       "title": "Connectors must be secured.",
       "desc": "The unencrypted HTTP protocol does not protect data from interception or alteration which can subject users to eavesdropping, tracking, and the modification of received data. To secure an HTTP connector, both the secure and scheme flags must be set.",
@@ -196,9 +325,21 @@
         "gid": "V-222936",
         "rid": "SV-222936r615938_rule",
         "stig_id": "TCAT-AS-000110",
+        "gtitle": "SRG-APP-000033-AS-000024",
         "fix_id": "F-24597r426253_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111403",
+          "V-102455"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222936",
       "title": "The Java Security Manager must be enabled.",
       "desc": "The Java Security Manager (JSM) is what protects the Tomcat server from trojan servlets, JSPs, JSP beans, tag libraries, or even from inadvertent mistakes. The JSM works the same way a client's web browser isolates a running web application via a sandbox, the difference being the sandbox is running on the server rather than the client. To ensure application operability, JSM security policies must be set to allow the hosted application access to the underlying system based on individual application requirements. The JSM settings cannot be determined at the STIG level and will vary based on each hosted application. Examples include setting JSM policy to allow an application to write to folders on the server or to initiate network connections to other servers via TCP/IP. Because the JSM isolates application code to prevent an application from adversely accessing resources on the underlying Tomcat server, care must be taken to ensure the JSM policies are configured properly. Allowing untrusted web applications to run on the Tomcat server without a JSM policy that limits access to server resources creates a risk of compromise to the server. Ideally, the JSM policy is implemented and tested during the application development phase. This is when the application resource requirements are best identified and documented so the correct JSM policy can be implemented in the production environment. Creating the correct JSM policy can be a challenge when installing commercial software that does not provide the policy as part of the installation process or via documentation. This is due to the fact that the critical application access requirements to the system will typically not be known to the system administrator. In these cases, running the JSM can result in failure for some application functionality (e.g., an application might not be able to write logs to a particular folder on the system or communicate with other systems as intended). When faced with application functionality failures, the typical troubleshooting approach for the system administrator to follow is to install the application in a test environment, set the $CATALINA_POLICY setting to debug, and identify failure events in the logs. This can aid in identifying what privileges the application requires. From there the JSM policies can be set, tested, documented, and transferred to production. If these actions do not address all of the issues, the Risk Management Framework processes come into effect and a risk acceptance for this requirement must be obtained from the ISSO. For additional technical information on the security manager and available JSM policy settings, refer to the Security Manager How-To on the Apache Tomcat version 9 website.",
@@ -214,9 +355,21 @@
         "gid": "V-222937",
         "rid": "SV-222937r615938_rule",
         "stig_id": "TCAT-AS-000170",
+        "gtitle": "SRG-APP-000089-AS-000050",
         "fix_id": "F-24598r426256_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111405",
+          "V-102457"
+        ],
+        "cci": [
+          "CCI-000169"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222937",
       "title": "Tomcat servers behind a proxy or load balancer must log client IP.",
       "desc": "When running Tomcat behind a load balancer or proxy, default behavior is for Tomcat to log the proxy or load balancer IP address as the client IP. Desired behavior is to log the actual client IP rather than the proxy IP address. The RemoteIpValve logging component instructs Tomcat to grab the HTTP header X-Forwarded-For and use that for access logging. Tomcat will identify 127.0.0.1, class A and class C RFC1918 addresses as internal proxy addresses; however, if the proxy has a routable IP or a class B private network address space (172.16.0.0/12), the user must also verify the \"internalProxies setting is configured to reflect the proxy IP address.",
@@ -232,7 +385,9 @@
         "gid": "V-222938",
         "rid": "SV-222938r615938_rule",
         "stig_id": "TCAT-AS-000180",
+        "gtitle": "SRG-APP-000090-AS-000051",
         "fix_id": "F-24599r426259_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000090-AS-000051",
           "SRG-APP-000095-AS-000056",
@@ -242,8 +397,22 @@
           "SRG-APP-000505-AS-000230",
           "SRG-APP-000506-AS-000231"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-111549",
+          "V-102603"
+        ],
+        "cci": [
+          "CCI-000130",
+          "CCI-000135",
+          "CCI-000171",
+          "CCI-000172",
+          "CCI-001487"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222938",
       "title": "AccessLogValve must be configured per each virtual host.",
       "desc": "Application servers utilize role-based access controls in order to specify the individuals who are allowed to configure application component loggable events. The application server must be configured to select which personnel are assigned the role of selecting which loggable events are to be logged. ",
@@ -259,9 +428,21 @@
         "gid": "V-222939",
         "rid": "SV-222939r615938_rule",
         "stig_id": "TCAT-AS-000240",
+        "gtitle": "SRG-APP-000096-AS-000059",
         "fix_id": "F-24600r426262_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111407",
+          "V-102461"
+        ],
+        "cci": [
+          "CCI-000131"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222939",
       "title": "Date and time of events must be logged.",
       "desc": "The access logfile format is defined within a Valve that implements the org.apache.catalina.valves.AccessLogValve interface within the /opt/tomcat/server.xml configuration file: The %t pattern code is included in the pattern element and logs the date and time of the event. Including the date pattern in the log configuration provides useful information about the time of the event which is critical for troubleshooting and forensic investigations.",
@@ -277,9 +458,21 @@
         "gid": "V-222940",
         "rid": "SV-222940r615938_rule",
         "stig_id": "TCAT-AS-000250",
+        "gtitle": "SRG-APP-000097-AS-000060",
         "fix_id": "F-24601r426265_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111409",
+          "V-102463"
+        ],
+        "cci": [
+          "CCI-000132"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222940",
       "title": "Remote hostname must be logged.",
       "desc": "The access logfile format is defined within a Valve that implements the org.apache.catalina.valves.AccessLogValve interface within the /opt/tomcat/server.xml configuration file: The %h pattern code is included in the pattern element and logs the remote hostname. Including the hostname pattern in the log configuration provides useful information about the connecting host that is critical for troubleshooting and forensic investigations.",
@@ -295,9 +488,21 @@
         "gid": "V-222941",
         "rid": "SV-222941r615938_rule",
         "stig_id": "TCAT-AS-000260",
+        "gtitle": "SRG-APP-000097-AS-000060",
         "fix_id": "F-24602r426268_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111411",
+          "V-102465"
+        ],
+        "cci": [
+          "CCI-000132"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222941",
       "title": "HTTP status code must be logged.",
       "desc": "The access logfile format is defined within a Valve that implements the org.apache.catalina.valves.AccessLogValve interface within the /opt/tomcat/server.xml configuration file: The %s pattern code is included in the pattern element and logs the server response code associated with the event e.g. 200 OK or 400 Bad Request. Including the status pattern in the log configuration provides useful server response information about the event which is critical for troubleshooting and forensic investigations.",
@@ -313,9 +518,21 @@
         "gid": "V-222942",
         "rid": "SV-222942r615938_rule",
         "stig_id": "TCAT-AS-000270",
+        "gtitle": "SRG-APP-000097-AS-000060",
         "fix_id": "F-24603r426271_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111413",
+          "V-102467"
+        ],
+        "cci": [
+          "CCI-000132"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222942",
       "title": "The first line of request must be logged.",
       "desc": "The access logfile format is defined within a Valve that implements the org.apache.catalina.valves.AccessLogValve interface within the /opt/tomcat/server.xml configuration file: The &quot;%r&quot; pattern code is included in the pattern element and logs the first line associated with the event, namely the request method, URL path, query string, and protocol (\"&quot;\" simply specifies a literal double quote). Including the pattern in the log configuration provides useful information about the time of the event which is critical for troubleshooting and forensic investigations.",
@@ -331,9 +548,21 @@
         "gid": "V-222943",
         "rid": "SV-222943r615938_rule",
         "stig_id": "TCAT-AS-000360",
+        "gtitle": "SRG-APP-000118-AS-000078",
         "fix_id": "F-24604r426274_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111415",
+          "V-102469"
+        ],
+        "cci": [
+          "CCI-000162"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222943",
       "title": "$CATALINA_BASE/logs folder permissions must be set to 750.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with group Tomcat. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions.",
@@ -349,9 +578,21 @@
         "gid": "V-222944",
         "rid": "SV-222944r615938_rule",
         "stig_id": "TCAT-AS-000361",
+        "gtitle": "SRG-APP-000118-AS-000078",
         "fix_id": "F-24605r426277_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111417",
+          "V-102471"
+        ],
+        "cci": [
+          "CCI-000162"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222944",
       "title": "Files in the $CATALINA_BASE/logs/ folder must have their permissions set to 640.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with group Tomcat. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions.",
@@ -367,13 +608,26 @@
         "gid": "V-222945",
         "rid": "SV-222945r615938_rule",
         "stig_id": "TCAT-AS-000370",
+        "gtitle": "SRG-APP-000119-AS-000079",
         "fix_id": "F-24606r426280_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000119-AS-000079",
           "SRG-APP-000380-AS-000088"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-111419",
+          "V-102473"
+        ],
+        "cci": [
+          "CCI-000163",
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222945",
       "title": "Files in the $CATALINA_BASE/conf/ folder must have their permissions set to 640.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with group Tomcat. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user group tomcat rather than root user group tomcat. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions. If the ISSM determines the operational need to allow application admins access to change the Tomcat configuration outweighs the risk of limiting that access, then they can change the group membership to accommodate. Ownership must not be changed. The ISSM should take the exposure of the system to high risk networks into account. ",
@@ -389,13 +643,26 @@
         "gid": "V-222946",
         "rid": "SV-222946r754839_rule",
         "stig_id": "TCAT-AS-000371",
+        "gtitle": "SRG-APP-000119-AS-000079",
         "fix_id": "F-24607r426283_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000119-AS-000079",
           "SRG-APP-000380-AS-000088"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-111551",
+          "V-102605"
+        ],
+        "cci": [
+          "CCI-000163",
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222946",
       "title": "$CATALINA_BASE/conf folder permissions must be set to 750.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with group Tomcat. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions. If the ISSM determines the operational need to allow application admins access to change the Tomcat configuration outweighs the risk of limiting that access, then they can change the group membership to accommodate. Ownership must not be changed. The ISSM should take the exposure of the system to high risk networks into account. ",
@@ -411,9 +678,21 @@
         "gid": "V-222947",
         "rid": "SV-222947r754840_rule",
         "stig_id": "TCAT-AS-000380",
+        "gtitle": "SRG-APP-000120-AS-000080",
         "fix_id": "F-24608r426286_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111421",
+          "V-102477"
+        ],
+        "cci": [
+          "CCI-000164"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222947",
       "title": "Jar files in the $CATALINA_HOME/bin/ folder must have their permissions set to 640.",
       "desc": "Tomcat's file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with the group Tomcat. While root has read/write privileges, tomcat group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions.",
@@ -429,15 +708,30 @@
         "gid": "V-222948",
         "rid": "SV-222948r754841_rule",
         "stig_id": "TCAT-AS-000390",
+        "gtitle": "SRG-APP-000121-AS-000081",
         "fix_id": "F-24609r426289_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000121-AS-000081",
           "SRG-APP-000122-AS-000082",
           "SRG-APP-000123-AS-000083",
           "SRG-APP-000340-AS-000185"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-111553",
+          "V-102607"
+        ],
+        "cci": [
+          "CCI-001493",
+          "CCI-001494",
+          "CCI-001495",
+          "CCI-002235"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222948",
       "title": "$CATALINA_HOME/bin folder permissions must be set to 750.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with group Tomcat. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions. Note that running Tomcat in a Docker environment can impact how file permissions and user ownership settings are applied. Due to associated Docker configuration complexities, the STIG is scoped for standalone rather than virtual Docker deployments. ",
@@ -453,9 +747,21 @@
         "gid": "V-222949",
         "rid": "SV-222949r615938_rule",
         "stig_id": "TCAT-AS-000450",
+        "gtitle": "SRG-APP-000133-AS-000092",
         "fix_id": "F-24610r426292_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111423",
+          "V-102481"
+        ],
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222949",
       "title": "Tomcat user UMASK must be set to 0027.",
       "desc": "For Unix-based systems, umask settings affect file creation permissions. If the permissions are too loose, newly created log files and applications could be accessible to unauthorized users via the file system. Ensure the Tomcat OS user account has the correct file creation permission settings by validating the OS umask settings for the Tomcat user. Setting umask to 0027 gives the Tomcat user full rights, group users r-x permission and all others no access. Tomcat will most likely be running as a systemd service. Locate the systemd service file for Tomcat. The default location for the link to the service file is in /etc/systemd/system folder. The service file name should be indicative of the Tomcat process so tomcat.service is the logical name for the service file and is the name referenced by the STIG.",
@@ -471,9 +777,21 @@
         "gid": "V-222950",
         "rid": "SV-222950r615938_rule",
         "stig_id": "TCAT-AS-000470",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24611r426295_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111425",
+          "V-102483"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222950",
       "title": "Stack tracing must be disabled.",
       "desc": "Stack tracing provides debugging information from the application call stacks when a runtime error is encountered. If stack tracing is left enabled, Tomcat will provide this call stack information to the requestor which could result in the loss of sensitive information or data that could be used to compromise the system. As with all STIG settings, it is acceptable to temporarily enable for troubleshooting and debugging purposes but the setting must not be left enabled after troubleshooting tasks have been completed.",
@@ -489,9 +807,21 @@
         "gid": "V-222951",
         "rid": "SV-222951r615938_rule",
         "stig_id": "TCAT-AS-000490",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24612r426298_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111427",
+          "V-102485"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222951",
       "title": "The shutdown port must be disabled.",
       "desc": "Tomcat listens on TCP port 8005 to accept shutdown requests. By connecting to this port and sending the SHUTDOWN command, all applications within Tomcat are halted. The shutdown port is not exposed to the network as it is bound to the loopback interface. Set the shutdown attribute in $CATALINA_BASE/conf/server.xml.",
@@ -507,9 +837,21 @@
         "gid": "V-222952",
         "rid": "SV-222952r615938_rule",
         "stig_id": "TCAT-AS-000500",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24613r426301_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111429",
+          "V-102487"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222952",
       "title": "Unapproved connectors must be disabled.",
       "desc": "Connectors are how Tomcat receives requests, passes them to hosted web applications, and then sends back the results to the requestor. Tomcat provides HTTP and Apache JServ Protocol (AJP) connectors and makes these protocols available via configured network ports. Unapproved connectors provide open network connections to either of these protocols and put the system at risk.",
@@ -525,9 +867,21 @@
         "gid": "V-222953",
         "rid": "SV-222953r615938_rule",
         "stig_id": "TCAT-AS-000510",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24614r426304_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111431",
+          "V-102489"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222953",
       "title": "DefaultServlet debug parameter must be disabled.",
       "desc": "The DefaultServlet serves static resources as well as serves the directory listings (if directory listings are enabled). It is declared globally in $CATALINA_BASE/conf/web.xml and by default is configured with the \"debug\" parameter set to 0, which is disabled. Changing this to a value of 1 or higher sets the servlet to print debug level information. DefaultServlet debug setting must be set to 0 (disabled).",
@@ -543,9 +897,21 @@
         "gid": "V-222954",
         "rid": "SV-222954r615938_rule",
         "stig_id": "TCAT-AS-000520",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24615r426307_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111433",
+          "V-102491"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222954",
       "title": "DefaultServlet directory listings parameter must be disabled.",
       "desc": "The DefaultServlet serves static resources as well as directory listings. It is declared globally in $CATALINA_BASE/conf/web.xml and by default is configured with the directory \"listings\" parameter set to disabled. If no welcome file is present and the \"listings\" setting is enabled, a directory listing is shown. Directory listings must be disabled.",
@@ -561,9 +927,21 @@
         "gid": "V-222955",
         "rid": "SV-222955r615938_rule",
         "stig_id": "TCAT-AS-000530",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24616r426310_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111435",
+          "V-102493"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222955",
       "title": "The deployXML attribute must be set to false in hosted environments.",
       "desc": "The Host element controls deployment. Automatic deployment allows for simpler management, but also makes it easier for an attacker to deploy a malicious application. Automatic deployment is controlled by the autoDeploy and deployOnStartup attributes. If both are false, only Contexts defined in server.xml will be deployed, and any changes will require a Tomcat restart. In a hosted environment where web applications may not be trusted, set the deployXML attribute to false to ignore any context.xml packaged with the web application that may try to assign increased privileges to the web application. Note that if the security manager is enabled that the deployXML attribute will default to false. This requirement is NA for test and development systems on non-production networks. For DevSecOps application environments, the ISSM may authorize autodeploy functions on a production Tomcat system if the mission need specifies it and an application security vulnerability testing and assurance regimen is included in the DevSecOps process.",
@@ -579,9 +957,21 @@
         "gid": "V-222956",
         "rid": "SV-222956r615938_rule",
         "stig_id": "TCAT-AS-000540",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24617r426313_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111437",
+          "V-102495"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222956",
       "title": "Autodeploy must be disabled.",
       "desc": "Tomcat allows auto-deployment of applications while Tomcat is running. This can allow untested or malicious applications to be automatically loaded into production. Autodeploy must be disabled in production. This requirement is NA for test and development systems on non-production networks. For DevSecOps application environments, the ISSM may authorize autodeploy functions on a production Tomcat system if the mission need specifies it and an application security vulnerability testing and assurance regimen is included in the DevSecOps process.",
@@ -597,9 +987,21 @@
         "gid": "V-222957",
         "rid": "SV-222957r615938_rule",
         "stig_id": "TCAT-AS-000550",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24618r426316_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111439",
+          "V-102497"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222957",
       "title": "xpoweredBy attribute must be disabled.",
       "desc": "Individual connectors can be configured to display the Tomcat server info to clients. This information can be used to identify Tomcat versions which can be useful to attackers for identifying vulnerable versions of Tomcat. Individual connectors must be checked for the xpoweredBy attribute to ensure they do not pass Tomcat server info to clients.",
@@ -615,9 +1017,21 @@
         "gid": "V-222958",
         "rid": "SV-222958r615938_rule",
         "stig_id": "TCAT-AS-000560",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24619r426319_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111441",
+          "V-102499"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222958",
       "title": "Example applications must be removed.",
       "desc": "Tomcat provides example applications, documentation, and other directories in the default installation which do not serve a production use. These files must be deleted.",
@@ -633,9 +1047,21 @@
         "gid": "V-222959",
         "rid": "SV-222959r615938_rule",
         "stig_id": "TCAT-AS-000570",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24620r426322_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111443",
+          "V-102501"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222959",
       "title": "Tomcat default ROOT web application must be removed.",
       "desc": "The default ROOT web application includes the version of Tomcat that is being used, links to Tomcat documentation, examples, FAQs, and mailing lists. The default ROOT web application must be removed from a publicly accessible Tomcat instance and a more appropriate default page shown to users. It is acceptable to replace the contents of default ROOT with a new default web application. WARNING: Removing the ROOT folder without replacing the content with valid web based content will result in an error page being displayed to the browser when the browser lands on the default page.",
@@ -651,9 +1077,21 @@
         "gid": "V-222960",
         "rid": "SV-222960r615938_rule",
         "stig_id": "TCAT-AS-000580",
+        "gtitle": "SRG-APP-000141-AS-000095",
         "fix_id": "F-24621r426325_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111445",
+          "V-102503"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222960",
       "title": "Documentation must be removed.",
       "desc": "Tomcat provides documentation and other directories in the default installation which do not serve a production use. These files must be deleted.",
@@ -669,9 +1107,21 @@
         "gid": "V-222961",
         "rid": "SV-222961r615938_rule",
         "stig_id": "TCAT-AS-000590",
+        "gtitle": "SRG-APP-000142-AS-000014",
         "fix_id": "F-24622r426328_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111447",
+          "V-102505"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222961",
       "title": "Applications in privileged mode must be approved by the ISSO.",
       "desc": "The privileged attribute controls if a context (application) is allowed to use container provided servlets like the Manager servlet. It is false by default and should only be changed for trusted web applications. Set to true to allow the context (application) to use container servlets, like the manager servlet. Use of the privileged attribute will change the context's parent class loader to be the Server class loader rather than the Shared class loader. Note that in a default installation, the Common class loader is used for both the Server and the Shared class loaders. Use of the privileged attribute will change the context's parent class loader to be the Server class loader rather than the Shared class loader.",
@@ -687,9 +1137,21 @@
         "gid": "V-222962",
         "rid": "SV-222962r615938_rule",
         "stig_id": "TCAT-AS-000600",
+        "gtitle": "SRG-APP-000148-AS-000101",
         "fix_id": "F-24623r426331_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111449",
+          "V-102507"
+        ],
+        "cci": [
+          "CCI-000764"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222962",
       "title": "Tomcat management applications must use LDAP realm authentication.",
       "desc": "Using the local user store on a Tomcat installation does not meet a multitude of security control requirements related to user account management. To address this risk, Tomcat must be configured to utilize an LDAP or Active Directory installation that provides a centralized user account store that is configured to meet standard DoD user account management requirements. JNDIRealm is an implementation of the Tomcat Realm interface that looks up users in an LDAP directory server accessed by a JNDI provider (typically, the standard LDAP provider that is available with the JNDI API classes). The realm supports a variety of approaches to using a directory for authentication.",
@@ -705,9 +1167,21 @@
         "gid": "V-222963",
         "rid": "SV-222963r615938_rule",
         "stig_id": "TCAT-AS-000610",
+        "gtitle": "SRG-APP-000149-AS-000102",
         "fix_id": "F-24624r426334_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111451",
+          "V-102509"
+        ],
+        "cci": [
+          "CCI-000765"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222963",
       "title": "JMX authentication must be secured.",
       "desc": "Java Management Extensions (JMX) provides the means to remotely manage the Java VM. When enabling the JMX agent for remote monitoring, the user must enable authentication.",
@@ -723,9 +1197,21 @@
         "gid": "V-222964",
         "rid": "SV-222964r615938_rule",
         "stig_id": "TCAT-AS-000630",
+        "gtitle": "SRG-APP-000153-AS-000104",
         "fix_id": "F-24625r426337_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-102511",
+          "SV-111565"
+        ],
+        "cci": [
+          "CCI-000770"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222964",
       "title": "TLS must be enabled on JMX.",
       "desc": "Java Management Extensions (JMX) provides the means for enterprises to remotely manage the Java VM and can be used in place of the local manager application that comes with Tomcat. JMX management is configured via the Tomcat CATALINA_OPTS setting maintained in the /etc/systemd/system/tomcat.service file for Ubuntu systemd UNIX. For Linux OS flavors other than Ubuntu, use the relevant OS commands. Management tasks such as monitoring and control of applications is accomplished via the jmxremote servlet. If authentication is disabled, an attacker only needs to know the port number in order to manage and control hosted Java applications.",
@@ -741,9 +1227,21 @@
         "gid": "V-222965",
         "rid": "SV-222965r615938_rule",
         "stig_id": "TCAT-AS-000690",
+        "gtitle": "SRG-APP-000172-AS-000121",
         "fix_id": "F-24626r426340_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111455",
+          "V-102513"
+        ],
+        "cci": [
+          "CCI-000197"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222965",
       "title": "LDAP authentication must be secured.",
       "desc": "JNDIRealm is an implementation of the Tomcat Realm interface. Tomcat uses the JNDIRealm to look up users in an LDAP directory server. The realm's connection to the directory is defined by the 'connectionURL' configuration attribute. This attribute is usually an LDAP URL that specifies the domain name of the directory server to connect to. The LDAP URL does not provide encryption by default. This can lead to authentication credentials being transmitted across network connections in clear text. To address this risk, Tomcat must be configured to use secure LDAP (LDAPS).",
@@ -759,9 +1257,21 @@
         "gid": "V-222966",
         "rid": "SV-222966r616155_rule",
         "stig_id": "TCAT-AS-000700",
+        "gtitle": "SRG-APP-000175-AS-000124",
         "fix_id": "F-24627r426343_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111457",
+          "V-102515"
+        ],
+        "cci": [
+          "CCI-000185"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222966",
       "title": "DoD root CA certificates must be installed in Tomcat trust store.",
       "desc": "Tomcat truststores are used to validate client certificates. On the Ubuntu OS, by default Tomcat uses the \"cacerts\" file as the CA trust store. The file is located in the /etc/ssl/certs/java/ folder with a link to the file in $JAVA_HOME/lib/security/cacerts. However, this location can be modified by setting the value of the javax.net.ssl.trustStore system property. Setting this property within an OS environment variable will change the location to point to a different trust store. The Java OS environment variables in the systemd Tomcat startup file must be checked in order to identify the location of the trust store on the file system. (The STIG uses the name tomcat.service as a reference, but technically this file can be called anything). If the property is not set, then the default location is used for the truststore.",
@@ -777,9 +1287,21 @@
         "gid": "V-222967",
         "rid": "SV-222967r615938_rule",
         "stig_id": "TCAT-AS-000710",
+        "gtitle": "SRG-APP-000176-AS-000125",
         "fix_id": "F-24628r426346_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111459",
+          "V-102517"
+        ],
+        "cci": [
+          "CCI-000186"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222967",
       "title": "Keystore file must be protected.",
       "desc": "Keystore file contains authentication information used to access application data and data resources. Access to the file must be protected. The default location is in the .keystore file stored in the home folder of the user account used to run Tomcat although some administrators may choose to locate the file elsewhere. The location will also be specified in the server.xml file.",
@@ -795,7 +1317,9 @@
         "gid": "V-222968",
         "rid": "SV-222968r615938_rule",
         "stig_id": "TCAT-AS-000750",
+        "gtitle": "SRG-APP-000179-AS-000129",
         "fix_id": "F-24629r426349_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000224-AS-000152",
           "SRG-APP-000428-AS-000265",
@@ -803,8 +1327,23 @@
           "SRG-APP-000439-AS-000274",
           "SRG-APP-000440-AS-000167"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "V-102609",
+          "SV-111567"
+        ],
+        "cci": [
+          "CCI-000803",
+          "CCI-001188",
+          "CCI-002418",
+          "CCI-002421",
+          "CCI-002475",
+          "CCI-002476"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222968",
       "title": "Tomcat must use FIPS-validated ciphers on secured connectors.",
       "desc": "Connectors are how Tomcat receives requests over a network port, passes them to hosted web applications via HTTP or AJP, and then sends the results back to the requestor. Cryptographic ciphers are associated with the connector to create a secured connector. To ensure encryption strength is adequately maintained, the ciphers used must be FIPS 140-2-validated. The FIPS-validated crypto libraries are not provided by Tomcat; they are included as part of the Java instance and the underlying Operating System. The STIG checks to ensure the FIPSMode setting is enabled for the connector and also checks the logs for FIPS errors, which indicates FIPS non-compliance at the OS or Java layers. The administrator is responsible for ensuring the OS and Java instance selected for the Tomcat installation provide and enable these FIPS modules so Tomcat can be configured to use them. ",
@@ -820,9 +1359,21 @@
         "gid": "V-222969",
         "rid": "SV-222969r615938_rule",
         "stig_id": "TCAT-AS-000780",
+        "gtitle": "SRG-APP-000211-AS-000146",
         "fix_id": "F-24630r426352_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111461",
+          "V-102521"
+        ],
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222969",
       "title": "Access to JMX management interface must be restricted.",
       "desc": "Java Management Extensions (JMX) is used to provide programmatic access to Tomcat for management purposes. This includes monitoring and control of java applications running on Tomcat. If network access to the JMX port is not restricted, attackers can gain access to the application used to manage the system.",
@@ -838,9 +1389,21 @@
         "gid": "V-222970",
         "rid": "SV-222970r615938_rule",
         "stig_id": "TCAT-AS-000790",
+        "gtitle": "SRG-APP-000211-AS-000146",
         "fix_id": "F-24631r426355_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111463",
+          "V-102523"
+        ],
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222970",
       "title": "Access to Tomcat manager application must be restricted.",
       "desc": "The Tomcat manager application is used to manage the Tomcat server and the applications that run on Tomcat. By default, the manager application is only accessible via the localhost. Exposing the management application to any network interface that is available to non-administrative personnel leaves the Tomcat server vulnerable to attempts to access the management application. To mitigate this risk, the management application should only be run on the localhost or on network interfaces tied to a dedicated management network. This setting is managed in the $CATALINA_BASE/conf/server.xml file.",
@@ -856,9 +1419,21 @@
         "gid": "V-222971",
         "rid": "SV-222971r615938_rule",
         "stig_id": "TCAT-AS-000800",
+        "gtitle": "SRG-APP-000219-AS-000147",
         "fix_id": "F-24632r426358_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111465",
+          "V-102525"
+        ],
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222971",
       "title": "Tomcat servers must mutually authenticate proxy or load balancer connections.",
       "desc": "Tomcat servers are often placed behind a proxy when exposed to both trusted and untrusted networks. This is done for security and performance reasons. Tomcat does provide an HTTP server that can be configured to make hosted applications available to clients directly. However, this HTTP server has performance limitations and is not intended to be used on an enterprise scale. Exposing this service to untrusted networks also violates the layered security model and creates elevated risk of attack. To address these issues, a proxy or load balancer can be placed in front of the Tomcat server. To ensure the proxied connection is not spoofed, SSL mutual authentication must be employed between Tomcat and the proxy. Not all Tomcat systems will have an RMF system categorization that warrants mutual authentication protections. The site must determine if mutual authentication is warranted based on their system RMF categorization and data protection requirements. If the site determines that MA is not a requirement, they can document a risk acceptance for not mutually authenticating proxy or load balancer connections due to operational issues, or when the RMF system categorization does not warrant the added level of protection.",
@@ -874,9 +1449,21 @@
         "gid": "V-222973",
         "rid": "SV-222973r615938_rule",
         "stig_id": "TCAT-AS-000820",
+        "gtitle": "SRG-APP-000223-AS-000150",
         "fix_id": "F-24634r426364_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111469",
+          "V-102529"
+        ],
+        "cci": [
+          "CCI-001664"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222973",
       "title": "Tomcat must be configured to limit data exposure between applications.",
       "desc": "If RECYCLE_FACADES is true or if a security manager is in use, a new facade object will be created for each request. This reduces the chances that a bug in an application might expose data from one request to another. This setting is configured using environment variable settings. For Linux OS flavors other than Ubuntu, use the relevant OS commands. For Ubuntu, this setting can be managed in the /etc/systemd/system/tomcat.service file via the CATALINA_OPTS variable. This setting is defined in the file and referenced during tomcat startup in order to load tomcat environment variables. Technically, the tomcat.service referenced in the check and fix could be called a different name; but for STIG purposes and to provide a standard setting that can be referred to and obviously is used for Tomcat, tomcat.service was chosen.",
@@ -892,8 +1479,20 @@
         "gid": "V-222974",
         "rid": "SV-222974r615938_rule",
         "stig_id": "TCAT-AS-000860",
-        "fix_id": "F-24635r426367_fix"
+        "gtitle": "SRG-APP-000225-AS-000154",
+        "fix_id": "F-24635r426367_fix",
+        "rationale": null,
+        "legacy": [
+          "SV-111471",
+          "V-102531"
+        ],
+        "cci": [
+          "CCI-001190"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222974",
       "title": "Clusters must operate on a trusted network.",
       "desc": "<0> [object Object]",
@@ -909,9 +1508,21 @@
         "gid": "V-222975",
         "rid": "SV-222975r615938_rule",
         "stig_id": "TCAT-AS-000920",
+        "gtitle": "SRG-APP-000266-AS-000169",
         "fix_id": "F-24636r426370_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111473",
+          "V-102533"
+        ],
+        "cci": [
+          "CCI-001312"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222975",
       "title": "ErrorReportValve showServerInfo must be set to false.",
       "desc": "The Error Report Valve is a simple error handler for HTTP status codes that will generate and return HTML error pages. It can also be configured to return pre-defined static HTML pages for specific status codes and/or exception types. Disabling showServerInfo will only return the HTTP status code and remove all CSS from the default non-error related HTTP responses.",
@@ -927,9 +1538,21 @@
         "gid": "V-222976",
         "rid": "SV-222976r615938_rule",
         "stig_id": "TCAT-AS-000930",
+        "gtitle": "SRG-APP-000267-AS-000170",
         "fix_id": "F-24637r426373_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111475",
+          "V-102535"
+        ],
+        "cci": [
+          "CCI-001314"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222976",
       "title": "Default error pages for manager application must be customized.",
       "desc": "Default error pages that accompany the manager application provide educational information on how to configure user accounts and groups for accessing the manager application. These error pages provide responses to 401 (Unauthorized), 403 (Forbidden), and 404 (Not Found) JSP error codes and should not exist on production systems.",
@@ -945,9 +1568,21 @@
         "gid": "V-222977",
         "rid": "SV-222977r615938_rule",
         "stig_id": "TCAT-AS-000940",
+        "gtitle": "SRG-APP-000267-AS-000170",
         "fix_id": "F-24638r426376_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111477",
+          "V-102537"
+        ],
+        "cci": [
+          "CCI-001314"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222977",
       "title": "ErrorReportValve showReport must be set to false.",
       "desc": "The Error Report Valve is a simple error handler for HTTP status codes that will generate and return HTML error pages. It can also be configured to return pre-defined static HTML pages for specific status codes and/or exception types. Disabling showReport will result in no error message or stack trace being send to the client. This setting can be tailored on a per-application basis within each application specific web.xml.",
@@ -963,9 +1598,21 @@
         "gid": "V-222978",
         "rid": "SV-222978r615938_rule",
         "stig_id": "TCAT-AS-000950",
+        "gtitle": "SRG-APP-000267-AS-000170",
         "fix_id": "F-24639r426379_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111479",
+          "V-102539"
+        ],
+        "cci": [
+          "CCI-001314"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222978",
       "title": "Tomcat server version must not be sent with warnings and errors.",
       "desc": "A first order of attack is to identify vulnerable servers and services. Removing version information that would otherwise be provided when a client requests version data or receives an error message can limit automated attack attempts. Remove or replace the version string from HTTP error messages by repacking $CATALINA_HOME/server/lib/catalina.jar with an updated ServerInfo.properties file. This will modify the server information that is provided in error and warning responses.",
@@ -981,13 +1628,26 @@
         "gid": "V-222979",
         "rid": "SV-222979r615938_rule",
         "stig_id": "TCAT-AS-000970",
+        "gtitle": "SRG-APP-000295-AS-000263",
         "fix_id": "F-24640r622488_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000389",
           "SRG-APP-000220"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-111481",
+          "V-102541"
+        ],
+        "cci": [
+          "CCI-002038",
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222979",
       "title": "Idle timeout for management application must be set to 10 minutes.",
       "desc": "Tomcat can set idle session timeouts on a per application basis. The management application is provided with the Tomcat installation and is used to manage the applications that are installed on the Tomcat Server. Setting the idle timeout for the management application will kill the admin user's session after 10 minutes of inactivity. This will limit the opportunity for unauthorized persons to hijack the admin session. This setting will also affect the default timeout behavior of all hosted web applications. To adjust the individual hosted application settings that are not related to management of the system, modify the individual application web.xml file if application timeout requirements differ from the STIG. ",
@@ -1003,9 +1663,21 @@
         "gid": "V-222980",
         "rid": "SV-222980r615938_rule",
         "stig_id": "TCAT-AS-001020",
+        "gtitle": "SRG-APP-000315-AS-000094",
         "fix_id": "F-24641r426385_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111483",
+          "V-102543"
+        ],
+        "cci": [
+          "CCI-002314"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222980",
       "title": "LockOutRealms must be used for management of Tomcat.",
       "desc": "A LockOutRealm adds the ability to lock a user out after multiple failed logins. LockOutRealm is an implementation of the Tomcat Realm interface that extends the CombinedRealm to provide user lock out functionality if there are too many failed authentication attempts in a given period of time. A LockOutRealm is created by wrapping around a standard realm such as a JNDI Directory Realm which connects Tomcat to an LDAP Directory. A Catalina container (Engine, Host, or Context) may contain no more than one Realm element (although this one Realm may itself contain multiple nested Realms). In addition, the Realm associated with an Engine or a Host is automatically inherited by lower-level containers unless the lower level container explicitly defines its own Realm. If no Realm is configured for the Engine, an instance of the Null Realm will be configured for the Engine automatically.",
@@ -1021,9 +1693,21 @@
         "gid": "V-222981",
         "rid": "SV-222981r615938_rule",
         "stig_id": "TCAT-AS-001030",
+        "gtitle": "SRG-APP-000316-AS-000199",
         "fix_id": "F-24642r426388_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111485",
+          "V-102545"
+        ],
+        "cci": [
+          "CCI-002322"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222981",
       "title": "LockOutRealms failureCount attribute must be set to 5 failed logins for admin users.",
       "desc": "A LockOutRealm adds the ability to lock a user out after multiple failed logins. Setting the failureCount attribute to 5 will lock out a user account after 5 failed attempts. LockOutRealm is an implementation of the Tomcat Realm interface that extends the CombinedRealm to provide user lock out functionality if there are too many failed authentication attempts in a given period of time. A LockOutRealm is created by wrapping around a standard realm such as a JNDI Directory Realm which connects Tomcat to an LDAP Directory. A Catalina container (Engine, Host, or Context) may contain no more than one Realm element (although this one Realm may itself contain multiple nested Realms). In addition, the Realm associated with an Engine or a Host is automatically inherited by lower-level containers unless the lower level container explicitly defines its own Realm. If no Realm is configured for the Engine, an instance of the Null Realm will be configured for the Engine automatically.",
@@ -1039,9 +1723,21 @@
         "gid": "V-222982",
         "rid": "SV-222982r615938_rule",
         "stig_id": "TCAT-AS-001040",
+        "gtitle": "SRG-APP-000316-AS-000199",
         "fix_id": "F-24643r426391_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111487",
+          "V-102547"
+        ],
+        "cci": [
+          "CCI-002322"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222982",
       "title": "LockOutRealms lockOutTime attribute must be set to 600 seconds (10 minutes) for admin users.",
       "desc": "A LockOutRealm adds the ability to specify a lockout time that prevents further attempts after multiple failed logins. Setting the lockOutTime attribute to 600 will lock out a user account for 10 minutes. Further authentication failures during the lock out time will cause the lock out timer to reset to zero, effectively extending the lockout time. Valid authentication attempts during the lockout period will not succeed but will also not reset the lockout time. LockOutRealm is an implementation of the Tomcat Realm interface that extends the CombinedRealm to provide user lock out functionality if there are too many failed authentication attempts in a given period of time. A LockOutRealm is created by wrapping around a standard realm such as a JNDI Directory Realm which connects Tomcat to an LDAP Directory. A Catalina container (Engine, Host, or Context) may contain no more than one Realm element (although this one Realm may itself contain multiple nested Realms). In addition, the Realm associated with an Engine or a Host is automatically inherited by lower-level containers unless the lower level container explicitly defines its own Realm. If no Realm is configured for the Engine, an instance of the Null Realm will be configured for the Engine automatically.",
@@ -1057,9 +1753,21 @@
         "gid": "V-222983",
         "rid": "SV-222983r615938_rule",
         "stig_id": "TCAT-AS-001050",
+        "gtitle": "SRG-APP-000340-AS-000185",
         "fix_id": "F-24644r426394_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111489",
+          "V-102549"
+        ],
+        "cci": [
+          "CCI-002235"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222983",
       "title": "Tomcat user account must be set to nologin.",
       "desc": "When installing Tomcat, a user account is created on the OS. This account is used in order for Tomcat to be able to operate on the OS but does not require the ability to actually log in to the system. Therefore when the account is created, the account must not be provided access to a login shell or other program on the system. This is done by specifying the \"nologin\" parameter in the command/shell field of the passwd file.",
@@ -1075,9 +1783,21 @@
         "gid": "V-222984",
         "rid": "SV-222984r615938_rule",
         "stig_id": "TCAT-AS-001060",
+        "gtitle": "SRG-APP-000340-AS-000185",
         "fix_id": "F-24645r426397_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111491",
+          "V-102551"
+        ],
+        "cci": [
+          "CCI-002235"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222984",
       "title": "Tomcat user account must be a non-privileged user.",
       "desc": "Use a distinct non-privileged user account for running Tomcat. If Tomcat processes are compromised and a privileged user account is used to operate the Tomcat server processes, the entire system becomes compromised. Sample passwd file: tomcat:x:1001:1001::/opt/tomcat/usr/sbin/nologin The user ID is stored in field 3 of the passwd file.",
@@ -1093,9 +1813,21 @@
         "gid": "V-222985",
         "rid": "SV-222985r615938_rule",
         "stig_id": "TCAT-AS-001080",
+        "gtitle": "SRG-APP-000343-AS-000030",
         "fix_id": "F-24646r426400_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111493",
+          "V-102553"
+        ],
+        "cci": [
+          "CCI-002234"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222985",
       "title": "Application user name must be logged.",
       "desc": "The access logfile format is defined within a Valve that implements the org.apache.catalina.valves.AccessLogValve interface within the /opt/tomcat/server.xml configuration file: The %u pattern code is included in the pattern element and logs the username used to authenticate to an application. Including the username pattern in the log configuration provides useful information about the application user who is logging in, which is critical for troubleshooting and forensic investigations.",
@@ -1111,9 +1843,21 @@
         "gid": "V-222986",
         "rid": "SV-222986r615938_rule",
         "stig_id": "TCAT-AS-001200",
+        "gtitle": "SRG-APP-000380-AS-000088",
         "fix_id": "F-24647r426403_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111495",
+          "V-102555"
+        ],
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222986",
       "title": "$CATALINA_HOME folder must be owned by the root user, group tomcat.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have the folder where Tomcat is installed owned by the root user with the group set to tomcat. The $CATALINA_HOME environment variable should be set to the location of the root directory of the \"binary\" distribution of Tomcat.",
@@ -1129,9 +1873,21 @@
         "gid": "V-222987",
         "rid": "SV-222987r754842_rule",
         "stig_id": "TCAT-AS-001220",
+        "gtitle": "SRG-APP-000380-AS-000088",
         "fix_id": "F-24648r426406_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111497",
+          "V-102557"
+        ],
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222987",
       "title": "$CATALINA_BASE/conf/ folder must be owned by root, group tomcat.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have Tomcat files contained in the conf/ folder as members of the \"tomcat\" group. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions. Note that running Tomcat in a Docker environment can impact how file permissions and user ownership settings are applied. Due to associated Docker configuration complexities, the STIG is scoped for standalone rather than virtual Docker deployments. If the ISSM determines the operational need to allow application admins access to change the Tomcat configuration outweighs the risk of limiting that access, then they can change the group membership to accommodate. Ownership must not be changed. The ISSM should take the exposure of the system to high risk networks into account.",
@@ -1147,9 +1903,21 @@
         "gid": "V-222988",
         "rid": "SV-222988r754843_rule",
         "stig_id": "TCAT-AS-001250",
+        "gtitle": "SRG-APP-000380-AS-000088",
         "fix_id": "F-24649r426409_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111499",
+          "V-102559"
+        ],
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222988",
       "title": "$CATALINA_BASE/logs/ folder must be owned by tomcat user, group tomcat.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with group Tomcat. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions.",
@@ -1165,9 +1933,21 @@
         "gid": "V-222989",
         "rid": "SV-222989r754844_rule",
         "stig_id": "TCAT-AS-001260",
+        "gtitle": "SRG-APP-000380-AS-000088",
         "fix_id": "F-24650r426412_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111501",
+          "V-102561"
+        ],
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222989",
       "title": "$CATALINA_BASE/temp/ folder must be owned by tomcat user, group tomcat.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with group Tomcat. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions. If operational needs require application administrators to be able to change application configurations, the group permissions can be modified to allow specific application admins the access they require with an ISSM risk acceptance. Ownership may not change. The exposure of the system to high risk networks should always be taken into account.",
@@ -1183,9 +1963,21 @@
         "gid": "V-222990",
         "rid": "SV-222990r754845_rule",
         "stig_id": "TCAT-AS-001270",
+        "gtitle": "SRG-APP-000380-AS-000088",
         "fix_id": "F-24651r426415_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111503",
+          "V-102563"
+        ],
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222990",
       "title": "$CATALINA_BASE/temp folder permissions must be set to 750.",
       "desc": "Tomcat's file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with the group Tomcat. While root has read/write privileges, tomcat group only has read and world has no permissions. The exceptions are the logs, temp and work directory that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions. If operational needs require application administrators to be able to change application configurations, the group permissions can be modified to allow specific application admins the access they require with an ISSM risk acceptance. Ownership may not change.",
@@ -1201,9 +1993,21 @@
         "gid": "V-222991",
         "rid": "SV-222991r754846_rule",
         "stig_id": "TCAT-AS-001280",
+        "gtitle": "SRG-APP-000380-AS-000088",
         "fix_id": "F-24652r426418_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111505",
+          "V-102565"
+        ],
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222991",
       "title": "$CATALINA_BASE/work/ folder must be owned by tomcat user, group tomcat.",
       "desc": "Tomcat file permissions must be restricted. The standard configuration is to have all Tomcat files owned by root with group Tomcat. While root has read/write privileges, group only has read permissions, and world has no permissions. The exceptions are the logs, temp, and work directories that are owned by the Tomcat user rather than root. This means that even if an attacker compromises the Tomcat process, they cannot change the Tomcat configuration, deploy new web applications, or modify existing web applications. The Tomcat process runs with a umask of 0027 to maintain these permissions. If operational needs require application administrators to be able to change application configurations, the group permissions can be modified to allow specific application admins the access they require with an ISSM risk acceptance. Ownership may not change.",
@@ -1219,15 +2023,30 @@
         "gid": "V-222993",
         "rid": "SV-222993r615938_rule",
         "stig_id": "TCAT-AS-001320",
+        "gtitle": "SRG-APP-000391-AS-000239",
         "fix_id": "F-24654r426424_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000391-AS-000239",
           "SRG-APP-000392-AS-000240",
           "SRG-APP-000402-AS-000247",
           "SRG-APP-000403-AS-000248"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-111509",
+          "V-102569"
+        ],
+        "cci": [
+          "CCI-001953",
+          "CCI-001954",
+          "CCI-002009",
+          "CCI-002010"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222993",
       "title": "Multifactor certificate-based tokens (CAC) must be used when accessing the management interface.",
       "desc": "Password authentication does not provide sufficient security control when accessing a management interface. DoD has specified that the CAC will be used when authenticating and passwords will only be used when CAC authentication is not a plausible solution. Tomcat provides the ability to do certificate based authentication and client authentication; therefore, the Tomcat server must be configured to use CAC. ",
@@ -1243,9 +2062,21 @@
         "gid": "V-222994",
         "rid": "SV-222994r615938_rule",
         "stig_id": "TCAT-AS-001430",
+        "gtitle": "SRG-APP-000427-AS-000264",
         "fix_id": "F-24655r426427_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111511",
+          "V-102571"
+        ],
+        "cci": [
+          "CCI-002470"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222994",
       "title": "Certificates in the trust store must be issued/signed by an approved CA.",
       "desc": "Use of self-signed certificates creates a lack of integrity and invalidates the certificate based authentication trust model. Certificates used by production systems must be issued/signed by a trusted Root CA and cannot be self-signed. For systems that communicate with industry partners, the DoD ECA program supports the issuance of DoD-approved certificates to industry partners. For information on the DoD ECA program, refer to the DoD PKI office. Links to their site are available on https://public.cyber.mil.",
@@ -1261,9 +2092,21 @@
         "gid": "V-222995",
         "rid": "SV-222995r615938_rule",
         "stig_id": "TCAT-AS-001460",
+        "gtitle": "SRG-APP-000435-AS-000069",
         "fix_id": "F-24656r426430_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111513",
+          "V-102573"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222995",
       "title": "The application server, when categorized as a high availability system within RMF, must be in a high-availability (HA) cluster.",
       "desc": "A MAC I system is a system that handles data vital to the organization's operational readiness or effectiveness of deployed or contingency forces. A MAC I system must maintain the highest level of integrity and availability. By HA clustering the application server, the hosted application and data are given a platform that is load-balanced and provided high-availability.",
@@ -1279,13 +2122,26 @@
         "gid": "V-222996",
         "rid": "SV-222996r615938_rule",
         "stig_id": "TCAT-AS-001470",
+        "gtitle": "SRG-APP-000435-AS-000163",
         "fix_id": "F-24657r426433_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000435-AS-000163",
           "SRG-APP-000456-AS-000266"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "V-102575",
+          "SV-111515"
+        ],
+        "cci": [
+          "CCI-002385",
+          "CCI-002605"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222996",
       "title": "Tomcat server must be patched for security vulnerabilities.",
       "desc": "Tomcat is constantly being updated to address newly discovered vulnerabilities, some of which include denial-of-service attacks. To address this risk, the Tomcat administrator must ensure the system remains up to date on patches. ",
@@ -1301,8 +2157,21 @@
         "gid": "V-222997",
         "rid": "SV-222997r615938_rule",
         "stig_id": "TCAT-AS-001560",
-        "fix_id": "F-24658r426436_fix"
+        "gtitle": "SRG-APP-000495-AS-000220",
+        "fix_id": "F-24658r426436_fix",
+        "rationale": null,
+        "legacy": [
+          "SV-111517",
+          "V-102577"
+        ],
+        "cci": [
+          "CCI-000172",
+          "CCI-001814"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222997",
       "title": "AccessLogValve must be configured for Catalina engine.",
       "desc": "<0> [object Object]",
@@ -1318,9 +2187,21 @@
         "gid": "V-222998",
         "rid": "SV-222998r615938_rule",
         "stig_id": "TCAT-AS-001590",
+        "gtitle": "SRG-APP-000504-AS-000229",
         "fix_id": "F-24659r426439_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111519",
+          "V-102579"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222998",
       "title": "Changes to $CATALINA_HOME/bin/ folder must be logged.",
       "desc": "The $CATALINA_HOME/bin folder contains startup and control scripts for the Tomcat Catalina server. To provide forensic evidence in the event of file tampering, changes to content in this folder must be logged. For Linux OS flavors other than Ubuntu, use the relevant OS commands. This can be done on the Ubuntu OS via the auditctl command. Using the -p wa flag set the permissions flag for a file system watch and logs file attribute and content change events into syslog.",
@@ -1336,9 +2217,21 @@
         "gid": "V-222999",
         "rid": "SV-222999r615938_rule",
         "stig_id": "TCAT-AS-001591",
+        "gtitle": "SRG-APP-000504-AS-000229",
         "fix_id": "F-24660r426442_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111521",
+          "V-102581"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-222999",
       "title": "Changes to $CATALINA_BASE/conf/ folder must be logged.",
       "desc": "The $CATALINA_BASE/conf folder contains configuration files for the Tomcat Catalina server. To provide forensic evidence in the event of file tampering, changes to contents in this folder must be logged. For Linux OS flavors other than Ubuntu, use the relevant OS commands. This can be done on the Ubuntu OS via the auditctl command. Using the -p wa flag set the permissions flag for a file system watch and logs file attribute and content change events into syslog.",
@@ -1354,9 +2247,21 @@
         "gid": "V-223000",
         "rid": "SV-223000r615938_rule",
         "stig_id": "TCAT-AS-001592",
+        "gtitle": "SRG-APP-000504-AS-000229",
         "fix_id": "F-24661r426445_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111523",
+          "V-102583"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223000",
       "title": "Changes to $CATALINA_HOME/lib/ folder must be logged.",
       "desc": "The $CATALINA_HOME/lib folder contains library files for the Tomcat Catalina server. These are in the form of java archive (jar) files. To provide forensic evidence in the event of file tampering, changes to contents in this folder must be logged. For Linux OS flavors other than Ubuntu, use the relevant OS commands. This can be done on the Ubuntu OS via the auditctl command. Using the -p wa flag set the permissions flag for a file system watch and logs file attribute and content change events into syslog.",
@@ -1372,9 +2277,21 @@
         "gid": "V-223001",
         "rid": "SV-223001r615938_rule",
         "stig_id": "TCAT-AS-001640",
+        "gtitle": "SRG-APP-000514-AS-000137",
         "fix_id": "F-24662r426448_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111525",
+          "V-102585"
+        ],
+        "cci": [
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223001",
       "title": "Application servers must use NIST-approved or NSA-approved key management technology and processes.",
       "desc": "Class 3 PKI certificates are used for servers and software signing rather than for identifying individuals. Class 4 certificates are used for business-to-business transactions. Utilizing unapproved certificates not issued or approved by DoD or CNS creates an integrity risk. The application server must utilize approved DoD or CNS Class 3 or Class 4 certificates for software signing and business-to-business transactions.",
@@ -1390,9 +2307,21 @@
         "gid": "V-223002",
         "rid": "SV-223002r615938_rule",
         "stig_id": "TCAT-AS-001660",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-24663r426451_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111527",
+          "V-102587"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223002",
       "title": "STRICT_SERVLET_COMPLIANCE must be set to true.",
       "desc": "Strict Servlet Compliance forces Tomcat to adhere to standards specifications including but not limited to RFC2109. RFC2109 sets the standard for HTTP session management. This setting affects several settings which primarily pertain to cookie headers, cookie values, and sessions. Cookies will be parsed for strict adherence to specifications. Note that changing a number of these default settings may break some systems, as some browsers are unable to correctly handle the cookie headers that result from a strict adherence to the specifications. This one setting changes the default values for the following settings: org.apache.catalina.core. ApplicationContext.GET_RESOURCE_REQUIRE_SLASH org.apache.catalina.core. ApplicationDispatcher.WRAP_SAME_OBJECT org.apache.catalina.core. StandardHostValve.ACCESS_SESSION org.apache.catalina.session. StandardSession.ACTIVITY_CHECK org.apache.catalina.session. StandardSession.LAST_ACCESS_AT_START org.apache.tomcat.util.http. ServerCookie.ALWAYS_ADD_EXPIRES org.apache.tomcat.util.http. ServerCookie.FWD_SLASH_IS_SEPARATOR org.apache.tomcat.util.http. ServerCookie.PRESERVE_COOKIE_HEADER org.apache.tomcat.util.http. ServerCookie.STRICT_NAMING The resourceOnlyServlets attribute of any Context element. The tldValidation attribute of any Context element. The useRelativeRedirects attribute of any Context element. The xmlNamespaceAware attribute of any Context element. The xmlValidation attribute of any Context element.",
@@ -1408,9 +2337,21 @@
         "gid": "V-223003",
         "rid": "SV-223003r615938_rule",
         "stig_id": "TCAT-AS-001670",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-24664r426454_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111529",
+          "V-102589"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223003",
       "title": "RECYCLE_FACADES must be set to true.",
       "desc": "If RECYCLE_FACADES is true or if a security manager is in use, a new facade object will be created for each request. This reduces the chances that a bug in an application might expose data from one request to another. This setting is configured using environment variable settings. For Linux OS flavors other than Ubuntu, use the relevant OS commands. For Ubuntu, this setting can be managed in the /etc/systemd/system/tomcat.service file via the CATALINA_OPTS variable. This setting is defined in the file and referenced during Tomcat startup in order to load Tomcat environment variables. Technically, the tomcat.service referenced in the check and fix could be called a different name, for STIG purposes and to provide a standard setting that can be referred to and obviously is used for Tomcat, tomcat.service was chosen.",
@@ -1426,9 +2367,21 @@
         "gid": "V-223004",
         "rid": "SV-223004r615938_rule",
         "stig_id": "TCAT-AS-001680",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-24665r426457_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111531",
+          "V-102591"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223004",
       "title": "ALLOW_BACKSLASH must be set to false.",
       "desc": "When Tomcat is installed behind a proxy configured to only allow access to certain Tomcat contexts (web applications), an HTTP request containing \"/\\../\" may allow attackers to work around the proxy restrictions using directory traversal attack methods. If allow_backslash is true the '\\' character will be permitted as a path delimiter. The default value for the setting is false but Tomcat should always be configured as if no proxy restricting context access was used and allow_backslash should be set to false to prevent directory traversal style attacks. This setting can create operability issues with non-compliant clients. In order to accommodate a non-compliant client, any deviation from the STIG setting must be approved by the ISSO.",
@@ -1444,9 +2397,21 @@
         "gid": "V-223005",
         "rid": "SV-223005r615938_rule",
         "stig_id": "TCAT-AS-001690",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-24666r426460_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111533",
+          "V-102593"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223005",
       "title": "ENFORCE_ENCODING_IN_GET_WRITER must be set to true.",
       "desc": "Some clients try to guess the character encoding of text media when the mandated default of ISO-8859-1 should be used. Some browsers will interpret as UTF-7 when the characters are safe for ISO-8859-1. This can create the potential for a XSS attack. To defend against this, enforce_encoding_in_get_writer must be set to true.",
@@ -1462,9 +2427,21 @@
         "gid": "V-223006",
         "rid": "SV-223006r615938_rule",
         "stig_id": "TCAT-AS-001700",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-24667r426463_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111535",
+          "V-102595"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223006",
       "title": "Tomcat users in a management role must be approved by the ISSO.",
       "desc": "Deploying applications to Tomcat requires a Tomcat user account that is in the \"manager-script\" role. Any user accounts in a Tomcat management role must be approved by the ISSO.",
@@ -1480,9 +2457,21 @@
         "gid": "V-223007",
         "rid": "SV-223007r615938_rule",
         "stig_id": "TCAT-AS-001710",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-24668r426466_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111537",
+          "V-102597"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223007",
       "title": "Hosted applications must be documented in the system security plan.",
       "desc": "The ISSM/ISSO must be cognizant of all applications operating on the Tomcat server, and must address any security implications associated with the operation of the applications. If unknown/undocumented applications are operating on the Tomcat server, these applications increase risk for the system due to not being managed, patched or monitored for unapproved activity on the system.",
@@ -1498,9 +2487,21 @@
         "gid": "V-223008",
         "rid": "SV-223008r615938_rule",
         "stig_id": "TCAT-AS-001720",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-24669r426469_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111539",
+          "V-102599"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223008",
       "title": "Connectors must be approved by the ISSO.",
       "desc": "Connectors are how Tomcat receives requests over a network port, passes them to hosted web applications via HTTP or AJP and then sends back the results to the requestor. A port and a protocol are tied to each connector. Only connectors approved by the ISSO must be installed. ISSO review will consist of validating connector protocol as being secure and required in order for the hosted application to operate. The ISSO will ensure that unnecessary or insecure connector protocols are not enabled. The ISSO will provide documented approval for each connector that will be maintained in the System Security Plan (SSP).",
@@ -1516,9 +2517,21 @@
         "gid": "V-223009",
         "rid": "SV-223009r615938_rule",
         "stig_id": "TCAT-AS-001730",
+        "gtitle": "SRG-APP-000516-AS-000237",
         "fix_id": "F-24670r426472_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111541",
+          "V-102601"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223009",
       "title": "Connector address attribute must be set.",
       "desc": "Connectors are how Tomcat receives requests over a network port, passes them to hosted web applications via HTTP or AJP, and then sends back the results to the requestor. The \"address\" attribute specifies which network interface the connector listens on. If no IP address is specified, the connector will listen on all configured interfaces. Access to the connector must be restricted to only the network interface(s) specified in the System Security Plan (SSP).",
@@ -1534,9 +2547,21 @@
         "gid": "V-223010",
         "rid": "SV-223010r615938_rule",
         "stig_id": "TCAT-AS-001731",
+        "gtitle": "SRG-APP-000108-AS-000067",
         "fix_id": "F-24671r426475_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-111571",
+          "V-102621"
+        ],
+        "cci": [
+          "CCI-000139"
+        ]
       },
+      "refs": [
+        "DPMS Target Apache Tomcat Application Server 9"
+      ],
       "id": "V-223010",
       "title": "The application server must alert the SA and ISSO, at a minimum, in the event of a log processing failure.",
       "desc": "Logs are essential to monitor the health of the system, investigate changes that occurred to the system, or investigate a security incident. When log processing fails, the events during the failure can be lost. To minimize the timeframe of the log failure, an alert needs to be sent to the SA and ISSO at a minimum. Log processing failures include, but are not limited to, failures in the application server log capturing mechanisms or log storage capacity being reached or exceeded. In some instances, it is preferred to send alarms to individuals rather than to an entire group. Application servers must be able to trigger an alarm and send an alert to, at a minimum, the SA and ISSO in the event there is an application server log processing failure.",

@@ -11,9 +11,21 @@
         "gid": "V-234031",
         "rid": "SV-234031r612749_rule",
         "stig_id": "TANS-00-000155",
+        "gtitle": "SRG-APP-000111",
         "fix_id": "F-37181r610594_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102135",
+          "V-92033"
+        ],
+        "cci": [
+          "CCI-000154"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234031",
       "title": "Tanium must centrally review and analyze audit records from multiple components within the system.",
       "desc": "Successful incident response and auditing relies on timely, accurate system information and analysis in order to allow the organization to identify and respond to potential incidents in a proficient manner. If the application does not provide the ability to centrally review the application logs, forensic analysis is negatively impacted. Segregation of logging data to multiple disparate computer systems is counterproductive and makes log analysis and log event alarming difficult to implement and manage, particularly when the system or application has multiple logging components written to different locations or systems. Automated mechanisms for centralized reviews and analyses include, for example, Security Information Management products.",
@@ -29,9 +41,21 @@
         "gid": "V-234032",
         "rid": "SV-234032r612749_rule",
         "stig_id": "TANS-00-000655",
+        "gtitle": "SRG-APP-000379",
         "fix_id": "F-37182r610597_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102137",
+          "V-92035"
+        ],
+        "cci": [
+          "CCI-001744"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234032",
       "title": "Tanium must implement organization-defined automated security responses if baseline configurations are changed in an unauthorized manner.",
       "desc": "Unauthorized changes to the baseline configuration could make the system vulnerable to various attacks or allow unauthorized access to the system. Changes to information system configurations can have unintended side effects, some of which may be relevant to security. Detecting such changes and providing an automated response can help avoid unintended, negative consequences that could ultimately affect the security state of the application. Examples of security responses include, but are not limited to the following: halting application processing; halting selected application functions; or issuing alerts/notifications to organizational personnel when there is an unauthorized modification of a configuration item.",
@@ -47,9 +71,21 @@
         "gid": "V-234033",
         "rid": "SV-234033r612749_rule",
         "stig_id": "TANS-00-000670",
+        "gtitle": "SRG-APP-000386",
         "fix_id": "F-37183r610600_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102139",
+          "V-92037"
+        ],
+        "cci": [
+          "CCI-001774"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234033",
       "title": "Tanium must employ a deny-all, permit-by-exception (whitelist) policy to allow the execution of authorized software programs.",
       "desc": "Utilizing a whitelist provides a configuration management method for allowing the execution of only authorized software. Using only authorized software decreases risk by limiting the number of potential vulnerabilities. The organization must identify authorized software programs and permit execution of authorized software. The process used to identify software programs that are authorized to execute on organizational information systems is commonly referred to as whitelisting. Verification of whitelisted software can occur either prior to execution or at system startup. This requirement applies to configuration management applications or similar types of applications designed to manage system processes and configurations (e.g., HBSS and software wrappers).",
@@ -65,9 +101,21 @@
         "gid": "V-234034",
         "rid": "SV-234034r612749_rule",
         "stig_id": "TANS-00-000755",
+        "gtitle": "SRG-APP-000414",
         "fix_id": "F-37184r610603_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102141",
+          "V-92039"
+        ],
+        "cci": [
+          "CCI-001067"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234034",
       "title": "The vulnerability scanning application must implement privileged access authorization to all Tanium information systems and infrastructure components for selected organization-defined vulnerability scanning activities.",
       "desc": "In certain situations, the nature of the vulnerability scanning may be more intrusive, or the information system component that is the subject of the scanning may contain highly sensitive information. Privileged access authorization to selected system components facilitates more thorough vulnerability scanning and also protects the sensitive nature of such scanning. The vulnerability scanning application must utilize privileged access authorization for the scanning account.",
@@ -83,14 +131,28 @@
         "gid": "V-234035",
         "rid": "SV-234035r612749_rule",
         "stig_id": "TANS-CL-000001",
+        "gtitle": "SRG-APP-000015",
         "fix_id": "F-37185r610606_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000015",
           "SRG-APP-000158",
           "SRG-APP-000394"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-102143",
+          "V-92041"
+        ],
+        "cci": [
+          "CCI-000778",
+          "CCI-001453",
+          "CCI-001958"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234035",
       "title": "The Tanium endpoint must have the Tanium Servers public key in its installation.",
       "desc": "Without cryptographic integrity protections, information can be altered by unauthorized users without detection. Remote access is access to DoD nonpublic information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network. Remote access methods include, for example, dial-up, broadband, and wireless. Cryptographic mechanisms used for protecting the integrity of information include, for example, signed hash functions using asymmetric cryptography enabling distribution of the public key to verify the hash information while maintaining the confidentiality of the secret key used to generate the hash. ",
@@ -106,9 +168,21 @@
         "gid": "V-234036",
         "rid": "SV-234036r612749_rule",
         "stig_id": "TANS-CL-000002",
+        "gtitle": "SRG-APP-000119",
         "fix_id": "F-37186r610609_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102145",
+          "V-92043"
+        ],
+        "cci": [
+          "CCI-000163"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234036",
       "title": "Access to Tanium logs on each endpoint must be restricted by permissions.",
       "desc": "For the Tanium Client software to run without impact from external negligent or malicious changes, the permissions on the Tanium log files and their directory must be restricted. Tanium is deployed with a Client Hardening Solution. This solution, when applied, will ensure directory permissions are in place.",
@@ -124,13 +198,27 @@
         "gid": "V-234037",
         "rid": "SV-234037r612749_rule",
         "stig_id": "TANS-CL-000003",
+        "gtitle": "SRG-APP-000131",
         "fix_id": "F-37187r610612_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000131",
           "SRG-APP-000219"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-102147",
+          "V-92045"
+        ],
+        "cci": [
+          "CCI-001184",
+          "CCI-001967",
+          "CCI-001749"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234037",
       "title": "The Tanium cryptographic signing capabilities must be enabled on the Tanium Clients to safeguard the authenticity of communications sessions when answering requests from the Tanium Server.",
       "desc": "All of Tanium's signing capabilities should be enabled upon install. Tanium supports the cryptographic signing and verification before execution of all Sensors, Questions, Actions, Sensor Libraries, File Shards, etc. Enabling signing does away with the ability of an attacker to conduct Man in the Middle (MitM) attacks for the purposes of remote code execution and precludes the modification of the aforementioned data elements in transit. Additionally, Tanium supports object level signing for content ingested into the Tanium platform. This allows for the detection and rejection of changes to objects (sensors, actions, etc.) by even a privileged user within Tanium. Tanium has built-in signing capabilities enabled by default when installed. Cryptographic signing and verification of all Sensors, Questions, Actions, Sensor Libraries, File Shards, etc. before execution will be enforced by Tanium. Signing will prevent MitM remote code execution attacks and will protect data element in transit. Tanium also supports object level signing for content within the Tanium platform. ",
@@ -146,9 +234,21 @@
         "gid": "V-234038",
         "rid": "SV-234038r612749_rule",
         "stig_id": "TANS-CL-000004",
+        "gtitle": "SRG-APP-000142",
         "fix_id": "F-37188r610615_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102149",
+          "V-92047"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234038",
       "title": "Firewall rules must be configured on the Tanium Endpoints for Client-to-Server communications.",
       "desc": "In addition to the client-to-server TCP communication that takes place over port 17472, Tanium Clients also communicate to other Tanium-managed computers over port 17472. The Tanium environment can perform hundreds or thousands of times faster than other security or systems management tools because the Tanium Clients communicate in secure, linearly-controlled peer-to-peer rings. Because clients dynamically communicate with other nearby agents based on proximity and latency, rings tend to form automatically to match a customer's topology--endpoints in California will form one ring while endpoints in Germany will form a separate ring. https://docs.tanium.com/platform_install/platform_install/reference_network_ports.html.",
@@ -164,9 +264,21 @@
         "gid": "V-234039",
         "rid": "SV-234039r612749_rule",
         "stig_id": "TANS-CL-000005",
+        "gtitle": "SRG-APP-000328",
         "fix_id": "F-37189r610618_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102151",
+          "V-92049"
+        ],
+        "cci": [
+          "CCI-002165"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234039",
       "title": "Control of the Tanium Client service must be restricted to SYSTEM access only for all managed clients.",
       "desc": "The reliability of the Tanium client's ability to operate depends upon controlling access to the Tanium client service. By restricting access to SYSTEM access only, the non-Tanium system administrator will not have the ability to impact operability of the service.",
@@ -182,9 +294,21 @@
         "gid": "V-234040",
         "rid": "SV-234040r612749_rule",
         "stig_id": "TANS-CL-000006",
+        "gtitle": "SRG-APP-000328",
         "fix_id": "F-37190r610621_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102153",
+          "V-92051"
+        ],
+        "cci": [
+          "CCI-002165"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234040",
       "title": "The ability to uninstall the Tanium Client service must be disabled on all managed clients.",
       "desc": "By default, end users have the ability to uninstall software on their clients. In the event the Tanium Client software is uninstalled, the Tanium Server is unable to manage the client and must redeploy to the client. Preventing the software from being displayed in the client's Add/Remove Programs will lessen the risk of the software being uninstalled by non-Tanium System Administrators.",
@@ -200,9 +324,21 @@
         "gid": "V-234041",
         "rid": "SV-234041r612749_rule",
         "stig_id": "TANS-CL-000007",
+        "gtitle": "SRG-APP-000328",
         "fix_id": "F-37191r610624_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102155",
+          "V-92053"
+        ],
+        "cci": [
+          "CCI-002165"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234041",
       "title": "The permissions on the Tanium Client directory must be restricted to only the SYSTEM account on all managed clients.",
       "desc": "By restricting access to the Tanium Client directory on managed clients, the Tanium client's ability to operate and function as designed will be protected from malicious attack and unintentional modifications by end users.",
@@ -218,9 +354,21 @@
         "gid": "V-234042",
         "rid": "SV-234042r612749_rule",
         "stig_id": "TANS-CL-000008",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-37192r610627_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102157",
+          "V-92055"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234042",
       "title": "Tanium endpoint files must be excluded from on-access antivirus actions.",
       "desc": "Similar to any other host-based applications, the Tanium Client is subject to the restrictions other System-level software may place on an operating environment. That is to say that Antivirus, IPS, Encryption, or other security and management stack software may disallow the Client from working as expected. https://docs.tanium.com/platform_install/platform_install/reference_host_system_security_exceptions.html.",
@@ -236,9 +384,21 @@
         "gid": "V-234043",
         "rid": "SV-234043r612749_rule",
         "stig_id": "TANS-CL-000010",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-37193r610630_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102159",
+          "V-92057"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234043",
       "title": "The Tanium Client Deployment Tool (CDT) must not be configured to use the psexec method of deployment.",
       "desc": "When using the Tanium Client Deployment Tool (CDT), using psexec represents an increased vulnerability as the NTLM hash and clear text passwords of the authenticating user is exposed in the memory of the remote system. To mitigate this vulnerability, the psexec method of deployment must not be used.",
@@ -254,9 +414,21 @@
         "gid": "V-234044",
         "rid": "SV-234044r612749_rule",
         "stig_id": "TANS-CL-000012",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-37194r610633_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102161",
+          "V-92059"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234044",
       "title": "Tanium endpoint files must be protected from file encryption actions.",
       "desc": "Similar to any other host-based applications, the Tanium Client is subject to the restrictions other System-level software may place on an operating environment. That is to say that Antivirus, Encryption, or other security and management stack software may disallow the Client from working as expected. https://docs.tanium.com/platform_install/platform_install/reference_host_system_security_exceptions.html.",
@@ -272,9 +444,21 @@
         "gid": "V-234045",
         "rid": "SV-234045r612749_rule",
         "stig_id": "TANS-CL-000013",
+        "gtitle": "SRG-APP-000246",
         "fix_id": "F-37195r610636_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102163",
+          "V-92061"
+        ],
+        "cci": [
+          "CCI-001094"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234045",
       "title": "The Tanium application must restrict the ability of individuals to place too much impact upon the network, which might result in a Denial of Service (DoS) event on the network by using RandomSensorDelayInSeconds.",
       "desc": "DoS is a condition where a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. Individuals of concern can include hostile insiders or external adversaries that have successfully breached the information system and are using the system as a platform to launch cyberattacks on third-parties. Applications and application developers must take the steps needed to ensure users cannot use an authorized application to launch DoS attacks against other systems and networks. For example, applications may include mechanisms that throttle network traffic so users are not able to generate unlimited network traffic via the application. Limiting system resources that are allocated to any user to a bare minimum may also reduce the ability of users to launch some DoS attacks. The methods employed to counter this risk will be dependent upon the application layer methods that can be used to exploit it.",
@@ -290,9 +474,21 @@
         "gid": "V-234046",
         "rid": "SV-234046r612749_rule",
         "stig_id": "TANS-CL-000014",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-37196r610639_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102165",
+          "V-92063"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234046",
       "title": "Tanium endpoint files must be excluded from host-based intrusion prevention intervention.",
       "desc": "Similar to any other host-based applications, the Tanium Client is subject to the restrictions other System-level software may place on an operating environment. Antivirus, IPS, Encryption, or other security and management stack software may disallow the Tanium Server from working as expected. https://docs.tanium.com/platform_install/platform_install/reference_host_system_security_exceptions.html.",
@@ -308,9 +504,21 @@
         "gid": "V-234047",
         "rid": "SV-234047r612749_rule",
         "stig_id": "TANS-CN-000001",
+        "gtitle": "SRG-APP-000002",
         "fix_id": "F-37197r610642_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102167",
+          "V-92065"
+        ],
+        "cci": [
+          "CCI-000060"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234047",
       "title": "The Tanium application must retain the session lock until the user reestablishes access using established identification and authentication procedures.",
       "desc": "A session lock is a temporary action taken when a user stops work and moves away from the immediate physical vicinity of the information system, but does not want to log out because of the temporary nature of the absence. The session lock is implemented at the point where session activity can be determined. This is typically determined and performed at the operating system-level, but in some instances it may be at the application-level. Regardless of where the session lock is determined and implemented, once invoked the session lock shall remain in place until the user re-authenticates. No other system or application activity aside from re-authentication shall unlock the system.",
@@ -326,13 +534,26 @@
         "gid": "V-234048",
         "rid": "SV-234048r612749_rule",
         "stig_id": "TANS-CN-000002",
+        "gtitle": "SRG-APP-000233",
         "fix_id": "F-37198r610645_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000233",
           "SRG-APP-000317"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-102169",
+          "V-92067"
+        ],
+        "cci": [
+          "CCI-001084",
+          "CCI-002142"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234048",
       "title": "The Tanium Application Server must be configured with a connector to sync to Microsoft Active Directory for account management functions.",
       "desc": "By restricting access to the Tanium Server to only Microsoft Active Directory, user accounts and related permissions can be strictly monitored. Account management will be under the operational responsibility of the System Administrator for the Windows Operation System Active Directory. ",
@@ -348,9 +569,21 @@
         "gid": "V-234049",
         "rid": "SV-234049r612749_rule",
         "stig_id": "TANS-CN-000003",
+        "gtitle": "SRG-APP-000023",
         "fix_id": "F-37199r610648_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102171",
+          "V-92069"
+        ],
+        "cci": [
+          "CCI-000015"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234049",
       "title": "The Tanium Application Server must be configured to only use Microsoft Active Directory for account management functions.",
       "desc": "By restricting access to the Tanium Server to only Microsoft Active Directory, user accounts and related permissions can be strictly monitored. Account management will be under the operational responsibility of the System Administrator for the Windows Operation System Active Directory.",
@@ -366,9 +599,21 @@
         "gid": "V-234050",
         "rid": "SV-234050r612749_rule",
         "stig_id": "TANS-CN-000004",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-37200r610651_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102173",
+          "V-92071"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234050",
       "title": "Tanium Computer Groups must be used to restrict console users from affecting changes to unauthorized computers.",
       "desc": "Computer Groups allow a site running Tanium to assign responsibility of specific Computer Groups to specific Tanium console users. By doing so, a desktop administrator, for example, will not have the ability to enforce an action against a high visibility server. For large sites, it is crucial to have the Computer Groups and while a smaller site might not seem to require Computer Groups, creating them provides for a cleaner implementation. All sites will be required to have some kind of Computer Groups configured other than the default \"All Computers\".",
@@ -384,9 +629,21 @@
         "gid": "V-234051",
         "rid": "SV-234051r612749_rule",
         "stig_id": "TANS-CN-000005",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-37201r610654_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102175",
+          "V-92073"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234051",
       "title": "Documentation identifying Tanium console users, their respective functional roles, and computer groups must be maintained.",
       "desc": "System access should be reviewed periodically to verify that all Tanium users are assigned the appropriate functional role, with the least privileged access possible to perform assigned tasks being the recommended best practice. Users who have been removed from the documentation should no longer be configured as a Tanium Console User. Consider removing users that have not logged onto the system within a predetermined time frame. When using Active Directory synchronization, as is required by this STIG, User Roles assignments are via the LDAP Sync. To change a Tanium user's functional role, their Active Directory account needs to be assigned to the AD security group, which correlates with the applicable functional role.",
@@ -402,9 +659,21 @@
         "gid": "V-234052",
         "rid": "SV-234052r612749_rule",
         "stig_id": "TANS-CN-000006",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-37202r610657_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102177",
+          "V-92075"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234052",
       "title": "Role-based system access must be configured to least privileged access to Tanium Server functions through the Tanium interface.",
       "desc": "User accessibility to various Tanium Server functions performed via the console can be restricted by functional roles, a combination of User Role(s), and Content Set(s) assigned through User Group membership. Functional roles are assigned to users via Active Directory Group membership. System access should be reviewed periodically to verify that all Tanium users are assigned the appropriate functional role, with the least privileged access possible to perform assigned tasks being the recommended best practice. Consider removing users that have not logged onto the system within a predetermined time frame.",
@@ -420,9 +689,21 @@
         "gid": "V-234053",
         "rid": "SV-234053r612749_rule",
         "stig_id": "TANS-CN-000007",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-37203r610660_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102179",
+          "V-92077"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234053",
       "title": "Tanium console users User Roles must be validated against the documentation for User Roles.",
       "desc": "System access should be reviewed periodically to verify that all Tanium users are assigned the appropriate role, with the least privileged access possible to perform assigned tasks being the recommended best practice. Users who have been removed from the documentation should no longer be configured as a Tanium Console User. Consider removing users that have not logged onto the system within a predetermined time frame. When using Active Directory synchronization, as is required by this STIG, User Roles assignments are via the LDAP Sync, AD security groups correlate, one to one, to Tanium User Roles. To change a Tanium user's User Role, their Active Directory account needs to be moved to the AD security group, which correlates with the applicable User Role.",
@@ -438,9 +719,21 @@
         "gid": "V-234054",
         "rid": "SV-234054r612749_rule",
         "stig_id": "TANS-CN-000008",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-37204r610663_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102181",
+          "V-92079"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234054",
       "title": "Documentation identifying Tanium console users and their respective Computer Group rights must be maintained.",
       "desc": "System access should be reviewed periodically to verify that all Tanium users are assigned the appropriate role, with the least privileged access possible to perform assigned tasks being the recommended best practice. Users who have been removed from the documentation should no longer be configured as a Tanium Console User. Consider removing users that have not logged onto the system within a predetermined time frame.",
@@ -456,9 +749,21 @@
         "gid": "V-234055",
         "rid": "SV-234055r612749_rule",
         "stig_id": "TANS-CN-000009",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-37205r610666_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102183",
+          "V-92081"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234055",
       "title": "Tanium console users Computer Group rights must be validated against the documentation for Computer Group rights.",
       "desc": "System access should be reviewed periodically to verify that all Tanium users are assigned the appropriate role, with the least privileged access possible to perform assigned tasks being the recommended best practice. Users who have been removed from the documentation should no longer be configured as a Tanium Console User. Consider removing users that have not logged onto the system within a predetermined time frame.",
@@ -474,13 +779,26 @@
         "gid": "V-234056",
         "rid": "SV-234056r612749_rule",
         "stig_id": "TANS-CN-000010",
+        "gtitle": "SRG-APP-000149",
         "fix_id": "F-37206r610669_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000149",
           "SRG-APP-000151"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-102185",
+          "V-92083"
+        ],
+        "cci": [
+          "CCI-000765",
+          "CCI-000767"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234056",
       "title": "Common Access Card (CAC)-based authentication must be enabled on the Tanium Server for network access with privileged accounts.",
       "desc": "To assure accountability and prevent unauthenticated access, organizational users must be identified and authenticated to prevent potential misuse and compromise of the system. Organizational users include organizational employees or individuals the organization deems to have equivalent status of employees (e.g., contractors). Organizational users (and any processes acting on behalf of users) must be uniquely identified and authenticated for all accesses, except the following: (i) Accesses explicitly identified and documented by the organization. Organizations document specific user actions that can be performed on the information system without identification or authentication; and (ii) Accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals in group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity. This not only meets a common requirement in the Federal space but adds a critical layer of security to the user authentication process. ",
@@ -496,9 +814,21 @@
         "gid": "V-234057",
         "rid": "SV-234057r612749_rule",
         "stig_id": "TANS-CN-000014",
+        "gtitle": "SRG-APP-000383",
         "fix_id": "F-37207r610672_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102187",
+          "V-92085"
+        ],
+        "cci": [
+          "CCI-001762"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234057",
       "title": "Firewall rules must be configured on the Tanium Server for Console-to-Server communications.",
       "desc": "An HTML5 based application, the Tanium Console runs from any device with a browser that supports HTML5. For security, the HTTP and SOAP communication to the Tanium Server is SSL encrypted, so the Tanium Server installer configures the server to listen for HTTP and SOAP requests on port 443. Without a proper connection to the Tanium Server, access to the system capabilities could be denied. Port Needed: To Tanium Server over TCP port 443. Network firewall rules: Allow HTTP traffic on TCP port 443 from any computer on the internal network to the Tanium Server device. https://docs.tanium.com/platform_install/platform_install/reference_network_ports.html.",
@@ -514,14 +844,32 @@
         "gid": "V-234058",
         "rid": "SV-234058r612749_rule",
         "stig_id": "TANS-CN-000015",
+        "gtitle": "SRG-APP-000070",
         "fix_id": "F-37208r610675_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000070",
           "SRG-APP-000068",
           "SRG-APP-000069"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-102189",
+          "V-92087"
+        ],
+        "cci": [
+          "CCI-001384",
+          "CCI-001385",
+          "CCI-001386",
+          "CCI-001387",
+          "CCI-001388",
+          "CCI-000048",
+          "CCI-000050"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234058",
       "title": "The publicly accessible Tanium application must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the application.",
       "desc": "Display of a standardized and approved use notification before granting access to the publicly accessible application ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist. The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for desktops, laptops, and other devices accommodating banners of 1300 characters: \"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions: -The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. -At any time, the USG may inspect and seize data stored on this IS. -Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. -This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. -Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.\" Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner: \"I've read & consent to terms in IS user agreem't.\" ",
@@ -537,9 +885,21 @@
         "gid": "V-234059",
         "rid": "SV-234059r612749_rule",
         "stig_id": "TANS-CN-000016",
+        "gtitle": "SRG-APP-000108",
         "fix_id": "F-37209r610678_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102191",
+          "V-92089"
+        ],
+        "cci": [
+          "CCI-000139"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234059",
       "title": "Tanium must alert the ISSO and SA (at a minimum) in the event of an audit processing failure.",
       "desc": "It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without this notification, the security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected. Audit processing failures include software/hardware errors, failures in the audit capturing mechanisms, and audit storage capacity being reached or exceeded. This requirement applies to each audit data storage repository (i.e., distinct information system component where audit records are stored), the centralized audit storage capacity of organizations (i.e., all audit data storage repositories combined), or both.",
@@ -555,9 +915,21 @@
         "gid": "V-234060",
         "rid": "SV-234060r612749_rule",
         "stig_id": "TANS-CN-000018",
+        "gtitle": "SRG-APP-000270",
         "fix_id": "F-37210r610681_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-92091",
+          "SV-102193"
+        ],
+        "cci": [
+          "CCI-001233"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234060",
       "title": "Flaw remediation Tanium applications must employ automated mechanisms to determine the state of information system components with regard to flaw remediation using the following frequency: continuously, where HBSS is used; 30 days, for any additional internal network scans not covered by HBSS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP).",
       "desc": "Without the use of automated mechanisms to scan for security flaws on a continuous and/or periodic basis, the system components may remain vulnerable to the exploits presented by undetected software flaws. To support this requirement, the flaw remediation application may have automated mechanisms that perform automated scans for security-relevant software updates (e.g., patches, service packs, and hot fixes) and security vulnerabilities of the information system components being monitored. For example, a method of compliance would be an integrated solution incorporating continuous scanning using HBSS and periodic scanning using other tools as specified in the requirement.",
@@ -573,9 +945,21 @@
         "gid": "V-234061",
         "rid": "SV-234061r612749_rule",
         "stig_id": "TANS-CN-000019",
+        "gtitle": "SRG-APP-000291",
         "fix_id": "F-37211r610684_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102195",
+          "V-92093"
+        ],
+        "cci": [
+          "CCI-001683"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234061",
       "title": "Tanium must notify SA and ISSO when accounts are created.",
       "desc": "Once an attacker establishes initial access to a system, the attacker often attempts to create a persistent method of re-establishing access. One way to accomplish this is for the attacker to simply create a new account. Notification of account creation is one method for mitigating this risk. A comprehensive account management process will ensure an audit trail, which documents the creation of application user accounts and notifies administrators and Information System Security Officers (ISSO) exists. Such a process greatly reduces the risk that accounts will be surreptitiously created and provides logging that can be used for forensic purposes. To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to off-load those access control functions and focus on core application features and functionality.",
@@ -591,9 +975,21 @@
         "gid": "V-234062",
         "rid": "SV-234062r612749_rule",
         "stig_id": "TANS-CN-000020",
+        "gtitle": "SRG-APP-000292",
         "fix_id": "F-37212r610687_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102197",
+          "V-92095"
+        ],
+        "cci": [
+          "CCI-001684"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234062",
       "title": "Tanium must notify SA and ISSO when accounts are modified.",
       "desc": "Once an attacker establishes initial access to a system, the attacker often attempts to create a persistent method of re-establishing access. One way to accomplish this is for the attacker to simply modify an existing account. Notification of account modification is one method for mitigating this risk. A comprehensive account management process will ensure an audit trail, which documents the creation of application user accounts and notifies administrators and Information System Security Officers (ISSO) exists. Such a process greatly reduces the risk that accounts will be surreptitiously created and provides logging that can be used for forensic purposes. To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to off-load those access control functions and focus on core application features and functionality.",
@@ -609,9 +1005,21 @@
         "gid": "V-234063",
         "rid": "SV-234063r612749_rule",
         "stig_id": "TANS-CN-000021",
+        "gtitle": "SRG-APP-000320",
         "fix_id": "F-37213r610690_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102199",
+          "V-92097"
+        ],
+        "cci": [
+          "CCI-002132"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234063",
       "title": "The Tanium application must notify SA and ISSO of account enabling actions.",
       "desc": "Once an attacker establishes initial access to a system, the attacker often attempts to create a persistent method of re-establishing access. One way to accomplish this is for the attacker to simply enable a new or disabled account. Notification of account enabling is one method for mitigating this risk. A comprehensive account management process will ensure the existence of an audit trail, which documents the creation of application user accounts and notifies administrators and ISSOs. Such a process greatly reduces the risk that accounts will be surreptitiously enabled and provides logging that can be used for forensic purposes. In order to detect and respond to events that affect user accessibility and application processing, applications must audit account enabling actions and, as required, notify the appropriate individuals so they can investigate the event. To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to off-load those access control functions and focus on core application features and functionality.",
@@ -627,9 +1035,21 @@
         "gid": "V-234064",
         "rid": "SV-234064r612749_rule",
         "stig_id": "TANS-CN-000022",
+        "gtitle": "SRG-APP-000359",
         "fix_id": "F-37214r610693_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102201",
+          "V-92099"
+        ],
+        "cci": [
+          "CCI-001855"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234064",
       "title": "The Tanium application must provide an immediate warning to the SA and ISSO (at a minimum) when allocated audit record storage volume reaches 75% of repository maximum audit record storage capacity.",
       "desc": "If security personnel are not notified immediately upon storage volume utilization reaching 75%, they are unable to plan for storage capacity expansion.",
@@ -645,9 +1065,21 @@
         "gid": "V-234065",
         "rid": "SV-234065r612749_rule",
         "stig_id": "TANS-CN-000023",
+        "gtitle": "SRG-APP-000360",
         "fix_id": "F-37215r610696_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102203",
+          "V-92101"
+        ],
+        "cci": [
+          "CCI-001858"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234065",
       "title": "The Tanium enterprise audit log reduction option must be configured to provide alerts based off Tanium audit data.",
       "desc": "It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected. Alerts provide organizations with urgent messages. Real-time alerts provide these messages immediately (i.e., the time from event detection to alert occurs in seconds or less).",
@@ -663,7 +1095,9 @@
         "gid": "V-234066",
         "rid": "SV-234066r612749_rule",
         "stig_id": "TANS-CN-000027",
+        "gtitle": "SRG-APP-000148",
         "fix_id": "F-37216r610699_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000148",
           "SRG-APP-000005",
@@ -682,8 +1116,35 @@
           "SRG-APP-000402",
           "SRG-APP-000403"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-102205",
+          "V-92103"
+        ],
+        "cci": [
+          "CCI-001941",
+          "CCI-001953",
+          "CCI-001954",
+          "CCI-002009",
+          "CCI-002010",
+          "CCI-001133",
+          "CCI-002314",
+          "CCI-002322",
+          "CCI-000768",
+          "CCI-000766",
+          "CCI-000767",
+          "CCI-000877",
+          "CCI-000879",
+          "CCI-000056",
+          "CCI-000166",
+          "CCI-000187",
+          "CCI-000764",
+          "CCI-000765"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234066",
       "title": "Common Access Card (CAC)-based authentication must be enabled and enforced on the Tanium Server for all access and all accounts.",
       "desc": "To assure accountability and prevent unauthenticated access, organizational users must be identified and authenticated to prevent potential misuse and compromise of the system. Organizational users include organizational employees or individuals the organization deems to have equivalent status of employees (e.g., contractors). Organizational users (and any processes acting on behalf of users) must be uniquely identified and authenticated for all accesses, except the following: (i) Accesses explicitly identified and documented by the organization. Organizations document specific user actions that can be performed on the information system without identification or authentication; and (ii) Accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals in group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity. ",
@@ -699,9 +1160,21 @@
         "gid": "V-234067",
         "rid": "SV-234067r612749_rule",
         "stig_id": "TANS-CN-000032",
+        "gtitle": "SRG-APP-000293",
         "fix_id": "F-37217r610702_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102207",
+          "V-92105"
+        ],
+        "cci": [
+          "CCI-001685"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234067",
       "title": "Tanium must notify SA and ISSO for account disabling actions.",
       "desc": "When application accounts are disabled, user accessibility is affected. Accounts are utilized for identifying individual application users or for identifying the application processes themselves. In order to detect and respond to events that affect user accessibility and application processing, applications must audit account disabling actions and, as required, notify the appropriate individuals so they can investigate the event. Such a capability greatly reduces the risk that application accessibility will be negatively affected for extended periods of time and also provides logging that can be used for forensic purposes. To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to off-load those access control functions and focus on core application features and functionality.",
@@ -717,9 +1190,21 @@
         "gid": "V-234068",
         "rid": "SV-234068r612749_rule",
         "stig_id": "TANS-CN-000033",
+        "gtitle": "SRG-APP-000294",
         "fix_id": "F-37218r610705_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102209",
+          "V-92107"
+        ],
+        "cci": [
+          "CCI-001686"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234068",
       "title": "Tanium must notify SA and ISSO for account removal actions.",
       "desc": "When application accounts are removed, user accessibility is affected. Accounts are utilized for identifying individual application users or for identifying the application processes themselves. In order to detect and respond to events that affect user accessibility and application processing, applications must audit account removal actions and, as required, notify the appropriate individuals so they can investigate the event. Such a capability greatly reduces the risk that application accessibility will be negatively affected for extended periods of time and also provides logging that can be used for forensic purposes. To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to off-load those access control functions and focus on core application features and functionality.",
@@ -735,7 +1220,9 @@
         "gid": "V-234069",
         "rid": "SV-234069r612749_rule",
         "stig_id": "TANS-CN-000036",
+        "gtitle": "SRG-APP-000378",
         "fix_id": "F-37219r610708_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000378",
           "SRG-APP-000380",
@@ -743,8 +1230,22 @@
           "SRG-APP-000122",
           "SRG-APP-000123"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-102211",
+          "V-92109"
+        ],
+        "cci": [
+          "CCI-001493",
+          "CCI-001494",
+          "CCI-001495",
+          "CCI-001812",
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234069",
       "title": "The Tanium application must prohibit user installation of software without explicit privileged status.",
       "desc": "Allowing regular users to install software, without explicit privileges, creates the risk that untested or potentially malicious software will be installed on the system. Explicit privileges (escalated or administrative privileges) provide the regular user with explicit capabilities and control that exceeds the rights of a regular user. Application functionality will vary, and while users are not permitted to install unapproved applications, there may be instances where the organization allows the user to install approved software packages such as from an approved software repository. The application must enforce software installation by users based upon what types of software installations are permitted (e.g., updates and security patches to existing software) and what types of installations are prohibited (e.g., software whose pedigree with regard to being potentially malicious is unknown or suspect) by the organization. This requirement applies, for example, to applications that provide the ability to extend application functionality (e.g., plug-ins, add-ons) and software management applications. ",
@@ -760,9 +1261,21 @@
         "gid": "V-234070",
         "rid": "SV-234070r612749_rule",
         "stig_id": "TANS-CN-000037",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-37220r610711_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102213",
+          "V-92111"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234070",
       "title": "Documentation defining Tanium functional roles must be maintained.",
       "desc": "System access should be reviewed periodically to verify that all Tanium users are assigned the appropriate role, with the least privileged access possible to perform assigned tasks being the recommended best practice. Users who have been removed from the documentation should no longer be configured as a Tanium Console User. Consider removing users that have not logged onto the system within a predetermined time frame.",
@@ -778,9 +1291,21 @@
         "gid": "V-234071",
         "rid": "SV-234071r612749_rule",
         "stig_id": "TANS-DB-000001",
+        "gtitle": "SRG-APP-000323",
         "fix_id": "F-37221r610714_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102215",
+          "V-92113"
+        ],
+        "cci": [
+          "CCI-002346"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234071",
       "title": "The Tanium database(s) must be installed on a separate system.",
       "desc": "Failure to protect organizational information from data mining may result in a compromise of information. Data storage objects include, for example, databases, database records, and database fields. Data mining prevention and detection techniques include, for example: limiting the types of responses provided to database queries, limiting the number/frequency of database queries to increase the work factor needed to determine the contents of such databases, and notifying organizational personnel when atypical database queries or accesses occur.",
@@ -796,9 +1321,21 @@
         "gid": "V-234072",
         "rid": "SV-234072r612749_rule",
         "stig_id": "TANS-DB-000002",
+        "gtitle": "SRG-APP-000323",
         "fix_id": "F-37222r610717_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102217",
+          "V-92115"
+        ],
+        "cci": [
+          "CCI-002346"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234072",
       "title": "The Tanium application database must be dedicated to only the Tanium application.",
       "desc": "Failure to protect organizational information from data mining may result in a compromise of information. Data storage objects include, for example, databases, database records, and database fields. Data mining prevention and detection techniques include, for example: limiting the types of responses provided to database queries; limiting the number/frequency of database queries to increase the work factor needed to determine the contents of such databases; and notifying organizational personnel when atypical database queries or accesses occur.",
@@ -814,9 +1351,21 @@
         "gid": "V-234073",
         "rid": "SV-234073r612749_rule",
         "stig_id": "TANS-DB-000003",
+        "gtitle": "SRG-APP-000381",
         "fix_id": "F-37223r610720_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102219",
+          "V-92117"
+        ],
+        "cci": [
+          "CCI-001814"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234073",
       "title": "The access to the Tanium SQL database must be restricted. Only the designated database administrator(s) can have elevated privileges to the Tanium SQL database.",
       "desc": "After the Tanium Server has been installed and the Tanium databases created, only the Tanium Receiver, Tanium Module, and Tanium connection manager (ad sync) service needs to access the SQL Server database.",
@@ -832,9 +1381,21 @@
         "gid": "V-234074",
         "rid": "SV-234074r612749_rule",
         "stig_id": "TANS-DB-000004",
+        "gtitle": "SRG-APP-000381",
         "fix_id": "F-37224r610723_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102221",
+          "V-92119"
+        ],
+        "cci": [
+          "CCI-001814"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234074",
       "title": "The Tanium Server installers account database permissions must be reduced to an appropriate level.",
       "desc": "Creating the tanium and tanium_archive databases through the Tanium Server installer program or using the database create SQL scripts requires Sysadmin-level permissions. Once the databases have been created, the Tanium Server and Apache services must be configured to execute under an account that holds at least the dbo role on both databases. Post-installation, if the account used to configure the Tanium Server services to access the remote SQL database server holds only the Database Owner role, rather than the sysadmin role, consider granting this account the View Server State permission on the SQL Server. While not strictly necessary, this dynamic management view enables the Tanium Server to access data faster than the dbo role alone.",
@@ -850,9 +1411,21 @@
         "gid": "V-234075",
         "rid": "SV-234075r612749_rule",
         "stig_id": "TANS-DB-000005",
+        "gtitle": "SRG-APP-000383",
         "fix_id": "F-37225r610726_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102223",
+          "V-92121"
+        ],
+        "cci": [
+          "CCI-001762"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234075",
       "title": "Firewall rules must be configured on the Tanium Server for Server-to-Database communications.",
       "desc": "The Tanium Server can use either a SQL Server RDBMS installed locally to the same device as the Tanium Server application or a remote dedicated or shared SQL Server instance. Using a local SQL Server database typically requires no changes to network firewall rules since all communication remains on the Tanium application server device. To access database resources installed to a remote device, however, the Tanium Server service communicates over the port reserved for SQL, by default port 1433, to the database. Port Needed: Tanium Server to Remote SQL Server over TCP port 1433. Network firewall rules: Allow TCP traffic on port 1433 from the Tanium Server device to the remote device hosting the SQL Server RDBMS. https://docs.tanium.com/platform_install/platform_install/reference_network_ports.html.",
@@ -868,9 +1441,21 @@
         "gid": "V-234076",
         "rid": "SV-234076r612749_rule",
         "stig_id": "TANS-DB-000006",
+        "gtitle": "SRG-APP-000454",
         "fix_id": "F-37226r610729_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102225",
+          "V-92123"
+        ],
+        "cci": [
+          "CCI-002617"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234076",
       "title": "SQL stored queries or procedures installed during Tanium installation must be removed from the Tanium Server.",
       "desc": "Failure to protect organizational information from data mining may result in a compromise of information. Data storage objects include, for example, databases, database records, and database fields. Data mining prevention and detection techniques include, for example: limiting the types of responses provided to database queries; limiting the number/frequency of database queries to increase the work factor needed to determine the contents of such databases; and notifying organizational personnel when atypical database queries or accesses occur.",
@@ -886,14 +1471,28 @@
         "gid": "V-234077",
         "rid": "SV-234077r612749_rule",
         "stig_id": "TANS-SV-000001",
+        "gtitle": "SRG-APP-000429",
         "fix_id": "F-37227r612218_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000429",
           "SRG-APP-000440",
           "SRG-APP-000441"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "V-92125",
+          "SV-102227"
+        ],
+        "cci": [
+          "CCI-002476",
+          "CCI-002420",
+          "CCI-002421"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234077",
       "title": "The Tanium Server must protect the confidentiality and integrity of transmitted information, in preparation to be transmitted and data at rest, with cryptographic signing capabilities enabled to protect the authenticity of communications sessions when making requests from Tanium Clients.",
       "desc": "Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. This requirement applies only to those applications that are either distributed or can allow access to data non-locally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, SSL VPNs, or IPsec. Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa. ",
@@ -909,9 +1508,21 @@
         "gid": "V-234078",
         "rid": "SV-234078r612749_rule",
         "stig_id": "TANS-SV-000002",
+        "gtitle": "SRG-APP-000003",
         "fix_id": "F-37228r610735_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102229",
+          "V-92127"
+        ],
+        "cci": [
+          "CCI-000057"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234078",
       "title": "The Tanium Application Server console must be configured to initiate a session lock after a 15-minute period of inactivity.",
       "desc": "The Tanium Console, when CAC is enabled, will initiate a session lock based upon the ActivClient or other Smart Card software. By initiating the session lock, the console will be locked and not allow unauthorized access by anyone other than the original user. Although this setting does not apply when CAC is enabled, it should be explicitly disabled in the event CAC authentication is ever broken or removed.",
@@ -927,9 +1538,21 @@
         "gid": "V-234079",
         "rid": "SV-234079r612749_rule",
         "stig_id": "TANS-SV-000003",
+        "gtitle": "SRG-APP-000015",
         "fix_id": "F-37229r610738_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102231",
+          "V-92129"
+        ],
+        "cci": [
+          "CCI-001453"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234079",
       "title": "Tanium Trusted Content providers must be documented.",
       "desc": "A Tanium Sensor, also called content, enables an organization to gather real-time inventory, configuration, and compliance data elements from managed computers. Sensors gather specific information from the local device and then write the results to the computer's standard output channel. The Tanium Client captures that output and forwards the results through the platform's unique \"ring\" architecture for display in the Tanium Console. The language used for Sensor development is based on the scripting engine available on the largest number of devices under management as well as the scripting experience and background of the people who will be responsible for creating new Sensors. VBScript and PowerShell are examples of common scripting languages used for developing sensors. Because errors in scripting can and will provide errant feedback at best and will impact functionality of the endpoint to which the content is directed, it is imperative to ensure content is only accepted from trusted sources.",
@@ -945,9 +1568,21 @@
         "gid": "V-234080",
         "rid": "SV-234080r612749_rule",
         "stig_id": "TANS-SV-000004",
+        "gtitle": "SRG-APP-000015",
         "fix_id": "F-37230r610741_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102233",
+          "V-92131"
+        ],
+        "cci": [
+          "CCI-001453"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234080",
       "title": "Content providers must provide their public key to the Tanium administrator to import for validating signed content.",
       "desc": "A Tanium Sensor, also called content, enables an organization to gather real-time inventory, configuration, and compliance data elements from managed computers. Sensors gather specific information from the local device and then write the results to the computer's standard output channel. The Tanium Client captures that output and forwards the results through the platform's unique \"ring\" architecture for display in the Tanium Console. The language used for Sensor development is based on the scripting engine available on the largest number of devices under management as well as the scripting experience and background of the people who will be responsible for creating new Sensors. VBScript and PowerShell are examples of common scripting languages used for developing sensors. Because errors in scripting can and will provide errant feedback at best and will impact functionality of the endpoint to which the content is directed, it is imperative to ensure content is only accepted from trusted sources.",
@@ -963,9 +1598,21 @@
         "gid": "V-234081",
         "rid": "SV-234081r612749_rule",
         "stig_id": "TANS-SV-000005",
+        "gtitle": "SRG-APP-000015",
         "fix_id": "F-37231r610744_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102235",
+          "V-92133"
+        ],
+        "cci": [
+          "CCI-001453"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234081",
       "title": "Tanium public keys of content providers must be validated against documented trusted content providers.",
       "desc": "A Tanium Sensor, also called content, enables an organization to gather real-time inventory, configuration, and compliance data elements from managed computers. Sensors gather specific information from the local device and then write the results to the computer's standard output channel. The Tanium Client captures that output and forwards the results through the platform's unique \"ring\" architecture for display in the Tanium Console. The language used for Sensor development is based on the scripting engine available on the largest number of devices under management as well as the scripting experience and background of the people who will be responsible for creating new Sensors. VBScript and PowerShell are examples of common scripting languages used for developing sensors. Because errors in scripting can and will provide errant feedback at best and will impact functionality of the endpoint to which the content is directed, it is imperative to ensure content is only accepted from trusted sources.",
@@ -981,9 +1628,21 @@
         "gid": "V-234082",
         "rid": "SV-234082r612749_rule",
         "stig_id": "TANS-SV-000006",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-37232r610747_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102237",
+          "V-92135"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234082",
       "title": "The Tanium Action Approval feature must be enabled for two-person integrity when deploying actions to endpoints.",
       "desc": "The Tanium Action Approval feature provides a \"four eyes\" control mechanism designed to achieve a high-level of security and reduce the possibility of error for critical operations. When this feature is enabled, an action configured by one Tanium console user will require a second Tanium console user with a role of Action Approver (or higher) to approve the action before it is deployed to targeted computers. While this system slows workflow, the reliability of actions deployed will be greater on the Packaging and Targeting.",
@@ -999,9 +1658,21 @@
         "gid": "V-234083",
         "rid": "SV-234083r612749_rule",
         "stig_id": "TANS-SV-000007",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-37233r610750_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102239",
+          "V-92137"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234083",
       "title": "The Tanium documentation identifying recognized and trusted Intel streams must be maintained.",
       "desc": "An IOC stream is a series or stream of IOCs that are imported from a vendor based on a subscription service. An IOC stream can be downloaded manually or on a scheduled basis. The items in an IOC stream can be separately manipulated after they are imported.",
@@ -1017,9 +1688,21 @@
         "gid": "V-234084",
         "rid": "SV-234084r612749_rule",
         "stig_id": "TANS-SV-000008",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-37234r610753_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102241",
+          "V-92139"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234084",
       "title": "The Tanium Detect must be configured to receive IOC streams only from trusted sources.",
       "desc": "An IOC stream is a series or stream of intel that are imported from a vendor based on a subscription service or manually downloaded and placed in a folder. Detect can be configured to retrieve the IOC content on a regularly scheduled basis. The items in an IOC stream can be separately manipulated after they are imported.",
@@ -1035,9 +1718,21 @@
         "gid": "V-234085",
         "rid": "SV-234085r612749_rule",
         "stig_id": "TANS-SV-000010",
+        "gtitle": "SRG-APP-000115",
         "fix_id": "F-37235r610756_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102243",
+          "V-92141"
+        ],
+        "cci": [
+          "CCI-000158"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234085",
       "title": "The Tanium Connect module must be configured to forward Tanium Detect events to identified destinations.",
       "desc": "Indicators of Compromise (IOC) are artifacts, which are observed on the network or system that indicates computer intrusion. The Tanium Detect module detects, manages, and analyzes systems intrusion in real time. The module also responds to those detections. By forwarding Detect events using Tanium Connect, the necessary forensic evidence supporting a compromise is retained.",
@@ -1053,14 +1748,26 @@
         "gid": "V-234086",
         "rid": "SV-234086r612749_rule",
         "stig_id": "TANS-SV-000014",
+        "gtitle": "SRG-APP-000131",
         "fix_id": "F-37236r610759_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000131",
           "SRG-APP-000233",
           "SRG-APP-000317"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-102245",
+          "V-92143"
+        ],
+        "cci": [
+          "CCI-001749"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234086",
       "title": "The Tanium cryptographic signing capabilities must be enabled on the Tanium Server.",
       "desc": "All of Tanium's signing capabilities should be enabled upon install. Tanium supports the cryptographic signing and verification before execution of all Sensors, Questions, Actions, Sensor Libraries, File Shards, etc. Enabling signing does away with the ability of an attacker to conduct Man in the Middle (MitM) attacks for the purposes of remote code execution and precludes the modification of the aforementioned data elements in transit. Additionally, Tanium supports object level signing for content ingested into the Tanium platform. This allows for the detection and rejection of changes to objects (sensors, actions, etc.) by even a privileged user within Tanium. Tanium has built-in signing capabilities enabled by default when installed. Cryptographic signing and verification of all Sensors, Questions, Actions, Sensor Libraries, File Shards, etc. before execution will be enforced by Tanium. Signing will prevent MitM remote code execution attacks and will protect data element in transit. Tanium also supports object level signing for content within the Tanium platform. ",
@@ -1076,9 +1783,21 @@
         "gid": "V-234087",
         "rid": "SV-234087r612749_rule",
         "stig_id": "TANS-SV-000015",
+        "gtitle": "SRG-APP-000131",
         "fix_id": "F-37237r610762_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102247",
+          "V-92145"
+        ],
+        "cci": [
+          "CCI-001749"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234087",
       "title": "The Tanium Server must be configured to only allow signed content to be imported.",
       "desc": "Changes to any software components can have significant effects on the overall security of the application. Verifying software components have been digitally signed using a certificate that is recognized and approved by the organization ensures the software has not been tampered with and that it has been provided by a trusted vendor. Accordingly, patches, service packs, or application components must be signed with a certificate recognized and approved by the organization. Verifying the authenticity of the software prior to installation validates the integrity of the patch or upgrade received from a vendor. This ensures the software has not been tampered with and that it has been provided by a trusted vendor. Self-signed certificates are disallowed by this requirement. The application should not have to verify the software again. This requirement does not mandate DoD certificates for this purpose; however, the certificate used to verify the software must be from an approved CA.",
@@ -1094,9 +1813,21 @@
         "gid": "V-234088",
         "rid": "SV-234088r612749_rule",
         "stig_id": "TANS-SV-000016",
+        "gtitle": "SRG-APP-000133",
         "fix_id": "F-37238r610765_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102249",
+          "V-92147"
+        ],
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234088",
       "title": "All installation files originally downloaded to the Tanium Server must be configured to download to a location other than the Tanium Server directory.",
       "desc": "Typically, the Tanium Server stores the Package Source Files that it downloads from the Internet and server shares or files uploaded through the Tanium Console in a subdirectory of the server's installation directory called Downloads. To ensure package files are not accessible to non-authorized functions, the files must be re-located to outside of the server's installation directory.",
@@ -1112,9 +1843,21 @@
         "gid": "V-234089",
         "rid": "SV-234089r612749_rule",
         "stig_id": "TANS-SV-000017",
+        "gtitle": "SRG-APP-000142",
         "fix_id": "F-37239r610768_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102251",
+          "V-92149"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234089",
       "title": "Firewall rules must be configured on the Tanium Server for Client-to-Server communications.",
       "desc": "In addition to the client-to-server TCP communication that takes place over port 17472, Tanium Clients also communicate to other Tanium-managed computers over port 17472. The Tanium environment can perform hundreds or thousands of times faster than other security or systems management tools because the Tanium Clients communicate in secure, linearly-controlled peer-to-peer rings. Because clients dynamically communicate with other nearby agents based on proximity and latency, rings tend to form automatically to match a customer's topology--endpoints in California will form one ring while endpoints in Germany will form a separate ring. https://docs.tanium.com/platform_install/platform_install/reference_network_ports.html",
@@ -1130,9 +1873,21 @@
         "gid": "V-234090",
         "rid": "SV-234090r612749_rule",
         "stig_id": "TANS-SV-000018",
+        "gtitle": "SRG-APP-000142",
         "fix_id": "F-37240r610771_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102253",
+          "V-92151"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234090",
       "title": "Firewall rules must be configured on the Tanium Zone Server for Client-to-Zone Server communications.",
       "desc": "In customer environments using the Tanium Zone Server, a Tanium Client may be configured to point to a Zone Server instead of a Tanium Server. The communication requirements for these Clients are identical to the Server-to-Client requirements. https://docs.tanium.com/platform_install/platform_install/reference_network_ports.html",
@@ -1148,9 +1903,21 @@
         "gid": "V-234091",
         "rid": "SV-234091r612749_rule",
         "stig_id": "TANS-SV-000019",
+        "gtitle": "SRG-APP-000142",
         "fix_id": "F-37241r610774_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102255",
+          "V-92153"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234091",
       "title": "The Tanium Application Server must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.",
       "desc": "In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable or restrict unused or unnecessary physical and logical ports/protocols on information systems. Applications are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. To support the requirements and principles of least functionality, the application must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues.",
@@ -1166,9 +1933,21 @@
         "gid": "V-234092",
         "rid": "SV-234092r612749_rule",
         "stig_id": "TANS-SV-000020",
+        "gtitle": "SRG-APP-000175",
         "fix_id": "F-37242r610777_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102257",
+          "V-92155"
+        ],
+        "cci": [
+          "CCI-000185"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234092",
       "title": "The Tanium Server certificates must have Extended Key Usage entries for the serverAuth object TLS Web Server Authentication and the clientAuth object TLS Web Client Authentication.",
       "desc": "Information can be either unintentionally or maliciously disclosed or modified during reception including, for example, during aggregation, at protocol transformation points, and during packing/unpacking. These unauthorized disclosures or modifications compromise the confidentiality or integrity of the information. This requirement applies only to those applications that are either distributed or can allow access to data non-locally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When receiving data, applications need to leverage protection mechanisms, such as TLS, SSL VPNs, or IPsec.",
@@ -1184,9 +1963,21 @@
         "gid": "V-234093",
         "rid": "SV-234093r612749_rule",
         "stig_id": "TANS-SV-000021",
+        "gtitle": "SRG-APP-000176",
         "fix_id": "F-37243r610780_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102259",
+          "V-92157"
+        ],
+        "cci": [
+          "CCI-000186"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234093",
       "title": "The Tanium Server certificate and private/public keys directory must be protected with appropriate permissions.",
       "desc": "If the private key is discovered, an attacker can use the key to authenticate as an authorized user and gain access to the network infrastructure. The cornerstone of the PKI is the private key used to encrypt or digitally sign information. If the private key is stolen, this will lead to the compromise of the authentication and non-repudiation gained through PKI because the attacker can use the private key to digitally sign documents and pretend to be the authorized user. Both the holders of a digital certificate and the issuing authority must protect the computers, storage devices, or whatever they use to keep the private keys.",
@@ -1202,9 +1993,21 @@
         "gid": "V-234094",
         "rid": "SV-234094r612749_rule",
         "stig_id": "TANS-SV-000023",
+        "gtitle": "SRG-APP-000211",
         "fix_id": "F-37244r610783_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102261",
+          "V-92159"
+        ],
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234094",
       "title": "The Tanium Module server must be installed on a separate system.",
       "desc": "Unauthorized access to the Tanium Server is protected by disabling the Module Server service on the Tanium Server and by configuring the Module Server on a separate system. When X509 smartcard certificates (CAC or PIV tokens) are used for access to the Tanium Server, the Tanium Module server must be on a separate system. In order to restrict access to the Tanium Server resulting from an attack on the Module Server, it is recommended that the Tanium Module Server be installed on a separate system or VM from the Tanium Server. Adding to this recommendation, if the Tanium Server is configured to accept X509 Smartcard certificates (also referred to as CAC or PIV tokens) in lieu of username/password logon, the requirement becomes explicit and the Tanium Module Server must be installed on a separate system or VM.",
@@ -1220,9 +2023,21 @@
         "gid": "V-234095",
         "rid": "SV-234095r612749_rule",
         "stig_id": "TANS-SV-000024",
+        "gtitle": "SRG-APP-000328",
         "fix_id": "F-37245r610786_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102263",
+          "V-92161"
+        ],
+        "cci": [
+          "CCI-002165"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234095",
       "title": "The Tanium Server directory must be restricted with appropriate permissions.",
       "desc": "Discretionary Access Control (DAC) is based on the notion that individual users are \"owners\" of objects and therefore have discretion over who should be authorized to access the object and in which mode (e.g., read or write). Ownership is usually acquired as a consequence of creating the object or via specified ownership assignment. DAC allows the owner to determine who will have access to objects they control. An example of DAC includes user controlled file permissions. When discretionary access control policies are implemented, subjects are not constrained with regard to what actions they can take with information for which they have already been granted access. Thus, subjects that have been granted access to information are not prevented from passing (i.e., the subjects have the discretion to pass) the information to other subjects or objects. A subject that is constrained in its operation by Mandatory Access Control policies is still able to operate under the less rigorous constraints of this requirement. Thus, while Mandatory Access Control imposes constraints preventing a subject from passing information to another subject operating at a different sensitivity level, this requirement permits the subject to pass the information to any subject at the same sensitivity level. The policy is bounded by the information system boundary. Once the information is passed outside of the control of the information system, additional means may be required to ensure the constraints remain in effect. While the older, more traditional definitions of discretionary access control require identity-based access control, that limitation is not required for this use of discretionary access control.",
@@ -1238,9 +2053,21 @@
         "gid": "V-234096",
         "rid": "SV-234096r612749_rule",
         "stig_id": "TANS-SV-000025",
+        "gtitle": "SRG-APP-000328",
         "fix_id": "F-37246r610789_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102265",
+          "V-92163"
+        ],
+        "cci": [
+          "CCI-002165"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234096",
       "title": "The Tanium Server http directory and sub-directories must be restricted with appropriate permissions.",
       "desc": "Discretionary Access Control (DAC) is based on the notion that individual users are \"owners\" of objects and therefore have discretion over who should be authorized to access the object and in which mode (e.g., read or write). Ownership is usually acquired as a consequence of creating the object or via specified ownership assignment. DAC allows the owner to determine who will have access to objects they control. An example of DAC includes user controlled file permissions. When discretionary access control policies are implemented, subjects are not constrained with regard to what actions they can take with information for which they have already been granted access. Thus, subjects that have been granted access to information are not prevented from passing (i.e., the subjects have the discretion to pass) the information to other subjects or objects. A subject that is constrained in its operation by Mandatory Access Control policies is still able to operate under the less rigorous constraints of this requirement. Thus, while Mandatory Access Control imposes constraints preventing a subject from passing information to another subject operating at a different sensitivity level, this requirement permits the subject to pass the information to any subject at the same sensitivity level. The policy is bounded by the information system boundary. Once the information is passed outside of the control of the information system, additional means may be required to ensure the constraints remain in effect. While the older, more traditional definitions of discretionary access control require identity-based access control, that limitation is not required for this use of discretionary access control.",
@@ -1256,9 +2083,21 @@
         "gid": "V-234097",
         "rid": "SV-234097r612749_rule",
         "stig_id": "TANS-SV-000026",
+        "gtitle": "SRG-APP-000328",
         "fix_id": "F-37247r610792_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102267",
+          "V-92165"
+        ],
+        "cci": [
+          "CCI-002165"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234097",
       "title": "The permissions on the Tanium Server registry keys must be restricted to only the Tanium service account and the [Tanium Admins] group.",
       "desc": "Discretionary Access Control (DAC) is based on the notion that individual users are \"owners\" of objects and therefore have discretion over who should be authorized to access the object and in which mode (e.g., read or write). Ownership is usually acquired as a consequence of creating the object or via specified ownership assignment. DAC allows the owner to determine who will have access to objects they control. An example of DAC includes user controlled file permissions. When discretionary access control policies are implemented, subjects are not constrained with regard to what actions they can take with information for which they have already been granted access. Thus, subjects that have been granted access to information are not prevented from passing (i.e., the subjects have the discretion to pass) the information to other subjects or objects. A subject that is constrained in its operation by Mandatory Access Control policies is still able to operate under the less rigorous constraints of this requirement. Thus, while Mandatory Access Control imposes constraints preventing a subject from passing information to another subject operating at a different sensitivity level, this requirement permits the subject to pass the information to any subject at the same sensitivity level. The policy is bounded by the information system boundary. Once the information is passed outside of the control of the information system, additional means may be required to ensure the constraints remain in effect. While the older, more traditional definitions of discretionary access control require identity-based access control, that limitation is not required for this use of discretionary access control.",
@@ -1274,9 +2113,21 @@
         "gid": "V-234098",
         "rid": "SV-234098r612749_rule",
         "stig_id": "TANS-SV-000027",
+        "gtitle": "SRG-APP-000328",
         "fix_id": "F-37248r610795_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102269",
+          "V-92167"
+        ],
+        "cci": [
+          "CCI-002165"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234098",
       "title": "The Tanium Server Logs and TDL_Logs directories must be restricted with appropriate permissions.",
       "desc": "Discretionary Access Control (DAC) is based on the notion that individual users are \"owners\" of objects and therefore have discretion over who should be authorized to access the object and in which mode (e.g., read or write). Ownership is usually acquired as a consequence of creating the object or via specified ownership assignment. DAC allows the owner to determine who will have access to objects they control. An example of DAC includes user controlled file permissions. When discretionary access control policies are implemented, subjects are not constrained with regard to what actions they can take with information for which they have already been granted access. Thus, subjects that have been granted access to information are not prevented from passing (i.e., the subjects have the discretion to pass) the information to other subjects or objects. A subject that is constrained in its operation by Mandatory Access Control policies is still able to operate under the less rigorous constraints of this requirement. Thus, while Mandatory Access Control imposes constraints preventing a subject from passing information to another subject operating at a different sensitivity level, this requirement permits the subject to pass the information to any subject at the same sensitivity level. The policy is bounded by the information system boundary. Once the information is passed outside of the control of the information system, additional means may be required to ensure the constraints remain in effect. While the older, more traditional definitions of discretionary access control require identity-based access control, that limitation is not required for this use of discretionary access control.",
@@ -1292,9 +2143,21 @@
         "gid": "V-234099",
         "rid": "SV-234099r612749_rule",
         "stig_id": "TANS-SV-000028",
+        "gtitle": "SRG-APP-000340",
         "fix_id": "F-37249r610798_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102271",
+          "V-92169"
+        ],
+        "cci": [
+          "CCI-002235"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234099",
       "title": "All Active Directory accounts synchronized with Tanium for non-privileged functions must be non-privileged domain accounts.",
       "desc": "Tanium has the ability to synchronize with Active Directory for Tanium account management. Tanium advises that all replicated accounts for non-privileged level functions should be non-privileged domain accounts. In doing so, should a vulnerability in the industry standard OpenSSL libraries used by Tanium ever come to light, no privileged account information could be gained by an attacker. This is simply good housekeeping and should be exercised with any such platform product.",
@@ -1310,9 +2173,21 @@
         "gid": "V-234100",
         "rid": "SV-234100r612749_rule",
         "stig_id": "TANS-SV-000029",
+        "gtitle": "SRG-APP-000358",
         "fix_id": "F-37250r610801_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102273",
+          "V-92171"
+        ],
+        "cci": [
+          "CCI-001851"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234100",
       "title": "A Tanium connector must be configured to send log data to an external audit log reduction capable system.",
       "desc": "While the Tanium Server records audit log entries to the Tanium SQL database, retrieval and aggregation of log data through the Tanium console is not efficient. The Tanium Connect module allows for SIEM connectors in order to facilitate forensic data retrieval and aggregation efficiently. Consult documentation at https://docs.tanium.com/connect/connect/index.html for supported Connections.",
@@ -1328,9 +2203,21 @@
         "gid": "V-234101",
         "rid": "SV-234101r612749_rule",
         "stig_id": "TANS-SV-000030",
+        "gtitle": "SRG-APP-000377",
         "fix_id": "F-37251r610804_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102275",
+          "V-92173"
+        ],
+        "cci": [
+          "CCI-001811"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234101",
       "title": "File integrity monitoring of critical executables that Tanium uses must be configured.",
       "desc": "Tanium inherently watches files and their respective hash values for change but while Tanium can do file integrity checks of critical executables, it is important to conduct File Integrity Monitoring (FIM) via an outside service such as Host Based Security System (HBSS) or similar security suites with FIM capability. These technologies provide independent monitoring of critical Tanium and system binaries.",
@@ -1346,9 +2233,21 @@
         "gid": "V-234102",
         "rid": "SV-234102r612749_rule",
         "stig_id": "TANS-SV-000031",
+        "gtitle": "SRG-APP-000383",
         "fix_id": "F-37252r610807_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102277",
+          "V-92175"
+        ],
+        "cci": [
+          "CCI-001762"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234102",
       "title": "Firewall rules must be configured on the Tanium module server to allow Server-to-Module Server communications from the Tanium Server.",
       "desc": "The Tanium Module Server is used to extend the functionality of Tanium through the use of various workbenches. The Tanium Module Server requires communication with the Tanium Server on port 17477. Without a proper connection from the Tanium Server to the Tanium Module Server, access to the system capabilities could be denied. https://docs.tanium.com/platform_install/platform_install/reference_network_ports.html.",
@@ -1364,9 +2263,21 @@
         "gid": "V-234103",
         "rid": "SV-234103r612749_rule",
         "stig_id": "TANS-SV-000032",
+        "gtitle": "SRG-APP-000383",
         "fix_id": "F-37253r610810_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102279",
+          "V-92177"
+        ],
+        "cci": [
+          "CCI-001762"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234103",
       "title": "Firewall rules must be configured on the Tanium Server for Server-to-Module Server communications.",
       "desc": "The Tanium Module Server is used to extend the functionality of Tanium through the use of various workbenches. The Tanium Module Server requires communication with the Tanium Server on port 17477. Without a proper connection from the Tanium Server to the Tanium Module Server, access to the system capabilities could be denied. https://docs.tanium.com/platform_install/platform_install/reference_network_ports.html.",
@@ -1382,9 +2293,21 @@
         "gid": "V-234104",
         "rid": "SV-234104r612749_rule",
         "stig_id": "TANS-SV-000033",
+        "gtitle": "SRG-APP-000383",
         "fix_id": "F-37254r610813_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102281",
+          "V-92179"
+        ],
+        "cci": [
+          "CCI-001762"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234104",
       "title": "Firewall rules must be configured on the Tanium Server for Server-to-Zone Server communications.",
       "desc": "If you are using the Tanium Zone Server to proxy traffic from Tanium-managed computers on less trusted network segments to the Tanium Server on the core network, then the Tanium Zone Server Hub, typically installed to the Tanium Server device, must be able to connect to the Zone Server(s) in the DMZ. This is the only configuration that requires you to allow outbound traffic on port 17472 from the Tanium Server device. The ZoneServerList.txt configuration file located in the Tanium Zone Server Hub's installation folder identifies the addresses of the destination Zone Servers. See the Zone Server Configuration page for more details. Port Needed: Tanium Server to Zone Server over TCP port 17472. Network firewall rules: Allow TCP traffic on port 17472 from the Zone Server Hub, usually the Tanium Server device, to the destination DMZ devices(s) hosting the Zone Server(s). Endpoint firewall rules - for additional security, configure the following endpoint firewall rules: Allow TCP traffic outbound on port 17472 from only the Zone Server Hub process running on the Tanium Server device. Allow TCP traffic inbound on port 17472 to only the Zone Server process running on the designated Zone Server device(s). https://docs.tanium.com/platform_install/platform_install/reference_network_ports.html.",
@@ -1400,9 +2323,21 @@
         "gid": "V-234105",
         "rid": "SV-234105r612749_rule",
         "stig_id": "TANS-SV-000035",
+        "gtitle": "SRG-APP-000416",
         "fix_id": "F-37255r610816_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102283",
+          "V-92181"
+        ],
+        "cci": [
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234105",
       "title": "The SSLHonorCipherOrder must be configured to disable weak encryption algorithms on the Tanium Server.",
       "desc": "Use of weak or untested encryption algorithms undermines the purposes of utilizing encryption to protect data. The application must implement cryptographic modules adhering to the higher standards approved by the federal government since this provides assurance they have been tested and validated.",
@@ -1418,9 +2353,21 @@
         "gid": "V-234106",
         "rid": "SV-234106r612749_rule",
         "stig_id": "TANS-SV-000036",
+        "gtitle": "SRG-APP-000427",
         "fix_id": "F-37256r610819_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102285",
+          "V-92183"
+        ],
+        "cci": [
+          "CCI-002470"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234106",
       "title": "The Tanium Server certificate must be signed by a DoD Certificate Authority.",
       "desc": "The Tanium Server has the option to use a \"self-signed\" certificate or a Trusted Certificate Authority signed certificate for SSL connections. During evaluations of Tanium in Lab settings, customers often conclude that a \"self-signed\" certificate is an acceptable risk. However, in production environments it is critical that a SSL certificate signed by a Trusted Certificate Authority be used on the Tanium Server in lieu of an untrusted and insecure \"self-signed\" certificate.",
@@ -1436,9 +2383,21 @@
         "gid": "V-234107",
         "rid": "SV-234107r612749_rule",
         "stig_id": "TANS-SV-000037",
+        "gtitle": "SRG-APP-000442",
         "fix_id": "F-37257r610822_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102287",
+          "V-92185"
+        ],
+        "cci": [
+          "CCI-002422"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234107",
       "title": "Any Tanium configured EMAIL RESULTS connectors must be configured to enable TLS/SSL to encrypt communications.",
       "desc": "Information can be either unintentionally or maliciously disclosed or modified during preparation for transmission including, for example, during aggregation, at protocol transformation points, and during packing/unpacking. These unauthorized disclosures or modifications compromise the confidentiality or integrity of the information. This requirement applies only to those applications that are either distributed or can allow access to data non-locally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, SSL VPNs, or IPsec. An example of this would be the SMTP queue. The SMTP mail protocol places email messages into a centralized queue prior to transmission. If someone were to modify an email message contained in the queue and the SMTP protocol did not check to ensure the email message was not modified while it was stored in the queue, a modified email could be sent.",
@@ -1454,9 +2413,21 @@
         "gid": "V-234108",
         "rid": "SV-234108r612749_rule",
         "stig_id": "TANS-SV-000040",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-37258r610825_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102289",
+          "V-92187"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234108",
       "title": "Tanium Server files must be excluded from on-access antivirus actions.",
       "desc": "Similar to any other host-based applications, the Tanium Server is subject to the restrictions other System-level software may place on an operating environment. Antivirus, IPS, Encryption, or other security and management stack software may disallow the Tanium Server from working as expected. https://docs.tanium.com/platform_install/platform_install/reference_host_system_security_exceptions.html.",
@@ -1472,9 +2443,21 @@
         "gid": "V-234109",
         "rid": "SV-234109r612749_rule",
         "stig_id": "TANS-SV-000043",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-37259r610828_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102291",
+          "V-92189"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234109",
       "title": "Tanium Server files must be protected from file encryption actions.",
       "desc": "Similar to any other host-based applications, the Tanium Server is subject to the restrictions other System-level software may place on an operating environment. Antivirus, Encryption, or other security and management stack software may disallow the Tanium Server from working as expected. https://docs.tanium.com/platform_install/platform_install/reference_host_system_security_exceptions.html.",
@@ -1490,9 +2473,21 @@
         "gid": "V-234110",
         "rid": "SV-234110r612749_rule",
         "stig_id": "TANS-SV-000044",
+        "gtitle": "SRG-APP-000416",
         "fix_id": "F-37260r610831_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102293",
+          "V-92191"
+        ],
+        "cci": [
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234110",
       "title": "The SSLCipherSuite must be configured to disable weak encryption algorithms on the Tanium Server.",
       "desc": "Use of weak or untested encryption algorithms undermines the purposes of utilizing encryption to protect data. The application must implement cryptographic modules adhering to the higher standards approved by the federal government since this provides assurance they have been tested and validated.",
@@ -1508,9 +2503,21 @@
         "gid": "V-234111",
         "rid": "SV-234111r612749_rule",
         "stig_id": "TANS-SV-000045",
+        "gtitle": "SRG-APP-000001",
         "fix_id": "F-37261r610834_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102295",
+          "V-92193"
+        ],
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234111",
       "title": "The Tanium max_soap_sessions_total setting must be explicitly enabled to limit the number of simultaneous sessions.",
       "desc": "Application management includes the ability to control the number of users and user sessions that utilize an application. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to DoS attacks. This requirement may be met via the application or by utilizing information system, session control provided by a web server with specialized session management capabilities. If it has been specified that this requirement will be handled by the application, the capability to limit the maximum number of concurrent single user sessions must be designed and built into the application. This requirement addresses concurrent sessions for information system accounts and does not address concurrent sessions by single users via multiple system accounts. The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system.",
@@ -1526,9 +2533,21 @@
         "gid": "V-234112",
         "rid": "SV-234112r612749_rule",
         "stig_id": "TANS-SV-000046",
+        "gtitle": "SRG-APP-000001",
         "fix_id": "F-37262r610837_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102297",
+          "V-92195"
+        ],
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234112",
       "title": "The Tanium max_soap_sessions_per_user setting must be explicitly enabled to limit the number of simultaneous sessions.",
       "desc": "Application management includes the ability to control the number of users and user sessions that utilize an application. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to DoS attacks. This requirement may be met via the application or by utilizing information system session control provided by a web server with specialized session management capabilities. If it has been specified that this requirement will be handled by the application, the capability to limit the maximum number of concurrent single user sessions must be designed and built into the application. This requirement addresses concurrent sessions for information system accounts and does not address concurrent sessions by single users via multiple system accounts. The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system.",
@@ -1544,9 +2563,21 @@
         "gid": "V-234113",
         "rid": "SV-234113r612749_rule",
         "stig_id": "TANS-SV-000047",
+        "gtitle": "SRG-APP-000001",
         "fix_id": "F-37263r610840_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102299",
+          "V-92197"
+        ],
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234113",
       "title": "The Tanium soap_max_keep_alive setting must be explicitly enabled to limit the number of simultaneous sessions.",
       "desc": "Application management includes the ability to control the number of users and user sessions that utilize an application. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to DoS attacks. This requirement may be met via the application or by utilizing information system session control provided by a web server with specialized session management capabilities. If it has been specified that this requirement will be handled by the application, the capability to limit the maximum number of concurrent single user sessions must be designed and built into the application. This requirement addresses concurrent sessions for information system accounts and does not address concurrent sessions by single users via multiple system accounts. The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system.",
@@ -1562,9 +2593,21 @@
         "gid": "V-234114",
         "rid": "SV-234114r612749_rule",
         "stig_id": "TANS-SV-000048",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-37264r610843_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102301",
+          "V-92199"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234114",
       "title": "The Tanium documentation identifying recognized and trusted folders for Detect Local Directory Source must be maintained.",
       "desc": "An IOC stream is a series or \"stream\" of IOCs that are imported from a vendor based on a subscription service or manually downloaded and placed in a folder. Detect can be configured to retrieve the IOC content on a regularly scheduled basis. The items in an IOC stream can be separately manipulated after they are imported.",
@@ -1580,9 +2623,21 @@
         "gid": "V-234115",
         "rid": "SV-234115r612749_rule",
         "stig_id": "TANS-SV-000049",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-37265r610846_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102303",
+          "V-92201"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234115",
       "title": "The Tanium Detect Local Directory Source must be configured to restrict access to only authorized maintainers of Intel.",
       "desc": "An IOC stream is a series or \"\"stream\"\" of intel that are imported from a vendor based on a subscription service or manually downloaded and placed in a folder. Detect can be configured to retrieve the IOC content on a regularly scheduled basis. The items in an IOC stream can be separately manipulated after they are imported.",
@@ -1598,9 +2653,21 @@
         "gid": "V-234116",
         "rid": "SV-234116r612749_rule",
         "stig_id": "TANS-SV-000050",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-37266r610849_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102305",
+          "V-92203"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234116",
       "title": "The Tanium documentation identifying recognized and trusted SCAP sources must be maintained.",
       "desc": "NIST validated SCAP XML documents are provided from several possible sources such as DISA, NIST, and the other non-government entities. These documents are used as the basis of compliance definitions leveraged to automate compliance auditing of systems. These documents are updated on different frequencies and must be manually downloaded on regular intervals and imported in order to be current. Non-approved SCAP definitions lead to a false sense of security when evaluating an enterprise environment.",
@@ -1616,9 +2683,21 @@
         "gid": "V-234117",
         "rid": "SV-234117r612749_rule",
         "stig_id": "TANS-SV-000051",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-37267r610852_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102307",
+          "V-92205"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234117",
       "title": "The Tanium documentation identifying recognized and trusted OVAL feeds must be maintained.",
       "desc": "OVAL XML documents are provided from several possible sources such as the CIS open source repository, or any number of vendor/3rd party paid repositories. These documents are used to automate the passive validation of vulnerabilities on systems and therefore require a reasonable level of confidence in their origin. Non-approved OVAL definitions lead to a false sense of security when evaluating an enterprise environment.",
@@ -1634,9 +2713,21 @@
         "gid": "V-234118",
         "rid": "SV-234118r612749_rule",
         "stig_id": "TANS-SV-000052",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-37268r610855_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102309",
+          "V-92207"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234118",
       "title": "Tanium Comply must be configured to receive SCAP content only from trusted sources.",
       "desc": "NIST-validated SCAP XML documents are provided from several possible sources such as DISA, NIST, and the other non-government entities. These documents are used as the basis of compliance definitions leveraged to automate compliance auditing of systems. These documents are updated on different frequencies and must be manually downloaded on regular intervals and imported in order to be current. Non-approved SCAP definitions lead to a false sense of security when evaluating an enterprise environment.",
@@ -1652,9 +2743,21 @@
         "gid": "V-234119",
         "rid": "SV-234119r612749_rule",
         "stig_id": "TANS-SV-000053",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-37269r610858_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102311",
+          "V-92209"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234119",
       "title": "Tanium Comply must be configured to receive OVAL feeds only from trusted sources.",
       "desc": "OVAL XML documents are provided from several possible sources such as the CIS open source repository, or any number of vendor/3rd party paid repositories. These documents are used to automate the passive validation of vulnerabilities on systems and therefore require a reasonable level of confidence in their origin. Non-approved OVAL definitions lead to a false sense of security when evaluating an enterprise environment.",
@@ -1670,9 +2773,21 @@
         "gid": "V-234120",
         "rid": "SV-234120r612749_rule",
         "stig_id": "TANS-SV-000054",
+        "gtitle": "SRG-APP-000226",
         "fix_id": "F-37270r610861_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102313",
+          "V-92211"
+        ],
+        "cci": [
+          "CCI-001665"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234120",
       "title": "The Tanium application must be configured in a High-Availability (HA) setup to ensure minimal loss of data and minimal disruption to mission processes in the event of a system failure.",
       "desc": "Failure to a known state can address safety or security in accordance with the mission/business needs of the organization. Failure to a known secure state helps prevent a loss of confidentiality, integrity, or availability in the event of a failure of the information system or a component of the system. Preserving application state information helps to facilitate application restart and return to the operational mode of the organization with less disruption to mission-essential processes.",
@@ -1688,9 +2803,21 @@
         "gid": "V-234121",
         "rid": "SV-234121r612749_rule",
         "stig_id": "TANS-SV-000055",
+        "gtitle": "SRG-APP-000247",
         "fix_id": "F-37271r610864_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102315",
+          "V-92213"
+        ],
+        "cci": [
+          "CCI-001095"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234121",
       "title": "The bandwidth consumption for the Tanium Application server must be limited.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. In the case of application DoS attacks, care must be taken when designing the application to ensure the application makes the best use of system resources. SQL queries have the potential to consume large amounts of CPU cycles if they are not tuned for optimal performance. Web services containing complex calculations requiring large amounts of time to complete can bog down if too many requests for the service are encountered within a short period of time. The methods employed to meet this requirement will vary depending upon the technology the application utilizes. However, a variety of technologies exist to limit or, in some cases, eliminate the effects of application related DoS attacks. Employing increased capacity and bandwidth combined with specialized application layer protection devices and service redundancy may reduce the susceptibility to some DoS attacks.",
@@ -1706,9 +2833,21 @@
         "gid": "V-234122",
         "rid": "SV-234122r612749_rule",
         "stig_id": "TANS-SV-000056",
+        "gtitle": "SRG-APP-000357",
         "fix_id": "F-37272r610867_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102317",
+          "V-92215"
+        ],
+        "cci": [
+          "CCI-001849"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234122",
       "title": "The Tanium SQL Server RDBMS must be configured with sufficient free space to ensure audit logging is not impacted.",
       "desc": "In order to ensure Tanium has sufficient storage capacity in which to write the audit logs, the SQL Server RDMBS must be configured with sufficient free space. Consult the server sizing documents located at https://docs.tanium.com/platform_install/platform_install/reference_host_system_sizing_guidelines.html to determine how much free space should be allocated.",
@@ -1724,9 +2863,21 @@
         "gid": "V-234123",
         "rid": "SV-234123r612749_rule",
         "stig_id": "TANS-SV-000062",
+        "gtitle": "SRG-APP-000435",
         "fix_id": "F-37273r610870_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102319",
+          "V-92217"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234123",
       "title": "The Tanium application must limit the bandwidth used in communicating with endpoints to prevent a Denial of Service (DoS) condition at the server.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. This requirement addresses the configuration of applications to mitigate the impact of DoS attacks that have occurred or are ongoing on application availability. For each application, known and potential DoS attacks must be identified and solutions for each type implemented. A variety of technologies exist to limit or, in some cases, eliminate the effects of DoS attacks (e.g., limiting processes or restricting the number of sessions the application opens at one time). Employing increased capacity and bandwidth, combined with service redundancy, may reduce the susceptibility to some DoS attacks.",
@@ -1742,9 +2893,21 @@
         "gid": "V-234124",
         "rid": "SV-234124r612749_rule",
         "stig_id": "TANS-SV-000064",
+        "gtitle": "SRG-APP-000456",
         "fix_id": "F-37274r610873_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102321",
+          "V-92219"
+        ],
+        "cci": [
+          "CCI-002605"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234124",
       "title": "The Tanium Application Server must install security-relevant software updates within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).",
       "desc": "Security flaws with software applications are discovered daily. Vendors are constantly updating and patching their products to address newly discovered security vulnerabilities. Organizations (including any contractor to the organization) are required to promptly install security-relevant software updates (e.g., patches, service packs, and hot fixes). Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously. Organization-defined time periods for updating security-relevant software may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). This requirement will apply to software patch management solutions that are used to install patches across the enclave and to applications themselves that are not part of that patch management solution. For example, many browsers today provide the capability to install their own patch software. Patch criticality, as well as system criticality will vary. Therefore, the tactical situations regarding the patch management process will also vary. This means that the time period utilized must be a configurable parameter. Time frames for application of security-relevant software updates may be dependent upon the Information Assurance Vulnerability Management (IAVM) process. The application will be configured to check for and install security-relevant software updates within an identified time period from the availability of the update. The specific time period will be defined by an authoritative source (e.g. IAVM, CTOs, DTMs, and STIGs).",
@@ -1760,9 +2923,21 @@
         "gid": "V-234125",
         "rid": "SV-234125r612749_rule",
         "stig_id": "TANS-SV-000065",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-37275r610876_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102323",
+          "V-92221"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234125",
       "title": "Tanium Server files must be excluded from host-based intrusion prevention intervention.",
       "desc": "Similar to any other host-based applications, the Tanium Server is subject to the restrictions other System-level software may place on an operating environment. Antivirus, IPS, Encryption, or other security and management stack software may disallow the Tanium Server from working as expected. https://docs.tanium.com/platform_install/platform_install/reference_host_system_security_exceptions.html.",
@@ -1778,9 +2953,21 @@
         "gid": "V-234126",
         "rid": "SV-234126r612749_rule",
         "stig_id": "TANS-SV-000066",
+        "gtitle": "SRG-APP-000295",
         "fix_id": "F-37276r610879_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102325",
+          "V-92223"
+        ],
+        "cci": [
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234126",
       "title": "The Tanium application must set an absolute timeout for sessions.",
       "desc": "Automatic session termination addresses the termination of user-initiated logical sessions in contrast to the termination of network connections that are associated with communications sessions (i.e., network disconnect). A logical session (for local, network, and remote access) is initiated whenever a user (or process acting on behalf of a user) accesses an organizational information system. Such user sessions can be terminated (and thus terminate user access) without terminating network sessions. Session termination terminates all processes associated with a user's logical session except those processes that are specifically created by the user (i.e., session owner) to continue after the session is terminated. Conditions or trigger events requiring automatic session termination can include, for example, organization-defined periods of user inactivity, targeted responses to certain types of incidents, and time-of-day restrictions on information system use. This capability is typically reserved for specific application system functionality where the system owner, data owner, or organization requires additional assurance. Based upon requirements and events specified by the data or application owner, the application developer must incorporate logic into the application that will provide a control mechanism that disconnects users upon the defined event trigger. The methods for incorporating this requirement will be determined and specified on a case-by-case basis during the application design and development stages. Leaving sessions open indefinitely is a major security risk. An attacker can easily use an already authenticated session to access the hosted application as the previously authenticated user. By closing sessions after an absolute period of time, the user is forced to re-authenticate, guaranteeing the session is still in use. Enabling an absolute timeout for sessions closes sessions that are still active.",
@@ -1796,9 +2983,21 @@
         "gid": "V-234127",
         "rid": "SV-234127r612749_rule",
         "stig_id": "TANS-SV-000067",
+        "gtitle": "SRG-APP-000295",
         "fix_id": "F-37277r610882_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102327",
+          "V-92225"
+        ],
+        "cci": [
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234127",
       "title": "The Tanium application must set an inactive timeout for sessions.",
       "desc": "Leaving sessions open indefinitely is a major security risk. An attacker can easily use an already authenticated session to access the hosted application as the previously authenticated user. By closing sessions after a set period of inactivity, the web server can make certain that sessions that are not closed through the user logging out of an application are eventually closed. Acceptable values are 5 minutes for high-value applications, 10 minutes for medium-value applications, and 20 minutes for low-value applications.",
@@ -1814,9 +3013,21 @@
         "gid": "V-234128",
         "rid": "SV-234128r612749_rule",
         "stig_id": "TANS-SV-000068",
+        "gtitle": "SRG-APP-000435",
         "fix_id": "F-37278r610885_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102329",
+          "V-92227"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234128",
       "title": "The Tanium application service must be protected from being stopped by a non-privileged user.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. This requirement addresses the configuration of applications to mitigate the impact of DoS attacks that have occurred or are ongoing on application availability. For each application, known and potential DoS attacks must be identified and solutions for each type implemented. A variety of technologies exist to limit or, in some cases, eliminate the effects of DoS attacks (e.g., limiting processes or restricting the number of sessions the application opens at one time). Employing increased capacity and bandwidth, combined with service redundancy, may reduce the susceptibility to some DoS attacks. A web server not properly tuned may become overwhelmed and cause a DoS condition even with expected traffic from users. To avoid a DoS, the web server must be tuned to handle the expected traffic for the hosted applications.",
@@ -1832,9 +3043,21 @@
         "gid": "V-234129",
         "rid": "SV-234129r612749_rule",
         "stig_id": "TANS-SV-000069",
+        "gtitle": "SRG-APP-000435",
         "fix_id": "F-37279r610888_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102331",
+          "V-92229"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234129",
       "title": "The Tanium web server must be tuned to handle the operational requirements of the hosted application.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. This requirement addresses the configuration of applications to mitigate the impact of DoS attacks that have occurred or are ongoing on application availability. For each application, known and potential DoS attacks must be identified and solutions for each type implemented. A variety of technologies exist to limit or, in some cases, eliminate the effects of DoS attacks (e.g., limiting processes or restricting the number of sessions the application opens at one time). Employing increased capacity and bandwidth, combined with service redundancy, may reduce the susceptibility to some DoS attacks. An attacker has at least two reasons to stop a web server. The first is to cause a Denial of Service (DoS), and the second is to put in place changes the attacker made to the web server configuration. To prohibit an attacker from stopping the web server, the process ID (pid) of the web server and the utilities used to start/stop the web server must be protected from access by non-privileged users. By knowing the pid and having access to the web server utilities, a non-privileged user has a greater capability of stopping the server, whether intentionally or unintentionally.",
@@ -1850,9 +3073,21 @@
         "gid": "V-234130",
         "rid": "SV-234130r612749_rule",
         "stig_id": "TANS-SV-000070",
+        "gtitle": "SRG-APP-000439",
         "fix_id": "F-37280r610891_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102333",
+          "V-92231"
+        ],
+        "cci": [
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234130",
       "title": "The Tanium application, SQL and Module servers must all be configured to communicate using TLS 1.2 Strict Only.",
       "desc": "Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. This requirement applies only to those applications that are either distributed or can allow access to data non-locally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, SSL VPNs, or IPsec. FIPS 140-2 approved TLS versions must be enabled, and non-FIPS-approved SSL versions must be disabled. NIST SP 800-52 defines the approved TLS versions for government applications. Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.",
@@ -1868,9 +3103,21 @@
         "gid": "V-234131",
         "rid": "SV-234131r612749_rule",
         "stig_id": "TANS-SV-000101",
+        "gtitle": "SRG-APP-000439",
         "fix_id": "F-37281r610894_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102335",
+          "V-92233"
+        ],
+        "cci": [
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234131",
       "title": "The Tanium application must be configured to communicate using TLS 1.2 Strict Only.",
       "desc": "Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. This requirement applies only to those applications that are either distributed or can allow access to data non-locally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, SSL VPNs, or IPsec. FIPS 140-2 approved TLS versions must be enabled, and non-FIPS-approved SSL versions must be disabled. NIST SP 800-52 defines the approved TLS versions for government applications. Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.",
@@ -1886,9 +3133,21 @@
         "gid": "V-234132",
         "rid": "SV-234132r612749_rule",
         "stig_id": "TANS-SV-000107",
+        "gtitle": "SRG-APP-000439",
         "fix_id": "F-37282r610897_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-102337",
+          "V-92235"
+        ],
+        "cci": [
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target Tanium 7.3"
+      ],
       "id": "V-234132",
       "title": "The Tanium application must be configured to communicate using TLS 1.2 Strict Only.",
       "desc": "Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. This requirement applies only to those applications that are either distributed or can allow access to data non-locally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, SSL VPNs, or IPsec. FIPS 140-2 approved TLS versions must be enabled, and non-FIPS-approved SSL versions must be disabled. NIST SP 800-52 defines the approved TLS versions for government applications. Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.",

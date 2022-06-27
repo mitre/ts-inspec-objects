@@ -11,13 +11,22 @@
         "gid": "V-239072",
         "rid": "SV-239072r717090_rule",
         "stig_id": "PHTN-67-000129",
+        "gtitle": "SRG-OS-000342-GPOS-00133",
         "fix_id": "F-42242r675023_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000342-GPOS-00133",
           "SRG-OS-000447-GPOS-00201"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-001851",
+          "CCI-002702"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239072",
       "title": "The Photon operating system must be configured to offload audit logs to a syslog server.",
       "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Offloading is a common process in information systems with limited audit storage capacity. ",
@@ -33,9 +42,17 @@
         "gid": "V-239073",
         "rid": "SV-239073r675027_rule",
         "stig_id": "PHTN-67-000001",
+        "gtitle": "SRG-OS-000004-GPOS-00004",
         "fix_id": "F-42243r675026_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000018"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239073",
       "title": "The Photon operating system must audit all account creations.",
       "desc": "Once an attacker establishes access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to create an account. Auditing account creation actions provides logging that can be used for forensic purposes.",
@@ -51,13 +68,22 @@
         "gid": "V-239074",
         "rid": "SV-239074r675030_rule",
         "stig_id": "PHTN-67-000002",
+        "gtitle": "SRG-OS-000021-GPOS-00005",
         "fix_id": "F-42244r675029_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000021-GPOS-00005",
           "SRG-OS-000329-GPOS-00128"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000044",
+          "CCI-002238"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239074",
       "title": "The Photon operating system must automatically lock an account when three unsuccessful logon attempts occur.",
       "desc": "By limiting the number of failed logon attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute-force attacks, is reduced. Limits are imposed by locking the account. ",
@@ -73,13 +99,26 @@
         "gid": "V-239075",
         "rid": "SV-239075r675033_rule",
         "stig_id": "PHTN-67-000003",
+        "gtitle": "SRG-OS-000023-GPOS-00006",
         "fix_id": "F-42245r675032_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000023-GPOS-00006",
           "SRG-OS-000228-GPOS-00088"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000048",
+          "CCI-001384",
+          "CCI-001385",
+          "CCI-001386",
+          "CCI-001387",
+          "CCI-001388"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239075",
       "title": "The Photon operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting SSH access.",
       "desc": "Display of a standardized and approved use notification before granting access to the operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. ",
@@ -95,9 +134,17 @@
         "gid": "V-239076",
         "rid": "SV-239076r675036_rule",
         "stig_id": "PHTN-67-000004",
+        "gtitle": "SRG-OS-000027-GPOS-00008",
         "fix_id": "F-42246r675035_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239076",
       "title": "The Photon operating system must limit the number of concurrent sessions to 10 for all accounts and/or account types.",
       "desc": "Operating system management includes the ability to control the number of users and user sessions that utilize an operating system. Limiting the number of allowed users and sessions per user is helpful in reducing the risks related to denial-of-service attacks.",
@@ -113,14 +160,24 @@
         "gid": "V-239077",
         "rid": "SV-239077r675039_rule",
         "stig_id": "PHTN-67-000005",
+        "gtitle": "SRG-OS-000029-GPOS-00010",
         "fix_id": "F-42247r675038_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000029-GPOS-00010",
           "SRG-OS-000126-GPOS-00066",
           "SRG-OS-000279-GPOS-00109"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000057",
+          "CCI-000879",
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239077",
       "title": "The Photon operating system must set a session inactivity timeout of 15 minutes or less.",
       "desc": "A session timeout is an action taken when a session goes idle for any reason. Rather than relying on the user to manually disconnect their session prior to going idle, the Photon operating system must be able to identify when a session has idled and take action to terminate the session. ",
@@ -136,9 +193,17 @@
         "gid": "V-239078",
         "rid": "SV-239078r675042_rule",
         "stig_id": "PHTN-67-000006",
+        "gtitle": "SRG-OS-000032-GPOS-00013",
         "fix_id": "F-42248r675041_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000067"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239078",
       "title": "The Photon operating system must have the sshd SyslogFacility set to \"authpriv\".",
       "desc": "Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities.",
@@ -154,9 +219,17 @@
         "gid": "V-239079",
         "rid": "SV-239079r675045_rule",
         "stig_id": "PHTN-67-000007",
+        "gtitle": "SRG-OS-000032-GPOS-00013",
         "fix_id": "F-42249r675044_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000067"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239079",
       "title": "The Photon operating system must have sshd authentication logging enabled.",
       "desc": "Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities. Shipping sshd authentication events to syslog allows organizations to use their log aggregators to correlate forensic activities among multiple systems.",
@@ -172,9 +245,17 @@
         "gid": "V-239080",
         "rid": "SV-239080r675048_rule",
         "stig_id": "PHTN-67-000008",
+        "gtitle": "SRG-OS-000032-GPOS-00013",
         "fix_id": "F-42250r675047_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000067"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239080",
       "title": "The Photon operating system must have the sshd LogLevel set to \"INFO\".",
       "desc": "Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities. The INFO LogLevel is required, at least, to ensure the capturing of failed login events.",
@@ -190,7 +271,9 @@
         "gid": "V-239081",
         "rid": "SV-239081r675051_rule",
         "stig_id": "PHTN-67-000009",
+        "gtitle": "SRG-OS-000033-GPOS-00014",
         "fix_id": "F-42251r675050_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000033-GPOS-00014",
           "SRG-OS-000250-GPOS-00093",
@@ -198,8 +281,18 @@
           "SRG-OS-000396-GPOS-00176",
           "SRG-OS-000423-GPOS-00187"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000068",
+          "CCI-001453",
+          "CCI-002418",
+          "CCI-002450",
+          "CCI-002890"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239081",
       "title": "The Photon operating system must configure sshd to use approved encryption algorithms.",
       "desc": "Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session. OpenSSH on the Photon operating system is compiled with a FIPS-validated cryptographic module. The \"FipsMode\" setting controls whether this module is initialized and used in FIPS 140-2 mode. ",
@@ -215,15 +308,26 @@
         "gid": "V-239082",
         "rid": "SV-239082r675054_rule",
         "stig_id": "PHTN-67-000010",
+        "gtitle": "SRG-OS-000037-GPOS-00015",
         "fix_id": "F-42252r675053_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000037-GPOS-00015",
           "SRG-OS-000039-GPOS-00017",
           "SRG-OS-000040-GPOS-00018",
           "SRG-OS-000041-GPOS-00019"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000130",
+          "CCI-000132",
+          "CCI-000133",
+          "CCI-000134"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239082",
       "title": "The Photon operating system must configure auditd to log to disk.",
       "desc": "Without establishing what type of events occurred, it would be difficult to establish, correlate, and investigate the events leading up to an outage or attack. Audit record content must be shipped to a central location, but it must also be logged locally. ",
@@ -239,9 +343,17 @@
         "gid": "V-239083",
         "rid": "SV-239083r675057_rule",
         "stig_id": "PHTN-67-000011",
+        "gtitle": "SRG-OS-000038-GPOS-00016",
         "fix_id": "F-42253r675056_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000131"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239083",
       "title": "The Photon operating system must configure auditd to use the correct log format.",
       "desc": "To compile an accurate risk assessment and provide forensic analysis, it is essential for security personnel to know exact, unfiltered details of the event in question.",
@@ -257,13 +369,22 @@
         "gid": "V-239084",
         "rid": "SV-239084r675060_rule",
         "stig_id": "PHTN-67-000012",
+        "gtitle": "SRG-OS-000042-GPOS-00020",
         "fix_id": "F-42254r675059_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000042-GPOS-00020",
           "SRG-OS-000392-GPOS-00172"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000135",
+          "CCI-002884"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239084",
       "title": "The Photon operating system must be configured to audit the execution of privileged functions.",
       "desc": "Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Auditing all actions by superusers is one way to detect such misuse and identify the risk from insider threats and the advanced persistent threat. ",
@@ -279,13 +400,22 @@
         "gid": "V-239085",
         "rid": "SV-239085r675063_rule",
         "stig_id": "PHTN-67-000013",
+        "gtitle": "SRG-OS-000046-GPOS-00022",
         "fix_id": "F-42255r675062_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000046-GPOS-00022",
           "SRG-OS-000344-GPOS-00135"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000139",
+          "CCI-001858"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239085",
       "title": "The Photon operating system audit log must log space limit problems to syslog.",
       "desc": "It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without this notification, the security personnel may be unaware of an impending failure of the audit capability, and system operation may be adversely affected. ",
@@ -301,9 +431,17 @@
         "gid": "V-239086",
         "rid": "SV-239086r675066_rule",
         "stig_id": "PHTN-67-000014",
+        "gtitle": "SRG-OS-000047-GPOS-00023",
         "fix_id": "F-42256r675065_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000140"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239086",
       "title": "The Photon operating system audit log must attempt to log audit failures to syslog.",
       "desc": "It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without this notification, the security personnel may be unaware of an impending failure of the audit capability, and system operation may be adversely affected.",
@@ -319,9 +457,17 @@
         "gid": "V-239087",
         "rid": "SV-239087r675069_rule",
         "stig_id": "PHTN-67-000015",
+        "gtitle": "SRG-OS-000057-GPOS-00027",
         "fix_id": "F-42257r675068_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000162"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239087",
       "title": "The Photon operating system audit log must have correct permissions.",
       "desc": "Audit information includes all information (e.g., audit records, audit settings, audit reports) needed to successfully audit operating system activity. Unauthorized disclosure of audit records can reveal system and configuration data to attackers, thus compromising its confidentiality.",
@@ -337,9 +483,17 @@
         "gid": "V-239088",
         "rid": "SV-239088r675072_rule",
         "stig_id": "PHTN-67-000016",
+        "gtitle": "SRG-OS-000058-GPOS-00028",
         "fix_id": "F-42258r675071_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000163"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239088",
       "title": "The Photon operating system audit log must be owned by root.",
       "desc": "Audit information includes all information (e.g., audit records, audit settings, audit reports) needed to successfully audit operating system activity. Unauthorized disclosure of audit records can reveal system and configuration data to attackers, thus compromising its confidentiality.",
@@ -355,9 +509,17 @@
         "gid": "V-239089",
         "rid": "SV-239089r675075_rule",
         "stig_id": "PHTN-67-000017",
+        "gtitle": "SRG-OS-000059-GPOS-00029",
         "fix_id": "F-42259r675074_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000164"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239089",
       "title": "The Photon operating system audit log must be group-owned by root.",
       "desc": "Audit information includes all information (e.g., audit records, audit settings, audit reports) needed to successfully audit operating system activity. Unauthorized disclosure of audit records can reveal system and configuration data to attackers, thus compromising its confidentiality.",
@@ -373,7 +535,9 @@
         "gid": "V-239090",
         "rid": "SV-239090r675078_rule",
         "stig_id": "PHTN-67-000018",
+        "gtitle": "SRG-OS-000062-GPOS-00031",
         "fix_id": "F-42260r675077_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000062-GPOS-00031",
           "SRG-OS-000042-GPOS-00021",
@@ -388,8 +552,21 @@
           "SRG-OS-000474-GPOS-00219",
           "SRG-OS-000475-GPOS-00220"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000135",
+          "CCI-000169",
+          "CCI-000172",
+          "CCI-001487",
+          "CCI-001744",
+          "CCI-001814",
+          "CCI-002696",
+          "CCI-002699"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239090",
       "title": "The Photon operating system must have the auditd service running.",
       "desc": "Without the capability to generate audit records, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. To that end, the auditd service must be configured to start automatically and be running at all times. ",
@@ -405,9 +582,17 @@
         "gid": "V-239091",
         "rid": "SV-239091r675081_rule",
         "stig_id": "PHTN-67-000019",
+        "gtitle": "SRG-OS-000063-GPOS-00032",
         "fix_id": "F-42261r675080_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000171"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239091",
       "title": "The Photon operating system must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.",
       "desc": "Without the capability to restrict the roles and individuals that can select which events are audited, unauthorized personnel may be able to prevent the auditing of critical events. Misconfigured audits may degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.",
@@ -423,13 +608,21 @@
         "gid": "V-239092",
         "rid": "SV-239092r675084_rule",
         "stig_id": "PHTN-67-000020",
+        "gtitle": "SRG-OS-000064-GPOS-00033",
         "fix_id": "F-42262r675083_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000064-GPOS-00033",
           "SRG-OS-000462-GPOS-00206"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239092",
       "title": "The Photon operating system must generate audit records when successful/unsuccessful attempts to access privileges occur.",
       "desc": "The changing of file permissions could indicate that a user is attempting to gain access to information that would otherwise be disallowed. Auditing DAC modifications can facilitate the identification of patterns of abuse among both authorized and unauthorized users. ",
@@ -445,9 +638,17 @@
         "gid": "V-239093",
         "rid": "SV-239093r675087_rule",
         "stig_id": "PHTN-67-000021",
+        "gtitle": "SRG-OS-000069-GPOS-00037",
         "fix_id": "F-42263r675086_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000192"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239093",
       "title": "The Photon operating system must enforce password complexity by requiring that at least one uppercase character be used.",
       "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
@@ -463,9 +664,17 @@
         "gid": "V-239094",
         "rid": "SV-239094r717043_rule",
         "stig_id": "PHTN-67-000022",
+        "gtitle": "SRG-OS-000070-GPOS-00038",
         "fix_id": "F-42264r717042_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000193"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239094",
       "title": "The Photon operating system must enforce password complexity by requiring that at least one lowercase character be used.",
       "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
@@ -481,9 +690,17 @@
         "gid": "V-239095",
         "rid": "SV-239095r675093_rule",
         "stig_id": "PHTN-67-000023",
+        "gtitle": "SRG-OS-000071-GPOS-00039",
         "fix_id": "F-42265r675092_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000194"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239095",
       "title": "The Photon operating system must enforce password complexity by requiring that at least one numeric character be used.",
       "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
@@ -499,9 +716,17 @@
         "gid": "V-239096",
         "rid": "SV-239096r675096_rule",
         "stig_id": "PHTN-67-000024",
+        "gtitle": "SRG-OS-000072-GPOS-00040",
         "fix_id": "F-42266r675095_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000195"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239096",
       "title": "The Photon operating system must require that new passwords are at least four characters different from the old password.",
       "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
@@ -517,9 +742,17 @@
         "gid": "V-239097",
         "rid": "SV-239097r675099_rule",
         "stig_id": "PHTN-67-000025",
+        "gtitle": "SRG-OS-000073-GPOS-00041",
         "fix_id": "F-42267r675098_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000196"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239097",
       "title": "The Photon operating system must store only encrypted representations of passwords.",
       "desc": "Passwords must be protected at all times via strong, one-way encryption. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. If they are encrypted with a weak cipher, those passwords are much more vulnerable to offline brute forcing attacks.",
@@ -535,9 +768,17 @@
         "gid": "V-239098",
         "rid": "SV-239098r675102_rule",
         "stig_id": "PHTN-67-000026",
+        "gtitle": "SRG-OS-000073-GPOS-00041",
         "fix_id": "F-42268r675101_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000196"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239098",
       "title": "The Photon operating system must store only encrypted representations of passwords.",
       "desc": "Passwords must be protected at all times via strong, one-way encryption. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. If they are encrypted with a weak cipher, those passwords are much more vulnerable to offline brute forcing attacks.",
@@ -553,9 +794,17 @@
         "gid": "V-239099",
         "rid": "SV-239099r675105_rule",
         "stig_id": "PHTN-67-000027",
+        "gtitle": "SRG-OS-000075-GPOS-00043",
         "fix_id": "F-42269r675104_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000198"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239099",
       "title": "The Photon operating system must be configured so that passwords for new users are restricted to a 24-hour minimum lifetime.",
       "desc": "Enforcing a minimum password lifetime helps to prevent repeated password changes to defeat the password reuse or history enforcement requirement. If users are allowed to immediately and continually change their password, the password could be repeatedly changed in a short period of time to defeat the organization's policy regarding password reuse.",
@@ -571,9 +820,17 @@
         "gid": "V-239100",
         "rid": "SV-239100r675108_rule",
         "stig_id": "PHTN-67-000028",
+        "gtitle": "SRG-OS-000076-GPOS-00044",
         "fix_id": "F-42270r675107_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000199"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239100",
       "title": "The Photon operating system must be configured so that passwords for new users are restricted to a 90-day maximum lifetime.",
       "desc": "Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed periodically. If the operating system does not limit the lifetime of passwords and force users to change their passwords, there is the risk that the operating system passwords could be compromised.",
@@ -589,9 +846,17 @@
         "gid": "V-239101",
         "rid": "SV-239101r675111_rule",
         "stig_id": "PHTN-67-000029",
+        "gtitle": "SRG-OS-000077-GPOS-00045",
         "fix_id": "F-42271r675110_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000200"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239101",
       "title": "The Photon operating system must prohibit password reuse for a minimum of five generations.",
       "desc": "Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. If the information system or application allows the user to consecutively reuse their password when that password has exceeded its defined lifetime, the end result is a password that is not changed as per policy requirements.",
@@ -607,9 +872,17 @@
         "gid": "V-239102",
         "rid": "SV-239102r675114_rule",
         "stig_id": "PHTN-67-000030",
+        "gtitle": "SRG-OS-000077-GPOS-00045",
         "fix_id": "F-42272r675113_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000200"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239102",
       "title": "The Photon operating system must ensure old passwords are being stored.",
       "desc": "Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. If the information system or application allows the user to consecutively reuse their password when that password has exceeded its defined lifetime, the end result is a password that is not changed as per policy requirements.",
@@ -625,9 +898,17 @@
         "gid": "V-239103",
         "rid": "SV-239103r675117_rule",
         "stig_id": "PHTN-67-000031",
+        "gtitle": "SRG-OS-000078-GPOS-00046",
         "fix_id": "F-42273r675116_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000205"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239103",
       "title": "The Photon operating system must enforce a minimum eight-character password length.",
       "desc": "The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.",
@@ -643,9 +924,17 @@
         "gid": "V-239104",
         "rid": "SV-239104r675120_rule",
         "stig_id": "PHTN-67-000032",
+        "gtitle": "SRG-OS-000095-GPOS-00049",
         "fix_id": "F-42274r675119_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239104",
       "title": "The Photon operating system must only allow installation of packages signed by VMware.",
       "desc": "Installation of any non-trusted software, patches, service packs, device drivers, or operating system components can significantly affect the overall security of the operating system. This requirement ensures the software has not been tampered with and has been provided by VMware.",
@@ -661,13 +950,22 @@
         "gid": "V-239105",
         "rid": "SV-239105r675123_rule",
         "stig_id": "PHTN-67-000033",
+        "gtitle": "SRG-OS-000096-GPOS-00050",
         "fix_id": "F-42275r675122_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000096-GPOS-00050",
           "SRG-OS-000114-GPOS-00059"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000382",
+          "CCI-000778"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239105",
       "title": "The Photon operating system must disable the loading of unnecessary kernel modules.",
       "desc": "To support the requirements and principles of least functionality, the operating system must provide only essential capabilities and limit the use of modules, protocols, and/or services to only those required for the proper functioning of the product. ",
@@ -683,9 +981,17 @@
         "gid": "V-239106",
         "rid": "SV-239106r675126_rule",
         "stig_id": "PHTN-67-000034",
+        "gtitle": "SRG-OS-000104-GPOS-00051",
         "fix_id": "F-42276r675125_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000764"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239106",
       "title": "The Photon operating system must not have Duplicate User IDs (UIDs).",
       "desc": "To ensure accountability and prevent unauthenticated access, organizational users must be uniquely identified and authenticated to prevent potential misuse and provide for non-repudiation.",
@@ -701,9 +1007,17 @@
         "gid": "V-239107",
         "rid": "SV-239107r675129_rule",
         "stig_id": "PHTN-67-000035",
+        "gtitle": "SRG-OS-000109-GPOS-00056",
         "fix_id": "F-42277r675128_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000770"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239107",
       "title": "The Photon operating system must configure sshd to disallow root logins.",
       "desc": "Logging on with a user-specific account provides individual accountability for actions performed on the system. Users must log in with their individual accounts and elevate to root as necessary. Disallowing root SSH login also reduces the distribution of the root password to users who may not otherwise need that level of privilege.",
@@ -719,9 +1033,17 @@
         "gid": "V-239108",
         "rid": "SV-239108r675132_rule",
         "stig_id": "PHTN-67-000036",
+        "gtitle": "SRG-OS-000118-GPOS-00060",
         "fix_id": "F-42278r675131_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000795"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239108",
       "title": "The Photon operating system must disable new accounts immediately upon password expiration.",
       "desc": "Inactive identifiers pose a risk to systems and applications because attackers may exploit an inactive identifier and potentially obtain undetected access to the system. Owners of inactive accounts will not notice if unauthorized access to their user account has been obtained. Disabling inactive accounts ensures that accounts that may not have been responsibly removed are not available to attackers who may have compromised their credentials.",
@@ -737,13 +1059,22 @@
         "gid": "V-239109",
         "rid": "SV-239109r675135_rule",
         "stig_id": "PHTN-67-000037",
+        "gtitle": "SRG-OS-000142-GPOS-00071",
         "fix_id": "F-42279r675134_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000142-GPOS-00071",
           "SRG-OS-000420-GPOS-00186"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-001095",
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239109",
       "title": "The Photon operating system must use TCP syncookies.",
       "desc": "A TCP SYN flood attack can cause a denial of service by filling a system's TCP connection table with connections in the SYN_RCVD state. Syncookies can be used to track a connection when a subsequent ACK is received, verifying the initiator is attempting a valid connection and is not a flood source. This feature is activated when a flood condition is detected and enables the system to continue servicing valid connection requests. ",
@@ -759,9 +1090,17 @@
         "gid": "V-239110",
         "rid": "SV-239110r675138_rule",
         "stig_id": "PHTN-67-000038",
+        "gtitle": "SRG-OS-000163-GPOS-00072",
         "fix_id": "F-42280r675137_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001133"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239110",
       "title": "The Photon operating system must configure sshd to disconnect idle SSH sessions.",
       "desc": "Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended.",
@@ -777,9 +1116,17 @@
         "gid": "V-239111",
         "rid": "SV-239111r675141_rule",
         "stig_id": "PHTN-67-000039",
+        "gtitle": "SRG-OS-000163-GPOS-00072",
         "fix_id": "F-42281r675140_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001133"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239111",
       "title": "The Photon operating system must configure sshd to disconnect idle SSH sessions.",
       "desc": "Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended.",
@@ -795,7 +1142,9 @@
         "gid": "V-239112",
         "rid": "SV-239112r675144_rule",
         "stig_id": "PHTN-67-000040",
+        "gtitle": "SRG-OS-000205-GPOS-00083",
         "fix_id": "F-42282r675143_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000205-GPOS-00083",
           "SRG-OS-000274-GPOS-00104",
@@ -804,8 +1153,19 @@
           "SRG-OS-000277-GPOS-00107",
           "SRG-OS-000479-GPOS-00224"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-001312",
+          "CCI-001683",
+          "CCI-001684",
+          "CCI-001685",
+          "CCI-001686",
+          "CCI-001851"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239112",
       "title": "The Photon operating system must configure rsyslog to offload system logs to a central server.",
       "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Proper configuration of rsyslog ensures that information critical to forensic analysis of security events is available for future action without any manual offloading or cron jobs. ",
@@ -821,9 +1181,17 @@
         "gid": "V-239113",
         "rid": "SV-239113r675147_rule",
         "stig_id": "PHTN-67-000041",
+        "gtitle": "SRG-OS-000206-GPOS-00084",
         "fix_id": "F-42283r675146_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001314"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239113",
       "title": "The Photon operating system /var/log directory must be owned by root.",
       "desc": "Only authorized personnel should be aware of errors and the details of the errors. Error messages are an indicator of an organization's operational state and can provide sensitive information to an unprivileged attacker.",
@@ -839,9 +1207,17 @@
         "gid": "V-239114",
         "rid": "SV-239114r675150_rule",
         "stig_id": "PHTN-67-000042",
+        "gtitle": "SRG-OS-000206-GPOS-00084",
         "fix_id": "F-42284r675149_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001314"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239114",
       "title": "The Photon operating system messages file must be owned by root.",
       "desc": "Only authorized personnel should be aware of errors and the details of the errors. Error messages are an indicator of an organization's operational state and can provide sensitive information to an unprivileged attacker.",
@@ -857,9 +1233,17 @@
         "gid": "V-239115",
         "rid": "SV-239115r675153_rule",
         "stig_id": "PHTN-67-000043",
+        "gtitle": "SRG-OS-000206-GPOS-00084",
         "fix_id": "F-42285r675152_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001314"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239115",
       "title": "The Photon operating system messages file must have mode 0640 or less permissive.",
       "desc": "Only authorized personnel should be aware of errors and the details of the errors. Error messages are an indicator of an organization's operational state and can provide sensitive information to an unprivileged attacker.",
@@ -875,14 +1259,24 @@
         "gid": "V-239116",
         "rid": "SV-239116r675156_rule",
         "stig_id": "PHTN-67-000045",
+        "gtitle": "SRG-OS-000239-GPOS-00089",
         "fix_id": "F-42286r675155_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000239-GPOS-00089",
           "SRG-OS-000303-GPOS-00120",
           "SRG-OS-000304-GPOS-00121"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-001403",
+          "CCI-002130",
+          "CCI-002132"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239116",
       "title": "The Photon operating system must audit all account modifications.",
       "desc": "Once an attacker establishes access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to modify an existing account. Auditing account modification actions provides logging that can be used for forensic purposes. ",
@@ -898,9 +1292,17 @@
         "gid": "V-239117",
         "rid": "SV-239117r675159_rule",
         "stig_id": "PHTN-67-000046",
+        "gtitle": "SRG-OS-000240-GPOS-00090",
         "fix_id": "F-42287r675158_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001404"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239117",
       "title": "The Photon operating system must audit all account disabling actions.",
       "desc": "When operating system accounts are disabled, user accessibility is affected. Accounts are used for identifying individual users or the operating system processes themselves. To detect and respond to events affecting user accessibility and system processing, operating systems must audit account disabling actions.",
@@ -916,9 +1318,17 @@
         "gid": "V-239118",
         "rid": "SV-239118r675162_rule",
         "stig_id": "PHTN-67-000047",
+        "gtitle": "SRG-OS-000241-GPOS-00091",
         "fix_id": "F-42288r675161_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001405"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239118",
       "title": "The Photon operating system must audit all account removal actions.",
       "desc": "When operating system accounts are removed, user accessibility is affected. Accounts are used for identifying individual users or the operating system processes themselves. To detect and respond to events affecting user accessibility and system processing, operating systems must audit account removal actions.",
@@ -934,9 +1344,17 @@
         "gid": "V-239119",
         "rid": "SV-239119r675165_rule",
         "stig_id": "PHTN-67-000048",
+        "gtitle": "SRG-OS-000254-GPOS-00095",
         "fix_id": "F-42289r675164_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001464"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239119",
       "title": "The Photon operating system must initiate auditing as part of the boot process.",
       "desc": "Each process on the system carries an \"auditable\" flag, which indicates whether its activities can be audited. Although auditd takes care of enabling this for all processes that launch after it starts, adding the kernel argument ensures the flag is set at boot for every process on the system. This includes processes created before auditd starts.",
@@ -952,9 +1370,17 @@
         "gid": "V-239120",
         "rid": "SV-239120r675168_rule",
         "stig_id": "PHTN-67-000049",
+        "gtitle": "SRG-OS-000256-GPOS-00097",
         "fix_id": "F-42290r675167_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001493"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239120",
       "title": "The Photon operating system audit files and directories must have correct permissions.",
       "desc": "Protecting audit information also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operations on audit information.",
@@ -970,9 +1396,17 @@
         "gid": "V-239121",
         "rid": "SV-239121r675171_rule",
         "stig_id": "PHTN-67-000050",
+        "gtitle": "SRG-OS-000256-GPOS-00097",
         "fix_id": "F-42291r675170_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001493"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239121",
       "title": "The Photon operating system audit files and directories must have correct permissions.",
       "desc": "Protecting audit information also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operations on audit information.",
@@ -988,13 +1422,22 @@
         "gid": "V-239122",
         "rid": "SV-239122r675174_rule",
         "stig_id": "PHTN-67-000051",
+        "gtitle": "SRG-OS-000257-GPOS-00098",
         "fix_id": "F-42292r675173_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000257-GPOS-00098",
           "SRG-OS-000258-GPOS-00099"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-001494",
+          "CCI-001495"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239122",
       "title": "The Photon operating system must protect audit tools from unauthorized modification.",
       "desc": "Protecting audit information also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operations on audit information. ",
@@ -1010,9 +1453,17 @@
         "gid": "V-239123",
         "rid": "SV-239123r675177_rule",
         "stig_id": "PHTN-67-000052",
+        "gtitle": "SRG-OS-000266-GPOS-00101",
         "fix_id": "F-42293r675176_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001619"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239123",
       "title": "The Photon operating system must enforce password complexity by requiring that at least one special character be used.",
       "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
@@ -1028,9 +1479,17 @@
         "gid": "V-239124",
         "rid": "SV-239124r675180_rule",
         "stig_id": "PHTN-67-000053",
+        "gtitle": "SRG-OS-000278-GPOS-00108",
         "fix_id": "F-42294r675179_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001496"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239124",
       "title": "The Photon operating system package files must not be modified.",
       "desc": "Protecting the integrity of the tools used for auditing purposes is a critical step toward ensuring the integrity of audit information. Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. Without confidence in the integrity of the auditing system and tools, the information it provides cannot be trusted.",
@@ -1046,9 +1505,17 @@
         "gid": "V-239125",
         "rid": "SV-239125r675183_rule",
         "stig_id": "PHTN-67-000054",
+        "gtitle": "SRG-OS-000279-GPOS-00109",
         "fix_id": "F-42295r675182_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239125",
       "title": "The Photon operating system must set an inactivity timeout value for non-interactive sessions.",
       "desc": "A session timeout is an action taken when a session goes idle for any reason. Rather than relying on the user to manually disconnect their session prior to going idle, the Photon operating system must be able to identify when a session has idled and take action to terminate the session.",
@@ -1064,9 +1531,17 @@
         "gid": "V-239126",
         "rid": "SV-239126r675186_rule",
         "stig_id": "PHTN-67-000055",
+        "gtitle": "SRG-OS-000297-GPOS-00115",
         "fix_id": "F-42296r675185_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002314"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239126",
       "title": "The Photon operating system must configure sshd with a specific ListenAddress.",
       "desc": "Without specifying a ListenAddress, sshd will listen on all interfaces. In situations with multiple interfaces, this may not be intended behavior and could lead to offering remote access on an unapproved network.",
@@ -1082,13 +1557,22 @@
         "gid": "V-239127",
         "rid": "SV-239127r675189_rule",
         "stig_id": "PHTN-67-000056",
+        "gtitle": "SRG-OS-000327-GPOS-00127",
         "fix_id": "F-42297r675188_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000327-GPOS-00127",
           "SRG-OS-000471-GPOS-00215"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000172",
+          "CCI-002234"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239127",
       "title": "The Photon operating system must audit the execution of privileged functions.",
       "desc": "Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Auditing the use of privileged functions is one way to detect such misuse and identify the risk from insider threats and the advanced persistent threat. ",
@@ -1104,9 +1588,17 @@
         "gid": "V-239128",
         "rid": "SV-239128r675192_rule",
         "stig_id": "PHTN-67-000057",
+        "gtitle": "SRG-OS-000341-GPOS-00132",
         "fix_id": "F-42298r675191_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001849"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239128",
       "title": "The Photon operating system must configure auditd to keep five rotated log files.",
       "desc": "Audit logs are most useful when accessible by date, rather than size. This can be accomplished through a combination of an audit log rotation cron job, setting a reasonable number of logs to keep and configuring auditd to not rotate the logs on its own. This ensures that audit logs are accessible to the ISSO in the event of a central log processing failure.",
@@ -1122,9 +1614,17 @@
         "gid": "V-239129",
         "rid": "SV-239129r675195_rule",
         "stig_id": "PHTN-67-000058",
+        "gtitle": "SRG-OS-000341-GPOS-00132",
         "fix_id": "F-42299r675194_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001849"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239129",
       "title": "The Photon operating system must configure auditd to keep five rotated log files.",
       "desc": "Audit logs are most useful when accessible by date, rather than size. This can be accomplished through a combination of an audit log rotation cron job, setting a reasonable number of logs to keep and configuring auditd to not rotate the logs on its own. This ensures that audit logs are accessible to the ISSO in the event of a central log processing failure.",
@@ -1140,9 +1640,17 @@
         "gid": "V-239130",
         "rid": "SV-239130r675198_rule",
         "stig_id": "PHTN-67-000059",
+        "gtitle": "SRG-OS-000341-GPOS-00132",
         "fix_id": "F-42300r675197_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001849"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239130",
       "title": "The Photon operating system must configure a cron job to rotate auditd logs daily.",
       "desc": "Audit logs are most useful when accessible by date, rather than size. This can be accomplished through a combination of an audit log rotation cron job, setting a reasonable number of logs to keep and configuring auditd to not rotate the logs on its own. This ensures that audit logs are accessible to the ISSO in the event of a central log processing failure.",
@@ -1158,9 +1666,17 @@
         "gid": "V-239131",
         "rid": "SV-239131r675201_rule",
         "stig_id": "PHTN-67-000060",
+        "gtitle": "SRG-OS-000343-GPOS-00134",
         "fix_id": "F-42301r675200_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001855"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239131",
       "title": "The Photon operating system must configure auditd to log space limit problems to syslog.",
       "desc": "If security personnel are not notified immediately when storage volume reaches 75% utilization, they are unable to plan for audit record storage capacity expansion.",
@@ -1176,13 +1692,22 @@
         "gid": "V-239132",
         "rid": "SV-239132r675204_rule",
         "stig_id": "PHTN-67-000061",
+        "gtitle": "SRG-OS-000355-GPOS-00143",
         "fix_id": "F-42302r675203_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000355-GPOS-00143",
           "SRG-OS-000356-GPOS-00144"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-001891",
+          "CCI-002046"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239132",
       "title": "The Photon operating system must be configured to synchronize with an approved DoD time source.",
       "desc": "Inaccurate time stamps make it more difficult to correlate events and can lead to an inaccurate analysis. Determining the correct time a particular event occurred on a system is critical when conducting forensic analysis and investigating system events. Sources outside the configured acceptable allowance (drift) may be inaccurate. Synchronizing internal information system clocks provides uniformity of time stamps for information systems with multiple system clocks and systems connected over a network. Organizations should consider endpoints that may not have regular access to the authoritative time server (e.g., mobile, teleworking, and tactical endpoints). ",
@@ -1198,9 +1723,17 @@
         "gid": "V-239133",
         "rid": "SV-239133r675207_rule",
         "stig_id": "PHTN-67-000062",
+        "gtitle": "SRG-OS-000366-GPOS-00153",
         "fix_id": "F-42303r675206_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001749"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239133",
       "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
       "desc": "Installation of any non-trusted software, patches, service packs, device drivers, or operating system components can significantly affect the overall security of the operating system. Ensuring all packages' cryptographic signatures are valid prior to installation ensures the provenance of the software and protects against malicious tampering.",
@@ -1216,9 +1749,17 @@
         "gid": "V-239134",
         "rid": "SV-239134r675210_rule",
         "stig_id": "PHTN-67-000063",
+        "gtitle": "SRG-OS-000366-GPOS-00153",
         "fix_id": "F-42304r675209_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001749"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239134",
       "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
       "desc": "Installation of any non-trusted software, patches, service packs, device drivers, or operating system components can significantly affect the overall security of the operating system. This requirement ensures the software has not been tampered with and has been provided by a trusted vendor.",
@@ -1234,9 +1775,17 @@
         "gid": "V-239135",
         "rid": "SV-239135r675213_rule",
         "stig_id": "PHTN-67-000064",
+        "gtitle": "SRG-OS-000366-GPOS-00153",
         "fix_id": "F-42305r675212_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001749"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239135",
       "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
       "desc": "Installation of any non-trusted software, patches, service packs, device drivers, or operating system components can significantly affect the overall security of the operating system. This requirement ensures the software has not been tampered with and has been provided by a trusted vendor.",
@@ -1252,14 +1801,22 @@
         "gid": "V-239136",
         "rid": "SV-239136r675216_rule",
         "stig_id": "PHTN-67-000065",
+        "gtitle": "SRG-OS-000373-GPOS-00156",
         "fix_id": "F-42306r675215_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000373-GPOS-00156",
           "SRG-OS-000373-GPOS-00157",
           "SRG-OS-000373-GPOS-00158"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-002038"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239136",
       "title": "The Photon operating system must require users to reauthenticate for privilege escalation.",
       "desc": "Without reauthentication, users may access resources or perform tasks for which they do not have authorization. When operating systems provide the capability to escalate a functional capability, it is critical the user reauthenticate. ",
@@ -1275,9 +1832,17 @@
         "gid": "V-239137",
         "rid": "SV-239137r675219_rule",
         "stig_id": "PHTN-67-000066",
+        "gtitle": "SRG-OS-000383-GPOS-00166",
         "fix_id": "F-42307r675218_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002007"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239137",
       "title": "The Photon operating system must prohibit the use of cached authenticators after one day.",
       "desc": "If cached authentication information is out of date, the validity of the authentication information may be questionable.",
@@ -1293,14 +1858,24 @@
         "gid": "V-239138",
         "rid": "SV-239138r675222_rule",
         "stig_id": "PHTN-67-000067",
+        "gtitle": "SRG-OS-000394-GPOS-00174",
         "fix_id": "F-42308r675221_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000394-GPOS-00174",
           "SRG-OS-000424-GPOS-00188",
           "SRG-OS-000478-GPOS-00223"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-002421",
+          "CCI-002450",
+          "CCI-003123"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239138",
       "title": "The Photon operating system must configure sshd to use preferred ciphers.",
       "desc": "Privileged access contains control and configuration information and is particularly sensitive, so additional protections are necessary. This is maintained by using cryptographic mechanisms such as encryption to protect confidentiality. Nonlocal maintenance and diagnostic activities are activities conducted by individuals communicating through a network, either an external network (e.g., the internet) or an internal network. Local maintenance and diagnostic activities are activities carried out by individuals physically present at the information system or information system component and not communicating across a network connection. This requirement applies to hardware/software diagnostic test equipment or tools. This requirement does not cover hardware/software components that may support information system maintenance, yet are a part of the system (e.g., the software implementing \"ping,\" \"ls,\" \"ipconfig,\" or the hardware and software implementing the monitoring port of an Ethernet switch). The operating system can meet this requirement through leveraging a cryptographic module. ",
@@ -1316,7 +1891,9 @@
         "gid": "V-239139",
         "rid": "SV-239139r675225_rule",
         "stig_id": "PHTN-67-000068",
+        "gtitle": "SRG-OS-000395-GPOS-00175",
         "fix_id": "F-42309r675224_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000395-GPOS-00175",
           "SRG-OS-000074-GPOS-00042",
@@ -1327,8 +1904,21 @@
           "SRG-OS-000425-GPOS-00189",
           "SRG-OS-000426-GPOS-00190"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000197",
+          "CCI-000803",
+          "CCI-000877",
+          "CCI-001941",
+          "CCI-001942",
+          "CCI-002420",
+          "CCI-002422",
+          "CCI-002891"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239139",
       "title": "The Photon operating system must use OpenSSH for remote maintenance sessions.",
       "desc": "If the remote connection is not closed and verified as closed, the session may remain open and be exploited by an attacker; this is referred to as a zombie session. Remote connections must be disconnected and verified as disconnected when nonlocal maintenance sessions have been terminated and are no longer available for use. ",
@@ -1344,9 +1934,17 @@
         "gid": "V-239140",
         "rid": "SV-239140r675228_rule",
         "stig_id": "PHTN-67-000069",
+        "gtitle": "SRG-OS-000433-GPOS-00193",
         "fix_id": "F-42310r675227_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002824"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239140",
       "title": "The Photon operating system must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution.",
       "desc": "ASLR makes it more difficult for an attacker to predict the location of attack code he or she has introduced into a process's address space during an attempt at exploitation. Additionally, ASLR also makes it more difficult for an attacker to know the location of existing code to repurpose it using return-oriented programming techniques.",
@@ -1362,9 +1960,17 @@
         "gid": "V-239141",
         "rid": "SV-239141r675231_rule",
         "stig_id": "PHTN-67-000070",
+        "gtitle": "SRG-OS-000437-GPOS-00194",
         "fix_id": "F-42311r675230_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002617"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239141",
       "title": "The Photon operating system must remove all software components after updated versions have been installed.",
       "desc": "Previous versions of software components that are not removed from the information system after updates have been installed may be exploited by adversaries. Some information technology products may remove older versions of software automatically from the information system.",
@@ -1380,15 +1986,23 @@
         "gid": "V-239142",
         "rid": "SV-239142r675234_rule",
         "stig_id": "PHTN-67-000071",
+        "gtitle": "SRG-OS-000458-GPOS-00203",
         "fix_id": "F-42312r675233_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000458-GPOS-00203",
           "SRG-OS-000463-GPOS-00207",
           "SRG-OS-000466-GPOS-00210",
           "SRG-OS-000468-GPOS-00212"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239142",
       "title": "The Photon operating system must generate audit records when the sudo command is used.",
       "desc": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the information system (e.g., module or policy filter). ",
@@ -1404,14 +2018,22 @@
         "gid": "V-239143",
         "rid": "SV-239143r675237_rule",
         "stig_id": "PHTN-67-000072",
+        "gtitle": "SRG-OS-000470-GPOS-00214",
         "fix_id": "F-42313r675236_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000470-GPOS-00214",
           "SRG-OS-000472-GPOS-00217",
           "SRG-OS-000473-GPOS-00218"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239143",
       "title": "The Photon operating system must generate audit records when successful/unsuccessful logon attempts occur.",
       "desc": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the information system (e.g., module or policy filter). ",
@@ -1427,13 +2049,21 @@
         "gid": "V-239144",
         "rid": "SV-239144r675240_rule",
         "stig_id": "PHTN-67-000073",
+        "gtitle": "SRG-OS-000471-GPOS-00216",
         "fix_id": "F-42314r675239_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000471-GPOS-00216",
           "SRG-OS-000477-GPOS-00222"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239144",
       "title": "The Photon operating system must audit the insmod module.",
       "desc": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the information system (e.g., module or policy filter). ",
@@ -1449,9 +2079,17 @@
         "gid": "V-239145",
         "rid": "SV-239145r675243_rule",
         "stig_id": "PHTN-67-000074",
+        "gtitle": "SRG-OS-000476-GPOS-00221",
         "fix_id": "F-42315r675242_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239145",
       "title": "The Photon operating system auditd service must generate audit records for all account creations, modifications, disabling, and termination events.",
       "desc": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the information system (e.g., module or policy filter).",
@@ -1467,9 +2105,17 @@
         "gid": "V-239146",
         "rid": "SV-239146r675246_rule",
         "stig_id": "PHTN-67-000075",
+        "gtitle": "SRG-OS-000480-GPOS-00225",
         "fix_id": "F-42316r675245_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239146",
       "title": "The Photon operating system must use the pam_cracklib module.",
       "desc": "If the operating system allows the user to select passwords based on dictionary words, this increases the chances of password compromise by increasing the opportunity for successful guesses and brute-force attacks.",
@@ -1485,9 +2131,17 @@
         "gid": "V-239147",
         "rid": "SV-239147r675249_rule",
         "stig_id": "PHTN-67-000076",
+        "gtitle": "SRG-OS-000480-GPOS-00226",
         "fix_id": "F-42317r675248_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239147",
       "title": "The Photon operating system must set the FAIL_DELAY parameter.",
       "desc": "Limiting the number of logon attempts over a certain time interval reduces the chances that an unauthorized user may gain access to an account.",
@@ -1503,9 +2157,17 @@
         "gid": "V-239148",
         "rid": "SV-239148r675252_rule",
         "stig_id": "PHTN-67-000077",
+        "gtitle": "SRG-OS-000480-GPOS-00226",
         "fix_id": "F-42318r675251_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239148",
       "title": "The Photon operating system must enforce a delay of at least four seconds between logon prompts following a failed logon attempt.",
       "desc": "Limiting the number of logon attempts over a certain time interval reduces the chances that an unauthorized user may gain access to an account.",
@@ -1521,9 +2183,17 @@
         "gid": "V-239149",
         "rid": "SV-239149r675255_rule",
         "stig_id": "PHTN-67-000078",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42319r675254_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239149",
       "title": "The Photon operating system must ensure audit events are flushed to disk at proper intervals.",
       "desc": "Without setting a balance between performance and ensuring all audit events are written to disk, performance of the system may suffer or the risk of missing audit entries may be too high.",
@@ -1539,9 +2209,17 @@
         "gid": "V-239150",
         "rid": "SV-239150r675258_rule",
         "stig_id": "PHTN-67-000079",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42320r675257_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239150",
       "title": "The Photon operating system must ensure root $PATH entries are appropriate.",
       "desc": "The $PATH variable contains a semicolon-delimited set of directories that allows root to not specify the full path for a limited set of binaries. Having unexpected directories in $PATH can lead to root running a binary other than the one intended.",
@@ -1557,9 +2235,17 @@
         "gid": "V-239151",
         "rid": "SV-239151r675261_rule",
         "stig_id": "PHTN-67-000080",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42321r675260_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239151",
       "title": "The Photon operating system must create a home directory for all new local interactive user accounts.",
       "desc": "If local interactive users are not assigned a valid home directory, there is no place for the storage and control of files they should own.",
@@ -1575,9 +2261,17 @@
         "gid": "V-239152",
         "rid": "SV-239152r675264_rule",
         "stig_id": "PHTN-67-000081",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42322r675263_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239152",
       "title": "The Photon operating system must disable the debug-shell service.",
       "desc": "The debug-shell service is intended to diagnose system-related boot issues with various systemctl commands. Once enabled and following a system reboot, the root shell will be available on tty9. This service must remain disabled until and unless otherwise directed by VMware support.",
@@ -1593,9 +2287,17 @@
         "gid": "V-239153",
         "rid": "SV-239153r675267_rule",
         "stig_id": "PHTN-67-000082",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42323r675266_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239153",
       "title": "The Photon operating system must configure a secure umask for all shells.",
       "desc": "A user's umask influences the permissions assigned to files that a user creates. Setting an appropriate umask is important to make sure that information is not exposed to unprivileged users.",
@@ -1611,9 +2313,17 @@
         "gid": "V-239154",
         "rid": "SV-239154r675270_rule",
         "stig_id": "PHTN-67-000083",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42324r675269_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239154",
       "title": "The Photon operating system must configure sshd to disallow Generic Security Service Application Program Interface (GSSAPI) authentication.",
       "desc": "GSSAPI authentication is used to provide additional authentication mechanisms to applications. Allowing GSSAPI authentication through SSH exposes the system’s GSSAPI to remote hosts, increasing the attack surface of the system.",
@@ -1629,9 +2339,17 @@
         "gid": "V-239155",
         "rid": "SV-239155r675273_rule",
         "stig_id": "PHTN-67-000084",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42325r675272_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239155",
       "title": "The Photon operating system must configure sshd to disable environment processing.",
       "desc": "Enabling environment processing may enable users to bypass access restrictions in some configurations and must therefore be disabled.",
@@ -1647,9 +2365,17 @@
         "gid": "V-239156",
         "rid": "SV-239156r675276_rule",
         "stig_id": "PHTN-67-000085",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42326r675275_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239156",
       "title": "The Photon operating system must configure sshd to disable X11 forwarding.",
       "desc": "X11 is an older, insecure graphics forwarding protocol. It is not used by Photon and should be disabled as a general best practice to limit attack surface area and communication channels.",
@@ -1665,9 +2391,17 @@
         "gid": "V-239157",
         "rid": "SV-239157r675279_rule",
         "stig_id": "PHTN-67-000086",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42327r675278_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239157",
       "title": "The Photon operating system must configure sshd to perform strict mode checking of home directory configuration files.",
       "desc": "If other users have access to modify user-specific SSH configuration files, they may be able to log on to the system as another user.",
@@ -1683,9 +2417,17 @@
         "gid": "V-239158",
         "rid": "SV-239158r675282_rule",
         "stig_id": "PHTN-67-000087",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42328r675281_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239158",
       "title": "The Photon operating system must configure sshd to disallow Kerberos authentication.",
       "desc": "If Kerberos is enabled through SSH, sshd provides a means of access to the system's Kerberos implementation. Vulnerabilities in the system's Kerberos implementation may then be subject to exploitation. To reduce the attack surface of the system, the Kerberos authentication mechanism within SSH must be disabled.",
@@ -1701,9 +2443,17 @@
         "gid": "V-239159",
         "rid": "SV-239159r675285_rule",
         "stig_id": "PHTN-67-000088",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42329r675284_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239159",
       "title": "The Photon operating system must configure sshd to use privilege separation.",
       "desc": "Privilege separation in sshd causes the process to drop root privileges when not needed, which would decrease the impact of software vulnerabilities in the unprivileged section.",
@@ -1719,9 +2469,17 @@
         "gid": "V-239160",
         "rid": "SV-239160r675288_rule",
         "stig_id": "PHTN-67-000089",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42330r675287_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239160",
       "title": "The Photon operating system must configure sshd to disallow authentication with an empty password.",
       "desc": "Blank passwords are one of the first things an attacker checks for when probing a system. Even is the user somehow has a blank password on the OS, sshd must not allow that user to log in.",
@@ -1737,9 +2495,17 @@
         "gid": "V-239161",
         "rid": "SV-239161r675291_rule",
         "stig_id": "PHTN-67-000090",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42331r675290_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239161",
       "title": "The Photon operating system must configure sshd to disallow compression of the encrypted session stream.",
       "desc": "If compression is allowed in an SSH connection prior to authentication, vulnerabilities in the compression software could result in compromise of the system from an unauthenticated connection.",
@@ -1755,9 +2521,17 @@
         "gid": "V-239162",
         "rid": "SV-239162r675294_rule",
         "stig_id": "PHTN-67-000091",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42332r675293_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239162",
       "title": "The Photon operating system must configure sshd to display the last login immediately after authentication.",
       "desc": "Providing users with feedback on the last time they logged on via SSH facilitates user recognition and reporting of unauthorized account use.",
@@ -1773,9 +2547,17 @@
         "gid": "V-239163",
         "rid": "SV-239163r675297_rule",
         "stig_id": "PHTN-67-000092",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42333r675296_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239163",
       "title": "The Photon operating system must configure sshd to ignore user-specific trusted hosts lists.",
       "desc": "SSH trust relationships enable trivial lateral spread after a host compromise and therefore must be explicitly disabled. Individual users can have a local list of trusted remote machines, which must also be ignored while disabling host-based authentication generally.",
@@ -1791,9 +2573,17 @@
         "gid": "V-239164",
         "rid": "SV-239164r675300_rule",
         "stig_id": "PHTN-67-000093",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42334r675299_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239164",
       "title": "The Photon operating system must configure sshd to ignore user-specific known_host files.",
       "desc": "SSH trust relationships enable trivial lateral spread after a host compromise and therefore must be explicitly disabled. Individual users can have a local list of trusted remote machines which must also be ignored while disabling host-based authentication generally.",
@@ -1809,9 +2599,17 @@
         "gid": "V-239165",
         "rid": "SV-239165r675303_rule",
         "stig_id": "PHTN-67-000094",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42335r675302_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239165",
       "title": "The Photon operating system must configure sshd to limit the number of allowed login attempts per connection.",
       "desc": "By setting the login attempt limit to a low value, an attacker will be forced to reconnect frequently, which severely limits the speed and effectiveness of brute-force attacks.",
@@ -1827,9 +2625,17 @@
         "gid": "V-239166",
         "rid": "SV-239166r675306_rule",
         "stig_id": "PHTN-67-000095",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42336r675305_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239166",
       "title": "The Photon operating system must be configured so that the x86 Ctrl-Alt-Delete key sequence is disabled on the command line.",
       "desc": "When the Ctrl-Alt-Del target is enabled, a locally logged-on user who presses Ctrl-Alt-Delete, when at the console, can reboot the system. If accidentally pressed, as could happen in the case of a mixed OS environment, this can create the risk of short-term loss of systems availability due to unintentional reboot.",
@@ -1845,9 +2651,17 @@
         "gid": "V-239167",
         "rid": "SV-239167r675309_rule",
         "stig_id": "PHTN-67-000096",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42337r675308_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239167",
       "title": "The Photon operating system must be configured so that the /etc/skel default scripts are protected from unauthorized modification.",
       "desc": "If the skeleton files are not protected, unauthorized personnel could change user startup parameters and possibly jeopardize user files.",
@@ -1863,9 +2677,17 @@
         "gid": "V-239168",
         "rid": "SV-239168r675312_rule",
         "stig_id": "PHTN-67-000097",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42338r675311_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239168",
       "title": "The Photon operating system must be configured so that the /root path is protected from unauthorized access.",
       "desc": "If the /root path is accessible from users other than root, unauthorized users could change the root partitions files.",
@@ -1881,9 +2703,17 @@
         "gid": "V-239169",
         "rid": "SV-239169r675315_rule",
         "stig_id": "PHTN-67-000098",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42339r675314_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239169",
       "title": "The Photon operating system must be configured so that all global initialization scripts are protected from unauthorized modification.",
       "desc": "Local initialization files are used to configure the user's shell environment upon login. Malicious modification of these files could compromise accounts upon login.",
@@ -1899,9 +2729,17 @@
         "gid": "V-239170",
         "rid": "SV-239170r675318_rule",
         "stig_id": "PHTN-67-000099",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42340r675317_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239170",
       "title": "The Photon operating system must be configured so that all system startup scripts are protected from unauthorized modification.",
       "desc": "If system startup scripts are accessible to unauthorized modification, this could compromise the system on startup.",
@@ -1917,9 +2755,17 @@
         "gid": "V-239171",
         "rid": "SV-239171r675321_rule",
         "stig_id": "PHTN-67-000100",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42341r675320_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239171",
       "title": "The Photon operating system must be configured so that all files have a valid owner and group owner.",
       "desc": "If files do not have valid user and group owners, unintended access to files could occur.",
@@ -1935,9 +2781,17 @@
         "gid": "V-239172",
         "rid": "SV-239172r675324_rule",
         "stig_id": "PHTN-67-000101",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42342r675323_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239172",
       "title": "The Photon operating system must be configured so that the /etc/cron.allow file is protected from unauthorized modification.",
       "desc": "If cron files and folders are accessible to unauthorized users, malicious jobs may be created.",
@@ -1953,9 +2807,17 @@
         "gid": "V-239173",
         "rid": "SV-239173r675327_rule",
         "stig_id": "PHTN-67-000102",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42343r675326_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239173",
       "title": "The Photon operating system must be configured so that all cron jobs are protected from unauthorized modification.",
       "desc": "If cron files and folders are accessible to unauthorized users, malicious jobs may be created.",
@@ -1971,9 +2833,17 @@
         "gid": "V-239174",
         "rid": "SV-239174r675330_rule",
         "stig_id": "PHTN-67-000103",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42344r675329_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239174",
       "title": "The Photon operating system must be configured so that all cron paths are protected from unauthorized modification.",
       "desc": "If cron files and folders are accessible to unauthorized users, malicious jobs may be created.",
@@ -1989,9 +2859,17 @@
         "gid": "V-239175",
         "rid": "SV-239175r675333_rule",
         "stig_id": "PHTN-67-000104",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42345r675332_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239175",
       "title": "The Photon operating system must not forward IPv4 or IPv6 source-routed packets.",
       "desc": "Source routing is an Internet Protocol (IP) mechanism that allows an IP packet to carry information, a list of addresses, which tells a router the path the packet must take. There is also an option to record the hops as the route is traversed. The list of hops taken, the \"route record\", provides the destination with a return path to the source. This allows the source (the sending host) to specify the route, loosely or strictly, ignoring the routing tables of some or all of the routers. It can allow a user to redirect network traffic for malicious purposes and should therefore be disabled.",
@@ -2007,9 +2885,17 @@
         "gid": "V-239176",
         "rid": "SV-239176r675336_rule",
         "stig_id": "PHTN-67-000105",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42346r675335_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239176",
       "title": "The Photon operating system must not respond to IPv4 Internet Control Message Protocol (ICMP) echoes sent to a broadcast address.",
       "desc": "Responding to broadcast (ICMP) echoes facilitates network mapping and provides a vector for amplification attacks.",
@@ -2025,9 +2911,17 @@
         "gid": "V-239177",
         "rid": "SV-239177r675339_rule",
         "stig_id": "PHTN-67-000106",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42347r675338_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239177",
       "title": "The Photon operating system must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted.",
       "desc": "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular destination. These messages modify the host's route table and are unauthenticated. An illicit ICMP redirect message could result in a man-in-the-middle attack.",
@@ -2043,9 +2937,17 @@
         "gid": "V-239178",
         "rid": "SV-239178r675342_rule",
         "stig_id": "PHTN-67-000107",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42348r675341_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239178",
       "title": "The Photon operating system must prevent IPv4 Internet Control Message Protocol (ICMP) secure redirect messages from being accepted.",
       "desc": "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular destination. These messages modify the host's route table and are unauthenticated. An illicit ICMP redirect message could result in a man-in-the-middle attack.",
@@ -2061,9 +2963,17 @@
         "gid": "V-239179",
         "rid": "SV-239179r675345_rule",
         "stig_id": "PHTN-67-000108",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42349r675344_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239179",
       "title": "The Photon operating system must not send IPv4 Internet Control Message Protocol (ICMP) redirects.",
       "desc": "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular destination. These messages contain information from the system's route table, possibly revealing portions of the network topology.",
@@ -2079,9 +2989,17 @@
         "gid": "V-239180",
         "rid": "SV-239180r675348_rule",
         "stig_id": "PHTN-67-000109",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42350r675347_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239180",
       "title": "The Photon operating system must log IPv4 packets with impossible addresses.",
       "desc": "The presence of \"martian\" packets (which have impossible addresses) as well as spoofed packets, source-routed packets, and redirects could be a sign of nefarious network activity. Logging these packets enables this activity to be detected.",
@@ -2097,9 +3015,17 @@
         "gid": "V-239181",
         "rid": "SV-239181r675351_rule",
         "stig_id": "PHTN-67-000110",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42351r675350_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239181",
       "title": "The Photon operating system must use a reverse-path filter for IPv4 network traffic.",
       "desc": "Enabling reverse path filtering drops packets with source addresses that should not have been able to be received on the interface they were received on. It should not be used on systems that are routers for complicated networks but is helpful for end hosts and routers serving small networks.",
@@ -2115,9 +3041,17 @@
         "gid": "V-239182",
         "rid": "SV-239182r675354_rule",
         "stig_id": "PHTN-67-000111",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42352r675353_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239182",
       "title": "The Photon operating system must not perform multicast packet forwarding.",
       "desc": "Routing protocol daemons are typically used on routers to exchange network topology information with other routers. If this software is used when not required, system network information may be unnecessarily transmitted across the network.",
@@ -2133,9 +3067,17 @@
         "gid": "V-239183",
         "rid": "SV-239183r675357_rule",
         "stig_id": "PHTN-67-000112",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42353r675356_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239183",
       "title": "The Photon operating system must not perform IPv4 packet forwarding.",
       "desc": "Routing protocol daemons are typically used on routers to exchange network topology information with other routers. If this software is used when not required, system network information may be unnecessarily transmitted across the network.",
@@ -2151,9 +3093,17 @@
         "gid": "V-239184",
         "rid": "SV-239184r675360_rule",
         "stig_id": "PHTN-67-000113",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42354r675359_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239184",
       "title": "The Photon operating system must send TCP timestamps.",
       "desc": "TCP timestamps are used to provide protection against wrapped sequence numbers. It is possible to calculate system uptime (and boot time) by analyzing TCP timestamps. These calculated uptimes can help a bad actor in determining likely patch levels for vulnerabilities.",
@@ -2169,9 +3119,17 @@
         "gid": "V-239185",
         "rid": "SV-239185r675363_rule",
         "stig_id": "PHTN-67-000114",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42355r675362_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239185",
       "title": "The Photon OS must not have the xinetd service enabled.",
       "desc": "The xinetd service is not required for normal appliance operation and must be disabled.",
@@ -2187,9 +3145,17 @@
         "gid": "V-239186",
         "rid": "SV-239186r675366_rule",
         "stig_id": "PHTN-67-000115",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42356r675365_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239186",
       "title": "The Photon operating system must be configured to protect the SSH public host key from unauthorized modification.",
       "desc": "If a public host key file is modified by an unauthorized user, the SSH service may be compromised.",
@@ -2205,9 +3171,17 @@
         "gid": "V-239187",
         "rid": "SV-239187r675369_rule",
         "stig_id": "PHTN-67-000116",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42357r675368_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239187",
       "title": "The Photon operating system must be configured to protect the SSH private host key from unauthorized access.",
       "desc": "If an unauthorized user obtains the private SSH host key file, the host could be impersonated.",
@@ -2223,9 +3197,17 @@
         "gid": "V-239188",
         "rid": "SV-239188r675372_rule",
         "stig_id": "PHTN-67-000117",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42358r675371_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239188",
       "title": "The Photon operating system must enforce password complexity on the root account.",
       "desc": "Password complexity rules must apply to all accounts on the system, including root. Without specifying the enforce_for_root flag, pam_cracklib does not apply complexity rules to the root user. While root users can find ways around this requirement, given its superuser power, it is necessary to attempt to force compliance.",
@@ -2241,9 +3223,17 @@
         "gid": "V-239189",
         "rid": "SV-239189r675375_rule",
         "stig_id": "PHTN-67-000118",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42359r675374_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239189",
       "title": "The Photon operating system must protect all boot configuration files from unauthorized access.",
       "desc": "Boot configuration files control how the system boots, including single-user mode, auditing, log levels, etc. Improper or malicious configurations can negatively affect system security and availability.",
@@ -2259,9 +3249,17 @@
         "gid": "V-239190",
         "rid": "SV-239190r675378_rule",
         "stig_id": "PHTN-67-000119",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42360r675377_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239190",
       "title": "The Photon operating system must protect sshd configuration from unauthorized access.",
       "desc": "The sshd_config file contains all the configuration items for sshd. Incorrect or malicious configuration of sshd can allow unauthorized access to the system, insecure communication, limited forensic trail, etc.",
@@ -2277,9 +3275,17 @@
         "gid": "V-239191",
         "rid": "SV-239191r675381_rule",
         "stig_id": "PHTN-67-000120",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42361r675380_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239191",
       "title": "The Photon operating system must protect all sysctl configuration files from unauthorized access.",
       "desc": "The sysctl configuration file specifies values for kernel parameters to be set on boot. Incorrect or malicious configuration of these parameters can have a negative effect on system security.",
@@ -2295,9 +3301,17 @@
         "gid": "V-239192",
         "rid": "SV-239192r675384_rule",
         "stig_id": "PHTN-67-000121",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
         "fix_id": "F-42362r675383_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239192",
       "title": "The Photon operating system must ship vCenter SSO logs via rsyslog.",
       "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Proper configuration of rsyslog ensures that information critical to forensic analysis of security events is available for future action without any manual offloading or cron jobs. vCenter SSO logs do currently ship with rsyslog by default. The login information contained in the SSO logs is critical to capture for forensic and troubleshooting purposes.",
@@ -2313,13 +3327,21 @@
         "gid": "V-239193",
         "rid": "SV-239193r675387_rule",
         "stig_id": "PHTN-67-000122",
+        "gtitle": "SRG-OS-000480-GPOS-00228",
         "fix_id": "F-42363r675386_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-OS-000480-GPOS-00228",
           "SRG-OS-000480-GPOS-00230"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239193",
       "title": "The Photon operating system must set the UMASK parameter correctly.",
       "desc": "The umask value influences the permissions assigned to files when they are created. The umask setting in login.defs controls the permissions for a new user's home directory. By setting the proper umask, home directories will only allow the new user to read and write files there. ",
@@ -2335,9 +3357,17 @@
         "gid": "V-239194",
         "rid": "SV-239194r675390_rule",
         "stig_id": "PHTN-67-000123",
+        "gtitle": "SRG-OS-000480-GPOS-00229",
         "fix_id": "F-42364r675389_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239194",
       "title": "The Photon operating system must configure sshd to disallow HostbasedAuthentication.",
       "desc": "SSH trust relationships enable trivial lateral spread after a host compromise and therefore must be explicitly disabled.",
@@ -2353,9 +3383,17 @@
         "gid": "V-239195",
         "rid": "SV-239195r675393_rule",
         "stig_id": "PHTN-67-000124",
+        "gtitle": "SRG-OS-000080-GPOS-00048",
         "fix_id": "F-42365r675392_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
       "id": "V-239195",
       "title": "The Photon operating system must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
       "desc": "If the system does not require authentication before it boots into single-user mode, anyone with vCenter console rights to the VCSA can trivially access all files on the system. GRUB2 is the boot loader for Photon OS and can be configured to require a password to boot into single-user mode or make modifications to the boot menu. Note: The VCSA does not support building grub changes via grub2-mkconfig.",

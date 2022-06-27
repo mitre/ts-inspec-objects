@@ -11,9 +11,21 @@
         "gid": "V-213929",
         "rid": "SV-213929r617437_rule",
         "stig_id": "SQL6-D0-003600",
+        "gtitle": "SRG-APP-000001-DB-000031",
         "fix_id": "F-15144r313571_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93825",
+          "V-79119"
+        ],
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213929",
       "title": "SQL Server must limit the number of concurrent sessions to an organization-defined number per user for all accounts and/or account types.",
       "desc": "Database management includes the ability to control the number of users and user sessions utilizing SQL Server. Unlimited concurrent connections to SQL Server could allow a successful Denial of Service (DoS) attack by exhausting connection resources; and a system can also fail or be degraded by an overload of legitimate users. Limiting the number of concurrent sessions per user is helpful in reducing these risks. This requirement addresses concurrent session control for a single account. It does not address concurrent sessions by a single user via multiple system accounts; and it does not deal with the total number of sessions across all accounts. The capability to limit the number of concurrent sessions per user must be configured in or added to SQL Server (for example, by use of a logon trigger), when this is technically feasible. Note that it is not sufficient to limit sessions via a web server or application server alone, because legitimate users and adversaries can potentially connect to SQL Server by other means. The organization will need to define the maximum number of concurrent sessions by account type, by account, or a combination thereof. In deciding on the appropriate number, it is important to consider the work requirements of the various types of users. For example, 2 might be an acceptable limit for general users accessing the database via an application; but 10 might be too few for a database administrator using a database management GUI tool, where each query tab and navigation pane may count as a separate session. (Sessions may also be referred to as connections or logons, which for the purposes of this requirement are synonyms.)",
@@ -29,9 +41,21 @@
         "gid": "V-213930",
         "rid": "SV-213930r617437_rule",
         "stig_id": "SQL6-D0-003700",
+        "gtitle": "SRG-APP-000023-DB-000001",
         "fix_id": "F-15145r313574_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93827",
+          "V-79121"
+        ],
+        "cci": [
+          "CCI-000015"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213930",
       "title": "SQL Server must integrate with an organization-level authentication/access mechanism providing account management and automation for all users, groups, roles, and any other principals.",
       "desc": "Enterprise environments make account management for applications and databases challenging and complex. A manual process for account management functions adds the risk of a potential oversight or other error. Managing accounts for the same person in multiple places is inefficient and prone to problems with consistency and synchronization. A comprehensive application account management process that includes automation helps to ensure that accounts designated as requiring attention are consistently and promptly addressed. Examples include, but are not limited to, using automation to take action on multiple accounts designated as inactive, suspended, or terminated, or by disabling accounts located in non-centralized account stores, such as multiple servers. Account management functions can also include: assignment of group or role membership; identifying account type; specifying user access authorizations (i.e., privileges); account removal, update, or termination; and administrative alerts. The use of automated mechanisms can include, for example: using email or text messaging to notify account managers when users are terminated or transferred; using the information system to monitor account usage; and using automated telephone notification to report atypical system account usage. SQL Server must be configured to automatically utilize organization-level account management functions, and these functions must immediately enforce the organization's current account policy. Automation may be comprised of differing technologies that when placed together contain an overall mechanism supporting an organization's automated account management requirements.",
@@ -47,9 +71,21 @@
         "gid": "V-213931",
         "rid": "SV-213931r617437_rule",
         "stig_id": "SQL6-D0-003800",
+        "gtitle": "SRG-APP-000023-DB-000001",
         "fix_id": "F-15146r457859_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93829",
+          "V-79123"
+        ],
+        "cci": [
+          "CCI-000015"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213931",
       "title": "SQL Server must be configured to utilize the most-secure authentication method available.",
       "desc": "Enterprise environments make account management for applications and databases challenging and complex. A manual process for account management functions adds the risk of a potential oversight or other error. Managing accounts for the same person in multiple places is inefficient and prone to problems with consistency and synchronization. A comprehensive application account management process that includes automation helps to ensure that accounts designated as requiring attention are consistently and promptly addressed. Examples include, but are not limited to, using automation to take action on multiple accounts designated as inactive, suspended, or terminated, or by disabling accounts located in non-centralized account stores, such as multiple servers. Account management functions can also include: assignment of group or role membership; identifying account type; specifying user access authorizations (i.e., privileges); account removal, update, or termination; and administrative alerts. The use of automated mechanisms can include, for example: using email or text messaging to notify account managers when users are terminated or transferred; using the information system to monitor account usage; and using automated telephone notification to report atypical system account usage. SQL Server must be configured to automatically utilize organization-level account management functions, and these functions must immediately enforce the organization's current account policy. Automation may be comprised of differing technologies that when placed together contain an overall mechanism supporting an organization's automated account management requirements. SQL Server supports several authentication methods to allow operation in various environments, Kerberos, NTLM, and SQL Server. An instance of SQL Server must be configured to utilize the most-secure method available. Service accounts utilized by SQL Server should be unique to a given instance.",
@@ -65,9 +101,21 @@
         "gid": "V-213932",
         "rid": "SV-213932r617437_rule",
         "stig_id": "SQL6-D0-003900",
+        "gtitle": "SRG-APP-000033-DB-000084",
         "fix_id": "F-15147r313580_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93831",
+          "V-79125"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213932",
       "title": "SQL Server must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
       "desc": "Authentication with a DoD-approved PKI certificate does not necessarily imply authorization to access SQL Server. To mitigate the risk of unauthorized access to sensitive information by entities that have been issued certificates by DoD-approved PKIs, all DoD systems, including databases, must be properly configured to implement access control policies. Successful authentication must not automatically give an entity access to an asset or security boundary. Authorization procedures and controls must be implemented to ensure each authenticated entity also has a validated and current authorization. Authorization is the process of determining whether an entity, once authenticated, is permitted to access a specific asset. Information systems use access control policies and enforcement mechanisms to implement this requirement. Access control policies include identity-based policies, role-based policies, and attribute-based policies. Access enforcement mechanisms include access control lists, access control matrices, and cryptography. These policies and mechanisms must be employed by the application to control access between users (or processes acting on behalf of users) and objects (e.g., devices, files, records, processes, programs, and domains) in the information system. This requirement is applicable to access control enforcement applications, a category that includes database management systems. If SQL Server does not follow applicable policy when approving access, it may be in conflict with networks or other applications in the information system. This may result in users either gaining or being denied access inappropriately and in conflict with applicable policy.",
@@ -83,9 +131,21 @@
         "gid": "V-213933",
         "rid": "SV-213933r617437_rule",
         "stig_id": "SQL6-D0-004000",
+        "gtitle": "SRG-APP-000080-DB-000063",
         "fix_id": "F-15148r313583_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93833",
+          "V-79127"
+        ],
+        "cci": [
+          "CCI-000166"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213933",
       "title": "SQL Server must protect against a user falsely repudiating by ensuring all accounts are individual, unique, and not shared.",
       "desc": "Non-repudiation of actions taken is required in order to maintain data integrity. Examples of particular actions taken by individuals include creating information, sending a message, approving information (e.g., indicating concurrence or signing a contract), and receiving a message. Non-repudiation protects against later claims by a user of not having created, modified, or deleted a particular data item or collection of data in the database. In designing a database, the organization must define the types of data and the user actions that must be protected from repudiation. The implementation must then include building audit features into the application data tables and configuring SQL Server's audit tools to capture the necessary audit trail. Design and implementation also must ensure that applications pass individual user identification to SQL Server, even where the application connects to SQL Server with a standard, shared account.",
@@ -101,9 +161,21 @@
         "gid": "V-213934",
         "rid": "SV-213934r617437_rule",
         "stig_id": "SQL6-D0-004100",
+        "gtitle": "SRG-APP-000080-DB-000063",
         "fix_id": "F-15149r313586_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93835",
+          "V-79129"
+        ],
+        "cci": [
+          "CCI-000166"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213934",
       "title": "SQL Server must protect against a user falsely repudiating by ensuring the NT AUTHORITY SYSTEM account is not used for administration.",
       "desc": "Non-repudiation of actions taken is required in order to maintain data integrity. Examples of particular actions taken by individuals include creating information, sending a message, approving information (e.g., indicating concurrence or signing a contract), and receiving a message. Non-repudiation protects against later claims by a user of not having created, modified, or deleted a particular data item or collection of data in the database. In designing a database, the organization must define the types of data and the user actions that must be protected from repudiation. The implementation must then include building audit features into the application data tables and configuring the DBMS's audit tools to capture the necessary audit trail. Design and implementation also must ensure that applications pass individual user identification to the DBMS, even where the application connects to the DBMS with a standard, shared account. Any user with enough access to the server can execute a task that will be run as NT AUTHORITY\\SYSTEM either using task scheduler or other tools. At this point, NT AUTHORITY\\SYSTEM essentially becomes a shared account because the operating system and SQL Server are unable to determine who created the process. Prior to SQL Server 2012, NT AUTHORITY\\SYSTEM was a member of the sysadmin role by default. This allowed jobs/tasks to be executed in SQL Server without the approval or knowledge of the DBA because it looked like operating system activity.",
@@ -119,9 +191,21 @@
         "gid": "V-213935",
         "rid": "SV-213935r617437_rule",
         "stig_id": "SQL6-D0-004200",
+        "gtitle": "SRG-APP-000080-DB-000063",
         "fix_id": "F-15150r313589_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93837",
+          "V-79131"
+        ],
+        "cci": [
+          "CCI-000166"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213935",
       "title": "SQL Server must protect against a user falsely repudiating by ensuring only clearly unique Active Directory user accounts can connect to the instance.",
       "desc": "Non-repudiation of actions taken is required in order to maintain data integrity. Examples of particular actions taken by individuals include creating information, sending a message, approving information (e.g., indicating concurrence or signing a contract), and receiving a message. Non-repudiation protects against later claims by a user of not having created, modified, or deleted a particular data item or collection of data in the database. In designing a database, the organization must define the types of data and the user actions that must be protected from repudiation. The implementation must then include building audit features into the application data tables and configuring the DBMS's audit tools to capture the necessary audit trail. Design and implementation also must ensure that applications pass individual user identification to the DBMS, even where the application connects to the DBMS with a standard, shared account. If the computer account of a remote computer is granted access to SQL Server, any service or scheduled task running as NT AUTHORITY\\SYSTEM or NT AUTHORITY\\NETWORK SERVICE can log into the instance and perform actions. These actions cannot be traced back to a specific user or process.",
@@ -137,9 +221,21 @@
         "gid": "V-213936",
         "rid": "SV-213936r617437_rule",
         "stig_id": "SQL6-D0-004300",
+        "gtitle": "SRG-APP-000089-DB-000064",
         "fix_id": "F-15151r313592_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93839",
+          "V-79133"
+        ],
+        "cci": [
+          "CCI-000169"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213936",
       "title": "SQL Server must be configured to generate audit records for DoD-defined auditable events within all DBMS/database components.",
       "desc": "Without the capability to generate audit records, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within SQL Server (e.g., process, module). Certain specific application functionalities may be audited as well. The list of audited events is the set of events for which audits are to be generated. This set of events is typically a subset of the list of all events for which the system is capable of generating audit records. DoD has defined the list of events for which SQL Server will provide an audit record generation capability as the following: (i) Successful and unsuccessful attempts to access, modify, or delete privileges, security objects, security levels, or categories of information (e.g., classification levels); (ii) Access actions, such as successful and unsuccessful logon attempts, privileged activities, or other system-level access, starting and ending time for user access to the system, concurrent logons from different workstations, successful and unsuccessful accesses to objects, all program initiations, and all direct access to the information system; and (iii) All account creation, modification, disabling, and termination actions. Organizations may define additional events requiring continuous or ad hoc auditing.",
@@ -155,9 +251,21 @@
         "gid": "V-213937",
         "rid": "SV-213937r617437_rule",
         "stig_id": "SQL6-D0-004400",
+        "gtitle": "SRG-APP-000090-DB-000065",
         "fix_id": "F-15152r313595_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93841",
+          "V-79135"
+        ],
+        "cci": [
+          "CCI-000171"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213937",
       "title": "SQL Server must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.",
       "desc": "Without the capability to restrict which roles and individuals can select which events are audited, unauthorized personnel may be able to prevent or interfere with the auditing of critical events. Suppression of auditing could permit an adversary to evade detection. Misconfigured audits can degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.",
@@ -173,9 +281,21 @@
         "gid": "V-213938",
         "rid": "SV-213938r617437_rule",
         "stig_id": "SQL6-D0-004500",
+        "gtitle": "SRG-APP-000091-DB-000066",
         "fix_id": "F-15153r313598_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93843",
+          "V-79137"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213938",
       "title": "SQL Server must generate audit records when privileges/permissions are retrieved.",
       "desc": "Under some circumstances, it may be useful to monitor who/what is reading privilege/permission/role information. Therefore, it must be possible to configure auditing to do this. DBMSs typically make such information available through views or functions. This requirement addresses explicit requests for privilege/permission/role membership information. It does not refer to the implicit retrieval of privileges/permissions/role memberships that SQL Server continually performs to determine if any and every action on the database is permitted.",
@@ -191,9 +311,21 @@
         "gid": "V-213939",
         "rid": "SV-213939r617437_rule",
         "stig_id": "SQL6-D0-004600",
+        "gtitle": "SRG-APP-000091-DB-000325",
         "fix_id": "F-15154r313601_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93845",
+          "V-79139"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213939",
       "title": "SQL Server must generate audit records when unsuccessful attempts to retrieve privileges/permissions occur.",
       "desc": "Under some circumstances, it may be useful to monitor who/what is reading privilege/permission/role information. Therefore, it must be possible to configure auditing to do this. DBMSs typically make such information available through views or functions. This requirement addresses explicit requests for privilege/permission/role membership information. It does not refer to the implicit retrieval of privileges/permissions/role memberships that SQL Server continually performs to determine if any and every action on the database is permitted. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -209,9 +341,21 @@
         "gid": "V-213940",
         "rid": "SV-213940r617437_rule",
         "stig_id": "SQL6-D0-004700",
+        "gtitle": "SRG-APP-000092-DB-000208",
         "fix_id": "F-15155r313604_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93847",
+          "V-79141"
+        ],
+        "cci": [
+          "CCI-001464"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213940",
       "title": "SQL Server must initiate session auditing upon startup.",
       "desc": "Session auditing is for use when a user's activities are under investigation. To be sure of capturing all activity during those periods when session auditing is in use, it needs to be in operation for the whole time SQL Server is running.",
@@ -227,9 +371,21 @@
         "gid": "V-213941",
         "rid": "SV-213941r617437_rule",
         "stig_id": "SQL6-D0-005500",
+        "gtitle": "SRG-APP-000101-DB-000044",
         "fix_id": "F-15156r313607_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93851",
+          "V-79145"
+        ],
+        "cci": [
+          "CCI-000135"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213941",
       "title": "SQL Server must include additional, more detailed, organization-defined information in the audit records for audit events identified by type, location, or subject.",
       "desc": "Information system auditing capability is critical for accurate forensic analysis. Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough information. To support analysis, some types of events will need information to be logged that exceeds the basic requirements of event type, time stamps, location, source, outcome, and user identity. If additional information is not available, it could negatively impact forensic investigations into user actions or other malicious events. The organization must determine what additional information is required for complete analysis of the audited events. The additional information required is dependent on the type of information (e.g., sensitivity of the data and the environment within which it resides). At a minimum, the organization must employ either full-text recording of privileged commands or the individual identities of users of shared accounts, or both. The organization must maintain audit trails in sufficient detail to reconstruct events to determine the cause and impact of compromise. Examples of detailed information the organization may require in audit records are full-text recording of privileged commands or the individual identities of shared account users.",
@@ -245,9 +401,21 @@
         "gid": "V-213942",
         "rid": "SV-213942r617437_rule",
         "stig_id": "SQL6-D0-005600",
+        "gtitle": "SRG-APP-000109-DB-000049",
         "fix_id": "F-15157r313610_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93853",
+          "V-79147"
+        ],
+        "cci": [
+          "CCI-000140"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213942",
       "title": "SQL Server must by default shut down upon audit failure, to include the unavailability of space for more audit log records; or must be configurable to shut down upon audit failure.",
       "desc": "It is critical that when SQL Server is at risk of failing to process audit logs as required, it takes action to mitigate the failure. Audit processing failures include: software/hardware errors; failures in the audit capturing mechanisms; and audit storage capacity being reached or exceeded. Responses to audit failure depend upon the nature of the failure mode. When the need for system availability does not outweigh the need for a complete audit trail, SQL Server should shut down immediately, rolling back all in-flight transactions. Systems where audit trail completeness is paramount will most likely be at a lower MAC level than MAC I; the final determination is the prerogative of the application owner, subject to Authorizing Official concurrence. In any case, sufficient auditing resources must be allocated to avoid a shutdown in all but the most extreme situations.",
@@ -263,9 +431,21 @@
         "gid": "V-213943",
         "rid": "SV-213943r617437_rule",
         "stig_id": "SQL6-D0-005700",
+        "gtitle": "SRG-APP-000109-DB-000321",
         "fix_id": "F-15158r313613_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93855",
+          "V-79149"
+        ],
+        "cci": [
+          "CCI-000140"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213943",
       "title": "SQL Server must be configurable to overwrite audit log records, oldest first (First-In-First-Out - FIFO), in the event of unavailability of space for more audit log records.",
       "desc": "It is critical that when SQL Server is at risk of failing to process audit logs as required, it take action to mitigate the failure. Audit processing failures include; software/hardware errors; failures in the audit capturing mechanisms; and audit storage capacity being reached or exceeded. Responses to audit failure depend upon the nature of the failure mode. When availability is an overriding concern, approved actions in response to an audit failure are as follows: (i) If the failure was caused by the lack of audit record storage capacity, SQL Server must continue generating audit records, if possible (automatically restarting the audit service if necessary), overwriting the oldest audit records in a first-in-first-out manner. (ii) If audit records are sent to a centralized collection server and communication with this server is lost or the server fails, SQL Server must queue audit records locally until communication is restored or until the audit records are retrieved manually. Upon restoration of the connection to the centralized collection server, action should be taken to synchronize the local audit data with the collection server. Systems where availability is paramount will most likely be MAC I; the final determination is the prerogative of the application owner, subject to Authorizing Official concurrence. In any case, sufficient auditing resources must be allocated to avoid audit data loss in all but the most extreme situations.",
@@ -281,14 +461,28 @@
         "gid": "V-213944",
         "rid": "SV-213944r617437_rule",
         "stig_id": "SQL6-D0-005900",
+        "gtitle": "SRG-APP-000118-DB-000059",
         "fix_id": "F-15159r570374_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000118-DB-000059",
           "SRG-APP-000119-DB-000060",
           "SRG-APP-000120-DB-000061"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-93857",
+          "V-79151"
+        ],
+        "cci": [
+          "CCI-000162",
+          "CCI-000163",
+          "CCI-000164"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213944",
       "title": "The audit information produced by SQL Server must be protected from unauthorized access, modification, and deletion.",
       "desc": "If audit data were to become compromised, then competent forensic analysis and discovery of the true source of potentially malicious system activity is difficult, if not impossible, to achieve. In addition, access to audit records provides information an attacker could potentially use to his or her advantage. To ensure the veracity of audit data, the information system and/or the application must protect audit information from any and all unauthorized access. This includes read, write, copy, etc. This requirement can be achieved through multiple methods which will depend upon system architecture and design. Some commonly employed methods include ensuring log files enjoy the proper file system permissions utilizing file system protections and limiting log data location. Additionally, applications with user interfaces to audit records should not allow for the unfettered manipulation of or access to those records via the application. If the application provides access to the audit data, the application becomes accountable for ensuring that audit information is protected from unauthorized access. SQL Server is an application that is able to view and manipulate audit file data. Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. ",
@@ -304,9 +498,21 @@
         "gid": "V-213947",
         "rid": "SV-213947r617437_rule",
         "stig_id": "SQL6-D0-006200",
+        "gtitle": "SRG-APP-000121-DB-000202",
         "fix_id": "F-15162r313625_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93863",
+          "V-79157"
+        ],
+        "cci": [
+          "CCI-001493"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213947",
       "title": "SQL Server must protect its audit features from unauthorized access.",
       "desc": "Protecting audit data also includes identifying and protecting the tools used to view and manipulate log data. Depending upon the log format and application, system and application log tools may provide the only means to manipulate and manage application and system log data. It is, therefore, imperative that access to audit tools be controlled and protected from unauthorized access. Applications providing tools to interface with audit data will leverage user permissions and roles identifying the user accessing the tools and the corresponding rights the user enjoys in order make access decisions regarding the access to audit tools. SQL Server is an application that does provide access to audit data. Audit tools include, but are not limited to, OS-provided audit tools, vendor-provided audit tools, and open source audit tools needed to successfully view and manipulate audit information system activity and records. If an attacker were to gain access to audit tools, he could analyze audit logs for system weaknesses or weaknesses in the auditing itself. An attacker could also manipulate logs to hide evidence of malicious activity.",
@@ -322,9 +528,21 @@
         "gid": "V-213948",
         "rid": "SV-213948r617437_rule",
         "stig_id": "SQL6-D0-006300",
+        "gtitle": "SRG-APP-000122-DB-000203",
         "fix_id": "F-15163r313628_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93865",
+          "V-79159"
+        ],
+        "cci": [
+          "CCI-001494"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213948",
       "title": "SQL Server must protect its audit configuration from unauthorized modification.",
       "desc": "Protecting audit data also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operation on audit data. Applications providing tools to interface with audit data will leverage user permissions and roles identifying the user accessing the tools and the corresponding rights the user enjoys in order make access decisions regarding the modification of audit tools. SQL Server is an application that does provide access to audit data. Audit tools include, but are not limited to, vendor-provided and open source audit tools needed to successfully view and manipulate audit information system activity and records. Audit tools include custom queries and report generators.",
@@ -340,9 +558,21 @@
         "gid": "V-213949",
         "rid": "SV-213949r617437_rule",
         "stig_id": "SQL6-D0-006400",
+        "gtitle": "SRG-APP-000123-DB-000204",
         "fix_id": "F-15164r313631_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93867",
+          "V-79161"
+        ],
+        "cci": [
+          "CCI-001495"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213949",
       "title": "SQL Server must protect its audit features from unauthorized removal.",
       "desc": "Protecting audit data also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operation on audit data. Applications providing tools to interface with audit data will leverage user permissions and roles identifying the user accessing the tools and the corresponding rights the user enjoys in order make access decisions regarding the deletion of audit tools. SQL Server is an application that does provide access to audit data. Audit tools include, but are not limited to, vendor-provided and open source audit tools needed to successfully view and manipulate audit information system activity and records. Audit tools include custom queries and report generators.",
@@ -358,9 +588,21 @@
         "gid": "V-213950",
         "rid": "SV-213950r617437_rule",
         "stig_id": "SQL6-D0-006500",
+        "gtitle": "SRG-APP-000133-DB-000179",
         "fix_id": "F-15165r313634_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93869",
+          "V-79163"
+        ],
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213950",
       "title": "SQL Server must limit privileges to change software modules and links to software external to SQL Server.",
       "desc": "If the system were to allow any user to make changes to software libraries, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process. Accordingly, only qualified and authorized individuals must be allowed to obtain access to information system components for purposes of initiating changes, including upgrades and modifications. Unmanaged changes that occur to the database software libraries or configuration can lead to unauthorized or compromised installations.",
@@ -376,9 +618,21 @@
         "gid": "V-213951",
         "rid": "SV-213951r617437_rule",
         "stig_id": "SQL6-D0-006600",
+        "gtitle": "SRG-APP-000133-DB-000179",
         "fix_id": "F-15166r313637_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-79165",
+          "SV-93871"
+        ],
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213951",
       "title": "SQL Server must limit privileges to change software modules, to include stored procedures, functions and triggers, and links to software external to SQL Server.",
       "desc": "If the system were to allow any user to make changes to software libraries, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process. Accordingly, only qualified and authorized individuals must be allowed to obtain access to information system components for purposes of initiating changes, including upgrades and modifications. Unmanaged changes that occur to the database software libraries or configuration can lead to unauthorized or compromised installations.",
@@ -394,9 +648,21 @@
         "gid": "V-213952",
         "rid": "SV-213952r617437_rule",
         "stig_id": "SQL6-D0-006700",
+        "gtitle": "SRG-APP-000133-DB-000198",
         "fix_id": "F-15167r313640_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93873",
+          "V-79167"
+        ],
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213952",
       "title": "SQL Server software installation account must be restricted to authorized users.",
       "desc": "When dealing with change control issues, it should be noted any changes to the hardware, software, and/or firmware components of the information system and/or application can have significant effects on the overall security of the system. If the system were to allow any user to make changes to software libraries, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process. Accordingly, only qualified and authorized individuals must be allowed access to information system components for purposes of initiating changes, including upgrades and modifications. DBA and other privileged administrative or application owner accounts are granted privileges that allow actions that can have a great impact on SQL Server security and operation. It is especially important to grant privileged access to only those persons who are qualified and authorized to use them.",
@@ -412,9 +678,21 @@
         "gid": "V-213953",
         "rid": "SV-213953r617437_rule",
         "stig_id": "SQL6-D0-006800",
+        "gtitle": "SRG-APP-000133-DB-000199",
         "fix_id": "F-15168r313643_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93875",
+          "V-79169"
+        ],
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213953",
       "title": "Database software, including DBMS configuration files, must be stored in dedicated directories, separate from the host OS and other applications.",
       "desc": "When dealing with change control issues, it should be noted any changes to the hardware, software, and/or firmware components of the information system and/or application can potentially have significant effects on the overall security of the system. Multiple applications can provide a cumulative negative effect. A vulnerability and subsequent exploit to one application can lead to an exploit of other applications sharing the same security context. For example, an exploit to a web server process that leads to unauthorized administrative access to host system directories can most likely lead to a compromise of all applications hosted by the same system. Database software not installed using dedicated directories both threatens and is threatened by other hosted applications. Access controls defined for one application may by default provide access to the other application's database objects or directories. Any method that provides any level of separation of security context assists in the protection between applications.",
@@ -430,9 +708,21 @@
         "gid": "V-213954",
         "rid": "SV-213954r617437_rule",
         "stig_id": "SQL6-D0-006900",
+        "gtitle": "SRG-APP-000141-DB-000090",
         "fix_id": "F-15169r313646_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93877",
+          "V-79171"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213954",
       "title": "Default demonstration and sample databases, database objects, and applications must be removed.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for software products to provide, or install by default, functionality exceeding requirements or mission objectives. Examples include, but are not limited to, installing advertising software, demonstrations, or browser plugins not related to requirements or providing a wide array of functionality, not required for every mission, that cannot be disabled. DBMSs must adhere to the principles of least functionality by providing only essential capabilities. Demonstration and sample database objects and applications present publicly known attack points for malicious users. These demonstration and sample objects are meant to provide simple examples of coding specific functions and are not developed to prevent vulnerabilities from being introduced to SQL Server and host system.",
@@ -448,9 +738,21 @@
         "gid": "V-213955",
         "rid": "SV-213955r617437_rule",
         "stig_id": "SQL6-D0-007000",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-15170r313649_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93879",
+          "V-79173"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213955",
       "title": "Unused database components, DBMS software, and database objects must be removed.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for software products to provide, or install by default, functionality exceeding requirements or mission objectives. DBMSs must adhere to the principles of least functionality by providing only essential capabilities.",
@@ -466,9 +768,21 @@
         "gid": "V-213956",
         "rid": "SV-213956r617437_rule",
         "stig_id": "SQL6-D0-007100",
+        "gtitle": "SRG-APP-000141-DB-000092",
         "fix_id": "F-15171r313652_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93881",
+          "V-79175"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213956",
       "title": "Unused database components that are integrated in SQL Server and cannot be uninstalled must be disabled.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for software products to provide, or install by default, functionality exceeding requirements or mission objectives. DBMSs must adhere to the principles of least functionality by providing only essential capabilities. Unused, unnecessary DBMS components increase the attack vector for SQL Server by introducing additional targets for attack. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. Components of the system that are unused and cannot be uninstalled must be disabled. The techniques available for disabling components will vary by DBMS product, OS, and the nature of the component and may include DBMS configuration settings, OS service settings, OS file access security, and DBMS user/role permissions.",
@@ -484,9 +798,21 @@
         "gid": "V-213957",
         "rid": "SV-213957r617437_rule",
         "stig_id": "SQL6-D0-007200",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15172r313655_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93883",
+          "V-79177"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213957",
       "title": "Access to xp_cmdshell must be disabled, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. The xp_cmdshell extended stored procedure allows execution of host executables outside the controls of database access permissions. This access may be exploited by malicious users who have compromised the integrity of the SQL Server database process to control the host operating system to perpetrate additional malicious activity.",
@@ -502,9 +828,21 @@
         "gid": "V-213958",
         "rid": "SV-213958r617437_rule",
         "stig_id": "SQL6-D0-007300",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15173r313658_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93885",
+          "V-79179"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213958",
       "title": "Access to CLR code must be disabled or restricted, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. The common language runtime (CLR) component of the .NET Framework for Microsoft Windows in SQL Server allows you to write stored procedures, triggers, user-defined types, user-defined functions, user-defined aggregates, and streaming table-valued functions, using any .NET Framework language, including Microsoft Visual Basic .NET and Microsoft Visual C#. CLR packing assemblies can access resources protected by .NET Code Access Security when it runs managed code. Specifying UNSAFE enables the code in the assembly complete freedom to perform operations in the SQL Server process space that can potentially compromise the robustness of SQL Server. UNSAFE assemblies can also potentially subvert the security system of either SQL Server or the common language runtime.",
@@ -520,9 +858,21 @@
         "gid": "V-213959",
         "rid": "SV-213959r617437_rule",
         "stig_id": "SQL6-D0-007400",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15174r313661_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93887",
+          "V-79181"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213959",
       "title": "Access to Non-Standard extended stored procedures must be disabled or restricted, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. Extended stored procedures are DLLs that an instance of SQL Server can dynamically load and run. Extended stored procedures run directly in the address space of an instance of SQL Server and are programmed by using the SQL Server Extended Stored Procedure API. Non-Standard extended stored procedures can compromise the integrity of the SQL Server process. This feature will be removed in a future version of Microsoft SQL Server. Do not use this feature in new development work, and modify applications that currently use this feature as soon as possible.",
@@ -538,9 +888,21 @@
         "gid": "V-213960",
         "rid": "SV-213960r617437_rule",
         "stig_id": "SQL6-D0-007500",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15175r313664_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93889",
+          "V-79183"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213960",
       "title": "Access to linked servers must be disabled or restricted, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. A linked server allows for access to distributed, heterogeneous queries against OLE DB data sources. After a linked server is created, distributed queries can be run against this server, and queries can join tables from more than one data source. If the linked server is defined as an instance of SQL Server, remote stored procedures can be executed. This access may be exploited by malicious users who have compromised the integrity of the SQL Server.",
@@ -556,9 +918,21 @@
         "gid": "V-213961",
         "rid": "SV-213961r617437_rule",
         "stig_id": "SQL6-D0-007600",
+        "gtitle": "SRG-APP-000142-DB-000094",
         "fix_id": "F-15176r313667_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93891",
+          "V-79185"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213961",
       "title": "SQL Server must be configured to prohibit or restrict the use of organization-defined protocols as defined in the PPSM CAL and vulnerability assessments.",
       "desc": "In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable or restrict unused or unnecessary protocols on information systems. Applications are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. To support the requirements and principles of least functionality, the application must support the organizational requirements providing only essential capabilities and limiting the use of protocols to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues. SQL Server using protocols deemed unsafe is open to attack through those protocols. This can allow unauthorized access to the database and through the database to other components of the information system.",
@@ -574,9 +948,21 @@
         "gid": "V-213962",
         "rid": "SV-213962r617437_rule",
         "stig_id": "SQL6-D0-007700",
+        "gtitle": "SRG-APP-000142-DB-000094",
         "fix_id": "F-15177r313670_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93893",
+          "V-79187"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213962",
       "title": "SQL Server must be configured to prohibit or restrict the use of organization-defined ports, as defined in the PPSM CAL and vulnerability assessments.",
       "desc": "In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable or restrict unused or unnecessary physical and logical ports on information systems. Applications are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. To support the requirements and principles of least functionality, the application must support the organizational requirements providing only essential capabilities and limiting the use of ports to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues. SQL Server using ports deemed unsafe is open to attack through those ports. This can allow unauthorized access to the database and through the database to other components of the information system.",
@@ -592,9 +978,21 @@
         "gid": "V-213963",
         "rid": "SV-213963r617437_rule",
         "stig_id": "SQL6-D0-007800",
+        "gtitle": "SRG-APP-000148-DB-000103",
         "fix_id": "F-15178r313673_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93895",
+          "V-79189"
+        ],
+        "cci": [
+          "CCI-000764"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213963",
       "title": "SQL Server must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
       "desc": "To assure accountability and prevent unauthenticated access, organizational users must be identified and authenticated to prevent potential misuse and compromise of the system. Organizational users include organizational employees or individuals the organization deems to have equivalent status of employees (e.g., contractors). Organizational users (and any processes acting on behalf of users) must be uniquely identified and authenticated for all accesses, except the following: (i) Accesses explicitly identified and documented by the organization. Organizations document specific user actions that can be performed on the information system without identification or authentication; and (ii) Accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals using shared accounts, for detailed accountability of individual activity.",
@@ -610,9 +1008,21 @@
         "gid": "V-213964",
         "rid": "SV-213964r617437_rule",
         "stig_id": "SQL6-D0-007900",
+        "gtitle": "SRG-APP-000164-DB-000401",
         "fix_id": "F-15179r313676_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93897",
+          "V-79191"
+        ],
+        "cci": [
+          "CCI-000192"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213964",
       "title": "If DBMS authentication, using passwords, is employed, SQL Server must enforce the DoD standards for password complexity and lifetime.",
       "desc": "OS/enterprise authentication and identification must be used (SRG-APP-000023-DB-000001). Native DBMS authentication may be used only when circumstances make it unavoidable; and must be documented and AO-approved. The DoD standard for authentication is DoD-approved PKI certificates. Authentication based on User ID and Password may be used only when it is not possible to employ a PKI certificate, and requires AO approval. In such cases, the DoD standards for password complexity and lifetime must be implemented. DBMS products that can inherit the rules for these from the operating system or access control program (e.g., Microsoft Active Directory) must be configured to do so. For other DBMSs, the rules must be enforced using available configuration parameters or custom code.",
@@ -628,9 +1038,21 @@
         "gid": "V-213965",
         "rid": "SV-213965r617437_rule",
         "stig_id": "SQL6-D0-008000",
+        "gtitle": "SRG-APP-000164-DB-000401",
         "fix_id": "F-15180r313679_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93899",
+          "V-79193"
+        ],
+        "cci": [
+          "CCI-000192"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213965",
       "title": "Contained databases must use Windows principals.",
       "desc": "OS/enterprise authentication and identification must be used (SRG-APP-000023-DB-000001). Native DBMS authentication may be used only when circumstances make it unavoidable; and must be documented and AO-approved. The DoD standard for authentication is DoD-approved PKI certificates. Authentication based on User ID and Password may be used only when it is not possible to employ a PKI certificate, and requires AO approval. In such cases, the DoD standards for password complexity and lifetime must be implemented. DBMS products that can inherit the rules for these from the operating system or access control program (e.g., Microsoft Active Directory) must be configured to do so. For other DBMSs, the rules must be enforced using available configuration parameters or custom code.",
@@ -646,9 +1068,21 @@
         "gid": "V-213966",
         "rid": "SV-213966r667311_rule",
         "stig_id": "SQL6-D0-008200",
+        "gtitle": "SRG-APP-000172-DB-000075",
         "fix_id": "F-15181r313682_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93901",
+          "V-79195"
+        ],
+        "cci": [
+          "CCI-000197"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213966",
       "title": "If passwords are used for authentication, SQL Server must transmit only encrypted representations of passwords.",
       "desc": "The DoD standard for authentication is DoD-approved PKI certificates. Authentication based on User ID and Password may be used only when it is not possible to employ a PKI certificate, and requires AO approval. In such cases, passwords need to be protected at all times, and encryption is the standard method for protecting passwords during transmission. SQL Server passwords sent in clear text format across the network are vulnerable to discovery by unauthorized users. Disclosure of passwords may easily lead to unauthorized access to the database.",
@@ -664,9 +1098,21 @@
         "gid": "V-213967",
         "rid": "SV-213967r617437_rule",
         "stig_id": "SQL6-D0-008300",
+        "gtitle": "SRG-APP-000172-DB-000075",
         "fix_id": "F-15182r313685_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-106625",
+          "V-97521"
+        ],
+        "cci": [
+          "CCI-000197"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213967",
       "title": "Confidentiality of controlled information during transmission through the use of an approved TLS version.",
       "desc": "Transport Layer Security (TLS) encryption is a required security setting as a number of known vulnerabilities have been reported against Secure Sockets Layer (SSL) and earlier versions of TLS. Encryption of private information is essential to ensuring data confidentiality. If private information is not encrypted, it can be intercepted and easily read by an unauthorized party. SQL Server must use a minimum of FIPS 140-2-approved TLS version 1.2, and all non-FIPS-approved SSL and TLS versions must be disabled. NIST SP 800-52 Rev.2 specifies the preferred configurations for government systems. References: TLS Support 1.2 for SQL Server: https://support.microsoft.com/en-us/kb/3135244 TLS Registry Settings: https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings",
@@ -682,9 +1128,21 @@
         "gid": "V-213968",
         "rid": "SV-213968r617437_rule",
         "stig_id": "SQL6-D0-008400",
+        "gtitle": "SRG-APP-000176-DB-000068",
         "fix_id": "F-15183r313688_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93903",
+          "V-79197"
+        ],
+        "cci": [
+          "CCI-000186"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213968",
       "title": "SQL Server must enforce authorized access to all PKI private keys stored/utilized by SQL Server.",
       "desc": "The DoD standard for authentication is DoD-approved PKI certificates. PKI certificate-based authentication is performed by requiring the certificate holder to cryptographically prove possession of the corresponding private key. If the private key is stolen, an attacker can use the private key(s) to impersonate the certificate holder. In cases where SQL Server-stored private keys are used to authenticate SQL Server to the system’s clients, loss of the corresponding private keys would allow an attacker to successfully perform undetected man in the middle attacks against SQL Server system and its clients. Both the holder of a digital certificate and the issuing authority must take careful measures to protect the corresponding private key. Private keys should always be generated and protected in FIPS 140-2 validated cryptographic modules. All access to the private key(s) of SQL Server must be restricted to authorized and authenticated users. If unauthorized users have access to one or more of SQL Server's private keys, an attacker could gain access to the key(s) and use them to impersonate the database on the network or otherwise perform unauthorized actions.",
@@ -700,9 +1158,21 @@
         "gid": "V-213969",
         "rid": "SV-213969r617437_rule",
         "stig_id": "SQL6-D0-008700",
+        "gtitle": "SRG-APP-000179-DB-000114",
         "fix_id": "F-15184r313691_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93905",
+          "V-79199"
+        ],
+        "cci": [
+          "CCI-000803"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213969",
       "title": "SQL Server must use NIST FIPS 140-2 validated cryptographic modules for cryptographic operations.",
       "desc": "Use of weak or not validated cryptographic algorithms undermines the purposes of utilizing encryption and digital signatures to protect data. Weak algorithms can be easily broken and not validated cryptographic modules may not implement algorithms correctly. Unapproved cryptographic modules or algorithms should not be relied on for authentication, confidentiality, or integrity. Weak cryptography could allow an attacker to gain access to and modify data stored in the database as well as the administration settings of SQL Server. Applications, including DBMSs, utilizing cryptography are required to use approved NIST FIPS 140-2 validated cryptographic modules that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. The security functions validated as part of FIPS 140-2 for cryptographic modules are described in FIPS 140-2 Annex A. NSA Type- (where =1, 2, 3, 4) products are NSA-certified, hardware-based encryption modules.",
@@ -718,9 +1188,21 @@
         "gid": "V-213970",
         "rid": "SV-213970r617437_rule",
         "stig_id": "SQL6-D0-008800",
+        "gtitle": "SRG-APP-000180-DB-000115",
         "fix_id": "F-15185r313694_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93907",
+          "V-79201"
+        ],
+        "cci": [
+          "CCI-000804"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213970",
       "title": "SQL Server must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
       "desc": "Non-organizational users include all information system users other than organizational users, which include organizational employees or individuals the organization deems to have equivalent status of employees (e.g., contractors, guest researchers, individuals from allied nations). Non-organizational users must be uniquely identified and authenticated for all accesses other than those accesses explicitly identified and documented by the organization when related to the use of anonymous access, such as accessing a web server. Accordingly, a risk assessment is used in determining the authentication needs of the organization. Scalability, practicality, and security are simultaneously considered in balancing the need to ensure ease of use for access to federal information and information systems with the need to protect and adequately mitigate risk to organizational operations, organizational assets, individuals, other organizations, and the Nation.",
@@ -736,9 +1218,21 @@
         "gid": "V-213971",
         "rid": "SV-213971r617437_rule",
         "stig_id": "SQL6-D0-009200",
+        "gtitle": "SRG-APP-000224-DB-000384",
         "fix_id": "F-15186r313697_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93909",
+          "V-79203"
+        ],
+        "cci": [
+          "CCI-001188"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213971",
       "title": "SQL Server must maintain the authenticity of communications sessions by guarding against man-in-the-middle attacks that guess at Session ID values.",
       "desc": "One class of man-in-the-middle, or session hijacking, attack involves the adversary guessing at valid session identifiers based on patterns in identifiers already known. The preferred technique for thwarting guesses at Session IDs is the generation of unique session identifiers using a FIPS 140-2 approved random number generator. However, it is recognized that available DBMS products do not all implement the preferred technique yet may have other protections against session hijacking. Therefore, other techniques are acceptable, provided they are demonstrated to be effective.",
@@ -754,9 +1248,21 @@
         "gid": "V-213972",
         "rid": "SV-213972r617437_rule",
         "stig_id": "SQL6-D0-009500",
+        "gtitle": "SRG-APP-000231-DB-000154",
         "fix_id": "F-15187r313700_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93911",
+          "V-79205"
+        ],
+        "cci": [
+          "CCI-001199"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213972",
       "title": "SQL Server must protect the confidentiality and integrity of all information at rest.",
       "desc": "This control is intended to address the confidentiality and integrity of information at rest in non-mobile devices and covers user information and system information. Information at rest refers to the state of information when it is located on a secondary storage device (e.g., disk drive, tape drive) within an organizational information system. Applications and application users generate information throughout the course of their application use. User data generated, as well as application-specific configuration data, needs to be protected. Organizations may choose to employ different mechanisms to achieve confidentiality and integrity protections, as appropriate. If the confidentiality and integrity of SQL Server data is not protected, the data will be open to compromise and unauthorized modification.",
@@ -772,9 +1278,21 @@
         "gid": "V-213973",
         "rid": "SV-213973r617437_rule",
         "stig_id": "SQL6-D0-009600",
+        "gtitle": "SRG-APP-000231-DB-000154",
         "fix_id": "F-15188r313703_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93913",
+          "V-79207"
+        ],
+        "cci": [
+          "CCI-001199"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213973",
       "title": "The Service Master Key must be backed up, stored offline and off-site.",
       "desc": "Backup and recovery of the Service Master Key may be critical to the complete recovery of the database. Creating this backup should be one of the first administrative actions performed on the server. Not having this key can lead to loss of data during recovery.",
@@ -790,9 +1308,21 @@
         "gid": "V-213974",
         "rid": "SV-213974r617437_rule",
         "stig_id": "SQL6-D0-009700",
+        "gtitle": "SRG-APP-000231-DB-000154",
         "fix_id": "F-15189r313706_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93915",
+          "V-79209"
+        ],
+        "cci": [
+          "CCI-001199"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213974",
       "title": "The Master Key must be backed up, stored offline and off-site.",
       "desc": "Backup and recovery of the Master Key may be critical to the complete recovery of the database. Not having this key can lead to loss of data during recovery.",
@@ -808,9 +1338,21 @@
         "gid": "V-213975",
         "rid": "SV-213975r617437_rule",
         "stig_id": "SQL6-D0-009800",
+        "gtitle": "SRG-APP-000243-DB-000373",
         "fix_id": "F-15190r313709_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93917",
+          "V-79211"
+        ],
+        "cci": [
+          "CCI-001090"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213975",
       "title": "SQL Server must prevent unauthorized and unintended information transfer via shared system resources.",
       "desc": "The purpose of this control is to prevent information, including encrypted representations of information, produced by the actions of a prior user/role (or the actions of a process acting on behalf of a prior user/role) from being available to any current user/role (or current process) that obtains access to a shared system resource (e.g., registers, main memory, secondary storage) after the resource has been released back to the information system. Control of information in shared resources is also referred to as object reuse.",
@@ -826,9 +1368,21 @@
         "gid": "V-213976",
         "rid": "SV-213976r617437_rule",
         "stig_id": "SQL6-D0-009900",
+        "gtitle": "SRG-APP-000243-DB-000373",
         "fix_id": "F-15191r313712_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93919",
+          "V-79213"
+        ],
+        "cci": [
+          "CCI-001090"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213976",
       "title": "SQL Server must prevent unauthorized and unintended information transfer via shared system resources.",
       "desc": "The purpose of this control is to prevent information, including encrypted representations of information, produced by the actions of a prior user/role (or the actions of a process acting on behalf of a prior user/role) from being available to any current user/role (or current process) that obtains access to a shared system resource (e.g., registers, main memory, secondary storage) after the resource has been released back to the information system. Control of information in shared resources is also referred to as object reuse.",
@@ -844,9 +1398,21 @@
         "gid": "V-213977",
         "rid": "SV-213977r617437_rule",
         "stig_id": "SQL6-D0-010000",
+        "gtitle": "SRG-APP-000243-DB-000374",
         "fix_id": "F-15192r313715_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93921",
+          "V-79215"
+        ],
+        "cci": [
+          "CCI-001090"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213977",
       "title": "Access to database files must be limited to relevant processes and to authorized, administrative users.",
       "desc": "SQL Server must prevent unauthorized and unintended information transfer via shared system resources. Permitting only SQL Server processes and authorized, administrative users to have access to the files where the database resides helps ensure that those files are not shared inappropriately and are not open to backdoor access and manipulation.",
@@ -862,9 +1428,21 @@
         "gid": "V-213978",
         "rid": "SV-213978r617437_rule",
         "stig_id": "SQL6-D0-010100",
+        "gtitle": "SRG-APP-000267-DB-000163",
         "fix_id": "F-15193r313718_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93923",
+          "V-79217"
+        ],
+        "cci": [
+          "CCI-001314"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213978",
       "title": "SQL Server must reveal detailed error messages only to the ISSO, ISSM, SA, and DBA.",
       "desc": "If SQL Server provides too much information in error logs and administrative messages to the screen, this could lead to compromise. The structure and content of error messages need to be carefully considered by the organization and development team. The extent to which the information system is able to identify and handle error conditions is guided by organizational policy and operational requirements. Some default DBMS error messages can contain information that could aid an attacker in, among others things, identifying the database type, host address, or state of the database. Custom errors may contain sensitive customer information. It is important that detailed error messages be visible only to those who are authorized to view them; that general users receive only generalized acknowledgment that errors have occurred; and that these generalized messages appear only when relevant to the user's task. For example, a message along the lines of, \"An error has occurred. Unable to save your changes. If this problem persists, please contact your help desk.\" would be relevant. A message such as \"Warning: your transaction generated a large number of page splits\" would likely not be relevant. \"ABGQ is not a valid widget code.\" would be appropriate; but \"The INSERT statement conflicted with the FOREIGN KEY constraint \"WidgetTransactionFK\". The conflict occurred in database \"DB7\", table \"dbo.WidgetMaster\", column 'WidgetCode'\" would not, as it reveals too much about the database structure.",
@@ -880,9 +1458,21 @@
         "gid": "V-213979",
         "rid": "SV-213979r617437_rule",
         "stig_id": "SQL6-D0-010400",
+        "gtitle": "SRG-APP-000340-DB-000304",
         "fix_id": "F-15194r313721_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93925",
+          "V-79219"
+        ],
+        "cci": [
+          "CCI-002235"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213979",
       "title": "SQL Server must prevent non-privileged users from executing privileged functions, to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
       "desc": "Preventing non-privileged users from executing privileged functions mitigates the risk that unauthorized individuals or processes may gain unnecessary access to information or privileges. System documentation should include a definition of the functionality considered privileged. Depending on circumstances, privileged functions can include, for example, establishing accounts, performing system integrity checks, or administering cryptographic key management activities. Non-privileged users are individuals that do not possess appropriate authorizations. Circumventing intrusion detection and prevention mechanisms or malicious code protection mechanisms are examples of privileged functions that require protection from non-privileged users. A privileged function in SQL Server/database context is any operation that modifies the structure of the database, its built-in logic, or its security settings. This would include all Data Definition Language (DDL) statements and all security-related statements. In an SQL environment, it encompasses, but is not necessarily limited to: CREATE ALTER DROP GRANT REVOKE DENY There may also be Data Manipulation Language (DML) statements that, subject to context, should be regarded as privileged. Possible examples include: TRUNCATE TABLE; DELETE, or DELETE affecting more than n rows, for some n, or DELETE without a WHERE clause; UPDATE or UPDATE affecting more than n rows, for some n, or UPDATE without a WHERE clause; Any SELECT, INSERT, UPDATE, or DELETE to an application-defined security table executed by other than a security principal. Depending on the capabilities of SQL Server and the design of the database and associated applications, the prevention of unauthorized use of privileged functions may be achieved by means of DBMS security features, database triggers, other mechanisms, or a combination of these.",
@@ -898,9 +1488,21 @@
         "gid": "V-213980",
         "rid": "SV-213980r617437_rule",
         "stig_id": "SQL6-D0-010500",
+        "gtitle": "SRG-APP-000342-DB-000302",
         "fix_id": "F-15195r313724_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93927",
+          "V-79221"
+        ],
+        "cci": [
+          "CCI-002233"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213980",
       "title": "Use of credentials and proxies must be restricted to necessary cases only.",
       "desc": "In certain situations, to provide required functionality, a DBMS needs to execute internal logic (stored procedures, functions, triggers, etc.) and/or external code modules with elevated privileges. However, if the privileges required for execution are at a higher level than the privileges assigned to organizational users invoking the functionality applications/programs, those users are indirectly provided with greater privileges than assigned by organizations. Privilege elevation must be utilized only where necessary and protected from misuse.",
@@ -916,9 +1518,21 @@
         "gid": "V-213981",
         "rid": "SV-213981r617437_rule",
         "stig_id": "SQL6-D0-010700",
+        "gtitle": "SRG-APP-000356-DB-000314",
         "fix_id": "F-15196r313727_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93929",
+          "V-79223"
+        ],
+        "cci": [
+          "CCI-001844"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213981",
       "title": "SQL Server must utilize centralized management of the content captured in audit records generated by all components of SQL Server.",
       "desc": "Without the ability to centrally manage the content captured in the audit records, identification, troubleshooting, and correlation of suspicious behavior would be difficult and could lead to a delayed or incomplete analysis of an ongoing attack. The content captured in audit records must be managed from a central location (necessitating automation). Centralized management of audit records and logs provides for efficiency in maintenance and management of records, as well as the backup and archiving of those records. SQL Server may write audit records to database tables, to files in the file system, to other kinds of local repository, or directly to a centralized log management system. Whatever the method used, it must be compatible with off-loading the records to the centralized system.",
@@ -934,9 +1548,21 @@
         "gid": "V-213982",
         "rid": "SV-213982r617437_rule",
         "stig_id": "SQL6-D0-010800",
+        "gtitle": "SRG-APP-000356-DB-000315",
         "fix_id": "F-15197r313730_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93931",
+          "V-79225"
+        ],
+        "cci": [
+          "CCI-001844"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213982",
       "title": "SQL Server must provide centralized configuration of the content to be captured in audit records generated by all components of SQL Server.",
       "desc": "If the configuration of SQL Server's auditing is spread across multiple locations in the database management software, or across multiple commands, only loosely related, it is harder to use and takes longer to reconfigure in response to events. SQL Server must provide a unified tool for audit configuration.",
@@ -952,9 +1578,21 @@
         "gid": "V-213983",
         "rid": "SV-213983r617437_rule",
         "stig_id": "SQL6-D0-010900",
+        "gtitle": "SRG-APP-000357-DB-000316",
         "fix_id": "F-15198r313733_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93933",
+          "V-79227"
+        ],
+        "cci": [
+          "CCI-001849"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213983",
       "title": "SQL Server must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.",
       "desc": "In order to ensure sufficient storage capacity for the audit logs, SQL Server must be able to allocate audit record storage capacity. Although another requirement (SRG-APP-000515-DB-000318) mandates that audit data be off-loaded to a centralized log management system, it remains necessary to provide space on the database server to serve as a buffer against outages and capacity limits of the off-loading mechanism. The task of allocating audit record storage capacity is usually performed during initial installation of SQL Server and is closely associated with the DBA and system administrator roles. The DBA or system administrator will usually coordinate the allocation of physical drive space with the application owner/installer and the application will prompt the installer to provide the capacity information, the physical location of the disk, or both. In determining the capacity requirements, consider such factors as: total number of users; expected number of concurrent users during busy periods; number and type of events being monitored; types and amounts of data being captured; the frequency/speed with which audit records are off-loaded to the central log management system; and any limitations that exist on SQL Server's ability to reuse the space formerly occupied by off-loaded records.",
@@ -970,9 +1608,21 @@
         "gid": "V-213984",
         "rid": "SV-213984r617437_rule",
         "stig_id": "SQL6-D0-011000",
+        "gtitle": "SRG-APP-000359-DB-000319",
         "fix_id": "F-15199r313736_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93935",
+          "V-79229"
+        ],
+        "cci": [
+          "CCI-001855"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213984",
       "title": "SQL Server must provide a warning to appropriate support staff when allocated audit record storage volume reaches 75% of maximum audit record storage capacity.",
       "desc": "Organizations are required to use a central log management system, so, under normal conditions, the audit space allocated to SQL Server on its own server will not be an issue. However, space will still be required on the server for SQL Server audit records in transit, and, under abnormal conditions, this could fill up. Since a requirement exists to halt processing upon audit failure, a service outage would result. If support personnel are not notified immediately upon storage volume utilization reaching 75%, they are unable to plan for storage capacity expansion. The appropriate support staff include, at a minimum, the ISSO and the DBA/SA. Monitoring of free space can be accomplished using Microsoft System Center or a third-party monitoring tool.",
@@ -988,9 +1638,21 @@
         "gid": "V-213985",
         "rid": "SV-213985r617437_rule",
         "stig_id": "SQL6-D0-011100",
+        "gtitle": "SRG-APP-000360-DB-000320",
         "fix_id": "F-15200r495408_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93937",
+          "V-79231"
+        ],
+        "cci": [
+          "CCI-001858"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213985",
       "title": "SQL Server must provide an immediate real-time alert to appropriate support staff of all audit log failures.",
       "desc": "It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit capability, and system operation may be adversely affected. The appropriate support staff include, at a minimum, the ISSO and the DBA/SA. A failure of database auditing will result in either the database continuing to function without auditing or in a complete halt to database operations. When audit processing fails, appropriate personnel must be alerted immediately to avoid further downtime or unaudited transactions Alerts provide organizations with urgent messages. Real-time alerts provide these messages immediately (i.e., the time from event detection to alert occurs in seconds or less). Alerts can be generated using tools like the SQL Server Agent Alerts and Database Mail.",
@@ -1006,9 +1668,21 @@
         "gid": "V-213986",
         "rid": "SV-213986r617437_rule",
         "stig_id": "SQL6-D0-011200",
+        "gtitle": "SRG-APP-000374-DB-000322",
         "fix_id": "F-15201r313742_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93939",
+          "V-79233"
+        ],
+        "cci": [
+          "CCI-001890"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213986",
       "title": "SQL Server must record time stamps in audit records and application data that can be mapped to Coordinated Universal Time (UTC, formerly GMT).",
       "desc": "If time stamps are not consistently applied and there is no common time reference, it is difficult to perform forensic analysis. Time stamps generated by SQL Server must include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.",
@@ -1024,9 +1698,21 @@
         "gid": "V-213987",
         "rid": "SV-213987r617437_rule",
         "stig_id": "SQL6-D0-011400",
+        "gtitle": "SRG-APP-000380-DB-000360",
         "fix_id": "F-15202r313745_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93941",
+          "V-79235"
+        ],
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213987",
       "title": "SQL Server must enforce access restrictions associated with changes to the configuration of the instance.",
       "desc": "Failure to provide logical access restrictions associated with changes to configuration may have significant effects on the overall security of the system. When dealing with access restrictions pertaining to change control, it should be noted that any changes to the hardware, software, and/or firmware components of the information system can potentially have significant effects on the overall security of the system. Accordingly, only qualified and authorized individuals should be allowed to obtain access to system components for the purposes of initiating changes, including upgrades and modifications.",
@@ -1042,9 +1728,21 @@
         "gid": "V-213988",
         "rid": "SV-213988r617437_rule",
         "stig_id": "SQL6-D0-011500",
+        "gtitle": "SRG-APP-000380-DB-000360",
         "fix_id": "F-15203r313748_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93943",
+          "V-79237"
+        ],
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213988",
       "title": "Windows must enforce access restrictions associated with changes to the configuration of the SQL Server instance.",
       "desc": "Failure to provide logical access restrictions associated with changes to configuration may have significant effects on the overall security of the system. When dealing with access restrictions pertaining to change control, it should be noted that any changes to the hardware, software, and/or firmware components of the information system can potentially have significant effects on the overall security of the system. Accordingly, only qualified and authorized individuals should be allowed to obtain access to system components for the purposes of initiating changes, including upgrades and modifications.",
@@ -1060,9 +1758,21 @@
         "gid": "V-213989",
         "rid": "SV-213989r617437_rule",
         "stig_id": "SQL6-D0-011800",
+        "gtitle": "SRG-APP-000381-DB-000361",
         "fix_id": "F-15204r313751_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93945",
+          "V-79239"
+        ],
+        "cci": [
+          "CCI-001814"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213989",
       "title": "SQL Server must produce audit records of its enforcement of access restrictions associated with changes to the configuration of SQL Server or database(s).",
       "desc": "Without auditing the enforcement of access restrictions against changes to configuration, it would be difficult to identify attempted attacks and an audit trail would not be available for forensic investigation for after-the-fact actions. Enforcement actions are the methods or mechanisms used to prevent unauthorized changes to configuration settings. Enforcement action methods may be as simple as denying access to a file based on the application of file permissions (access restriction). Audit items may consist of lists of actions blocked by access restrictions or changes identified after the fact.",
@@ -1078,9 +1788,21 @@
         "gid": "V-213990",
         "rid": "SV-213990r617437_rule",
         "stig_id": "SQL6-D0-011900",
+        "gtitle": "SRG-APP-000383-DB-000364",
         "fix_id": "F-15205r313754_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93947",
+          "V-79241"
+        ],
+        "cci": [
+          "CCI-001762"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213990",
       "title": "SQL Server must disable network functions, ports, protocols, and services deemed by the organization to be nonsecure, in accord with the Ports, Protocols, and Services Management (PPSM) guidance.",
       "desc": "Use of nonsecure network functions, ports, protocols, and services exposes the system to avoidable threats.",
@@ -1096,9 +1818,21 @@
         "gid": "V-213991",
         "rid": "SV-213991r617437_rule",
         "stig_id": "SQL6-D0-012300",
+        "gtitle": "SRG-APP-000431-DB-000388",
         "fix_id": "F-15206r313757_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93949",
+          "V-79243"
+        ],
+        "cci": [
+          "CCI-002530"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213991",
       "title": "SQL Server must maintain a separate execution domain for each executing process.",
       "desc": "Database management systems can maintain separate execution domains for each executing process by assigning each process a separate address space. Each process has a distinct address space so that communication between processes is controlled through the security functions, and one process cannot modify the executing code of another process. Maintaining separate execution domains for executing processes can be achieved, for example, by implementing separate address spaces.",
@@ -1114,9 +1848,21 @@
         "gid": "V-213992",
         "rid": "SV-213992r617437_rule",
         "stig_id": "SQL6-D0-012400",
+        "gtitle": "SRG-APP-000431-DB-000388",
         "fix_id": "F-15207r313760_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93951",
+          "V-79245"
+        ],
+        "cci": [
+          "CCI-002530"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213992",
       "title": "SQL Server services must be configured to run under unique dedicated user accounts.",
       "desc": "Database management systems can maintain separate execution domains for each executing process by assigning each process a separate address space. Each process has a distinct address space so that communication between processes is controlled through the security functions, and one process cannot modify the executing code of another process. Maintaining separate execution domains for executing processes can be achieved, for example, by implementing separate address spaces.",
@@ -1132,9 +1878,21 @@
         "gid": "V-213993",
         "rid": "SV-213993r617437_rule",
         "stig_id": "SQL6-D0-012700",
+        "gtitle": "SRG-APP-000454-DB-000389",
         "fix_id": "F-15208r313763_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93953",
+          "V-79247"
+        ],
+        "cci": [
+          "CCI-002617"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213993",
       "title": "When updates are applied to SQL Server software, any software components that have been replaced or made unnecessary must be removed.",
       "desc": "Previous versions of DBMS components that are not removed from the information system after updates have been installed may be exploited by adversaries. Some DBMSs' installation tools may remove older versions of software automatically from the information system. In other cases, manual review and removal will be required. In planning installations and upgrades, organizations must include steps (automated, manual, or both) to identify and remove the outdated modules. A transition period may be necessary when both the old and the new software are required. This should be taken into account in the planning.",
@@ -1150,9 +1908,21 @@
         "gid": "V-213994",
         "rid": "SV-213994r617437_rule",
         "stig_id": "SQL6-D0-012800",
+        "gtitle": "SRG-APP-000456-DB-000390",
         "fix_id": "F-15209r313766_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93955",
+          "V-79249"
+        ],
+        "cci": [
+          "CCI-002605"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213994",
       "title": "Security-relevant software updates to SQL Server must be installed within the time period directed by an authoritative source (e.g. IAVM, CTOs, DTMs, and STIGs).",
       "desc": "Security flaws with software applications, including database management systems, are discovered daily. Vendors are constantly updating and patching their products to address newly discovered security vulnerabilities. Organizations (including any contractor to the organization) are required to promptly install security-relevant software updates (e.g., patches, service packs, and hot fixes). Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously. Organization-defined time periods for updating security-relevant software may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). This requirement will apply to software patch management solutions that are used to install patches across the enclave and also to applications themselves that are not part of that patch management solution. For example, many browsers today provide the capability to install their own patch software. Patch criticality, as well as system criticality, will vary. Therefore, the tactical situations regarding the patch management process will also vary. This means that the time period utilized must be a configurable parameter. Time frames for application of security-relevant software updates may be dependent upon the Information Assurance Vulnerability Management (IAVM) process. SQL Server will be configured to check for and install security-relevant software updates within an identified time period from the availability of the update. The specific time period will be defined by an authoritative source (e.g. IAVM, CTOs, DTMs, and STIGs).",
@@ -1168,9 +1938,21 @@
         "gid": "V-213995",
         "rid": "SV-213995r617437_rule",
         "stig_id": "SQL6-D0-012900",
+        "gtitle": "SRG-APP-000492-DB-000332",
         "fix_id": "F-15210r313769_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93957",
+          "V-79251"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213995",
       "title": "SQL Server must be able to generate audit records when security objects are accessed.",
       "desc": "Changes to the security configuration must be tracked. This requirement applies to situations where security data is retrieved or modified via data manipulation operations, as opposed to via specialized security functionality. In an SQL environment, types of access include, but are not necessarily limited to: SELECT INSERT UPDATE DELETE EXECUTE",
@@ -1186,9 +1968,21 @@
         "gid": "V-213996",
         "rid": "SV-213996r617437_rule",
         "stig_id": "SQL6-D0-013000",
+        "gtitle": "SRG-APP-000492-DB-000333",
         "fix_id": "F-15211r313772_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93959",
+          "V-79253"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213996",
       "title": "SQL Server must generate audit records when unsuccessful attempts to access security objects occur.",
       "desc": "Changes to the security configuration must be tracked. This requirement applies to situations where security data is retrieved or modified via data manipulation operations, as opposed to via specialized security functionality. In an SQL environment, types of access include, but are not necessarily limited to: SELECT INSERT UPDATE DELETE EXECUTE To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -1204,9 +1998,21 @@
         "gid": "V-213997",
         "rid": "SV-213997r617437_rule",
         "stig_id": "SQL6-D0-013100",
+        "gtitle": "SRG-APP-000494-DB-000344",
         "fix_id": "F-15212r313775_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93961",
+          "V-79255"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213997",
       "title": "SQL Server must generate audit records when categorized information (e.g., classification levels/security levels) is accessed.",
       "desc": "Changes in categorized information must be tracked. Without an audit trail, unauthorized access to protected data could go undetected. For detailed information on categorizing information, refer to FIPS Publication 199, Standards for Security Categorization of Federal Information and Information Systems, and FIPS Publication 200, Minimum Security Requirements for Federal Information and Information Systems.",
@@ -1222,9 +2028,21 @@
         "gid": "V-213998",
         "rid": "SV-213998r617437_rule",
         "stig_id": "SQL6-D0-013200",
+        "gtitle": "SRG-APP-000494-DB-000345",
         "fix_id": "F-15213r313778_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93963",
+          "V-79257"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213998",
       "title": "SQL Server must generate audit records when unsuccessful attempts to access categorized information (e.g., classification levels/security levels) occur.",
       "desc": "Changes in categorized information must be tracked. Without an audit trail, unauthorized access to protected data could go undetected. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones. For detailed information on categorizing information, refer to FIPS Publication 199, Standards for Security Categorization of Federal Information and Information Systems, and FIPS Publication 200, Minimum Security Requirements for Federal Information and Information Systems.",
@@ -1240,9 +2058,21 @@
         "gid": "V-213999",
         "rid": "SV-213999r617437_rule",
         "stig_id": "SQL6-D0-013300",
+        "gtitle": "SRG-APP-000495-DB-000326",
         "fix_id": "F-15214r313781_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93965",
+          "V-79259"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-213999",
       "title": "SQL Server must generate audit records when privileges/permissions are added.",
       "desc": "Changes in the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized elevation or restriction of privileges could go undetected. Elevated privileges give users access to information and functionality that they should not have; restricted privileges wrongly deny access to authorized users. In an SQL environment, adding permissions is typically done via the GRANT command, or, in the negative, the DENY command.",
@@ -1258,9 +2088,21 @@
         "gid": "V-214000",
         "rid": "SV-214000r617437_rule",
         "stig_id": "SQL6-D0-013400",
+        "gtitle": "SRG-APP-000495-DB-000327",
         "fix_id": "F-15215r313784_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93967",
+          "V-79261"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214000",
       "title": "SQL Server must generate audit records when unsuccessful attempts to add privileges/permissions occur.",
       "desc": "Failed attempts to change the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized attempts to elevate or restrict privileges could go undetected. In an SQL environment, adding permissions is typically done via the GRANT command, or, in the negative, the DENY command. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -1276,9 +2118,21 @@
         "gid": "V-214001",
         "rid": "SV-214001r617437_rule",
         "stig_id": "SQL6-D0-013500",
+        "gtitle": "SRG-APP-000495-DB-000328",
         "fix_id": "F-15216r313787_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93969",
+          "V-79263"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214001",
       "title": "SQL Server must generate audit records when privileges/permissions are modified.",
       "desc": "Changes in the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized elevation or restriction of privileges could go undetected. Elevated privileges give users access to information and functionality that they should not have; restricted privileges wrongly deny access to authorized users. In an SQL environment, modifying permissions is typically done via the GRANT, REVOKE, and DENY commands.",
@@ -1294,9 +2148,21 @@
         "gid": "V-214002",
         "rid": "SV-214002r617437_rule",
         "stig_id": "SQL6-D0-013600",
+        "gtitle": "SRG-APP-000495-DB-000329",
         "fix_id": "F-15217r313790_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93971",
+          "V-79265"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214002",
       "title": "SQL Server must generate audit records when unsuccessful attempts to modify privileges/permissions occur.",
       "desc": "Failed attempts to change the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized attempts to elevate or restrict privileges could go undetected. In an SQL environment, modifying permissions is typically done via the GRANT, REVOKE, and DENY commands. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -1312,9 +2178,21 @@
         "gid": "V-214003",
         "rid": "SV-214003r617437_rule",
         "stig_id": "SQL6-D0-013700",
+        "gtitle": "SRG-APP-000496-DB-000334",
         "fix_id": "F-15218r313793_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93973",
+          "V-79267"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214003",
       "title": "SQL Server must generate audit records when security objects are modified.",
       "desc": "Changes in the database objects (tables, views, procedures, functions) that record and control permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized changes to the security subsystem could go undetected. The database could be severely compromised or rendered inoperative.",
@@ -1330,9 +2208,21 @@
         "gid": "V-214004",
         "rid": "SV-214004r617437_rule",
         "stig_id": "SQL6-D0-013800",
+        "gtitle": "SRG-APP-000496-DB-000335",
         "fix_id": "F-15219r313796_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93975",
+          "V-79269"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214004",
       "title": "SQL Server must generate audit records when unsuccessful attempts to modify security objects occur.",
       "desc": "Changes in the database objects (tables, views, procedures, functions) that record and control permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized changes to the security subsystem could go undetected. The database could be severely compromised or rendered inoperative. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -1348,9 +2238,21 @@
         "gid": "V-214005",
         "rid": "SV-214005r617437_rule",
         "stig_id": "SQL6-D0-013900",
+        "gtitle": "SRG-APP-000498-DB-000346",
         "fix_id": "F-15220r313799_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93977",
+          "V-79271"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214005",
       "title": "SQL Server must generate audit records when categorized information (e.g., classification levels/security levels) is modified.",
       "desc": "Changes in categorized information must be tracked. Without an audit trail, unauthorized access to protected data could go undetected. For detailed information on categorizing information, refer to FIPS Publication 199, Standards for Security Categorization of Federal Information and Information Systems, and FIPS Publication 200, Minimum Security Requirements for Federal Information and Information Systems.",
@@ -1366,9 +2268,21 @@
         "gid": "V-214006",
         "rid": "SV-214006r617437_rule",
         "stig_id": "SQL6-D0-014000",
+        "gtitle": "SRG-APP-000498-DB-000347",
         "fix_id": "F-15221r313802_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93979",
+          "V-79273"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214006",
       "title": "SQL Server must generate audit records when unsuccessful attempts to modify categorized information (e.g., classification levels/security levels) occur.",
       "desc": "Changes in categories of information must be tracked. Without an audit trail, unauthorized access to protected data could go undetected. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones. For detailed information on categorizing information, refer to FIPS Publication 199, Standards for Security Categorization of Federal Information and Information Systems, and FIPS Publication 200, Minimum Security Requirements for Federal Information and Information Systems.",
@@ -1384,9 +2298,21 @@
         "gid": "V-214007",
         "rid": "SV-214007r617437_rule",
         "stig_id": "SQL6-D0-014100",
+        "gtitle": "SRG-APP-000499-DB-000330",
         "fix_id": "F-15222r313805_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93981",
+          "V-79275"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214007",
       "title": "SQL Server must generate audit records when privileges/permissions are deleted.",
       "desc": "Changes in the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized elevation or restriction of privileges could go undetected. Elevated privileges give users access to information and functionality that they should not have; restricted privileges wrongly deny access to authorized users. In an SQL environment, deleting permissions is typically done via the REVOKE or DENY command.",
@@ -1402,9 +2328,21 @@
         "gid": "V-214008",
         "rid": "SV-214008r617437_rule",
         "stig_id": "SQL6-D0-014200",
+        "gtitle": "SRG-APP-000499-DB-000331",
         "fix_id": "F-15223r313808_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93983",
+          "V-79277"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214008",
       "title": "SQL Server must generate audit records when unsuccessful attempts to delete privileges/permissions occur.",
       "desc": "Failed attempts to change the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized attempts to elevate or restrict privileges could go undetected. In an SQL environment, deleting permissions is typically done via the REVOKE or DENY command. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -1420,9 +2358,21 @@
         "gid": "V-214009",
         "rid": "SV-214009r617437_rule",
         "stig_id": "SQL6-D0-014300",
+        "gtitle": "SRG-APP-000501-DB-000336",
         "fix_id": "F-15224r313811_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93985",
+          "V-79279"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214009",
       "title": "SQL Server must generate audit records when security objects are deleted.",
       "desc": "The removal of security objects from the database/DBMS would seriously degrade a system's information assurance posture. If such an event occurs, it must be logged.",
@@ -1438,9 +2388,21 @@
         "gid": "V-214010",
         "rid": "SV-214010r617437_rule",
         "stig_id": "SQL6-D0-014400",
+        "gtitle": "SRG-APP-000501-DB-000337",
         "fix_id": "F-15225r313814_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93987",
+          "V-79281"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214010",
       "title": "SQL Server must generate audit records when unsuccessful attempts to delete security objects occur.",
       "desc": "The removal of security objects from the database/DBMS would seriously degrade a system's information assurance posture. If such an action is attempted, it must be logged. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -1456,9 +2418,21 @@
         "gid": "V-214011",
         "rid": "SV-214011r617437_rule",
         "stig_id": "SQL6-D0-014500",
+        "gtitle": "SRG-APP-000502-DB-000348",
         "fix_id": "F-15226r313817_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93989",
+          "V-79283"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214011",
       "title": "SQL Server must generate audit records when categorized information (e.g., classification levels/security levels) is deleted.",
       "desc": "Changes in categorized information must be tracked. Without an audit trail, unauthorized access to protected data could go undetected. For detailed information on categorizing information, refer to FIPS Publication 199, Standards for Security Categorization of Federal Information and Information Systems, and FIPS Publication 200, Minimum Security Requirements for Federal Information and Information Systems.",
@@ -1474,9 +2448,21 @@
         "gid": "V-214012",
         "rid": "SV-214012r617437_rule",
         "stig_id": "SQL6-D0-014600",
+        "gtitle": "SRG-APP-000502-DB-000349",
         "fix_id": "F-15227r313820_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93991",
+          "V-79285"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214012",
       "title": "SQL Server must generate audit records when unsuccessful attempts to delete categorized information (e.g., classification levels/security levels) occur.",
       "desc": "Changes in categorized information must be tracked. Without an audit trail, unauthorized access to protected data could go undetected. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones. For detailed information on categorizing information, refer to FIPS Publication 199, Standards for Security Categorization of Federal Information and Information Systems, and FIPS Publication 200, Minimum Security Requirements for Federal Information and Information Systems.",
@@ -1492,9 +2478,21 @@
         "gid": "V-214013",
         "rid": "SV-214013r617437_rule",
         "stig_id": "SQL6-D0-014700",
+        "gtitle": "SRG-APP-000503-DB-000350",
         "fix_id": "F-15228r313823_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93993",
+          "V-79287"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214013",
       "title": "SQL Server must generate audit records when successful logons or connections occur.",
       "desc": "For completeness of forensic analysis, it is necessary to track who/what (a user or other principal) logs on to SQL Server.",
@@ -1510,9 +2508,21 @@
         "gid": "V-214014",
         "rid": "SV-214014r617437_rule",
         "stig_id": "SQL6-D0-014800",
+        "gtitle": "SRG-APP-000503-DB-000351",
         "fix_id": "F-15229r313826_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93995",
+          "V-79289"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214014",
       "title": "SQL Server must generate audit records when unsuccessful logons or connection attempts occur.",
       "desc": "For completeness of forensic analysis, it is necessary to track failed attempts to log on to SQL Server. While positive identification may not be possible in a case of failed authentication, as much information as possible about the incident must be captured.",
@@ -1528,9 +2538,21 @@
         "gid": "V-214015",
         "rid": "SV-214015r617437_rule",
         "stig_id": "SQL6-D0-014900",
+        "gtitle": "SRG-APP-000504-DB-000354",
         "fix_id": "F-15230r313829_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93997",
+          "V-79291"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214015",
       "title": "SQL Server must generate audit records for all privileged activities or other system-level access.",
       "desc": "Without tracking privileged activity, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. System documentation should include a definition of the functionality considered privileged. A privileged function in this context is any operation that modifies the structure of the database, its built-in logic, or its security settings. This would include all Data Definition Language (DDL) statements and all security-related statements. In an SQL environment, it encompasses, but is not necessarily limited to: CREATE ALTER DROP GRANT REVOKE DENY There may also be Data Manipulation Language (DML) statements that, subject to context, should be regarded as privileged. Possible examples in SQL include: TRUNCATE TABLE; DELETE, or DELETE affecting more than n rows, for some n, or DELETE without a WHERE clause; UPDATE or UPDATE affecting more than n rows, for some n, or UPDATE without a WHERE clause; any SELECT, INSERT, UPDATE, or DELETE to an application-defined security table executed by other than a security principal. Depending on the capabilities of SQL Server and the design of the database and associated applications, audit logging may be achieved by means of DBMS auditing features, database triggers, other mechanisms, or a combination of these. Note that it is particularly important to audit, and tightly control, any action that weakens the implementation of this requirement itself, since the objective is to have a complete audit trail of all administrative activity.",
@@ -1546,9 +2568,21 @@
         "gid": "V-214016",
         "rid": "SV-214016r617437_rule",
         "stig_id": "SQL6-D0-015000",
+        "gtitle": "SRG-APP-000504-DB-000355",
         "fix_id": "F-15231r313832_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-93999",
+          "V-79293"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214016",
       "title": "SQL Server must generate audit records when unsuccessful attempts to execute privileged activities or other system-level access occur.",
       "desc": "Without tracking privileged activity, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. System documentation should include a definition of the functionality considered privileged. A privileged function in this context is any operation that modifies the structure of the database, its built-in logic, or its security settings. This would include all Data Definition Language (DDL) statements and all security-related statements. In an SQL environment, it encompasses, but is not necessarily limited to: CREATE ALTER DROP GRANT REVOKE DENY Note that it is particularly important to audit, and tightly control, any action that weakens the implementation of this requirement itself, since the objective is to have a complete audit trail of all administrative activity. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -1564,9 +2598,21 @@
         "gid": "V-214017",
         "rid": "SV-214017r617437_rule",
         "stig_id": "SQL6-D0-015100",
+        "gtitle": "SRG-APP-000505-DB-000352",
         "fix_id": "F-15232r313835_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94001",
+          "V-79295"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214017",
       "title": "SQL Server must generate audit records showing starting and ending time for user access to the database(s).",
       "desc": "For completeness of forensic analysis, it is necessary to know how long a user's (or other principal's) connection to SQL Server lasts. This can be achieved by recording disconnections, in addition to logons/connections, in the audit logs. Disconnection may be initiated by the user or forced by the system (as in a timeout) or result from a system or network failure. To the greatest extent possible, all disconnections must be logged.",
@@ -1582,9 +2628,21 @@
         "gid": "V-214018",
         "rid": "SV-214018r617437_rule",
         "stig_id": "SQL6-D0-015200",
+        "gtitle": "SRG-APP-000506-DB-000353",
         "fix_id": "F-15233r313838_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94003",
+          "V-79297"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214018",
       "title": "SQL Server must generate audit records when concurrent logons/connections by the same user from different workstations occur.",
       "desc": "For completeness of forensic analysis, it is necessary to track who logs on to SQL Server. Concurrent connections by the same user from multiple workstations may be valid use of the system; or such connections may be due to improper circumvention of the requirement to use the CAC for authentication; or they may indicate unauthorized account sharing; or they may be because an account has been compromised. (If the fact of multiple, concurrent logons by a given user can be reliably reconstructed from the log entries for other events (logons/connections; voluntary and involuntary disconnections), then it is not mandatory to create additional log entries specifically for this.)",
@@ -1600,9 +2658,21 @@
         "gid": "V-214019",
         "rid": "SV-214019r617437_rule",
         "stig_id": "SQL6-D0-015300",
+        "gtitle": "SRG-APP-000507-DB-000356",
         "fix_id": "F-15234r313841_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94005",
+          "V-79299"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214019",
       "title": "SQL Server must generate audit records when successful accesses to objects occur.",
       "desc": "Without tracking all or selected types of access to all or selected objects (tables, views, procedures, functions, etc.), it would be difficult to establish, correlate, and investigate the events relating to an incident, or identify those responsible for one. In an SQL environment, types of access include, but are not necessarily limited to: SELECT INSERT UPDATE DELETE EXECUTE",
@@ -1618,9 +2688,21 @@
         "gid": "V-214020",
         "rid": "SV-214020r617437_rule",
         "stig_id": "SQL6-D0-015400",
+        "gtitle": "SRG-APP-000507-DB-000357",
         "fix_id": "F-15235r313844_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94007",
+          "V-79301"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214020",
       "title": "SQL Server must generate audit records when unsuccessful accesses to objects occur.",
       "desc": "Without tracking all or selected types of access to all or selected objects (tables, views, procedures, functions, etc.), it would be difficult to establish, correlate, and investigate the events relating to an incident, or identify those responsible for one. In an SQL environment, types of access include, but are not necessarily limited to: SELECT INSERT UPDATE DELETE EXECUTE To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.",
@@ -1636,9 +2718,21 @@
         "gid": "V-214021",
         "rid": "SV-214021r617437_rule",
         "stig_id": "SQL6-D0-015500",
+        "gtitle": "SRG-APP-000508-DB-000358",
         "fix_id": "F-15236r313847_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94009",
+          "V-79303"
+        ],
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214021",
       "title": "SQL Server must generate audit records for all direct access to the database(s).",
       "desc": "In this context, direct access is any query, command, or call to SQL Server that comes from any source other than the application(s) that it supports. Examples would be the command line or a database management utility program. The intent is to capture all activity from administrative and non-standard sources.",
@@ -1654,9 +2748,21 @@
         "gid": "V-214022",
         "rid": "SV-214022r617437_rule",
         "stig_id": "SQL6-D0-015600",
+        "gtitle": "SRG-APP-000514-DB-000381",
         "fix_id": "F-15237r313850_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94011",
+          "V-79305"
+        ],
+        "cci": [
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214022",
       "title": "SQL Server must implement NIST FIPS 140-2 validated cryptographic modules to provision digital signatures.",
       "desc": "Use of weak or untested encryption algorithms undermines the purposes of utilizing encryption to protect data. The application must implement cryptographic modules adhering to the higher standards approved by the federal government since this provides assurance they have been tested and validated. For detailed information, refer to NIST FIPS Publication 140-2, Security Requirements For Cryptographic Modules. Note that the product's cryptographic modules must be validated and certified by NIST as FIPS-compliant.",
@@ -1672,9 +2778,21 @@
         "gid": "V-214023",
         "rid": "SV-214023r617437_rule",
         "stig_id": "SQL6-D0-015700",
+        "gtitle": "SRG-APP-000514-DB-000382",
         "fix_id": "F-15238r313853_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94013",
+          "V-79307"
+        ],
+        "cci": [
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214023",
       "title": "SQL Server must implement NIST FIPS 140-2 validated cryptographic modules to generate and validate cryptographic hashes.",
       "desc": "Use of weak or untested encryption algorithms undermines the purposes of utilizing encryption to protect data. The application must implement cryptographic modules adhering to the higher standards approved by the federal government since this provides assurance they have been tested and validated. For detailed information, refer to NIST FIPS Publication 140-2, Security Requirements For Cryptographic Modules. Note that the product's cryptographic modules must be validated and certified by NIST as FIPS-compliant.",
@@ -1690,9 +2808,21 @@
         "gid": "V-214024",
         "rid": "SV-214024r617437_rule",
         "stig_id": "SQL6-D0-015800",
+        "gtitle": "SRG-APP-000514-DB-000383",
         "fix_id": "F-15239r313856_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94015",
+          "V-79309"
+        ],
+        "cci": [
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214024",
       "title": "SQL Server must implement NIST FIPS 140-2 validated cryptographic modules to protect unclassified information requiring confidentiality and cryptographic protection, in accordance with the data owners requirements.",
       "desc": "Use of weak or untested encryption algorithms undermines the purposes of utilizing encryption to protect data. The application must implement cryptographic modules adhering to the higher standards approved by the federal government since this provides assurance they have been tested and validated. It is the responsibility of the data owner to assess the cryptography requirements in light of applicable federal laws, Executive Orders, directives, policies, regulations, and standards. For detailed information, refer to NIST FIPS Publication 140-2, Security Requirements For Cryptographic Modules. Note that the product's cryptographic modules must be validated and certified by NIST as FIPS-compliant.",
@@ -1708,9 +2838,21 @@
         "gid": "V-214025",
         "rid": "SV-214025r617437_rule",
         "stig_id": "SQL6-D0-015900",
+        "gtitle": "SRG-APP-000515-DB-000318",
         "fix_id": "F-15240r313859_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94017",
+          "V-79311"
+        ],
+        "cci": [
+          "CCI-001851"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214025",
       "title": "The system SQL Server must off-load audit data to a separate log management facility; this must be continuous and in near real time for systems with a network connection to the storage facility and weekly or more often for stand-alone systems.",
       "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Off-loading is a common process in information systems with limited audit storage capacity. The system SQL Server may write audit records to database tables, to files in the file system, to other kinds of local repository, or directly to a centralized log management system. Whatever the method used, it must be compatible with off-loading the records to the centralized system.",
@@ -1726,9 +2868,21 @@
         "gid": "V-214026",
         "rid": "SV-214026r617437_rule",
         "stig_id": "SQL6-D0-016000",
+        "gtitle": "SRG-APP-000516-DB-000363",
         "fix_id": "F-15241r313862_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94019",
+          "V-79313"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214026",
       "title": "SQL Server must configure Customer Feedback and Error Reporting.",
       "desc": "By default, Microsoft SQL Server enables participation in the customer experience improvement program (CEIP). This program collects information about how its customers are using the product. Specifically, SQL Server collects information about the installation experience, feature usage, and performance. This information helps Microsoft improve the product to better meet customer needs.",
@@ -1744,9 +2898,21 @@
         "gid": "V-214027",
         "rid": "SV-214027r617437_rule",
         "stig_id": "SQL6-D0-016100",
+        "gtitle": "SRG-APP-000516-DB-000363",
         "fix_id": "F-15242r313865_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94021",
+          "V-79315"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214027",
       "title": "SQL Server must configure SQL Server Usage and Error Reporting Auditing.",
       "desc": "By default, Microsoft SQL Server enables participation in the customer experience improvement program (CEIP). This program collects information about how its customers are using the product. Specifically, SQL Server collects information about the installation experience, feature usage, and performance. This information helps Microsoft improve the product to better meet customer needs. The Local Audit component of SQL Server Usage Feedback collection writes data collected by the service to a designated folder, representing the data (logs) that will be sent to Microsoft. The purpose of the Local Audit is to allow customers to see all data Microsoft collects with this feature, for compliance, regulatory or privacy validation reasons.",
@@ -1762,9 +2928,21 @@
         "gid": "V-214028",
         "rid": "SV-214028r617437_rule",
         "stig_id": "SQL6-D0-016200",
+        "gtitle": "SRG-APP-000033-DB-000084",
         "fix_id": "F-15243r313868_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94023",
+          "V-79317"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214028",
       "title": "The SQL Server default account [sa] must be disabled.",
       "desc": "SQL Server's [sa] account has special privileges required to administer the database. The [sa] account is a well-known SQL Server account and is likely to be targeted by attackers and thus more prone to providing unauthorized access to the database. This [sa] default account is administrative and could lead to catastrophic consequences, including the complete loss of control over SQL Server. If the [sa] default account is not disabled, an attacker might be able to gain access through the account. SQL Server by default, at installation, disables the [sa] account. Some applications that run on SQL Server require the [sa] account to be enabled in order for the application to function properly. These applications that require the [sa] account to be enabled are usually legacy systems.",
@@ -1780,9 +2958,21 @@
         "gid": "V-214029",
         "rid": "SV-214029r617437_rule",
         "stig_id": "SQL6-D0-016300",
+        "gtitle": "SRG-APP-000141-DB-000092",
         "fix_id": "F-15244r313871_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94025",
+          "V-79319"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214029",
       "title": "SQL Server default account [sa] must have its name changed.",
       "desc": "SQL Server's [sa] account has special privileges required to administer the database. The [sa] account is a well-known SQL Server account name and is likely to be targeted by attackers, and is thus more prone to providing unauthorized access to the database. Since the SQL Server [sa] is administrative in nature, the compromise of a default account can have catastrophic consequences, including the complete loss of control over SQL Server. Since SQL Server needs for this account to exist and it should not be removed, one way to mitigate this risk is to change the [sa] account name.",
@@ -1798,9 +2988,21 @@
         "gid": "V-214030",
         "rid": "SV-214030r617437_rule",
         "stig_id": "SQL6-D0-016400",
+        "gtitle": "SRG-APP-000342-DB-000302",
         "fix_id": "F-15245r313874_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94027",
+          "V-79321"
+        ],
+        "cci": [
+          "CCI-002233"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214030",
       "title": "Execution of startup stored procedures must be restricted to necessary cases only.",
       "desc": "In certain situations, to provide required functionality, a DBMS needs to execute internal logic (stored procedures, functions, triggers, etc.) and/or external code modules with elevated privileges. However, if the privileges required for execution are at a higher level than the privileges assigned to organizational users invoking the functionality applications/programs, those users are indirectly provided with greater privileges than assigned by organizations. When 'Scan for startup procs' is enabled, SQL Server scans for and runs all automatically run stored procedures defined on the server. The execution of start-up stored procedures will be done under a high privileged context, therefore it is a commonly used post-exploitation vector.",
@@ -1816,9 +3018,21 @@
         "gid": "V-214031",
         "rid": "SV-214031r617437_rule",
         "stig_id": "SQL6-D0-016500",
+        "gtitle": "SRG-APP-000516-DB-000363",
         "fix_id": "F-15246r313877_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94029",
+          "V-79323"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214031",
       "title": "SQL Server Mirroring endpoint must utilize AES encryption.",
       "desc": "Information can be either unintentionally or maliciously disclosed or modified during preparation for transmission, including, for example, during aggregation, at protocol transformation points, and during packing/unpacking. These unauthorized disclosures or modifications compromise the confidentiality or integrity of the information. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. SQL Mirroring endpoints support different encryption algorithms, including no-encryption. Using a weak encryption algorithm or plaintext in communication protocols can lead to data loss, data manipulation and/or connection hijacking.",
@@ -1834,9 +3048,21 @@
         "gid": "V-214032",
         "rid": "SV-214032r617437_rule",
         "stig_id": "SQL6-D0-016600",
+        "gtitle": "SRG-APP-000516-DB-000363",
         "fix_id": "F-15247r313880_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94031",
+          "V-79325"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214032",
       "title": "SQL Server Service Broker endpoint must utilize AES encryption.",
       "desc": "Information can be either unintentionally or maliciously disclosed or modified during preparation for transmission, including, for example, during aggregation, at protocol transformation points, and during packing/unpacking. These unauthorized disclosures or modifications compromise the confidentiality or integrity of the information. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. SQL Server Service Broker endpoints support different encryption algorithms, including no-encryption. Using a weak encryption algorithm or plaintext in communication protocols can lead to data loss, data manipulation and/or connection hijacking.",
@@ -1852,9 +3078,21 @@
         "gid": "V-214033",
         "rid": "SV-214033r617437_rule",
         "stig_id": "SQL6-D0-016700",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15248r313883_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94033",
+          "V-79327"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214033",
       "title": "SQL Server execute permissions to access the registry must be revoked, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. The registry contains sensitive information, including password hashes as well as clear text passwords. Registry extended stored procedures allow Microsoft SQL Server to access the machine's registry. The sensitivity of these procedures are exacerbated if Microsoft SQL Server is run under the Windows account LocalSystem. LocalSystem can read and write nearly all values in the registry, even those not accessible by the Administrator. Unlike the xp_cmdshell extended stored procedure, which runs under a separate context if executed by a login not in the sysadmin role, the registry extended stored procedures always execute under the security context of the MSSQLServer service. Because the sensitive information is stored in the registry, it is essential that access to that information be properly guarded.",
@@ -1870,9 +3108,21 @@
         "gid": "V-214034",
         "rid": "SV-214034r617437_rule",
         "stig_id": "SQL6-D0-016800",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15249r313886_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94035",
+          "V-79329"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214034",
       "title": "Filestream must be disabled, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. The most significant potential for attacking an instance is through the use of features that expose an external interface or ad hoc execution capability. FILESTREAM integrates the SQL Server Database Engine with an NTFS file system by storing varbinary(max) binary large object (BLOB) data as files on the file system. Transact-SQL statements can insert, update, query, search, and back up FILESTREAM data.",
@@ -1888,9 +3138,21 @@
         "gid": "V-214035",
         "rid": "SV-214035r617437_rule",
         "stig_id": "SQL6-D0-017000",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15250r313889_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94039",
+          "V-79333"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214035",
       "title": "Ole Automation Procedures feature must be disabled, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. SQL Server is capable of providing a wide range of features and services. Some of the features and services, provided by default, may not be necessary, and enabling them could adversely affect the security of the system. The Ole Automation Procedures option controls whether OLE Automation objects can be instantiated within Transact-SQL batches. These are extended stored procedures that allow SQL Server users to execute functions external to SQL Server in the security context of SQL Server. The Ole Automation Procedures extended stored procedure allows execution of host executables outside the controls of database access permissions. This access may be exploited by malicious users who have compromised the integrity of the SQL Server database process to control the host operating system to perpetrate additional malicious activity.",
@@ -1906,9 +3168,21 @@
         "gid": "V-214036",
         "rid": "SV-214036r617437_rule",
         "stig_id": "SQL6-D0-017100",
+        "gtitle": "SRG-APP-000141-DB-000092",
         "fix_id": "F-15251r313892_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94041",
+          "V-79335"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214036",
       "title": "SQL Server User Options feature must be disabled, unless specifically required and approved.",
       "desc": "SQL Server is capable of providing a wide range of features and services. Some of the features and services, provided by default, may not be necessary, and enabling them could adversely affect the security of the system. The user options option specifies global defaults for all users. A list of default query processing options is established for the duration of a user's work session. The user options option allows you to change the default values of the SET options (if the server's default settings are not appropriate).",
@@ -1924,9 +3198,21 @@
         "gid": "V-214037",
         "rid": "SV-214037r617437_rule",
         "stig_id": "SQL6-D0-017200",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15252r313895_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94043",
+          "V-79337"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214037",
       "title": "Remote Access feature must be disabled, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. SQL Server is capable of providing a wide range of features and services. Some of the features and services, provided by default, may not be necessary, and enabling them could adversely affect the security of the system. The Remote Access option controls the execution of local stored procedures on remote servers or remote stored procedures on local server.  'Remote access' functionality can be abused to launch a Denial-of-Service (DoS) attack on remote servers by off-loading query processing to a target.",
@@ -1942,9 +3228,21 @@
         "gid": "V-214038",
         "rid": "SV-214038r617437_rule",
         "stig_id": "SQL6-D0-017400",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15253r313898_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94047",
+          "V-79341"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214038",
       "title": "Hadoop Connectivity feature must be disabled, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. SQL Server is capable of providing a wide range of features and services. Some of the features and services, provided by default, may not be necessary, and enabling them could adversely affect the security of the system. The Hadoop Connectivity feature allows multiple types of external data sources to be created and used across all sessions on the server.  An exploit to the SQL Server instance could result in a compromise of the host system and external SQL Server resources.",
@@ -1960,9 +3258,21 @@
         "gid": "V-214039",
         "rid": "SV-214039r617437_rule",
         "stig_id": "SQL6-D0-017500",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15254r313901_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94049",
+          "V-79343"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214039",
       "title": "Allow Polybase Export feature must be disabled, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. SQL Server is capable of providing a wide range of features and services. Some of the features and services, provided by default, may not be necessary, and enabling them could adversely affect the security of the system. The Allow Polybase Export feature allows an export of data to an external data source such as Hadoop File System or Azure Data Lake. An exploit to the SQL Server instance could result in a compromise of the host system and external SQL Server resources.",
@@ -1978,9 +3288,21 @@
         "gid": "V-214040",
         "rid": "SV-214040r617437_rule",
         "stig_id": "SQL6-D0-017600",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-15255r313904_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94051",
+          "V-79345"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214040",
       "title": "Remote Data Archive feature must be disabled, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. SQL Server may spawn additional external processes to execute procedures that are defined in the SQL Server but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than SQL Server and provide unauthorized access to the host system. SQL Server is capable of providing a wide range of features and services. Some of the features and services, provided by default, may not be necessary, and enabling them could adversely affect the security of the system. The Remote Data Archive feature allows an export of local SQL Server data to an Azure SQL Database. An exploit to the SQL Server instance could result in a compromise of the host system and external SQL Server resources.",
@@ -1996,9 +3318,21 @@
         "gid": "V-214041",
         "rid": "SV-214041r617437_rule",
         "stig_id": "SQL6-D0-017700",
+        "gtitle": "SRG-APP-000141-DB-000092",
         "fix_id": "F-15256r313907_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94053",
+          "V-79347"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214041",
       "title": "SQL Server External Scripts Enabled feature must be disabled, unless specifically required and approved.",
       "desc": "SQL Server is capable of providing a wide range of features and services. Some of the features and services, provided by default, may not be necessary, and enabling them could adversely affect the security of the system. The External Scripts Enabled feature allows scripts external to SQL such as files located in an R library to be executed.",
@@ -2014,9 +3348,21 @@
         "gid": "V-214042",
         "rid": "SV-214042r617437_rule",
         "stig_id": "SQL6-D0-017800",
+        "gtitle": "SRG-APP-000516-DB-000363",
         "fix_id": "F-15257r313910_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94055",
+          "V-79349"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214042",
       "title": "The SQL Server Browser service must be disabled unless specifically required and approved.",
       "desc": "The SQL Server Browser simplifies the administration of SQL Server, particularly when multiple instances of SQL Server coexist on the same computer. It avoids the need to hard-assign port numbers to the instances and to set and maintain those port numbers in client systems. It enables administrators and authorized users to discover database management system instances, and the databases they support, over the network. SQL Server uses the SQL Server Browser service to enumerate instances of the Database Engine installed on the computer. This enables client applications to browse for a server, and helps clients distinguish between multiple instances of the Database Engine on the same computer. This convenience also presents the possibility of unauthorized individuals gaining knowledge of the available SQL Server resources. Therefore, it is necessary to consider whether the SQL Server Browser is needed. Typically, if only a single instance is installed, using the default name (MSSQLSERVER) and port assignment (1433), the Browser is not adding any value. The more complex the installation, the more likely SQL Server Browser is to be helpful. This requirement is not intended to prohibit use of the Browser service in any circumstances.  It calls for administrators and management to consider whether the benefits of its use outweigh the potential negative consequences of it being used by an attacker to browse the current infrastructure and retrieve a list of running SQL Server instances.",
@@ -2032,9 +3378,21 @@
         "gid": "V-214043",
         "rid": "SV-214043r617437_rule",
         "stig_id": "SQL6-D0-017900",
+        "gtitle": "SRG-APP-000141-DB-000092",
         "fix_id": "F-15258r313913_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94057",
+          "V-79351"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214043",
       "title": "SQL Server Replication Xps feature must be disabled, unless specifically required and approved.",
       "desc": "SQL Server is capable of providing a wide range of features and services. Some of the features and services, provided by default, may not be necessary, and enabling them could adversely affect the security of the system. Enabling the replication XPs opens a significant attack surface area that can be used by an attacker to gather information about the system and potentially abuse the privileges of SQL Server.",
@@ -2050,9 +3408,21 @@
         "gid": "V-214044",
         "rid": "SV-214044r617437_rule",
         "stig_id": "SQL6-D0-018000",
+        "gtitle": "SRG-APP-000516-DB-000363",
         "fix_id": "F-15259r313916_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94059",
+          "V-79353"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214044",
       "title": "If the SQL Server Browser Service is specifically required and approved, SQL instances must be hidden.",
       "desc": "The SQL Server Browser simplifies the administration of SQL Server, particularly when multiple instances of SQL Server coexist on the same computer. It avoids the need to hard-assign port numbers to the instances and to set and maintain those port numbers in client systems. It enables administrators and authorized users to discover database management system instances, and the databases they support, over the network. SQL Server uses the SQL Server Browser service to enumerate instances of the Database Engine installed on the computer. This enables client applications to browse for a server, and helps clients distinguish between multiple instances of the Database Engine on the same computer. This convenience also presents the possibility of unauthorized individuals gaining knowledge of the available SQL Server resources. Therefore, it is necessary to consider whether the SQL Server Browser is needed. Typically, if only a single instance is installed, using the default name (MSSQLSERVER) and port assignment (1433), the Browser is not adding any value. The more complex the installation, the more likely SQL Server Browser is to be helpful. This requirement is not intended to prohibit use of the Browser service in any circumstances.  It calls for administrators and management to consider whether the benefits of its use outweigh the potential negative consequences of it being used by an attacker to browse the current infrastructure and retrieve a list of running SQL Server instances. In order to prevent this, the SQL instance(s) can be hidden.",
@@ -2068,9 +3438,21 @@
         "gid": "V-214045",
         "rid": "SV-214045r617437_rule",
         "stig_id": "SQL6-D0-018100",
+        "gtitle": "SRG-APP-000178-DB-000083",
         "fix_id": "F-15260r313919_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94061",
+          "V-79355"
+        ],
+        "cci": [
+          "CCI-000206"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214045",
       "title": "When using command-line tools such as SQLCMD in a mixed-mode authentication environment, users must use a logon method that does not expose the password.",
       "desc": "To prevent the compromise of authentication information, such as passwords and PINs, during the authentication process, the feedback from the information system must not provide any information that would allow an unauthorized user to compromise the authentication mechanism. Obfuscation of user-provided information when typed into the system is a method used in addressing this risk. For example, displaying asterisks when a user types in a password or PIN, is an example of obscuring feedback of authentication information. This requirement is applicable when mixed-mode authentication is enabled. When this is the case, password-authenticated accounts can be created in and authenticated by SQL Server. Other STIG requirements prohibit the use of mixed-mode authentication except when justified and approved. This deals with the exceptions. SQLCMD and other command-line tools are part of any SQL Server installation. These tools can accept a plain-text password, but do offer alternative techniques. Since the typical user of these tools is a database administrator, the consequences of password compromise are particularly serious. Therefore, the use of plain-text passwords must be prohibited, as a matter of practice and procedure.",
@@ -2086,9 +3468,21 @@
         "gid": "V-214046",
         "rid": "SV-214046r617437_rule",
         "stig_id": "SQL6-D0-018200",
+        "gtitle": "SRG-APP-000178-DB-000083",
         "fix_id": "F-15261r313922_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-94063",
+          "V-79357"
+        ],
+        "cci": [
+          "CCI-000206"
+        ]
       },
+      "refs": [
+        "DPMS Target MS SQL Server 2016 Instance"
+      ],
       "id": "V-214046",
       "title": "Applications must obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
       "desc": "To prevent the compromise of authentication information, such as passwords and PINs, during the authentication process, the feedback from the information system must not provide any information that would allow an unauthorized user to compromise the authentication mechanism. Obfuscation of user-provided information when typed into the system is a method used in addressing this risk. For example, displaying asterisks when a user types in a password or PIN, is an example of obscuring feedback of authentication information. Database applications may allow for entry of the account name and password as a visible parameter of the application execution command. This practice must be prohibited and disabled to prevent shoulder surfing.",

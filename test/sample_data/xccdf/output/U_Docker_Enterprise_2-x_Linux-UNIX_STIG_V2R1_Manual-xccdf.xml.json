@@ -11,9 +11,21 @@
         "gid": "V-235775",
         "rid": "SV-235775r627452_rule",
         "stig_id": "DKER-EE-001000",
+        "gtitle": "SRG-APP-000001",
         "fix_id": "F-38957r627451_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104693",
+          "V-94863"
+        ],
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235775",
       "title": "The Docker Enterprise Per User Limit Login Session Control in the Universal Control Plane (UCP) Admin Settings must be set to an organization-defined value for all accounts and/or account types.",
       "desc": "The UCP component of Docker Enterprise includes a built-in access authorization mechanism called eNZi which can be integrated with an LDAP server and subsequently configured to limit the number of concurrent sessions to an organization-defined number for all accounts and/or account types. Per-user session control limits are configured with a default of 10. For reference, the per user limit in UCP specifies the maximum number of sessions that any user can have active at any given time. If creating a new session would put a user over this limit then the least recently used session will be deleted. A value of zero disables limiting the number of sessions that users may have. This configuration applies to both the UCP and DTR management consoles.",
@@ -29,7 +41,9 @@
         "gid": "V-235776",
         "rid": "SV-235776r627455_rule",
         "stig_id": "DKER-EE-001050",
+        "gtitle": "SRG-APP-000014",
         "fix_id": "F-38958r627454_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000014",
           "SRG-APP-000141",
@@ -41,8 +55,26 @@
           "SRG-APP-000442",
           "SRG-APP-000142"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104695",
+          "V-94865"
+        ],
+        "cci": [
+          "CCI-000068",
+          "CCI-000381",
+          "CCI-000382",
+          "CCI-001184",
+          "CCI-001762",
+          "CCI-002418",
+          "CCI-002420",
+          "CCI-002421",
+          "CCI-002422"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235776",
       "title": "TCP socket binding for all Docker Engine - Enterprise nodes in a Universal Control Plane (UCP) cluster must be disabled.",
       "desc": "The UCP component of Docker Enterprise configures and leverages Swarm Mode for node-to-node cluster communication. Swarm Mode is built in to Docker Engine - Enterprise and uses TLS 1.2 at a minimum for encrypting communications. Under the hood, Swarm Mode includes an embedded public key infrastructure (PKI) system. When a UCP cluster is initialized, the first node in the cluster designates itself as a manager node. That node subsequently generates a new root Certificate Authority (CA) along with a key pair, which are used to secure communications with other UCP nodes that join the swarm. One can also specify his/her own externally-generated root CA upon initialization of a UCP cluster. The manager node also generates two tokens to use when joining additional nodes to the cluster: one worker token and one manager token. Each token includes the digest of the root CA’s certificate and a randomly generated secret. When a node joins the cluster, the joining node uses the digest to validate the root CA certificate from the remote manager. The remote manager uses the secret to ensure the joining node is an approved node. Each time a new node joins the cluster, the manager issues a certificate to the node. The certificate contains a randomly generated node ID to identify the node under the certificate common name (CN) and the role under the organizational unit (OU). The node ID serves as the cryptographically secure node identity for the lifetime of the node in the current swarm. In this mutual TLS architecture, all nodes encrypt communications using a minimum of TLS 1.2, thereby satisfying the requirements of this control. This information can also be referenced at https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/ and https://docs.docker.com/ee/ucp/ucp-architecture/. By itself, Docker Engine - Enterprise is configured by default to listen for API requests via a UNIX domain socket (or IPC socket) created at /var/run/docker.sock on supported Linux distributions and via a named pipe at npipe:////./pipe/docker_engine on Windows Server 2016 and newer. Docker Engine - Enterprise can also be configured to listen for API requests via additional socket types, including both TCP and FD (only on supported systemd-based Linux distributions). If configured to listen for API requests via the TCP socket type over TCP port 2376 and with the daemon flags and SSL certificates, then, at a minimum, TLS 1.2 is used for encryption; therefore this control is applicable and is inherently met in this configuration. If configured to listen for API requests via the TCP socket type, but without TLS verification and certifications, then the instance remains vulnerable and is not properly configured to meet the requirements of this control. If configured to listen for API requests via the FD socket type, then this control is not applicable. More information can be found at https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-socket-option. The TCP socket binding should be disabled when running Engine as part of a UCP cluster. ",
@@ -58,7 +90,9 @@
         "gid": "V-235777",
         "rid": "SV-235777r627458_rule",
         "stig_id": "DKER-EE-001070",
+        "gtitle": "SRG-APP-000015",
         "fix_id": "F-38959r627457_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000015",
           "SRG-APP-000231",
@@ -76,8 +110,28 @@
           "SRG-APP-000555",
           "SRG-APP-000635"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104697",
+          "V-94867"
+        ],
+        "cci": [
+          "CCI-001453",
+          "CCI-001941",
+          "CCI-001967",
+          "CCI-001188",
+          "CCI-001199",
+          "CCI-000803",
+          "CCI-000068",
+          "CCI-000197",
+          "CCI-002450",
+          "CCI-002890",
+          "CCI-003123"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235777",
       "title": "FIPS mode must be enabled on all Docker Engine - Enterprise nodes.",
       "desc": "When FIPS mode is enabled on a Docker Engine - Enterprise node, it uses FIPS-validated cryptography to protect the confidentiality of remote access sessions to any bound TCP sockets with TLS enabled and configured. FIPS mode in Docker Engine - Enterprise is automatically enabled when FIPS mode is also enabled on the underlying host operating system. This control is only configurable for the Docker Engine - Enterprise component of Docker Enterprise as only the Engine includes FIPS-validated cryptography. Neither Universal Control Plane (UCP) nor Docker Trusted Registry (DTR) include FIPS-validated cryptography at this time. However, both UCP and DTR will include FIPS-validated cryptography in a future release. Therefore, for UCP/DTR this control is applicable but not yet met. ",
@@ -93,7 +147,9 @@
         "gid": "V-235778",
         "rid": "SV-235778r627461_rule",
         "stig_id": "DKER-EE-001080",
+        "gtitle": "SRG-APP-000016",
         "fix_id": "F-38960r627460_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000016",
           "SRG-APP-000089",
@@ -132,8 +188,34 @@
           "SRG-APP-000092",
           "SRG-APP-000091"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104699",
+          "V-94869"
+        ],
+        "cci": [
+          "CCI-000130",
+          "CCI-000067",
+          "CCI-000131",
+          "CCI-000132",
+          "CCI-000133",
+          "CCI-000134",
+          "CCI-000135",
+          "CCI-000169",
+          "CCI-000172",
+          "CCI-001462",
+          "CCI-001464",
+          "CCI-001851",
+          "CCI-001487",
+          "CCI-001814",
+          "CCI-002754",
+          "CCI-002723",
+          "CCI-002234"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235778",
       "title": "The audit log configuration level must be set to request in the Universal Control Plane (UCP) component of Docker Enterprise.",
       "desc": "The UCP and Docker Trusted Registry (DTR) components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise. ",
@@ -149,7 +231,9 @@
         "gid": "V-235779",
         "rid": "SV-235779r627464_rule",
         "stig_id": "DKER-EE-001090",
+        "gtitle": "SRG-APP-000016",
         "fix_id": "F-38961r627463_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000016",
           "SRG-APP-000090",
@@ -190,8 +274,36 @@
           "SRG-APP-000501",
           "SRG-APP-000447"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104701",
+          "V-95111"
+        ],
+        "cci": [
+          "CCI-001814",
+          "CCI-001464",
+          "CCI-001487",
+          "CCI-000172",
+          "CCI-000171",
+          "CCI-000169",
+          "CCI-000154",
+          "CCI-000158",
+          "CCI-000134",
+          "CCI-000135",
+          "CCI-000132",
+          "CCI-000133",
+          "CCI-000067",
+          "CCI-000130",
+          "CCI-000131",
+          "CCI-002723",
+          "CCI-002724",
+          "CCI-002234",
+          "CCI-002754"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235779",
       "title": "The host operating systems auditing policies for the Docker Engine - Enterprise component of Docker Enterprise must be set.",
       "desc": "The Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise. ",
@@ -207,7 +319,9 @@
         "gid": "V-235780",
         "rid": "SV-235780r627467_rule",
         "stig_id": "DKER-EE-001100",
+        "gtitle": "SRG-APP-000023",
         "fix_id": "F-38962r627466_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000023",
           "SRG-APP-000405",
@@ -220,8 +334,27 @@
           "SRG-APP-000141",
           "SRG-APP-000391"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104703",
+          "V-95113"
+        ],
+        "cci": [
+          "CCI-000015",
+          "CCI-000381",
+          "CCI-000764",
+          "CCI-001954",
+          "CCI-001991",
+          "CCI-002010",
+          "CCI-002011",
+          "CCI-001953",
+          "CCI-002041",
+          "CCI-002014"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235780",
       "title": "LDAP integration in Docker Enterprise must be configured.",
       "desc": "Both the Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise leverage the same authentication and authorization backplane known as eNZi. The eNZi backplane provides automated mechanisms for supporting account management functions and allows for LDAP integration in UCP and DTR. While eNZi includes its own managed user database, it is recommended that LDAP integration be configured to more completely satisfy the requirements of this control. ",
@@ -237,7 +370,9 @@
         "gid": "V-235781",
         "rid": "SV-235781r627470_rule",
         "stig_id": "DKER-EE-001170",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-38963r627469_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000033",
           "SRG-APP-000038",
@@ -257,8 +392,34 @@
           "SRG-APP-000380",
           "SRG-APP-000384"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104705",
+          "V-95355"
+        ],
+        "cci": [
+          "CCI-001812",
+          "CCI-001813",
+          "CCI-001764",
+          "CCI-001090",
+          "CCI-001094",
+          "CCI-001095",
+          "CCI-001314",
+          "CCI-001368",
+          "CCI-001414",
+          "CCI-000213",
+          "CCI-000166",
+          "CCI-002165",
+          "CCI-002233",
+          "CCI-002235",
+          "CCI-002262",
+          "CCI-002263",
+          "CCI-002264"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235781",
       "title": "A policy set using the built-in role-based access control (RBAC) capabilities in the Universal Control Plane (UCP) component of Docker Enterprise must be configured.",
       "desc": "Both the UCP and Docker Trusted Registry (DTR) components of Docker Enterprise leverage the same authentication and authorization backplane known as eNZi. eNZi provides UCP and DTR with role-based access control functionality to enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies. The eNZi backplane includes its own managed user database, and also allows for LDAP integration in UCP and DTR. While role-based access control mechanisms are provided regardless of whether or not LDAP integration is enabled, it is recommended to enable LDAP integration to better meet the requirements of this control. ",
@@ -274,7 +435,9 @@
         "gid": "V-235782",
         "rid": "SV-235782r627473_rule",
         "stig_id": "DKER-EE-001180",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-38964r627472_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000033",
           "SRG-APP-000243",
@@ -294,8 +457,34 @@
           "SRG-APP-000313",
           "SRG-APP-000314"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104707",
+          "V-95357"
+        ],
+        "cci": [
+          "CCI-000166",
+          "CCI-000213",
+          "CCI-001414",
+          "CCI-001314",
+          "CCI-001368",
+          "CCI-001095",
+          "CCI-001090",
+          "CCI-001094",
+          "CCI-001764",
+          "CCI-001812",
+          "CCI-001813",
+          "CCI-002263",
+          "CCI-002264",
+          "CCI-002235",
+          "CCI-002262",
+          "CCI-002233",
+          "CCI-002165"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235782",
       "title": "A policy set using the built-in role-based access control (RBAC) capabilities in the Docker Trusted Registry (DTR) component of Docker Enterprise must be set.",
       "desc": "Both the Universal Control Plane (UCP) and DTR components of Docker Enterprise leverage the same authentication and authorization backplane known as eNZi. eNZi provides UCP and DTR with role-based access control functionality to enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies. These policies are defined in the System Security Plan along with organization information, application user roles, system resources and access requirements. The eNZi backplane includes its own managed user database, and also allows for LDAP integration in UCP and DTR. While role-based access control mechanisms are provided regardless of whether or not LDAP integration is enabled, it is recommended to enable LDAP integration to better meet the requirements of this control. ",
@@ -311,9 +500,21 @@
         "gid": "V-235783",
         "rid": "SV-235783r627476_rule",
         "stig_id": "DKER-EE-001190",
+        "gtitle": "SRG-APP-000033",
         "fix_id": "F-38965r627475_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104737",
+          "V-95599"
+        ],
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235783",
       "title": "Docker Enterprise sensitive host system directories must not be mounted on containers.",
       "desc": "Sensitive host system directories such as below should not be allowed to be mounted as container volumes especially in read-write mode. Linux: / /boot /dev /etc /lib /proc /sys /usr Windows: %windir% (C:\\Windows) %windir%\\system32 (C:\\Windows\\system32) %programdata% %programData%\\docker C:\\Program Files C:\\Program Files (x86) C:\\Users If sensitive directories are mounted in read-write mode, it would be possible to make changes to files within those sensitive directories. The changes might bring down security implications or unwarranted changes that could put the Docker host in compromised state. Docker defaults to a read-write volume but the user can also mount a directory read-only. By default, no sensitive host directories are mounted on containers.",
@@ -329,9 +530,21 @@
         "gid": "V-235784",
         "rid": "SV-235784r627479_rule",
         "stig_id": "DKER-EE-001240",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-38966r627478_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104739",
+          "V-95601"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235784",
       "title": "The Docker Enterprise hosts process namespace must not be shared.",
       "desc": "Process ID (PID) namespaces isolate the PID number space, meaning that processes in different PID namespaces can have the same PID. This is process level isolation between containers and the host. PID namespace provides separation of processes. The PID Namespace removes the view of the system processes, and allows process IDs to be reused including PID 1. If the host's PID namespace is shared with the container, it would allow processes within the container to see all of the processes on the host system. This breaks the benefit of process level isolation between the host and the containers. Someone having access to the container can eventually know all the processes running on the host system and can even kill the host system processes from within the container. Hence, do not share the host's process namespace with the containers. Container processes cannot see the processes on the host system. In certain cases, the container should share the host's process namespace. For example, the user could build a container with debugging tools like strace or gdb, but want to use these tools when debugging processes within the container. If this is desired, then share only one (or needed) host process by using the -p switch. Example: docker run --pid=host rhel7 strace -p 1234 By default, all containers have the PID namespace enabled and the host's process namespace is not shared with the containers.",
@@ -347,9 +560,21 @@
         "gid": "V-235785",
         "rid": "SV-235785r627482_rule",
         "stig_id": "DKER-EE-001250",
+        "gtitle": "SRG-APP-000039",
         "fix_id": "F-38967r627481_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104741",
+          "V-95603"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235785",
       "title": "The Docker Enterprise hosts IPC namespace must not be shared.",
       "desc": "IPC (POSIX/SysV IPC) namespace provides separation of named shared memory segments, semaphores, and message queues. IPC namespace on the host thus should not be shared with the containers and should remain isolated. IPC namespace provides separation of IPC between the host and containers. If the host's IPC namespace is shared with the container, it would allow processes within the container to see all of the IPC on the host system. This breaks the benefit of IPC level isolation between the host and the containers. Someone having access to the container can eventually manipulate the host IPC. Hence, do not share the host's IPC namespace with the containers. Shared memory segments are used to accelerate inter-process communication. It is commonly used by high-performance applications. If such applications are containerized into multiple containers, the user might need to share the IPC namespace of the containers to achieve high performance. In such cases, the user should still be sharing container specific IPC namespaces only and not the host IPC namespace. The user may share the container's IPC namespace with another container as below: Example: docker run --interactive --tty --ipc=container:e3a7a1a97c58 centos /bin/bash By default, all containers have the IPC namespace enabled and host IPC namespace is not shared with any container.",
@@ -365,9 +590,21 @@
         "gid": "V-235786",
         "rid": "SV-235786r627485_rule",
         "stig_id": "DKER-EE-001370",
+        "gtitle": "SRG-APP-000090",
         "fix_id": "F-38968r627484_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104743",
+          "V-95605"
+        ],
+        "cci": [
+          "CCI-000171"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235786",
       "title": "log-opts on all Docker Engine - Enterprise nodes must be configured.",
       "desc": "The Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. All audit logs generated by UCP and DTR can be forwarded to a remote log aggregation system by configuring an appropriate log driver plugin on all Docker Engine - Enterprise nodes in a cluster. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise.",
@@ -383,9 +620,21 @@
         "gid": "V-235787",
         "rid": "SV-235787r627488_rule",
         "stig_id": "DKER-EE-001590",
+        "gtitle": "SRG-APP-000108",
         "fix_id": "F-38969r627487_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104745",
+          "V-95607"
+        ],
+        "cci": [
+          "CCI-000139"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235787",
       "title": "Docker Enterprise must alert the ISSO and SA (at a minimum) in the event of an audit processing failure.",
       "desc": "The Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. All audit logs generated by UCP and DTR can be forwarded to a remote log aggregation system by configuring an appropriate log driver plugin on all Docker Engine - Enterprise nodes in a cluster. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise.",
@@ -401,9 +650,21 @@
         "gid": "V-235788",
         "rid": "SV-235788r627491_rule",
         "stig_id": "DKER-EE-001770",
+        "gtitle": "SRG-APP-000131",
         "fix_id": "F-38970r627490_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104747",
+          "V-95609"
+        ],
+        "cci": [
+          "CCI-001749"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235788",
       "title": "Docker Incs official GPG key must be added to the host using the users operating systems respective package repository management tooling.",
       "desc": "All packaged components of Docker Enterprise are digitally signed using GPG keys maintained by Docker, Inc. The Docker Engine - Enterprise daemon, itself, is digitally signed. Furthermore, all Docker, Inc-managed Linux repositories are themselves signed using GPG keys. On Windows, if Docker is installed via the PowerShell PackageManagement (aka OneGet) provider, the provider is managed by Microsoft, and provider artifacts are signed by Microsoft. The Universal Control Plane (UCP) and Docker Trusted Registry (DTR) installation images are digitally signed by Docker, Inc using Docker Content Trust.",
@@ -419,9 +680,21 @@
         "gid": "V-235789",
         "rid": "SV-235789r627494_rule",
         "stig_id": "DKER-EE-001800",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38971r627493_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104749",
+          "V-95611"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235789",
       "title": "The insecure registry capability in the Docker Engine - Enterprise component of Docker Enterprise must be disabled.",
       "desc": "Docker considers a private registry either secure or insecure. By default, registries are considered secure. Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of Universal Control Plane (UCP) and Docker Trusted Registry (DTR) and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -437,9 +710,21 @@
         "gid": "V-235790",
         "rid": "SV-235790r627497_rule",
         "stig_id": "DKER-EE-001810",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38972r627496_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104751",
+          "V-95613"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235790",
       "title": "On Linux, a non-AUFS storage driver in the Docker Engine - Enterprise component of Docker Enterprise must be used.",
       "desc": "The aufs storage driver is the oldest storage driver. It is based on a Linux kernel patch-set that is unlikely to be merged into the main Linux kernel. aufs driver is also known to cause some serious kernel crashes. aufs just has legacy support from Docker. Most importantly, aufs is not a supported driver in many Linux distributions using latest Linux kernels. Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of Universal Control Plane (UCP) and Docker Trusted Registry (DTR) and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -455,9 +740,21 @@
         "gid": "V-235791",
         "rid": "SV-235791r627500_rule",
         "stig_id": "DKER-EE-001830",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38973r627499_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104753",
+          "V-95615"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235791",
       "title": "The userland proxy capability in the Docker Engine - Enterprise component of Docker Enterprise must be disabled.",
       "desc": "The docker daemon starts a userland proxy service for port forwarding whenever a port is exposed. Where hairpin NAT is available, this service is generally superfluous to requirements and can be disabled. Docker engine provides two mechanisms for forwarding ports from the host to containers, hairpin NAT, and a userland proxy. In most circumstances, the hairpin NAT mode is preferred as it improves performance and makes use of native Linux iptables functionality instead of an additional component. Where hairpin NAT is available, the userland proxy should be disabled on startup to reduce the attack surface of the installation. Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of Universal Control Plane (UCP) and Docker Trusted Registry (DTR) and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -473,9 +770,21 @@
         "gid": "V-235792",
         "rid": "SV-235792r627503_rule",
         "stig_id": "DKER-EE-001840",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38974r627502_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104755",
+          "V-95617"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235792",
       "title": "Experimental features in the Docker Engine - Enterprise component of Docker Enterprise must be disabled.",
       "desc": "Avoid experimental features in production. Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of Universal Control Plane (UCP) and Docker Trusted Registry (DTR) and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -491,9 +800,21 @@
         "gid": "V-235793",
         "rid": "SV-235793r627506_rule",
         "stig_id": "DKER-EE-001870",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38975r627505_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104757",
+          "V-95619"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235793",
       "title": "The Docker Enterprise self-signed certificates in Universal Control Plane (UCP) must be replaced with DoD trusted, signed certificates.",
       "desc": "Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of Docker Trusted Registry (DTR) and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -509,9 +830,21 @@
         "gid": "V-235794",
         "rid": "SV-235794r627509_rule",
         "stig_id": "DKER-EE-001880",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38976r627508_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104759",
+          "V-95621"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235794",
       "title": "The Docker Enterprise self-signed certificates in Docker Trusted Registry (DTR) must be replaced with DoD trusted, signed certificates.",
       "desc": "Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of Universal Control Plane (UCP) and DTR and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -527,9 +860,21 @@
         "gid": "V-235795",
         "rid": "SV-235795r627512_rule",
         "stig_id": "DKER-EE-001890",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38977r627511_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104761",
+          "V-95623"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235795",
       "title": "The option in Universal Control Plane (UCP) allowing users and administrators to schedule containers on all nodes, including UCP managers and Docker Trusted Registry (DTR) nodes must be disabled in Docker Enterprise.",
       "desc": "Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of UCP and DTR and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -545,9 +890,21 @@
         "gid": "V-235796",
         "rid": "SV-235796r627515_rule",
         "stig_id": "DKER-EE-001900",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38978r627514_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104763",
+          "V-95625"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235796",
       "title": "The Create repository on push option in Docker Trusted Registry (DTR) must be disabled in Docker Enterprise.",
       "desc": "Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of Universal Control Plane (UCP) and DTR and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -563,9 +920,21 @@
         "gid": "V-235797",
         "rid": "SV-235797r627518_rule",
         "stig_id": "DKER-EE-001910",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38979r627517_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104765",
+          "V-95627"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235797",
       "title": "Periodic data usage and analytics reporting in Universal Control Plane (UCP) must be disabled in Docker Enterprise.",
       "desc": "Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of UCP and Docker Trusted Registry (DTR) and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -581,9 +950,21 @@
         "gid": "V-235798",
         "rid": "SV-235798r627521_rule",
         "stig_id": "DKER-EE-001920",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38980r627520_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104767",
+          "V-95629"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235798",
       "title": "Periodic data usage and analytics reporting in Docker Trusted Registry (DTR) must be disabled in Docker Enterprise.",
       "desc": "Docker Enterprise includes the following capabilities that are considered non-essential: *NOTE: disabling these capabilities negatively affects the operation of Universal Control Plane (UCP) and DTR and should be disregarded when UCP and DTR are installed. The security capabilities provided by UCP and DTR offset any potential vulnerabilities associated with not disabling these essential capabilities the Engine provides. (Docker Engine - Enterprise: Standalone) - The majority of these items were originally identified as part of the CIS Docker Benchmark, which as of the CIS Docker Benchmark v1.2.0, are still applicable to Docker Engine - Enterprise 18.09 - inter-container communication (icc)* (CIS Docker Benchmark Recommendation 2.1) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - userland proxy for loopback traffic* (CIS Docker Benchmark Recommendation 2.15) - experimental features (CIS Docker Benchmark Recommendation 2.17) - Swarm Mode (CIS Docker Benchmark Recommendation 7.1) (Docker Engine - Enterprise: As part of a UCP cluster) - insecure registry communication (CIS Docker Benchmark Recommendation 2.4) - AUFS storage driver (applicable on Linux only) (CIS Docker Benchmark Recommendation 2.5) - listening on the TCP Daemon socket - experimental features (CIS Docker Benchmark Recommendation 2.17) (UCP) - Managed user database - self-signed certificates - periodic usage reporting and API tracking - allow users and administrators to schedule containers on all nodes, including UCP managers and DTR nodes (DTR) - periodic data usage/analytics reporting - create repository on push - self-signed certificates",
@@ -599,9 +980,21 @@
         "gid": "V-235799",
         "rid": "SV-235799r627524_rule",
         "stig_id": "DKER-EE-001930",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38981r627523_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104769",
+          "V-95631"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235799",
       "title": "An appropriate AppArmor profile must be enabled on Ubuntu systems for Docker Enterprise.",
       "desc": "AppArmor protects the Ubuntu OS and applications from various threats by enforcing security policy which is also known as AppArmor profile. The user can create their own AppArmor profile for containers or use the Docker's default AppArmor profile. This would enforce security policies on the containers as defined in the profile. By default, docker-default AppArmor profile is applied for running containers and this profile can be found at /etc/apparmor.d/docker.",
@@ -617,9 +1010,21 @@
         "gid": "V-235800",
         "rid": "SV-235800r627527_rule",
         "stig_id": "DKER-EE-001940",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38982r627526_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104773",
+          "V-95635"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235800",
       "title": "SELinux security options must be set on Red Hat or CentOS systems for Docker Enterprise.",
       "desc": "SELinux provides a Mandatory Access Control (MAC) system on RHEL and CentOS that greatly augments the default Discretionary Access Control (DAC) model. The user can thus add an extra layer of safety by enabling SELinux on the RHEL or CentOS host. By default, no SELinux security options are applied on containers.",
@@ -635,9 +1040,21 @@
         "gid": "V-235801",
         "rid": "SV-235801r627530_rule",
         "stig_id": "DKER-EE-001950",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38983r627529_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104775",
+          "V-95637"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235801",
       "title": "Linux Kernel capabilities must be restricted within containers as defined in the System Security Plan (SSP) for Docker Enterprise.",
       "desc": "By default, Docker starts containers with a restricted set of Linux Kernel Capabilities. It means that any process may be granted the required capabilities instead of root access. Using Linux Kernel Capabilities, the processes do not have to run as root for almost all the specific areas where root privileges are usually needed. Docker supports the addition and removal of capabilities, allowing the use of a non-default profile. This may make Docker more secure through capability removal, or less secure through the addition of capabilities. It is thus recommended to remove all capabilities except those explicitly required for the user's container process. By default, below capabilities are available for Linux containers: AUDIT_WRITE CHOWN DAC_OVERRIDE FOWNER FSETID KILL MKNOD NET_BIND_SERVICE NET_RAW SETFCAP SETGID SETPCAP SETUID SYS_CHROOT",
@@ -653,9 +1070,21 @@
         "gid": "V-235802",
         "rid": "SV-235802r672378_rule",
         "stig_id": "DKER-EE-001960",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38984r627532_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104777",
+          "V-95639"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235802",
       "title": "Privileged Linux containers must not be used for Docker Enterprise.",
       "desc": "Using the --privileged flag gives all Linux Kernel Capabilities to the container thus overwriting the --cap-add and --cap-drop flags. Ensure that it is not used. The --privileged flag gives all capabilities to the container, and it also lifts all the limitations enforced by the device cgroup controller. In other words, the container can then do almost everything that the host can do. This flag exists to allow special use-cases, like running Docker within Docker.",
@@ -671,9 +1100,21 @@
         "gid": "V-235803",
         "rid": "SV-235803r627536_rule",
         "stig_id": "DKER-EE-001970",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38985r627535_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104779",
+          "V-95641"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235803",
       "title": "SSH must not run within Linux containers for Docker Enterprise.",
       "desc": "SSH server should not be running within the container. The user should instead use Universal Control Plane (UCP) to console in to running containers. Running SSH within the container increases the complexity of security management by making it: - Difficult to manage access policies and security compliance for SSH server - Difficult to manage keys and passwords across various containers - Difficult to manage security upgrades for SSH server - It is possible to have shell access to a container without using SSH, the needlessly increasing the complexity of security management should be avoided By default, SSH server is not running inside the container. Only one process per container is allowed.",
@@ -689,9 +1130,21 @@
         "gid": "V-235804",
         "rid": "SV-235804r627539_rule",
         "stig_id": "DKER-EE-001990",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38986r627538_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104781",
+          "V-95643"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235804",
       "title": "Only required ports must be open on the containers in Docker Enterprise.",
       "desc": "Dockerfile for a container image defines the ports to be opened by default on a container instance. The list of ports may or may not be relevant to the application running within the container. A container can be run just with the ports defined in the Dockerfile for its image or can be arbitrarily passed run time parameters to open a list of ports. Additionally, over time, Dockerfile may undergo various changes and the list of exposed ports may or may not be relevant to the application running within the container. Opening unneeded ports increase the attack surface of the container and the containerized application. As a recommended practice, do not open unneeded ports. By default, all the ports that are listed in the Dockerfile under EXPOSE instruction for an image are opened when a container is run with -P or --publish-all flag.",
@@ -707,9 +1160,21 @@
         "gid": "V-235805",
         "rid": "SV-235805r627542_rule",
         "stig_id": "DKER-EE-002000",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38987r627541_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104783",
+          "V-95645"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235805",
       "title": "Docker Enterprise hosts network namespace must not be shared.",
       "desc": "The networking mode on a container when set to --net=host, skips placing the container inside separate network stack. In essence, this choice tells Docker to not containerize the container's networking. This would network-wise mean that the container lives \"outside\" in the main Docker host and has full access to its network interfaces. This is potentially dangerous. It allows the container process to open low-numbered ports like any other root process. It also allows the container to access network services like D-bus on the Docker host. Thus, a container process can potentially do unexpected things such as shutting down the Docker host. Do not use this option. By default, container connects to Docker bridge.",
@@ -725,9 +1190,21 @@
         "gid": "V-235806",
         "rid": "SV-235806r627545_rule",
         "stig_id": "DKER-EE-002010",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38988r627544_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104785",
+          "V-95647"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235806",
       "title": "Memory usage for all containers must be limited in Docker Enterprise.",
       "desc": "By default, all containers on a Docker host share the resources equally. By using the resource management capabilities of Docker host, such as memory limit, the amount of memory that a container may consume can be controlled. By default, container can use all of the memory on the host. The user can use memory limit mechanism to prevent a denial of service arising from one container consuming all of the host’s resources such that other containers on the same host cannot perform their intended functions. Having no limit on memory can lead to issues where one container can easily make the whole system unstable, and as a result, unusable. By default, all containers on a Docker host share the resources equally. No memory limits are enforced.",
@@ -743,9 +1220,21 @@
         "gid": "V-235807",
         "rid": "SV-235807r627548_rule",
         "stig_id": "DKER-EE-002020",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38989r627547_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104787",
+          "V-95649"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235807",
       "title": "Docker Enterprise CPU priority must be set appropriately on all containers.",
       "desc": "By default, all containers on a Docker host share the resources equally. By using the resource management capabilities of Docker host, such as CPU shares, the user control the host CPU resources that a container may consume. By default, CPU time is divided between containers equally. If it is desired, to control the CPU time amongst the container instances, use CPU sharing feature. CPU sharing allows to prioritize one container over the other and forbids the lower priority container to claim CPU resources more often. This ensures that the high priority containers are served better. If CPU shares are not properly set, the container process may have to starve if the resources on the host are not available. If the CPU resources on the host are free, CPU shares do not place any restrictions on the CPU that the container may use. By default, all containers on a Docker host share the resources equally. No CPU shares are enforced.",
@@ -761,9 +1250,21 @@
         "gid": "V-235808",
         "rid": "SV-235808r627551_rule",
         "stig_id": "DKER-EE-002030",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38990r627550_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104789",
+          "V-95651"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235808",
       "title": "All Docker Enterprise containers root filesystem must be mounted as read only.",
       "desc": "The container's root filesystem should be treated as a 'golden image' by using Docker run's --read-only option. This prevents any writes to the container's root filesystem at container runtime and enforces the principle of immutable infrastructure. Enabling this option forces containers at runtime to explicitly define their data writing strategy to persist or not persist their data. This also reduces security attack vectors since the container instance's filesystem cannot be tampered with or written to unless it has explicit read-write permissions on its filesystem folder and directories. Enabling --read-only at container runtime may break some container OS packages if a data writing strategy is not defined. Define what the container's data should and should not persist at runtime to determine which recommendation procedure to utilize. Example: - Enable use --tmpfs for temporary file writes to /tmp - Use Docker shared data volumes for persistent data writes By default, a container will have its root filesystem writable allowing all container processes to write files owned by the container's runtime user.",
@@ -779,9 +1280,21 @@
         "gid": "V-235809",
         "rid": "SV-235809r627554_rule",
         "stig_id": "DKER-EE-002040",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38991r627553_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104791",
+          "V-95653"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235809",
       "title": "Docker Enterprise host devices must not be directly exposed to containers.",
       "desc": "Host devices can be directly exposed to containers at runtime. Do not directly expose host devices to containers especially for containers that are not trusted. The --device option exposes the host devices to the containers and consequently, the containers can directly access such host devices. Do not require the container to run in privileged mode to access and manipulate the host devices. By default, the container will be able to read, write and mknod these devices. Additionally, it is possible for containers to remove block devices from the host. Hence, do not expose host devices to containers directly. If at all, expose the host device to a container, use the sharing permissions appropriately: r - read only w - writable m - mknod allowed The user would not be able to use the host devices directly within the containers. By default, no host devices are exposed to containers. If the user does not provide sharing permissions and choose to expose a host device to a container, the host device would be exposed with read, write, and mknod permissions.",
@@ -797,9 +1310,21 @@
         "gid": "V-235810",
         "rid": "SV-235810r627557_rule",
         "stig_id": "DKER-EE-002050",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38992r627556_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104793",
+          "V-95655"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235810",
       "title": "Mount propagation mode must not set to shared in Docker Enterprise.",
       "desc": "Mount propagation mode allows mounting volumes in shared, slave or private mode on a container. Do not use shared mount propagation mode until needed. A shared mount is replicated at all mounts and the changes made at any mount point are propagated to all mounts. Mounting a volume in shared mode does not restrict any other container to mount and make changes to that volume. This unintended volume changes could potentially impact data hosted on the mounted volume. Do not set mount propagation mode to shared until needed. By default, the container mounts are private.",
@@ -815,9 +1340,21 @@
         "gid": "V-235811",
         "rid": "SV-235811r627560_rule",
         "stig_id": "DKER-EE-002060",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38993r627559_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104795",
+          "V-95657"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235811",
       "title": "The Docker Enterprise hosts UTS namespace must not be shared.",
       "desc": "UTS namespaces provide isolation of two system identifiers: the hostname and the NIS domain name. It is used for setting the hostname and the domain that is visible to running processes in that namespace. Processes running within containers do not typically require to know hostname and domain name. Hence, the namespace should not be shared with the host. Sharing the UTS namespace with the host provides full permission to the container to change the hostname of the host. This must not be allowed. By default, all containers have the UTS namespace enabled and host UTS namespace is not shared with any container.",
@@ -833,9 +1370,21 @@
         "gid": "V-235812",
         "rid": "SV-235812r627563_rule",
         "stig_id": "DKER-EE-002070",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38994r627562_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104797",
+          "V-95659"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235812",
       "title": "The Docker Enterprise default seccomp profile must not be disabled.",
       "desc": "Seccomp filtering provides a means for a process to specify a filter for incoming system calls. The default Docker seccomp profile works on whitelist basis and allows 311 system calls blocking all others. It should not be disabled unless it hinders the container application usage. A large number of system calls are exposed to every userland process with many of them going unused for the entire lifetime of the process. Most of the applications do not need all the system calls and thus benefit by having a reduced set of available system calls. The reduced set of system calls reduces the total kernel surface exposed to the application and thus improvises application security. The default seccomp profile blocks syscalls, regardless of --cap-add passed to the container. Create a custom seccomp profile in such cases. Disable the default seccomp profile by passing --security-opt=seccomp:unconfined on docker run. When running a container, it uses the default profile unless it is overridden with the --security-opt option.",
@@ -851,9 +1400,21 @@
         "gid": "V-235813",
         "rid": "SV-235813r627566_rule",
         "stig_id": "DKER-EE-002080",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38995r627565_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104799",
+          "V-95661"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235813",
       "title": "Docker Enterprise exec commands must not be used with privileged option.",
       "desc": "Do not use docker exec with --privileged option. Using --privileged option in docker exec gives extended Linux capabilities to the command. Do not run docker exec with the --privileged option, especially when running containers with dropped capabilities or with enhanced restrictions. By default, docker exec command runs without --privileged option.",
@@ -869,9 +1430,21 @@
         "gid": "V-235814",
         "rid": "SV-235814r627569_rule",
         "stig_id": "DKER-EE-002090",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38996r627568_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104801",
+          "V-95663"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235814",
       "title": "Docker Enterprise exec commands must not be used with the user option.",
       "desc": "Do not docker exec with --user option. Using --user option in docker exec executes the command within the container as that user. Do not run docker exec with the --user option , especially when running containers with dropped capabilities or with enhanced restrictions. For example, suppose the container is running as tomcat user (or any other non-root user), it would be possible to run a command through docker exec as rootwith --user=root option. By default, docker exec command runs without --user option.",
@@ -887,9 +1460,21 @@
         "gid": "V-235815",
         "rid": "SV-235815r627572_rule",
         "stig_id": "DKER-EE-002100",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38997r627571_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104803",
+          "V-95665"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235815",
       "title": "cgroup usage must be confirmed in Docker Enterprise.",
       "desc": "It is possible to attach to a particular cgroup on container run. Confirming cgroup usage would ensure that containers are running under defined cgroups. System administrators typically define cgroups under which containers are supposed to run. Even if cgroups are not explicitly defined by the system administrators, containers run under docker cgroup by default. At run-time, it is possible to attach to a different cgroup other than the one that was expected to be used. This usage should be monitored and confirmed. By attaching to a different cgroup than the one that is expected, excess permissions and resources might be granted to the container and thus, can prove to be unsafe. By default, containers run under docker cgroup.",
@@ -905,9 +1490,21 @@
         "gid": "V-235816",
         "rid": "SV-235816r672380_rule",
         "stig_id": "DKER-EE-002110",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38998r627574_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104805",
+          "V-95667"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235816",
       "title": "All Docker Enterprise containers must be restricted from acquiring additional privileges.",
       "desc": "Restrict the container from acquiring additional privileges via suid or sgid bits. A process can set the no_new_priv bit in the kernel. It persists across fork, clone, and execve. The no_new_priv bit ensures that the process or its children processes do not gain any additional privileges via suid or sgid bits. This way a lot of dangerous operations become a lot less dangerous because there is no possibility of subverting privileged binaries. no_new_priv prevents LSMs like SELinux from transitioning to process labels that have access not allowed to the current process. By default, new privileges are not restricted.",
@@ -923,9 +1520,21 @@
         "gid": "V-235817",
         "rid": "SV-235817r627578_rule",
         "stig_id": "DKER-EE-002120",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-38999r627577_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104807",
+          "V-95669"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235817",
       "title": "The Docker Enterprise hosts user namespace must not be shared.",
       "desc": "Do not share the host's user namespaces with the containers. User namespaces ensure that a root process inside the container will be mapped to a non-root process outside the container. Sharing the user namespaces of the host with the container thus does not isolate users on the host with users on the containers. By default, the host user namespace is shared with the containers until user namespace support is enabled.",
@@ -941,9 +1550,21 @@
         "gid": "V-235818",
         "rid": "SV-235818r627581_rule",
         "stig_id": "DKER-EE-002130",
+        "gtitle": "SRG-APP-000141",
         "fix_id": "F-39000r627580_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104809",
+          "V-95671"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235818",
       "title": "The Docker Enterprise socket must not be mounted inside any containers.",
       "desc": "The docker socket docker.sock (Linux) and \\\\.\\pipe\\docker_engine (Windows) should not be mounted inside a container, with the exception case being during the installation of Universal Control Plane (UCP) component of Docker Enterprise as it is required for install. If the docker socket is mounted inside a container it would allow processes running within the container to execute docker commands which effectively allows for full control of the host. By default, docker.sock (linux) and \\\\.\\pipe\\docker_engine (windows) is not mounted inside containers.",
@@ -959,9 +1580,21 @@
         "gid": "V-235819",
         "rid": "SV-235819r627584_rule",
         "stig_id": "DKER-EE-002150",
+        "gtitle": "SRG-APP-000142",
         "fix_id": "F-39001r627583_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104811",
+          "V-95673"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235819",
       "title": "Docker Enterprise privileged ports must not be mapped within containers.",
       "desc": "The TCP/IP port numbers below 1024 are considered privileged ports. Normal users and processes are not allowed to use them for various security reasons. Docker allows a container port to be mapped to a privileged port. By default, if the user does not specifically declare the container port to host port mapping, Docker automatically and correctly maps the container port to one available in 49153-65535 block on the host. But, Docker allows a container port to be mapped to a privileged port on the host if the user explicitly declared it. This is so because containers are executed with NET_BIND_SERVICE Linux kernel capability that does not restrict the privileged port mapping. The privileged ports receive and transmit various sensitive and privileged data. Allowing containers to use them can bring serious implications.",
@@ -977,9 +1610,21 @@
         "gid": "V-235820",
         "rid": "SV-235820r627587_rule",
         "stig_id": "DKER-EE-002160",
+        "gtitle": "SRG-APP-000142",
         "fix_id": "F-39002r627586_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104813",
+          "V-95675"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235820",
       "title": "Docker Enterprise incoming container traffic must be bound to a specific host interface.",
       "desc": "By default, Docker containers can make connections to the outside world, but the outside world cannot connect to containers. Each outgoing connection will appear to originate from one of the host machine's own IP addresses. Only allow container services to be contacted through a specific external interface on the host machine. If there are multiple network interfaces on the host machine, the container can accept connections on the exposed ports on any network interface. This might not be desired and may not be secured. Many times, a particular interface is exposed externally and services such as intrusion detection, intrusion prevention, firewall, load balancing, etc. are run on those interfaces to screen incoming public traffic. Hence, do not accept incoming connections on any interface. Only allow incoming connections from a particular external interface. By default, Docker exposes the container ports on 0.0.0.0, the wildcard IP address that will match any possible incoming network interface on the host machine.",
@@ -995,7 +1640,9 @@
         "gid": "V-235821",
         "rid": "SV-235821r627590_rule",
         "stig_id": "DKER-EE-002180",
+        "gtitle": "SRG-APP-000149",
         "fix_id": "F-39003r627589_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000149",
           "SRG-APP-000150",
@@ -1009,8 +1656,28 @@
           "SRG-APP-000404",
           "SRG-APP-000405"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104815",
+          "V-95677"
+        ],
+        "cci": [
+          "CCI-000765",
+          "CCI-000766",
+          "CCI-000767",
+          "CCI-000768",
+          "CCI-000770",
+          "CCI-001953",
+          "CCI-001954",
+          "CCI-002011",
+          "CCI-002014",
+          "CCI-002009",
+          "CCI-002010"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235821",
       "title": "SAML integration must be enabled in Docker Enterprise.",
       "desc": "Both the Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise leverage the same authentication and authorization backplane known as eNZi. The eNZi backplane includes its own managed user database, and also allows for LDAP and SAML integration in UCP and DTR. To meet the requirements of this control, configure LDAP and SAML integration. ",
@@ -1026,9 +1693,21 @@
         "gid": "V-235822",
         "rid": "SV-235822r627593_rule",
         "stig_id": "DKER-EE-002380",
+        "gtitle": "SRG-APP-000175",
         "fix_id": "F-39004r627592_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104817",
+          "V-95679"
+        ],
+        "cci": [
+          "CCI-000186"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235822",
       "title": "The certificate chain used by Universal Control Plane (UCP) client bundles must match what is defined in the System Security Plan (SSP) in Docker Enterprise.",
       "desc": "Both the UCP and Docker Trusted Registry (DTR) components of Docker Enterprise leverage the same authentication and authorization backplane known as eNZi. UCP has the ability to use external certificates or internal self-signed. In the case of self-signed UCP includes a certificate authority which is used to sign client bundles and to authenticate users via the eNZi backplane. With an external certificate authority (CA) users will use their existing x509 certs. The external CA will be added in an administrative function and will dictate the root CA for the user's chain.",
@@ -1044,9 +1723,21 @@
         "gid": "V-235823",
         "rid": "SV-235823r627596_rule",
         "stig_id": "DKER-EE-002400",
+        "gtitle": "SRG-APP-000176",
         "fix_id": "F-39005r627595_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105141",
+          "V-96003"
+        ],
+        "cci": [
+          "CCI-000186"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235823",
       "title": "Docker Enterprise Swarm manager must be run in auto-lock mode.",
       "desc": "Run Docker swarm manager in auto-lock mode. When Docker restarts, both the TLS key used to encrypt communication among swarm nodes, and the key used to encrypt and decrypt Raft logs on disk, are loaded into each manager node's memory. Protect the mutual TLS encryption key and the key used to encrypt and decrypt Raft logs at rest. This protection could be enabled by initializing swarm with --autolock flag. With --autolock enabled, when Docker restarts, unlock the swarm first, using a key encryption key generated by Docker when the swarm was initialized.",
@@ -1062,9 +1753,21 @@
         "gid": "V-235824",
         "rid": "SV-235824r627599_rule",
         "stig_id": "DKER-EE-002410",
+        "gtitle": "SRG-APP-000176",
         "fix_id": "F-39006r627598_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104819",
+          "V-95681"
+        ],
+        "cci": [
+          "CCI-000186"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235824",
       "title": "Docker Enterprise secret management commands must be used for managing secrets in a Swarm cluster.",
       "desc": "Use Docker's in-built secret management commands for managing sensitive data that which can be stored in key/value pairs. Examples include API tokens, database connection strings and credentials, SSL certificates, and the like.",
@@ -1080,7 +1783,9 @@
         "gid": "V-235825",
         "rid": "SV-235825r627602_rule",
         "stig_id": "DKER-EE-002490",
+        "gtitle": "SRG-APP-000190",
         "fix_id": "F-39007r627601_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000190",
           "SRG-APP-000002",
@@ -1089,8 +1794,23 @@
           "SRG-APP-000389",
           "SRG-APP-000400"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104821",
+          "V-95683"
+        ],
+        "cci": [
+          "CCI-000057",
+          "CCI-000060",
+          "CCI-002007",
+          "CCI-001133",
+          "CCI-002038",
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235825",
       "title": "The Lifetime Minutes and Renewal Threshold Minutes Login Session Controls must be set to 10 and 0 respectively in Docker Enterprise.",
       "desc": "The Universal Control Plane (UCP) component of Docker Enterprise includes a built-in access authorization mechanism called eNZi which can be integrated with an LDAP server and subsequently terminate all network connections associated with a communications session at the end of the session, or as follows: for in-band management sessions (privileged sessions), the session must be terminated after 10 minutes of inactivity; and for user sessions (non-privileged session), the session must be terminated after 15 minutes of inactivity, except to fulfill documented and validated mission requirements. The lifetime minutes login session control is configured with a default of 60 minutes (1 hour) and the renewal threshold minutes is configured with a default of 20 minutes. For reference, the lifetime login session control in UCP specifies the initial lifetime (in minutes) of a session from the moment it is generated. The renewal threshold setting indicates a period of time (in minutes) before the expiration of a session where, if used, a session will be extended by the current configured lifetime from then. This value cannot be greater than the configured lifetime. A value equal to the lifetime means that sessions will be extended with every use. A value of zero indicates that sessions should never be extended but this may result in unexpectedly being logged out if the session expires while performing a series of actions in the UI. This configuration only applies to both the UCP and Docker Trusted Registry (DTR) management consoles and not when connecting via the command line. When connecting via the command line, this control is not applicable. It's important to note that the notion of a session varies depending on how one is connecting to a UCP cluster or DTR. In all of these cases, there is no specific session termination capability. Either the session times out, the user's client bundle has expired, or a user explicitly logs out. This has been outlined as follows: (UCP and DTR UIs) When connecting to a UCP cluster or DTR via the web console, a user's session is active until any of the following conditions is met: - the session expires based on the values configured for \"Lifetime Minutes\" and \"Renewal Threshold Minutes\" in the UCP Admin Settings - the user explicitly clicks the \"Sign Out\" button (UCP and DTR CLIs) When connecting to a UCP cluster or DTR via the command line using a client bundle, a user's session is active until any of the following conditions is met: - the certificate contained within a user's client bundle hasn't expired - the public key in the certificate contained with a user's client bundle is no long associated with that user (i.e. a client bundle is revoked from within the UCP user management options) - the user's account is no longer active (either explicitly disabled from within the UCP user management options or at the LDAP server) - the user's password is changed ",
@@ -1106,9 +1826,21 @@
         "gid": "V-235826",
         "rid": "SV-235826r627605_rule",
         "stig_id": "DKER-EE-002660",
+        "gtitle": "SRG-APP-000231",
         "fix_id": "F-39008r627604_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104823",
+          "V-95685"
+        ],
+        "cci": [
+          "CCI-001199"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235826",
       "title": "Docker Secrets must be used to store configuration files and small amounts of user-generated data (up to 500 kb in size) in Docker Enterprise.",
       "desc": "By leveraging Docker Secrets or Kubernetes secrets to store configuration files and small amounts of user-generated data (up to 500 kb in size), the data is encrypted at rest by the Engine's FIPS-validated cryptography.",
@@ -1124,9 +1856,21 @@
         "gid": "V-235827",
         "rid": "SV-235827r627608_rule",
         "stig_id": "DKER-EE-002770",
+        "gtitle": "SRG-APP-000247",
         "fix_id": "F-39009r627607_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104825",
+          "V-95687"
+        ],
+        "cci": [
+          "CCI-001095"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235827",
       "title": "Docker Enterprise container health must be checked at runtime.",
       "desc": "If the container image does not have an HEALTHCHECK instruction defined, use --health-cmd parameter at container runtime for checking container health. One of the important security triads is availability. If the container image being used does not have a pre-defined HEALTHCHECK instruction, use the --health-cmd parameter to check container health at runtime. Based on the reported health status, take necessary actions. By default, health checks are not done at container runtime.",
@@ -1142,9 +1886,21 @@
         "gid": "V-235828",
         "rid": "SV-235828r627611_rule",
         "stig_id": "DKER-EE-002780",
+        "gtitle": "SRG-APP-000247",
         "fix_id": "F-39010r627610_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104827",
+          "V-95689"
+        ],
+        "cci": [
+          "CCI-001095"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235828",
       "title": "PIDs cgroup limits must be used in Docker Enterprise.",
       "desc": "Use --pids-limit flag at container runtime. Attackers could launch a fork bomb with a single command inside the container. This fork bomb can crash the entire system and requires a restart of the host to make the system functional again. PIDs cgroup --pids-limit will prevent this kind of attacks by restricting the number of forks that can happen inside a container at a given time. The Default value for --pids-limit is 0 which means there is no restriction on the number of forks. Also, note that PIDs cgroup limit works only for the kernel versions 4.3+.",
@@ -1160,9 +1916,21 @@
         "gid": "V-235829",
         "rid": "SV-235829r627614_rule",
         "stig_id": "DKER-EE-002970",
+        "gtitle": "SRG-APP-000295",
         "fix_id": "F-39011r627613_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104829",
+          "V-95691"
+        ],
+        "cci": [
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235829",
       "title": "The Docker Enterprise per user limit login session control must be set per the requirements in the System Security Plan (SSP).",
       "desc": "The Universal Control Plane (UCP) component of Docker Enterprise includes a built-in access authorization mechanism called eNZi which can be integrated with an LDAP server and allows for automatic user session termination after organization-defined conditions or trigger events requiring session disconnect. The lifetime minutes login session control is configured with a default of 60 minutes (1 hour) and the renewal threshold minutes is configured with a default of 20 minutes. For reference, the lifetime login session control in UCP specifies the initial lifetime (in minutes) of a session from the moment it is generated. The renewal threshold setting indicates a period of time (in minutes) before the expiration of a session where, if used, a session will be extended by the current configured lifetime from then. This value cannot be greater than the configured lifetime. A value equal to the lifetime means that sessions will be extended with every use. A value of zero indicates that sessions should never be extended but this may result in unexpectedly being logged out if the session expires while performing a series of actions in the UI. This configuration only applies to both the UCP and Docker Trusted Registry (DTR) management consoles and not when connecting via the command line. When connecting via the command line, this control is not applicable. It's important to note that the notion of a session varies depending on how one is connecting to a UCP cluster or DTR. In all of these cases, there is no specific session termination capability. Either the session times out, the user's client bundle has expired, or a user explicitly logs out. This has been outlined as follows: (UCP and DTR UIs) When connecting to a UCP cluster or DTR via the web console, a user's session is active until any of the following conditions is met: - the session expires based on the values configured for \"Lifetime Minutes\" and \"Renewal Threshold Minutes\" in the UCP Admin Settings - the user explicitly clicks the \"Sign Out\" button (UCP and DTR CLIs) When connecting to a UCP cluster or DTR via the command line using a client bundle, a user's session is active until any of the following conditions is met: - the certificate contained within a user's client bundle hasn't expired - the public key in the certificate contained with a user's client bundle is no long associated with that user (i.e. a client bundle is revoked from within the UCP user management options) - the user's account is no longer active (either explicitly disabled from within the UCP user management options or at the LDAP server) - the user's password is changed *NOTE: Docker Engine - Enterprise, by itself, does not meet the requirements of this control. If the intent is to use Docker in a model consistent with the access control policies as required by this control, obtain and properly configure the UCP component of Docker Enterprise.",
@@ -1178,9 +1946,21 @@
         "gid": "V-235830",
         "rid": "SV-235830r627617_rule",
         "stig_id": "DKER-EE-003200",
+        "gtitle": "SRG-APP-000342",
         "fix_id": "F-39012r627616_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104831",
+          "V-95693"
+        ],
+        "cci": [
+          "CCI-002233"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235830",
       "title": "Docker Enterprise images must be built with the USER instruction to prevent containers from running as root.",
       "desc": "Both the Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise leverage the same authentication and authorization backplane known as eNZi. The eNZi backplane includes its own managed user database, and also allows for LDAP integration in UCP and DTR. To meet the requirements of this control, configure LDAP integration. Apply an applicable set of role-based access control (RBAC) policies using the built-in capabilities provided by UCP in order to prevent organization-defined software from executing at higher privilege levels than users executing the software. By default, Docker images that are built without the USER instruction will be run as containers as root. Therefore, it is imperative that container images include the USER instruction and that the referenced UID/GID has been defined in the base image or previous instruction set.",
@@ -1196,7 +1976,9 @@
         "gid": "V-235831",
         "rid": "SV-235831r627620_rule",
         "stig_id": "DKER-EE-003230",
+        "gtitle": "SRG-APP-000343",
         "fix_id": "F-39013r627619_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000343",
           "SRG-APP-000381",
@@ -1220,8 +2002,20 @@
           "SRG-APP-000510",
           "SRG-APP-000500"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104833",
+          "V-95695"
+        ],
+        "cci": [
+          "CCI-001814",
+          "CCI-000172",
+          "CCI-002234"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235831",
       "title": "An appropriate Docker Engine - Enterprise log driver plugin must be configured to collect audit events from Universal Control Plane (UCP) and Docker Trusted Registry (DTR).",
       "desc": "The UCP and DTR components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. All audit logs generated by UCP and DTR can be forwarded to a remote log aggregation system by configuring an appropriate log driver plugin on all Docker Engine - Enterprise nodes in a cluster. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise. ",
@@ -1237,9 +2031,21 @@
         "gid": "V-235832",
         "rid": "SV-235832r695335_rule",
         "stig_id": "DKER-EE-003310",
+        "gtitle": "SRG-APP-000357",
         "fix_id": "F-39014r627622_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104835",
+          "V-95697"
+        ],
+        "cci": [
+          "CCI-001849"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235832",
       "title": "The Docker Enterprise max-size and max-file json-file drivers logging options in the daemon.json configuration file must be configured to allocate audit record storage capacity for Universal Control Plane (UCP) and Docker Trusted Registry (DTR) per the requirements set forth by the System Security Plan (SSP).",
       "desc": "By default, the UCP and DTR components of Docker Enterprise leverage the \"json-file\" Engine logging driver. This driver has configurable \"max-size\" and \"max-file\" options which are applicable in the context of this control. The \"max-size\" option defines the maximum size of the log before it is rolled. By default it is set to \"unlimited\" and is never rolled. The \"max-file\" option defines the maximum number of log files that can be present whereby if rolling the logs creates excess files, the oldest file is removed. This setting is only effective when \"max-size\" is also set. By default, \"max-file\" is set to \"1\". The Docker Engine - Enterprise audit logs are stored in default locations according to the chart on this site https://docs.docker.com/config/daemon/#read-the-logs. For the Engine's daemon logs, allocate sufficient storage for the default log locations on the underlying host operating system per the requirements set forth by the SSP.",
@@ -1255,9 +2061,21 @@
         "gid": "V-235833",
         "rid": "SV-235833r627626_rule",
         "stig_id": "DKER-EE-003320",
+        "gtitle": "SRG-APP-000358",
         "fix_id": "F-39015r627625_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104837",
+          "V-95699"
+        ],
+        "cci": [
+          "CCI-001851"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235833",
       "title": "All Docker Engine - Enterprise nodes must be configured with a log driver plugin that sends logs to a remote log aggregation system (SIEM).",
       "desc": "The Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. All audit logs generated by UCP and DTR can be forwarded to a remote log aggregation system by configuring an appropriate log driver plugin on all Docker Engine - Enterprise nodes in a cluster. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise.",
@@ -1273,9 +2091,21 @@
         "gid": "V-235834",
         "rid": "SV-235834r627629_rule",
         "stig_id": "DKER-EE-003330",
+        "gtitle": "SRG-APP-000359",
         "fix_id": "F-39016r627628_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104839",
+          "V-95701"
+        ],
+        "cci": [
+          "CCI-001855"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235834",
       "title": "Log aggregation/SIEM systems must be configured to alarm when audit storage space for Docker Engine - Enterprise nodes exceed 75% usage.",
       "desc": "The Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. All audit logs generated by UCP and DTR can be forwarded to a remote log aggregation system by configuring an appropriate log driver plugin on all Docker Engine - Enterprise nodes in a cluster. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise.",
@@ -1291,9 +2121,21 @@
         "gid": "V-235835",
         "rid": "SV-235835r627632_rule",
         "stig_id": "DKER-EE-003340",
+        "gtitle": "SRG-APP-000360",
         "fix_id": "F-39017r627631_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104841",
+          "V-95703"
+        ],
+        "cci": [
+          "CCI-001858"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235835",
       "title": "Log aggregation/SIEM systems must be configured to notify SA and ISSO on Docker Engine - Enterprise audit failure events.",
       "desc": "The Universal Control Plane (UCP) and Docker Trusted Registry (DTR) components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. All audit logs generated by UCP and DTR can be forwarded to a remote log aggregation system by configuring an appropriate log driver plugin on all Docker Engine - Enterprise nodes in a cluster. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise.",
@@ -1309,9 +2151,21 @@
         "gid": "V-235836",
         "rid": "SV-235836r627635_rule",
         "stig_id": "DKER-EE-003460",
+        "gtitle": "SRG-APP-000377",
         "fix_id": "F-39018r627634_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104843",
+          "V-95705"
+        ],
+        "cci": [
+          "CCI-001811"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235836",
       "title": "The Docker Enterprise log aggregation/SIEM systems must be configured to send an alert the ISSO/ISSM when unauthorized software is installed.",
       "desc": "A Docker image is analogous to software in the context of this control. All components of Docker Enterprise can be configured to send logs to a remote syslog server in order to meet the requirements of this control. Universal Control Plane (UCP) remote syslog configuration is done via the UCP configuration settings. Docker Trusted Registry (DTR) remote syslog configuration is done via an appropriate Docker Engine - Enterprise logging driver. The UCP and DTR components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system.",
@@ -1327,9 +2181,21 @@
         "gid": "V-235837",
         "rid": "SV-235837r627638_rule",
         "stig_id": "DKER-EE-003560",
+        "gtitle": "SRG-APP-000383",
         "fix_id": "F-39019r627637_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104845",
+          "V-95707"
+        ],
+        "cci": [
+          "CCI-001762"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235837",
       "title": "Docker Enterprise network ports on all running containers must be limited to what is needed.",
       "desc": "By itself, Docker Engine - Enterprise is configured by default to listen for API requests via a UNIX domain socket (or IPC socket) created at /var/run/docker.sock on supported Linux distributions and via a named pipe at npipe:////./pipe/docker_engine on Windows Server 2016 and newer. In this configuration, this control is not applicable. Docker Engine - Enterprise can also be configured to listen for API requests via additional socket types, including both TCP and FD (only on supported systemd-based Linux distributions). If configured to listen for API requests via the TCP socket type over TCP port 2376 and with the daemon flags and SSL certificates, then, at a minimum, TLS 1.2 is used for encryption; therefore this control is applicable and is inherently met in this configuration. If configured to listen for API requests via the TCP socket type, but without TLS verification and certifications, then the instance remains vulnerable and is not properly configured to meet the requirements of this control. If configured to listen for API requests via the fd socket type, then this control is not applicable. More information can be found at https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-socket-option. The TCP socket binding should be disabled when running Engine as part of a UCP cluster. A container can be run just with the ports defined in the Dockerfile for its image or can be arbitrarily passed run time parameters to open a list of ports. Additionally, over time, Dockerfiles may undergo various changes and the list of exposed ports may or may not be relevant to the application running within the container. Opening unneeded ports increase the attack surface of the container and the containerized application. Per the requirements set forth by the System Security Plan (SSP), ensure only needed ports are open on all running containers.",
@@ -1345,9 +2211,21 @@
         "gid": "V-235838",
         "rid": "SV-235838r627641_rule",
         "stig_id": "DKER-EE-003590",
+        "gtitle": "SRG-APP-000386",
         "fix_id": "F-39020r627640_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104847",
+          "V-95709"
+        ],
+        "cci": [
+          "CCI-001774"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235838",
       "title": "Content Trust enforcement must be enabled in Universal Control Plane (UCP) in Docker Enterprise.",
       "desc": "The UCP and Docker Trusted Registry (DTR) components of Docker Enterprise can be used in concert to perform an integrity check of organization-defined software at startup. In the context of Docker Enterprise, software would be analogous to Docker images that have been pulled from trusted or untrusted sources. Docker Hub is the most common upstream endpoint for retrieving Docker images. However, only \"Docker Certified\" images on Docker Hub are considered trusted and come with SLAs and trusted signatures from their respective vendors. All other images from Docker Hub or other external registries must be carefully inspected and triaged prior to use. Docker Content Trust (DCT) provides for content integrity checking mechanisms on Docker images. DCT can be combined with LDAP, Docker Trusted Registry (DTR) and Universal Control Plane (UCP) to enforce image signatures from users/accounts in LDAP. Therefore, to meet the requirements of this control, it is imperative that UCP has LDAP integration enabled and that content trust enforcement is enabled and properly configured. An operational requirement of this control is that of the required use of an established continuous integration and deployment workflow that effectively dictates exactly what software is allowed to run on UCP.",
@@ -1363,7 +2241,9 @@
         "gid": "V-235839",
         "rid": "SV-235839r627644_rule",
         "stig_id": "DKER-EE-003610",
+        "gtitle": "SRG-APP-000386",
         "fix_id": "F-39021r627643_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000386",
           "SRG-APP-000480",
@@ -1371,8 +2251,22 @@
           "SRG-APP-000485",
           "SRG-APP-000475"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104849",
+          "V-95711"
+        ],
+        "cci": [
+          "CCI-001774",
+          "CCI-002710",
+          "CCI-002715",
+          "CCI-002723",
+          "CCI-002724"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235839",
       "title": "Only trusted, signed images must be on Universal Control Plane (UCP) in Docker Enterprise.",
       "desc": "The UCP and Docker Trusted Registry (DTR) components of Docker Enterprise can be used in concert to perform an integrity check of organization-defined software at startup. In the context of Docker Enterprise, software would be analogous to Docker images that have been pulled from trusted or untrusted sources. Docker Hub is the most common upstream endpoint for retrieving Docker images. However, only \"Docker Certified\" images on Docker Hub are considered trusted and come with SLAs and trusted signatures from their respective vendors. All other images from Docker Hub or other external registries must be carefully inspected and triaged prior to use. Docker Content Trust (DCT) provides for content integrity checking mechanisms on Docker images. DCT can be combined with LDAP, DTR and UCP to enforce image signatures from users/accounts in LDAP. Therefore, to meet the requirements of this control, it is imperative that UCP has LDAP integration enabled and that content trust enforcement is enabled and properly configured. An operational requirement of this control is that of the required use of an established continuous integration and deployment workflow that effectively dictates exactly what software is allowed to run on UCP. ",
@@ -1388,9 +2282,21 @@
         "gid": "V-235840",
         "rid": "SV-235840r627647_rule",
         "stig_id": "DKER-EE-003840",
+        "gtitle": "SRG-APP-000414",
         "fix_id": "F-39022r627646_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104851",
+          "V-95713"
+        ],
+        "cci": [
+          "CCI-001067"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235840",
       "title": "Vulnerability scanning must be enabled for all repositories in the Docker Trusted Registry (DTR) component of Docker Enterprise.",
       "desc": "DTR can scan Docker images for vulnerabilities and this capability should be enabled to meet the requirements of this control. When enabled, for every Docker image that is pushed to DTR, a scan of each of the image layers is conducted. An analysis of all packages and compiled binaries is done for each image layer and if a package or binary is associated with a known vulnerability as identified by the MITRE CVE or NIST NVD databases, then it is flagged in DTR.",
@@ -1406,9 +2312,21 @@
         "gid": "V-235841",
         "rid": "SV-235841r627650_rule",
         "stig_id": "DKER-EE-003920",
+        "gtitle": "SRG-APP-000427",
         "fix_id": "F-39023r627649_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104853",
+          "V-95715"
+        ],
+        "cci": [
+          "CCI-002470"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235841",
       "title": "Universal Control Plane (UCP) must be integrated with a trusted certificate authority (CA) in Docker Enterprise.",
       "desc": "Both the UCP and Docker Trusted Registry (DTR) components of Docker Enterprise leverage the same authentication and authorization backplane known as eNZi. The eNZi backplane includes its own managed user database, and also allows for LDAP integration in UCP and DTR. To meet the requirements of this control, configure LDAP integration. UCP also includes two certificate authorities for establishing root of trust. One CA is used to sign client bundles and the other is used for TLS communication between UCP components and nodes. Both of these CAs should be integrated with an external, trusted CA. DTR should be integrated with this same external, trusted CA as well.",
@@ -1424,9 +2342,21 @@
         "gid": "V-235842",
         "rid": "SV-235842r627653_rule",
         "stig_id": "DKER-EE-003930",
+        "gtitle": "SRG-APP-000427",
         "fix_id": "F-39024r627652_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104857",
+          "V-95719"
+        ],
+        "cci": [
+          "CCI-002470"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235842",
       "title": "Docker Trusted Registry (DTR) must be integrated with a trusted certificate authority (CA) in Docker Enterprise.",
       "desc": "Both the Universal Control Plane (UCP) and DTR components of Docker Enterprise leverage the same authentication and authorization backplane known as eNZi. The eNZi backplane includes its own managed user database, and also allows for LDAP integration in UCP and DTR. To meet the requirements of this control, configure LDAP integration. UCP also includes two certificate authorities for establishing root of trust. One CA is used to sign client bundles and the other is used for TLS communication between UCP components and nodes. Both of these CAs should be integrated with an external, trusted CA. DTR should be integrated with this same external, trusted CA as well.",
@@ -1442,9 +2372,21 @@
         "gid": "V-235843",
         "rid": "SV-235843r627656_rule",
         "stig_id": "DKER-EE-004030",
+        "gtitle": "SRG-APP-000435",
         "fix_id": "F-39025r627655_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104859",
+          "V-95721"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235843",
       "title": "The on-failure container restart policy must be is set to 5 in Docker Enterprise.",
       "desc": "Using the --restart flag in docker run command, specify a restart policy for how a container should or should not be restarted on exit. Choose the on-failure restart policy and limit the restart attempts to 5. If indefinitely trying to start the container, it could possibly lead to a denial of service on the host. It could be an easy way to do a distributed denial of service attack especially if there are many containers on the same host. Additionally, ignoring the exit status of the container and always attempting to restart the container leads to non-investigation of the root cause behind containers getting terminated. If a container gets terminated, investigate on the reason behind it instead of just attempting to restart it indefinitely. Thus, it is recommended to use on-failure restart policy and limit it to maximum of 5 restart attempts. The container would attempt to restart only for 5 times. By default, containers are not configured with restart policies. Hence, containers do not attempt to restart of their own.",
@@ -1460,9 +2402,21 @@
         "gid": "V-235844",
         "rid": "SV-235844r627659_rule",
         "stig_id": "DKER-EE-004040",
+        "gtitle": "SRG-APP-000435",
         "fix_id": "F-39026r627658_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104861",
+          "V-95723"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235844",
       "title": "The Docker Enterprise default ulimit must not be overwritten at runtime unless approved in the System Security Plan (SSP).",
       "desc": "The default ulimit is set at the Docker daemon level. However, override the default ulimit setting, if needed, during container runtime. ulimit provides control over the resources available to the shell and to processes started by it. Setting system resource limits judiciously prevents many disasters such as a fork bomb. Sometimes, even friendly users and legitimate processes can overuse system resources and in-turn can make the system unusable. The default ulimit set at the Docker daemon level should be honored. If the default ulimit settings are not appropriate for a particular container instance, override them as an exception. But, do not make this a practice. If most of the container instances are overriding default ulimit settings, consider changing the default ulimit settings to something that is appropriate for your needs. If the ulimits are not set properly, the desired resource control might not be achieved and might even make the system unusable. Container instances inherit the default ulimit settings set at the Docker daemon level.",
@@ -1478,9 +2432,21 @@
         "gid": "V-235845",
         "rid": "SV-235845r627662_rule",
         "stig_id": "DKER-EE-004130",
+        "gtitle": "SRG-APP-000454",
         "fix_id": "F-39027r627661_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104863",
+          "V-95725"
+        ],
+        "cci": [
+          "CCI-002617"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235845",
       "title": "Docker Enterprise older Universal Control Plane (UCP) and Docker Trusted Registry (DTR) images must be removed from all cluster nodes upon upgrading.",
       "desc": "When upgrading either the UCP or DTR components of Docker Enterprise, the newer images are pulled (or unpacked if offline) onto Engine nodes in a cluster. Once the upgrade is complete, one must manually remove all old image version from the cluster nodes to meet the requirements of this control. When upgrading the Docker Engine - Enterprise component of Docker Enterprise, the old package version is automatically replaced.",
@@ -1496,7 +2462,9 @@
         "gid": "V-235846",
         "rid": "SV-235846r627665_rule",
         "stig_id": "DKER-EE-004260",
+        "gtitle": "SRG-APP-000475",
         "fix_id": "F-39028r627664_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000475",
           "SRG-APP-000480",
@@ -1504,8 +2472,22 @@
           "SRG-APP-000485",
           "SRG-APP-000386"
         ],
-        "documentable": false
+        "documentable": false,
+        "legacy": [
+          "SV-104865",
+          "V-95727"
+        ],
+        "cci": [
+          "CCI-001774",
+          "CCI-002710",
+          "CCI-002715",
+          "CCI-002723",
+          "CCI-002724"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235846",
       "title": "Only trusted, signed images must be stored in Docker Trusted Registry (DTR) in Docker Enterprise.",
       "desc": "The Universal Control Plane (UCP) and DTR components of Docker Enterprise can be used in concert to perform an integrity check of organization-defined software at startup. In the context of Docker Enterprise, software would be analogous to Docker images that have been pulled from trusted or untrusted sources. Docker Hub is the most common upstream endpoint for retrieving Docker images. However, only \"Docker Certified\" images on Docker Hub are considered trusted and come with SLAs and trusted signatures from their respective vendors. All other images from Docker Hub or other external registries must be carefully inspected and triaged prior to use. Docker Content Trust (DCT) provides for content integrity checking mechanisms on Docker images. DCT can be combined with LDAP, DTR and UCP to enforce image signatures from users/accounts in LDAP. Therefore, to meet the requirements of this control, it is imperative that UCP has LDAP integration enabled and that content trust enforcement is enabled and properly configured. ",
@@ -1521,9 +2503,21 @@
         "gid": "V-235847",
         "rid": "SV-235847r627668_rule",
         "stig_id": "DKER-EE-004370",
+        "gtitle": "SRG-APP-000485",
         "fix_id": "F-39029r627667_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104867",
+          "V-95729"
+        ],
+        "cci": [
+          "CCI-002724"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235847",
       "title": "Docker Content Trust enforcement must be enabled in Universal Control Plane (UCP).",
       "desc": "The UCP and Docker Trusted Registry (DTR) components of Docker Enterprise can be used in concert with built-in audit logging capabilities to audit detected potential integrity violations per the requirements set forth by the System Security Plan (SSP). In the context of Docker Enterprise, software would be analogous to Docker images that have been pulled from trusted or untrusted sources. Docker Hub is the most common upstream endpoint for retrieving Docker images. However, only \"Docker Certified\" images on Docker Hub are considered trusted and come with SLAs and trusted signatures from their respective vendors. All other images from Docker Hub or other external registries must be carefully inspected and triaged prior to use. Docker Content Trust (DCT) provides for content integrity checking mechanisms on Docker images. DCT can be combined with LDAP, DTR and UCP to enforce image signatures from users/accounts in LDAP. Therefore, to meet the requirements of this control, it is imperative that UCP has LDAP integration enabled and that content trust enforcement is enabled and properly configured. The UCP and DTR components of Docker Enterprise provide audit record generation capabilities. Audit logs capture all HTTP actions for the following endpoints: Kubernetes API, Swarm API and UCP API. The following UCP API endpoints are excluded from audit logging (where \"*\" designates a wildcard of exclusions): \"/_ping\", \"/ca\", \"/auth\", \"/trustedregistryca\", \"/kubeauth\", \"/metrics\", \"/info\", \"/version*\", \"/debug\", \"/openid_keys\", \"/apidocs\", \"kubernetesdocs\" and \"/manage\". Audit log verbosity can be set to one of the following levels: \"none\", \"metadata\", or \"request\". To meet the requirements of this control, the \"request\" verbosity level must be configured in UCP. The data captured at each level for UCP and the eNZI authentication and authorization backplane is described below: \"none\": audit logging is disabled \"metadata\": - method and API endpoint for the request - UCP user which made the request - response status (success/failure) - timestamp of the call - object ID of created/updated resource (for create/update calls) - license key - remote address \"request\": includes all fields from the \"metadata\" level, as well as the request payload DTR audits all events associated with repository activities. Events are considered as follows: create, get, delete, update, send, fail, and scan. The following types are associated with the defined audit events: repository, tag, blob, manifest, webhook, uri, promotion, push mirroring, poll mirroring, garbage collector, system. The Docker Engine - Enterprise component of Docker Enterprise relies on the underlying host operating system's auditing capabilities. By default, the host OS is not configured to audit Docker Engine - Enterprise.",
@@ -1539,9 +2533,21 @@
         "gid": "V-235848",
         "rid": "SV-235848r627671_rule",
         "stig_id": "DKER-EE-005060",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39030r627670_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104869",
+          "V-95731"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235848",
       "title": "Docker Swarm must have the minimum number of manager nodes.",
       "desc": "Ensure that the minimum number of required manager nodes is created in a swarm. Manager nodes within a swarm have control over the swarm and change its configuration modifying security parameters. Having excessive manager nodes could render the swarm more susceptible to compromise. If fault tolerance is not required in the manager nodes, a single node should be elected as a manger. If fault tolerance is required then the smallest practical odd number to achieve the appropriate level of tolerance should be configured.",
@@ -1557,9 +2563,21 @@
         "gid": "V-235849",
         "rid": "SV-235849r627674_rule",
         "stig_id": "DKER-EE-005070",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39031r627673_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104871",
+          "V-95733"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235849",
       "title": "Docker Enterprise Swarm manager auto-lock key must be rotated periodically.",
       "desc": "Rotate swarm manager auto-lock key periodically. Swarm manager auto-lock key is not automatically rotated. Rotate them periodically as a best practice. By default, keys are not rotated automatically.",
@@ -1575,9 +2593,21 @@
         "gid": "V-235850",
         "rid": "SV-235850r627677_rule",
         "stig_id": "DKER-EE-005080",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39032r627676_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104873",
+          "V-95735"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235850",
       "title": "Docker Enterprise node certificates must be rotated as defined in the System Security Plan (SSP).",
       "desc": "Rotate swarm node certificates as appropriate. Docker Swarm uses mutual TLS for clustering operations amongst its nodes. Certificate rotation ensures that in an event such as compromised node or key, it is difficult to impersonate a node. By default, node certificates are rotated every 90 days. The user should rotate it more often or as appropriate in their environment. By default, node certificates are rotated automatically every 90 days.",
@@ -1593,9 +2623,21 @@
         "gid": "V-235851",
         "rid": "SV-235851r627680_rule",
         "stig_id": "DKER-EE-005170",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39033r627679_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104877",
+          "V-95739"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235851",
       "title": "Docker Enterprise docker.service file ownership must be set to root:root.",
       "desc": "Verify that the docker.service file ownership and group-ownership are correctly set to root. docker.service file contains sensitive parameters that may alter the behavior of Docker daemon. Hence, it should be owned and group-owned by root to maintain the integrity of the file. This file may not be present on the system. In that case, this recommendation is not applicable. By default, if the file is present, the ownership and group-ownership for this file is correctly set to root.",
@@ -1611,9 +2653,21 @@
         "gid": "V-235852",
         "rid": "SV-235852r627683_rule",
         "stig_id": "DKER-EE-005180",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39034r627682_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104879",
+          "V-95741"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235852",
       "title": "Docker Enterprise docker.service file permissions must be set to 644 or more restrictive.",
       "desc": "Verify that the docker.service file permissions are correctly set to 644 or more restrictive. docker.service file contains sensitive parameters that may alter the behavior of Docker daemon. Hence, it should not be writable by any other user other than root to maintain the integrity of the file. This file may not be present on the system. In that case, this recommendation is not applicable. By default, if the file is present, the file permissions are correctly set to 644.",
@@ -1629,9 +2683,21 @@
         "gid": "V-235853",
         "rid": "SV-235853r627686_rule",
         "stig_id": "DKER-EE-005190",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39035r627685_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104881",
+          "V-95743"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235853",
       "title": "Docker Enterprise docker.socket file ownership must be set to root:root.",
       "desc": "Verify that the docker.socket file ownership and group ownership is correctly set to root. docker.socket file contains sensitive parameters that may alter the behavior of Docker remote API. Hence, it should be owned and group-owned by root to maintain the integrity of the file. This file may not be present on the system. In that case, this recommendation is not applicable. By default, if the file is present, the ownership and group-ownership for this file is correctly set to root.",
@@ -1647,9 +2713,21 @@
         "gid": "V-235854",
         "rid": "SV-235854r627689_rule",
         "stig_id": "DKER-EE-005200",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39036r627688_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104883",
+          "V-95745"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235854",
       "title": "Docker Enterprise docker.socket file permissions must be set to 644 or more restrictive.",
       "desc": "Verify that the docker.socket file permissions are correctly set to 644 or more restrictive. docker.socket file contains sensitive parameters that may alter the behavior of Docker remote API. Hence, it should be writable only by root to maintain the integrity of the file. This file may not be present on the system. In that case, this recommendation is not applicable. By default, if the file is present, the file permissions for this file are correctly set to 644.",
@@ -1665,9 +2743,21 @@
         "gid": "V-235855",
         "rid": "SV-235855r627692_rule",
         "stig_id": "DKER-EE-005210",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39037r627691_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104885",
+          "V-95747"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235855",
       "title": "Docker Enterprise /etc/docker directory ownership must be set to root:root.",
       "desc": "Verify that the /etc/docker directory ownership and group-ownership is correctly set to root. /etc/docker directory contains certificates and keys in addition to various sensitive files. Hence, it should be owned and group-owned by root to maintain the integrity of the directory. By default, the ownership and group-ownership for this directory is correctly set to root.",
@@ -1683,9 +2773,21 @@
         "gid": "V-235856",
         "rid": "SV-235856r627695_rule",
         "stig_id": "DKER-EE-005220",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39038r627694_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104887",
+          "V-95749"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235856",
       "title": "Docker Enterprise /etc/docker directory permissions must be set to 755 or more restrictive.",
       "desc": "Verify that the /etc/docker directory permissions are correctly set to 755 or more restrictive. /etc/docker directory contains certificates and keys in addition to various sensitive files. Hence, it should only be writable by root to maintain the integrity of the directory. By default, the permissions for this directory are correctly set to 755.",
@@ -1701,8 +2803,20 @@
         "gid": "V-235857",
         "rid": "SV-235857r627698_rule",
         "stig_id": "DKER-EE-005230",
-        "fix_id": "F-39039r627697_fix"
+        "gtitle": "SRG-APP-000516",
+        "fix_id": "F-39039r627697_fix",
+        "rationale": null,
+        "legacy": [
+          "SV-104889",
+          "V-95751"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235857",
       "title": "Docker Enterprise registry certificate file ownership must be set to root:root.",
       "desc": "<0> [object Object]",
@@ -1718,8 +2832,20 @@
         "gid": "V-235858",
         "rid": "SV-235858r627701_rule",
         "stig_id": "DKER-EE-005240",
-        "fix_id": "F-39040r627700_fix"
+        "gtitle": "SRG-APP-000516",
+        "fix_id": "F-39040r627700_fix",
+        "rationale": null,
+        "legacy": [
+          "SV-104891",
+          "V-95753"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235858",
       "title": "Docker Enterprise registry certificate file permissions must be set to 444 or more restrictive.",
       "desc": "<0> [object Object]",
@@ -1735,9 +2861,21 @@
         "gid": "V-235859",
         "rid": "SV-235859r627704_rule",
         "stig_id": "DKER-EE-005250",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39041r627703_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104893",
+          "V-95755"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235859",
       "title": "Docker Enterprise TLS certificate authority (CA) certificate file ownership must be set to root:root.",
       "desc": "Verify that the TLS CA certificate file (the file that is passed along with --TLScacert parameter) is owned and group-owned by root. The TLS CA certificate file should be protected from any tampering. It is used to authenticate Docker server based on given CA certificate. Hence, it must be owned and group-owned by root to maintain the integrity of the CA certificate. By default, the ownership and group-ownership for TLS CA certificate file is correctly set to root.",
@@ -1753,9 +2891,21 @@
         "gid": "V-235860",
         "rid": "SV-235860r627707_rule",
         "stig_id": "DKER-EE-005260",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39042r627706_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104895",
+          "V-95757"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235860",
       "title": "Docker Enterprise TLS certificate authority (CA) certificate file permissions must be set to 444 or more restrictive.",
       "desc": "Verify that the TLS CA certificate file (the file that is passed along with --TLScacert parameter) has permissions of 444 or more restrictive. The TLS CA certificate file should be protected from any tampering. It is used to authenticate Docker server based on given CA certificate. Hence, it must have permissions of 444 to maintain the integrity of the CA certificate. By default, the permissions for TLS CA certificate file might not be 444. The default file permissions are governed by the system or user specific umask values.",
@@ -1771,9 +2921,21 @@
         "gid": "V-235861",
         "rid": "SV-235861r627710_rule",
         "stig_id": "DKER-EE-005270",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39043r627709_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104897",
+          "V-95759"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235861",
       "title": "Docker Enterprise server certificate file ownership must be set to root:root.",
       "desc": "Verify that the Docker server certificate file (the file that is passed along with --TLScert parameter) is owned and group-owned by root. The Docker server certificate file should be protected from any tampering. It is used to authenticate Docker server based on the given server certificate. Hence, it must be owned and group-owned by root to maintain the integrity of the certificate. By default, the ownership and group-ownership for Docker server certificate file is correctly set to root.",
@@ -1789,9 +2951,21 @@
         "gid": "V-235862",
         "rid": "SV-235862r627713_rule",
         "stig_id": "DKER-EE-005280",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39044r627712_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104899",
+          "V-95761"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235862",
       "title": "Docker Enterprise server certificate file permissions must be set to 444 or more restrictive.",
       "desc": "Verify that the Docker server certificate file (the file that is passed along with --TLScert parameter) has permissions of 444 or more restrictive. The Docker server certificate file should be protected from any tampering. It is used to authenticate Docker server based on the given server certificate. Hence, it must have permissions of 444 to maintain the integrity of the certificate. By default, the permissions for Docker server certificate file might not be 444. The default file permissions are governed by the system or user specific umask values.",
@@ -1807,9 +2981,21 @@
         "gid": "V-235863",
         "rid": "SV-235863r627716_rule",
         "stig_id": "DKER-EE-005290",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39045r627715_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104901",
+          "V-95763"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235863",
       "title": "Docker Enterprise server certificate key file ownership must be set to root:root.",
       "desc": "Verify that the Docker server certificate key file (the file that is passed along with --TLSkey parameter) is owned and group-owned by root. The Docker server certificate key file should be protected from any tampering or unneeded reads. It holds the private key for the Docker server certificate. Hence, it must be owned and group-owned by root to maintain the integrity of the Docker server certificate. By default, the ownership and group-ownership for Docker server certificate key file is correctly set to root.",
@@ -1825,9 +3011,21 @@
         "gid": "V-235864",
         "rid": "SV-235864r627719_rule",
         "stig_id": "DKER-EE-005300",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39046r627718_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104903",
+          "V-95765"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235864",
       "title": "Docker Enterprise server certificate key file permissions must be set to 400.",
       "desc": "Verify that the Docker server certificate key file (the file that is passed along with --TLSkey parameter) has permissions of 400. The Docker server certificate key file should be protected from any tampering or unneeded reads. It holds the private key for the Docker server certificate. Hence, it must have permissions of 400 to maintain the integrity of the Docker server certificate. By default, the permissions for Docker server certificate key file might not be 400. The default file permissions are governed by the system or user specific umask values.",
@@ -1843,9 +3041,21 @@
         "gid": "V-235865",
         "rid": "SV-235865r627722_rule",
         "stig_id": "DKER-EE-005310",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39047r627721_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104905",
+          "V-95767"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235865",
       "title": "Docker Enterprise socket file ownership must be set to root:docker.",
       "desc": "Verify that the Docker socket file is owned by root and group-owned by docker. Docker daemon runs as root. The default UNIX socket hence must be owned by root. If any other user or process owns this socket, then it might be possible for that non-privileged user or process to interact with Docker daemon. Also, such a non-privileged user or process might interact with containers. This is neither secure nor desired behavior. Additionally, the Docker installer creates a UNIX group called docker. Users can be added to this group, and then those users would be able to read and write to default Docker UNIX socket. The membership to the docker group is tightly controlled by the system administrator. If any other group owns this socket, then it might be possible for members of that group to interact with Docker daemon. Also, such a group might not be as tightly controlled as the docker group. This is neither secure nor desired behavior. Hence, the default Docker UNIX socket file must be owned by root and group-owned by docker to maintain the integrity of the socket file. By default, the ownership and group-ownership for Docker socket file is correctly set to root:docker.",
@@ -1861,9 +3071,21 @@
         "gid": "V-235866",
         "rid": "SV-235866r627725_rule",
         "stig_id": "DKER-EE-005320",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39048r627724_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104907",
+          "V-95769"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235866",
       "title": "Docker Enterprise socket file permissions must be set to 660 or more restrictive.",
       "desc": "Verify that the Docker socket file has permissions of 660 or more restrictive. Only root and members of docker group should be allowed to read and write to default Docker UNIX socket. Hence, the Docket socket file must have permissions of 660 or more restrictive. By default, the permissions for Docker socket file is correctly set to 660.",
@@ -1879,9 +3101,21 @@
         "gid": "V-235867",
         "rid": "SV-235867r627728_rule",
         "stig_id": "DKER-EE-005330",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39049r627727_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104909",
+          "V-95771"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235867",
       "title": "Docker Enterprise daemon.json file ownership must be set to root:root.",
       "desc": "Verify that the daemon.json file ownership and group-ownership is correctly set to root. daemon.json file contains sensitive parameters that may alter the behavior of docker daemon. Hence, it should be owned and group-owned by root to maintain the integrity of the file. This file may not be present on the system. In that case, this recommendation is not applicable.",
@@ -1897,9 +3131,21 @@
         "gid": "V-235868",
         "rid": "SV-235868r627731_rule",
         "stig_id": "DKER-EE-005340",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39050r627730_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104911",
+          "V-95773"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235868",
       "title": "Docker Enterprise daemon.json file permissions must be set to 644 or more restrictive.",
       "desc": "Verify that the daemon.json file permissions are correctly set to 644 or more restrictive. daemon.json file contains sensitive parameters that may alter the behavior of docker daemon. Hence, it should be writable only by root to maintain the integrity of the file. This file may not be present on the system. In that case, this recommendation is not applicable.",
@@ -1915,9 +3161,21 @@
         "gid": "V-235869",
         "rid": "SV-235869r627734_rule",
         "stig_id": "DKER-EE-005350",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39051r627733_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104913",
+          "V-95775"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235869",
       "title": "Docker Enterprise /etc/default/docker file ownership must be set to root:root.",
       "desc": "Verify that the /etc/default/docker file ownership and group-ownership is correctly set to root. /etc/default/docker file contains sensitive parameters that may alter the behavior of docker daemon. Hence, it should be owned and group-owned by root to maintain the integrity of the file. This file may not be present on the system. In that case, this recommendation is not applicable.",
@@ -1933,9 +3191,21 @@
         "gid": "V-235870",
         "rid": "SV-235870r627737_rule",
         "stig_id": "DKER-EE-005360",
+        "gtitle": "SRG-APP-000516",
         "fix_id": "F-39052r627736_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104915",
+          "V-95777"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235870",
       "title": "Docker Enterprise /etc/default/docker file permissions must be set to 644 or more restrictive.",
       "desc": "Verify that the /etc/default/docker file permissions are correctly set to 644 or more restrictive. /etc/default/docker file contains sensitive parameters that may alter the behavior of docker daemon. Hence, it should be writable only by root to maintain the integrity of the file. This file may not be present on the system. In that case, this recommendation is not applicable.",
@@ -1951,9 +3221,21 @@
         "gid": "V-235871",
         "rid": "SV-235871r627740_rule",
         "stig_id": "DKER-EE-006190",
+        "gtitle": "SRG-APP-000175",
         "fix_id": "F-39053r627739_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104917",
+          "V-95779"
+        ],
+        "cci": [
+          "CCI-000185"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235871",
       "title": "Docker Enterprise Universal Control Plane (UCP) must be integrated with a trusted certificate authority (CA).",
       "desc": "When integrating the UCP and Docker Trusted Registry (DTR) management consoles with an external, trusted certificate authority (CA), both UCP and DTR will validate these certificate chains per the requirements set forth by the System Security Plan (SSP). UCP establishes mutual TLS authentication for all Engine - Enterprise nodes in a cluster using a built-in certificate authority which inherently meets the requirements of this control. This is described below. The UCP component of Docker Enterprise includes a built-in public key infrastructure (PKI) system. When a UCP cluster is initialized, the first node designates itself as a manager node. That node subsequently generates a new root CA along with a key pair, which are used to secure communications with other UCP manager and worker nodes that are joined to the cluster. One can also specify his/her own externally-generated root CA upon initialization of a UCP cluster. The manager node also generates two tokens to use when joining additional nodes to the cluster: one worker token and one manager token. Each token includes the digest of the root CA’s certificate and a randomly generated secret. When a node joins the cluster, the joining node uses the digest to validate the root CA certificate from the remote manager. The remote manager uses the secret to ensure the joining node is an approved node. Each time a new node joins the cluster, the manager issues a certificate to the node. The certificate contains a randomly generated node ID to identify the node under the certificate common name (CN) and the role under the organizational unit (OU). The node ID serves as the cryptographically secure node identity for the lifetime of the node in the current UCP cluster. In this mutual TLS architecture, all nodes encrypt communications using a minimum of TLS 1.2. This information can also be referenced at https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/.",
@@ -1969,9 +3251,21 @@
         "gid": "V-235872",
         "rid": "SV-235872r627743_rule",
         "stig_id": "DKER-EE-006240",
+        "gtitle": "SRG-APP-000416",
         "fix_id": "F-39054r627742_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104919",
+          "V-95781"
+        ],
+        "cci": [
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235872",
       "title": "Docker Enterprise data exchanged between Linux containers on different nodes must be encrypted on the overlay network.",
       "desc": "Encrypt data exchanged between containers on different nodes on the overlay network. By default, data exchanged between containers on different nodes on the overlay network is not encrypted. This could potentially expose traffic between the container nodes.",
@@ -1987,9 +3281,21 @@
         "gid": "V-235873",
         "rid": "SV-235873r627746_rule",
         "stig_id": "DKER-EE-006270",
+        "gtitle": "SRG-APP-000142",
         "fix_id": "F-39055r627745_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104921",
+          "V-95783"
+        ],
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235873",
       "title": "Docker Enterprise Swarm services must be bound to a specific host interface.",
       "desc": "By default, the docker swarm services will listen to all interfaces on the host, which may not be necessary for the operation of the swarm where the host has multiple network interfaces. When a swarm is initialized the default value for the --listen-addr flag is 0.0.0.0:2377 which means that the swarm services will listen on all interfaces on the host. If a host has multiple network interfaces this may be undesirable as it may expose the docker swarm services to networks which are not involved in the operation of the swarm. By passing a specific IP address to the --listen-addr, a specific network interface can be specified limiting this exposure.",
@@ -2005,9 +3311,21 @@
         "gid": "V-235874",
         "rid": "SV-235874r627749_rule",
         "stig_id": "DKER-EE-006280",
+        "gtitle": "SRG-APP-000560",
         "fix_id": "F-39056r627748_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-104923",
+          "V-95785"
+        ],
+        "cci": [
+          "CCI-001453"
+        ]
       },
+      "refs": [
+        "DPMS Target Docker Enterprise 2-x Linux-UNIX"
+      ],
       "id": "V-235874",
       "title": "Docker Enterprise Universal Control Plane (UCP) must be configured to use TLS 1.2.",
       "desc": "By default docker UCP is configured to use TLS v1.2, if this setting is misconfigured, older protocols containing security weaknesses could be utilized. TLS requires a handshake between client and server which is where the TLS version utilized in the connection is negotiated. For DoD use cases, all TLS must be at version 1.2.",

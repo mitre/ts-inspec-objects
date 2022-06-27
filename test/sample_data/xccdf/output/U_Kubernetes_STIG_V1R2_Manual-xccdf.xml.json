@@ -11,9 +11,17 @@
         "gid": "V-242376",
         "rid": "SV-242376r712484_rule",
         "stig_id": "CNTR-K8-000150",
+        "gtitle": "SRG-APP-000014-CTR-000035",
         "fix_id": "F-45609r712483_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000068"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242376",
       "title": "The Kubernetes Controller Manager must use TLS 1.2, at a minimum, to protect the confidentiality of sensitive data during electronic dissemination.",
       "desc": "The Kubernetes Controller Manager will prohibit the use of SSL and unauthorized versions of TLS protocols to properly secure communication. The use of unsupported protocol exposes vulnerabilities to the Kubernetes by rogue traffic interceptions, man-in-the-middle attacks, and impersonation of users or services from the container platform runtime, registry, and key store. To enable the minimum version of TLS to be used by the Kubernetes Controller Manager, the setting \"tls-min-version\" must be set.",
@@ -29,9 +37,17 @@
         "gid": "V-242377",
         "rid": "SV-242377r712487_rule",
         "stig_id": "CNTR-K8-000160",
+        "gtitle": "SRG-APP-000014-CTR-000035",
         "fix_id": "F-45610r712486_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000068"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242377",
       "title": "The Kubernetes Scheduler must use TLS 1.2, at a minimum, to protect the confidentiality of sensitive data during electronic dissemination.",
       "desc": "The Kubernetes Scheduler will prohibit the use of SSL and unauthorized versions of TLS protocols to properly secure communication. The use of unsupported protocol exposes vulnerabilities to the Kubernetes by rogue traffic interceptions, man-in-the-middle attacks, and impersonation of users or services from the container platform runtime, registry, and keystore. To enable the minimum version of TLS to be used by the Kubernetes API Server, the setting \"tls-min-version\" must be set.",
@@ -47,9 +63,17 @@
         "gid": "V-242378",
         "rid": "SV-242378r712490_rule",
         "stig_id": "CNTR-K8-000170",
+        "gtitle": "SRG-APP-000014-CTR-000040",
         "fix_id": "F-45611r712489_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000068"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242378",
       "title": "The Kubernetes API Server must use TLS 1.2, at a minimum, to protect the confidentiality of sensitive data during electronic dissemination.",
       "desc": "The Kubernetes API Server will prohibit the use of SSL and unauthorized versions of TLS protocols to properly secure communication. The use of unsupported protocol exposes vulnerabilities to the Kubernetes by rogue traffic interceptions, man-in-the-middle attacks, and impersonation of users or services from the container platform runtime, registry, and keystore. To enable the minimum version of TLS to be used by the Kubernetes API Server, the setting \"tls-min-version\" must be set.",
@@ -65,9 +89,17 @@
         "gid": "V-242379",
         "rid": "SV-242379r754799_rule",
         "stig_id": "CNTR-K8-000180",
+        "gtitle": "SRG-APP-000014-CTR-000035",
         "fix_id": "F-45612r712492_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000068"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242379",
       "title": "The Kubernetes etcd must use TLS to protect the confidentiality of sensitive data during electronic dissemination.",
       "desc": "Kubernetes etcd will prohibit the use of SSL and unauthorized versions of TLS protocols to properly secure communication. The use of unsupported protocol exposes vulnerabilities to the Kubernetes by rogue traffic interceptions, man-in-the-middle attacks, and impersonation of users or services from the container platform runtime, registry, and keystore. To enable the minimum version of TLS to be used by the Kubernetes API Server, the setting \"auto-tls\" must be set.",
@@ -83,9 +115,17 @@
         "gid": "V-242380",
         "rid": "SV-242380r754800_rule",
         "stig_id": "CNTR-K8-000190",
+        "gtitle": "SRG-APP-000014-CTR-000035",
         "fix_id": "F-45613r712495_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000068"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242380",
       "title": "The Kubernetes etcd must use TLS to protect the confidentiality of sensitive data during electronic dissemination.",
       "desc": "The Kubernetes API Server will prohibit the use of SSL and unauthorized versions of TLS protocols to properly secure communication. The use of unsupported protocol exposes vulnerabilities to the Kubernetes by rogue traffic interceptions, man-in-the-middle attacks, and impersonation of users or services from the container platform runtime, registry, and keystore. To enable the minimum version of TLS to be used by the Kubernetes API Server, the setting \"peer-auto-tls\" must be set.",
@@ -101,9 +141,17 @@
         "gid": "V-242381",
         "rid": "SV-242381r712499_rule",
         "stig_id": "CNTR-K8-000220",
+        "gtitle": "SRG-APP-000023-CTR-000055",
         "fix_id": "F-45614r712498_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000015"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242381",
       "title": "The Kubernetes Controller Manager must create unique service accounts for each work payload.",
       "desc": "The Kubernetes Controller Manager is a background process that embeds core control loops regulating cluster system state through the API Server. Every process executed in a pod has an associated service account. By default, service accounts use the same credentials for authentication. Implementing the default settings poses a High risk to the Kubernetes Controller Manager. Setting the use-service-account-credential value lowers the attack surface by generating unique service accounts settings for each controller instance.",
@@ -119,13 +167,21 @@
         "gid": "V-242382",
         "rid": "SV-242382r712502_rule",
         "stig_id": "CNTR-K8-000270",
+        "gtitle": "SRG-APP-000033-CTR-000090",
         "fix_id": "F-45615r712501_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000033-CTR-000090",
           "SRG-APP-000033-CTR-000095"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242382",
       "title": "The Kubernetes API Server must enable Node,RBAC as the authorization mode.",
       "desc": "To mitigate the risk of unauthorized access to sensitive information by entities that have been issued certificates by DoD-approved PKIs, all DoD systems (e.g., networks, web servers, and web portals) must be properly configured to incorporate access control methods that do not rely solely on the possession of a certificate for access. Successful authentication must not automatically give an entity access to an asset or security boundary. Authorization procedures and controls must be implemented to ensure each authenticated entity also has a validated and current authorization. Authorization is the process of determining whether an entity, once authenticated, is permitted to access a specific asset. Node,RBAC is the method within Kubernetes to control access of users and applications. Kubernetes uses roles to grant authorization API requests made by kubelets. ",
@@ -141,9 +197,17 @@
         "gid": "V-242383",
         "rid": "SV-242383r712505_rule",
         "stig_id": "CNTR-K8-000290",
+        "gtitle": "SRG-APP-000038-CTR-000105",
         "fix_id": "F-45616r712504_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242383",
       "title": "User-managed resources must be created in dedicated namespaces.",
       "desc": "Creating namespaces for user-managed resources is important when implementing Role-Based Access Controls (RBAC). RBAC allows for the authorization of users and helps support proper API server permissions separation and network micro segmentation. If user-managed resources are placed within the default namespaces, it becomes impossible to implement policies for RBAC permission, service account usage, network policies, and more.",
@@ -159,9 +223,17 @@
         "gid": "V-242384",
         "rid": "SV-242384r712508_rule",
         "stig_id": "CNTR-K8-000300",
+        "gtitle": "SRG-APP-000033-CTR-000090",
         "fix_id": "F-45617r712507_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242384",
       "title": "The Kubernetes Scheduler must have secure binding.",
       "desc": "Limiting the number of attack vectors and implementing authentication and encryption on the endpoints available to external sources is paramount when securing the overall Kubernetes cluster. The Scheduler API service exposes port 10251/TCP by default for health and metrics information use. This port does not encrypt or authenticate connections. If this port is exposed externally, an attacker can use this port to attack the entire Kubernetes cluster. By setting the bind address to localhost (i.e., 127.0.0.1), only those internal services that require health and metrics information can access the Scheduler API.",
@@ -177,9 +249,17 @@
         "gid": "V-242385",
         "rid": "SV-242385r712511_rule",
         "stig_id": "CNTR-K8-000310",
+        "gtitle": "SRG-APP-000033-CTR-000090",
         "fix_id": "F-45618r712510_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242385",
       "title": "The Kubernetes Controller Manager must have secure binding.",
       "desc": "Limiting the number of attack vectors and implementing authentication and encryption on the endpoints available to external sources is paramount when securing the overall Kubernetes cluster. The Controller Manager API service exposes port 10252/TCP by default for health and metrics information use. This port does not encrypt or authenticate connections. If this port is exposed externally, an attacker can use this port to attack the entire Kubernetes cluster. By setting the bind address to only localhost (i.e., 127.0.0.1), only those internal services that require health and metrics information can access the Control Manager API.",
@@ -195,9 +275,17 @@
         "gid": "V-242386",
         "rid": "SV-242386r712514_rule",
         "stig_id": "CNTR-K8-000320",
+        "gtitle": "SRG-APP-000033-CTR-000095",
         "fix_id": "F-45619r712513_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242386",
       "title": "The Kubernetes API server must have the insecure port flag disabled.",
       "desc": "By default, the API server will listen on two ports. One port is the secure port and the other port is called the \"localhost port\". This port is also called the \"insecure port\", port 8080. Any requests to this port bypass authentication and authorization checks. If this port is left open, anyone who gains access to the host on which the master is running can bypass all authorization and authentication mechanisms put in place, and have full control over the entire cluster. Close the insecure port by setting the API server's --insecure-port flag to \"0\", ensuring that the --insecure-bind-address is not set.",
@@ -213,9 +301,17 @@
         "gid": "V-242387",
         "rid": "SV-242387r717013_rule",
         "stig_id": "CNTR-K8-000330",
+        "gtitle": "SRG-APP-000033-CTR-000095",
         "fix_id": "F-45620r717012_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242387",
       "title": "The Kubernetes Kubelet must have the read-only port flag disabled.",
       "desc": "Kubelet serves a small REST API with read access to port 10255. The read-only port for Kubernetes provides no authentication or authorization security control. Providing unrestricted access on port 10255 exposes Kubernetes pods and containers to malicious attacks or compromise. Port 10255 is deprecated and should be disabled. Close the read-only-port by setting the API server's read-only port flag to \"0\".",
@@ -231,9 +327,17 @@
         "gid": "V-242388",
         "rid": "SV-242388r712520_rule",
         "stig_id": "CNTR-K8-000340",
+        "gtitle": "SRG-APP-000033-CTR-000095",
         "fix_id": "F-45621r712519_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242388",
       "title": "The Kubernetes API server must have the insecure bind address not set.",
       "desc": "By default, the API server will listen on two ports and addresses. One address is the secure address and the other address is called the \"insecure bind\" address and is set by default to localhost. Any requests to this address bypass authentication and authorization checks. If this insecure bind address is set to localhost, anyone who gains access to the host on which the master is running can bypass all authorization and authentication mechanisms put in place and have full control over the entire cluster. Close or set the insecure bind address by setting the API server's --insecure-bind-address flag to an IP or leave it unset and ensure that the --insecure-bind-port is not set.",
@@ -249,9 +353,17 @@
         "gid": "V-242389",
         "rid": "SV-242389r712523_rule",
         "stig_id": "CNTR-K8-000350",
+        "gtitle": "SRG-APP-000033-CTR-000100",
         "fix_id": "F-45622r712522_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242389",
       "title": "The Kubernetes API server must have the secure port set.",
       "desc": "By default, the API server will listen on what is rightfully called the secure port, port 6443. Any requests to this port will perform authentication and authorization checks. If this port is disabled, anyone who gains access to the host on which the master is running has full control of the entire cluster over encrypted traffic. Open the secure port by setting the API server's --secure-port flag to a value other than \"0\".",
@@ -267,9 +379,17 @@
         "gid": "V-242390",
         "rid": "SV-242390r712526_rule",
         "stig_id": "CNTR-K8-000360",
+        "gtitle": "SRG-APP-000033-CTR-000100",
         "fix_id": "F-45623r712525_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242390",
       "title": "The Kubernetes API server must have anonymous authentication disabled.",
       "desc": "The Kubernetes API Server controls Kubernetes via an API interface. A user who has access to the API essentially has root access to the entire Kubernetes cluster. To control access, users must be authenticated and authorized. By allowing anonymous connections, the controls put in place to secure the API can be bypassed. Setting anonymous authentication to \"false\" also disables unauthenticated requests from kubelets. While there are instances where anonymous connections may be needed (e.g., health checks) and Role-Based Access Controls (RBAC) are in place to limit the anonymous access, this access should be disabled, and only enabled when necessary.",
@@ -285,9 +405,17 @@
         "gid": "V-242391",
         "rid": "SV-242391r712529_rule",
         "stig_id": "CNTR-K8-000370",
+        "gtitle": "SRG-APP-000033-CTR-000090",
         "fix_id": "F-45624r712528_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242391",
       "title": "The Kubernetes Kubelet must have anonymous authentication disabled.",
       "desc": "A user who has access to the Kubelet essentially has root access to the nodes contained within the Kubernetes Control Plane. To control access, users must be authenticated and authorized. By allowing anonymous connections, the controls put in place to secure the Kubelet can be bypassed. Setting anonymous authentication to \"false\" also disables unauthenticated requests from kubelets. While there are instances where anonymous connections may be needed (e.g., health checks) and Role-Based Access Controls (RBAC) are in place to limit the anonymous access, this access must be disabled and only enabled when necessary.",
@@ -303,9 +431,17 @@
         "gid": "V-242392",
         "rid": "SV-242392r712532_rule",
         "stig_id": "CNTR-K8-000380",
+        "gtitle": "SRG-APP-000033-CTR-000095",
         "fix_id": "F-45625r717029_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242392",
       "title": "The Kubernetes kubelet must enable explicit authorization.",
       "desc": "Kubelet is the primary agent on each node. The API server communicates with each kubelet to perform tasks such as starting/stopping pods. By default, kubelets allow all authenticated requests, even anonymous ones, without requiring any authorization checks from the API server. This default behavior bypasses any authorization controls put in place to limit what users may perform within the Kubernetes cluster. To change this behavior, the default setting of AlwaysAllow for the authorization mode must be set to \"Webhook\".",
@@ -321,9 +457,17 @@
         "gid": "V-242393",
         "rid": "SV-242393r717015_rule",
         "stig_id": "CNTR-K8-000400",
+        "gtitle": "SRG-APP-000033-CTR-000095",
         "fix_id": "F-45626r717014_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242393",
       "title": "Kubernetes Worker Nodes must not have sshd service running.",
       "desc": "Worker Nodes are maintained and monitored by the Master Node. Direct access and manipulation of the nodes should not take place by administrators. Worker nodes should be treated as immutable and updated via replacement rather than in-place upgrades.",
@@ -339,9 +483,17 @@
         "gid": "V-242394",
         "rid": "SV-242394r717017_rule",
         "stig_id": "CNTR-K8-000410",
+        "gtitle": "SRG-APP-000033-CTR-000095",
         "fix_id": "F-45627r717016_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242394",
       "title": "Kubernetes Worker Nodes must not have the sshd service enabled.",
       "desc": "Worker Nodes are maintained and monitored by the Master Node. Direct access and manipulation of the nodes must not take place by administrators. Worker nodes must be treated as immutable and updated via replacement rather than in-place upgrades.",
@@ -357,9 +509,17 @@
         "gid": "V-242395",
         "rid": "SV-242395r712541_rule",
         "stig_id": "CNTR-K8-000420",
+        "gtitle": "SRG-APP-000033-CTR-000095",
         "fix_id": "F-45628r712540_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242395",
       "title": "Kubernetes dashboard must not be enabled.",
       "desc": "While the Kubernetes dashboard is not inherently insecure on its own, it is often coupled with a misconfiguration of Role-Based Access control (RBAC) permissions that can unintentionally over-grant access. It is not commonly protected with \"NetworkPolicies\", preventing all pods from being able to reach it. In increasingly rare circumstances, the Kubernetes dashboard is exposed publicly to the internet.",
@@ -375,9 +535,17 @@
         "gid": "V-242396",
         "rid": "SV-242396r712544_rule",
         "stig_id": "CNTR-K8-000430",
+        "gtitle": "SRG-APP-000033-CTR-000090",
         "fix_id": "F-45629r712543_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242396",
       "title": "Kubernetes Kubectl cp command must give expected access and results.",
       "desc": "One of the tools heavily used to interact with containers in the Kubernetes cluster is kubectl. The command is the tool System Administrators used to create, modify, and delete resources. One of the capabilities of the tool is to copy files to and from running containers (i.e., kubectl cp). The command uses the \"tar\" command of the container to copy files from the container to the host executing the \"kubectl cp\" command. If the \"tar\" command on the container has been replaced by a malicious user, the command can copy files anywhere on the host machine. This flaw has been fixed in later versions of the tool. It is recommended to use kubectl versions newer than 1.12.9.",
@@ -393,9 +561,17 @@
         "gid": "V-242397",
         "rid": "SV-242397r712547_rule",
         "stig_id": "CNTR-K8-000440",
+        "gtitle": "SRG-APP-000033-CTR-000090",
         "fix_id": "F-45630r712546_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242397",
       "title": "The Kubernetes kubelet static PodPath must not enable static pods.",
       "desc": "Allowing kubelet to set a staticPodPath gives containers with root access permissions to traverse the hosting filesystem. The danger comes when the container can create a manifest file within the /etc/kubernetes/manifests directory. When a manifest is created within this directory, containers are entirely governed by the Kubelet not the API Server. The container is not susceptible to admission control at all. Any containers or pods that are instantiated in this manner are called \"static pods\" and are meant to be used for pods such as the API server, scheduler, controller, etc., not workload pods that need to be governed by the API Server.",
@@ -411,9 +587,17 @@
         "gid": "V-242398",
         "rid": "SV-242398r717019_rule",
         "stig_id": "CNTR-K8-000450",
+        "gtitle": "SRG-APP-000033-CTR-000100",
         "fix_id": "F-45631r717018_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242398",
       "title": "Kubernetes DynamicAuditing must not be enabled.",
       "desc": "Protecting the audit data from change or deletion is important when an attack occurs. One way an attacker can cover their tracks is to change or delete audit records. This will either make the attack unnoticeable or make it more difficult to investigate how the attack took place and what changes were made. The audit data can be protected through audit log file protections and user authorization. One way for an attacker to thwart these measures is to send the audit logs to another source and filter the audited results before sending them on to the original target. This can be done in Kubernetes through the configuration of dynamic audit webhooks through the DynamicAuditing flag.",
@@ -429,9 +613,17 @@
         "gid": "V-242399",
         "rid": "SV-242399r717021_rule",
         "stig_id": "CNTR-K8-000460",
+        "gtitle": "SRG-APP-000033-CTR-000095",
         "fix_id": "F-45632r717020_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242399",
       "title": "Kubernetes DynamicKubeletConfig must not be enabled.",
       "desc": "Kubernetes allows a user to configure kubelets with dynamic configurations. When dynamic configuration is used, the kubelet will watch for changes to the configuration file. When changes are made, the kubelet will automatically restart. Allowing this capability bypasses access restrictions and authorizations. Using this capability, an attacker can lower the security posture of the kubelet, which includes allowing the ability to run arbitrary commands in any container running on that node.",
@@ -447,9 +639,17 @@
         "gid": "V-242400",
         "rid": "SV-242400r712556_rule",
         "stig_id": "CNTR-K8-000470",
+        "gtitle": "SRG-APP-000033-CTR-000090",
         "fix_id": "F-45633r712555_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242400",
       "title": "The Kubernetes API server must have Alpha APIs disabled.",
       "desc": "Kubernetes allows alpha API calls within the API server. The alpha features are disabled by default since they are not ready for production and likely to change without notice. These features may also contain security issues that are rectified as the feature matures. To keep the Kubernetes cluster secure and stable, these alpha features must not be used.",
@@ -465,9 +665,17 @@
         "gid": "V-242401",
         "rid": "SV-242401r712559_rule",
         "stig_id": "CNTR-K8-000600",
+        "gtitle": "SRG-APP-000092-CTR-000165",
         "fix_id": "F-45634r717023_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001464"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242401",
       "title": "The Kubernetes API Server must have an audit policy set.",
       "desc": "When Kubernetes is started, components and user services are started. For auditing startup events, and events for components and services, it is important that auditing begin on startup. Within Kubernetes, audit data for all components is generated by the API server. To enable auditing to begin, an audit policy must be defined for the events and the information to be stored with each event. It is also necessary to give a secure location where the audit logs are to be stored. If an audit log path is not specified, all audit data is sent to studio.",
@@ -483,9 +691,17 @@
         "gid": "V-242402",
         "rid": "SV-242402r712562_rule",
         "stig_id": "CNTR-K8-000610",
+        "gtitle": "SRG-APP-000092-CTR-000165",
         "fix_id": "F-45635r717024_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001464"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242402",
       "title": "The Kubernetes API Server must have an audit log path set.",
       "desc": "When Kubernetes is started, components and user services are started for auditing startup events, and events for components and services, it is important that auditing begin on startup. Within Kubernetes, audit data for all components is generated by the API server. To enable auditing to begin, an audit policy must be defined for the events and the information to be stored with each event. It is also necessary to give a secure location where the audit logs are to be stored. If an audit log path is not specified, all audit data is sent to studio.",
@@ -501,7 +717,9 @@
         "gid": "V-242403",
         "rid": "SV-242403r712565_rule",
         "stig_id": "CNTR-K8-000700",
+        "gtitle": "SRG-APP-000026-CTR-000070",
         "fix_id": "F-45636r712564_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000026-CTR-000070",
           "SRG-APP-000027-CTR-000075",
@@ -526,8 +744,26 @@
           "SRG-APP-000343-CTR-000780",
           "SRG-APP-000381-CTR-000905"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000018",
+          "CCI-000130",
+          "CCI-000131",
+          "CCI-000132",
+          "CCI-000133",
+          "CCI-000134",
+          "CCI-000135",
+          "CCI-000172",
+          "CCI-001403",
+          "CCI-001404",
+          "CCI-001487",
+          "CCI-001814",
+          "CCI-002234"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242403",
       "title": "Kubernetes API Server must generate audit records that identify what type of event has occurred, identify the source of the event, contain the event results, identify any users, and identify any containers associated with the event.",
       "desc": "Within Kubernetes, audit data for all components is generated by the API server. This audit data is important when there are issues, to include security incidents that must be investigated. To make the audit data worthwhile for the investigation of events, it is necessary to have the appropriate and required data logged. To fully understand the event, it is important to identify any users associated with the event. The API server policy file allows for the following levels of auditing: None - Do not log events that match the rule. Metadata - Log request metadata (requesting user, timestamp, resource, verb, etc.) but not request or response body. Request - Log event metadata and request body but not response body. RequestResponse - Log event metadata, request, and response bodies. ",
@@ -543,9 +779,17 @@
         "gid": "V-242404",
         "rid": "SV-242404r712568_rule",
         "stig_id": "CNTR-K8-000850",
+        "gtitle": "SRG-APP-000133-CTR-000290",
         "fix_id": "F-45637r712567_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242404",
       "title": "Kubernetes Kubelet must deny hostname override.",
       "desc": "Kubernetes allows for the overriding of hostnames. Allowing this feature to be implemented within the kubelets may break the TLS setup between the kubelet service and the API server. This setting also can make it difficult to associate logs with nodes if security analytics needs to take place. The better practice is to setup nodes with resolvable FQDNs and avoid overriding the hostnames.",
@@ -561,9 +805,17 @@
         "gid": "V-242405",
         "rid": "SV-242405r712571_rule",
         "stig_id": "CNTR-K8-000860",
+        "gtitle": "SRG-APP-000133-CTR-000295",
         "fix_id": "F-45638r712570_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242405",
       "title": "The Kubernetes manifests must be owned by root.",
       "desc": "The manifest files contain the runtime configuration of the API server, proxy, scheduler, controller, and etcd. If an attacker can gain access to these files, changes can be made to open vulnerabilities and bypass user authorizations inherit within Kubernetes with RBAC implemented.",
@@ -579,9 +831,17 @@
         "gid": "V-242406",
         "rid": "SV-242406r712574_rule",
         "stig_id": "CNTR-K8-000880",
+        "gtitle": "SRG-APP-000133-CTR-000300",
         "fix_id": "F-45639r712573_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242406",
       "title": "The Kubernetes kubelet configuration file must be owned by root.",
       "desc": "The kubelet configuration file contains the runtime configuration of the kubelet service. If an attacker can gain access to this file, changes can be made to open vulnerabilities and bypass user authorizations inherent within Kubernetes with RBAC implemented.",
@@ -597,9 +857,17 @@
         "gid": "V-242407",
         "rid": "SV-242407r712577_rule",
         "stig_id": "CNTR-K8-000890",
+        "gtitle": "SRG-APP-000133-CTR-000305",
         "fix_id": "F-45640r712576_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242407",
       "title": "The Kubernetes kubelet configuration file must be owned by root.",
       "desc": "The kubelet configuration file contains the runtime configuration of the kubelet service. If an attacker can gain access to this file, changes can be made to open vulnerabilities and bypass user authorizations inherit within Kubernetes with RBAC implemented.",
@@ -615,13 +883,21 @@
         "gid": "V-242408",
         "rid": "SV-242408r712580_rule",
         "stig_id": "CNTR-K8-000900",
+        "gtitle": "SRG-APP-000133-CTR-000310",
         "fix_id": "F-45641r712579_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000133-CTR-000310",
           "SRG-APP-000133-CTR-000295"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242408",
       "title": "The Kubernetes manifests must have least privileges.",
       "desc": "The manifest files contain the runtime configuration of the API server, scheduler, controller, and etcd. If an attacker can gain access to these files, changes can be made to open vulnerabilities and bypass user authorizations inherent within Kubernetes with RBAC implemented. ",
@@ -637,9 +913,17 @@
         "gid": "V-242409",
         "rid": "SV-242409r712583_rule",
         "stig_id": "CNTR-K8-000910",
+        "gtitle": "SRG-APP-000141-CTR-000315",
         "fix_id": "F-45642r712582_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242409",
       "title": "Kubernetes Controller Manager must disable profiling.",
       "desc": "Kubernetes profiling provides the ability to analyze and troubleshoot Controller Manager events over a web interface on a host port. Enabling this service can expose details about the Kubernetes architecture. This service must not be enabled unless deemed necessary.",
@@ -655,9 +939,17 @@
         "gid": "V-242410",
         "rid": "SV-242410r712586_rule",
         "stig_id": "CNTR-K8-000920",
+        "gtitle": "SRG-APP-000142-CTR-000325",
         "fix_id": "F-45643r712585_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242410",
       "title": "The Kubernetes API Server must enforce ports, protocols, and services (PPS) that adhere to the Ports, Protocols, and Services Management Category Assurance List (PPSM CAL).",
       "desc": "Kubernetes API Server PPSs must be controlled and conform to the PPSM CAL. Those PPS that fall outside the PPSM CAL must be blocked. Instructions on the PPSM can be found in DoD Instruction 8551.01 Policy.",
@@ -673,9 +965,17 @@
         "gid": "V-242411",
         "rid": "SV-242411r712589_rule",
         "stig_id": "CNTR-K8-000930",
+        "gtitle": "SRG-APP-000142-CTR-000325",
         "fix_id": "F-45644r712588_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242411",
       "title": "The Kubernetes Scheduler must enforce ports, protocols, and services (PPS) that adhere to the Ports, Protocols, and Services Management Category Assurance List (PPSM CAL).",
       "desc": "Kubernetes Scheduler PPS must be controlled and conform to the PPSM CAL. Those ports, protocols, and services that fall outside the PPSM CAL must be blocked. Instructions on the PPSM can be found in DoD Instruction 8551.01 Policy.",
@@ -691,9 +991,17 @@
         "gid": "V-242412",
         "rid": "SV-242412r712592_rule",
         "stig_id": "CNTR-K8-000940",
+        "gtitle": "SRG-APP-000142-CTR-000330",
         "fix_id": "F-45645r712591_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242412",
       "title": "The Kubernetes Controllers must enforce ports, protocols, and services (PPS) that adhere to the Ports, Protocols, and Services Management Category Assurance List (PPSM CAL).",
       "desc": "Kubernetes Controller ports, protocols, and services must be controlled and conform to the PPSM CAL. Those PPS that fall outside the PPSM CAL must be blocked. Instructions on the PPSM can be found in DoD Instruction 8551.01 Policy.",
@@ -709,9 +1017,17 @@
         "gid": "V-242413",
         "rid": "SV-242413r712595_rule",
         "stig_id": "CNTR-K8-000950",
+        "gtitle": "SRG-APP-000142-CTR-000325",
         "fix_id": "F-45646r712594_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242413",
       "title": "The Kubernetes etcd must enforce ports, protocols, and services (PPS) that adhere to the Ports, Protocols, and Services Management Category Assurance List (PPSM CAL).",
       "desc": "Kubernetes etcd PPS must be controlled and conform to the PPSM CAL. Those PPS that fall outside the PPSM CAL must be blocked. Instructions on the PPSM can be found in DoD Instruction 8551.01 Policy.",
@@ -727,9 +1043,17 @@
         "gid": "V-242414",
         "rid": "SV-242414r717030_rule",
         "stig_id": "CNTR-K8-000960",
+        "gtitle": "SRG-APP-000142-CTR-000330",
         "fix_id": "F-45647r717032_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242414",
       "title": "The Kubernetes cluster must use non-privileged host ports for user pods.",
       "desc": "Privileged ports are those ports below 1024 and that require system privileges for their use. If containers can use these ports, the container must be run as a privileged user. Kubernetes must stop containers that try to map to these ports directly. Allowing non-privileged ports to be mapped to the container-privileged port is the allowable method when a certain port is needed. An example is mapping port 8080 externally to port 80 in the container.",
@@ -745,9 +1069,17 @@
         "gid": "V-242415",
         "rid": "SV-242415r712601_rule",
         "stig_id": "CNTR-K8-001160",
+        "gtitle": "SRG-APP-000171-CTR-000435",
         "fix_id": "F-45648r712600_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000196"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242415",
       "title": "Secrets in Kubernetes must not be stored as environment variables.",
       "desc": "Secrets, such as passwords, keys, tokens, and certificates should not be stored as environment variables. These environment variables are accessible inside Kubernetes by the \"Get Pod\" API call, and by any system, such as CI/CD pipeline, which has access to the definition file of the container. Secrets must be mounted from files or stored within password vaults.",
@@ -763,9 +1095,17 @@
         "gid": "V-242417",
         "rid": "SV-242417r712607_rule",
         "stig_id": "CNTR-K8-001360",
+        "gtitle": "SRG-APP-000211-CTR-000530",
         "fix_id": "F-45650r712606_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242417",
       "title": "Kubernetes must separate user functionality.",
       "desc": "Separating user functionality from management functionality is a requirement for all the components within the Kubernetes Control Plane. Without the separation, users may have access to management functions that can degrade the Kubernetes architecture and the services being offered, and can offer a method to bypass testing and validation of functions before introduced into a production environment.",
@@ -781,9 +1121,17 @@
         "gid": "V-242418",
         "rid": "SV-242418r712610_rule",
         "stig_id": "CNTR-K8-001400",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45651r717025_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242418",
       "title": "The Kubernetes API server must use approved cipher suites.",
       "desc": "The Kubernetes API server communicates to the kubelet service on the nodes to deploy, update, and delete resources. If an attacker were able to get between this communication and modify the request, the Kubernetes cluster could be compromised. Using approved cypher suites for the communication ensures the protection of the transmitted information, confidentiality, and integrity so that the attacker cannot read or alter this communication.",
@@ -799,9 +1147,17 @@
         "gid": "V-242419",
         "rid": "SV-242419r712613_rule",
         "stig_id": "CNTR-K8-001410",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45652r712612_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242419",
       "title": "Kubernetes API Server must have the SSL Certificate Authority set.",
       "desc": "Kubernetes control plane and external communication is managed by API Server. The main implementation of the API Server is to manage hardware resources for pods and containers using horizontal or vertical scaling. Anyone who can access the API Server can effectively control the Kubernetes architecture. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for API Server, the parameter etcd-cafile must be set. This parameter gives the location of the SSL Certificate Authority file used to secure API Server communication.",
@@ -817,9 +1173,17 @@
         "gid": "V-242420",
         "rid": "SV-242420r712616_rule",
         "stig_id": "CNTR-K8-001420",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45653r717026_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242420",
       "title": "Kubernetes Kubelet must have the SSL Certificate Authority set.",
       "desc": "Kubernetes container and pod configuration are maintained by Kubelet. Kubelet agents register nodes with the API Server, mount volume storage, and perform health checks for containers and pods. Anyone who gains access to Kubelet agents can effectively control applications within the pods and containers. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for Kubelet, the parameter etcd-cafile must be set. This parameter gives the location of the SSL Certificate Authority file used to secure Kubelet communication.",
@@ -835,9 +1199,17 @@
         "gid": "V-242421",
         "rid": "SV-242421r717033_rule",
         "stig_id": "CNTR-K8-001430",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45654r712618_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242421",
       "title": "Kubernetes Controller Manager must have the SSL Certificate Authority set.",
       "desc": "The Kubernetes Controller Manager is responsible for creating service accounts and tokens for the API Server, maintaining the correct number of pods for every replication controller and provides notifications when nodes are offline. Anyone who gains access to the Controller Manager can generate backdoor accounts, take possession of, or diminish system performance without detection by disabling system notification. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes Controller Manager with a means to be able to authenticate sessions and encrypt traffic.",
@@ -853,9 +1225,17 @@
         "gid": "V-242422",
         "rid": "SV-242422r712622_rule",
         "stig_id": "CNTR-K8-001440",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45655r712621_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242422",
       "title": "Kubernetes API Server must have a certificate for communication.",
       "desc": "Kubernetes control plane and external communication is managed by API Server. The main implementation of the API Server is to manage hardware resources for pods and container using horizontal or vertical scaling. Anyone who can access the API Server can effectively control the Kubernetes architecture. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for API Server, the parameter etcd-cafile must be set. This parameter gives the location of the SSL Certificate Authority file used to secure API Server communication.",
@@ -871,9 +1251,17 @@
         "gid": "V-242423",
         "rid": "SV-242423r712625_rule",
         "stig_id": "CNTR-K8-001450",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45656r712624_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242423",
       "title": "Kubernetes etcd must enable client authentication to secure service.",
       "desc": "Kubernetes container and pod configuration are maintained by Kubelet. Kubelet agents register nodes with the API Server, mount volume storage, and perform health checks for containers and pods. Anyone who gains access to Kubelet agents can effectively control applications within the pods and containers. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for Kubelet, the parameter etcd-cafile must be set. This parameter gives the location of the SSL Certificate Authority file used to secure Kubelet communication.",
@@ -889,9 +1277,17 @@
         "gid": "V-242424",
         "rid": "SV-242424r712628_rule",
         "stig_id": "CNTR-K8-001460",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45657r712627_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242424",
       "title": "Kubernetes Kubelet must enable tls-private-key-file for client authentication to secure service.",
       "desc": "Kubernetes container and pod configuration are maintained by Kubelet. Kubelet agents register nodes with the API Server, mount volume storage, and perform health checks for containers and pods. Anyone who gains access to Kubelet agents can effectively control applications within the pods and containers. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for Kubelet, the parameter etcd-cafile must be set. This parameter gives the location of the SSL Certificate Authority file used to secure Kubelet communication.",
@@ -907,9 +1303,17 @@
         "gid": "V-242425",
         "rid": "SV-242425r712631_rule",
         "stig_id": "CNTR-K8-001470",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45658r712630_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242425",
       "title": "Kubernetes Kubelet must enable tls-cert-file for client authentication to secure service.",
       "desc": "Kubernetes container and pod configuration are maintained by Kubelet. Kubelet agents register nodes with the API Server, mount volume storage, and perform health checks for containers and pods. Anyone who gains access to Kubelet agents can effectively control applications within the pods and containers. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for Kubelet, the parameter etcd-cafile must be set. This parameter gives the location of the SSL Certificate Authority file used to secure Kubelet communication.",
@@ -925,9 +1329,17 @@
         "gid": "V-242426",
         "rid": "SV-242426r754813_rule",
         "stig_id": "CNTR-K8-001480",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45659r754812_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242426",
       "title": "Kubernetes etcd must enable client authentication to secure service.",
       "desc": "Kubernetes container and pod configuration are maintained by Kubelet. Kubelet agents register nodes with the API Server, mount volume storage, and perform health checks for containers and pods. Anyone who gains access to Kubelet agents can effectively control applications within the pods and containers. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for Kubelet, the parameter etcd-cafile must be set. This parameter gives the location of the SSL Certificate Authority file used to secure Kubelet communication.",
@@ -943,9 +1355,17 @@
         "gid": "V-242427",
         "rid": "SV-242427r712637_rule",
         "stig_id": "CNTR-K8-001490",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45660r712636_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242427",
       "title": "Kubernetes etcd must have a key file for secure communication.",
       "desc": "Kubernetes stores configuration and state information in a distributed key-value store called etcd. Anyone who can write to etcd can effectively control the Kubernetes cluster. Even just reading the contents of etcd could easily provide helpful hints to a would-be attacker. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server and etcd with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for etcd, the parameter etcd-keyfile must be set. This parameter gives the location of the key file used to secure etcd communication.",
@@ -961,9 +1381,17 @@
         "gid": "V-242428",
         "rid": "SV-242428r754816_rule",
         "stig_id": "CNTR-K8-001500",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45661r754815_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242428",
       "title": "Kubernetes etcd must have a certificate for communication.",
       "desc": "Kubernetes stores configuration and state information in a distributed key-value store called etcd. Anyone who can write to etcd can effectively control a Kubernetes cluster. Even just reading the contents of etcd could easily provide helpful hints to a would-be attacker. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server and etcd with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for etcd, the parameter certfile must be set. This parameter gives the location of the SSL certification file used to secure etcd communication.",
@@ -979,9 +1407,17 @@
         "gid": "V-242429",
         "rid": "SV-242429r712643_rule",
         "stig_id": "CNTR-K8-001510",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45662r712642_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242429",
       "title": "Kubernetes etcd must have the SSL Certificate Authority set.",
       "desc": "Kubernetes stores configuration and state information in a distributed key-value store called etcd. Anyone who can write to etcd can effectively control a Kubernetes cluster. Even just reading the contents of etcd could easily provide helpful hints to a would-be attacker. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server and etcd with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for etcd, the parameter etcd-cafile must be set. This parameter gives the location of the SSL Certificate Authority file used to secure etcd communication.",
@@ -997,9 +1433,17 @@
         "gid": "V-242430",
         "rid": "SV-242430r712646_rule",
         "stig_id": "CNTR-K8-001520",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45663r712645_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242430",
       "title": "Kubernetes etcd must have a certificate for communication.",
       "desc": "Kubernetes stores configuration and state information in a distributed key-value store called etcd. Anyone who can write to etcd can effectively control your Kubernetes cluster. Even just reading the contents of etcd could easily provide helpful hints to a would-be attacker. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server and etcd with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for etcd, the parameter etcd-certfile must be set. This parameter gives the location of the SSL certification file used to secure etcd communication.",
@@ -1015,9 +1459,17 @@
         "gid": "V-242431",
         "rid": "SV-242431r712649_rule",
         "stig_id": "CNTR-K8-001530",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45664r712648_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242431",
       "title": "Kubernetes etcd must have a key file for secure communication.",
       "desc": "Kubernetes stores configuration and state information in a distributed key-value store called etcd. Anyone who can write to etcd can effectively control a Kubernetes cluster. Even just reading the contents of etcd could easily provide helpful hints to a would-be attacker. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server and etcd with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for etcd, the parameter etcd-keyfile must be set. This parameter gives the location of the key file used to secure etcd communication.",
@@ -1033,9 +1485,17 @@
         "gid": "V-242432",
         "rid": "SV-242432r712652_rule",
         "stig_id": "CNTR-K8-001540",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45665r712651_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242432",
       "title": "Kubernetes etcd must have peer-cert-file set for secure communication.",
       "desc": "Kubernetes stores configuration and state information in a distributed key-value store called etcd. Anyone who can write to etcd can effectively control the Kubernetes cluster. Even just reading the contents of etcd could easily provide helpful hints to a would-be attacker. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server and etcd with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for etcd, the parameter etcd-certfile must be set. This parameter gives the location of the SSL certification file used to secure etcd communication.",
@@ -1051,9 +1511,17 @@
         "gid": "V-242433",
         "rid": "SV-242433r712655_rule",
         "stig_id": "CNTR-K8-001550",
+        "gtitle": "SRG-APP-000219-CTR-000550",
         "fix_id": "F-45666r712654_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001184"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242433",
       "title": "Kubernetes etcd must have a peer-key-file set for secure communication.",
       "desc": "Kubernetes stores configuration and state information in a distributed key-value store called etcd. Anyone who can write to etcd can effectively control a Kubernetes cluster. Even just reading the contents of etcd could easily provide helpful hints to a would-be attacker. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server and etcd with a means to be able to authenticate sessions and encrypt traffic. To enable encrypted communication for etcd, the parameter etcd-certfile must be set. This parameter gives the location of the SSL certification file used to secure etcd communication.",
@@ -1069,9 +1537,17 @@
         "gid": "V-242434",
         "rid": "SV-242434r712658_rule",
         "stig_id": "CNTR-K8-001620",
+        "gtitle": "SRG-APP-000233-CTR-000585",
         "fix_id": "F-45667r712657_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001084"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242434",
       "title": "Kubernetes Kubelet must enable kernel protection.",
       "desc": "System kernel is responsible for memory, disk, and task management. The kernel provides a gateway between the system hardware and software. Kubernetes requires kernel access to allocate resources to the Control Plane. Threat actors that penetrate the system kernel can inject malicious code or hijack the Kubernetes architecture. It is vital to implement protections through Kubernetes components to reduce the attack surface.",
@@ -1087,14 +1563,24 @@
         "gid": "V-242435",
         "rid": "SV-242435r712661_rule",
         "stig_id": "CNTR-K8-001990",
+        "gtitle": "SRG-APP-000340-CTR-000770",
         "fix_id": "F-45668r712660_fix",
+        "rationale": null,
         "satisfies": [
           "SRG-APP-000340-CTR-000770",
           "SRG-APP-000033-CTR-000095",
           "SRG-APP-000378-CTR-000880"
         ],
-        "documentable": false
+        "documentable": false,
+        "cci": [
+          "CCI-000213",
+          "CCI-001812",
+          "CCI-002235"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242435",
       "title": "Kubernetes must prevent non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures or the installation of patches and updates.",
       "desc": "Kubernetes uses the API Server to control communication to the other services that makeup Kubernetes. The use of authorizations and not the default of \"AlwaysAllow\" enables the Kubernetes functions control to only the groups that need them. To control access the API server must have one of the following options set for the authorization mode: --authorization-mode=ABAC Attribute-Based Access Control (ABAC) mode allows a user to configure policies using local files. --authorization-mode=RBAC Role-based access control (RBAC) mode allows a user to create and store policies using the Kubernetes API. --authorization-mode=Webhook WebHook is an HTTP callback mode that allows a user to manage authorization using a remote REST endpoint. --authorization-mode=Node Node authorization is a special-purpose authorization mode that specifically authorizes API requests made by kubelets. --authorization-mode=AlwaysDeny This flag blocks all requests. Use this flag only for testing. ",
@@ -1110,9 +1596,17 @@
         "gid": "V-242436",
         "rid": "SV-242436r712664_rule",
         "stig_id": "CNTR-K8-002000",
+        "gtitle": "SRG-APP-000342-CTR-000775",
         "fix_id": "F-45669r717027_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002233"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242436",
       "title": "The Kubernetes API server must have the ValidatingAdmissionWebhook enabled.",
       "desc": "Enabling the admissions webhook allows for Kubernetes to apply policies against objects that are to be created, read, updated, or deleted. By applying a pod security policy, control can be given to not allow images to be instantiated that run as the root user. If pods run as the root user, the pod then has root privileges to the host system and all the resources it has. An attacker can use this to attack the Kubernetes cluster. By implementing a policy that does not allow root or privileged pods, the pod users are limited in what the pod can do and access.",
@@ -1128,9 +1622,17 @@
         "gid": "V-242437",
         "rid": "SV-242437r712667_rule",
         "stig_id": "CNTR-K8-002010",
+        "gtitle": "SRG-APP-000342-CTR-000775",
         "fix_id": "F-45670r717028_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002233"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242437",
       "title": "Kubernetes must have a pod security policy set.",
       "desc": "Enabling the admissions webhook allows for Kubernetes to apply policies against objects that are to be created, read, updated, or deleted. By applying a pod security policy, control can be given to not allow images to be instantiated that run as the root user. If pods run as the root user, the pod then has root privileges to the host system and all the resources it has. An attacker can use this to attack the Kubernetes cluster. By implementing a policy that does not allow root or privileged pods, the pod users are limited in what the pod can do and access.",
@@ -1146,9 +1648,17 @@
         "gid": "V-242438",
         "rid": "SV-242438r754802_rule",
         "stig_id": "CNTR-K8-002600",
+        "gtitle": "SRG-APP-000435-CTR-001070",
         "fix_id": "F-45671r712669_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242438",
       "title": "Kubernetes API Server must configure timeouts to limit attack surface.",
       "desc": "Kubernetes API Server request timeouts sets the duration a request stays open before timing out. Since the API Server is the central component in the Kubernetes Control Plane, it is vital to protect this service. If request timeouts were not set, malicious attacks or unwanted activities might affect multiple deployments across different applications or environments. This might deplete all resources from the Kubernetes infrastructure causing the information system to go offline. The request-timeout value must never be set to \"0\". This disables the request-timeout feature. By default, the request-timeout is set to \"1 minute\".",
@@ -1164,9 +1674,17 @@
         "gid": "V-242442",
         "rid": "SV-242442r712682_rule",
         "stig_id": "CNTR-K8-002700",
+        "gtitle": "SRG-APP-000454-CTR-001110",
         "fix_id": "F-45675r712681_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002617"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242442",
       "title": "Kubernetes must remove old components after updated versions have been installed.",
       "desc": "Previous versions of Kubernetes components that are not removed after updates have been installed may be exploited by adversaries by allowing the vulnerabilities to still exist within the cluster. It is important for Kubernetes to remove old pods when newer pods are created using new images to always be at the desired security state.",
@@ -1182,9 +1700,17 @@
         "gid": "V-242443",
         "rid": "SV-242443r712685_rule",
         "stig_id": "CNTR-K8-002720",
+        "gtitle": "SRG-APP-000456-CTR-001125",
         "fix_id": "F-45676r712684_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002605"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242443",
       "title": "Kubernetes must contain the latest updates as authorized by IAVMs, CTOs, DTMs, and STIGs.",
       "desc": "Kubernetes software must stay up to date with the latest patches, service packs, and hot fixes. Not updating the Kubernetes control plane will expose the organization to vulnerabilities. Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously. Organization-defined time periods for updating security-relevant container platform components may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). This requirement will apply to software patch management solutions that are used to install patches across the enclave and also to applications themselves that are not part of that patch management solution. For example, many browsers today provide the capability to install their own patch software. Patch criticality, as well as system criticality will vary. Therefore, the tactical situations regarding the patch management process will also vary. This means that the time period utilized must be a configurable parameter. Time frames for application of security-relevant software updates may be dependent upon the IAVM process. The container platform components will be configured to check for and install security-relevant software updates within an identified time period from the availability of the update. The container platform registry will ensure the images are current. The specific time period will be defined by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).",
@@ -1200,9 +1726,17 @@
         "gid": "V-242444",
         "rid": "SV-242444r712688_rule",
         "stig_id": "CNTR-K8-003110",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45677r712687_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242444",
       "title": "The Kubernetes component manifests must be owned by root.",
       "desc": "The Kubernetes manifests are those files that contain the arguments and settings for the Master Node services. These services are etcd, the api server, controller, proxy, and scheduler. If these files can be changed, the scheduler will be implementing the changes immediately. Many of the security settings within the document are implemented through these manifests.",
@@ -1218,9 +1752,17 @@
         "gid": "V-242445",
         "rid": "SV-242445r712691_rule",
         "stig_id": "CNTR-K8-003120",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45678r712690_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242445",
       "title": "The Kubernetes component etcd must be owned by etcd.",
       "desc": "The Kubernetes etcd key-value store provides a way to store data to the Master Node. If these files can be changed, data to API object and the master node would be compromised. The scheduler will implement the changes immediately. Many of the security settings within the document are implemented through this file.",
@@ -1236,9 +1778,17 @@
         "gid": "V-242446",
         "rid": "SV-242446r712694_rule",
         "stig_id": "CNTR-K8-003130",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45679r712693_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242446",
       "title": "The Kubernetes conf files must be owned by root.",
       "desc": "The Kubernetes conf files contain the arguments and settings for the Master Node services. These services are controller and scheduler. If these files can be changed, the scheduler will be implementing the changes immediately. Many of the security settings within the document are implemented through this file.",
@@ -1254,9 +1804,17 @@
         "gid": "V-242447",
         "rid": "SV-242447r712697_rule",
         "stig_id": "CNTR-K8-003140",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45680r712696_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242447",
       "title": "The Kubernetes Kube Proxy must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes kube proxy kubeconfig contain the argument and setting for the Master Nodes. These settings contain network rules for restricting network communication between pods, clusters, and networks. If these files can be changed, data traversing between the Kubernetes Control Panel components would be compromised. Many of the security settings within the document are implemented through this file.",
@@ -1272,9 +1830,17 @@
         "gid": "V-242448",
         "rid": "SV-242448r712700_rule",
         "stig_id": "CNTR-K8-003150",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45681r712699_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242448",
       "title": "The Kubernetes Kube Proxy must be owned by root.",
       "desc": "The Kubernetes kube proxy kubeconfig contain the argument and setting for the Master Nodes. These settings contain network rules for restricting network communication between pods, clusters, and networks. If these files can be changed, data traversing between the Kubernetes Control Panel components would be compromised. Many of the security settings within the document are implemented through this file.",
@@ -1290,9 +1856,17 @@
         "gid": "V-242449",
         "rid": "SV-242449r712703_rule",
         "stig_id": "CNTR-K8-003160",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45682r712702_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242449",
       "title": "The Kubernetes Kubelet certificate authority file must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes kubelet certificate authority file contains settings for the Kubernetes Node TLS certificate authority. Any request presenting a client certificate signed by one of the authorities in the client-ca-file is authenticated with an identity corresponding to the CommonName of the client certificate. If this file can be changed, the Kubernetes architecture could be compromised. The scheduler will implement the changes immediately. Many of the security settings within the document are implemented through this file.",
@@ -1308,9 +1882,17 @@
         "gid": "V-242450",
         "rid": "SV-242450r754804_rule",
         "stig_id": "CNTR-K8-003170",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45683r712705_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242450",
       "title": "The Kubernetes Kubelet certificate authority must be owned by root.",
       "desc": "The Kubernetes kube proxy kubeconfig contain the argument and setting for the Master Nodes. These settings contain network rules for restricting network communication between pods, clusters, and networks. If these files can be changed, data traversing between the Kubernetes Control Panel components would be compromised. Many of the security settings within the document are implemented through this file.",
@@ -1326,9 +1908,17 @@
         "gid": "V-242451",
         "rid": "SV-242451r712709_rule",
         "stig_id": "CNTR-K8-003180",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45684r712708_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242451",
       "title": "The Kubernetes component PKI must be owned by root.",
       "desc": "The Kubernetes PKI directory contains all certificates (.crt files) supporting secure network communications in the Kubernetes Control Plane. If these files can be modified, data traversing within the architecture components would become unsecure and compromised. Many of the security settings within the document are implemented through this file.",
@@ -1344,9 +1934,17 @@
         "gid": "V-242452",
         "rid": "SV-242452r712712_rule",
         "stig_id": "CNTR-K8-003190",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45685r712711_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242452",
       "title": "The Kubernetes kubelet config must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes kubelet agent registers nodes with the API Server, mounts volume storage for pods, and performs health checks to containers within pods. If these files can be modified, the information system would be unaware of pod or container degradation. Many of the security settings within the document are implemented through this file.",
@@ -1362,9 +1960,17 @@
         "gid": "V-242453",
         "rid": "SV-242453r712715_rule",
         "stig_id": "CNTR-K8-003200",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45686r712714_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242453",
       "title": "The Kubernetes kubelet config must be owned by root.",
       "desc": "The Kubernetes kubelet agent registers nodes with the API server and performs health checks to containers within pods. If these files can be modified, the information system would be unaware of pod or container degradation. Many of the security settings within the document are implemented through this file.",
@@ -1380,9 +1986,17 @@
         "gid": "V-242454",
         "rid": "SV-242454r754819_rule",
         "stig_id": "CNTR-K8-003210",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45687r754818_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242454",
       "title": "The Kubernetes kubeadm.conf must be owned by root.",
       "desc": "The Kubernetes kubeeadm.conf contains sensitive information regarding the cluster nodes configuration. If this file can be modified, the Kubernetes Platform Plane would be degraded or compromised for malicious intent. Many of the security settings within the document are implemented through this file.",
@@ -1398,9 +2012,17 @@
         "gid": "V-242455",
         "rid": "SV-242455r754822_rule",
         "stig_id": "CNTR-K8-003220",
+        "gtitle": "SRG-APP-000516-CTR-001325",
         "fix_id": "F-45688r754821_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242455",
       "title": "The Kubernetes kubeadm.conf must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes kubeadm.conf contains sensitive information regarding the cluster nodes configuration. If this file can be modified, the Kubernetes Platform Plane would be degraded or compromised for malicious intent. Many of the security settings within the document are implemented through this file.",
@@ -1416,9 +2038,17 @@
         "gid": "V-242456",
         "rid": "SV-242456r712724_rule",
         "stig_id": "CNTR-K8-003230",
+        "gtitle": "SRG-APP-000516-CTR-001330",
         "fix_id": "F-45689r712723_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242456",
       "title": "The Kubernetes kubelet config must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes kubelet agent registers nodes with the API server and performs health checks to containers within pods. If this file can be modified, the information system would be unaware of pod or container degradation.",
@@ -1434,9 +2064,17 @@
         "gid": "V-242457",
         "rid": "SV-242457r712727_rule",
         "stig_id": "CNTR-K8-003240",
+        "gtitle": "SRG-APP-000516-CTR-001330",
         "fix_id": "F-45690r712726_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242457",
       "title": "The Kubernetes kubelet config must be owned by root.",
       "desc": "The Kubernetes kubelet agent registers nodes with the API Server and performs health checks to containers within pods. If this file can be modified, the information system would be unaware of pod or container degradation.",
@@ -1452,9 +2090,17 @@
         "gid": "V-242458",
         "rid": "SV-242458r754806_rule",
         "stig_id": "CNTR-K8-003250",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45691r754805_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242458",
       "title": "The Kubernetes API Server must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes manifests are those files that contain the arguments and settings for the Master Node services. These services are etcd, the API Server, controller, proxy, and scheduler. If these files can be changed, the scheduler will be implementing the changes immediately. Many of the security settings within the document are implemented through these manifests.",
@@ -1470,9 +2116,17 @@
         "gid": "V-242459",
         "rid": "SV-242459r712733_rule",
         "stig_id": "CNTR-K8-003260",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45692r712732_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242459",
       "title": "The Kubernetes etcd must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes etcd key-value store provides a way to store data to the Master Node. If these files can be changed, data to API object and master node would be compromised.",
@@ -1488,9 +2142,17 @@
         "gid": "V-242460",
         "rid": "SV-242460r712736_rule",
         "stig_id": "CNTR-K8-003270",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45693r712735_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242460",
       "title": "The Kubernetes admin.conf must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes conf files contain the arguments and settings for the Master Node services. These services are controller and scheduler. If these files can be changed, the scheduler will be implementing the changes immediately.",
@@ -1506,9 +2168,17 @@
         "gid": "V-242461",
         "rid": "SV-242461r712739_rule",
         "stig_id": "CNTR-K8-003280",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45694r712738_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242461",
       "title": "Kubernetes API Server audit logs must be enabled.",
       "desc": "Kubernetes API Server validates and configures pods and services for the API object. The REST operation provides frontend functionality to the cluster share state. Enabling audit logs provides a way to monitor and identify security risk events or misuse of information. Audit logs are necessary to provide evidence in the case the Kubernetes API Server is compromised requiring a Cyber Security Investigation.",
@@ -1524,9 +2194,17 @@
         "gid": "V-242462",
         "rid": "SV-242462r712742_rule",
         "stig_id": "CNTR-K8-003290",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45695r712741_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242462",
       "title": "The Kubernetes API Server must be set to audit log max size.",
       "desc": "The Kubernetes API Server must be set for enough storage to retain log information over the period required. When audit logs are large in size, the monitoring service for events becomes degraded. The function of the maximum log file size is to set these limits.",
@@ -1542,9 +2220,17 @@
         "gid": "V-242463",
         "rid": "SV-242463r712745_rule",
         "stig_id": "CNTR-K8-003300",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45696r712744_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242463",
       "title": "The Kubernetes API Server must be set to audit log maximum backup.",
       "desc": "The Kubernetes API Server must set enough storage to retain logs for monitoring suspicious activity and system misconfiguration, and provide evidence for Cyber Security Investigations.",
@@ -1560,9 +2246,17 @@
         "gid": "V-242464",
         "rid": "SV-242464r754808_rule",
         "stig_id": "CNTR-K8-003310",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45697r712747_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242464",
       "title": "The Kubernetes API Server audit log retention must be set.",
       "desc": "The Kubernetes API Server must set enough storage to retain logs for monitoring suspicious activity and system misconfiguration, and provide evidence for Cyber Security Investigations.",
@@ -1578,9 +2272,17 @@
         "gid": "V-242465",
         "rid": "SV-242465r754810_rule",
         "stig_id": "CNTR-K8-003320",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45698r712750_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242465",
       "title": "The Kubernetes API Server audit log path must be set.",
       "desc": "Kubernetes API Server validates and configures pods and services for the API object. The REST operation provides frontend functionality to the cluster share state. Audit logs are necessary to provide evidence in the case the Kubernetes API Server is compromised requiring Cyber Security Investigation. To record events in the audit log the log path value must be set.",
@@ -1596,9 +2298,17 @@
         "gid": "V-242466",
         "rid": "SV-242466r712754_rule",
         "stig_id": "CNTR-K8-003330",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45699r712753_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242466",
       "title": "The Kubernetes PKI CRT must have file permissions set to 644 or more restrictive.",
       "desc": "The Kubernetes PKI directory contains all certificates (.crt files) supporting secure network communications in the Kubernetes Control Plane. If these files can be modified, data traversing within the architecture components would become unsecure and compromised.",
@@ -1614,9 +2324,17 @@
         "gid": "V-242467",
         "rid": "SV-242467r712757_rule",
         "stig_id": "CNTR-K8-003340",
+        "gtitle": "SRG-APP-000516-CTR-001335",
         "fix_id": "F-45700r712756_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242467",
       "title": "The Kubernetes PKI keys must have file permissions set to 600 or more restrictive.",
       "desc": "The Kubernetes PKI directory contains all certificate key files supporting secure network communications in the Kubernetes Control Plane. If these files can be modified, data traversing within the architecture components would become unsecure and compromised.",
@@ -1632,9 +2350,17 @@
         "gid": "V-242468",
         "rid": "SV-242468r712760_rule",
         "stig_id": "CNTR-K8-003350",
+        "gtitle": "SRG-APP-000560-CTR-001340",
         "fix_id": "F-45701r712759_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001453"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-242468",
       "title": "The Kubernetes API Server must prohibit communication using TLS version 1.0 and 1.1, and SSL 2.0 and 3.0.",
       "desc": "The Kubernetes API Server will prohibit the use of SSL and unauthorized versions of TLS protocols to properly secure communication. The use of unsupported protocol exposes vulnerabilities to Kubernetes by rogue traffic interceptions, man-in-the middle attacks, and impersonation of users or services from the container platform runtime, registry, and keystore. To enable the minimum version of TLS to be used by the Kubernetes API Server, the setting \"tls-min-version\" must be set. The container platform and its components will adhere to NIST 800-52R2.",
@@ -1650,9 +2376,17 @@
         "gid": "V-245541",
         "rid": "SV-245541r754888_rule",
         "stig_id": "CNTR-K8-001300",
+        "gtitle": "SRG-APP-000190-CTR-000500",
         "fix_id": "F-48771r754887_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001133"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-245541",
       "title": "Kubernetes Kubelet must not disable timeouts.",
       "desc": "Idle connections from the Kubelet can be use by unauthorized users to perform malicious activity to the nodes, pods, containers, and cluster within the Kubernetes Control Plane. Setting the streaming connection idle timeout defines the maximum time an idle session is permitted prior to disconnect. Setting the value to \"0\" never disconnects any idle sessions. Idle timeouts must never be set to \"0\" and should be defined at a minimum of \"5 minutes\".",
@@ -1668,9 +2402,17 @@
         "gid": "V-245542",
         "rid": "SV-245542r754891_rule",
         "stig_id": "CNTR-K8-002620",
+        "gtitle": "SRG-APP-000439-CTR-001080",
         "fix_id": "F-48772r754890_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-245542",
       "title": "Kubernetes API Server must disable basic authentication to protect information in transit.",
       "desc": "Kubernetes basic authentication sends and receives request containing username, uid, groups, and other fields over a clear text HTTP communication. Basic authentication does not provide any security mechanisms using encryption standards. PKI certificate-based authentication must be set over a secure channel to ensure confidentiality and integrity. Basic authentication must not be set in the manifest file.",
@@ -1686,9 +2428,17 @@
         "gid": "V-245543",
         "rid": "SV-245543r754894_rule",
         "stig_id": "CNTR-K8-002630",
+        "gtitle": "SRG-APP-000439-CTR-001080",
         "fix_id": "F-48773r754893_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-245543",
       "title": "Kubernetes API Server must disable token authentication to protect information in transit.",
       "desc": "Kubernetes token authentication uses password known as secrets in a plaintext file. This file contains sensitive information such as token, username and user uid. This token is used by service accounts within pods to authenticate with the API Server. This information is very valuable for attackers with malicious intent if the service account is privileged having access to the token. With this token a threat actor can impersonate the service account gaining access to the Rest API service.",
@@ -1704,9 +2454,17 @@
         "gid": "V-245544",
         "rid": "SV-245544r754897_rule",
         "stig_id": "CNTR-K8-002640",
+        "gtitle": "SRG-APP-000439-CTR-001080",
         "fix_id": "F-48774r754896_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002418"
+        ]
       },
+      "refs": [
+        "DPMS Target Kubernetes"
+      ],
       "id": "V-245544",
       "title": "Kubernetes endpoints must use approved organizational certificate and key pair to protect information in transit.",
       "desc": "Kubernetes control plane and external communication is managed by API Server. The main implementation of the API Server is to manage hardware resources for pods and container using horizontal or vertical scaling. Anyone who can gain access to the API Server can effectively control your Kubernetes architecture. Using authenticity protection, the communication can be protected against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions. The communication session is protected by utilizing transport encryption protocols, such as TLS. TLS provides the Kubernetes API Server with a means to be able to authenticate sessions and encrypt traffic. By default, the API Server does not authenticate to the kubelet HTTPs endpoint. To enable secure communication for API Server, the parameter -kubelet-client-certificate and kubelet-client-key must be set. This parameter gives the location of the certificate and key pair used to secure API Server communication.",

@@ -11,13 +11,21 @@
         "gid": "V-14618",
         "rid": "SV-55214r1_rule",
         "stig_id": "DTAM090",
+        "gtitle": "DTAM090-McAfee VirusScan on-access script scan parameter",
         "fix_id": "F-48070r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14618",
       "title": "McAfee VirusScan On-Access General Policies must be configured to enable scanning of scripts.",
       "desc": "Interpreted viruses are executed by an application. Within this subcategory, macro viruses take advantage of the capabilities of applications' macro programming language to infect application documents and document templates, while scripting viruses infect scripts that are understood by scripting languages processed by services on the OS. Many attackers use toolkits containing several different types of utilities and scripts that can be used to probe and attack hosts. (NIST SP 800-83) The scanning of scripts is crucial in preventing these attacks.",
@@ -33,13 +41,21 @@
         "gid": "V-14619",
         "rid": "SV-55217r1_rule",
         "stig_id": "DTAM091",
+        "gtitle": "DTAM091-McAfee VirusScan on-access scan blocking",
         "fix_id": "F-48072r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14619",
       "title": "McAfee VirusScan On-Access General Policies must be configured to block the connection when a threatened file is detected in a shared folder.",
       "desc": "Containment during a virus outbreak is crucial. Infected hosts may attempt to spread malware and will use every network path available to them when spreading that infection. By containing the system when a detection is found, the malware will be restricted to that one system. Likewise, if malware is detected in a shared folder, maintaining the connection between a system and the shared folder would allow the malware to spread. Placing temporary restrictions on network connectivity is an effective mitigation mechanism. These block connection settings will most often be used on a server housing shared folders and files, and will block the connection from any network user on a remote computer who attempts to read from, or write to, a threatened file in the shared folder. In addition, it will block the connection from any user on a remote computer who attempts to write an unwanted program to the computer. The connection will be unblocked after the specified amount of time, re-allowing access to the other shared files and folders, but will be re-blocked should those same file accesses be attempted.",
@@ -55,13 +71,21 @@
         "gid": "V-14620",
         "rid": "SV-55219r1_rule",
         "stig_id": "DTAM092",
+        "gtitle": "DTAM092-McAfee VirusScan on-access scan blocking",
         "fix_id": "F-48073r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14620",
       "title": "McAfee VirusScan On-Access General Policies must be configured to unblock connections after a minimum of 30 minutes.",
       "desc": "Containment during a virus outbreak is crucial. Infected hosts may attempt to spread malware and will use every network path available to them when spreading that infection. By containing the system when a detection is found, the malware will be restricted to that one system. Likewise, if malware is detected in a shared folder, maintaining the connection between a system and the shared folder would allow the malware to spread. Placing temporary restrictions on network connectivity is an effective mitigation mechanism. These block connection settings will most often be used on a server housing shared folders and files, and will block the connection from any network user on a remote computer who attempts to read from, or write to, a threatened file in the shared folder. In addition, it will block the connection from any user on a remote computer who attempts to write an unwanted program to the computer. The connection will be unblocked after the specified amount of time, re-allowing access to the other shared files and folders, but will be re-blocked should those same file accesses be attempted.",
@@ -77,13 +101,21 @@
         "gid": "V-14621",
         "rid": "SV-55221r1_rule",
         "stig_id": "DTAM093",
+        "gtitle": "DTAM093-McAfee VirusScan on-access scan blocking",
         "fix_id": "F-48075r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14621",
       "title": "McAfee VirusScan On-Access General Policies must be configured to block the connection when a file with a potentially unwanted program is detected in a shared folder.",
       "desc": "Containment during a virus outbreak is crucial. Infected hosts may attempt to spread malware and will use every network path available to them when spreading that infection. By containing the system when a detection is found, the malware will be restricted to that one system. Likewise, if malware is detected in a shared folder, maintaining the connection between a system and the shared folder would allow the malware to spread. Placing temporary restrictions on network connectivity is an effective mitigation mechanism. These block connection settings will most often be used on a server housing shared folders and files and will block the connection from any network user on a remote computer who attempts to read from, or write to, a threatened file in the shared folder. In addition, it will block the connection from any user on a remote computer who attempts to write an unwanted program to the computer. The connection will be unblocked after the specified amount of time, re-allowing access to the other shared files and folders but will be re-blocked should those same file accesses be attempted.",
@@ -99,13 +131,21 @@
         "gid": "V-14622",
         "rid": "SV-55222r1_rule",
         "stig_id": "DTAM100",
+        "gtitle": "DTAM100-McAfee VirusScan scan default values",
         "fix_id": "F-48078r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14622",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to use only one scanning policy for all processes, unless the use of Low-Risk Processes/High-Risk Processes has been documented with, and approved by, the IAO/IAM.",
       "desc": "Organizations should use centrally managed antivirus software that is controlled and monitored regularly by antivirus administrators, who are also typically responsible for acquiring, testing, approving, and delivering antivirus signature and software updates through the organizations. Some processes are known to be higher risk while others are low risk. By restricting policy configuration to the Default Processes policy, all processes will be interpreted equally when applying the policy settings, and will provide the highest level of protection. Best practice dictates configuring Low-Risk and/or High-Risk policies only when it is necessary to improve system performance and will focus the scanning where it is most likely to detect malware. There is risk associated with configuring the Low-Risk and/or High-Risk policies for the purpose of specifically excluding processes from scanning, and should only be done after evaluating other policy settings and determining risk.",
@@ -121,13 +161,21 @@
         "gid": "V-14623",
         "rid": "SV-55224r1_rule",
         "stig_id": "DTAM101",
+        "gtitle": "DTAM101-McAfee VirusScan scan when writing disk",
         "fix_id": "F-48079r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14623",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to scan when writing to disk.",
       "desc": "Antivirus software is the most commonly used technical control for malware threat mitigation. Real-time scanning of files as they are written to disk is a crucial first line of defense from malware attacks.",
@@ -143,13 +191,21 @@
         "gid": "V-14624",
         "rid": "SV-55225r1_rule",
         "stig_id": "DTAM102",
+        "gtitle": "DTAM102-McAfee VirusScan scan when reading",
         "fix_id": "F-48081r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14624",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to scan when reading from disk.",
       "desc": "Antivirus software is the most commonly used technical control for malware threat mitigation. Real-time scanning of files as they are read from disk is a crucial first line of defense from malware attacks.",
@@ -165,13 +221,21 @@
         "gid": "V-14625",
         "rid": "SV-55228r1_rule",
         "stig_id": "DTAM103",
+        "gtitle": "DTAM103-McAfee VirusScan scan all files parameter",
         "fix_id": "F-48083r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14625",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to scan all files.",
       "desc": "When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring antivirus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware.",
@@ -187,13 +251,21 @@
         "gid": "V-14626",
         "rid": "SV-55230r1_rule",
         "stig_id": "DTAM104",
+        "gtitle": "DTAM104-McAfee VirusScan heuristics program",
         "fix_id": "F-48085r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14626",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to find unknown unwanted programs and trojans.",
       "desc": "Due to the ability of malware to mutate after infection, standard antivirus signatures may not be able to catch new strains or variants of the malware. Typically, these strains and variants will share unique characteristics with others in their virus family. By using a generic signature to detect the shared characteristics, using wildcards where differences lie, the generic signature can detect viruses even if they are padded with extra, meaningless code. This method of detection is Heuristic detection.",
@@ -209,13 +281,21 @@
         "gid": "V-14627",
         "rid": "SV-55231r1_rule",
         "stig_id": "DTAM105",
+        "gtitle": "DTAM105-McAfee VirusScan heuristics macro level",
         "fix_id": "F-48086r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14627",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to find unknown macro viruses.",
       "desc": "Due to the ability of malware to mutate after infection, standard antivirus signatures may not be able to catch new strains or variants of the malware. Typically, these strains and variants will share unique characteristics with others in their virus family. By using a generic signature to detect the shared characteristics, using wildcards where differences lie, the generic signature can detect viruses even if they are padded with extra, meaningless code. This method of detection is Heuristic detection.",
@@ -231,10 +311,18 @@
         "gid": "V-14628",
         "rid": "SV-55232r3_rule",
         "stig_id": "DTAM106",
+        "gtitle": "DTAM106-McAfee VirusScan scan inside archive",
         "fix_id": "F-48087r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14628",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to scan inside archives.",
       "desc": "Malware is often packaged within an archive. In addition, archives might have other archives within. Not scanning archive files introduces the risk of infected files being introduced into the environment.",
@@ -250,13 +338,21 @@
         "gid": "V-14630",
         "rid": "SV-55233r1_rule",
         "stig_id": "DTAM110",
+        "gtitle": "DTAM110-McAfee VirusScan process primary action",
         "fix_id": "F-48088r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14630",
       "title": "McAfee VirusScan On-Access Default Processes Policies Actions for When a threat is found must be configured to clean files automatically as first action.",
       "desc": "Malware may have infected a file that is necessary to the user. By configuring the antivirus software to first attempt cleaning the infected file, availability to the file is not sacrificed. If a cleaning attempt is not successful, however, deleting the file is the only safe option so as to ensure the malware does is not introduced onto the system or network.",
@@ -272,13 +368,21 @@
         "gid": "V-14631",
         "rid": "SV-55234r1_rule",
         "stig_id": "DTAM111",
+        "gtitle": "DTAM111-McAfee VirusScan process secondary action",
         "fix_id": "F-48089r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14631",
       "title": "McAfee VirusScan On-Access Default Processes Policies actions for When a threat is found must be configured delete files automatically if first action fails.",
       "desc": "Malware may have infected a file that is necessary to the user. By configuring the antivirus software to first attempt cleaning the infected file, availability to the file is not sacrificed. If a cleaning attempt is not successful, however, deleting the file is the only safe option so as to ensure the malware does is not introduced onto the system or network.",
@@ -294,13 +398,21 @@
         "gid": "V-14652",
         "rid": "SV-55189r2_rule",
         "stig_id": "DTAM039",
+        "gtitle": "DTAM039-McAfee VirusScan unwanted programs action",
         "fix_id": "F-48043r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001243"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14652",
       "title": "McAfee VirusScan On Delivery Email Scan Policies must be configured to clean attachments as the first action for when an unwanted program is found.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -316,13 +428,21 @@
         "gid": "V-14654",
         "rid": "SV-55207r3_rule",
         "stig_id": "DTAM058",
+        "gtitle": "DTAM058-McAfee VirusScan check unwanted programs",
         "fix_id": "F-48061r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001241"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14654",
       "title": "McAfee VirusScan On-Demand scan must be configured to detect for unwanted programs.",
       "desc": "Potentially Unwanted Programs (PUPs) include Spyware, Adware, Remote Administration Tools, Dialers, Password Crackers, Jokes, and Key Loggers. While PUPs do not typically have any infections capability on their own, they rely on malware or other attach mechanisms to be installed onto target hosts, after which they will collect and transfer data from the host to an external host and/or will be used as attach mechanisms. Configuring the antivirus software to attempt to clean the file first will allow for the possibility of a false positive. In most cases, however, the secondary action of delete will be used, mitigating the risk of the PUPs being installed and used maliciously.",
@@ -338,13 +458,21 @@
         "gid": "V-14657",
         "rid": "SV-55235r1_rule",
         "stig_id": "DTAM130",
+        "gtitle": "DTAM130-McAfee VirusScan buffer overflow protection",
         "fix_id": "F-48090r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14657",
       "title": "McAfee VirusScan Buffer Overflow Protection Policies must be configured to enable Buffer Overflow Protection.",
       "desc": "Buffer overflow is an anomaly where a program, while writing data to a buffer, overruns the buffer's boundary and overwrites adjacent memory. This anomaly has been used maliciously, explicitly to craft exploits. Buffer overflow attacks compose greater than 25% of malware attacks. Without buffer overflow protection enabled, systems are more vulnerable to attacks that attempt to overwrite adjacent memory in the stack frame. Buffer overflow protection is only configurable on non-64-bit systems.",
@@ -360,13 +488,21 @@
         "gid": "V-14658",
         "rid": "SV-55236r1_rule",
         "stig_id": "DTAM131",
+        "gtitle": "DTAM131-McAfee VirusScan buffer overflow protection",
         "fix_id": "F-48091r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14658",
       "title": "McAfee VirusScan Buffer Overflow Protection Policies must be configured for Protection mode.",
       "desc": "Buffer overflow is an anomaly where a program, while writing data to a buffer, overruns the buffer's boundary and overwrites adjacent memory. This anomaly has been used maliciously, explicitly to craft exploits. Buffer overflow attacks compose greater than 25% of malware attacks. Without buffer overflow protection enabled, systems are more vulnerable to attacks that attempt to overwrite adjacent memory in the stack frame. Protection mode will ensure buffer overflow is detected and blocked. Otherwise, only a warning message will be logged. Buffer overflow protection is only configurable on non-64-bit systems.",
@@ -382,13 +518,21 @@
         "gid": "V-14659",
         "rid": "SV-55237r1_rule",
         "stig_id": "DTAM132",
+        "gtitle": "DTAM132-McAfee VirusScan buffer overflow message",
         "fix_id": "F-48092r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14659",
       "title": "McAfee VirusScan Buffer Overflow Protection Policies must be configured to display a dialog box when a buffer overflow is detected.",
       "desc": "An effective awareness program explains proper rules of behavior for use of an organization's IT systems and information. Accordingly, awareness programs should include guidance to users on malware incident prevention, which can help reduce the frequency and severity of malware incidents. Organizations should also make users aware of policies and procedures that apply to malware incident handling, such as how to identify if a host may be infected, how to report a suspected incident, and what users need to do to assist with incident handling. Ensuring the antivirus software alerts the users when a buffer overflow is detected will ensure the user is aware of the incident and be able to more closely relate the incident to actions being performed by the user at the time of the detection.",
@@ -404,13 +548,21 @@
         "gid": "V-14660",
         "rid": "SV-55239r1_rule",
         "stig_id": "DTAM133",
+        "gtitle": "DTAM133-McAfee VirusScan buffer overflow log",
         "fix_id": "F-48094r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14660",
       "title": "McAfee VirusScan Buffer Overflow Protection Policies must be configured to record scanning activity in a log file.",
       "desc": "Log management is essential to ensuring that computer security records are stored in sufficient detail for an appropriate period of time. Routine log analysis is beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems. Logs are also useful when performing auditing and forensic analysis, supporting internal investigations, establishing baselines, and identifying operational trends and long-term problems.",
@@ -426,13 +578,21 @@
         "gid": "V-14661",
         "rid": "SV-55238r1_rule",
         "stig_id": "DTAM134",
+        "gtitle": "DTAM134-McAfee VirusScan log size limitation",
         "fix_id": "F-48093r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001242"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14661",
       "title": "McAfee VirusScan Buffer Overflow Protection Policies log file size must be restricted and be configured to at least 10MB.",
       "desc": "While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size will be restricted, but must also be large enough to retain forensic value.",
@@ -448,13 +608,21 @@
         "gid": "V-14662",
         "rid": "SV-55241r1_rule",
         "stig_id": "DTAM135",
+        "gtitle": "DTAM135-McAfee VirusScan detection of Spyware",
         "fix_id": "F-48095r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001243"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14662",
       "title": "McAfee VirusScan Unwanted Programs Policies must be configured to detect spyware.",
       "desc": "Spyware is software that aids in gathering information about a person or organization without their knowledge, and that may send such information to another entity without the consumer's consent, or that asserts control over a computer without the user's knowledge. Spyware may try to deceive users by bundling itself with desirable software. A spyware infestation can create significant unwanted CPU activity, disk usage, and network traffic. Some types of spyware disable software firewalls and antivirus software. Detecting, blocking, and eradicating malicious spyware or preventing it from being installed will alleviate the negative side effects of the spyware.",
@@ -470,13 +638,21 @@
         "gid": "V-14663",
         "rid": "SV-55242r1_rule",
         "stig_id": "DTAM136",
+        "gtitle": "DTAM136 - McAfee VirusScan detection of Adware",
         "fix_id": "F-48096r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Information Assurance Officer"
+        ],
+        "cci": [
+          "CCI-001243"
         ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-14663",
       "title": "McAfee VirusScan Unwanted Programs Policies must be configured to detect adware.",
       "desc": "Adware, like spyware, is, at best, an annoyance by presenting unwanted advertisement to the user of a computer, sometimes in the form of a popup. At worst, it redirects the user to malicious websites. Detecting and blocking will mitigate the likelihood of users being tricked into visiting sites with malicious content.",
@@ -492,10 +668,18 @@
         "gid": "V-19910",
         "rid": "SV-55133r2_rule",
         "stig_id": "DTAG008",
+        "gtitle": "DTAG008 - The antivirus signature file age exceeds 7 days.",
         "fix_id": "F-47990r1_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001240"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-19910",
       "title": "The antivirus signature file age must not exceed 7 days.",
       "desc": "Antivirus signature files are updated almost daily by antivirus software vendors. These files are made available to antivirus clients as they are published. Keeping virus signature files as current as possible is vital to the security of any system.",
@@ -511,10 +695,18 @@
         "gid": "V-35027",
         "rid": "SV-55243r1_rule",
         "stig_id": "DTAM137",
+        "gtitle": "DTAM137-McAfee VirusScan File Reputation Service",
         "fix_id": "F-48097r3_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-35027",
       "title": "McAfee VirusScan On-Access General Policies Artemis sensitivity level must be configured to medium or higher.",
       "desc": "Antivirus software vendors use collective intelligence from sensors and cross-vector intelligence from web, email, and network threats to compile scores that reflect the likelihood of whether a file in question is malware. The collective intelligence is constantly being updated, more frequently than the typical daily antivirus signature files. With File Reputation lookup, a more real-time response to potential malicious code is realized than with the local-running antivirus software, since by querying the cloud-based database when a file appears to be suspicious, up-to-the-minute intelligence is provided. This type of protection reduces the threat protection time period from days to milliseconds, increases malware detection rates, and reduces downtime and remediation costs associated with malware attacks. Using File Reputation lookup is mandated by US CYBERCOM on DoD systems.",
@@ -530,9 +722,17 @@
         "gid": "V-42493",
         "rid": "SV-55180r2_rule",
         "stig_id": "DTAM162",
+        "gtitle": "DTAM162-McAfee VirusScan Email on-delivery threat second action",
         "fix_id": "F-48034r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42493",
       "title": "McAfee VirusScan On Delivery Email Scan Policies, When a threat is found, must be configured to clean attachments as the first action and delete attachments if the first action fails.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -548,9 +748,17 @@
         "gid": "V-42500",
         "rid": "SV-55190r2_rule",
         "stig_id": "DTAM163",
+        "gtitle": "DTAM163-McAfee VirusScan Email on-delivery unwanted program second action",
         "fix_id": "F-48044r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42500",
       "title": "McAfee VirusScan On Delivery Email Scan Policies must be configured to delete attachments if the first action fails for when an unwanted program is found.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -566,9 +774,17 @@
         "gid": "V-42516",
         "rid": "SV-55244r2_rule",
         "stig_id": "DTAM138",
+        "gtitle": "DTAM138 - Access Protection McAfee services protection",
         "fix_id": "F-48098r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42516",
       "title": "McAfee VirusScan Access Protection Policies must be configured to prevent McAfee services from being stopped.",
       "desc": "When the Prevent McAfee services from being stopped check box is selected under Access Protection, VSE will prevent anyone except the System account from terminating McAfee services. This protects VirusScan from being disabled by malicious programs that seek to circumvent virus protection programs by terminating their services.",
@@ -584,9 +800,17 @@
         "gid": "V-42517",
         "rid": "SV-55245r2_rule",
         "stig_id": "DTAM139",
+        "gtitle": "DTAM139 - Access Protection logging of scan activity",
         "fix_id": "F-48099r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000130"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42517",
       "title": "McAfee VirusScan Access Protection Policies must be configured to record scanning activity in a log file.",
       "desc": "Log management is essential to ensuring that computer security records are stored in sufficient detail for an appropriate period of time. Routine log analysis is beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems. Logs are also useful when performing auditing and forensic analysis, supporting internal investigations, establishing baselines, and identifying operational trends and long-term problems.",
@@ -602,9 +826,17 @@
         "gid": "V-42518",
         "rid": "SV-55246r2_rule",
         "stig_id": "DTAM140",
+        "gtitle": "DTAM140 - Access Protection log file restriction",
         "fix_id": "F-48100r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000140"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42518",
       "title": "McAfee VirusScan Access Protection log file size must be restricted and be configured to at least 10MB.",
       "desc": "While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size will be restricted, but must also be large enough to retain forensic value.",
@@ -620,9 +852,17 @@
         "gid": "V-42519",
         "rid": "SV-55247r2_rule",
         "stig_id": "DTAM141",
+        "gtitle": "DTAM141 - Access Protection prevent modification of McAfee files and settings",
         "fix_id": "F-48101r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42519",
       "title": "McAfee VirusScan Access Protection: Common Standard Protection must be set to prevent modification of McAfee files and settings.",
       "desc": "Many malicious programs have attempted to disable VirusScan by stopping services and processes and leaving the system vulnerable to attack. Self-protection is an important feature of VSE that prevents malicious programs from disabling VirusScan or any of its services or processes. Many trojans and viruses will attempt to terminate or even delete security products. VSE's self-protection features protect VirusScan registry values and processes from being altered or deleted by malicious code. This rule protects the McAfee security product from modification by any process not listed in the policy's exclusion list.",
@@ -638,9 +878,17 @@
         "gid": "V-42520",
         "rid": "SV-55248r2_rule",
         "stig_id": "DTAM142",
+        "gtitle": "DTAM142 - Access Protection preventing modification of McAfee CMA",
         "fix_id": "F-48102r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42520",
       "title": "McAfee VirusScan Access Protection: Common Standard Protection must be set to prevent modification of McAfee Common Management Agent files and settings.",
       "desc": "Many malicious programs have attempted to disable VirusScan by stopping services and processes and leaving the system vulnerable to attack. Self-protection is an important feature of VSE that prevents malicious programs from disabling VirusScan or any of its services or processes. Many trojans and viruses will attempt to terminate or even delete security products. VSE's self-protection features protect VirusScan registry values and processes from being altered or deleted by malicious code. This rule protects the McAfee security product from modification by any process not listed in the policy's exclusion list.",
@@ -656,9 +904,17 @@
         "gid": "V-42521",
         "rid": "SV-55249r2_rule",
         "stig_id": "DTAM143",
+        "gtitle": "DTAM143 - Access Protection prevent modification of McAfee scan engine",
         "fix_id": "F-48103r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42521",
       "title": "McAfee VirusScan Access Protection: Common Standard Protection must be set to prevent modification of McAfee Scan Engine files and settings.",
       "desc": "Many malicious programs have attempted to disable VirusScan by stopping services and processes and leaving the system vulnerable to attack. Self-protection is an important feature of VSE that prevents malicious programs from disabling VirusScan or any of its services or processes. Many trojans and viruses will attempt to terminate or even delete security products. VSE's self-protection features protect VirusScan registry values and processes from being altered or deleted by malicious code. This rule protects the McAfee security product from modification by any process not listed in the policy's exclusion list.",
@@ -674,9 +930,17 @@
         "gid": "V-42522",
         "rid": "SV-55250r2_rule",
         "stig_id": "DTAM144",
+        "gtitle": "DTAM144 - Access Protection prevent termination of McAfee processes",
         "fix_id": "F-48104r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42522",
       "title": "McAfee VirusScan Access Protection: Common Standard Protection must be set to prevent termination of McAfee processes.",
       "desc": "Many malicious programs have attempted to disable VirusScan by stopping services and processes and leaving the system vulnerable to attack. Self-protection is an important feature of VSE that prevents malicious programs from disabling VirusScan or any of its services or processes. Many trojans and viruses will attempt to terminate or even delete security products. VSE's self-protection features protect VirusScan registry values and processes from being altered or deleted by malicious code. This rule protects the McAfee security product from modification by any process not listed in the policy's exclusion list.",
@@ -692,9 +956,17 @@
         "gid": "V-42523",
         "rid": "SV-55251r5_rule",
         "stig_id": "DTAM145",
+        "gtitle": "DTAM145 - Access Protection detect programs run from Temp folder",
         "fix_id": "F-48105r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42523",
       "title": "McAfee VirusScan Access Protection Rules Common Standard Protection must be set to block and report when common programs are run from the Temp folder.",
       "desc": "This rule will block common programs from running from the Temp directory; however, this rule is much more restrictive in that it stops nearly all processes from launching in the Temp folder. Most viruses need to be run once by a person before infecting a computer. This can be done in many ways, such as opening an executable attachment in an email or downloading a program from the Internet. An executable needs to exist on the disk before Windows can run it. A common way for applications to achieve this is to save the file in the user's or system's Temp directory and then run it. One purpose of this rule is to enforce advice that is frequently given to users: \"don't open attachments from email.\" The other purpose of this rule is to close security holes introduced by application bugs. Older versions of Outlook and Internet Explorer are notorious for automatically executing code without the user needing to do anything but preview an email or view a website.",
@@ -710,9 +982,17 @@
         "gid": "V-42524",
         "rid": "SV-55252r2_rule",
         "stig_id": "DTAM146",
+        "gtitle": "DTAM146 - Access Protection prevent hooking of McAfee processes",
         "fix_id": "F-48106r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42524",
       "title": "McAfee VirusScan Access Protection: Common Standard Protection must be set to prevent hooking of McAfee processes.",
       "desc": "Hooking covers a range of techniques used to alter or augment the behavior of an operating system, of applications, or of other software components by intercepting function calls, messages, or events passed between software components. Code that handles such intercepted function calls, events, or messages is called a 'hook'. Hooking can also be used by malicious code. For example, rootkits, pieces of software that try to make themselves invisible by faking the output of API calls that would otherwise reveal their existence, often use hooking techniques. This rule prevents other processes from hooking of McAfee processes.",
@@ -728,9 +1008,17 @@
         "gid": "V-42525",
         "rid": "SV-55253r2_rule",
         "stig_id": "DTAM147",
+        "gtitle": "DTAM147-Access Protection detect and log launching of downloaded programs",
         "fix_id": "F-48107r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001169"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42525",
       "title": "McAfee VirusScan Access Protection: Common Maximum Protection must be set to detect and log launching of files from the Downloaded Programs Files folder.",
       "desc": "A common distribution method for adware and spyware is to have the user download an executable file and run it automatically from the Downloaded Program Files folder. This rule is specific to Microsoft Internet Explorer and prevents software installations through the web browser. Internet Explorer runs code from the Downloaded Program Files directory, notably ActiveX controls. Some vulnerabilities in Internet Explorer and viruses place an .exe file into this directory and run it. This rule closes that attack vector.",
@@ -746,9 +1034,17 @@
         "gid": "V-42526",
         "rid": "SV-55254r6_rule",
         "stig_id": "DTAM148",
+        "gtitle": "DTAM148 - Access Protection log execution of scripts from Temp folder",
         "fix_id": "F-48108r5_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42526",
       "title": "McAfee VirusScan Access Protection: Anti-Spyware Maximum Protection must be set to block and log execution of scripts from the Temp folder.",
       "desc": "This rule prevents the Windows scripting host from running VBScript and JavaScript scripts from the Temp directory. This would protect against a large number of trojans and questionable web installation mechanisms that are used by many adware and spyware applications.",
@@ -764,9 +1060,17 @@
         "gid": "V-42527",
         "rid": "SV-55255r2_rule",
         "stig_id": "DTAM149",
+        "gtitle": "DTAM149 - Access Protection prevent remote creation of autorun files",
         "fix_id": "F-48109r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42527",
       "title": "McAfee VirusScan Access Protection: Anti-Virus Standard Protection must be set to prevent remote creation of autorun files.",
       "desc": "Autorun files are used to automatically launch program files, typically setup files from CDs. Preventing other computers from making a connection and creating or altering autorun.inf files can prevent spyware and adware from being executed. There are many spyware and virus programs distributed on CDs.",
@@ -782,9 +1086,17 @@
         "gid": "V-42528",
         "rid": "SV-55256r2_rule",
         "stig_id": "DTAM150",
+        "gtitle": "DTAM150-Access Protection mass mailing worms",
         "fix_id": "F-48110r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001170"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42528",
       "title": "McAfee VirusScan Access Protection: Anti-Virus Standard Protection must be set to prevent mass mailing worms from sending mail.",
       "desc": "Many viruses and worms find email addresses on the infected system and send themselves to these addresses. They do this by connecting directly to the email servers whose names they have harvested from the local system. This rule prevents any process from talking to a foreign email server using SMTP. By blocking this communication, a machine may become infected with a new mass mailing virus, but that virus will be unable to spread further by email. It prevents outbound access to SMTP ports 25 and 587 on all programs except known email clients listed as an exclusion.",
@@ -800,9 +1112,17 @@
         "gid": "V-42529",
         "rid": "SV-55257r3_rule",
         "stig_id": "DTAM151",
+        "gtitle": "DTAM151-Access Protection prevent IRC communication",
         "fix_id": "F-48111r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001170"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42529",
       "title": "McAfee VirusScan Access Protection: Anti-Virus Standard Protection must be set to prevent IRC communication.",
       "desc": "Internet Relay Chat (IRC) is the preferred communication method used by botnet herders and remote-access trojans to control botnets (a set of scripts or an independent program that connects to IRC). IRC allows an attacker to control infected machines that are sitting behind network address translation (NAT), and the bot can be configured to connect back to the command and control server listening on any port.",
@@ -818,9 +1138,17 @@
         "gid": "V-42530",
         "rid": "SV-55258r2_rule",
         "stig_id": "DTAM152",
+        "gtitle": "DTAM152--McAfee VirusScan on-access script exclusions",
         "fix_id": "F-48112r3_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42530",
       "title": "McAfee VirusScan On-Access General Policies must be configured to not exclude any script processes from being scanned unless the process exclusions have been documented with, and approved by, the ISSO/ISSM/DAA.",
       "desc": "Many attackers use toolkits containing several different types of utilities and scripts that can be used to probe and attack hosts. Scripts are a common carrier of malware and none should be excluded from scanning. In the unlikely event that excluding scanning a script impacts the operational function and/or availability of a system, and reasonable mitigation efforts have been put into place, the exclusion may be put into place but must be documented with, and approved by, the ISSO/ISSM/DAA.",
@@ -836,9 +1164,17 @@
         "gid": "V-42531",
         "rid": "SV-55259r5_rule",
         "stig_id": "DTAM153",
+        "gtitle": "DTAM153--McAfee VirusScan on-access file exclusions",
         "fix_id": "F-48113r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42531",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to not exclude any files from being scanned unless exclusions have been documented with, and approved by, the ISSO/ISSM/DAA.",
       "desc": "When scanning for malware, excluding specific files will increase the risk of a malware-infected file going undetected. By configuring antivirus software without any exclusions, the scanner has a higher success rate at detecting and eradicating malware.",
@@ -854,9 +1190,17 @@
         "gid": "V-42532",
         "rid": "SV-55260r3_rule",
         "stig_id": "DTAM154",
+        "gtitle": "DTAM154-McAfee VirusScan on-demand memory rootkits",
         "fix_id": "F-48114r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42532",
       "title": "McAfee VirusScan On-Demand scan must be configured to scan memory for rootkits.",
       "desc": "A rootkit is a stealthy type of software, usually malicious, and is designed to mask the existence of processes or programs from normal methods of detection. Rootkits will often enable continued privileged access to a computer. Scanning and handling detection of rootkits will mitigate the likelihood of rootkits being installed and used maliciously on the system.",
@@ -872,9 +1216,17 @@
         "gid": "V-42533",
         "rid": "SV-55261r3_rule",
         "stig_id": "DTAM155",
+        "gtitle": "DTAM155-McAfee VirusScan on-demand unwanted programs first action",
         "fix_id": "F-48115r3_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42533",
       "title": "McAfee VirusScan On-Demand scan actions, When an unwanted program is found must be configured to clean files automatically as first action.",
       "desc": "Malware may have infected a file that is necessary to the user. By configuring the antivirus software to first attempt cleaning the infected file, availability to the file is not sacrificed. If a cleaning attempt is not successful, however, deleting the file is the only safe option so as to ensure the malware is not introduced onto the system or network.",
@@ -890,9 +1242,17 @@
         "gid": "V-42534",
         "rid": "SV-55262r3_rule",
         "stig_id": "DTAM164",
+        "gtitle": "DTAM164-McAfee VirusScan Email on-delivery threat second action",
         "fix_id": "F-48116r3_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42534",
       "title": "McAfee VirusScan On-Demand scan actions, When an unwanted program is found must be configured to delete files automatically if first action fails.",
       "desc": "Malware may have infected a file that is necessary to the user. By configuring the antivirus software to first attempt cleaning the infected file, availability to the file is not sacrificed. If a cleaning attempt is not successful, however, deleting the file is the only safe option so as to ensure the malware is not introduced onto the system or network.",
@@ -908,9 +1268,17 @@
         "gid": "V-42536",
         "rid": "SV-55264r2_rule",
         "stig_id": "DTAM157",
+        "gtitle": "DTAM157-McAfee VirusScan Email on-delivery Artemis sensitivity level",
         "fix_id": "F-48118r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42536",
       "title": "McAfee VirusScan On-Delivery Email Scan Policies Artemis sensitivity level must be configured to medium or higher.",
       "desc": "Antivirus software vendors use collective intelligence from sensors and cross-vector intelligence from web, email, and network threats to compile scores that reflect the likelihood of whether a file in question is malware. The collective intelligence is constantly being updated, more frequently than the typical daily antivirus signature files. With File Reputation lookup, a more real-time response to potential malicious code is realized than with the local-running antivirus software, since by querying the cloud-based database when a file appears to be suspicious, up-to-the-minute intelligence is provided. This type of protection reduces the threat protection time period from days to milliseconds, increases malware detection rates, and reduces downtime and remediation costs associated with malware attacks. Using File Reputation lookup is mandated by US CYBERCOM on DoD systems.",
@@ -926,9 +1294,17 @@
         "gid": "V-42537",
         "rid": "SV-55265r2_rule",
         "stig_id": "DTAM158",
+        "gtitle": "DTAM158-McAfee VirusScan Email on-delivery notification email",
         "fix_id": "F-48119r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42537",
       "title": "McAfee VirusScan On-Delivery Email Scan Policies must be configured to send a notification email to the IAO, IAM, and/or ePO administrator when a threatened email message is detected.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -944,9 +1320,17 @@
         "gid": "V-42538",
         "rid": "SV-55266r4_rule",
         "stig_id": "DTAM159",
+        "gtitle": "DTAM159-McAfee VirusScan Email on-delivery log session summary",
         "fix_id": "F-48120r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000130"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42538",
       "title": "McAfee VirusScan On-Delivery Email Scan Policies must be configured to log session summary and failure to scan encrypted files.",
       "desc": "Log management is essential to ensuring that computer security records are stored in sufficient detail for an appropriate period of time. Routine log analysis is beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems. Logs are also useful when performing auditing and forensic analysis, supporting internal investigations, establishing baselines, and identifying operational trends and long-term problems.",
@@ -962,9 +1346,17 @@
         "gid": "V-42539",
         "rid": "SV-55267r3_rule",
         "stig_id": "DTAM160",
+        "gtitle": "DTAM160-McAfee VirusScan on-access URL exclusions",
         "fix_id": "F-48121r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42539",
       "title": "McAfee VirusScan On-Access General Policies must be configured to not exclude any URL scripts from being scanned unless the URL exclusions have been documented with, and approved by, the ISSO/ISSM/DAA.",
       "desc": "Many attackers use toolkits containing several different types of utilities and scripts that can be used to probe and attack hosts. Scripts are a common carrier of malware and none should be excluded from scanning. In the unlikely event that excluding scanning a script impacts the operational function and/or availability of a system, and reasonable mitigation efforts have been put into place, the exclusion may be put into place but must be documented with, and approved by, the ISSO/ISSM/DAA.",
@@ -980,9 +1372,17 @@
         "gid": "V-42540",
         "rid": "SV-55268r3_rule",
         "stig_id": "DTAM161",
+        "gtitle": "DTAM161-Access Protection enablement",
         "fix_id": "F-48122r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42540",
       "title": "McAfee VirusScan Access Protection Policies must be configured to enable access protection.",
       "desc": "Access Protection prevents unwanted changes to a computer by restricting access to specified ports, files and folders, shares, and registry keys and values. It prevents users from stopping McAfee processes and services, which are critical before and during outbreaks. Access Protection for VSE uses predefined and user-defined rules to strengthen systems against virus attacks. For instance, rules are used to specify which items can and cannot be accessed. Each rule can be configured to block and/or report access violations when they occur, and rules can also be disabled.",
@@ -998,9 +1398,17 @@
         "gid": "V-42541",
         "rid": "SV-55269r1_rule",
         "stig_id": "DTAM165",
+        "gtitle": "DTAM165-McAfee VirusScan on-access unwanted programs",
         "fix_id": "F-48123r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42541",
       "title": "McAfee VirusScan On-Access Default Processes Policies must be configured to detect unwanted programs.",
       "desc": "Potentially Unwanted Programs (PUPs) include Spyware, Adware, Remote Administration Tools, Dialers, Password Crackers, Jokes, and Key Loggers. While PUPs do not typically have any infections capability on their own, they rely on malware or other attach mechanisms to be installed onto target hosts, after which they will collect and transfer data from the host to an external host and/or will be used as attach mechanisms. Configuring the antivirus software to attempt to clean the file first will allow for the possibility of a false positive. In most cases, however, the secondary action of delete will be used, mitigating the risk of the PUPs being installed and used maliciously.",
@@ -1016,9 +1424,17 @@
         "gid": "V-42542",
         "rid": "SV-55270r1_rule",
         "stig_id": "DTAM166",
+        "gtitle": "DTAM166-McAfee VirusScan on-access unwanted program first action",
         "fix_id": "F-48124r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42542",
       "title": "McAfee VirusScan On-Access Default Processes Policies actions, When an unwanted program is found must be configured to clean files automatically as first action.",
       "desc": "Potentially Unwanted Programs (PUPs) include Spyware, Adware, Remote Administration Tools, Dialers, Password Crackers, Jokes, and Key Loggers. While PUPs do not typically have any infections capability on their own, they rely on malware or other attach mechanisms to be installed onto target hosts, after which they will collect and transfer data from the host to an external host and/or will be used as attach mechanisms. Configuring the antivirus software to attempt to clean the file first will allow for the possibility of a false positive. In most cases, however, the secondary action of delete will be used, mitigating the risk of the PUPs being installed and used maliciously.",
@@ -1034,9 +1450,17 @@
         "gid": "V-42543",
         "rid": "SV-55271r2_rule",
         "stig_id": "DTAM167",
+        "gtitle": "DTAM167-McAfee VirusScan on-access unwanted program second action",
         "fix_id": "F-48125r3_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-42543",
       "title": "McAfee VirusScan On-Access Default Processes Policies actions, When an unwanted program is found must be configured to delete files automatically if first action fails.",
       "desc": "Potentially Unwanted Programs (PUPs) include Spyware, Adware, Remote Administration Tools, Dialers, Password Crackers, Jokes, and Key Loggers. While PUPs do not typically have any infections capability on their own, they rely on malware or other attach mechanisms to be installed onto target hosts, after which they will collect and transfer data from the host to an external host and/or will be used as attach mechanisms. Configuring the antivirus software to attempt to clean the file first will allow for the possibility of a false positive. In most cases, however, the secondary action of delete will be used, mitigating the risk of the PUPs being installed and used maliciously.",
@@ -1052,10 +1476,18 @@
         "gid": "V-59363",
         "rid": "SV-73793r3_rule",
         "stig_id": "DTAM170",
+        "gtitle": "DTAM170--Access Protection block execution of all programs from temp folder",
         "fix_id": "F-64759r1_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-59363",
       "title": "McAfee VirusScan Access Protection Rules Anti-Spyware Maximum Protection must be set to block and report when common all programs are run from the Temp folder.",
       "desc": "This rule prevents all program from running files from the Temp directory. This would protect against a large number of trojans and questionable web installation mechanisms that are used by many adware and spyware applications.",
@@ -1071,10 +1503,18 @@
         "gid": "V-6453",
         "rid": "SV-55134r1_rule",
         "stig_id": "DTAM001",
+        "gtitle": "DTAM001-McAfee VirusScan Control Panel",
         "fix_id": "F-47991r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6453",
       "title": "McAfee VirusScan On-Access General Policies must be configured to enable on-access scanning at system startup.",
       "desc": "For antivirus software to be effective, it must be running at all times, beginning from the point of the system's initial startup. Otherwise, the risk is greater for viruses, trojans, and other malware infecting the system during that startup phase.",
@@ -1090,10 +1530,18 @@
         "gid": "V-6467",
         "rid": "SV-55135r1_rule",
         "stig_id": "DTAM002",
+        "gtitle": "DTAM002-McAfee VirusScan on access scan boot sectors",
         "fix_id": "F-47992r3_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6467",
       "title": "McAfee VirusScan On-Access General Policies must be configured to scan boot sectors.",
       "desc": "Boot sector viruses will install into the boot sector of a system, ensuring that they will execute when the user boots the system. This risk is mitigated by scanning boot sectors at each startup of the system.",
@@ -1109,10 +1557,18 @@
         "gid": "V-6468",
         "rid": "SV-55139r1_rule",
         "stig_id": "DTAM003",
+        "gtitle": "DTAM003-McAfee VirusScan on access scan floppy",
         "fix_id": "F-47997r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6468",
       "title": "McAfee VirusScan On-Access General Policies must be configured to scan floppy during shutdown.",
       "desc": "Computer viruses in the early days of personal computing were almost exclusively passed around by floppy disks. Floppy disks would be used to boot the computer and, if infected, would infect the hard drive files as well. Although floppy drives have fallen out of use, it is still a good security practice, whenever the antivirus software allows, to enable the scanning software to scan a floppy disk at shutdown.",
@@ -1128,10 +1584,18 @@
         "gid": "V-6469",
         "rid": "SV-55141r1_rule",
         "stig_id": "DTAM004",
+        "gtitle": "DTAM004-McAfee VirusScan message dialog",
         "fix_id": "F-48000r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001662"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6469",
       "title": "McAfee VirusScan On-Access General Policies must be configured to notify local users when detections occur.",
       "desc": "\"An effective awareness program explains proper rules of behavior for use of an organization's IT systems and information. Accordingly, awareness programs should include guidance to users on malware incident prevention, which can help reduce the frequency and severity of malware incidents. Organizations should also make users aware of policies and procedures that apply to malware incident handling, such as how to identify if a host may be infected, how to report a suspected incident, and what users need to do to assist with incident handling. Ensuring the antivirus software alerts the users when malware is detected will ensure the user is informed of the incident and be able to more closely relate the incident to actions being performed by the user at the time of the detection.\"",
@@ -1147,10 +1611,18 @@
         "gid": "V-6470",
         "rid": "SV-55144r1_rule",
         "stig_id": "DTAM005",
+        "gtitle": "DTAM005-McAfee VirusScan remove messages",
         "fix_id": "F-48001r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6470",
       "title": "McAfee VirusScan On-Access General Policies must be configured to prevent users from removing messages from the list.",
       "desc": "Good incident response analysis includes reviewing all logs and alerts on the system reporting the infection. If users were permitted to remove alerts from the display, incident response forensic analysis would be inhibited.",
@@ -1166,10 +1638,18 @@
         "gid": "V-6474",
         "rid": "SV-55145r1_rule",
         "stig_id": "DTAM009",
+        "gtitle": "DTAM009-McAfee VirusScan Control Panel log",
         "fix_id": "F-48004r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6474",
       "title": "McAfee VirusScan On-Access General Policies must be configured to log the scan sessions.",
       "desc": "Log management is essential to ensuring that computer security records are stored in sufficient detail for an appropriate period of time. Routine log analysis is beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems. Logs are also useful when performing auditing and forensic analysis, supporting internal investigations, establishing baselines, and identifying operational trends and long-term problems.",
@@ -1185,11 +1665,19 @@
         "gid": "V-6475",
         "rid": "SV-55147r1_rule",
         "stig_id": "DTAM010",
+        "gtitle": "DTAM010-McAfee VirusScan limit log size parameter",
         "fix_id": "F-48005r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "System Administrator",
-        "ia_controls": "ECSC-1"
+        "ia_controls": "ECSC-1",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6475",
       "title": "McAfee VirusScan On-Access General Policies log file size must be restricted and be configured to at least 10MB.",
       "desc": "While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size will be restricted, but must also be large enough to retain forensic value.",
@@ -1205,10 +1693,18 @@
         "gid": "V-6478",
         "rid": "SV-55148r1_rule",
         "stig_id": "DTAM012",
+        "gtitle": "DTAM012-McAfee VirusScan log summary parameter",
         "fix_id": "F-48006r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6478",
       "title": "McAfee VirusScan On-Access General Policies must be configured to log the session summary.",
       "desc": "Log management is essential to ensuring that computer security records are stored in sufficient detail for an appropriate period of time. Routine log analysis is beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems. Logs are also useful when performing auditing and forensic analysis, supporting internal investigations, establishing baselines, and identifying operational trends and long-term problems.",
@@ -1224,10 +1720,18 @@
         "gid": "V-6583",
         "rid": "SV-55149r1_rule",
         "stig_id": "DTAM013",
+        "gtitle": "DTAM013-McAfee VirusScan log encrypted files parameter",
         "fix_id": "F-48007r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001242"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6583",
       "title": "McAfee VirusScan On-Access General Policies must be configured to log any failure to scan encrypted files.",
       "desc": "While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size will be restricted. If the data in the log file exceeds the file size set, the oldest 20 percent of the entries are deleted and new data is appended to the file, so although the file size is restricted, it must also be large enough to retain forensic value.",
@@ -1243,10 +1747,18 @@
         "gid": "V-6585",
         "rid": "SV-55151r4_rule",
         "stig_id": "DTAM016",
+        "gtitle": "DTAM016-McAfee VirusScan autoupdate parameters",
         "fix_id": "F-48009r3_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001247"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6585",
       "title": "McAfee VirusScan must be configured to receive DAT and Engine updates.",
       "desc": "Antivirus signature files are updated almost daily by antivirus software vendors. These files are made available to antivirus clients as they are published. Keeping virus signature files as current as possible is vital to the security of any system. The antivirus software product must be configured to receive those updates automatically in order to afford the expected protection.",
@@ -1262,10 +1774,18 @@
         "gid": "V-6586",
         "rid": "SV-55153r2_rule",
         "stig_id": "DTAM021",
+        "gtitle": "DTAM021-McAfee VirusScan Exchange scanner",
         "fix_id": "F-48011r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001170"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6586",
       "title": "McAfee VirusScan On-Delivery Email Scan Policies must be configured to enable on-delivery email scanning.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -1281,10 +1801,18 @@
         "gid": "V-6587",
         "rid": "SV-55169r2_rule",
         "stig_id": "DTAM022",
+        "gtitle": "DTAM022-McAfee VirusScan find unknown programs",
         "fix_id": "F-48023r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001662"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6587",
       "title": "McAfee VirusScan On-Delivery Email Scan Policies must be configured to find unknown program threats and Trojans.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -1300,10 +1828,18 @@
         "gid": "V-6588",
         "rid": "SV-55171r2_rule",
         "stig_id": "DTAM023",
+        "gtitle": "DTAM023- McAfee VirusScan find unknown macro virus",
         "fix_id": "F-48024r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001662"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6588",
       "title": "McAfee VirusScan On Delivery Email Scan Policies must be configured to find unknown macro threats.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -1319,10 +1855,18 @@
         "gid": "V-6590",
         "rid": "SV-55174r2_rule",
         "stig_id": "DTAM027",
+        "gtitle": "DTAM027-McAfee VirusScan decode MIME email",
         "fix_id": "F-48028r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001170"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6590",
       "title": "McAfee VirusScan On Delivery Email Scan Policies must be configured to decode MIME encoded files.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -1338,10 +1882,18 @@
         "gid": "V-6591",
         "rid": "SV-55177r2_rule",
         "stig_id": "DTAM028",
+        "gtitle": "DTAM028-McAfee VirusScan scan e-mail message body",
         "fix_id": "F-48030r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001170"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6591",
       "title": "McAfee VirusScan On Delivery Email Scan Policies must be configured to scan email message body.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -1357,10 +1909,18 @@
         "gid": "V-6592",
         "rid": "SV-55178r2_rule",
         "stig_id": "DTAM029",
+        "gtitle": "DTAM029-McAfee VirusScan allowed actions email",
         "fix_id": "F-48032r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6592",
       "title": "McAfee VirusScan On Delivery Email Scan Policies, when a threat is found, must be configured to clean attachments as the first action.",
       "desc": "Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments, and not clicking on hyperlinks, etc. from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to email-borne viruses, but are self-contained, rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.",
@@ -1376,10 +1936,18 @@
         "gid": "V-6596",
         "rid": "SV-55187r2_rule",
         "stig_id": "DTAM035",
+        "gtitle": "DTAM035-McAfee VirusScan log to file email",
         "fix_id": "F-48041r3_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-000130"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6596",
       "title": "McAfee VirusScan On-Delivery Email Scan Policies must be configured to record scanning activity in a log file.",
       "desc": "Log management is essential to ensuring that computer security records are stored in sufficient detail for an appropriate period of time. Routine log analysis is beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems. Logs are also useful when performing auditing and forensic analysis, supporting internal investigations, establishing baselines, and identifying operational trends and long-term problems.",
@@ -1395,10 +1963,18 @@
         "gid": "V-6597",
         "rid": "SV-55188r2_rule",
         "stig_id": "DTAM036",
+        "gtitle": "DTAM036-McAfee VirusScan limit log size email",
         "fix_id": "F-48042r4_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-000140"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6597",
       "title": "McAfee VirusScan On-Delivery Email Scan Policies log file size must be restricted and be configured to be at least 10MB.",
       "desc": "While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size will be restricted, but must also be large enough to retain forensic value.",
@@ -1414,10 +1990,18 @@
         "gid": "V-6599",
         "rid": "SV-55191r4_rule",
         "stig_id": "DTAM045",
+        "gtitle": "DTAM045-McAfee VirusScan fixed disk and processes",
         "fix_id": "F-48045r3_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6599",
       "title": "McAfee VirusScan On-Demand scan must be configured to scan all fixed, or local, disks and running processes.",
       "desc": "Antivirus software is the mostly commonly used technical control for malware threat mitigation. Antivirus software on hosts should be configured to scan all hard drives regularly to identify any file system infections and to scan any removable media, if applicable, before media is inserted into the system. Not scheduling a regular scan of the hard drives of a system and/or not configuring the scan to scan all files and running processes introduces a higher risk of threats going undetected.",
@@ -1433,10 +2017,18 @@
         "gid": "V-6600",
         "rid": "SV-55192r3_rule",
         "stig_id": "DTAM046",
+        "gtitle": "DTAM046-McAfee VirusScan include subfolders",
         "fix_id": "F-48046r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6600",
       "title": "McAfee VirusScan On-Demand scan must be configured to scan all subfolders.",
       "desc": "Antivirus software is the mostly commonly used technical control for malware threat mitigation. Antivirus software on hosts should be configured to scan all hard drives and folders regularly to identify any file system infections and to scan any removable media, if applicable, before media is inserted into the system. Not scheduling a regular scan of the hard drives of a system and/or not configuring the scan to scan all files and running processes introduces a higher risk of threats going undetected.",
@@ -1452,10 +2044,18 @@
         "gid": "V-6601",
         "rid": "SV-55193r3_rule",
         "stig_id": "DTAM047",
+        "gtitle": "DTAM047-McAfee VirusScan include boot sectors",
         "fix_id": "F-48047r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6601",
       "title": "McAfee VirusScan On-Demand scan must be configured to scan boot sectors.",
       "desc": "Boot sector viruses will install into the boot sector of a system, ensuring that they will execute when the user boots the system. This risk is mitigated by scanning boot sectors at each startup of the system.",
@@ -1471,10 +2071,18 @@
         "gid": "V-6602",
         "rid": "SV-55194r3_rule",
         "stig_id": "DTAM048",
+        "gtitle": "DTAM048-McAfee VirusScan scan all files parameter",
         "fix_id": "F-48048r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6602",
       "title": "McAfee VirusScan On-Demand scan must be configured to scan all files.",
       "desc": "When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring antivirus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware.",
@@ -1490,10 +2098,18 @@
         "gid": "V-6604",
         "rid": "SV-55195r4_rule",
         "stig_id": "DTAM050",
+        "gtitle": "DTAM050-McAfee VirusScan exclusions parameter",
         "fix_id": "F-48049r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6604",
       "title": "McAfee VirusScan On-Demand scan must be configured so there are no exclusions from the scan unless exclusions have been documented with, and approved by, the ISSO/ISSM/DAA.",
       "desc": "When scanning for malware, excluding specific files will increase the risk of a malware-infected file going undetected. By configuring antivirus software without any exclusions, the scanner has a higher success rate at detecting and eradicating malware.",
@@ -1509,10 +2125,18 @@
         "gid": "V-6611",
         "rid": "SV-55196r4_rule",
         "stig_id": "DTAM052",
+        "gtitle": "DTAM052-McAfee VirusScan scan archives parameter",
         "fix_id": "F-48050r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6611",
       "title": "McAfee VirusScan On-Demand scan must be configured to scan inside archives.",
       "desc": "Malware is often packaged within an archive. In addition, archives might have other archives within. Not scanning archive files introduces the risk of infected files being introduced into the environment.",
@@ -1528,10 +2152,18 @@
         "gid": "V-6612",
         "rid": "SV-55197r3_rule",
         "stig_id": "DTAM053",
+        "gtitle": "DTAM053-McAfee VirusScan decode MIME encoded",
         "fix_id": "F-48051r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6612",
       "title": "McAfee VirusScan On-Demand scan must be configured to decode MIME encoded files.",
       "desc": "Multipurpose Internet Mail Extensions (MIME) encoded files can be crafted to hide a malicious payload. When the MIME encoded file is presented to software that decodes the MIME encoded files, such as an email client, the malware is released. Scanning these files as part of the regularly scheduled scan tasks will mitigate this risk.",
@@ -1547,10 +2179,18 @@
         "gid": "V-6614",
         "rid": "SV-55199r3_rule",
         "stig_id": "DTAM054",
+        "gtitle": "DTAM054 - McAfee VirusScan find unknown programs",
         "fix_id": "F-48054r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6614",
       "title": "McAfee VirusScan On-Demand scan must be configured to find unknown program threats.",
       "desc": "Due to the ability of malware to mutate after infection, standard antivirus signatures may not be able to catch new strains or variants of the malware. Typically, these strains and variants will share unique characteristics with others in their virus family. By using a generic signature to detect the shared characteristics, using wildcards where differences lie, the generic signature can detect viruses even if they are padded with extra, meaningless code. This method of detection is Heuristic detection.",
@@ -1566,10 +2206,18 @@
         "gid": "V-6615",
         "rid": "SV-55201r3_rule",
         "stig_id": "DTAM055",
+        "gtitle": "DTAM055-McAfee VirusScan find unknown macro virus",
         "fix_id": "F-48055r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6615",
       "title": "McAfee VirusScan On-Demand scan must be configured to find unknown macro threats.",
       "desc": "Interpreted viruses are executed by an application. Within this subcategory, macro viruses take advantage of the capabilities of applications' macro programming language to infect application documents and document templates, while scripting viruses infect scripts that are understood by scripting languages processed by services on the OS. Many attackers use toolkits containing several different types of utilities and script that can be used to probe and attack hosts. Scanning for unknown macro viruses will mitigate zero day attacks.",
@@ -1585,10 +2233,18 @@
         "gid": "V-6616",
         "rid": "SV-55203r3_rule",
         "stig_id": "DTAM056",
+        "gtitle": "DTAM056-McAfee VirusScan action for Virus",
         "fix_id": "F-48057r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6616",
       "title": "McAfee VirusScan On-Demand scan actions, When a threat is found must be configured to clean files automatically as first action.",
       "desc": "Malware may have infected a file that is necessary to the user. By configuring the antivirus software to first attempt cleaning the infected file, availability to the file is not sacrificed. If a cleaning attempt is not successful, however, deleting the file is the only safe option so as to ensure the malware is not introduced onto the system or network.",
@@ -1604,10 +2260,18 @@
         "gid": "V-6617",
         "rid": "SV-55204r3_rule",
         "stig_id": "DTAM057",
+        "gtitle": "DTAM057-McAfee VirusScan secondary action",
         "fix_id": "F-48060r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001243"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6617",
       "title": "McAfee VirusScan On-Demand scan actions, When a threat is found must be configured to delete files automatically if first action fails.",
       "desc": "Malware may have infected a file that is necessary to the user. By configuring the antivirus software to first attempt cleaning the infected file, availability to the file is not sacrificed. If a cleaning attempt is not successful, however, deleting the file is the only safe option so as to ensure the malware is not introduced onto the system or network.",
@@ -1623,10 +2287,18 @@
         "gid": "V-6618",
         "rid": "SV-55209r3_rule",
         "stig_id": "DTAM059",
+        "gtitle": "DTAM059-McAfee VirusScan log to file parameter",
         "fix_id": "F-48064r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6618",
       "title": "McAfee VirusScan On-Demand scan must be configured to record scanning activity in a log file.",
       "desc": "Log management is essential to ensuring that computer security records are stored in sufficient detail for an appropriate period of time. Routine log analysis is beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems. Logs are also useful when performing auditing and forensic analysis, supporting internal investigations, establishing baselines, and identifying operational trends and long-term problems.",
@@ -1642,10 +2314,18 @@
         "gid": "V-6620",
         "rid": "SV-55211r3_rule",
         "stig_id": "DTAM060",
+        "gtitle": "DTAM060-McAfee VirusScan log file limit parameter",
         "fix_id": "F-48066r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6620",
       "title": "McAfee VirusScan On-Demand scan log file size must be restricted and be configured to at least 10MB.",
       "desc": "While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size will be restricted, but must also be large enough to retain forensic value.",
@@ -1661,10 +2341,18 @@
         "gid": "V-6625",
         "rid": "SV-55212r3_rule",
         "stig_id": "DTAM063",
+        "gtitle": "DTAM063-McAfee VirusScan failure on encrypted file",
         "fix_id": "F-48067r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6625",
       "title": "McAfee VirusScan On-Demand scan must be configured to log any failure to scan encrypted files.",
       "desc": "Log management is essential to ensuring that computer security records are stored in sufficient detail for an appropriate period of time. Routine log analysis is beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems. Logs are also useful when performing auditing and forensic analysis, supporting internal investigations, establishing baselines, and identifying operational trends and long-term problems.",
@@ -1680,10 +2368,18 @@
         "gid": "V-6627",
         "rid": "SV-55213r3_rule",
         "stig_id": "DTAM070",
+        "gtitle": "DTAM070-McAfee VirusScan schedule",
         "fix_id": "F-48069r2_fix",
+        "rationale": null,
         "documentable": false,
-        "responsibility": "System Administrator"
+        "responsibility": "System Administrator",
+        "cci": [
+          "CCI-001241"
+        ]
       },
+      "refs": [
+        "DPMS Target McAfee VirusScan Enterprise 8.8 - Managed Client"
+      ],
       "id": "V-6627",
       "title": "McAfee VirusScan On-Demand scan must be scheduled to be executed at least on a weekly basis.",
       "desc": "Antivirus software is the mostly commonly used technical control for malware threat mitigation. Antivirus software on hosts should be configured to scan all hard drives regularly to identify any file system infections and to scan any removable media, if applicable, before media is inserted into the system. Not scheduling a regular scan of the hard drives of a system and/or not configuring the scan to scan all files and running processes introduces a higher risk of threats going undetected.",

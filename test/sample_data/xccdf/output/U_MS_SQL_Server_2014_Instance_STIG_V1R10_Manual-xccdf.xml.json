@@ -11,9 +11,17 @@
         "gid": "V-67387",
         "rid": "SV-81877r2_rule",
         "stig_id": "SQL4-00-024500",
+        "gtitle": "SRG-APP-000231-DB-000154",
         "fix_id": "F-73499r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001199"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67387",
       "title": "The Service Master Key must be backed up, stored offline and off-site.",
       "desc": "Backup and recovery of the Service Master Key may be critical to the complete recovery of the database. Not having this key can lead to loss of data during recovery.",
@@ -29,9 +37,17 @@
         "gid": "V-67757",
         "rid": "SV-82247r1_rule",
         "stig_id": "SQL4-00-000100",
+        "gtitle": "SRG-APP-000001-DB-000031",
         "fix_id": "F-73871r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000054"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67757",
       "title": "The number of concurrent SQL Server sessions for each system account must be limited.",
       "desc": "A variety of technologies exist to limit or, in some cases, eliminate the effects of DoS attacks. For example, boundary protection devices can filter certain types of packets to protect devices on an organization’s internal network from being directly affected by DoS attacks. One way SQL Server can limit exposure to DoS attacks is to restrict the number of connections that can be opened by a single user. SQL Server supports this through the use of logon triggers. (Note, however, that this need not be the only, or even the principal, means for satisfying this requirement. Depending on the architecture and capabilities of the network and application, a network device or an application may be more suitable for providing this protection.) When determining the appropriate values for this limit, take the characteristics of the various kinds of user into account, and bear in mind that some applications and some users may need to have multiple sessions open. For example, while a standard account using a simple application may never need more than, say, five connections, a database administrator using SQL Server Management Studio may need significantly more, because each tab in that application counts as a distinct session. Architectural note: In SQL Server, a count of active sessions by user can be obtained from one of the dynamic management views. For example: SELECT original_login_name, count(*) FROM sys.dm_exec_sessions WHERE is_user_process = 1 GROUP BY original_login_name; However, for this to return an accurate count in a logon trigger, the user would have to have the View Server State privilege. (Without this privilege, the trigger sees information only about the current session, so would always return a count of one.) View Server State would give that user access to a wide swath of information about the server. One way to avoid this exposure is to create a summary table, and a view of that table that restricts each user to seeing his/her own count, and establish a frequently-run background job to refresh the table (using the above query or similar). The logon trigger then queries the view to obtain a count that is accurate enough for this purpose in most circumstances.",
@@ -47,9 +63,17 @@
         "gid": "V-67759",
         "rid": "SV-82249r1_rule",
         "stig_id": "SQL4-00-030300",
+        "gtitle": "SRG-APP-000023-DB-000001",
         "fix_id": "F-73873r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000015"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67759",
       "title": "SQL Server authentication and identity management must be integrated with an organization-level authentication/access mechanism providing account management and automation for all users, groups, roles, and any other principals.",
       "desc": "Enterprise environments make account management for applications and databases challenging and complex. A manual process for account management functions adds the risk of a potential oversight or other error. Managing accounts for the same person in multiple places is inefficient and prone to problems with consistency and synchronization. A comprehensive application account management process that includes automation helps to ensure that accounts designated as requiring attention are consistently and promptly addressed. Examples include, but are not limited to, using automation to take action on multiple accounts designated as inactive, suspended, or terminated, or by disabling accounts located in non-centralized account stores, such as multiple servers. Account management functions can also include: assignment of group or role membership; identifying account type; specifying user access authorizations (i.e., privileges); account removal, update, or termination; and administrative alerts. The use of automated mechanisms can include, for example: using email or text messaging to notify account managers when users are terminated or transferred; using the information system to monitor account usage; and using automated telephone notification to report atypical system account usage. Account management and authentication in a Windows environment normally use an LDAP-compatible directory service, usually Windows Active Directory. This in turn, in the DoD environment, is typically integrated with the Public Key Infrastructure (PKI). Additional technologies or products may be employed that when placed together constitute an overall mechanism supporting an organization's automated account management requirements. An example is the use of Group Policy Objects to enforce rules concerning passwords. SQL Server must be configured to use Windows authentication, with SQL Server authentication disabled. If circumstances (such as the architecture of a purchased application) make it necessary to have SQL Server authentication available, its use must be kept to a minimum. The reasons for its use, and the measures taken to restrict it to only the necessary cases, must be documented, with AO approval. It is assumed throughout this STIG that this integration has been implemented.",
@@ -65,9 +89,17 @@
         "gid": "V-67761",
         "rid": "SV-82251r1_rule",
         "stig_id": "SQL4-00-002010",
+        "gtitle": "SRG-APP-000033-DB-000084",
         "fix_id": "F-73875r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67761",
       "title": "SQL Server must enforce approved authorizations for logical access to server-level system resources in accordance with applicable access control policies.",
       "desc": "Authentication with a DoD-approved PKI certificate does not necessarily imply authorization to access the SQL Server instance and server-level resources. To mitigate the risk of unauthorized access to sensitive information by entities that have been issued certificates by DoD-approved PKIs, all DoD systems, including SQL Server instances, must be properly configured to implement access control policies. Successful authentication must not automatically give an entity access to an asset or security boundary. Authorization procedures and controls must be implemented to ensure each authenticated entity also has a validated and current authorization. Authorization is the process of determining whether an entity, once authenticated, is permitted to access a specific asset. Information systems use access control policies and enforcement mechanisms to implement this requirement. Access control policies include identity-based policies, role-based policies, and attribute-based policies. Access enforcement mechanisms include access control lists, access control matrices, and cryptography. These policies and mechanisms must be employed by the application to control access between users (or processes acting on behalf of users) and objects (e.g., devices, files, records, processes, programs, and domains) in the information system. This requirement is applicable to access control enforcement applications, a category that includes SQL Server. If SQL Server is not configured to follow applicable policy when approving access, it may be in conflict with networks or other applications in the information system. This may result in users either gaining or being denied access inappropriately and in conflict with applicable policy.",
@@ -83,9 +115,17 @@
         "gid": "V-67763",
         "rid": "SV-82253r1_rule",
         "stig_id": "SQL4-00-023700",
+        "gtitle": "SRG-APP-000080-DB-000063",
         "fix_id": "F-73877r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000166"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67763",
       "title": "SQL Server must protect against an individual using a shared account from falsely denying having performed a particular action.",
       "desc": "Non-repudiation of actions taken is required in order to maintain application integrity. Examples of particular actions taken by individuals include creating information, sending a message, approving information (e.g., indicating concurrence or signing a contract), and receiving a message. Non-repudiation protects against later claims by a user of not having created, modified, or deleted a particular data item or collection of data in the database. Use of shared accounts does not provide individual accountability for actions taken on the DBMS or data. Whenever a single database account is used to connect to the database, a secondary authentication method that provides individual accountability is required. This scenario most frequently occurs when an externally hosted application authenticates individual users to the application and the application uses a single account to retrieve or update database information on behalf of the individual users (as in connection pooling). When shared accounts are utilized without another means of identifying individual users, users may deny having performed a particular action. (Shared accounts should not be confused with Windows groups, which are used in role-based access control.)",
@@ -101,9 +141,17 @@
         "gid": "V-67765",
         "rid": "SV-82255r1_rule",
         "stig_id": "SQL4-00-011300",
+        "gtitle": "SRG-APP-000090-DB-000065",
         "fix_id": "F-73879r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000171"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67765",
       "title": "Where SQL Server Trace is in use for auditing purposes, SQL Server must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be traced.",
       "desc": "Without the capability to restrict which roles and individuals can select which events are audited, unauthorized personnel may be able to prevent or interfere with the auditing of critical events. Suppression of auditing could permit an adversary to evade detection. Misconfigured audits can degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016. This version of the requirement deals with Trace-based audit trails.",
@@ -119,9 +167,17 @@
         "gid": "V-67767",
         "rid": "SV-82257r1_rule",
         "stig_id": "SQL4-00-011310",
+        "gtitle": "SRG-APP-000090-DB-000065",
         "fix_id": "F-73881r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000171"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67767",
       "title": "Where SQL Server Audit is in use, SQL Server must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited at the server level.",
       "desc": "Without the capability to restrict which roles and individuals can select which events are audited, unauthorized personnel may be able to prevent or interfere with the auditing of critical events. Suppression of auditing could permit an adversary to evade detection. Misconfigured audits can degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016. This version of the requirement deals with SQL Server Audit-based audit trails.",
@@ -137,9 +193,17 @@
         "gid": "V-67769",
         "rid": "SV-82259r2_rule",
         "stig_id": "SQL4-00-011410",
+        "gtitle": "SRG-APP-000091-DB-000066",
         "fix_id": "F-73883r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67769",
       "title": "Where SQL Server Audit is in use, SQL Server must generate audit records when privileges/permissions are retrieved.",
       "desc": "The system must monitor who/what is reading privilege/permission/role information. This requirement addresses explicit requests for privilege/permission/role membership information. It does not refer to the implicit retrieval of privileges/permissions/role memberships that SQL Server continually performs to determine if any and every action on the database is permitted. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016. This requirement applies to SQL Server Audit-based audit trails; Trace does not have this capability.",
@@ -155,9 +219,17 @@
         "gid": "V-67771",
         "rid": "SV-82261r2_rule",
         "stig_id": "SQL4-00-030410",
+        "gtitle": "SRG-APP-000091-DB-000325",
         "fix_id": "F-73885r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67771",
       "title": "Where SQL Server Audit is in use, SQL Server must generate audit records when unsuccessful attempts to retrieve privileges/permissions occur.",
       "desc": "Under some circumstances, it may be useful to monitor who/what is reading privilege/permission/role information. Therefore, it must be possible to configure auditing to do this. DBMSs typically make such information available through views or functions. This requirement addresses explicit requests for privilege/permission/role membership information. It does not refer to the implicit retrieval of privileges/permissions/role memberships that the DBMS continually performs to determine if any and every action on the database is permitted. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016. This requirement applies to SQL Server Audit-based audit trails; Trace does not have this capability. Use of SQL Server Audit's SCHEMA_OBJECT_ACCESS_GROUP causes capture of all accesses, successful and otherwise, to the system views (and all other schema-scoped objects). The [Succeeded] column in the audit output indicates the success or failure of the attempted action. Be aware, however, that it may report True in some cases where one would intuitively expect False. For example, SELECT 1/0 FROM SYS.ALL_OBJECTS will appear in the audit trail as successful, if the user has permission to perform that action, even though it contains an invalid expression. Some other actions that one would consider failures (such as selecting from a table that does not exist) may not appear at all.",
@@ -173,9 +245,17 @@
         "gid": "V-67773",
         "rid": "SV-82263r1_rule",
         "stig_id": "SQL4-00-011900",
+        "gtitle": "SRG-APP-000096-DB-000040",
         "fix_id": "F-73887r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000131"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67773",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish when the events occurred.",
       "desc": "Information system auditing capability is critical for accurate forensic analysis. Audit record content which may be necessary to satisfy the requirement of this control includes, but is not limited to: time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, file names involved, and access control or flow control rules invoked. SQL Server is capable of a range of actions on data stored within the database. It is important, for accurate forensic analysis, to know exactly when actions were performed. This requires specific information regarding the date and time an audit record is referring to. If date and time information is not recorded and stored with the audit record, the record itself is of very limited use. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -191,9 +271,17 @@
         "gid": "V-67775",
         "rid": "SV-82265r2_rule",
         "stig_id": "SQL4-00-012000",
+        "gtitle": "SRG-APP-000097-DB-000041",
         "fix_id": "F-73889r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000132"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67775",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish where the events occurred.",
       "desc": "Information system auditing capability is critical for accurate forensic analysis. Audit record content which may be necessary to satisfy the requirement of this control includes, but is not limited to: time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, file names involved, and access control or flow control rules invoked. SQL Server is capable of a range of actions on data stored within the database. It is important, for accurate forensic analysis, to know exactly where actions were performed. This requires specific information regarding the event location an audit record is referring to. If event location information is not recorded and stored with the audit record, the record itself is of very limited use. An event location can be a database instance, table, column, row, etc. Without sufficient information establishing where the audit events occurred, investigation into the cause of events is severely hindered. If SQL Server Audit is enabled, SQL Server does capture the event location-specific information in all audit records. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -209,9 +297,17 @@
         "gid": "V-67777",
         "rid": "SV-82267r2_rule",
         "stig_id": "SQL4-00-012100",
+        "gtitle": "SRG-APP-000098-DB-000042",
         "fix_id": "F-73891r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000133"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67777",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish the sources (origins) of the events.",
       "desc": "Information system auditing capability is critical for accurate forensic analysis. Audit record content which may be necessary to satisfy the requirement of this control includes, but is not limited to: time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, file names involved, and access control or flow control rules invoked. SQL Server is capable of a range of actions on data stored within the database. It is important, for accurate forensic analysis, to know exactly who performed what actions. This requires specific information regarding the source of the event an audit record is referring to. If the source of the event information is not recorded and stored with the audit record, the record itself is of very limited use. The source of the event can be a user account and sometimes a system account when timed jobs are run. Without information establishing the source of activity, the value of audit records from a forensics perspective is questionable. If Trace is enabled for auditing, SQL Server does capture the source of the event-specific information in all audit records. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -227,9 +323,17 @@
         "gid": "V-67779",
         "rid": "SV-82269r2_rule",
         "stig_id": "SQL4-00-012200",
+        "gtitle": "SRG-APP-000099-DB-000043",
         "fix_id": "F-73893r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000134"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67779",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish the outcome (success or failure) of the events.",
       "desc": "Information system auditing capability is critical for accurate forensic analysis. Audit record content which may be necessary to satisfy the requirement of this control includes, but is not limited to: time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, file names involved, and access control or flow control rules invoked. SQL Server is capable of a range of actions on data stored within the database. It is important, for accurate forensic analysis, to know the outcome of attempted actions. This requires specific information regarding the outcome of the action or event that the audit record is referring to. If outcome status information is not recorded and stored with the audit record, the record itself is of very limited use. Success and failure indicators ascertain the outcome of a particular event. As such, they also provide a means to measure the impact of an event and help authorized personnel to determine the appropriate response. Without knowing the outcome of audit events, it is very difficult to accurately recreate the series of events during forensic analysis. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016. If Trace is enabled for auditing, SQL Server does capture the outcome status information in all audit records. If SQL Server Audit is enabled, the [Succeeded] column in the audit output indicates the success or failure of the attempted action. Be aware, however, that it may report True in some cases where one would intuitively expect False. For example, SELECT 1/0 FROM SYS.ALL_OBJECTS will appear in the audit trail as successful, if the user has permission to perform that action, even though it contains an invalid expression. Some other actions that one would consider failures (such as selecting from a table that does not exist) may not appear at all.",
@@ -245,9 +349,17 @@
         "gid": "V-67781",
         "rid": "SV-82271r2_rule",
         "stig_id": "SQL4-00-012300",
+        "gtitle": "SRG-APP-000100-DB-000201",
         "fix_id": "F-73897r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001487"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67781",
       "title": "SQL Server must produce Trace or Audit records containing sufficient information to establish the identity of any user/subject associated with the event.",
       "desc": "Information system auditing capability is critical for accurate forensic analysis. Audit record content which may be necessary to satisfy the requirement of this control includes: time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, file names involved, and access control or flow control rules invoked. Database software is capable of a range of actions on data stored within the database. It is important, for accurate forensic analysis, to know exactly who performed a given action. If user identification information is not recorded and stored with the audit record, the record itself is of very limited use. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -263,9 +375,17 @@
         "gid": "V-67783",
         "rid": "SV-82273r1_rule",
         "stig_id": "SQL4-00-012400",
+        "gtitle": "SRG-APP-000101-DB-000044",
         "fix_id": "F-73899r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000135"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67783",
       "title": "SQL Server must include organization-defined additional, more detailed information in Trace or Audit records for events identified by type, location, or subject.",
       "desc": "SQL Server auditing capability is critical for accurate forensic analysis. Audit record content which may be necessary to satisfy the requirement of this control includes: time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, file names involved, and access control or flow control rules invoked. SQL Server does have a means available to add organizationally defined additional, more detailed information in the audit event records. These events may be identified by type, location, or subject. An example of more detailed information the organization may require in audit records could be the name of the application where the request is coming from. Some organizations may determine that more detailed information is required for specific database event types. If this information is not available, it could negatively impact forensic investigations into user actions or other malicious events. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -281,9 +401,17 @@
         "gid": "V-67785",
         "rid": "SV-82275r1_rule",
         "stig_id": "SQL4-00-013000",
+        "gtitle": "SRG-APP-000109-DB-000049",
         "fix_id": "F-73901r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000140"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67785",
       "title": "Unless it has been determined that availability is paramount, SQL Server must shut down upon the failure of an Audit, or a Trace used for auditing purposes, to include the unavailability of space for more audit/trace log records.",
       "desc": "It is critical that when SQL Server is at risk of failing to process audit logs as required, it take action to mitigate the failure. Audit processing failures include: software/hardware errors; failures in the audit capturing mechanisms; and audit storage capacity being reached or exceeded. Responses to audit failure depend upon the nature of the failure mode. When the need for system availability does not outweigh the need for a complete audit trail, SQL Server should shut down immediately, rolling back all in-flight transactions. Systems where audit trail completeness is paramount will most likely be at a lower MAC level than MAC I; the final determination is the prerogative of the application owner, subject to Authorizing Official concurrence. In any case, sufficient auditing resources must be allocated to avoid a shutdown in all but the most extreme situations. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -299,9 +427,17 @@
         "gid": "V-67787",
         "rid": "SV-82277r5_rule",
         "stig_id": "SQL4-00-030600",
+        "gtitle": "SRG-APP-000109-DB-000321",
         "fix_id": "F-73903r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000140"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67787",
       "title": "Where availability is paramount, the SQL Server must continue processing (preferably overwriting existing records, oldest first), in the event of lack of space for more Audit/Trace log records; and must keep processing after any failure of an Audit/Trace.",
       "desc": "It is critical that when SQL Server is at risk of failing to process audit logs as required, it take action to mitigate the failure. Audit processing failures include: software/hardware errors; failures in the audit capturing mechanisms; and audit storage capacity being reached or exceeded. Responses to audit failure depend upon the nature of the failure mode. When availability is an overriding concern, approved actions in response to an audit failure are as follows: (i) If the failure was caused by the lack of audit record storage capacity, the DBMS must continue generating audit records, if possible (automatically restarting the audit service if necessary), preferably overwriting the oldest audit records in a first-in-first-out manner. (ii) If audit records are sent to a centralized collection server and communication with this server is lost or the server fails, the DBMS must queue audit records locally until communication is restored or until the audit records are retrieved manually. Upon restoration of the connection to the centralized collection server, action should be taken to synchronize the local audit data with the collection server. Systems where availability is paramount will most likely be MAC I; the final determination is the prerogative of the application owner, subject to Authorizing Official concurrence. In any case, sufficient auditing resources must be allocated to avoid audit data loss in all but the most extreme situations. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016. However, although Trace supports FIFO rollover, SQL Server Audit does not: its CONTINUE option stops the production of new audit records when there is an audit failure.",
@@ -317,9 +453,17 @@
         "gid": "V-67789",
         "rid": "SV-82279r2_rule",
         "stig_id": "SQL4-00-013600",
+        "gtitle": "SRG-APP-000118-DB-000059",
         "fix_id": "F-73905r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000162"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67789",
       "title": "The audit information produced by SQL Server must be protected from unauthorized read access.",
       "desc": "If audit data were to become compromised, competent forensic analysis and discovery of the true source of potentially malicious system activity would be difficult, if not impossible, to achieve. In addition, access to audit records provides information an attacker could potentially use to his or her advantage. To ensure the veracity of audit data, the information system and/or the application must protect audit information from any and all unauthorized access. This includes read, write, copy, etc. SQL Server and third-party tools are examples of applications that are easily able to view and manipulate audit file data. Additionally, applications with user interfaces to audit records should not allow unfettered manipulation of, or access to, those records via any application. If an application provides access to the audit data, the application becomes accountable for ensuring that audit information is protected from unauthorized access. This requirement can be achieved through multiple methods, which will depend upon system architecture and design. Some commonly employed methods include ensuring log files enjoy the proper file system permissions utilizing file system protections, and limiting log data location. Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity.",
@@ -335,9 +479,17 @@
         "gid": "V-67791",
         "rid": "SV-82281r2_rule",
         "stig_id": "SQL4-00-013700",
+        "gtitle": "SRG-APP-000119-DB-000060",
         "fix_id": "F-73907r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000163"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67791",
       "title": "The audit information produced by SQL Server must be protected from unauthorized modification.",
       "desc": "If audit data were to become compromised, competent forensic analysis and discovery of the true source of potentially malicious system activity would be impossible to achieve. To ensure the veracity of audit data, the information system and/or the application must protect audit information from unauthorized modification. This requirement can be achieved through multiple methods, which will depend upon system architecture and design. Some commonly employed methods include ensuring log files enjoy the proper file system permissions, and limiting log data locations. Applications providing a user interface to audit data will leverage user permissions and roles identifying the user accessing the data and the corresponding rights that the user enjoys in order to make decisions regarding the modification of audit data. Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. Modification of database audit data could mask the theft or unauthorized modification of sensitive data stored in the database.",
@@ -353,9 +505,17 @@
         "gid": "V-67793",
         "rid": "SV-82283r2_rule",
         "stig_id": "SQL4-00-013800",
+        "gtitle": "SRG-APP-000120-DB-000061",
         "fix_id": "F-73909r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000164"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67793",
       "title": "The audit information produced by SQL Server must be protected from unauthorized deletion.",
       "desc": "If audit data were to become compromised, competent forensic analysis and discovery of the true source of potentially malicious system activity would be impossible to achieve. To ensure the veracity of audit data, the information system and/or the application must protect audit information from unauthorized deletion. This requirement can be achieved through multiple methods, which will depend upon system architecture and design. Some commonly employed methods include ensuring log files enjoy the proper file system permissions utilizing file system protections, restricting access, and backing up log data to ensure log data is retained. Applications providing a user interface to audit data will leverage user permissions and roles identifying the user accessing the data and the corresponding rights the user enjoys in order to make decisions regarding the deletion of audit data. Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. Deletion of database audit data could mask the theft or unauthorized modification of sensitive data stored in the database.",
@@ -371,9 +531,17 @@
         "gid": "V-67795",
         "rid": "SV-82285r2_rule",
         "stig_id": "SQL4-00-013900",
+        "gtitle": "SRG-APP-000121-DB-000202",
         "fix_id": "F-73911r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001493"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67795",
       "title": "Audit tools used in, or in conjunction with, SQL Server must be protected from unauthorized access.",
       "desc": "Protecting audit data also includes identifying and protecting the tools used to view and manipulate log data. Depending upon the log format and application, system and application log tools may provide the only means to manipulate and manage application and system log data. It is, therefore, imperative that access to audit tools be controlled and protected from unauthorized access. Applications providing tools to interface with audit data will leverage user permissions and roles identifying the user accessing the tools and the corresponding rights the user has in order to make access decisions regarding access to the audit tools. SQL Server is an application that does provide access to audit data. Audit tools include, but are not limited to, OS-provided audit tools, vendor-provided audit tools, and open source audit tools needed to successfully view and manipulate audit information system activity and records. If an attacker were to gain access to audit tools, he could analyze audit logs for system weaknesses or weaknesses in the auditing itself. An attacker could also manipulate logs to hide evidence of malicious activity.",
@@ -389,9 +557,17 @@
         "gid": "V-67803",
         "rid": "SV-82293r1_rule",
         "stig_id": "SQL4-00-014000",
+        "gtitle": "SRG-APP-000122-DB-000203",
         "fix_id": "F-73919r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001494"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67803",
       "title": "SQL Server and/or the operating system must protect its audit configuration from unauthorized modification.",
       "desc": "Protecting audit data also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operation on audit data. Applications providing tools to interface with audit data will leverage user permissions and roles identifying the user accessing the tools and the corresponding rights the user enjoys in order make access decisions regarding the modification of audit tools. Audit tools include, but are not limited to, vendor-provided and open source audit tools needed to successfully view and manipulate audit information system activity and records. Audit tools include custom queries and report generators. This focuses on external tools for log maintenance and review. Other STIG requirements govern SQL Server privileges to maintain trace or audit definitions.",
@@ -407,9 +583,17 @@
         "gid": "V-67805",
         "rid": "SV-82295r1_rule",
         "stig_id": "SQL4-00-014100",
+        "gtitle": "SRG-APP-000123-DB-000204",
         "fix_id": "F-73921r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001495"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67805",
       "title": "SQL Server and the operating system must protect SQL Server audit features from unauthorized removal.",
       "desc": "Protecting audit data also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operation on audit data. Applications providing tools to interface with audit data will leverage user permissions and roles identifying the user accessing the tools and the corresponding rights the user enjoys in order make access decisions regarding the deletion of audit tools. Audit tools include, but are not limited to, vendor-provided and open source audit tools needed to successfully view and manipulate audit information system activity and records. Audit tools include custom queries and report generators. This focuses on external tools for log maintenance and review. Other STIG requirements govern SQL Server privileges to maintain trace or audit definitions.",
@@ -425,9 +609,17 @@
         "gid": "V-67807",
         "rid": "SV-82297r1_rule",
         "stig_id": "SQL4-00-015350",
+        "gtitle": "SRG-APP-000133-DB-000179",
         "fix_id": "F-73923r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67807",
       "title": "Software, applications, and configuration files that are part of, or related to, the SQL Server installation must be monitored to discover unauthorized changes.",
       "desc": "When dealing with change control issues, it should be noted, any changes to the hardware, software, and/or firmware components of applications and tools related to SQL Server can potentially have significant effects on the overall security of the system. Only qualified and authorized individuals shall be allowed to obtain access to components related to SQL Server for purposes of initiating changes, including upgrades and modifications. Unmanaged changes that occur to the software libraries or configuration can lead to unauthorized or compromised installations. Of particular note in this context is that any software installed for auditing and/or audit file management must be protected and monitored.",
@@ -443,9 +635,17 @@
         "gid": "V-67809",
         "rid": "SV-82299r1_rule",
         "stig_id": "SQL4-00-015300",
+        "gtitle": "SRG-APP-000133-DB-000179",
         "fix_id": "F-73925r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67809",
       "title": "SQL Server security-relevant configuration settings must be monitored to discover unauthorized changes.",
       "desc": "When dealing with change control issues, it should be noted, any changes to security-relevant configuration settings of SQL Server can potentially have significant effects on the overall security of the system. If SQL Server were to allow any user to make changes to configuration settings, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process. This requirement is contingent upon the configuration of SQL Server's hosted application and the security-relevant configuration settings of SQL Server. Accordingly, only qualified and authorized individuals shall be allowed to obtain access to these security-relevant configuration settings for purposes of initiating changes, including upgrades and modifications. Unmanaged changes that occur to SQL Server software libraries or configuration can lead to unauthorized or compromised installations.",
@@ -461,9 +661,17 @@
         "gid": "V-67811",
         "rid": "SV-82301r1_rule",
         "stig_id": "SQL4-00-015400",
+        "gtitle": "SRG-APP-000133-DB-000198",
         "fix_id": "F-73927r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67811",
       "title": "SQL Server software installation account(s) must be restricted to authorized users.",
       "desc": "When dealing with change control issues, it should be noted, any changes to the hardware, software, and/or firmware components of the information system and/or application can potentially have significant effects on the overall security of the system. If the application were to allow any user to make changes to software libraries, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process. This requirement is contingent upon the language in which the application is programmed, as many application architectures in use today incorporate their software libraries into, and make them inseparable from, their compiled distributions, rendering them static and version dependent. However, this requirement does apply to applications with software libraries accessible and configurable, as in the case of interpreted languages. Accordingly, only qualified and authorized individuals shall be allowed to obtain access to information system components for purposes of initiating changes, including upgrades and modifications. DBA and other privileged administrative or application owner accounts are granted privileges that allow actions that can have a greater impact on SQL Server security and operation. It is especially important to grant access to privileged accounts to only those persons who are qualified and authorized to use them.",
@@ -479,9 +687,17 @@
         "gid": "V-67813",
         "rid": "SV-82303r2_rule",
         "stig_id": "SQL4-00-015500",
+        "gtitle": "SRG-APP-000133-DB-000199",
         "fix_id": "F-73929r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67813",
       "title": "Database software directories, including SQL Server configuration files, must be stored in dedicated directories, separate from the host OS and other applications.",
       "desc": "When dealing with change control issues, it should be noted, any changes to the hardware, software, and/or firmware components of the information system and/or application can potentially have significant effects on the overall security of the system. Multiple applications can provide a cumulative negative effect. A vulnerability and subsequent exploit of one application can lead to an exploit of other applications sharing the same security context. For example, an exploit of a web server process that leads to unauthorized administrative access to host system directories can most likely lead to a compromise of all applications hosted by the same system. Database software not installed using dedicated directories both threatens and is threatened by other hosted applications. Access controls defined for one application may by default provide access to other applications’ database objects or directories. Any method that provides any level of separation of security context assists in the protection between applications.",
@@ -497,9 +713,17 @@
         "gid": "V-67815",
         "rid": "SV-82305r1_rule",
         "stig_id": "SQL4-00-030700",
+        "gtitle": "SRG-APP-000133-DB-000362",
         "fix_id": "F-73931r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001499"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67815",
       "title": "The role(s)/group(s) used to modify database structure (including but not necessarily limited to tables, indexes, storage, etc.) and logic modules (stored procedures, functions, triggers, links to software external to SQL Server, etc.) must be restricted to authorized users.",
       "desc": "If SQL Server were to allow any user to make changes to database structure or logic, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process. Accordingly, only qualified and authorized individuals shall be allowed to obtain access to information system components for purposes of initiating changes, including upgrades and modifications. Unmanaged changes that occur to the database software libraries or configuration can lead to unauthorized or compromised installations.",
@@ -515,9 +739,17 @@
         "gid": "V-67817",
         "rid": "SV-82307r1_rule",
         "stig_id": "SQL4-00-016200",
+        "gtitle": "SRG-APP-000141-DB-000090",
         "fix_id": "F-73933r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67817",
       "title": "SQL Server must have the publicly available Northwind sample database removed.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Examples include, but are not limited to, installing advertising software, demonstrations, or browser plug-ins not related to requirements and providing a wide array of functionality not required for every mission, but which cannot be disabled. Applications must adhere to the principles of least functionality by providing only essential capabilities. Even though the very popular \"Northwind\" database is no longer installed by default, it introduces a vulnerability to SQL Server and must be removed, if present. Demonstration and sample database objects and applications present publicly known attack points for malicious users. These demonstration and sample objects are meant to provide simple examples of coding specific functions and are not developed to prevent vulnerabilities from being introduced to the SQL Server and the OS.",
@@ -533,9 +765,17 @@
         "gid": "V-67819",
         "rid": "SV-82309r1_rule",
         "stig_id": "SQL4-00-016300",
+        "gtitle": "SRG-APP-000141-DB-000090",
         "fix_id": "F-73935r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67819",
       "title": "SQL Server must have the publicly available pubs sample database removed.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Examples include, but are not limited to, installing advertising software, demonstrations, or browser plug-ins not related to requirements and providing a wide array of functionality not required for every mission, but which cannot be disabled. Applications must adhere to the principles of least functionality by providing only essential capabilities. Even though the formerly popular \"pubs\" database is no longer installed by default, it introduces a vulnerability to SQL Server and must be removed, if present. Demonstration and sample database objects and applications present publicly known attack points for malicious users. These demonstration and sample objects are meant to provide simple examples of coding specific functions and are not developed to prevent vulnerabilities from being introduced to the SQL Server and the OS.",
@@ -551,9 +791,17 @@
         "gid": "V-67821",
         "rid": "SV-82311r1_rule",
         "stig_id": "SQL4-00-016310",
+        "gtitle": "SRG-APP-000141-DB-000090",
         "fix_id": "F-73937r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67821",
       "title": "SQL Server must have the publicly available AdventureWorks sample database removed.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Examples include, but are not limited to, installing advertising software, demonstrations, or browser plug-ins not related to requirements and providing a wide array of functionality not required for every mission, but which cannot be disabled. Applications must adhere to the principles of least functionality by providing only essential capabilities. Even though the very popular \"AdventureWorks\" database is no longer installed by default, it introduces a vulnerability to SQL Server and must be removed, if present. Demonstration and sample database objects and applications present publicly known attack points for malicious users. These demonstration and sample objects are meant to provide simple examples of coding specific functions and are not developed to prevent vulnerabilities from being introduced to the SQL Server and the OS.",
@@ -569,9 +817,17 @@
         "gid": "V-67823",
         "rid": "SV-82313r1_rule",
         "stig_id": "SQL4-00-016500",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73939r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67823",
       "title": "SQL Server must have the SQL Server Data Tools (SSDT) software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The SQL Server Data Tools (SSDT) software component must be removed from SQL Server if it is unused.",
@@ -587,9 +843,17 @@
         "gid": "V-67825",
         "rid": "SV-82315r1_rule",
         "stig_id": "SQL4-00-016600",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73941r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67825",
       "title": "SQL Server must have the SQL Server Reporting Services (SSRS) software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The SQL Server Reporting Services (SSRS) software component must be removed from SQL Server if it is unused.",
@@ -605,9 +869,17 @@
         "gid": "V-67827",
         "rid": "SV-82317r1_rule",
         "stig_id": "SQL4-00-016700",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73943r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67827",
       "title": "SQL Server must have the SQL Server Integration Services (SSIS) software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The SQL Server Integration Services (SSIS) software component must be removed from SQL Server if it is unused.",
@@ -623,9 +895,17 @@
         "gid": "V-67829",
         "rid": "SV-82319r1_rule",
         "stig_id": "SQL4-00-016800",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73945r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67829",
       "title": "SQL Server must have the SQL Server Analysis Services (SSAS) software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The SQL Server Analysis Service (SSAS) software component removed from SQL Server if it is unused.",
@@ -641,9 +921,17 @@
         "gid": "V-67831",
         "rid": "SV-82321r1_rule",
         "stig_id": "SQL4-00-016805",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73947r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67831",
       "title": "SQL Server must have the SQL Server Distributed Replay Client software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The SQL Server Distributed Replay Client software component must be removed if it is unused.",
@@ -659,9 +947,17 @@
         "gid": "V-67833",
         "rid": "SV-82323r1_rule",
         "stig_id": "SQL4-00-016810",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73949r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67833",
       "title": "SQL Server must have the SQL Server Distributed Replay Controller software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The SQL Server Distributed Replay Controller software component must be removed if it is unused.",
@@ -677,9 +973,17 @@
         "gid": "V-67835",
         "rid": "SV-82325r1_rule",
         "stig_id": "SQL4-00-016815",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73951r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67835",
       "title": "SQL Server must have the Full-Text Search software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The Full-Text Search software component must be removed from SQL Server if it is unused.",
@@ -695,9 +999,17 @@
         "gid": "V-67837",
         "rid": "SV-82327r1_rule",
         "stig_id": "SQL4-00-016820",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73953r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67837",
       "title": "SQL Server must have the Master Data Services software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The Master Data Services software component must be removed from SQL Server if it is unused.",
@@ -713,9 +1025,17 @@
         "gid": "V-67839",
         "rid": "SV-82329r1_rule",
         "stig_id": "SQL4-00-016826",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73955r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67839",
       "title": "SQL Server must have the SQL Server Replication software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The SQL Server Replication software component must be removed from SQL Server if it is unused.",
@@ -731,9 +1051,17 @@
         "gid": "V-67841",
         "rid": "SV-82331r1_rule",
         "stig_id": "SQL4-00-016830",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73957r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67841",
       "title": "SQL Server must have the Data Quality Client software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The Data Quality Client software component must be removed from SQL Server if it is unused.",
@@ -749,9 +1077,17 @@
         "gid": "V-67843",
         "rid": "SV-82333r1_rule",
         "stig_id": "SQL4-00-016835",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73959r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67843",
       "title": "SQL Server must have the Data Quality Services software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The Data Quality Services software component must be removed from SQL Server if it is unused.",
@@ -767,9 +1103,17 @@
         "gid": "V-67845",
         "rid": "SV-82335r1_rule",
         "stig_id": "SQL4-00-016845",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73961r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67845",
       "title": "SQL Server must have the Client Tools SDK software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The Client Tools Software Development Kit must be removed from SQL Server if it is unused.",
@@ -785,9 +1129,17 @@
         "gid": "V-67847",
         "rid": "SV-82337r1_rule",
         "stig_id": "SQL4-00-016850",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73963r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67847",
       "title": "SQL Server must have the Management Tools software component removed if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. Management Tools is an indispensable software component on any server running the SQL Server DBMS, if the database administrator logs on to the Windows server to do his/her work. However, it is also possible to use the management tools on a separate machine and still connect to SQL Server. If this approach is used and DBAs never need to use the Management Tools directly on the server, then the Management Tools software component must be removed from the server.",
@@ -803,9 +1155,17 @@
         "gid": "V-67849",
         "rid": "SV-82339r1_rule",
         "stig_id": "SQL4-00-016855",
+        "gtitle": "SRG-APP-000141-DB-000091",
         "fix_id": "F-73965r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67849",
       "title": "SQL Server must have the Filestream feature disabled if it is unused.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default or selected for installation by an administrator, may not be necessary to support essential organizational operations (e.g., key missions, functions). Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. The Filestream feature must be disabled if it is unused.",
@@ -821,9 +1181,17 @@
         "gid": "V-67851",
         "rid": "SV-82341r2_rule",
         "stig_id": "SQL4-00-017000",
+        "gtitle": "SRG-APP-000141-DB-000092",
         "fix_id": "F-73967r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67851",
       "title": "Unused database components that are integrated in SQL Server and cannot be uninstalled must be disabled.",
       "desc": "SQL Server is capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Examples include, but are not limited to, installing advertising software demonstrations, or browser plug-ins not related to requirements or providing a wide array of functionality not required for every mission, but which cannot be disabled. Applications must adhere to the principles of least functionality by providing only essential capabilities. Unused and unnecessary SQL Server components increase the number of available attack vectors to SQL Server by introducing additional targets for attack. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. Components of the system that are unused and cannot be uninstalled must be disabled.",
@@ -839,9 +1207,17 @@
         "gid": "V-67853",
         "rid": "SV-82343r1_rule",
         "stig_id": "SQL4-00-017100",
+        "gtitle": "SRG-APP-000141-DB-000092",
         "fix_id": "F-73969r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67853",
       "title": "The SQL Server default account [sa] must be disabled.",
       "desc": "SQL Server's [sa] account has special privileges required to administer the database. The [sa] account is a well-known SQL Server account and is likely to be targeted by attackers and thus more prone to providing unauthorized access to the database. This [sa] default account is administrative and could lead to catastrophic consequences, including the complete loss of control over SQL Server. If the [sa] default account is not disabled, an attacker might be able to gain access through the account. SQL Server by default, at installation, disables the [sa] account. Some applications that run on SQL Server require the [sa] account to be enabled in order for the application to function properly. These applications that require the [sa] account to be enabled are usually legacy systems.",
@@ -857,9 +1233,17 @@
         "gid": "V-67855",
         "rid": "SV-82345r1_rule",
         "stig_id": "SQL4-00-010200",
+        "gtitle": "SRG-APP-000141-DB-000092",
         "fix_id": "F-73971r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67855",
       "title": "SQL Server default account [sa] must have its name changed.",
       "desc": "SQL Server's [sa] account has special privileges required to administer the database. The [sa] account is a well-known SQL Server account name and is likely to be targeted by attackers, and is thus more prone to providing unauthorized access to the database. Since the SQL Server [sa] is administrative in nature, the compromise of a default account can have catastrophic consequences, including the complete loss of control over SQL Server. Since SQL Server needs for this account to exist and it should not be removed, one way to mitigate this risk is to change the [sa] account name.",
@@ -875,9 +1259,17 @@
         "gid": "V-67857",
         "rid": "SV-82347r1_rule",
         "stig_id": "SQL4-00-017200",
+        "gtitle": "SRG-APP-000141-DB-000093",
         "fix_id": "F-73973r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67857",
       "title": "Access to xp_cmdshell must be disabled, unless specifically required and approved.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. Applications must adhere to the principles of least functionality by providing only essential capabilities. DBMSs may spawn additional external processes to execute procedures that are defined in the DBMS, but stored in external host files (external procedures). The spawned process used to execute the external procedure may operate within a different OS security context than the DBMS and provide unauthorized access to the host system. The xp_cmdshell extended stored procedure allows execution of host executables outside the controls of database access permissions. This access may be exploited by malicious users who have compromised the integrity of the SQL Server database process to control the host operating system to perpetrate additional malicious activity.",
@@ -893,9 +1285,17 @@
         "gid": "V-67859",
         "rid": "SV-82349r1_rule",
         "stig_id": "SQL4-00-017400",
+        "gtitle": "SRG-APP-000142-DB-000094",
         "fix_id": "F-73975r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67859",
       "title": "SQL Server must be configured to prohibit or restrict the use of unauthorized network protocols.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). Additionally, it is sometimes convenient to provide multiple services from a single component of an information system (e.g., email and web services) but doing so increases risk over limiting the services provided by any one component. To support the requirements and principles of least functionality, the application must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues. Database Management Systems using ports, protocols, and services deemed unsafe are open to attack through those ports, protocols, and services. This can allow unauthorized access to the database and, through the database, to other components of the information system. For information on approved and prohibited ports, protocols, and services, see the Ports, Protocols, and Services Management (PPSM) section of the Information Assurance Support Environment (IASE) web site: http://iase.disa.mil/ppsm/Pages/index.aspx. \"Functions\" in this requirement refers to system and infrastructure functionality, not to functions in mathematics and programming languages.",
@@ -911,9 +1311,17 @@
         "gid": "V-67861",
         "rid": "SV-82351r1_rule",
         "stig_id": "SQL4-00-017410",
+        "gtitle": "SRG-APP-000142-DB-000094",
         "fix_id": "F-73977r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000382"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67861",
       "title": "SQL Server and Windows must be configured to prohibit or restrict the use of unauthorized network ports.",
       "desc": "Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). Additionally, it is sometimes convenient to provide multiple services from a single component of an information system (e.g., email and web services) but doing so increases risk over limiting the services provided by any one component. To support the requirements and principles of least functionality, the application must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues. Database Management Systems using ports, protocols, and services deemed unsafe are open to attack through those ports, protocols, and services. This can allow unauthorized access to the database and, through the database, to other components of the information system. For information on approved and prohibited ports, protocols, and services, see the Ports, Protocols, and Services Management (PPSM) section of the Information Assurance Support Environment (IASE) web site: http://iase.disa.mil/ppsm/Pages/index.aspx. \"Functions\" in this requirement refers to system and infrastructure functionality, not to functions in mathematics and programming languages.",
@@ -929,9 +1337,17 @@
         "gid": "V-67863",
         "rid": "SV-82353r1_rule",
         "stig_id": "SQL4-00-018400",
+        "gtitle": "SRG-APP-000148-DB-000103",
         "fix_id": "F-73979r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000764"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67863",
       "title": "SQL Server must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).",
       "desc": "To ensure accountability and prevent unauthorized SQL Server access, organizational users shall be identified and authenticated. Organizational users include organizational employees and individuals the organization deems to have equivalent status of employees (e.g., contractors, guest researchers, individuals from allied nations). Users (and any processes acting on behalf of users) must be uniquely identified and authenticated for all accesses other than those accesses explicitly identified and documented by the organization, which must outline specific user actions that can be performed on SQL Server without identification or authentication.",
@@ -947,9 +1363,17 @@
         "gid": "V-67867",
         "rid": "SV-82357r2_rule",
         "stig_id": "SQL4-00-039010",
+        "gtitle": "SRG-APP-000178-DB-000083",
         "fix_id": "F-73983r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000206"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67867",
       "title": "Applications must obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
       "desc": "To prevent the compromise of authentication information, such as passwords and PINs, during the authentication process, the feedback from the information system must not provide any information that would allow an unauthorized user to compromise the authentication mechanism. Obfuscation of user-provided information when typed into the system is a method used in addressing this risk. For example, displaying asterisks when a user types in a password or PIN, is an example of obscuring feedback of authentication information. Database applications may allow for entry of the account name and password as a visible parameter of the application execution command. This practice must be prohibited and disabled to prevent shoulder surfing. This calls for review of applications, which will require collaboration with the application developers. It is recognized that in many cases, the database administrator (DBA) is organizationally separate from the application developers and may have limited, if any, access to source code. Nevertheless, protections of this type are so important to the secure operation of databases that they must not be ignored. At a minimum, the DBA must attempt to obtain assurances from the development organization that this issue has been addressed and must document what has been discovered.",
@@ -965,9 +1389,17 @@
         "gid": "V-67869",
         "rid": "SV-82359r1_rule",
         "stig_id": "SQL4-00-039020",
+        "gtitle": "SRG-APP-000178-DB-000083",
         "fix_id": "F-73985r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000206"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67869",
       "title": "When using command-line tools such as SQLCMD in a mixed-mode authentication environment, users must use a logon method that does not expose the password.",
       "desc": "To prevent the compromise of authentication information, such as passwords and PINs, during the authentication process, the feedback from the information system must not provide any information that would allow an unauthorized user to compromise the authentication mechanism. Obfuscation of user-provided information when typed into the system is a method used in addressing this risk. For example, displaying asterisks when a user types in a password or PIN, is an example of obscuring feedback of authentication information. This requirement is applicable when mixed-mode authentication is enabled. When this is the case, password-authenticated accounts can be created in and authenticated by SQL Server. Other STIG requirements prohibit the use of mixed-mode authentication except when justified and approved. This deals with the exceptions. SQLCMD and other command-line tools are part of any SQL Server installation. These tools can accept a plain-text password, but do offer alternative techniques. Since the typical user of these tools is a database administrator, the consequences of password compromise are particularly serious. Therefore, the use of plain-text passwords must be prohibited, as a matter of practice and procedure.",
@@ -983,9 +1415,18 @@
         "gid": "V-67871",
         "rid": "SV-82361r1_rule",
         "stig_id": "SQL4-00-031100",
+        "gtitle": "SRG-APP-000179-DB-000114",
         "fix_id": "F-73987r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000803",
+          "CCI-002450"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67871",
       "title": "SQL Server must use NIST FIPS 140-2 validated cryptographic modules for cryptographic operations.",
       "desc": "Use of weak or not validated cryptographic algorithms undermines the purposes of utilizing encryption and digital signatures to protect data. Weak algorithms can be easily broken and not validated cryptographic modules may not implement algorithms correctly. Unapproved cryptographic modules or algorithms should not be relied on for authentication, confidentiality or integrity. Weak cryptography could allow an attacker to gain access to and modify data stored in the database as well as the administration settings of SQL Server. Applications, including DBMSs, utilizing cryptography are required to use approved NIST FIPS 140-2 validated cryptographic modules that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. Operations that require the use of cryptography include the provisioning of digital signatures, the generation and validation of cryptographic hashes, and the protection of data by storing and transmitting it in encrypted form. The security functions validated as part of FIPS 140-2 for cryptographic modules are described in FIPS 140-2 Annex A. SQL Server complies with FIPS 140-2 if Windows is configured to do so. NSA Type-X (where X=1, 2, 3, 4) products are NSA-certified, hardware-based encryption modules.",
@@ -1001,9 +1442,17 @@
         "gid": "V-67873",
         "rid": "SV-82363r1_rule",
         "stig_id": "SQL4-00-018900",
+        "gtitle": "SRG-APP-000180-DB-000115",
         "fix_id": "F-73989r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000804"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67873",
       "title": "SQL Server must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).",
       "desc": "Non-organizational users include all information system users other than organizational users, which include organizational employees or individuals the organization deems to have equivalent status of employees (e.g., contractors, guest researchers, individuals from allied nations). Non-organizational users shall be uniquely identified and authenticated for all accesses other than those accesses explicitly identified and documented by the organization when related to the use of anonymous access, such as accessing a web server. This may be accomplished by a code embedded within the userid, or via a flag or code column in a table of users, or by some other means. In any case, the user must be individually identified to, and within, SQL Server via a mapping to an individual account and not mapping to a shared account. Accordingly, a risk assessment is used in determining the authentication needs of the organization. Scalability, practicality, and security are simultaneously considered in balancing the need to ensure ease of use for access to federal information and information systems with the need to protect and adequately mitigate risk to organizational operations, organizational assets, individuals, and other organizations.",
@@ -1019,9 +1468,17 @@
         "gid": "V-67875",
         "rid": "SV-82365r1_rule",
         "stig_id": "SQL4-00-020500",
+        "gtitle": "SRG-APP-000211-DB-000122",
         "fix_id": "F-73991r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001082"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67875",
       "title": "SQL Server must be configured to separate user functionality (including user interface services) from database management functionality.",
       "desc": "Information system management functionality includes functions necessary to administer databases, network components, workstations, or servers and typically requires privileged user access. The separation of user functionality from information system management functionality is either physical or logical and is accomplished by using different computers, different central processing units, different instances of the operating system, different network addresses, combinations of these methods, or other methods, as appropriate. An example of this type of separation is observed in web administrative interfaces that use separate authentication methods for users of any other information system resources. This may include isolating the administrative interface on a different domain and with additional access controls. If administrative functionality or information regarding DBMS management is presented on an interface available for users, information on DBMS settings may be inadvertently made available to the user.",
@@ -1037,9 +1494,17 @@
         "gid": "V-67879",
         "rid": "SV-82369r1_rule",
         "stig_id": "SQL4-00-021500",
+        "gtitle": "SRG-APP-000233-DB-000124",
         "fix_id": "F-73995r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001084"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67879",
       "title": "SQL Server must isolate security functions from nonsecurity functions.",
       "desc": "An isolation boundary provides access control and protects the integrity of the hardware, software, and firmware that perform security functions. Security functions are defined as \"the hardware, software, and/or firmware of the information system responsible for enforcing the system security policy and supporting the isolation of code and data on which the protection is based\". Developers and implementers can increase the assurance in security functions by employing well-defined security policy models; structured, disciplined, and rigorous hardware and software development techniques; and sound system/security engineering principles. Database Management Systems typically separate security functionality from nonsecurity functionality via separate databases or schemas. SQL Server's [master] database and [sys] schema are examples of this. Further granularity of access protection is provided by assigning logins and users to appropriate server roles and database roles Database objects or code implementing security functionality should not be commingled with objects or code implementing application logic. When security and nonsecurity functionality is commingled, users who have access to nonsecurity functionality may be able to access security functionality.",
@@ -1055,9 +1520,17 @@
         "gid": "V-67881",
         "rid": "SV-82371r1_rule",
         "stig_id": "SQL4-00-031400",
+        "gtitle": "SRG-APP-000243-DB-000374",
         "fix_id": "F-73997r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001090"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67881",
       "title": "Access to database files must be limited to relevant processes and to authorized, administrative users.",
       "desc": "Applications, including DBMSs, must prevent unauthorized and unintended information transfer via shared system resources. Permitting only DBMS processes and authorized, administrative users to have access to the files where the database resides helps ensure that those files are not shared inappropriately and are not open to backdoor access and manipulation.",
@@ -1073,9 +1546,17 @@
         "gid": "V-67883",
         "rid": "SV-82373r1_rule",
         "stig_id": "SQL4-00-031700",
+        "gtitle": "SRG-APP-000295-DB-000305",
         "fix_id": "F-73999r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002361"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67883",
       "title": "SQL Server must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.",
       "desc": "This addresses the termination of user-initiated logical sessions in contrast to the termination of network connections that are associated with communications sessions (i.e., network disconnect). A logical session (for local, network, and remote access) is initiated whenever a user (or process acting on behalf of a user) accesses an organizational information system. Such user sessions can be terminated (and thus terminate user access) without terminating network sessions. Session termination ends all processes associated with a user's logical session except those batch processes/jobs that are specifically created by the user (i.e., session owner) to continue after the session is terminated. Conditions or trigger events requiring automatic session termination can include, for example, organization-defined periods of user inactivity, targeted responses to certain types of incidents, and time-of-day restrictions on information system use. This capability is typically reserved for specific cases where the system owner, data owner, or organization requires additional assurance.",
@@ -1091,9 +1572,17 @@
         "gid": "V-67885",
         "rid": "SV-82375r1_rule",
         "stig_id": "SQL4-00-032500",
+        "gtitle": "SRG-APP-000340-DB-000304",
         "fix_id": "F-74001r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002235"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67885",
       "title": "SQL Server must prevent non-privileged users from executing privileged functionality, to include disabling, circumventing, or altering implemented security safeguards/countermeasures.",
       "desc": "Preventing non-privileged users from executing privileged functions mitigates the risk that unauthorized individuals or processes may gain unnecessary access to information or privileges. System documentation should include a definition of the functionality considered privileged. Depending on circumstances, privileged functions can include, for example, establishing accounts, performing system integrity checks, or administering cryptographic key management activities. Non-privileged users are individuals that do not possess appropriate authorizations. Circumventing intrusion detection and prevention mechanisms or malicious code protection mechanisms are examples of privileged functions that require protection from non-privileged users. A privileged function in the DBMS/database context is any operation that modifies the structure of the database, its built-in logic, or its security settings. This would include all Data Definition Language (DDL) statements and all security-related statements. In SQL Server, it encompasses, but is not necessarily limited to: CREATE ALTER DROP GRANT REVOKE DENY There may also be Data Manipulation Language (DML) statements that, subject to context, should be regarded as privileged. Possible examples include: TRUNCATE TABLE; DELETE, or DELETE affecting more than n rows, for some n, or DELETE without a WHERE clause; UPDATE or UPDATE affecting more than n rows, for some n, or UPDATE without a WHERE clause; any SELECT, INSERT, UPDATE, or DELETE to an application-defined security table executed by other than a security principal. Depending on the design of the database and associated applications, the prevention of unauthorized use of privileged functions may be achieved by means of DBMS security features, database triggers, other mechanisms, or a combination of these.",
@@ -1109,9 +1598,17 @@
         "gid": "V-67887",
         "rid": "SV-82377r2_rule",
         "stig_id": "SQL4-00-032600",
+        "gtitle": "SRG-APP-000342-DB-000302",
         "fix_id": "F-74003r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002233"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67887",
       "title": "Execution of software modules (to include stored procedures, functions, and triggers) with elevated privileges must be restricted to necessary cases only.",
       "desc": "In certain situations, to provide required functionality, a DBMS needs to execute internal logic (stored procedures, functions, triggers, etc.) and/or external code modules with elevated privileges. However, if the privileges required for execution are at a higher level than the privileges assigned to organizational users invoking the functionality applications/programs, those users are indirectly provided with greater privileges than assigned by organizations. Privilege elevation must be utilized only where necessary and protected from misuse. This calls for inspection of application source code, which will require collaboration with the application developers. It is recognized that in many cases, the database administrator (DBA) is organizationally separate from the application developers and may have limited, if any, access to source code. Nevertheless, protections of this type are so important to the secure operation of databases that they must not be ignored. At a minimum, the DBA must attempt to obtain assurances from the development organization that this issue has been addressed and must document what has been discovered.",
@@ -1127,9 +1624,17 @@
         "gid": "V-67889",
         "rid": "SV-82379r1_rule",
         "stig_id": "SQL4-00-032800",
+        "gtitle": "SRG-APP-000356-DB-000314",
         "fix_id": "F-74005r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001844"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67889",
       "title": "SQL Server must utilize centralized management of the content captured in audit records generated by all components of the DBMS.",
       "desc": "Without the ability to centrally manage the content captured in the audit records, identification, troubleshooting, and correlation of suspicious behavior would be difficult and could lead to a delayed or incomplete analysis of an ongoing attack. The content captured in audit records must be managed from a central location (necessitating automation). Centralized management of audit records and logs provides for efficiency in maintenance and management of records, as well as the backup and archiving of those records. SQL Server may write audit records to files in the file system, to other kinds of local repository, or directly to a centralized log management system. (If the Trace facility is used for auditing - this is no longer recommended, but may be in place for legacy reasons - a trace table is another possible destination.) Whatever the method used, it must be compatible with off-loading the records to the centralized system.",
@@ -1145,9 +1650,17 @@
         "gid": "V-67891",
         "rid": "SV-82381r1_rule",
         "stig_id": "SQL4-00-033000",
+        "gtitle": "SRG-APP-000357-DB-000316",
         "fix_id": "F-74007r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001849"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67891",
       "title": "SQL Server must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.",
       "desc": "In order to ensure sufficient storage capacity for the audit logs, SQL Server must be able to allocate audit record storage capacity. Although another requirement (SRG-APP-000515-DB-000318) mandates that audit data be off-loaded to a centralized log management system, it remains necessary to provide space on the database server to serve as a buffer against outages and capacity limits of the off-loading mechanism. In determining the capacity requirements, consider such factors as: total number of users; expected number of concurrent users during busy periods; number and type of events being monitored; types and amounts of data being captured; the frequency/speed with which audit records are off-loaded to the central log management system; and any limitations that exist on the ability to reuse the space formerly occupied by off-loaded records. As noted elsewhere in this document, SQL Server's Audit and/or Trace features can be used for auditing purposes. This requirement applies to both.",
@@ -1163,9 +1676,17 @@
         "gid": "V-67893",
         "rid": "SV-82383r1_rule",
         "stig_id": "SQL4-00-033400",
+        "gtitle": "SRG-APP-000359-DB-000319",
         "fix_id": "F-74009r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001855"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67893",
       "title": "SQL Server, the operating system, or the storage system must provide a warning to appropriate support staff when allocated audit record storage volume reaches 75% of maximum audit record storage capacity.",
       "desc": "Organizations are required to use a central log management system, so, under normal conditions, the audit space allocated to SQL Server on its own server will not be an issue. However, space will still be required on the DBMS server for audit records in transit, and, under abnormal conditions, this could fill up. Since a requirement exists to halt processing upon audit failure, a service outage would result. As noted elsewhere in this document, SQL Server's Audit and/or Trace features can be used for auditing purposes. This requirement applies to both. If support personnel are not notified immediately upon storage volume utilization reaching 75%, they are unable to plan for storage capacity expansion. The monitoring and alerting may be done at the database level, the operating system level, or by specialized monitoring tools. The appropriate support staff include, at a minimum, the ISSO and the DBA/SA.",
@@ -1181,9 +1702,17 @@
         "gid": "V-67895",
         "rid": "SV-82385r2_rule",
         "stig_id": "SQL4-00-033500",
+        "gtitle": "SRG-APP-000360-DB-000320",
         "fix_id": "F-74011r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001858"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67895",
       "title": "SQL Server or software monitoring SQL Server must provide an immediate real-time alert to appropriate support staff of all audit log failures.",
       "desc": "It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit capability, and system operation may be adversely affected. As noted elsewhere in this document, SQL Server's Audit and/or Trace features can be used for auditing purposes. This requirement applies to both. The appropriate support staff include, at a minimum, the ISSO and the DBA/SA. A failure of database auditing will result in either the database continuing to function without auditing or in a complete halt to database operations. When audit processing fails, appropriate personnel must be alerted immediately to avoid further downtime or unaudited transactions Alerts provide organizations with urgent messages. Real-time alerts provide these messages immediately (i.e., the time from event detection to alert occurs in seconds or less).",
@@ -1199,9 +1728,17 @@
         "gid": "V-67897",
         "rid": "SV-82387r1_rule",
         "stig_id": "SQL4-00-033600",
+        "gtitle": "SRG-APP-000374-DB-000322",
         "fix_id": "F-74013r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001890"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67897",
       "title": "SQL Server must produce time stamps that can be mapped to Coordinated Universal Time (UTC, formerly GMT).",
       "desc": "If time stamps are not consistently applied and there is no common time reference, it is difficult to perform forensic analysis, in audit files, trace files/tables, and application data tables. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. SQL Server obtains the date and time from the Windows operating system. In a normal configuration, the OS obtains them from an official time server, using Network Time Protocol (NTP). The ultimate source is the United States Naval Observatory Master Clock. SQL Server built-in functions for retrieving current timestamps are: (high precision) sysdatetime(), sysdatetimeoffset(), sysutcdatetime(); (lower precision) CURRENT_TIMESTAMP or getdate(), getutcdate(). Provided the operating system is synchronized with an official time server, these timestamp-retrieval functions are automatically compliant with this requirement, as are SQL Server's audit and trace capabilities.",
@@ -1217,9 +1754,17 @@
         "gid": "V-67899",
         "rid": "SV-82389r1_rule",
         "stig_id": "SQL4-00-033800",
+        "gtitle": "SRG-APP-000378-DB-000365",
         "fix_id": "F-74015r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001812"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67899",
       "title": "SQL Server must prohibit user installation of logic modules (stored procedures, functions, triggers, views, etc.) without explicit privileged status.",
       "desc": "Allowing regular users to install software, without explicit privileges, creates the risk that untested or potentially malicious software will be installed on the system. Explicit privileges (escalated or administrative privileges) provide the regular user with explicit capabilities and control that exceed the rights of a regular user. The nature and requirements of databases will vary; so while users are not permitted to install unapproved software, there may be instances where the organization allows the user to install approved software packages such as from an approved software repository. The requirements for production servers will be more restrictive than those used for development and research. SQL Server must control software installation by users based upon what types of software installations are permitted (e.g., updates and security patches to existing software) and what types of installations are prohibited (e.g., software whose pedigree with regard to being potentially malicious is unknown or suspect) by the organization). In the case of a database management system, this requirement covers stored procedures, functions, triggers, views, etc.",
@@ -1235,9 +1780,17 @@
         "gid": "V-67901",
         "rid": "SV-82391r1_rule",
         "stig_id": "SQL4-00-033900",
+        "gtitle": "SRG-APP-000380-DB-000360",
         "fix_id": "F-74017r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001813"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67901",
       "title": "SQL Server and Windows must enforce access restrictions associated with changes to the configuration of the SQL Server instance or database(s).",
       "desc": "Failure to provide logical access restrictions associated with changes to configuration may have significant effects on the overall security of the system. When dealing with access restrictions pertaining to change control, it should be noted that any changes to the hardware, software, and/or firmware components of the information system can potentially have significant effects on the overall security of the system. Accordingly, SQL Server and Windows must allow only qualified and authorized individuals to obtain access to system components for the purposes of initiating changes, including upgrades and modifications.",
@@ -1253,9 +1806,17 @@
         "gid": "V-67903",
         "rid": "SV-82393r3_rule",
         "stig_id": "SQL4-00-034000",
+        "gtitle": "SRG-APP-000381-DB-000361",
         "fix_id": "F-74019r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001814"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67903",
       "title": "SQL Server must produce Trace or Audit records of its enforcement of access restrictions associated with changes to the configuration of the DBMS or database(s).",
       "desc": "Without auditing the enforcement of access restrictions against changes to configuration, it would be difficult to identify attempted attacks and an audit trail would not be available for forensic investigation for after-the-fact actions. Enforcement actions are the methods or mechanisms used to prevent unauthorized changes to configuration settings. Enforcement action methods may be as simple as denying access to a file based on the application of file permissions (access restriction). Audit items may consist of lists of actions blocked by access restrictions or changes identified after the fact. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1271,9 +1832,17 @@
         "gid": "V-67905",
         "rid": "SV-82395r1_rule",
         "stig_id": "SQL4-00-034200",
+        "gtitle": "SRG-APP-000383-DB-000364",
         "fix_id": "F-74021r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001762"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67905",
       "title": "SQL Server must disable communication protocols not required for operation.",
       "desc": "Having unnecessary protocols enabled exposes the system to avoidable threats. In a typical installation, only TCP/IP will be required.",
@@ -1289,9 +1858,17 @@
         "gid": "V-67907",
         "rid": "SV-82397r1_rule",
         "stig_id": "SQL4-00-034800",
+        "gtitle": "SRG-APP-000429-DB-000387",
         "fix_id": "F-74023r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002476"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67907",
       "title": "SQL Server must implement and/or support cryptographic mechanisms preventing the unauthorized disclosure of organization-defined information at rest on organization-defined information system components.",
       "desc": "DBMSs handling data requiring \"data at rest\" protections must employ cryptographic mechanisms to prevent unauthorized disclosure and modification of the information at rest. These cryptographic mechanisms may be native to the DBMS or implemented via additional software or operating system/file system settings, as appropriate to the situation. Selection of a cryptographic mechanism is based on the need to protect the integrity of organizational information. The strength of the mechanism is commensurate with the security category and/or classification of the information. Organizations have the flexibility to either encrypt all information on storage devices (i.e., full disk encryption) or encrypt specific data structures (e.g., files, records, or fields). The decision whether and what to encrypt rests with the data owner and is also influenced by the physical measures taken to secure the equipment and media on which the information resides.",
@@ -1307,9 +1884,17 @@
         "gid": "V-67909",
         "rid": "SV-82399r1_rule",
         "stig_id": "SQL4-00-035000",
+        "gtitle": "SRG-APP-000441-DB-000378",
         "fix_id": "F-74025r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002420"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67909",
       "title": "The confidentiality and integrity of information managed by SQL Server must be maintained during preparation for transmission.",
       "desc": "Information can be either unintentionally or maliciously disclosed or modified during preparation for transmission, including, for example, during aggregation, at protocol transformation points, and during packing/unpacking. These unauthorized disclosures or modifications compromise the confidentiality or integrity of the information. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, SQL Server, associated applications, and infrastructure must leverage transmission protection mechanisms.",
@@ -1325,9 +1910,17 @@
         "gid": "V-67911",
         "rid": "SV-82401r1_rule",
         "stig_id": "SQL4-00-035100",
+        "gtitle": "SRG-APP-000442-DB-000379",
         "fix_id": "F-74027r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002422"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67911",
       "title": "The confidentiality and integrity of information managed by SQL Server must be maintained during reception.",
       "desc": "Information can be either unintentionally or maliciously disclosed or modified during reception, including, for example, during aggregation, at protocol transformation points, and during packing/unpacking. These unauthorized disclosures or modifications compromise the confidentiality or integrity of the information. This requirement applies only to those applications that are either distributed or can allow access to data nonlocally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When receiving data, SQL Server, associated applications, and infrastructure must leverage protection mechanisms.",
@@ -1343,9 +1936,17 @@
         "gid": "V-67913",
         "rid": "SV-82403r1_rule",
         "stig_id": "SQL4-00-035400",
+        "gtitle": "SRG-APP-000456-DB-000390",
         "fix_id": "F-74029r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002605"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67913",
       "title": "Security-relevant software updates to SQL Server must be installed within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).",
       "desc": "Security flaws with software applications, including database management systems, are discovered daily. Vendors are constantly updating and patching their products to address newly discovered security vulnerabilities. Organizations (including any contractor to the organization) are required to promptly install security-relevant software updates (e.g., patches, service packs, and hot fixes). Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously. Organization-defined time periods for updating security-relevant software may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). Patch criticality, as well as system criticality, will vary. Therefore, the tactical situations regarding the patch management process will also vary. This means that the time period utilized must be a configurable parameter. Time frames for application of security-relevant software updates may be dependent upon the Information Assurance Vulnerability Management (IAVM) process. The application will be configured to check for and install security-relevant software updates within an identified time period from the availability of the update. The specific time period will be defined by an authoritative source (e.g. IAVM, CTOs, DTMs, and STIGs).",
@@ -1361,9 +1962,17 @@
         "gid": "V-67915",
         "rid": "SV-82405r1_rule",
         "stig_id": "SQL4-00-035500",
+        "gtitle": "SRG-APP-000456-DB-000390",
         "fix_id": "F-74031r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002605"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67915",
       "title": "Software updates to SQL Server must be tested before being applied to production systems.",
       "desc": "While it is important to apply SQL Server updates in a timely manner, it is also incumbent upon the database administrator and/or system administrator to ensure that their deployment will not interfere with the operation of the database and its applications. Other than in emergency situations, SQL Server updates must be applied to appropriately configured non-production systems, and the resulting version of SQL Server assessed for correct operation.",
@@ -1379,9 +1988,17 @@
         "gid": "V-67917",
         "rid": "SV-82407r2_rule",
         "stig_id": "SQL4-00-035600",
+        "gtitle": "SRG-APP-000492-DB-000332",
         "fix_id": "F-74033r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67917",
       "title": "SQL Server must produce Trace or Audit records when security objects are accessed.",
       "desc": "Changes to the security configuration must be tracked. This requirement applies to situations where security data is retrieved or modified via data manipulation operations, as opposed to via SQL Server's built-in security functionality (GRANT, REVOKE, DENY, ALTER [SERVER] ROLE ... ADD/DROP MEMBER ..., etc.). In SQL Server, types of access include, but are not necessarily limited to: SELECT INSERT UPDATE DELETE EXECUTE Since the system views are read-only, and the underlying tables are kept hidden by SQL Server, the Insert, Update and Delete cases are relevant only where the database includes user-defined tables to support additional security functionality. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016. Note also that Trace does not support auditing of SELECT statements, whereas Audit does.",
@@ -1397,9 +2014,17 @@
         "gid": "V-67919",
         "rid": "SV-82409r2_rule",
         "stig_id": "SQL4-00-035700",
+        "gtitle": "SRG-APP-000492-DB-000333",
         "fix_id": "F-74035r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67919",
       "title": "SQL Server must produce Trace or Audit records when unsuccessful attempts to access security objects occur.",
       "desc": "Changes to the security configuration must be tracked. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones. This requirement applies to situations where security data is retrieved or modified via data manipulation operations, as opposed to via SQL Server's built-in security functionality (GRANT, REVOKE, DENY, ALTER [SERVER] ROLE ... ADD/DROP MEMBER ..., etc.). In SQL Server, types of access include, but are not necessarily limited to: SELECT INSERT UPDATE DELETE EXECUTE Since the system views are read-only, and the underlying tables are kept hidden by SQL Server, the Insert, Update and Delete cases are relevant only where the database includes user-defined tables to support additional security functionality. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016. Note also that Trace does not support auditing of SELECT statements, whereas Audit does. Use of SQL Server Audit's SCHEMA_OBJECT_ACCESS_GROUP causes capture of all accesses, successful and otherwise, to all schema-scoped objects. The [Succeeded] column in the audit output indicates the success or failure of the attempted action. Be aware, however, that it may report True in some cases where one would intuitively expect False. For example, SELECT 1/0 FROM SYS.ALL_OBJECTS will appear in the audit trail as successful, if the user has permission to perform that action, even though it contains an invalid expression. Some other actions that one would consider failures (such as selecting from a table that does not exist) may not appear at all.",
@@ -1415,9 +2040,17 @@
         "gid": "V-67921",
         "rid": "SV-82411r2_rule",
         "stig_id": "SQL4-00-036000",
+        "gtitle": "SRG-APP-000495-DB-000326",
         "fix_id": "F-74037r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67921",
       "title": "SQL Server must generate Trace or Audit records when privileges/permissions are added.",
       "desc": "Changes in the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized elevation or restriction of privileges could go undetected. Elevated privileges give users access to information and functionality that they should not have; restricted privileges wrongly deny access to authorized users. In SQL Server, adding permissions is typically done via the GRANT command, or, in the negative, DENY; or with the ALTER SERVER ROLE . . . ADD MEMBER . . ., and/or ALTER ROLE . . . ADD MEMBER . . . commands. Native SQL Server security functionality may be supplemented with application-specific tables and logic, in which case the following actions on these tables and procedures/triggers/functions are also relevant: INSERT UPDATE (in cases where more than one permission can be represented in a single row) EXECUTE Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1433,9 +2066,17 @@
         "gid": "V-67923",
         "rid": "SV-82413r2_rule",
         "stig_id": "SQL4-00-036100",
+        "gtitle": "SRG-APP-000495-DB-000327",
         "fix_id": "F-74039r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67923",
       "title": "SQL Server must generate Trace or Audit records when unsuccessful attempts to add privileges/permissions occur.",
       "desc": "Failed attempts to change the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized attempts to elevate or restrict privileges could go undetected. In SQL Server, adding permissions is typically done via the GRANT command, or, in the negative, DENY; or with the ALTER SERVER ROLE . . . ADD MEMBER . . ., and/or ALTER ROLE . . . ADD MEMBER . . . commands. Native security functionality may be supplemented with application-specific tables and logic, in which case the following actions on these tables and procedures/triggers/functions are also relevant: INSERT UPDATE EXECUTE To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1451,9 +2092,17 @@
         "gid": "V-67925",
         "rid": "SV-82415r2_rule",
         "stig_id": "SQL4-00-036900",
+        "gtitle": "SRG-APP-000499-DB-000330",
         "fix_id": "F-74041r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67925",
       "title": "SQL Server must generate Trace or Audit records when privileges/permissions are deleted.",
       "desc": "Changes in the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized elevation or restriction of privileges could go undetected. Elevated privileges give users access to information and functionality that they should not have; restricted privileges wrongly deny access to authorized users. In SQL Server, deleting permissions is typically done via the REVOKE or DENY command; or with the ALTER SERVER ROLE . . . DROP MEMBER . . . and/or ALTER ROLE . . . DROP MEMBER . . . statements. However, native SQL Server security functionality may be supplemented with application-specific tables and logic, in which case the following actions on these tables and procedures/triggers/functions are also relevant: DELETE EXECUTE Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1469,9 +2118,17 @@
         "gid": "V-67927",
         "rid": "SV-82417r2_rule",
         "stig_id": "SQL4-00-037000",
+        "gtitle": "SRG-APP-000499-DB-000331",
         "fix_id": "F-74043r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67927",
       "title": "SQL Server must generate Trace or Audit records when unsuccessful attempts to delete privileges/permissions occur.",
       "desc": "Changes in the permissions, privileges, and roles granted to users and roles must be tracked. Without an audit trail, unauthorized elevation or restriction of privileges could go undetected. Elevated privileges give users access to information and functionality that they should not have; restricted privileges wrongly deny access to authorized users. In SQL Server, deleting permissions is typically done via the REVOKE or DENY command; or with the ALTER SERVER ROLE . . . DROP MEMBER . . . and/or ALTER ROLE . . . DROP MEMBER . . . statements. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1487,9 +2144,17 @@
         "gid": "V-67929",
         "rid": "SV-82419r2_rule",
         "stig_id": "SQL4-00-037500",
+        "gtitle": "SRG-APP-000503-DB-000350",
         "fix_id": "F-74045r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67929",
       "title": "SQL Server must generate Trace or Audit records when successful logons or connections occur.",
       "desc": "For completeness of forensic analysis, it is necessary to track who/what (a user or other principal) logs on to SQL Server. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1505,9 +2170,17 @@
         "gid": "V-67931",
         "rid": "SV-82421r2_rule",
         "stig_id": "SQL4-00-037600",
+        "gtitle": "SRG-APP-000503-DB-000351",
         "fix_id": "F-74047r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67931",
       "title": "SQL Server must generate Trace or Audit records when unsuccessful logons or connection attempts occur.",
       "desc": "For completeness of forensic analysis, it is necessary to track failed attempts to log on to SQL Server. While positive identification may not be possible in a case of failed authentication, as much information as possible about the incident must be captured. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1523,9 +2196,17 @@
         "gid": "V-67933",
         "rid": "SV-82423r2_rule",
         "stig_id": "SQL4-00-037700",
+        "gtitle": "SRG-APP-000504-DB-000354",
         "fix_id": "F-74049r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67933",
       "title": "SQL Server must generate Trace or Audit records for all privileged activities or other system-level access.",
       "desc": "Without tracking privileged activity, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. System documentation should include a definition of the functionality considered privileged. A privileged function in this context is any operation that modifies the structure of the database, its built-in logic, or its security settings. This would include all Data Definition Language (DDL) statements and all security-related statements. This encompasses, but is not necessarily limited to: CREATE ALTER DROP GRANT REVOKE DENY There may also be Data Manipulation Language (DML) statements that, subject to context, should be regarded as privileged. Possible examples in SQL include: TRUNCATE TABLE; DELETE, or DELETE affecting more than n rows, for some n, or DELETE without a WHERE clause; UPDATE or UPDATE affecting more than n rows, for some n, or UPDATE without a WHERE clause; any SELECT, INSERT, UPDATE, or DELETE to an application-defined security table executed by other than a security principal. Note that it is particularly important to audit, and tightly control, any action that weakens the implementation of this requirement itself, since the objective is to have a complete audit trail of all administrative activity. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1541,9 +2222,17 @@
         "gid": "V-67935",
         "rid": "SV-82425r2_rule",
         "stig_id": "SQL4-00-037800",
+        "gtitle": "SRG-APP-000504-DB-000355",
         "fix_id": "F-74051r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67935",
       "title": "SQL Server must generate Trace or Audit records when unsuccessful attempts to execute privileged activities or other system-level access occur.",
       "desc": "Without tracking privileged activity, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones. System documentation should include a definition of the functionality considered privileged. A privileged function in this context is any operation that modifies the structure of the database, its built-in logic, or its security settings. This would include all Data Definition Language (DDL) statements and all security-related statements. This encompasses, but is not necessarily limited to: CREATE ALTER DROP GRANT REVOKE DENY There may also be Data Manipulation Language (DML) statements that, subject to context, should be regarded as privileged. Possible examples in SQL include: TRUNCATE TABLE; DELETE, or DELETE affecting more than n rows, for some n, or DELETE without a WHERE clause; UPDATE or UPDATE affecting more than n rows, for some n, or UPDATE without a WHERE clause; any SELECT, INSERT, UPDATE, or DELETE to an application-defined security table executed by other than a security principal. Note that it is particularly important to audit, and tightly control, any action that weakens the implementation of this requirement itself, since the objective is to have a complete audit trail of all administrative activity. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1559,9 +2248,17 @@
         "gid": "V-67937",
         "rid": "SV-82427r2_rule",
         "stig_id": "SQL4-00-037900",
+        "gtitle": "SRG-APP-000505-DB-000352",
         "fix_id": "F-74053r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67937",
       "title": "SQL Server must generate Trace or Audit records when logoffs or disconnections occur.",
       "desc": "For completeness of forensic analysis, it is necessary to track who/what (a user or other principal) logs on to and off from SQL Server. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1577,9 +2274,17 @@
         "gid": "V-67939",
         "rid": "SV-82429r1_rule",
         "stig_id": "SQL4-00-038000",
+        "gtitle": "SRG-APP-000506-DB-000353",
         "fix_id": "F-74055r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67939",
       "title": "SQL Server must generate Trace or Audit records when concurrent logons/connections by the same user from different workstations occur.",
       "desc": "For completeness of forensic analysis, it is necessary to track who logs on to SQL Server. Concurrent connections by the same user from multiple workstations may be valid use of the system; or such connections may be due to improper circumvention of the requirement to use the CAC for authentication; or they may indicate unauthorized account sharing; or they may be because an account has been compromised. If the fact of multiple, concurrent logons by a given user can be reliably reconstructed from the log entries for other events (logons/connections; voluntary and involuntary disconnections), then it is not mandatory to create additional log entries specifically for this. Use of SQL Server Audit is recommended. All features of SQL Server Audit are available in the Enterprise and Developer editions of SQL Server 2014. It is not available at the database level in other editions. For this or legacy reasons, the instance may be using SQL Server Trace for auditing, which remains an acceptable solution for the time being. Note, however, that Microsoft intends to remove most aspects of Trace at some point after SQL Server 2016.",
@@ -1595,9 +2300,17 @@
         "gid": "V-67941",
         "rid": "SV-82431r1_rule",
         "stig_id": "SQL4-00-038700",
+        "gtitle": "SRG-APP-000515-DB-000318",
         "fix_id": "F-74057r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-001851"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67941",
       "title": "SQL Server must off-load audit data to a separate log management facility; this must be continuous and in near real time for systems with a network connection to the storage facility and weekly or more often for stand-alone systems.",
       "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Off-loading is a common process in information systems with limited audit storage capacity. The DBMS may write audit records to database tables, to files in the file system, to other kinds of local repository, or directly to a centralized log management system. Whatever the method used, it must be compatible with off-loading the records to the centralized system. This applies to all data output for audit trail purposes, whether produced by SQL Server Audit, Trace, or other means; but excluding audit-trail information built into application data.",
@@ -1613,8 +2326,21 @@
         "gid": "V-67943",
         "rid": "SV-82433r1_rule",
         "stig_id": "SQL4-00-038900",
-        "fix_id": "F-74059r1_fix"
+        "gtitle": "SRG-APP-000164-DB-000401",
+        "fix_id": "F-74059r1_fix",
+        "rationale": null,
+        "cci": [
+          "CCI-000192",
+          "CCI-000193",
+          "CCI-000194",
+          "CCI-000195",
+          "CCI-000205",
+          "CCI-001619"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67943",
       "title": "If SQL Server authentication, using passwords, is employed, SQL Server must enforce the DoD standards for password complexity.",
       "desc": "<0> [object Object]",
@@ -1630,9 +2356,19 @@
         "gid": "V-67945",
         "rid": "SV-82435r2_rule",
         "stig_id": "SQL4-00-038910",
+        "gtitle": "SRG-APP-000164-DB-000401",
         "fix_id": "F-74061r1_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000198",
+          "CCI-000199",
+          "CCI-000200"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-67945",
       "title": "If SQL Server authentication, using passwords, is employed, SQL Server must enforce the DoD standards for password lifetime.",
       "desc": "Windows domain/enterprise authentication and identification must be used (SQL4-00-030300). Native SQL Server authentication may be used only when circumstances make it unavoidable; and must be documented and AO-approved. The DoD standard for authentication is DoD-approved PKI certificates. Authentication based on User ID and Password may be used only when it is not possible to employ a PKI certificate, and requires AO approval. In such cases, the DoD standards for password lifetime must be implemented. The requirements for password lifetime are: a. Password lifetime limits for interactive accounts: Minimum 24 hours, Maximum 60 days b. Password lifetime limits for non-interactive accounts: Minimum 24 hours, Maximum 365 days c. Number of password changes before an old one may be reused: Minimum of 5. To enforce this in SQL Server, configure each DBMS-managed login to inherit the rules from Windows.",
@@ -1648,9 +2384,17 @@
         "gid": "V-70623",
         "rid": "SV-85245r1_rule",
         "stig_id": "SQL4-00-039100",
+        "gtitle": "SRG-APP-000516-DB-999900",
         "fix_id": "F-77157r2_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target SQL Server Installation 2014"
+      ],
       "id": "V-70623",
       "title": "The SQL Server Browser service must be disabled if its use is not necessary..",
       "desc": "The SQL Server Browser simplifies the administration of SQL Server, particularly when multiple instances of SQL Server coexist on the same computer. It avoids the need to hard-assign port numbers to the instances and to set and maintain those port numbers in client systems. It enables administrators and authorized users to discover database management system instances, and the databases they support, over the network. This convenience also presents the possibility of unauthorized individuals gaining knowledge of the available SQL Server resources. Therefore, it is necessary to consider whether the SQL Server Browser is needed. Typically, if only a single instance is installed, using the default name (MSSQLSERVER) and port assignment (1433), the Browser is not adding any value. The more complex the installation, the more likely SQL Server Browser is to be helpful. This requirement is not intended to prohibit use of the Browser service in any circumstances; rather, it calls for administrators and management to consider whether the benefits of its use outweigh the potential negative consequences.",

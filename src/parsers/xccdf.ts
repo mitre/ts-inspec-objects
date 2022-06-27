@@ -4,7 +4,6 @@ import { convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson, impactNumberToSe
 import { BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice, ParsedXCCDF, RationaleElement } from '../types/xccdf';
 import Control from '../objects/control';
 import _ from 'lodash';
-import { getFirstPath } from '../utilities/global';
 import { OvalDefinitionValue } from '../types/oval';
 
 export type GroupContextualizedRule = BenchmarkRule & {group: Omit<BenchmarkGroup, 'Rule' | 'Group'>}
@@ -25,10 +24,6 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
         }
     })
     return rules
-}
-
-export function extractCheck(): string {
-    return ""
 }
 
 export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
@@ -75,9 +70,8 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
                 }
                 if (referenceID && referenceID in ovalDefinitions) {
                     control.descs.check = ovalDefinitions[referenceID].metadata[0].title
-                } else if (referenceID) {
-                    // console.log('Alert')
-                    // console.log(referenceID)
+                } else if (referenceID ) {
+                    console.warn(`Could not find OVAL definition for ${referenceID}`)
                 }
             }
         }
@@ -96,6 +90,14 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
         
         if (rule['fix'] && rule['fix'].length > 0) {
             control.tags.fix_id = rule['fix'][0]['@_id']
+        } else {
+            control.tags.fix_id = null
+        }
+
+        if (rule['rationale']) {
+            control.tags.rationale = rule['rationale'][0]['#text']
+        } else {
+            control.tags.rationale = null
         }
 
         if (typeof extractedDescription === 'object') {
@@ -115,64 +117,90 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
 
         control.tags = _.omitBy(control.tags, (value) => value === undefined)
 
-        rule.ident?.forEach((identifier) => {
-            if (identifier['@_system'].toLowerCase().includes('cci')) {
-                if (!('cci' in control.tags)) {
-                    control.tags.cci = []
+         // Get all identifiers from the rule
+         if (rule.ident) {
+            rule.ident.forEach((identifier) => {
+                // Get CCIs
+                if (identifier['@_system'].toLowerCase().includes('cci')) {
+                    if (!('cci' in control.tags)) {
+                        control.tags.cci = []
+                    }
+                    control.tags.cci?.push(identifier['#text'])
                 }
-                control.tags.cci?.push(identifier['#text'])
-            } else if (identifier['@_system'].toLowerCase().includes('legacy')) {
-                if (!('legacy' in control.tags)) {
-                    control.tags.legacy = []
+                // Get legacy identifiers
+                else if (identifier['@_system'].toLowerCase().includes('legacy')) {
+                    if (!('legacy' in control.tags)) {
+                        control.tags.legacy = []
+                    }
+                    control.tags.legacy?.push(identifier['#text'])
                 }
-                control.tags.legacy?.push(identifier['#text'])
-            } else {
-                console.log(identifier)
-            }
-        })
+                // Get NIST identifiers
+                else if (identifier['@_system'].toLowerCase().includes('nist')) {
+                    if (!('nist' in control.tags)) {
+                        control.tags.nist = []
+                    }
+                    control.tags.nist?.push(identifier['#text'])
+                } else {
+                    console.log('Alert')
+                    console.log(identifier['@_system'])
+                    console.log(identifier['#text'])
+                }
+            })
+        }
 
         rule.reference?.forEach((reference) => {
             if (_.get(reference, '@_href') === '') {
                 control.refs?.push(_.get(reference, '#text'))
             } else {
                 try {
-                    const parsedURL = new URL(_.get(reference, '@_href'))
-                    if (parsedURL.protocol.toLowerCase().includes('http') || parsedURL.protocol.toLowerCase().includes('https')) {
-                        control.refs?.push({
-                            ref: _.get(reference, '#text') as string,
-                            url: _.get(reference, '@_href') as string
-                        })
+                    const referenceText = _.get(reference, '#text') || ''
+                    const referenceURL = _.get(reference, '@_href') || ''
+                    if (referenceURL) {
+                        const parsedURL = new URL(_.get(reference, '@_href'))
+                        if (parsedURL.protocol.toLowerCase().includes('http') || parsedURL.protocol.toLowerCase().includes('https')) {
+                            control.refs?.push({
+                                ref: referenceText,
+                                url: referenceURL
+                            })
+                        } else {
+                            control.refs?.push({
+                                ref: referenceText,
+                                uri: referenceURL
+                            })
+                        }
                     } else {
-                        control.refs?.push({
-                            ref: _.get(reference, '#text') as string,
-                            uri: _.get(reference, '@_href') as string
-                        })
+                        if ('title' in reference) {
+                            control.refs?.push(_.get(reference, 'title') as string)
+                        }
                     }
-                } catch {
+
+                    // Add the reference to the control tags when seperated by §
+                    if (typeof referenceText === 'string' && referenceText.indexOf('§') !== -1) {
+                        const referenceParts = referenceText.split('§')
+                        if (referenceParts.length == 2) {
+                            let [identifierType, identifier] = referenceText.split('§')
+                            identifierType = identifierType.toLowerCase();
+                            if (!(identifierType in control.tags)) {
+                                control.tags[identifierType] = [identifier]
+                            } else if (Array.isArray(control.tags[identifierType])) {
+                                control.tags[identifierType] = _.union(control.tags[identifierType] as ArrayLike<string>, [identifier])
+                            } else {
+                                console.warn(`Attempted to push identifier to control tags when identifier already exists: ${identifierType}: ${identifier}`)
+                            }
+                        } else {
+                            console.warn("Reference parts of invalid length:")
+                            console.log(referenceParts)
+                        }
+                    }
+                } catch (e){
                     console.warn(`Error parsing ref for control ${control.id}: `)
                     console.warn(JSON.stringify(reference, null, 2))
+                    console.warn(e);
                 }
             }
         })
 
-    //     if ('ident' in group.Rule) {
-    //         const identifiers = Array.isArray(group.Rule.ident) ? group.Rule.ident : [group.Rule.ident]
-    //         // Grab CCI/NIST/Legacy identifiers
-    //         identifiers.forEach(identifier => {
-    //           const identifierText = identifier['#text']
-    //           if (identifier['@_system'].toLowerCase().endsWith('cci')) {
-    //             control.tags.cci?.push(identifierText)
-    //             if (identifierText in CCINistMappings) {
-    //               control.tags.nist?.push(_.get(CCINistMappings, identifierText))
-    //             }
-    //           }
-    //           if (identifier['@_system'].toLowerCase().endsWith('legacy')) {
-    //             control.tags.legacy?.push(identifierText)
-    //           } 
-    //         })
-    //       }
-
-         profile.controls.push(control)
+        profile.controls.push(control)
     })
 
     profile.controls = _.sortBy(profile.controls, 'id')

@@ -729,6 +729,7 @@ export interface BenchmarkRule {
     version:      string;
     title:        string;
     description:  string;
+    rationale:    FrontMatter[];
     reference:    PurpleReference[];
     ident:        Ident[];
     fixtext:      Fixtext[];
@@ -744,6 +745,11 @@ export interface CheckContent {
 
 export interface FluffyFix {
     "@_id": string;
+}
+
+export interface Rationale {
+    "#text":    string;
+    "@_fixref": string;
 }
 
 export interface Fixtext {

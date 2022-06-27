@@ -11,10 +11,15 @@
         "gid": "V-15102",
         "rid": "SV-24670r1_rule",
         "stig_id": "DG0083-ORACLE11",
+        "gtitle": "DBMS audit report tools",
         "fix_id": "F-26206r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15102",
       "title": "Automated notification of suspicious activity detected in the audit trail should be implemented.",
       "desc": "Audit record collection may quickly overwhelm storage resources and an auditor's ability to review it in a productive manner. Automated tools can provide the means to manage the audit data collected as well as present it to an auditor in an efficient way.",
@@ -30,10 +35,15 @@
         "gid": "V-15103",
         "rid": "SV-24815r1_rule",
         "stig_id": "DG0161-ORACLE11",
+        "gtitle": "DBMS Audit Tool",
         "fix_id": "F-26404r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15103",
       "title": "An automated tool that monitors audit data and immediately reports suspicious activity should be employed for the DBMS.",
       "desc": "Audit logs only capture information on suspicious events. Without an automated monitoring and alerting tool, malicious activity may go undetected and without response until compromise of the database or data is severe.",
@@ -49,10 +59,15 @@
         "gid": "V-15104",
         "rid": "SV-24821r1_rule",
         "stig_id": "DG0167-ORACLE11",
+        "gtitle": "Encryption of DBMS sensitive data in transit",
         "fix_id": "F-26410r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15104",
       "title": "Sensitive data served by the DBMS should be protected by encryption when transmitted across the network.",
       "desc": "Sensitive data served by the DBMS and transmitted across the network in clear text is vulnerable to unauthorized capture and review.",
@@ -68,10 +83,15 @@
         "gid": "V-15105",
         "rid": "SV-24750r1_rule",
         "stig_id": "DG0120-ORACLE11",
+        "gtitle": "DBMS application user access to external objects",
         "fix_id": "F-25686r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15105",
       "title": "Unauthorized access to external database objects should be removed from application user roles.",
       "desc": "Access to objects stored and/or executed outside of the DBMS security context may provide an avenue of attack to host system resources not controlled by the DBMS. Any access to external resources from the DBMS can lead to a compromise of the host system or its resources.",
@@ -87,10 +107,15 @@
         "gid": "V-15106",
         "rid": "SV-24675r1_rule",
         "stig_id": "DG0086-ORACLE11",
+        "gtitle": "DBMS DBA role privilege monitoring",
         "fix_id": "F-26208r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15106",
       "title": "DBA roles should be periodically monitored to detect assignment of unauthorized or excess privileges.",
       "desc": "Excess privilege assignment can lead to intentional or unintentional unauthorized actions. Such actions may compromise the operation or integrity of the DBMS and its data. Monitoring assigned privileges assists in the detection of unauthorized privilege assignment. The DBA role is assigned privileges that allow DBAs to modify privileges assigned to them. Ensure that the DBA Role is monitored for any unauthorized changes.",
@@ -106,10 +131,15 @@
         "gid": "V-15107",
         "rid": "SV-24635r2_rule",
         "stig_id": "DG0063-ORACLE11",
+        "gtitle": "DBMS restore permissions",
         "fix_id": "F-20422r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15107",
       "title": "DBMS privileges to restore database data or other DBMS configurations, features, or objects should be restricted to authorized DBMS accounts.",
       "desc": "Unauthorized restoration of database data, objects, or other configuration or features can result in a loss of data integrity, unauthorized configuration, or other DBMS interruption or compromise. Therefore, the capability to restore must be controlled. Typically, only database administrators will have permission to restore a database.",
@@ -125,10 +155,15 @@
         "gid": "V-15108",
         "rid": "SV-24840r1_rule",
         "stig_id": "DG0194-ORACLE11",
+        "gtitle": "DBMS developer privilege monitoring on shared DBMS",
         "fix_id": "F-26426r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15108",
       "title": "Privileges assigned to developers on shared production and development DBMS hosts and the DBMS should be monitored every three months or more frequently for unauthorized changes.",
       "desc": "The developer role does not include need-to-know or administrative privileges to production databases. Assigning excess privileges can lead to unauthorized access to sensitive data or compromise of database operations.",
@@ -144,13 +179,18 @@
         "gid": "V-15109",
         "rid": "SV-24842r1_rule",
         "stig_id": "DG0195-ORACLE11",
+        "gtitle": "DBMS host file privileges assigned to developers",
         "fix_id": "F-26428r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "System Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15109",
       "title": "DBMS production application and data directories should be protected from developers on shared production/development DBMS host systems.",
       "desc": "Developer roles should not be assigned DBMS administrative privileges to production DBMS application and data directories. The separation of production DBA and developer roles helps protect the production system from unauthorized, malicious or unintentional interruption due to development activities.",
@@ -166,10 +206,15 @@
         "gid": "V-15110",
         "rid": "SV-24377r1_rule",
         "stig_id": "DG0041-ORACLE11",
+        "gtitle": "DBMS installation account use logging",
         "fix_id": "F-26152r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15110",
       "title": "Use of the DBMS installation account should be logged.",
       "desc": "The DBMS installation account may be used by any authorized user to perform DBMS installation or maintenance. Without logging, accountability for actions attributed to the account is lost.",
@@ -185,10 +230,15 @@
         "gid": "V-15111",
         "rid": "SV-24379r1_rule",
         "stig_id": "DG0042-ORACLE11",
+        "gtitle": "DBMS software installation account use",
         "fix_id": "F-26154r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15111",
       "title": "Use of the DBMS software installation account should be restricted to DBMS software installation, upgrade and maintenance actions.",
       "desc": "The DBMS software installation account is granted privileges not required for DBA or other functions. Use of accounts configured with excess privileges may result in unauthorized or unintentional compromise of the DBMS.",
@@ -204,10 +254,15 @@
         "gid": "V-15112",
         "rid": "SV-24678r1_rule",
         "stig_id": "DG0088-ORACLE11",
+        "gtitle": "DBMS vulnerability mgmt and IA compliance testing",
         "fix_id": "F-26210r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15112",
       "title": "The DBMS should be periodically tested for vulnerability management and IA compliance.",
       "desc": "The DBMS security configuration may be altered either intentionally or unintentionally over time. The DBMS may also be the subject of published vulnerabilities that require the installation of a security patch or a reconfiguration to mitigate the vulnerability. If the DBMS is not monitored for required or unintentional changes that render it not compliant with requirements, then it can be vulnerable to attack or compromise.",
@@ -223,10 +278,15 @@
         "gid": "V-15116",
         "rid": "SV-24823r1_rule",
         "stig_id": "DG0175-ORACLE11",
+        "gtitle": "DBMS host and component STIG compliancy",
         "fix_id": "F-26414r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15116",
       "title": "The DBMS host platform and other dependent applications should be configured in compliance with applicable STIG requirements.",
       "desc": "The security of the data stored in the DBMS is also vulnerable to attacks against the host platform, calling applications, and other application or optional components.",
@@ -242,10 +302,15 @@
         "gid": "V-15117",
         "rid": "SV-24825r1_rule",
         "stig_id": "DG0176-ORACLE11",
+        "gtitle": "DBMS audit log backups",
         "fix_id": "F-26416r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15117",
       "title": "The DBMS audit logs should be included in backup operations.",
       "desc": "DBMS audit logs are essential to the investigation and prosecution of unauthorized access to the DBMS data. Unless audit logs are available for review, the extent of data compromise may not be determined and the vulnerability exploited may not be discovered. Undiscovered vulnerabilities could lead to additional or prolonged compromise of the data.",
@@ -261,13 +326,18 @@
         "gid": "V-15118",
         "rid": "SV-24810r1_rule",
         "stig_id": "DG0159-ORACLE11",
+        "gtitle": "Review of DBMS remote administrative access",
         "fix_id": "F-26402r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Information Assurance Manager",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15118",
       "title": "Remote administrative access to the database should be monitored by the IAO or IAM.",
       "desc": "Remote administrative access to systems provides a path for access to and exploit of DBA privileges. Where the risk has been accepted to allow remote administrative access, it is imperative to instate increased monitoring of this access to detect any abuse or compromise.",
@@ -283,10 +353,15 @@
         "gid": "V-15120",
         "rid": "SV-24637r1_rule",
         "stig_id": "DG0064-ORACLE11",
+        "gtitle": "DBMS backup and restoration file protection",
         "fix_id": "F-26173r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15120",
       "title": "DBMS backup and restoration files should be protected from unauthorized access.",
       "desc": "Lost or compromised DBMS backup and restoration files may lead to not only the loss of data, but also the unauthorized access to sensitive data. Backup files need the same protections against unauthorized access when stored on backup media as when online and actively in use by the database system. In addition, the backup media needs to be protected against physical loss. Most DBMSs maintain online copies of critical control files to provide transparent or easy recovery from hard disk loss or other interruptions to database operation.",
@@ -302,10 +377,15 @@
         "gid": "V-15121",
         "rid": "SV-24832r1_rule",
         "stig_id": "DG0187-ORACLE11",
+        "gtitle": "DBMS software file backups",
         "fix_id": "F-26420r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15121",
       "title": "DBMS software libraries should be periodically backed up.",
       "desc": "The DBMS application depends upon the availability and integrity of its software libraries. Without backups, compromise or loss of the software libraries can prevent a successful recovery of DBMS operations.",
@@ -321,10 +401,15 @@
         "gid": "V-15122",
         "rid": "SV-24449r1_rule",
         "stig_id": "DG0186-ORACLE11",
+        "gtitle": "DBMS network perimeter protection",
         "fix_id": "F-26418r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15122",
       "title": "The database should not be directly accessible from public or unauthorized networks.",
       "desc": "Databases often store critical and/or sensitive information used by the organization. For this reason, databases are targeted for attacks by malicious users. Additional protections provided by network defenses that limit accessibility help protect the database and its data from unnecessary exposure and risk.",
@@ -340,13 +425,18 @@
         "gid": "V-15126",
         "rid": "SV-30765r1_rule",
         "stig_id": "DG0013-ORACLE11",
+        "gtitle": "DBMS backup procedures",
         "fix_id": "F-27676r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Database Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15126",
       "title": "Database backup procedures should be defined, documented and implemented.",
       "desc": "Database backups provide the required means to restore databases after compromise or loss. Backups help reduce the vulnerability to unauthorized access or hardware loss.",
@@ -362,10 +452,15 @@
         "gid": "V-15127",
         "rid": "SV-24742r1_rule",
         "stig_id": "DG0118-ORACLE11",
+        "gtitle": "IAM review of change in DBA assignments",
         "fix_id": "F-26378r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Manager"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15127",
       "title": "The IAM should review changes to DBA role assignments.",
       "desc": "Unauthorized assignment of DBA privileges can lead to a compromise of DBMS integrity. Providing oversight to the authorization and assignment of privileges provides the separation of duty to support sufficient oversight.",
@@ -381,10 +476,15 @@
         "gid": "V-15129",
         "rid": "SV-24608r1_rule",
         "stig_id": "DG0020-ORACLE11",
+        "gtitle": "DBMS backup and recovery testing",
         "fix_id": "F-26111r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15129",
       "title": "Backup and recovery procedures should be developed, documented, implemented and periodically tested.",
       "desc": "Problems with backup procedures or backup media may not be discovered until after a recovery is needed. Testing and verification of procedures provides the opportunity to discover oversights, conflicts, or other issues in the backup procedures or use of media designed to be used.",
@@ -400,13 +500,18 @@
         "gid": "V-15131",
         "rid": "SV-24397r1_rule",
         "stig_id": "DG0090-ORACLE11",
+        "gtitle": "DBMS sensitive data identification and encryption",
         "fix_id": "F-26214r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15131",
       "title": "Sensitive information stored in the database should be protected by encryption.",
       "desc": "Sensitive data stored in unencrypted format within the database is vulnerable to unauthorized viewing.",
@@ -422,10 +527,15 @@
         "gid": "V-15132",
         "rid": "SV-24684r1_rule",
         "stig_id": "DG0092-ORACLE11",
+        "gtitle": "DBMS data file encryption",
         "fix_id": "F-26237r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15132",
       "title": "Database data files containing sensitive information should be encrypted.",
       "desc": "Where system and DBMS access controls do not provide complete protection of sensitive or classified information, the Information Owner may require encryption to provide additional protection. Encryption of sensitive data helps protect disclosure to privileged users who do not have a need-to-know requirement to the data, but may be able to access DBMS data files using OS file tools. NOTE: The decision to encrypt data is the responsibility of the Information Owner and should be based on other access controls employed to protect the data.",
@@ -441,10 +551,15 @@
         "gid": "V-15138",
         "rid": "SV-24689r1_rule",
         "stig_id": "DG0096-ORACLE11",
+        "gtitle": "DBMS IA policy and procedure review",
         "fix_id": "F-26248r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15138",
       "title": "The DBMS IA policies and procedures should be reviewed annually or more frequently.",
       "desc": "A regular review of current database security policies and procedures is necessary to maintain the desired security posture of the DBMS. Policies and procedures should be measured against current DoD policy, STIG guidance, vendor-specific guidance and recommendations, and site-specific or other security policies.",
@@ -460,10 +575,15 @@
         "gid": "V-15139",
         "rid": "SV-24691r1_rule",
         "stig_id": "DG0097-ORACLE11",
+        "gtitle": "DBMS testing plans and procedures",
         "fix_id": "F-26256r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15139",
       "title": "Plans and procedures for testing DBMS installations, upgrades and patches should be defined and followed prior to production implementation.",
       "desc": "Updates and patches to existing software have the intention of improving the security or enhancing or adding features to the product. However, it is unfortunately common that updates or patches can render production systems inoperable or even introduce serious vulnerabilities. Some updates also set security configurations back to unacceptable settings that do not meet security requirements. For these reasons, it is a good practice to test updates and patches offline before introducing them in a production environment.",
@@ -479,10 +599,15 @@
         "gid": "V-15140",
         "rid": "SV-24645r1_rule",
         "stig_id": "DG0069-ORACLE11",
+        "gtitle": "Production data import to development DBMS",
         "fix_id": "F-26181r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15140",
       "title": "Procedures and restrictions for import of production data to development databases should be documented, implemented and followed.",
       "desc": "Data export from production databases may include sensitive data. Application developers may not be cleared for or have need-to-know to sensitive data. Any access they may have to production data would be considered unauthorized access and subject the sensitive data to unlawful or unauthorized disclosure.",
@@ -498,10 +623,15 @@
         "gid": "V-15143",
         "rid": "SV-24707r1_rule",
         "stig_id": "DG0106-ORACLE11",
+        "gtitle": "Database data encryption configuration",
         "fix_id": "F-26346r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15143",
       "title": "Database data encryption controls should be configured in accordance with application requirements.",
       "desc": "Access to sensitive data may not always be sufficiently protected by authorizations and require encryption. In some cases, the required encryption may be provided by the application accessing the database. In others, the DBMS may be configured to provide the data encryption. When the DBMS provides the encryption, the requirement must be implemented as identified by the Information Owner to prevent unauthorized disclosure or access.",
@@ -517,10 +647,15 @@
         "gid": "V-15144",
         "rid": "SV-24710r1_rule",
         "stig_id": "DG0107-ORACLE11",
+        "gtitle": "DBMS sensitive data identification",
         "fix_id": "F-26370r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15144",
       "title": "Sensitive data is stored in the database and should be identified in the System Security Plan and AIS Functional Architecture documentation.",
       "desc": "A DBMS that does not have the correct confidentiality level identified or any confidentiality level assigned is not being secured at a level appropriate to the risk it poses.",
@@ -536,10 +671,15 @@
         "gid": "V-15145",
         "rid": "SV-24713r1_rule",
         "stig_id": "DG0108-ORACLE11",
+        "gtitle": "DBMS restoration priority",
         "fix_id": "F-26372r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15145",
       "title": "The DBMS restoration priority should be assigned.",
       "desc": "When DBMS service is disrupted, the impact it has on the overall mission of the organization can be severe. Without proper assignment of the priority placed on restoration of the DBMS and its subsystems, restoration of DBMS services may not meet mission requirements.",
@@ -555,10 +695,15 @@
         "gid": "V-15146",
         "rid": "SV-24715r1_rule",
         "stig_id": "DG0109-ORACLE11",
+        "gtitle": "DBMS dedicated host",
         "fix_id": "F-26374r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15146",
       "title": "The DBMS should not be operated without authorization on a host system supporting other application services.",
       "desc": "In the same way that added security layers can provide a cumulative positive effect on security posture, multiple applications can provide a cumulative negative effect. A vulnerability and subsequent exploit to one application can lead to an exploit of other applications sharing the same security context. For example, an exploit to a web server process that leads to unauthorized administrative access to the host system can most likely lead to a compromise of all applications hosted by the same system. A DBMS not installed on a dedicated host is threatened by other hosted applications. Applications that share a single DBMS may also create risk to one another. Access controls defined for one application by default may provide access to the other application's database objects or directories. Any method that provides any level of separation of security context assists in the protection between applications.",
@@ -574,10 +719,15 @@
         "gid": "V-15148",
         "rid": "SV-24808r1_rule",
         "stig_id": "DG0152-ORACLE11",
+        "gtitle": "DBMS network port, protocol and services (PPS) use",
         "fix_id": "F-26398r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15148",
       "title": "DBMS network communications should comply with PPS usage restrictions.",
       "desc": "Non-standard network ports, protocol or services configuration or usage could lead to bypass of network perimeter security controls and protections.",
@@ -593,10 +743,15 @@
         "gid": "V-15150",
         "rid": "SV-24437r1_rule",
         "stig_id": "DG0154-ORACLE11",
+        "gtitle": "DBMS System Security Plan",
         "fix_id": "F-26400r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15150",
       "title": "The DBMS requires a System Security Plan containing all required information.",
       "desc": "A System Security Plan identifies security control applicability and configuration for the DBMS. It also contains security control documentation requirements. Security controls applicable to the DBMS may not be documented, tracked or followed if not identified in the System Security Plan. Any omission of security control consideration could lead to an exploit of DBMS vulnerabilities.",
@@ -612,10 +767,15 @@
         "gid": "V-15179",
         "rid": "SV-24717r1_rule",
         "stig_id": "DG0110-ORACLE11",
+        "gtitle": "DBMS host shared with a security service",
         "fix_id": "F-26376r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15179",
       "title": "The DBMS should not share a host supporting an independent security service.",
       "desc": "The Security Support Structure is a security control function or service provided by an external system or application. An example of this would be a Windows domain controller that provides identification and authentication that can be used by other systems to control access. The associated risk of a DBMS installed on a system that provides security support is significantly higher than when installed on separate systems. In cases where the DBMS is dedicated to local support of a security support function (e.g. a directory service), separation may not be possible.",
@@ -631,13 +791,18 @@
         "gid": "V-15608",
         "rid": "SV-24595r1_rule",
         "stig_id": "DG0009-ORACLE11",
+        "gtitle": "DBMS software library permissions",
         "fix_id": "F-2636r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Database Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15608",
       "title": "Access to DBMS software files and directories should not be granted to unauthorized users.",
       "desc": "The DBMS software libraries contain the executables used by the DBMS to operate. Unauthorized access to the libraries can result in malicious alteration or planting of operational executables. This may in turn jeopardize data stored in the DBMS and/or operation of the host system.",
@@ -653,10 +818,15 @@
         "gid": "V-15611",
         "rid": "SV-24630r1_rule",
         "stig_id": "DG0054-ORACLE11",
+        "gtitle": "DBMS software access audit review",
         "fix_id": "F-26168r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15611",
       "title": "The audit logs should be periodically monitored to discover DBMS access using unauthorized applications.",
       "desc": "Regular and timely reviews of audit records increases the likelihood of early discovery of suspicious activity. Discovery of suspicious behavior can in turn trigger protection responses to minimize or eliminate a negative impact from malicious activity. Use of unauthorized application to access the DBMS may indicate an attempt to bypass security controls.",
@@ -672,10 +842,15 @@
         "gid": "V-15618",
         "rid": "SV-24698r1_rule",
         "stig_id": "DG0099-ORACLE11",
+        "gtitle": "DBMS access to external local executables",
         "fix_id": "F-22704r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15618",
       "title": "Access to external DBMS executables should be disabled or restricted.",
       "desc": "The Oracle external procedure capability provides use of the Oracle process account outside the operation of the DBMS process. You can use it to submit and execute applications stored externally from the database under operating system controls. The external procedure process is the subject of frequent and successful attacks as it allows unauthenticated use of the Oracle process account on the operating system. As of Oracle version 11.1, the external procedure agent may be run directly from the database and not require use of the Oracle listener. This reduces the risk of unauthorized access to the procedure from outside of the database process.",
@@ -691,10 +866,15 @@
         "gid": "V-15620",
         "rid": "SV-25054r1_rule",
         "stig_id": "DG0101-ORACLE11",
+        "gtitle": "DBMS external procedure OS account privileges",
         "fix_id": "F-3795r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15620",
       "title": "OS accounts used to execute external procedures should be assigned minimum privileges.",
       "desc": "External applications spawned by the DBMS process may be executed under OS accounts assigned unnecessary privileges that can lead to unauthorized access to OS resources. Unauthorized access to OS resources can lead to the compromise of the OS, the DBMS, and any other service provided by the host platform.",
@@ -710,10 +890,15 @@
         "gid": "V-15621",
         "rid": "SV-24410r2_rule",
         "stig_id": "DG0103-ORACLE11",
+        "gtitle": "DBMS network access restrictions",
         "fix_id": "F-26331r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15621",
       "title": "Network access to the DBMS must be restricted to authorized personnel.",
       "desc": "Restricting remote access to specific, trusted systems helps prevent access by unauthorized and potentially malicious users.",
@@ -729,10 +914,15 @@
         "gid": "V-15622",
         "rid": "SV-24415r1_rule",
         "stig_id": "DG0104-ORACLE11",
+        "gtitle": "DBMS service identification",
         "fix_id": "F-26341r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15622",
       "title": "DBMS service identification should be unique and clearly identifies the service.",
       "desc": "Local or network services that do not employ unique or clearly identifiable targets can lead to inadvertent or unauthorized connections.",
@@ -748,10 +938,15 @@
         "gid": "V-15625",
         "rid": "SV-28967r1_rule",
         "stig_id": "DG0115-ORACLE11",
+        "gtitle": "DBMS trusted recovery",
         "fix_id": "F-26648r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15625",
       "title": "Recovery procedures and technical system features exist to ensure that recovery is done in a secure and verifiable manner.",
       "desc": "A DBMS may be vulnerable to use of compromised data or other critical files during recovery. Use of compromised files could introduce maliciously altered application code, relaxed security settings or loss of data integrity. Where available, DBMS mechanisms to ensure use of only trusted files can help protect the database from this type of compromise during DBMS recovery.",
@@ -767,10 +962,15 @@
         "gid": "V-15636",
         "rid": "SV-24967r1_rule",
         "stig_id": "DG0129-ORACLE11",
+        "gtitle": "DBMS passwords in transit",
         "fix_id": "F-25688r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15636",
       "title": "Passwords should be encrypted when transmitted across the network.",
       "desc": "DBMS passwords sent in clear text format across the network are vulnerable to discovery by unauthorized users. Disclosure of passwords may easily lead to unauthorized access to the database.",
@@ -786,10 +986,15 @@
         "gid": "V-15643",
         "rid": "SV-24432r1_rule",
         "stig_id": "DG0140-ORACLE11",
+        "gtitle": "DBMS security data access",
         "fix_id": "F-23926r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15643",
       "title": "Access to DBMS security data should be audited.",
       "desc": "DBMS security data is useful to malicious users to perpetrate activities that compromise DBMS operations or data integrity. Auditing of access to this data supports forensic and accountability investigations.",
@@ -805,13 +1010,18 @@
         "gid": "V-15649",
         "rid": "SV-25385r1_rule",
         "stig_id": "DG0155-ORACLE11",
+        "gtitle": "DBMS System State Changes",
         "fix_id": "F-25690r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
           "Database Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15649",
       "title": "The DBMS should have configured all applicable settings to use trusted files, functions, features, or other components during startup, shutdown, aborts, or other unplanned interruptions.",
       "desc": "The DBMS opens data files and reads configuration files at system startup, system shutdown and during abort recovery efforts. If the DBMS does not verify the trustworthiness of these files, it is vulnerable to malicious alterations of its configuration or unauthorized replacement of data.",
@@ -827,10 +1037,15 @@
         "gid": "V-15651",
         "rid": "SV-24982r1_rule",
         "stig_id": "DG0157-ORACLE11",
+        "gtitle": "DBMS remote administration",
         "fix_id": "F-19561r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15651",
       "title": "Remote DBMS administration should be documented and authorized or disabled.",
       "desc": "Remote administration may expose configuration and sensitive data to unauthorized viewing during transit across the network or allow unauthorized administrative access to the DBMS to remote users.",
@@ -846,10 +1061,15 @@
         "gid": "V-15652",
         "rid": "SV-24985r1_rule",
         "stig_id": "DG0158-ORACLE11",
+        "gtitle": "DBMS remote administration audit",
         "fix_id": "F-16165r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15652",
       "title": "DBMS remote administration should be audited.",
       "desc": "When remote administration is available, the vulnerability to attack for administrative access is increased. An audit of remote administrative access provides additional means to discover suspicious activity and to provide accountability for administrative actions completed by remote users.",
@@ -865,10 +1085,15 @@
         "gid": "V-15656",
         "rid": "SV-25075r1_rule",
         "stig_id": "DG0171-ORACLE11",
+        "gtitle": "DBMS interconnections",
         "fix_id": "F-20164r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15656",
       "title": "The DBMS should not have a connection defined to access or be accessed by a DBMS at a different classification level.",
       "desc": "Applications that access databases and databases connecting to remote databases that differ in their assigned classification levels may expose sensitive data to unauthorized clients. Any interconnections between databases or applications and databases differing in classification levels are required to comply with interface control rules.",
@@ -884,10 +1109,15 @@
         "gid": "V-15659",
         "rid": "SV-24835r1_rule",
         "stig_id": "DG0191-ORACLE11",
+        "gtitle": "DBMS credential protection",
         "fix_id": "F-26422r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15659",
       "title": "Credentials used to access remote databases should be protected by encryption and restricted to authorized users.",
       "desc": "Access to database connection credential stores provides easy access to the database. Unauthorized access to the database can result without controls in place to prevent unauthorized access to the credentials.",
@@ -903,10 +1133,15 @@
         "gid": "V-15662",
         "rid": "SV-24844r1_rule",
         "stig_id": "DG0198-ORACLE11",
+        "gtitle": "DBMS remote administration encryption",
         "fix_id": "F-26430r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-15662",
       "title": "Remote administration of the DBMS should be restricted to known, dedicated and encrypted network addresses and ports.",
       "desc": "Remote administration provides many conveniences that can assist in the maintenance of the designed security posture of the DBMS. On the other hand, remote administration of the database also provides malicious users the ability to access from the network a highly privileged function. Remote administration needs to be carefully considered and used only when sufficient protections against its abuse can be applied. Encryption and dedication of ports to access remote administration functions can help prevent unauthorized access to it.",
@@ -922,10 +1157,15 @@
         "gid": "V-16031",
         "rid": "SV-24952r1_rule",
         "stig_id": "DO6746-ORACLE11",
+        "gtitle": "Oracle Listener host references",
         "fix_id": "F-26559r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-16031",
       "title": "The Oracle listener.ora file should specify IP addresses rather than host names to identify hosts.",
       "desc": "The use of IP address in place of host names helps to protect against malicious corruption or spoofing of host names. Use of static IP addresses is considered more stable and reliable than use of hostnames or Fully Qualified Domain Names (FQDN).",
@@ -941,10 +1181,15 @@
         "gid": "V-16032",
         "rid": "SV-24955r1_rule",
         "stig_id": "DO6747-ORACLE11",
+        "gtitle": "Connection Manager remote administration",
         "fix_id": "F-26561r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-16032",
       "title": "Remote administration should be disabled for the Oracle connection manager.",
       "desc": "Remote administration provides a potential opportunity for malicious users to make unauthorized changes to the Connection Manager configuration or interrupt its service.",
@@ -960,10 +1205,15 @@
         "gid": "V-16054",
         "rid": "SV-24959r2_rule",
         "stig_id": "DO6752-ORACLE11",
+        "gtitle": "Oracle SEC_PROTOCOL_ERROR_TRACE_ACTION parameter",
         "fix_id": "F-22866r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-16054",
       "title": "The Oracle SEC_PROTOCOL_ERROR_TRACE_ACTION parameter should not be set to NONE.",
       "desc": "Undetected attacks using bad packets can lead to a successful Denial of Service (DoS) to database clients. Notification of attacks based on a flood of bad packets sent to the database can assist in discovery and response to this type of attack.",
@@ -979,10 +1229,15 @@
         "gid": "V-16055",
         "rid": "SV-24961r1_rule",
         "stig_id": "DO6753-ORACLE11",
+        "gtitle": "Oracle Application Express",
         "fix_id": "F-25681r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-16055",
       "title": "Oracle Application Express or Oracle HTML DB should not be installed on a production database.",
       "desc": "The Oracle Application Express, formerly called HTML DB, is an application development component installed by default with Oracle. Unauthorized application development can introduce a variety of vulnerabilities to the database.",
@@ -998,10 +1253,15 @@
         "gid": "V-16056",
         "rid": "SV-24963r1_rule",
         "stig_id": "DO6754-ORACLE11",
+        "gtitle": "Oracle Configuration Manager",
         "fix_id": "F-26564r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-16056",
       "title": "Oracle Configuration Manager should not remain installed on a production system.",
       "desc": "Oracle Configuration Manager (OCM) is a function of the Oracle Software Configuration Manager (SCM). OCM collects system configuration data used for automated upload to systems owned and managed by Oracle to assist in providing customer support. The configuration information about the server that the OCM collects includes IP addresses, hostname, database username, location of datafiles, etc.",
@@ -1017,10 +1277,15 @@
         "gid": "V-16057",
         "rid": "SV-24958r2_rule",
         "stig_id": "DO6751-ORACLE11",
+        "gtitle": "SQLNET.ALLOWED_LOGON_VERSION",
         "fix_id": "F-26562r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-16057",
       "title": "The SQLNet SQLNET.ALLOWED_LOGON_VERSION parameter must be set to a value of 11 or higher.",
       "desc": "Unsupported Oracle network client installations may introduce vulnerabilities to the database. Restriction to use of supported versions helps to protect the database and helps to enforce newer, more robust security controls.",
@@ -1036,10 +1301,15 @@
         "gid": "V-2420",
         "rid": "SV-24597r1_rule",
         "stig_id": "DG0010-ORACLE11",
+        "gtitle": "DBMS software monitoring",
         "fix_id": "F-3428r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-2420",
       "title": "Database executable and configuration files should be monitored for unauthorized modifications.",
       "desc": "Changes to files in the DBMS software directory including executable, configuration, script, or batch files can indicate malicious compromise of the software files. Changes to non-executable files, such as log files and data files, do not usually reflect unauthorized changes, but are modified by the DBMS as part of normal operation. These modifications can be ignored.",
@@ -1055,10 +1325,15 @@
         "gid": "V-2422",
         "rid": "SV-24374r2_rule",
         "stig_id": "DG0040-ORACLE11",
+        "gtitle": "DBMS software owner account access",
         "fix_id": "F-26116r3_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-2422",
       "title": "The DBMS software installation account should be restricted to authorized users.",
       "desc": "DBA and other privileged administrative or application owner accounts are granted privileges that allow actions that can have a greater impact on database security and operation. It is especially important to grant access to privileged accounts to only those persons who are qualified and authorized to use them.",
@@ -1074,10 +1349,15 @@
         "gid": "V-2423",
         "rid": "SV-24383r1_rule",
         "stig_id": "DG0050-ORACLE11",
+        "gtitle": "DBMS software and configuration file monitoring",
         "fix_id": "F-26156r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-2423",
       "title": "Database software, applications and configuration files should be monitored to discover unauthorized changes.",
       "desc": "Unmanaged changes that occur to the database software libraries or configuration can lead to unauthorized or compromised installations.",
@@ -1093,10 +1373,15 @@
         "gid": "V-2608",
         "rid": "SV-24934r1_rule",
         "stig_id": "DO3630-ORACLE11",
+        "gtitle": "Oracle listener authentication",
         "fix_id": "F-22856r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-2608",
       "title": "The Oracle Listener should be configured to require administration authentication.",
       "desc": "Oracle listener authentication helps prevent unauthorized administration of the Oracle listener. Unauthorized administration of the listener could lead to DoS exploits; loss of connection audit data, unauthorized reconfiguration or other unauthorized access. This is a Category I finding because privileged access to the listener is not restricted to authorized users. Unauthorized access can result in stopping of the listener (DoS) and overwriting of listener audit logs.",
@@ -1112,10 +1397,15 @@
         "gid": "V-2612",
         "rid": "SV-24946r1_rule",
         "stig_id": "DO5037-ORACLE11",
+        "gtitle": "Oracle SQLNet and listener log files protection",
         "fix_id": "F-26555r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-2612",
       "title": "Oracle SQLNet and listener log files should not be accessible to unauthorized users.",
       "desc": "The SQLNet and Listener log files provide audit data useful to the discovery of suspicious behavior. The log files may contain usernames and passwords in clear text as well as other information that could aid a malicious user with unauthorized access attempts to the database. Generation and protection of these files helps support security monitoring efforts.",
@@ -1131,13 +1421,18 @@
         "gid": "V-3440",
         "rid": "SV-24537r3_rule",
         "stig_id": "DO0360-ORACLE11",
+        "gtitle": "DBMS mid-tier application account access",
         "fix_id": "F-26517r2_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": [
           "Information Assurance Officer",
           "Database Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3440",
       "title": "Connections by mid-tier web and application systems to the Oracle DBMS should be protected, encrypted and authenticated according to database, web, application, enclave and network requirements.",
       "desc": "Multi-tier systems may be configured with the database and connecting middle-tier system located on an internal network, with the database located on an internal network behind a firewall and the middle-tier system located in a DMZ. In cases where systems are located in the DMZ, network communications between both systems must be encrypted. In all cases, the application account requires PKI authentication. IP address restriction to the backend database system, under a separate requirement, provides an additional level of protection.",
@@ -1153,10 +1448,15 @@
         "gid": "V-3497",
         "rid": "SV-24949r1_rule",
         "stig_id": "DO6740-ORACLE11",
+        "gtitle": "Oracle listener ADMIN_RESTRICTIONS parameter",
         "fix_id": "F-26557r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3497",
       "title": "The Oracle Listener ADMIN_RESTRICTIONS parameter if present should be set to ON.",
       "desc": "The Oracle listener process can be dynamically configured. By connecting to the listener process directly, usually through the Oracle LSNRCTL utility, a user may change any of the parameters available through the set command. This vulnerability has been used to overwrite the listener log and trace files. The ADMIN_RESTRICTIONS parameter, set in the listener.ora file, prohibits dynamic listener configuration changes and protects the configuration using host operating system security controls.",
@@ -1172,10 +1472,15 @@
         "gid": "V-3726",
         "rid": "SV-24599r1_rule",
         "stig_id": "DG0011-ORACLE11",
+        "gtitle": "DBMS Configuration Management",
         "fix_id": "F-3780r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3726",
       "title": "Configuration management procedures should be defined and implemented for database software modifications.",
       "desc": "Uncontrolled, untested, or unmanaged changes result in an unreliable security posture. All changes to software libraries related to the database and its use need to be reviewed, considered, and the responsibility for CM assigned. CM responsibilities may appear to cross boundaries. It is important, however, for the boundaries of CM responsibility to be clearly defined and assigned to ensure no libraries or configurations are left unaddressed. Related database application libraries may include third-party DBMS management tools, DBMS stored procedures, or other end-user applications.",
@@ -1191,10 +1496,15 @@
         "gid": "V-3728",
         "rid": "SV-24359r2_rule",
         "stig_id": "DG0016-ORACLE11",
+        "gtitle": "DBMS unused components",
         "fix_id": "F-23717r3_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3728",
       "title": "Unused database components, database application software, and database objects should be removed from the DBMS system.",
       "desc": "Unused, unnecessary DBMS components increase the attack surface for the DBMS by introducing additional targets for attack. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced. However, dependencies exist among Oracle components that could result in the removal of an apparently unnecessary component interfering with the operation of a required component. Therefore, thorough testing is required before removing components from a production server.",
@@ -1210,13 +1520,18 @@
         "gid": "V-3803",
         "rid": "SV-24606r1_rule",
         "stig_id": "DG0017-ORACLE11",
+        "gtitle": "DBMS shared production/development use",
         "fix_id": "F-26104r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3803",
       "title": "A production DBMS installation should not coexist on the same DBMS host with other, non-production DBMS installations.",
       "desc": "Production, development and other non-production DBMS installations have different access and security requirements. Shared production/non-production DBMS installations secured at a production-level can impede development efforts whereas production/non-production DBMS installations secured at a development-level can lead to exploitation of production-level installations. Production DBMS installations should be kept separate from development, QA, TEST and other non-production DBMS systems.",
@@ -1232,10 +1547,15 @@
         "gid": "V-3805",
         "rid": "SV-24363r1_rule",
         "stig_id": "DG0019-ORACLE11",
+        "gtitle": "DBMS software ownership",
         "fix_id": "F-26109r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3805",
       "title": "Application software should be owned by a Software Application account.",
       "desc": "File and directory ownership imparts full privileges to the owner. These privileges should be restricted to a single, dedicated account to preserve proper chains of ownership and privilege assignment management.",
@@ -1251,13 +1571,18 @@
         "gid": "V-3806",
         "rid": "SV-24610r1_rule",
         "stig_id": "DG0021-ORACLE11",
+        "gtitle": "DBMS software and configuration baseline",
         "fix_id": "F-26114r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3806",
       "title": "A baseline of database application software should be documented and maintained.",
       "desc": "Without maintenance of a baseline of current DBMS application software, monitoring for changes cannot be complete and unauthorized changes to the software can go undetected. Changes to the DBMS executables could be the result of intentional or unintentional actions.",
@@ -1273,10 +1598,15 @@
         "gid": "V-3807",
         "rid": "SV-24626r1_rule",
         "stig_id": "DG0052-ORACLE11",
+        "gtitle": "DBMS software access audit",
         "fix_id": "F-26162r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3807",
       "title": "All applications that access the database should be logged in the audit trail.",
       "desc": "Protections and privileges are designed within the database to correspond to access via authorized software. Use of unauthorized software to access the database could indicate an attempt to bypass established permissions. Reviewing the use of application software to the database can lead to discovery of unauthorized access attempts.",
@@ -1292,10 +1622,15 @@
         "gid": "V-3809",
         "rid": "SV-24628r1_rule",
         "stig_id": "DG0053-ORACLE11",
+        "gtitle": "DBMS client connection definition file",
         "fix_id": "F-26165r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3809",
       "title": "A single database connection configuration file should not be used to configure all database clients.",
       "desc": "Many sites distribute a single client database connection configuration file to all site database users that contains network access information for all databases on the site. Such a file provides information to access databases not required by all users that may assist in unauthorized access attempts.",
@@ -1311,10 +1646,15 @@
         "gid": "V-3811",
         "rid": "SV-24639r1_rule",
         "stig_id": "DG0066-ORACLE11",
+        "gtitle": "DBMS temporary password procedures",
         "fix_id": "F-26175r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3811",
       "title": "Procedures for establishing temporary passwords that meet DoD password requirements for new accounts should be defined, documented and implemented.",
       "desc": "New accounts authenticated by passwords that are created without a password or with an easily guessed password are vulnerable to unauthorized access. Procedures for creating new accounts with passwords should include the required assignment of a temporary password to be modified by the user upon first use.",
@@ -1330,10 +1670,15 @@
         "gid": "V-3812",
         "rid": "SV-24641r1_rule",
         "stig_id": "DG0067-ORACLE11",
+        "gtitle": "DBMS account password storage",
         "fix_id": "F-26177r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3812",
       "title": "Database account passwords should be stored in encoded or encrypted format whether stored in database objects, external host files, environment variables or any other storage locations.",
       "desc": "Database passwords stored in clear text are vulnerable to unauthorized disclosure. Database passwords should always be encoded or encrypted when stored internally or externally to the DBMS.",
@@ -1349,10 +1694,15 @@
         "gid": "V-3813",
         "rid": "SV-24643r1_rule",
         "stig_id": "DG0068-ORACLE11",
+        "gtitle": "DBMS application password display",
         "fix_id": "F-26179r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3813",
       "title": "DBMS tools or applications that echo or require a password entry in clear text should be protected from password display.",
       "desc": "Database applications may allow for entry of the account name and password as a visible parameter of the application execution command. This practice should be prohibited and disabled, if possible, by the application. If it cannot be disabled, then users should be strictly instructed not to use this feature. Typically, the application will prompt for this information and accept it without echoing it on the users computer screen.",
@@ -1368,10 +1718,15 @@
         "gid": "V-3825",
         "rid": "SV-24687r1_rule",
         "stig_id": "DG0093-ORACLE11",
+        "gtitle": "Remote administrative connection encryption",
         "fix_id": "F-22699r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3825",
       "title": "Remote adminstrative connections to the database should be encrypted.",
       "desc": "Communications between a client and database service across the network may contain sensitive information including passwords. This is particularly true in the case of administrative activities. Encryption of remote administrative connections to the database ensures confidentiality of configuration, management, and other administrative data.",
@@ -1387,10 +1742,15 @@
         "gid": "V-3827",
         "rid": "SV-24405r1_rule",
         "stig_id": "DG0095-ORACLE11",
+        "gtitle": "DBMS audit trail data review",
         "fix_id": "F-26245r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3827",
       "title": "Audit trail data should be reviewed daily or more frequently.",
       "desc": "Review of audit trail data provides a means for detection of unauthorized access or attempted access. Frequent and regularly scheduled reviews ensures that such access is discovered in a timely manner.",
@@ -1406,10 +1766,15 @@
         "gid": "V-3842",
         "rid": "SV-24465r1_rule",
         "stig_id": "DO0120-ORACLE11",
+        "gtitle": "Oracle process account host system privileges",
         "fix_id": "F-26434r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3842",
       "title": "The Oracle software installation account should not be granted excessive host system privileges.",
       "desc": "A compromise of the Oracle database process could be used to gain access to the host operating system under the security account of the process owner. Limitation of the privileges assigned to the process account can help contain access to other processes and host system resources. This can in turn help to limit any resulting malicious activity.",
@@ -1425,10 +1790,15 @@
         "gid": "V-3845",
         "rid": "SV-24853r1_rule",
         "stig_id": "DO0145-ORACLE11",
+        "gtitle": "Oracle SYSDBA OS group membership",
         "fix_id": "F-26438r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3845",
       "title": "OS DBA group membership should be restricted to authorized accounts.",
       "desc": "Oracle SYSDBA privileges include privileges to administer the database outside of database controls (when the database is shut down) in addition to all privileges controlled under database operation. Assignment of membership to the OS dba group to unauthorized persons can compromise all DBMS activities.",
@@ -1444,10 +1814,15 @@
         "gid": "V-3862",
         "rid": "SV-24890r1_rule",
         "stig_id": "DO0286-ORACLE11",
+        "gtitle": "Oracle connection timeout parameter",
         "fix_id": "F-26505r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3862",
       "title": "The Oracle INBOUND_CONNECT_TIMEOUT and SQLNET.INBOUND_CONNECT_TIMEOUT parameters should be set to a value greater than 0.",
       "desc": "The INBOUND_CONNECT_TIMEOUT_[listener-name] and SQLNET.INBOUND_CONNECT_TIMEOUT defines the limit the database listener and database server respectively will wait for a client connection to complete after a connection request is made. This limit protects the listener and database server from a Denial-of-Service attack where multiple connection requests are made that are not used or closed from a client. Server resources can be exhausted if unused connections are maintained.",
@@ -1463,10 +1838,15 @@
         "gid": "V-3863",
         "rid": "SV-24893r1_rule",
         "stig_id": "DO0287-ORACLE11",
+        "gtitle": "Oracle SQLNET.EXPIRE_TIME parameter",
         "fix_id": "F-26508r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3863",
       "title": "The Oracle SQLNET.EXPIRE_TIME parameter should be set to a value greater than 0.",
       "desc": "The SQLNET.EXPIRE_TIME parameter defines a limit for the frequency of active connection verification of a client connection. This prevents indefinite open connections to the database where client connections have not been terminated properly. Indefinite open connections could lead to an exhaustion of system resources or leave an open connection available for compromise.",
@@ -1482,10 +1862,15 @@
         "gid": "V-3866",
         "rid": "SV-24546r1_rule",
         "stig_id": "DO0430-ORACLE11",
+        "gtitle": "Oracle management agent use",
         "fix_id": "F-26519r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-3866",
       "title": "The Oracle Management Agent should be uninstalled if not required and authorized or is installed on a database accessible from the Internet.",
       "desc": "The Oracle Management Agent (Oracle Intelligent Agent in earlier versions) provides the mechanism for local and/or remote management of the local Oracle Database by Oracle Enterprise Manager or other SNMP management platforms. Because it provides access to operating system and database functions, it should be uninstalled if not in use.",
@@ -1501,7 +1886,9 @@
         "gid": "V-43137",
         "rid": "SV-55867r1_rule",
         "stig_id": "DG0025-ORACLE11",
+        "gtitle": "DBMS encryption compliance",
         "fix_id": "F-22674r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Information Assurance Officer",
@@ -1509,6 +1896,9 @@
         ],
         "ia_controls": "DCNR-1"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-43137",
       "title": "DBMS cryptography must be NIST FIPS 140-2 validated.",
       "desc": "Use of cryptography to provide confidentiality and non-repudiation is not effective unless strong methods are employed with its use. Many earlier encryption methods and modules have been broken and/or overtaken by increasing computing power. The NIST FIPS 140-2 cryptographic standards provide proven methods and strengths to employ cryptography effectively.",
@@ -1524,10 +1914,15 @@
         "gid": "V-4754",
         "rid": "SV-24350r1_rule",
         "stig_id": "DG0012-ORACLE11",
+        "gtitle": "DBMS software storage location",
         "fix_id": "F-3797r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-4754",
       "title": "Database software directories including DBMS configuration files are stored in dedicated directories separate from the host OS and other applications.",
       "desc": "Multiple applications can provide a cumulative negative effect. A vulnerability and subsequent exploit to one application can lead to an exploit of other applications sharing the same security context. For example, an exploit to a web server process that leads to unauthorized administrative access to host system directories can most likely lead to a compromise of all applications hosted by the same system. Database software not installed using dedicated directoriies both threatens and is threatened by other hosted applications. Access controls defined for one application may by default provide access to the other application’s database objects or directories. Any method that provides any level of separation of security context assists in the protection between applications.",
@@ -1543,10 +1938,15 @@
         "gid": "V-5658",
         "rid": "SV-24339r2_rule",
         "stig_id": "DG0001-ORACLE11",
+        "gtitle": "The Database version is unsupported.",
         "fix_id": "F-22570r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-5658",
       "title": "Vendor supported software is evaluated and patched against newly found vulnerabilities.",
       "desc": "Unsupported software versions are not patched by vendors to address newly discovered security versions. An unpatched version is vulnerable to attack.",
@@ -1562,10 +1962,15 @@
         "gid": "V-5659",
         "rid": "SV-24342r1_rule",
         "stig_id": "DG0003-ORACLE11",
+        "gtitle": "DBMS security patch level",
         "fix_id": "F-16405r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-5659",
       "title": "The latest security patches should be installed.",
       "desc": "Maintaining the currency of the software version protects the database from known vulnerabilities.",
@@ -1581,10 +1986,15 @@
         "gid": "V-57609",
         "rid": "SV-72019r1_rule",
         "stig_id": "DG7001-ORACLE11",
+        "gtitle": "Dedicated directory for DBMS audit files",
         "fix_id": "F-62809r2_fix",
+        "rationale": null,
         "documentable": true,
         "ia_controls": "DCPA-1"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-57609",
       "title": "The directory assigned to the AUDIT_FILE_DEST parameter must be protected from unauthorized access and must be stored in a dedicated directory or disk partition separate from software or other application files.",
       "desc": "The AUDIT_FILE_DEST parameter specifies the directory where the database audit trail file is stored (when AUDIT_TRAIL parameter is set to ‘OS’, ‘xml’, or ‘xml, extended’ where supported by the DBMS). Unauthorized access or loss of integrity of the audit trail could result in loss of accountability or the ability to detect suspicious activity. This directory also contains the audit trail of the SYS and SYSTEM accounts that captures privileged database events when the database is not running (when AUDIT_SYS_OPERATIONS parameter is set to TRUE).",
@@ -1600,9 +2010,14 @@
         "gid": "V-57611",
         "rid": "SV-72021r2_rule",
         "stig_id": "DG7002-ORACLE11",
+        "gtitle": "Dedicated directories for DBMS control files",
         "fix_id": "F-62811r2_fix",
+        "rationale": null,
         "documentable": true
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-57611",
       "title": "A minimum of two Oracle control files must be defined and configured to be stored on separate, archived disks (physical or virtual) or archived partitions on a RAID device.",
       "desc": "Oracle control files are used to store information critical to Oracle database integrity. Oracle uses these files to maintain time synchronization of database files as well as at system startup to verify the validity of system data and log files. Loss of access to the control files can affect database availability, integrity, and recovery.",
@@ -1618,10 +2033,15 @@
         "gid": "V-57613",
         "rid": "SV-72023r1_rule",
         "stig_id": "DG7003-ORACLE11",
+        "gtitle": "Dedicated directories for DBMS redo log",
         "fix_id": "F-62815r1_fix",
+        "rationale": null,
         "documentable": true,
         "ia_controls": "DCPA-1"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-57613",
       "title": "A minimum of two Oracle redo log groups/files must be defined and configured to be stored on separate, archived physical disks or archived directories on a RAID device.",
       "desc": "The Oracle redo log files store the detailed information on changes made to the database. This information is critical to database recovery in case of a database failure.",
@@ -1637,13 +2057,18 @@
         "gid": "V-6756",
         "rid": "SV-24346r1_rule",
         "stig_id": "DG0005-ORACLE11",
+        "gtitle": "DBMS administration OS accounts",
         "fix_id": "F-24656r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "System Administrator",
           "Database Administrator"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-6756",
       "title": "Only necessary privileges to the host system should be granted to DBA OS accounts.",
       "desc": "Database administration accounts are frequently granted more permissions to the local host system than are necessary. This allows inadvertent or malicious changes to the host operating system.",
@@ -1659,10 +2084,15 @@
         "gid": "V-6767",
         "rid": "SV-30742r1_rule",
         "stig_id": "DG0007-ORACLE11",
+        "gtitle": "DBMS security compliance",
         "fix_id": "F-27645r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Homes 11g"
+      ],
       "id": "V-6767",
       "title": "The database should be secured in accordance with DoD, vendor and/or commercially accepted practices where applicable.",
       "desc": "DBMS systems that do not follow DoD, vendor and/or public best security practices are vulnerable to related published vulnerabilities. A DoD reference document such as a security technical implementation guide or security recommendation guide constitutes the primary source for security configuration or implementation guidance for the deployment of newly acquired IA- and IA-enabled IT products that require use of the product's IA capabilities.",

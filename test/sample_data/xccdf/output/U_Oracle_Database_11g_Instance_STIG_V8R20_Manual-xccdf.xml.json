@@ -11,10 +11,15 @@
         "gid": "V-15114",
         "rid": "SV-24395r1_rule",
         "stig_id": "DG0089-ORACLE11",
+        "gtitle": "Developer DBMS privileges on production databases",
         "fix_id": "F-2590r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15114",
       "title": "Developers should not be assigned excessive privileges on production databases.",
       "desc": "Developers play a unique role and represent a specific type of threat to the security of the DBMS. Where restricted resources prevent the required separation of production and development DBMS installations, developers granted elevated privileges to create and manage new database objects must also be prevented from actions that can threaten the production operation.",
@@ -30,10 +35,15 @@
         "gid": "V-15128",
         "rid": "SV-24705r1_rule",
         "stig_id": "DG0105-ORACLE11",
+        "gtitle": "DBMS application user role privilege assignment",
         "fix_id": "F-2558r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15128",
       "title": "DBMS application user roles should not be assigned unauthorized privileges.",
       "desc": "Unauthorized access to the data can lead to loss of confidentiality and integrity of the data.",
@@ -49,10 +59,15 @@
         "gid": "V-15130",
         "rid": "SV-24652r1_rule",
         "stig_id": "DG0074-ORACLE11",
+        "gtitle": "DBMS inactive accounts",
         "fix_id": "F-26187r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15130",
       "title": "Unapproved inactive or expired database accounts should not be found on the database.",
       "desc": "Unused or expired DBMS accounts provide a means for undetected, unauthorized access to the database.",
@@ -68,10 +83,15 @@
         "gid": "V-15133",
         "rid": "SV-28970r1_rule",
         "stig_id": "DG0031-ORACLE11",
+        "gtitle": "DBMS audit of changes to data",
         "fix_id": "F-26651r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15133",
       "title": "Transaction logs should be periodically reviewed for unauthorized modification of data.",
       "desc": "Unauthorized or malicious changes to data compromise the integrity and usefulness of the data. Auditing changes to data supports accountability and non-repudiation. Auditing changes to data may be provided by the application accessing the DBMS or may depend upon the DBMS auditing functions. When DBMS auditing is used, the DBA is responsible for ensuring the auditing configuration meets the application design requirements.",
@@ -87,10 +107,15 @@
         "gid": "V-15141",
         "rid": "SV-24702r2_rule",
         "stig_id": "DG0102-ORACLE11",
+        "gtitle": "DBMS services dedicated custom account",
         "fix_id": "F-26327r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15141",
       "title": "DBMS processes or services should run under custom, dedicated OS accounts.",
       "desc": "Shared accounts do not provide separation of duties nor allow for assignment of least privileges for use by database processes and services. Without separation and least privilege, the exploit of one service or process is more likely to be able to compromise another or all other services.",
@@ -106,10 +131,15 @@
         "gid": "V-15142",
         "rid": "SV-24819r1_rule",
         "stig_id": "DG0166-ORACLE11",
+        "gtitle": "DBMS asymmetric key management",
         "fix_id": "F-26408r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15142",
       "title": "Asymmetric keys should use DoD PKI Certificates and be protected in accordance with NIST (unclassified data) or NSA (classified data) approved key management and processes.",
       "desc": "Encryption is only effective if the encryption method is robust and the keys used to provide the encryption are not easily discovered. Without effective encryption, sensitive data is vulnerable to unauthorized access.",
@@ -125,10 +155,15 @@
         "gid": "V-15149",
         "rid": "SV-24979r1_rule",
         "stig_id": "DG0153-ORACLE11",
+        "gtitle": "DBMS DBA roles assignment approval",
         "fix_id": "F-20278r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15149",
       "title": "DBA roles assignments should be assigned and authorized by the IAO.",
       "desc": "The DBA role and associated privileges provide complete control over the DBMS operation and integrity. DBA role assignment without authorization could lead to the assignment of these privileges to untrusted and untrustworthy persons and complete compromise of DBMS integrity.",
@@ -144,10 +179,15 @@
         "gid": "V-15152",
         "rid": "SV-24666r2_rule",
         "stig_id": "DG0079-ORACLE11",
+        "gtitle": "DBMS password complexity",
         "fix_id": "F-2569r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15152",
       "title": "DBMS login accounts require passwords to meet complexity requirements.",
       "desc": "The PASSWORD_VERIFY_FUNCTION value specifies a PL/SQL function to be used for password verification when users assigned this profile log in to a database. This function can be used to validate password strength by requiring passwords to pass a strength test written in PL/SQL. The function must be locally available for execution on the database to which this profile applies. Oracle provides a default script (utlpwdmg.sql), as a template to develop your own function. The password verification function must be owned by SYS. The default setting for this profile parameter is NULL, meaning no password verification is performed.",
@@ -163,10 +203,15 @@
         "gid": "V-15153",
         "rid": "SV-24780r2_rule",
         "stig_id": "DG0125-ORACLE11",
+        "gtitle": "DBMS account password expiration",
         "fix_id": "F-26382r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15153",
       "title": "DBMS account passwords should be set to expire every 60 days or more frequently.",
       "desc": "The PASSWORD_LIFE_TIME value specifies the length of time the same password may be used to authenticate to a database account. After the time period specified has passed for the assigned password, the user is required to change their password or else forfeit access to the database. Frequent password changes help to decrease the likelihood or duration of a password compromise that would result in unauthorized access.",
@@ -182,10 +227,15 @@
         "gid": "V-15154",
         "rid": "SV-25082r1_rule",
         "stig_id": "DG0190-ORACLE11",
+        "gtitle": "DBMS remote system credential use and access",
         "fix_id": "F-24662r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15154",
       "title": "Credentials stored and used by the DBMS to access remote databases or applications should be authorized and restricted to authorized users.",
       "desc": "Credentials defined for access to remote databases or applications may provide unauthorized access to additional databases and applications to unauthorized or malicious users.",
@@ -201,10 +251,15 @@
         "gid": "V-15607",
         "rid": "SV-24592r2_rule",
         "stig_id": "DG0008-ORACLE11",
+        "gtitle": "DBMS application object ownership",
         "fix_id": "F-16157r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15607",
       "title": "Application objects should be owned by accounts authorized for ownership.",
       "desc": "Database object ownership implies full privileges to the owned object including the privilege to assign access to the owned objects to other subjects. Unmanaged or uncontrolled ownership of objects can lead to unauthorized object grants and alterations.",
@@ -220,10 +275,15 @@
         "gid": "V-15609",
         "rid": "SV-24604r2_rule",
         "stig_id": "DG0014-ORACLE11",
+        "gtitle": "DBMS demonstration and sample databases",
         "fix_id": "F-17990r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15609",
       "title": "Default demonstration and sample database objects and applications should be removed.",
       "desc": "Demonstration and sample database objects and applications present publicly known attack points for malicious users. These demonstration and sample objects are meant to provide simple examples of coding specific functions and are not developed to prevent vulnerabilities from being introduced to the DBMS and host system.",
@@ -239,10 +299,15 @@
         "gid": "V-15613",
         "rid": "SV-24663r1_rule",
         "stig_id": "DG0078-ORACLE11",
+        "gtitle": "DBMS individual accounts",
         "fix_id": "F-2541r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15613",
       "title": "Each database user, application or process should have an individually assigned account.",
       "desc": "Use of accounts shared by multiple users, applications, or processes limit the accountability for actions taken in or on the data or database. Individual accounts provide an opportunity to limit database authorizations to those required for the job function assigned to each individual account.",
@@ -258,13 +323,18 @@
         "gid": "V-15615",
         "rid": "SV-24673r2_rule",
         "stig_id": "DG0085-ORACLE11",
+        "gtitle": "Minimum DBA privilege assignment",
         "fix_id": "F-2586r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15615",
       "title": "The DBA role should not be assigned excessive or unauthorized privileges.",
       "desc": "Oracle SYSDBA privileges include privileges to administer the database outside of database controls (when the database is shut down or open in restricted mode) in addition to all privileges controlled under database operation. Assignment of SYSDBA privileges in the Oracle password file to unauthorized persons can compromise all DBMS activities.",
@@ -280,10 +350,15 @@
         "gid": "V-15616",
         "rid": "SV-24393r2_rule",
         "stig_id": "DG0087-ORACLE11",
+        "gtitle": "DBMS sensitive data labeling",
         "fix_id": "F-2587r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15616",
       "title": "Sensitive data should be labeled.",
       "desc": "The sensitivity marking or labeling of data items promotes the correct handling and protection of the data. Without such notification, the user may unwittingly disclose sensitive data to unauthorized users.",
@@ -299,10 +374,15 @@
         "gid": "V-15617",
         "rid": "SV-24694r1_rule",
         "stig_id": "DG0098-ORACLE11",
+        "gtitle": "DBMS access to external local objects",
         "fix_id": "F-2614r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15617",
       "title": "ccess to external objects should be disabled if not required and authorized.",
       "desc": "The UTL_FILE package allows host file access from within the database using the permissions and privileges assigned to the Oracle database process or service. This package should be used with caution. All files accessible to using this package is equally accessible to any database user with execute permissions to the UTL_FILE package. When UTL_FILE_DIR is set to “*”, all directories accessible to the Oracle database process, typically the Oracle installation account, are accessible via the UTL_FILE package. This setting effectively turns off directory access checking, and makes any directory accessible to the UTL_FILE functions. The UTL_FILE_DIR list should specify only authorized and protected directories and should include only fully specified path names.",
@@ -318,10 +398,15 @@
         "gid": "V-15619",
         "rid": "SV-24407r1_rule",
         "stig_id": "DG0100-ORACLE11",
+        "gtitle": "DBMS replication account privileges",
         "fix_id": "F-2615r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15619",
       "title": "Replication accounts should not be granted DBA privileges.",
       "desc": "Replication accounts may be used to access databases defined for the replication architecture. An exploit of a replication on one database could lead to the compromise of any database participating in the replication that uses the same account name and credentials. If the replication account is compromised and it has DBA privileges, the database is at additional risk to unauthorized or malicious action.",
@@ -337,10 +422,15 @@
         "gid": "V-15623",
         "rid": "SV-24419r1_rule",
         "stig_id": "DG0112-ORACLE11",
+        "gtitle": "DBMS system data file protection",
         "fix_id": "F-3414r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15623",
       "title": "DBMS system data files should be stored in dedicated disk directories.",
       "desc": "DBMS system data files have different access control requirements than application data and log files. Granting access to system data files beyond those required for system operations could lead to a compromise of the DBMS integrity or disclosure of sensitive data.",
@@ -356,10 +446,15 @@
         "gid": "V-15626",
         "rid": "SV-24723r2_rule",
         "stig_id": "DG0116-ORACLE11",
+        "gtitle": "DBMS privileged role assignments",
         "fix_id": "F-3783r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15626",
       "title": "Database privileged role assignments should be restricted to IAO-authorized DBMS accounts.",
       "desc": "Roles assigned privileges to perform DDL and/or system configuration actions in the database can lead to compromise of any data in the database as well as operation of the DBMS itself. Restrict assignment of privileged roles to authorized personnel and database accounts to help prevent unauthorized activity.",
@@ -375,10 +470,15 @@
         "gid": "V-15627",
         "rid": "SV-24422r2_rule",
         "stig_id": "DG0117-ORACLE11",
+        "gtitle": "DBMS administrative privilege assignment",
         "fix_id": "F-3786r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15627",
       "title": "Administrative privileges should be assigned to database accounts via database roles.",
       "desc": "Privileges granted outside the role of the administrative user job function are more likely to go unmanaged or without oversight for authorization. Maintenance of privileges using roles defined for discrete job functions offers improved oversight of administrative user privilege assignments and helps to protect against unauthorized privilege assignment.",
@@ -394,10 +494,15 @@
         "gid": "V-15628",
         "rid": "SV-24746r2_rule",
         "stig_id": "DG0119-ORACLE11",
+        "gtitle": "DBMS application user role privileges",
         "fix_id": "F-3788r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15628",
       "title": "DBMS application users should not be granted administrative privileges to the DBMS.",
       "desc": "Excessive privileges can lead to unauthorized actions on data and database objects. Assigning only the privileges required to perform the job function authorized for the user helps protect against exploits against application vulnerabilities such as SQL injection attacks. The recommended method is to grant access only to stored procedures that perform only static actions on the data authorized for the user. Where this is not feasible, consider using data views or other methods to restrict users to only the data suitable for their job function.",
@@ -413,11 +518,16 @@
         "gid": "V-15629",
         "rid": "SV-24755r2_rule",
         "stig_id": "DG0121-ORACLE11",
+        "gtitle": "DBMS application user privilege assignment",
         "fix_id": "F-3792r1_fix",
+        "rationale": null,
         "false_positives": "NOTE: This check may report false positives where other ORACLE products have been installed. Accounts installed with other Oracle products are exempt from this requirement.",
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15629",
       "title": "Application users privileges should be restricted to assignment using application user roles.",
       "desc": "Granting permissions to accounts is error prone and repetitive. Using roles allows for group management of privileges assigned by function and reduces the likelihood of wrongfully assigned privileges. Assign permissions to roles and then grant the roles to accounts.",
@@ -433,10 +543,15 @@
         "gid": "V-15630",
         "rid": "SV-24764r1_rule",
         "stig_id": "DG0122-ORACLE11",
+        "gtitle": "Sensitive data access",
         "fix_id": "F-3800r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15630",
       "title": "Access to sensitive data should be restricted to authorized users identified by the Information Owner.",
       "desc": "The Oracle parameter file contains configuration settings that are applied to the database at database and instance startup. Unauthorized changes to these parameters could lead to a compromise of the database security posture. Oracle data and redo log files contain the data and transaction information that support the database use. Unauthorized access to these files bypasses access controls defined and enforced by the DBMS itself and can lead to a loss of confidentiality and integrity.",
@@ -452,10 +567,15 @@
         "gid": "V-15631",
         "rid": "SV-24772r2_rule",
         "stig_id": "DG0123-ORACLE11",
+        "gtitle": "DBMS Administrative data access",
         "fix_id": "F-26380r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15631",
       "title": "Access to DBMS system tables and other configuration or metadata should be restricted to DBAs.",
       "desc": "System tables and DBA views contain information such as user, system and data that could lead to unauthorized access. Revoke any privileges granted to non-DBA accounts that provide direct access to objects owned by SYS or access to DBA views (DBA_%).",
@@ -471,10 +591,15 @@
         "gid": "V-15632",
         "rid": "SV-24775r1_rule",
         "stig_id": "DG0124-ORACLE11",
+        "gtitle": "DBA account use",
         "fix_id": "F-2624r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15632",
       "title": "Use of DBA accounts should be restricted to administrative activities.",
       "desc": "Use of privileged accounts for non-administrative purposes puts data at risk of unintended or unauthorized loss, modification or exposure. In particular, DBA accounts if used for non-administration application development or application maintenance can lead to miss-assignment of privileges where privileges are inherited by object owners. It may also lead to loss or compromise of application data where the elevated privileges bypass controls designed in and provided by applications.",
@@ -490,10 +615,15 @@
         "gid": "V-15633",
         "rid": "SV-24787r2_rule",
         "stig_id": "DG0126-ORACLE11",
+        "gtitle": "DBMS account password reuse",
         "fix_id": "F-26384r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15633",
       "title": "Password reuse should be prevented where supported by the DBMS.",
       "desc": "Password reuse restrictions protect against bypass of password expiration requirements and help protect accounts from password guessing attempts. The DoDI 8500.2 specifies preventing password reuse to the extent system capabilities permit. The PASSWORD_REUSE_MAX value specifies the number of password changes before a password can be reused. The PASSWORD_REUSE_TIME value specifies the length of time before a password can be reused.",
@@ -509,10 +639,15 @@
         "gid": "V-15634",
         "rid": "SV-24792r1_rule",
         "stig_id": "DG0127-ORACLE11",
+        "gtitle": "DBMS account password easily guessed",
         "fix_id": "F-26386r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15634",
       "title": "DBMS account passwords should not be set to easily guessed words or values.",
       "desc": "DBMS account passwords set to common dictionary words or values render accounts vulnerable to password guessing attacks and unauthorized access.",
@@ -528,11 +663,16 @@
         "gid": "V-15635",
         "rid": "SV-24796r3_rule",
         "stig_id": "DG0128-ORACLE11",
+        "gtitle": "DBMS default passwords",
         "fix_id": "F-26388r2_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "If all of the accounts listed show an account status of LOCKED & EXPIRED or LOCKED this is a Finding, but downgrade the severity Category Code to II.",
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15635",
       "title": "DBMS default accounts should be assigned custom passwords.",
       "desc": "Oracle databases have several well-known default username/password combinations. Default passwords may provide unauthorized access to the server. Default accounts should be locked and expired when they are not required for daily operations. This finding is a Category I severity because the fully privileged Database Administrator accounts SYS and SYSTEM have well known default passwords and these accounts provide full access to the database.",
@@ -548,13 +688,18 @@
         "gid": "V-15637",
         "rid": "SV-24968r2_rule",
         "stig_id": "DG0130-ORACLE11",
+        "gtitle": "DBMS passwords in batch and applic. source code",
         "fix_id": "F-3413r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15637",
       "title": "DBMS passwords should not be stored in compiled, encoded or encrypted batch jobs or compiled, encoded or encrypted application source code.",
       "desc": "The storage of passwords in application source or batch job code that is compiled, encoded or encrypted prevents compliance with password expiration and other management requirements as well as provides another means for potential discovery.",
@@ -570,10 +715,15 @@
         "gid": "V-15639",
         "rid": "SV-24426r2_rule",
         "stig_id": "DG0133-ORACLE11",
+        "gtitle": "DBMS Account lock time",
         "fix_id": "F-26390r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15639",
       "title": "Unlimited account lock times should be specified for locked accounts.",
       "desc": "When no limit is imposed on failed logon attempts and accounts are not disabled after a set number of failed access attempts, then the DBMS account is vulnerable to sustained attack. When access attempts continue unrestricted, the likelihood of success is increased. A successful attempt results in unauthorized access to the database.",
@@ -589,10 +739,15 @@
         "gid": "V-15641",
         "rid": "SV-24429r1_rule",
         "stig_id": "DG0135-ORACLE11",
+        "gtitle": "DBMS connection alert",
         "fix_id": "F-26391r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15641",
       "title": "Users should be alerted upon login of previous successful connections or unsuccessful attempts to access their account.",
       "desc": "Unauthorized access to DBMS accounts may go undetected if account access is not monitored. Authorized users may serve as a reliable party to report unauthorized use of to their account.",
@@ -608,10 +763,15 @@
         "gid": "V-15642",
         "rid": "SV-24798r1_rule",
         "stig_id": "DG0138-ORACLE11",
+        "gtitle": "DBMS access to sensitive data",
         "fix_id": "F-26394r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15642",
       "title": "Access grants to sensitive data should be restricted to authorized user roles.",
       "desc": "Unauthorized access to sensitive data may compromise the confidentiality of personnel privacy, threaten national security or compromise a variety of other sensitive operations. Access controls are best managed by defining requirements based on distinct job functions and assigning access based on the job function assigned to the individual user.",
@@ -627,10 +787,15 @@
         "gid": "V-15644",
         "rid": "SV-24801r3_rule",
         "stig_id": "DG0141-ORACLE11",
+        "gtitle": "DBMS access control bypass",
         "fix_id": "F-22791r4_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15644",
       "title": "Attempts to bypass access controls should be audited.",
       "desc": "Configuring proper auditing is critical to recording any malicious events or detecting when attacks on the database occur. Auditing can be turned on for any SQL statement or any use of a system privilege. Auditing can be enabled for all users (system wide) or for specific users. You may indicate whether one audit record for each access to an object or one audit record for the entire session is generated. You can enable auditing for commands that result in success, commands that result in failure, or both. Not all audit options can be audited by session. Audit options set using the BY SESSION clause for those actions that will not produce a session audit record will default to BY ACCESS.",
@@ -646,10 +811,15 @@
         "gid": "V-15645",
         "rid": "SV-24805r3_rule",
         "stig_id": "DG0142-ORACLE11",
+        "gtitle": "DBMS Privileged action audit",
         "fix_id": "F-26396r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15645",
       "title": "Changes to configuration options must be audited.",
       "desc": "The AUDIT_SYS_OPERATIONS parameter is used to enable auditing of actions taken by the user SYS. The SYS user account is a shared account by definition and holds all privileges in the Oracle database. It is the account accessed by users connecting to the database with SYSDBA or SYSOPER privileges.",
@@ -665,10 +835,15 @@
         "gid": "V-15646",
         "rid": "SV-30881r1_rule",
         "stig_id": "DG0145-ORACLE11",
+        "gtitle": "DBMS audit record content",
         "fix_id": "F-27769r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15646",
       "title": "Audit records should contain required information.",
       "desc": "Complete forensically valuable data may be unavailable or accountability may be jeopardized when audit records do not contain sufficient information.",
@@ -684,10 +859,15 @@
         "gid": "V-15647",
         "rid": "SV-24976r1_rule",
         "stig_id": "DG0146-ORACLE11",
+        "gtitle": "DBMS connection block audit",
         "fix_id": "F-3790r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15647",
       "title": "Audit records should include the reason for blacklisting or disabling DBMS connections or accounts.",
       "desc": "Records of any disabling or locking of account actions taken by the DBMS can contain information valuable to decisions to employ additional responsive actions.",
@@ -703,10 +883,15 @@
         "gid": "V-15654",
         "rid": "SV-24817r1_rule",
         "stig_id": "DG0165-ORACLE11",
+        "gtitle": "DBMS symmetric key management",
         "fix_id": "F-26406r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15654",
       "title": "DBMS symmetric keys should be protected in accordance with NSA or NIST-approved key management technology or processes.",
       "desc": "Symmetric keys used for encryption protect data from unauthorized access. However, if not protected in accordance with acceptable standards, the keys themselves may be compromised and used for unauthorized data access.",
@@ -722,10 +907,15 @@
         "gid": "V-15657",
         "rid": "SV-24442r2_rule",
         "stig_id": "DG0172-ORACLE11",
+        "gtitle": "DBMS classification level audit",
         "fix_id": "F-26412r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15657",
       "title": "Changes to DBMS security labels should be audited.",
       "desc": "Some DBMS systems provide the feature to assign security labels to data elements. If labeling is required, implementation options include the Oracle Label Security package, or a third-party product, or custom-developed functionality. The confidentiality and integrity of the data depends upon the security label assignment where this feature is in use. Changes to security label assignment may indicate suspicious activity.",
@@ -741,10 +931,15 @@
         "gid": "V-15660",
         "rid": "SV-24838r2_rule",
         "stig_id": "DG0192-ORACLE11",
+        "gtitle": "DBMS fully-qualified name for remote access",
         "fix_id": "F-26424r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15660",
       "title": "Remote database or other external access should use fully-qualified names.",
       "desc": "The Oracle GLOBAL_NAMES parameter is used to set the requirement for database link names to be the same name as the remote database whose connection they define. By using the same name for both, ambiguity is avoided and unauthorized or unintended connections to remote databases are less likely.",
@@ -760,8 +955,13 @@
         "gid": "V-15747",
         "rid": "SV-24869r2_rule",
         "stig_id": "DO0233-ORACLE11",
-        "fix_id": "F-22818r2_fix"
+        "gtitle": "Oracle DIAGNOSTIC_DEST parameter",
+        "fix_id": "F-22818r2_fix",
+        "rationale": null
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-15747",
       "title": "The /diag subdirectory under the directory assigned to the DIAGNOSTIC_DEST parameter must be protected from unauthorized access.",
       "desc": "<0> [object Object]",
@@ -777,10 +977,15 @@
         "gid": "V-16033",
         "rid": "SV-60351r1_rule",
         "stig_id": "DO6748-ORACLE11",
+        "gtitle": "Oracle SEC_CASE_SENSITIVE_LOGON parameter",
         "fix_id": "F-16077r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-16033",
       "title": "Case sensitivity for passwords should be enabled.",
       "desc": "Enablement of password case sensitivity allows Oracle password complexity to meet DoD password requirements. Password complexity decreases the likelihood of successful password attacks by malicious users.",
@@ -796,10 +1001,15 @@
         "gid": "V-16035",
         "rid": "SV-55939r2_rule",
         "stig_id": "DO6749-ORACLE11",
+        "gtitle": "Oracle SEC_MAX_FAILED_LOGIN_ATTEMPTS parameter",
         "fix_id": "F-16078r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-16035",
       "title": "The Oracle SEC_MAX_FAILED_LOGIN_ATTEMPTS parameter should be set to an ISSO-approved value between 1 and 3.",
       "desc": "The SEC_MAX_FAILED_LOGIN_ATTEMPTS prevents multiple failed login attempts by a single connection. The parameter differs from the limit set on user profiles and applied to failed login attempts to a single user account. Limiting failed authentication attempts by a single connection helps protect against Denial of Service (DoS) attacks and authentication attempts against multiple user accounts.",
@@ -815,10 +1025,15 @@
         "gid": "V-16053",
         "rid": "SV-55940r2_rule",
         "stig_id": "DO6750-ORACLE11",
+        "gtitle": "Oracle SEC_PROTOCOL_ERROR_FURTHER_ACTION parameter",
         "fix_id": "F-16156r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-16053",
       "title": "The Oracle SEC_PROTOCOL_ERROR_FURTHER_ACTION parameter should be set to a value of DELAY or DROP.",
       "desc": "The database is vulnerable to exhaustion of resources that could result in a Denial of Service (DoS) to other clients if not protected from a flood of bad packets submitted by a malicious or errant client connection. The sec_protocol_error_further_action initialization parameter can be set to delay or drop acceptance of bad packets from a client in order to support the continued function of other non-problematic connections.",
@@ -834,13 +1049,18 @@
         "gid": "V-2424",
         "rid": "SV-24632r1_rule",
         "stig_id": "DG0060-ORACLE11",
+        "gtitle": "All database non-interactive, n-tier connection, a",
         "fix_id": "F-26170r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2424",
       "title": "All database non-interactive, n-tier connection, and shared accounts that exist should be documented and approved by the IAO.",
       "desc": "Group authentication does not provide individual accountability for actions taken on the DBMS or data. Whenever a single database account is used to connect to the database, a secondary authentication method that provides individual account ability is required. This scenario most frequently occurs when an externally hosted application authenticates individual users to the application and the application uses a single account to retrieve or update database information on behalf of the individual users.",
@@ -856,10 +1076,15 @@
         "gid": "V-2507",
         "rid": "SV-24368r1_rule",
         "stig_id": "DG0030-ORACLE11",
+        "gtitle": "DBMS audit data maintenance",
         "fix_id": "F-23729r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2507",
       "title": "Audit trail data should be retained for one year.",
       "desc": "Without preservation, a complete discovery of an attack or suspicious activity may not be determined. DBMS audit data also contributes to the complete investigation of unauthorized activity and needs to be included in audit retention plans and procedures.",
@@ -875,10 +1100,15 @@
         "gid": "V-2508",
         "rid": "SV-24647r1_rule",
         "stig_id": "DG0070-ORACLE11",
+        "gtitle": "DBMS user account authorization",
         "fix_id": "F-26183r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2508",
       "title": "Unauthorized user accounts should not exist.",
       "desc": "Unauthorized user accounts provide unauthorized access to the database and may allow access to database objects. Only authorized users should be granted database accounts.",
@@ -894,13 +1124,18 @@
         "gid": "V-2511",
         "rid": "SV-24850r1_rule",
         "stig_id": "DO0140-ORACLE11",
+        "gtitle": "Oracle default account access",
         "fix_id": "F-26436r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2511",
       "title": "Access to the Oracle SYS and SYSTEM accounts should be restricted to authorized DBAs.",
       "desc": "The Oracle SYS account has all database privileges assigned to it (SYSDBA). This account is used to manage the database availability status (startup and shutdown). The SYS account is used by any DBMS account that connects to the database with SYSDBA privileges. Direct use of the SYS account does not provide a level of individual accountability for actions taken during its use and does not provide individual accountability. To preserve accountability, direct access to the SYS account should be logged manually and its use monitored closely.",
@@ -916,10 +1151,15 @@
         "gid": "V-2515",
         "rid": "SV-24859r2_rule",
         "stig_id": "DO0190-ORACLE11",
+        "gtitle": "Oracle audit table ownership",
         "fix_id": "F-26445r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2515",
       "title": "The audit table should be owned by SYS or SYSTEM.",
       "desc": "Audit data is frequently targeted by malicious users as it can provide a means to detect their activity. The protection of the audit trail data is of special concern and requires restrictions to allow only the auditor and DBMS backup, recovery, and maintenance users access to it.",
@@ -935,13 +1175,18 @@
         "gid": "V-2516",
         "rid": "SV-24862r1_rule",
         "stig_id": "DO0210-ORACLE11",
+        "gtitle": "Oracle shared replication account access",
         "fix_id": "F-26447r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2516",
       "title": "Access to default accounts used to support replication should be restricted to authorized DBAs.",
       "desc": "Replication database accounts are used for database connections between databases. Replication requires the configuration of these accounts using the same username and password on all databases participating in the replication. Replication connections use fixed user database links. This means that access to the replication account on one server provides access to the other servers participating in the replication. Granting unauthorized access to the replication account provides unauthorized and privileged access to all databases participating in the replication group.",
@@ -957,10 +1202,15 @@
         "gid": "V-2517",
         "rid": "SV-24865r1_rule",
         "stig_id": "DO0220-ORACLE11",
+        "gtitle": "Oracle instance names",
         "fix_id": "F-26449r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2517",
       "title": "Oracle instance names should not contain Oracle version numbers.",
       "desc": "Service names may be discovered by unauthenticated users. If the service name includes version numbers or other database product information, a malicious user may use that information to develop a targeted attack.",
@@ -976,13 +1226,18 @@
         "gid": "V-2519",
         "rid": "SV-24881r2_rule",
         "stig_id": "DO0240-ORACLE11",
+        "gtitle": "Oracle OS_ROLES parameter",
         "fix_id": "F-26462r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2519",
       "title": "The Oracle OS_ROLES parameter should be set to FALSE.",
       "desc": "The OS_ROLES parameter specifies whether Oracle roles are defined and managed by the DBMS or by the host operating system. To maintain and support the separation of duties between host system administration and DBMS administration, the DBMS must be configured to use only roles defined and managed by the DBA. Separation of duties supports assignment of privileges by job function and supports accountability.",
@@ -998,10 +1253,15 @@
         "gid": "V-2520",
         "rid": "SV-24519r2_rule",
         "stig_id": "DO0250-ORACLE11",
+        "gtitle": "Oracle database link usage",
         "fix_id": "F-26494r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2520",
       "title": "Fixed user and public database links should be authorized for use.",
       "desc": "Database links define connections that may be used by the local database to access remote Oracle databases. These links provide a means for a compromise to the local database to spread to remote databases in the distributed database environment. Limiting or eliminating use of database links where they are not required to support the operational system can help isolate compromises to the local or a limited number of databases.",
@@ -1017,10 +1277,15 @@
         "gid": "V-2521",
         "rid": "SV-24887r1_rule",
         "stig_id": "DO0260-ORACLE11",
+        "gtitle": "Oracle control file availability",
         "fix_id": "F-26497r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2521",
       "title": "A minimum of two Oracle control files should be defined and configured to be stored on separate, archived physical disks or archived directories on a RAID device.",
       "desc": "Oracle control files are used to store information critical to Oracle database integrity. Oracle uses these files to maintain time synchronization of database files as well as at system startup to verify the validity of system data and log files. Loss of access to the control files can affect database availability, integrity and recovery.",
@@ -1036,10 +1301,15 @@
         "gid": "V-2522",
         "rid": "SV-24522r2_rule",
         "stig_id": "DO0270-ORACLE11",
+        "gtitle": "Oracle redo log file availability",
         "fix_id": "F-26500r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2522",
       "title": "A minimum of two Oracle redo log groups/files should be defined and configured to be stored on separate, archived physical disks or archived directories on a RAID device.",
       "desc": "The Oracle redo log files store the detailed information on changes made to the database. This information is critical to database recovery in case of a database failure.",
@@ -1055,10 +1325,15 @@
         "gid": "V-2527",
         "rid": "SV-24549r2_rule",
         "stig_id": "DO3440-ORACLE11",
+        "gtitle": "Oracle DBA role assignment",
         "fix_id": "F-26521r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2527",
       "title": "The DBA role should not be granted to unauthorized user accounts.",
       "desc": "The DBA role is very powerful and access to it should be restricted. Verify that any database account granted the DBA role is explicitly authorized by the IAO. In addition to full access to database objects, access to the DBA role by unauthorized accounts may provide full access to the server. Verify that individual DBA accounts are created for each DBA and that the DBA accounts are used only for DBA functions.",
@@ -1074,13 +1349,18 @@
         "gid": "V-2531",
         "rid": "SV-24902r2_rule",
         "stig_id": "DO3447-ORACLE11",
+        "gtitle": "Oracle OS_AUTHENT_PREFIX parameter",
         "fix_id": "F-26523r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": [
           "Database Administrator",
           "Information Assurance Officer"
         ]
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2531",
       "title": "The Oracle OS_AUTHENT_PREFIX parameter should be changed from the default value of OPS$.",
       "desc": "The OS_AUTHENT_PREFIX parameter defines the prefix for database account names to be identified EXTERNALLY by the operating system. When set to the special value of OPS$, accounts defined with the prefix of OPS$ may authenticate either with a password or with OS authentication. Use of more than one authentication method to access a single account results in a loss of accountability, that is, it is similar to a shared account. Setting this parameter to a value other than OPS$ prevents a shared usage of a single account.",
@@ -1096,10 +1376,15 @@
         "gid": "V-2533",
         "rid": "SV-24905r3_rule",
         "stig_id": "DO3451-ORACLE11",
+        "gtitle": "WITH GRANT OPTION privileges",
         "fix_id": "F-26525r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2533",
       "title": "The Oracle WITH GRANT OPTION privilege should not be granted to non-DBA or non-Application administrator user accounts.",
       "desc": "An account permission to grant privileges within the database is an administrative function. Minimizing the number and privileges of administrative accounts reduces the chances of privileged account exploitation. Application user accounts should never require WITH GRANT OPTION privileges since, by definition, they require only privileges to execute procedures or view / edit data.",
@@ -1115,10 +1400,15 @@
         "gid": "V-2539",
         "rid": "SV-24908r2_rule",
         "stig_id": "DO3475-ORACLE11",
+        "gtitle": "Oracle PUBLIC access to restricted packages",
         "fix_id": "F-22841r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2539",
       "title": "Execute permission should be revoked from PUBLIC for restricted Oracle packages.",
       "desc": "Access to the following packages should be restricted to authorized accounts only. UTL_FILE: allows Oracle accounts to read and write files on the host operating system. UTL_SMTP: allows messages to be sent from an arbitrary user. UTL_TCP: allows arbitrary data to be sent from the database server. UTL_HTTP: allows the database server to send and receive data via HTTP. DBMS_RANDOM: allows encrypting of data without requiring safe management of encryption keys. DBMS_LOB: allows users access to files stored outside the database. DBMS_SQL: allows users to write dynamic SQL procedures. DBMS_SYS_SQL: allows users to execute SQL with DBA privileges. DBMS_JOB: allows users to submit jobs to the database job queue. DBMS_BACKUP_RESTORE: allows users to backup and restore database data. DBMS_OBFUSCATION_TOOLKIT: allows users access to encryption and decryption functions.",
@@ -1134,10 +1424,15 @@
         "gid": "V-2552",
         "rid": "SV-24564r2_rule",
         "stig_id": "DO3536-ORACLE11",
+        "gtitle": "Oracle IDLE_TIME profile parameter",
         "fix_id": "F-26529r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2552",
       "title": "The IDLE_TIME profile parameter should be set for Oracle profiles IAW DoD policy.",
       "desc": "The Idle Time Resource Usage setting limits the maximum idle time allowed in a session. Idle time is a continuous inactive period during a session, expressed in minutes. Long-running queries and other operations are not subject to this limit. Setting an Idle Time Resource Usage limit helps prevent users from leaving applications open when they are away from their desks.",
@@ -1153,11 +1448,16 @@
         "gid": "V-2554",
         "rid": "SV-24911r2_rule",
         "stig_id": "DO3538-ORACLE11",
+        "gtitle": "Oracle REMOTE_OS_AUTHENT parameter",
         "fix_id": "F-26531r1_fix",
+        "rationale": null,
         "documentable": false,
         "severity_override_guidance": "This finding may be downgraded to a Category II severity code if the following mitigations have been implemented: 1) A logon trigger verifies that any connections to accounts identified externally come from a single, specific IP address and kills the connection if determined otherwise, and 2) To help prevent access by a spoofed IP address, the single connecting system and the database host are isolated behind a firewall with either Network Address Translation (NAT) implemented and/or the firewall is configured to reject connections from the single source IP address originating outside the isolated segment.",
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2554",
       "title": "The Oracle REMOTE_OS_AUTHENT parameter should be set to FALSE.",
       "desc": "Setting this value to TRUE allows operating system authentication over an unsecured connection. Trusting remote operating systems can allow a user to impersonate another operating system user and connect to the database without having to supply a password. If REMOTE_OS_AUTHENT is set to true, the only information a remote user needs to connect to the database is the name of any user whose account is setup to be authenticated by the operating system.",
@@ -1173,10 +1473,15 @@
         "gid": "V-2555",
         "rid": "SV-24916r2_rule",
         "stig_id": "DO3539-ORACLE11",
+        "gtitle": "Oracle REMOTE_OS_ROLES parameter",
         "fix_id": "F-26533r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2555",
       "title": "The Oracle REMOTE_OS_ROLES parameter should be set to FALSE.",
       "desc": "Setting REMOTE_OS_ROLES to TRUE allows operating system groups to control Oracle roles. The default value of FALSE causes roles to be identified and managed by the database. If REMOTE_OS_ROLES is set to TRUE, a remote user could impersonate another operating system user over a network connection.",
@@ -1192,10 +1497,15 @@
         "gid": "V-2556",
         "rid": "SV-24919r2_rule",
         "stig_id": "DO3540-ORACLE11",
+        "gtitle": "Oracle SQL92_SECURITY parameter",
         "fix_id": "F-26535r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2556",
       "title": "The Oracle SQL92_SECURITY parameter should be set to TRUE.",
       "desc": "The configuration option SQL92_SECURITY specifies whether table-level SELECT privileges are required to execute an update or delete that references table column values. If this option is disabled (set to FALSE), the UPDATE privilege can be used to determine values that should require SELECT privileges.",
@@ -1211,10 +1521,15 @@
         "gid": "V-2558",
         "rid": "SV-24922r2_rule",
         "stig_id": "DO3546-ORACLE11",
+        "gtitle": "Oracle REMOTE_LOGIN_PASSWORDFILE parameter",
         "fix_id": "F-26537r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2558",
       "title": "The Oracle REMOTE_LOGIN_PASSWORDFILE parameter should be set to EXCLUSIVE or NONE.",
       "desc": "The REMOTE_LOGIN_PASSWORDFILE setting of \"NONE\" disallows remote administration of the database. The REMOTE_LOGIN_PASSWORDFILE setting of \"EXCLUSIVE\" allows for auditing of individual DBA logins to the SYS account. If not set to \"EXCLUSIVE\", remote connections to the database as \"internal\" or \"as SYSDBA\" are not logged to an individual account.",
@@ -1230,10 +1545,15 @@
         "gid": "V-2561",
         "rid": "SV-24925r2_rule",
         "stig_id": "DO3609-ORACLE11",
+        "gtitle": "System privileges granted WITH ADMIN OPTION",
         "fix_id": "F-26540r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2561",
       "title": "System privileges granted using the WITH ADMIN OPTION should not be granted to unauthorized user accounts.",
       "desc": "The WITH ADMIN OPTION allows the grantee to grant a privilege to another database account. Best security practice restricts the privilege of assigning privileges to authorized personnel. Authorized personnel include DBA's, object owners, and, where designed and included in the application's functions, application administrators. Restricting privilege-granting functions to authorized accounts can help decrease mismanagement of privileges and wrongful assignments to unauthorized accounts.",
@@ -1249,10 +1569,15 @@
         "gid": "V-2562",
         "rid": "SV-24928r2_rule",
         "stig_id": "DO3610-ORACLE11",
+        "gtitle": "Oracle minimum object auditing",
         "fix_id": "F-26541r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2562",
       "title": "Required object auditing should be configured.",
       "desc": "Database object definitions and configurations require similar oversight as application libraries to detect unauthorized changes. Unauthorized changes may indicate attempts to compromise data or application object integrity or confidentiality. Any access to audit data objects stored in the database must be audited to detect any attempts to compromise the audit trail. A compromise to audit data could jeopardize accountability for unauthorized actions.",
@@ -1268,10 +1593,15 @@
         "gid": "V-2564",
         "rid": "SV-24931r2_rule",
         "stig_id": "DO3612-ORACLE11",
+        "gtitle": "Oracle system privilege assignment",
         "fix_id": "F-26544r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2564",
       "title": "System Privileges should not be granted to PUBLIC.",
       "desc": "System privileges can be granted to users and roles and to the user group PUBLIC. All privileges granted to PUBLIC are accessible to every user in the database. Many of these privileges convey considerable authority over the database and be granted only to those persons responsible for administering the database. In general, these privileges should be granted to roles and then the appropriate roles should be granted to users. System privileges should never be granted to PUBLIC as this could allow users to compromise the database.",
@@ -1287,10 +1617,15 @@
         "gid": "V-2574",
         "rid": "SV-24570r2_rule",
         "stig_id": "DO3622-ORACLE11",
+        "gtitle": "Oracle roles granted WITH ADMIN OPTION",
         "fix_id": "F-26547r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2574",
       "title": "Oracle roles granted using the WITH ADMIN OPTION should not be granted to unauthorized accounts.",
       "desc": "The WITH ADMIN OPTION allows the grantee to grant a role to another database account. Best security practice restricts the privilege of assigning privileges to authorized personnel. Authorized personnel include DBA's, object owners, and, where designed and included in the application's functions, application administrators. Restricting privilege-granting functions to authorized accounts can help decrease mismanagement of privileges and wrongful assignments to unauthorized accounts.",
@@ -1306,10 +1641,15 @@
         "gid": "V-2586",
         "rid": "SV-24937r2_rule",
         "stig_id": "DO3685-ORACLE11",
+        "gtitle": "Oracle O7_DICTIONARY_ACCESSIBILITY parameter",
         "fix_id": "F-26549r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2586",
       "title": "The Oracle O7_DICTIONARY_ACCESSIBILITY parameter should be set to FALSE.",
       "desc": "The database data dictionary tables contain the data used by the database for database functions including database authentication and authorization as well as database configuration and control. By default, the parameter O7_DICTIONARY_ACCESSIBILITY is set to FALSE to prevent accounts with the privilege SELECT ANY TABLE from selecting the data dictionary tables. This setting protects the data dictionary from unintended access authorization by requiring full system privileges or direct table access permissions.",
@@ -1325,11 +1665,16 @@
         "gid": "V-2589",
         "rid": "SV-24573r2_rule",
         "stig_id": "DO3689-ORACLE11",
+        "gtitle": "Oracle object permission assignment to PUBLIC",
         "fix_id": "F-26551r1_fix",
+        "rationale": null,
         "false_positives": "This check may return false positives where other Oracle product accounts are not included in the exclusion list.",
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2589",
       "title": "Object permissions granted to PUBLIC should be restricted.",
       "desc": "Permissions on objects may be granted to the user group PUBLIC. Because every database user is a member of the PUBLIC group, granting object permissions to PUBLIC gives all users in the database access to that object. In a secure environment, granting object permissions to PUBLIC should be restricted to those objects that all users are allowed to access. The policy does not require object permissions assigned to PUBLIC by the installation of Oracle Database server components be revoked (with exception of the packages listed in DO3475).",
@@ -1345,10 +1690,15 @@
         "gid": "V-2593",
         "rid": "SV-24942r2_rule",
         "stig_id": "DO3696-ORACLE11",
+        "gtitle": "Oracle RESOURCE_LIMIT parameter",
         "fix_id": "F-26553r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-2593",
       "title": "The Oracle RESOURCE_LIMIT parameter should be set to TRUE.",
       "desc": "The Oracle RESOURCE_LIMIT parameter determines whether resource limits are enforced in database profiles. If Oracle resource limits are disabled, any defined profile limits will be ignored. NOTE: This does not apply to password resources.",
@@ -1364,10 +1714,15 @@
         "gid": "V-3437",
         "rid": "SV-24896r2_rule",
         "stig_id": "DO0320-ORACLE11",
+        "gtitle": "Oracle PUBLIC role privileges",
         "fix_id": "F-26510r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3437",
       "title": "Application role permissions should not be assigned to the Oracle PUBLIC role.",
       "desc": "Application roles have been granted to PUBLIC. Permissions granted to PUBLIC are granted to all users of the database. Custom roles should be used to assign application permissions to functional groups of application users. The installation of Oracle does not assign role permissions to PUBLIC.",
@@ -1383,10 +1738,15 @@
         "gid": "V-3438",
         "rid": "SV-24531r2_rule",
         "stig_id": "DO0340-ORACLE11",
+        "gtitle": "Oracle application administration roles enablement",
         "fix_id": "F-26513r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3438",
       "title": "Oracle application administration roles should be disabled if not required and authorized.",
       "desc": "Application administration roles, which are assigned system or elevated application object privileges, should be protected from default activation. Application administration roles are determined by system privilege assignment (create / alter / drop user) and application user role ADMIN OPTION privileges.",
@@ -1402,10 +1762,15 @@
         "gid": "V-3439",
         "rid": "SV-24534r2_rule",
         "stig_id": "DO0350-ORACLE11",
+        "gtitle": "Oracle system privilege assignment",
         "fix_id": "F-26515r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3439",
       "title": "Oracle system privileges should not be directly assigned to unauthorized accounts.",
       "desc": "System privileges allow system-wide changes to the database or database objects. Unauthorized use of system privileges may jeopardize production applications, application data, or the database configuration and operation.",
@@ -1421,11 +1786,16 @@
         "gid": "V-3727",
         "rid": "SV-24355r2_rule",
         "stig_id": "DG0015-ORACLE11",
+        "gtitle": "Database applications use DDL statements to modify",
         "fix_id": "F-17993r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Information Assurance Officer",
         "ia_controls": "ECSD-1, ECSD-2"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3727",
       "title": "Database applications should be restricted from using static DDL statements to modify the application schema.",
       "desc": "Application users by definition and job function require only the permissions to manipulate data within database objects and execute procedures within the database. The statements used to define objects in the database are referred to as Data Definition Language (DDL) statements and include the CREATE, DROP, and ALTER object statements (DDL statements do not include CREATE USER, DROP USER, or ALTER USER actions). This requirement is included here as a production system would by definition not support changes to the data definitions. Where object creation is an indirect result of DBMS operation or dynamic object structures are required by the application function as is found in some object-oriented DBMS applications, this restriction does not apply. Re-use of static data structures to recreate temporary data objects are not exempted.",
@@ -1441,10 +1811,15 @@
         "gid": "V-3808",
         "rid": "SV-60353r2_rule",
         "stig_id": "DG0051-ORACLE11",
+        "gtitle": "Database job/batch queue monitoring",
         "fix_id": "F-26158r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3808",
       "title": "Database job/batch queues should be reviewed regularly to detect unauthorized database job submissions.",
       "desc": "Unauthorized users may bypass security mechanisms by submitting jobs to job queues managed by the database to be run under a more privileged security context of the database or host system. These queues should be monitored regularly to detect any such unauthorized job submissions.",
@@ -1460,10 +1835,15 @@
         "gid": "V-3810",
         "rid": "SV-25026r1_rule",
         "stig_id": "DG0065-ORACLE11",
+        "gtitle": "DBMS PKI authentication",
         "fix_id": "F-2540r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Information Assurance Officer"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3810",
       "title": "DBMS authentication should require use of a DoD PKI certificate.",
       "desc": "In a properly configured DBMS, access controls defined for data access and DBMS management actions are assigned based on the user identity and job function. Unauthenticated or falsely authenticated access leads directly to the potential unauthorized access, misuse and lost accountability of data and activities within the DBMS. Use of PKI certificates for authentication to the DBMS provides a robust mechanism to ensure identity to authorize access to the DBMS.",
@@ -1479,10 +1859,15 @@
         "gid": "V-3815",
         "rid": "SV-24387r3_rule",
         "stig_id": "DG0071-ORACLE11",
+        "gtitle": "DBMS password change variance",
         "fix_id": "F-25981r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3815",
       "title": "New passwords must be required to differ from old passwords by more than four characters.",
       "desc": "Changing passwords frequently can thwart password-guessing attempts or re-establish protection of a compromised DBMS account. Minor changes to passwords may not accomplish this as password guessing may be able to continue to build on previous guesses or the new password may be easily guessed using the old password.",
@@ -1498,10 +1883,15 @@
         "gid": "V-3817",
         "rid": "SV-24650r2_rule",
         "stig_id": "DG0073-ORACLE11",
+        "gtitle": "DBMS failed login account lock",
         "fix_id": "F-2561r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3817",
       "title": "Database accounts should not specify account lock times less than the site-approved minimum.",
       "desc": "The FAILED_LOGIN_ATTEMPTS value limits the number of failed login attempts allowed before an account is locked. Setting this value limits the ability of unauthorized users to guess passwords and alerts the DBA when password guessing has occurred (accounts display as locked). For non-interactive accounts, the number of failed logins should be set to an IAO-approved value.",
@@ -1517,10 +1907,15 @@
         "gid": "V-3818",
         "rid": "SV-24389r2_rule",
         "stig_id": "DG0075-ORACLE11",
+        "gtitle": "DBMS links to external databases",
         "fix_id": "F-2567r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3818",
       "title": "Unauthorized database links should not be defined and active.",
       "desc": "DBMS links provide a communication and data transfer path definition between two databases that may be used by malicious users to discover and obtain unauthorized access to remote systems. Database links between production and development DBMSs provide a means for developers to access production data not authorized for their access or to introduce untested or unauthorized applications to the production database. Only protected, controlled, and authorized downloads of any production data to use for development should be allowed. Only applications that have completed the configuration management process should be introduced by the application object owner account to the production system.",
@@ -1536,10 +1931,15 @@
         "gid": "V-3819",
         "rid": "SV-24654r3_rule",
         "stig_id": "DG0076-ORACLE11",
+        "gtitle": "Sensitive data import to development DBMS",
         "fix_id": "F-25679r2_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3819",
       "title": "Sensitive information from production database exports must be modified before import to a development database.",
       "desc": "Data export from production databases may include sensitive data. Application developers do not have a need to know for sensitive data. Any access they may have to production data would be considered unauthorized access and subject the sensitive data to unlawful or unauthorized disclosure. See DODD 8500.1 for a definition of Sensitive Information.",
@@ -1555,10 +1955,15 @@
         "gid": "V-3820",
         "rid": "SV-24391r2_rule",
         "stig_id": "DG0077-ORACLE11",
+        "gtitle": "Production data protection on a shared system",
         "fix_id": "F-25685r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3820",
       "title": "Production databases should be protected from unauthorized access by developers on shared production/development host systems.",
       "desc": "Developers granted elevated database, operating system privileges on systems that support both development, and production databases can affect the operation and/or security of the production database system. Operating system and database privileges assigned to developers on shared development and production systems should be restricted.",
@@ -1574,10 +1979,15 @@
         "gid": "V-3821",
         "rid": "SV-24668r1_rule",
         "stig_id": "DG0080-ORACLE11",
+        "gtitle": "DBMS application user privilege assignment review",
         "fix_id": "F-2583r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3821",
       "title": "Application user privilege assignment should be reviewed monthly or more frequently to ensure compliance with least privilege and documented policy.",
       "desc": "Users granted privileges not required to perform their assigned functions are able to make unauthorized modifications to the production data or database. Monthly or more frequent periodic review of privilege assignments assures that organizational and/or functional changes are reflected appropriately.",
@@ -1593,10 +2003,15 @@
         "gid": "V-3823",
         "rid": "SV-28568r2_rule",
         "stig_id": "DG0091-ORACLE11",
+        "gtitle": "DBMS source code encoding or encryption",
         "fix_id": "F-25838r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3823",
       "title": "Custom and GOTS application source code stored in the database should be protected with encryption or encoding.",
       "desc": "Source code may include information on data relationships, locations of sensitive data that are otherwise obscured, or other processing information that could aid a malicious user. Encoding or encryption of the custom source code objects within the database helps protect against this type of disclosure.",
@@ -1612,10 +2027,15 @@
         "gid": "V-3846",
         "rid": "SV-24856r4_rule",
         "stig_id": "DO0155-ORACLE11",
+        "gtitle": "Oracle default tablespace assignment",
         "fix_id": "F-26440r3_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3846",
       "title": "Only authorized system accounts should have the SYSTEM tablespace specified as the default tablespace.",
       "desc": "The Oracle SYSTEM tablespace is used by the database to store all DBMS system objects. Other use of the system tablespace may compromise system availability and the effectiveness of host system access controls to the tablespace files.",
@@ -1631,10 +2051,15 @@
         "gid": "V-3847",
         "rid": "SV-24501r2_rule",
         "stig_id": "DO0157-ORACLE11",
+        "gtitle": "Oracle storage use privileges",
         "fix_id": "F-26442r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3847",
       "title": "Database application user accounts should be denied storage usage for object creation within the database.",
       "desc": "Tablespace storage quotas allow limits on storage use to be assigned to Oracle database users. Although this does not grant the user the privilege to create objects within the database, it provides an additional method to restrict unauthorized object creation and ownership.",
@@ -1650,10 +2075,15 @@
         "gid": "V-3848",
         "rid": "SV-24868r2_rule",
         "stig_id": "DO0221-ORACLE11",
+        "gtitle": "Oracle default SID name",
         "fix_id": "F-26451r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3848",
       "title": "The Oracle SID should not be the default SID.",
       "desc": "Use of the default Oracle System Identifier (SID) leaves the database vulnerable to attacks that target Oracle installations running under default SID. Using a custom name helps protect the database against this kind of targeted attack.",
@@ -1669,10 +2099,15 @@
         "gid": "V-3849",
         "rid": "SV-24510r3_rule",
         "stig_id": "DO0231-ORACLE11",
+        "gtitle": "Oracle application object owner tablespaces",
         "fix_id": "F-26453r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3849",
       "title": "Application owner accounts should have a dedicated application tablespace.",
       "desc": "Separation of tablespaces by application helps to protect the application from resource contention and unauthorized access that could result from storage space reuses or host system access controls. Application data should be stored separately from system and custom user-defined objects to facilitate administration and management of its data storage. The SYSTEM tablespace should never be used for application data storage in order to prevent resource contention and performance degradation.",
@@ -1688,10 +2123,15 @@
         "gid": "V-3850",
         "rid": "SV-24872r1_rule",
         "stig_id": "DO0234-ORACLE11",
+        "gtitle": "Oracle AUDIT_FILE_DEST parameter",
         "fix_id": "F-26455r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3850",
       "title": "The directory assigned to the AUDIT_FILE_DEST parameter should be protected from unauthorized access.",
       "desc": "The AUDIT_FILE_DEST parameter specifies the directory where the database audit trail file is stored (when AUDIT_TRAIL parameter is set to ‘OS’, ‘xml’ or ‘xml, extended’ where supported by the DBMS). Unauthorized access or loss of integrity of the audit trail could result in loss of accountability or the ability to detect suspicious activity. This directory also contains the audit trail of the SYS and SYSTEM accounts that captures privileged database events when the database is not running (when AUDIT_SYS_OPERATIONS parameter is set to TRUE).",
@@ -1707,10 +2147,15 @@
         "gid": "V-3854",
         "rid": "SV-24513r1_rule",
         "stig_id": "DO0238-ORACLE11",
+        "gtitle": "Oracle LOG_ARCHIVE_DEST parameter",
         "fix_id": "F-26460r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3854",
       "title": "The directories assigned to the LOG_ARCHIVE_DEST* parameters should be protected from unauthorized access.",
       "desc": "The LOG_ARCHIVE_DEST parameter is used to specify the directory to which Oracle archive logs are written. Where the DBMS availability and recovery to a specific point in time is critical, the protection of archive log files is critical. Archive log files may also contain unencrypted sensitive data. If written to an inadequately protected or invalidated directory, the archive log files may be accessed by unauthorized persons or processes.",
@@ -1726,10 +2171,15 @@
         "gid": "V-3857",
         "rid": "SV-24884r2_rule",
         "stig_id": "DO0243-ORACLE11",
+        "gtitle": "Oracle _TRACE_FILES_PUBLIC parameter",
         "fix_id": "F-26468r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3857",
       "title": "The Oracle _TRACE_FILES_PUBLIC parameter if present should be set to FALSE.",
       "desc": "The _TRACE_FILES_PUBLIC parameter is used to make trace files used for debugging database applications and events available to all database users. Use of this capability precludes the discrete assignment of privileges based on job function. Additionally, its use may provide access to external files and data to unauthorized users.",
@@ -1745,10 +2195,15 @@
         "gid": "V-3865",
         "rid": "SV-24899r1_rule",
         "stig_id": "DO0420-ORACLE11",
+        "gtitle": "Oracle XML DB",
         "fix_id": "F-22836r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-3865",
       "title": "The XDB Protocol server should be uninstalled if not required and authorized for use.",
       "desc": "The XML DB supports storage and retrieval of XML data objects in the Oracle Database. It requires the configuration of an Oracle shared-server dispatcher that is activated / used by the Oracle listener to pass http XML requests. If this service is not required, it should be uninstalled.",
@@ -1764,10 +2219,15 @@
         "gid": "V-5683",
         "rid": "SV-24589r2_rule",
         "stig_id": "DG0004-ORACLE11",
+        "gtitle": "DBMS application object owner accounts",
         "fix_id": "F-15683r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-5683",
       "title": "Application object owner accounts should be disabled when not performing installation or maintenance actions.",
       "desc": "Object ownership provides all database object permissions to the owned object. Access to the application object owner accounts requires special protection to prevent unauthorized access and use of the object ownership privileges. In addition to the high privileges to application objects assigned to this account, it is also an account that, by definition, is not accessed interactively except for application installation and maintenance. This reduced access to the account means that unauthorized access to the account could go undetected. To help protect the account, it should be enabled only when access is required.",
@@ -1783,10 +2243,15 @@
         "gid": "V-5685",
         "rid": "SV-24615r2_rule",
         "stig_id": "DG0029-ORACLE11",
+        "gtitle": "Database auditing",
         "fix_id": "F-22677r1_fix",
+        "rationale": null,
         "documentable": false,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-5685",
       "title": "Required auditing parameters for database auditing should be set.",
       "desc": "Oracle auditing can be set to log audit data to the database or operating system files. Logging events to the database prevents operating system users from viewing the data, while logging events to operating system files prevents malicious database users from accessing the data. The value NONE disables auditing and is, therefore, not in compliance with policy.",
@@ -1802,10 +2267,15 @@
         "gid": "V-5686",
         "rid": "SV-24622r2_rule",
         "stig_id": "DG0032-ORACLE11",
+        "gtitle": "DBMS audit record access",
         "fix_id": "F-2559r1_fix",
+        "rationale": null,
         "documentable": true,
         "responsibility": "Database Administrator"
       },
+      "refs": [
+        "DPMS Target Oracle Databases 11g"
+      ],
       "id": "V-5686",
       "title": "Audit records should be restricted to authorized individuals.",
       "desc": "Audit data is frequently targeted by malicious users as it can provide a means to detect their activity. The protection of the audit trail data is of special concern and requires restrictions to allow only the auditor and DBMS backup, recovery, and maintenance users access to it.",

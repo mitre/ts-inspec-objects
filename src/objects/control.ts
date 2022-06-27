@@ -25,7 +25,7 @@ export default class Control {
     satisfies?: string[];
     rid?: string;
     stig_id?: string;
-    fix_id?: string;
+    fix_id?: string | null;
     cci?: string[];
     cis_controls?: Record<string, string[]>[];
     nist?: string[];
@@ -50,6 +50,8 @@ export default class Control {
   } = {};
 
   constructor(data?: Partial<Control>) {
+    this.refs = []
+    this.tags = {}
     if (data) {
       Object.entries(data).forEach(([key, value]) => {
         _.set(this, key, value);

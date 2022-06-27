@@ -11,9 +11,21 @@
         "gid": "V-216735",
         "rid": "SV-216735r531087_rule",
         "stig_id": "CISC-RT-000010",
+        "gtitle": "SRG-NET-000018-RTR-000001",
         "fix_id": "F-17965r288604_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96677",
+          "SV-105815"
+        ],
+        "cci": [
+          "CCI-001368"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216735",
       "title": "The Cisco router must be configured to enforce approved authorizations for controlling the flow of information within the network based on organization-defined information flow control policies.",
       "desc": "Information flow control regulates where information is allowed to travel within a network and between interconnected networks. The flow of all network traffic must be monitored and controlled so it does not introduce any unacceptable risk to the network infrastructure or data. Information flow control policies and enforcement mechanisms are commonly employed by organizations to control the flow of information between designated sources and destinations (e.g., networks, individuals, and devices) within information systems. Enforcement occurs, for example, in boundary protection devices (e.g., gateways, routers, guards, encrypted tunnels, and firewalls) that employ rule sets or establish configuration settings that restrict information system services, provide a packet filtering capability based on header information, or provide a message filtering capability based on message content (e.g., implementing key word searches or using document characteristics).",
@@ -29,9 +41,21 @@
         "gid": "V-216738",
         "rid": "SV-216738r531087_rule",
         "stig_id": "CISC-RT-000040",
+        "gtitle": "SRG-NET-000168-RTR-000077",
         "fix_id": "F-17968r288607_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96683",
+          "SV-105821"
+        ],
+        "cci": [
+          "CCI-000803"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216738",
       "title": "The Cisco router must be configured to use encryption for routing protocol authentication.",
       "desc": "A rogue router could send a fictitious routing update to convince a site's perimeter router to send traffic to an incorrect or even a rogue destination. This diverted traffic could be analyzed to learn confidential information about the site's network or used to disrupt the network's ability to communicate with other networks. This is known as a \"traffic attraction attack\" and is prevented by configuring neighbor router authentication for routing updates. However, using clear-text authentication provides little benefit since an attacker can intercept traffic and view the authentication key. This would allow the attacker to use the authentication key in an attack. This requirement applies to all IPv4 and IPv6 protocols that are used to exchange routing or packet forwarding information; this includes all Interior Gateway Protocols (such as OSPF, EIGRP, and IS-IS) and Exterior Gateway Protocols (such as BGP), MPLS-related protocols (such as LDP), and multicast-related protocols.",
@@ -47,9 +71,21 @@
         "gid": "V-216739",
         "rid": "SV-216739r531087_rule",
         "stig_id": "CISC-RT-000050",
+        "gtitle": "SRG-NET-000168-RTR-000078",
         "fix_id": "F-17969r288610_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96685",
+          "SV-105823"
+        ],
+        "cci": [
+          "CCI-000803"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216739",
       "title": "The Cisco router must be configured to authenticate all routing protocol messages using NIST-validated FIPS 198-1 message authentication code algorithm.",
       "desc": "A rogue router could send a fictitious routing update to convince a site's perimeter router to send traffic to an incorrect or even a rogue destination. This diverted traffic could be analyzed to learn confidential information about the site's network or used to disrupt the network's ability to communicate with other networks. This is known as a \"traffic attraction attack\" and is prevented by configuring neighbor router authentication for routing updates. However, using clear-text authentication provides little benefit since an attacker can intercept traffic and view the authentication key. This would allow the attacker to use the authentication key in an attack. Since MD5 is vulnerable to \"birthday\" attacks and may be compromised, routing protocol authentication must use FIPS 140-2 validated algorithms and modules to encrypt the authentication key. This requirement applies to all IPv4 and IPv6 protocols that are used to exchange routing or packet forwarding information; this includes all Interior Gateway Protocols (such as OSPF, EIGRP, and IS-IS) and Exterior Gateway Protocols (such as BGP), MPLS-related protocols (such as LDP), and multicast-related protocols.",
@@ -65,9 +101,21 @@
         "gid": "V-216740",
         "rid": "SV-216740r531087_rule",
         "stig_id": "CISC-RT-000060",
+        "gtitle": "SRG-NET-000019-RTR-000007",
         "fix_id": "F-17970r288613_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105825",
+          "V-96687"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216740",
       "title": "The Cisco router must be configured to have all inactive interfaces disabled.",
       "desc": "An inactive interface is rarely monitored or controlled and may expose a network to an undetected attack on that interface. Unauthorized personnel with access to the communication facility could gain access to a router by connecting to a configured interface that is not in use. If an interface is no longer used, the configuration must be deleted and the interface disabled. For sub-interfaces, delete sub-interfaces that are on inactive interfaces and delete sub-interfaces that are themselves inactive. If the sub-interface is no longer necessary for authorized communications, it must be deleted.",
@@ -83,9 +131,21 @@
         "gid": "V-216741",
         "rid": "SV-216741r531087_rule",
         "stig_id": "CISC-RT-000070",
+        "gtitle": "SRG-NET-000131-RTR-000035",
         "fix_id": "F-17971r288616_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105827",
+          "V-96689"
+        ],
+        "cci": [
+          "CCI-000381"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216741",
       "title": "The Cisco router must be configured to have all non-essential capabilities disabled.",
       "desc": "A compromised router introduces risk to the entire network infrastructure, as well as data resources that are accessible via the network. The perimeter defense has no oversight or control of attacks by malicious users within the network. Preventing network breaches from within is dependent on implementing a comprehensive defense-in-depth strategy, including securing each device connected to the network. This is accomplished by following and implementing all security guidance applicable for each node type. A fundamental step in securing each router is to enable only the capabilities required for operation.",
@@ -101,9 +161,21 @@
         "gid": "V-216743",
         "rid": "SV-216743r531087_rule",
         "stig_id": "CISC-RT-000130",
+        "gtitle": "SRG-NET-000205-RTR-000001",
         "fix_id": "F-17973r288619_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105831",
+          "V-96693"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216743",
       "title": "The Cisco router must be configured to restrict traffic destined to itself.",
       "desc": "The route processor handles traffic destined to the router—the key component used to build forwarding paths and is instrumental with all network management functions. Hence, any disruption or DoS attack to the route processor can result in mission critical network outages.",
@@ -119,9 +191,21 @@
         "gid": "V-216744",
         "rid": "SV-216744r531087_rule",
         "stig_id": "CISC-RT-000140",
+        "gtitle": "SRG-NET-000205-RTR-000002",
         "fix_id": "F-17974r288622_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105833",
+          "V-96695"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216744",
       "title": "The Cisco router must be configured to drop all fragmented Internet Control Message Protocol (ICMP) packets destined to itself.",
       "desc": "Fragmented ICMP packets can be generated by hackers for DoS attacks such as Ping O' Death and Teardrop. It is imperative that all fragmented ICMP packets are dropped.",
@@ -137,9 +221,21 @@
         "gid": "V-216745",
         "rid": "SV-216745r531087_rule",
         "stig_id": "CISC-RT-000160",
+        "gtitle": "SRG-NET-000362-RTR-000112",
         "fix_id": "F-17975r288625_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96697",
+          "SV-105835"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216745",
       "title": "The Cisco router must be configured to have IP directed broadcast disabled on all interfaces.",
       "desc": "An IP directed broadcast is a datagram sent to the broadcast address of a subnet that is not directly attached to the sending machine. The directed broadcast is routed through the network as a unicast packet until it arrives at the target subnet, where it is converted into a link-layer broadcast. Because of the nature of the IP addressing architecture, only the last router in the chain, which is connected directly to the target subnet, can conclusively identify a directed broadcast. IP directed broadcasts are used in the extremely common and popular smurf, or denial-of-service (DoS), attacks. In a smurf attack, the attacker sends Internet Control Message Protocol (ICMP) echo requests from a falsified source address to a directed broadcast address, causing all the hosts on the target subnet to send replies to the falsified source. By sending a continuous stream of such requests, the attacker can create a much larger stream of replies, which can completely inundate the host whose address is being falsified. This service should be disabled on all interfaces when not needed to prevent smurf and DoS attacks. Directed broadcast can be enabled on internal facing interfaces to support services such as Wake-On-LAN. Case scenario may also include support for legacy applications where the content server and the clients do not support multicast. The content servers send streaming data using UDP broadcast. Used in conjunction with the IP multicast helper-map feature, broadcast data can be sent across a multicast topology. The broadcast streams are converted to multicast and vice versa at the first-hop routers and last-hop routers before entering and leaving the multicast transit area respectively. The last-hop router must convert the multicast to broadcast. Hence, this interface must be configured to forward a broadcast packet (i.e., a directed broadcast address is converted to the all nodes broadcast address).",
@@ -155,9 +251,21 @@
         "gid": "V-216746",
         "rid": "SV-216746r531087_rule",
         "stig_id": "CISC-RT-000170",
+        "gtitle": "SRG-NET-000362-RTR-000113",
         "fix_id": "F-17976r288628_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105837",
+          "V-96699"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216746",
       "title": "The Cisco router must be configured to have Internet Control Message Protocol (ICMP) unreachable messages disabled on all external interfaces.",
       "desc": "The ICMP supports IP traffic by relaying information about paths, routes, and network conditions. Routers automatically send ICMP messages under a wide variety of conditions. Host unreachable ICMP messages are commonly used by attackers for network mapping and diagnosis.",
@@ -173,9 +281,21 @@
         "gid": "V-216747",
         "rid": "SV-216747r531087_rule",
         "stig_id": "CISC-RT-000180",
+        "gtitle": "SRG-NET-000362-RTR-000114",
         "fix_id": "F-17977r288631_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105839",
+          "V-96701"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216747",
       "title": "The Cisco router must be configured to have Internet Control Message Protocol (ICMP) mask reply messages disabled on all external interfaces.",
       "desc": "The ICMP supports IP traffic by relaying information about paths, routes, and network conditions. Routers automatically send ICMP messages under a wide variety of conditions. Mask Reply ICMP messages are commonly used by attackers for network mapping and diagnosis.",
@@ -191,9 +311,21 @@
         "gid": "V-216748",
         "rid": "SV-216748r531087_rule",
         "stig_id": "CISC-RT-000190",
+        "gtitle": "SRG-NET-000362-RTR-000115",
         "fix_id": "F-17978r288634_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96703",
+          "SV-105841"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216748",
       "title": "The Cisco router must be configured to have Internet Control Message Protocol (ICMP) redirect messages disabled on all external interfaces.",
       "desc": "The ICMP supports IP traffic by relaying information about paths, routes, and network conditions. Routers automatically send ICMP messages under a wide variety of conditions. Redirect ICMP messages are commonly used by attackers for network mapping and diagnosis.",
@@ -209,9 +341,21 @@
         "gid": "V-216749",
         "rid": "SV-216749r531087_rule",
         "stig_id": "CISC-RT-000200",
+        "gtitle": "SRG-NET-000078-RTR-000001",
         "fix_id": "F-17979r288637_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105843",
+          "V-96705"
+        ],
+        "cci": [
+          "CCI-000134"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216749",
       "title": "The Cisco router must be configured to log all packets that have been dropped at interfaces via ACL.",
       "desc": "Auditing and logging are key components of any security architecture. It is essential for security personnel to know what is being done or attempted to be done, and by whom, to compile an accurate risk assessment. Auditing the actions on network devices provides a means to recreate an attack or identify a configuration mistake on the device.",
@@ -227,9 +371,21 @@
         "gid": "V-216750",
         "rid": "SV-216750r531087_rule",
         "stig_id": "CISC-RT-000210",
+        "gtitle": "SRG-NET-000076-RTR-000001",
         "fix_id": "F-17980r288640_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105845",
+          "V-96707"
+        ],
+        "cci": [
+          "CCI-000132"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216750",
       "title": "The Cisco router must be configured to produce audit records containing information to establish where the events occurred.",
       "desc": "Without establishing where events occurred, it is impossible to establish, correlate, and investigate the events leading up to an outage or attack. In order to compile an accurate risk assessment and provide forensic analysis, it is essential for security personnel to know where events occurred such as router components, modules, device identifiers, node names, and functionality. Associating information about where the event occurred within the network provides a means of investigating an attack, recognizing resource utilization or capacity thresholds, or identifying an improperly configured router.",
@@ -245,9 +401,21 @@
         "gid": "V-216751",
         "rid": "SV-216751r531087_rule",
         "stig_id": "CISC-RT-000220",
+        "gtitle": "SRG-NET-000077-RTR-000001",
         "fix_id": "F-17981r288643_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105847",
+          "V-96709"
+        ],
+        "cci": [
+          "CCI-000133"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216751",
       "title": "The Cisco router must be configured to produce audit records containing information to establish the source of the events.",
       "desc": "Without establishing the source of the event, it is impossible to establish, correlate, and investigate the events leading up to an outage or attack. In order to compile an accurate risk assessment and provide forensic analysis, security personnel need to know the source of the event. In addition to logging where events occur within the network, the audit records must also identify sources of events such as IP addresses, processes, and node or device names.",
@@ -263,9 +431,21 @@
         "gid": "V-216752",
         "rid": "SV-216752r531087_rule",
         "stig_id": "CISC-RT-000240",
+        "gtitle": "SRG-NET-000202-RTR-000001",
         "fix_id": "F-17982r288646_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96711",
+          "SV-105849"
+        ],
+        "cci": [
+          "CCI-001109"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216752",
       "title": "The Cisco perimeter router must be configured to deny network traffic by default and allow network traffic by exception.",
       "desc": "A deny-all, permit-by-exception network communications traffic policy ensures that only connections that are essential and approved are allowed. This requirement applies to both inbound and outbound network communications traffic. All inbound and outbound traffic must be denied by default. Firewalls and perimeter routers should only allow traffic through that is explicitly permitted. The initial defense for the internal network is to block any traffic at the perimeter that is attempting to make a connection to a host residing on the internal network. In addition, allowing unknown or undesirable outbound traffic by the firewall or router will establish a state that will permit the return of this undesirable traffic inbound.",
@@ -281,9 +461,21 @@
         "gid": "V-216753",
         "rid": "SV-216753r531087_rule",
         "stig_id": "CISC-RT-000250",
+        "gtitle": "SRG-NET-000019-RTR-000002",
         "fix_id": "F-17983r288649_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105851",
+          "V-96713"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216753",
       "title": "The Cisco perimeter router must be configured to enforce approved authorizations for controlling the flow of information between interconnected networks in accordance with applicable policy.",
       "desc": "Information flow control regulates authorized information to travel within a network and between interconnected networks. Controlling the flow of network traffic is critical so it does not introduce any unacceptable risk to the network infrastructure or data. An example of a flow control restriction is blocking outside traffic claiming to be from within the organization. For most routers, internal information flow control is a product of system design.",
@@ -299,9 +491,21 @@
         "gid": "V-216754",
         "rid": "SV-216754r531087_rule",
         "stig_id": "CISC-RT-000260",
+        "gtitle": "SRG-NET-000364-RTR-000109",
         "fix_id": "F-17984r288652_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105853",
+          "V-96715"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216754",
       "title": "The Cisco perimeter router must be configured to only allow incoming communications from authorized sources to be routed to authorized destinations.",
       "desc": "Unrestricted traffic may contain malicious traffic that poses a threat to an enclave or to other connected networks. Additionally, unrestricted traffic may transit a network, which uses bandwidth and other resources. Traffic can be restricted directly by an access control list (ACL), which is a firewall function, or by Policy Routing. Policy Routing is a technique used to make routing decisions based on a number of different criteria other than just the destination network, including source or destination network, source or destination address, source or destination port, protocol, packet size, and packet classification. This overrides the router's normal routing procedures used to control the specific paths of network traffic. It is normally used for traffic engineering but can also be used to meet security requirements; for example, traffic that is not allowed can be routed to the Null0 or discard interface. Policy Routing can also be used to control which prefixes appear in the routing table. This requirement is intended to allow network administrators the flexibility to use whatever technique is most effective.",
@@ -317,9 +521,21 @@
         "gid": "V-216755",
         "rid": "SV-216755r531087_rule",
         "stig_id": "CISC-RT-000270",
+        "gtitle": "SRG-NET-000364-RTR-000110",
         "fix_id": "F-17985r288655_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96717",
+          "SV-105855"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216755",
       "title": "The Cisco perimeter router must be configured to block inbound packets with source Bogon IP address prefixes.",
       "desc": "Packets with Bogon IP source addresses should never be allowed to traverse the IP core. Bogon IP networks are RFC1918 addresses or address blocks that have never been assigned by the IANA or have been reserved.",
@@ -335,9 +551,21 @@
         "gid": "V-216756",
         "rid": "SV-216756r531087_rule",
         "stig_id": "CISC-RT-000280",
+        "gtitle": "SRG-NET-000019-RTR-000008",
         "fix_id": "F-17986r507360_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96719",
+          "SV-105857"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216756",
       "title": "The Cisco perimeter router must be configured to protect an enclave connected to an alternate gateway by using an inbound filter that only permits packets with destination addresses within the sites address space.",
       "desc": "Enclaves with alternate gateway connections must take additional steps to ensure there is no compromise on the enclave network or NIPRNet. Without verifying the destination address of traffic coming from the site's alternate gateway, the perimeter router could be routing transit data from the Internet into the NIPRNet. This could also make the perimeter router vulnerable to a denial-of-service (DoS) attack as well as provide a back door into the NIPRNet. The DoD enclave must ensure the ingress filter applied to external interfaces on a perimeter router connecting to an Approved Gateway is secure through filters permitting packets with a destination address belonging to the DoD enclave's address block.",
@@ -353,9 +581,21 @@
         "gid": "V-216757",
         "rid": "SV-216757r531087_rule",
         "stig_id": "CISC-RT-000290",
+        "gtitle": "SRG-NET-000019-RTR-000009",
         "fix_id": "F-17987r507363_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105859",
+          "V-96721"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216757",
       "title": "The Cisco perimeter router must be configured to not be a Border Gateway Protocol (BGP) peer to an alternate gateway service provider.",
       "desc": "ISPs use BGP to share route information with other autonomous systems (i.e. other ISPs and corporate networks). If the perimeter router was configured to BGP peer with an ISP, NIPRnet routes could be advertised to the ISP, thereby creating a backdoor connection from the Internet to the NIPRnet.",
@@ -371,9 +611,21 @@
         "gid": "V-216758",
         "rid": "SV-216758r531087_rule",
         "stig_id": "CISC-RT-000300",
+        "gtitle": "SRG-NET-000019-RTR-000010",
         "fix_id": "F-17988r288664_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105861",
+          "V-96723"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216758",
       "title": "The Cisco perimeter router must be configured to not redistribute static routes to an alternate gateway service provider into BGP or an IGP peering with the NIPRNet or to other autonomous systems.",
       "desc": "If the static routes to the alternate gateway are being redistributed into an Exterior Gateway Protocol or Interior Gateway Protocol to a NIPRNet gateway, this could make traffic on NIPRNet flow to that particular router and not to the Internet Access Point routers. This could not only wreak havoc with traffic flows on NIPRNet, but it could overwhelm the connection from the router to the NIPRNet gateway(s) and also cause traffic destined for outside of NIPRNet to bypass the defenses of the Internet Access Points.",
@@ -389,9 +641,21 @@
         "gid": "V-216760",
         "rid": "SV-216760r531087_rule",
         "stig_id": "CISC-RT-000320",
+        "gtitle": "SRG-NET-000205-RTR-000003",
         "fix_id": "F-17990r288667_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105865",
+          "V-96727"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216760",
       "title": "The Cisco perimeter router must be configured to filter traffic destined to the enclave in accordance with the guidelines contained in DoD Instruction 8551.1.",
       "desc": "Vulnerability assessments must be reviewed by the System Administrator, and protocols must be approved by the Information Assurance (IA) staff before entering the enclave. Access control lists (ACLs) are the first line of defense in a layered security approach. They permit authorized packets and deny unauthorized packets based on port or service type. They enhance the posture of the network by not allowing packets to reach a potential target within the security domain. The lists provided are highly susceptible ports and services that should be blocked or limited as much as possible without adversely affecting customer requirements. Auditing packets attempting to penetrate the network but that are stopped by an ACL will allow network administrators to broaden their protective ring and more tightly define the scope of operation. If the perimeter is in a Deny-by-Default posture and what is allowed through the filter is in accordance with DoD Instruction 8551.1, and if the permit rule is explicitly defined with explicit ports and protocols allowed, then all requirements related to PPS being blocked would be satisfied.",
@@ -407,9 +671,21 @@
         "gid": "V-216761",
         "rid": "SV-216761r531087_rule",
         "stig_id": "CISC-RT-000330",
+        "gtitle": "SRG-NET-000205-RTR-000004",
         "fix_id": "F-17991r288670_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96729",
+          "SV-105867"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216761",
       "title": "The Cisco perimeter router must be configured to filter ingress traffic at the external interface on an inbound direction.",
       "desc": "Access lists are used to separate data traffic into that which it will route (permitted packets) and that which it will not route (denied packets). Secure configuration of routers makes use of access lists for restricting access to services on the router itself as well as for filtering traffic passing through the router. Inbound versus outbound: It should be noted that some operating systems default access lists are applied to the outbound queue. The more secure solution is to apply the access list to the inbound queue for three reasons: - The router can protect itself before damage is inflicted. - The input port is still known and can be filtered upon. - It is more efficient to filter packets before routing them.",
@@ -425,9 +701,21 @@
         "gid": "V-216762",
         "rid": "SV-216762r531087_rule",
         "stig_id": "CISC-RT-000340",
+        "gtitle": "SRG-NET-000205-RTR-000005",
         "fix_id": "F-17992r288673_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96731",
+          "SV-105869"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216762",
       "title": "The Cisco perimeter router must be configured to filter egress traffic at the internal interface on an inbound direction.",
       "desc": "Access lists are used to separate data traffic into that which it will route (permitted packets) and that which it will not route (denied packets). Secure configuration of routers makes use of access lists for restricting access to services on the router itself as well as for filtering traffic passing through the router. Inbound versus Outbound: It should be noted that some operating systems default access lists are applied to the outbound queue. The more secure solution is to apply the access list to the inbound queue for three reasons: - The router can protect itself before damage is inflicted. - The input port is still known and can be filtered upon. - It is more efficient to filter packets before routing them.",
@@ -443,9 +731,21 @@
         "gid": "V-216764",
         "rid": "SV-216764r531087_rule",
         "stig_id": "CISC-RT-000360",
+        "gtitle": "SRG-NET-000364-RTR-000111",
         "fix_id": "F-17994r288676_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105873",
+          "V-96735"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216764",
       "title": "The Cisco perimeter router must be configured to have Link Layer Discovery Protocol (LLDP) disabled on all external interfaces.",
       "desc": "LLDP is a neighbor discovery protocol used to advertise device capabilities, configuration information, and device identity. LLDP is media- and protocol-independent as it runs over layer 2; therefore, two network nodes that support different layer 3 protocols can still learn about each other. Allowing LLDP messages to reach external network nodes provides an attacker a method to obtain information of the network infrastructure that can be useful to plan an attack.",
@@ -461,9 +761,21 @@
         "gid": "V-216765",
         "rid": "SV-216765r531087_rule",
         "stig_id": "CISC-RT-000370",
+        "gtitle": "SRG-NET-000364-RTR-000111",
         "fix_id": "F-17995r288679_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96737",
+          "SV-105875"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216765",
       "title": "The Cisco perimeter router must be configured to have Cisco Discovery Protocol (CDP) disabled on all external interfaces.",
       "desc": "CDP is a Cisco proprietary neighbor discovery protocol used to advertise device capabilities, configuration information, and device identity. CDP is media- and protocol-independent as it runs over layer 2; therefore, two network nodes that support different layer 3 protocols can still learn about each other. Allowing CDP messages to reach external network nodes provides an attacker a method to obtain information of the network infrastructure that can be useful to plan an attack.",
@@ -479,9 +791,21 @@
         "gid": "V-216766",
         "rid": "SV-216766r531087_rule",
         "stig_id": "CISC-RT-000380",
+        "gtitle": "SRG-NET-000364-RTR-000112",
         "fix_id": "F-17996r288682_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105877",
+          "V-96739"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216766",
       "title": "The Cisco perimeter router must be configured to have Proxy ARP disabled on all external interfaces.",
       "desc": "When Proxy ARP is enabled on a router, it allows that router to extend the network (at Layer 2) across multiple interfaces (LAN segments). Because proxy ARP allows hosts from different LAN segments to look like they are on the same segment, proxy ARP is only safe when used between trusted LAN segments. Attackers can leverage the trusting nature of proxy ARP by spoofing a trusted host and then intercepting packets. Proxy ARP should always be disabled on router interfaces that do not require it, unless the router is being used as a LAN bridge.",
@@ -497,9 +821,21 @@
         "gid": "V-216767",
         "rid": "SV-216767r531087_rule",
         "stig_id": "CISC-RT-000390",
+        "gtitle": "SRG-NET-000364-RTR-000113",
         "fix_id": "F-17997r288685_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105879",
+          "V-96741"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216767",
       "title": "The Cisco perimeter router must be configured to block all outbound management traffic.",
       "desc": "For in-band management, the management network must have its own subnet in order to enforce control and access boundaries provided by Layer 3 network nodes, such as routers and firewalls. Management traffic between the managed network elements and the management network is routed via the same links and nodes as that used for production or operational traffic. Safeguards must be implemented to ensure that the management traffic does not leak past the perimeter of the managed network.",
@@ -515,9 +851,21 @@
         "gid": "V-216768",
         "rid": "SV-216768r531087_rule",
         "stig_id": "CISC-RT-000400",
+        "gtitle": "SRG-NET-000205-RTR-000009",
         "fix_id": "F-17998r288688_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96743",
+          "SV-105881"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216768",
       "title": "The Cisco out-of-band management (OOBM) gateway router must be configured to transport management traffic to the Network Operations Center (NOC) via dedicated circuit, MPLS/VPN service, or IPsec tunnel.",
       "desc": "Using dedicated paths, the OOBM backbone connects the OOBM gateway routers located at the edge of the managed network and at the NOC. Dedicated links can be deployed using provisioned circuits or MPLS Layer 2 and Layer 3 VPN services or implementing a secured path with gateway-to-gateway IPsec tunnels. The tunnel mode ensures that the management traffic will be logically separated from any other traffic traversing the same path.",
@@ -533,9 +881,21 @@
         "gid": "V-216769",
         "rid": "SV-216769r531087_rule",
         "stig_id": "CISC-RT-000410",
+        "gtitle": "SRG-NET-000205-RTR-000010",
         "fix_id": "F-17999r288691_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105883",
+          "V-96745"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216769",
       "title": "The Cisco out-of-band management (OOBM) gateway router must be configured to forward only authorized management traffic to the Network Operations Center (NOC).",
       "desc": "The OOBM network is an IP network used exclusively for the transport of OAM&P data from the network being managed to the OSS components located at the NOC. Its design provides connectivity to each managed network device, enabling network management traffic to flow between the managed network elements and the NOC. This allows the use of paths separate from those used by the managed network.",
@@ -551,9 +911,21 @@
         "gid": "V-216770",
         "rid": "SV-216770r531087_rule",
         "stig_id": "CISC-RT-000420",
+        "gtitle": "SRG-NET-000019-RTR-000011",
         "fix_id": "F-18000r288694_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96747",
+          "SV-105885"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216770",
       "title": "The Cisco out-of-band management (OOBM) gateway router must be configured to have separate IGP instances for the managed network and management network.",
       "desc": "If the gateway router is not a dedicated device for the OOBM network, implementation of several safeguards for containment of management and production traffic boundaries must occur. Since the managed and management network are separate routing domains, configuration of separate Interior Gateway Protocol routing instances is critical on the router to segregate traffic from each network.",
@@ -569,9 +941,21 @@
         "gid": "V-216771",
         "rid": "SV-216771r531087_rule",
         "stig_id": "CISC-RT-000430",
+        "gtitle": "SRG-NET-000019-RTR-000012",
         "fix_id": "F-18001r288697_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105887",
+          "V-96749"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216771",
       "title": "The Cisco out-of-band management (OOBM) gateway router must be configured to not redistribute routes between the management network routing domain and the managed network routing domain.",
       "desc": "If the gateway router is not a dedicated device for the OOBM network, several safeguards must be implemented for containment of management and production traffic boundaries; otherwise, it is possible that management traffic will not be separated from production traffic. Since the managed network and the management network are separate routing domains, separate Interior Gateway Protocol routing instances must be configured on the router, one for the managed network and one for the OOBM network. In addition, the routes from the two domains must not be redistributed to each other.",
@@ -587,9 +971,21 @@
         "gid": "V-216772",
         "rid": "SV-216772r531087_rule",
         "stig_id": "CISC-RT-000440",
+        "gtitle": "SRG-NET-000205-RTR-000011",
         "fix_id": "F-18002r288700_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96751",
+          "SV-105889"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216772",
       "title": "The Cisco out-of-band management (OOBM) gateway router must be configured to block any traffic destined to itself that is not sourced from the OOBM network or the Network Operations Center (NOC).",
       "desc": "If the gateway router is not a dedicated device for the OOBM network, several safeguards must be implemented for containment of management and production traffic boundaries. It is imperative that hosts from the managed network are not able to access the OOBM gateway router.",
@@ -605,9 +1001,21 @@
         "gid": "V-216773",
         "rid": "SV-216773r531087_rule",
         "stig_id": "CISC-RT-000450",
+        "gtitle": "SRG-NET-000205-RTR-000012",
         "fix_id": "F-18003r288703_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96753",
+          "SV-105891"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216773",
       "title": "The Cisco router must be configured to only permit management traffic that ingresses and egresses the out-of-band management (OOBM) interface.",
       "desc": "The OOBM access switch will connect to the management interface of the managed network elements. The management interface can be a true OOBM interface or a standard interface functioning as the management interface. In either case, the management interface of the managed network element will be directly connected to the OOBM network. An OOBM interface does not forward transit traffic, thereby providing complete separation of production and management traffic. Since all management traffic is immediately forwarded into the management network, it is not exposed to possible tampering. The separation also ensures that congestion or failures in the managed network do not affect the management of the device. If the device does not have an OOBM port, the interface functioning as the management interface must be configured so that management traffic does not leak into the managed network and that production traffic does not leak into the management network.",
@@ -623,9 +1031,21 @@
         "gid": "V-216774",
         "rid": "SV-216774r531087_rule",
         "stig_id": "CISC-RT-000460",
+        "gtitle": "SRG-NET-000205-RTR-000013",
         "fix_id": "F-18004r288706_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105893",
+          "V-96755"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216774",
       "title": "The Cisco router providing connectivity to the Network Operations Center (NOC) must be configured to forward all in-band management traffic via an IPsec tunnel.",
       "desc": "When the production network is managed in-band, the management network could be housed at a NOC that is located remotely at single or multiple interconnected sites. NOC interconnectivity, as well as connectivity between the NOC and the managed network, must be enabled using IPsec tunnels to provide the separation and integrity of the managed traffic.",
@@ -641,9 +1061,21 @@
         "gid": "V-216777",
         "rid": "SV-216777r531087_rule",
         "stig_id": "CISC-RT-000490",
+        "gtitle": "SRG-NET-000018-RTR-000002",
         "fix_id": "F-18007r288709_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105899",
+          "V-96761"
+        ],
+        "cci": [
+          "CCI-001368"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216777",
       "title": "The Cisco BGP router must be configured to reject inbound route advertisements for any Bogon prefixes.",
       "desc": "Accepting route advertisements for Bogon prefixes can result in the local autonomous system (AS) becoming a transit for malicious traffic as it will in turn advertise these prefixes to neighbor autonomous systems.",
@@ -659,9 +1091,21 @@
         "gid": "V-216778",
         "rid": "SV-216778r531087_rule",
         "stig_id": "CISC-RT-000500",
+        "gtitle": "SRG-NET-000018-RTR-000003",
         "fix_id": "F-18008r288712_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96763",
+          "SV-105901"
+        ],
+        "cci": [
+          "CCI-001368"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216778",
       "title": "The Cisco BGP router must be configured to reject inbound route advertisements for any prefixes belonging to the local autonomous system (AS).",
       "desc": "Accepting route advertisements belonging to the local AS can result in traffic looping or being black holed, or at a minimum using a non-optimized path.",
@@ -677,9 +1121,21 @@
         "gid": "V-216779",
         "rid": "SV-216779r531087_rule",
         "stig_id": "CISC-RT-000510",
+        "gtitle": "SRG-NET-000018-RTR-000004",
         "fix_id": "F-18009r288715_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105903",
+          "V-96765"
+        ],
+        "cci": [
+          "CCI-001368"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216779",
       "title": "The Cisco BGP router must be configured to reject inbound route advertisements from a customer edge (CE) router for prefixes that are not allocated to that customer.",
       "desc": "As a best practice, a service provider should only accept customer prefixes that have been assigned to that customer and any peering autonomous systems. A multi-homed customer with BGP speaking routers connected to the Internet or other external networks could be breached and used to launch a prefix de-aggregation attack. Without ingress route filtering of customers, the effectiveness of such an attack could impact the entire IP core and its customers.",
@@ -695,9 +1151,21 @@
         "gid": "V-216780",
         "rid": "SV-216780r531087_rule",
         "stig_id": "CISC-RT-000520",
+        "gtitle": "SRG-NET-000018-RTR-000005",
         "fix_id": "F-18010r288718_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105905",
+          "V-96767"
+        ],
+        "cci": [
+          "CCI-001368"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216780",
       "title": "The Cisco BGP router must be configured to reject outbound route advertisements for any prefixes that do not belong to any customers or the local autonomous system (AS).",
       "desc": "Advertisement of routes by an autonomous system for networks that do not belong to any of its customers pulls traffic away from the authorized network. This causes a denial of service (DoS) on the network that allocated the block of addresses and may cause a DoS on the network that is inadvertently advertising it as the originator. It is also possible that a misconfigured or compromised router within the GIG IP core could redistribute IGP routes into BGP, thereby leaking internal routes.",
@@ -713,9 +1181,21 @@
         "gid": "V-216781",
         "rid": "SV-216781r531087_rule",
         "stig_id": "CISC-RT-000530",
+        "gtitle": "SRG-NET-000205-RTR-000006",
         "fix_id": "F-18011r288721_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96769",
+          "SV-105907"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216781",
       "title": "The Cisco BGP router must be configured to reject outbound route advertisements for any prefixes belonging to the IP core.",
       "desc": "Outbound route advertisements belonging to the core can result in traffic either looping or being black holed, or at a minimum, using a non-optimized path.",
@@ -731,9 +1211,21 @@
         "gid": "V-216782",
         "rid": "SV-216782r531087_rule",
         "stig_id": "CISC-RT-000540",
+        "gtitle": "SRG-NET-000018-RTR-000006",
         "fix_id": "F-18012r288724_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96771",
+          "SV-105909"
+        ],
+        "cci": [
+          "CCI-000032"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216782",
       "title": "The Cisco BGP router must be configured to reject route advertisements from BGP peers that do not list their autonomous system (AS) number as the first AS in the AS_PATH attribute.",
       "desc": "Verifying the path a route has traversed will ensure the IP core is not used as a transit network for unauthorized or possibly even Internet traffic. All autonomous system boundary routers (ASBRs) must ensure updates received from eBGP peers list their AS number as the first AS in the AS_PATH attribute.",
@@ -749,9 +1241,21 @@
         "gid": "V-216783",
         "rid": "SV-216783r531087_rule",
         "stig_id": "CISC-RT-000550",
+        "gtitle": "SRG-NET-000018-RTR-000010",
         "fix_id": "F-18013r288727_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105911",
+          "V-96773"
+        ],
+        "cci": [
+          "CCI-000032"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216783",
       "title": "The Cisco BGP router must be configured to reject route advertisements from CE routers with an originating AS in the AS_PATH attribute that does not belong to that customer.",
       "desc": "Verifying the path a route has traversed will ensure that the local AS is not used as a transit network for unauthorized traffic. To ensure that the local AS does not carry any prefixes that do not belong to any customers, all PE routers must be configured to reject routes with an originating AS other than that belonging to the customer.",
@@ -767,9 +1271,21 @@
         "gid": "V-216784",
         "rid": "SV-216784r531087_rule",
         "stig_id": "CISC-RT-000560",
+        "gtitle": "SRG-NET-000362-RTR-000117",
         "fix_id": "F-18014r288730_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105913",
+          "V-96775"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216784",
       "title": "The Cisco BGP router must be configured to use the maximum prefixes feature to protect against route table flooding and prefix de-aggregation attacks.",
       "desc": "The effects of prefix de-aggregation can degrade router performance due to the size of routing tables and also result in black-holing legitimate traffic. Initiated by an attacker or a misconfigured router, prefix de-aggregation occurs when the announcement of a large prefix is fragmented into a collection of smaller prefix announcements. In 1997, misconfigured routers in the Florida Internet Exchange network (AS7007) de-aggregated every prefix in their routing table and started advertising the first /24 block of each of these prefixes as their own. Faced with this additional burden, the internal routers became overloaded and crashed repeatedly. This caused prefixes advertised by these routers to disappear from routing tables and reappear when the routers came back online. As the routers came back after crashing, they were flooded with the routing table information by their neighbors. The flood of information would again overwhelm the routers and cause them to crash. This process of route flapping served to destabilize not only the surrounding network but also the entire Internet. Routers trying to reach those addresses would choose the smaller, more specific /24 blocks first. This caused backbone networks throughout North America and Europe to crash. Maximum prefix limits on peer connections combined with aggressive prefix-size filtering of customers' reachability advertisements will effectively mitigate the de-aggregation risk. BGP maximum prefix must be used on all eBGP routers to limit the number of prefixes that it should receive from a particular neighbor, whether customer or peering AS. Consider each neighbor and how many routes they should be advertising and set a threshold slightly higher than the number expected.",
@@ -785,9 +1301,21 @@
         "gid": "V-216785",
         "rid": "SV-216785r531087_rule",
         "stig_id": "CISC-RT-000570",
+        "gtitle": "SRG-NET-000362-RTR-000118",
         "fix_id": "F-18015r288733_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96777",
+          "SV-105915"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216785",
       "title": "The Cisco BGP router must be configured to limit the prefix size on any inbound route advertisement to /24 or the least significant prefixes issued to the customer.",
       "desc": "The effects of prefix de-aggregation can degrade router performance due to the size of routing tables and also result in black-holing legitimate traffic. Initiated by an attacker or a misconfigured router, prefix de-aggregation occurs when the announcement of a large prefix is fragmented into a collection of smaller prefix announcements.",
@@ -803,9 +1331,21 @@
         "gid": "V-216786",
         "rid": "SV-216786r531087_rule",
         "stig_id": "CISC-RT-000580",
+        "gtitle": "SRG-NET-000512-RTR-000001",
         "fix_id": "F-18016r288736_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105917",
+          "V-96779"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216786",
       "title": "The Cisco BGP router must be configured to use its loopback address as the source address for iBGP peering sessions.",
       "desc": "Using a loopback address as the source address offers a multitude of uses for security, access, management, and scalability of the BGP routers. It is easier to construct appropriate ingress filters for router management plane traffic destined to the network management subnet since the source addresses will be from the range used for loopback interfaces instead of a larger range of addresses used for physical interfaces. Log information recorded by authentication and syslog servers will record the router’s loopback address instead of the numerous physical interface addresses. When the loopback address is used as the source for eBGP peering, the BGP session will be harder to hijack since the source address to be used is not known globally—making it more difficult for a hacker to spoof an eBGP neighbor. By using traceroute, a hacker can easily determine the addresses for an eBGP speaker when the IP address of an external interface is used as the source address. The routers within the iBGP domain should also use loopback addresses as the source address when establishing BGP sessions.",
@@ -821,9 +1361,21 @@
         "gid": "V-216787",
         "rid": "SV-216787r531087_rule",
         "stig_id": "CISC-RT-000590",
+        "gtitle": "SRG-NET-000512-RTR-000002",
         "fix_id": "F-18017r288739_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105919",
+          "V-96781"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216787",
       "title": "The Cisco MPLS router must be configured to use its loopback address as the source address for LDP peering sessions.",
       "desc": "Using a loopback address as the source address offers a multitude of uses for security, access, management, and scalability of backbone routers. It is easier to construct appropriate ingress filters for router management plane traffic destined to the network management subnet since the source addresses will be from the range used for loopback interfaces instead of from a larger range of addresses used for physical interfaces. Log information recorded by authentication and syslog servers will record the router's loopback address instead of the numerous physical interface addresses.",
@@ -839,9 +1391,21 @@
         "gid": "V-216788",
         "rid": "SV-216788r531087_rule",
         "stig_id": "CISC-RT-000600",
+        "gtitle": "SRG-NET-000512-RTR-000003",
         "fix_id": "F-18018r288742_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96783",
+          "SV-105921"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216788",
       "title": "The Cisco MPLS router must be configured to synchronize IGP and LDP to minimize packet loss when an IGP adjacency is established prior to LDP peers completing label exchange.",
       "desc": "Packet loss can occur when an IGP adjacency is established and the router begins forwarding packets using the new adjacency before the LDP label exchange completes between the peers on that link. Packet loss can also occur if an LDP session closes and the router continues to forward traffic using the link associated with the LDP peer rather than an alternate pathway with a fully synchronized LDP session. The MPLS LDP-IGP Synchronization feature provides a means to synchronize LDP with OSPF or IS-IS to minimize MPLS packet loss. When an IGP adjacency is established on a link but LDP-IGP synchronization is not yet achieved or is lost, the IGP will advertise the max-metric on that link.",
@@ -857,9 +1421,21 @@
         "gid": "V-216789",
         "rid": "SV-216789r531087_rule",
         "stig_id": "CISC-RT-000610",
+        "gtitle": "SRG-NET-000193-RTR-000001",
         "fix_id": "F-18019r288745_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105923",
+          "V-96785"
+        ],
+        "cci": [
+          "CCI-001095"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216789",
       "title": "The MPLS router with RSVP-TE enabled must be configured with message pacing to adjust maximum burst and maximum number of RSVP messages to an output queue based on the link speed and input queue size of adjacent core routers.",
       "desc": "RSVP-TE can be used to perform constraint-based routing when building LSP tunnels within the network core that will support QoS and traffic engineering requirements. RSVP-TE is also used to enable MPLS Fast Reroute, a network restoration mechanism that will reroute traffic onto a backup LSP in case of a node or link failure along the primary path. When there is a disruption in the MPLS core, such as a link flap or router reboot, the result is a significant amount of RSVP signaling, such as \"PathErr\" and \"ResvErr\" messages that need to be sent for every LSP using that link. When RSVP messages are sent out, they are sent either hop by hop or with the router alert bit set in the IP header. This means that every router along the path must examine the packet to determine if additional processing is required for these RSVP messages. If there is enough signaling traffic in the network, it is possible for an interface to receive more packets for its input queue than it can hold, resulting in dropped RSVP messages and hence slower RSVP convergence. Increasing the size of the interface input queue can help prevent dropping packets; however, there is still the risk of having a burst of signaling traffic that can fill the queue. Solutions to mitigate this risk are RSVP message pacing or refresh reduction to control the rate at which RSVP messages are sent. RSVP refresh reduction includes the following features: RSVP message bundling, RSVP Message ID to reduce message processing overhead, reliable delivery of RSVP messages using Message ID, and summary refresh to reduce the amount of information transmitted every refresh interval.",
@@ -875,9 +1451,21 @@
         "gid": "V-216790",
         "rid": "SV-216790r531087_rule",
         "stig_id": "CISC-RT-000620",
+        "gtitle": "SRG-NET-000512-RTR-000004",
         "fix_id": "F-18020r288748_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105925",
+          "V-96787"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216790",
       "title": "The Cisco MPLS router must be configured to have TTL Propagation disabled.",
       "desc": "The head end of the label-switched path (LSP), the label edge router (LER) will decrement the IP packet's time-to-live (TTL) value by one and then copy the value to the MPLS TTL field. At each label-switched router (LSR) hop, the MPLS TTL value is decremented by one. The MPLS router that pops the label (either the penultimate LSR or the egress LER) will copy the packet's MPLS TTL value to the IP TTL field and decrement it by one. This TTL propagation is the default behavior. Because the MPLS TTL is propagated from the IP TTL, a traceroute will list every hop in the path, be it routed or label switched, thereby exposing core nodes. With TTL propagation disabled, LER decrements the IP packet's TTL value by one and then places a value of 255 in the packet's MPLS TTL field, which is then decremented by one as the packet passes through each LSR in the MPLS core. Because the MPLS TTL never drops to zero, none of the LSP hops triggers an ICMP TTL exceeded message and consequently, these hops are not recorded in a traceroute. Hence, nodes within the MPLS core cannot be discovered by an attacker.",
@@ -893,9 +1481,21 @@
         "gid": "V-216791",
         "rid": "SV-216791r531087_rule",
         "stig_id": "CISC-RT-000630",
+        "gtitle": "SRG-NET-000512-RTR-000005",
         "fix_id": "F-18021r288751_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96789",
+          "SV-105927"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216791",
       "title": "The Cisco PE router must be configured to have each Virtual Routing and Forwarding (VRF) instance bound to the appropriate physical or logical interfaces to maintain traffic separation between all MPLS L3VPNs.",
       "desc": "The primary security model for an MPLS L3VPN infrastructure is traffic separation. The service provider must guarantee the customer that traffic from one VPN does not leak into another VPN or into the core, and that core traffic must not leak into any VPN. Hence, it is imperative that each CE-facing interface can only be associated to one VRF—that alone is the fundamental framework for traffic separation.",
@@ -911,9 +1511,21 @@
         "gid": "V-216792",
         "rid": "SV-216792r531087_rule",
         "stig_id": "CISC-RT-000640",
+        "gtitle": "SRG-NET-000512-RTR-000006",
         "fix_id": "F-18022r288754_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96791",
+          "SV-105929"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216792",
       "title": "The Cisco PE router must be configured to have each Virtual Routing and Forwarding (VRF) instance with the appropriate Route Target (RT).",
       "desc": "The primary security model for an MPLS L3VPN as well as a VRF-lite infrastructure is traffic separation. Each interface can only be associated to one VRF, which is the fundamental framework for traffic separation. Forwarding decisions are made based on the routing table belonging to the VRF. Control of what routes are imported into or exported from a VRF is based on the RT. It is critical that traffic does not leak from one COI tenant or L3VPN to another; hence, it is imperative that the correct RT is configured for each VRF.",
@@ -929,9 +1541,21 @@
         "gid": "V-216793",
         "rid": "SV-216793r531087_rule",
         "stig_id": "CISC-RT-000650",
+        "gtitle": "SRG-NET-000512-RTR-000007",
         "fix_id": "F-18023r288757_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105931",
+          "V-96793"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216793",
       "title": "The Cisco PE router must be configured to have each VRF with the appropriate Route Distinguisher (RD).",
       "desc": "An RD provides uniqueness to the customer address spaces within the MPLS L3VPN infrastructure. The concept of the VPN-IPv4 and VPN-IPv6 address families consists of the RD prepended before the IP address. Hence, if the same IP prefix is used in several different L3VPNs, it is possible for BGP to carry several completely different routes for that prefix, one for each VPN. Since VPN-IPv4 addresses and IPv4 addresses are different address families, BGP never treats them as comparable addresses. The purpose of the RD is to create distinct routes for common IPv4 address prefixes. On any given PE router, a single RD can define a VRF in which the entire address space may be used independently, regardless of the makeup of other VPN address spaces. Hence, it is imperative that a unique RD is assigned to each L3VPN and that the proper RD is configured for each VRF.",
@@ -947,9 +1571,21 @@
         "gid": "V-216794",
         "rid": "SV-216794r531087_rule",
         "stig_id": "CISC-RT-000660",
+        "gtitle": "SRG-NET-000343-RTR-000001",
         "fix_id": "F-18024r507366_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105933",
+          "V-96795"
+        ],
+        "cci": [
+          "CCI-001958"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216794",
       "title": "The Cisco PE router providing MPLS Layer 2 Virtual Private Network (L2VPN) services must be configured to authenticate targeted Label Distribution Protocol (LDP) sessions used to exchange virtual circuit (VC) information using a FIPS-approved message authentication code algorithm.",
       "desc": "LDP provides the signaling required for setting up and tearing down pseudowires (virtual circuits used to transport Layer 2 frames) across an MPLS IP core network. Using a targeted LDP session, each PE router advertises a virtual circuit label mapping that is used as part of the label stack imposed on the frames by the ingress PE router during packet forwarding. Authentication provides protection against spoofed TCP segments that can be introduced into the LDP sessions.",
@@ -965,9 +1601,21 @@
         "gid": "V-216795",
         "rid": "SV-216795r531087_rule",
         "stig_id": "CISC-RT-000670",
+        "gtitle": "SRG-NET-000512-RTR-000008",
         "fix_id": "F-18025r288763_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96797",
+          "SV-105935"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216795",
       "title": "The Cisco PE router providing MPLS Virtual Private Wire Service (VPWS) must be configured to have the appropriate pseudowire ID for each attachment circuit.",
       "desc": "VPWS is an L2VPN technology that provides a virtual circuit (aka pseudowire) between two PE routers to forward Layer 2 frames between two customer-edge routers or switches through an MPLS-enabled IP core. The ingress PE router (virtual circuit head-end) encapsulates Ethernet frames inside MPLS packets using label stacking and forwards them across the MPLS network to the egress PE router (virtual circuit tail-end). During a virtual circuit setup, the PE routers exchange label bindings for the specified pseudowire ID. The pseudowire ID specifies a pseudowire associated with an ingress and egress PE router and the customer-facing attachment circuits. To guarantee that all frames are forwarded onto the correct pseudowire and to the correct customer and attachment circuits, it is imperative that the correct pseudowire ID is configured for each attachment circuit.",
@@ -983,9 +1631,21 @@
         "gid": "V-216796",
         "rid": "SV-216796r531087_rule",
         "stig_id": "CISC-RT-000680",
+        "gtitle": "SRG-NET-000512-RTR-000009",
         "fix_id": "F-18026r288766_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105937",
+          "V-96799"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216796",
       "title": "The Cisco PE router providing Virtual Private LAN Services (VPLS) must be configured to have all attachment circuits defined to the virtual forwarding instance (VFI) with the globally unique VPN ID assigned for each customer VLAN.",
       "desc": "VPLS defines an architecture that delivers Ethernet multipoint services over an MPLS network. Customer Layer 2 frames are forwarded across the MPLS core via pseudowires using IEEE 802.1q Ethernet bridging principles. A pseudowire is a virtual bidirectional connection between two attachment circuits (virtual connections between PE and CE routers). A pseudowire contains two unidirectional label-switched paths (LSP) between two PE routers. Each MAC virtual forwarding table instance (VFI) is interconnected using pseudowires provisioned for the bridge domain, thereby maintaining privacy and logical separation between each VPLS bridge domain. The VFI specifies the pseudowires associated with connecting PE routers and the customer-facing attachment circuits belonging to a given VLAN. Resembling a Layer 2 switch, the VFI is responsible for learning MAC addresses and providing loop-free forwarding of customer traffic to the appropriate end nodes. Each VPLS domain is identified by a globally unique VPN ID; hence, VFIs of the same VPLS domain must be configured with the same VPN ID on all participating PE routers. To guarantee traffic separation for all customer VLANs and that all packets are forwarded to the correct destination, it is imperative that the correct attachment circuits are associated with the appropriate VFI and that each VFI is associated to the unique VPN ID assigned to the customer VLAN.",
@@ -1001,9 +1661,21 @@
         "gid": "V-216797",
         "rid": "SV-216797r531087_rule",
         "stig_id": "CISC-RT-000690",
+        "gtitle": "SRG-NET-000512-RTR-000010",
         "fix_id": "F-18027r288769_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96801",
+          "SV-105939"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216797",
       "title": "The Cisco PE router must be configured to enforce the split-horizon rule for all pseudowires within a Virtual Private LAN Services (VPLS) bridge domain.",
       "desc": "A virtual forwarding instance (VFI) must be created on each participating PE router for each customer VLAN using VPLS for carrier Ethernet services. The VFI specifies the VPN ID of a VPLS domain, the addresses of other PE routers in the domain, and the type of tunnel signaling and encapsulation mechanism for each peer PE router. The set of VFIs formed by the interconnection of the emulated VCs is called a VPLS instance, which forms the logic bridge over the MPLS core network. The PE routers use the VFI with a unique VPN ID to establish a full mesh of emulated virtual circuits or pseudowires to all the other PE routers in the VPLS instance. The full-mesh configuration allows the PE router to maintain a single broadcast domain. With a full-mesh configuration, signaling and packet replication requirements for each provisioned virtual circuit on a PE can be high. To avoid the problem of a packet looping in the provider core, thereby adding more overhead, the PE devices must enforce a split-horizon principle for the emulated virtual circuits; that is, if a packet is received on an emulated virtual circuit, it is not forwarded on any other virtual circuit.",
@@ -1019,9 +1691,21 @@
         "gid": "V-216798",
         "rid": "SV-216798r531087_rule",
         "stig_id": "CISC-RT-000700",
+        "gtitle": "SRG-NET-000193-RTR-000002",
         "fix_id": "F-18028r288772_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96803",
+          "SV-105941"
+        ],
+        "cci": [
+          "CCI-001095"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216798",
       "title": "The Cisco PE router providing Virtual Private LAN Services (VPLS) must be configured to have traffic storm control thresholds on CE-facing interfaces.",
       "desc": "A traffic storm occurs when packets flood a VPLS bridge, creating excessive traffic and degrading network performance. Traffic storm control prevents VPLS bridge disruption by suppressing traffic when the number of packets reaches configured threshold levels. Traffic storm control monitors incoming traffic levels on a port and drops traffic when the number of packets reaches the configured threshold level during any one-second interval.",
@@ -1037,9 +1721,21 @@
         "gid": "V-216799",
         "rid": "SV-216799r531087_rule",
         "stig_id": "CISC-RT-000710",
+        "gtitle": "SRG-NET-000362-RTR-000119",
         "fix_id": "F-18029r288775_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105943",
+          "V-96805"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216799",
       "title": "The Cisco PE router must be configured to implement Internet Group Management Protocol (IGMP) or Multicast Listener Discovery (MLD) snooping for each Virtual Private LAN Services (VPLS) bridge domain.",
       "desc": "IGMP snooping provides a way to constrain multicast traffic at Layer 2. By monitoring the IGMP membership reports sent by hosts within the bridge domain, the snooping application can set up Layer 2 multicast forwarding tables to deliver traffic only to ports with at least one interested member within the VPLS bridge, thereby significantly reducing the volume of multicast traffic that would otherwise flood an entire VPLS bridge domain. The IGMP snooping operation applies to both access circuits and pseudowires within a VPLS bridge domain.",
@@ -1055,9 +1751,21 @@
         "gid": "V-216800",
         "rid": "SV-216800r531087_rule",
         "stig_id": "CISC-RT-000720",
+        "gtitle": "SRG-NET-000192-RTR-000002",
         "fix_id": "F-18030r288778_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105945",
+          "V-96807"
+        ],
+        "cci": [
+          "CCI-001094"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216800",
       "title": "The Cisco PE router must be configured to limit the number of MAC addresses it can learn for each Virtual Private LAN Services (VPLS) bridge domain.",
       "desc": "VPLS defines an architecture that delivers Ethernet multipoint services over an MPLS network. Customer Layer 2 frames are forwarded across the MPLS core via pseudowires using IEEE 802.1q Ethernet bridging principles. A pseudowire is a virtual bidirectional connection between two attachment circuits (virtual connections between PE and CE routers). A pseudowire contains two unidirectional label-switched paths (LSP). Each MAC forwarding table instance is interconnected using domain-specific LSPs, thereby maintaining privacy and logical separation between each VPLS domain. When a frame arrives on a bridge port (pseudowire or attachment circuit) and the source MAC address is unknown to the receiving PE router, the source MAC address is associated with the pseudowire or attachment circuit and the forwarding table is updated accordingly. Frames are forwarded to the appropriate pseudowire or attachment circuit according to the forwarding table entry for the destination MAC address. Ethernet frames sent to broadcast and unknown destination addresses must be flooded out to all interfaces for the bridge domain; hence, a PE router must replicate packets across both attachment circuits and pseudowires. A malicious attacker residing in a customer network could launch a source MAC address spoofing attack by flooding packets to a valid unicast destination, each with a different MAC source address. The PE router receiving this traffic would try to learn every new MAC address and would quickly run out of space for the VFI forwarding table. Older, valid MAC addresses would be removed from the table, and traffic sent to them would have to be flooded until the storm threshold limit is reached. Hence, it is essential that a limit is established to control the number of MAC addresses that will be learned and recorded into the forwarding table for each bridge domain.",
@@ -1073,9 +1781,21 @@
         "gid": "V-216801",
         "rid": "SV-216801r531087_rule",
         "stig_id": "CISC-RT-000730",
+        "gtitle": "SRG-NET-000205-RTR-000007",
         "fix_id": "F-18031r288781_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96809",
+          "SV-105947"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216801",
       "title": "The Cisco PE router must be configured to block any traffic that is destined to IP core infrastructure.",
       "desc": "IP/MPLS networks providing VPN and transit services must provide, at the least, the same level of protection against denial-of-service (DoS) attacks and intrusions as Layer 2 networks. Although the IP core network elements are hidden, security should never rely entirely on obscurity. IP addresses can be guessed. Core network elements must not be accessible from any external host. Protecting the core from any attack is vital for the integrity and privacy of customer traffic as well as the availability of transit services. A compromise of the IP core can result in an outage or, at a minimum, non-optimized forwarding of customer traffic. Protecting the core from an outside attack also prevents attackers from using the core to attack any customer. Hence, it is imperative that all routers at the edge deny traffic destined to any address belonging to the IP core infrastructure.",
@@ -1091,9 +1811,21 @@
         "gid": "V-216802",
         "rid": "SV-216802r531087_rule",
         "stig_id": "CISC-RT-000740",
+        "gtitle": "SRG-NET-000205-RTR-000008",
         "fix_id": "F-18032r288784_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96811",
+          "SV-105949"
+        ],
+        "cci": [
+          "CCI-001097"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216802",
       "title": "The Cisco PE router must be configured with Unicast Reverse Path Forwarding (uRPF) loose mode enabled on all CE-facing interfaces.",
       "desc": "The uRPF feature is a defense against spoofing and denial-of-service (DoS) attacks by verifying if the source address of any ingress packet is reachable. To mitigate attacks that rely on forged source addresses, all provider edge routers must enable uRPF loose mode to guarantee that all packets received from a CE router contain source addresses that are in the route table.",
@@ -1109,9 +1841,21 @@
         "gid": "V-216804",
         "rid": "SV-216804r531087_rule",
         "stig_id": "CISC-RT-000760",
+        "gtitle": "SRG-NET-000193-RTR-000113",
         "fix_id": "F-18034r288787_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105953",
+          "V-96815"
+        ],
+        "cci": [
+          "CCI-001095"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216804",
       "title": "The Cisco PE router must be configured to enforce a Quality-of-Service (QoS) policy in accordance with the QoS DODIN Technical Profile.",
       "desc": "Different applications have unique requirements and toleration levels for delay, jitter, bandwidth, packet loss, and availability. To manage the multitude of applications and services, a network requires a QoS framework to differentiate traffic and provide a method to manage network congestion. The Differentiated Services Model (DiffServ) is based on per-hop behavior by categorizing traffic into different classes and enabling each node to enforce a forwarding treatment to each packet as dictated by a policy. Packet markings such as IP Precedence and its successor, Differentiated Services Code Points (DSCP), were defined along with specific per-hop behaviors for key traffic types to enable a scalable QoS solution. DiffServ QoS categorizes network traffic, prioritizes it according to its relative importance, and provides priority treatment based on the classification. It is imperative that end-to-end QoS is implemented within the IP core network to provide preferred treatment for mission-critical applications.",
@@ -1127,9 +1871,21 @@
         "gid": "V-216805",
         "rid": "SV-216805r531087_rule",
         "stig_id": "CISC-RT-000770",
+        "gtitle": "SRG-NET-000193-RTR-000114",
         "fix_id": "F-18035r288790_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105955",
+          "V-96817"
+        ],
+        "cci": [
+          "CCI-001095"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216805",
       "title": "The Cisco P router must be configured to implement a Quality-of-Service (QoS) policy in accordance with the QoS DODIN Technical Profile.",
       "desc": "Different applications have unique requirements and toleration levels for delay, jitter, bandwidth, packet loss, and availability. To manage the multitude of applications and services, a network requires a QoS framework to differentiate traffic and provide a method to manage network congestion. The Differentiated Services Model (DiffServ) is based on per-hop behavior by categorizing traffic into different classes and enabling each node to enforce a forwarding treatment to each packet as dictated by a policy. Packet markings such as IP Precedence and its successor, Differentiated Services Code Points (DSCP), were defined along with specific per-hop behaviors for key traffic types to enable a scalable QoS solution. DiffServ QoS categorizes network traffic, prioritizes it according to its relative importance, and provides priority treatment based on the classification. It is imperative that end-to-end QoS is implemented within the IP core network to provide preferred treatment for mission-critical applications.",
@@ -1145,9 +1901,21 @@
         "gid": "V-216806",
         "rid": "SV-216806r531087_rule",
         "stig_id": "CISC-RT-000780",
+        "gtitle": "SRG-NET-000193-RTR-000112",
         "fix_id": "F-18036r288793_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105957",
+          "V-96819"
+        ],
+        "cci": [
+          "CCI-001095"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216806",
       "title": "The Cisco PE router must be configured to enforce a Quality-of-Service (QoS) policy to limit the effects of packet flooding denial-of-service (DoS) attacks.",
       "desc": "DoS is a condition when a resource is not available for legitimate users. Packet flooding distributed denial-of-service (DDoS) attacks are referred to as volumetric attacks and have the objective of overloading a network or circuit to deny or seriously degrade performance, which denies access to the services that normally traverse the network or circuit. Volumetric attacks have become relatively easy to launch using readily available tools such as Low Orbit Ion Cannon or botnets. Measures to mitigate the effects of a successful volumetric attack must be taken to ensure that sufficient capacity is available for mission-critical traffic. Managing capacity may include, for example, establishing selected network usage priorities or quotas and enforcing them using rate limiting, Quality of Service (QoS), or other resource reservation control methods. These measures may also mitigate the effects of sudden decreases in network capacity that are the result of accidental or intentional physical damage to telecommunications facilities (such as cable cuts or weather-related outages).",
@@ -1163,9 +1931,21 @@
         "gid": "V-216807",
         "rid": "SV-216807r531087_rule",
         "stig_id": "CISC-RT-000790",
+        "gtitle": "SRG-NET-000019-RTR-000003",
         "fix_id": "F-18037r288796_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96821",
+          "SV-105959"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216807",
       "title": "The Cisco multicast router must be configured to disable Protocol Independent Multicast (PIM) on all interfaces that are not required to support multicast routing.",
       "desc": "If multicast traffic is forwarded beyond the intended boundary, it is possible that it can be intercepted by unauthorized or unintended personnel. Limiting where, within the network, a given multicast group's data is permitted to flow is an important first step in improving multicast security. A scope zone is an instance of a connected region of a given scope. Zones of the same scope cannot overlap while zones of a smaller scope will fit completely within a zone of a larger scope. For example, Admin-local scope is smaller than Site-local scope, so the administratively configured boundary fits within the bounds of a site. According to RFC 4007 IPv6 Scoped Address Architecture (section 5), scope zones are also required to be \"convex from a routing perspective\"; that is, packets routed within a zone must not pass through any links that are outside of the zone. This requirement forces each zone to be one contiguous island rather than a series of separate islands. As stated in the DoD IPv6 IA Guidance for MO3, \"One should be able to identify all interfaces of a zone by drawing a closed loop on their network diagram, engulfing some routers and passing through some routers to include only some of their interfaces\". Therefore, it is imperative that the network engineers have documented their multicast topology and thereby knows which interfaces are enabled for multicast. Once this is done, the zones can be scoped as required.",
@@ -1181,9 +1961,21 @@
         "gid": "V-216808",
         "rid": "SV-216808r531087_rule",
         "stig_id": "CISC-RT-000800",
+        "gtitle": "SRG-NET-000019-RTR-000004",
         "fix_id": "F-18038r288799_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96823",
+          "SV-105961"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216808",
       "title": "The Cisco multicast router must be configured to bind a Protocol Independent Multicast (PIM) neighbor filter to interfaces that have PIM enabled.",
       "desc": "PIM is a routing protocol used to build multicast distribution trees for forwarding multicast traffic across the network infrastructure. PIM traffic must be limited to only known PIM neighbors by configuring and binding a PIM neighbor filter to those interfaces that have PIM enabled. If a PIM neighbor filter is not applied to those interfaces that have PIM enabled, unauthorized routers can join the PIM domain, discover and use the rendezvous points, and also advertise their rendezvous points into the domain. This can result in a denial of service by traffic flooding or result in the unauthorized transfer of data.",
@@ -1199,9 +1991,21 @@
         "gid": "V-216809",
         "rid": "SV-216809r531087_rule",
         "stig_id": "CISC-RT-000810",
+        "gtitle": "SRG-NET-000019-RTR-000005",
         "fix_id": "F-18039r288802_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105963",
+          "V-96825"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216809",
       "title": "The Cisco multicast edge router must be configured to establish boundaries for administratively scoped multicast traffic.",
       "desc": "If multicast traffic is forwarded beyond the intended boundary, it is possible that it can be intercepted by unauthorized or unintended personnel. Administrative scoped multicast addresses are locally assigned and are to be used exclusively by the enterprise network or enclave. Administrative scoped multicast traffic must not cross the enclave perimeter in either direction. Restricting multicast traffic makes it more difficult for a malicious user to access sensitive traffic. Admin-Local scope is encouraged for any multicast traffic within a network intended for network management, as well as for control plane traffic that must reach beyond link-local destinations.",
@@ -1217,9 +2021,21 @@
         "gid": "V-216810",
         "rid": "SV-216810r531087_rule",
         "stig_id": "CISC-RT-000820",
+        "gtitle": "SRG-NET-000362-RTR-000120",
         "fix_id": "F-18040r288805_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105965",
+          "V-96827"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216810",
       "title": "The Cisco multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Join messages received from the Designated Router (DR) for any undesirable multicast groups.",
       "desc": "MSDP peering between networks enables sharing of multicast source information. Enclaves with an existing multicast topology using PIM-SM can configure their RP routers to peer with MSDP routers. As a first step of defense against a denial-of-service (DoS) attack, all RP routers must limit the multicast forwarding cache to ensure that router resources are not saturated managing an overwhelming number of PIM and MSDP source-active entries.",
@@ -1235,9 +2051,21 @@
         "gid": "V-216811",
         "rid": "SV-216811r531087_rule",
         "stig_id": "CISC-RT-000830",
+        "gtitle": "SRG-NET-000019-RTR-000013",
         "fix_id": "F-18041r288808_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96829",
+          "SV-105967"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216811",
       "title": "The Cisco multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Register messages received from the Designated Router (DR) for any undesirable multicast groups and sources.",
       "desc": "Real-time multicast traffic can entail multiple large flows of data. An attacker can flood a network segment with multicast packets, over-using the available bandwidth and thereby creating a denial-of-service (DoS) condition. Hence, it is imperative that register messages are accepted only for authorized multicast groups and sources.",
@@ -1253,9 +2081,21 @@
         "gid": "V-216812",
         "rid": "SV-216812r531087_rule",
         "stig_id": "CISC-RT-000840",
+        "gtitle": "SRG-NET-000019-RTR-000014",
         "fix_id": "F-18042r288811_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96831",
+          "SV-105969"
+        ],
+        "cci": [
+          "CCI-001414"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216812",
       "title": "The Cisco multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Join messages received from the Designated Router (DR) for any undesirable multicast groups.",
       "desc": "Real-time multicast traffic can entail multiple large flows of data. An attacker can flood a network segment with multicast packets, over-using the available bandwidth and thereby creating a denial-of-service (DoS) condition. Hence, it is imperative that join messages are only accepted for authorized multicast groups.",
@@ -1271,9 +2111,21 @@
         "gid": "V-216813",
         "rid": "SV-216813r531087_rule",
         "stig_id": "CISC-RT-000850",
+        "gtitle": "SRG-NET-000362-RTR-000121",
         "fix_id": "F-18043r288814_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105971",
+          "V-96833"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216813",
       "title": "The Cisco multicast Rendezvous Point (RP) must be configured to rate limit the number of Protocol Independent Multicast (PIM) Register messages.",
       "desc": "When a new source starts transmitting in a PIM Sparse Mode network, the Designated Router (DR) will encapsulate the multicast packets into register messages and forward them to the RP using unicast. This process can be taxing on the CPU for both the DR and the RP if the source is running at a high data rate and there are many new sources starting at the same time. This scenario can potentially occur immediately after a network failover. The rate limit for the number of register messages should be set to a relatively low value based on the known number of multicast sources within the multicast domain.",
@@ -1289,9 +2141,21 @@
         "gid": "V-216814",
         "rid": "SV-216814r531087_rule",
         "stig_id": "CISC-RT-000860",
+        "gtitle": "SRG-NET-000364-RTR-000114",
         "fix_id": "F-18044r507369_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105973",
+          "V-96835"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216814",
       "title": "The Cisco multicast Designated Router (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join only multicast groups that have been approved by the organization.",
       "desc": "Real-time multicast traffic can entail multiple large flows of data. Large unicast flows tend to be fairly isolated (i.e., someone doing a file download here or there), whereas multicast can have broader impact on bandwidth consumption, resulting in extreme network congestion. Hence, it is imperative that there is multicast admission control to restrict which multicast groups hosts are allowed to join via IGMP or MLD.",
@@ -1307,9 +2171,21 @@
         "gid": "V-216815",
         "rid": "SV-216815r531087_rule",
         "stig_id": "CISC-RT-000870",
+        "gtitle": "SRG-NET-000364-RTR-000115",
         "fix_id": "F-18045r507372_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105975",
+          "V-96837"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216815",
       "title": "The Cisco multicast Designated Router (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join a multicast group only from sources that have been approved by the organization.",
       "desc": "Real-time multicast traffic can entail multiple large flows of data. Large unicast flows tend to be fairly isolated (i.e., someone doing a file download here or there), whereas multicast can have broader impact on bandwidth consumption, resulting in extreme network congestion. Hence, it is imperative that there is multicast admission control to restrict which multicast groups hosts are allowed to join via IGMP or MLD.",
@@ -1325,9 +2201,21 @@
         "gid": "V-216816",
         "rid": "SV-216816r531087_rule",
         "stig_id": "CISC-RT-000880",
+        "gtitle": "SRG-NET-000362-RTR-000122",
         "fix_id": "F-18046r288823_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105977",
+          "V-96839"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216816",
       "title": "The Cisco multicast Designated Router (DR) must be configured to limit the number of mroute states resulting from Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Host Membership Reports.",
       "desc": "The current multicast paradigm can let any host join any multicast group at any time by sending an IGMP or MLD membership report to the DR. In a Protocol Independent Multicast (PIM) Sparse Mode network, the DR will send a PIM Join message for the group to the RP. Without any form of admission control, this can pose a security risk to the entire multicast domain - specifically the multicast routers along the shared tree from the DR to the RP that must maintain the mroute state information for each group join request. Hence, it is imperative that the DR is configured to limit the number of mroute state information that must be maintained to mitigate the risk of IGMP or MLD flooding.",
@@ -1343,9 +2231,21 @@
         "gid": "V-216817",
         "rid": "SV-216817r531087_rule",
         "stig_id": "CISC-RT-000890",
+        "gtitle": "SRG-NET-000362-RTR-000123",
         "fix_id": "F-18047r288826_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96841",
+          "SV-105979"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216817",
       "title": "The Cisco multicast Designated Router (DR) must be configured to set the shortest-path tree (SPT) threshold to infinity to minimalize source-group (S, G) state within the multicast topology where Any Source Multicast (ASM) is deployed.",
       "desc": "ASM can have many sources for the same groups (many-to-many). For many receivers, the path via the RP may not be ideal compared with the shortest path from the source to the receiver. By default, the last-hop router will initiate a switch from the shared tree to a source-specific SPT to obtain lower latencies. This is accomplished by the last-hop router sending an (S, G) Protocol Independent Multicast (PIM) Join toward S (the source). When the last-hop router begins to receive traffic for the group from the source via the SPT, it will send a PIM Prune message to the RP for the (S, G). The RP will then send a Prune message toward the source. The SPT switchover becomes a scaling issue for large multicast topologies that have many receivers and many sources for many groups because (S, G) entries require more memory than (*, G). Hence, it is imperative to minimize the amount of (S, G) state to be maintained by increasing the threshold that determines when the SPT switchover occurs.",
@@ -1361,9 +2261,21 @@
         "gid": "V-216818",
         "rid": "SV-216818r531087_rule",
         "stig_id": "CISC-RT-000900",
+        "gtitle": "SRG-NET-000364-RTR-000116",
         "fix_id": "F-18048r288829_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96843",
+          "SV-105981"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216818",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) router must be configured to only accept MSDP packets from known MSDP peers.",
       "desc": "MSDP peering with customer network routers presents additional risks to the DISN Core, whether from a rogue or misconfigured MSDP-enabled router. To guard against an attack from malicious MSDP traffic, the receive path or interface filter for all MSDP-enabled RP routers must be configured to only accept MSDP packets from known MSDP peers.",
@@ -1379,9 +2291,21 @@
         "gid": "V-216819",
         "rid": "SV-216819r531087_rule",
         "stig_id": "CISC-RT-000910",
+        "gtitle": "SRG-NET-000343-RTR-000002",
         "fix_id": "F-18049r288832_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105983",
+          "V-96845"
+        ],
+        "cci": [
+          "CCI-001958"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216819",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) router must be configured to authenticate all received MSDP packets.",
       "desc": "MSDP peering with customer network routers presents additional risks to the core, whether from a rogue or misconfigured MSDP-enabled router. MSDP password authentication is used to validate each segment sent on the TCP connection between MSDP peers, protecting the MSDP session against the threat of spoofed packets being injected into the TCP connection stream.",
@@ -1397,9 +2321,21 @@
         "gid": "V-216820",
         "rid": "SV-216820r531087_rule",
         "stig_id": "CISC-RT-000920",
+        "gtitle": "SRG-NET-000018-RTR-000007",
         "fix_id": "F-18050r288835_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105985",
+          "V-96847"
+        ],
+        "cci": [
+          "CCI-001368"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216820",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) router must be configured to filter received source-active multicast advertisements for any undesirable multicast groups and sources.",
       "desc": "The interoperability of BGP extensions for interdomain multicast routing and MSDP enables seamless connectivity of multicast domains between autonomous systems. MP-BGP advertises the unicast prefixes of the multicast sources used by Protocol Independent Multicast (PIM) routers to perform RPF checks and build multicast distribution trees. MSDP is a mechanism used to connect multiple PIM sparse-mode domains, allowing RPs from different domains to share information about active sources. When RPs in peering multicast domains hear about active sources, they can pass on that information to their local receivers, thereby allowing multicast data to be forwarded between the domains. Configuring an import policy to block multicast advertisements for reserved, Martian, single-source multicast, and any other undesirable multicast groups, as well as any source-group (S, G) states with Bogon source addresses, would assist in avoiding unwanted multicast traffic from traversing the core.",
@@ -1415,9 +2351,21 @@
         "gid": "V-216821",
         "rid": "SV-216821r531087_rule",
         "stig_id": "CISC-RT-000930",
+        "gtitle": "SRG-NET-000018-RTR-000008",
         "fix_id": "F-18051r288838_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96849",
+          "SV-105987"
+        ],
+        "cci": [
+          "CCI-001368"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216821",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) router must be configured to filter source-active multicast advertisements to external MSDP peers to avoid global visibility of local-only multicast sources and groups.",
       "desc": "To avoid global visibility of local information, there are a number of source-group (S, G) states in a PIM-SM domain that must not be leaked to another domain, such as multicast sources with private address, administratively scoped multicast addresses, and the auto-RP groups (224.0.1.39 and 224.0.1.40). Allowing a multicast distribution tree, local to the core, to extend beyond its boundary could enable local multicast traffic to leak into other autonomous systems and customer networks.",
@@ -1433,9 +2381,21 @@
         "gid": "V-216822",
         "rid": "SV-216822r531087_rule",
         "stig_id": "CISC-RT-000940",
+        "gtitle": "SRG-NET-000018-RTR-000009",
         "fix_id": "F-18052r288841_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105989",
+          "V-96851"
+        ],
+        "cci": [
+          "CCI-001368"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216822",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) router must be configured to limit the amount of source-active messages it accepts on a per-peer basis.",
       "desc": "To reduce any risk of a denial-of-service (DoS) attack from a rogue or misconfigured MSDP router, the router must be configured to limit the number of source-active messages it accepts from each peer.",
@@ -1451,9 +2411,21 @@
         "gid": "V-216823",
         "rid": "SV-216823r531087_rule",
         "stig_id": "CISC-RT-000950",
+        "gtitle": "SRG-NET-000512-RTR-000011",
         "fix_id": "F-18053r288844_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105991",
+          "V-96853"
+        ],
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-216823",
       "title": "The Cisco Multicast Source Discovery Protocol (MSDP) router must be configured to use a loopback address as the source address when originating MSDP traffic.",
       "desc": "Using a loopback address as the source address offers a multitude of uses for security, access, management, and scalability of MSDP routers. It is easier to construct appropriate ingress filters for router management plane traffic destined to the network management subnet since the source addresses will be from the range used for loopback interfaces instead of a larger range of addresses used for physical interfaces. Log information recorded by authentication and syslog servers will record the router’s loopback address instead of the numerous physical interface addresses.",
@@ -1469,9 +2441,22 @@
         "gid": "V-217002",
         "rid": "SV-217002r538972_rule",
         "stig_id": "CISC-RT-000020",
+        "gtitle": "SRG-NET-000230-RTR-000001",
         "fix_id": "F-18230r288847_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105817",
+          "V-96679"
+        ],
+        "cci": [
+          "CCI-000366",
+          "CCI-002205"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-217002",
       "title": "The Cisco router must be configured to implement message authentication for all control plane protocols.",
       "desc": "A rogue router could send a fictitious routing update to convince a site's perimeter router to send traffic to an incorrect or even a rogue destination. This diverted traffic could be analyzed to learn confidential information about the site's network or used to disrupt the network's ability to communicate with other networks. This is known as a \"traffic attraction attack\", and is prevented by configuring neighbor router authentication for routing updates. This requirement applies to all IPv4 and IPv6 protocols that are used to exchange routing or packet forwarding information. This includes BGP, RIP, OSPF, EIGRP, IS-IS and LDP.",
@@ -1487,9 +2472,22 @@
         "gid": "V-217003",
         "rid": "SV-217003r531087_rule",
         "stig_id": "CISC-RT-000030",
+        "gtitle": "SRG-NET-000230-RTR-000003",
         "fix_id": "F-18231r288850_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105819",
+          "V-96681"
+        ],
+        "cci": [
+          "CCI-002205",
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-217003",
       "title": "The Cisco router must be configured to use keys with a duration not exceeding 180 days for authenticating routing protocol messages.",
       "desc": "If the keys used for routing protocol authentication are guessed, the malicious user could create havoc within the network by advertising incorrect routes and redirecting traffic. Some routing protocols allow the use of key chains for authentication. A key chain is a set of keys that is used in succession, with each having a lifetime of no more than 180 days. Changing the keys frequently reduces the risk of them eventually being guessed. Keys cannot be used during time periods for which they are not activated. If a time period occurs during which no key is activated, neighbor authentication cannot occur, and therefore routing updates will fail. Therefore, ensure that for a given key chain, key activation times overlap to avoid any period of time during which no key is activated.",
@@ -1505,9 +2503,21 @@
         "gid": "V-217004",
         "rid": "SV-217004r538985_rule",
         "stig_id": "CISC-RT-000080",
+        "gtitle": "SRG-NET-000131-RTR-000083",
         "fix_id": "F-18232r288853_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96691",
+          "SV-105829"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-217004",
       "title": "The Cisco router must not be configured to have any feature enabled that calls home to the vendor.",
       "desc": "Call home services will routinely send data such as configuration and diagnostic information to the vendor for routine or emergency analysis and troubleshooting. There is a risk that transmission of sensitive data sent to unauthorized persons could result in data loss or downtime due to an attack.",
@@ -1523,9 +2533,21 @@
         "gid": "V-217005",
         "rid": "SV-217005r531087_rule",
         "stig_id": "CISC-RT-000310",
+        "gtitle": "SRG-NET-000205-RTR-000014",
         "fix_id": "F-18233r288856_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105863",
+          "V-96725"
+        ],
+        "cci": [
+          "CCI-001094"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-217005",
       "title": "The Cisco perimeter router must be configured to restrict it from accepting outbound IP packets that contain an illegitimate address in the source address field via egress filter or by enabling Unicast Reverse Path Forwarding (uRPF).",
       "desc": "A compromised host in an enclave can be used by a malicious platform to launch cyberattacks on third parties. This is a common practice in \"botnets\", which are a collection of compromised computers using malware to attack other computers or networks. DDoS attacks frequently leverage IP source address spoofing to send packets to multiple hosts that in turn will then send return traffic to the hosts with the IP addresses that were forged. This can generate significant amounts of traffic. Therefore, protection measures to counteract IP source address spoofing must be taken. When uRPF is enabled in strict mode, the packet must be received on the interface that the device would use to forward the return packet; thereby mitigating IP source address spoofing.",
@@ -1541,9 +2563,21 @@
         "gid": "V-217006",
         "rid": "SV-217006r531087_rule",
         "stig_id": "CISC-RT-000350",
+        "gtitle": "SRG-NET-000205-RTR-000015",
         "fix_id": "F-18234r288859_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105871",
+          "V-96733"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-217006",
       "title": "The Cisco perimeter router must be configured to block all packets with any IP options.",
       "desc": "Packets with IP options are not fast switched and henceforth must be punted to the router processor. Hackers who initiate denial-of-service (DoS) attacks on routers commonly send large streams of packets with IP options. Dropping the packets with IP options reduces the load of IP options packets on the router. The end result is a reduction in the effects of the DoS attack on the router and on downstream routers.",
@@ -1559,9 +2593,21 @@
         "gid": "V-217007",
         "rid": "SV-217007r531087_rule",
         "stig_id": "CISC-RT-000470",
+        "gtitle": "SRG-NET-000362-RTR-000124",
         "fix_id": "F-18235r288862_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "V-96757",
+          "SV-105895"
+        ],
+        "cci": [
+          "CCI-002385"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-217007",
       "title": "The Cisco BGP router must be configured to enable the Generalized TTL Security Mechanism (GTSM).",
       "desc": "As described in RFC 3682, GTSM is designed to protect a router's IP-based control plane from DoS attacks. Many attacks focused on CPU load and line-card overload can be prevented by implementing GTSM on all Exterior Border Gateway Protocol speaking routers. GTSM is based on the fact that the vast majority of control plane peering is established between adjacent routers; that is, the Exterior Border Gateway Protocol peers are either between connecting interfaces or between loopback interfaces. Since TTL spoofing is considered nearly impossible, a mechanism based on an expected TTL value provides a simple and reasonably robust defense from infrastructure attacks based on forged control plane traffic.",
@@ -1577,9 +2623,22 @@
         "gid": "V-217008",
         "rid": "SV-217008r531087_rule",
         "stig_id": "CISC-RT-000480",
+        "gtitle": "SRG-NET-000230-RTR-000002",
         "fix_id": "F-18236r288865_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105897",
+          "V-96759"
+        ],
+        "cci": [
+          "CCI-000366",
+          "CCI-002205"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-217008",
       "title": "The Cisco BGP router must be configured to use a unique key for each autonomous system (AS) that it peers with.",
       "desc": "If the same keys are used between eBGP neighbors, the chance of a hacker compromising any of the BGP sessions increases. It is possible that a malicious user exists in one autonomous system who would know the key used for the eBGP session. This user would then be able to hijack BGP sessions with other trusted neighbors.",
@@ -1595,9 +2654,21 @@
         "gid": "V-217009",
         "rid": "SV-217009r531087_rule",
         "stig_id": "CISC-RT-000750",
+        "gtitle": "SRG-NET-000205-RTR-000016",
         "fix_id": "F-18237r288868_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "legacy": [
+          "SV-105951",
+          "V-96813"
+        ],
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-217009",
       "title": "The Cisco PE router must be configured to ignore or block all packets with any IP options.",
       "desc": "Packets with IP options are not fast switched and therefore must be punted to the router processor. Hackers who initiate denial-of-service (DoS) attacks on routers commonly send large streams of packets with IP options. Dropping the packets with IP options reduces the load of IP options packets on the router. The end result is a reduction in the effects of the DoS attack on the router and on downstream routers.",
@@ -1613,9 +2684,17 @@
         "gid": "V-230037",
         "rid": "SV-230037r531381_rule",
         "stig_id": "CISC-RT-000235",
+        "gtitle": "SRG-NET-000512-RTR-000100",
         "fix_id": "F-31322r531380_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230037",
       "title": "The Cisco router must be configured to have Cisco Express Forwarding enabled.",
       "desc": "The Cisco Express Forwarding (CEF) switching mode replaces the traditional Cisco routing cache with a data structure that mirrors the entire system routing table. Because there is no need to build cache entries when traffic starts arriving for new destinations, CEF behaves more predictably when presented with large volumes of traffic addressed to many destinations—such as a SYN flood attacks that. Because many SYN flood attacks use randomized source addresses to which the hosts under attack will reply to, there can be a substantial amount of traffic for a large number of destinations that the router will have to handle. Consequently, routers configured for CEF will perform better under SYN floods directed at hosts inside the network than routers using the traditional cache.",
@@ -1631,9 +2710,17 @@
         "gid": "V-230040",
         "rid": "SV-230040r532994_rule",
         "stig_id": "CISC-RT-000236",
+        "gtitle": "SRG-NET-000512-RTR-000012",
         "fix_id": "F-32329r531385_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230040",
       "title": "The Cisco router must be configured to advertise a hop limit of at least 32 in Router Advertisement messages for IPv6 stateless auto-configuration deployments.",
       "desc": "The Neighbor Discovery protocol allows a hop limit value to be advertised by routers in a Router Advertisement message being used by hosts instead of the standardized default value. If a very small value was configured and advertised to hosts on the LAN segment, communications would fail due to the hop limit reaching zero before the packets sent by a host reached its destination.",
@@ -1649,9 +2736,17 @@
         "gid": "V-230043",
         "rid": "SV-230043r533001_rule",
         "stig_id": "CISC-RT-000237",
+        "gtitle": "SRG-NET-000512-RTR-000013",
         "fix_id": "F-32330r532997_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230043",
       "title": "The Cisco router must not be configured to use IPv6 Site Local Unicast addresses.",
       "desc": "As currently defined, site local addresses are ambiguous and can be present in multiple sites. The address itself does not contain any indication of the site to which it belongs. The use of site-local addresses has the potential to adversely affect network security through leaks, ambiguity, and potential misrouting as documented in section 2 of RFC3879. RFC3879 formally deprecates the IPv6 site-local unicast prefix FEC0::/10 as defined in RFC3513.",
@@ -1667,9 +2762,17 @@
         "gid": "V-230046",
         "rid": "SV-230046r533007_rule",
         "stig_id": "CISC-RT-000391",
+        "gtitle": "SRG-NET-000512-RTR-000014",
         "fix_id": "F-32331r533004_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230046",
       "title": "The Cisco perimeter router must be configured to suppress Router Advertisements on all external IPv6-enabled interfaces.",
       "desc": "Many of the known attacks in stateless autoconfiguration are defined in RFC 3756 were present in IPv4 ARP attacks. To mitigate these vulnerabilities, links that have no hosts connected such as the interface connecting to external gateways must be configured to suppress router advertisements.",
@@ -1685,9 +2788,17 @@
         "gid": "V-230049",
         "rid": "SV-230049r533189_rule",
         "stig_id": "CISC-RT-000392",
+        "gtitle": "SRG-NET-000364-RTR-000200",
         "fix_id": "F-32334r533188_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230049",
       "title": "The Cisco perimeter router must be configured to drop IPv6 undetermined transport packets.",
       "desc": "One of the fragmentation weaknesses known in IPv6 is the undetermined transport packet. This packet contains an undetermined protocol due to fragmentation. Depending on the length of the IPv6 extension header chain, the initial fragment may not contain the layer four port information of the packet.",
@@ -1703,9 +2814,17 @@
         "gid": "V-230052",
         "rid": "SV-230052r533196_rule",
         "stig_id": "CISC-RT-000393",
+        "gtitle": "SRG-NET-000364-RTR-000201",
         "fix_id": "F-32336r533195_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230052",
       "title": "The Cisco perimeter router must be configured drop IPv6 packets with a Routing Header type 0, 1, or 3–255.",
       "desc": "The routing header can be used maliciously to send a packet through a path where less robust security is in place, rather than through the presumably preferred path of routing protocols. Use of the routing extension header has few legitimate uses other than as implemented by Mobile IPv6. The Type 0 Routing Header (RFC 5095) is dangerous because it allows attackers to spoof source addresses and obtain traffic in response, rather than the real owner of the address. Secondly, a packet with an allowed destination address could be sent through a Firewall using the Routing Header functionality, only to bounce to a different node once inside. The Type 1 Routing Header is defined by a specification called \"Nimrod Routing\", a discontinued project funded by DARPA. Assuming that most implementations will not recognize the Type 1 Routing Header, it must be dropped. The Type 3–255 Routing Header values in the routing type field are currently undefined and should be dropped inbound and outbound.",
@@ -1721,9 +2840,17 @@
         "gid": "V-230147",
         "rid": "SV-230147r538509_rule",
         "stig_id": "CISC-RT-000394",
+        "gtitle": "SRG-NET-000364-RTR-000202",
         "fix_id": "F-32441r538508_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230147",
       "title": "The Cisco perimeter router must be configured to drop IPv6 packets containing a Hop-by-Hop header with invalid option type values.",
       "desc": "These options are intended to be for the Destination Options header only. The optional and extensible natures of the IPv6 extension headers require higher scrutiny since many implementations do not always drop packets with headers that it cannot recognize and hence could cause a Denial-of-Service on the target device. In addition, the type, length, value (TLV) formatting provides the ability for headers to be very large.",
@@ -1739,9 +2866,17 @@
         "gid": "V-230151",
         "rid": "SV-230151r538596_rule",
         "stig_id": "CISC-RT-000395",
+        "gtitle": "SRG-NET-000364-RTR-000203",
         "fix_id": "F-32444r538595_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230151",
       "title": "The Cisco perimeter router must be configured to drop IPv6 packets containing a Destination Option header with invalid option type values.",
       "desc": "These options are intended to be for the Hop-by-Hop header only. The optional and extensible natures of the IPv6 extension headers require higher scrutiny since many implementations do not always drop packets with headers that it cannot recognize. Hence, this could cause a Denial-of-Service on the target device. In addition, the type, length, value (TLV) formatting provides the ability for headers to be very large.",
@@ -1757,9 +2892,17 @@
         "gid": "V-230154",
         "rid": "SV-230154r538603_rule",
         "stig_id": "CISC-RT-000396",
+        "gtitle": "SRG-NET-000364-RTR-000204",
         "fix_id": "F-32446r538602_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230154",
       "title": "The Cisco perimeter router must be configured to drop IPv6 packets containing an extension header with the Endpoint Identification option.",
       "desc": "The optional and extensible natures of the IPv6 extension headers require higher scrutiny since many implementations do not always drop packets with headers that it cannot recognize, and hence could cause a Denial-of-Service on the target device. In addition, the type, length, value (TLV) formatting provides the ability for headers to be very large. This option type is associated with the Nimrod Routing system and has no defining RFC document.",
@@ -1775,9 +2918,17 @@
         "gid": "V-230157",
         "rid": "SV-230157r538611_rule",
         "stig_id": "CISC-RT-000397",
+        "gtitle": "SRG-NET-000364-RTR-000205",
         "fix_id": "F-32448r538610_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230157",
       "title": "The Cisco perimeter router must be configured to drop IPv6 packets containing the NSAP address option within Destination Option header.",
       "desc": "The optional and extensible natures of the IPv6 extension headers require higher scrutiny since many implementations do not always drop packets with headers that it cannot recognize, and hence could cause a Denial-of-Service on the target device. In addition, the type, length, value (TLV) formatting provides the ability for headers to be very large. This option type from RFC 1888 (OSI NSAPs and IPv6) has been deprecated by RFC 4048.",
@@ -1793,9 +2944,17 @@
         "gid": "V-230160",
         "rid": "SV-230160r538618_rule",
         "stig_id": "CISC-RT-000398",
+        "gtitle": "SRG-NET-000364-RTR-000206",
         "fix_id": "F-32450r538617_fix",
-        "documentable": false
+        "rationale": null,
+        "documentable": false,
+        "cci": [
+          "CCI-002403"
+        ]
       },
+      "refs": [
+        "DPMS Target Cisco IOS XR Router RTR"
+      ],
       "id": "V-230160",
       "title": "The Cisco perimeter router must be configured to drop IPv6 packets containing a Hop-by-Hop or Destination Option extension header with an undefined option type.",
       "desc": "The optional and extensible natures of the IPv6 extension headers require higher scrutiny since many implementations do not always drop packets with headers that it cannot recognize, and hence could cause a Denial-of-Service on the target device. In addition, the type, length, value (TLV) formatting provides the ability for headers to be very large.",
