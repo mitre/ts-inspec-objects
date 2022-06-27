@@ -5,6 +5,7 @@ import { BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice,
 import Control from '../objects/control';
 import _ from 'lodash';
 import { OvalDefinitionValue } from '../types/oval';
+import { CciNistMappingData } from '@mitre/hdf-converters';
 
 export type GroupContextualizedRule = BenchmarkRule & {group: Omit<BenchmarkGroup, 'Rule' | 'Group'>}
 
@@ -141,9 +142,9 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
                     }
                     control.tags.nist?.push(identifier['#text'])
                 } else {
-                    console.log('Alert')
-                    console.log(identifier['@_system'])
-                    console.log(identifier['#text'])
+                    // console.log('Alert')
+                    // console.log(identifier['@_system'])
+                    // console.log(identifier['#text'])
                 }
             })
         }
@@ -199,6 +200,19 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
                 }
             }
         })
+
+        // Associate any CCIs with NIST tags
+        if (control.tags.cci) {
+            control.tags.cci.forEach((cci: string) => {
+                if (!('nist' in control.tags)) {
+                    control.tags.nist = []
+                }
+                if (cci in CciNistMappingData.data) {
+                    console.log(_.get(CciNistMappingData.data, cci))
+                    control.tags.nist?.push(_.get(CciNistMappingData.data, cci))
+                }
+            })
+        }
 
         profile.controls.push(control)
     })
