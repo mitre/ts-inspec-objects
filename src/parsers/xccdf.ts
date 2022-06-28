@@ -1,11 +1,10 @@
-import {data as CCINistMappings} from '@mitre/hdf-converters/lib/src/mappings/CciNistMappingData'
 import Profile from '../objects/profile';
 import { convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson, impactNumberToSeverityString, severityStringToImpact } from '../utilities/xccdf';
 import { BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice, ParsedXCCDF, RationaleElement } from '../types/xccdf';
 import Control from '../objects/control';
 import _ from 'lodash';
 import { OvalDefinitionValue } from '../types/oval';
-import { CciNistMappingData } from '@mitre/hdf-converters';
+import {data as CciNistMappingData} from '../mappings/CciNistMappingData'
 
 export type GroupContextualizedRule = BenchmarkRule & {group: Omit<BenchmarkGroup, 'Rule' | 'Group'>}
 
@@ -207,9 +206,9 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
                 if (!('nist' in control.tags)) {
                     control.tags.nist = []
                 }
-                if (cci in CciNistMappingData.data) {
-                    console.log(_.get(CciNistMappingData.data, cci))
-                    control.tags.nist?.push(_.get(CciNistMappingData.data, cci))
+                if (cci in CciNistMappingData) {
+                    console.log(_.get(CciNistMappingData, cci))
+                    control.tags.nist?.push(_.get(CciNistMappingData, cci))
                 }
             })
         }

@@ -2,7 +2,7 @@
   "name": "@mitre/inspec-objects",
   "version": "0.0.1",
   "description": "Typescript objects for normalizing between InSpec profiles and XCCDF benchmarks",
-  "main": "index.ts",
+  "main": "lib/index.js",
   "publishConfig": {
     "main": "lib/index.js"
   },
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/mitre/ts-inspec-objects#readme",
   "dependencies": {
-    "@mitre/hdf-converters": "^2.6.9",
     "@types/flat": "^5.0.2",
     "@types/json-diff": "^0.7.0",
     "@types/lodash": "^4.14.178",
