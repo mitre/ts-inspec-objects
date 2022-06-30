@@ -3,6 +3,20 @@ import Profile from '../objects/profile';
 import { ProfileDiff } from '../types/diff';
 import _ from 'lodash'
 
+export function removeNewlines(control?: Record<string, unknown>): Record<string, unknown> {
+    if (!control) {
+        return {};
+    }
+    return _.mapValues(control, (value) => {
+        if (typeof value === 'string') {
+            return value.replace(/\n/g, '{{{{newlineHERE}}}}').trim();
+        } else if (typeof value === 'object' && value !== null) {
+            return removeNewlines(value as Record<string, unknown>);
+        }
+        return value;
+    });
+}
+
 export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDiff {
     const profileDiff: ProfileDiff = {
         addedControlIDs: [],
@@ -37,8 +51,10 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDi
         const toControl = toProfile.controls.find((control) => control.id === fromControl.id)
         if (toControl) {
             const controlDiff: Record<string, any> | undefined = diff(fromControl, toControl);
+            console.log(controlDiff)
             if (controlDiff) {
                 Object.entries(controlDiff).forEach(([key, value]) => {
+                    console.log(value)
                     if (_.has(value, '__new')) {
                         _.set(profileDiff, 'changedControls.'+fromControl.id +'.'+key.replace('.', '\\.'), _.get(controlDiff, key+'.__new'))
                     } else if (typeof value === 'object') {

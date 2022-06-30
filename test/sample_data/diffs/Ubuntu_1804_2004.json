@@ -28945,6 +28945,1105 @@
       "descs": {
         "fix": "# Remediation is applicable only in certain platforms if [ ! -f /.dockerenv ] &amp;&amp; [ ! -f /run/.containerenv ]; then if [ -n \"$(find /sys/class/net/*/ -type d -name wireless)\" ]; then interfaces=$(ls -L -d /sys/class/net/*/wireless | xargs dirname | xargs basename) for i in $interfaces; do ifdown $i drivers=$(basename $(readlink -f /sys/class/net/$i/device/driver)) echo \"install $drivers /bin/true\" &gt;&gt; /etc/modprobe.d/disable_wireless.conf modprobe -r $drivers done if command -v nmcli &gt;/dev/null 2&gt;&amp;1 ; then nmcli radio all off fi fi else &gt;&amp;2 echo 'Remediation is not applicable, nothing was done' fi"
       }
-    }
+    },
+    "C-1": [
+      null,
+      [
+        null,
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ]
+      ],
+      [
+        null,
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      {
+        "tags__deleted": {},
+        "descs__deleted": {}
+      }
+    ],
+    "C-2": [
+      null,
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ]
+    ],
+    "C-3": [
+      null,
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        [
+          null,
+          [
+            null,
+            {
+              "tags__deleted": {},
+              "descs__deleted": {}
+            },
+            {
+              "tags__deleted": {},
+              "descs__deleted": {}
+            },
+            {
+              "tags__deleted": {},
+              "descs__deleted": {}
+            },
+            {
+              "tags__deleted": {},
+              "descs__deleted": {}
+            }
+          ],
+          [
+            null,
+            {
+              "tags__deleted": {},
+              "descs__deleted": {}
+            },
+            {
+              "tags__deleted": {},
+              "descs__deleted": {}
+            },
+            {
+              "tags__deleted": {},
+              "descs__deleted": {}
+            },
+            {
+              "tags__deleted": {},
+              "descs__deleted": {}
+            }
+          ]
+        ]
+      ],
+      {
+        "tags__deleted": {},
+        "descs__deleted": {}
+      },
+      {
+        "tags__deleted": {},
+        "descs__deleted": {}
+      }
+    ],
+    "C-4": [
+      null,
+      [
+        null,
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      {
+        "tags__deleted": {},
+        "descs__deleted": {}
+      }
+    ],
+    "C-5": [
+      null,
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        [
+          null,
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          },
+          {
+            "tags__deleted": {},
+            "descs__deleted": {}
+          }
+        ],
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      {
+        "tags__deleted": {},
+        "descs__deleted": {}
+      },
+      {
+        "tags__deleted": {},
+        "descs__deleted": {}
+      }
+    ],
+    "C-6": [
+      null,
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ],
+      [
+        null,
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        },
+        {
+          "tags__deleted": {},
+          "descs__deleted": {}
+        }
+      ]
+    ]
   }
 }

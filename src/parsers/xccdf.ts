@@ -26,7 +26,7 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
     return rules
 }
 
-export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
+export function processXCCDF(xml: string, removeNewlines = false, ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
     const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
     const rules = extractAllRules(parsedXML.Benchmark[0].Group)
 
@@ -46,8 +46,16 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
         const control = new Control();
 
         control.id = rule.group['@_id']
-        control.title = rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`
-        control.desc = typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0]
+        
+        if (removeNewlines) {
+            const title = rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`
+            control.title = title.replace(/\n/g, '{{{{newlineHERE}}}}')
+            const desc = typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0]
+            control.desc = desc?.replace(/\n/g, '{{{{newlineHERE}}}}')
+        } else {
+            control.title = rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`
+            control.desc = typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0]
+        }
         control.impact = severityStringToImpact(rule['@_severity'] || 'critical', rule.group['@_id'])
         
         if (!control.descs || Array.isArray(control.descs)) {
@@ -56,7 +64,13 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
 
         if (rule.check) {
             if (rule.check.some((ruleValue) => 'check-content' in ruleValue)) {
-                control.descs.check = rule.check ? rule.check[0]['check-content'] : 'Missing description'
+                if (removeNewlines) {
+                    const check = rule.check ? rule.check[0]['check-content'] : 'Missing description'
+                    control.descs.check = check.replace(/\n/g, '{{{{newlineHERE}}}}')
+                } else {
+                    control.descs.check = rule.check ? rule.check[0]['check-content'] : 'Missing description'
+                }
+                
             } else if (rule.check.some((ruleValue) => 'check-content-ref' in ruleValue) && ovalDefinitions) {
                 let referenceID: string | null = null;
                 for (const checkContent of rule.check) {
@@ -69,14 +83,25 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
                     }
                 }
                 if (referenceID && referenceID in ovalDefinitions) {
-                    control.descs.check = ovalDefinitions[referenceID].metadata[0].title
+                    if (removeNewlines) {
+                        const check = ovalDefinitions[referenceID].metadata[0].title
+                        control.descs.check = check.replace(/\n/g, '{{{{newlineHERE}}}}')
+                    } else {
+                        control.descs.check = ovalDefinitions[referenceID].metadata[0].title
+                    }
                 } else if (referenceID ) {
                     console.warn(`Could not find OVAL definition for ${referenceID}`)
                 }
             }
         }
+    
+        if (removeNewlines) {
+            const fix = rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text')
+            control.descs.fix = fix.replace(/\n/g, '{{{{newlineHERE}}}}')
+        } else {
+            control.descs.fix = rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text')
+        }
         
-        control.descs.fix = rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text')
         control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'critical', control.id))
         control.tags.gid = rule.group['@_id'],
         control.tags.rid = rule['@_id']
@@ -207,7 +232,6 @@ export function processXCCDF(xml: string, ovalDefinitions?: Record<string, OvalD
                     control.tags.nist = []
                 }
                 if (cci in CciNistMappingData) {
-                    console.log(_.get(CciNistMappingData, cci))
                     control.tags.nist?.push(_.get(CciNistMappingData, cci))
                 }
             })
