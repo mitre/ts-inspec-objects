@@ -16,6 +16,10 @@ export function convertEncodedXmlIntoJson(
     })
 }
 
+export function removeXMLSpecialCharacters(input: string): string {
+  return input.replace(/&amp;/gm, '&').replace(/&lt;/gm, '<').replace(/&gt;/gm, '>')
+}
+
 export function severityStringToImpact(string: string, id: string): number {
   if (string.match(/none|na|n\/a|not[\s()*_|]?applicable/i)?.length) {
     return 0.0
