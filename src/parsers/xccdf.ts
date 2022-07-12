@@ -45,7 +45,7 @@ export function processXCCDF(xml: string, removeNewlines = false, ovalDefinition
         }
         const control = new Control();
 
-        control.id = rule.group['@_id']
+        control.id = rule['@_id']
         
         if (removeNewlines) {
             const title = removeXMLSpecialCharacters(rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`)
