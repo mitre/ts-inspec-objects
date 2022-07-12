@@ -1,7 +1,7 @@
 import { ExecJSON } from "inspecjs";
 import _ from "lodash";
 import {flatten, unflatten} from "flat"
-import { escapeQuotes, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
+import { escapeQuotes, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
 
 export default class Control {
   id?: string | null;
@@ -76,13 +76,13 @@ export default class Control {
 
     result += `control "${this.id}" do\n`;
     if (this.title) {
-      result += `  title "${wrapAndEscapeQuotes(this.title, lineLength)}"\n`;
+      result += `  title "${wrapAndEscapeQuotes(removeNewlinePlaceholders(this.title), lineLength)}"\n`;
     } else {
       console.error(`${this.id} does not have a title`);
     }
 
     if (this.desc) {
-      result += `  desc "${wrapAndEscapeQuotes(this.desc, lineLength)}"\n`;
+      result += `  desc "${wrapAndEscapeQuotes(removeNewlinePlaceholders(this.desc), lineLength)}"\n`;
     } else {
       console.error(`${this.id} does not have a desc`);
     }
@@ -91,7 +91,7 @@ export default class Control {
       Object.entries(this.descs).forEach(([key, desc]) => {
         if (desc) {
           result += `  desc "${key}", "${wrapAndEscapeQuotes(
-            desc,
+            removeNewlinePlaceholders(desc),
             lineLength
           )}"\n`;
         } else {
@@ -109,9 +109,9 @@ export default class Control {
     if (this.refs) {
       this.refs.forEach((ref) => {
         if (typeof ref === 'string') {
-          result += `  ref '${escapeQuotes(ref)}'\n`;
+          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref))}'\n`;
         } else {
-          result += `  ref '${escapeQuotes(ref.ref || '')}', url: '${escapeQuotes(ref.url || '')}'`
+          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref.ref || ''))}', url: '${escapeQuotes(removeNewlinePlaceholders(ref.url || ''))}'`
         }
         
       });
@@ -135,7 +135,7 @@ export default class Control {
           }
         } else if (typeof value === "string") {
           result += `  tag ${tag}: "${wrapAndEscapeQuotes(
-            value,
+            removeNewlinePlaceholders(value),
             lineLength
           )}"\n`;
         }

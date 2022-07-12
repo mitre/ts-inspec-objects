@@ -51,10 +51,8 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDi
         const toControl = toProfile.controls.find((control) => control.id === fromControl.id)
         if (toControl) {
             const controlDiff: Record<string, any> | undefined = diff(fromControl, toControl);
-            console.log(controlDiff)
             if (controlDiff) {
                 Object.entries(controlDiff).forEach(([key, value]) => {
-                    console.log(value)
                     if (_.has(value, '__new')) {
                         _.set(profileDiff, 'changedControls.'+fromControl.id +'.'+key.replace('.', '\\.'), _.get(controlDiff, key+'.__new'))
                     } else if (typeof value === 'object') {
