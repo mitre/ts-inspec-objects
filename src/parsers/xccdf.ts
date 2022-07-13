@@ -45,14 +45,12 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
         }
         const control = new Control();
 
-        control.id = rule['@_id']
-
         switch (useRuleId) {
             case 'group':
                 control.id = rule.group['@_id']
                 break;
             case 'rule':
-                control.id = rule['@_id']
+                control.id = rule['@_id'].split('r')[0]
                 break;
             case 'version':
                 control.id = rule.version
