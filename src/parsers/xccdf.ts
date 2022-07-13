@@ -26,7 +26,7 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
     return rules
 }
 
-export function processXCCDF(xml: string, removeNewlines = false, ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
+export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'group' | 'rule' | 'version', ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
     const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
     const rules = extractAllRules(parsedXML.Benchmark[0].Group)
 
@@ -46,6 +46,20 @@ export function processXCCDF(xml: string, removeNewlines = false, ovalDefinition
         const control = new Control();
 
         control.id = rule['@_id']
+
+        switch (useRuleId) {
+            case 'group':
+                control.id = rule.group['@_id']
+                break;
+            case 'rule':
+                control.id = rule['@_id']
+                break;
+            case 'version':
+                control.id = rule.version
+                break;
+            default:
+                throw new Error('useRuleId must be one of "group", "rule", or "version"')
+        }
         
         if (removeNewlines) {
             const title = removeXMLSpecialCharacters(rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`)
