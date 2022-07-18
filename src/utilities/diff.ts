@@ -17,8 +17,30 @@ export function removeNewlines(control?: Record<string, unknown>): Record<string
     });
 }
 
-export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDiff {
+export function simplifyDiff(diffData: Record<string, unknown>) {
+    return _.transform(diffData, (result: Record<string, unknown>, diffValue, key) => {
+        if (_.has(diffValue, '__new')) {
+            result[key] = _.get(diffValue, '__new')
+        } else if (Array.isArray(diffValue)) {
+            result[key] = diffValue.map((value) => value[0] === '+' && value[1]).filter(value => value)
+        } else if (typeof diffValue === 'object') {
+            result[key] = simplifyDiff(diffValue as Record<string, unknown>)
+        } else if (key.endsWith('__deleted')) {
+            return undefined
+        } else {
+            result[key] = diffValue
+        }
+    })
+}
+
+export function diffProfile(fromProfile: Profile, toProfile: Profile): {simplified: ProfileDiff, originalDiff: Record<string, unknown>} {
     const profileDiff: ProfileDiff = {
+        addedControlIDs: [],
+        removedControlIDs: [],
+        changedControls: {}
+    };
+
+    const originalDiff: ProfileDiff = {
         addedControlIDs: [],
         removedControlIDs: [],
         changedControls: {}
@@ -33,8 +55,10 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDi
     controlIDDiff?.forEach((diffValue) => {
         if (diffValue[0] === '-') {
             profileDiff.removedControlIDs.push(diffValue[1])
+            originalDiff.removedControlIDs.push(diffValue[1])
         } else if (diffValue[0] === '+') {
             profileDiff.addedControlIDs.push(diffValue[1])
+            originalDiff.addedControlIDs.push(diffValue[1])
         }
     })
 
@@ -43,6 +67,7 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDi
         const newControl = toProfile.controls.find((control) => addedControl === control.id)
         if (newControl) {
             profileDiff.changedControls[addedControl] = newControl
+            originalDiff.changedControls[addedControl] = newControl
         }
     })
 
@@ -50,20 +75,13 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): ProfileDi
     for (const fromControl of fromProfile.controls) {
         const toControl = toProfile.controls.find((control) => control.id === fromControl.id)
         if (toControl) {
-            const controlDiff: Record<string, any> | undefined = diff(fromControl, toControl);
+            const controlDiff: Record<string, any> | undefined = _.omit(diff(fromControl, toControl), 'code__deleted');
             if (controlDiff) {
-                Object.entries(controlDiff).forEach(([key, value]) => {
-                    if (_.has(value, '__new')) {
-                        _.set(profileDiff, 'changedControls.'+fromControl.id +'.'+key.replace('.', '\\.'), _.get(controlDiff, key+'.__new'))
-                    } else if (typeof value === 'object') {
-                        Object.entries(value).forEach(([subKey]) => {
-                            _.set(profileDiff, 'changedControls.'+fromControl.id +'.'+key.replace('.', '\\.')+'.'+subKey.replace('.', '\\.'), _.get(controlDiff, key+'.'+subKey+'.__new'))
-                        })
-                    }
-                })
+                profileDiff.changedControls[toControl.id!] = simplifyDiff(controlDiff)
+                originalDiff.changedControls[toControl.id!] = controlDiff
             }
         }
     }
 
-    return profileDiff
+    return {simplified: profileDiff, originalDiff: originalDiff}
 }

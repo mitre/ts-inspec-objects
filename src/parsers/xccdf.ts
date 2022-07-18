@@ -26,7 +26,7 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
     return rules
 }
 
-export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'group' | 'rule' | 'version', ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
+export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
     const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
     const rules = extractAllRules(parsedXML.Benchmark[0].Group)
 
@@ -55,6 +55,9 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             case 'version':
                 control.id = rule.version
                 break;
+            case 'cis':
+                // add
+                break;
             default:
                 throw new Error('useRuleId must be one of "group", "rule", or "version"')
         }
@@ -63,7 +66,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             const title = removeXMLSpecialCharacters(rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`)
             control.title = title.replace(/\n/g, '{{{{newlineHERE}}}}')
             const desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
-            control.desc = desc?.replace(/\n/g, '{{{{newlineHERE}}}}')
+            control.desc = desc?.trim().replace(/\n/g, '{{{{newlineHERE}}}}')
         } else {
             control.title = removeXMLSpecialCharacters(rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`)
             control.desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
@@ -127,14 +130,10 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
         
         if (rule['fix'] && rule['fix'].length > 0) {
             control.tags.fix_id = rule['fix'][0]['@_id']
-        } else {
-            control.tags.fix_id = null
-        }
+        } 
 
         if (rule['rationale']) {
             control.tags.rationale = rule['rationale'][0]['#text']
-        } else {
-            control.tags.rationale = null
         }
 
         if (typeof extractedDescription === 'object') {
@@ -217,7 +216,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                         }
                     }
 
-                    // Add the reference to the control tags when seperated by §
+                    // Add the reference to the control tags when separated by §
                     if (typeof referenceText === 'string' && referenceText.indexOf('§') !== -1) {
                         const referenceParts = referenceText.split('§')
                         if (referenceParts.length == 2) {

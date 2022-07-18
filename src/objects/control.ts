@@ -3,12 +3,23 @@ import _ from "lodash";
 import {flatten, unflatten} from "flat"
 import { escapeQuotes, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
 
+export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } | null | undefined {
+  if (Array.isArray(descs)) {
+    const descriptions: Record<string, string | undefined> = {}
+    descs.forEach((description) => {
+      descriptions[description.label] = description.data
+    })
+    return descriptions
+  }
+  return descs
+}
+
 export default class Control {
   id?: string | null;
   title?: string | null;
   code?: string | null;
   desc?: string | null;
-  descs?: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null;
+  descs?: { [key: string]: string | undefined } | null;
   impact?: number;
   ref?: string;
   refs?: (string | {
@@ -18,14 +29,15 @@ export default class Control {
   })[];
   tags: {
     check?: string;
+    check_id?: string;
     fix?: string;
+    fix_id?: string | null;
     severity?: string;
     gtitle?: string;
     gid?: string;
     satisfies?: string[];
     rid?: string;
     stig_id?: string;
-    fix_id?: string | null;
     cci?: string[];
     cis_controls?: Record<string, string[]>[];
     nist?: string[];

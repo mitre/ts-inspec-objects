@@ -8,7 +8,7 @@ import {
   ExecJSON
 } from "inspecjs";
 import _ from "lodash";
-import Control from "../objects/control";
+import Control, { objectifyDescriptions } from "../objects/control";
 import Profile from "../objects/profile";
 
 export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
@@ -31,7 +31,7 @@ export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
         title: control.data.title,
         impact: control.data.impact,
         desc: control.data.desc,
-        descs: control.hdf.wraps.descriptions,
+        descs: objectifyDescriptions(control.hdf.wraps.descriptions),
         tags: control.hdf.wraps.tags,
       })
     );
@@ -62,7 +62,7 @@ export function processProfileJSON(
         impact: control.impact,
         code: control.code,
         tags: control.tags,
-        descs: control.descriptions,
+        descs: objectifyDescriptions(control.descriptions),
       })
     );
   });
