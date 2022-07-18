@@ -2,8 +2,22 @@ import parser from 'fast-xml-parser'
 import * as htmlparser from 'htmlparser2'
 import _ from 'lodash'
 import { DecodedDescription } from '../types/xccdf'
-import fs from 'fs'
-import { randomUUID } from 'crypto'
+import he from 'he'
+
+var htmlEntities: Record<string, string> = {
+  nbsp: ' ',
+  cent: '¢',
+  pound: '£',
+  yen: '¥',
+  euro: '€',
+  copy: '©',
+  reg: '®',
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  amp: '&',
+  apos: '\''
+};
 
 export function convertEncodedXmlIntoJson(
     encodedXml: string
@@ -16,9 +30,9 @@ export function convertEncodedXmlIntoJson(
     })
 }
 
-export function removeXMLSpecialCharacters(input: string): string {
-  return input.replace(/&amp;/gm, '&').replace(/&lt;/gm, '<').replace(/&gt;/gm, '>')
-}
+export function removeXMLSpecialCharacters(str: string) {
+  return he.decode(str)
+};
 
 export function severityStringToImpact(string: string, id: string): number {
   if (string.match(/none|na|n\/a|not[\s()*_|]?applicable/i)?.length) {

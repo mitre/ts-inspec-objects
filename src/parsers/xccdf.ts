@@ -43,6 +43,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
         } else {
             extractedDescription = convertEncodedHTMLIntoJson(rule.description)
         }
+        
         const control = new Control();
 
         switch (useRuleId) {
@@ -56,7 +57,8 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 control.id = rule.version
                 break;
             case 'cis':
-                // add
+                // 
+                control.id = 'CIS-PLACEHOLDER'
                 break;
             default:
                 throw new Error('useRuleId must be one of "group", "rule", or "version"')
@@ -117,7 +119,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             control.descs.fix = removeXMLSpecialCharacters(rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text'))
         }
         
-        control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'critical', control.id))
+        control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'critical', control.id || 'Unknown'))
         control.tags.gid = rule.group['@_id'],
         control.tags.rid = rule['@_id']
         control.tags.stig_id = rule['version']

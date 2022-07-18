@@ -20,7 +20,14 @@ export function removeNewlines(control?: Record<string, unknown>): Record<string
 export function simplifyDiff(diffData: Record<string, unknown>) {
     return _.transform(diffData, (result: Record<string, unknown>, diffValue, key) => {
         if (_.has(diffValue, '__new')) {
-            result[key] = _.get(diffValue, '__new')
+            // Remove any trailing space
+            if (typeof _.get(diffValue, '__new') === 'string' && typeof _.get(diffValue, '__old') === 'string') {
+                if (_.get(diffValue, '__new').trim() !== _.get(diffValue, '__old').trim()) {
+                    _.set(result, key, _.get(diffValue, '__new'));
+                }
+            } else {
+                result[key] = _.get(diffValue, '__new')
+            }
         } else if (Array.isArray(diffValue)) {
             result[key] = diffValue.map((value) => value[0] === '+' && value[1]).filter(value => value)
         } else if (typeof diffValue === 'object') {
@@ -37,12 +44,14 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): {simplifi
     const profileDiff: ProfileDiff = {
         addedControlIDs: [],
         removedControlIDs: [],
+        addedControls: {},
         changedControls: {}
     };
 
     const originalDiff: ProfileDiff = {
         addedControlIDs: [],
         removedControlIDs: [],
+        addedControls: {},
         changedControls: {}
     };
 
@@ -66,8 +75,8 @@ export function diffProfile(fromProfile: Profile, toProfile: Profile): {simplifi
     profileDiff.addedControlIDs.forEach((addedControl) => {
         const newControl = toProfile.controls.find((control) => addedControl === control.id)
         if (newControl) {
-            profileDiff.changedControls[addedControl] = newControl
-            originalDiff.changedControls[addedControl] = newControl
+            profileDiff.addedControls[addedControl] = newControl
+            originalDiff.addedControls[addedControl] = newControl
         }
     })
 
