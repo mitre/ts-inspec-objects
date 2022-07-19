@@ -272,7 +272,5 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
 
     profile.controls = _.sortBy(profile.controls, 'id')
 
-    console.log(profile.controls[0])
-
     return profile.toUnformattedObject()
 }
