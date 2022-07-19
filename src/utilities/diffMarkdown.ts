@@ -5,10 +5,10 @@ import Profile from '../objects/profile'
 import _ from "lodash";
 import { removeNewlinePlaceholders } from "./global";
 import { removeXMLSpecialCharacters } from "./xccdf";
+import template from '../resources/automatticUpdateTemplate.json'
 
 function getUpdatedCheckForId(id: string, profile: Profile) {
   const foundControl = profile.controls.find((control) => control.id === id);
-  console.log(foundControl)
   return _.get(foundControl?.descs, 'check') || 'Missing check';
 }
 
@@ -16,11 +16,6 @@ export function createDiffMarkdown(diff: {
   simplified: ProfileDiff;
   originalDiff: any;
 }, updatedProfile: Profile): string {
-  const template = fs.readFileSync(
-    "/home/c/Documents/SAF/ts-inspec-objects/src/resources/updatedcontrols.md",
-    "utf8"
-  );
-
   const renderableDiffData = {
     addedControls: Object.values(diff.simplified.addedControls),
     checks: [] as unknown[],
@@ -38,5 +33,5 @@ export function createDiffMarkdown(diff: {
   })
 
   // Render output
-  return mustache.render(template, renderableDiffData);
+  return mustache.render(template.data, renderableDiffData);
 }
