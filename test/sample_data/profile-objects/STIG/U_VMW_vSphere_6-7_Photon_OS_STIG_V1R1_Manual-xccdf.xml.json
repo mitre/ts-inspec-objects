@@ -1,0 +1,3702 @@
+{
+  "supports": [],
+  "depends": [],
+  "inputs": [],
+  "libraries": [],
+  "files": [],
+  "controls": [
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239072",
+        "rid": "SV-239072r717090_rule",
+        "stig_id": "PHTN-67-000129",
+        "gtitle": "SRG-OS-000342-GPOS-00133",
+        "fix_id": "F-42242r675023_fix",
+        "satisfies": [
+          "SRG-OS-000342-GPOS-00133",
+          "SRG-OS-000447-GPOS-00201"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-001851",
+          "CCI-002702"
+        ],
+        "nist": [
+          "AU-4 (1)",
+          "SI-6 d"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239072",
+      "title": "The Photon operating system must be configured to offload audit logs to a syslog server.",
+      "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Offloading is a common process in information systems with limited audit storage capacity. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command prompt, execute the following command: # grep -v \"^#\" /etc/vmware-syslog/stig-services-auditd.conf Expected result: input(type=\"imfile\" File=\"/var/log/audit/audit.log\" Tag=\"auditd\" Severity=\"info\" Facility=\"local0\") If the file does not exist, this is a finding. If the output of the command does not match the expected result above, this is a finding.",
+        "fix": "Open /etc/vmware-syslog/vmware-syslog/stig-services-auditd.conf with a text editor. Create the file if it does not exist. Set the contents of the file as follows: input(type=\"imfile\" File=\"/var/log/audit/audit.log\" Tag=\"auditd\" Severity=\"info\" Facility=\"local0\")"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239073",
+        "rid": "SV-239073r675027_rule",
+        "stig_id": "PHTN-67-000001",
+        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "fix_id": "F-42243r675026_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000018"
+        ],
+        "nist": [
+          "AC-2 (4)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239073",
+      "title": "The Photon operating system must audit all account creations.",
+      "desc": "Once an attacker establishes access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to create an account. Auditing account creation actions provides logging that can be used for forensic purposes.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep -E \"(useradd|groupadd)\" Expected result: -w /usr/sbin/useradd -p x -k useradd -w /usr/sbin/groupadd -p x -k groupadd If either \"useradd\" or \"groupadd\" are not listed with a permissions filter of at least \"x\", this is a finding.",
+        "fix": "At the command line, execute the following commands: # echo '-w /usr/sbin/useradd -p x -k useradd' >> /etc/audit/rules.d/audit.STIG.rules # echo '-w /usr/sbin/groupadd -p x -k groupadd' >> /etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239074",
+        "rid": "SV-239074r675030_rule",
+        "stig_id": "PHTN-67-000002",
+        "gtitle": "SRG-OS-000021-GPOS-00005",
+        "fix_id": "F-42244r675029_fix",
+        "satisfies": [
+          "SRG-OS-000021-GPOS-00005",
+          "SRG-OS-000329-GPOS-00128"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000044",
+          "CCI-002238"
+        ],
+        "nist": [
+          "AC-7 a",
+          "AC-7 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239074",
+      "title": "The Photon operating system must automatically lock an account when three unsuccessful logon attempts occur.",
+      "desc": "By limiting the number of failed logon attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute-force attacks, is reduced. Limits are imposed by locking the account. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_tally2 /etc/pam.d/system-auth|grep --color=always \"deny=.\" Expected result: auth    required        pam_tally2.so file=/var/log/tallylog deny=3 onerr=fail even_deny_root unlock_time=86400 root_unlock_time=300 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-auth with a text editor. Add the following line after the last auth statement: auth    required        pam_tally2.so file=/var/log/tallylog deny=3 onerr=fail even_deny_root unlock_time=86400 root_unlock_time=300"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239075",
+        "rid": "SV-239075r675033_rule",
+        "stig_id": "PHTN-67-000003",
+        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "fix_id": "F-42245r675032_fix",
+        "satisfies": [
+          "SRG-OS-000023-GPOS-00006",
+          "SRG-OS-000228-GPOS-00088"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000048",
+          "CCI-001384",
+          "CCI-001385",
+          "CCI-001386",
+          "CCI-001387",
+          "CCI-001388"
+        ],
+        "nist": [
+          "AC-8 a",
+          "AC-8 c 1",
+          "AC-8 c 2",
+          "AC-8 c 2",
+          "AC-8 c 2",
+          "AC-8 c 3"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239075",
+      "title": "The Photon operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting SSH access.",
+      "desc": "Display of a standardized and approved use notification before granting access to the operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i Banner Expected result: banner /etc/issue If the output does not match the expected result, this is a finding. Open /etc/issue with a text editor. If the file does not contain the Standard Mandatory DoD Notice and Consent Banner, this is a finding.",
+        "fix": "At the command line, execute the following commands: # cp /etc/issue.DoD /etc/issue Open /etc/ssh/sshd_config with a text editor and ensure that the \"Banner\" line is uncommented and set to the following: Banner /etc/issue Open /etc/issue with a text editor. Ensure that the file contains the Standard Mandatory DoD Notice and Consent Banner: You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions: -The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. -At any time, the USG may inspect and seize data stored on this IS. -Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG authorized purpose. -This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. -Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details. At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239076",
+        "rid": "SV-239076r675036_rule",
+        "stig_id": "PHTN-67-000004",
+        "gtitle": "SRG-OS-000027-GPOS-00008",
+        "fix_id": "F-42246r675035_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000054"
+        ],
+        "nist": [
+          "AC-10"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239076",
+      "title": "The Photon operating system must limit the number of concurrent sessions to 10 for all accounts and/or account types.",
+      "desc": "Operating system management includes the ability to control the number of users and user sessions that utilize an operating system. Limiting the number of allowed users and sessions per user is helpful in reducing the risks related to denial-of-service attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^[^#].*maxlogins.*\" /etc/security/limits.conf Expected result: *              hard    maxlogins      10 If the output does not match the expected result, this is a finding. Note: The expected result may be repeated multiple times.",
+        "fix": "At the command line, execute the following command: # echo '*              hard    maxlogins      10' >> /etc/security/limits.conf"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239077",
+        "rid": "SV-239077r675039_rule",
+        "stig_id": "PHTN-67-000005",
+        "gtitle": "SRG-OS-000029-GPOS-00010",
+        "fix_id": "F-42247r675038_fix",
+        "satisfies": [
+          "SRG-OS-000029-GPOS-00010",
+          "SRG-OS-000126-GPOS-00066",
+          "SRG-OS-000279-GPOS-00109"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000057",
+          "CCI-000879",
+          "CCI-002361"
+        ],
+        "nist": [
+          "AC-11 a",
+          "MA-4 e",
+          "AC-12"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239077",
+      "title": "The Photon operating system must set a session inactivity timeout of 15 minutes or less.",
+      "desc": "A session timeout is an action taken when a session goes idle for any reason. Rather than relying on the user to manually disconnect their session prior to going idle, the Photon operating system must be able to identify when a session has idled and take action to terminate the session. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # cat /etc/profile.d/tmout.sh Expected result: TMOUT=900 readonly TMOUT export TMOUT mesg n 2>/dev/null If the file \"tmout.sh\" does not exist or the output does not look like the expected result, this is a finding.",
+        "fix": "Open /etc/profile.d/tmout.sh with a text editor and set its content to the following: TMOUT=900 readonly TMOUT export TMOUT mesg n 2>/dev/null"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239078",
+        "rid": "SV-239078r675042_rule",
+        "stig_id": "PHTN-67-000006",
+        "gtitle": "SRG-OS-000032-GPOS-00013",
+        "fix_id": "F-42248r675041_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000067"
+        ],
+        "nist": [
+          "AC-17 (1)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239078",
+      "title": "The Photon operating system must have the sshd SyslogFacility set to \"authpriv\".",
+      "desc": "Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i SyslogFacility Expected result: syslogfacility AUTHPRIV If there is no output or if the output does not match expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"SyslogFacility\" line is uncommented and set to the following: SyslogFacility AUTHPRIV At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239079",
+        "rid": "SV-239079r675045_rule",
+        "stig_id": "PHTN-67-000007",
+        "gtitle": "SRG-OS-000032-GPOS-00013",
+        "fix_id": "F-42249r675044_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000067"
+        ],
+        "nist": [
+          "AC-17 (1)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239079",
+      "title": "The Photon operating system must have sshd authentication logging enabled.",
+      "desc": "Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities. Shipping sshd authentication events to syslog allows organizations to use their log aggregators to correlate forensic activities among multiple systems.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^authpriv\" /etc/rsyslog.conf Expected result: authpriv.* /var/log/audit/sshinfo.log If the command does not return any output, this is a finding.",
+        "fix": "Open /etc/rsyslog.conf with a text editor and locate the following line: $IncludeConfig /etc/vmware-syslog/syslog.conf Ensure that the following entry is put beneath the stated line and before the \"# vmware services\" line. authpriv.* /var/log/audit/sshinfo.log If the following line is at the end of the file, it must be removed or commented out: auth.* /var/log/auth.log At the command line, execute the following command: # systemctl restart syslog # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239080",
+        "rid": "SV-239080r675048_rule",
+        "stig_id": "PHTN-67-000008",
+        "gtitle": "SRG-OS-000032-GPOS-00013",
+        "fix_id": "F-42250r675047_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000067"
+        ],
+        "nist": [
+          "AC-17 (1)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239080",
+      "title": "The Photon operating system must have the sshd LogLevel set to \"INFO\".",
+      "desc": "Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities. The INFO LogLevel is required, at least, to ensure the capturing of failed login events.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i LogLevel Expected result: LogLevel INFO If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"LogLevel\" line is uncommented and set to the following: LogLevel INFO At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "high",
+        "gid": "V-239081",
+        "rid": "SV-239081r675051_rule",
+        "stig_id": "PHTN-67-000009",
+        "gtitle": "SRG-OS-000033-GPOS-00014",
+        "fix_id": "F-42251r675050_fix",
+        "satisfies": [
+          "SRG-OS-000033-GPOS-00014",
+          "SRG-OS-000250-GPOS-00093",
+          "SRG-OS-000393-GPOS-00173",
+          "SRG-OS-000396-GPOS-00176",
+          "SRG-OS-000423-GPOS-00187"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000068",
+          "CCI-001453",
+          "CCI-002418",
+          "CCI-002450",
+          "CCI-002890"
+        ],
+        "nist": [
+          "AC-17 (2)",
+          "AC-17 (2)",
+          "SC-8",
+          "SC-13 b",
+          "MA-4 (6)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239081",
+      "title": "The Photon operating system must configure sshd to use approved encryption algorithms.",
+      "desc": "Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session. OpenSSH on the Photon operating system is compiled with a FIPS-validated cryptographic module. The \"FipsMode\" setting controls whether this module is initialized and used in FIPS 140-2 mode. ",
+      "impact": 0.7,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i FipsMode Expected result: FipsMode yes If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"FipsMode\" line is uncommented and set to the following: FipsMode yes At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239082",
+        "rid": "SV-239082r675054_rule",
+        "stig_id": "PHTN-67-000010",
+        "gtitle": "SRG-OS-000037-GPOS-00015",
+        "fix_id": "F-42252r675053_fix",
+        "satisfies": [
+          "SRG-OS-000037-GPOS-00015",
+          "SRG-OS-000039-GPOS-00017",
+          "SRG-OS-000040-GPOS-00018",
+          "SRG-OS-000041-GPOS-00019"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000130",
+          "CCI-000132",
+          "CCI-000133",
+          "CCI-000134"
+        ],
+        "nist": [
+          "AU-3 a",
+          "AU-3 c",
+          "AU-3 d",
+          "AU-3 e"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239082",
+      "title": "The Photon operating system must configure auditd to log to disk.",
+      "desc": "Without establishing what type of events occurred, it would be difficult to establish, correlate, and investigate the events leading up to an outage or attack. Audit record content must be shipped to a central location, but it must also be logged locally. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^write_logs\" /etc/audit/auditd.conf Expected result: write_logs = yes If there is no output, this is not a finding. If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/audit/auditd.conf with a text editor. Ensure that the \"write_logs\" line is uncommented and set to the following: write_logs = yes At the command line, execute the following command: # service auditd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239083",
+        "rid": "SV-239083r675057_rule",
+        "stig_id": "PHTN-67-000011",
+        "gtitle": "SRG-OS-000038-GPOS-00016",
+        "fix_id": "F-42253r675056_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000131"
+        ],
+        "nist": [
+          "AU-3 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239083",
+      "title": "The Photon operating system must configure auditd to use the correct log format.",
+      "desc": "To compile an accurate risk assessment and provide forensic analysis, it is essential for security personnel to know exact, unfiltered details of the event in question.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^log_format\" /etc/audit/auditd.conf Expected result: log_format = RAW If there is no output, this is not a finding. If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/audit/auditd.conf with a text editor. Ensure that the \"log_format\" line is uncommented and set to the following: log_format = RAW At the command line, execute the following command: # service auditd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239084",
+        "rid": "SV-239084r675060_rule",
+        "stig_id": "PHTN-67-000012",
+        "gtitle": "SRG-OS-000042-GPOS-00020",
+        "fix_id": "F-42254r675059_fix",
+        "satisfies": [
+          "SRG-OS-000042-GPOS-00020",
+          "SRG-OS-000392-GPOS-00172"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000135",
+          "CCI-002884"
+        ],
+        "nist": [
+          "AU-3 (1)",
+          "MA-4 (1) (a)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239084",
+      "title": "The Photon operating system must be configured to audit the execution of privileged functions.",
+      "desc": "Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Auditing all actions by superusers is one way to detect such misuse and identify the risk from insider threats and the advanced persistent threat. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep execve Expected result: -a always,exit -F arch=b32 -S execve -C uid!=euid -F euid=0 -k execpriv -a always,exit -F arch=b64 -S execve -C uid!=euid -F euid=0 -k execpriv -a always,exit -F arch=b32 -S execve -C gid!=egid -F egid=0 -k execpriv -a always,exit -F arch=b64 -S execve -C gid!=egid -F egid=0 -k execpriv If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # echo -a always,exit -F arch=b32 -S execve -C uid!=euid -F euid=0 -k execpriv>>/etc/audit/rules.d/audit.STIG.rules # echo -a always,exit -F arch=b64 -S execve -C uid!=euid -F euid=0 -k execpriv>>/etc/audit/rules.d/audit.STIG.rules # echo -a always,exit -F arch=b32 -S execve -C gid!=egid -F egid=0 -k execpriv>>/etc/audit/rules.d/audit.STIG.rules # echo -a always,exit -F arch=b64 -S execve -C gid!=egid -F egid=0 -k execpriv>>/etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239085",
+        "rid": "SV-239085r675063_rule",
+        "stig_id": "PHTN-67-000013",
+        "gtitle": "SRG-OS-000046-GPOS-00022",
+        "fix_id": "F-42255r675062_fix",
+        "satisfies": [
+          "SRG-OS-000046-GPOS-00022",
+          "SRG-OS-000344-GPOS-00135"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000139",
+          "CCI-001858"
+        ],
+        "nist": [
+          "AU-5 a",
+          "AU-5 (2)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239085",
+      "title": "The Photon operating system audit log must log space limit problems to syslog.",
+      "desc": "It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without this notification, the security personnel may be unaware of an impending failure of the audit capability, and system operation may be adversely affected. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^space_left_action\" /etc/audit/auditd.conf Expected result: space_left_action = SYSLOG If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/audit/auditd.conf with a text editor. Ensure that the \"space_left_action\" line is uncommented and set to the following: space_left_action = SYSLOG At the command line, execute the following command: # service auditd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239086",
+        "rid": "SV-239086r675066_rule",
+        "stig_id": "PHTN-67-000014",
+        "gtitle": "SRG-OS-000047-GPOS-00023",
+        "fix_id": "F-42256r675065_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000140"
+        ],
+        "nist": [
+          "AU-5 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239086",
+      "title": "The Photon operating system audit log must attempt to log audit failures to syslog.",
+      "desc": "It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without this notification, the security personnel may be unaware of an impending failure of the audit capability, and system operation may be adversely affected.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following commands: # grep -E \"^disk_full_action|^disk_error_action|^admin_space_left_action\" /etc/audit/auditd.conf If any of the above parameters are not set to SYSLOG or are missing, this is a finding.",
+        "fix": "Open /etc/audit/auditd.conf with a text editor. Ensure that the following lines are present, not duplicated, and not commented: disk_full_action = SYSLOG disk_error_action = SYSLOG admin_space_left_action = SYSLOG At the command line, execute the following command: # service auditd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239087",
+        "rid": "SV-239087r675069_rule",
+        "stig_id": "PHTN-67-000015",
+        "gtitle": "SRG-OS-000057-GPOS-00027",
+        "fix_id": "F-42257r675068_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000162"
+        ],
+        "nist": [
+          "AU-9 a"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239087",
+      "title": "The Photon operating system audit log must have correct permissions.",
+      "desc": "Audit information includes all information (e.g., audit records, audit settings, audit reports) needed to successfully audit operating system activity. Unauthorized disclosure of audit records can reveal system and configuration data to attackers, thus compromising its confidentiality.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # (audit_log_file=$(grep \"^log_file\" /etc/audit/auditd.conf|sed s/^[^\\/]*//) && if [ -f \"${audit_log_file}\" ] ; then printf \"Log(s) found in \"${audit_log_file%/*}\": \"; stat -c \"%n permissions are %a\" ${audit_log_file%}*; else printf \"audit log file(s) not found \"; fi) If the permissions on any audit log file is more permissive than 0600, this is a finding.",
+        "fix": "At the command line, execute the following command: # chmod 0600 <audit log file> Replace <audit log file> with the log files more permissive than 0600."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239088",
+        "rid": "SV-239088r675072_rule",
+        "stig_id": "PHTN-67-000016",
+        "gtitle": "SRG-OS-000058-GPOS-00028",
+        "fix_id": "F-42258r675071_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000163"
+        ],
+        "nist": [
+          "AU-9 a"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239088",
+      "title": "The Photon operating system audit log must be owned by root.",
+      "desc": "Audit information includes all information (e.g., audit records, audit settings, audit reports) needed to successfully audit operating system activity. Unauthorized disclosure of audit records can reveal system and configuration data to attackers, thus compromising its confidentiality.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # (audit_log_file=$(grep \"^log_file\" /etc/audit/auditd.conf|sed s/^[^\\/]*//) && if [ -f \"${audit_log_file}\" ] ; then printf \"Log(s) found in \"${audit_log_file%/*}\": \"; stat -c \"%n is owned by %U\" ${audit_log_file%}*; else printf \"audit log file(s) not found \"; fi) If any audit log file is not owned by root, this is a finding.",
+        "fix": "At the command line, execute the following command: # chown root:root <audit log file> Replace <audit log file> with the log files not owned by root."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239089",
+        "rid": "SV-239089r675075_rule",
+        "stig_id": "PHTN-67-000017",
+        "gtitle": "SRG-OS-000059-GPOS-00029",
+        "fix_id": "F-42259r675074_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000164"
+        ],
+        "nist": [
+          "AU-9 a"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239089",
+      "title": "The Photon operating system audit log must be group-owned by root.",
+      "desc": "Audit information includes all information (e.g., audit records, audit settings, audit reports) needed to successfully audit operating system activity. Unauthorized disclosure of audit records can reveal system and configuration data to attackers, thus compromising its confidentiality.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # (audit_log_file=$(grep \"^log_file\" /etc/audit/auditd.conf|sed s/^[^\\/]*//) && if [ -f \"${audit_log_file}\" ] ; then printf \"Log(s) found in \"${audit_log_file%/*}\": \"; stat -c \"%n is group owned by %G\" ${audit_log_file%}*; else printf \"audit log file(s) not found \"; fi) If any audit log file is not group-owned by root, this is a finding.",
+        "fix": "At the command line, execute the following command: # chown root:root <audit log file> Replace <audit log file> with the log files not group owned by root."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239090",
+        "rid": "SV-239090r675078_rule",
+        "stig_id": "PHTN-67-000018",
+        "gtitle": "SRG-OS-000062-GPOS-00031",
+        "fix_id": "F-42260r675077_fix",
+        "satisfies": [
+          "SRG-OS-000062-GPOS-00031",
+          "SRG-OS-000042-GPOS-00021",
+          "SRG-OS-000255-GPOS-00096",
+          "SRG-OS-000363-GPOS-00150",
+          "SRG-OS-000365-GPOS-00152",
+          "SRG-OS-000445-GPOS-00199",
+          "SRG-OS-000446-GPOS-00200",
+          "SRG-OS-000461-GPOS-00205",
+          "SRG-OS-000465-GPOS-00209",
+          "SRG-OS-000467-GPOS-00211",
+          "SRG-OS-000474-GPOS-00219",
+          "SRG-OS-000475-GPOS-00220"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000135",
+          "CCI-000169",
+          "CCI-000172",
+          "CCI-001487",
+          "CCI-001744",
+          "CCI-001814",
+          "CCI-002696",
+          "CCI-002699"
+        ],
+        "nist": [
+          "AU-3 (1)",
+          "AU-12 a",
+          "AU-12 c",
+          "AU-3 f",
+          "CM-3 (5)",
+          "CM-5 (1)",
+          "SI-6 a",
+          "SI-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239090",
+      "title": "The Photon operating system must have the auditd service running.",
+      "desc": "Without the capability to generate audit records, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. To that end, the auditd service must be configured to start automatically and be running at all times. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # service auditd status | grep running If the service is not running, this is a finding.",
+        "fix": "At the command line, execute the following command: # systemctl enable auditd.service # service auditd start"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239091",
+        "rid": "SV-239091r675081_rule",
+        "stig_id": "PHTN-67-000019",
+        "gtitle": "SRG-OS-000063-GPOS-00032",
+        "fix_id": "F-42261r675080_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000171"
+        ],
+        "nist": [
+          "AU-12 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239091",
+      "title": "The Photon operating system must allow only the ISSM (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.",
+      "desc": "Without the capability to restrict the roles and individuals that can select which events are audited, unauthorized personnel may be able to prevent the auditing of critical events. Misconfigured audits may degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # find /etc/audit/* -type f -exec stat -c \"%n permissions are %a\" {} $1\\; If the permissions of any files are more permissive than 640, this is a finding.",
+        "fix": "At the command line, execute the following command: # chmod 640 <file> Replace <file> with any file with incorrect permissions."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239092",
+        "rid": "SV-239092r675084_rule",
+        "stig_id": "PHTN-67-000020",
+        "gtitle": "SRG-OS-000064-GPOS-00033",
+        "fix_id": "F-42262r675083_fix",
+        "satisfies": [
+          "SRG-OS-000064-GPOS-00033",
+          "SRG-OS-000462-GPOS-00206"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ],
+        "nist": [
+          "AU-12 c"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239092",
+      "title": "The Photon operating system must generate audit records when successful/unsuccessful attempts to access privileges occur.",
+      "desc": "The changing of file permissions could indicate that a user is attempting to gain access to information that would otherwise be disallowed. Auditing DAC modifications can facilitate the identification of patterns of abuse among both authorized and unauthorized users. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep chmod Expected result: -a always,exit -F arch=b64 -S chmod,fchmod,chown,fchown,fchownat,fchmodat -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b64 -S chmod,fchmod,chown,fchown,lchown,setxattr,lsetxattr,fsetxattr,removexattr,lremovexattr,fremovexattr,fchownat,fchmodat -k perm_mod -a always,exit -F arch=b32 -S chmod,fchmod,fchown,chown,fchownat,fchmodat -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b32 -S chmod,lchown,fchmod,fchown,chown,setxattr,lsetxattr,fsetxattr,removexattr,lremovexattr,fremovexattr,fchownat,fchmodat -k perm_mod If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/audit/rules.d/audit.STIG.rules with a text editor and add the following lines: -a always,exit -F arch=b64 -S chmod,fchmod,chown,fchown,fchownat,fchmodat -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b64 -S chmod,fchmod,chown,fchown,lchown,setxattr,lsetxattr,fsetxattr,removexattr,lremovexattr,fremovexattr,fchownat,fchmodat -k perm_mod -a always,exit -F arch=b32 -S chmod,fchmod,fchown,chown,fchownat,fchmodat -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b32 -S chmod,lchown,fchmod,fchown,chown,setxattr,lsetxattr,fsetxattr,removexattr,lremovexattr,fremovexattr,fchownat,fchmodat -k perm_mod At the command line, execute the following commands: # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239093",
+        "rid": "SV-239093r675087_rule",
+        "stig_id": "PHTN-67-000021",
+        "gtitle": "SRG-OS-000069-GPOS-00037",
+        "fix_id": "F-42263r675086_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000192"
+        ],
+        "nist": [
+          "IA-5 (1) (a)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239093",
+      "title": "The Photon operating system must enforce password complexity by requiring that at least one uppercase character be used.",
+      "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_cracklib /etc/pam.d/system-password|grep --color=always \"ucredit=..\" Expected result: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following, replacing any existing \"pam_cracklib.so\" line: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239094",
+        "rid": "SV-239094r717043_rule",
+        "stig_id": "PHTN-67-000022",
+        "gtitle": "SRG-OS-000070-GPOS-00038",
+        "fix_id": "F-42264r717042_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000193"
+        ],
+        "nist": [
+          "IA-5 (1) (a)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239094",
+      "title": "The Photon operating system must enforce password complexity by requiring that at least one lowercase character be used.",
+      "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_cracklib /etc/pam.d/system-password|grep --color=always \"lcredit=..\" Expected result: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following, replacing any existing \"pam_cracklib.so\" line: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239095",
+        "rid": "SV-239095r675093_rule",
+        "stig_id": "PHTN-67-000023",
+        "gtitle": "SRG-OS-000071-GPOS-00039",
+        "fix_id": "F-42265r675092_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000194"
+        ],
+        "nist": [
+          "IA-5 (1) (a)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239095",
+      "title": "The Photon operating system must enforce password complexity by requiring that at least one numeric character be used.",
+      "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_cracklib /etc/pam.d/system-password|grep --color=always \"dcredit=..\" Expected result: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following, replacing any existing \"pam_cracklib.so\" line: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239096",
+        "rid": "SV-239096r675096_rule",
+        "stig_id": "PHTN-67-000024",
+        "gtitle": "SRG-OS-000072-GPOS-00040",
+        "fix_id": "F-42266r675095_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000195"
+        ],
+        "nist": [
+          "IA-5 (1) (b)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239096",
+      "title": "The Photon operating system must require that new passwords are at least four characters different from the old password.",
+      "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_cracklib /etc/pam.d/system-password|grep --color=always \"difok=.\" Expected result: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following, replacing any existing \"pam_cracklib.so\" line: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239097",
+        "rid": "SV-239097r675099_rule",
+        "stig_id": "PHTN-67-000025",
+        "gtitle": "SRG-OS-000073-GPOS-00041",
+        "fix_id": "F-42267r675098_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000196"
+        ],
+        "nist": [
+          "IA-5 (1) (c)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239097",
+      "title": "The Photon operating system must store only encrypted representations of passwords.",
+      "desc": "Passwords must be protected at all times via strong, one-way encryption. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. If they are encrypted with a weak cipher, those passwords are much more vulnerable to offline brute forcing attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep password /etc/pam.d/system-password|grep --color=always \"sha512\" If the output does not include \"sha512\", this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following argument (sha512) to the password line: password required pam_unix.so sha512 shadow try_first_pass"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239098",
+        "rid": "SV-239098r675102_rule",
+        "stig_id": "PHTN-67-000026",
+        "gtitle": "SRG-OS-000073-GPOS-00041",
+        "fix_id": "F-42268r675101_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000196"
+        ],
+        "nist": [
+          "IA-5 (1) (c)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239098",
+      "title": "The Photon operating system must store only encrypted representations of passwords.",
+      "desc": "Passwords must be protected at all times via strong, one-way encryption. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. If they are encrypted with a weak cipher, those passwords are much more vulnerable to offline brute forcing attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep SHA512 /etc/login.defs|grep -v \"#\" Expected result: ENCRYPT_METHOD SHA512 If there is no output or if the output does match the expected result, this is a finding.",
+        "fix": "Open /etc/login.defs with a text editor. Add or replace the ENCRYPT_METHOD line as follows: ENCRYPT_METHOD SHA512"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239099",
+        "rid": "SV-239099r675105_rule",
+        "stig_id": "PHTN-67-000027",
+        "gtitle": "SRG-OS-000075-GPOS-00043",
+        "fix_id": "F-42269r675104_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000198"
+        ],
+        "nist": [
+          "IA-5 (1) (d)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239099",
+      "title": "The Photon operating system must be configured so that passwords for new users are restricted to a 24-hour minimum lifetime.",
+      "desc": "Enforcing a minimum password lifetime helps to prevent repeated password changes to defeat the password reuse or history enforcement requirement. If users are allowed to immediately and continually change their password, the password could be repeatedly changed in a short period of time to defeat the organization's policy regarding password reuse.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^PASS_MIN_DAYS\" /etc/login.defs If PASS_MIN_DAYS is not set to 1, this is a finding.",
+        "fix": "Open /etc/login.defs with a text editor.  Modify the PASS_MIN_DAYS line to the following: PASS_MIN_DAYS 1"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239100",
+        "rid": "SV-239100r675108_rule",
+        "stig_id": "PHTN-67-000028",
+        "gtitle": "SRG-OS-000076-GPOS-00044",
+        "fix_id": "F-42270r675107_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000199"
+        ],
+        "nist": [
+          "IA-5 (1) (d)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239100",
+      "title": "The Photon operating system must be configured so that passwords for new users are restricted to a 90-day maximum lifetime.",
+      "desc": "Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed periodically. If the operating system does not limit the lifetime of passwords and force users to change their passwords, there is the risk that the operating system passwords could be compromised.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^PASS_MAX_DAYS\" /etc/login.defs If the value of PASS_MAX_DAYS is greater than 90, this is a finding.",
+        "fix": "Open /etc/login.defs with a text editor. Modify the PASS_MAX_DAYS line to the following: PASS_MAX_DAYS 90"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239101",
+        "rid": "SV-239101r675111_rule",
+        "stig_id": "PHTN-67-000029",
+        "gtitle": "SRG-OS-000077-GPOS-00045",
+        "fix_id": "F-42271r675110_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000200"
+        ],
+        "nist": [
+          "IA-5 (1) (e)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239101",
+      "title": "The Photon operating system must prohibit password reuse for a minimum of five generations.",
+      "desc": "Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. If the information system or application allows the user to consecutively reuse their password when that password has exceeded its defined lifetime, the end result is a password that is not changed as per policy requirements.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_pwhistory /etc/pam.d/system-password|grep --color=always \"remember=.\" Expected result: password required pam_pwhistory.so enforce_for_root use_authtok remember=5 retry=3 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following line after the last auth statement: password required pam_pwhistory.so enforce_for_root use_authtok remember=5 retry=3"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239102",
+        "rid": "SV-239102r675114_rule",
+        "stig_id": "PHTN-67-000030",
+        "gtitle": "SRG-OS-000077-GPOS-00045",
+        "fix_id": "F-42272r675113_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000200"
+        ],
+        "nist": [
+          "IA-5 (1) (e)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239102",
+      "title": "The Photon operating system must ensure old passwords are being stored.",
+      "desc": "Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. If the information system or application allows the user to consecutively reuse their password when that password has exceeded its defined lifetime, the end result is a password that is not changed as per policy requirements.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # ls -al /etc/security/opasswd If \"/etc/security/opasswd\" does not exist, this is a finding.",
+        "fix": "At the command line, execute the following commands: # touch /etc/security/opasswd # chown root:root /etc/security/opasswd # chmod 0600 /etc/security/opasswd"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239103",
+        "rid": "SV-239103r675117_rule",
+        "stig_id": "PHTN-67-000031",
+        "gtitle": "SRG-OS-000078-GPOS-00046",
+        "fix_id": "F-42273r675116_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000205"
+        ],
+        "nist": [
+          "IA-5 (1) (a)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239103",
+      "title": "The Photon operating system must enforce a minimum eight-character password length.",
+      "desc": "The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_cracklib /etc/pam.d/system-password|grep --color=always \"minlen=..\" Expected result: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following, replacing any existing \"pam_cracklib.so\" line: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239104",
+        "rid": "SV-239104r675120_rule",
+        "stig_id": "PHTN-67-000032",
+        "gtitle": "SRG-OS-000095-GPOS-00049",
+        "fix_id": "F-42274r675119_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000381"
+        ],
+        "nist": [
+          "CM-7 a"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239104",
+      "title": "The Photon operating system must only allow installation of packages signed by VMware.",
+      "desc": "Installation of any non-trusted software, patches, service packs, device drivers, or operating system components can significantly affect the overall security of the operating system. This requirement ensures the software has not been tampered with and has been provided by VMware.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # rpm -qa gpg-pubkey --qf \"%{version}-%{release} %{summary} \"|grep -v \"66fd4949-4803fe57\" If there is any output, an unsupported package has been installed and this is a finding.",
+        "fix": "Confirm with VMware support that this package is not supported (for potential package additions after STIG publication). At the command line, execute the following command: # rpm -e <package-name-from-check>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239105",
+        "rid": "SV-239105r675123_rule",
+        "stig_id": "PHTN-67-000033",
+        "gtitle": "SRG-OS-000096-GPOS-00050",
+        "fix_id": "F-42275r675122_fix",
+        "satisfies": [
+          "SRG-OS-000096-GPOS-00050",
+          "SRG-OS-000114-GPOS-00059"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000382",
+          "CCI-000778"
+        ],
+        "nist": [
+          "CM-7 b",
+          "IA-3"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239105",
+      "title": "The Photon operating system must disable the loading of unnecessary kernel modules.",
+      "desc": "To support the requirements and principles of least functionality, the operating system must provide only essential capabilities and limit the use of modules, protocols, and/or services to only those required for the proper functioning of the product. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # modprobe --showconfig | grep \"^install\" | grep \"/bin\" Expected result: install sctp /bin/false install dccp /bin/false install dccp_ipv4 /bin/false install dccp_ipv6 /bin/false install ipx /bin/false install appletalk /bin/false install decnet /bin/false install rds /bin/false install tipc /bin/false install bluetooth /bin/false install usb-storage /bin/false install ieee1394 /bin/false install cramfs /bin/false install freevxfs /bin/false install jffs2 /bin/false install hfs /bin/false install hfsplus /bin/false install squashfs /bin/false install udf /bin/false If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/modprobe.d/modprobe.conf with a text editor and set the contents as follows: install sctp /bin/false install dccp /bin/false install dccp_ipv4 /bin/false install dccp_ipv6 /bin/false install ipx /bin/false install appletalk /bin/false install decnet /bin/false install rds /bin/false install tipc /bin/false install bluetooth /bin/false install usb-storage /bin/false install ieee1394 /bin/false install cramfs /bin/false install freevxfs /bin/false install jffs2 /bin/false install hfs /bin/false install hfsplus /bin/false install squashfs /bin/false install udf /bin/false"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239106",
+        "rid": "SV-239106r675126_rule",
+        "stig_id": "PHTN-67-000034",
+        "gtitle": "SRG-OS-000104-GPOS-00051",
+        "fix_id": "F-42276r675125_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000764"
+        ],
+        "nist": [
+          "IA-2"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239106",
+      "title": "The Photon operating system must not have Duplicate User IDs (UIDs).",
+      "desc": "To ensure accountability and prevent unauthenticated access, organizational users must be uniquely identified and authenticated to prevent potential misuse and provide for non-repudiation.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # awk -F \":\" 'list[$3]++{print $1, $3}' /etc/passwd If any lines are returned, this is a finding.",
+        "fix": "Open /etc/passwd with a text editor. Configure each user account that has a duplicate UID with a unique UID."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239107",
+        "rid": "SV-239107r675129_rule",
+        "stig_id": "PHTN-67-000035",
+        "gtitle": "SRG-OS-000109-GPOS-00056",
+        "fix_id": "F-42277r675128_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000770"
+        ],
+        "nist": [
+          "IA-2 (5)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239107",
+      "title": "The Photon operating system must configure sshd to disallow root logins.",
+      "desc": "Logging on with a user-specific account provides individual accountability for actions performed on the system. Users must log in with their individual accounts and elevate to root as necessary. Disallowing root SSH login also reduces the distribution of the root password to users who may not otherwise need that level of privilege.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i PermitRootLogin Expected result: permitrootlogin no If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor and ensure that the \"PermitRootLogin\" line is uncommented and set to the following: PermitRootLogin no At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239108",
+        "rid": "SV-239108r675132_rule",
+        "stig_id": "PHTN-67-000036",
+        "gtitle": "SRG-OS-000118-GPOS-00060",
+        "fix_id": "F-42278r675131_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000795"
+        ],
+        "nist": [
+          "IA-4 e"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239108",
+      "title": "The Photon operating system must disable new accounts immediately upon password expiration.",
+      "desc": "Inactive identifiers pose a risk to systems and applications because attackers may exploit an inactive identifier and potentially obtain undetected access to the system. Owners of inactive accounts will not notice if unauthorized access to their user account has been obtained. Disabling inactive accounts ensures that accounts that may not have been responsibly removed are not available to attackers who may have compromised their credentials.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep INACTIVE /etc/default/useradd Expected result: INACTIVE=0 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/default/useradd with a text editor. Remove any existing \"INACTIVE\" line and add the following line: INACTIVE=0"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239109",
+        "rid": "SV-239109r675135_rule",
+        "stig_id": "PHTN-67-000037",
+        "gtitle": "SRG-OS-000142-GPOS-00071",
+        "fix_id": "F-42279r675134_fix",
+        "satisfies": [
+          "SRG-OS-000142-GPOS-00071",
+          "SRG-OS-000420-GPOS-00186"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-001095",
+          "CCI-002385"
+        ],
+        "nist": [
+          "SC-5 (2)",
+          "SC-5 a"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239109",
+      "title": "The Photon operating system must use TCP syncookies.",
+      "desc": "A TCP SYN flood attack can cause a denial of service by filling a system's TCP connection table with connections in the SYN_RCVD state. Syncookies can be used to track a connection when a subsequent ACK is received, verifying the initiator is attempting a valid connection and is not a flood source. This feature is activated when a flood condition is detected and enables the system to continue servicing valid connection requests. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern /tcp_syncookies Expected result: net.ipv4.tcp_syncookies = 1 If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # sed -i -e \"/^net.ipv4.tcp_syncookies/d\" /etc/sysctl.conf # echo net.ipv4.tcp_syncookies=1>>/etc/sysctl.conf"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239110",
+        "rid": "SV-239110r675138_rule",
+        "stig_id": "PHTN-67-000038",
+        "gtitle": "SRG-OS-000163-GPOS-00072",
+        "fix_id": "F-42280r675137_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001133"
+        ],
+        "nist": [
+          "SC-10"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239110",
+      "title": "The Photon operating system must configure sshd to disconnect idle SSH sessions.",
+      "desc": "Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i ClientAliveInterval Expected result: ClientAliveInterval 900 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"ClientAliveInterval\" line is uncommented and set to the following: ClientAliveInterval 900 At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239111",
+        "rid": "SV-239111r675141_rule",
+        "stig_id": "PHTN-67-000039",
+        "gtitle": "SRG-OS-000163-GPOS-00072",
+        "fix_id": "F-42281r675140_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001133"
+        ],
+        "nist": [
+          "SC-10"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239111",
+      "title": "The Photon operating system must configure sshd to disconnect idle SSH sessions.",
+      "desc": "Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i ClientAliveCountMax Expected result: ClientAliveCountMax 0 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"ClientAliveCountMax\" line is uncommented and set to the following: ClientAliveCountMax 0 At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239112",
+        "rid": "SV-239112r675144_rule",
+        "stig_id": "PHTN-67-000040",
+        "gtitle": "SRG-OS-000205-GPOS-00083",
+        "fix_id": "F-42282r675143_fix",
+        "satisfies": [
+          "SRG-OS-000205-GPOS-00083",
+          "SRG-OS-000274-GPOS-00104",
+          "SRG-OS-000275-GPOS-00105",
+          "SRG-OS-000276-GPOS-00106",
+          "SRG-OS-000277-GPOS-00107",
+          "SRG-OS-000479-GPOS-00224"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-001312",
+          "CCI-001683",
+          "CCI-001684",
+          "CCI-001685",
+          "CCI-001686",
+          "CCI-001851"
+        ],
+        "nist": [
+          "SI-11 a",
+          "AC-2 (4)",
+          "AC-2 (4)",
+          "AC-2 (4)",
+          "AC-2 (4)",
+          "AU-4 (1)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239112",
+      "title": "The Photon operating system must configure rsyslog to offload system logs to a central server.",
+      "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Proper configuration of rsyslog ensures that information critical to forensic analysis of security events is available for future action without any manual offloading or cron jobs. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # cat /etc/vmware-syslog/syslog.conf The output should be similar to the following: *.* @<syslog server>:port;RSYSLOG_syslogProtocol23Format If no line is returned or if the line is commented or no valid syslog server is specified, this is a finding. OR Navigate to https://<hostname>:5480 to access the Virtual Appliance Management Interface (VAMI). Authenticate and navigate to \"Syslog Configuration\". If no site-specific syslog server is configured, this is a finding.",
+        "fix": "Open /etc/vmware-syslog/syslog.conf with a text editor. Remove any existing content and create a new remote server configuration line. For UDP: *.* @<syslog server>:port;RSYSLOG_syslogProtocol23Format For TCP: *.* @@<syslog server>:port;RSYSLOG_syslogProtocol23Format OR Navigate to https://<hostname>:5480 to access the VAMI. Authenticate and navigate to \"Syslog Configuration\". Click \"Edit\" in the top right. Configure a remote syslog server and click \"OK\"."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239113",
+        "rid": "SV-239113r675147_rule",
+        "stig_id": "PHTN-67-000041",
+        "gtitle": "SRG-OS-000206-GPOS-00084",
+        "fix_id": "F-42283r675146_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001314"
+        ],
+        "nist": [
+          "SI-11 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239113",
+      "title": "The Photon operating system /var/log directory must be owned by root.",
+      "desc": "Only authorized personnel should be aware of errors and the details of the errors. Error messages are an indicator of an organization's operational state and can provide sensitive information to an unprivileged attacker.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n is owned by %U and group owned by %G\" /var/log If the /var/log is not owned by root, this is a finding.",
+        "fix": "At the command line, execute the following command: # chown root:root /var/log"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239114",
+        "rid": "SV-239114r675150_rule",
+        "stig_id": "PHTN-67-000042",
+        "gtitle": "SRG-OS-000206-GPOS-00084",
+        "fix_id": "F-42284r675149_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001314"
+        ],
+        "nist": [
+          "SI-11 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239114",
+      "title": "The Photon operating system messages file must be owned by root.",
+      "desc": "Only authorized personnel should be aware of errors and the details of the errors. Error messages are an indicator of an organization's operational state and can provide sensitive information to an unprivileged attacker.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n is owned by %U and group owned by %G\" /var/log/vmware/messages If /var/log/vmware/messages is not owned by root or not group owned by root, this is a finding.",
+        "fix": "At the command line, execute the following command: # chown root:root /var/log/vmware/messages"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239115",
+        "rid": "SV-239115r675153_rule",
+        "stig_id": "PHTN-67-000043",
+        "gtitle": "SRG-OS-000206-GPOS-00084",
+        "fix_id": "F-42285r675152_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001314"
+        ],
+        "nist": [
+          "SI-11 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239115",
+      "title": "The Photon operating system messages file must have mode 0640 or less permissive.",
+      "desc": "Only authorized personnel should be aware of errors and the details of the errors. Error messages are an indicator of an organization's operational state and can provide sensitive information to an unprivileged attacker.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a\" /var/log/vmware/messages If the permissions on the file are more permissive than 0640, this is a finding.",
+        "fix": "At the command line, execute the following command: # chmod 0640 /var/log/vmware/messages"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239116",
+        "rid": "SV-239116r675156_rule",
+        "stig_id": "PHTN-67-000045",
+        "gtitle": "SRG-OS-000239-GPOS-00089",
+        "fix_id": "F-42286r675155_fix",
+        "satisfies": [
+          "SRG-OS-000239-GPOS-00089",
+          "SRG-OS-000303-GPOS-00120",
+          "SRG-OS-000304-GPOS-00121"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-001403",
+          "CCI-002130",
+          "CCI-002132"
+        ],
+        "nist": [
+          "AC-2 (4)",
+          "AC-2 (4)",
+          "AC-2 (4)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239116",
+      "title": "The Photon operating system must audit all account modifications.",
+      "desc": "Once an attacker establishes access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to modify an existing account. Auditing account modification actions provides logging that can be used for forensic purposes. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep -E \"(/etc/passwd|/etc/shadow|/etc/group|/etc/gshadow)\" Expected result: -w /etc/passwd -p wa -k passwd -w /etc/shadow -p wa -k shadow -w /etc/group -p wa -k group -w /etc/gshadow -p wa -k gshadow If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # echo '-w /etc/passwd -p w -k passwd' >> /etc/audit/rules.d/audit.STIG.rules # echo '-w /etc/shadow -p w -k shadow' >> /etc/audit/rules.d/audit.STIG.rules # echo '-w /etc/group -p w -k group' >> /etc/audit/rules.d/audit.STIG.rules # echo '-w /etc/gshadow -p w -k gshadow' >> /etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239117",
+        "rid": "SV-239117r675159_rule",
+        "stig_id": "PHTN-67-000046",
+        "gtitle": "SRG-OS-000240-GPOS-00090",
+        "fix_id": "F-42287r675158_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001404"
+        ],
+        "nist": [
+          "AC-2 (4)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239117",
+      "title": "The Photon operating system must audit all account disabling actions.",
+      "desc": "When operating system accounts are disabled, user accessibility is affected. Accounts are used for identifying individual users or the operating system processes themselves. To detect and respond to events affecting user accessibility and system processing, operating systems must audit account disabling actions.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep watch=/usr/bin/passwd Expected result: -w /usr/bin/passwd -p x -k passwd If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # echo '-w /usr/bin/passwd -p x -k passwd' >> /etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239118",
+        "rid": "SV-239118r675162_rule",
+        "stig_id": "PHTN-67-000047",
+        "gtitle": "SRG-OS-000241-GPOS-00091",
+        "fix_id": "F-42288r675161_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001405"
+        ],
+        "nist": [
+          "AC-2 (4)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239118",
+      "title": "The Photon operating system must audit all account removal actions.",
+      "desc": "When operating system accounts are removed, user accessibility is affected. Accounts are used for identifying individual users or the operating system processes themselves. To detect and respond to events affecting user accessibility and system processing, operating systems must audit account removal actions.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep -E \"(userdel|groupdel)\" Expected result: -w /usr/sbin/userdel -p x -k userdel -w /usr/sbin/groupdel -p x -k groupdel If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # echo '-w /usr/sbin/userdel -p x -k userdel' >> /etc/audit/rules.d/audit.STIG.rules # echo '-w /usr/sbin/groupdel -p x -k groupdel' >> /etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239119",
+        "rid": "SV-239119r675165_rule",
+        "stig_id": "PHTN-67-000048",
+        "gtitle": "SRG-OS-000254-GPOS-00095",
+        "fix_id": "F-42289r675164_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001464"
+        ],
+        "nist": [
+          "AU-14 (1)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239119",
+      "title": "The Photon operating system must initiate auditing as part of the boot process.",
+      "desc": "Each process on the system carries an \"auditable\" flag, which indicates whether its activities can be audited. Although auditd takes care of enabling this for all processes that launch after it starts, adding the kernel argument ensures the flag is set at boot for every process on the system. This includes processes created before auditd starts.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"audit=1\" /proc/cmdline If no results are returned, this is a finding.",
+        "fix": "Open /boot/grub2/grub.cfg with a text editor and locate the boot command line arguments. An example follows: linux \"/\"$photon_linux root=$rootpartition net.ifnames=0 $photon_cmdline coredump_filter=0x37 consoleblank=0 Add \"audit=1\" to the end of the line so it reads as follows: linux \"/\"$photon_linux root=$rootpartition net.ifnames=0 $photon_cmdline coredump_filter=0x37 consoleblank=0 audit=1 Note: Do not copy/paste in this example argument line. This may change in future releases. Find the similar line and append \"audit=1\" to it. Reboot the system for the change to take effect."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239120",
+        "rid": "SV-239120r675168_rule",
+        "stig_id": "PHTN-67-000049",
+        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "fix_id": "F-42290r675167_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001493"
+        ],
+        "nist": [
+          "AU-9 a"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239120",
+      "title": "The Photon operating system audit files and directories must have correct permissions.",
+      "desc": "Protecting audit information also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operations on audit information.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n is owned by %U and group owned by %G\" /etc/audit/auditd.conf If auditd.conf is not owned by root and group owned by root, this is a finding.",
+        "fix": "At the command line, execute the following command: # chown root:root /etc/audit/auditd.conf"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239121",
+        "rid": "SV-239121r675171_rule",
+        "stig_id": "PHTN-67-000050",
+        "gtitle": "SRG-OS-000256-GPOS-00097",
+        "fix_id": "F-42291r675170_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001493"
+        ],
+        "nist": [
+          "AU-9 a"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239121",
+      "title": "The Photon operating system audit files and directories must have correct permissions.",
+      "desc": "Protecting audit information also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operations on audit information.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n is owned by %U and group owned by %G\" /usr/sbin/auditctl /usr/sbin/auditd /usr/sbin/aureport /usr/sbin/ausearch /usr/sbin/autrace If any file is not owned by root and group owned by root, this is a finding.",
+        "fix": "At the command line, execute the following command for each file returned: # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239122",
+        "rid": "SV-239122r675174_rule",
+        "stig_id": "PHTN-67-000051",
+        "gtitle": "SRG-OS-000257-GPOS-00098",
+        "fix_id": "F-42292r675173_fix",
+        "satisfies": [
+          "SRG-OS-000257-GPOS-00098",
+          "SRG-OS-000258-GPOS-00099"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-001494",
+          "CCI-001495"
+        ],
+        "nist": [
+          "AU-9",
+          "AU-9"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239122",
+      "title": "The Photon operating system must protect audit tools from unauthorized modification.",
+      "desc": "Protecting audit information also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operations on audit information. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a\" /usr/sbin/auditctl /usr/sbin/auditd /usr/sbin/aureport /usr/sbin/ausearch /usr/sbin/autrace If any file is more permissive than 750, this is a finding.",
+        "fix": "At the command line, execute the following command for each file returned: # chmod 750 <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239123",
+        "rid": "SV-239123r675177_rule",
+        "stig_id": "PHTN-67-000052",
+        "gtitle": "SRG-OS-000266-GPOS-00101",
+        "fix_id": "F-42293r675176_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001619"
+        ],
+        "nist": [
+          "IA-5 (1) (a)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239123",
+      "title": "The Photon operating system must enforce password complexity by requiring that at least one special character be used.",
+      "desc": "Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_cracklib /etc/pam.d/system-password|grep --color=always \"ocredit=..\" Expected result: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following, replacing any existing \"pam_cracklib.so\" line: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239124",
+        "rid": "SV-239124r675180_rule",
+        "stig_id": "PHTN-67-000053",
+        "gtitle": "SRG-OS-000278-GPOS-00108",
+        "fix_id": "F-42294r675179_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001496"
+        ],
+        "nist": [
+          "AU-9 (3)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239124",
+      "title": "The Photon operating system package files must not be modified.",
+      "desc": "Protecting the integrity of the tools used for auditing purposes is a critical step toward ensuring the integrity of audit information. Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. Without confidence in the integrity of the auditing system and tools, the information it provides cannot be trusted.",
+      "impact": 0.5,
+      "descs": {
+        "check": "Use the verification capability of rpm to check the MD5 hashes of the audit files on disk versus the expected ones from the installation package. At the command line, execute the following command: # rpm -V audit | grep \"^..5\" | grep -v \"^...........c\" If there is output, this is a finding.",
+        "fix": "If the audit system binaries have been altered, the system must be taken offline and the ISSM must be notified immediately. Reinstalling the audit tools is not supported. The appliance should be restored from a backup or a snapshot or redeployed once the root cause is remediated."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239125",
+        "rid": "SV-239125r675183_rule",
+        "stig_id": "PHTN-67-000054",
+        "gtitle": "SRG-OS-000279-GPOS-00109",
+        "fix_id": "F-42295r675182_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-002361"
+        ],
+        "nist": [
+          "AC-12"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239125",
+      "title": "The Photon operating system must set an inactivity timeout value for non-interactive sessions.",
+      "desc": "A session timeout is an action taken when a session goes idle for any reason. Rather than relying on the user to manually disconnect their session prior to going idle, the Photon operating system must be able to identify when a session has idled and take action to terminate the session.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep TMOUT /etc/bash.bashrc Expected result: TMOUT=900 readonly TMOUT export TMOUT If the file does not exist or the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/bash.bashrc with a text editor and add the following to the end: TMOUT=900 readonly TMOUT export TMOUT"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239126",
+        "rid": "SV-239126r675186_rule",
+        "stig_id": "PHTN-67-000055",
+        "gtitle": "SRG-OS-000297-GPOS-00115",
+        "fix_id": "F-42296r675185_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-002314"
+        ],
+        "nist": [
+          "AC-17 (1)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239126",
+      "title": "The Photon operating system must configure sshd with a specific ListenAddress.",
+      "desc": "Without specifying a ListenAddress, sshd will listen on all interfaces. In situations with multiple interfaces, this may not be intended behavior and could lead to offering remote access on an unapproved network.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i ListenAddress If the ListenAddress is not configured to the VCSA management IP, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"ListenAddress\" line is uncommented and set to a valid local IP: Example: ListenAddress 169.254.1.2 Replace \"169.254.1.2\" with the management address of the VCSA. At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239127",
+        "rid": "SV-239127r675189_rule",
+        "stig_id": "PHTN-67-000056",
+        "gtitle": "SRG-OS-000327-GPOS-00127",
+        "fix_id": "F-42297r675188_fix",
+        "satisfies": [
+          "SRG-OS-000327-GPOS-00127",
+          "SRG-OS-000471-GPOS-00215"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000172",
+          "CCI-002234"
+        ],
+        "nist": [
+          "AU-12 c",
+          "AC-6 (9)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239127",
+      "title": "The Photon operating system must audit the execution of privileged functions.",
+      "desc": "Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Auditing the use of privileged functions is one way to detect such misuse and identify the risk from insider threats and the advanced persistent threat. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command to obtain a list of setuid files: # find / -xdev -perm -4000 -type f -o -perm -2000 -type f Execute the following command for each setuid file found in the first command: # grep <setuid_path> /etc/audit/audit.rules Replace <setuid_path> with each path found in the first command. If each <setuid_path> does not have a corresponding line in the audit rules, this is a finding. A typical corresponding line will look like the following: -a always,exit -F path=<setuid_path> -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged",
+        "fix": "At the command line, execute the following command to obtain a list of setuid files: # find / -xdev -perm -4000 -type f -o -perm -2000 -type f Execute the following command for each setuid file found in the first command that does not have a corresponding line in the audit rules: # echo '-a always,exit -F path=<setuid_path> -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged' >> /etc/audit/rules.d/audit.STIG.rules Replace <setuid_path> with each path found in the first command. Execute the following command to load the new rules: # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239128",
+        "rid": "SV-239128r675192_rule",
+        "stig_id": "PHTN-67-000057",
+        "gtitle": "SRG-OS-000341-GPOS-00132",
+        "fix_id": "F-42298r675191_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001849"
+        ],
+        "nist": [
+          "AU-4"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239128",
+      "title": "The Photon operating system must configure auditd to keep five rotated log files.",
+      "desc": "Audit logs are most useful when accessible by date, rather than size. This can be accomplished through a combination of an audit log rotation cron job, setting a reasonable number of logs to keep and configuring auditd to not rotate the logs on its own. This ensures that audit logs are accessible to the ISSO in the event of a central log processing failure.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^num_logs\" /etc/audit/auditd.conf Expected result: num_logs = 5 If the output of the command does not match the expected result, this is a finding.",
+        "fix": "Open /etc/audit/auditd.conf with a text editor. Add or change the \"num_logs\" line as follows: num_logs = 5 At the command line, execute the following command: # service auditd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239129",
+        "rid": "SV-239129r675195_rule",
+        "stig_id": "PHTN-67-000058",
+        "gtitle": "SRG-OS-000341-GPOS-00132",
+        "fix_id": "F-42299r675194_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001849"
+        ],
+        "nist": [
+          "AU-4"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239129",
+      "title": "The Photon operating system must configure auditd to keep five rotated log files.",
+      "desc": "Audit logs are most useful when accessible by date, rather than size. This can be accomplished through a combination of an audit log rotation cron job, setting a reasonable number of logs to keep and configuring auditd to not rotate the logs on its own. This ensures that audit logs are accessible to the ISSO in the event of a central log processing failure.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^max_log_file_action\" /etc/audit/auditd.conf Expected result: max_log_file_action = IGNORE If the output of the command does not match the expected result, this is a finding.",
+        "fix": "Open /etc/audit/auditd.conf with a text editor. Add or change the \"max_log_file_action\" line as follows: max_log_file_action = IGNORE At the command line, execute the following command: # service auditd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239130",
+        "rid": "SV-239130r675198_rule",
+        "stig_id": "PHTN-67-000059",
+        "gtitle": "SRG-OS-000341-GPOS-00132",
+        "fix_id": "F-42300r675197_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001849"
+        ],
+        "nist": [
+          "AU-4"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239130",
+      "title": "The Photon operating system must configure a cron job to rotate auditd logs daily.",
+      "desc": "Audit logs are most useful when accessible by date, rather than size. This can be accomplished through a combination of an audit log rotation cron job, setting a reasonable number of logs to keep and configuring auditd to not rotate the logs on its own. This ensures that audit logs are accessible to the ISSO in the event of a central log processing failure.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # cat /etc/cron.daily/audit-rotate Expected result: #!/bin/bash service auditd rotate If the output of the command does not match the expected result, this is a finding.",
+        "fix": "If /etc/cron.daily/audit-rotate does not exist, run the following commands: # touch /etc/cron.daily/audit-rotate # chown root:root /etc/cron.daily/audit-rotate # chmod 0700 /etc/cron.daily/audit-rotate Open /etc/cron.daily/audit-rotate with a text editor. Set its contents as follows: #!/bin/bash service auditd rotate"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239131",
+        "rid": "SV-239131r675201_rule",
+        "stig_id": "PHTN-67-000060",
+        "gtitle": "SRG-OS-000343-GPOS-00134",
+        "fix_id": "F-42301r675200_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001855"
+        ],
+        "nist": [
+          "AU-5 (1)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239131",
+      "title": "The Photon operating system must configure auditd to log space limit problems to syslog.",
+      "desc": "If security personnel are not notified immediately when storage volume reaches 75% utilization, they are unable to plan for audit record storage capacity expansion.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^space_left \" /etc/audit/auditd.conf Expected result: space_left = 75 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/audit/auditd.conf with a text editor. Ensure that the \"space_left\" line is uncommented and set to the following: space_left = 75 At the command line, execute the following command: # service auditd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239132",
+        "rid": "SV-239132r675204_rule",
+        "stig_id": "PHTN-67-000061",
+        "gtitle": "SRG-OS-000355-GPOS-00143",
+        "fix_id": "F-42302r675203_fix",
+        "satisfies": [
+          "SRG-OS-000355-GPOS-00143",
+          "SRG-OS-000356-GPOS-00144"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-001891",
+          "CCI-002046"
+        ],
+        "nist": [
+          "AU-8 (1) (a)",
+          "AU-8 (1) (b)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239132",
+      "title": "The Photon operating system must be configured to synchronize with an approved DoD time source.",
+      "desc": "Inaccurate time stamps make it more difficult to correlate events and can lead to an inaccurate analysis. Determining the correct time a particular event occurred on a system is critical when conducting forensic analysis and investigating system events. Sources outside the configured acceptable allowance (drift) may be inaccurate. Synchronizing internal information system clocks provides uniformity of time stamps for information systems with multiple system clocks and systems connected over a network. Organizations should consider endpoints that may not have regular access to the authoritative time server (e.g., mobile, teleworking, and tactical endpoints). ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep -E '^\\s*(server|peer|multicastclient)' /etc/ntp.conf Confirm the servers and peers or multicastclient (as applicable) are local or an authoritative U.S. DoD source. If no lines are returned or a non-local/non-authoritative time server is used, this is a finding. OR Navigate to https://<hostname>:5480 to access the Virtual Appliance Management Interface (VAMI). Authenticate and navigate to \"Time\". If no appropriate time server is specified, this is a finding.",
+        "fix": "Open /etc/ntp.conf with a text editor and set its contents to the following: tinker panic 0 restrict default kod nomodify notrap nopeer restrict 127.0.0.1 restrict -6 ::1 driftfile /var/lib/ntp/drift/ntp.drift server <site-specific-time-source-IP> At the command line, execute the following commands: # chkconfig ntpd on # systemctl start ntp OR Navigate to https://<hostname>:5480 to access the VAMI. Authenticate and navigate to \"Time\". Click \"Edit\" in the top right and configure at least one appropriate NTP server. Click \"OK\"."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239133",
+        "rid": "SV-239133r675207_rule",
+        "stig_id": "PHTN-67-000062",
+        "gtitle": "SRG-OS-000366-GPOS-00153",
+        "fix_id": "F-42303r675206_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001749"
+        ],
+        "nist": [
+          "CM-5 (3)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239133",
+      "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
+      "desc": "Installation of any non-trusted software, patches, service packs, device drivers, or operating system components can significantly affect the overall security of the operating system. Ensuring all packages' cryptographic signatures are valid prior to installation ensures the provenance of the software and protects against malicious tampering.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep -s nosignature /usr/lib/rpm/rpmrc /etc/rpmrc ~root/.rpmrc If the command returns any output, this is a finding.",
+        "fix": "Open the file containing \"nosignature\" with a text editor and remove the option."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239134",
+        "rid": "SV-239134r675210_rule",
+        "stig_id": "PHTN-67-000063",
+        "gtitle": "SRG-OS-000366-GPOS-00153",
+        "fix_id": "F-42304r675209_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001749"
+        ],
+        "nist": [
+          "CM-5 (3)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239134",
+      "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
+      "desc": "Installation of any non-trusted software, patches, service packs, device drivers, or operating system components can significantly affect the overall security of the operating system. This requirement ensures the software has not been tampered with and has been provided by a trusted vendor.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep \"^gpgcheck\" /etc/tdnf/tdnf.conf If \"gpgcheck\" is not set to \"1\", this is a finding.",
+        "fix": "Open /etc/tdnf/tdnf.conf with a text editor. Remove any existing gpgcheck setting and add the following line: gpgcheck=1"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239135",
+        "rid": "SV-239135r675213_rule",
+        "stig_id": "PHTN-67-000064",
+        "gtitle": "SRG-OS-000366-GPOS-00153",
+        "fix_id": "F-42305r675212_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-001749"
+        ],
+        "nist": [
+          "CM-5 (3)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239135",
+      "title": "The Photon operating system RPM package management tool must cryptographically verify the authenticity of all software packages during installation.",
+      "desc": "Installation of any non-trusted software, patches, service packs, device drivers, or operating system components can significantly affect the overall security of the operating system. This requirement ensures the software has not been tampered with and has been provided by a trusted vendor.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep gpgcheck /etc/yum.repos.d/* If \"gpgcheck\" is not set to \"1\" in any returned file, this is a finding.",
+        "fix": "Open the file where gpgcheck is not set to \"1\" with a text editor. Remove any existing gpgcheck setting and add the following line at the end of the file: gpgcheck=1"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239136",
+        "rid": "SV-239136r675216_rule",
+        "stig_id": "PHTN-67-000065",
+        "gtitle": "SRG-OS-000373-GPOS-00156",
+        "fix_id": "F-42306r675215_fix",
+        "satisfies": [
+          "SRG-OS-000373-GPOS-00156",
+          "SRG-OS-000373-GPOS-00157",
+          "SRG-OS-000373-GPOS-00158"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-002038"
+        ],
+        "nist": [
+          "IA-11"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239136",
+      "title": "The Photon operating system must require users to reauthenticate for privilege escalation.",
+      "desc": "Without reauthentication, users may access resources or perform tasks for which they do not have authorization. When operating systems provide the capability to escalate a functional capability, it is critical the user reauthenticate. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following commands: # grep -ihs nopasswd /etc/sudoers /etc/sudoers.d/*|grep -v \"^#\"|grep -v \"^%\"|awk '{print $1}' # awk -F: '($2 != \"x\" && $2 != \"!\") {print $1}' /etc/shadow If any account listed in the first output is also listed in the second output, this is a finding.",
+        "fix": "Check the configuration of the \"/etc/sudoers\" and \"/etc/sudoers.d/*\" files with the following command: # visudo OR # visudo -f /etc/sudoers.d/<file name> Remove any occurrences of \"NOPASSWD\" tags associated with user accounts with a password hash."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239137",
+        "rid": "SV-239137r675219_rule",
+        "stig_id": "PHTN-67-000066",
+        "gtitle": "SRG-OS-000383-GPOS-00166",
+        "fix_id": "F-42307r675218_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-002007"
+        ],
+        "nist": [
+          "IA-5 (13)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239137",
+      "title": "The Photon operating system must prohibit the use of cached authenticators after one day.",
+      "desc": "If cached authentication information is out of date, the validity of the authentication information may be questionable.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /opt/likewise/bin/lwregshell list_values \"HKEY_THIS_MACHINE\\Services\\lsass\\Parameters\\Providers\\ActiveDirectory\"|grep \"CacheEntryExpiry\" If the value returned is not 14400 or less, this is a finding.",
+        "fix": "At the command line, execute the following command: # /opt/likewise/bin/lwregshell set_value \"[HKEY_THIS_MACHINE\\Services\\lsass\\Parameters\\Providers\\ActiveDirectory]\" CacheEntryExpiry 14400"
+      }
+    },
+    {
+      "tags": {
+        "severity": "high",
+        "gid": "V-239138",
+        "rid": "SV-239138r675222_rule",
+        "stig_id": "PHTN-67-000067",
+        "gtitle": "SRG-OS-000394-GPOS-00174",
+        "fix_id": "F-42308r675221_fix",
+        "satisfies": [
+          "SRG-OS-000394-GPOS-00174",
+          "SRG-OS-000424-GPOS-00188",
+          "SRG-OS-000478-GPOS-00223"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-002421",
+          "CCI-002450",
+          "CCI-003123"
+        ],
+        "nist": [
+          "SC-8 (1)",
+          "SC-13 b",
+          "MA-4 (6)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239138",
+      "title": "The Photon operating system must configure sshd to use preferred ciphers.",
+      "desc": "Privileged access contains control and configuration information and is particularly sensitive, so additional protections are necessary. This is maintained by using cryptographic mechanisms such as encryption to protect confidentiality. Nonlocal maintenance and diagnostic activities are activities conducted by individuals communicating through a network, either an external network (e.g., the internet) or an internal network. Local maintenance and diagnostic activities are activities carried out by individuals physically present at the information system or information system component and not communicating across a network connection. This requirement applies to hardware/software diagnostic test equipment or tools. This requirement does not cover hardware/software components that may support information system maintenance, yet are a part of the system (e.g., the software implementing \"ping,\" \"ls,\" \"ipconfig,\" or the hardware and software implementing the monitoring port of an Ethernet switch). The operating system can meet this requirement through leveraging a cryptographic module. ",
+      "impact": 0.7,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i Ciphers Expected result: ciphers aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"Ciphers\" line is uncommented and set to the following: Ciphers aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239139",
+        "rid": "SV-239139r675225_rule",
+        "stig_id": "PHTN-67-000068",
+        "gtitle": "SRG-OS-000395-GPOS-00175",
+        "fix_id": "F-42309r675224_fix",
+        "satisfies": [
+          "SRG-OS-000395-GPOS-00175",
+          "SRG-OS-000074-GPOS-00042",
+          "SRG-OS-000112-GPOS-00057",
+          "SRG-OS-000113-GPOS-00058",
+          "SRG-OS-000120-GPOS-00061",
+          "SRG-OS-000125-GPOS-00065",
+          "SRG-OS-000425-GPOS-00189",
+          "SRG-OS-000426-GPOS-00190"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000197",
+          "CCI-000803",
+          "CCI-000877",
+          "CCI-001941",
+          "CCI-001942",
+          "CCI-002420",
+          "CCI-002422",
+          "CCI-002891"
+        ],
+        "nist": [
+          "IA-5 (1) (c)",
+          "IA-7",
+          "MA-4 c",
+          "IA-2 (8)",
+          "IA-2 (9)",
+          "SC-8 (2)",
+          "SC-8 (2)",
+          "MA-4 (7)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239139",
+      "title": "The Photon operating system must use OpenSSH for remote maintenance sessions.",
+      "desc": "If the remote connection is not closed and verified as closed, the session may remain open and be exploited by an attacker; this is referred to as a zombie session. Remote connections must be disconnected and verified as disconnected when nonlocal maintenance sessions have been terminated and are no longer available for use. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # rpm -qa|grep openssh If there is no output, this is a finding.",
+        "fix": "Installing openssh manually is not supported by VMware. Revert to a previous backup or redeploy the VCSA."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239140",
+        "rid": "SV-239140r675228_rule",
+        "stig_id": "PHTN-67-000069",
+        "gtitle": "SRG-OS-000433-GPOS-00193",
+        "fix_id": "F-42310r675227_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-002824"
+        ],
+        "nist": [
+          "SI-16"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239140",
+      "title": "The Photon operating system must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution.",
+      "desc": "ASLR makes it more difficult for an attacker to predict the location of attack code he or she has introduced into a process's address space during an attempt at exploitation. Additionally, ASLR also makes it more difficult for an attacker to know the location of existing code to repurpose it using return-oriented programming techniques.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # cat /proc/sys/kernel/randomize_va_space If the value of \"randomize_va_space\" is not \"2\", this is a finding.",
+        "fix": "Open /etc/sysctl.d/50-security-hardening.conf with a text editor. Ensure that the \"randomize_va_space\" is uncommented and set to the following: kernel.randomize_va_space=2 At the command line, execute the following command: # sysctl --system"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239141",
+        "rid": "SV-239141r675231_rule",
+        "stig_id": "PHTN-67-000070",
+        "gtitle": "SRG-OS-000437-GPOS-00194",
+        "fix_id": "F-42311r675230_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-002617"
+        ],
+        "nist": [
+          "SI-2 (6)"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239141",
+      "title": "The Photon operating system must remove all software components after updated versions have been installed.",
+      "desc": "Previous versions of software components that are not removed from the information system after updates have been installed may be exploited by adversaries. Some information technology products may remove older versions of software automatically from the information system.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep -i \"^clean_requirements_on_remove\" /etc/tdnf/tdnf.conf Expected result: clean_requirements_on_remove=true If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/tdnf/tdnf.conf with a text editor. Remove any existing \"clean_requirements_on_remove\" line and ensure the following line is present: clean_requirements_on_remove=true"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239142",
+        "rid": "SV-239142r675234_rule",
+        "stig_id": "PHTN-67-000071",
+        "gtitle": "SRG-OS-000458-GPOS-00203",
+        "fix_id": "F-42312r675233_fix",
+        "satisfies": [
+          "SRG-OS-000458-GPOS-00203",
+          "SRG-OS-000463-GPOS-00207",
+          "SRG-OS-000466-GPOS-00210",
+          "SRG-OS-000468-GPOS-00212"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ],
+        "nist": [
+          "AU-12 c"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239142",
+      "title": "The Photon operating system must generate audit records when the sudo command is used.",
+      "desc": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the information system (e.g., module or policy filter). ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep sudo Expected result: -a always,exit -F path=/usr/bin/sudo -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # echo '-a always,exit -F path=/usr/bin/sudo -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged' >> /etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239143",
+        "rid": "SV-239143r675237_rule",
+        "stig_id": "PHTN-67-000072",
+        "gtitle": "SRG-OS-000470-GPOS-00214",
+        "fix_id": "F-42313r675236_fix",
+        "satisfies": [
+          "SRG-OS-000470-GPOS-00214",
+          "SRG-OS-000472-GPOS-00217",
+          "SRG-OS-000473-GPOS-00218"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ],
+        "nist": [
+          "AU-12 c"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239143",
+      "title": "The Photon operating system must generate audit records when successful/unsuccessful logon attempts occur.",
+      "desc": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the information system (e.g., module or policy filter). ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep -E \"faillog|lastlog|tallylog\" Expected result: -w /var/log/faillog -p wa -w /var/log/lastlog -p wa -w /var/log/tallylog -p wa If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # echo '-w /var/log/faillog -p wa' >> /etc/audit/rules.d/audit.STIG.rules # echo '-w /var/log/lastlog -p wa' >> /etc/audit/rules.d/audit.STIG.rules # echo '-w /var/log/tallylog -p wa' >> /etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239144",
+        "rid": "SV-239144r675240_rule",
+        "stig_id": "PHTN-67-000073",
+        "gtitle": "SRG-OS-000471-GPOS-00216",
+        "fix_id": "F-42314r675239_fix",
+        "satisfies": [
+          "SRG-OS-000471-GPOS-00216",
+          "SRG-OS-000477-GPOS-00222"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ],
+        "nist": [
+          "AU-12 c"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239144",
+      "title": "The Photon operating system must audit the insmod module.",
+      "desc": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the information system (e.g., module or policy filter). ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep \"/sbin/insmod\" Expected result: -w /sbin/insmod -p x If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # echo '-w /sbin/insmod -p x' >> /etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239145",
+        "rid": "SV-239145r675243_rule",
+        "stig_id": "PHTN-67-000074",
+        "gtitle": "SRG-OS-000476-GPOS-00221",
+        "fix_id": "F-42315r675242_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000172"
+        ],
+        "nist": [
+          "AU-12 c"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239145",
+      "title": "The Photon operating system auditd service must generate audit records for all account creations, modifications, disabling, and termination events.",
+      "desc": "Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the information system (e.g., module or policy filter).",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # auditctl -l | grep -E /etc/security/opasswd If any of these are not listed with a permissions filter of at least \"w\", this is a finding.",
+        "fix": "At the command line, execute the following command: # echo '-w /etc/security/opasswd -p wa -k opasswd' >> /etc/audit/rules.d/audit.STIG.rules # /sbin/augenrules --load"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239146",
+        "rid": "SV-239146r675246_rule",
+        "stig_id": "PHTN-67-000075",
+        "gtitle": "SRG-OS-000480-GPOS-00225",
+        "fix_id": "F-42316r675245_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239146",
+      "title": "The Photon operating system must use the pam_cracklib module.",
+      "desc": "If the operating system allows the user to select passwords based on dictionary words, this increases the chances of password compromise by increasing the opportunity for successful guesses and brute-force attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_cracklib /etc/pam.d/system-password If the output does not return at least \"password requisite pam_cracklib.so\", this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following, replacing any existing \"pam_cracklib.so\" line: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239147",
+        "rid": "SV-239147r675249_rule",
+        "stig_id": "PHTN-67-000076",
+        "gtitle": "SRG-OS-000480-GPOS-00226",
+        "fix_id": "F-42317r675248_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239147",
+      "title": "The Photon operating system must set the FAIL_DELAY parameter.",
+      "desc": "Limiting the number of logon attempts over a certain time interval reduces the chances that an unauthorized user may gain access to an account.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep FAIL_DELAY /etc/login.defs Expected result: FAIL_DELAY 4 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/login.defs with a text editor. Add the following line after the last auth statement: FAIL_DELAY 4"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239148",
+        "rid": "SV-239148r675252_rule",
+        "stig_id": "PHTN-67-000077",
+        "gtitle": "SRG-OS-000480-GPOS-00226",
+        "fix_id": "F-42318r675251_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239148",
+      "title": "The Photon operating system must enforce a delay of at least four seconds between logon prompts following a failed logon attempt.",
+      "desc": "Limiting the number of logon attempts over a certain time interval reduces the chances that an unauthorized user may gain access to an account.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_faildelay /etc/pam.d/system-auth|grep --color=always \"delay=\" Expected result: auth      optional    pam_faildelay.so  delay=4000000 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-auth with a text editor. Remove any existing \"pam_faildelay\" line and add the following line at the end of the file: auth      optional    pam_faildelay.so  delay=4000000"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239149",
+        "rid": "SV-239149r675255_rule",
+        "stig_id": "PHTN-67-000078",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42319r675254_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239149",
+      "title": "The Photon operating system must ensure audit events are flushed to disk at proper intervals.",
+      "desc": "Without setting a balance between performance and ensuring all audit events are written to disk, performance of the system may suffer or the risk of missing audit entries may be too high.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep -E \"freq|flush\" /etc/audit/auditd.conf Expected result: flush = INCREMENTAL_ASYNC freq = 50 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/audit/auditd.conf with a text editor. Ensure that the line below is present and any existing \"flush\" and \"freq\" settings are removed. flush = INCREMENTAL_ASYNC freq = 50"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239150",
+        "rid": "SV-239150r675258_rule",
+        "stig_id": "PHTN-67-000079",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42320r675257_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239150",
+      "title": "The Photon operating system must ensure root $PATH entries are appropriate.",
+      "desc": "The $PATH variable contains a semicolon-delimited set of directories that allows root to not specify the full path for a limited set of binaries. Having unexpected directories in $PATH can lead to root running a binary other than the one intended.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # echo $PATH Expected result: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/java/jre-vmware/bin:/opt/vmware/bin If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following command: # export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/java/jre-vmware/bin:/opt/vmware/bin"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239151",
+        "rid": "SV-239151r675261_rule",
+        "stig_id": "PHTN-67-000080",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42321r675260_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239151",
+      "title": "The Photon operating system must create a home directory for all new local interactive user accounts.",
+      "desc": "If local interactive users are not assigned a valid home directory, there is no place for the storage and control of files they should own.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep -i \"^create_home\" /etc/login.defs If there is no output or the output does not equal \"CREATE_HOME yes\", this is a finding.",
+        "fix": "Open /etc/login.defs with a text editor. Ensure that the following is present and any existing CREATE_HOME line is removed: CREATE_HOME yes"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239152",
+        "rid": "SV-239152r675264_rule",
+        "stig_id": "PHTN-67-000081",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42322r675263_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239152",
+      "title": "The Photon operating system must disable the debug-shell service.",
+      "desc": "The debug-shell service is intended to diagnose system-related boot issues with various systemctl commands. Once enabled and following a system reboot, the root shell will be available on tty9. This service must remain disabled until and unless otherwise directed by VMware support.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # systemctl status debug-shell.service|grep -E --color=always disabled If the debug-shell service is not disabled, this is a finding.",
+        "fix": "At the command line, execute the following commands: # systemctl stop debug-shell.service # systemctl disable debug-shell.service Reboot for changes to take effect."
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239153",
+        "rid": "SV-239153r675267_rule",
+        "stig_id": "PHTN-67-000082",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42323r675266_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239153",
+      "title": "The Photon operating system must configure a secure umask for all shells.",
+      "desc": "A user's umask influences the permissions assigned to files that a user creates. Setting an appropriate umask is important to make sure that information is not exposed to unprivileged users.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # cat /etc/profile.d/umask.sh Expected result: # By default, the umask should be set. if [ \"$(id -gn)\" = \"$(id -un)\" -a $EUID -gt 99 ] ; then umask 002 else umask 027 fi If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/profile.d/umask.sh with a text editor. Set the contents as follows: # By default, the umask should be set. if [ \"$(id -gn)\" = \"$(id -un)\" -a $EUID -gt 99 ] ; then umask 002 else umask 027 fi"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239154",
+        "rid": "SV-239154r675270_rule",
+        "stig_id": "PHTN-67-000083",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42324r675269_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239154",
+      "title": "The Photon operating system must configure sshd to disallow Generic Security Service Application Program Interface (GSSAPI) authentication.",
+      "desc": "GSSAPI authentication is used to provide additional authentication mechanisms to applications. Allowing GSSAPI authentication through SSH exposes the system’s GSSAPI to remote hosts, increasing the attack surface of the system.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i GSSAPIAuthentication Expected result: GSSAPIAuthentication no If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"GSSAPIAuthentication\" line is uncommented and set to the following: GSSAPIAuthentication no At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239155",
+        "rid": "SV-239155r675273_rule",
+        "stig_id": "PHTN-67-000084",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42325r675272_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239155",
+      "title": "The Photon operating system must configure sshd to disable environment processing.",
+      "desc": "Enabling environment processing may enable users to bypass access restrictions in some configurations and must therefore be disabled.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: sshd -T|&grep -i PermitUserEnvironment Expected result: PermitUserEnvironment no If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"PermitUserEnvironment\" line is uncommented and set to the following: PermitUserEnvironment no At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239156",
+        "rid": "SV-239156r675276_rule",
+        "stig_id": "PHTN-67-000085",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42326r675275_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239156",
+      "title": "The Photon operating system must configure sshd to disable X11 forwarding.",
+      "desc": "X11 is an older, insecure graphics forwarding protocol. It is not used by Photon and should be disabled as a general best practice to limit attack surface area and communication channels.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i X11Forwarding Expected result: X11Forwarding no If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"X11Forwarding\" line is uncommented and set to the following: X11Forwarding no At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239157",
+        "rid": "SV-239157r675279_rule",
+        "stig_id": "PHTN-67-000086",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42327r675278_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239157",
+      "title": "The Photon operating system must configure sshd to perform strict mode checking of home directory configuration files.",
+      "desc": "If other users have access to modify user-specific SSH configuration files, they may be able to log on to the system as another user.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i StrictModes Expected result: StrictModes yes If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"StrictModes\" line is uncommented and set to the following: StrictModes yes At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239158",
+        "rid": "SV-239158r675282_rule",
+        "stig_id": "PHTN-67-000087",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42328r675281_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239158",
+      "title": "The Photon operating system must configure sshd to disallow Kerberos authentication.",
+      "desc": "If Kerberos is enabled through SSH, sshd provides a means of access to the system's Kerberos implementation. Vulnerabilities in the system's Kerberos implementation may then be subject to exploitation. To reduce the attack surface of the system, the Kerberos authentication mechanism within SSH must be disabled.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i KerberosAuthentication Expected result: KerberosAuthentication no If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"KerberosAuthentication\" line is uncommented and set to the following: KerberosAuthentication no At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239159",
+        "rid": "SV-239159r675285_rule",
+        "stig_id": "PHTN-67-000088",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42329r675284_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239159",
+      "title": "The Photon operating system must configure sshd to use privilege separation.",
+      "desc": "Privilege separation in sshd causes the process to drop root privileges when not needed, which would decrease the impact of software vulnerabilities in the unprivileged section.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i UsePrivilegeSeparation Expected result: UsePrivilegeSeparation yes If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"UsePrivilegeSeparation\" line is uncommented and set to the following: UsePrivilegeSeparation yes At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239160",
+        "rid": "SV-239160r675288_rule",
+        "stig_id": "PHTN-67-000089",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42330r675287_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239160",
+      "title": "The Photon operating system must configure sshd to disallow authentication with an empty password.",
+      "desc": "Blank passwords are one of the first things an attacker checks for when probing a system. Even is the user somehow has a blank password on the OS, sshd must not allow that user to log in.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i PermitEmptyPasswords Expected result: PermitEmptyPasswords no If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"PermitEmptyPasswords\" line is uncommented and set to the following: PermitEmptyPasswords no At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239161",
+        "rid": "SV-239161r675291_rule",
+        "stig_id": "PHTN-67-000090",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42331r675290_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239161",
+      "title": "The Photon operating system must configure sshd to disallow compression of the encrypted session stream.",
+      "desc": "If compression is allowed in an SSH connection prior to authentication, vulnerabilities in the compression software could result in compromise of the system from an unauthenticated connection.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i Compression Expected result: Compression no If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"Compression\" line is uncommented and set to the following: Compression no At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239162",
+        "rid": "SV-239162r675294_rule",
+        "stig_id": "PHTN-67-000091",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42332r675293_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239162",
+      "title": "The Photon operating system must configure sshd to display the last login immediately after authentication.",
+      "desc": "Providing users with feedback on the last time they logged on via SSH facilitates user recognition and reporting of unauthorized account use.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i PrintLastLog Expected result: PrintLastLog yes If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"PrintLastLog\" line is uncommented and set to the following: PrintLastLog yes At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239163",
+        "rid": "SV-239163r675297_rule",
+        "stig_id": "PHTN-67-000092",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42333r675296_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239163",
+      "title": "The Photon operating system must configure sshd to ignore user-specific trusted hosts lists.",
+      "desc": "SSH trust relationships enable trivial lateral spread after a host compromise and therefore must be explicitly disabled. Individual users can have a local list of trusted remote machines, which must also be ignored while disabling host-based authentication generally.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i IgnoreRhosts Expected result: IgnoreRhosts yes If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"IgnoreRhosts\" line is uncommented and set to the following: IgnoreRhosts yes At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239164",
+        "rid": "SV-239164r675300_rule",
+        "stig_id": "PHTN-67-000093",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42334r675299_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239164",
+      "title": "The Photon operating system must configure sshd to ignore user-specific known_host files.",
+      "desc": "SSH trust relationships enable trivial lateral spread after a host compromise and therefore must be explicitly disabled. Individual users can have a local list of trusted remote machines which must also be ignored while disabling host-based authentication generally.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i IgnoreUserKnownHosts Expected result: IgnoreUserKnownHosts yes If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"IgnoreUserKnownHosts\" line is uncommented and set to the following: IgnoreUserKnownHosts yes At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239165",
+        "rid": "SV-239165r675303_rule",
+        "stig_id": "PHTN-67-000094",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42335r675302_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239165",
+      "title": "The Photon operating system must configure sshd to limit the number of allowed login attempts per connection.",
+      "desc": "By setting the login attempt limit to a low value, an attacker will be forced to reconnect frequently, which severely limits the speed and effectiveness of brute-force attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i MaxAuthTries Expected result: MaxAuthTries 2 If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"MaxAuthTries\" line is uncommented and set to the following: MaxAuthTries 2 At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239166",
+        "rid": "SV-239166r675306_rule",
+        "stig_id": "PHTN-67-000095",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42336r675305_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239166",
+      "title": "The Photon operating system must be configured so that the x86 Ctrl-Alt-Delete key sequence is disabled on the command line.",
+      "desc": "When the Ctrl-Alt-Del target is enabled, a locally logged-on user who presses Ctrl-Alt-Delete, when at the console, can reboot the system. If accidentally pressed, as could happen in the case of a mixed OS environment, this can create the risk of short-term loss of systems availability due to unintentional reboot.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # systemctl status ctrl-alt-del.target Expected result: ctrl-alt-del.target Loaded: masked (/dev/null; bad) Active: inactive (dead) If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following command: # systemctl mask ctrl-alt-del.target"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239167",
+        "rid": "SV-239167r675309_rule",
+        "stig_id": "PHTN-67-000096",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42337r675308_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239167",
+      "title": "The Photon operating system must be configured so that the /etc/skel default scripts are protected from unauthorized modification.",
+      "desc": "If the skeleton files are not protected, unauthorized personnel could change user startup parameters and possibly jeopardize user files.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a and owned by %U:%G\" /etc/skel/.[^.]* Expected result: /etc/skel/.bash_logout permissions are 750 and owned by root:root /etc/skel/.bash_profile permissions are 644 and owned by root:root /etc/skel/.bashrc permissions are 750 and owned by root:root If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # chmod 750 /etc/skel/.bash_logout # chmod 644 /etc/skel/.bash_profile # chmod 750 /etc/skel/.bashrc # chown root:root /etc/skel/.bash_logout # chown root:root /etc/skel/.bash_profile # chown root:root /etc/skel/.bashrc"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239168",
+        "rid": "SV-239168r675312_rule",
+        "stig_id": "PHTN-67-000097",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42338r675311_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239168",
+      "title": "The Photon operating system must be configured so that the /root path is protected from unauthorized access.",
+      "desc": "If the /root path is accessible from users other than root, unauthorized users could change the root partitions files.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a and owned by %U:%G\" /root Expected result: /root permissions are 700 and owned by root:root If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # chmod 700 /root # chown root:root /root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239169",
+        "rid": "SV-239169r675315_rule",
+        "stig_id": "PHTN-67-000098",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42339r675314_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239169",
+      "title": "The Photon operating system must be configured so that all global initialization scripts are protected from unauthorized modification.",
+      "desc": "Local initialization files are used to configure the user's shell environment upon login. Malicious modification of these files could compromise accounts upon login.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # find /etc/bash.bashrc /etc/profile /etc/profile.d/ -xdev -type f -a '(' -perm -002 -o -not -user root -o -not -group root ')' -exec ls -ld {} \\; If any files are returned, this is a finding.",
+        "fix": "At the command line, execute the following commands for each returned file: # chmod o-w <file> # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239170",
+        "rid": "SV-239170r675318_rule",
+        "stig_id": "PHTN-67-000099",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42340r675317_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239170",
+      "title": "The Photon operating system must be configured so that all system startup scripts are protected from unauthorized modification.",
+      "desc": "If system startup scripts are accessible to unauthorized modification, this could compromise the system on startup.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # find /etc/rc.d/* -xdev -type f -a '(' -perm -002 -o -not -user root -o -not -group root ')' -exec ls -ld {} \\; If any files are returned, this is a finding.",
+        "fix": "At the command line, execute the following commands for each returned file: # chmod o-w <file> # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239171",
+        "rid": "SV-239171r675321_rule",
+        "stig_id": "PHTN-67-000100",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42341r675320_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239171",
+      "title": "The Photon operating system must be configured so that all files have a valid owner and group owner.",
+      "desc": "If files do not have valid user and group owners, unintended access to files could occur.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # find / -fstype ext4 -nouser -o -nogroup -exec ls -ld {} \\; If any files are returned, this is a finding.",
+        "fix": "At the command line, execute the following command for each returned file: # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239172",
+        "rid": "SV-239172r675324_rule",
+        "stig_id": "PHTN-67-000101",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42342r675323_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239172",
+      "title": "The Photon operating system must be configured so that the /etc/cron.allow file is protected from unauthorized modification.",
+      "desc": "If cron files and folders are accessible to unauthorized users, malicious jobs may be created.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a and owned by %U:%G\" /etc/cron.allow Expected result: /etc/cron.allow permissions are 600 and owned by root:root If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # chmod 600 /etc/cron.allow # chown root:root /etc/cron.allow"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239173",
+        "rid": "SV-239173r675327_rule",
+        "stig_id": "PHTN-67-000102",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42343r675326_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239173",
+      "title": "The Photon operating system must be configured so that all cron jobs are protected from unauthorized modification.",
+      "desc": "If cron files and folders are accessible to unauthorized users, malicious jobs may be created.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # find /etc/cron.d/ /etc/cron.daily/ /etc/cron.hourly/ /etc/cron.monthly/ /etc/cron.weekly/ -xdev -type f -a '(' -perm -002 -o -not -user root -o -not -group root ')' -exec ls -ld {} \\; If any files are returned, this is a finding.",
+        "fix": "At the command line, execute the following commands for each returned file: # chmod o-w <file> # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239174",
+        "rid": "SV-239174r675330_rule",
+        "stig_id": "PHTN-67-000103",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42344r675329_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239174",
+      "title": "The Photon operating system must be configured so that all cron paths are protected from unauthorized modification.",
+      "desc": "If cron files and folders are accessible to unauthorized users, malicious jobs may be created.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a and owned by %U:%G\" /etc/cron.d /etc/cron.daily /etc/cron.hourly /etc/cron.monthly /etc/cron.weekly Expected result: /etc/cron.d permissions are 755 and owned by root:root /etc/cron.daily permissions are 755 and owned by root:root /etc/cron.hourly permissions are 755 and owned by root:root /etc/cron.monthly permissions are 755 and owned by root:root /etc/cron.weekly permissions are 755 and owned by root:root If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands for each returned file: # chmod 755 <path> # chown root:root <path>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239175",
+        "rid": "SV-239175r675333_rule",
+        "stig_id": "PHTN-67-000104",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42345r675332_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239175",
+      "title": "The Photon operating system must not forward IPv4 or IPv6 source-routed packets.",
+      "desc": "Source routing is an Internet Protocol (IP) mechanism that allows an IP packet to carry information, a list of addresses, which tells a router the path the packet must take. There is also an option to record the hops as the route is traversed. The list of hops taken, the \"route record\", provides the destination with a return path to the source. This allows the source (the sending host) to specify the route, loosely or strictly, ignoring the routing tables of some or all of the routers. It can allow a user to redirect network traffic for malicious purposes and should therefore be disabled.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv[4|6].conf.(all|default|eth.*).accept_source_route\" Expected result: net.ipv4.conf.all.accept_source_route = 0 net.ipv4.conf.default.accept_source_route = 0 net.ipv4.conf.eth0.accept_source_route = 0 net.ipv6.conf.all.accept_source_route = 0 net.ipv6.conf.default.accept_source_route = 0 net.ipv6.conf.eth0.accept_source_route = 0 If the output does not match the expected result, this is a finding. Note: The number of \"ethx\" lines returned is dependent on the number of interfaces. Every \"ethx\" entry must be set to \"0\".",
+        "fix": "At the command line, execute the following command: # for SETTING in $(/sbin/sysctl -aN --pattern \"net.ipv[4|6].conf.(all|default|eth.*).accept_source_route\"); do sed -i -e \"/^${SETTING}/d\" /etc/sysctl.conf;echo $SETTING=0>>/etc/sysctl.conf; done"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239176",
+        "rid": "SV-239176r675336_rule",
+        "stig_id": "PHTN-67-000105",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42346r675335_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239176",
+      "title": "The Photon operating system must not respond to IPv4 Internet Control Message Protocol (ICMP) echoes sent to a broadcast address.",
+      "desc": "Responding to broadcast (ICMP) echoes facilitates network mapping and provides a vector for amplification attacks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern ignore_broadcasts Expected result: net.ipv4.icmp_echo_ignore_broadcasts = 1 If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # sed -i -e \"/^net.ipv4.icmp_echo_ignore_broadcasts/d\" /etc/sysctl.conf # echo net.ipv4.icmp_echo_ignore_broadcasts=1>>/etc/sysctl.conf"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239177",
+        "rid": "SV-239177r675339_rule",
+        "stig_id": "PHTN-67-000106",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42347r675338_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239177",
+      "title": "The Photon operating system must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted.",
+      "desc": "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular destination. These messages modify the host's route table and are unauthenticated. An illicit ICMP redirect message could result in a man-in-the-middle attack.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv4.conf.(all|default|eth.*).accept_redirects\" Expected result: net.ipv4.conf.all.accept_redirects = 0 net.ipv4.conf.default.accept_redirects = 0 net.ipv4.conf.eth0.accept_redirects = 0 If the output does not match the expected result, this is a finding. Note: The number of \"ethx\" lines returned is dependent on the number of interfaces. Every \"ethx\" entry must be set to \"0\".",
+        "fix": "At the command line, execute the following command: # for SETTING in $(/sbin/sysctl -aN --pattern \"net.ipv4.conf.(all|default|eth.*).accept_redirects\"); do sed -i -e \"/^${SETTING}/d\" /etc/sysctl.conf;echo $SETTING=0>>/etc/sysctl.conf; done"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239178",
+        "rid": "SV-239178r675342_rule",
+        "stig_id": "PHTN-67-000107",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42348r675341_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239178",
+      "title": "The Photon operating system must prevent IPv4 Internet Control Message Protocol (ICMP) secure redirect messages from being accepted.",
+      "desc": "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular destination. These messages modify the host's route table and are unauthenticated. An illicit ICMP redirect message could result in a man-in-the-middle attack.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv4.conf.(all|default|eth.*).secure_redirects\" Expected result: net.ipv4.conf.all.secure_redirects = 0 net.ipv4.conf.default.secure_redirects = 0 net.ipv4.conf.eth0.secure_redirects = 0 If the output does not match the expected result, this is a finding. Note: The number of \"ethx\" lines returned is dependent on the number of interfaces. Every \"ethx\" entry must be set to \"0\".",
+        "fix": "At the command line, execute the following command: # for SETTING in $(/sbin/sysctl -aN --pattern \"net.ipv4.conf.(all|default|eth.*).secure_redirects\"); do sed -i -e \"/^${SETTING}/d\" /etc/sysctl.conf;echo $SETTING=0>>/etc/sysctl.conf; done"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239179",
+        "rid": "SV-239179r675345_rule",
+        "stig_id": "PHTN-67-000108",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42349r675344_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239179",
+      "title": "The Photon operating system must not send IPv4 Internet Control Message Protocol (ICMP) redirects.",
+      "desc": "ICMP redirect messages are used by routers to inform hosts that a more direct route exists for a particular destination. These messages contain information from the system's route table, possibly revealing portions of the network topology.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv4.conf.(all|default|eth.*).send_redirects\" Expected result: net.ipv4.conf.all.send_redirects = 0 net.ipv4.conf.default.send_redirects = 0 net.ipv4.conf.eth0.send_redirects = 0 If the output does not match the expected result, this is a finding. Note: The number of \"ethx\" lines returned is dependent on the number of interfaces. Every \"ethx\" entry must be set to \"0\".",
+        "fix": "At the command line, execute the following command: # for SETTING in $(/sbin/sysctl -aN --pattern \"net.ipv4.conf.(all|default|eth.*).send_redirects\"); do sed -i -e \"/^${SETTING}/d\" /etc/sysctl.conf;echo $SETTING=0>>/etc/sysctl.conf; done"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239180",
+        "rid": "SV-239180r675348_rule",
+        "stig_id": "PHTN-67-000109",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42350r675347_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239180",
+      "title": "The Photon operating system must log IPv4 packets with impossible addresses.",
+      "desc": "The presence of \"martian\" packets (which have impossible addresses) as well as spoofed packets, source-routed packets, and redirects could be a sign of nefarious network activity. Logging these packets enables this activity to be detected.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv4.conf.(all|default|eth.*).log_martians\" Expected result: net.ipv4.conf.all.log_martians = 1 net.ipv4.conf.default.log_martians = 1 net.ipv4.conf.eth0.log_martians = 1 If the output does not match the expected result, this is a finding. Note: The number of \"ethx\" lines returned is dependent on the number of interfaces. Every \"ethx\" entry must be set to \"1\".",
+        "fix": "At the command line, execute the following command: # for SETTING in $(/sbin/sysctl -aN --pattern \"net.ipv4.conf.(all|default|eth.*).log_martians\"); do sed -i -e \"/^${SETTING}/d\" /etc/sysctl.conf;echo $SETTING=1>>/etc/sysctl.conf; done"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239181",
+        "rid": "SV-239181r675351_rule",
+        "stig_id": "PHTN-67-000110",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42351r675350_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239181",
+      "title": "The Photon operating system must use a reverse-path filter for IPv4 network traffic.",
+      "desc": "Enabling reverse path filtering drops packets with source addresses that should not have been able to be received on the interface they were received on. It should not be used on systems that are routers for complicated networks but is helpful for end hosts and routers serving small networks.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv4.conf.(all|default|eth.*)\\.rp_filter\" Expected result: net.ipv4.conf.all.rp_filter = 1 net.ipv4.conf.default.rp_filter = 1 net.ipv4.conf.eth0.rp_filter = 1 If the output does not match the expected result, this is a finding. Note: The number of \"ethx\" lines returned is dependent on the number of interfaces. Every \"ethx\" entry must be set to \"1\".",
+        "fix": "At the command line, execute the following command: # for SETTING in $(/sbin/sysctl -aN --pattern \"net.ipv4.conf.(all|default|eth.*)\\.rp_filter\"); do sed -i -e \"/^${SETTING}/d\" /etc/sysctl.conf;echo $SETTING=1>>/etc/sysctl.conf; done"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239182",
+        "rid": "SV-239182r675354_rule",
+        "stig_id": "PHTN-67-000111",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42352r675353_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239182",
+      "title": "The Photon operating system must not perform multicast packet forwarding.",
+      "desc": "Routing protocol daemons are typically used on routers to exchange network topology information with other routers. If this software is used when not required, system network information may be unnecessarily transmitted across the network.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv[4|6].conf.(all|default|eth.*).mc_forwarding\" Expected result: net.ipv4.conf.all.mc_forwarding = 0 net.ipv4.conf.default.mc_forwarding = 0 net.ipv4.conf.eth0.mc_forwarding = 0 net.ipv6.conf.all.mc_forwarding = 0 net.ipv6.conf.default.mc_forwarding = 0 net.ipv6.conf.eth0.mc_forwarding = 0 If the output does not match the expected result, this is a finding. Note: The number of \"ethx\" lines returned is dependent on the number of interfaces. Every \"ethx\" entry must be set to \"0\".",
+        "fix": "At the command line, execute the following command: # for SETTING in $(/sbin/sysctl -aN --pattern \"net.ipv[4|6].conf.(all|default|eth.*).mc_forwarding\"); do sed -i -e \"/^${SETTING}/d\" /etc/sysctl.conf;echo $SETTING=0>>/etc/sysctl.conf; done"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239183",
+        "rid": "SV-239183r675357_rule",
+        "stig_id": "PHTN-67-000112",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42353r675356_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239183",
+      "title": "The Photon operating system must not perform IPv4 packet forwarding.",
+      "desc": "Routing protocol daemons are typically used on routers to exchange network topology information with other routers. If this software is used when not required, system network information may be unnecessarily transmitted across the network.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv4.ip_forward$\" Expected result: net.ipv4.ip_forward = 0 If the system is intended to operate as a router, this is N/A. If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # sed -i -e \"/^net.ipv4.ip_forward/d\" /etc/sysctl.conf # echo net.ipv4.ip_forward=0>>/etc/sysctl.conf"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239184",
+        "rid": "SV-239184r675360_rule",
+        "stig_id": "PHTN-67-000113",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42354r675359_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239184",
+      "title": "The Photon operating system must send TCP timestamps.",
+      "desc": "TCP timestamps are used to provide protection against wrapped sequence numbers. It is possible to calculate system uptime (and boot time) by analyzing TCP timestamps. These calculated uptimes can help a bad actor in determining likely patch levels for vulnerabilities.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # /sbin/sysctl -a --pattern \"net.ipv4.tcp_timestamps$\" Expected result: net.ipv4.tcp_timestamps = 1 If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # sed -i -e \"/^net.ipv4.tcp_timestamps/d\" /etc/sysctl.conf # echo net.ipv4.tcp_timestamps=1>>/etc/sysctl.conf"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239185",
+        "rid": "SV-239185r675363_rule",
+        "stig_id": "PHTN-67-000114",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42355r675362_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239185",
+      "title": "The Photon OS must not have the xinetd service enabled.",
+      "desc": "The xinetd service is not required for normal appliance operation and must be disabled.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # systemctl is-enabled xinetd.service Expected result: disabled If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # service xinetd stop # systemctl disable xinetd.service"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239186",
+        "rid": "SV-239186r675366_rule",
+        "stig_id": "PHTN-67-000115",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42356r675365_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239186",
+      "title": "The Photon operating system must be configured to protect the SSH public host key from unauthorized modification.",
+      "desc": "If a public host key file is modified by an unauthorized user, the SSH service may be compromised.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a and owned by %U:%G\" /etc/ssh/*key.pub Expected result: /etc/ssh/ssh_host_dsa_key.pub permissions are 644 and owned by root:root /etc/ssh/ssh_host_ecdsa_key.pub permissions are 644 and owned by root:root /etc/ssh/ssh_host_ed25519_key.pub permissions are 644 and owned by root:root /etc/ssh/ssh_host_rsa_key.pub permissions are 644 and owned by root:root If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands for each returned file: # chmod 644 <file> # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239187",
+        "rid": "SV-239187r675369_rule",
+        "stig_id": "PHTN-67-000116",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42357r675368_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239187",
+      "title": "The Photon operating system must be configured to protect the SSH private host key from unauthorized access.",
+      "desc": "If an unauthorized user obtains the private SSH host key file, the host could be impersonated.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a and owned by %U:%G\" /etc/ssh/*key Expected result: /etc/ssh/ssh_host_dsa_key permissions are 600 and owned by root:root /etc/ssh/ssh_host_ecdsa_key permissions are 600 and owned by root:root /etc/ssh/ssh_host_ed25519_key permissions are 600 and owned by root:root /etc/ssh/ssh_host_rsa_key permissions are 600 and owned by root:root If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands for each returned file: # chmod 600 <file> # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239188",
+        "rid": "SV-239188r675372_rule",
+        "stig_id": "PHTN-67-000117",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42358r675371_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239188",
+      "title": "The Photon operating system must enforce password complexity on the root account.",
+      "desc": "Password complexity rules must apply to all accounts on the system, including root. Without specifying the enforce_for_root flag, pam_cracklib does not apply complexity rules to the root user. While root users can find ways around this requirement, given its superuser power, it is necessary to attempt to force compliance.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep pam_cracklib /etc/pam.d/system-password|grep --color=always \"enforce_for_root\" Expected result: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/pam.d/system-password with a text editor. Add the following, replacing any existing \"pam_cracklib.so\" line: password requisite pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 minlen=8 minclass=4 difok=4 retry=3 maxsequence=0 enforce_for_root"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239189",
+        "rid": "SV-239189r675375_rule",
+        "stig_id": "PHTN-67-000118",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42359r675374_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239189",
+      "title": "The Photon operating system must protect all boot configuration files from unauthorized access.",
+      "desc": "Boot configuration files control how the system boots, including single-user mode, auditing, log levels, etc. Improper or malicious configurations can negatively affect system security and availability.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # find /boot/*.cfg -xdev -type f -a '(' -not -perm 600 -o -not -user root -o -not -group root ')' -exec ls -ld {} \\; If any files are returned, this is a finding.",
+        "fix": "At the command line, execute the following commands for each returned file: # chmod 600 <file> # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239190",
+        "rid": "SV-239190r675378_rule",
+        "stig_id": "PHTN-67-000119",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42360r675377_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239190",
+      "title": "The Photon operating system must protect sshd configuration from unauthorized access.",
+      "desc": "The sshd_config file contains all the configuration items for sshd. Incorrect or malicious configuration of sshd can allow unauthorized access to the system, insecure communication, limited forensic trail, etc.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # stat -c \"%n permissions are %a and owned by %U:%G\" /etc/ssh/sshd_config Expected result: /etc/ssh/sshd_config permissions are 600 and owned by root:root If the output does not match the expected result, this is a finding.",
+        "fix": "At the command line, execute the following commands: # chmod 600 /etc/ssh/sshd_config # chown root:root /etc/ssh/sshd_config"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239191",
+        "rid": "SV-239191r675381_rule",
+        "stig_id": "PHTN-67-000120",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42361r675380_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239191",
+      "title": "The Photon operating system must protect all sysctl configuration files from unauthorized access.",
+      "desc": "The sysctl configuration file specifies values for kernel parameters to be set on boot. Incorrect or malicious configuration of these parameters can have a negative effect on system security.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # find /etc/sysctl.conf /etc/sysctl.d/* -xdev -type f -a '(' -not -perm 600 -o -not -user root -o -not -group root ')' -exec ls -ld {} \\; If any files are returned, this is a finding.",
+        "fix": "At the command line, execute the following commands for each returned file: # chmod 600 <file> # chown root:root <file>"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239192",
+        "rid": "SV-239192r675384_rule",
+        "stig_id": "PHTN-67-000121",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "fix_id": "F-42362r675383_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239192",
+      "title": "The Photon operating system must ship vCenter SSO logs via rsyslog.",
+      "desc": "Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Proper configuration of rsyslog ensures that information critical to forensic analysis of security events is available for future action without any manual offloading or cron jobs. vCenter SSO logs do currently ship with rsyslog by default. The login information contained in the SSO logs is critical to capture for forensic and troubleshooting purposes.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command prompt, execute the following command: # grep -v \"^#\" /etc/vmware-syslog/stig-services-sso.conf Expected result: input(type=\"imfile\" File=\"/var/log/vmware/sso/ssoAdminServer.log\" Tag=\"ssoAdmin\" Severity=\"info\" Facility=\"local0\") input(type=\"imfile\" File=\"/var/log/vmware/sso/vmware-identity-sts.log\" Tag=\"ssoIdentitySTS\" Severity=\"info\" Facility=\"local0\") input(type=\"imfile\" File=\"/var/log/vmware/sso/websso.log\" Tag=\"ssoWeb\" Severity=\"info\" Facility=\"local0\") If the file does not exist, this is a finding. If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/vmware-syslog/stig-services-vami.conf with a text editor. Create the file if it does not exist. Set the contents of the file as follows: input(type=\"imfile\" File=\"/var/log/vmware/sso/ssoAdminServer.log\" Tag=\"ssoAdmin\" Severity=\"info\" Facility=\"local0\") input(type=\"imfile\" File=\"/var/log/vmware/sso/vmware-identity-sts.log\" Tag=\"ssoIdentitySTS\" Severity=\"info\" Facility=\"local0\") input(type=\"imfile\" File=\"/var/log/vmware/sso/websso.log\" Tag=\"ssoWeb\" Severity=\"info\" Facility=\"local0\")"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239193",
+        "rid": "SV-239193r675387_rule",
+        "stig_id": "PHTN-67-000122",
+        "gtitle": "SRG-OS-000480-GPOS-00228",
+        "fix_id": "F-42363r675386_fix",
+        "satisfies": [
+          "SRG-OS-000480-GPOS-00228",
+          "SRG-OS-000480-GPOS-00230"
+        ],
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239193",
+      "title": "The Photon operating system must set the UMASK parameter correctly.",
+      "desc": "The umask value influences the permissions assigned to files when they are created. The umask setting in login.defs controls the permissions for a new user's home directory. By setting the proper umask, home directories will only allow the new user to read and write files there. ",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep UMASK /etc/login.defs Expected result: UMASK 077 If the output does not match the expected result, this a finding.",
+        "fix": "Open /etc/login.defs with a text editor. Ensure that the \"UMASK\" line is uncommented and set to the following: UMASK 077"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239194",
+        "rid": "SV-239194r675390_rule",
+        "stig_id": "PHTN-67-000123",
+        "gtitle": "SRG-OS-000480-GPOS-00229",
+        "fix_id": "F-42364r675389_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000366"
+        ],
+        "nist": [
+          "CM-6 b"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239194",
+      "title": "The Photon operating system must configure sshd to disallow HostbasedAuthentication.",
+      "desc": "SSH trust relationships enable trivial lateral spread after a host compromise and therefore must be explicitly disabled.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # sshd -T|&grep -i HostbasedAuthentication Expected result: hostbasedauthentication no If the output does not match the expected result, this is a finding.",
+        "fix": "Open /etc/ssh/sshd_config with a text editor. Ensure that the \"HostbasedAuthentication\" line is uncommented and set to the following: HostbasedAuthentication no At the command line, execute the following command: # service sshd reload"
+      }
+    },
+    {
+      "tags": {
+        "severity": "medium",
+        "gid": "V-239195",
+        "rid": "SV-239195r675393_rule",
+        "stig_id": "PHTN-67-000124",
+        "gtitle": "SRG-OS-000080-GPOS-00048",
+        "fix_id": "F-42365r675392_fix",
+        "documentable": false,
+        "cci": [
+          "CCI-000213"
+        ],
+        "nist": [
+          "AC-3"
+        ]
+      },
+      "refs": [
+        "DPMS Target VMware vSphere 6.7 Photon OS"
+      ],
+      "id": "V-239195",
+      "title": "The Photon operating system must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
+      "desc": "If the system does not require authentication before it boots into single-user mode, anyone with vCenter console rights to the VCSA can trivially access all files on the system. GRUB2 is the boot loader for Photon OS and can be configured to require a password to boot into single-user mode or make modifications to the boot menu. Note: The VCSA does not support building grub changes via grub2-mkconfig.",
+      "impact": 0.5,
+      "descs": {
+        "check": "At the command line, execute the following command: # grep -i ^password_pbkdf2 /boot/grub2/grub.cfg If there is no output, this is a finding. If the output does not begin with \"password_pbkdf2 root\", this is a finding.",
+        "fix": "At the command line, execute the following command: # grub2-mkpasswd-pbkdf2 Enter a secure password and ensure this password is stored for break-glass situations. The vCenter root account cannot be recovered without knowing this separate password. Copy the resulting encrypted string. An example string follows: grub.pbkdf2.sha512.10000.983A13DF3C51BB2B5130F0B86DDBF0DEA1AAF766BD1F16B7840F79CE3E35494C4B99F505C99C150071E563DF1D7FE1F45456D5960C4C79DAB6C49298B02A5558.5B2C49E12D43CC5A876F6738462DE4EFC24939D4BE486CDB72CFBCD87FDE93FBAFCB817E01B90F23E53C2502C3230502BC3113BE4F80B0AFC0EE956E735F7F86 Open /boot/grub2/grub.cfg with a text editor. Find the line that begins with \"set rootpartition\". Below this line, paste the following on its own line: set superusers=\"root\" Below this, paste the following, substituting your own encrypted string from the steps above: password_pbkdf2 root <YOUR-LONG-STRING-FROM-ABOVE> The VCSA ships with one \"menuentry\" block by default. Copy that entire block and paste it right below that block. Example: menuentry \"Photon\" { linux \"/\"$photon_linux root=$rootpartition net.ifnames=0 $photon_cmdline coredump_filter=0x37 consoleblank=0 if [ \"$photon_initrd\" ]; then initrd \"/\"$photon_initrd fi } menuentry \"Photon\" { linux \"/\"$photon_linux root=$rootpartition net.ifnames=0 $photon_cmdline coredump_filter=0x37 consoleblank=0 if [ \"$photon_initrd\" ]; then initrd \"/\"$photon_initrd fi } Modify the first menuentry block to add the \"--unrestricted\" option as follows: menuentry \"Photon\" --unrestricted { Modify the second menuentry block to add the allowed user as follows: menuentry \"Recover Photon\" --users root { This concludes the fix. To verify, following is an example grub.cfg snippet: ... set rootpartition=PARTUUID=326e5b0f-42fb-471a-8209-18964c4a2ed3 set superusers=\"root\" password_pbkdf2 root grub.pbkdf2.sha512.10000.983A13DF3C51BB2B5130F0B86DDBF0DEA1AAF766BD1F16B7840F79CE3E35494C4B99F505C99C150071E563DF1D7FE1F45456D5960C4C79DAB6C49298B02A5558.5B2C49E12D43CC5A876F6738462DE4EFC24939D4BE486CDB72CFBCD87FDE93FBAFCB817E01B90F23E53C2502C3230502BC3113BE4F80B0AFC0EE956E735F7F86 menuentry \"Photon\" --unrestricted { linux \"/\"$photon_linux root=$rootpartition net.ifnames=0 $photon_cmdline coredump_filter=0x37 consoleblank=0 if [ \"$photon_initrd\" ]; then initrd \"/\"$photon_initrd fi } menuentry \"Recover Photon\" --users root { linux \"/\"$photon_linux root=$rootpartition net.ifnames=0 $photon_cmdline coredump_filter=0x37 consoleblank=0 if [ \"$photon_initrd\" ]; then initrd \"/\"$photon_initrd fi }"
+      }
+    }
+  ],
+  "name": "VMW_vSphere_6-7_Photon_OS_STIG"
+}

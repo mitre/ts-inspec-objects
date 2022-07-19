@@ -26,6 +26,10 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
     return rules
 }
 
+function ensureDecodedXMLStringValue(input: string | {'#text': string, '@_lang': string}[]): string {
+    return _.get(input, '[0].#text') ? _.get(input, '[0].#text') : input
+}
+
 export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
     const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
     const rules = extractAllRules(parsedXML.Benchmark[0].Group)
@@ -46,12 +50,17 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
         
         const control = new Control();
 
+
         switch (useRuleId) {
             case 'group':
                 control.id = rule.group['@_id']
                 break;
             case 'rule':
-                control.id = rule['@_id'].split('r')[0]
+                if (rule['@_id'].toLowerCase().startsWith('sv')) {
+                    control.id = rule['@_id'].split('r')[0]
+                } else {
+                    control.id = rule['@_id']
+                }
                 break;
             case 'version':
                 control.id = rule.version
@@ -63,14 +72,15 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             default:
                 throw new Error('useRuleId must be one of "group", "rule", or "version"')
         }
+
         
         if (removeNewlines) {
-            const title = removeXMLSpecialCharacters(rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`)
+            const title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
             control.title = title.replace(/\n/g, '{{{{newlineHERE}}}}')
             const desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
             control.desc = desc?.trim().replace(/\n/g, '{{{{newlineHERE}}}}')
         } else {
-            control.title = removeXMLSpecialCharacters(rule['@_severity'] ? rule.title : `[[[MISSING SEVERITY FROM STIG]]] ${rule.title}`)
+            control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
             control.desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
         }
         control.impact = severityStringToImpact(rule['@_severity'] || 'critical', rule.group['@_id'])
@@ -256,10 +266,13 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             })
         }
 
+
         profile.controls.push(control)
     })
 
     profile.controls = _.sortBy(profile.controls, 'id')
+
+    console.log(profile.controls[0])
 
     return profile.toUnformattedObject()
 }
