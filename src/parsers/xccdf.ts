@@ -83,7 +83,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
             control.desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
         }
-        control.impact = severityStringToImpact(rule['@_severity'] || 'critical', rule.group['@_id'])
+        control.impact = severityStringToImpact(rule['@_severity'] || 'medium', rule.group['@_id'])
         
         if (!control.descs || Array.isArray(control.descs)) {
             control.descs = {}

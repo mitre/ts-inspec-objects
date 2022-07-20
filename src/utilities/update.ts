@@ -2,6 +2,7 @@
 // The ultimate goal is to preserve all the metadata that is already there and only add what is new
 
 import _ from 'lodash'
+import winston from "winston";
 import Control from '../objects/control'
 import Profile from '../objects/profile'
 import { processXCCDF } from '../parsers/xccdf'
@@ -38,7 +39,20 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
     return dst
 }
 
+function getExistingCodeFromControl(control: Control): string {
+    if (control.code) {
+        let existingDescribeBlock = ''
+        control.code.split('\n').forEach((line) => {
+            //console.log(line)
+        })
+        return existingDescribeBlock
+    } else {
+        return ''
+    }
+}
+
 export function updateControl(from: Control, update: Partial<Control>): Control {
+    const existingCode = getExistingCodeFromControl(from)
     return projectValuesOntoExistingObj(from as unknown as Record<string, unknown>, update) as unknown as Control
 }
 
@@ -83,18 +97,24 @@ export function updateProfile(from: Profile, using: Profile): Omit<UpdatedProfil
     }
 }
 
-export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group' | 'rule' | 'version', ovalDefinitions?: Record<string, OvalDefinitionValue>): UpdatedProfileReturn {
+export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group' | 'rule' | 'version', logger: winston.Logger, ovalDefinitions?: Record<string, OvalDefinitionValue>): UpdatedProfileReturn {
     // Parse the XCCDF benchmark and convert it into a Profile
+    logger.debug('Loading XCCDF File')
     const xccdfProfile = processXCCDF(using, false, id);
+    logger.debug('Loaded XCCDF File')
+    logger.debug('Loading XCCDF File with newline replacements')
     const xccdfProfileWithNLReplacement = processXCCDF(using, true, id);
+    logger.debug('Loaded XCCDF File with newline replacements')
     // Update the profile and return
+    logger.debug('Creating updated profile')
     const updatedProfile = updateProfile(from, xccdfProfile);
+    logger.debug('Creating diff markdown')
     // Create the markdown
-
+    const markdown = createDiffMarkdown(updatedProfile.diff, xccdfProfileWithNLReplacement)
+    logger.debug('Profile update complete')
     return {
         profile: updatedProfile.profile,
         diff: updatedProfile.diff,
-        markdown: createDiffMarkdown(updatedProfile.diff, xccdfProfileWithNLReplacement)
+        markdown: markdown
     }
-    
 }

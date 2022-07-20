@@ -68,6 +68,7 @@ export default class Control {
       Object.entries(data).forEach(([key, value]) => {
         _.set(this, key, value);
       });
+      console.log(this.code)
     }
   }
 
@@ -76,7 +77,7 @@ export default class Control {
     
     Object.entries(flattened).forEach(([key, value]) => {
       if(typeof value === 'string') {
-        _.set(flattened, key, unformatText(value));
+        _.set(flattened, key, value);
       }
     });
 

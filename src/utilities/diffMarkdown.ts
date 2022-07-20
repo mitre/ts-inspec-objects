@@ -24,7 +24,7 @@ export function createDiffMarkdown(diff: {
 
   Object.entries(diff.simplified.changedControls).forEach(([id, updatedControl]) => {
     if (_.get(updatedControl, "descs.check")) {
-      console.log(removeXMLSpecialCharacters(removeNewlinePlaceholders(getUpdatedCheckForId(id, updatedProfile))))
+      // console.log(removeXMLSpecialCharacters(removeNewlinePlaceholders(getUpdatedCheckForId(id, updatedProfile))))
       renderableDiffData.checks.push({
         id,
         check: removeXMLSpecialCharacters(removeNewlinePlaceholders(getUpdatedCheckForId(id, updatedProfile))),
