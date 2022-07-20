@@ -17,6 +17,8 @@ export type UpdatedProfileReturn = {
     markdown: string
 }
 
+const knownInSpecKeywords = ['title', 'desc', 'impact', 'ref', 'tag', "\""]
+
 function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<string, unknown>, currentPath = ''): Record<string, unknown> {
     for (const updatedValue in src) {
         const existingValue = _.get(dst, updatedValue)
@@ -39,11 +41,33 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
     return dst
 }
 
-function getExistingCodeFromControl(control: Control): string {
+// This is the most likely thing to break if you are getting code formatting issues.
+// Extract the existing describe blocks (what is actually run by inspec for validation)
+function getExistingDescribeFromControl(control: Control): string {
     if (control.code) {
         let existingDescribeBlock = ''
+        let inQuoteBlock = false
+
         control.code.split('\n').forEach((line) => {
-            //console.log(line)
+            const wordSplit = line.trim().split(' ')
+            wordSplit.forEach((word, index) => {
+                const charSplit = word.split('')
+                charSplit.forEach((char, index) => {
+                    if (char === '"' && charSplit[index - 1] !== '\\') {
+                        inQuoteBlock = !inQuoteBlock
+                    }
+                })
+            })
+            if (!inQuoteBlock) {
+                // Get the number of spaces at the beggining of the current line
+                const spaces = line.substring(0, line.indexOf(wordSplit[0])).length
+                if (spaces >= 2) {
+                    const firstWord = wordSplit[0]
+                    if (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) === -1 || (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) !== -1 && spaces > 2)) {
+                        existingDescribeBlock += line + '\n'
+                    }
+                }
+            }
         })
         return existingDescribeBlock
     } else {
@@ -52,8 +76,10 @@ function getExistingCodeFromControl(control: Control): string {
 }
 
 export function updateControl(from: Control, update: Partial<Control>): Control {
-    const existingCode = getExistingCodeFromControl(from)
-    return projectValuesOntoExistingObj(from as unknown as Record<string, unknown>, update) as unknown as Control
+    const existingDescribeBlock = getExistingDescribeFromControl(from)
+    const projectedControl = projectValuesOntoExistingObj(from as unknown as Record<string, unknown>, update) as unknown as Control
+    projectedControl.describe = existingDescribeBlock
+    return projectedControl
 }
 
 export function updateProfile(from: Profile, using: Profile): Omit<UpdatedProfileReturn, 'markdown'> {

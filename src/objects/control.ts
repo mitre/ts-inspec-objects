@@ -1,7 +1,7 @@
 import { ExecJSON } from "inspecjs";
 import _ from "lodash";
 import {flatten, unflatten} from "flat"
-import { escapeQuotes, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
+import { escapeDoubleQuotes, escapeQuotes, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } | null | undefined {
   if (Array.isArray(descs)) {
@@ -18,6 +18,7 @@ export default class Control {
   id?: string | null;
   title?: string | null;
   code?: string | null;
+  describe?: string | null;
   desc?: string | null;
   descs?: { [key: string]: string | undefined } | null;
   impact?: number;
@@ -68,7 +69,6 @@ export default class Control {
       Object.entries(data).forEach(([key, value]) => {
         _.set(this, key, value);
       });
-      console.log(this.code)
     }
   }
 
@@ -89,13 +89,13 @@ export default class Control {
 
     result += `control "${this.id}" do\n`;
     if (this.title) {
-      result += `  title "${wrapAndEscapeQuotes(removeNewlinePlaceholders(this.title), lineLength)}"\n`;
+      result += `  title "${escapeDoubleQuotes(removeNewlinePlaceholders(this.title))}"\n`;
     } else {
       console.error(`${this.id} does not have a title`);
     }
 
     if (this.desc) {
-      result += `  desc "${wrapAndEscapeQuotes(removeNewlinePlaceholders(this.desc), lineLength)}"\n`;
+      result += `  desc "${escapeDoubleQuotes(removeNewlinePlaceholders(this.desc))}"\n`;
     } else {
       console.error(`${this.id} does not have a desc`);
     }
@@ -103,9 +103,8 @@ export default class Control {
     if (this.descs) {
       Object.entries(this.descs).forEach(([key, desc]) => {
         if (desc) {
-          result += `  desc "${key}", "${wrapAndEscapeQuotes(
-            removeNewlinePlaceholders(desc),
-            lineLength
+          result += `  desc "${key}", "${escapeDoubleQuotes(
+            removeNewlinePlaceholders(desc)
           )}"\n`;
         } else {
           console.error(`${this.id} does not have a desc for the value ${key}`);
@@ -147,13 +146,18 @@ export default class Control {
             result += `  tag ${tag}: ${stringifiedObject}\n`;
           }
         } else if (typeof value === "string") {
-          result += `  tag ${tag}: "${wrapAndEscapeQuotes(
-            removeNewlinePlaceholders(value),
-            lineLength
+          result += `  tag ${tag}: "${escapeDoubleQuotes(
+            removeNewlinePlaceholders(value)
           )}"\n`;
         }
       }
     });
+
+    if (this.describe) {
+      result += '\n';
+      result += this.describe
+    }
+
     result += "end";
 
     return result;

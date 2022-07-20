@@ -74,15 +74,9 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
         }
 
         
-        if (removeNewlines) {
-            const title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
-            control.title = title.replace(/\n/g, '{{{{newlineHERE}}}}')
-            const desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
-            control.desc = desc?.trim().replace(/\n/g, '{{{{newlineHERE}}}}')
-        } else {
-            control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
-            control.desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
-        }
+        control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
+        control.desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
+
         control.impact = severityStringToImpact(rule['@_severity'] || 'medium', rule.group['@_id'])
         
         if (!control.descs || Array.isArray(control.descs)) {
@@ -91,12 +85,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
 
         if (rule.check) {
             if (rule.check.some((ruleValue) => 'check-content' in ruleValue)) {
-                if (removeNewlines) {
-                    const check = removeXMLSpecialCharacters(rule.check ? rule.check[0]['check-content'] : 'Missing description')
-                    control.descs.check = check.replace(/\n/g, '{{{{newlineHERE}}}}')
-                } else {
-                    control.descs.check = removeXMLSpecialCharacters(rule.check ? rule.check[0]['check-content'] : 'Missing description')
-                }
+                control.descs.check = removeXMLSpecialCharacters(rule.check ? rule.check[0]['check-content'] : 'Missing description')
                 
             } else if (rule.check.some((ruleValue) => 'check-content-ref' in ruleValue) && ovalDefinitions) {
                 let referenceID: string | null = null;
@@ -110,24 +99,14 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                     }
                 }
                 if (referenceID && referenceID in ovalDefinitions) {
-                    if (removeNewlines) {
-                        const check = removeXMLSpecialCharacters(ovalDefinitions[referenceID].metadata[0].title)
-                        control.descs.check = check.replace(/\n/g, '{{{{newlineHERE}}}}')
-                    } else {
-                        control.descs.check = removeXMLSpecialCharacters(ovalDefinitions[referenceID].metadata[0].title)
-                    }
+                    control.descs.check = removeXMLSpecialCharacters(ovalDefinitions[referenceID].metadata[0].title)
                 } else if (referenceID) {
                     console.warn(`Could not find OVAL definition for ${referenceID}`)
                 }
             }
         }
     
-        if (removeNewlines) {
-            const fix = removeXMLSpecialCharacters(rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text'))
-            control.descs.fix = fix.replace(/\n/g, '{{{{newlineHERE}}}}')
-        } else {
-            control.descs.fix = removeXMLSpecialCharacters(rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text'))
-        }
+        control.descs.fix = removeXMLSpecialCharacters(rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text'))
         
         control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'critical', control.id || 'Unknown'))
         control.tags.gid = rule.group['@_id'],
