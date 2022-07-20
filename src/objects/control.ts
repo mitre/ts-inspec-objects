@@ -133,7 +133,7 @@ export default class Control {
       if (value) {
         if (typeof value === "object") {
           if (Array.isArray(value) && typeof value[0] === "string") {
-            result += `  tag ${tag}: ${JSON.stringify(value)}\n`;
+            result += `  tag ${tag}: ${JSON.stringify(value).split('","').join('", "')}\n`;
           } else {
             // Convert JSON Object to Ruby Hash
             const stringifiedObject = JSON.stringify(value, null, 2)
