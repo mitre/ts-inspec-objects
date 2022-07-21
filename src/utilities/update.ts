@@ -95,7 +95,7 @@ export function findUpdatedControlByAllIdentifiers(existingControl: Control, upd
     if (updatedControl) {
         return updatedControl
     }
-    console.log(`Could not find updated control for ${existingControl.id}`)
+
     return undefined
 }
 
@@ -111,7 +111,7 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
     // Update the profile with the new metadata
     const to = new Profile(_.omit(from, 'controls'))
     // Find the diff
-    const diff = diffProfile(from, using);
+    const diff = diffProfile(from, using, logger);
 
     // Add the new controls
     diff.simplified.addedControlIDs.forEach(id => {
@@ -129,7 +129,7 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
     for (const existingControl of from.controls) {
         const updatedControl = findUpdatedControlByAllIdentifiers(existingControl, using.controls)
         if (updatedControl) {
-            const controlDiff = diff.simplified.changedControls[existingControl.id!]
+            const controlDiff = diff.simplified.changedControls[updatedControl.id]
             
             if (controlDiff) {
                 to.controls.push(updateControl(existingControl, controlDiff, logger))
@@ -138,7 +138,6 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
             }
         }
     }
-
 
     return {
         profile: to,

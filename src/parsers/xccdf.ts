@@ -85,7 +85,6 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
         if (rule.check) {
             if (rule.check.some((ruleValue) => 'check-content' in ruleValue)) {
                 control.descs.check = removeXMLSpecialCharacters(rule.check ? rule.check[0]['check-content'] : 'Missing description')
-                console.log(rule.check[0]['@_system'])
                 control.tags.check_id = rule.check[0]['@_system']
                 
             } else if (rule.check.some((ruleValue) => 'check-content-ref' in ruleValue) && ovalDefinitions) {
@@ -174,10 +173,6 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                         control.tags.nist = []
                     }
                     control.tags.nist?.push(identifier['#text'])
-                } else {
-                    // console.log('Alert')
-                    // console.log(identifier['@_system'])
-                    // console.log(identifier['#text'])
                 }
             })
         }
@@ -245,7 +240,6 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 }
             })
         }
-
 
         profile.controls.push(control)
     })

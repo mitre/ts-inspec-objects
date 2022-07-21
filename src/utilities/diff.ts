@@ -3,7 +3,7 @@ import Profile from "../objects/profile";
 import { ProfileDiff } from "../types/diff";
 import _ from "lodash";
 import { findUpdatedControlByAllIdentifiers } from "./update";
-import winston from "winston/lib/winston/config";
+import winston from "winston";
 
 export function removeNewlines(
   control?: Record<string, unknown>
@@ -57,7 +57,8 @@ export function simplifyDiff(diffData: Record<string, unknown>) {
 
 export function diffProfile(
   fromProfile: Profile,
-  toProfile: Profile
+  toProfile: Profile,
+  logger: winston.Logger
 ): { simplified: ProfileDiff; originalDiff: Record<string, unknown> } {
   const profileDiff: ProfileDiff = {
     addedControlIDs: [],
@@ -114,7 +115,7 @@ export function diffProfile(
           profileDiff.changedControls[newControl.id] = simplifyDiff(controlDiff);
           originalDiff.changedControls[newControl.id] = controlDiff;
 
-          console.log(
+          logger.verbose(
             `Control ${existingControl.id} has been upgraded to ${newControl.id}`
           );
         } else {
@@ -122,7 +123,7 @@ export function diffProfile(
           originalDiff.removedControlIDs.push(diffValue[1]);
         }
       } else {
-        console.error(`Unable to find existing control ${diffValue[1]}`);
+        logger.error(`Unable to find existing control ${diffValue[1]}`);
       }
     } else if (diffValue[0] === "+" && !changedControlIds.includes(diffValue[1].toLowerCase())) {
       profileDiff.addedControlIDs.push(diffValue[1]);
