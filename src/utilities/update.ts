@@ -75,14 +75,39 @@ function getExistingDescribeFromControl(control: Control): string {
     }
 }
 
-export function updateControl(from: Control, update: Partial<Control>): Control {
+export function findUpdatedControlByAllIdentifiers(existingControl: Control, updatedControls: Control[]): Control | undefined {
+    // Try to match based on IDs
+    let updatedControl = updatedControls.find((updatedControl) => {
+        return updatedControl.id.toLowerCase() === existingControl.id.toLowerCase()
+    })
+    
+    if (updatedControl) {
+        return updatedControl
+    }
+
+    // Try to match based on legacy identifiers
+    updatedControl = updatedControls.find((updatedControl) => {
+        return updatedControl.tags.legacy?.some((legacyTag) => {
+            return legacyTag.toLowerCase() === existingControl.id?.toLowerCase()
+        })
+    })
+
+    if (updatedControl) {
+        return updatedControl
+    }
+    console.log(`Could not find updated control for ${existingControl.id}`)
+    return undefined
+}
+
+export function updateControl(from: Control, update: Partial<Control>, logger: winston.Logger): Control {
     const existingDescribeBlock = getExistingDescribeFromControl(from)
+    logger.debug(`Existing describe block for control ${from.id}: ${JSON.stringify(existingDescribeBlock)}`)
     const projectedControl = projectValuesOntoExistingObj(from as unknown as Record<string, unknown>, update) as unknown as Control
     projectedControl.describe = existingDescribeBlock
     return projectedControl
 }
 
-export function updateProfile(from: Profile, using: Profile): Omit<UpdatedProfileReturn, 'markdown'> {
+export function updateProfile(from: Profile, using: Profile, logger: winston.Logger): Omit<UpdatedProfileReturn, 'markdown'> {
     // Update the profile with the new metadata
     const to = new Profile(_.omit(from, 'controls'))
     // Find the diff
@@ -92,27 +117,25 @@ export function updateProfile(from: Profile, using: Profile): Omit<UpdatedProfil
     diff.simplified.addedControlIDs.forEach(id => {
         const addedControl = diff.simplified.addedControls[id]
         if (addedControl) {
+            logger.debug(`New Control: ${addedControl.id} - ${addedControl.title}`)
             to.controls.push(addedControl)
         } else {
-            throw new Error("New control added but don't have the control data")
+            throw new Error(`New control ${id} added but don't have the control data`)
         }
 
     })
 
     // Update the existing controls
     for (const existingControl of from.controls) {
-        const updatedControl = using.controls.find(control => control.id === existingControl.id)
-        
+        const updatedControl = findUpdatedControlByAllIdentifiers(existingControl, using.controls)
         if (updatedControl) {
             const controlDiff = diff.simplified.changedControls[existingControl.id!]
             
             if (controlDiff) {
-                to.controls.push(updateControl(existingControl, controlDiff))
+                to.controls.push(updateControl(existingControl, controlDiff, logger))
             } else {
                 to.controls.push(existingControl)
             }
-        } else {
-            console.log("Control not updated: " + existingControl.id)
         }
     }
 
@@ -124,6 +147,8 @@ export function updateProfile(from: Profile, using: Profile): Omit<UpdatedProfil
 }
 
 export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group' | 'rule' | 'version', logger: winston.Logger, ovalDefinitions?: Record<string, OvalDefinitionValue>): UpdatedProfileReturn {
+    logger.debug(`Updating profile ${from.name} with control IDs: ${id}`)
+
     // Parse the XCCDF benchmark and convert it into a Profile
     logger.debug('Loading XCCDF File')
     const xccdfProfile = processXCCDF(using, false, id);
@@ -133,7 +158,7 @@ export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group
     logger.debug('Loaded XCCDF File with newline replacements')
     // Update the profile and return
     logger.debug('Creating updated profile')
-    const updatedProfile = updateProfile(from, xccdfProfile);
+    const updatedProfile = updateProfile(from, xccdfProfile, logger);
     logger.debug('Creating diff markdown')
     // Create the markdown
     const markdown = createDiffMarkdown(updatedProfile.diff, xccdfProfileWithNLReplacement)

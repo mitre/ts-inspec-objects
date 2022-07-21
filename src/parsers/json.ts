@@ -54,17 +54,28 @@ export function processProfileJSON(
     version: profileInput.data.version,
   });
   profileInput.data.controls.forEach((control) => {
-    profile.controls.push(
-      new Control({
-        id: control.id,
-        title: control.title,
-        desc: control.desc,
-        impact: control.impact,
-        code: control.code,
-        tags: control.tags,
-        descs: objectifyDescriptions(control.descriptions),
-      })
-    );
+    const newControl = new Control({
+      id: control.id,
+      title: control.title,
+      desc: control.desc,
+      impact: control.impact,
+      code: control.code,
+      tags: control.tags,
+      descs: objectifyDescriptions(control.descriptions),
+    })
+
+    // Migrate check and fix text from tags to descriptions
+    if (newControl.tags.check && !newControl.descs.check) {
+      _.set(newControl.descs!, 'check', control.tags.check);
+      _.set(newControl.tags, 'check', undefined);
+    }
+
+    if (newControl.tags.fix && !newControl.descs.fix) {
+      _.set(newControl.descs!, 'fix', control.tags.fix);
+      _.set(newControl.tags, 'fix', undefined);
+    }
+
+    profile.controls.push(newControl);
   });
   return profile;
 }

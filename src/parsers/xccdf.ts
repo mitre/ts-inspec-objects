@@ -72,7 +72,6 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             default:
                 throw new Error('useRuleId must be one of "group", "rule", or "version"')
         }
-
         
         control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
         control.desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
@@ -86,6 +85,8 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
         if (rule.check) {
             if (rule.check.some((ruleValue) => 'check-content' in ruleValue)) {
                 control.descs.check = removeXMLSpecialCharacters(rule.check ? rule.check[0]['check-content'] : 'Missing description')
+                console.log(rule.check[0]['@_system'])
+                control.tags.check_id = rule.check[0]['@_system']
                 
             } else if (rule.check.some((ruleValue) => 'check-content-ref' in ruleValue) && ovalDefinitions) {
                 let referenceID: string | null = null;

@@ -3,7 +3,7 @@ import _ from "lodash";
 import {flatten, unflatten} from "flat"
 import { escapeDoubleQuotes, escapeQuotes, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
 
-export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } | null | undefined {
+export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
     const descriptions: Record<string, string | undefined> = {}
     descs.forEach((description) => {
@@ -11,16 +11,16 @@ export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [
     })
     return descriptions
   }
-  return descs
+  return descs || {}
 }
 
 export default class Control {
-  id?: string | null;
+  id!: string;
   title?: string | null;
   code?: string | null;
   describe?: string | null;
   desc?: string | null;
-  descs?: { [key: string]: string | undefined } | null;
+  descs!: { [key: string]: string | undefined };
   impact?: number;
   ref?: string;
   refs?: (string | {
