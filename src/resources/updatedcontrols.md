@@ -1,4 +1,4 @@
-## Automattic Update: {{fromVersion}} -> {{toVersion}}
+## Automatic Update: {{fromVersion}} -> {{toVersion}}
 
 ### New Controls:
 {{#addedControls}}
@@ -18,12 +18,81 @@
 
 ### Updated Check/Fixes:
 #### Checks:
-
-{{#checks}}
+<details open>
+  <summary>Click to expand.</summary>
+{{#updatedChecks}}
 {{id}}:
+Old: 
 ```
-{{{check}}}
+{{{old}}}
+
 ```
 
+Updated:
+```
+{{{new}}}
 
-{{/checks}}
+```
+---
+{{/updatedChecks}}
+</details>
+
+#### Fixes:
+<details open>
+  <summary>Click to expand.</summary>
+{{#updatedFixes}}
+{{id}}:
+Old: 
+```
+{{{old}}}
+
+```
+New:
+```
+{{{new}}}
+
+```
+---
+{{/updatedFixes}}
+</details>
+
+### Updated Impacts
+<details open>
+  <summary>Click to expand.</summary>
+{{#updatedImpacts}}
+{{id}}:
+Old: {{old}}
+New: {{new}}
+---
+{{/updatedImpacts}}
+</details>
+
+### Updated Titles
+<details>
+  <summary>Click to expand.</summary>
+{{#updatedTitles}}
+{{id}}:
+Old: {{old}}
+New: {{new}}
+---
+{{/updatedTitles}}
+</details>
+
+### Updated Descriptions
+<details>
+  <summary>Click to expand.</summary>
+{{#updatedDescriptions}}
+{{id}}:
+Old:
+```
+{{{old}}}
+
+```
+New:
+```
+{{{new}}}
+
+```
+---
+{{/updatedDescriptions}}
+</details>

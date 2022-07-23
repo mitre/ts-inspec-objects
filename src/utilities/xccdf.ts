@@ -4,20 +4,6 @@ import _ from 'lodash'
 import { DecodedDescription } from '../types/xccdf'
 import he from 'he'
 
-var htmlEntities: Record<string, string> = {
-  nbsp: ' ',
-  cent: '¢',
-  pound: '£',
-  yen: '¥',
-  euro: '€',
-  copy: '©',
-  reg: '®',
-  lt: '<',
-  gt: '>',
-  quot: '"',
-  amp: '&',
-  apos: '\''
-};
 
 export function convertEncodedXmlIntoJson(
     encodedXml: string
