@@ -145,22 +145,19 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
     }
 }
 
-export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group' | 'rule' | 'version', logger: winston.Logger, ovalDefinitions?: Record<string, OvalDefinitionValue>): UpdatedProfileReturn {
+export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group' | 'rule' | 'version' | 'cis', logger: winston.Logger, ovalDefinitions?: Record<string, OvalDefinitionValue>): UpdatedProfileReturn {
     logger.debug(`Updating profile ${from.name} with control IDs: ${id}`)
 
     // Parse the XCCDF benchmark and convert it into a Profile
     logger.debug('Loading XCCDF File')
-    const xccdfProfile = processXCCDF(using, false, id);
+    const xccdfProfile = processXCCDF(using, false, id, ovalDefinitions);
     logger.debug('Loaded XCCDF File')
-    logger.debug('Loading XCCDF File with newline replacements')
-    const xccdfProfileWithNLReplacement = processXCCDF(using, true, id);
-    logger.debug('Loaded XCCDF File with newline replacements')
     // Update the profile and return
     logger.debug('Creating updated profile')
     const updatedProfile = updateProfile(from, xccdfProfile, logger);
     logger.debug('Creating diff markdown')
     // Create the markdown
-    const markdown = createDiffMarkdown(updatedProfile.diff, xccdfProfileWithNLReplacement)
+    const markdown = createDiffMarkdown(updatedProfile.diff)
     logger.debug('Profile update complete')
     return {
         profile: updatedProfile.profile,

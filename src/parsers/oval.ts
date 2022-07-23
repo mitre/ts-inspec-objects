@@ -1,7 +1,11 @@
 import { convertEncodedXmlIntoJson } from "../utilities/xccdf"
 import {OvalDefinitionValue, Oval} from '../types/oval'
 
-export function processOVAL(oval: string): Record<string, OvalDefinitionValue> {
+export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> | undefined {
+    if (!oval) {
+        return undefined
+    }
+    
     const parsed: Oval = convertEncodedXmlIntoJson(oval)
 
     const extractedDefinitions: Record<string, OvalDefinitionValue> = {}

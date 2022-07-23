@@ -16,8 +16,7 @@ export function createDiffMarkdown(
   diff: {
     simplified: ProfileDiff;
     originalDiff: any;
-  },
-  updatedProfile: Profile
+  }
 ): string {
   const renderableDiffData = {
     addedControls: Object.values(diff.simplified.addedControls),

@@ -66,15 +66,23 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 control.id = rule.version
                 break;
             case 'cis':
-                // 
-                control.id = 'CIS-PLACEHOLDER'
+                const controlIdRegex = /\d(\d?)(\d?)(\d?)(.\d(\d?)(\d?)(\d?))?(.\d(\d?)(\d?)(\d?))?(.\d(\d?)(\d?)(\d?))?(.\d(\d?)(\d?)(\d?))?/g
+                const controlIdMatch = controlIdRegex.exec(rule['@_id'])
+
+                if (controlIdMatch) {
+                    control.id = controlIdMatch[0]
+                } else {
+                    throw new Error(`Could not parse control ID from rule ID: ${rule['@_id']}. Expecting format: 'xccdf_org.cisecurity.benchmarks_rule_1.1.11_Rule_title_summary`)
+                }
                 break;
             default:
                 throw new Error('useRuleId must be one of "group", "rule", or "version"')
         }
         
         control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
-        control.desc = removeXMLSpecialCharacters(typeof extractedDescription === 'string' ? extractedDescription :  extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description')
+        
+        const descriptionText = (typeof extractedDescription === 'object' && !Array.isArray(extractedDescription)) ? extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description' : ''
+        control.desc = removeXMLSpecialCharacters(descriptionText)
 
         control.impact = severityStringToImpact(rule['@_severity'] || 'medium', rule.group['@_id'])
         
@@ -105,13 +113,29 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 }
             }
         }
+
+        if (_.get(rule.fixtext, '[0]["#text"]')) {
+            control.descs.fix = removeXMLSpecialCharacters(rule.fixtext[0]['#text'])
+        } else if (typeof rule.fixtext === 'string') {
+            control.descs.fix = removeXMLSpecialCharacters(rule.fixtext)
+        } else if (typeof rule.fixtext === 'object') {
+            if (Array.isArray(rule.fixtext)) {
+                control.descs.fix = removeXMLSpecialCharacters(JSON.stringify(rule.fixtext))
+            }
+        } else if (typeof rule.fixtext === 'undefined') {
+            if (rule.fix && rule.fix[0]) {
+                control.descs.fix = removeXMLSpecialCharacters((rule.fix[0] as Notice)['#text'] || 'Missing fix text')
+            }
+        } else {
+            control.descs.fix = 'Missing fix text'
+        }
     
-        control.descs.fix = removeXMLSpecialCharacters(rule.fixtext ? rule.fixtext[0]['#text'] : (rule.fix ? (rule.fix[0] as Notice)['#text'] || 'Missing fix text' : 'Missing fix text'))
         
         control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'critical', control.id || 'Unknown'))
         control.tags.gid = rule.group['@_id'],
         control.tags.rid = rule['@_id']
         control.tags.stig_id = rule['version']
+
 
         if (typeof rule.group.title === "string") {
             control.tags.gtitle = removeXMLSpecialCharacters(rule.group.title)
