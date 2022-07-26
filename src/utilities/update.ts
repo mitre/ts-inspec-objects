@@ -49,12 +49,22 @@ function getExistingDescribeFromControl(control: Control): string {
         let currentQuoteEscape = ''
         let inQuoteBlock = false
         let inMetadataValueOverride = false
+        let indentedMetadataOverride = false
+        let mostSpacesSeen = 0;
 
         control.code.split('\n').forEach((line) => {
             const wordSplit = line.trim().split(' ')
-            if (!inQuoteBlock && !inMetadataValueOverride) {
+            const spaces = line.substring(0, line.indexOf(wordSplit[0])).length
+
+            if (spaces - mostSpacesSeen  > 10) {
+              indentedMetadataOverride = true
+            } else {
+              mostSpacesSeen = spaces;
+              indentedMetadataOverride = false
+            }
+
+            if (!inQuoteBlock && !inMetadataValueOverride && !indentedMetadataOverride) {
                 // Get the number of spaces at the beggining of the current line
-                const spaces = line.substring(0, line.indexOf(wordSplit[0])).length
                 if (spaces >= 2) {
                     const firstWord = wordSplit[0]
                     if (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) === -1 || (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) !== -1 && spaces > 2)) {
