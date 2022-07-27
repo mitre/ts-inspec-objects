@@ -1,10 +1,11 @@
 import Profile from '../objects/profile';
-import { convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson, impactNumberToSeverityString, removeXMLSpecialCharacters, severityStringToImpact } from '../utilities/xccdf';
-import { BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice, ParsedXCCDF, RationaleElement } from '../types/xccdf';
+import { convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson, convertJsonIntoXML, impactNumberToSeverityString, removeXMLSpecialCharacters, severityStringToImpact } from '../utilities/xccdf';
+import { BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice, ParsedXCCDF, RationaleElement, RuleComplexCheck } from '../types/xccdf';
 import Control from '../objects/control';
 import _ from 'lodash';
 import { OvalDefinitionValue } from '../types/oval';
 import {data as CciNistMappingData} from '../mappings/CciNistMappingData'
+import pretty from 'pretty'
 
 export type GroupContextualizedRule = BenchmarkRule & {group: Omit<BenchmarkGroup, 'Rule' | 'Group'>}
 
@@ -26,11 +27,22 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
     return rules
 }
 
+export function extractAllComplexChecks(complexCheck: RuleComplexCheck): Omit<RuleComplexCheck, 'complex-check'>[] {
+    const complexChecks: Omit<RuleComplexCheck, 'complex-check'>[] = [_.omit(complexCheck, 'complex-check')];
+    if (complexCheck['complex-check']) {
+        complexChecks.push(...complexCheck['complex-check'].map((subComplexCheck) => _.omit(subComplexCheck, 'complex-check')));
+        complexCheck['complex-check'].forEach((subComplexCheck) => {
+            complexChecks.push(...extractAllComplexChecks(subComplexCheck))
+        })
+    }
+    return complexChecks
+}
+
 function ensureDecodedXMLStringValue(input: string | {'#text': string, '@_lang': string}[]): string {
     return _.get(input, '[0].#text') ? _.get(input, '[0].#text') : input
 }
 
-export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue>): Profile {
+export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }>): Profile {
     const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
     const rules = extractAllRules(parsedXML.Benchmark[0].Group)
 
@@ -42,14 +54,21 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
 
     rules.forEach(rule => {
         let extractedDescription: string | DecodedDescription;
-        if (Array.isArray(rule.description)) {
-            extractedDescription = rule.description[0]['#text']
+        if (typeof rule.description === 'object') {
+            if (Array.isArray(rule.description) && _.get(rule, "description[0]['#text']")) {
+                extractedDescription = rule.description[0]['#text']
+            } else {
+                if (typeof _.get(rule.description, '[0].p') === 'string') {
+                    extractedDescription = pretty(_.get(rule.description, '[0].p'))
+                } else {
+                    extractedDescription = JSON.stringify(rule.description)
+                }
+            }
         } else {
             extractedDescription = convertEncodedHTMLIntoJson(rule.description)
         }
         
         const control = new Control();
-
 
         switch (useRuleId) {
             case 'group':
@@ -79,10 +98,17 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 throw new Error('useRuleId must be one of "group", "rule", or "version"')
         }
         
-        control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM STIG]]] ${ensureDecodedXMLStringValue(rule.title)}`)
+        control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM BENCHMARK]]] ${ensureDecodedXMLStringValue(rule.title)}`)
         
-        const descriptionText = (typeof extractedDescription === 'object' && !Array.isArray(extractedDescription)) ? extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || 'Missing Description' : ''
-        control.desc = removeXMLSpecialCharacters(descriptionText)
+        if (typeof extractedDescription === 'object' && !Array.isArray(extractedDescription)) {
+            control.desc = extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || ''
+        } else if (typeof extractedDescription === 'object') { 
+            control.desc = JSON.stringify(extractedDescription)
+        } else if (typeof extractedDescription === 'string') {
+            control.desc = extractedDescription || ''
+        } else {
+            console.warn(`Invalid value for extracted description: ${extractedDescription}`)
+        }
 
         control.impact = severityStringToImpact(rule['@_severity'] || 'medium', rule.group['@_id'])
         
@@ -94,11 +120,11 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             if (rule.check.some((ruleValue) => 'check-content' in ruleValue)) {
                 control.descs.check = removeXMLSpecialCharacters(rule.check ? rule.check[0]['check-content'] : 'Missing description')
                 control.tags.check_id = rule.check[0]['@_system']
-                
             } else if (rule.check.some((ruleValue) => 'check-content-ref' in ruleValue) && ovalDefinitions) {
                 let referenceID: string | null = null;
                 for (const checkContent of rule.check) {
                     if ('check-content-ref' in checkContent && checkContent['@_system'].includes('oval')) {
+                        console.log(`Found OVAL reference: ${checkContent['@_system']}`)
                         for (const checkContentRef of checkContent['check-content-ref']) {
                             if (checkContentRef['@_name']) {
                                 referenceID = checkContentRef['@_name']
@@ -113,6 +139,59 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 }
             }
         }
+        // Very CIS specific
+        else if (rule['complex-check']) {
+            let checkTexts: string[] = [];
+            
+            for (const complexChecks of rule['complex-check']) {
+                const allComplexChecks = extractAllComplexChecks(complexChecks)
+
+                if (control.id === '1.1.1.5') {
+                    console.log(allComplexChecks)
+                }
+
+                allComplexChecks.forEach((complexCheck) => {
+                    if (complexCheck.check) {
+                        complexCheck.check.forEach((check) => {
+                            if (check['@_system']?.toLowerCase().includes('oval')) {
+                                const ovalReference = check['check-content-ref'][0]['@_name']
+                                if (!ovalDefinitions) {
+                                    console.warn(`Missing OVAL definitions! Unable to process OVAL reference: ${ovalReference}`)
+                                } else if (ovalReference && ovalReference in ovalDefinitions) {
+                                    ovalDefinitions[ovalReference].resolvedValues.forEach((resolvedValue: any) => {
+                                        const comment = resolvedValue['@_comment']
+                                        if (comment) {
+                                            checkTexts.push(comment+'\n')
+                                        }
+                                        
+
+                                        resolvedValue.resolvedObjects.forEach((resolvedObject: any) => {
+
+                                            // Try to find the associated state for a resolved object
+                                            const resolvedId = resolvedObject['@_id'].split(':')[resolvedValue['@_id'].split(':').length - 1]
+
+                                            if (resolvedId) {
+                                                const relatedResolvedState = resolvedValue.resolvedStates.find((resolvedState: {'@_id': string}) => resolvedState['@_id'].toLowerCase().includes(resolvedId.toLowerCase()))
+                                                if (relatedResolvedState) {
+                                                    _.set(resolvedObject, 'expectedState', _.pickBy(relatedResolvedState, (value, key) => !key.startsWith('@_')))
+                                                }
+                                            }
+                                            checkTexts.push(JSON.stringify( _.pickBy(resolvedObject, (value, key) => !key.startsWith('@_')), null, 2))
+                                        })
+                                    })
+                                }
+                            } else {
+                                console.warn(`Found external reference to unknown system: ${check['@_system']}, only OVAL is supported`)
+                            }
+                        })
+                    }
+                })
+            }
+
+            if (checkTexts.length >= 1) {
+                control.descs.check = checkTexts.join('\n')
+            }
+        }
 
         if (_.get(rule.fixtext, '[0]["#text"]')) {
             control.descs.fix = removeXMLSpecialCharacters(rule.fixtext[0]['#text'])
@@ -120,8 +199,17 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
             control.descs.fix = removeXMLSpecialCharacters(rule.fixtext)
         } else if (typeof rule.fixtext === 'object') {
             if (Array.isArray(rule.fixtext)) {
-                control.descs.fix = removeXMLSpecialCharacters(JSON.stringify(rule.fixtext))
+                control.descs.fix = removeXMLSpecialCharacters(pretty(convertJsonIntoXML(rule.fixtext.map((fixtext: any) => {
+                    if (fixtext.div) {
+                        return fixtext.div
+                    } else {
+                        return fixtext
+                    }
+                }))))
+            } else {
+                control.descs.fix = removeXMLSpecialCharacters(pretty(convertJsonIntoXML(rule.fixtext)))
             }
+            
         } else if (typeof rule.fixtext === 'undefined') {
             if (rule.fix && rule.fix[0]) {
                 control.descs.fix = removeXMLSpecialCharacters((rule.fix[0] as Notice)['#text'] || 'Missing fix text')
@@ -131,7 +219,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
         }
     
         
-        control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'critical', control.id || 'Unknown'))
+        control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium', control.id || 'Unknown'))
         control.tags.gid = rule.group['@_id'],
         control.tags.rid = rule['@_id']
         control.tags.stig_id = rule['version']

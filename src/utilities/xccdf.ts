@@ -1,4 +1,5 @@
 import parser from 'fast-xml-parser'
+import { toXML } from 'jstoxml';
 import * as htmlparser from 'htmlparser2'
 import _ from 'lodash'
 import { DecodedDescription } from '../types/xccdf'
@@ -12,8 +13,13 @@ export function convertEncodedXmlIntoJson(
       ignoreAttributes: false,
       ignoreNameSpace: true,
       attributeNamePrefix: '@_',
+      stopNodes: ['div', 'p'],
       arrayMode: true
     })
+}
+
+export function convertJsonIntoXML(data: any) {
+    return toXML(data)
 }
 
 export function removeXMLSpecialCharacters(str: string) {
