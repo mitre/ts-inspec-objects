@@ -61,7 +61,13 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 if (typeof _.get(rule.description, '[0].p') === 'string') {
                     extractedDescription = pretty(_.get(rule.description, '[0].p'))
                 } else {
-                    extractedDescription = JSON.stringify(rule.description)
+                    if (Array.isArray(_.get(rule.description, '[0].p'))) {
+                        const joinedDescriptions: string[] = (_.get(rule.description, '[0].p') as string[])
+                        extractedDescription = pretty(joinedDescriptions.join('\n\n'))
+                    } else {
+                        extractedDescription = JSON.stringify(rule.description)
+                    }
+                    
                 }
             }
         } else {

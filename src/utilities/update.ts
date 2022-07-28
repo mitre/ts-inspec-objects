@@ -50,6 +50,7 @@ function getExistingDescribeFromControl(control: Control): string {
         let inQuoteBlock = false
         let inMetadataValueOverride = false
         let indentedMetadataOverride = false
+        let inDescribeBlock = false;
         let mostSpacesSeen = 0;
 
         control.code.split('\n').forEach((line) => {
@@ -63,27 +64,29 @@ function getExistingDescribeFromControl(control: Control): string {
               indentedMetadataOverride = false
             }
 
-            if (!inQuoteBlock && !inMetadataValueOverride && !indentedMetadataOverride) {
+            if ((!inQuoteBlock && !inMetadataValueOverride && !indentedMetadataOverride) || inDescribeBlock) {
                 // Get the number of spaces at the beggining of the current line
                 if (spaces >= 2) {
                     const firstWord = wordSplit[0]
-                    if (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) === -1 || (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) !== -1 && spaces > 2)) {
+                    if (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) === -1 || (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) !== -1 && spaces > 2) || inDescribeBlock) {
+                        inDescribeBlock = true;
                         existingDescribeBlock += line + '\n'
                     }
                 }
             }
+            
             wordSplit.forEach((word, index) => {
                 const charSplit = word.split('')
                 charSplit.forEach((char, index) => {
                     if (char === '"' && charSplit[index - 1] !== '\\') {
-                        if (!currentQuoteEscape) {
+                        if (!currentQuoteEscape || !inQuoteBlock) {
                             currentQuoteEscape = '"'
                         }
                         if (currentQuoteEscape === '"') {
                             inQuoteBlock = !inQuoteBlock
                         }
                     } else if (char === "'" && charSplit[index - 1] !== '\\') {
-                        if (!currentQuoteEscape) {
+                        if (!currentQuoteEscape || !inQuoteBlock) {
                             currentQuoteEscape = "'"
                         }
                         if (currentQuoteEscape === "'") {
