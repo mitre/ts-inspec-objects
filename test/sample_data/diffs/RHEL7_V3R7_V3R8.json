@@ -1,192 +1,125 @@
 {
   "simplified": {
-    "addedControlIDs": [
-      "V-204392",
-      "V-204393"
-    ],
-    "removedControlIDs": [
-      "SV-204392",
-      "SV-251703"
-    ],
-    "renamedControlIds": {},
-    "addedControls": {
-      "V-204392": {
+    "addedControlIDs": [],
+    "removedControlIDs": [],
+    "renamedControlIDs": {},
+    "changedControlIDs": [],
+    "addedControls": {},
+    "changedControls": {
+      "SV-204392": {
         "tags": {
-          "check_id": "C-36339r646839_chk",
-          "severity": "high",
-          "gid": "V-204392",
-          "rid": "SV-204392r646841_rule",
-          "stig_id": "RHEL-07-010010",
-          "gtitle": "SRG-OS-000257-GPOS-00098",
-          "fix_id": "F-36302r646840_fix",
-          "satisfies": [
-            "SRG-OS-000257-GPOS-00098",
-            "SRG-OS-000278-GPOS-00108"
-          ],
-          "documentable": false,
-          "legacy": [
-            "V-71849",
-            "SV-86473"
-          ],
-          "cci": [
-            "CCI-001494",
-            "CCI-001496",
-            "CCI-002165",
-            "CCI-002235"
-          ],
-          "nist": [
-            "AU-9",
-            "AU-9 (3)",
-            "AC-3 (4)",
-            "AC-6 (10)"
-          ]
+          "subsystems__deleted": [],
+          "check_id__added": "C-36339r646839_chk",
+          "documentable__added": false
         },
         "refs": [
           "DPMS Target Red Hat Enterprise Linux 7"
         ],
-        "id": "V-204392",
-        "title": "The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership, and group membership of system files and commands match the vendor values.",
-        "desc": "Discretionary access control is weakened if a user or group has access permissions to system files and directories greater than the default.\n\n",
-        "impact": 0.7,
-        "descs": {
-          "check": "Verify the file permissions, ownership, and group membership of system files and commands match the vendor values.\n\nCheck the default file permissions, ownership, and group membership of system files and commands with the following command:\n\n# for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n\n/var/log/gdm 040755 root root\n/etc/audisp/audisp-remote.conf 0100640 root root\n/usr/bin/passwd 0104755 root root\n\nFor each file returned, verify the current permissions, ownership, and group membership:\n# ls -la <filename>\n\n-rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n\nIf the file is more permissive than the default permissions, this is a finding.\n\nIf the file is not owned by the default owner and is not documented with the Information System Security Officer (ISSO), this is a finding.\n\nIf the file is not a member of the default group and is not documented with the Information System Security Officer (ISSO), this is a finding.",
-          "fix": "Run the following command to determine which package owns the file:\n\n# rpm -qf <filename>\n\nReset the user and group ownership of files within a package with the following command:\n\n# rpm --setugids <packagename>\n\n\nReset the permissions of files within a package with the following command:\n\n# rpm --setperms <packagename>"
-        }
+        "descs": {}
       },
-      "V-204393": {
+      "SV-251703": {
         "tags": {
-          "check_id": "C-4517r88371_chk",
-          "severity": "medium",
-          "gid": "V-204393",
-          "rid": "SV-204393r603261_rule",
-          "stig_id": "RHEL-07-010030",
-          "gtitle": "SRG-OS-000023-GPOS-00006",
-          "fix_id": "F-4517r88372_fix",
-          "satisfies": [
-            "SRG-OS-000023-GPOS-00006",
-            "SRG-OS-000024-GPOS-00007",
-            "SRG-OS-000228-GPOS-00088"
-          ],
-          "documentable": false,
-          "legacy": [
-            "V-71859",
-            "SV-86483"
-          ],
-          "cci": [
-            "CCI-000048"
-          ],
-          "nist": [
-            "AC-8 a"
-          ]
+          "legacy__deleted": [],
+          "subsystems__deleted": [],
+          "check_id__added": "C-55140r833182_chk",
+          "documentable__added": false,
+          "nist__added": [],
+          "rid": "SV-251703r833183_rule"
         },
         "refs": [
           "DPMS Target Red Hat Enterprise Linux 7"
         ],
-        "id": "V-204393",
-        "title": "The Red Hat Enterprise Linux operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon.",
-        "desc": "Display of a standardized and approved use notification before granting access to the operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.\n\nSystem use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist.\n\nThe banner must be formatted in accordance with applicable DoD policy. Use the following verbiage for operating systems that can accommodate banners of 1300 characters:\n\n\"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.\n\nBy using this IS (which includes any device attached to this IS), you consent to the following conditions:\n\n-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.\n\n-At any time, the USG may inspect and seize data stored on this IS.\n\n-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.\n\n-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.\n\n-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.\"\n\n\n",
-        "impact": 0.5,
         "descs": {
-          "check": "Verify the operating system displays the Standard Mandatory DoD Notice and Consent Banner before granting access to the operating system via a graphical user logon.\n\nNote: If the system does not have GNOME installed, this requirement is Not Applicable. \n\nCheck to see if the operating system displays a banner at the logon screen with the following command:\n\n# grep banner-message-enable /etc/dconf/db/local.d/*\nbanner-message-enable=true\n\nIf \"banner-message-enable\" is set to \"false\" or is missing, this is a finding.",
-          "fix": "Configure the operating system to display the Standard Mandatory DoD Notice and Consent Banner before granting access to the system.\n\nNote: If the system does not have GNOME installed, this requirement is Not Applicable.\n\nCreate a database to contain the system-wide graphical user logon settings (if it does not already exist) with the following command:\n\n# touch /etc/dconf/db/local.d/01-banner-message\n\nAdd the following line to the [org/gnome/login-screen] section of the \"/etc/dconf/db/local.d/01-banner-message\":\n\n[org/gnome/login-screen]\nbanner-message-enable=true\n\nUpdate the system databases:\n\n# dconf update\n\nUsers must log out and back in again before the system-wide settings take effect."
+          "check": "Note: If the \"include\" and \"includedir\" directives are not present in the /etc/sudoers file, this requirement is not applicable.\n\nVerify the operating system specifies only the default \"include\" directory for the /etc/sudoers file with the following command:\n\n$ sudo grep include /etc/sudoers\n\n#includedir /etc/sudoers.d\n\nIf the results are not \"/etc/sudoers.d\" or additional files or directories are specified, this is a finding.\n\nVerify the operating system does not have nested \"include\" files or directories within the /etc/sudoers.d directory with the following command:\n\n$ sudo grep -r include /etc/sudoers.d\n\nIf results are returned, this is a finding."
         }
       }
-    },
-    "changedControls": {}
+    }
   },
   "originalDiff": {
-    "addedControlIDs": [
-      "V-204392",
-      "V-204393"
-    ],
-    "removedControlIDs": [
-      "SV-204392",
-      "SV-251703"
-    ],
-    "renamedControlIds": {},
-    "addedControls": {
-      "V-204392": {
+    "addedControlIDs": [],
+    "removedControlIDs": [],
+    "renamedControlIDs": {},
+    "changedControlIDs": [],
+    "addedControls": {},
+    "changedControls": {
+      "SV-204392": {
         "tags": {
-          "check_id": "C-36339r646839_chk",
-          "severity": "high",
-          "gid": "V-204392",
-          "rid": "SV-204392r646841_rule",
-          "stig_id": "RHEL-07-010010",
-          "gtitle": "SRG-OS-000257-GPOS-00098",
-          "fix_id": "F-36302r646840_fix",
-          "satisfies": [
-            "SRG-OS-000257-GPOS-00098",
-            "SRG-OS-000278-GPOS-00108"
+          "subsystems__deleted": [
+            "permissions",
+            "package",
+            "rpm"
           ],
-          "documentable": false,
-          "legacy": [
-            "V-71849",
-            "SV-86473"
-          ],
-          "cci": [
-            "CCI-001494",
-            "CCI-001496",
-            "CCI-002165",
-            "CCI-002235"
-          ],
-          "nist": [
-            "AU-9",
-            "AU-9 (3)",
-            "AC-3 (4)",
-            "AC-6 (10)"
-          ]
+          "check_id__added": "C-36339r646839_chk",
+          "documentable__added": false
         },
         "refs": [
-          "DPMS Target Red Hat Enterprise Linux 7"
+          [
+            "+",
+            "DPMS Target Red Hat Enterprise Linux 7"
+          ]
         ],
-        "id": "V-204392",
-        "title": "The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership, and group membership of system files and commands match the vendor values.",
-        "desc": "Discretionary access control is weakened if a user or group has access permissions to system files and directories greater than the default.\n\n",
-        "impact": 0.7,
+        "title": {
+          "__old": "The Red Hat Enterprise Linux operating system must be configured so \n    that the file permissions, ownership, and group membership of system \n    files and commands match the vendor values.",
+          "__new": "The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership, and group membership of system files and commands match the vendor values."
+        },
+        "desc": {
+          "__old": "Discretionary access control is weakened if a user or group \n    has access permissions to system files and directories greater than the default.",
+          "__new": "Discretionary access control is weakened if a user or group has access permissions to system files and directories greater than the default.\n\n"
+        },
         "descs": {
-          "check": "Verify the file permissions, ownership, and group membership of system files and commands match the vendor values.\n\nCheck the default file permissions, ownership, and group membership of system files and commands with the following command:\n\n# for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n\n/var/log/gdm 040755 root root\n/etc/audisp/audisp-remote.conf 0100640 root root\n/usr/bin/passwd 0104755 root root\n\nFor each file returned, verify the current permissions, ownership, and group membership:\n# ls -la <filename>\n\n-rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n\nIf the file is more permissive than the default permissions, this is a finding.\n\nIf the file is not owned by the default owner and is not documented with the Information System Security Officer (ISSO), this is a finding.\n\nIf the file is not a member of the default group and is not documented with the Information System Security Officer (ISSO), this is a finding.",
-          "fix": "Run the following command to determine which package owns the file:\n\n# rpm -qf <filename>\n\nReset the user and group ownership of files within a package with the following command:\n\n# rpm --setugids <packagename>\n\n\nReset the permissions of files within a package with the following command:\n\n# rpm --setperms <packagename>"
+          "default__deleted": "Discretionary access control is weakened if a user or group \n    has access permissions to system files and directories greater than the default.",
+          "check": {
+            "__old": "Verify the file permissions, ownership, and group membership of \n    system files and commands match the vendor values.\n\n    Check the default file permissions, ownership, and group membership of system \n    files and commands with the following command:\n\n    # for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do \n    for j in `rpm -qf $i`;do rpm -ql $j --dump | cut -d \" \" -f 1,5,6,7 | grep $i;\n    done;done\n\n    /var/log/gdm 040755 root root\n    /etc/audisp/audisp-remote.conf 0100640 root root\n    /usr/bin/passwd 0104755 root root\n\n    For each file returned, verify the current permissions, ownership, and group \n    membership:\n    # ls -la <filename>\n\n    -rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n\n    If the file is more permissive than the default permissions, this is a finding.\n\n    If the file is not owned by the default owner and is not documented with the \n    Information System Security Officer (ISSO), this is a finding.\n\n    If the file is not a member of the default group and is not documented with the \n    Information System Security Officer (ISSO), this is a finding.",
+            "__new": "Verify the file permissions, ownership, and group membership of system files and commands match the vendor values.\n\nCheck the default file permissions, ownership, and group membership of system files and commands with the following command:\n\n# for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n\n/var/log/gdm 040755 root root\n/etc/audisp/audisp-remote.conf 0100640 root root\n/usr/bin/passwd 0104755 root root\n\nFor each file returned, verify the current permissions, ownership, and group membership:\n# ls -la <filename>\n\n-rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n\nIf the file is more permissive than the default permissions, this is a finding.\n\nIf the file is not owned by the default owner and is not documented with the Information System Security Officer (ISSO), this is a finding.\n\nIf the file is not a member of the default group and is not documented with the Information System Security Officer (ISSO), this is a finding."
+          },
+          "fix": {
+            "__old": "Run the following command to determine which package owns the \n    file:\n\n    # rpm -qf <filename>\n\n    Reset the user and group ownership of files within a package with the \n    following command:\n\n    # rpm --setugids <packagename>\n\n\n    Reset the permissions of files within a package with the following \n    command:\n\n    # rpm --setperms <packagename>",
+            "__new": "Run the following command to determine which package owns the file:\n\n# rpm -qf <filename>\n\nReset the user and group ownership of files within a package with the following command:\n\n# rpm --setugids <packagename>\n\n\nReset the permissions of files within a package with the following command:\n\n# rpm --setperms <packagename>"
+          }
         }
       },
-      "V-204393": {
+      "SV-251703": {
         "tags": {
-          "check_id": "C-4517r88371_chk",
-          "severity": "medium",
-          "gid": "V-204393",
-          "rid": "SV-204393r603261_rule",
-          "stig_id": "RHEL-07-010030",
-          "gtitle": "SRG-OS-000023-GPOS-00006",
-          "fix_id": "F-4517r88372_fix",
-          "satisfies": [
-            "SRG-OS-000023-GPOS-00006",
-            "SRG-OS-000024-GPOS-00007",
-            "SRG-OS-000228-GPOS-00088"
+          "legacy__deleted": [],
+          "subsystems__deleted": [
+            "sudo"
           ],
-          "documentable": false,
-          "legacy": [
-            "V-71859",
-            "SV-86483"
+          "check_id__added": "C-55140r833182_chk",
+          "documentable__added": false,
+          "nist__added": [
+            "CM-6 b"
           ],
-          "cci": [
-            "CCI-000048"
-          ],
-          "nist": [
-            "AC-8 a"
-          ]
+          "rid": {
+            "__old": "SV-251703r809566_rule",
+            "__new": "SV-251703r833183_rule"
+          }
         },
         "refs": [
-          "DPMS Target Red Hat Enterprise Linux 7"
+          [
+            "+",
+            "DPMS Target Red Hat Enterprise Linux 7"
+          ]
         ],
-        "id": "V-204393",
-        "title": "The Red Hat Enterprise Linux operating system must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon.",
-        "desc": "Display of a standardized and approved use notification before granting access to the operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.\n\nSystem use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist.\n\nThe banner must be formatted in accordance with applicable DoD policy. Use the following verbiage for operating systems that can accommodate banners of 1300 characters:\n\n\"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.\n\nBy using this IS (which includes any device attached to this IS), you consent to the following conditions:\n\n-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.\n\n-At any time, the USG may inspect and seize data stored on this IS.\n\n-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.\n\n-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.\n\n-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.\"\n\n\n",
-        "impact": 0.5,
+        "title": {
+          "__old": "The Red Hat Enterprise Linux operating system must specify the default \n      \"include\" directory for the /etc/sudoers file.",
+          "__new": "The Red Hat Enterprise Linux operating system must specify the default \"include\" directory for the /etc/sudoers file."
+        },
+        "desc": {
+          "__old": "The \"sudo\" command allows authorized users to run programs \n      (including shells) as other users, system users, and root. The \"/etc/sudoers\" \n      file is used to configure authorized \"sudo\" users as well as the programs \n      they are allowed to run. Some configuration options in the \"/etc/sudoers\" \n      file allow configured users to run programs without re-authenticating. Use of \n      these configuration options makes it easier for one compromised account to be \n      used to compromise other accounts.\n  \n      It is possible to include other sudoers files from within the sudoers file \n      currently being parsed using the #include and #includedir directives. When \n      sudo reaches this line it will suspend processing of the current file (/etc/sudoers) \n      and switch to the specified file/directory. Once the end of the included \n      file(s) is reached, the rest of /etc/sudoers will be processed. Files that \n      are included may themselves include other files. A hard limit of 128 nested \n      include files is enforced to prevent include file loops.",
+          "__new": "The \"sudo\" command allows authorized users to run programs (including shells) as other users, system users, and root. The \"/etc/sudoers\" file is used to configure authorized \"sudo\" users as well as the programs they are allowed to run. Some configuration options in the \"/etc/sudoers\" file allow configured users to run programs without re-authenticating. Use of these configuration options makes it easier for one compromised account to be used to compromise other accounts.\n\nIt is possible to include other sudoers files from within the sudoers file currently being parsed using the #include and #includedir directives. When sudo reaches this line it will suspend processing of the current file (/etc/sudoers) and switch to the specified file/directory. Once the end of the included file(s) is reached, the rest of /etc/sudoers will be processed. Files that are included may themselves include other files. A hard limit of 128 nested include files is enforced to prevent include file loops."
+        },
         "descs": {
-          "check": "Verify the operating system displays the Standard Mandatory DoD Notice and Consent Banner before granting access to the operating system via a graphical user logon.\n\nNote: If the system does not have GNOME installed, this requirement is Not Applicable. \n\nCheck to see if the operating system displays a banner at the logon screen with the following command:\n\n# grep banner-message-enable /etc/dconf/db/local.d/*\nbanner-message-enable=true\n\nIf \"banner-message-enable\" is set to \"false\" or is missing, this is a finding.",
-          "fix": "Configure the operating system to display the Standard Mandatory DoD Notice and Consent Banner before granting access to the system.\n\nNote: If the system does not have GNOME installed, this requirement is Not Applicable.\n\nCreate a database to contain the system-wide graphical user logon settings (if it does not already exist) with the following command:\n\n# touch /etc/dconf/db/local.d/01-banner-message\n\nAdd the following line to the [org/gnome/login-screen] section of the \"/etc/dconf/db/local.d/01-banner-message\":\n\n[org/gnome/login-screen]\nbanner-message-enable=true\n\nUpdate the system databases:\n\n# dconf update\n\nUsers must log out and back in again before the system-wide settings take effect."
+          "default__deleted": "The \"sudo\" command allows authorized users to run programs \n      (including shells) as other users, system users, and root. The \"/etc/sudoers\" \n      file is used to configure authorized \"sudo\" users as well as the programs \n      they are allowed to run. Some configuration options in the \"/etc/sudoers\" \n      file allow configured users to run programs without re-authenticating. Use of \n      these configuration options makes it easier for one compromised account to be \n      used to compromise other accounts.\n  \n      It is possible to include other sudoers files from within the sudoers file \n      currently being parsed using the #include and #includedir directives. When \n      sudo reaches this line it will suspend processing of the current file (/etc/sudoers) \n      and switch to the specified file/directory. Once the end of the included \n      file(s) is reached, the rest of /etc/sudoers will be processed. Files that \n      are included may themselves include other files. A hard limit of 128 nested \n      include files is enforced to prevent include file loops.",
+          "check": {
+            "__old": "Verify the operating system specifies only the default \"include\"\n      directory for the /etc/sudoers file with the following command:\n  \n      $ sudo grep include /etc/sudoers\n  \n      #includedir /etc/sudoers.d\n  \n      If the results are not \"/etc/sudoers.d\" or additional files or directories \n      are specified, this is a finding.\n  \n      Verify the operating system does not have nested \"include\" files or directories \n      within the /etc/sudoers.d directory with the following command:\n  \n      $ sudo grep include /etc/sudoers.d/*\n  \n      If results are returned, this is a finding.",
+            "__new": "Note: If the \"include\" and \"includedir\" directives are not present in the /etc/sudoers file, this requirement is not applicable.\n\nVerify the operating system specifies only the default \"include\" directory for the /etc/sudoers file with the following command:\n\n$ sudo grep include /etc/sudoers\n\n#includedir /etc/sudoers.d\n\nIf the results are not \"/etc/sudoers.d\" or additional files or directories are specified, this is a finding.\n\nVerify the operating system does not have nested \"include\" files or directories within the /etc/sudoers.d directory with the following command:\n\n$ sudo grep -r include /etc/sudoers.d\n\nIf results are returned, this is a finding."
+          },
+          "fix": {
+            "__old": "Configure the /etc/sudoers file to only include the /etc/sudoers.d \n      directory.\n  \n      Edit the /etc/sudoers file with the following command:\n      \n      $ sudo visudo\n      \n      Add or modify the following line:\n      #includedir /etc/sudoers.d",
+            "__new": "Configure the /etc/sudoers file to only include the /etc/sudoers.d directory.\n\nEdit the /etc/sudoers file with the following command:\n\n$ sudo visudo\n\nAdd or modify the following line:\n#includedir /etc/sudoers.d"
+          }
         }
       }
-    },
-    "changedControls": {}
+    }
   }
 }

@@ -29,7 +29,7 @@ describe('The diff utils', () => {
 
     it('Test only 2 controls - one control has updated check text and one has no chanegs - find the difference between a RHEL 7 V3R7 InSpec Profile and V3R8 XCCDF', () => {
         const V3R7 = processJSON(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r7-only-2-controls-profile.json', 'utf-8'))
-        const V3R8 = processXCCDF(fs.readFileSync(`test/sample_data/xccdf/input/STIG/rhel-7-v3r8-only-2-controls-sample-xxcdf.xml`, 'utf-8'), false, 'group')
+        const V3R8 = processXCCDF(fs.readFileSync(`test/sample_data/xccdf/input/STIG/rhel-7-v3r8-only-2-controls-sample-xxcdf.xml`, 'utf-8'), false, 'rule')
 
         fs.writeFileSync('test/sample_data/diffs/RHEL7_V3R7_V3R8.json', JSON.stringify(diffProfile(V3R7, V3R8, createWinstonLogger()), null, 2))
 
@@ -39,7 +39,7 @@ describe('The diff utils', () => {
 
         // expect(diffProfile(V3R7, V3R8, createWinstonLogger())).toEqual(expected);
 
-        expect(profileDiff.originalDiff.changedControls).toEqual(["SV-251703"])
+        expect(profileDiff.originalDiff.changedControlIDs).toEqual(["SV-251703"]);
     })
 
     // Test nested rules in one group

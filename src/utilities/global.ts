@@ -37,6 +37,10 @@ export function unformatText(s: string): string {
   return s.replace(/\n/g, ' ').replace(/\\n/g, ' ').replace(/( +|\t)/g, ' ')
 }
 
+export function removeWhitespace(input: string): string {
+  return input.replace(/\s/gi, '')
+}
+
 const escapeQuotes = (s: string) =>
   s.replace(/\\/g, "\\\\").replace(/'/g, "\\'"); // Escape backslashes and quotes
 const escapeDoubleQuotes = (s: string) =>

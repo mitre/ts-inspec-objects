@@ -4,6 +4,7 @@ import { ProfileDiff } from "../types/diff";
 import _ from "lodash";
 import { findUpdatedControlByAllIdentifiers } from "./update";
 import winston from "winston";
+import { removeWhitespace } from "./global";
 
 export function removeNewlines(
   control?: Record<string, unknown>
@@ -21,6 +22,7 @@ export function removeNewlines(
   });
 }
 
+// Goal is to use a linter for the formatting and compare characters without whitespaces here
 export function simplifyDiff(diffData: Record<string, unknown>) {
   return _.transform(
     diffData,
@@ -32,8 +34,8 @@ export function simplifyDiff(diffData: Record<string, unknown>) {
           typeof _.get(diffValue, "__old") === "string"
         ) {
           if (
-            _.get(diffValue, "__new").trim() !==
-            _.get(diffValue, "__old").trim()
+            removeWhitespace(_.get(diffValue, "__new")) !==
+            removeWhitespace(_.get(diffValue, "__old"))
           ) {
             _.set(result, key, _.get(diffValue, "__new"));
           }
@@ -63,7 +65,8 @@ export function diffProfile(
   const profileDiff: ProfileDiff = {
     addedControlIDs: [],
     removedControlIDs: [],
-    renamedControlIds: {},
+    renamedControlIDs: {},
+    changedControlIDs: [],
     addedControls: {},
     changedControls: {},
   };
@@ -71,7 +74,8 @@ export function diffProfile(
   const originalDiff: ProfileDiff = {
     addedControlIDs: [],
     removedControlIDs: [],
-    renamedControlIds: {},
+    renamedControlIDs: {},
+    changedControlIDs: [],
     addedControls: {},
     changedControls: {},
   };
@@ -102,8 +106,8 @@ export function diffProfile(
           toProfile.controls
         );
         if (newControl && newControl.id !== existingControl.id) {
-          profileDiff.renamedControlIds[existingControl.id] = newControl.id;
-          originalDiff.renamedControlIds[existingControl.id] = newControl.id;
+          profileDiff.renamedControlIDs[existingControl.id] = newControl.id;
+          originalDiff.renamedControlIDs[existingControl.id] = newControl.id;
 
           changedControlIds.push(newControl.id.toLowerCase());
 

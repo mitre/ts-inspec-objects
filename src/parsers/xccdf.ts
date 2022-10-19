@@ -42,6 +42,7 @@ function ensureDecodedXMLStringValue(input: string | {'#text': string, '@_lang':
     return _.get(input, '[0].#text') ? _.get(input, '[0].#text') : input
 }
 
+// Moving the newline removal to diff library rather than processXCCDF level
 export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }>): Profile {
     const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
     const rules = extractAllRules(parsedXML.Benchmark[0].Group)

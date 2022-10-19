@@ -29,7 +29,7 @@ export function createDiffMarkdown(
     updatedDescriptions: [] as DiffValues,
   };
 
-  Object.entries(diff.simplified.renamedControlIds).forEach(
+  Object.entries(diff.simplified.renamedControlIDs).forEach(
     ([oldId, newId]) => {
       renderableDiffData.hasRenamedControls = true;
       renderableDiffData.renamedControls.push({
