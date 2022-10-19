@@ -5,6 +5,7 @@ import _ from "lodash";
 import { findUpdatedControlByAllIdentifiers } from "./update";
 import winston from "winston";
 import { removeWhitespace } from "./global";
+import { rename } from "fs";
 
 export function removeNewlines(
   control?: Record<string, unknown>
@@ -23,7 +24,7 @@ export function removeNewlines(
 }
 
 // Goal is to use a linter for the formatting and compare characters without whitespaces here
-export function simplifyDiff(diffData: Record<string, unknown>) {
+export function ignoreFormattingDiff(diffData: Record<string, unknown>) {
   return _.transform(
     diffData,
     (result: Record<string, unknown>, diffValue, key) => {
@@ -47,7 +48,7 @@ export function simplifyDiff(diffData: Record<string, unknown>) {
           .map((value) => value[0] === "+" && value[1])
           .filter((value) => value);
       } else if (typeof diffValue === "object") {
-        result[key] = simplifyDiff(diffValue as Record<string, unknown>);
+        result[key] = ignoreFormattingDiff(diffValue as Record<string, unknown>);
       } else if (key.endsWith("__deleted")) {
         return undefined;
       } else {
@@ -61,7 +62,7 @@ export function diffProfile(
   fromProfile: Profile,
   toProfile: Profile,
   logger: winston.Logger
-): { simplified: ProfileDiff; originalDiff: Record<string, unknown> } {
+): { ignoreFormattingDiff: ProfileDiff; rawDiff: Record<string, unknown> } {
   const profileDiff: ProfileDiff = {
     addedControlIDs: [],
     removedControlIDs: [],
@@ -89,11 +90,13 @@ export function diffProfile(
   const controlIDDiff: string[][] | undefined = diff(
     fromControlIDs,
     toControlIDs
-  );
+  ).filter((item: string) => !(item.length === 1 && item[0] === " "));
   
   // Contains the new IDs
   const changedControlIds: string[] = [];
 
+  // a diffValue has an entry for both what was subtracted ("-")
+  // and what was added ("+") -- need to handle both
   controlIDDiff?.forEach((diffValue) => {
     if (diffValue[0] === "-") {
       const existingControl = fromProfile.controls.find(
@@ -110,17 +113,22 @@ export function diffProfile(
           originalDiff.renamedControlIDs[existingControl.id] = newControl.id;
 
           changedControlIds.push(newControl.id.toLowerCase());
-
           const controlDiff: Record<string, any> | undefined = _.omit(
             diff(existingControl, newControl),
             "code__deleted"
           );
 
-          profileDiff.changedControls[newControl.id] = simplifyDiff(controlDiff);
+          // logger.info("CONTROL DIFF:" + JSON.stringify(controlDiff, null, 2))
+
+          const renamedControlIgnoredFormatting = ignoreFormattingDiff(controlDiff);
+          logger.info(JSON.stringify(renamedControlIgnoredFormatting));
+          profileDiff.changedControls[newControl.id] = renamedControlIgnoredFormatting;
+          profileDiff.changedControlIDs.push(newControl.id);
           originalDiff.changedControls[newControl.id] = controlDiff;
+          originalDiff.changedControlIDs.push(newControl.id);
 
           logger.verbose(
-            `Control ${existingControl.id} has been upgraded to ${newControl.id}`
+            `Control ${existingControl.id} has been updated to ${newControl.id}`
           );
         } else {
           profileDiff.removedControlIDs.push(diffValue[1]);
@@ -129,11 +137,18 @@ export function diffProfile(
       } else {
         logger.error(`Unable to find existing control ${diffValue[1]}`);
       }
-    } else if (diffValue[0] === "+" && !changedControlIds.includes(diffValue[1].toLowerCase())) {
+    } else if (diffValue[0] === "+" && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1] ) {
+      logger.info(JSON.stringify(diffValue))
+      logger.info(JSON.stringify(changedControlIds))
       profileDiff.addedControlIDs.push(diffValue[1]);
       originalDiff.addedControlIDs.push(diffValue[1]);
     }
   });
+
+  // take the list of renamed controls out of the list of added controls
+  // (a control is not "new" if it was renamed)
+  profileDiff.addedControlIDs = profileDiff.addedControlIDs.filter((item: string) => !Object.values(profileDiff.renamedControlIDs).includes(item))
+  originalDiff.addedControlIDs = originalDiff.addedControlIDs.filter((item: string) => !Object.values(originalDiff.renamedControlIDs).includes(item))
 
   // Add new controls to addedControls
   profileDiff.addedControlIDs.forEach((addedControl) => {
@@ -157,11 +172,13 @@ export function diffProfile(
         "code__deleted"
       );
       if (controlDiff) {
-        profileDiff.changedControls[toControl.id!] = simplifyDiff(controlDiff);
+        profileDiff.changedControls[toControl.id!] = ignoreFormattingDiff(controlDiff);
+        profileDiff.changedControlIDs.push(toControl.id);
         originalDiff.changedControls[toControl.id!] = controlDiff;
+        originalDiff.changedControlIDs.push(toControl.id);        
       }
     }
   }
 
-  return { simplified: profileDiff, originalDiff: originalDiff };
+  return { ignoreFormattingDiff: profileDiff, rawDiff: originalDiff };
 }

@@ -14,12 +14,12 @@ type DiffValues = {id: string, old: string, new: string}[]
 
 export function createDiffMarkdown(
   diff: {
-    simplified: ProfileDiff;
-    originalDiff: any;
+    ignoreFormattingDiff: ProfileDiff;
+    rawDiff: any;
   }
 ): string {
   const renderableDiffData = {
-    addedControls: Object.values(diff.simplified.addedControls),
+    addedControls: Object.values(diff.ignoreFormattingDiff.addedControls),
     hasRenamedControls: false,
     renamedControls: [] as { oldId: string; newId: string }[],
     updatedChecks: [] as DiffValues,
@@ -29,7 +29,7 @@ export function createDiffMarkdown(
     updatedDescriptions: [] as DiffValues,
   };
 
-  Object.entries(diff.simplified.renamedControlIDs).forEach(
+  Object.entries(diff.ignoreFormattingDiff.renamedControlIDs).forEach(
     ([oldId, newId]) => {
       renderableDiffData.hasRenamedControls = true;
       renderableDiffData.renamedControls.push({
@@ -39,7 +39,7 @@ export function createDiffMarkdown(
     }
   );
 
-  Object.entries((diff.originalDiff as ProfileDiff).changedControls).forEach(
+  Object.entries((diff.rawDiff as ProfileDiff).changedControls).forEach(
     ([id, controlDiff]) => {
       if (controlDiff.descs?.check) {
         const oldCheck = _.get(controlDiff.descs.check, "__old") as string;

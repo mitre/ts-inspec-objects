@@ -13,7 +13,7 @@ import { createDiffMarkdown } from './diffMarkdown'
 
 export type UpdatedProfileReturn = {
     profile: Profile,
-    diff: {simplified: ProfileDiff, originalDiff: Record<string, unknown>},
+    diff: {ignoreFormattingDiff: ProfileDiff, rawDiff: Record<string, unknown>},
     markdown: string
 }
 
@@ -141,8 +141,8 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
     const diff = diffProfile(from, using, logger);
 
     // Add the new controls
-    diff.simplified.addedControlIDs.forEach(id => {
-        const addedControl = diff.simplified.addedControls[id]
+    diff.ignoreFormattingDiff.addedControlIDs.forEach(id => {
+        const addedControl = diff.ignoreFormattingDiff.addedControls[id]
         if (addedControl) {
             logger.debug(`New Control: ${addedControl.id} - ${addedControl.title}`)
             to.controls.push(addedControl)
@@ -156,7 +156,7 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
     for (const existingControl of from.controls) {
         const updatedControl = findUpdatedControlByAllIdentifiers(existingControl, using.controls)
         if (updatedControl) {
-            const controlDiff = diff.simplified.changedControls[updatedControl.id]
+            const controlDiff = diff.ignoreFormattingDiff.changedControls[updatedControl.id]
             
             if (controlDiff) {
                 to.controls.push(updateControl(existingControl, controlDiff, logger))
