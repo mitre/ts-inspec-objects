@@ -84,7 +84,7 @@ export function processExecJSON(execJSON: ExecJSON.Execution) {
   return processEvaluation(contextualizeEvaluation(execJSON));
 }
 
-export function processJSON(json: string): Profile {
+export function processInSpecProfile(json: string): Profile {
   const convertedFile: ConversionResult = convertFile(json, true);
   let profile = new Profile();
   if (convertedFile["1_0_ExecJson"]) {
