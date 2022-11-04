@@ -90,7 +90,7 @@ export function diffProfile(
   const controlIDDiff: string[][] | undefined = diff(
     fromControlIDs,
     toControlIDs
-  ).filter((item: string) => !(item.length === 1 && item[0] === " "));
+  )?.filter((item: string) => !(item.length === 1 && item[0] === " "));
   
   // Contains the new IDs
   const changedControlIds: string[] = [];

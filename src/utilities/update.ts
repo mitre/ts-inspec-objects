@@ -47,6 +47,7 @@ function getExistingDescribeFromControl(control: Control): string {
     if (control.code) {
         let existingDescribeBlock = ''
         let currentQuoteEscape = ''
+        let inPercentBlock = false;
         let inQuoteBlock = false
         let inMetadataValueOverride = false
         let indentedMetadataOverride = false
@@ -54,8 +55,8 @@ function getExistingDescribeFromControl(control: Control): string {
         let mostSpacesSeen = 0;
 
         control.code.split('\n').forEach((line) => {
-            const wordSplit = line.trim().split(' ')
-            const spaces = line.substring(0, line.indexOf(wordSplit[0])).length
+            const wordArray = line.trim().split(' ')
+            const spaces = line.substring(0, line.indexOf(wordArray[0])).length
 
             if (spaces - mostSpacesSeen  > 10) {
               indentedMetadataOverride = true
@@ -64,10 +65,13 @@ function getExistingDescribeFromControl(control: Control): string {
               indentedMetadataOverride = false
             }
 
-            if ((!inQuoteBlock && !inMetadataValueOverride && !indentedMetadataOverride) || inDescribeBlock) {
-                // Get the number of spaces at the beggining of the current line
-                if (spaces >= 2) {
-                    const firstWord = wordSplit[0]
+            if ((!inPercentBlock && !inQuoteBlock && !inMetadataValueOverride && !indentedMetadataOverride) || inDescribeBlock) {
+                if (inDescribeBlock && wordArray.length === 1 && wordArray.includes('')) {
+                    existingDescribeBlock += '\n'
+                }
+                // Get the number of spaces at the beginning of the current line
+                else if (spaces >= 2) {
+                    const firstWord = wordArray[0]
                     if (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) === -1 || (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) !== -1 && spaces > 2) || inDescribeBlock) {
                         inDescribeBlock = true;
                         existingDescribeBlock += line + '\n'
@@ -75,17 +79,25 @@ function getExistingDescribeFromControl(control: Control): string {
                 }
             }
             
-            wordSplit.forEach((word, index) => {
-                const charSplit = word.split('')
-                charSplit.forEach((char, index) => {
-                    if (char === '"' && charSplit[index - 1] !== '\\') {
+            wordArray.forEach((word, index) => {
+                if(word.includes('%q') && inPercentBlock === false) {
+                    inPercentBlock = true;
+                }
+                const charArray = word.split('')
+                charArray.forEach((char, index) => {
+                    if (inPercentBlock) {
+                        if (char === '}' && charArray[index - 1] !== '\\' && !inQuoteBlock) {
+                            inPercentBlock = false;
+                        }
+                    }
+                    if (char === '"' && charArray[index - 1] !== '\\') {
                         if (!currentQuoteEscape || !inQuoteBlock) {
                             currentQuoteEscape = '"'
                         }
                         if (currentQuoteEscape === '"') {
                             inQuoteBlock = !inQuoteBlock
                         }
-                    } else if (char === "'" && charSplit[index - 1] !== '\\') {
+                    } else if (char === "'" && charArray[index - 1] !== '\\') {
                         if (!currentQuoteEscape || !inQuoteBlock) {
                             currentQuoteEscape = "'"
                         }
@@ -96,7 +108,8 @@ function getExistingDescribeFromControl(control: Control): string {
                 })
             })
         })
-        return existingDescribeBlock
+        // Take off the extra newline at the end
+        return existingDescribeBlock.slice(0, -1)
     } else {
         return ''
     }
@@ -179,13 +192,16 @@ export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group
     logger.debug('Loading XCCDF File')
     const xccdfProfile = processXCCDF(using, false, id, ovalDefinitions);
     logger.debug('Loaded XCCDF File')
+
     // Update the profile and return
     logger.debug('Creating updated profile')
     const updatedProfile = updateProfile(from, xccdfProfile, logger);
     logger.debug('Creating diff markdown')
+
     // Create the markdown
     const markdown = createDiffMarkdown(updatedProfile.diff)
     logger.debug('Profile update complete')
+
     return {
         profile: updatedProfile.profile,
         diff: updatedProfile.diff,
