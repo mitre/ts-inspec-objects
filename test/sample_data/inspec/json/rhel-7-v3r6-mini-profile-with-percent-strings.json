@@ -1,0 +1,114 @@
+{
+    "name": "RHEL_7_STIG",
+    "title": "Red Hat Enterprise Linux 7 Security Technical Implementation Guide",
+    "maintainer": "MITRE SAF Team",
+    "copyright": "MITRE, 2022",
+    "copyright_email": "saf@groups.mitre.org",
+    "license": "Apache-2.0",
+    "summary": "Inspec Validation Profile for Red Hat Enterprise Linux 7 STIG",
+    "version": "3.6.0",
+    "supports": [
+        {
+            "platform-name": "centos",
+            "release": "7.*"
+        },
+        {
+            "platform-name": "redhat",
+            "release": "7.*"
+        },
+        {
+            "platform-name": "amazon",
+            "release": "2*"
+        }
+    ],
+    "inspec_version": ">= 4.26",
+    "inputs": [
+        {
+            "name": "disable_slow_controls",
+            "options": {
+                "type": "Boolean",
+                "value": false
+            }
+        },
+        {
+            "name": "rpm_verify_perms_except",
+            "options": {
+                "type": "Array",
+                "value": [
+                    "/etc/issue"
+                ]
+            }
+        }
+    ],
+    "controls": [
+        {
+            "title": "The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership,\n    and group membership of system files and commands match the vendor values.",
+            "desc": "Discretionary access control is weakened if a user or group has access permissions to system files and\n    directories greater than the default.",
+            "descriptions": {
+                "default": "Discretionary access control is weakened if a user or group has access permissions to system files and\n    directories greater than the default.",
+                "rationale": "",
+                "check": "Verify the file permissions, ownership, and group membership of system files and commands match the\n    vendor values.\n    Check the default file permissions, ownership, and group membership of system files and commands with the following\n    command:\n    # for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j\n    --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n    /var/log/gdm 040755 root root\n    /etc/audisp/audisp-remote.conf 0100640 root root\n    /usr/bin/passwd 0104755 root root\n    For each file returned, verify the current permissions, ownership, and group membership:\n    # ls -la <filename>\n    -rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n    If the file is more permissive than the default permissions, this is a finding.\n    If the file is not owned by the default owner and is not documented with the Information System Security Officer\n    (ISSO), this is a finding.\n    If the file is not a member of the default group and is not documented with the Information System Security Officer\n    (ISSO), this is a finding.",
+                "fix": "Run the following command to determine which package owns the file:\n\n    # rpm -qf <filename>\n\n    Reset the user and group ownership of files within a package with the\nfollowing command:\n\n    #rpm --setugids <packagename>\n\n\n    Reset the permissions of files within a package with the following command:\n\n    #rpm --setperms <packagename>"
+            },
+            "impact": 0.7,
+            "refs": [],
+            "tags": {
+                "legacy": [
+                    "V-71849",
+                    "SV-86473"
+                ],
+                "severity": "high",
+                "gtitle": "SRG-OS-000257-GPOS-00098",
+                "satisfies": [
+                    "SRG-OS-000257-GPOS-00098",
+                    "SRG-OS-000278-GPOS-00108"
+                ],
+                "gid": "V-204392",
+                "rid": "SV-204392r646841_rule",
+                "stig_id": "RHEL-07-010010",
+                "fix_id": "F-36302r646840_fix",
+                "cci": [
+                    "CCI-001494",
+                    "CCI-001496",
+                    "CCI-002165",
+                    "CCI-002235"
+                ],
+                "nist": [
+                    "AU-9",
+                    "AU-9 (3)",
+                    "AC-3 (4)",
+                    "AC-6 (10)"
+                ],
+                "subsystems": [
+                    "permissions",
+                    "package",
+                    "rpm"
+                ],
+                "host": null,
+                "container": null
+            },
+            "code": "control 'SV-204392' do\n  title 'The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership,\n    and group membership of system files and commands match the vendor values.'\n  desc 'Discretionary access control is weakened if a user or group has access permissions to system files and\n    directories greater than the default.'\n  desc 'rationale', ''\n  desc 'check', %<Verify the file permissions, ownership, and group membership of system files and commands match the\n    vendor values.\n    Check the default file permissions, ownership, and group membership of system files and commands with the following\n    command:\n    # for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j\n    --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n    /var/log/gdm 040755 root root\n    /etc/audisp/audisp-remote.conf 0100640 root root\n    /usr/bin/passwd 0104755 root root\n    For each file returned, verify the current permissions, ownership, and group membership:\n    # ls -la \\<filename\\>\n    -rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n    If the file is more permissive than the default permissions, this is a finding.\n    If the file is not owned by the default owner and is not documented with the Information System Security Officer\n    (ISSO), this is a finding.\n    If the file is not a member of the default group and is not documented with the Information System Security Officer\n    (ISSO), this is a finding.>\n  desc  'fix', \"\n    Run the following command to determine which package owns the file:\n\n    # rpm -qf <filename>\n\n    Reset the user and group ownership of files within a package with the\nfollowing command:\n\n    #rpm --setugids <packagename>\n\n\n    Reset the permissions of files within a package with the following command:\n\n    #rpm --setperms <packagename>\n  \"\n  impact 0.7\n  tag 'legacy': ['V-71849', 'SV-86473']\n  tag 'severity': 'high'\n  tag 'gtitle': 'SRG-OS-000257-GPOS-00098'\n  tag 'satisfies': ['SRG-OS-000257-GPOS-00098', 'SRG-OS-000278-GPOS-00108']\n  tag 'gid': 'V-204392'\n  tag 'rid': 'SV-204392r646841_rule'\n  tag 'stig_id': 'RHEL-07-010010'\n  tag 'fix_id': 'F-36302r646840_fix'\n  tag 'cci': ['CCI-001494', 'CCI-001496', 'CCI-002165', 'CCI-002235']\n  tag nist: ['AU-9', 'AU-9 (3)', 'AC-3 (4)', 'AC-6 (10)']\n  tag subsystems: [\"permissions\",\"package\",\"rpm\"]\n  tag 'host', 'container'\n\n  if input('disable_slow_controls')\n    describe \"This control consistently takes a long time to run and has been disabled\n    using the disable_slow_controls attribute.\" do\n      skip \"This control consistently takes a long time to run and has been disabled\n            using the disable_slow_controls attribute. You must enable this control for a\n            full accredidation for production.\"\n    end\n  else\n\n    allowlist = input('rpm_verify_perms_except')\n\n    misconfigured_packages = command('rpm -Va').stdout.split(\"\\n\")\n      .select{ |package| package[0..7].match(/M|U|G/) }\n      .map{ |package| package.match(/\\S+$/)[0] }\n\n    unless misconfigured_packages.empty?\n      describe \"The list of rpm packages with permissions changed from the vendor values\" do\n        fail_msg = \"Files that have been modified from vendor-approved permissions but are not in the allowlist: #{(misconfigured_packages - allowlist).join(', ')}\"\n        it \"should all appear in the allowlist\" do\n          expect(misconfigured_packages).to all( be_in allowlist ), fail_msg\n        end\n      end\n    else\n      describe \"The list of rpm packages with permissions changed from the vendor values\" do\n        subject { misconfigured_packages }\n        it { should be_empty }\n      end\n    end\n  end\nend\n",
+            "source_location": {
+                "ref": "./controls/SV-204392.rb",
+                "line": 1
+            },
+            "id": "SV-204392"
+        }
+    ],
+    "groups": [
+        {
+            "title": null,
+            "controls": [
+                "SV-204392"
+            ],
+            "id": "controls/SV-204392.rb"
+        }
+    ],
+    "sha256": "25830339141aea2b9763d8acd4198fd6288053943146c288c58170f30bd8c19a",
+    "status_message": "",
+    "status": "loaded",
+    "generator": {
+        "name": "inspec",
+        "version": "5.18.14"
+    }
+}

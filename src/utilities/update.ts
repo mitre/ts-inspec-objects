@@ -47,12 +47,15 @@ function getExistingDescribeFromControl(control: Control): string {
     if (control.code) {
         let existingDescribeBlock = ''
         let currentQuoteEscape = ''
+        let percentBlockRegexp = /%[qQriIwWxs]?(?<lDelimiter>[\(\[\{\<])/;
         let inPercentBlock = false;
         let inQuoteBlock = false
         let inMetadataValueOverride = false
         let indentedMetadataOverride = false
         let inDescribeBlock = false;
         let mostSpacesSeen = 0;
+        let lDelimiter = '(';
+        let rDelimiter = ')';
 
         control.code.split('\n').forEach((line) => {
             const wordArray = line.trim().split(' ')
@@ -78,15 +81,36 @@ function getExistingDescribeFromControl(control: Control): string {
                     }
                 }
             }
-            
+
             wordArray.forEach((word, index) => {
-                if(word.includes('%q') && inPercentBlock === false) {
+                //console.log(`LDELIMITER:   \"${lDelimiter}\"   RDELIMITER:   \"${rDelimiter}\"`)
+                let percentBlockMatch = percentBlockRegexp.exec(word); 
+                if(percentBlockMatch && inPercentBlock === false) {
                     inPercentBlock = true;
+                    lDelimiter = percentBlockMatch.groups!.lDelimiter || '(';
+                    switch(lDelimiter) { 
+                        case '{': { 
+                            rDelimiter = '}';
+                            break; 
+                         } 
+                         case '[': { 
+                            rDelimiter = ']';
+                            break; 
+                         } 
+                         case '<': { 
+                            rDelimiter = '>';
+                            break; 
+                         } 
+                        default: { 
+                           break; 
+                        } 
+                     }
+                     
                 }
                 const charArray = word.split('')
                 charArray.forEach((char, index) => {
                     if (inPercentBlock) {
-                        if (char === '}' && charArray[index - 1] !== '\\' && !inQuoteBlock) {
+                        if (char === rDelimiter && charArray[index - 1] !== '\\' && !inQuoteBlock) {
                             inPercentBlock = false;
                         }
                     }
