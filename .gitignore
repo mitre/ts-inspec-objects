@@ -102,3 +102,16 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Built files
+lib
+
+# .DS_Store files
+*.DS_Store
+
+# No need to push these generated objects that are used for testing
+test/sample_data/profile-objects/STIG/*
+test/sample_data/profile-objects/CIS/*
+test/sample_data/diffs/*
+test/sample_data/updates/*
+test/sample_data/markdown/*

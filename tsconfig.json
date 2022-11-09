@@ -10,10 +10,13 @@
       "outDir": "lib",
       "rootDir": "src",
       "strict": true,
-      "target": "es2019"
+      "target": "es2019",
+      "types": ["node", "jest"]
     },
     "include": [
-      "src/**/*"
+      "index.ts",
+      "src/**/*",
+      "types/*"
     ],
   }
   
