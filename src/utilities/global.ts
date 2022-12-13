@@ -41,10 +41,13 @@ export function removeWhitespace(input: string): string {
   return input.replace(/\s/gi, '')
 }
 
-const escapeQuotes = (s: string) =>
-  s.replace(/\\/g, "\\\\").replace(/'/g, "\\'"); // Escape backslashes and quotes
-const escapeDoubleQuotes = (s: string) =>
-  s.replace(/\\/g, "\\\\").replace(/"/g, '\\"'); // Escape backslashes and double quotes
+const escapeQuotes = (s: string) => {
+  return s.replace(/\\/g, "\\\\").replace(/'/g, "\\'"); // Escape backslashes and quotes
+}
+
+const escapeDoubleQuotes = (s: string) => {
+  return s.replace(/\\/g, "\\\\").replace(/"/g, '\\"'); // Escape backslashes and double quotes
+}
 
 const wrapAndEscapeQuotes = (s: string, lineLength?: number) =>
   escapeDoubleQuotes(wrap(s, lineLength)); // Escape backslashes and quotes, and wrap long lines

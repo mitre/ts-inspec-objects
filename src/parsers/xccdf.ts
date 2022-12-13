@@ -98,7 +98,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 if (controlIdMatch) {
                     control.id = controlIdMatch[0]
                 } else {
-                    throw new Error(`Could not parse control ID from rule ID: ${rule['@_id']}. Expecting format: 'xccdf_org.cisecurity.benchmarks_rule_1.1.11_Rule_title_summary`)
+                    throw new Error(`Could not parse control ID from rule ID: ${rule['@_id']}. Expecting something in this example format: 'xccdf_org.cisecurity.benchmarks_rule_1.1.11_Rule_title_summary`)
                 }
                 break;
             default:

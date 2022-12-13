@@ -128,7 +128,7 @@ export default class Control {
         if (typeof ref === 'string') {
           result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref))}'\n`;
         } else {
-          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref.ref || ''))}', url: '${escapeQuotes(removeNewlinePlaceholders(ref.url || ''))}'`
+          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref.ref?.toString() || ''))}', url: '${escapeQuotes(removeNewlinePlaceholders(ref.url || ''))}'`
         }
         
       });
