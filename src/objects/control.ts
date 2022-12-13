@@ -85,7 +85,7 @@ export default class Control {
   }
 
   toRuby(lineLength: number = 80) {
-    let result = "# encoding: UTF-8\n\n";
+    let result = '';
 
     result += `control "${this.id}" do\n`;
     if (this.title) {
@@ -103,9 +103,14 @@ export default class Control {
     if (this.descs) {
       Object.entries(this.descs).forEach(([key, desc]) => {
         if (desc) {
-          result += `  desc "${key}", "${escapeDoubleQuotes(
-            removeNewlinePlaceholders(desc)
-          )}"\n`;
+          if(key.match("default") && this.desc) {
+            console.error(`${this.id} has a redundant default value. This command will write the "desc" value to the control and will not write the "default" value.`);
+          }
+          else {
+            result += `  desc "${key}", "${escapeDoubleQuotes(
+              removeNewlinePlaceholders(desc)
+            )}"\n`;
+          }
         } else {
           console.error(`${this.id} does not have a desc for the value ${key}`);
         }
@@ -158,7 +163,10 @@ export default class Control {
       result += this.describe
     }
 
-    result += "end";
+    if(!result.slice(-1).match('\n')) {
+      result += '\n';
+    }
+    result += "end\n";
 
     return result;
   }

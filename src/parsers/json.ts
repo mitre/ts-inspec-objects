@@ -10,6 +10,7 @@ import {
 import _ from "lodash";
 import Control, { objectifyDescriptions } from "../objects/control";
 import Profile from "../objects/profile";
+import { getExistingDescribeFromControl } from "../utilities/update";
 
 export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
   const topLevelProfile = evaluationInput.contains[0];
@@ -64,6 +65,8 @@ export function processProfileJSON(
       descs: objectifyDescriptions(control.descriptions),
     })
 
+    newControl.describe = getExistingDescribeFromControl(newControl);
+
     // Migrate check and fix text from tags to descriptions
     if (newControl.tags.check && !newControl.descs.check) {
       _.set(newControl.descs!, 'check', control.tags.check);
@@ -101,3 +104,4 @@ export function processInSpecProfile(json: string): Profile {
 
   return profile;
 }
+

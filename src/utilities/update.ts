@@ -43,7 +43,7 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
 
 // This is the most likely thing to break if you are getting code formatting issues.
 // Extract the existing describe blocks (what is actually run by inspec for validation)
-function getExistingDescribeFromControl(control: Control): string {
+export function getExistingDescribeFromControl(control: Control): string {
     if (control.code) {
         let existingDescribeBlock = ''
         let currentQuoteEscape = ''
@@ -83,7 +83,6 @@ function getExistingDescribeFromControl(control: Control): string {
             }
 
             wordArray.forEach((word, index) => {
-                //console.log(`LDELIMITER:   \"${lDelimiter}\"   RDELIMITER:   \"${rDelimiter}\"`)
                 let percentBlockMatch = percentBlockRegexp.exec(word); 
                 if(percentBlockMatch && inPercentBlock === false) {
                     inPercentBlock = true;
