@@ -1,43 +1,27 @@
 import { processInSpecProfile } from "../../src"
-import { updateProfileUsingXCCDF } from "../../src/utilities/update"
-import { createWinstonLogger } from "../../src/utilities/logging"
 import fs from 'fs'
 import path from 'path'
 
 describe('The control functionality', () => {
-    const V3R6 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r6-mini-profile.json', 'utf-8'))
-    const V3R7 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r7-mini-sample-profile.json', 'utf-8'))
+    const cookstyle_profile = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/cookstyle-controls-profile.json', 'utf-8'))
 
-    // fs.writeFileSync('test/sample_data/profile-objects/RHEL7-V2R6-Profile.json', JSON.stringify(V3R6, null, 2))
-    // V3R6.controls.forEach(control => {
-    //     // Write the new control to the controls folder
-    //     fs.writeFileSync(path.join('test/sample_data/', 'controls-base', `${control.id}.rb`), control.toRuby())
-    // })
-
-    V3R7.controls.forEach(control => {
+    cookstyle_profile.controls.forEach(control => {
         // Write the new control to the controls folder
-        fs.writeFileSync(path.join('test/sample_data/', 'controls-base', `${control.id}.rb`), control.toRuby())
+        fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results', `${control.id}.rb`), control.toRuby())
     })
     
-    // const updatedProfile = updateProfileUsingXCCDF(V3R6, fs.readFileSync(`test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml`, 'utf-8'), 'rule', createWinstonLogger())
-
-    const updatedProfile = updateProfileUsingXCCDF(V3R7, fs.readFileSync(`test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml`, 'utf-8'), 'rule', createWinstonLogger())
-
-
-    fs.writeFileSync('test/sample_data/markdown/RHEL7-V3R8-Profile.md', updatedProfile.markdown)
-    fs.writeFileSync('test/sample_data/updates/RHEL7_V3R7_V3R8.json', JSON.stringify(updatedProfile.profile, null, 2))
-
-    updatedProfile.profile.controls.forEach(control => {
-        // Write the new control to the controls folder
-        fs.writeFileSync(path.join('test/sample_data/', 'controls-updated', `${control.id}.rb`), control.toRuby())
-    })
-    
-
+    // This check is comparing what the function "toRuby" is outputting with a small sample profile that has been formatted 
+    // with cookstyle based on the given .rubocop.yml file. Not all default cookstyle conventions are followed.
+    // For example, complicated strings are written with "" in the toRuby function rather than %q{} that is suggested by cookstyle.
+    // Additionally, cookstyle may update and change over time.
+    // To update or change the functionality of this test, do the following:
+    // Install the cookstyle gem on your development environment
+        // run "cookstyle -a ./test/sample_data/controls-cookstyle" to modify the expected controls from control-cookstyle to be in the cookstyle format
+        // run "inspec json  ./test/sample_data/controls-cookstyle > ./test/sample_data/inspec/json/cookstyle-controls-profile.json" to generate the inspec profile used for testing with the latest controls
+        // run "npm run test" or "npm run test -- ./test/tests/control.spec.ts" to see the output. 
+        // Compare the expected and actual results.
+        // Make any changes in the control.ts functionality
     it('should correctly write the control structure to ruby that has no changes', () => {
-        expect(fs.readFileSync('test/sample_data/controls-updated/SV-204392.rb', 'utf-8')).toEqual(fs.readFileSync('test/sample_data/controls-base/SV-204392.rb', 'utf-8'));
+        expect(fs.readFileSync('test/sample_data/controls-test-results/SV-204474.rb', 'utf-8')).toEqual(fs.readFileSync('test/sample_data/controls-cookstyle/SV-204474.rb', 'utf-8'));
     })
-
-    // it('should correctly write the control structure to ruby that has some changes', () => {
-    //     expect(fs.readFileSync('test/sample_data/controls-updated/SV-251703.rb', 'utf-8')).toEqual(fs.readFileSync('test/sample_data/controls-base/SV-251703.rb', 'utf-8'));
-    // })
 })

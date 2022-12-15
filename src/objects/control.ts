@@ -87,7 +87,7 @@ export default class Control {
   toRuby(lineLength: number = 80) {
     let result = '';
 
-    result += `control "${this.id}" do\n`;
+    result += `control '${this.id}' do\n`;
     if (this.title) {
       result += `  title "${escapeDoubleQuotes(removeNewlinePlaceholders(this.title))}"\n`;
     } else {
@@ -107,7 +107,7 @@ export default class Control {
             console.error(`${this.id} has a redundant default value. This command will write the "desc" value to the control and will not write the "default" value.`);
           }
           else {
-            result += `  desc "${key}", "${escapeDoubleQuotes(
+            result += `  desc '${key}', "${escapeDoubleQuotes(
               removeNewlinePlaceholders(desc)
             )}"\n`;
           }
@@ -138,22 +138,26 @@ export default class Control {
       if (value) {
         if (typeof value === "object") {
           if (Array.isArray(value) && typeof value[0] === "string") {
-            result += `  tag ${tag}: ${JSON.stringify(value).split('","').join('", "')}\n`;
+            // The goal is to keep the style similar to cookstyle formatting
+            result += `  tag ${tag}: ${JSON.stringify(value)
+              .replace(/\"/g, "'") // replace the double quotes with single quotes, ex: ["V-72029","SV-86653"] -> ['V-72029','SV-86653']
+              .split("','")        // split the items in the string
+              .join("', '")}\n`    // join them together using single quote and a space, ex: ['V-72029','SV-86653'] -> ['V-72029', 'SV-86653']
           } else {
             // Convert JSON Object to Ruby Hash
             const stringifiedObject = JSON.stringify(value, null, 2)
-              .replace(/\n/g, "\n  ")
-              .replace(/\{\n {6}/g, "{")
-              .replace(/\[\n {8}/g, "[")
-              .replace(/\n {6}\]/g, "]")
-              .replace(/\n {4}\}/g, "}")
+              .replace(/\n/g, '\n  ')
+              .replace(/\{\n {6}/g, '{')
+              .replace(/\[\n {8}/g, '[')
+              .replace(/\n {6}\]/g, ']')
+              .replace(/\n {4}\}/g, '}')
               .replace(/": \[/g, '" => [');
             result += `  tag ${tag}: ${stringifiedObject}\n`;
           }
         } else if (typeof value === "string") {
-          result += `  tag ${tag}: "${escapeDoubleQuotes(
+          result += `  tag ${tag}: '${escapeQuotes(
             removeNewlinePlaceholders(value)
-          )}"\n`;
+          )}'\n`;
         }
       }
     });
