@@ -1,6 +1,29 @@
 # ts-inspec-objects
 Typescript objects for InSpec profiles
 
+This repository contains the source code that facilitates the writing of InSpec profiles (for use in things like stub generation and delta comparisons) more consistent with `Chef Cookstyle` formatting for ease of use when comparing with new changes from delta and when generating InSpec stubs that match a standard format. 
+
+For more information about see: 
+ - [chef/cookstyle on GitHub](https://github.com/chef/cookstyle)
+ - [Chef Cookstyle on Chef documents page](https://docs.chef.io/workstation/cookstyle/)
+  
+## Parsing Process
+
+When using this library to parse `InSpec profiles` or `xccdf files` for the purposes of generating InSpec profiles, the general workflow is as follows:
+```
+The input is processed, read into a typescript object, operated on with any required action / logic, then written into an InSpec profile as output. This means that we can not simply write out in the same format we got in. Instead, we have to make choices about formatting for how to write out content.
+```
+
+### Workflow graphical representation
+<div align="center">
+  <img src="images/ts-inspec-objects.jpg" alt="Typescript Objects Generation Process" title="Typescript Objects Generation Process">
+</div>
+
+### Delta and Stub Process
+<div align="center">
+  <img src="images/Delta_Process.jpg" alt="Delta and Stub Generation Process" title="Delta and Stub Generation Process">
+</div>
+
 ### NOTICE
 
 © 2018-2022 The MITRE Corporation.
