@@ -7,24 +7,25 @@ import he from 'he'
 
 
 export function convertEncodedXmlIntoJson(
-    encodedXml: string
-  ): any {
-    return parser.parse(encodedXml, {
-      ignoreAttributes: false,
-      ignoreNameSpace: true,
-      attributeNamePrefix: '@_',
-      stopNodes: ['div', 'p'],
-      arrayMode: true
-    })
+  encodedXml: string
+): any {
+  return parser.parse(encodedXml, {
+    ignoreAttributes: false,
+    ignoreNameSpace: true,
+    attributeNamePrefix: '@_',
+    stopNodes: ['div', 'p'],
+    arrayMode: true
+  })
 }
 
+
 export function convertJsonIntoXML(data: any) {
-    return toXML(data)
+  return toXML(data)
 }
 
 export function removeXMLSpecialCharacters(str: string) {
   return he.decode(str)
-};
+}
 
 export function severityStringToImpact(string: string, id: string): number {
   if (string.match(/none|na|n\/a|not[\s()*_|]?applicable/i)?.length) {

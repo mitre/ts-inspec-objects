@@ -37,36 +37,36 @@ const V3R8 = processXCCDF(fs.readFileSync(`test/sample_data/xccdf/input/STIG/rhe
 
 describe('The diff utils', () => {
 
-    fs.writeFileSync('test/sample_data/diffs/RHEL7_V3R7_V3R8.json', JSON.stringify(diffProfile(V3R7, V3R8, createWinstonLogger()), null, 2))
-    const profileDiff_7 = diffProfile(V3R7, V3R8, createWinstonLogger());
+  fs.writeFileSync('test/sample_data/diffs/RHEL7_V3R7_V3R8.json', JSON.stringify(diffProfile(V3R7, V3R8, createWinstonLogger()), null, 2))
+  const profileDiff_7 = diffProfile(V3R7, V3R8, createWinstonLogger());
 
-    fs.writeFileSync('test/sample_data/diffs/RHEL7_V3R6_V3R8.json', JSON.stringify(diffProfile(V3R6, V3R8, createWinstonLogger()), null, 2))
-    const profileDiff_6 = diffProfile(V3R6, V3R8, createWinstonLogger());
+  fs.writeFileSync('test/sample_data/diffs/RHEL7_V3R6_V3R8.json', JSON.stringify(diffProfile(V3R6, V3R8, createWinstonLogger()), null, 2))
+  const profileDiff_6 = diffProfile(V3R6, V3R8, createWinstonLogger());
 
-    it('should correctly identify added controls', () => {
-        expect(profileDiff_7.rawDiff.addedControlIDs).toEqual(["SV-204394"]);
-    })
-    it('should correctly identify removed controls', () => {
-        expect(profileDiff_7.rawDiff.removedControlIDs).toEqual(["SV-204474"]);
-    })
-    it('should correctly identify renamed controls', () => {
-        expect(profileDiff_7.rawDiff.renamedControlIDs).toEqual({"V-73165": "SV-204565"});
-    })
-    it('should correctly identify changes in existing controls', () => {
-        // we know that the description in the sample's SV-251703 changed
-        expect(_.get(profileDiff_7, "rawDiff.changedControls.[\"SV-251703\"].descs.check")).toBeTruthy();
-    })
-    it('should ignore whitespace for ignoreFormattedDiff, but consider whitespace changes for rawDiff', () => {
-        // this particular control ONLY had a few newlines change in its description
-        // ignoreFormattingDiff should ignore this, but rawDiff should not
-        expect(_.get(profileDiff_7, "ignoreFormattingDiff.changedControls.[\"SV-204392\"].descs.check")).toBeFalsy();
-        expect(_.get(profileDiff_7, "rawDiff.changedControls.[\"SV-204392\"].descs.check")).toBeTruthy();
-    })
-    it('should correctly identify no changes in control with ruby string formatting (%q)', () => {
-        // this particular control ONLY had a few newlines change in its description
-        // ignoreFormattingDiff should ignore this, but rawDiff should not
-        expect(_.get(profileDiff_6, "ignoreFormattingDiff.changedControls.[\"SV-204392\"].descs.check")).toBeFalsy();
-        expect(_.get(profileDiff_6, "rawDiff.changedControls.[\"SV-204392\"].descs.check")).toBeTruthy();
-    })
-    // Test nested rules in one group
+  it('should correctly identify added controls', () => {
+    expect(profileDiff_7.rawDiff.addedControlIDs).toEqual(["SV-204394"]);
+  })
+  it('should correctly identify removed controls', () => {
+    expect(profileDiff_7.rawDiff.removedControlIDs).toEqual(["SV-204474"]);
+  })
+  it('should correctly identify renamed controls', () => {
+    expect(profileDiff_7.rawDiff.renamedControlIDs).toEqual({"V-73165": "SV-204565"});
+  })
+  it('should correctly identify changes in existing controls', () => {
+    // we know that the description in the sample's SV-251703 changed
+    expect(_.get(profileDiff_7, "rawDiff.changedControls.[\"SV-251703\"].descs.check")).toBeTruthy();
+  })
+  it('should ignore whitespace for ignoreFormattedDiff, but consider whitespace changes for rawDiff', () => {
+    // this particular control ONLY had a few newlines change in its description
+    // ignoreFormattingDiff should ignore this, but rawDiff should not
+    expect(_.get(profileDiff_7, "ignoreFormattingDiff.changedControls.[\"SV-204392\"].descs.check")).toBeFalsy();
+    expect(_.get(profileDiff_7, "rawDiff.changedControls.[\"SV-204392\"].descs.check")).toBeTruthy();
+  })
+  it('should correctly identify no changes in control with ruby string formatting (%q)', () => {
+    // this particular control ONLY had a few newlines change in its description
+    // ignoreFormattingDiff should ignore this, but rawDiff should not
+    expect(_.get(profileDiff_6, "ignoreFormattingDiff.changedControls.[\"SV-204392\"].descs.check")).toBeFalsy();
+    expect(_.get(profileDiff_6, "rawDiff.changedControls.[\"SV-204392\"].descs.check")).toBeTruthy();
+  })
+  // Test nested rules in one group
 })

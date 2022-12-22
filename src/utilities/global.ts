@@ -3,18 +3,18 @@ import _ from "lodash";
 // Breaks lines down to lineLength number of characters
 export function wrap(s: string, lineLength = 80): string {
   let newString = ""
-  let currentLine = ""
+  const currentLine = ""
   let currentLength = 0
   let shouldBreakLine = false;
 
-  for (var i = 0; i < s.length; i++) {
+  for (let i = 0; i < s.length; i++) {
     if (shouldBreakLine) {
       newString += `\n`;
       currentLength = 0;
       shouldBreakLine = false;
     }
-    let currentChar = s.charAt(i)
-    let nextChar = s.charAt(i + 1)
+    const currentChar = s.charAt(i)
+    const nextChar = s.charAt(i + 1)
 
     if (nextChar === " ") {
       if (currentLength >= lineLength) {
@@ -41,10 +41,13 @@ export function removeWhitespace(input: string): string {
   return input.replace(/\s/gi, '')
 }
 
-const escapeQuotes = (s: string) =>
-  s.replace(/\\/g, "\\\\").replace(/'/g, "\\'"); // Escape backslashes and quotes
-const escapeDoubleQuotes = (s: string) =>
-  s.replace(/\\/g, "\\\\").replace(/"/g, '\\"'); // Escape backslashes and double quotes
+const escapeQuotes = (s: string) => {
+  return s.replace(/\\/g, "\\\\").replace(/'/g, "\\'"); // Escape backslashes and quotes
+}
+
+const escapeDoubleQuotes = (s: string) => {
+  return s.replace(/\\/g, "\\\\").replace(/"/g, '\\"'); // Escape backslashes and double quotes
+}
 
 const wrapAndEscapeQuotes = (s: string, lineLength?: number) =>
   escapeDoubleQuotes(wrap(s, lineLength)); // Escape backslashes and quotes, and wrap long lines
@@ -53,6 +56,15 @@ export { escapeQuotes, escapeDoubleQuotes, wrapAndEscapeQuotes };
 
 export function removeNewlinePlaceholders(s: string): string {
   return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')
+}
+
+export function applyPercentStringSyntax(s: string): string {
+  if(s.includes("'") || s.includes('"')) {
+    return `%q(${removeNewlinePlaceholders(s)})`
+  }
+  else {
+    return `'${escapeQuotes(removeNewlinePlaceholders(s))}'`
+  }
 }
 
 export function getFirstPath(

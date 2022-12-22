@@ -10,6 +10,7 @@ import {
 import _ from "lodash";
 import Control, { objectifyDescriptions } from "../objects/control";
 import Profile from "../objects/profile";
+import { getExistingDescribeFromControl } from "../utilities/update";
 
 export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
   const topLevelProfile = evaluationInput.contains[0];
@@ -64,13 +65,17 @@ export function processProfileJSON(
       descs: objectifyDescriptions(control.descriptions),
     })
 
+    newControl.describe = getExistingDescribeFromControl(newControl);
+
     // Migrate check and fix text from tags to descriptions
     if (newControl.tags.check && !newControl.descs.check) {
+      // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
       _.set(newControl.descs!, 'check', control.tags.check);
       _.set(newControl.tags, 'check', undefined);
     }
 
     if (newControl.tags.fix && !newControl.descs.fix) {
+      // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
       _.set(newControl.descs!, 'fix', control.tags.fix);
       _.set(newControl.tags, 'fix', undefined);
     }
@@ -101,3 +106,4 @@ export function processInSpecProfile(json: string): Profile {
 
   return profile;
 }
+

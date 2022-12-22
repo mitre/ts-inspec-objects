@@ -1,7 +1,7 @@
 import { ExecJSON } from "inspecjs";
 import _ from "lodash";
 import {flatten, unflatten} from "flat"
-import { escapeDoubleQuotes, escapeQuotes, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
+import { escapeDoubleQuotes, escapeQuotes, applyPercentStringSyntax, removeNewlinePlaceholders } from "../utilities/global";
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -84,10 +84,10 @@ export default class Control {
     return new Control(unflatten(flattened));
   }
 
-  toRuby(lineLength: number = 80) {
-    let result = "# encoding: UTF-8\n\n";
+  toRuby(lineLength = 80) {
+    let result = '';
 
-    result += `control "${this.id}" do\n`;
+    result += `control '${this.id}' do\n`;
     if (this.title) {
       result += `  title "${escapeDoubleQuotes(removeNewlinePlaceholders(this.title))}"\n`;
     } else {
@@ -103,9 +103,17 @@ export default class Control {
     if (this.descs) {
       Object.entries(this.descs).forEach(([key, desc]) => {
         if (desc) {
-          result += `  desc "${key}", "${escapeDoubleQuotes(
-            removeNewlinePlaceholders(desc)
-          )}"\n`;
+          if(key.match("default") && this.desc) {
+            if(desc != this.desc) {
+              // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions. In that case, we can ignore writing the "default" subdescription field.
+              // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
+              console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique subdescriptions.`);
+            }
+          }
+          else {
+            const subdescription_string = applyPercentStringSyntax(desc);
+            result += `  desc '${key}', ${subdescription_string}\n`;
+          }
         } else {
           console.error(`${this.id} does not have a desc for the value ${key}`);
         }
@@ -123,7 +131,7 @@ export default class Control {
         if (typeof ref === 'string') {
           result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref))}'\n`;
         } else {
-          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref.ref || ''))}', url: '${escapeQuotes(removeNewlinePlaceholders(ref.url || ''))}'`
+          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref.ref?.toString() || ''))}', url: '${escapeQuotes(removeNewlinePlaceholders(ref.url || ''))}'`
         }
         
       });
@@ -133,22 +141,26 @@ export default class Control {
       if (value) {
         if (typeof value === "object") {
           if (Array.isArray(value) && typeof value[0] === "string") {
-            result += `  tag ${tag}: ${JSON.stringify(value).split('","').join('", "')}\n`;
+            // The goal is to keep the style similar to cookstyle formatting
+            result += `  tag ${tag}: ${JSON.stringify(value)
+              .replace(/"/g, "'") // replace the double quotes with single quotes, ex: ["V-72029","SV-86653"] -> ['V-72029','SV-86653']
+              .split("','")        // split the items in the string
+              .join("', '")}\n`    // join them together using single quote and a space, ex: ['V-72029','SV-86653'] -> ['V-72029', 'SV-86653']
           } else {
             // Convert JSON Object to Ruby Hash
             const stringifiedObject = JSON.stringify(value, null, 2)
-              .replace(/\n/g, "\n  ")
-              .replace(/\{\n {6}/g, "{")
-              .replace(/\[\n {8}/g, "[")
-              .replace(/\n {6}\]/g, "]")
-              .replace(/\n {4}\}/g, "}")
+              .replace(/\n/g, '\n  ')
+              .replace(/\{\n {6}/g, '{')
+              .replace(/\[\n {8}/g, '[')
+              .replace(/\n {6}\]/g, ']')
+              .replace(/\n {4}\}/g, '}')
               .replace(/": \[/g, '" => [');
             result += `  tag ${tag}: ${stringifiedObject}\n`;
           }
         } else if (typeof value === "string") {
-          result += `  tag ${tag}: "${escapeDoubleQuotes(
+          result += `  tag ${tag}: '${escapeQuotes(
             removeNewlinePlaceholders(value)
-          )}"\n`;
+          )}'\n`;
         }
       }
     });
@@ -158,7 +170,10 @@ export default class Control {
       result += this.describe
     }
 
-    result += "end";
+    if(!result.slice(-1).match('\n')) {
+      result += '\n';
+    }
+    result += "end\n";
 
     return result;
   }
