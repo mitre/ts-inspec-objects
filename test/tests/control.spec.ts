@@ -11,8 +11,7 @@ describe('The control functionality', () => {
     })
     
     // This check is comparing what the function "toRuby" is outputting with a small sample profile that has been formatted 
-    // with cookstyle based on the given .rubocop.yml file. Not all default cookstyle conventions are followed.
-    // For example, complicated strings are written with "" in the toRuby function rather than %q{} that is suggested by cookstyle.
+    // with cookstyle based on the given .rubocop.yml file.
     // Additionally, cookstyle may update and change over time.
     // To update or change the functionality of this test, do the following:
     // Install the cookstyle gem on your development environment
