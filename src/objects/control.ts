@@ -1,7 +1,7 @@
 import { ExecJSON } from "inspecjs";
 import _ from "lodash";
 import {flatten, unflatten} from "flat"
-import { escapeDoubleQuotes, escapeQuotes, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
+import { escapeDoubleQuotes, escapeQuotes, determineAndApplySubdescriptionQuoteSyntax, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -104,12 +104,15 @@ export default class Control {
       Object.entries(this.descs).forEach(([key, desc]) => {
         if (desc) {
           if(key.match("default") && this.desc) {
-            console.error(`${this.id} has a redundant default value. This command will write the "desc" value to the control and will not write the "default" value.`);
+            if(desc != this.desc) {
+              // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions. In that case, we can ignore writing the "default" subdescription field.
+              // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
+              console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique subdescriptions.`);
+            }
           }
           else {
-            result += `  desc '${key}', "${escapeDoubleQuotes(
-              removeNewlinePlaceholders(desc)
-            )}"\n`;
+            const subdescription_string = determineAndApplySubdescriptionQuoteSyntax(desc);
+            result += `  desc '${key}', ${subdescription_string}\n`;
           }
         } else {
           console.error(`${this.id} does not have a desc for the value ${key}`);

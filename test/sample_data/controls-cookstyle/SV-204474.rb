@@ -3,9 +3,9 @@ control 'SV-204474' do
     interactive users are owned by the home directory user or root."
   desc "Local initialization files are used to configure the user's shell environment upon logon. Malicious
     modification of these files could compromise accounts upon logon."
-  desc 'check', "Verify the local initialization files of all local interactive users are owned by that user.
+  desc 'check', %q(Verify the local initialization files of all local interactive users are owned by that user.
       Check the home directory assignment for all non-privileged users on the system with the following command:
-      Note: The example will be for the smithj user, who has a home directory of \"/home/smithj\".
+      Note: The example will be for the smithj user, who has a home directory of "/home/smithj".
       # awk -F: '($3>=1000)&&($7 !~ /nologin/){print $1, $3, $6}' /etc/passwd
       smithj 1000 /home/smithj
       Note: This may miss interactive users that have been assigned a privileged User Identifier (UID). Evidence of
@@ -15,12 +15,12 @@ control 'SV-204474' do
       -rwxr-xr-x 1 smithj users 896 Mar 10 2011 .profile
       -rwxr-xr-x 1 smithj users 497 Jan 6 2007 .login
       -rwxr-xr-x 1 smithj users 886 Jan 6 2007 .something
-      If all local interactive user's initialization files are not owned by that user or root, this is a finding."
-  desc 'fix', "Set the owner of the local initialization files for interactive users to
+      If all local interactive user's initialization files are not owned by that user or root, this is a finding.)
+  desc 'fix', %q(Set the owner of the local initialization files for interactive users to
 either the directory owner or root with the following command:
     Note: The example will be for the smithj user, who has a home directory of
-\"/home/smithj\".
-    # chown smithj /home/smithj/.[^.]*"
+"/home/smithj".
+    # chown smithj /home/smithj/.[^.]*)
   impact 0.5
   tag legacy: ['V-72029', 'SV-86653']
   tag severity: 'medium'

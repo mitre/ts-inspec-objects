@@ -58,6 +58,15 @@ export function removeNewlinePlaceholders(s: string): string {
   return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')
 }
 
+export function determineAndApplySubdescriptionQuoteSyntax(s: string): string {
+  if(s.includes("'") || s.includes('"')) {
+    return `%q(${removeNewlinePlaceholders(s)})`
+  }
+  else {
+    return `"${escapeDoubleQuotes(removeNewlinePlaceholders(s))}"`
+  }
+}
+
 export function getFirstPath(
   object: Record<string, unknown>,
   paths: string[]

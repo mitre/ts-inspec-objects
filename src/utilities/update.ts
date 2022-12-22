@@ -47,7 +47,7 @@ export function getExistingDescribeFromControl(control: Control): string {
     if (control.code) {
         let existingDescribeBlock = ''
         let currentQuoteEscape = ''
-        let percentBlockRegexp = /%[qQriIwWxs]?(?<lDelimiter>[\(\[\{\<])/;
+        let percentBlockRegexp = /%[qQrRiIwWxs]?(?<lDelimiter>[\(\[\{\<])/;
         let inPercentBlock = false;
         let inQuoteBlock = false
         let inMetadataValueOverride = false
