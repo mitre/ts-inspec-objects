@@ -58,12 +58,12 @@ export function removeNewlinePlaceholders(s: string): string {
   return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')
 }
 
-export function determineAndApplySubdescriptionQuoteSyntax(s: string): string {
+export function applyPercentStringSyntax(s: string): string {
   if(s.includes("'") || s.includes('"')) {
     return `%q(${removeNewlinePlaceholders(s)})`
   }
   else {
-    return `"${escapeDoubleQuotes(removeNewlinePlaceholders(s))}"`
+    return `'${escapeQuotes(removeNewlinePlaceholders(s))}'`
   }
 }
 

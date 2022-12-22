@@ -1,7 +1,7 @@
 import { ExecJSON } from "inspecjs";
 import _ from "lodash";
 import {flatten, unflatten} from "flat"
-import { escapeDoubleQuotes, escapeQuotes, determineAndApplySubdescriptionQuoteSyntax, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
+import { escapeDoubleQuotes, escapeQuotes, applyPercentStringSyntax, removeNewlinePlaceholders } from "../utilities/global";
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -111,7 +111,7 @@ export default class Control {
             }
           }
           else {
-            const subdescription_string = determineAndApplySubdescriptionQuoteSyntax(desc);
+            const subdescription_string = applyPercentStringSyntax(desc);
             result += `  desc '${key}', ${subdescription_string}\n`;
           }
         } else {
