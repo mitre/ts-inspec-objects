@@ -3,18 +3,18 @@ import _ from "lodash";
 // Breaks lines down to lineLength number of characters
 export function wrap(s: string, lineLength = 80): string {
   let newString = ""
-  let currentLine = ""
+  const currentLine = ""
   let currentLength = 0
   let shouldBreakLine = false;
 
-  for (var i = 0; i < s.length; i++) {
+  for (let i = 0; i < s.length; i++) {
     if (shouldBreakLine) {
       newString += `\n`;
       currentLength = 0;
       shouldBreakLine = false;
     }
-    let currentChar = s.charAt(i)
-    let nextChar = s.charAt(i + 1)
+    const currentChar = s.charAt(i)
+    const nextChar = s.charAt(i + 1)
 
     if (nextChar === " ") {
       if (currentLength >= lineLength) {

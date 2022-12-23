@@ -69,11 +69,13 @@ export function processProfileJSON(
 
     // Migrate check and fix text from tags to descriptions
     if (newControl.tags.check && !newControl.descs.check) {
+      // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
       _.set(newControl.descs!, 'check', control.tags.check);
       _.set(newControl.tags, 'check', undefined);
     }
 
     if (newControl.tags.fix && !newControl.descs.fix) {
+      // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
       _.set(newControl.descs!, 'fix', control.tags.fix);
       _.set(newControl.tags, 'fix', undefined);
     }

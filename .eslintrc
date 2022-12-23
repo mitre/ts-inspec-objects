@@ -1,6 +1,7 @@
 {
     "rules": {
       "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-explicit-any": "off",
       "unicorn/filename-case": "off",
       "unicorn/prefer-node-protocol": "off",
       "unicorn/numeric-separators-style": "off",
@@ -21,5 +22,15 @@
       "complexity": "off",
       "no-constant-condition": "off",
       "indent": ["error", 2, { "SwitchCase": 1 }]
-    }
+    },
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ]    
   }

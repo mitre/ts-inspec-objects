@@ -84,7 +84,7 @@ export default class Control {
     return new Control(unflatten(flattened));
   }
 
-  toRuby(lineLength: number = 80) {
+  toRuby(lineLength = 80) {
     let result = '';
 
     result += `control '${this.id}' do\n`;
@@ -143,7 +143,7 @@ export default class Control {
           if (Array.isArray(value) && typeof value[0] === "string") {
             // The goal is to keep the style similar to cookstyle formatting
             result += `  tag ${tag}: ${JSON.stringify(value)
-              .replace(/\"/g, "'") // replace the double quotes with single quotes, ex: ["V-72029","SV-86653"] -> ['V-72029','SV-86653']
+              .replace(/"/g, "'") // replace the double quotes with single quotes, ex: ["V-72029","SV-86653"] -> ['V-72029','SV-86653']
               .split("','")        // split the items in the string
               .join("', '")}\n`    // join them together using single quote and a space, ex: ['V-72029','SV-86653'] -> ['V-72029', 'SV-86653']
           } else {

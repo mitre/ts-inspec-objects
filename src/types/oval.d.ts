@@ -125,13 +125,13 @@ export interface OvalDefinitionObject {
     symlink_object:               SymlinkObject[];
     password_object:              PasswordObject[];
     shadow_object:                ShadowObject[];
-    environmentvariable58_object: Object[];
+    environmentvariable58_object: object[];
     rpminfo_object:               RpminfoObject[];
     systemdunitproperty_object:   SystemdunitpropertyObject[];
     systemdunitdependency_object: SymlinkObject[];
-    dpkginfo_object:              Object[];
+    dpkginfo_object:              object[];
     partition_object:             PartitionObject[];
-    sysctl_object:                Object[];
+    sysctl_object:                object[];
     family_object:                FamilyObject[];
     uname_object:                 SymlinkObject[];
 }
