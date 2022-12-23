@@ -6,14 +6,23 @@ This repository contains the source code that facilitates the writing of InSpec 
 For more information about Chef Cookstyle see: 
  - [chef/cookstyle on GitHub](https://github.com/chef/cookstyle)
  - [Chef Cookstyle on Chef documents page](https://docs.chef.io/workstation/cookstyle/)
-  
+
+## How to Use
+The process containing in the repository is contained in a `npm` executable that is published dot the npm registry as [mitre-inspec-objects](https://www.npmjs.com/package/@mitre/inspec-objects).
+
+To use simply add the package to your working environment with a npm install command:
+```
+npm install mitre-inspec-objects
+```
+The package is a CommonJS-based npm written in TypeScript 
+
 ## Parsing Process
 
 When using this library to parse `InSpec profiles` or `xccdf files` for the purposes of generating InSpec profiles, the general workflow is as follows:
 ```
-The input is processed, read into a typescript object
-Operated on with any required action / logic
-Then written into an InSpec profile as output. 
+  - The input is processed, read into a typescript object
+  - Operated on with any required action / logic
+  - Then written into an InSpec profile as output. 
 ```
 This means that we can not simply write out in the same format we got in. Instead, we have to make choices about formatting for how to write out content.
 
