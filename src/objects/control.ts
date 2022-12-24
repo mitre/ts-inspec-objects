@@ -1,7 +1,8 @@
-import { ExecJSON } from "inspecjs";
-import _ from "lodash";
-import {flatten, unflatten} from "flat"
-import { escapeDoubleQuotes, escapeQuotes, applyPercentStringSyntax, removeNewlinePlaceholders } from "../utilities/global";
+import _ from 'lodash';
+import { ExecJSON } from 'inspecjs';
+import {flatten, unflatten} from 'flat'
+import { escapeDoubleQuotes, escapeQuotes, 
+  applyPercentStringSyntax, removeNewlinePlaceholders } from '../utilities/global';
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -103,7 +104,7 @@ export default class Control {
     if (this.descs) {
       Object.entries(this.descs).forEach(([key, desc]) => {
         if (desc) {
-          if(key.match("default") && this.desc) {
+          if(key.match('default') && this.desc) {
             if(desc != this.desc) {
               // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions. In that case, we can ignore writing the "default" subdescription field.
               // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
@@ -133,14 +134,14 @@ export default class Control {
         } else {
           result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref.ref?.toString() || ''))}', url: '${escapeQuotes(removeNewlinePlaceholders(ref.url || ''))}'`
         }
-        
+
       });
     }
 
     Object.entries(this.tags).forEach(([tag, value]) => {
       if (value) {
-        if (typeof value === "object") {
-          if (Array.isArray(value) && typeof value[0] === "string") {
+        if (typeof value === 'object') {
+          if (Array.isArray(value) && typeof value[0] === 'string') {
             // The goal is to keep the style similar to cookstyle formatting
             result += `  tag ${tag}: ${JSON.stringify(value)
               .replace(/"/g, "'") // replace the double quotes with single quotes, ex: ["V-72029","SV-86653"] -> ['V-72029','SV-86653']
@@ -157,7 +158,7 @@ export default class Control {
               .replace(/": \[/g, '" => [');
             result += `  tag ${tag}: ${stringifiedObject}\n`;
           }
-        } else if (typeof value === "string") {
+        } else if (typeof value === 'string') {
           result += `  tag ${tag}: '${escapeQuotes(
             removeNewlinePlaceholders(value)
           )}'\n`;
@@ -173,7 +174,7 @@ export default class Control {
     if(!result.slice(-1).match('\n')) {
       result += '\n';
     }
-    result += "end\n";
+    result += 'end\n';
 
     return result;
   }

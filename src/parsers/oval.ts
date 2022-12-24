@@ -1,6 +1,6 @@
-import { convertEncodedXmlIntoJson } from "../utilities/xccdf"
+import { convertEncodedXmlIntoJson } from '../utilities/xccdf'
 import { OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State } from '../types/oval'
-import _ from "lodash";
+import _ from 'lodash';
 
 // https://stackoverflow.com/questions/9133500/how-to-find-a-node-in-a-tree-with-javascript
 
@@ -41,8 +41,8 @@ export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): 
   const criteriaRefs: string[] = []
   initialCriteria.forEach(criteria => {
     criteria.criterion?.forEach((criterion) => {
-      if (criterion["@_test_ref"]) {
-        criteriaRefs.push(criterion["@_test_ref"])
+      if (criterion['@_test_ref']) {
+        criteriaRefs.push(criterion['@_test_ref'])
       }
     })
     if (criteria.criteria) {
@@ -64,24 +64,24 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
   for (const ovalDefinitions of parsed.oval_definitions) {
     for (const definitionList of ovalDefinitions.definitions) {
       for (const definition of definitionList.definition) {
-        extractedDefinitions[definition["@_id"]] = definition
-        extractedDefinitions[definition["@_id"]].criteriaRefs = extractAllCriteriaRefs(definition.criteria)
+        extractedDefinitions[definition['@_id']] = definition
+        extractedDefinitions[definition['@_id']].criteriaRefs = extractAllCriteriaRefs(definition.criteria)
 
-        extractedDefinitions[definition["@_id"]].resolvedValues = extractedDefinitions[definition["@_id"]].criteriaRefs?.map((criteriaRef) => {
+        extractedDefinitions[definition['@_id']].resolvedValues = extractedDefinitions[definition['@_id']].criteriaRefs?.map((criteriaRef) => {
           // Extract the original criteria from the oval file
-          const foundCriteriaRefererence: Test = searchTree(parsed.oval_definitions[0].tests, (oNode: any) => oNode["@_id"] === criteriaRef, false)[0]
+          const foundCriteriaRefererence: Test = searchTree(parsed.oval_definitions[0].tests, (oNode: any) => oNode['@_id'] === criteriaRef, false)[0]
 
-          const foundObjects: object[] = []
+          const foundObjects: Object[] = []
           const foundStates: State[] = []
                     
           if (foundCriteriaRefererence) {
             if (foundCriteriaRefererence.object) {
               foundCriteriaRefererence.object.forEach((object) => {
-                if (!object["@_object_ref"]) {
+                if (!object['@_object_ref']) {
                   console.warn(`Found object without object_ref in test ${criteriaRef}`)
                 } else {
-                  const objectRef = object["@_object_ref"]
-                  const foundObjectReference = searchTree(parsed.oval_definitions[0].objects, (oNode: any) => oNode["@_id"] === objectRef, false)[0]
+                  const objectRef = object['@_object_ref']
+                  const foundObjectReference = searchTree(parsed.oval_definitions[0].objects, (oNode: any) => oNode['@_id'] === objectRef, false)[0]
                   if (foundObjectReference) {
                     foundObjects.push(foundObjectReference)
                   } else {
@@ -92,11 +92,11 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
             }
             if (foundCriteriaRefererence.state) {
               foundCriteriaRefererence.state.forEach((state) => {
-                if (!state["@_state_ref"]) {
+                if (!state['@_state_ref']) {
                   console.warn(`Found state without state_ref in test ${criteriaRef}`)
                 } else {
-                  const stateRef = state["@_state_ref"]
-                  const foundStateReference = searchTree(parsed.oval_definitions[0].states, (oNode: any) => oNode["@_id"] === stateRef, false)[0]
+                  const stateRef = state['@_state_ref']
+                  const foundStateReference = searchTree(parsed.oval_definitions[0].states, (oNode: any) => oNode['@_id'] === stateRef, false)[0]
                   if (foundStateReference) {
                     foundStates.push(foundStateReference)
                   } else {

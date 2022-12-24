@@ -2,12 +2,12 @@
 // The ultimate goal is to preserve all the metadata that is already there and only add what is new
 
 import _ from 'lodash'
-import winston from "winston";
+import winston from 'winston';
 import Control from '../objects/control'
 import Profile from '../objects/profile'
 import { processXCCDF } from '../parsers/xccdf'
 import { ProfileDiff } from '../types/diff'
-import { Oval, OvalDefinitionValue } from '../types/oval'
+import { OvalDefinitionValue } from '../types/oval'
 import { diffProfile } from './diff'
 import { createDiffMarkdown } from './diffMarkdown'
 
@@ -17,7 +17,7 @@ export type UpdatedProfileReturn = {
     markdown: string
 }
 
-const knownInSpecKeywords = ['title', 'desc', 'impact', 'ref', 'tag', "\""]
+// const knownInSpecKeywords = ['title', 'desc', 'impact', 'ref', 'tag', '"']
 
 function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<string, unknown>, currentPath = ''): Record<string, unknown> {
   for (const updatedValue in src) {
@@ -46,94 +46,111 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
 export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     let existingDescribeBlock = ''
-    let currentQuoteEscape = ''
-    const percentBlockRegexp = /%[qQrRiIwWxs]?(?<lDelimiter>[([{<])/;
-    let inPercentBlock = false;
-    let inQuoteBlock = false
-    const inMetadataValueOverride = false
-    let indentedMetadataOverride = false
-    let inDescribeBlock = false;
-    let mostSpacesSeen = 0;
-    let lDelimiter = '(';
-    let rDelimiter = ')';
-
-    control.code.split('\n').forEach((line) => {
-      const wordArray = line.trim().split(' ')
-      const spaces = line.substring(0, line.indexOf(wordArray[0])).length
-
-      if (spaces - mostSpacesSeen  > 10) {
-        indentedMetadataOverride = true
-      } else {
-        mostSpacesSeen = spaces;
-        indentedMetadataOverride = false
-      }
-
-      if ((!inPercentBlock && !inQuoteBlock && !inMetadataValueOverride && !indentedMetadataOverride) || inDescribeBlock) {
-        if (inDescribeBlock && wordArray.length === 1 && wordArray.includes('')) {
-          existingDescribeBlock += '\n'
+    let lastTag = control.code.lastIndexOf('tag')
+    if (lastTag > 0) {
+      let tagEOL = control.code.indexOf('\n',lastTag)
+      let lastEnd = control.code.lastIndexOf('end')    
+      let processLine = false
+      control.code.substring(tagEOL,lastEnd).split('\n').forEach((line) => {
+        // Ignore any blank lines at the beginning of the describe block
+        if (line !== '' || processLine) {
+          existingDescribeBlock += line + '\n'
+          processLine = true
         }
-        // Get the number of spaces at the beginning of the current line
-        else if (spaces >= 2) {
-          const firstWord = wordArray[0]
-          if (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) === -1 || (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) !== -1 && spaces > 2) || inDescribeBlock) {
-            inDescribeBlock = true;
-            existingDescribeBlock += line + '\n'
-          }
-        }
-      }
+      })      
+    }
+    
+    return existingDescribeBlock.trimEnd();
+    
+    // let existingDescribeBlock = ''
+    // let currentQuoteEscape = ''
+    // const percentBlockRegexp = /%[qQrRiIwWxs]?(?<lDelimiter>[([{<])/;
+    // let inPercentBlock = false;
+    // let inQuoteBlock = false
+    // const inMetadataValueOverride = false
+    // let indentedMetadataOverride = false
+    // let inDescribeBlock = false;
+    // let mostSpacesSeen = 0;
+    // let lDelimiter = '(';
+    // let rDelimiter = ')';
 
-      wordArray.forEach((word, index) => {
-        const percentBlockMatch = percentBlockRegexp.exec(word); 
-        if(percentBlockMatch && inPercentBlock === false) {
-          inPercentBlock = true;
-          // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-          lDelimiter = percentBlockMatch.groups!.lDelimiter || '(';
-          switch(lDelimiter) { 
-            case '{': { 
-              rDelimiter = '}';
-              break; 
-            } 
-            case '[': { 
-              rDelimiter = ']';
-              break; 
-            } 
-            case '<': { 
-              rDelimiter = '>';
-              break; 
-            } 
-            default: { 
-              break; 
-            } 
-          }
+    // control.code.split('\n').forEach((line) => {
+    //   const wordArray = line.trim().split(' ')
+    //   const spaces = line.substring(0, line.indexOf(wordArray[0])).length
+
+    //   if (spaces - mostSpacesSeen  > 10) {
+    //     indentedMetadataOverride = true
+    //   } else {
+    //     mostSpacesSeen = spaces;
+    //     indentedMetadataOverride = false
+    //   }
+
+    //   if ((!inPercentBlock && !inQuoteBlock && !inMetadataValueOverride && !indentedMetadataOverride) || inDescribeBlock) {
+    //     if (inDescribeBlock && wordArray.length === 1 && wordArray.includes('')) {
+    //       existingDescribeBlock += '\n'
+    //     }
+    //     // Get the number of spaces at the beginning of the current line
+    //     else if (spaces >= 2) {
+    //       const firstWord = wordArray[0]
+    //       if (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) === -1 || (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) !== -1 && spaces > 2) || inDescribeBlock) {
+    //         inDescribeBlock = true;
+    //         existingDescribeBlock += line + '\n'
+    //       }
+    //     }
+    //   }
+
+    //   wordArray.forEach((word, index) => {
+    //     const percentBlockMatch = percentBlockRegexp.exec(word); 
+    //     if(percentBlockMatch && inPercentBlock === false) {
+    //       inPercentBlock = true;
+    //       // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+    //       lDelimiter = percentBlockMatch.groups!.lDelimiter || '(';
+    //       switch(lDelimiter) { 
+    //         case '{': { 
+    //           rDelimiter = '}';
+    //           break; 
+    //         } 
+    //         case '[': { 
+    //           rDelimiter = ']';
+    //           break; 
+    //         } 
+    //         case '<': { 
+    //           rDelimiter = '>';
+    //           break; 
+    //         } 
+    //         default: { 
+    //           break; 
+    //         } 
+    //       }
                      
-        }
-        const charArray = word.split('')
-        charArray.forEach((char, index) => {
-          if (inPercentBlock) {
-            if (char === rDelimiter && charArray[index - 1] !== '\\' && !inQuoteBlock) {
-              inPercentBlock = false;
-            }
-          }
-          if (char === '"' && charArray[index - 1] !== '\\') {
-            if (!currentQuoteEscape || !inQuoteBlock) {
-              currentQuoteEscape = '"'
-            }
-            if (currentQuoteEscape === '"') {
-              inQuoteBlock = !inQuoteBlock
-            }
-          } else if (char === "'" && charArray[index - 1] !== '\\') {
-            if (!currentQuoteEscape || !inQuoteBlock) {
-              currentQuoteEscape = "'"
-            }
-            if (currentQuoteEscape === "'") {
-              inQuoteBlock = !inQuoteBlock
-            }
-          }
-        })
-      })
-    })
-    // Take off the extra newline at the end
-    return existingDescribeBlock.slice(0, -1)
+    //     }
+    //     const charArray = word.split('')
+    //     charArray.forEach((char, index) => {
+    //       if (inPercentBlock) {
+    //         if (char === rDelimiter && charArray[index - 1] !== '\\' && !inQuoteBlock) {
+    //           inPercentBlock = false;
+    //         }
+    //       }
+    //       if (char === '"' && charArray[index - 1] !== '\\') {
+    //         if (!currentQuoteEscape || !inQuoteBlock) {
+    //           currentQuoteEscape = '"'
+    //         }
+    //         if (currentQuoteEscape === '"') {
+    //           inQuoteBlock = !inQuoteBlock
+    //         }
+    //       } else if (char === "'" && charArray[index - 1] !== '\\') {
+    //         if (!currentQuoteEscape || !inQuoteBlock) {
+    //           currentQuoteEscape = "'"
+    //         }
+    //         if (currentQuoteEscape === "'") {
+    //           inQuoteBlock = !inQuoteBlock
+    //         }
+    //       }
+    //     })
+    //   })
+    // })
+    // // Take off the extra newline at the end
+    // return existingDescribeBlock.slice(0, -1)
   } else {
     return ''
   }

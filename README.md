@@ -8,9 +8,9 @@ For more information about Chef Cookstyle see:
  - [Chef Cookstyle on Chef documents page](https://docs.chef.io/workstation/cookstyle/)
 
 ## How to Use
-The process containing in the repository is contained in a `npm` executable that is published dot the npm registry as [mitre-inspec-objects](https://www.npmjs.com/package/@mitre/inspec-objects).
+The process code maintained in this repository generates a `npm` executable that is published to the `npm registry` as [mitre-inspec-objects](https://www.npmjs.com/package/@mitre/inspec-objects).
 
-To use simply add the package to your working environment with a npm install command:
+To use the `mitre-inspec-objects` npm package, simply add the package as a dependency to your project application using the npm install command:
 ```
 npm install mitre-inspec-objects
 ```

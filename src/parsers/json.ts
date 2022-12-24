@@ -6,11 +6,11 @@ import {
   ConversionResult,
   convertFile,
   ExecJSON
-} from "inspecjs";
-import _ from "lodash";
-import Control, { objectifyDescriptions } from "../objects/control";
-import Profile from "../objects/profile";
-import { getExistingDescribeFromControl } from "../utilities/update";
+} from 'inspecjs';
+import _ from 'lodash';
+import Control, { objectifyDescriptions } from '../objects/control';
+import Profile from '../objects/profile';
+import { getExistingDescribeFromControl } from '../utilities/update';
 
 export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
   const topLevelProfile = evaluationInput.contains[0];
@@ -20,9 +20,9 @@ export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
     maintainer: topLevelProfile.data.maintainer,
     copyright: topLevelProfile.data.copyright,
     copyright_email: topLevelProfile.data.copyright_email,
-    license: _.get(topLevelProfile.data, "license"),
-    summary: _.get(topLevelProfile.data, "summary"),
-    description: _.get(topLevelProfile.data, "description"),
+    license: _.get(topLevelProfile.data, 'license'),
+    summary: _.get(topLevelProfile.data, 'summary'),
+    description: _.get(topLevelProfile.data, 'description'),
     version: topLevelProfile.data.version,
   });
   topLevelProfile.contains.forEach((control) => {
@@ -49,9 +49,9 @@ export function processProfileJSON(
     maintainer: profileInput.data.maintainer,
     copyright: profileInput.data.copyright,
     copyright_email: profileInput.data.copyright_email,
-    license: _.get(profileInput.data, "license"),
-    summary: _.get(profileInput.data, "summary"),
-    description: _.get(profileInput.data, "description"),
+    license: _.get(profileInput.data, 'license'),
+    summary: _.get(profileInput.data, 'summary'),
+    description: _.get(profileInput.data, 'description'),
     version: profileInput.data.version,
   });
   profileInput.data.controls.forEach((control) => {
@@ -92,18 +92,19 @@ export function processExecJSON(execJSON: ExecJSON.Execution) {
 export function processInSpecProfile(json: string): Profile {
   const convertedFile: ConversionResult = convertFile(json, true);
   let profile = new Profile();
-  if (convertedFile["1_0_ExecJson"]) {
+  if (convertedFile['1_0_ExecJson']) {
+
     profile = processEvaluation(
-      contextualizeEvaluation(convertedFile["1_0_ExecJson"])
+      contextualizeEvaluation(convertedFile['1_0_ExecJson'])
     ).toUnformattedObject();
-  } else if (convertedFile["1_0_ProfileJson"]) {
+  } else if (convertedFile['1_0_ProfileJson']) {
     profile = processProfileJSON(contextualizeProfile(JSON.parse(json))).toUnformattedObject();
   } else {
-    throw new Error("Unknown file type passed");
+    throw new Error('Unknown file type passed');
   }
 
-  profile.controls = _.sortBy(profile.controls, "id");
-
+  profile.controls = _.sortBy(profile.controls, 'id');
+   
   return profile;
 }
 

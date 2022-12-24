@@ -234,7 +234,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
     control.tags.stig_id = rule['version']
 
 
-    if (typeof rule.group.title === "string") {
+    if (typeof rule.group.title === 'string') {
       control.tags.gtitle = removeXMLSpecialCharacters(rule.group.title)
     } else {
       control.tags.gtitle = removeXMLSpecialCharacters(_.get(rule.group, 'title[0].#text'))
@@ -339,7 +339,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                 console.warn(`Attempted to push identifier to control tags when identifier already exists: ${identifierType}: ${identifier}`)
               }
             } else {
-              console.warn("Reference parts of invalid length:")
+              console.warn('Reference parts of invalid length:')
               console.log(referenceParts)
             }
           }

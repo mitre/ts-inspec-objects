@@ -1,22 +1,22 @@
-import _ from "lodash";
+import _ from 'lodash';
 
 // Breaks lines down to lineLength number of characters
 export function wrap(s: string, lineLength = 80): string {
-  let newString = ""
-  const currentLine = ""
+  let newString = ''
+  const currentLine = ''
   let currentLength = 0
   let shouldBreakLine = false;
 
   for (let i = 0; i < s.length; i++) {
     if (shouldBreakLine) {
-      newString += `\n`;
+      newString += '\n';
       currentLength = 0;
       shouldBreakLine = false;
     }
     const currentChar = s.charAt(i)
     const nextChar = s.charAt(i + 1)
 
-    if (nextChar === " ") {
+    if (nextChar === ' ') {
       if (currentLength >= lineLength) {
         shouldBreakLine = true;
         newString += currentChar;
@@ -33,6 +33,7 @@ export function wrap(s: string, lineLength = 80): string {
   return newString;
 }
 
+// Remove new lines and tabs
 export function unformatText(s: string): string {
   return s.replace(/\n/g, ' ').replace(/\\n/g, ' ').replace(/( +|\t)/g, ' ')
 }
@@ -42,11 +43,11 @@ export function removeWhitespace(input: string): string {
 }
 
 const escapeQuotes = (s: string) => {
-  return s.replace(/\\/g, "\\\\").replace(/'/g, "\\'"); // Escape backslashes and quotes
+  return s.replace(/\\/g, '\\\\').replace(/'/g, "\\'"); // Escape backslashes and quotes
 }
 
 const escapeDoubleQuotes = (s: string) => {
-  return s.replace(/\\/g, "\\\\").replace(/"/g, '\\"'); // Escape backslashes and double quotes
+  return s.replace(/\\/g, '\\\\').replace(/"/g, '\\"'); // Escape backslashes and double quotes
 }
 
 const wrapAndEscapeQuotes = (s: string, lineLength?: number) =>

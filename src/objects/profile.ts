@@ -1,7 +1,7 @@
-import Control from "./control";
-import YAML from "yaml";
-import _ from "lodash";
-import { unformatText } from "../utilities/global";
+import Control from './control';
+import YAML from 'yaml';
+import _ from 'lodash';
+import { unformatText } from '../utilities/global';
 
 export default class Profile {
   name?: string | null;
@@ -15,10 +15,10 @@ export default class Profile {
   version?: string | null;
   inspec_version?: string | null;
   supports: {
-    "platform-family"?: string;
-    "platform-name"?: string;
-    "os-name"?: string;
-    "os-family"?: string;
+    'platform-family'?: string;
+    'platform-name'?: string;
+    'os-name'?: string;
+    'os-family'?: string;
     release?: string;
     platform?: string;
   }[] = [];
@@ -55,7 +55,7 @@ export default class Profile {
   files: string[] = [];
   controls: Control[] = [];
 
-  constructor(data?: Omit<Partial<Profile>, "controls">) {
+  constructor(data?: Omit<Partial<Profile>, 'controls'>) {
     if (data) {
       Object.entries(data).forEach(([key, value]) => {
         _.set(this, key, value);
@@ -83,7 +83,7 @@ export default class Profile {
   toUnformattedObject(): Profile {
     const unformattedProfile: Profile = new Profile(this);
     Object.entries(this).forEach(([key, value]) => {
-      if (typeof value === "string") {
+      if (typeof value === 'string') {
         _.set(unformattedProfile, key, unformatText(value));
       }
     });
