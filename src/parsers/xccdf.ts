@@ -1,9 +1,9 @@
 import Profile from '../objects/profile';
-import { convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson, convertJsonIntoXML, impactNumberToSeverityString, removeXMLSpecialCharacters, severityStringToImpact } from '../utilities/xccdf';
-import { BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice, ParsedXCCDF, RationaleElement, RuleComplexCheck } from '../types/xccdf';
+import {convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson, convertJsonIntoXML, impactNumberToSeverityString, removeXMLSpecialCharacters, severityStringToImpact} from '../utilities/xccdf';
+import {BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice, ParsedXCCDF, RationaleElement, RuleComplexCheck} from '../types/xccdf';
 import Control from '../objects/control';
 import _ from 'lodash';
-import { OvalDefinitionValue } from '../types/oval';
+import {OvalDefinitionValue} from '../types/oval';
 import {data as CciNistMappingData} from '../mappings/CciNistMappingData'
 import pretty from 'pretty'
 
@@ -343,7 +343,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
               console.log(referenceParts)
             }
           }
-        } catch (e){
+        } catch (e) {
           console.warn(`Error parsing ref for control ${control.id}: `)
           console.warn(JSON.stringify(reference, null, 2))
           console.warn(e);

@@ -53,7 +53,7 @@ const escapeDoubleQuotes = (s: string) => {
 const wrapAndEscapeQuotes = (s: string, lineLength?: number) =>
   escapeDoubleQuotes(wrap(s, lineLength)); // Escape backslashes and quotes, and wrap long lines
 
-export { escapeQuotes, escapeDoubleQuotes, wrapAndEscapeQuotes };
+export {escapeQuotes, escapeDoubleQuotes, wrapAndEscapeQuotes};
 
 export function removeNewlinePlaceholders(s: string): string {
   return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')

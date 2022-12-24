@@ -1,7 +1,7 @@
 import Control from './control';
 import YAML from 'yaml';
 import _ from 'lodash';
-import { unformatText } from '../utilities/global';
+import {unformatText} from '../utilities/global';
 
 export default class Profile {
   name?: string | null;

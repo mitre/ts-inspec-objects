@@ -5,11 +5,11 @@ import _ from 'lodash'
 import winston from 'winston';
 import Control from '../objects/control'
 import Profile from '../objects/profile'
-import { processXCCDF } from '../parsers/xccdf'
-import { ProfileDiff } from '../types/diff'
-import { OvalDefinitionValue } from '../types/oval'
-import { diffProfile } from './diff'
-import { createDiffMarkdown } from './diffMarkdown'
+import {processXCCDF} from '../parsers/xccdf'
+import {ProfileDiff} from '../types/diff'
+import {OvalDefinitionValue} from '../types/oval'
+import {diffProfile} from './diff'
+import {createDiffMarkdown} from './diffMarkdown'
 
 export type UpdatedProfileReturn = {
     profile: Profile,
@@ -46,10 +46,10 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
 export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     let existingDescribeBlock = ''
-    let lastTag = control.code.lastIndexOf('tag')
+    const lastTag = control.code.lastIndexOf('tag')
     if (lastTag > 0) {
-      let tagEOL = control.code.indexOf('\n',lastTag)
-      let lastEnd = control.code.lastIndexOf('end')    
+      const tagEOL = control.code.indexOf('\n',lastTag)
+      const lastEnd = control.code.lastIndexOf('end')    
       let processLine = false
       control.code.substring(tagEOL,lastEnd).split('\n').forEach((line) => {
         // Ignore any blank lines at the beginning of the describe block
@@ -59,7 +59,7 @@ export function getExistingDescribeFromControl(control: Control): string {
         }
       })      
     }
-    
+
     return existingDescribeBlock.trimEnd();
     
     // let existingDescribeBlock = ''

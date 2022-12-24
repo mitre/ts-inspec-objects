@@ -1,8 +1,8 @@
 import parser from 'fast-xml-parser'
-import { toXML } from 'jstoxml';
+import {toXML} from 'jstoxml';
 import * as htmlparser from 'htmlparser2'
 import _ from 'lodash'
-import { DecodedDescription } from '../types/xccdf'
+import {DecodedDescription} from '../types/xccdf'
 import he from 'he'
 
 

@@ -1,8 +1,8 @@
 import _ from 'lodash';
-import { ExecJSON } from 'inspecjs';
+import {ExecJSON} from 'inspecjs';
 import {flatten, unflatten} from 'flat'
-import { escapeDoubleQuotes, escapeQuotes, 
-  applyPercentStringSyntax, removeNewlinePlaceholders } from '../utilities/global';
+import {escapeDoubleQuotes, escapeQuotes, 
+  applyPercentStringSyntax, removeNewlinePlaceholders} from '../utilities/global';
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {

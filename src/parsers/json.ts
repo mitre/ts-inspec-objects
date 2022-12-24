@@ -8,9 +8,9 @@ import {
   ExecJSON
 } from 'inspecjs';
 import _ from 'lodash';
-import Control, { objectifyDescriptions } from '../objects/control';
+import Control, {objectifyDescriptions} from '../objects/control';
 import Profile from '../objects/profile';
-import { getExistingDescribeFromControl } from '../utilities/update';
+import {getExistingDescribeFromControl} from '../utilities/update';
 
 export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
   const topLevelProfile = evaluationInput.contains[0];
@@ -93,7 +93,6 @@ export function processInSpecProfile(json: string): Profile {
   const convertedFile: ConversionResult = convertFile(json, true);
   let profile = new Profile();
   if (convertedFile['1_0_ExecJson']) {
-
     profile = processEvaluation(
       contextualizeEvaluation(convertedFile['1_0_ExecJson'])
     ).toUnformattedObject();

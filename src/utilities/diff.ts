@@ -1,11 +1,11 @@
-import { diff } from 'json-diff';
+import {diff} from 'json-diff';
 import Profile from '../objects/profile';
-import { ProfileDiff } from '../types/diff';
+import {ProfileDiff} from '../types/diff';
 import _ from 'lodash';
-import { findUpdatedControlByAllIdentifiers } from './update';
+import {findUpdatedControlByAllIdentifiers} from './update';
 import winston from 'winston';
-import { removeWhitespace } from './global';
-import { rename } from 'fs';
+import {removeWhitespace} from './global';
+import {rename} from 'fs';
 
 export function removeNewlines(
   control?: Record<string, unknown>
@@ -182,5 +182,5 @@ export function diffProfile(
     }
   }
 
-  return { ignoreFormattingDiff: profileDiff, rawDiff: originalDiff };
+  return {ignoreFormattingDiff: profileDiff, rawDiff: originalDiff};
 }

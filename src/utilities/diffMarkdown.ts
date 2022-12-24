@@ -1,9 +1,9 @@
 import mustache from 'mustache';
-import { ProfileDiff } from '../types/diff';
+import {ProfileDiff} from '../types/diff';
 import Profile from '../objects/profile';
 import _ from 'lodash';
 import template from '../resources/automatticUpdateTemplate.json';
-import { removeXMLSpecialCharacters } from './xccdf';
+import {removeXMLSpecialCharacters} from './xccdf';
 
 function getUpdatedCheckForId(id: string, profile: Profile) {
   const foundControl = profile.controls.find((control) => control.id === id);
