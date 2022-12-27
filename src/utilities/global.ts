@@ -59,7 +59,7 @@ export function removeNewlinePlaceholders(s: string): string {
   return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')
 }
 
-export function applyPercentStringSyntax(s: string): string {
+export function applyPercentStringSyntaxIfNeeded(s: string): string {
   if(s.includes("'") || s.includes('"')) {
     return `%q(${removeNewlinePlaceholders(s)})`
   }

@@ -30,13 +30,13 @@ describe('The control functionality', () => {
   // NOTE:
   //   The "expected" file was generated using end of line characters (CRLF). 
   //   We remove all CR from both files before comparing
-  it('should correctly write the control structure to ruby that has no changes', () => {
+  it('should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle', () => {
     expect(generated1.replace(/\r/gi, '')).toEqual(expected1.replace(/\r/gi, ''));
   })
 
   const generated2 = fs.readFileSync('test/sample_data/controls-test-results/SV-204392.rb','utf-8')
   const expected2 = fs.readFileSync('test/sample_data/controls-cookstyle/SV-204392.rb', 'utf-8')
-  it('should correctly write the control structure to ruby that has changes', () => {
+  it('should correctly write the control structure using single quote string as suggested by cookstyle', () => {
     expect(generated2.replace(/\r/gi, '')).not.toEqual(expected2.replace(/\r/gi, ''));
-  })  
+  })
 })

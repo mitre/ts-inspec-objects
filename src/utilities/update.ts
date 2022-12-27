@@ -65,43 +65,8 @@ function getIndexOfFirstLine(auditArray: string[], index: number, action: string
   Extract the existing describe blocks (what is actually run by inspec for validation)
 */
 export function getExistingDescribeFromControl(control: Control): string {
-  // *** Option 1 ***
-  // Algorithm: 
-  //   Locate the index of the last occurrence of the meta-information 'tag'
-  //   if: we have a tag do
-  //     Place each line of the control code into an array
-  //     loop: over the array starting at the end of the line the last meta-information 'tag' was found
-  //       remove any empty before describe block content is found
-  //       add found content to describe block variable, append EOL
-  //     end
-  //   end
-  // Assumptions: 
-  //  1 - The meta-information 'tag' precedes the describe block
-  // Potential Problems:
-  //  1 - The word 'tag' could be part of the describe block
-//   if (control.code) {
-//     let existingDescribeBlock = ''
-//     const lastTag = control.code.lastIndexOf('tag')
-//     if (lastTag > 0) {
-//       const tagEOL = control.code.indexOf('\n',lastTag)
-//       const lastEnd = control.code.lastIndexOf('end')    
-//       let processLine = false
-//       control.code.substring(tagEOL,lastEnd).split('\n').forEach((line) => {
-//         // Ignore any blank lines at the beginning of the describe block
-//         if (line !== '' || processLine) {
-//           existingDescribeBlock += line + '\n'
-//           processLine = true
-//         }
-//       })      
-//     }
-//     return existingDescribeBlock.trimEnd();
-//   } else {
-//     return ''
-//   }
-
-  // *** Option 2 ***
   // Algorithm:
-  //   Locate the start and end od the control string
+  //   Locate the start and end of the control string
   //   Update the end of the control that contains information (if empty lines are at the end of the control)
   //   loop: until the start index is changed (loop is done from the bottom up)
   //     Clean testing array entry line (removes any non-print characters)
@@ -114,9 +79,8 @@ export function getExistingDescribeFromControl(control: Control): string {
   //   Extract the describe block from the audit control given the start and end indices
   // Assumptions: 
   //  1 - The meta-information 'tag' or 'ref' precedes the describe block
-  // Pros:
-  // Solves the potential issue with option 1, as the lookup for the meta-information
-  // 'tag' or 'ref' is expected to the at the beginning of the line.
+  // Pros: Solves the potential issue with option 1, as the lookup for the meta-information
+  //       'tag' or 'ref' is expected to the at the beginning of the line.
   if (control.code) {
     let existingDescribeBlock = ''
     let indexStart = control.code.toLowerCase().indexOf('control')
@@ -143,101 +107,6 @@ export function getExistingDescribeFromControl(control: Control): string {
   } else {
     return ''
   }
-
-  // *** Original ***
-  // if (control.code) {
-  // let existingDescribeBlock = ''
-  // let currentQuoteEscape = ''
-  // const percentBlockRegexp = /%[qQrRiIwWxs]?(?<lDelimiter>[([{<])/;
-  // let inPercentBlock = false;
-  // let inQuoteBlock = false
-  // const inMetadataValueOverride = false
-  // let indentedMetadataOverride = false
-  // let inDescribeBlock = false;
-  // let mostSpacesSeen = 0;
-  // let lDelimiter = '(';
-  // let rDelimiter = ')';
-
-  // control.code.split('\n').forEach((line) => {
-  //   const wordArray = line.trim().split(' ')
-  //   const spaces = line.substring(0, line.indexOf(wordArray[0])).length
-
-  //   if (spaces - mostSpacesSeen  > 10) {
-  //     indentedMetadataOverride = true
-  //   } else {
-  //     mostSpacesSeen = spaces;
-  //     indentedMetadataOverride = false
-  //   }
-
-  //   if ((!inPercentBlock && !inQuoteBlock && !inMetadataValueOverride && !indentedMetadataOverride) || inDescribeBlock) {
-  //     if (inDescribeBlock && wordArray.length === 1 && wordArray.includes('')) {
-  //       existingDescribeBlock += '\n'
-  //     }
-  //     // Get the number of spaces at the beginning of the current line
-  //     else if (spaces >= 2) {
-  //       const firstWord = wordArray[0]
-  //       if (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) === -1 || (knownInSpecKeywords.indexOf(firstWord.toLowerCase()) !== -1 && spaces > 2) || inDescribeBlock) {
-  //         inDescribeBlock = true;
-  //         existingDescribeBlock += line + '\n'
-  //       }
-  //     }
-  //   }
-
-  //   wordArray.forEach((word, index) => {
-  //     const percentBlockMatch = percentBlockRegexp.exec(word); 
-  //     if(percentBlockMatch && inPercentBlock === false) {
-  //       inPercentBlock = true;
-  //       // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  //       lDelimiter = percentBlockMatch.groups!.lDelimiter || '(';
-  //       switch(lDelimiter) { 
-  //         case '{': { 
-  //           rDelimiter = '}';
-  //           break; 
-  //         } 
-  //         case '[': { 
-  //           rDelimiter = ']';
-  //           break; 
-  //         } 
-  //         case '<': { 
-  //           rDelimiter = '>';
-  //           break; 
-  //         } 
-  //         default: { 
-  //           break; 
-  //         } 
-  //       }
-                    
-  //     }
-  //     const charArray = word.split('')
-  //     charArray.forEach((char, index) => {
-  //       if (inPercentBlock) {
-  //         if (char === rDelimiter && charArray[index - 1] !== '\\' && !inQuoteBlock) {
-  //           inPercentBlock = false;
-  //         }
-  //       }
-  //       if (char === '"' && charArray[index - 1] !== '\\') {
-  //         if (!currentQuoteEscape || !inQuoteBlock) {
-  //           currentQuoteEscape = '"'
-  //         }
-  //         if (currentQuoteEscape === '"') {
-  //           inQuoteBlock = !inQuoteBlock
-  //         }
-  //       } else if (char === "'" && charArray[index - 1] !== '\\') {
-  //         if (!currentQuoteEscape || !inQuoteBlock) {
-  //           currentQuoteEscape = "'"
-  //         }
-  //         if (currentQuoteEscape === "'") {
-  //           inQuoteBlock = !inQuoteBlock
-  //         }
-  //       }
-  //     })
-  //   })
-  // })
-  // // Take off the extra newline at the end
-  // return existingDescribeBlock.slice(0, -1)
-  // } else {
-  //   return ''
-  // }
 }
 
 export function findUpdatedControlByAllIdentifiers(existingControl: Control, updatedControls: Control[]): Control | undefined {

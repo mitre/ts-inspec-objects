@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import {ExecJSON} from 'inspecjs';
 import {flatten, unflatten} from 'flat'
-import {escapeDoubleQuotes, escapeQuotes, 
-  applyPercentStringSyntax, removeNewlinePlaceholders} from '../utilities/global';
+import {escapeQuotes, removeNewlinePlaceholders,
+  applyPercentStringSyntaxIfNeeded} from '../utilities/global';
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -90,29 +90,31 @@ export default class Control {
 
     result += `control '${this.id}' do\n`;
     if (this.title) {
-      result += `  title "${escapeDoubleQuotes(removeNewlinePlaceholders(this.title))}"\n`;
+      result += `  title '${escapeQuotes(removeNewlinePlaceholders(this.title))}'\n`;
     } else {
       console.error(`${this.id} does not have a title`);
     }
 
+    // This is the known 'default' description - on previous version this content was repeated on descriptions processed by "descs"
     if (this.desc) {
-      result += `  desc "${escapeDoubleQuotes(removeNewlinePlaceholders(this.desc))}"\n`;
+      result += `  desc '${escapeQuotes(removeNewlinePlaceholders(this.desc))}'\n`;
     } else {
       console.error(`${this.id} does not have a desc`);
     }
 
     if (this.descs) {
-      Object.entries(this.descs).forEach(([key, desc]) => {
-        if (desc) {
+      Object.entries(this.descs).forEach(([key, subDesc]) => {
+        if (subDesc) {
           if(key.match('default') && this.desc) {
-            if(desc != this.desc) {
-              // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions. In that case, we can ignore writing the "default" subdescription field.
+            if(subDesc != this.desc) {
+              // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions.
+              // In that case, we can ignore writing the "default" subdescription field.
               // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
-              console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique subdescriptions.`);
+              console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique sub-descriptions.`);
             }
           }
           else {
-            const subdescription_string = applyPercentStringSyntax(desc);
+            const subdescription_string = applyPercentStringSyntaxIfNeeded(subDesc);
             result += `  desc '${key}', ${subdescription_string}\n`;
           }
         } else {

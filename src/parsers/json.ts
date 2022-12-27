@@ -70,7 +70,7 @@ export function processProfileJSON(
     // Migrate check and fix text from tags to descriptions
     if (newControl.tags.check && !newControl.descs.check) {
       // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-      _.set(newControl.descs!, 'check', control.tags.check);
+      _.set(newControl.descs, 'check', control.tags.check);
       _.set(newControl.tags, 'check', undefined);
     }
 
