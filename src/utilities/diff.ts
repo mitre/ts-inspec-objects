@@ -137,7 +137,7 @@ export function diffProfile(
       } else {
         logger.error(`Unable to find existing control ${diffValue[1]}`);
       }
-    } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1] ) {
+    } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1]) {
       logger.info(JSON.stringify(diffValue))
       logger.info(JSON.stringify(changedControlIds))
       profileDiff.addedControlIDs.push(diffValue[1]);

@@ -42,7 +42,7 @@ export function removeWhitespace(input: string): string {
   return input.replace(/\s/gi, '')
 }
 
-const escapeQuotes = (s: string) => {
+const escapeSingleQuotes = (s: string) => {
   return s.replace(/\\/g, '\\\\').replace(/'/g, "\\'"); // Escape backslashes and quotes
 }
 
@@ -50,22 +50,21 @@ const escapeDoubleQuotes = (s: string) => {
   return s.replace(/\\/g, '\\\\').replace(/"/g, '\\"'); // Escape backslashes and double quotes
 }
 
+export function escapeQuotes(s: string): string {
+  if (s.includes("'") && s.includes('"')) {
+    return `%q(${removeNewlinePlaceholders(s)})` 
+  } else if (s.includes("'")) {
+    return `"${escapeDoubleQuotes(removeNewlinePlaceholders(s))}"`
+  } else {
+    return `'${escapeSingleQuotes(removeNewlinePlaceholders(s))}'`
+  }
+}
+
 const wrapAndEscapeQuotes = (s: string, lineLength?: number) =>
   escapeDoubleQuotes(wrap(s, lineLength)); // Escape backslashes and quotes, and wrap long lines
 
-export {escapeQuotes, escapeDoubleQuotes, wrapAndEscapeQuotes};
-
 export function removeNewlinePlaceholders(s: string): string {
   return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')
-}
-
-export function applyPercentStringSyntaxIfNeeded(s: string): string {
-  if(s.includes("'") || s.includes('"')) {
-    return `%q(${removeNewlinePlaceholders(s)})`
-  }
-  else {
-    return `'${escapeQuotes(removeNewlinePlaceholders(s))}'`
-  }
 }
 
 export function getFirstPath(

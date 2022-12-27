@@ -1,8 +1,7 @@
 import _ from 'lodash';
 import {ExecJSON} from 'inspecjs';
 import {flatten, unflatten} from 'flat'
-import {escapeQuotes, removeNewlinePlaceholders,
-  applyPercentStringSyntaxIfNeeded} from '../utilities/global';
+import {escapeQuotes} from '../utilities/global';
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -77,7 +76,7 @@ export default class Control {
     const flattened: Record<string, string | number> = flatten(this)
     
     Object.entries(flattened).forEach(([key, value]) => {
-      if(typeof value === 'string') {
+      if (typeof value === 'string') {
         _.set(flattened, key, value);
       }
     });
@@ -90,14 +89,14 @@ export default class Control {
 
     result += `control '${this.id}' do\n`;
     if (this.title) {
-      result += `  title '${escapeQuotes(removeNewlinePlaceholders(this.title))}'\n`;
+      result += `  title ${escapeQuotes(this.title)}\n`;
     } else {
       console.error(`${this.id} does not have a title`);
     }
 
     // This is the known 'default' description - on previous version this content was repeated on descriptions processed by "descs"
     if (this.desc) {
-      result += `  desc '${escapeQuotes(removeNewlinePlaceholders(this.desc))}'\n`;
+      result += `  desc ${escapeQuotes(this.desc)}\n`;
     } else {
       console.error(`${this.id} does not have a desc`);
     }
@@ -105,8 +104,8 @@ export default class Control {
     if (this.descs) {
       Object.entries(this.descs).forEach(([key, subDesc]) => {
         if (subDesc) {
-          if(key.match('default') && this.desc) {
-            if(subDesc != this.desc) {
+          if (key.match('default') && this.desc) {
+            if (subDesc != this.desc) {
               // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions.
               // In that case, we can ignore writing the "default" subdescription field.
               // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
@@ -114,8 +113,7 @@ export default class Control {
             }
           }
           else {
-            const subdescription_string = applyPercentStringSyntaxIfNeeded(subDesc);
-            result += `  desc '${key}', ${subdescription_string}\n`;
+            result += `  desc '${key}', ${escapeQuotes(subDesc)}\n`;
           }
         } else {
           console.error(`${this.id} does not have a desc for the value ${key}`);
@@ -132,9 +130,9 @@ export default class Control {
     if (this.refs) {
       this.refs.forEach((ref) => {
         if (typeof ref === 'string') {
-          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref))}'\n`;
+          result += `  ref ${escapeQuotes(ref)}\n`;
         } else {
-          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref.ref?.toString() || ''))}', url: '${escapeQuotes(removeNewlinePlaceholders(ref.url || ''))}'`
+          result += `  ref ${escapeQuotes(ref.ref?.toString() || '')}, url: ${escapeQuotes(ref.url || '')}`
         }
 
       });
@@ -161,9 +159,7 @@ export default class Control {
             result += `  tag ${tag}: ${stringifiedObject}\n`;
           }
         } else if (typeof value === 'string') {
-          result += `  tag ${tag}: '${escapeQuotes(
-            removeNewlinePlaceholders(value)
-          )}'\n`;
+          result += `  tag ${tag}: ${escapeQuotes(value)}\n`;
         }
       }
     });
@@ -173,7 +169,7 @@ export default class Control {
       result += this.describe
     }
 
-    if(!result.slice(-1).match('\n')) {
+    if (!result.slice(-1).match('\n')) {
       result += '\n';
     }
     result += 'end\n';

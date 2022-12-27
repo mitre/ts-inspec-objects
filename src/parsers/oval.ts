@@ -11,23 +11,23 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
   const aReturnNodes = []; // the nodes array which will returned
 
   // 1. loop through all root nodes, store tree content locally so we don't touch the tree structure
-  for(const keysTree in aTree) {
+  for (const keysTree in aTree) {
     aInnerTree.push(aTree[keysTree]);
   }
 
-  while(aInnerTree.length > 0) {
+  while (aInnerTree.length > 0) {
     oNode = aInnerTree.pop();
     // check current node
-    if( fCompair(oNode) ) {
+    if (fCompair(oNode)) {
       aReturnNodes.push(oNode);
-      if(!bGreedy) {
+      if (!bGreedy) {
         return aReturnNodes;
       }
     } else { // if (node.children && node.children.length) {
       // find other objects, 1. check all properties of the node if they are arrays
-      for(const keysNode in oNode) {
+      for (const keysNode in oNode) {
         // true if the property is an array
-        if(oNode[keysNode] instanceof Array) {
+        if (oNode[keysNode] instanceof Array) {
           // 2. push all array object to aInnerTree to search in those later
           for (let i = 0; i < oNode[keysNode].length; i++) {
             aInnerTree.push(oNode[keysNode][i]);

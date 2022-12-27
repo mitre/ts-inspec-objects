@@ -185,7 +185,7 @@ export function processXCCDF(xml: string, removeNewlines = false, useRuleId: 'gr
                           _.set(resolvedObject, 'expectedState', _.pickBy(relatedResolvedState, (value, key) => !key.startsWith('@_')))
                         }
                       }
-                      checkTexts.push(JSON.stringify( _.pickBy(resolvedObject, (value, key) => !key.startsWith('@_')), null, 2))
+                      checkTexts.push(JSON.stringify(_.pickBy(resolvedObject, (value, key) => !key.startsWith('@_')), null, 2))
                     })
                   })
                 }
