@@ -17,8 +17,6 @@ export type UpdatedProfileReturn = {
     markdown: string
 }
 
-// const knownInSpecKeywords = ['title', 'desc', 'impact', 'ref', 'tag', '"']
-
 function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<string, unknown>, currentPath = ''): Record<string, unknown> {
   for (const updatedValue in src) {
     const existingValue = _.get(dst, updatedValue)
