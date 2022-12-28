@@ -2,6 +2,7 @@ name: Build and Release NPM to GPR (GitHub Package Registry)
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   build-deploy:
