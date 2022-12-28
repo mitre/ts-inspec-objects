@@ -1,14 +1,7 @@
 import mustache from 'mustache';
 import {ProfileDiff} from '../types/diff';
-import Profile from '../objects/profile';
 import _ from 'lodash';
 import template from '../resources/automatticUpdateTemplate.json';
-import {removeXMLSpecialCharacters} from './xccdf';
-
-function getUpdatedCheckForId(id: string, profile: Profile) {
-  const foundControl = profile.controls.find((control) => control.id === id);
-  return _.get(foundControl?.descs, 'check') || 'Missing check';
-}
 
 type DiffValues = {id: string, old: string, new: string}[]
 

@@ -5,7 +5,6 @@ import _ from 'lodash';
 import {findUpdatedControlByAllIdentifiers} from './update';
 import winston from 'winston';
 import {removeWhitespace} from './global';
-import {rename} from 'fs';
 
 export function removeNewlines(
   control?: Record<string, unknown>

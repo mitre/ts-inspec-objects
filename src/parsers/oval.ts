@@ -1,4 +1,3 @@
-import _ from 'lodash'
 import {convertEncodedXmlIntoJson} from '../utilities/xccdf'
 import {OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State} from '../types/oval'
 

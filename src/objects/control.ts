@@ -84,7 +84,7 @@ export default class Control {
     return new Control(unflatten(flattened));
   }
 
-  toRuby(lineLength = 80) {
+  toRuby() {
     let result = '';
 
     result += `control '${this.id}' do\n`;

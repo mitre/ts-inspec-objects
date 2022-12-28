@@ -27,6 +27,8 @@ describe('The diff utils', () => {
   it('Successfully finds the difference between a RHEL 7 V2R6 InSpec Profile and V2R7 XCCDF', () => {
     fs.writeFileSync('test/sample_data/diffs/RHEL7_V2R6_V2R7.json', JSON.stringify(diffProfile(V2R6, V2R7, thisLogger), null, 2))
     const expected = JSON.parse(fs.readFileSync('test/sample_data/diffs/RHEL7_V2R6_V2R7.json', 'utf-8'))
+
+    expect(diffProfile(V2R6, V2R7, thisLogger)).toEqual(expected)
   })
 })
 

@@ -3,7 +3,6 @@ import _ from 'lodash';
 // Breaks lines down to lineLength number of characters
 export function wrap(s: string, lineLength = 80): string {
   let newString = ''
-  const currentLine = ''
   let currentLength = 0
   let shouldBreakLine = false;
 
@@ -59,9 +58,6 @@ export function escapeQuotes(s: string): string {
     return `'${escapeSingleQuotes(removeNewlinePlaceholders(s))}'`
   }
 }
-
-const wrapAndEscapeQuotes = (s: string, lineLength?: number) =>
-  escapeDoubleQuotes(wrap(s, lineLength)); // Escape backslashes and quotes, and wrap long lines
 
 export function removeNewlinePlaceholders(s: string): string {
   return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')
