@@ -26,6 +26,19 @@ When using this library to parse `InSpec profiles` or `xccdf files` for the purp
 ```
 This means that we can not simply write out in the same format we got in. Instead, we have to make choices about formatting for how to write out content.
 
+Here are some formatting choices that are being made.
+
+1. String quotation
+
+      | The string contains | Use	|
+      |--------	|--------------------	|
+      | single (') and double (") quotes| percent string syntax - %q() |
+      | single (') quotes | double (") quotes |
+      | other | single (') quotes	|
+
+2. Tag keywords are not quoted (ex: tag severity: 'medium')
+3. Each control file ends with a newline
+
 ### Workflow graphical representation
 <div align="center">
   <img src="images/ts-inspec-objects.jpg" alt="Typescript Objects Generation Process" title="Typescript Objects Generation Process">
