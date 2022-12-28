@@ -19,7 +19,7 @@ jobs:
         node-version: '18.x'
 
      - name: Install project dependencies
-       run: npm install
+       run: npm ci
 
      - name: Run lint
        run: npm run lint:ci
