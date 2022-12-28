@@ -1,22 +1,21 @@
-import _ from "lodash";
+import _ from 'lodash';
 
 // Breaks lines down to lineLength number of characters
 export function wrap(s: string, lineLength = 80): string {
-  let newString = ""
-  let currentLine = ""
+  let newString = ''
   let currentLength = 0
   let shouldBreakLine = false;
 
-  for (var i = 0; i < s.length; i++) {
+  for (let i = 0; i < s.length; i++) {
     if (shouldBreakLine) {
-      newString += `\n`;
+      newString += '\n';
       currentLength = 0;
       shouldBreakLine = false;
     }
-    let currentChar = s.charAt(i)
-    let nextChar = s.charAt(i + 1)
+    const currentChar = s.charAt(i)
+    const nextChar = s.charAt(i + 1)
 
-    if (nextChar === " ") {
+    if (nextChar === ' ') {
       if (currentLength >= lineLength) {
         shouldBreakLine = true;
         newString += currentChar;
@@ -33,6 +32,7 @@ export function wrap(s: string, lineLength = 80): string {
   return newString;
 }
 
+// Remove new lines and tabs
 export function unformatText(s: string): string {
   return s.replace(/\n/g, ' ').replace(/\\n/g, ' ').replace(/( +|\t)/g, ' ')
 }
@@ -41,15 +41,23 @@ export function removeWhitespace(input: string): string {
   return input.replace(/\s/gi, '')
 }
 
-const escapeQuotes = (s: string) =>
-  s.replace(/\\/g, "\\\\").replace(/'/g, "\\'"); // Escape backslashes and quotes
-const escapeDoubleQuotes = (s: string) =>
-  s.replace(/\\/g, "\\\\").replace(/"/g, '\\"'); // Escape backslashes and double quotes
+const escapeSingleQuotes = (s: string) => {
+  return s.replace(/\\/g, '\\\\').replace(/'/g, "\\'"); // Escape backslashes and quotes
+}
 
-const wrapAndEscapeQuotes = (s: string, lineLength?: number) =>
-  escapeDoubleQuotes(wrap(s, lineLength)); // Escape backslashes and quotes, and wrap long lines
+const escapeDoubleQuotes = (s: string) => {
+  return s.replace(/\\/g, '\\\\').replace(/"/g, '\\"'); // Escape backslashes and double quotes
+}
 
-export { escapeQuotes, escapeDoubleQuotes, wrapAndEscapeQuotes };
+export function escapeQuotes(s: string): string {
+  if (s.includes("'") && s.includes('"')) {
+    return `%q(${removeNewlinePlaceholders(s)})` 
+  } else if (s.includes("'")) {
+    return `"${escapeDoubleQuotes(removeNewlinePlaceholders(s))}"`
+  } else {
+    return `'${escapeSingleQuotes(removeNewlinePlaceholders(s))}'`
+  }
+}
 
 export function removeNewlinePlaceholders(s: string): string {
   return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')

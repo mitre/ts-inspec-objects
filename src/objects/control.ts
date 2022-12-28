@@ -1,7 +1,7 @@
-import { ExecJSON } from "inspecjs";
-import _ from "lodash";
-import {flatten, unflatten} from "flat"
-import { escapeDoubleQuotes, escapeQuotes, removeNewlinePlaceholders, unformatText, wrapAndEscapeQuotes } from "../utilities/global";
+import _ from 'lodash';
+import {ExecJSON} from 'inspecjs';
+import {flatten, unflatten} from 'flat'
+import {escapeQuotes} from '../utilities/global';
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -76,7 +76,7 @@ export default class Control {
     const flattened: Record<string, string | number> = flatten(this)
     
     Object.entries(flattened).forEach(([key, value]) => {
-      if(typeof value === 'string') {
+      if (typeof value === 'string') {
         _.set(flattened, key, value);
       }
     });
@@ -84,28 +84,37 @@ export default class Control {
     return new Control(unflatten(flattened));
   }
 
-  toRuby(lineLength: number = 80) {
-    let result = "# encoding: UTF-8\n\n";
+  toRuby() {
+    let result = '';
 
-    result += `control "${this.id}" do\n`;
+    result += `control '${this.id}' do\n`;
     if (this.title) {
-      result += `  title "${escapeDoubleQuotes(removeNewlinePlaceholders(this.title))}"\n`;
+      result += `  title ${escapeQuotes(this.title)}\n`;
     } else {
       console.error(`${this.id} does not have a title`);
     }
 
+    // This is the known 'default' description - on previous version this content was repeated on descriptions processed by "descs"
     if (this.desc) {
-      result += `  desc "${escapeDoubleQuotes(removeNewlinePlaceholders(this.desc))}"\n`;
+      result += `  desc ${escapeQuotes(this.desc)}\n`;
     } else {
       console.error(`${this.id} does not have a desc`);
     }
 
     if (this.descs) {
-      Object.entries(this.descs).forEach(([key, desc]) => {
-        if (desc) {
-          result += `  desc "${key}", "${escapeDoubleQuotes(
-            removeNewlinePlaceholders(desc)
-          )}"\n`;
+      Object.entries(this.descs).forEach(([key, subDesc]) => {
+        if (subDesc) {
+          if (key.match('default') && this.desc) {
+            if (subDesc != this.desc) {
+              // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions.
+              // In that case, we can ignore writing the "default" subdescription field.
+              // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
+              console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique sub-descriptions.`);
+            }
+          }
+          else {
+            result += `  desc '${key}', ${escapeQuotes(subDesc)}\n`;
+          }
         } else {
           console.error(`${this.id} does not have a desc for the value ${key}`);
         }
@@ -121,34 +130,36 @@ export default class Control {
     if (this.refs) {
       this.refs.forEach((ref) => {
         if (typeof ref === 'string') {
-          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref))}'\n`;
+          result += `  ref ${escapeQuotes(ref)}\n`;
         } else {
-          result += `  ref '${escapeQuotes(removeNewlinePlaceholders(ref.ref || ''))}', url: '${escapeQuotes(removeNewlinePlaceholders(ref.url || ''))}'`
+          result += `  ref ${escapeQuotes(ref.ref?.toString() || '')}, url: ${escapeQuotes(ref.url || '')}`
         }
-        
+
       });
     }
 
     Object.entries(this.tags).forEach(([tag, value]) => {
       if (value) {
-        if (typeof value === "object") {
-          if (Array.isArray(value) && typeof value[0] === "string") {
-            result += `  tag ${tag}: ${JSON.stringify(value).split('","').join('", "')}\n`;
+        if (typeof value === 'object') {
+          if (Array.isArray(value) && typeof value[0] === 'string') {
+            // The goal is to keep the style similar to cookstyle formatting
+            result += `  tag ${tag}: ${JSON.stringify(value)
+              .replace(/"/g, "'") // replace the double quotes with single quotes, ex: ["V-72029","SV-86653"] -> ['V-72029','SV-86653']
+              .split("','")        // split the items in the string
+              .join("', '")}\n`    // join them together using single quote and a space, ex: ['V-72029','SV-86653'] -> ['V-72029', 'SV-86653']
           } else {
             // Convert JSON Object to Ruby Hash
             const stringifiedObject = JSON.stringify(value, null, 2)
-              .replace(/\n/g, "\n  ")
-              .replace(/\{\n {6}/g, "{")
-              .replace(/\[\n {8}/g, "[")
-              .replace(/\n {6}\]/g, "]")
-              .replace(/\n {4}\}/g, "}")
+              .replace(/\n/g, '\n  ')
+              .replace(/\{\n {6}/g, '{')
+              .replace(/\[\n {8}/g, '[')
+              .replace(/\n {6}\]/g, ']')
+              .replace(/\n {4}\}/g, '}')
               .replace(/": \[/g, '" => [');
             result += `  tag ${tag}: ${stringifiedObject}\n`;
           }
-        } else if (typeof value === "string") {
-          result += `  tag ${tag}: "${escapeDoubleQuotes(
-            removeNewlinePlaceholders(value)
-          )}"\n`;
+        } else if (typeof value === 'string') {
+          result += `  tag ${tag}: ${escapeQuotes(value)}\n`;
         }
       }
     });
@@ -158,7 +169,10 @@ export default class Control {
       result += this.describe
     }
 
-    result += "end";
+    if (!result.slice(-1).match('\n')) {
+      result += '\n';
+    }
+    result += 'end\n';
 
     return result;
   }

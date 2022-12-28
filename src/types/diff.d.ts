@@ -1,4 +1,4 @@
-import Control from "../objects/control"
+import Control from '../objects/control'
 
 /*
 Renamed controls are those that have changed ID number, for example from V numbers to SV numbers. This includes those with material changes, such as desc, fix, or check text updates, as well as those with only an update to ID. 

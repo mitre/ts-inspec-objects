@@ -1,11 +1,10 @@
-import { diff } from "json-diff";
-import Profile from "../objects/profile";
-import { ProfileDiff } from "../types/diff";
-import _ from "lodash";
-import { findUpdatedControlByAllIdentifiers } from "./update";
-import winston from "winston";
-import { removeWhitespace } from "./global";
-import { rename } from "fs";
+import {diff} from 'json-diff';
+import Profile from '../objects/profile';
+import {ProfileDiff} from '../types/diff';
+import _ from 'lodash';
+import {findUpdatedControlByAllIdentifiers} from './update';
+import winston from 'winston';
+import {removeWhitespace} from './global';
 
 export function removeNewlines(
   control?: Record<string, unknown>
@@ -14,9 +13,9 @@ export function removeNewlines(
     return {};
   }
   return _.mapValues(control, (value) => {
-    if (typeof value === "string") {
-      return value.replace(/\n/g, "{{{{newlineHERE}}}}").trim();
-    } else if (typeof value === "object" && value !== null) {
+    if (typeof value === 'string') {
+      return value.replace(/\n/g, '{{{{newlineHERE}}}}').trim();
+    } else if (typeof value === 'object' && value !== null) {
       return removeNewlines(value as Record<string, unknown>);
     }
     return value;
@@ -28,28 +27,28 @@ export function ignoreFormattingDiff(diffData: Record<string, unknown>) {
   return _.transform(
     diffData,
     (result: Record<string, unknown>, diffValue, key) => {
-      if (_.has(diffValue, "__new")) {
+      if (_.has(diffValue, '__new')) {
         // Remove any trailing space
         if (
-          typeof _.get(diffValue, "__new") === "string" &&
-          typeof _.get(diffValue, "__old") === "string"
+          typeof _.get(diffValue, '__new') === 'string' &&
+          typeof _.get(diffValue, '__old') === 'string'
         ) {
           if (
-            removeWhitespace(_.get(diffValue, "__new")) !==
-            removeWhitespace(_.get(diffValue, "__old"))
+            removeWhitespace(_.get(diffValue, '__new')) !==
+            removeWhitespace(_.get(diffValue, '__old'))
           ) {
-            _.set(result, key, _.get(diffValue, "__new"));
+            _.set(result, key, _.get(diffValue, '__new'));
           }
         } else {
-          result[key] = _.get(diffValue, "__new");
+          result[key] = _.get(diffValue, '__new');
         }
       } else if (Array.isArray(diffValue)) {
         result[key] = diffValue
-          .map((value) => value[0] === "+" && value[1])
+          .map((value) => value[0] === '+' && value[1])
           .filter((value) => value);
-      } else if (typeof diffValue === "object") {
+      } else if (typeof diffValue === 'object') {
         result[key] = ignoreFormattingDiff(diffValue as Record<string, unknown>);
-      } else if (key.endsWith("__deleted")) {
+      } else if (key.endsWith('__deleted')) {
         return undefined;
       } else {
         result[key] = diffValue;
@@ -90,7 +89,7 @@ export function diffProfile(
   const controlIDDiff: string[][] | undefined = diff(
     fromControlIDs,
     toControlIDs
-  )?.filter((item: string) => !(item.length === 1 && item[0] === " "));
+  )?.filter((item: string) => !(item.length === 1 && item[0] === ' '));
   
   // Contains the new IDs
   const changedControlIds: string[] = [];
@@ -98,7 +97,7 @@ export function diffProfile(
   // a diffValue has an entry for both what was subtracted ("-")
   // and what was added ("+") -- need to handle both
   controlIDDiff?.forEach((diffValue) => {
-    if (diffValue[0] === "-") {
+    if (diffValue[0] === '-') {
       const existingControl = fromProfile.controls.find(
         (control) => control.id === diffValue[1]
       );
@@ -115,7 +114,7 @@ export function diffProfile(
           changedControlIds.push(newControl.id.toLowerCase());
           const controlDiff: Record<string, any> | undefined = _.omit(
             diff(existingControl, newControl),
-            "code__deleted"
+            'code__deleted'
           );
 
           // logger.info("CONTROL DIFF:" + JSON.stringify(controlDiff, null, 2))
@@ -137,7 +136,7 @@ export function diffProfile(
       } else {
         logger.error(`Unable to find existing control ${diffValue[1]}`);
       }
-    } else if (diffValue[0] === "+" && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1] ) {
+    } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1]) {
       logger.info(JSON.stringify(diffValue))
       logger.info(JSON.stringify(changedControlIds))
       profileDiff.addedControlIDs.push(diffValue[1]);
@@ -169,16 +168,18 @@ export function diffProfile(
     if (toControl) {
       const controlDiff: Record<string, any> | undefined = _.omit(
         diff(fromControl, toControl),
-        "code__deleted"
+        'code__deleted'
       );
       if (controlDiff) {
+        // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
         profileDiff.changedControls[toControl.id!] = ignoreFormattingDiff(controlDiff);
         profileDiff.changedControlIDs.push(toControl.id);
+        // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
         originalDiff.changedControls[toControl.id!] = controlDiff;
         originalDiff.changedControlIDs.push(toControl.id);        
       }
     }
   }
 
-  return { ignoreFormattingDiff: profileDiff, rawDiff: originalDiff };
+  return {ignoreFormattingDiff: profileDiff, rawDiff: originalDiff};
 }
