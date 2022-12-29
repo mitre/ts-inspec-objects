@@ -46,8 +46,8 @@ function ensureDecodedXMLStringValue(input: string | {'#text': string, '@_lang':
 export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }>): Profile {
   const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
 
-  if(parsedXML.Benchmark === undefined) {
-    throw new Error("Could not process the XCCDF file, check the input to make sure this is a properly formatted XCCDF file.")
+  if (parsedXML.Benchmark === undefined) {
+    throw new Error('Could not process the XCCDF file, check the input to make sure this is a properly formatted XCCDF file.')
   }
 
   const rules = extractAllRules(parsedXML.Benchmark[0].Group)
