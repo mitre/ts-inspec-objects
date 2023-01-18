@@ -2,6 +2,7 @@ import _ from 'lodash';
 import {ExecJSON} from 'inspecjs';
 import {flatten, unflatten} from 'flat'
 import {escapeQuotes} from '../utilities/global';
+import {createWinstonLogger} from '../utilities/logging';
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -85,20 +86,21 @@ export default class Control {
   }
 
   toRuby() {
+    const logger = createWinstonLogger();
     let result = '';
 
     result += `control '${this.id}' do\n`;
     if (this.title) {
       result += `  title ${escapeQuotes(this.title)}\n`;
     } else {
-      console.error(`${this.id} does not have a title`);
+      logger.error(`${this.id} does not have a title`);
     }
 
     // This is the known 'default' description - on previous version this content was repeated on descriptions processed by "descs"
     if (this.desc) {
       result += `  desc ${escapeQuotes(this.desc)}\n`;
     } else {
-      console.error(`${this.id} does not have a desc`);
+      logger.error(`${this.id} does not have a desc`);
     }
 
     if (this.descs) {
@@ -109,14 +111,14 @@ export default class Control {
               // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions.
               // In that case, we can ignore writing the "default" subdescription field.
               // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
-              console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique sub-descriptions.`);
+              logger.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique sub-descriptions.`);
             }
           }
           else {
             result += `  desc '${key}', ${escapeQuotes(subDesc)}\n`;
           }
         } else {
-          console.error(`${this.id} does not have a desc for the value ${key}`);
+          logger.error(`${this.id} does not have a desc for the value ${key}`);
         }
       });
     }
@@ -124,7 +126,7 @@ export default class Control {
     if (this.impact) {
       result += `  impact ${this.impact}\n`;
     } else {
-      console.error(`${this.id} does not have an impact`);
+      logger.error(`${this.id} does not have an impact`);
     }
 
     if (this.refs) {

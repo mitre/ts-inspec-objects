@@ -6,6 +6,7 @@ import _ from 'lodash';
 import {OvalDefinitionValue} from '../types/oval';
 import {data as CciNistMappingData} from '../mappings/CciNistMappingData'
 import pretty from 'pretty'
+import {createWinstonLogger} from '../utilities/logging'
 
 export type GroupContextualizedRule = BenchmarkRule & {group: Omit<BenchmarkGroup, 'Rule' | 'Group'>}
 
@@ -44,6 +45,7 @@ function ensureDecodedXMLStringValue(input: string | {'#text': string, '@_lang':
 
 // Moving the newline removal to diff library rather than processXCCDF level
 export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }>): Profile {
+  const logger = createWinstonLogger()
   const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
 
   if (parsedXML.Benchmark === undefined) {
@@ -121,7 +123,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
     } else if (typeof extractedDescription === 'string') {
       control.desc = extractedDescription || ''
     } else {
-      console.warn(`Invalid value for extracted description: ${extractedDescription}`)
+      logger.warn(`Invalid value for extracted description: ${extractedDescription}`)
     }
 
     control.impact = severityStringToImpact(rule['@_severity'] || 'medium', rule.group['@_id'])
@@ -138,7 +140,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
         let referenceID: string | null = null;
         for (const checkContent of rule.check) {
           if ('check-content-ref' in checkContent && checkContent['@_system'].includes('oval')) {
-            console.log(`Found OVAL reference: ${checkContent['@_system']}`)
+            logger.info(`Found OVAL reference: ${checkContent['@_system']}`)
             for (const checkContentRef of checkContent['check-content-ref']) {
               if (checkContentRef['@_name']) {
                 referenceID = checkContentRef['@_name']
@@ -149,7 +151,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
         if (referenceID && referenceID in ovalDefinitions) {
           control.descs.check = removeXMLSpecialCharacters(ovalDefinitions[referenceID].metadata[0].title)
         } else if (referenceID) {
-          console.warn(`Could not find OVAL definition for ${referenceID}`)
+          logger.warn(`Could not find OVAL definition for ${referenceID}`)
         }
       }
     }
@@ -161,7 +163,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
         const allComplexChecks = extractAllComplexChecks(complexChecks)
 
         if (control.id === '1.1.1.5') {
-          console.log(allComplexChecks)
+          logger.info(allComplexChecks)
         }
 
         allComplexChecks.forEach((complexCheck) => {
@@ -170,7 +172,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
               if (check['@_system']?.toLowerCase().includes('oval')) {
                 const ovalReference = check['check-content-ref'][0]['@_name']
                 if (!ovalDefinitions) {
-                  console.warn(`Missing OVAL definitions! Unable to process OVAL reference: ${ovalReference}`)
+                  logger.warn(`Missing OVAL definitions! Unable to process OVAL reference: ${ovalReference}`)
                 } else if (ovalReference && ovalReference in ovalDefinitions) {
                   ovalDefinitions[ovalReference].resolvedValues.forEach((resolvedValue: any) => {
                     const comment = resolvedValue['@_comment']
@@ -195,7 +197,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
                   })
                 }
               } else {
-                console.warn(`Found external reference to unknown system: ${check['@_system']}, only OVAL is supported`)
+                logger.warn(`Found external reference to unknown system: ${check['@_system']}, only OVAL is supported`)
               }
             })
           }
@@ -341,17 +343,17 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
               } else if (Array.isArray(control.tags[identifierType])) {
                 control.tags[identifierType] = _.union(control.tags[identifierType] as ArrayLike<string>, [identifier])
               } else {
-                console.warn(`Attempted to push identifier to control tags when identifier already exists: ${identifierType}: ${identifier}`)
+                logger.warn(`Attempted to push identifier to control tags when identifier already exists: ${identifierType}: ${identifier}`)
               }
             } else {
-              console.warn('Reference parts of invalid length:')
-              console.log(referenceParts)
+              logger.warn('Reference parts of invalid length:')
+              logger.info(referenceParts)
             }
           }
         } catch (e) {
-          console.warn(`Error parsing ref for control ${control.id}: `)
-          console.warn(JSON.stringify(reference, null, 2))
-          console.warn(e);
+          logger.warn(`Error parsing ref for control ${control.id}: `)
+          logger.warn(JSON.stringify(reference, null, 2))
+          logger.warn(e);
         }
       }
     })

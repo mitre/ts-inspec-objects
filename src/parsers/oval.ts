@@ -1,5 +1,6 @@
 import {convertEncodedXmlIntoJson} from '../utilities/xccdf'
 import {OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State} from '../types/oval'
+import {createWinstonLogger} from '../utilities/logging';
 
 
 // https://stackoverflow.com/questions/9133500/how-to-find-a-node-in-a-tree-with-javascript
@@ -54,6 +55,8 @@ export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): 
 }
 
 export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> | undefined {
+  const logger = createWinstonLogger()
+
   if (!oval) {
     return undefined
   }
@@ -80,14 +83,14 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
             if (foundCriteriaRefererence.object) {
               foundCriteriaRefererence.object.forEach((object) => {
                 if (!object['@_object_ref']) {
-                  console.warn(`Found object without object_ref in test ${criteriaRef}`)
+                  logger.warn(`Found object without object_ref in test ${criteriaRef}`)
                 } else {
                   const objectRef = object['@_object_ref']
                   const foundObjectReference = searchTree(parsed.oval_definitions[0].objects, (oNode: any) => oNode['@_id'] === objectRef, false)[0]
                   if (foundObjectReference) {
                     foundObjects.push(foundObjectReference)
                   } else {
-                    console.warn(`Could not find object ${objectRef} for test ${criteriaRef}`)
+                    logger.warn(`Could not find object ${objectRef} for test ${criteriaRef}`)
                   }
                 }
               })
@@ -95,14 +98,14 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
             if (foundCriteriaRefererence.state) {
               foundCriteriaRefererence.state.forEach((state) => {
                 if (!state['@_state_ref']) {
-                  console.warn(`Found state without state_ref in test ${criteriaRef}`)
+                  logger.warn(`Found state without state_ref in test ${criteriaRef}`)
                 } else {
                   const stateRef = state['@_state_ref']
                   const foundStateReference = searchTree(parsed.oval_definitions[0].states, (oNode: any) => oNode['@_id'] === stateRef, false)[0]
                   if (foundStateReference) {
                     foundStates.push(foundStateReference)
                   } else {
-                    console.warn(`Could not find state ${stateRef} for test ${criteriaRef}`)
+                    logger.warn(`Could not find state ${stateRef} for test ${criteriaRef}`)
                   }
                 }
               })
