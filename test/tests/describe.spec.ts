@@ -15,10 +15,12 @@ describe('describe block extraction', () => {
     // Redefine variable `expectedOutput` for customized expected output, accordingly.
     // Tip: use an escaped string for readability (e.g., https://www.browserling.com/tools/add-slashes).
     if (file == 'comments') {
-      expectedOutput = '  # Commodo sed egestas egestas fringilla.\n  # Ultricies tristique nulla aliquet enim. \n  describe_block = nil\n  # Volutpat consequat mauris nunc congue nisi.\n=begin  Pellentesque sit amet porttitor eget. Duis at tellus at urna. Pretium aenean  pharetra magna ac placerat vestibulum lectus mauris ultrices. Bibendum at  varius vel pharetra vel turpis nunc eget lorem. Ultrices mi tempus imperdiet  nulla malesuada pellentesque elit eget gravida. =end\n\n  # This comment is in the describe block.\n\n=begin This is a multi-line comment in the describe block.  Vestibulum lorem sed risus ultricies tristique nulla. Interdum velit euismod  in pellentesque massa. Et magnis dis parturient montes nascetur ridiculus mus  mauris vitae. Augue lacus viverra vitae congue eu. Et ultrices neque ornare  aenean. Lectus urna duis convallis convallis tellus id interdum velit. =end\n\n  describe_block = nil'
+      expectedOutput = '  # Commodo sed egestas egestas fringilla.\n  # Ultricies tristique nulla aliquet enim. \n  describe_block = nil\n  # Volutpat consequat mauris nunc congue nisi.\n=begin \nPellentesque sit amet porttitor eget. Duis at tellus at urna. Pretium aenean \npharetra magna ac placerat vestibulum lectus mauris ultrices. Bibendum at \nvarius vel pharetra vel turpis nunc eget lorem. Ultrices mi tempus imperdiet \nnulla malesuada pellentesque elit eget gravida.\n=end\n\n  # This comment is in the describe block.\n\n=begin\nThis is a multi-line comment in the describe block.\n\nVestibulum lorem sed risus ultricies tristique nulla. Interdum velit euismod \nin pellentesque massa. Et magnis dis parturient montes nascetur ridiculus mus \nmauris vitae. Augue lacus viverra vitae congue eu. Et ultrices neque ornare \naenean. Lectus urna duis convallis convallis tellus id interdum velit.\n=end\n\n  describe_block = nil'
     } else if (file == 'headers-in-describe') {
       expectedOutput = '  describe_block = nil\n  if describe_block\n    impact 1.0\n    tag \'headers\': \'in describe\'\n    ref \'https://sample.com\'\n    desc \'Amet dictum sit amet justo.\'\n  end'
+    } else if (file == 'multi-line-describe-block') {
+      expectedOutput = '  describe \'Sed enim ut sem viverra. Elit pellentesque habitant morbi\n  tristique senectus et netus et malesuada. At tempor commodo ullamcorper\n  a lacus vestibulum.\' do\n    describe_block = true\n  end'
     }
-    expect(expectedOutput).toEqual(generatedOutput);
+    expect(generatedOutput).toEqual(expectedOutput);
   });
 });
