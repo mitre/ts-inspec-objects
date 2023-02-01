@@ -131,7 +131,7 @@ function joinStringsFromRanges(text: string, ranges: number[][]): string[] {
     let found = false
     for (const [x, y] of ranges) {
       if (i >= x && i <= y) {
-        output.push(lines.slice(x, y + 1).join(' '))
+        output.push(lines.slice(x, y + 1).join('\n'))
         found = true
         i = y
         break
