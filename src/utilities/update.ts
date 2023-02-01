@@ -39,23 +39,110 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
   return dst
 }
 
-/*
-  Return first index found from given array that is not an empty entry (cell)
-*/
-function getIndexOfFirstLine(auditArray: string[], index: number, action: string): number {
-  let indexVal = index;
-  while (auditArray[indexVal] === '') {
-    switch (action) {
-      case '-':
-        indexVal--
-        break;
-      case '+':
-        indexVal++
-        break;
+function getRangesFromStackUpdate(text: string): number[][] {  
+  const delims: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
+  const quotes = '\'"`'
+  const strings = 'qQriIwWxs'
+
+  const stack: string[] = []
+  const rangeStack: number[][] = []
+  const ranges: number[][] = []
+
+  const lines = text.split('\n')
+  for (let i = 0; i < lines.length; i++) {
+    let j = 0
+    while (j < lines[i].length) {
+      const line = lines[i]
+      let char = line[j]
+
+      const isEmptyStack = (stack.length == 0)
+      const isNotEmptyStack = (stack.length > 0)
+
+      const isQuoteChar = quotes.includes(char)
+      const isNotEscapeChar = ((j == 0) || (j > 0 && line[j - 1] != '\\'))
+      const isPercentChar = (char == '%')
+      const isStringDelimiterChar = ((j < line.length - 1) && (/^[^A-Za-z0-9]$/.test(line[j + 1])))
+      const isCommentBeginChar = ((j == 0) && (line.length >= 6) && (line.slice(0, 6) == '=begin'))
+      
+      const conditionOne = ((j < line.length - 1) && (strings.includes(line[j + 1])))
+      const conditionTwo = ((j < line.length - 2) && (/^[^A-Za-z0-9]$/.test(line[j + 2])))
+      const isSpecialDelimiterChar = (conditionOne && conditionTwo)
+
+      let baseCondition = (isEmptyStack && isNotEscapeChar)
+      const quotePushCondition = (baseCondition && isQuoteChar)
+      const stringPushCondition = (baseCondition && isPercentChar && isStringDelimiterChar)
+      const specialPushCondition = (baseCondition && isPercentChar && isSpecialDelimiterChar)
+      const commentBeginCondition = (baseCondition && isCommentBeginChar)
+
+      if (stringPushCondition) {
+        j += 1
+      } else if (specialPushCondition) {
+        j += 2
+      } else if (commentBeginCondition) {
+        j += 6
+      }
+      char = line[j]
+
+      baseCondition = (isNotEmptyStack && isNotEscapeChar)
+      const delimiterCondition = (baseCondition && Object.keys(delims).includes(stack[stack.length - 1]))
+      const delimiterPushCondition = (delimiterCondition && (stack[stack.length - 1] == char))
+      const delimiterPopCondition = (delimiterCondition && (delims[stack[stack.length - 1] as string] == char))
+      const basePopCondition = (baseCondition && (stack[stack.length - 1] == char) && !Object.keys(delims).includes(char))
+      const isCommentEndChar = ((j == 0) && (line.length >= 4) && (line.slice(0, 4) == '=end'))
+      const commentEndCondition = (baseCondition && isCommentEndChar && (stack[stack.length - 1] == '=begin'))
+      
+      if (basePopCondition || delimiterPopCondition || commentEndCondition) {
+        stack.pop()
+        rangeStack[rangeStack.length -1].push(i)
+        const range_ = rangeStack.pop() as number[]
+        if (rangeStack.length == 0) {
+          ranges.push(range_)
+        }
+      } else if (quotePushCondition || stringPushCondition || specialPushCondition ||
+        delimiterPushCondition || commentBeginCondition) {
+        if (commentBeginCondition) {
+          stack.push('=begin')
+        } else {
+          stack.push(char)
+        }
+        rangeStack.push([i])
+      }
+      j++
     }
   }
+  return ranges
+}
 
-  return indexVal
+function getDistinctRanges(ranges: number[][]): number[][] {
+  const output: number[][] = []
+  for (const [x, y] of ranges) {
+    if (x !== y) {
+      output.push([x, y])
+    }
+  }
+  return output
+}
+
+function joinStringsFromRanges(text: string, ranges: number[][]): string[] {
+  const lines = text.split('\n')
+  const output: string[] = []
+  let i = 0
+  while (i < lines.length) {
+    let found = false
+    for (const [x, y] of ranges) {
+      if (i >= x && i <= y) {
+        output.push(lines.slice(x, y + 1).join(' '))
+        found = true
+        i = y
+        break
+      }
+    }
+    if (!found) {
+      output.push(lines[i])
+    }
+    i++
+  }
+  return output
 }
 
 /*
@@ -63,45 +150,34 @@ function getIndexOfFirstLine(auditArray: string[], index: number, action: string
   Extract the existing describe blocks (what is actually run by inspec for validation)
 */
 export function getExistingDescribeFromControl(control: Control): string {
-  // Algorithm:
-  //   Locate the start and end of the control string
-  //   Update the end of the control that contains information (if empty lines are at the end of the control)
-  //   loop: until the start index is changed (loop is done from the bottom up)
-  //     Clean testing array entry line (removes any non-print characters)
-  //     if: line starts with meta-information 'tag' or 'ref'
-  //       set start index to found location
-  //       break out of the loop
-  //     end
-  //   end
-  //   Remove any empty lines after the start index (in any)
-  //   Extract the describe block from the audit control given the start and end indices
-  // Assumptions: 
-  //  1 - The meta-information 'tag' or 'ref' precedes the describe block
-  // Pros: Solves the potential issue with option 1, as the lookup for the meta-information
-  //       'tag' or 'ref' is expected to the at the beginning of the line.
   if (control.code) {
-    let existingDescribeBlock = ''
-    let indexStart = control.code.toLowerCase().indexOf('control')
-    let indexEnd = control.code.toLowerCase().trimEnd().lastIndexOf('end')
-    const auditControl = control.code.substring(indexStart, indexEnd).split('\n')
+    // Join multi-line strings in Control block.
+    let ranges = getRangesFromStackUpdate(control.code)
+    ranges = getDistinctRanges(ranges)
+    const lines = joinStringsFromRanges(control.code, ranges)
 
-    indexStart = 0
-    indexEnd = auditControl.length - 1
-    indexEnd = getIndexOfFirstLine(auditControl, indexEnd, '-')
-    let index = indexEnd
+    // Define RegExp for lines to skip.
+    const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
+    const skipRegExp = RegExp(skip.map(x => `(^${x})`).join('|'))
 
-    while (indexStart === 0) {
-      const line = auditControl[index].toLowerCase().trim()
-      if (line.indexOf('ref') === 0 || line.indexOf('tag') === 0) {
-        indexStart = index + 1
+    // Extract logic from code.
+    const logic: string[] = []
+    let ignoreNewLine = true
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i]
+      const checkRegExp = ((line.trim() !== '') && !skipRegExp.test(line))
+      const checkNewLine = ((line.trim() === '') && !ignoreNewLine)
+      
+      if (checkRegExp || checkNewLine) {
+        logic.push(line)
+        ignoreNewLine = false
+      } else {
+        ignoreNewLine = true
       }
-      index--
     }
 
-    indexStart = getIndexOfFirstLine(auditControl, indexStart, '+')
-    existingDescribeBlock = auditControl.slice(indexStart, indexEnd + 1).join('\n').toString()
-
-    return existingDescribeBlock
+    // Return synthesized logic
+    return logic.slice(0, logic.length - 2).join('\n') // Drop trailing ['end', '\n'] from Control block.
   } else {
     return ''
   }
