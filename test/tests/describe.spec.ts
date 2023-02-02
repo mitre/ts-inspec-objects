@@ -20,6 +20,8 @@ describe('describe block extraction', () => {
       expectedOutput = '  describe_block = nil\n  if describe_block\n    impact 1.0\n    tag \'headers\': \'in describe\'\n    ref \'https://sample.com\'\n    desc \'Amet dictum sit amet justo.\'\n  end'
     } else if (file == 'multi-line-describe-block') {
       expectedOutput = '  describe \'Sed enim ut sem viverra. Elit pellentesque habitant morbi\n  tristique senectus et netus et malesuada. At tempor commodo ullamcorper\n  a lacus vestibulum.\' do\n    describe_block = true\n  end'
+    } else if (file == 'keywords-in-strings') {
+      expectedOutput = '  keyword_in_string = \'Lorem ipsum desc test control\'\n  describe_block = nil'
     }
     expect(generatedOutput).toEqual(expectedOutput);
   });
