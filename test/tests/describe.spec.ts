@@ -3,7 +3,7 @@ import Control from '../../src/objects/control'
 import {getExistingDescribeFromControl} from '../../src/index'
 
 describe('describe block extraction', () => {
-  const pathToTestCases = 'test/sample_data/describe-test-cases'
+  const pathToTestCases = 'test/sample_data/controls-for-describe-tests'
   let files = fs.readdirSync(pathToTestCases)
   files = files.map(x => x.slice(0, x.length - 3)) // Remove the '.rb' from file names
   test.each(files)('case involving %s', (file) => {
