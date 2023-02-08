@@ -62,6 +62,11 @@ function getRangesFromStackUpdate(text: string): number[][] {
   const delims: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
   const quotes = '\'"`'
   const strings = 'qQriIwWxs'
+  enum skipChar {
+    stringSkipChar = '('.length,
+    specialSkipChar = 'q('.length,
+    commentBeginSkipChar = '=begin'.length
+  }
 
   const stack: string[] = []
   const rangeStack: number[][] = []
@@ -94,11 +99,11 @@ function getRangesFromStackUpdate(text: string): number[][] {
       const commentBeginCondition = (baseCondition && isCommentBeginChar)
 
       if (stringPushCondition) {
-        j += 1
+        j += skipChar.stringSkipChar // j += 1
       } else if (specialPushCondition) {
-        j += 2
+        j += skipChar.specialSkipChar // j += 2
       } else if (commentBeginCondition) {
-        j += 6
+        j += skipChar.commentBeginSkipChar // j += 6
       }
       char = line[j]
 
