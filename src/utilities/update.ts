@@ -40,6 +40,25 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
 }
 
 function getRangesFromStackUpdate(text: string): number[][] {  
+  /*
+    Returns an array containing two numerical indices (i.e., start and stop  
+    line numbers) for each string or multi-line comment, given raw text as 
+    an input parameter.
+
+    Algorithm utilizes a pair of stacks (i.e., `stack`, `rangeStack`) to keep 
+    track of string delimiters and their associated line numbers, respectively.
+
+    Combinations Handled:
+    - Single quotes (')
+    - Double quotes (")
+    - Back ticks (`)
+    - Mixed quotes ("`'")
+    - Percent strings (%; keys: q, Q, r, i, I, w, W, x; delimiters: (), {}, 
+      [], <>, most non-alphanumeric characters)
+    - Percent literals (%; delimiters: (), {}, [], <>, most non-
+      alphanumeric characters)
+    - Multi-line comments (e.g., =begin\nSome comment\n=end)
+  */
   const delims: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
   const quotes = '\'"`'
   const strings = 'qQriIwWxs'
@@ -114,6 +133,10 @@ function getRangesFromStackUpdate(text: string): number[][] {
 }
 
 function getDistinctRanges(ranges: number[][]): number[][] {
+  /*
+    Drops ranges with the same start and stop line numbers (i.e., strings 
+    that populate a single line)
+  */
   const output: number[][] = []
   for (const [x, y] of ranges) {
     if (x !== y) {
@@ -124,6 +147,10 @@ function getDistinctRanges(ranges: number[][]): number[][] {
 }
 
 function joinStringsFromRanges(text: string, ranges: number[][]): string[] {
+  /*
+    Returns an array of strings and joined strings at specified ranges, given 
+    raw text as an input parameter.
+  */
   const lines = text.split('\n')
   const output: string[] = []
   let i = 0
@@ -168,6 +195,7 @@ export function getExistingDescribeFromControl(control: Control): string {
       const checkRegExp = ((line.trim() !== '') && !skipRegExp.test(line))
       const checkNewLine = ((line.trim() === '') && !ignoreNewLine)
       
+      // Include '\n' if it is part of describe block, otherwise skip line.
       if (checkRegExp || checkNewLine) {
         logic.push(line)
         ignoreNewLine = false
@@ -176,7 +204,7 @@ export function getExistingDescribeFromControl(control: Control): string {
       }
     }
 
-    // Return synthesized logic
+    // Return synthesized logic as describe block
     return logic.slice(0, logic.length - 2).join('\n') // Drop trailing ['end', '\n'] from Control block.
   } else {
     return ''
