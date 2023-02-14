@@ -55,9 +55,9 @@ function getRangesForLines(text: string): number[][] {
     - Back ticks (`)
     - Mixed quotes ("`'")
     - Percent strings (%; keys: q, Q, r, i, I, w, W, x; delimiters: (), {}, 
-      [], <>, most non-alphanumeric characters)
+      [], <>, most non-alphanumeric characters); (e.g., "%q()")
     - Percent literals (%; delimiters: (), {}, [], <>, most non-
-      alphanumeric characters)
+      alphanumeric characters); (e.g., "%()")
     - Multi-line comments (e.g., =begin\nSome comment\n=end)
   */
   const delims: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
