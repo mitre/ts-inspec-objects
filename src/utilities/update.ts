@@ -116,15 +116,18 @@ function getRangesForLines(text: string): number[][] {
       const isCommentEndChar = ((j == 0) && (line.length >= 4) && (line.slice(0, 4) == '=end'))
       const commentEndCondition = (baseCondition && isCommentEndChar && (stack[stack.length - 1] == '=begin'))
       
-      if (basePopCondition || delimiterPopCondition || commentEndCondition) {
+      const popCondition = (basePopCondition || delimiterPopCondition || commentEndCondition)
+      const pushCondition = (quotePushCondition || stringPushCondition || percentStringPushCondition || 
+        delimiterPushCondition || commentBeginCondition)
+
+      if (popCondition) {
         stack.pop()
         rangeStack[rangeStack.length -1].push(i)
         const range_ = rangeStack.pop() as number[]
         if (rangeStack.length == 0) {
           ranges.push(range_)
         }
-      } else if (quotePushCondition || stringPushCondition || percentStringPushCondition ||
-        delimiterPushCondition || commentBeginCondition) {
+      } else if (pushCondition) {
         if (commentBeginCondition) {
           stack.push('=begin')
         } else {
