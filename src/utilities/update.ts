@@ -145,20 +145,6 @@ function getRangesForLines(text: string): number[][] {
   return ranges
 }
 
-// function getDistinctRanges(ranges: number[][]): number[][] {
-//   /*
-//     Drops ranges with the same start and stop line numbers (i.e., strings 
-//     that populate a single line)
-//   */
-//   const output: number[][] = []
-//   for (const [x, y] of ranges) {
-//     if (x !== y) {
-//       output.push([x, y])
-//     }
-//   }
-//   return output
-// }
-
 function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): string[] {
   /*
     Returns an array of strings and joined strings at specified ranges, given 
@@ -169,13 +155,18 @@ function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): strin
   let i = 0
   while (i < lines.length) {
     let found = false
-    for (const [start, stop] of ranges) {
-      if (i >= start && i <= stop) {
-        output.push(lines.slice(start, stop + 1).join('\n'))
+    let j = 0
+    while (j < ranges.length) {
+      const [startIndex, stopIndex] = ranges[j]
+      if (i >= startIndex && i <= stopIndex) {
+        output.push(lines.slice(startIndex, stopIndex + 1).join('\n'))
+        ranges.splice(j, 1)
         found = true
-        i = stop
+        i = stopIndex
+        j -= 1
         break
       }
+      j += 1
     }
     if (!found) {
       output.push(lines[i])
@@ -193,8 +184,7 @@ export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     // Join multi-line strings in Control block.
     const ranges = getRangesForLines(control.code)
-    // ranges = getDistinctRanges(ranges)
-    const lines = joinMultiLineStringsFromRanges(control.code, ranges)  // array of full, collapsed line InSpec control
+    const lines = joinMultiLineStringsFromRanges(control.code, ranges)  // Array of full, collapsed line InSpec control
 
     // Define RegExp for lines to skip.
     const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
