@@ -59,8 +59,10 @@ function getRangesForLines(text: string): number[][] {
     - Percent literals (%; delimiters: (), {}, [], <>, most non-
       alphanumeric characters); (e.g., "%()")
     - Multi-line comments (e.g., =begin\nSome comment\n=end)
+    - Variable delimiters (i.e., paranthesis: (); array: []; hash: {})
   */
-  const delims: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
+  const stringDelimiters: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
+  const variableDelimiters: {[key: string]: string} = {'(': ')', '{': '}', '[': ']'}
   const quotes = '\'"`'
   const strings = 'qQriIwWxs'
   enum skipCharLength {
@@ -86,6 +88,7 @@ function getRangesForLines(text: string): number[][] {
       const isQuoteChar = quotes.includes(char)
       const isNotEscapeChar = ((j == 0) || (j > 0 && line[j - 1] != '\\'))
       const isPercentChar = (char == '%')
+      const isVariableDelimiterChar = Object.keys(variableDelimiters).includes(char)
       const isStringDelimiterChar = ((j < line.length - 1) && (/^[^A-Za-z0-9]$/.test(line[j + 1])))
       const isCommentBeginChar = ((j == 0) && (line.length >= 6) && (line.slice(0, 6) == '=begin'))
       
@@ -95,6 +98,7 @@ function getRangesForLines(text: string): number[][] {
 
       let baseCondition = (isEmptyStack && isNotEscapeChar)
       const quotePushCondition = (baseCondition && isQuoteChar)
+      const variablePushCondition = (baseCondition && isVariableDelimiterChar)
       const stringPushCondition = (baseCondition && isPercentChar && isStringDelimiterChar)
       const percentStringPushCondition = (baseCondition && isPercentChar && isPercentString)
       const commentBeginCondition = (baseCondition && isCommentBeginChar)
@@ -109,16 +113,16 @@ function getRangesForLines(text: string): number[][] {
       char = line[j]
 
       baseCondition = (isNotEmptyStack && isNotEscapeChar)
-      const delimiterCondition = (baseCondition && Object.keys(delims).includes(stack[stack.length - 1]))
+      const delimiterCondition = (baseCondition && Object.keys(stringDelimiters).includes(stack[stack.length - 1]))
       const delimiterPushCondition = (delimiterCondition && (stack[stack.length - 1] == char))
-      const delimiterPopCondition = (delimiterCondition && (delims[stack[stack.length - 1] as string] == char))
-      const basePopCondition = (baseCondition && (stack[stack.length - 1] == char) && !Object.keys(delims).includes(char))
+      const delimiterPopCondition = (delimiterCondition && (stringDelimiters[stack[stack.length - 1] as string] == char))
+      const basePopCondition = (baseCondition && (stack[stack.length - 1] == char) && !Object.keys(stringDelimiters).includes(char))
       const isCommentEndChar = ((j == 0) && (line.length >= 4) && (line.slice(0, 4) == '=end'))
       const commentEndCondition = (baseCondition && isCommentEndChar && (stack[stack.length - 1] == '=begin'))
       
       const popCondition = (basePopCondition || delimiterPopCondition || commentEndCondition)
-      const pushCondition = (quotePushCondition || stringPushCondition || percentStringPushCondition || 
-        delimiterPushCondition || commentBeginCondition)
+      const pushCondition = (quotePushCondition || variablePushCondition || stringPushCondition || 
+        percentStringPushCondition || delimiterPushCondition || commentBeginCondition)
 
       if (popCondition) {
         stack.pop()
