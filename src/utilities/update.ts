@@ -39,11 +39,12 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
   return dst
 }
 
-function getRangesFromStackUpdate(text: string): number[][] {  
+function getRangesForLines(text: string): number[][] {  
   /*
     Returns an array containing two numerical indices (i.e., start and stop  
     line numbers) for each string or multi-line comment, given raw text as 
-    an input parameter.
+    an input parameter. The raw text is a string containing the entirety of an 
+    InSpec control. 
 
     Algorithm utilizes a pair of stacks (i.e., `stack`, `rangeStack`) to keep 
     track of string delimiters and their associated line numbers, respectively.
@@ -62,10 +63,10 @@ function getRangesFromStackUpdate(text: string): number[][] {
   const delims: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
   const quotes = '\'"`'
   const strings = 'qQriIwWxs'
-  enum skipChar {
-    stringSkipChar = '('.length,
-    specialSkipChar = 'q('.length,
-    commentBeginSkipChar = '=begin'.length
+  enum skipCharLength {
+    string = '('.length,
+    percentString = 'q('.length,
+    commentBegin = '=begin'.length
   }
 
   const stack: string[] = []
@@ -88,22 +89,22 @@ function getRangesFromStackUpdate(text: string): number[][] {
       const isStringDelimiterChar = ((j < line.length - 1) && (/^[^A-Za-z0-9]$/.test(line[j + 1])))
       const isCommentBeginChar = ((j == 0) && (line.length >= 6) && (line.slice(0, 6) == '=begin'))
       
-      const conditionOne = ((j < line.length - 1) && (strings.includes(line[j + 1])))
-      const conditionTwo = ((j < line.length - 2) && (/^[^A-Za-z0-9]$/.test(line[j + 2])))
-      const isSpecialDelimiterChar = (conditionOne && conditionTwo)
+      const isPercentStringKeyChar = ((j < line.length - 1) && (strings.includes(line[j + 1])))
+      const isPercentStringDelimiterChar = ((j < line.length - 2) && (/^[^A-Za-z0-9]$/.test(line[j + 2])))
+      const isPercentString = (isPercentStringKeyChar && isPercentStringDelimiterChar)
 
       let baseCondition = (isEmptyStack && isNotEscapeChar)
       const quotePushCondition = (baseCondition && isQuoteChar)
       const stringPushCondition = (baseCondition && isPercentChar && isStringDelimiterChar)
-      const specialPushCondition = (baseCondition && isPercentChar && isSpecialDelimiterChar)
+      const percentStringPushCondition = (baseCondition && isPercentChar && isPercentString)
       const commentBeginCondition = (baseCondition && isCommentBeginChar)
 
       if (stringPushCondition) {
-        j += skipChar.stringSkipChar // j += 1
-      } else if (specialPushCondition) {
-        j += skipChar.specialSkipChar // j += 2
+        j += skipCharLength.string // j += 1
+      } else if (percentStringPushCondition) {
+        j += skipCharLength.percentString // j += 2
       } else if (commentBeginCondition) {
-        j += skipChar.commentBeginSkipChar // j += 6
+        j += skipCharLength.commentBegin // j += 6
       }
       char = line[j]
 
@@ -122,7 +123,7 @@ function getRangesFromStackUpdate(text: string): number[][] {
         if (rangeStack.length == 0) {
           ranges.push(range_)
         }
-      } else if (quotePushCondition || stringPushCondition || specialPushCondition ||
+      } else if (quotePushCondition || stringPushCondition || percentStringPushCondition ||
         delimiterPushCondition || commentBeginCondition) {
         if (commentBeginCondition) {
           stack.push('=begin')
@@ -137,21 +138,21 @@ function getRangesFromStackUpdate(text: string): number[][] {
   return ranges
 }
 
-function getDistinctRanges(ranges: number[][]): number[][] {
-  /*
-    Drops ranges with the same start and stop line numbers (i.e., strings 
-    that populate a single line)
-  */
-  const output: number[][] = []
-  for (const [x, y] of ranges) {
-    if (x !== y) {
-      output.push([x, y])
-    }
-  }
-  return output
-}
+// function getDistinctRanges(ranges: number[][]): number[][] {
+//   /*
+//     Drops ranges with the same start and stop line numbers (i.e., strings 
+//     that populate a single line)
+//   */
+//   const output: number[][] = []
+//   for (const [x, y] of ranges) {
+//     if (x !== y) {
+//       output.push([x, y])
+//     }
+//   }
+//   return output
+// }
 
-function joinStringsFromRanges(text: string, ranges: number[][]): string[] {
+function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): string[] {
   /*
     Returns an array of strings and joined strings at specified ranges, given 
     raw text as an input parameter.
@@ -161,11 +162,11 @@ function joinStringsFromRanges(text: string, ranges: number[][]): string[] {
   let i = 0
   while (i < lines.length) {
     let found = false
-    for (const [x, y] of ranges) {
-      if (i >= x && i <= y) {
-        output.push(lines.slice(x, y + 1).join('\n'))
+    for (const [start, stop] of ranges) {
+      if (i >= start && i <= stop) {
+        output.push(lines.slice(start, stop + 1).join('\n'))
         found = true
-        i = y
+        i = stop
         break
       }
     }
@@ -184,9 +185,9 @@ function joinStringsFromRanges(text: string, ranges: number[][]): string[] {
 export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     // Join multi-line strings in Control block.
-    let ranges = getRangesFromStackUpdate(control.code)
-    ranges = getDistinctRanges(ranges)
-    const lines = joinStringsFromRanges(control.code, ranges)
+    const ranges = getRangesForLines(control.code)
+    // ranges = getDistinctRanges(ranges)
+    const lines = joinMultiLineStringsFromRanges(control.code, ranges)  // array of full, collapsed line InSpec control
 
     // Define RegExp for lines to skip.
     const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
@@ -195,8 +196,7 @@ export function getExistingDescribeFromControl(control: Control): string {
     // Extract logic from code.
     const logic: string[] = []
     let ignoreNewLine = true
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i]
+    for (const line of lines) {
       const checkRegExp = ((line.trim() !== '') && !skipRegExp.test(line))
       const checkNewLine = ((line.trim() === '') && !ignoreNewLine)
       
