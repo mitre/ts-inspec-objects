@@ -163,7 +163,6 @@ function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): strin
         ranges.splice(j, 1)
         found = true
         i = stopIndex
-        // j -= 1
         break
       }
       j += 1
