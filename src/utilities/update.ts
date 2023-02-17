@@ -150,16 +150,16 @@ function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): strin
     Returns an array of strings and joined strings at specified ranges, given 
     raw text as an input parameter.
   */
-  const lines = text.split('\n')
-  const output: string[] = []
+  const originalLines = text.split('\n')
+  const joinedLines: string[] = []
   let i = 0
-  while (i < lines.length) {
+  while (i < originalLines.length) {
     let found = false
     let j = 0
     while (j < ranges.length) {
       const [startIndex, stopIndex] = ranges[j]
       if (i >= startIndex && i <= stopIndex) {
-        output.push(lines.slice(startIndex, stopIndex + 1).join('\n'))
+        joinedLines.push(originalLines.slice(startIndex, stopIndex + 1).join('\n'))
         ranges.splice(j, 1)
         found = true
         i = stopIndex
@@ -168,11 +168,11 @@ function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): strin
       j += 1
     }
     if (!found) {
-      output.push(lines[i])
+      joinedLines.push(originalLines[i])
     }
     i++
   }
-  return output
+  return joinedLines
 }
 
 /*
@@ -181,16 +181,16 @@ function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): strin
 */
 export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
-    // Join multi-line strings in Control block.
+    // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
-    const lines = joinMultiLineStringsFromRanges(control.code, ranges)  // Array of full, collapsed line InSpec control
+    const lines = joinMultiLineStringsFromRanges(control.code, ranges)  // Array of lines representing the full InSpec control, with multi-line strings collapsed
 
-    // Define RegExp for lines to skip.
+    // Define RegExp for lines to skip when searching for describe block.
     const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
     const skipRegExp = RegExp(skip.map(x => `(^${x})`).join('|'))
 
-    // Extract logic from code.
-    const logic: string[] = []
+    // Extract describe block from InSpec control with collapsed multiline strings.
+    const describeBlock: string[] = []
     let ignoreNewLine = true
     for (const line of lines) {
       const checkRegExp = ((line.trim() !== '') && !skipRegExp.test(line))
@@ -198,15 +198,13 @@ export function getExistingDescribeFromControl(control: Control): string {
       
       // Include '\n' if it is part of describe block, otherwise skip line.
       if (checkRegExp || checkNewLine) {
-        logic.push(line)
+        describeBlock.push(line)
         ignoreNewLine = false
       } else {
         ignoreNewLine = true
       }
     }
-
-    // Return synthesized logic as describe block
-    return logic.slice(0, logic.length - 2).join('\n') // Drop trailing ['end', '\n'] from Control block.
+    return describeBlock.slice(0, describeBlock.length - 2).join('\n') // Drop trailing ['end', '\n'] from Control block.
   } else {
     return ''
   }
