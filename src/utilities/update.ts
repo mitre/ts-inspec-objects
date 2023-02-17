@@ -81,7 +81,7 @@ function getRangesForLines(text: string): number[][] {
     while (j < lines[i].length) {
       const line = lines[i]
       let char = line[j]
-
+      
       const isEmptyStack = (stack.length == 0)
       const isNotEmptyStack = (stack.length > 0)
 
@@ -95,14 +95,14 @@ function getRangesForLines(text: string): number[][] {
       const isPercentStringKeyChar = ((j < line.length - 1) && (strings.includes(line[j + 1])))
       const isPercentStringDelimiterChar = ((j < line.length - 2) && (/^[^A-Za-z0-9]$/.test(line[j + 2])))
       const isPercentString = (isPercentStringKeyChar && isPercentStringDelimiterChar)
-
+      
       let baseCondition = (isEmptyStack && isNotEscapeChar)
       const quotePushCondition = (baseCondition && isQuoteChar)
       const variablePushCondition = (baseCondition && isVariableDelimiterChar)
       const stringPushCondition = (baseCondition && isPercentChar && isStringDelimiterChar)
       const percentStringPushCondition = (baseCondition && isPercentChar && isPercentString)
       const commentBeginCondition = (baseCondition && isCommentBeginChar)
-
+      
       if (stringPushCondition) {
         j += skipCharLength.string // j += 1
       } else if (percentStringPushCondition) {
@@ -111,7 +111,7 @@ function getRangesForLines(text: string): number[][] {
         j += skipCharLength.commentBegin // j += 6
       }
       char = line[j]
-
+      
       baseCondition = (isNotEmptyStack && isNotEscapeChar)
       const delimiterCondition = (baseCondition && Object.keys(stringDelimiters).includes(stack[stack.length - 1]))
       const delimiterPushCondition = (delimiterCondition && (stack[stack.length - 1] == char))
@@ -123,7 +123,7 @@ function getRangesForLines(text: string): number[][] {
       const popCondition = (basePopCondition || delimiterPopCondition || commentEndCondition)
       const pushCondition = (quotePushCondition || variablePushCondition || stringPushCondition || 
         percentStringPushCondition || delimiterPushCondition || commentBeginCondition)
-
+        
       if (popCondition) {
         stack.pop()
         rangeStack[rangeStack.length -1].push(i)
@@ -154,25 +154,35 @@ function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): strin
   const joinedLines: string[] = []
   let i = 0
   while (i < originalLines.length) {
-    let found = false
-    let j = 0
-    while (j < ranges.length) {
-      const [startIndex, stopIndex] = ranges[j]
+    let foundInRanges = false
+    for (const [startIndex, stopIndex] of ranges) {
       if (i >= startIndex && i <= stopIndex) {
         joinedLines.push(originalLines.slice(startIndex, stopIndex + 1).join('\n'))
-        ranges.splice(j, 1)
-        found = true
+        foundInRanges = true
         i = stopIndex
         break
       }
-      j += 1
     }
-    if (!found) {
+    if (!foundInRanges) {
       joinedLines.push(originalLines[i])
     }
     i++
   }
   return joinedLines
+}
+
+function getMultiLineRanges(ranges: number[][]): number[][] {
+  /*
+    Drops ranges with the same start and stop line numbers (i.e., strings 
+    that populate a single line)
+  */
+  const multiLineRanges: number[][] = []
+  for (const [start, stop] of ranges) {
+    if (start !== stop) {
+      multiLineRanges.push([start, stop])
+    }
+  }
+  return multiLineRanges
 }
 
 /*
@@ -183,7 +193,8 @@ export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
-    const lines = joinMultiLineStringsFromRanges(control.code, ranges)  // Array of lines representing the full InSpec control, with multi-line strings collapsed
+    const multiLineRanges = getMultiLineRanges(ranges)
+    const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges)  // Array of lines representing the full InSpec control, with multi-line strings collapsed
 
     // Define RegExp for lines to skip when searching for describe block.
     const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
