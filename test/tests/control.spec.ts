@@ -25,11 +25,17 @@ describe('The control functionality', () => {
       5. Compare the expected and actual results.
       6. Make any changes in the control.ts functionality
   */
-  const generated1 = fs.readFileSync('test/sample_data/controls-test-results/SV-204474.rb','utf-8')
-  const expected1 = fs.readFileSync('test/sample_data/controls-cookstyle/SV-204474.rb', 'utf-8')
+  const generated = fs.readFileSync('test/sample_data/controls-test-results/SV-205653.rb','utf-8')
+  const expected = fs.readFileSync('test/sample_data/controls-cookstyle/SV-205653.rb', 'utf-8')
   // NOTE:
   //   The "expected" file was generated using end of line characters (CRLF). 
   //   We remove all CR from both files before comparing
+  it('should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle', () => {
+    expect(generated.replace(/\r/gi, '')).toEqual(expected.replace(/\r/gi, ''));
+  })
+
+  const generated1 = fs.readFileSync('test/sample_data/controls-test-results/SV-204474.rb','utf-8')
+  const expected1 = fs.readFileSync('test/sample_data/controls-cookstyle/SV-204474.rb', 'utf-8')
   it('should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle', () => {
     expect(generated1.replace(/\r/gi, '')).toEqual(expected1.replace(/\r/gi, ''));
   })
