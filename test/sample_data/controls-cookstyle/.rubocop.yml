@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 Style/WordArray:
   Description: 'Use %w or %W for an array of words. (https://rubystyle.guide#percent-w)'
   Enabled : false

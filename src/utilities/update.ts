@@ -61,6 +61,7 @@ function getRangesFromStackUpdate(text: string): number[][] {
   */
   const delims: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
   const quotes = '\'"`'
+  const inputStr = "#"
   const strings = 'qQriIwWxs'
   enum skipChar {
     stringSkipChar = '('.length,
@@ -83,6 +84,7 @@ function getRangesFromStackUpdate(text: string): number[][] {
       const isNotEmptyStack = (stack.length > 0)
 
       const isQuoteChar = quotes.includes(char)
+      const isInputChar = (char == '#' && line.includes('#{input'))
       const isNotEscapeChar = ((j == 0) || (j > 0 && line[j - 1] != '\\'))
       const isPercentChar = (char == '%')
       const isStringDelimiterChar = ((j < line.length - 1) && (/^[^A-Za-z0-9]$/.test(line[j + 1])))
@@ -97,6 +99,11 @@ function getRangesFromStackUpdate(text: string): number[][] {
       const stringPushCondition = (baseCondition && isPercentChar && isStringDelimiterChar)
       const specialPushCondition = (baseCondition && isPercentChar && isSpecialDelimiterChar)
       const commentBeginCondition = (baseCondition && isCommentBeginChar)
+
+      if (isInputChar) {
+        j = line.lastIndexOf('}')
+      }
+      char = line[j]
 
       if (stringPushCondition) {
         j += skipChar.stringSkipChar // j += 1
@@ -188,8 +195,9 @@ export function getExistingDescribeFromControl(control: Control): string {
     ranges = getDistinctRanges(ranges)
     const lines = joinStringsFromRanges(control.code, ranges)
 
-    // Define RegExp for lines to skip.
-    const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
+    // Define RegExp for lines to skip. [ ]+ -> means one or more spaces
+    //const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
+    const skip = ['control\\W', '[ ]+control\\W', '[ ]+title\\W', '[ ]+desc\\W', '[ ]+impact\\W', '[ ]+tag\\W', '[ ]+ref\\W']
     const skipRegExp = RegExp(skip.map(x => `(^${x})`).join('|'))
 
     // Extract logic from code.
@@ -199,23 +207,23 @@ export function getExistingDescribeFromControl(control: Control): string {
       const line = lines[i]
       const checkRegExp = ((line.trim() !== '') && !skipRegExp.test(line))
       const checkNewLine = ((line.trim() === '') && !ignoreNewLine)
-      
+     
       // Include '\n' if it is part of describe block, otherwise skip line.
       if (checkRegExp || checkNewLine) {
-        logic.push(line)
-        ignoreNewLine = false
+        // Workaround until we fix the orphan multiline array entries
+        if (line.at(0) === ' ' || line.startsWith('end') || line.startsWith('describe')) {
+          logic.push(line)
+          ignoreNewLine = false
+        }
       } else {
         ignoreNewLine = true
       }
     }
 
     // Return synthesized logic as describe block
-    const slicePad = logic.at(logic.length-1)?.trim() == '' ? 2 : 1
-    
-    console.log(`logic before: ${logic}`)
-    console.log(`logic after: ${logic.slice(0, logic.length - slicePad).join('\n')}`)
-
-    return logic.slice(0, logic.length - slicePad).join('\n') // Drop trailing ['end', '\n'] from Control block.
+    //return logic.slice(0, logic.length - slicePad).join('\n') // Drop trailing ['end', '\n'] from Control block.
+   // console.log("LOGIC IS: ", logic)
+    return logic.slice(0, logic.lastIndexOf('end')).join('\n') // Drop trailing ['end', '\n'] from Control block.
   } else {
     return ''
   }

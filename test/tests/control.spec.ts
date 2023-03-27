@@ -3,10 +3,13 @@ import path from 'path'
 import {processInSpecProfile} from '../../src/index'
 
 describe('The control functionality', () => {
-  const cookstyle_profile = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/cookstyle-controls-profile.json', 'utf-8'))
+  const cookstyle_profile = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/cookstyle-controls-profile-new.json', 'utf-8'))
+  
+  //fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results','cookstyle_profile.json'), JSON.stringify(cookstyle_profile,null,2))
+ 
   cookstyle_profile.controls.forEach(control => {
     // Write the new control to the controls folder
-    fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results', `${control.id}.rb`), control.toRuby())
+      fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results', `${control.id}.rb`), control.toRuby(false))
   })
 
   // This check is comparing what the function "toRuby" is outputting with a small sample profile created from the controls in the 'controls-cookstyle' folder.
@@ -25,30 +28,56 @@ describe('The control functionality', () => {
       5. Compare the expected and actual results.
       6. Make any changes in the control.ts functionality
   */
-  const generated = fs.readFileSync('test/sample_data/controls-test-results/SV-205653.rb','utf-8')
-  const expected = fs.readFileSync('test/sample_data/controls-cookstyle/SV-205653.rb', 'utf-8')
+
   // NOTE:
-  //   The "expected" file was generated using end of line characters (CRLF). 
+  //   The "expected" files were generated using end of line characters (CRLF). 
   //   We remove all CR from both files before comparing
-  it('should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle', () => {
-    expect(generated.replace(/\r/gi, '')).toEqual(expected.replace(/\r/gi, ''));
+
+  const generated2 = fs.readFileSync('test/sample_data/controls-test-results/SV-205734.rb','utf-8')
+  const expected2 = fs.readFileSync('test/sample_data/controls-cookstyle/controls/SV-205734.rb', 'utf-8')
+  it('should properly write a control with embedded %q() cookstyle formatting', () => {
+    expect(generated2.replace(/\r/gi, '')).toEqual(expected2.replace(/\r/gi, ''));
   })
 
-  const generated1 = fs.readFileSync('test/sample_data/controls-test-results/SV-204474.rb','utf-8')
-  const expected1 = fs.readFileSync('test/sample_data/controls-cookstyle/SV-204474.rb', 'utf-8')
-  it('should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle', () => {
-    expect(generated1.replace(/\r/gi, '')).toEqual(expected1.replace(/\r/gi, ''));
+  const generated3 = fs.readFileSync('test/sample_data/controls-test-results/V-93149.rb','utf-8')
+  const expected3 = fs.readFileSync('test/sample_data/controls-cookstyle/controls/V-93149.rb', 'utf-8')
+  it('should properly write a control with embedded inputs (#{input()})', () => {
+    expect(generated3.replace(/\r/gi, '')).toEqual(expected3.replace(/\r/gi, ''));
   })
 
-  const generated2 = fs.readFileSync('test/sample_data/controls-test-results/SV-204392.rb','utf-8')
-  const expected2 = fs.readFileSync('test/sample_data/controls-cookstyle/SV-204392.rb', 'utf-8')
+  const generated4 = fs.readFileSync('test/sample_data/controls-test-results/V-92979.rb','utf-8')
+  const expected4 = fs.readFileSync('test/sample_data/controls-cookstyle/controls/V-92979.rb', 'utf-8')
+  it('should properly write a control with long tag arrays', () => {
+    expect(generated4.replace(/\r/gi, '')).toEqual(expected4.replace(/\r/gi, ''));
+  })
+
+  const generated5 = fs.readFileSync('test/sample_data/controls-test-results/V-92975.rb','utf-8')
+  const expected5 = fs.readFileSync('test/sample_data/controls-cookstyle/controls/V-92975.rb', 'utf-8')
+  it('should properly write a control with complicated and long describe block', () => {
+    expect(generated5.replace(/\r/gi, '')).toEqual(expected5.replace(/\r/gi, ''));
+  })
+
+  const generated6 = fs.readFileSync('test/sample_data/controls-test-results/SV-205653.rb','utf-8')
+  const expected6 = fs.readFileSync('test/sample_data/controls-cookstyle/controls/SV-205653.rb', 'utf-8')
+  it('should properly write a control with simple description block', () => {
+    expect(generated6.replace(/\r/gi, '')).toEqual(expected6.replace(/\r/gi, ''));
+  })
+
+  const generated7 = fs.readFileSync('test/sample_data/controls-test-results/SV-204474.rb','utf-8')
+  const expected7 = fs.readFileSync('test/sample_data/controls-cookstyle/controls/SV-204474.rb', 'utf-8')
+  it('should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle', () => {
+    expect(generated7.replace(/\r/gi, '')).toEqual(expected7.replace(/\r/gi, ''));
+  })
+
+  const generated8 = fs.readFileSync('test/sample_data/controls-test-results/SV-204392.rb','utf-8')
+  const expected8 = fs.readFileSync('test/sample_data/controls-cookstyle/controls/SV-204392.rb', 'utf-8')
   it('should correctly write the control structure using single quote string as suggested by cookstyle', () => {
-    expect(generated2.replace(/\r/gi, '')).not.toEqual(expected2.replace(/\r/gi, ''));
+    expect(generated8.replace(/\r/gi, '')).not.toEqual(expected8.replace(/\r/gi, ''));
   })
 
-  const generated3 = fs.readFileSync('test/sample_data/controls-test-results/SV-230385.rb','utf-8')
-  const expected3 = fs.readFileSync('test/sample_data/controls-cookstyle/SV-230385.rb', 'utf-8')
+  const generated9 = fs.readFileSync('test/sample_data/controls-test-results/SV-230385.rb','utf-8')
+  const expected9 = fs.readFileSync('test/sample_data/controls-cookstyle/controls/SV-230385.rb', 'utf-8')
   it('should extract describe block that includes keywords (e.g., tag, impact).', () => {
-    expect(generated3.replace(/\r/gi, '')).not.toEqual(expected3.replace(/\r/gi, ''));
+    expect(generated9.replace(/\r/gi, '')).not.toEqual(expected9.replace(/\r/gi, ''));
   })
 })

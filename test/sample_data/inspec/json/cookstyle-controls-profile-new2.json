@@ -1,0 +1,518 @@
+{
+  "name": "microsoft-windows-server-2019-stig-baseline",
+  "title": "microsoft-windows-server-2019-stig-baseline",
+  "maintainer": "The Authors",
+  "copyright": "The Authors",
+  "copyright_email": "you@example.com",
+  "license": "Apache-2.0",
+  "summary": "Inspec Validation Profile for Microsoft Windows Member Server 2019 STIG",
+  "version": "1.3.24",
+  "inspec_version": ">= 4.0",
+  "inputs": [
+    {
+      "name": "org_name",
+      "options": {
+        "type": "Hash",
+        "value": { "acronym": "DoD", "full_form": "Department of Defense" }
+      }
+    },
+    {
+      "name": "temp_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "temp_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "temporary_account_period",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    {
+      "name": "temporary_account_period_phrase",
+      "options": { "type": "String", "value": "72 hours" }
+    },
+    {
+      "name": "emergency_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "emergency_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "emergency_account_period",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    {
+      "name": "emergency_account_period_phrase",
+      "options": { "type": "String", "value": "72 hours" }
+    },
+    {
+      "name": "max_pass_lockout",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    { "name": "pass_lock_time", "options": { "type": "Numeric", "value": 15 } },
+    {
+      "name": "pass_lock_duration",
+      "options": { "type": "Numeric", "value": 15 }
+    },
+    {
+      "name": "app_password_age",
+      "options": { "type": "Numeric", "value": 365 }
+    },
+    {
+      "name": "maximum_password_age_machine",
+      "options": { "type": "Numeric", "value": 30 }
+    },
+    {
+      "name": "maximum_idle_time",
+      "options": { "type": "Numeric", "value": 300 }
+    },
+    {
+      "name": "maximum_idle_time_phrase",
+      "options": { "type": "String", "value": "5 minutes" }
+    },
+    {
+      "name": "unused_account_age",
+      "options": { "type": "Numeric", "value": 35 }
+    },
+    {
+      "name": "minimum_password_length_manual",
+      "options": { "type": "Numeric", "value": 15 }
+    },
+    {
+      "name": "minimum_password_length",
+      "options": { "type": "Numeric", "value": 14 }
+    },
+    {
+      "name": "minimum_password_age",
+      "options": { "type": "Numeric", "value": 1 }
+    },
+    {
+      "name": "maximum_password_age",
+      "options": { "type": "Numeric", "value": 60 }
+    },
+    {
+      "name": "password_history_size",
+      "options": { "type": "Numeric", "value": 24 }
+    },
+    {
+      "name": "enable_password_complexity",
+      "options": { "type": "Numeric", "value": 1 }
+    },
+    {
+      "name": "allowed_network_access_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-32-544", "S-1-5-11", "S-1-5-9"]
+      }
+    },
+    {
+      "name": "disallowed_network_access_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "allowed_global_privilege_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-32-544", "S-1-5-6", "S-1-5-19", "S-1-5-20"],
+        "sensitive": true
+      }
+    },
+    {
+      "name": "disallowed_global_privilege_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "allowed_audit_privilege_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-19", "S-1-5-20"],
+        "sensitive": true
+      }
+    },
+    {
+      "name": "disallowed_audit_privilege_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "c_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\\\SYSTEM:(OI)(CI)(F)",
+          "BUILTIN\\Administrators:(OI)(CI)(F)",
+          "BUILTIN\\Users:(OI)(CI)(RX)",
+          "BUILTIN\\Users:(CI)(AD)",
+          "BUILTIN\\Users:(CI)(IO)(WD)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)"
+        ]
+      }
+    },
+    {
+      "name": "c_program_files_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\TrustedInstaller:(F)",
+          "NT SERVICE\\TrustedInstaller:(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Administrators:(M)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Users:(RX)",
+          "BUILTIN\\Users:(OI)(CI)(IO)(GR,GE)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)"
+        ]
+      }
+    },
+    {
+      "name": "c_windows_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\TrustedInstaller:(F)",
+          "NT SERVICE\\TrustedInstaller:(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Administrators:(M)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Users:(RX)",
+          "BUILTIN\\Users:(OI)(CI)(IO)(GR,GE)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)"
+        ]
+      }
+    },
+    {
+      "name": "reg_software_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "CREATOR OWNER Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey"
+        ]
+      }
+    },
+    {
+      "name": "reg_system_perms_dc",
+      "options": {
+        "value": [
+          "CREATOR OWNER Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  268435456",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Server Operators Allow ReadKey",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  -2147483648",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  -2147483648"
+        ]
+      }
+    },
+    {
+      "name": "reg_security_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  ReadPermissions, ChangePermissions"
+        ]
+      }
+    },
+    {
+      "name": "reg_system_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "CREATOR OWNER Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  268435456",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Users Allow  -2147483648",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  -2147483648",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  -2147483648"
+        ]
+      }
+    },
+    {
+      "name": "local_administrators_dc",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "local_administrators_member",
+      "options": { "type": "Array", "value": [null], "sensitive": true }
+    },
+    {
+      "name": "local_administrator",
+      "options": { "type": "String", "value": "", "sensitive": true }
+    },
+    {
+      "name": "ntds_permissions",
+      "options": {
+        "type": "Array",
+        "value": [
+          "BUILTIN\\Administrators:(I)(F)",
+          "NT AUTHORITY\\SYSTEM:(I)(F)"
+        ]
+      }
+    },
+    {
+      "name": "c_windows_sysvol_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\Authenticated Users:(RX)",
+          "NT AUTHORITY\\Authenticated Users:(OI)(CI)(IO)(GR,GE)",
+          "BUILTIN\\Server Operators:(RX)",
+          "BUILTIN\\Server Operators:(OI)(CI)(IO)(GR,GE)",
+          "BUILTIN\\Administrators:(M,WDAC,WO)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(F)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M,WDAC,WO)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)"
+        ]
+      }
+    },
+    {
+      "name": "LegalNoticeText",
+      "options": {
+        "type": "String",
+        "value": "You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions: -The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. -At any time, the USG may inspect and seize data stored on this IS. -Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. -This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. -Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants.  Such communications and work product are private and confidential.  See User Agreement for details."
+      }
+    },
+    {
+      "name": "LegalNoticeCaption",
+      "options": {
+        "type": "Array",
+        "value": [
+          "DoD Notice and Consent Banner",
+          "US Department of Defense Warning Statement"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_application_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_security_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_system_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "eventvwr_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\SYSTEM Allow  ReadAndExecute, Synchronize",
+          "BUILTIN\\Administrators Allow  ReadAndExecute, Synchronize",
+          "BUILTIN\\Users Allow  ReadAndExecute, Synchronize",
+          "NT SERVICE\\TrustedInstaller Allow  FullControl",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadAndExecute, Synchronize",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES Allow  ReadAndExecute, Synchronize"
+        ]
+      }
+    },
+    {
+      "name": "backup_operators",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "application_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "excluded_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "application_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "excluded_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "av_approved_software",
+      "options": {
+        "type": "Array",
+        "value": [
+          "Windows Defender",
+          "McAfee Host Intrusion Prevention",
+          "McAfee Endpoint Security",
+          "McAfee Agent"
+        ]
+      }
+    },
+    {
+      "name": "sensitive_system",
+      "options": { "type": "Boolean", "value": false }
+    },
+    { "name": "ftp_server", "options": { "type": "Boolean", "value": false } },
+    { "name": "ntp_servers", "options": { "type": "Array", "value": [null] } },
+    {
+      "name": "dod_root_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "8C941B34EA1EA6ED9AE2BC54CF687252B4C9B561",
+            "NotAfter": "Wednesday, December 05, 2029"
+          },
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "D73CA91102A2204A36459ED32213B467D7CE97FB",
+            "NotAfter": "Sunday, December 30, 2029"
+          },
+          {
+            "Subject": "CN=DoD Root CA 4, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "B8269F25DBD937ECAFD4C35A9838571723F2D026",
+            "NotAfter": "Sunday, July 25, 2032"
+          },
+          {
+            "Subject": "CN=DoD Root CA 5, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "4ECB5CC3095670454DA1CBD410FC921F46B8564B",
+            "NotAfter": "Friday, June 14, 2041"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dod_interoperability_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=DoD Interoperability Root CA 1, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "22BBE981F0694D246CC1472ED2B021DC8540A22F",
+            "NotAfter": "Friday, September 06, 2019"
+          },
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "AC06108CA348CC03B53795C64BF84403C1DBD341",
+            "NotAfter": "Saturday, January 22, 2022"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dod_cceb_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=US DoD CCEB Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "929BF3196896994C0A201DF4A5B71F603FEFBF2E",
+            "NotAfter": "Friday, September 27, 2019"
+          }
+        ]
+      }
+    },
+    {
+      "name": "administrators",
+      "options": { "type": "Array", "value": [null], "sensitive": true }
+    },
+    {
+      "name": "disable_slow_controls",
+      "options": {
+        "value": "Input 'disable_slow_controls' does not have a value. Skipping test."
+      }
+    },
+    {
+      "name": "exempt_home_users",
+      "options": {
+        "value": "Input 'exempt_home_users' does not have a value. Skipping test."
+      }
+    },
+    {
+      "name": "non_interactive_shells",
+      "options": {
+        "value": "Input 'non_interactive_shells' does not have a value. Skipping test."
+      }
+    }
+  ],
+  "supports": [],
+  "controls": [
+    {
+      "title": "Windows Server 2019 must automatically remove or disable temporary user accounts after 72 hours.",
+      "desc": "If temporary user accounts remain active when no longer needed or for an excessive period, these accounts may be used to gain unauthorized access. To mitigate this risk, automated termination of all temporary accounts must be set upon account creation.\n\n    Temporary accounts are established as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation.\n    If temporary accounts are used, the operating system must be configured to automatically terminate these types of accounts after a DoD-defined time period of 72 hours.\n    To address access requirements, many operating systems may be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements.",
+      "descriptions": {
+        "default": "If temporary user accounts remain active when no longer needed or for an excessive period, these accounts may be used to gain unauthorized access. To mitigate this risk, automated termination of all temporary accounts must be set upon account creation.\n\n    Temporary accounts are established as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation.\n    If temporary accounts are used, the operating system must be configured to automatically terminate these types of accounts after a DoD-defined time period of 72 hours.\n    To address access requirements, many operating systems may be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements.",
+        "rationale": "",
+        "check": "Review temporary user accounts for expiration dates.\n    Determine if temporary user accounts are used and identify any that exist. If none exist, this is NA.\n\n    Domain Controllers:\n    Open \"PowerShell\".\n    Enter \"Search-ADAccount -AccountExpiring | FT Name, AccountExpirationDate\".\n    If \"AccountExpirationDate\" has not been defined within 72 hours for any temporary user account, this is a finding.\n\n    Member servers and standalone systems:\n    Open \"Command Prompt\".\n    Run \"Net user [username]\", where [username] is the name of the temporary user account.\n    If \"Account expires\" has not been defined within 72 hours for any temporary user account, this is a finding.",
+        "fix": "Configure temporary user accounts to automatically expire within 72 hours.\n    Domain accounts can be configured with an account expiration date, under \"Account\" properties.\n    Local accounts can be configured to expire with the command \"Net user [username] /expires:[mm/dd/yyyy]\", where username is the name of the temporary user account.\n    Delete any temporary user accounts that are no longer necessary."
+      },
+      "impact": 0.0,
+      "refs": [],
+      "tags": {
+        "severity": null,
+        "gtitle": "SRG-OS-000002-GPOS-00002",
+        "gid": "V-92975",
+        "rid": "SV-103063r1_rule",
+        "stig_id": "WN19-00-000300",
+        "fix_id": "F-99221r1_fix",
+        "cci": ["CCI-000016"],
+        "nist": ["AC-2 (2)", "Rev_4"]
+      },
+      "code": " control 'V-92975' do\n    title \"Windows Server 2019 must automatically remove or disable temporary user accounts after #{input('temporary_account_period_phrase')}.\"\n    desc  \"If temporary user accounts remain active when no longer needed or for an excessive period, these accounts may be used to gain unauthorized access. To mitigate this risk, automated termination of all temporary accounts must be set upon account creation.\n\n    Temporary accounts are established as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation.\n    If temporary accounts are used, the operating system must be configured to automatically terminate these types of accounts after a #{input('org_name')[:acronym]}-defined time period of #{input('temporary_account_period_phrase')}.\n    To address access requirements, many operating systems may be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements.\"\n    desc  'rationale', ''\n    desc  'check', \"Review temporary user accounts for expiration dates.\n    Determine if temporary user accounts are used and identify any that exist. If none exist, this is NA.\n\n    Domain Controllers:\n    Open \\\"PowerShell\\\".\n    Enter \\\"Search-ADAccount -AccountExpiring | FT Name, AccountExpirationDate\\\".\n    If \\\"AccountExpirationDate\\\" has not been defined within #{input('temporary_account_period_phrase')} for any temporary user account, this is a finding.\n\n    Member servers and standalone systems:\n    Open \\\"Command Prompt\\\".\n    Run \\\"Net user [username]\\\", where [username] is the name of the temporary user account.\n    If \\\"Account expires\\\" has not been defined within #{input('temporary_account_period_phrase')} for any temporary user account, this is a finding.\"\n    desc 'fix', \"Configure temporary user accounts to automatically expire within #{input('temporary_account_period_phrase')}.\n    Domain accounts can be configured with an account expiration date, under \\\"Account\\\" properties.\n    Local accounts can be configured to expire with the command \\\"Net user [username] /expires:[mm/dd/yyyy]\\\", where username is the name of the temporary user account.\n    Delete any temporary user accounts that are no longer necessary.\"\n    impact 0.5\n    tag 'severity': nil\n    tag 'gtitle': 'SRG-OS-000002-GPOS-00002'\n    tag 'gid': 'V-92975'\n    tag 'rid': 'SV-103063r1_rule'\n    tag 'stig_id': 'WN19-00-000300'\n    tag 'fix_id': 'F-99221r1_fix'\n    tag 'cci': ['CCI-000016']\n    tag 'nist': ['AC-2 (2)', 'Rev_4']\n\n    domain_role = command('wmic computersystem get domainrole | Findstr /v DomainRole').stdout.strip\n\n    if domain_role == '4' || domain_role == '5'\n      expiring_accounts = []\n      temporary_accounts = input('temp_accounts_domain')\n      unless temporary_accounts == [nil]\n        temporary_accounts.each do |temporary_account|\n          expiring_accounts << json({ command: \"Get-ADUser -Identity #{temporary_account} -Properties WhenCreated, AccountExpirationDate | Select-Object -Property SamAccountName, @{Name='WhenCreated';Expression={$_.WhenCreated.ToString('yyyy-MM-dd')}}, @{Name='AccountExpirationDate';Expression={$_.AccountExpirationDate.ToString('yyyy-MM-dd')}}| ConvertTo-Json\" }).params\n        end\n      end\n      ad_accounts = json({ command: \"Get-ADUser -Filter 'Enabled -eq $true' -Properties WhenCreated, AccountExpirationDate | Select-Object -Property SamAccountName, @{Name='WhenCreated';Expression={$_.WhenCreated.ToString('yyyy-MM-dd')}}, @{Name='AccountExpirationDate';Expression={$_.AccountExpirationDate.ToString('yyyy-MM-dd')}}| ConvertTo-Json\" }).params\n      if ad_accounts.empty?\n        impact 0.0\n        describe 'This control is not applicable as no user accounts were found' do\n          skip 'This control is not applicable as no user accounts were found'\n        end\n      else\n        case ad_accounts\n        when Hash # One user account\n          if ad_accounts.fetch('AccountExpirationDate').nil?\n            impact 0.0\n            describe 'This control is not applicable as no expiring user accounts were found' do\n              skip 'This control is not applicable as no expiring user accounts were found'\n            end\n          else\n            expiring_accounts << ad_accounts unless expiring_accounts.any? { |h| h['SamAccountName'] == ad_accounts.fetch('SamAccountName') }\n          end\n        when Array # Multiple user accounts\n          ad_accounts.each do |ad_account|\n            next if ad_account.fetch('AccountExpirationDate').nil?\n            expiring_accounts << ad_account unless expiring_accounts.any? { |h| h['SamAccountName'] == ad_account.fetch('SamAccountName') }\n          end\n        end\n      end\n      if expiring_accounts.empty?\n        impact 0.0\n        describe 'This control is not applicable as no expiring user accounts were found' do\n          skip 'This control is not applicable as no expiring user accounts were found'\n        end\n      else\n        expiring_accounts.each do |expiring_account|\n          account_name = expiring_account.fetch('SamAccountName')\n          creation_date = Date.parse(expiring_account.fetch('WhenCreated'))\n          expiration_date = Date.parse(expiring_account.fetch('AccountExpirationDate'))\n          date_difference = expiration_date.mjd - creation_date.mjd\n          describe \"Account expiration set for #{account_name}\" do\n            subject { date_difference }\n            it { should cmp <= input('temporary_account_period') }\n          end\n        end\n      end\n\n    else\n      expiring_users = []\n      temporary_accounts = input('temp_accounts_local')\n      unless temporary_accounts == [nil]\n        temporary_accounts.each do |temporary_account|\n          expiring_users << json({ command: \"Get-LocalUser -Name #{temporary_account} | Select-Object -Property Name, @{Name='PasswordLastSet';Expression={$_.PasswordLastSet.ToString('yyyy-MM-dd')}}, @{Name='AccountExpires';Expression={$_.AccountExpires.ToString('yyyy-MM-dd')}} | ConvertTo-Json\" }).params\n        end\n      end\n      local_users = json({ command: \"Get-LocalUser * | Select-Object -Property Name, @{Name='PasswordLastSet';Expression={$_.PasswordLastSet.ToString('yyyy-MM-dd')}}, @{Name='AccountExpires';Expression={$_.AccountExpires.ToString('yyyy-MM-dd')}} | ConvertTo-Json\" }).params\n      if local_users.empty?\n        impact 0.0\n        describe 'This control is not applicable as no user accounts were found' do\n          skip 'This control is not applicable as no user accounts were found'\n        end\n      else\n        case local_users\n        when Hash # One user account\n          if local_users.fetch('AccountExpires').nil? || local_user.fetch('PasswordLastSet').nil?\n            impact 0.0\n            describe 'This control is not applicable as no expiring user accounts with password last set date were found' do\n              skip 'This control is not applicable as no expiring user accounts password last set date were found'\n            end\n          else\n            expiring_users << local_users unless expiring_users.any? { |h| h['Name'] == local_users.fetch('Name') }\n          end\n        when Array # Multiple user accounts\n          local_users.each do |local_user|\n            next if local_user.fetch('AccountExpires').nil? || local_user.fetch('PasswordLastSet').nil?\n            expiring_users << local_user unless expiring_users.any? { |h| h['Name'] == local_user.fetch('Name') }\n          end\n        end\n      end\n      if expiring_users.empty?\n        impact 0.0\n        describe 'This control is not applicable as no expiring user accounts with password last set date were found' do\n          skip 'This control is not applicable as no expiring user accounts with password last set date were found'\n        end\n      else\n        expiring_users.each do |expiring_account|\n          user_name = expiring_account.fetch('Name')\n          password_date = Date.parse(expiring_account.fetch('PasswordLastSet'))\n          expiration_date = Date.parse(expiring_account.fetch('AccountExpires'))\n          date_difference = expiration_date.mjd - password_date.mjd\n          describe \"Account expiration set for #{user_name}\" do\n            subject { date_difference }\n            it { should cmp <= input('temporary_account_period') }\n          end\n        end\n      end\n    end\n  end",
+      "source_location": { "ref": "./controls/V-92975.rb", "line": 3 },
+      "id": "V-92975"
+    }
+  ],
+  "groups": [
+    { "title": null, "controls": ["V-92975"], "id": "controls/V-92975.rb" }
+  ],
+  "sha256": "2421b04ea83f00f7d4e3f2925adac054ae11ea3c69ab933471fada47f1240031",
+  "status_message": "",
+  "status": "loaded",
+  "generator": { "name": "inspec", "version": "5.18.14" }
+}

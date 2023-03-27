@@ -34,21 +34,16 @@ either the directory owner or root with the following command:
   tag subsystems: ['init_files']
 
   if virtualization.system.eql?('docker')
-    impact 0.0
     describe 'Control not applicable to a container' do
       skip 'Control not applicable to a container'
     end
   else
-
     exempt_home_users = input('exempt_home_users')
     non_interactive_shells = input('non_interactive_shells')
-
     ignore_shells = non_interactive_shells.join('|')
-
     findings = Set[]
     users.where { !shell.match(ignore_shells) && (uid >= 1000 || uid == 0) }.entries.each do |user_info|
       next if exempt_home_users.include?(user_info.username.to_s)
-
       findings += command("find #{user_info.home} -name '.*' -not -user #{user_info.username} -a -not -user root").stdout.split("\n")
     end
     describe 'Files and Directories not owned by the user or root of the parent home directory' do

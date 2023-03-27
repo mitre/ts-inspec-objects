@@ -1,0 +1,534 @@
+{
+  "name": "microsoft-windows-server-2019-stig-baseline",
+  "title": "microsoft-windows-server-2019-stig-baseline",
+  "maintainer": "The Authors",
+  "copyright": "The Authors",
+  "copyright_email": "you@example.com",
+  "license": "Apache-2.0",
+  "summary": "Inspec Validation Profile for Microsoft Windows Member Server 2019 STIG",
+  "version": "1.3.24",
+  "inspec_version": ">= 4.0",
+  "inputs": [
+    {
+      "name": "org_name",
+      "options": {
+        "type": "Hash",
+        "value": { "acronym": "DoD", "full_form": "Department of Defense" }
+      }
+    },
+    {
+      "name": "temp_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "temp_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "temporary_account_period",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    {
+      "name": "temporary_account_period_phrase",
+      "options": { "type": "String", "value": "72 hours" }
+    },
+    {
+      "name": "emergency_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "emergency_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "emergency_account_period",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    {
+      "name": "emergency_account_period_phrase",
+      "options": { "type": "String", "value": "72 hours" }
+    },
+    {
+      "name": "max_pass_lockout",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    { "name": "pass_lock_time", "options": { "type": "Numeric", "value": 15 } },
+    {
+      "name": "pass_lock_duration",
+      "options": { "type": "Numeric", "value": 15 }
+    },
+    {
+      "name": "app_password_age",
+      "options": { "type": "Numeric", "value": 365 }
+    },
+    {
+      "name": "maximum_password_age_machine",
+      "options": { "type": "Numeric", "value": 30 }
+    },
+    {
+      "name": "maximum_idle_time",
+      "options": { "type": "Numeric", "value": 300 }
+    },
+    {
+      "name": "maximum_idle_time_phrase",
+      "options": { "type": "String", "value": "5 minutes" }
+    },
+    {
+      "name": "unused_account_age",
+      "options": { "type": "Numeric", "value": 35 }
+    },
+    {
+      "name": "minimum_password_length_manual",
+      "options": { "type": "Numeric", "value": 15 }
+    },
+    {
+      "name": "minimum_password_length",
+      "options": { "type": "Numeric", "value": 14 }
+    },
+    {
+      "name": "minimum_password_age",
+      "options": { "type": "Numeric", "value": 1 }
+    },
+    {
+      "name": "maximum_password_age",
+      "options": { "type": "Numeric", "value": 60 }
+    },
+    {
+      "name": "password_history_size",
+      "options": { "type": "Numeric", "value": 24 }
+    },
+    {
+      "name": "enable_password_complexity",
+      "options": { "type": "Numeric", "value": 1 }
+    },
+    {
+      "name": "allowed_network_access_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-32-544", "S-1-5-11", "S-1-5-9"]
+      }
+    },
+    {
+      "name": "disallowed_network_access_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "allowed_global_privilege_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-32-544", "S-1-5-6", "S-1-5-19", "S-1-5-20"],
+        "sensitive": true
+      }
+    },
+    {
+      "name": "disallowed_global_privilege_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "allowed_audit_privilege_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-19", "S-1-5-20"],
+        "sensitive": true
+      }
+    },
+    {
+      "name": "disallowed_audit_privilege_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "c_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\\\SYSTEM:(OI)(CI)(F)",
+          "BUILTIN\\Administrators:(OI)(CI)(F)",
+          "BUILTIN\\Users:(OI)(CI)(RX)",
+          "BUILTIN\\Users:(CI)(AD)",
+          "BUILTIN\\Users:(CI)(IO)(WD)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)"
+        ]
+      }
+    },
+    {
+      "name": "c_program_files_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\TrustedInstaller:(F)",
+          "NT SERVICE\\TrustedInstaller:(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Administrators:(M)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Users:(RX)",
+          "BUILTIN\\Users:(OI)(CI)(IO)(GR,GE)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)"
+        ]
+      }
+    },
+    {
+      "name": "c_windows_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\TrustedInstaller:(F)",
+          "NT SERVICE\\TrustedInstaller:(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Administrators:(M)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Users:(RX)",
+          "BUILTIN\\Users:(OI)(CI)(IO)(GR,GE)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)"
+        ]
+      }
+    },
+    {
+      "name": "reg_software_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "CREATOR OWNER Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey"
+        ]
+      }
+    },
+    {
+      "name": "reg_system_perms_dc",
+      "options": {
+        "value": [
+          "CREATOR OWNER Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  268435456",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Server Operators Allow ReadKey",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  -2147483648",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  -2147483648"
+        ]
+      }
+    },
+    {
+      "name": "reg_security_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  ReadPermissions, ChangePermissions"
+        ]
+      }
+    },
+    {
+      "name": "reg_system_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "CREATOR OWNER Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  268435456",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Users Allow  -2147483648",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  -2147483648",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  -2147483648"
+        ]
+      }
+    },
+    {
+      "name": "local_administrators_dc",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "local_administrators_member",
+      "options": { "type": "Array", "value": [null], "sensitive": true }
+    },
+    {
+      "name": "local_administrator",
+      "options": { "type": "String", "value": "", "sensitive": true }
+    },
+    {
+      "name": "ntds_permissions",
+      "options": {
+        "type": "Array",
+        "value": [
+          "BUILTIN\\Administrators:(I)(F)",
+          "NT AUTHORITY\\SYSTEM:(I)(F)"
+        ]
+      }
+    },
+    {
+      "name": "c_windows_sysvol_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\Authenticated Users:(RX)",
+          "NT AUTHORITY\\Authenticated Users:(OI)(CI)(IO)(GR,GE)",
+          "BUILTIN\\Server Operators:(RX)",
+          "BUILTIN\\Server Operators:(OI)(CI)(IO)(GR,GE)",
+          "BUILTIN\\Administrators:(M,WDAC,WO)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(F)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M,WDAC,WO)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)"
+        ]
+      }
+    },
+    {
+      "name": "LegalNoticeText",
+      "options": {
+        "type": "String",
+        "value": "You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions: -The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. -At any time, the USG may inspect and seize data stored on this IS. -Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. -This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. -Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants.  Such communications and work product are private and confidential.  See User Agreement for details."
+      }
+    },
+    {
+      "name": "LegalNoticeCaption",
+      "options": {
+        "type": "Array",
+        "value": [
+          "DoD Notice and Consent Banner",
+          "US Department of Defense Warning Statement"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_application_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_security_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_system_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "eventvwr_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\SYSTEM Allow  ReadAndExecute, Synchronize",
+          "BUILTIN\\Administrators Allow  ReadAndExecute, Synchronize",
+          "BUILTIN\\Users Allow  ReadAndExecute, Synchronize",
+          "NT SERVICE\\TrustedInstaller Allow  FullControl",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadAndExecute, Synchronize",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES Allow  ReadAndExecute, Synchronize"
+        ]
+      }
+    },
+    {
+      "name": "backup_operators",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "application_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "excluded_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "application_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "excluded_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "av_approved_software",
+      "options": {
+        "type": "Array",
+        "value": [
+          "Windows Defender",
+          "McAfee Host Intrusion Prevention",
+          "McAfee Endpoint Security",
+          "McAfee Agent"
+        ]
+      }
+    },
+    {
+      "name": "sensitive_system",
+      "options": { "type": "Boolean", "value": false }
+    },
+    { "name": "ftp_server", "options": { "type": "Boolean", "value": false } },
+    { "name": "ntp_servers", "options": { "type": "Array", "value": [null] } },
+    {
+      "name": "dod_root_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "8C941B34EA1EA6ED9AE2BC54CF687252B4C9B561",
+            "NotAfter": "Wednesday, December 05, 2029"
+          },
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "D73CA91102A2204A36459ED32213B467D7CE97FB",
+            "NotAfter": "Sunday, December 30, 2029"
+          },
+          {
+            "Subject": "CN=DoD Root CA 4, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "B8269F25DBD937ECAFD4C35A9838571723F2D026",
+            "NotAfter": "Sunday, July 25, 2032"
+          },
+          {
+            "Subject": "CN=DoD Root CA 5, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "4ECB5CC3095670454DA1CBD410FC921F46B8564B",
+            "NotAfter": "Friday, June 14, 2041"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dod_interoperability_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=DoD Interoperability Root CA 1, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "22BBE981F0694D246CC1472ED2B021DC8540A22F",
+            "NotAfter": "Friday, September 06, 2019"
+          },
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "AC06108CA348CC03B53795C64BF84403C1DBD341",
+            "NotAfter": "Saturday, January 22, 2022"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dod_cceb_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=US DoD CCEB Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "929BF3196896994C0A201DF4A5B71F603FEFBF2E",
+            "NotAfter": "Friday, September 27, 2019"
+          }
+        ]
+      }
+    },
+    {
+      "name": "administrators",
+      "options": { "type": "Array", "value": [null], "sensitive": true }
+    },
+    {
+      "name": "disable_slow_controls",
+      "options": {
+        "value": "Input 'disable_slow_controls' does not have a value. Skipping test."
+      }
+    },
+    {
+      "name": "exempt_home_users",
+      "options": {
+        "value": "Input 'exempt_home_users' does not have a value. Skipping test."
+      }
+    },
+    {
+      "name": "non_interactive_shells",
+      "options": {
+        "value": "Input 'non_interactive_shells' does not have a value. Skipping test."
+      }
+    }
+  ],
+  "supports": [],
+  "controls": [
+    {
+      "title": "Windows Server 2019 title for legal banner dialog box must be configured with the appropriate text.",
+      "desc": "Failure to display the logon banner prior to a logon attempt will negate legal proceedings resulting from unauthorized access to system resources.",
+      "descriptions": {
+        "default": "Failure to display the logon banner prior to a logon attempt will negate legal proceedings resulting from unauthorized access to system resources.",
+        "rationale": "",
+        "check": "If the following registry value does not exist or is not configured as specified, this is a finding:\n\n    Registry Hive: HKEY_LOCAL_MACHINE\n    Registry Path: \\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\\n\n    Value Name: LegalNoticeCaption\n\n    Value Type: REG_SZ\n    Value: See message title options below\n\n    \"DoD Notice and Consent Banner\", \"US Department of Defense Warning Statement\", or an organization-defined equivalent.\n\n    If an organization-defined title is used, it can in no case contravene or modify the language of the banner text required in WN19-SO-000150.\n\n    Automated tools may only search for the titles defined above. If an organization-defined title is used, a manual review will be required.",
+        "fix": "Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> Security Options >> \"Interactive Logon: Message title for users attempting to log on\" to \"DoD Notice and Consent Banner\", \"US Department of Defense Warning Statement\", or an organization-defined equivalent.\n\n    If an organization-defined title is used, it can in no case contravene or modify the language of the message text required in WN19-SO-000150."
+      },
+      "impact": 0.3,
+      "refs": [],
+      "tags": {
+        "severity": null,
+        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "satisfies": ["SRG-OS-000023-GPOS-00006", "SRG-OS-000228-GPOS-00088"],
+        "gid": "V-93149",
+        "rid": "SV-103237r1_rule",
+        "stig_id": "WN19-SO-000140",
+        "fix_id": "F-99395r1_fix",
+        "cci": [
+          "CCI-000048",
+          "CCI-001384",
+          "CCI-001385",
+          "CCI-001386",
+          "CCI-001387",
+          "CCI-001388"
+        ],
+        "nist": [
+          "AC-8 a",
+          "AC-8 c 1",
+          "AC-8 c 2",
+          "AC-8 c 2",
+          "AC-8 c 2",
+          "AC-8 c 3",
+          "Rev_4"
+        ]
+      },
+      "code": "control \"V-93149\" do\n  title \"Windows Server 2019 title for legal banner dialog box must be configured with the appropriate text.\"\n  desc  \"Failure to display the logon banner prior to a logon attempt will negate legal proceedings resulting from unauthorized access to system resources.\"\n  desc  \"rationale\", \"\"\n  desc  'check', \"If the following registry value does not exist or is not configured as specified, this is a finding:\n\n    Registry Hive: HKEY_LOCAL_MACHINE\n    Registry Path: \\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Policies\\\\System\\\\\n\n    Value Name: LegalNoticeCaption\n\n    Value Type: REG_SZ\n    Value: See message title options below\n\n    \\\"#{input('LegalNoticeCaption').join(\"\\\", \\\"\")}\\\", or an organization-defined equivalent.\n\n    If an organization-defined title is used, it can in no case contravene or modify the language of the banner text required in WN19-SO-000150.\n\n    Automated tools may only search for the titles defined above. If an organization-defined title is used, a manual review will be required.\"\n  desc  'fix', \"Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> Security Options >> \\\"Interactive Logon: Message title for users attempting to log on\\\" to \\\"#{input('LegalNoticeCaption').join(\"\\\", \\\"\")}\\\", or an organization-defined equivalent.\n\n    If an organization-defined title is used, it can in no case contravene or modify the language of the message text required in WN19-SO-000150.\"\n  impact 0.3\n  tag 'severity': nil\n  tag 'gtitle': 'SRG-OS-000023-GPOS-00006'\n  tag 'satisfies': [\"SRG-OS-000023-GPOS-00006\", \"SRG-OS-000228-GPOS-00088\"]\n  tag 'gid': 'V-93149'\n  tag 'rid': 'SV-103237r1_rule'\n  tag 'stig_id': 'WN19-SO-000140'\n  tag 'fix_id': 'F-99395r1_fix'\n  tag 'cci': [\"CCI-000048\", \"CCI-001384\", \"CCI-001385\", \"CCI-001386\", \"CCI-001387\", \"CCI-001388\"]\n  tag 'nist': [\"AC-8 a\", \"AC-8 c 1\", \"AC-8 c 2\", \"AC-8 c 2\", \"AC-8 c 2\", \"AC-8 c 3\", \"Rev_4\"]\n\n  describe registry_key('HKEY_LOCAL_MACHINE\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Policies\\\\System') do\n    it { should have_property 'LegalNoticeCaption' }\n    its('LegalNoticeCaption') { should be_in input('LegalNoticeCaption') }\n  end\nend",
+      "source_location": { "ref": "./controls/V-93149.rb", "line": 3 },
+      "id": "V-93149"
+    }
+  ],
+  "groups": [
+    { "title": null, "controls": ["V-93149"], "id": "controls/V-93149.rb" }
+  ],
+  "sha256": "2421b04ea83f00f7d4e3f2925adac054ae11ea3c69ab933471fada47f1240031",
+  "status_message": "",
+  "status": "loaded",
+  "generator": { "name": "inspec", "version": "5.18.14" }
+}
