@@ -75,7 +75,7 @@ describe('The control functionality', () => {
   
   const generated7 = fs.readFileSync('test/sample_data/controls-test-results/V-93033.rb','utf-8')
   const expected7 = fs.readFileSync('test/sample_data/controls-cookstyle/inputs-interpolation/V-93033.rb', 'utf-8')
-  it('should properly write a control with comments in the describe block)', () => {
+  it('should properly write a control with comments in the describe block', () => {
     expect(generated7.replace(/\r/gi, '')).toEqual(expected7.replace(/\r/gi, ''));
   })
 
