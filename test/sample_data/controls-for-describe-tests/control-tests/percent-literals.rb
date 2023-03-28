@@ -1,6 +1,23 @@
 control 'percent-literals' do
   desc %(Lorem ipsum dolor sit amet, (consectetur adipiscing elit, sed do 
   eiusmod tempor incididunt ut labore) et dolore magna aliqua.)
+  desc %q(Changing the system's file and directory permissions allows the
+    possibility of unauthorized and anonymous modification to the operating system
+    and installed applications.
+  
+        The default permissions are adequate when the Security Option "Network
+    access: Let Everyone permissions apply to anonymous users" is set to
+    "Disabled" (WN19-SO-000240).)
+
+  desc 'check', %q(The default permissions are adequate when the Security Option "Network
+    access: Let Everyone permissions apply to anonymous users" is set to
+    "Disabled" (WN19-SO-000240).
+  
+        Review the permissions for the system drive's root directory (usually
+    C:\\ ). Non-privileged groups such as Users or Authenticated Users must not have
+    greater than "Read & execute" permissions except where noted as defaults.
+    Individual accounts must not be used to assign permissions.)    
+  
   desc %[Enim lobortis scelerisque fermentum dui faucibus. [Amet dictum sit
   amet justo.] Massa id neque aliquam vestibulum morbi blandit cursus.]
   desc %{Rutrum tellus pellentesque eu tincidunt {tortor aliquam nulla 

@@ -84,6 +84,7 @@ export default class Control {
     return new Control(unflatten(flattened));
   }
 
+  // WIP - provides the ability to get the control in its raw form
   toString() {
     let result = '';
     result += `control '${this.id}' do\n`;
@@ -99,7 +100,7 @@ export default class Control {
     if (this.descs) {
       Object.entries(this.descs).forEach(([key, subDesc]) => {
         if (subDesc) {
-           result += `  desc '${key}', "${subDesc}"\n`;
+          result += `  desc '${key}', "${subDesc}"\n`;
         }
       });
     }
@@ -121,20 +122,16 @@ export default class Control {
     Object.entries(this.tags).forEach(([tag, value]) => {
       if (typeof value === 'object') {
         if (Array.isArray(value) && typeof value[0] === 'string') {
-          console.log("array : ", value, ' value[0] is: ', value[0])
           result += `  tag ${tag}: ${JSON.stringify(value)}\n`
         } else {
-          console.log("NO array : ", value)
           result += `  tag '${tag}': ${(value==null?'nil':value)}\n`
         }
       } else if (typeof value === 'string') {
-        console.log("string : ", value)
         if (value.includes('"')) {
           result += `  tag "${tag}": "${value}"\n`;
         } else {
           result += `  tag '${tag}': '${value}'\n`;
         }
-        
       }
     });
 
@@ -176,14 +173,14 @@ export default class Control {
               // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions.
               // In that case, we can ignore writing the "default" subdescription field.
               // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
-              if (verbose) {console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique sub-descriptions.`)};
+              if (verbose) {console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique sub-descriptions.`);}
             }
           }
           else {
             result += `  desc '${key}', ${escapeQuotes(subDesc)}\n`;
           }
         } else {
-          if (verbose) {console.error(`${this.id} does not have a desc for the value ${key}`)};
+          if (verbose) {console.error(`${this.id} does not have a desc for the value ${key}`);}
         }
       });
     }
@@ -191,7 +188,7 @@ export default class Control {
     if (this.impact) {
       result += `  impact ${this.impact}\n`;
     } else {
-      if (verbose) {console.error(`${this.id} does not have an impact`)};
+      if (verbose) {console.error(`${this.id} does not have an impact`);}
     }
 
     if (this.refs) {

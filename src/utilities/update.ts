@@ -39,11 +39,12 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
   return dst
 }
 
-function getRangesFromStackUpdate(text: string): number[][] {  
+function getRangesForLines(text: string): number[][] {  
   /*
     Returns an array containing two numerical indices (i.e., start and stop  
     line numbers) for each string or multi-line comment, given raw text as 
-    an input parameter.
+    an input parameter. The raw text is a string containing the entirety of an 
+    InSpec control. 
 
     Algorithm utilizes a pair of stacks (i.e., `stack`, `rangeStack`) to keep 
     track of string delimiters and their associated line numbers, respectively.
@@ -54,19 +55,20 @@ function getRangesFromStackUpdate(text: string): number[][] {
     - Back ticks (`)
     - Mixed quotes ("`'")
     - Percent strings (%; keys: q, Q, r, i, I, w, W, x; delimiters: (), {}, 
-      [], <>, most non-alphanumeric characters)
+      [], <>, most non-alphanumeric characters); (e.g., "%q()")
     - Percent literals (%; delimiters: (), {}, [], <>, most non-
-      alphanumeric characters)
+      alphanumeric characters); (e.g., "%()")
     - Multi-line comments (e.g., =begin\nSome comment\n=end)
+    - Variable delimiters (i.e., parenthesis: (); array: []; hash: {})
   */
-  const delims: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
+  const stringDelimiters: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
+  const variableDelimiters: {[key: string]: string} = {'(': ')', '{': '}', '[': ']'}
   const quotes = '\'"`'
-  const inputStr = "#"
   const strings = 'qQriIwWxs'
-  enum skipChar {
-    stringSkipChar = '('.length,
-    specialSkipChar = 'q('.length,
-    commentBeginSkipChar = '=begin'.length
+  enum skipCharLength {
+    string = '('.length,
+    percentString = 'q('.length,
+    commentBegin = '=begin'.length
   }
 
   const stack: string[] = []
@@ -79,58 +81,57 @@ function getRangesFromStackUpdate(text: string): number[][] {
     while (j < lines[i].length) {
       const line = lines[i]
       let char = line[j]
-
+      
       const isEmptyStack = (stack.length == 0)
       const isNotEmptyStack = (stack.length > 0)
 
       const isQuoteChar = quotes.includes(char)
-      const isInputChar = (char == '#' && line.includes('#{input'))
       const isNotEscapeChar = ((j == 0) || (j > 0 && line[j - 1] != '\\'))
       const isPercentChar = (char == '%')
+      const isVariableDelimiterChar = Object.keys(variableDelimiters).includes(char)
       const isStringDelimiterChar = ((j < line.length - 1) && (/^[^A-Za-z0-9]$/.test(line[j + 1])))
       const isCommentBeginChar = ((j == 0) && (line.length >= 6) && (line.slice(0, 6) == '=begin'))
       
-      const conditionOne = ((j < line.length - 1) && (strings.includes(line[j + 1])))
-      const conditionTwo = ((j < line.length - 2) && (/^[^A-Za-z0-9]$/.test(line[j + 2])))
-      const isSpecialDelimiterChar = (conditionOne && conditionTwo)
-
+      const isPercentStringKeyChar = ((j < line.length - 1) && (strings.includes(line[j + 1])))
+      const isPercentStringDelimiterChar = ((j < line.length - 2) && (/^[^A-Za-z0-9]$/.test(line[j + 2])))
+      const isPercentString = (isPercentStringKeyChar && isPercentStringDelimiterChar)
+      
       let baseCondition = (isEmptyStack && isNotEscapeChar)
       const quotePushCondition = (baseCondition && isQuoteChar)
+      const variablePushCondition = (baseCondition && isVariableDelimiterChar)
       const stringPushCondition = (baseCondition && isPercentChar && isStringDelimiterChar)
-      const specialPushCondition = (baseCondition && isPercentChar && isSpecialDelimiterChar)
+      const percentStringPushCondition = (baseCondition && isPercentChar && isPercentString)
       const commentBeginCondition = (baseCondition && isCommentBeginChar)
-
-      if (isInputChar) {
-        j = line.lastIndexOf('}')
-      }
-      char = line[j]
-
+      
       if (stringPushCondition) {
-        j += skipChar.stringSkipChar // j += 1
-      } else if (specialPushCondition) {
-        j += skipChar.specialSkipChar // j += 2
+        j += skipCharLength.string // j += 1
+      } else if (percentStringPushCondition) {
+        j += skipCharLength.percentString // j += 2
       } else if (commentBeginCondition) {
-        j += skipChar.commentBeginSkipChar // j += 6
+        j += skipCharLength.commentBegin // j += 6
       }
       char = line[j]
-
+      
       baseCondition = (isNotEmptyStack && isNotEscapeChar)
-      const delimiterCondition = (baseCondition && Object.keys(delims).includes(stack[stack.length - 1]))
+      const delimiterCondition = (baseCondition && Object.keys(stringDelimiters).includes(stack[stack.length - 1]))
       const delimiterPushCondition = (delimiterCondition && (stack[stack.length - 1] == char))
-      const delimiterPopCondition = (delimiterCondition && (delims[stack[stack.length - 1] as string] == char))
-      const basePopCondition = (baseCondition && (stack[stack.length - 1] == char) && !Object.keys(delims).includes(char))
+      const delimiterPopCondition = (delimiterCondition && (stringDelimiters[stack[stack.length - 1] as string] == char))
+      const basePopCondition = (baseCondition && (stack[stack.length - 1] == char) && !Object.keys(stringDelimiters).includes(char))
       const isCommentEndChar = ((j == 0) && (line.length >= 4) && (line.slice(0, 4) == '=end'))
       const commentEndCondition = (baseCondition && isCommentEndChar && (stack[stack.length - 1] == '=begin'))
       
-      if (basePopCondition || delimiterPopCondition || commentEndCondition) {
+      const popCondition = (basePopCondition || delimiterPopCondition || commentEndCondition)
+      const pushCondition = (quotePushCondition || variablePushCondition || stringPushCondition || 
+        percentStringPushCondition || delimiterPushCondition || commentBeginCondition)
+        
+      if (popCondition) {
         stack.pop()
         rangeStack[rangeStack.length -1].push(i)
         const range_ = rangeStack.pop() as number[]
         if (rangeStack.length == 0) {
           ranges.push(range_)
         }
-      } else if (quotePushCondition || stringPushCondition || specialPushCondition ||
-        delimiterPushCondition || commentBeginCondition) {
+      } else if (pushCondition) {
         if (commentBeginCondition) {
           stack.push('=begin')
         } else {
@@ -144,45 +145,46 @@ function getRangesFromStackUpdate(text: string): number[][] {
   return ranges
 }
 
-function getDistinctRanges(ranges: number[][]): number[][] {
-  /*
-    Drops ranges with the same start and stop line numbers (i.e., strings 
-    that populate a single line)
-  */
-  const output: number[][] = []
-  for (const [x, y] of ranges) {
-    if (x !== y) {
-      output.push([x, y])
-    }
-  }
-  return output
-}
-
-function joinStringsFromRanges(text: string, ranges: number[][]): string[] {
+function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): string[] {
   /*
     Returns an array of strings and joined strings at specified ranges, given 
     raw text as an input parameter.
   */
-  const lines = text.split('\n')
-  const output: string[] = []
+  const originalLines = text.split('\n')
+  const joinedLines: string[] = []
   let i = 0
-  while (i < lines.length) {
-    let found = false
-    for (const [x, y] of ranges) {
-      if (i >= x && i <= y) {
-        output.push(lines.slice(x, y + 1).join('\n'))
-        found = true
-        i = y
+  while (i < originalLines.length) {
+    let foundInRanges = false
+    for (const [startIndex, stopIndex] of ranges) {
+      if (i >= startIndex && i <= stopIndex) {
+        joinedLines.push(originalLines.slice(startIndex, stopIndex + 1).join('\n'))
+        foundInRanges = true
+        i = stopIndex
         break
       }
     }
-    if (!found) {
-      output.push(lines[i])
+    if (!foundInRanges) {
+      joinedLines.push(originalLines[i])
     }
     i++
   }
-  return output
+  return joinedLines
 }
+
+function getMultiLineRanges(ranges: number[][]): number[][] {
+  /*
+    Drops ranges with the same start and stop line numbers (i.e., strings 
+    that populate a single line)
+  */
+  const multiLineRanges: number[][] = []
+  for (const [start, stop] of ranges) {
+    if (start !== stop) {
+      multiLineRanges.push([start, stop])
+    }
+  }
+  return multiLineRanges
+}
+
 
 /*
   This is the most likely thing to break if you are getting code formatting issues.
@@ -190,40 +192,33 @@ function joinStringsFromRanges(text: string, ranges: number[][]): string[] {
 */
 export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
-    // Join multi-line strings in Control block.
-    let ranges = getRangesFromStackUpdate(control.code)
-    ranges = getDistinctRanges(ranges)
-    const lines = joinStringsFromRanges(control.code, ranges)
+    // Join multi-line strings in InSpec control.
+    const ranges = getRangesForLines(control.code)
+    const multiLineRanges = getMultiLineRanges(ranges)
+    const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges)  // Array of lines representing the full InSpec control, with multi-line strings collapsed
 
-    // Define RegExp for lines to skip. [ ]+ -> means one or more spaces
-    //const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
-    const skip = ['control\\W', '[ ]+control\\W', '[ ]+title\\W', '[ ]+desc\\W', '[ ]+impact\\W', '[ ]+tag\\W', '[ ]+ref\\W']
+    // Define RegExp for lines to skip.
+    const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
     const skipRegExp = RegExp(skip.map(x => `(^${x})`).join('|'))
 
-    // Extract logic from code.
-    const logic: string[] = []
+    // Extract describe block from InSpec control with collapsed multiline strings.
+    const describeBlock: string[] = []
     let ignoreNewLine = true
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i]
+    for (const line of lines) {
       const checkRegExp = ((line.trim() !== '') && !skipRegExp.test(line))
       const checkNewLine = ((line.trim() === '') && !ignoreNewLine)
      
       // Include '\n' if it is part of describe block, otherwise skip line.
       if (checkRegExp || checkNewLine) {
-        // Workaround until we fix the orphan multiline array entries
-        if (line.at(0) === ' ' || line.startsWith('end') || line.startsWith('describe')) {
-          logic.push(line)
-          ignoreNewLine = false
-        }
+        describeBlock.push(line)
+        ignoreNewLine = false
       } else {
         ignoreNewLine = true
       }
     }
 
     // Return synthesized logic as describe block
-    //return logic.slice(0, logic.length - slicePad).join('\n') // Drop trailing ['end', '\n'] from Control block.
-   // console.log("LOGIC IS: ", logic)
-    return logic.slice(0, logic.lastIndexOf('end')).join('\n') // Drop trailing ['end', '\n'] from Control block.
+    return describeBlock.slice(0, describeBlock.lastIndexOf('end')).join('\n') // Drop trailing ['end', '\n'] from Control block.
   } else {
     return ''
   }

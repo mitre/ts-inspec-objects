@@ -1,39 +1,35 @@
 control 'V-92975' do
-  title "Windows Server 2019 must automatically remove or disable temporary user accounts after #{input('temporary_account_period_phrase')}."
-  desc "If temporary user accounts remain active when no longer needed or for an excessive period, these accounts may be used to gain unauthorized access. To mitigate this risk, automated termination of all temporary accounts must be set upon account creation.
+  title 'Windows Server 2019 must automatically remove or disable temporary user accounts after 72 hours.'
+  desc 'If temporary user accounts remain active when no longer needed or for an excessive period, these accounts may be used to gain unauthorized access. To mitigate this risk, automated termination of all temporary accounts must be set upon account creation.
 
     Temporary accounts are established as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation.
-    If temporary accounts are used, the operating system must be configured to automatically terminate these types of accounts after a #{input('org_name')[:acronym]}-defined time period of #{input('temporary_account_period_phrase')}.
-    To address access requirements, many operating systems may be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements."
-  desc  'rationale', ''
-  desc  'check', "Review temporary user accounts for expiration dates.
+    If temporary accounts are used, the operating system must be configured to automatically terminate these types of accounts after a DoD-defined time period of 72 hours.
+    To address access requirements, many operating systems may be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements.'
+  desc 'check', 'Review temporary user accounts for expiration dates.
     Determine if temporary user accounts are used and identify any that exist. If none exist, this is NA.
 
     Domain Controllers:
-    Open \"PowerShell\".
-    Enter \"Search-ADAccount -AccountExpiring | FT Name, AccountExpirationDate\".
-    If \"AccountExpirationDate\" has not been defined within #{input('temporary_account_period_phrase')} for any temporary user account, this is a finding.
+    Open "PowerShell".
+    Enter "Search-ADAccount -AccountExpiring | FT Name, AccountExpirationDate".
+    If "AccountExpirationDate" has not been defined within 72 hours for any temporary user account, this is a finding.
 
     Member servers and standalone systems:
-    Open \"Command Prompt\".
-    Run \"Net user [username]\", where [username] is the name of the temporary user account.
-    If \"Account expires\" has not been defined within #{input('temporary_account_period_phrase')} for any temporary user account, this is a finding."
-  desc 'fix', "Configure temporary user accounts to automatically expire within #{input('temporary_account_period_phrase')}.
-    Domain accounts can be configured with an account expiration date, under \"Account\" properties.
-    Local accounts can be configured to expire with the command \"Net user [username] /expires:[mm/dd/yyyy]\", where username is the name of the temporary user account.
-    Delete any temporary user accounts that are no longer necessary."
-  impact 0.5
-  tag 'severity': nil
-  tag 'gtitle': 'SRG-OS-000002-GPOS-00002'
-  tag 'gid': 'V-92975'
-  tag 'rid': 'SV-103063r1_rule'
-  tag 'stig_id': 'WN19-00-000300'
-  tag 'fix_id': 'F-99221r1_fix'
-  tag 'cci': ['CCI-000016']
-  tag 'nist': ['AC-2 (2)', 'Rev_4']
+    Open "Command Prompt".
+    Run "Net user [username]", where [username] is the name of the temporary user account.
+    If "Account expires" has not been defined within 72 hours for any temporary user account, this is a finding.'
+  desc 'fix', 'Configure temporary user accounts to automatically expire within 72 hours.
+    Domain accounts can be configured with an account expiration date, under "Account" properties.
+    Local accounts can be configured to expire with the command "Net user [username] /expires:[mm/dd/yyyy]", where username is the name of the temporary user account.
+    Delete any temporary user accounts that are no longer necessary.'
+  tag gtitle: 'SRG-OS-000002-GPOS-00002'
+  tag gid: 'V-92975'
+  tag rid: 'SV-103063r1_rule'
+  tag stig_id: 'WN19-00-000300'
+  tag fix_id: 'F-99221r1_fix'
+  tag cci: ['CCI-000016']
+  tag nist: ['AC-2 (2)', 'Rev_4']
 
   domain_role = command('wmic computersystem get domainrole | Findstr /v DomainRole').stdout.strip
-
   if domain_role == '4' || domain_role == '5'
     expiring_accounts = []
     temporary_accounts = input('temp_accounts_domain')
@@ -44,7 +40,6 @@ control 'V-92975' do
     end
     ad_accounts = json({ command: "Get-ADUser -Filter 'Enabled -eq $true' -Properties WhenCreated, AccountExpirationDate | Select-Object -Property SamAccountName, @{Name='WhenCreated';Expression={$_.WhenCreated.ToString('yyyy-MM-dd')}}, @{Name='AccountExpirationDate';Expression={$_.AccountExpirationDate.ToString('yyyy-MM-dd')}}| ConvertTo-Json" }).params
     if ad_accounts.empty?
-      impact 0.0
       describe 'This control is not applicable as no user accounts were found' do
         skip 'This control is not applicable as no user accounts were found'
       end
@@ -52,7 +47,6 @@ control 'V-92975' do
       case ad_accounts
       when Hash # One user account
         if ad_accounts.fetch('AccountExpirationDate').nil?
-          impact 0.0
           describe 'This control is not applicable as no expiring user accounts were found' do
             skip 'This control is not applicable as no expiring user accounts were found'
           end
@@ -67,7 +61,6 @@ control 'V-92975' do
       end
     end
     if expiring_accounts.empty?
-      impact 0.0
       describe 'This control is not applicable as no expiring user accounts were found' do
         skip 'This control is not applicable as no expiring user accounts were found'
       end
@@ -83,7 +76,6 @@ control 'V-92975' do
         end
       end
     end
-
   else
     expiring_users = []
     temporary_accounts = input('temp_accounts_local')
@@ -94,7 +86,6 @@ control 'V-92975' do
     end
     local_users = json({ command: "Get-LocalUser * | Select-Object -Property Name, @{Name='PasswordLastSet';Expression={$_.PasswordLastSet.ToString('yyyy-MM-dd')}}, @{Name='AccountExpires';Expression={$_.AccountExpires.ToString('yyyy-MM-dd')}} | ConvertTo-Json" }).params
     if local_users.empty?
-      impact 0.0
       describe 'This control is not applicable as no user accounts were found' do
         skip 'This control is not applicable as no user accounts were found'
       end
@@ -102,7 +93,6 @@ control 'V-92975' do
       case local_users
       when Hash # One user account
         if local_users.fetch('AccountExpires').nil? || local_user.fetch('PasswordLastSet').nil?
-          impact 0.0
           describe 'This control is not applicable as no expiring user accounts with password last set date were found' do
             skip 'This control is not applicable as no expiring user accounts password last set date were found'
           end
@@ -117,7 +107,6 @@ control 'V-92975' do
       end
     end
     if expiring_users.empty?
-      impact 0.0
       describe 'This control is not applicable as no expiring user accounts with password last set date were found' do
         skip 'This control is not applicable as no expiring user accounts with password last set date were found'
       end
