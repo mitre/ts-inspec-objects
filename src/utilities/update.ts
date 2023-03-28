@@ -68,7 +68,8 @@ function getRangesForLines(text: string): number[][] {
   enum skipCharLength {
     string = '('.length,
     percentString = 'q('.length,
-    commentBegin = '=begin'.length
+    commentBegin = '=begin'.length,
+    inlineInterpolationBegin = '{'.length
   }
 
   const stack: string[] = []
@@ -91,6 +92,8 @@ function getRangesForLines(text: string): number[][] {
       const isVariableDelimiterChar = Object.keys(variableDelimiters).includes(char)
       const isStringDelimiterChar = ((j < line.length - 1) && (/^[^A-Za-z0-9]$/.test(line[j + 1])))
       const isCommentBeginChar = ((j == 0) && (line.length >= 6) && (line.slice(0, 6) == '=begin'))
+      const isCommentChar = /^\s*#/.test(line)
+      const isInlineInterpolation = (char == '#' && ((j < line.length - 1) && line[j + 1] == '{'))
       
       const isPercentStringKeyChar = ((j < line.length - 1) && (strings.includes(line[j + 1])))
       const isPercentStringDelimiterChar = ((j < line.length - 2) && (/^[^A-Za-z0-9]$/.test(line[j + 2])))
@@ -102,13 +105,21 @@ function getRangesForLines(text: string): number[][] {
       const stringPushCondition = (baseCondition && isPercentChar && isStringDelimiterChar)
       const percentStringPushCondition = (baseCondition && isPercentChar && isPercentString)
       const commentBeginCondition = (baseCondition && isCommentBeginChar)
+      const commentCondition = (baseCondition && isCommentChar)
+      const inlineInterpolationCondition = (isNotEmptyStack && isInlineInterpolation)
       
+      if (commentCondition) {
+        break
+      }
+
       if (stringPushCondition) {
         j += skipCharLength.string // j += 1
       } else if (percentStringPushCondition) {
         j += skipCharLength.percentString // j += 2
       } else if (commentBeginCondition) {
         j += skipCharLength.commentBegin // j += 6
+      } else if (inlineInterpolationCondition) {
+        j += skipCharLength.inlineInterpolationBegin // j += 1
       }
       char = line[j]
       
@@ -122,7 +133,7 @@ function getRangesForLines(text: string): number[][] {
       
       const popCondition = (basePopCondition || delimiterPopCondition || commentEndCondition)
       const pushCondition = (quotePushCondition || variablePushCondition || stringPushCondition || 
-        percentStringPushCondition || delimiterPushCondition || commentBeginCondition)
+        percentStringPushCondition || delimiterPushCondition || commentBeginCondition || inlineInterpolationCondition)
         
       if (popCondition) {
         stack.pop()
@@ -131,13 +142,17 @@ function getRangesForLines(text: string): number[][] {
         if (rangeStack.length == 0) {
           ranges.push(range_)
         }
+        console.log('Pop:', stack, i+1)
       } else if (pushCondition) {
         if (commentBeginCondition) {
           stack.push('=begin')
-        } else {
+        } else if (inlineInterpolationCondition) {
+          stack.push('{')
+        }  else {
           stack.push(char)
         }
         rangeStack.push([i])
+        console.log('Push:', stack, i+1)
       }
       j++
     }
@@ -194,6 +209,7 @@ export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
+    console.log(ranges)
     const multiLineRanges = getMultiLineRanges(ranges)
     const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges)  // Array of lines representing the full InSpec control, with multi-line strings collapsed
 
