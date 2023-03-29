@@ -10,8 +10,11 @@ describe('The control functionality', () => {
     fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results', `${control.id}.rb`), control.toRuby(true))
   })
 
-  // This check is comparing what the function "toRuby" is outputting with a small sample profile created from the controls in the 'controls-cookstyle' folder.
-  // The 'controls-cookstyle' folder also contains a '.rubocop.yml' file used for specifying formatting options.
+  // This check is comparing what the function "toRuby" is outputting with a small sample profile created from
+  // the controls in the 'controls' folder, it generates the controls and compares with expected controls
+  // listed in the 'inputs-interpolation' folder.
+  // The 'controls-cookstyle' folder contains a '.rubocop.yml' and an inspec.yml file used for specifying inputs
+  // interpolation and formatting options.
   // The controls are formatted with cookstyle and the profile is generated using InSpec as instructed below.
   // NOTE: Cookstyle may update and change over time, requiring updates to this test suite.
 
@@ -20,8 +23,10 @@ describe('The control functionality', () => {
       1. Install the cookstyle gem on your development environment
         a. To install the gem use: gem install cookstyle
         b. To verify that the gem is install use: gem list cookstyle
-      2. Run "cookstyle -a ./test/sample_data/controls-cookstyle" to modify the expected controls from control-cookstyle to be in the cookstyle format
-      3. Run "inspec json ./test/sample_data/controls-cookstyle > ./test/sample_data/inspec/json/cookstyle-controls-profile.json" to generate the inspec profile used for testing with the latest controls
+      2. Run "cookstyle -a ./test/sample_data/controls-cookstyle" to modify the expected controls from control-cookstyle
+         to be in the cookstyle format
+      3. Run "inspec json ./test/sample_data/controls-cookstyle > ./test/sample_data/inspec/json/cookstyle-controls-profile.json"
+         to generate the inspec profile used for testing with the latest controls
       4. Run "npm run test" or "npm run test -- ./test/tests/control.spec.ts" to see the output. 
       5. Compare the expected and actual results.
       6. Make any changes in the control.ts functionality

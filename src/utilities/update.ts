@@ -3,12 +3,12 @@
 
 import _ from 'lodash'
 import winston from 'winston';
+import {diffProfile} from './diff'
 import Control from '../objects/control'
 import Profile from '../objects/profile'
-import {processXCCDF} from '../parsers/xccdf'
 import {ProfileDiff} from '../types/diff'
+import {processXCCDF} from '../parsers/xccdf'
 import {OvalDefinitionValue} from '../types/oval'
-import {diffProfile} from './diff'
 import {createDiffMarkdown} from './diffMarkdown'
 
 export type UpdatedProfileReturn = {
@@ -142,7 +142,6 @@ function getRangesForLines(text: string): number[][] {
         if (rangeStack.length == 0) {
           ranges.push(range_)
         }
-        console.log('Pop:', stack, i+1)
       } else if (pushCondition) {
         if (commentBeginCondition) {
           stack.push('=begin')
@@ -152,7 +151,6 @@ function getRangesForLines(text: string): number[][] {
           stack.push(char)
         }
         rangeStack.push([i])
-        console.log('Push:', stack, i+1)
       }
       j++
     }
@@ -209,9 +207,10 @@ export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
-    console.log(ranges)
+    // Get the entries that have delimiters that span multi-lines
     const multiLineRanges = getMultiLineRanges(ranges)
-    const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges)  // Array of lines representing the full InSpec control, with multi-line strings collapsed
+    // Array of lines representing the full InSpec control, with multi-line strings collapsed
+    const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges)
 
     // Define RegExp for lines to skip.
     const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
