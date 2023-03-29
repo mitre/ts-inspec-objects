@@ -5,7 +5,7 @@ import {processInSpecProfile} from '../../src/index'
 const TEST_USE_CASES = new Map();
 TEST_USE_CASES.set('SV-204392', 'should correctly write the control structure using single quote string as suggested by cookstyle');
 TEST_USE_CASES.set('SV-204474','should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle');
- TEST_USE_CASES.set('SV-205653','should properly write a control with simple description block');
+TEST_USE_CASES.set('SV-205653','should properly write a control with simple description block');
 TEST_USE_CASES.set('SV-205734','should properly write a control with embedded %q() cookstyle formatting');
 TEST_USE_CASES.set('SV-230385','should extract describe block that includes keywords (e.g., tag, impact).');
 TEST_USE_CASES.set('V-92975','should properly write a control with complicated and long describe block');
@@ -54,5 +54,5 @@ describe('The control functionality', () => {
     it(value, () => {
       expect(generated.replace(/\r/gi, '')).toEqual(expected.replace(/\r/gi, ''));
     })    
-  } )
+  })
 })
