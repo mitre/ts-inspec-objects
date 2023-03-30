@@ -207,8 +207,10 @@ export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
+
     // Get the entries that have delimiters that span multi-lines
     const multiLineRanges = getMultiLineRanges(ranges)
+
     // Array of lines representing the full InSpec control, with multi-line strings collapsed
     const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges)
 

@@ -42,7 +42,6 @@ export function removeWhitespace(input: string): string {
 }
 
 const escapeSpecialCaseBackslashes = (s: string) => {
-  //return s.replace(/\\\)/g, '\\\\)'); // Escape backslashes if preceding close parentheses
   return s.replace(/\\\)/g, '\\\\)'); // Escape backslashes if preceding close parentheses
 }
 

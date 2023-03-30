@@ -19,10 +19,10 @@ describe('The control functionality', () => {
   
   cookstyle_profile.controls.forEach(control => {
     // Write the new control to the controls folder
-    fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results', `${control.id}.rb`), control.toRuby(false))
+    fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results', `${control.id}.rb`), control.toRuby(true))
   })
 
-  // This check is comparing what the function "toRuby" is outputting with a small sample profile created from
+  // These checks are comparing what the function "toRuby" is outputting with a small sample profile created from
   // the controls in the 'controls' folder, it generates the controls and compares with expected controls
   // listed in the 'inputs-interpolation' folder.
   // The 'controls-cookstyle' folder contains a '.rubocop.yml' and an inspec.yml file used for specifying inputs
