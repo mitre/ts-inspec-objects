@@ -225,6 +225,8 @@ export default class Control {
         } else if (typeof value === 'string') {
           result += `  tag ${tag}: ${escapeQuotes(value)}\n`;
         }
+      } else {
+        result += `  tag ${tag}: nil\n`;
       }
     });
 

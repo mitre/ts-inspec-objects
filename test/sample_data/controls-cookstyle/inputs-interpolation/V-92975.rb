@@ -21,6 +21,7 @@ control 'V-92975' do
     Domain accounts can be configured with an account expiration date, under "Account" properties.
     Local accounts can be configured to expire with the command "Net user [username] /expires:[mm/dd/yyyy]", where username is the name of the temporary user account.
     Delete any temporary user accounts that are no longer necessary.'
+  tag severity: nil
   tag gtitle: 'SRG-OS-000002-GPOS-00002'
   tag gid: 'V-92975'
   tag rid: 'SV-103063r1_rule'

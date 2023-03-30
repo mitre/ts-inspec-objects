@@ -76,6 +76,7 @@ to anonymous users" to "Disabled" (WN19-SO-000240).
     Users - Create files/write data - Subfolders only
     CREATOR OWNER - Full Control - Subfolders and files only)
   impact 0.5
+  tag severity: nil
   tag gtitle: 'SRG-OS-000312-GPOS-00122'
   tag satisfies: ['SRG-OS-000312-GPOS-00122', 'SRG-OS-000312-GPOS-00123', 'SRG-OS-000312-GPOS-00124']
   tag gid: 'V-93019'
