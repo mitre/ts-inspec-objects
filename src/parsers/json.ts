@@ -64,7 +64,6 @@ export function processProfileJSON(
       tags: control.tags,
       descs: objectifyDescriptions(control.descriptions),
     })
-
     newControl.describe = getExistingDescribeFromControl(newControl);
 
     // Migrate check and fix text from tags to descriptions

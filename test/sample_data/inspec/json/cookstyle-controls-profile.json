@@ -1,1 +1,772 @@
-{"supports":[],"title":"tests from ./test/sample_data/controls-cookstyle","name":"tests from ..test.sample_data.controls-cookstyle","controls":[{"title":"The Red Hat Enterprise Linux operating system must be configured so that all local initialization files for\n    interactive users are owned by the home directory user or root.","desc":"Local initialization files are used to configure the user's shell environment upon logon. Malicious\n    modification of these files could compromise accounts upon logon.","descriptions":{"default":"Local initialization files are used to configure the user's shell environment upon logon. Malicious\n    modification of these files could compromise accounts upon logon.","check":"Verify the local initialization files of all local interactive users are owned by that user.\n      Check the home directory assignment for all non-privileged users on the system with the following command:\n      Note: The example will be for the smithj user, who has a home directory of \"/home/smithj\".\n      # awk -F: '($3>=1000)&&($7 !~ /nologin/){print $1, $3, $6}' /etc/passwd\n      smithj 1000 /home/smithj\n      Note: This may miss interactive users that have been assigned a privileged User Identifier (UID). Evidence of\n      interactive use may be obtained from a number of log files containing system logon information.\n      Check the owner of all local interactive user's initialization files with the following command:\n      # ls -al /home/smithj/.[^.]* | more\n      -rwxr-xr-x 1 smithj users 896 Mar 10 2011 .profile\n      -rwxr-xr-x 1 smithj users 497 Jan 6 2007 .login\n      -rwxr-xr-x 1 smithj users 886 Jan 6 2007 .something\n      If all local interactive user's initialization files are not owned by that user or root, this is a finding.","fix":"Set the owner of the local initialization files for interactive users to\neither the directory owner or root with the following command:\n    Note: The example will be for the smithj user, who has a home directory of\n\"/home/smithj\".\n    # chown smithj /home/smithj/.[^.]*"},"impact":0.5,"refs":[],"tags":{"legacy":["V-72029","SV-86653"],"severity":"medium","gtitle":"SRG-OS-000480-GPOS-00227","gid":"V-204474","rid":"SV-204474r603834_rule","stig_id":"RHEL-07-020690","fix_i":"F-4598r462464_fix","cci":["CCI-000366"],"nist":["CM-6 b"],"subsystems":["init_files"]},"code":"control 'SV-204474' do\n  title \"The Red Hat Enterprise Linux operating system must be configured so that all local initialization files for\n    interactive users are owned by the home directory user or root.\"\n  desc \"Local initialization files are used to configure the user's shell environment upon logon. Malicious\n    modification of these files could compromise accounts upon logon.\"\n  desc 'check', \"Verify the local initialization files of all local interactive users are owned by that user.\n      Check the home directory assignment for all non-privileged users on the system with the following command:\n      Note: The example will be for the smithj user, who has a home directory of \\\"/home/smithj\\\".\n      # awk -F: '($3>=1000)&&($7 !~ /nologin/){print $1, $3, $6}' /etc/passwd\n      smithj 1000 /home/smithj\n      Note: This may miss interactive users that have been assigned a privileged User Identifier (UID). Evidence of\n      interactive use may be obtained from a number of log files containing system logon information.\n      Check the owner of all local interactive user's initialization files with the following command:\n      # ls -al /home/smithj/.[^.]* | more\n      -rwxr-xr-x 1 smithj users 896 Mar 10 2011 .profile\n      -rwxr-xr-x 1 smithj users 497 Jan 6 2007 .login\n      -rwxr-xr-x 1 smithj users 886 Jan 6 2007 .something\n      If all local interactive user's initialization files are not owned by that user or root, this is a finding.\"\n  desc 'fix', \"Set the owner of the local initialization files for interactive users to\neither the directory owner or root with the following command:\n    Note: The example will be for the smithj user, who has a home directory of\n\\\"/home/smithj\\\".\n    # chown smithj /home/smithj/.[^.]*\"\n  impact 0.5\n  tag legacy: ['V-72029', 'SV-86653']\n  tag severity: 'medium'\n  tag gtitle: 'SRG-OS-000480-GPOS-00227'\n  tag gid: 'V-204474'\n  tag rid: 'SV-204474r603834_rule'\n  tag stig_id: 'RHEL-07-020690'\n  tag fix_i: 'F-4598r462464_fix'\n  tag cci: ['CCI-000366']\n  tag nist: ['CM-6 b']\n  tag subsystems: ['init_files']\n\n  if virtualization.system.eql?('docker')\n    impact 0.0\n    describe 'Control not applicable to a container' do\n      skip 'Control not applicable to a container'\n    end\n  else\n\n    exempt_home_users = input('exempt_home_users')\n    non_interactive_shells = input('non_interactive_shells')\n\n    ignore_shells = non_interactive_shells.join('|')\n\n    findings = Set[]\n    users.where { !shell.match(ignore_shells) && (uid >= 1000 || uid == 0) }.entries.each do |user_info|\n      next if exempt_home_users.include?(user_info.username.to_s)\n\n      findings += command(\"find #{user_info.home} -name '.*' -not -user #{user_info.username} -a -not -user root\").stdout.split(\"\\n\")\n    end\n    describe 'Files and Directories not owned by the user or root of the parent home directory' do\n      subject { findings.to_a }\n      it { should be_empty }\n    end\n  end\nend\n","source_location":{"ref":"./test/sample_data/controls-cookstyle/SV-204474.rb","line":1},"id":"SV-204474"},{"title":"The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership,\n      and group membership of system files and commands match the vendor values.","desc":"Discretionary access control is weakened if a user or group has access permissions to system files and\n      directories greater than the default.","descriptions":{"default":"Discretionary access control is weakened if a user or group has access permissions to system files and\n      directories greater than the default.","rationale":"","check":"Verify the file permissions, ownership, and group membership of system files and commands match the\n      vendor values.\n      Check the default file permissions, ownership, and group membership of system files and commands with the following\n      command:\n      # for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j\n      --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n      /var/log/gdm 040755 root root\n      /etc/audisp/audisp-remote.conf 0100640 root root\n      /usr/bin/passwd 0104755 root root\n      For each file returned, verify the current permissions, ownership, and group membership:\n      # ls -la <filename>\n      -rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n      If the file is more permissive than the default permissions, this is a finding.\n      If the file is not owned by the default owner and is not documented with the Information System Security Officer\n      (ISSO), this is a finding.\n      If the file is not a member of the default group and is not documented with the Information System Security Officer\n      (ISSO), this is a finding.","fix":"Run the following command to determine which package owns the file:\n\n    # rpm -qf <filename>\n\n    Reset the user and group ownership of files within a package with the\nfollowing command:\n\n    #rpm --setugids <packagename>\n\n\n    Reset the permissions of files within a package with the following command:\n\n    #rpm --setperms <packagename>"},"impact":0.7,"refs":[],"tags":{"legacy":["V-71849","SV-86473"],"severity":"high","gtitle":"SRG-OS-000257-GPOS-00098","satisfies":["SRG-OS-000257-GPOS-00098","SRG-OS-000278-GPOS-00108"],"gid":"V-204392","rid":"SV-204392r646841_rule","stig_id":"RHEL-07-010010","fix_id":"F-36302r646840_fix","cci":["CCI-001494","CCI-001496","CCI-002165","CCI-002235"],"nist":["AU-9","AU-9 (3)","AC-3 (4)","AC-6 (10)"],"subsystems":["permissions","package","rpm"],"host":null,"container":null},"code":"control 'SV-204392' do\n  title 'The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership,\n      and group membership of system files and commands match the vendor values.'\n  desc 'Discretionary access control is weakened if a user or group has access permissions to system files and\n      directories greater than the default.'\n  desc 'rationale', ''\n  desc 'check', %<Verify the file permissions, ownership, and group membership of system files and commands match the\n      vendor values.\n      Check the default file permissions, ownership, and group membership of system files and commands with the following\n      command:\n      # for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j\n      --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n      /var/log/gdm 040755 root root\n      /etc/audisp/audisp-remote.conf 0100640 root root\n      /usr/bin/passwd 0104755 root root\n      For each file returned, verify the current permissions, ownership, and group membership:\n      # ls -la <filename>\n      -rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n      If the file is more permissive than the default permissions, this is a finding.\n      If the file is not owned by the default owner and is not documented with the Information System Security Officer\n      (ISSO), this is a finding.\n      If the file is not a member of the default group and is not documented with the Information System Security Officer\n      (ISSO), this is a finding.>\n  desc 'fix', \"\n      Run the following command to determine which package owns the file:\n\n      # rpm -qf <filename>\n\n      Reset the user and group ownership of files within a package with the\n  following command:\n\n      #rpm --setugids <packagename>\n\n\n      Reset the permissions of files within a package with the following command:\n\n      #rpm --setperms <packagename>\n    \"\n  impact 0.7\n  tag 'legacy': ['V-71849', 'SV-86473']\n  tag 'severity': 'high'\n  tag 'gtitle': 'SRG-OS-000257-GPOS-00098'\n  tag 'satisfies': ['SRG-OS-000257-GPOS-00098', 'SRG-OS-000278-GPOS-00108']\n  tag 'gid': 'V-204392'\n  tag 'rid': 'SV-204392r646841_rule'\n  tag 'stig_id': 'RHEL-07-010010'\n  tag 'fix_id': 'F-36302r646840_fix'\n  tag 'cci': ['CCI-001494', 'CCI-001496', 'CCI-002165', 'CCI-002235']\n  tag nist: ['AU-9', 'AU-9 (3)', 'AC-3 (4)', 'AC-6 (10)']\n  tag subsystems: ['permissions', 'package', 'rpm']\n  tag 'host', 'container'\n\n  if input('disable_slow_controls')\n    describe \"This control consistently takes a long time to run and has been disabled\n      using the disable_slow_controls attribute.\" do\n      skip \"This control consistently takes a long time to run and has been disabled\n              using the disable_slow_controls attribute. You must enable this control for a\n              full accredidation for production.\"\n    end\n  else\n\n    allowlist = input('rpm_verify_perms_except')\n\n    misconfigured_packages = command('rpm -Va').stdout.split(\"\\n\")\n                                               .select { |package| package[0..7].match(/M|U|G/) }\n                                               .map { |package| package.match(/\\S+$/)[0] }\n\n    if misconfigured_packages.empty?\n      describe 'The list of rpm packages with permissions changed from the vendor values' do\n        subject { misconfigured_packages }\n        it { should be_empty }\n      end\n    else\n      describe 'The list of rpm packages with permissions changed from the vendor values' do\n        fail_msg = \"Files that have been modified from vendor-approved permissions but are not in the allowlist: #{(misconfigured_packages - allowlist).join(', ')}\"\n        it 'should all appear in the allowlist' do\n          expect(misconfigured_packages).to all(be_in(allowlist)), fail_msg\n        end\n      end\n    end\n  end\nend\n","source_location":{"ref":"./test/sample_data/controls-cookstyle/SV-204392.rb","line":1},"id":"SV-204392"}],"groups":[{"title":null,"controls":["SV-204474"],"id":"SV-204474.rb"},{"title":null,"controls":["SV-204392"],"id":"SV-204392.rb"}],"inputs":[{"name":"exempt_home_users","options":{"value":"Input 'exempt_home_users' does not have a value. Skipping test."}},{"name":"non_interactive_shells","options":{"value":"Input 'non_interactive_shells' does not have a value. Skipping test."}},{"name":"disable_slow_controls","options":{"value":"Input 'disable_slow_controls' does not have a value. Skipping test."}}],"sha256":"317c2a47b14508be64d5a6c370d8e0f13602df559210a3d25bf5a9429b42b0f1","status_message":"","status":"loaded","generator":{"name":"inspec","version":"5.18.14"}}
+{
+  "name": "microsoft-windows-server-2019-stig-baseline",
+  "title": "microsoft-windows-server-2019-stig-baseline",
+  "maintainer": "The Authors",
+  "copyright": "The Authors",
+  "copyright_email": "you@example.com",
+  "license": "Apache-2.0",
+  "summary": "Inspec Validation Profile for Microsoft Windows Member Server 2019 STIG",
+  "version": "1.3.24",
+  "inspec_version": ">= 4.0",
+  "inputs": [
+    {
+      "name": "org_name",
+      "options": {
+        "type": "Hash",
+        "value": { "acronym": "DoD", "full_form": "Department of Defense" }
+      }
+    },
+    {
+      "name": "temp_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "temp_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "temporary_account_period",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    {
+      "name": "temporary_account_period_phrase",
+      "options": { "type": "String", "value": "72 hours" }
+    },
+    {
+      "name": "emergency_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "emergency_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "emergency_account_period",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    {
+      "name": "emergency_account_period_phrase",
+      "options": { "type": "String", "value": "72 hours" }
+    },
+    {
+      "name": "max_pass_lockout",
+      "options": { "type": "Numeric", "value": 3 }
+    },
+    { "name": "pass_lock_time", "options": { "type": "Numeric", "value": 15 } },
+    {
+      "name": "pass_lock_duration",
+      "options": { "type": "Numeric", "value": 15 }
+    },
+    {
+      "name": "app_password_age",
+      "options": { "type": "Numeric", "value": 365 }
+    },
+    {
+      "name": "maximum_password_age_machine",
+      "options": { "type": "Numeric", "value": 30 }
+    },
+    {
+      "name": "maximum_idle_time",
+      "options": { "type": "Numeric", "value": 300 }
+    },
+    {
+      "name": "maximum_idle_time_phrase",
+      "options": { "type": "String", "value": "5 minutes" }
+    },
+    {
+      "name": "unused_account_age",
+      "options": { "type": "Numeric", "value": 35 }
+    },
+    {
+      "name": "minimum_password_length_manual",
+      "options": { "type": "Numeric", "value": 15 }
+    },
+    {
+      "name": "minimum_password_length",
+      "options": { "type": "Numeric", "value": 14 }
+    },
+    {
+      "name": "minimum_password_age",
+      "options": { "type": "Numeric", "value": 1 }
+    },
+    {
+      "name": "maximum_password_age",
+      "options": { "type": "Numeric", "value": 60 }
+    },
+    {
+      "name": "password_history_size",
+      "options": { "type": "Numeric", "value": 24 }
+    },
+    {
+      "name": "enable_password_complexity",
+      "options": { "type": "Numeric", "value": 1 }
+    },
+    {
+      "name": "allowed_network_access_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-32-544", "S-1-5-11", "S-1-5-9"]
+      }
+    },
+    {
+      "name": "disallowed_network_access_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "allowed_global_privilege_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-32-544", "S-1-5-6", "S-1-5-19", "S-1-5-20"],
+        "sensitive": true
+      }
+    },
+    {
+      "name": "disallowed_global_privilege_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "allowed_audit_privilege_users",
+      "options": {
+        "type": "Array",
+        "value": ["S-1-5-19", "S-1-5-20"],
+        "sensitive": true
+      }
+    },
+    {
+      "name": "disallowed_audit_privilege_users",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "c_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\\\SYSTEM:(OI)(CI)(F)",
+          "BUILTIN\\Administrators:(OI)(CI)(F)",
+          "BUILTIN\\Users:(OI)(CI)(RX)",
+          "BUILTIN\\Users:(CI)(AD)",
+          "BUILTIN\\Users:(CI)(IO)(WD)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)"
+        ]
+      }
+    },
+    {
+      "name": "c_program_files_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\TrustedInstaller:(F)",
+          "NT SERVICE\\TrustedInstaller:(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Administrators:(M)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Users:(RX)",
+          "BUILTIN\\Users:(OI)(CI)(IO)(GR,GE)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)"
+        ]
+      }
+    },
+    {
+      "name": "c_windows_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\TrustedInstaller:(F)",
+          "NT SERVICE\\TrustedInstaller:(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Administrators:(M)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "BUILTIN\\Users:(RX)",
+          "BUILTIN\\Users:(OI)(CI)(IO)(GR,GE)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(RX)",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)"
+        ]
+      }
+    },
+    {
+      "name": "reg_software_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "CREATOR OWNER Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey"
+        ]
+      }
+    },
+    {
+      "name": "reg_system_perms_dc",
+      "options": {
+        "value": [
+          "CREATOR OWNER Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  268435456",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Server Operators Allow ReadKey",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  -2147483648",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  -2147483648"
+        ]
+      }
+    },
+    {
+      "name": "reg_security_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  ReadPermissions, ChangePermissions"
+        ]
+      }
+    },
+    {
+      "name": "reg_system_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "CREATOR OWNER Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  268435456",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  268435456",
+          "BUILTIN\\Administrators Allow  FullControl",
+          "BUILTIN\\Users Allow  -2147483648",
+          "BUILTIN\\Users Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadKey",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  -2147483648",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  ReadKey",
+          "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 Allow  -2147483648"
+        ]
+      }
+    },
+    {
+      "name": "local_administrators_dc",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "local_administrators_member",
+      "options": { "type": "Array", "value": [null], "sensitive": true }
+    },
+    {
+      "name": "local_administrator",
+      "options": { "type": "String", "value": "", "sensitive": true }
+    },
+    {
+      "name": "ntds_permissions",
+      "options": {
+        "type": "Array",
+        "value": [
+          "BUILTIN\\Administrators:(I)(F)",
+          "NT AUTHORITY\\SYSTEM:(I)(F)"
+        ]
+      }
+    },
+    {
+      "name": "c_windows_sysvol_perm",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\Authenticated Users:(RX)",
+          "NT AUTHORITY\\Authenticated Users:(OI)(CI)(IO)(GR,GE)",
+          "BUILTIN\\Server Operators:(RX)",
+          "BUILTIN\\Server Operators:(OI)(CI)(IO)(GR,GE)",
+          "BUILTIN\\Administrators:(M,WDAC,WO)",
+          "BUILTIN\\Administrators:(OI)(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(F)",
+          "NT AUTHORITY\\SYSTEM:(OI)(CI)(IO)(F)",
+          "NT AUTHORITY\\SYSTEM:(M,WDAC,WO)",
+          "CREATOR OWNER:(OI)(CI)(IO)(F)"
+        ]
+      }
+    },
+    {
+      "name": "LegalNoticeText",
+      "options": {
+        "type": "String",
+        "value": "You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions: -The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. -At any time, the USG may inspect and seize data stored on this IS. -Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. -This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. -Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants.  Such communications and work product are private and confidential.  See User Agreement for details."
+      }
+    },
+    {
+      "name": "LegalNoticeCaption",
+      "options": {
+        "type": "Array",
+        "value": [
+          "DoD Notice and Consent Banner",
+          "US Department of Defense Warning Statement"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_application_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_security_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "winevt_logs_system_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT SERVICE\\EventLog Allow  FullControl",
+          "NT AUTHORITY\\SYSTEM Allow  FullControl",
+          "BUILTIN\\Administrators Allow  FullControl"
+        ]
+      }
+    },
+    {
+      "name": "eventvwr_perms",
+      "options": {
+        "type": "Array",
+        "value": [
+          "NT AUTHORITY\\SYSTEM Allow  ReadAndExecute, Synchronize",
+          "BUILTIN\\Administrators Allow  ReadAndExecute, Synchronize",
+          "BUILTIN\\Users Allow  ReadAndExecute, Synchronize",
+          "NT SERVICE\\TrustedInstaller Allow  FullControl",
+          "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES Allow  ReadAndExecute, Synchronize",
+          "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES Allow  ReadAndExecute, Synchronize"
+        ]
+      }
+    },
+    {
+      "name": "backup_operators",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "application_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "excluded_accounts_domain",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "application_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "excluded_accounts_local",
+      "options": { "type": "Array", "value": [null] }
+    },
+    {
+      "name": "av_approved_software",
+      "options": {
+        "type": "Array",
+        "value": [
+          "Windows Defender",
+          "McAfee Host Intrusion Prevention",
+          "McAfee Endpoint Security",
+          "McAfee Agent"
+        ]
+      }
+    },
+    {
+      "name": "sensitive_system",
+      "options": { "type": "Boolean", "value": false }
+    },
+    { "name": "ftp_server", "options": { "type": "Boolean", "value": false } },
+    { "name": "ntp_servers", "options": { "type": "Array", "value": [null] } },
+    {
+      "name": "dod_root_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "8C941B34EA1EA6ED9AE2BC54CF687252B4C9B561",
+            "NotAfter": "Wednesday, December 05, 2029"
+          },
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "D73CA91102A2204A36459ED32213B467D7CE97FB",
+            "NotAfter": "Sunday, December 30, 2029"
+          },
+          {
+            "Subject": "CN=DoD Root CA 4, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "B8269F25DBD937ECAFD4C35A9838571723F2D026",
+            "NotAfter": "Sunday, July 25, 2032"
+          },
+          {
+            "Subject": "CN=DoD Root CA 5, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "4ECB5CC3095670454DA1CBD410FC921F46B8564B",
+            "NotAfter": "Friday, June 14, 2041"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dod_interoperability_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=DoD Interoperability Root CA 1, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "22BBE981F0694D246CC1472ED2B021DC8540A22F",
+            "NotAfter": "Friday, September 06, 2019"
+          },
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "AC06108CA348CC03B53795C64BF84403C1DBD341",
+            "NotAfter": "Saturday, January 22, 2022"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dod_cceb_certificates",
+      "options": {
+        "type": "Array",
+        "value": [
+          {
+            "Subject": "CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Issuer": "CN=US DoD CCEB Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US",
+            "Thumbprint": "929BF3196896994C0A201DF4A5B71F603FEFBF2E",
+            "NotAfter": "Friday, September 27, 2019"
+          }
+        ]
+      }
+    },
+    {
+      "name": "administrators",
+      "options": { "type": "Array", "value": [null], "sensitive": true }
+    },
+    {
+      "name": "disable_slow_controls",
+      "options": {
+        "value": "Input 'disable_slow_controls' does not have a value. Skipping test."
+      }
+    },
+    {
+      "name": "exempt_home_users",
+      "options": {
+        "value": "Input 'exempt_home_users' does not have a value. Skipping test."
+      }
+    },
+    {
+      "name": "non_interactive_shells",
+      "options": {
+        "value": "Input 'non_interactive_shells' does not have a value. Skipping test."
+      }
+    }
+  ],
+  "supports": [],
+  "controls": [
+    {
+      "title": "The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership,\n      and group membership of system files and commands match the vendor values.",
+      "desc": "Discretionary access control is weakened if a user or group has access permissions to system files and\n      directories greater than the default.",
+      "descriptions": {
+        "default": "Discretionary access control is weakened if a user or group has access permissions to system files and\n      directories greater than the default.",
+        "rationale": "",
+        "check": "Verify the file permissions, ownership, and group membership of system files and commands match the\n      vendor values.\n      Check the default file permissions, ownership, and group membership of system files and commands with the following\n      command:\n      # for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j\n      --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n      /var/log/gdm 040755 root root\n      /etc/audisp/audisp-remote.conf 0100640 root root\n      /usr/bin/passwd 0104755 root root\n      For each file returned, verify the current permissions, ownership, and group membership:\n      # ls -la <filename>\n      -rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n      If the file is more permissive than the default permissions, this is a finding.\n      If the file is not owned by the default owner and is not documented with the Information System Security Officer\n      (ISSO), this is a finding.\n      If the file is not a member of the default group and is not documented with the Information System Security Officer\n      (ISSO), this is a finding.",
+        "fix": "Run the following command to determine which package owns the file:\n\n    # rpm -qf <filename>\n\n    Reset the user and group ownership of files within a package with the\nfollowing command:\n\n    #rpm --setugids <packagename>\n\n\n    Reset the permissions of files within a package with the following command:\n\n    #rpm --setperms <packagename>"
+      },
+      "impact": 0.7,
+      "refs": [],
+      "tags": {
+        "legacy": ["V-71849", "SV-86473"],
+        "severity": "high",
+        "gtitle": "SRG-OS-000257-GPOS-00098",
+        "satisfies": ["SRG-OS-000257-GPOS-00098", "SRG-OS-000278-GPOS-00108"],
+        "gid": "V-204392",
+        "rid": "SV-204392r646841_rule",
+        "stig_id": "RHEL-07-010010",
+        "fix_id": "F-36302r646840_fix",
+        "cci": ["CCI-001494", "CCI-001496", "CCI-002165", "CCI-002235"],
+        "nist": ["AU-9", "AU-9 (3)", "AC-3 (4)", "AC-6 (10)"],
+        "subsystems": ["permissions", "package", "rpm"],
+        "host": null,
+        "container": null
+      },
+      "code": "control 'SV-204392' do\n  title 'The Red Hat Enterprise Linux operating system must be configured so that the file permissions, ownership,\n      and group membership of system files and commands match the vendor values.'\n  desc 'Discretionary access control is weakened if a user or group has access permissions to system files and\n      directories greater than the default.'\n  desc 'rationale', ''\n  desc 'check', %<Verify the file permissions, ownership, and group membership of system files and commands match the\n      vendor values.\n      Check the default file permissions, ownership, and group membership of system files and commands with the following\n      command:\n      # for i in `rpm -Va | egrep '^.{1}M|^.{5}U|^.{6}G' | cut -d \" \" -f 4,5`;do for j in `rpm -qf $i`;do rpm -ql $j\n      --dump | cut -d \" \" -f 1,5,6,7 | grep $i;done;done\n      /var/log/gdm 040755 root root\n      /etc/audisp/audisp-remote.conf 0100640 root root\n      /usr/bin/passwd 0104755 root root\n      For each file returned, verify the current permissions, ownership, and group membership:\n      # ls -la <filename>\n      -rw-------. 1 root root 133 Jan 11 13:25 /etc/audisp/audisp-remote.conf\n      If the file is more permissive than the default permissions, this is a finding.\n      If the file is not owned by the default owner and is not documented with the Information System Security Officer\n      (ISSO), this is a finding.\n      If the file is not a member of the default group and is not documented with the Information System Security Officer\n      (ISSO), this is a finding.>\n  desc 'fix', \"\n      Run the following command to determine which package owns the file:\n\n      # rpm -qf <filename>\n\n      Reset the user and group ownership of files within a package with the\n  following command:\n\n      #rpm --setugids <packagename>\n\n\n      Reset the permissions of files within a package with the following command:\n\n      #rpm --setperms <packagename>\n    \"\n  impact 0.7\n  tag 'legacy': ['V-71849', 'SV-86473']\n  tag 'severity': 'high'\n  tag 'gtitle': 'SRG-OS-000257-GPOS-00098'\n  tag 'satisfies': ['SRG-OS-000257-GPOS-00098', 'SRG-OS-000278-GPOS-00108']\n  tag 'gid': 'V-204392'\n  tag 'rid': 'SV-204392r646841_rule'\n  tag 'stig_id': 'RHEL-07-010010'\n  tag 'fix_id': 'F-36302r646840_fix'\n  tag 'cci': ['CCI-001494', 'CCI-001496', 'CCI-002165', 'CCI-002235']\n  tag nist: ['AU-9', 'AU-9 (3)', 'AC-3 (4)', 'AC-6 (10)']\n  tag subsystems: ['permissions', 'package', 'rpm']\n  tag 'host', 'container'\n\n  if input('disable_slow_controls')\n    describe \"This control consistently takes a long time to run and has been disabled\n      using the disable_slow_controls attribute.\" do\n      skip \"This control consistently takes a long time to run and has been disabled\n              using the disable_slow_controls attribute. You must enable this control for a\n              full accredidation for production.\"\n    end\n  else\n\n    allowlist = input('rpm_verify_perms_except')\n\n    misconfigured_packages = command('rpm -Va').stdout.split(\"\\n\")\n                                               .select { |package| package[0..7].match(/M|U|G/) }\n                                               .map { |package| package.match(/\\S+$/)[0] }\n\n    if misconfigured_packages.empty?\n      describe 'The list of rpm packages with permissions changed from the vendor values' do\n        subject { misconfigured_packages }\n        it { should be_empty }\n      end\n    else\n      describe 'The list of rpm packages with permissions changed from the vendor values' do\n        fail_msg = \"Files that have been modified from vendor-approved permissions but are not in the allowlist: #{(misconfigured_packages - allowlist).join(', ')}\"\n        it 'should all appear in the allowlist' do\n          expect(misconfigured_packages).to all(be_in(allowlist)), fail_msg\n        end\n      end\n    end\n  end\nend\n",
+      "source_location": { "ref": "./controls/SV-204392.rb", "line": 1 },
+      "id": "SV-204392"
+    },
+    {
+      "title": "The Red Hat Enterprise Linux operating system must be configured so that all local initialization files for\n    interactive users are owned by the home directory user or root.",
+      "desc": "Local initialization files are used to configure the user's shell environment upon logon. Malicious\n    modification of these files could compromise accounts upon logon.",
+      "descriptions": {
+        "default": "Local initialization files are used to configure the user's shell environment upon logon. Malicious\n    modification of these files could compromise accounts upon logon.",
+        "check": "Verify the local initialization files of all local interactive users are owned by that user.\n      Check the home directory assignment for all non-privileged users on the system with the following command:\n      Note: The example will be for the smithj user, who has a home directory of \"/home/smithj\".\n      # awk -F: '($3>=1000)&&($7 !~ /nologin/){print $1, $3, $6}' /etc/passwd\n      smithj 1000 /home/smithj\n      Note: This may miss interactive users that have been assigned a privileged User Identifier (UID). Evidence of\n      interactive use may be obtained from a number of log files containing system logon information.\n      Check the owner of all local interactive user's initialization files with the following command:\n      # ls -al /home/smithj/.[^.]* | more\n      -rwxr-xr-x 1 smithj users 896 Mar 10 2011 .profile\n      -rwxr-xr-x 1 smithj users 497 Jan 6 2007 .login\n      -rwxr-xr-x 1 smithj users 886 Jan 6 2007 .something\n      If all local interactive user's initialization files are not owned by that user or root, this is a finding.",
+        "fix": "Set the owner of the local initialization files for interactive users to\neither the directory owner or root with the following command:\n    Note: The example will be for the smithj user, who has a home directory of\n\"/home/smithj\".\n    # chown smithj /home/smithj/.[^.]*"
+      },
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "legacy": ["V-72029", "SV-86653"],
+        "severity": "medium",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "gid": "V-204474",
+        "rid": "SV-204474r603834_rule",
+        "stig_id": "RHEL-07-020690",
+        "fix_i": "F-4598r462464_fix",
+        "cci": ["CCI-000366"],
+        "nist": ["CM-6 b"],
+        "subsystems": ["init_files"]
+      },
+      "code": "control 'SV-204474' do\n  title 'The Red Hat Enterprise Linux operating system must be configured so that all local initialization files for\n    interactive users are owned by the home directory user or root.'\n  desc \"Local initialization files are used to configure the user's shell environment upon logon. Malicious\n    modification of these files could compromise accounts upon logon.\"\n  desc 'check', %q(Verify the local initialization files of all local interactive users are owned by that user.\n      Check the home directory assignment for all non-privileged users on the system with the following command:\n      Note: The example will be for the smithj user, who has a home directory of \"/home/smithj\".\n      # awk -F: '($3>=1000)&&($7 !~ /nologin/){print $1, $3, $6}' /etc/passwd\n      smithj 1000 /home/smithj\n      Note: This may miss interactive users that have been assigned a privileged User Identifier (UID). Evidence of\n      interactive use may be obtained from a number of log files containing system logon information.\n      Check the owner of all local interactive user's initialization files with the following command:\n      # ls -al /home/smithj/.[^.]* | more\n      -rwxr-xr-x 1 smithj users 896 Mar 10 2011 .profile\n      -rwxr-xr-x 1 smithj users 497 Jan 6 2007 .login\n      -rwxr-xr-x 1 smithj users 886 Jan 6 2007 .something\n      If all local interactive user's initialization files are not owned by that user or root, this is a finding.)\n  desc 'fix', 'Set the owner of the local initialization files for interactive users to\neither the directory owner or root with the following command:\n    Note: The example will be for the smithj user, who has a home directory of\n\"/home/smithj\".\n    # chown smithj /home/smithj/.[^.]*'\n  impact 0.5\n  tag legacy: ['V-72029', 'SV-86653']\n  tag severity: 'medium'\n  tag gtitle: 'SRG-OS-000480-GPOS-00227'\n  tag gid: 'V-204474'\n  tag rid: 'SV-204474r603834_rule'\n  tag stig_id: 'RHEL-07-020690'\n  tag fix_i: 'F-4598r462464_fix'\n  tag cci: ['CCI-000366']\n  tag nist: ['CM-6 b']\n  tag subsystems: ['init_files']\n\n  if virtualization.system.eql?('docker')\n    describe 'Control not applicable to a container' do\n      skip 'Control not applicable to a container'\n    end\n  else\n    exempt_home_users = input('exempt_home_users')\n    non_interactive_shells = input('non_interactive_shells')\n    ignore_shells = non_interactive_shells.join('|')\n    findings = Set[]\n    users.where { !shell.match(ignore_shells) && (uid >= 1000 || uid == 0) }.entries.each do |user_info|\n      next if exempt_home_users.include?(user_info.username.to_s)\n      findings += command(\"find #{user_info.home} -name '.*' -not -user #{user_info.username} -a -not -user root\").stdout.split(\"\\n\")\n    end\n    describe 'Files and Directories not owned by the user or root of the parent home directory' do\n      subject { findings.to_a }\n      it { should be_empty }\n    end\n  end\nend\n",
+      "source_location": { "ref": "./controls/SV-204474.rb", "line": 1 },
+      "id": "SV-204474"
+    },
+    {
+      "title": "Windows Server 2019 reversible password encryption must be disabled.",
+      "desc": "Storing passwords using reversible encryption is essentially the same as storing clear-text versions of the passwords, which are easily compromised. For this reason, this policy must never be enabled.",
+      "descriptions": {
+        "default": "Storing passwords using reversible encryption is essentially the same as storing clear-text versions of the passwords, which are easily compromised. For this reason, this policy must never be enabled.",
+        "check": "Verify the effective setting in Local Group Policy Editor.\n\n    Run \"gpedit.msc\".\n\n    Navigate to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy.\n    If the value for \"Store passwords using reversible encryption\" is not set to \"Disabled\", this is a finding.\n\n    For server core installations, run the following command:\n    Secedit /Export /Areas SecurityPolicy /CFG C:\\Path\\FileName.Txt\n    If \"ClearTextPassword\" equals \"1\" in the file, this is a finding.",
+        "fix": "Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy >> \"Store passwords using reversible encryption\" to \"Disabled\"."
+      },
+      "impact": 0.7,
+      "refs": [],
+      "tags": {
+        "gtitle": "SRG-OS-000073-GPOS-00041",
+        "gid": "V-93465",
+        "rid": "SV-103551r1_rule",
+        "stig_id": "WN19-AC-000090",
+        "fix_id": "F-99709r1_fix",
+        "cci": ["CCI-000196"],
+        "nist": ["IA-5 (1) (c)", "Rev_4"]
+      },
+      "code": "control 'SV-205653' do\n  title 'Windows Server 2019 reversible password encryption must be disabled.'\n  desc 'Storing passwords using reversible encryption is essentially the same as storing clear-text versions of the passwords, which are easily compromised. For this reason, this policy must never be enabled.'\n  desc 'check', 'Verify the effective setting in Local Group Policy Editor.\n\n    Run \"gpedit.msc\".\n\n    Navigate to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy.\n    If the value for \"Store passwords using reversible encryption\" is not set to \"Disabled\", this is a finding.\n\n    For server core installations, run the following command:\n    Secedit /Export /Areas SecurityPolicy /CFG C:\\\\Path\\\\FileName.Txt\n    If \"ClearTextPassword\" equals \"1\" in the file, this is a finding.'\n  desc 'fix', 'Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy >> \"Store passwords using reversible encryption\" to \"Disabled\".'\n  impact 0.7\n  tag gtitle: 'SRG-OS-000073-GPOS-00041'\n  tag gid: 'V-93465'\n  tag rid: 'SV-103551r1_rule'\n  tag stig_id: 'WN19-AC-000090'\n  tag fix_id: 'F-99709r1_fix'\n  tag cci: ['CCI-000196']\n  tag nist: ['IA-5 (1) (c)', 'Rev_4']\n\n  describe security_policy do\n    its('ClearTextPassword') { should eq 0 }\n  end\nend\n",
+      "source_location": { "ref": "./controls/SV-205653.rb", "line": 1 },
+      "id": "SV-205653"
+    },
+    {
+      "title": "Windows Server 2019 permissions for the system drive root directory\n  (usually C:\\) must conform to minimum requirements.",
+      "desc": "Changing the system's file and directory permissions allows the\n  possibility of unauthorized and anonymous modification to the operating system\n  and installed applications.\n\n      The default permissions are adequate when the Security Option \"Network\n  access: Let Everyone permissions apply to anonymous users\" is set to\n  \"Disabled\" (WN19-SO-000240).",
+      "descriptions": {
+        "default": "Changing the system's file and directory permissions allows the\n  possibility of unauthorized and anonymous modification to the operating system\n  and installed applications.\n\n      The default permissions are adequate when the Security Option \"Network\n  access: Let Everyone permissions apply to anonymous users\" is set to\n  \"Disabled\" (WN19-SO-000240).",
+        "rationale": "",
+        "check": "The default permissions are adequate when the Security Option \"Network\n  access: Let Everyone permissions apply to anonymous users\" is set to\n  \"Disabled\" (WN19-SO-000240).\n\n      Review the permissions for the system drive's root directory (usually\n  C:\\ ). Non-privileged groups such as Users or Authenticated Users must not have\n  greater than \"Read & execute\" permissions except where noted as defaults.\n  Individual accounts must not be used to assign permissions.\n\n      If permissions are not as restrictive as the default permissions listed\n  below, this is a finding.\n\n      Viewing in File Explorer:\n\n      View the Properties of the system drive's root directory.\n\n      Select the \"Security\" tab, and the \"Advanced\" button.\n\n      Default permissions:\n      C:\\\n      Type - \"Allow\" for all\n      Inherited from - \"None\" for all\n\n      Principal - Access - Applies to\n\n      SYSTEM - Full control - This folder, subfolders, and files\n      Administrators - Full control - This folder, subfolders, and files\n      Users - Read & execute - This folder, subfolders, and files\n      Users - Create folders/append data - This folder and subfolders\n      Users - Create files/write data - Subfolders only\n      CREATOR OWNER - Full Control - Subfolders and files only\n\n      Alternately, use icacls:\n\n      Open \"Command Prompt (Admin)\".\n\n      Enter \"icacls\" followed by the directory:\n\n      \"icacls c:\\\"\n\n      The following results should be displayed:\n\n      c:\\\n      NT AUTHORITY\\SYSTEM:(OI)(CI)(F)\n      BUILTIN\\Administrators:(OI)(CI)(F)\n      BUILTIN\\Users:(OI)(CI)(RX)\n      BUILTIN\\Users:(CI)(AD)\n      BUILTIN\\Users:(CI)(IO)(WD)\n      CREATOR OWNER:(OI)(CI)(IO)(F)\n      Successfully processed 1 files; Failed processing 0 files",
+        "fix": "Maintain the default permissions for the system drive's root directory and\nconfigure the Security Option \"Network access: Let Everyone permissions apply\nto anonymous users\" to \"Disabled\" (WN19-SO-000240).\n\n    Default Permissions\n    C:\\\n    Type - \"Allow\" for all\n    Inherited from - \"None\" for all\n\n    Principal - Access - Applies to\n\n    SYSTEM - Full control - This folder, subfolders, and files\n    Administrators - Full control - This folder, subfolders, and files\n    Users - Read & execute - This folder, subfolders, and files\n    Users - Create folders/append data - This folder and subfolders\n    Users - Create files/write data - Subfolders only\n    CREATOR OWNER - Full Control - Subfolders and files only"
+      },
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "severity": null,
+        "gtitle": "SRG-OS-000312-GPOS-00122",
+        "satisfies": [
+          "SRG-OS-000312-GPOS-00122",
+          "SRG-OS-000312-GPOS-00123",
+          "SRG-OS-000312-GPOS-00124"
+        ],
+        "gid": "V-93019",
+        "rid": "SV-103107r1_rule",
+        "stig_id": "WN19-00-000140",
+        "fix_id": "F-99265r1_fix",
+        "cci": ["CCI-002165"],
+        "nist": ["AC-3 (4)", "Rev_4"]
+      },
+      "code": "control 'SV-205734' do\n  title \"Windows Server 2019 permissions for the system drive root directory\n  (usually C:\\\\) must conform to minimum requirements.\"\n  desc \"Changing the system's file and directory permissions allows the\n  possibility of unauthorized and anonymous modification to the operating system\n  and installed applications.\n\n      The default permissions are adequate when the Security Option \\\"Network\n  access: Let Everyone permissions apply to anonymous users\\\" is set to\n  \\\"Disabled\\\" (WN19-SO-000240).\"\n  desc  'rationale', ''\n  desc  'check', \"The default permissions are adequate when the Security Option \\\"Network\n  access: Let Everyone permissions apply to anonymous users\\\" is set to\n  \\\"Disabled\\\" (WN19-SO-000240).\n\n      Review the permissions for the system drive's root directory (usually\n  C:\\\\ ). Non-privileged groups such as Users or Authenticated Users must not have\n  greater than \\\"Read & execute\\\" permissions except where noted as defaults.\n  Individual accounts must not be used to assign permissions.\n\n      If permissions are not as restrictive as the default permissions listed\n  below, this is a finding.\n\n      Viewing in File Explorer:\n\n      View the Properties of the system drive's root directory.\n\n      Select the \\\"Security\\\" tab, and the \\\"Advanced\\\" button.\n\n      Default permissions:\n      C:\\\\\n      Type - \\\"Allow\\\" for all\n      Inherited from - \\\"None\\\" for all\n\n      Principal - Access - Applies to\n\n      SYSTEM - Full control - This folder, subfolders, and files\n      Administrators - Full control - This folder, subfolders, and files\n      Users - Read & execute - This folder, subfolders, and files\n      Users - Create folders/append data - This folder and subfolders\n      Users - Create files/write data - Subfolders only\n      CREATOR OWNER - Full Control - Subfolders and files only\n\n      Alternately, use icacls:\n\n      Open \\\"Command Prompt (Admin)\\\".\n\n      Enter \\\"icacls\\\" followed by the directory:\n\n      \\\"icacls c:\\\\\\\"\n\n      The following results should be displayed:\n\n      c:\\\\\n      NT AUTHORITY\\\\SYSTEM:(OI)(CI)(F)\n      BUILTIN\\\\Administrators:(OI)(CI)(F)\n      BUILTIN\\\\Users:(OI)(CI)(RX)\n      BUILTIN\\\\Users:(CI)(AD)\n      BUILTIN\\\\Users:(CI)(IO)(WD)\n      CREATOR OWNER:(OI)(CI)(IO)(F)\n      Successfully processed 1 files; Failed processing 0 files\"\n  desc 'fix', \"\n      Maintain the default permissions for the system drive's root directory and\n  configure the Security Option \\\"Network access: Let Everyone permissions apply\n  to anonymous users\\\" to \\\"Disabled\\\" (WN19-SO-000240).\n\n      Default Permissions\n      C:\\\\\n      Type - \\\"Allow\\\" for all\n      Inherited from - \\\"None\\\" for all\n\n      Principal - Access - Applies to\n\n      SYSTEM - Full control - This folder, subfolders, and files\n      Administrators - Full control - This folder, subfolders, and files\n      Users - Read & execute - This folder, subfolders, and files\n      Users - Create folders/append data - This folder and subfolders\n      Users - Create files/write data - Subfolders only\n      CREATOR OWNER - Full Control - Subfolders and files only\"\n  impact 0.5\n  tag 'severity': nil\n  tag 'gtitle': 'SRG-OS-000312-GPOS-00122'\n  tag 'satisfies': %w(SRG-OS-000312-GPOS-00122 SRG-OS-000312-GPOS-00123\nSRG-OS-000312-GPOS-00124)\n  tag 'gid': 'V-93019'\n  tag 'rid': 'SV-103107r1_rule'\n  tag 'stig_id': 'WN19-00-000140'\n  tag 'fix_id': 'F-99265r1_fix'\n  tag 'cci': ['CCI-002165']\n  tag 'nist': ['AC-3 (4)', 'Rev_4']\n\n  expected_c_perm = input('c_perm')\n  describe.one do\n    describe registry_key('HKEY_LOCAL_MACHINE\\\\System\\\\CurrentControlSet\\\\Control\\\\Lsa') do\n      it { should have_property 'EveryoneIncludesAnonymous' }\n      its('EveryoneIncludesAnonymous') { should eq 0 }\n    end\n    c_perm = json(command: \"icacls 'C:\\\\' | ConvertTo-Json\").params.map(&:strip)[0..-3].map { |e| e.gsub('C:\\\\ ', '') }\n    describe 'C:\\\\ permissions are set correctly on folder structure' do\n      subject { c_perm.eql? expected_c_perm }\n      it { should eq true }\n    end\n  end\nend\n",
+      "source_location": { "ref": "./controls/SV-205734.rb", "line": 1 },
+      "id": "SV-205734"
+    },
+    {
+      "title": "RHEL 8 must define default permissions for logon and non-logon shells.",
+      "desc": "The umask controls the default access mode assigned to newly created\nfiles. A umask of 077 limits new files to mode 600 or less permissive. Although\numask can be represented as a four-digit number, the first digit representing\nspecial access modes is typically ignored or required to be \"0\". This\nrequirement applies to the globally configured system defaults and the local\ninteractive user defaults for each account on the system.",
+      "descriptions": {
+        "default": "The umask controls the default access mode assigned to newly created\nfiles. A umask of 077 limits new files to mode 600 or less permissive. Although\numask can be represented as a four-digit number, the first digit representing\nspecial access modes is typically ignored or required to be \"0\". This\nrequirement applies to the globally configured system defaults and the local\ninteractive user defaults for each account on the system.",
+        "rationale": "",
+        "check": "Verify that the umask default for installed shells is \"077\".\n\n    Check for the value of the \"UMASK\" parameter in the \"/etc/bashrc\" and\n\"/etc/csh.cshrc\" files with the following command:\n\n    Note: If the value of the \"UMASK\" parameter is set to \"000\" in either\nthe \"/etc/bashrc\" or the \"/etc/csh.cshrc\" files, the Severity is raised to\na CAT I.\n\n    # grep -i umask /etc/bashrc /etc/csh.cshrc\n\n    /etc/bashrc:          umask 077\n    /etc/bashrc:          umask 077\n    /etc/csh.cshrc:      umask 077\n    /etc/csh.cshrc:      umask 077\n\n    If the value for the \"UMASK\" parameter is not \"077\", or the \"UMASK\"\nparameter is missing or is commented out, this is a finding.",
+        "fix": "Configure the operating system to define default permissions for all\nauthenticated users in such a way that the user can only read and modify their\nown files.\n\n    Add or edit the lines for the \"UMASK\" parameter in the \"/etc/bashrc\"\nand \"etc/csh.cshrc\" files to \"077\":\n\n    UMASK 077"
+      },
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "severity": "medium",
+        "gtitle": "SRG-OS-000480-GPOS-00227",
+        "gid": "V-230385",
+        "rid": "SV-230385r627750_rule",
+        "stig_id": "RHEL-08-020353",
+        "fix_id": "F-33029r567902_fix",
+        "cci": ["CCI-000366"],
+        "nist": ["CM-6 b"]
+      },
+      "code": "control 'SV-230385' do\n  title 'RHEL 8 must define default permissions for logon and non-logon shells.'\n  desc  \"The umask controls the default access mode assigned to newly created\nfiles. A umask of 077 limits new files to mode 600 or less permissive. Although\numask can be represented as a four-digit number, the first digit representing\nspecial access modes is typically ignored or required to be \\\"0\\\". This\nrequirement applies to the globally configured system defaults and the local\ninteractive user defaults for each account on the system.\"\n  desc  'rationale', ''\n  desc  'check', \"\n    Verify that the umask default for installed shells is \\\"077\\\".\n\n    Check for the value of the \\\"UMASK\\\" parameter in the \\\"/etc/bashrc\\\" and\n\\\"/etc/csh.cshrc\\\" files with the following command:\n\n    Note: If the value of the \\\"UMASK\\\" parameter is set to \\\"000\\\" in either\nthe \\\"/etc/bashrc\\\" or the \\\"/etc/csh.cshrc\\\" files, the Severity is raised to\na CAT I.\n\n    # grep -i umask /etc/bashrc /etc/csh.cshrc\n\n    /etc/bashrc:          umask 077\n    /etc/bashrc:          umask 077\n    /etc/csh.cshrc:      umask 077\n    /etc/csh.cshrc:      umask 077\n\n    If the value for the \\\"UMASK\\\" parameter is not \\\"077\\\", or the \\\"UMASK\\\"\nparameter is missing or is commented out, this is a finding.\n  \"\n  desc 'fix', \"\n    Configure the operating system to define default permissions for all\nauthenticated users in such a way that the user can only read and modify their\nown files.\n\n    Add or edit the lines for the \\\"UMASK\\\" parameter in the \\\"/etc/bashrc\\\"\nand \\\"etc/csh.cshrc\\\" files to \\\"077\\\":\n\n    UMASK 077\n  \"\n  impact 0.5\n  tag severity: 'medium'\n  tag gtitle: 'SRG-OS-000480-GPOS-00227'\n  tag gid: 'V-230385'\n  tag rid: 'SV-230385r627750_rule'\n  tag stig_id: 'RHEL-08-020353'\n  tag fix_id: 'F-33029r567902_fix'\n  tag cci: ['CCI-000366']\n  tag nist: ['CM-6 b']\n\n  umask_regexp = /umask\\s*(?<umask_code>\\d\\d\\d)/\n\n  bashrc_umask = file('/etc/bashrc').content.match(umask_regexp)[:umask_code]\n  cshrc_umask = file('/etc/csh.cshrc').content.match(umask_regexp)[:umask_code]\n\n  if bashrc_umask == '000' || cshrc_umask == '000'\n    impact 0.7\n    tag severity: 'high'\n  end\n\n  describe 'umask value defined in /etc/bashrc' do\n    subject { bashrc_umask }\n    it { should cmp '077' }\n  end\n  describe 'umask value defined in /etc/csh.cshrc' do\n    subject { cshrc_umask }\n    it { should cmp '077' }\n  end\nend\n",
+      "source_location": { "ref": "./controls/SV-230385.rb", "line": 1 },
+      "id": "SV-230385"
+    },
+    {
+      "title": "Windows Server 2019 must automatically remove or disable temporary user accounts after 72 hours.",
+      "desc": "If temporary user accounts remain active when no longer needed or for an excessive period, these accounts may be used to gain unauthorized access. To mitigate this risk, automated termination of all temporary accounts must be set upon account creation.\n\n    Temporary accounts are established as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation.\n    If temporary accounts are used, the operating system must be configured to automatically terminate these types of accounts after a DoD-defined time period of 72 hours.\n    To address access requirements, many operating systems may be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements.",
+      "descriptions": {
+        "default": "If temporary user accounts remain active when no longer needed or for an excessive period, these accounts may be used to gain unauthorized access. To mitigate this risk, automated termination of all temporary accounts must be set upon account creation.\n\n    Temporary accounts are established as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation.\n    If temporary accounts are used, the operating system must be configured to automatically terminate these types of accounts after a DoD-defined time period of 72 hours.\n    To address access requirements, many operating systems may be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements.",
+        "rationale": "",
+        "check": "Review temporary user accounts for expiration dates.\n    Determine if temporary user accounts are used and identify any that exist. If none exist, this is NA.\n\n    Domain Controllers:\n    Open \"PowerShell\".\n    Enter \"Search-ADAccount -AccountExpiring | FT Name, AccountExpirationDate\".\n    If \"AccountExpirationDate\" has not been defined within 72 hours for any temporary user account, this is a finding.\n\n    Member servers and standalone systems:\n    Open \"Command Prompt\".\n    Run \"Net user [username]\", where [username] is the name of the temporary user account.\n    If \"Account expires\" has not been defined within 72 hours for any temporary user account, this is a finding.",
+        "fix": "Configure temporary user accounts to automatically expire within 72 hours.\n    Domain accounts can be configured with an account expiration date, under \"Account\" properties.\n    Local accounts can be configured to expire with the command \"Net user [username] /expires:[mm/dd/yyyy]\", where username is the name of the temporary user account.\n    Delete any temporary user accounts that are no longer necessary."
+      },
+      "impact": 0.0,
+      "refs": [],
+      "tags": {
+        "severity": null,
+        "gtitle": "SRG-OS-000002-GPOS-00002",
+        "gid": "V-92975",
+        "rid": "SV-103063r1_rule",
+        "stig_id": "WN19-00-000300",
+        "fix_id": "F-99221r1_fix",
+        "cci": ["CCI-000016"],
+        "nist": ["AC-2 (2)", "Rev_4"]
+      },
+      "code": "control 'V-92975' do\n  title \"Windows Server 2019 must automatically remove or disable temporary user accounts after #{input('temporary_account_period_phrase')}.\"\n  desc \"If temporary user accounts remain active when no longer needed or for an excessive period, these accounts may be used to gain unauthorized access. To mitigate this risk, automated termination of all temporary accounts must be set upon account creation.\n\n    Temporary accounts are established as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation.\n    If temporary accounts are used, the operating system must be configured to automatically terminate these types of accounts after a #{input('org_name')[:acronym]}-defined time period of #{input('temporary_account_period_phrase')}.\n    To address access requirements, many operating systems may be integrated with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements.\"\n  desc  'rationale', ''\n  desc  'check', \"Review temporary user accounts for expiration dates.\n    Determine if temporary user accounts are used and identify any that exist. If none exist, this is NA.\n\n    Domain Controllers:\n    Open \\\"PowerShell\\\".\n    Enter \\\"Search-ADAccount -AccountExpiring | FT Name, AccountExpirationDate\\\".\n    If \\\"AccountExpirationDate\\\" has not been defined within #{input('temporary_account_period_phrase')} for any temporary user account, this is a finding.\n\n    Member servers and standalone systems:\n    Open \\\"Command Prompt\\\".\n    Run \\\"Net user [username]\\\", where [username] is the name of the temporary user account.\n    If \\\"Account expires\\\" has not been defined within #{input('temporary_account_period_phrase')} for any temporary user account, this is a finding.\"\n  desc 'fix', \"Configure temporary user accounts to automatically expire within #{input('temporary_account_period_phrase')}.\n    Domain accounts can be configured with an account expiration date, under \\\"Account\\\" properties.\n    Local accounts can be configured to expire with the command \\\"Net user [username] /expires:[mm/dd/yyyy]\\\", where username is the name of the temporary user account.\n    Delete any temporary user accounts that are no longer necessary.\"\n  impact 0.5\n  tag 'severity': nil\n  tag 'gtitle': 'SRG-OS-000002-GPOS-00002'\n  tag 'gid': 'V-92975'\n  tag 'rid': 'SV-103063r1_rule'\n  tag 'stig_id': 'WN19-00-000300'\n  tag 'fix_id': 'F-99221r1_fix'\n  tag 'cci': ['CCI-000016']\n  tag 'nist': ['AC-2 (2)', 'Rev_4']\n\n  domain_role = command('wmic computersystem get domainrole | Findstr /v DomainRole').stdout.strip\n\n  if domain_role == '4' || domain_role == '5'\n    expiring_accounts = []\n    temporary_accounts = input('temp_accounts_domain')\n    unless temporary_accounts == [nil]\n      temporary_accounts.each do |temporary_account|\n        expiring_accounts << json({ command: \"Get-ADUser -Identity #{temporary_account} -Properties WhenCreated, AccountExpirationDate | Select-Object -Property SamAccountName, @{Name='WhenCreated';Expression={$_.WhenCreated.ToString('yyyy-MM-dd')}}, @{Name='AccountExpirationDate';Expression={$_.AccountExpirationDate.ToString('yyyy-MM-dd')}}| ConvertTo-Json\" }).params\n      end\n    end\n    ad_accounts = json({ command: \"Get-ADUser -Filter 'Enabled -eq $true' -Properties WhenCreated, AccountExpirationDate | Select-Object -Property SamAccountName, @{Name='WhenCreated';Expression={$_.WhenCreated.ToString('yyyy-MM-dd')}}, @{Name='AccountExpirationDate';Expression={$_.AccountExpirationDate.ToString('yyyy-MM-dd')}}| ConvertTo-Json\" }).params\n    if ad_accounts.empty?\n      impact 0.0\n      describe 'This control is not applicable as no user accounts were found' do\n        skip 'This control is not applicable as no user accounts were found'\n      end\n    else\n      case ad_accounts\n      when Hash # One user account\n        if ad_accounts.fetch('AccountExpirationDate').nil?\n          impact 0.0\n          describe 'This control is not applicable as no expiring user accounts were found' do\n            skip 'This control is not applicable as no expiring user accounts were found'\n          end\n        else\n          expiring_accounts << ad_accounts unless expiring_accounts.any? { |h| h['SamAccountName'] == ad_accounts.fetch('SamAccountName') }\n        end\n      when Array # Multiple user accounts\n        ad_accounts.each do |ad_account|\n          next if ad_account.fetch('AccountExpirationDate').nil?\n          expiring_accounts << ad_account unless expiring_accounts.any? { |h| h['SamAccountName'] == ad_account.fetch('SamAccountName') }\n        end\n      end\n    end\n    if expiring_accounts.empty?\n      impact 0.0\n      describe 'This control is not applicable as no expiring user accounts were found' do\n        skip 'This control is not applicable as no expiring user accounts were found'\n      end\n    else\n      expiring_accounts.each do |expiring_account|\n        account_name = expiring_account.fetch('SamAccountName')\n        creation_date = Date.parse(expiring_account.fetch('WhenCreated'))\n        expiration_date = Date.parse(expiring_account.fetch('AccountExpirationDate'))\n        date_difference = expiration_date.mjd - creation_date.mjd\n        describe \"Account expiration set for #{account_name}\" do\n          subject { date_difference }\n          it { should cmp <= input('temporary_account_period') }\n        end\n      end\n    end\n\n  else\n    expiring_users = []\n    temporary_accounts = input('temp_accounts_local')\n    unless temporary_accounts == [nil]\n      temporary_accounts.each do |temporary_account|\n        expiring_users << json({ command: \"Get-LocalUser -Name #{temporary_account} | Select-Object -Property Name, @{Name='PasswordLastSet';Expression={$_.PasswordLastSet.ToString('yyyy-MM-dd')}}, @{Name='AccountExpires';Expression={$_.AccountExpires.ToString('yyyy-MM-dd')}} | ConvertTo-Json\" }).params\n      end\n    end\n    local_users = json({ command: \"Get-LocalUser * | Select-Object -Property Name, @{Name='PasswordLastSet';Expression={$_.PasswordLastSet.ToString('yyyy-MM-dd')}}, @{Name='AccountExpires';Expression={$_.AccountExpires.ToString('yyyy-MM-dd')}} | ConvertTo-Json\" }).params\n    if local_users.empty?\n      impact 0.0\n      describe 'This control is not applicable as no user accounts were found' do\n        skip 'This control is not applicable as no user accounts were found'\n      end\n    else\n      case local_users\n      when Hash # One user account\n        if local_users.fetch('AccountExpires').nil? || local_user.fetch('PasswordLastSet').nil?\n          impact 0.0\n          describe 'This control is not applicable as no expiring user accounts with password last set date were found' do\n            skip 'This control is not applicable as no expiring user accounts password last set date were found'\n          end\n        else\n          expiring_users << local_users unless expiring_users.any? { |h| h['Name'] == local_users.fetch('Name') }\n        end\n      when Array # Multiple user accounts\n        local_users.each do |local_user|\n          next if local_user.fetch('AccountExpires').nil? || local_user.fetch('PasswordLastSet').nil?\n          expiring_users << local_user unless expiring_users.any? { |h| h['Name'] == local_user.fetch('Name') }\n        end\n      end\n    end\n    if expiring_users.empty?\n      impact 0.0\n      describe 'This control is not applicable as no expiring user accounts with password last set date were found' do\n        skip 'This control is not applicable as no expiring user accounts with password last set date were found'\n      end\n    else\n      expiring_users.each do |expiring_account|\n        user_name = expiring_account.fetch('Name')\n        password_date = Date.parse(expiring_account.fetch('PasswordLastSet'))\n        expiration_date = Date.parse(expiring_account.fetch('AccountExpires'))\n        date_difference = expiration_date.mjd - password_date.mjd\n        describe \"Account expiration set for #{user_name}\" do\n          subject { date_difference }\n          it { should cmp <= input('temporary_account_period') }\n        end\n      end\n    end\n  end\nend\n",
+      "source_location": { "ref": "./controls/V-92975.rb", "line": 1 },
+      "id": "V-92975"
+    },
+    {
+      "title": "Windows Server 2019 must be configured to audit Account Management -\nSecurity Group Management successes.",
+      "desc": "Maintaining an audit trail of system activity logs can help identify\nconfiguration errors, troubleshoot service disruptions, and analyze compromises\nthat have occurred, as well as detect attacks. Audit logs are necessary to\nprovide a trail of evidence in case the system or network is compromised.\nCollecting this data is essential for analyzing the security of information\nassets and detecting signs of suspicious and unexpected behavior.\n\n    Security Group Management records events such as creating, deleting, or\nchanging security groups, including changes in group members.",
+      "descriptions": {
+        "default": "Maintaining an audit trail of system activity logs can help identify\nconfiguration errors, troubleshoot service disruptions, and analyze compromises\nthat have occurred, as well as detect attacks. Audit logs are necessary to\nprovide a trail of evidence in case the system or network is compromised.\nCollecting this data is essential for analyzing the security of information\nassets and detecting signs of suspicious and unexpected behavior.\n\n    Security Group Management records events such as creating, deleting, or\nchanging security groups, including changes in group members.",
+        "rationale": "",
+        "check": "Security Option \"Audit: Force audit policy subcategory settings (Windows\nVista or later) to override audit policy category settings\" must be set to\n\"Enabled\" (WN19-SO-000050) for the detailed auditing subcategories to be\neffective.\n\n    Use the \"AuditPol\" tool to review the current Audit Policy configuration:\n\n    Open \"PowerShell\" or a \"Command Prompt\" with elevated privileges (\"Run\nas administrator\").\n\n    Enter \"AuditPol /get /category:*\"\n\n    Compare the \"AuditPol\" settings with the following:\n\n    If the system does not audit the following, this is a finding.\n\n    Account Management >> Security Group Management - Success",
+        "fix": "Configure the policy value for Computer Configuration >>\nWindows Settings >> Security Settings >> Advanced Audit Policy Configuration >>\nSystem Audit Policies >> Account Management >> \"Audit Security Group\nManagement\" with \"Success\" selected."
+      },
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "severity": null,
+        "gtitle": "SRG-OS-000004-GPOS-00004",
+        "satisfies": [
+          "SRG-OS-000004-GPOS-00004",
+          "SRG-OS-000239-GPOS-00089",
+          "SRG-OS-000240-GPOS-00090",
+          "SRG-OS-000241-GPOS-00091",
+          "SRG-OS-000303-GPOS-00120",
+          "SRG-OS-000476-GPOS-00221"
+        ],
+        "gid": "V-92979",
+        "rid": "SV-103067r1_rule",
+        "stig_id": "WN19-AU-000100",
+        "fix_id": "F-99225r1_fix",
+        "cci": [
+          "CCI-000018",
+          "CCI-000172",
+          "CCI-001403",
+          "CCI-001404",
+          "CCI-001405",
+          "CCI-002130"
+        ],
+        "nist": [
+          "AC-2 (4)",
+          "AU-12 c",
+          "AC-2 (4)",
+          "AC-2 (4)",
+          "AC-2 (4)",
+          "AC-2 (4)",
+          "Rev_4"
+        ]
+      },
+      "code": "control 'V-92979' do\n  title \"Windows Server 2019 must be configured to audit Account Management -\nSecurity Group Management successes.\"\n  desc  \"Maintaining an audit trail of system activity logs can help identify\nconfiguration errors, troubleshoot service disruptions, and analyze compromises\nthat have occurred, as well as detect attacks. Audit logs are necessary to\nprovide a trail of evidence in case the system or network is compromised.\nCollecting this data is essential for analyzing the security of information\nassets and detecting signs of suspicious and unexpected behavior.\n\n    Security Group Management records events such as creating, deleting, or\nchanging security groups, including changes in group members.\"\n  desc  'rationale', ''\n  desc  'check', \"Security Option \\\"Audit: Force audit policy subcategory settings (Windows\nVista or later) to override audit policy category settings\\\" must be set to\n\\\"Enabled\\\" (WN19-SO-000050) for the detailed auditing subcategories to be\neffective.\n\n    Use the \\\"AuditPol\\\" tool to review the current Audit Policy configuration:\n\n    Open \\\"PowerShell\\\" or a \\\"Command Prompt\\\" with elevated privileges (\\\"Run\nas administrator\\\").\n\n    Enter \\\"AuditPol /get /category:*\\\"\n\n    Compare the \\\"AuditPol\\\" settings with the following:\n\n    If the system does not audit the following, this is a finding.\n\n    Account Management >> Security Group Management - Success\"\n  desc  'fix', \"Configure the policy value for Computer Configuration >>\nWindows Settings >> Security Settings >> Advanced Audit Policy Configuration >>\nSystem Audit Policies >> Account Management >> \\\"Audit Security Group\nManagement\\\" with \\\"Success\\\" selected.\"\n  impact 0.5\n  tag 'severity': nil\n  tag 'gtitle': 'SRG-OS-000004-GPOS-00004'\n  tag 'satisfies': ['SRG-OS-000004-GPOS-00004', 'SRG-OS-000239-GPOS-00089',\n'SRG-OS-000240-GPOS-00090', 'SRG-OS-000241-GPOS-00091',\n'SRG-OS-000303-GPOS-00120', 'SRG-OS-000476-GPOS-00221']\n  tag 'gid': 'V-92979'\n  tag 'rid': 'SV-103067r1_rule'\n  tag 'stig_id': 'WN19-AU-000100'\n  tag 'fix_id': 'F-99225r1_fix'\n  tag 'cci': ['CCI-000018', 'CCI-000172', 'CCI-001403', 'CCI-001404', 'CCI-001405', 'CCI-002130']\n  tag 'nist': ['AC-2 (4)', 'AU-12 c', 'AC-2 (4)', 'AC-2 (4)', 'AC-2 (4)', 'AC-2 (4)', 'Rev_4']\n\n  describe.one do\n    describe audit_policy do\n      its('Security Group Management') { should eq 'Success' }\n    end\n    describe audit_policy do\n      its('Security Group Management') { should eq 'Success and Failure' }\n    end\n  end\nend\n",
+      "source_location": { "ref": "./controls/V-92979.rb", "line": 1 },
+      "id": "V-92979"
+    },
+    {
+      "title": "Windows Server 2019 Active Directory Group Policy objects must have\nproper access control permissions.",
+      "desc": "When directory service database objects do not have appropriate access\ncontrol permissions, it may be possible for malicious users to create, read,\nupdate, or delete the objects and degrade or destroy the integrity of the data.\nWhen the directory service is used for identification, authentication, or\nauthorization functions, a compromise of the database objects could lead to a\ncompromise of all systems relying on the directory service.\n\n    For Active Directory (AD), the Group Policy objects require special\nattention. In a distributed administration model (i.e., help desk), Group\nPolicy objects are more likely to have access permissions changed from the\nsecure defaults. If inappropriate access permissions are defined for Group\nPolicy objects, this could allow an intruder to change the security policy\napplied to all domain client computers (workstations and servers).",
+      "descriptions": {
+        "default": "When directory service database objects do not have appropriate access\ncontrol permissions, it may be possible for malicious users to create, read,\nupdate, or delete the objects and degrade or destroy the integrity of the data.\nWhen the directory service is used for identification, authentication, or\nauthorization functions, a compromise of the database objects could lead to a\ncompromise of all systems relying on the directory service.\n\n    For Active Directory (AD), the Group Policy objects require special\nattention. In a distributed administration model (i.e., help desk), Group\nPolicy objects are more likely to have access permissions changed from the\nsecure defaults. If inappropriate access permissions are defined for Group\nPolicy objects, this could allow an intruder to change the security policy\napplied to all domain client computers (workstations and servers).",
+        "rationale": "",
+        "check": "This applies to domain controllers. It is NA for other systems.\n\n    Review the permissions on Group Policy objects.\n\n    Open \"Group Policy Management\" (available from various menus or run\n\"gpmc.msc\").\n\n    Navigate to \"Group Policy Objects\" in the domain being reviewed (Forest\n>> Domains >> Domain).\n\n    For each Group Policy object:\n\n    Select the Group Policy object item in the left pane.\n\n    Select the \"Delegation\" tab in the right pane.\n\n    Select the \"Advanced\" button.\n\n    Select each Group or user name.\n\n    View the permissions.\n\n    If any standard user accounts or groups have \"Allow\" permissions greater\nthan \"Read\" and \"Apply group policy\", this is a finding.\n\n    Other access permissions that allow the objects to be updated are\nconsidered findings unless specifically documented by the ISSO.\n\n    The default permissions noted below satisfy this requirement.\n\n    The permissions shown are at the summary level. More detailed permissions\ncan be viewed by selecting the next \"Advanced\" button, the desired Permission\nentry, and the \"Edit\" button.\n\n    Authenticated Users - Read, Apply group policy, Special permissions\n\n    The special permissions for Authenticated Users are for Read-type\nProperties. If detailed permissions include any Create, Delete, Modify, or\nWrite Permissions or Properties, this is a finding.\n\n    The special permissions for the following default groups are not the focus\nof this requirement and may include a wide range of permissions and properties:\n\n    CREATOR OWNER - Special permissions\n    SYSTEM - Read, Write, Create all child objects, Delete all child objects,\nSpecial permissions\n    Domain Admins - Read, Write, Create all child objects, Delete all child\nobjects, Special permissions\n    Enterprise Admins - Read, Write, Create all child objects, Delete all child\nobjects, Special permissions\n    ENTERPRISE DOMAIN CONTROLLERS - Read, Special permissions\n\n    The Domain Admins and Enterprise Admins will not have the \"Delete all\nchild objects\" permission on the two default Group Policy objects: Default\nDomain Policy and Default Domain Controllers Policy. They will have this\npermission o'n organization created Group Policy objects.",
+        "fix": "Maintain the permissions on Group Policy objects to not allow greater than\n\"Read\" and \"Apply group policy\" for standard user accounts or groups. The\ndefault permissions below meet this requirement:\n\n    Authenticated Users - Read, Apply group policy, Special permissions\n\n    The special permissions for Authenticated Users are for Read-type\nProperties.\n\n    CREATOR OWNER - Special permissions\n    SYSTEM - Read, Write, Create all child objects, Delete all child objects,\nSpecial permissions\n    Domain Admins - Read, Write, Create all child objects, Delete all child\nobjects, Special permissions\n    Enterprise Admins - Read, Write, Create all child objects, Delete all child\nobjects, Special permissions\n    ENTERPRISE DOMAIN CONTROLLERS - Read, Special permissions\n\n    Document any other access permissions that allow the objects to be updated\nwith the ISSO.\n\n    The Domain Admins and Enterprise Admins will not have the \"Delete all\nchild objects\" permission on the two default Group Policy objects: Default\nDomain Policy and Default Domain Controllers Policy. They will have this\npermission on created Group Policy objects."
+      },
+      "impact": 0.7,
+      "refs": [],
+      "tags": {
+        "severity": null,
+        "gtitle": "SRG-OS-000324-GPOS-00125",
+        "gid": "V-93033",
+        "rid": "SV-103121r1_rule",
+        "stig_id": "WN19-DC-000090",
+        "fix_id": "F-99279r1_fix",
+        "cci": ["CCI-002235"],
+        "nist": ["AC-6 (10)", "Rev_4"]
+      },
+      "code": "control 'V-93033' do\n  title \"Windows Server 2019 Active Directory Group Policy objects must have\nproper access control permissions.\"\n  desc  \"When directory service database objects do not have appropriate access\ncontrol permissions, it may be possible for malicious users to create, read,\nupdate, or delete the objects and degrade or destroy the integrity of the data.\nWhen the directory service is used for identification, authentication, or\nauthorization functions, a compromise of the database objects could lead to a\ncompromise of all systems relying on the directory service.\n\n    For Active Directory (AD), the Group Policy objects require special\nattention. In a distributed administration model (i.e., help desk), Group\nPolicy objects are more likely to have access permissions changed from the\nsecure defaults. If inappropriate access permissions are defined for Group\nPolicy objects, this could allow an intruder to change the security policy\napplied to all domain client computers (workstations and servers).\"\n  desc  'rationale', ''\n  desc  'check', \"This applies to domain controllers. It is NA for other systems.\n\n    Review the permissions on Group Policy objects.\n\n    Open \\\"Group Policy Management\\\" (available from various menus or run\n\\\"gpmc.msc\\\").\n\n    Navigate to \\\"Group Policy Objects\\\" in the domain being reviewed (Forest\n>> Domains >> Domain).\n\n    For each Group Policy object:\n\n    Select the Group Policy object item in the left pane.\n\n    Select the \\\"Delegation\\\" tab in the right pane.\n\n    Select the \\\"Advanced\\\" button.\n\n    Select each Group or user name.\n\n    View the permissions.\n\n    If any standard user accounts or groups have \\\"Allow\\\" permissions greater\nthan \\\"Read\\\" and \\\"Apply group policy\\\", this is a finding.\n\n    Other access permissions that allow the objects to be updated are\nconsidered findings unless specifically documented by the ISSO.\n\n    The default permissions noted below satisfy this requirement.\n\n    The permissions shown are at the summary level. More detailed permissions\ncan be viewed by selecting the next \\\"Advanced\\\" button, the desired Permission\nentry, and the \\\"Edit\\\" button.\n\n    Authenticated Users - Read, Apply group policy, Special permissions\n\n    The special permissions for Authenticated Users are for Read-type\nProperties. If detailed permissions include any Create, Delete, Modify, or\nWrite Permissions or Properties, this is a finding.\n\n    The special permissions for the following default groups are not the focus\nof this requirement and may include a wide range of permissions and properties:\n\n    CREATOR OWNER - Special permissions\n    SYSTEM - Read, Write, Create all child objects, Delete all child objects,\nSpecial permissions\n    Domain Admins - Read, Write, Create all child objects, Delete all child\nobjects, Special permissions\n    Enterprise Admins - Read, Write, Create all child objects, Delete all child\nobjects, Special permissions\n    ENTERPRISE DOMAIN CONTROLLERS - Read, Special permissions\n\n    The Domain Admins and Enterprise Admins will not have the \\\"Delete all\nchild objects\\\" permission on the two default Group Policy objects: Default\nDomain Policy and Default Domain Controllers Policy. They will have this\npermission o'n organization created Group Policy objects.\"\n  desc  'fix', \"Maintain the permissions on Group Policy objects to not allow greater than\n\\\"Read\\\" and \\\"Apply group policy\\\" for standard user accounts or groups. The\ndefault permissions below meet this requirement:\n\n    Authenticated Users - Read, Apply group policy, Special permissions\n\n    The special permissions for Authenticated Users are for Read-type\nProperties.\n\n    CREATOR OWNER - Special permissions\n    SYSTEM - Read, Write, Create all child objects, Delete all child objects,\nSpecial permissions\n    Domain Admins - Read, Write, Create all child objects, Delete all child\nobjects, Special permissions\n    Enterprise Admins - Read, Write, Create all child objects, Delete all child\nobjects, Special permissions\n    ENTERPRISE DOMAIN CONTROLLERS - Read, Special permissions\n\n    Document any other access permissions that allow the objects to be updated\nwith the ISSO.\n\n    The Domain Admins and Enterprise Admins will not have the \\\"Delete all\nchild objects\\\" permission on the two default Group Policy objects: Default\nDomain Policy and Default Domain Controllers Policy. They will have this\npermission on created Group Policy objects.\"\n  impact 0.7\n  tag 'severity': nil\n  tag 'gtitle': 'SRG-OS-000324-GPOS-00125'\n  tag 'gid': 'V-93033'\n  tag 'rid': 'SV-103121r1_rule'\n  tag 'stig_id': 'WN19-DC-000090'\n  tag 'fix_id': 'F-99279r1_fix'\n  tag 'cci': ['CCI-002235']\n  tag 'nist': ['AC-6 (10)', 'Rev_4']\n\n  # Checked Code in 2016 and it is not a validate way of checking permissions, Until a command is put together that can get all GPO's in a Domain and then check all permissions, this is manually\n  describe 'A manual review is required to ensure all Group Policies have the correct permisions' do\n    skip 'A manual review is required to ensure all Group Policies have the correct permisions'\n  end\nend\n",
+      "source_location": { "ref": "./controls/V-93033.rb", "line": 1 },
+      "id": "V-93033"
+    },
+    {
+      "title": "Windows Server 2019 title for legal banner dialog box must be configured with the appropriate text.",
+      "desc": "Failure to display the logon banner prior to a logon attempt will negate legal proceedings resulting from unauthorized access to system resources.",
+      "descriptions": {
+        "default": "Failure to display the logon banner prior to a logon attempt will negate legal proceedings resulting from unauthorized access to system resources.",
+        "check": "If the following registry value does not exist or is not configured as specified, this is a finding:\n\n    Registry Hive: HKEY_LOCAL_MACHINE\n    Registry Path: \\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\\n\n    Value Name: LegalNoticeCaption\n\n    Value Type: REG_SZ\n    Value: See message title options below\n\n    \"DoD Notice and Consent Banner\", \"US Department of Defense Warning Statement\", or an organization-defined equivalent.\n\n    If an organization-defined title is used, it can in no case contravene or modify the language of the banner text required in WN19-SO-000150.\n\n    Automated tools may only search for the titles defined above. If an organization-defined title is used, a manual review will be required.",
+        "fix": "Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> Security Options >> \"Interactive Logon: Message title for users attempting to log on\" to \"DoD Notice and Consent Banner\", \"US Department of Defense Warning Statement\", or an organization-defined equivalent.\n\n    If an organization-defined title is used, it can in no case contravene or modify the language of the message text required in WN19-SO-000150."
+      },
+      "impact": 0.3,
+      "refs": [],
+      "tags": {
+        "gtitle": "SRG-OS-000023-GPOS-00006",
+        "satisfies": ["SRG-OS-000023-GPOS-00006", "SRG-OS-000228-GPOS-00088"],
+        "gid": "V-93149",
+        "rid": "SV-103237r1_rule",
+        "stig_id": "WN19-SO-000140",
+        "fix_id": "F-99395r1_fix",
+        "cci": [
+          "CCI-000048",
+          "CCI-001384",
+          "CCI-001385",
+          "CCI-001386",
+          "CCI-001387",
+          "CCI-001388"
+        ],
+        "nist": [
+          "AC-8 a",
+          "AC-8 c 1",
+          "AC-8 c 2",
+          "AC-8 c 2",
+          "AC-8 c 2",
+          "AC-8 c 3",
+          "Rev_4"
+        ]
+      },
+      "code": "control 'V-93149' do\n  title 'Windows Server 2019 title for legal banner dialog box must be configured with the appropriate text.'\n  desc 'Failure to display the logon banner prior to a logon attempt will negate legal proceedings resulting from unauthorized access to system resources.'\n  desc 'check', 'If the following registry value does not exist or is not configured as specified, this is a finding:\n\n    Registry Hive: HKEY_LOCAL_MACHINE\n    Registry Path: \\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Policies\\\\System\\\\\n\n    Value Name: LegalNoticeCaption\n\n    Value Type: REG_SZ\n    Value: See message title options below\n\n    \"DoD Notice and Consent Banner\", \"US Department of Defense Warning Statement\", or an organization-defined equivalent.\n\n    If an organization-defined title is used, it can in no case contravene or modify the language of the banner text required in WN19-SO-000150.\n\n    Automated tools may only search for the titles defined above. If an organization-defined title is used, a manual review will be required.'\n  desc 'fix', 'Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> Security Options >> \"Interactive Logon: Message title for users attempting to log on\" to \"DoD Notice and Consent Banner\", \"US Department of Defense Warning Statement\", or an organization-defined equivalent.\n\n    If an organization-defined title is used, it can in no case contravene or modify the language of the message text required in WN19-SO-000150.'\n  impact 0.3\n  tag gtitle: 'SRG-OS-000023-GPOS-00006'\n  tag satisfies: ['SRG-OS-000023-GPOS-00006', 'SRG-OS-000228-GPOS-00088']\n  tag gid: 'V-93149'\n  tag rid: 'SV-103237r1_rule'\n  tag stig_id: 'WN19-SO-000140'\n  tag fix_id: 'F-99395r1_fix'\n  tag cci: ['CCI-000048', 'CCI-001384', 'CCI-001385', 'CCI-001386', 'CCI-001387', 'CCI-001388']\n  tag nist: ['AC-8 a', 'AC-8 c 1', 'AC-8 c 2', 'AC-8 c 2', 'AC-8 c 2', 'AC-8 c 3', 'Rev_4']\n\n  describe registry_key('HKEY_LOCAL_MACHINE\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Policies\\\\System') do\n    it { should have_property 'LegalNoticeCaption' }\n    its('LegalNoticeCaption') { should be_in input('LegalNoticeCaption') }\n  end\nend\n",
+      "source_location": { "ref": "./controls/V-93149.rb", "line": 1 },
+      "id": "V-93149"
+    }
+  ],
+  "groups": [
+    { "title": null, "controls": ["SV-204392"], "id": "controls/SV-204392.rb" },
+    { "title": null, "controls": ["SV-204474"], "id": "controls/SV-204474.rb" },
+    { "title": null, "controls": ["SV-205653"], "id": "controls/SV-205653.rb" },
+    { "title": null, "controls": ["SV-205734"], "id": "controls/SV-205734.rb" },
+    { "title": null, "controls": ["SV-230385"], "id": "controls/SV-230385.rb" },
+    { "title": null, "controls": ["V-92975"], "id": "controls/V-92975.rb" },
+    { "title": null, "controls": ["V-92979"], "id": "controls/V-92979.rb" },
+    { "title": null, "controls": ["V-93033"], "id": "controls/V-93033.rb" },
+    { "title": null, "controls": ["V-93149"], "id": "controls/V-93149.rb" }
+  ],
+  "sha256": "2a550d93bc20ba8d540330f66de6d528f415821017d63456559d686925ee8efb",
+  "status_message": "",
+  "status": "loaded",
+  "generator": { "name": "inspec", "version": "5.18.14" }
+}

@@ -41,6 +41,10 @@ export function removeWhitespace(input: string): string {
   return input.replace(/\s/gi, '')
 }
 
+const escapeSpecialCaseBackslashes = (s: string) => {
+  return s.replace(/\\\)/g, '\\\\)'); // Escape backslashes if preceding close parentheses
+}
+
 const escapeSingleQuotes = (s: string) => {
   return s.replace(/\\/g, '\\\\').replace(/'/g, "\\'"); // Escape backslashes and quotes
 }
@@ -51,7 +55,7 @@ const escapeDoubleQuotes = (s: string) => {
 
 export function escapeQuotes(s: string): string {
   if (s.includes("'") && s.includes('"')) {
-    return `%q(${removeNewlinePlaceholders(s)})` 
+    return `%q(${escapeSpecialCaseBackslashes(removeNewlinePlaceholders(s))})`
   } else if (s.includes("'")) {
     return `"${escapeDoubleQuotes(removeNewlinePlaceholders(s))}"`
   } else {
