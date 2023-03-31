@@ -2,6 +2,7 @@ import _ from 'lodash';
 import {ExecJSON} from 'inspecjs';
 import {flatten, unflatten} from 'flat'
 import {escapeQuotes} from '../utilities/global';
+import {createWinstonLogger} from '../utilities/logging';
 
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
@@ -149,20 +150,21 @@ export default class Control {
   }
 
   toRuby(verbose = true) {
+    const logger = createWinstonLogger();
     let result = '';
 
     result += `control '${this.id}' do\n`;
     if (this.title) {
       result += `  title ${escapeQuotes(this.title)}\n`;
     } else {
-      if (verbose) {console.error(`${this.id} does not have a title`);}
+      if (verbose) {logger.error(`${this.id} does not have a title`);}
     }
 
     // This is the known 'default' description - on previous version this content was repeated on descriptions processed by "descs"
     if (this.desc) {
       result += `  desc ${escapeQuotes(this.desc)}\n`;
     } else {
-      if (verbose) {console.error(`${this.id} does not have a desc`);}
+      if (verbose) {logger.error(`${this.id} does not have a desc`);}
     }
 
     if (this.descs) {
@@ -173,14 +175,14 @@ export default class Control {
               // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions.
               // In that case, we can ignore writing the "default" subdescription field.
               // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
-              if (verbose) {console.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique sub-descriptions.`);}
+              if (verbose) {logger.error(`${this.id} has a subdescription called "default" with contents that do not match the main description. "Default" should not be used as a keyword for unique sub-descriptions.`);}
             }
           }
           else {
             result += `  desc '${key}', ${escapeQuotes(subDesc)}\n`;
           }
         } else {
-          if (verbose) {console.error(`${this.id} does not have a desc for the value ${key}`);}
+          if (verbose) {logger.error(`${this.id} does not have a desc for the value ${key}`);}
         }
       });
     }
@@ -188,7 +190,7 @@ export default class Control {
     if (this.impact !== undefined) {
       result += `  impact ${(this.impact<=0?this.impact.toFixed(1):this.impact)}\n`
     } else {
-      if (verbose) {console.error(`${this.id} does not have an impact`);}
+      if (verbose) {logger.error(`${this.id} does not have an impact`);}
     }
 
     if (this.refs) {
