@@ -1,28 +1,48 @@
 import fs from 'fs'
+import path from 'path';
 import Control from '../../src/objects/control'
 import {getExistingDescribeFromControl} from '../../src/index'
 
+const TEST_USE_CASES = new Set();
+TEST_USE_CASES.add('array-in-header');
+TEST_USE_CASES.add('back-ticks');
+TEST_USE_CASES.add('comments-on-describe-block');
+TEST_USE_CASES.add('comments');
+TEST_USE_CASES.add('double-quotes');
+TEST_USE_CASES.add('end-of-line');
+TEST_USE_CASES.add('end-on-control');
+TEST_USE_CASES.add('end-on-desc');
+TEST_USE_CASES.add('end-on-impact');
+TEST_USE_CASES.add('end-on-ref');
+TEST_USE_CASES.add('end-on-tag');
+TEST_USE_CASES.add('end-on-title');
+TEST_USE_CASES.add('hash-in-header');
+TEST_USE_CASES.add('headers-in-describe');
+TEST_USE_CASES.add('input-in-metadata');
+TEST_USE_CASES.add('keywords-in-strings');
+TEST_USE_CASES.add('mixed-quotes');
+TEST_USE_CASES.add('multi-line-describe-block');
+TEST_USE_CASES.add('multi-line-in-tags');
+TEST_USE_CASES.add('multiple-single-line-inputs');
+TEST_USE_CASES.add('parenthesis-in-header');
+TEST_USE_CASES.add('percent-literals');
+TEST_USE_CASES.add('percent-strings');
+TEST_USE_CASES.add('single-quotes');
+TEST_USE_CASES.add('start-of-line-input');
+
 describe('describe block extraction', () => {
   const pathToTestCases = 'test/sample_data/controls-for-describe-tests'
-  let files = fs.readdirSync(pathToTestCases)
-  files = files.map(x => x.slice(0, x.length - 3)) // Remove the '.rb' from file names
-  test.each(files)('case involving %s', (file) => {
-    let expectedOutput = '  describe_block = nil' // Default expected output
-    const controlCode = fs.readFileSync(`${pathToTestCases}/${file}.rb`, 'utf-8')
+  const pathToTestResults = 'test/sample_data/controls-test-results'
+
+  for (const file of TEST_USE_CASES) {
+    const controlCode = fs.readFileSync(path.join(pathToTestCases, 'control-tests', `${file}.rb`), 'utf-8')
     const testControl = new Control({code: controlCode})
     const generatedOutput = getExistingDescribeFromControl(testControl)
-    
-    // Redefine variable `expectedOutput` for customized expected output, accordingly.
-    // Tip: use an escaped string for readability (e.g., https://www.browserling.com/tools/add-slashes).
-    if (file == 'comments') {
-      expectedOutput = '  # Commodo sed egestas egestas fringilla.\n  # Ultricies tristique nulla aliquet enim. \n  describe_block = nil\n  # Volutpat consequat mauris nunc congue nisi.\n=begin \nPellentesque sit amet porttitor eget. Duis at tellus at urna. Pretium aenean \npharetra magna ac placerat vestibulum lectus mauris ultrices. Bibendum at \nvarius vel pharetra vel turpis nunc eget lorem. Ultrices mi tempus imperdiet \nnulla malesuada pellentesque elit eget gravida.\n=end\n\n  # This comment is in the describe block.\n\n=begin\nThis is a multi-line comment in the describe block.\n\nVestibulum lorem sed risus ultricies tristique nulla. Interdum velit euismod \nin pellentesque massa. Et magnis dis parturient montes nascetur ridiculus mus \nmauris vitae. Augue lacus viverra vitae congue eu. Et ultrices neque ornare \naenean. Lectus urna duis convallis convallis tellus id interdum velit.\n=end\n\n  describe_block = nil'
-    } else if (file == 'headers-in-describe') {
-      expectedOutput = '  describe_block = nil\n  if describe_block\n    impact 1.0\n    tag \'headers\': \'in describe\'\n    ref \'https://sample.com\'\n    desc \'Amet dictum sit amet justo.\'\n  end'
-    } else if (file == 'multi-line-describe-block') {
-      expectedOutput = '  describe \'Sed enim ut sem viverra. Elit pellentesque habitant morbi\n  tristique senectus et netus et malesuada. At tempor commodo ullamcorper\n  a lacus vestibulum.\' do\n    describe_block = true\n  end'
-    } else if (file == 'keywords-in-strings') {
-      expectedOutput = '  keyword_in_string = \'Lorem ipsum desc test control\'\n  describe_block = nil'
-    }
-    expect(generatedOutput).toEqual(expectedOutput);
-  });
+    fs.writeFileSync(path.join(pathToTestResults, `${file}.rb`), generatedOutput)
+
+    const expectedOutput = fs.readFileSync(path.join(pathToTestCases, 'expected-results', `${file}.rb`), 'utf-8')
+    it(`should provide the proper describe block for use case -> ${file}`, () => {
+      expect(generatedOutput).toEqual(expectedOutput);
+    })
+  }
 });

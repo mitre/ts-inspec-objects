@@ -3,12 +3,12 @@
 
 import _ from 'lodash'
 import winston from 'winston';
+import {diffProfile} from './diff'
 import Control from '../objects/control'
 import Profile from '../objects/profile'
-import {processXCCDF} from '../parsers/xccdf'
 import {ProfileDiff} from '../types/diff'
+import {processXCCDF} from '../parsers/xccdf'
 import {OvalDefinitionValue} from '../types/oval'
-import {diffProfile} from './diff'
 import {createDiffMarkdown} from './diffMarkdown'
 
 export type UpdatedProfileReturn = {
@@ -59,7 +59,7 @@ function getRangesForLines(text: string): number[][] {
     - Percent literals (%; delimiters: (), {}, [], <>, most non-
       alphanumeric characters); (e.g., "%()")
     - Multi-line comments (e.g., =begin\nSome comment\n=end)
-    - Variable delimiters (i.e., paranthesis: (); array: []; hash: {})
+    - Variable delimiters (i.e., parenthesis: (); array: []; hash: {})
   */
   const stringDelimiters: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
   const variableDelimiters: {[key: string]: string} = {'(': ')', '{': '}', '[': ']'}
@@ -68,7 +68,8 @@ function getRangesForLines(text: string): number[][] {
   enum skipCharLength {
     string = '('.length,
     percentString = 'q('.length,
-    commentBegin = '=begin'.length
+    commentBegin = '=begin'.length,
+    inlineInterpolationBegin = '{'.length
   }
 
   const stack: string[] = []
@@ -91,6 +92,8 @@ function getRangesForLines(text: string): number[][] {
       const isVariableDelimiterChar = Object.keys(variableDelimiters).includes(char)
       const isStringDelimiterChar = ((j < line.length - 1) && (/^[^A-Za-z0-9]$/.test(line[j + 1])))
       const isCommentBeginChar = ((j == 0) && (line.length >= 6) && (line.slice(0, 6) == '=begin'))
+      const isCommentChar = /^\s*#/.test(line)
+      const isInlineInterpolation = (char == '#' && ((j < line.length - 1) && line[j + 1] == '{'))
       
       const isPercentStringKeyChar = ((j < line.length - 1) && (strings.includes(line[j + 1])))
       const isPercentStringDelimiterChar = ((j < line.length - 2) && (/^[^A-Za-z0-9]$/.test(line[j + 2])))
@@ -102,13 +105,21 @@ function getRangesForLines(text: string): number[][] {
       const stringPushCondition = (baseCondition && isPercentChar && isStringDelimiterChar)
       const percentStringPushCondition = (baseCondition && isPercentChar && isPercentString)
       const commentBeginCondition = (baseCondition && isCommentBeginChar)
+      const commentCondition = (baseCondition && isCommentChar)
+      const inlineInterpolationCondition = (isNotEmptyStack && isInlineInterpolation)
       
+      if (commentCondition) {
+        break
+      }
+
       if (stringPushCondition) {
         j += skipCharLength.string // j += 1
       } else if (percentStringPushCondition) {
         j += skipCharLength.percentString // j += 2
       } else if (commentBeginCondition) {
         j += skipCharLength.commentBegin // j += 6
+      } else if (inlineInterpolationCondition) {
+        j += skipCharLength.inlineInterpolationBegin // j += 1
       }
       char = line[j]
       
@@ -122,7 +133,7 @@ function getRangesForLines(text: string): number[][] {
       
       const popCondition = (basePopCondition || delimiterPopCondition || commentEndCondition)
       const pushCondition = (quotePushCondition || variablePushCondition || stringPushCondition || 
-        percentStringPushCondition || delimiterPushCondition || commentBeginCondition)
+        percentStringPushCondition || delimiterPushCondition || commentBeginCondition || inlineInterpolationCondition)
         
       if (popCondition) {
         stack.pop()
@@ -134,7 +145,9 @@ function getRangesForLines(text: string): number[][] {
       } else if (pushCondition) {
         if (commentBeginCondition) {
           stack.push('=begin')
-        } else {
+        } else if (inlineInterpolationCondition) {
+          stack.push('{')
+        }  else {
           stack.push(char)
         }
         rangeStack.push([i])
@@ -185,6 +198,7 @@ function getMultiLineRanges(ranges: number[][]): number[][] {
   return multiLineRanges
 }
 
+
 /*
   This is the most likely thing to break if you are getting code formatting issues.
   Extract the existing describe blocks (what is actually run by inspec for validation)
@@ -193,10 +207,14 @@ export function getExistingDescribeFromControl(control: Control): string {
   if (control.code) {
     // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
-    const multiLineRanges = getMultiLineRanges(ranges)
-    const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges)  // Array of lines representing the full InSpec control, with multi-line strings collapsed
 
-    // Define RegExp for lines to skip when searching for describe block.
+    // Get the entries that have delimiters that span multi-lines
+    const multiLineRanges = getMultiLineRanges(ranges)
+
+    // Array of lines representing the full InSpec control, with multi-line strings collapsed
+    const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges)
+
+    // Define RegExp for lines to skip.
     const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W']
     const skipRegExp = RegExp(skip.map(x => `(^${x})`).join('|'))
 
@@ -206,7 +224,7 @@ export function getExistingDescribeFromControl(control: Control): string {
     for (const line of lines) {
       const checkRegExp = ((line.trim() !== '') && !skipRegExp.test(line))
       const checkNewLine = ((line.trim() === '') && !ignoreNewLine)
-      
+     
       // Include '\n' if it is part of describe block, otherwise skip line.
       if (checkRegExp || checkNewLine) {
         describeBlock.push(line)
@@ -215,7 +233,9 @@ export function getExistingDescribeFromControl(control: Control): string {
         ignoreNewLine = true
       }
     }
-    return describeBlock.slice(0, describeBlock.length - 2).join('\n') // Drop trailing ['end', '\n'] from Control block.
+
+    // Return synthesized logic as describe block
+    return describeBlock.slice(0, describeBlock.lastIndexOf('end')).join('\n') // Drop trailing ['end', '\n'] from Control block.
   } else {
     return ''
   }
