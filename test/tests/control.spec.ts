@@ -16,7 +16,7 @@ TEST_USE_CASES.set('V-93149','should properly write a control with special chara
 
 describe('The control functionality', () => {
   const cookstyle_profile = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/cookstyle-controls-profile.json', 'utf-8'))
-  
+
   cookstyle_profile.controls.forEach(control => {
     // Write the new control to the controls folder
     fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results', `${control.id}.rb`), control.toRuby(true))

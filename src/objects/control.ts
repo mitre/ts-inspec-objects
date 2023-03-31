@@ -185,8 +185,8 @@ export default class Control {
       });
     }
 
-    if (this.impact) {
-      result += `  impact ${this.impact}\n`;
+    if (this.impact !== undefined) {
+      result += `  impact ${(this.impact<=0?this.impact.toFixed(1):this.impact)}\n`
     } else {
       if (verbose) {console.error(`${this.id} does not have an impact`);}
     }
