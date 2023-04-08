@@ -96,7 +96,7 @@ child objects" permission on the two default Group Policy objects: Default
 Domain Policy and Default Domain Controllers Policy. They will have this
 permission on created Group Policy objects.'
   impact 0.7
-  tag severity: nil
+  tag 'severity'
   tag gtitle: 'SRG-OS-000324-GPOS-00125'
   tag gid: 'V-93033'
   tag rid: 'SV-103121r1_rule'
