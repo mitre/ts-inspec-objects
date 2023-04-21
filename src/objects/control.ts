@@ -200,7 +200,6 @@ export default class Control {
         } else {
           result += `  ref ${escapeQuotes(ref.ref?.toString() || '')}, url: ${escapeQuotes(ref.url || '')}`
         }
-
       });
     }
 
@@ -228,7 +227,14 @@ export default class Control {
           result += `  tag ${tag}: ${escapeQuotes(value)}\n`;
         }
       } else {
-        result += `  tag ${tag}: nil\n`;
+        const nilTagList = ['severity', 'satisfies']
+        if (nilTagList.includes(tag)) {
+          result += `  tag ${tag}: nil\n`;
+        }
+        else {
+          result += `  tag '${tag}'\n`;
+        }
+        if (verbose) {logger.info(`${this.id} does not have a value for tag: ${tag}`);}
       }
     });
 
