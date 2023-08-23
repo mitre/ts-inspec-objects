@@ -1,4 +1,4 @@
-import parser from 'fast-xml-parser'
+import { XMLParser } from 'fast-xml-parser'
 import {toXML} from 'jstoxml';
 import * as htmlparser from 'htmlparser2'
 import _ from 'lodash'
@@ -9,13 +9,15 @@ import he from 'he'
 export function convertEncodedXmlIntoJson(
   encodedXml: string
 ): any {
-  return parser.parse(encodedXml, {
+  const options = {
     ignoreAttributes: false,
     ignoreNameSpace: true,
     attributeNamePrefix: '@_',
     stopNodes: ['div', 'p'],
-    arrayMode: true
-  })
+    arrayMode: true  // needs to be updated to isArray https://github.com/NaturalIntelligence/fast-xml-parser/blob/master/docs/v4/2.XMLparseOptions.md#isarray
+  }
+  const parser = new XMLParser(options)
+  return parser.parse(encodedXml)
 }
 
 
