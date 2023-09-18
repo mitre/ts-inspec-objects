@@ -1,9 +1,17 @@
-import { XMLParser } from 'fast-xml-parser'
+import {XMLParser} from 'fast-xml-parser'
 import {toXML} from 'jstoxml';
 import * as htmlparser from 'htmlparser2'
 import _ from 'lodash'
 import {DecodedDescription} from '../types/xccdf'
 import he from 'he'
+
+// const alwaysArray = ['cci_item', 'reference', 'Group', 'group', 'Benchmark', 'Rule', 'title', 'rule', 'version', 'title', '@_id', 'check'];
+// 'title',  
+const alwaysArray = ['dc-status', 'description','notice', 'front-matter', 'rear-matter', 'reference', 'plain-text', 'platform', 'metadata', 'Benchmark', 'Group', 'Rule', 'TestResult', 'Value', 'Profile', 'check', 'ident', 'rationale'];
+
+// arrayMode: () => { 
+//   return true;
+// }//true  // needs to be updated to isArray https://github.com/NaturalIntelligence/fast-xml-parser/blob/master/docs/v4/2.XMLparseOptions.md#isarray
 
 
 export function convertEncodedXmlIntoJson(
@@ -14,10 +22,16 @@ export function convertEncodedXmlIntoJson(
     ignoreNameSpace: true,
     attributeNamePrefix: '@_',
     stopNodes: ['div', 'p'],
-    arrayMode: true  // needs to be updated to isArray https://github.com/NaturalIntelligence/fast-xml-parser/blob/master/docs/v4/2.XMLparseOptions.md#isarray
-  }
-  const parser = new XMLParser(options)
-  return parser.parse(encodedXml)
+    isArray: (tagName: string) => {
+      if (alwaysArray.includes(tagName)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  };
+  const parser = new XMLParser(options);
+  return parser.parse(encodedXml);
 }
 
 
