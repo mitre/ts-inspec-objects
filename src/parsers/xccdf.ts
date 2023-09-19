@@ -44,13 +44,8 @@ export type InputTextLang = {
   '@_lang': string
 }
 
-// function ensureDecodedXMLStringValue(input: string | InputTextLang[]): string {
-//   return _.get(input, '[0].#text') ? _.get(input, '[0].#text') : input
-//   //return _.get(input, '[0].#text')!
-// }
-
-function ensureDecodedXMLStringValue(input: string | {'#text': string, '@_lang': string}[]): string {
-  return _.isString(input) ? input : _.get(input, '[0].#text')!
+function ensureDecodedXMLStringValue(input: string | InputTextLang[], defaultValue: string): string {
+  return _.isString(input) ? input : _.get(input, '[0].#text', defaultValue)
 }
 
 // Moving the newline removal to diff library rather than processXCCDF level
@@ -124,7 +119,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
         throw new Error('useRuleId must be one of "group", "rule", or "version"')
     }
         
-    control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title) : `[[[MISSING SEVERITY FROM BENCHMARK]]] ${ensureDecodedXMLStringValue(rule.title)}`)
+    control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title, 'undefined title') : `[[[MISSING SEVERITY FROM BENCHMARK]]] ${ensureDecodedXMLStringValue(rule.title,'undefined title')}`)
         
     if (typeof extractedDescription === 'object' && !Array.isArray(extractedDescription)) {
       control.desc = extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || ''
@@ -254,12 +249,12 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
     if (typeof rule.group.title === 'string') {
       control.tags.gtitle = removeXMLSpecialCharacters(rule.group.title)
     } else {
-      control.tags.gtitle = removeXMLSpecialCharacters(_.get(rule.group, 'title[0].#text')!)
+      control.tags.gtitle = removeXMLSpecialCharacters(_.get(rule.group, 'title[0].#text', 'undefined title'))
     }
         
     if (rule['fix'] && rule['fix'].length > 0) {
       control.tags.fix_id = rule['fix'][0]['@_id']
-    } 
+    }
 
     if (rule['rationale']) {
       control.tags.rationale = rule['rationale'][0]['#text']
@@ -317,13 +312,13 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
 
     rule.reference?.forEach((reference) => {
       if (_.get(reference, '@_href') === '') {
-        control.refs?.push(_.get(reference, '#text')!)
+        control.refs?.push(_.get(reference, '#text', 'undefined href'))
       } else {
         try {
           const referenceText = _.get(reference, '#text') || ''
           const referenceURL = _.get(reference, '@_href') || ''
           if (referenceURL) {
-            const parsedURL = new URL(_.get(reference, '@_href')!)
+            const parsedURL = new URL(_.get(reference, '@_href', 'undefined href'))
             if (parsedURL.protocol.toLowerCase().includes('http') || parsedURL.protocol.toLowerCase().includes('https')) {
               control.refs?.push({
                 ref: referenceText,
