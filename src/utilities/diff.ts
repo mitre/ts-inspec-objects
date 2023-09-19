@@ -34,8 +34,8 @@ export function ignoreFormattingDiff(diffData: Record<string, unknown>) {
           typeof _.get(diffValue, '__old') === 'string'
         ) {
           if (
-            removeWhitespace(_.get(diffValue, '__new')) !==
-            removeWhitespace(_.get(diffValue, '__old'))
+            removeWhitespace(_.get(diffValue, '__new')!) !==
+            removeWhitespace(_.get(diffValue, '__old')!)
           ) {
             _.set(result, key, _.get(diffValue, '__new'));
           }
