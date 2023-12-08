@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import {ExecJSON} from 'inspecjs';
-import {flatten, unflatten} from 'flat'
+import {flatten} from 'flat';
+import {unflatten} from 'flat';
 import {escapeQuotes} from '../utilities/global';
 import {createWinstonLogger} from '../utilities/logging';
 
