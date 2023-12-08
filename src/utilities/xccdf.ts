@@ -7,7 +7,10 @@ import he from 'he'
 
 // const alwaysArray = ['cci_item', 'reference', 'Group', 'group', 'Benchmark', 'Rule', 'title', 'rule', 'version', 'title', '@_id', 'check'];
 // 'title',  
-const alwaysArray = ['dc-status', 'description','notice', 'front-matter', 'rear-matter', 'reference', 'plain-text', 'platform', 'metadata', 'Benchmark', 'Group', 'Rule', 'TestResult', 'Value', 'Profile', 'check', 'ident', 'rationale'];
+//STIG
+const alwaysArray = ['title', 'dc-status', 'description','notice', 'front-matter', 'rear-matter', 'reference', 'plain-text', 'platform', 'metadata', 'Benchmark', 'Group', 'Rule', 'TestResult', 'Value', 'Profile', 'check', 'ident', 'rationale'];
+//OVAL
+// const alwaysArray = ['object_reference', 'definition', 'affected', 'reference', 'xsd:any', 'platform', 'product', 'note', 'criteria', 'criterion', 'extend_definition', 'oval-def:tests', 'oval-def:objects', 'oval-def:filter', 'oval-def:states', 'oval-def:variables', 'possible_value', 'possible_restriction', 'restriction', 'value', 'field'];
 
 // arrayMode: () => { 
 //   return true;
@@ -64,7 +67,7 @@ export function severityStringToImpact(string: string, id: string): number {
     return 1.0
   }
 
-  console.log(`${string} is not a valid severity value. It should be one of the approved keywords. ${id} will be treated as medium severity`)
+  // console.log(`${string} is not a valid severity value. It should be one of the approved keywords. ${id} will be treated as medium severity`)
   return 0.5;
 }
 
