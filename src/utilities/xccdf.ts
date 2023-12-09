@@ -8,14 +8,13 @@ import he from 'he'
 // const alwaysArray = ['cci_item', 'reference', 'Group', 'group', 'Benchmark', 'Rule', 'title', 'rule', 'version', 'title', '@_id', 'check'];
 // 'title',  
 //STIG
-const alwaysArray = ['title', 'dc-status', 'description','notice', 'front-matter', 'rear-matter', 'reference', 'plain-text', 'platform', 'metadata', 'Benchmark', 'Group', 'Rule', 'TestResult', 'Value', 'Profile', 'check', 'ident', 'rationale'];
+// const alwaysArray = ['title', 'dc-status', 'description','notice', 'front-matter', 'rear-matter', 'reference', 'plain-text', 'platform', 'metadata', 'Benchmark', 'Group', 'Rule', 'TestResult', 'Value', 'Profile', 'check', 'ident', 'rationale'];
 //OVAL
-// const alwaysArray = ['object_reference', 'definition', 'affected', 'reference', 'xsd:any', 'platform', 'product', 'note', 'criteria', 'criterion', 'extend_definition', 'oval-def:tests', 'oval-def:objects', 'oval-def:filter', 'oval-def:states', 'oval-def:variables', 'possible_value', 'possible_restriction', 'restriction', 'value', 'field'];
+const alwaysArray = ['object_reference', 'oval-def:definition', 'definition', 'affected', 'reference', 'xsd:any', 'platform', 'product', 'note', 'criteria', 'criterion', 'extend_definition', 'oval-def:test', 'oval-def:object', 'oval-def:filter', 'oval-def:state', 'oval-def:variable', 'possible_value', 'possible_restriction', 'restriction', 'value', 'field', 'definitions', 'generator'];
 
 // arrayMode: () => { 
 //   return true;
 // }//true  // needs to be updated to isArray https://github.com/NaturalIntelligence/fast-xml-parser/blob/master/docs/v4/2.XMLparseOptions.md#isarray
-
 
 export function convertEncodedXmlIntoJson(
   encodedXml: string
@@ -25,12 +24,12 @@ export function convertEncodedXmlIntoJson(
     ignoreNameSpace: true,
     attributeNamePrefix: '@_',
     stopNodes: ['div', 'p'],
-    isArray: (tagName: string) => {
-      if (alwaysArray.includes(tagName)) {
+    isArray: (_name: string, _jpath: string, isLeafNode: boolean) => {
+      // if (isLeafNode) {
         return true;
-      } else {
-        return false;
-      }
+      // } else {
+      //   return false;
+      // }
     }
   };
   const parser = new XMLParser(options);
@@ -43,27 +42,30 @@ export function convertJsonIntoXML(data: any) {
 }
 
 export function removeXMLSpecialCharacters(str: string) {
-  return he.decode(str)
+  console.log("Remove special characters: ", JSON.stringify(str, null, 2));
+  const result = he.decode(str);
+  console.log("Result of he.decode: ", JSON.stringify(result));
+  return result
 }
 
 export function severityStringToImpact(string: string, id: string): number {
-  if (string.match(/none|na|n\/a|not[\s()*_|]?applicable/i)?.length) {
+  if (RegExp(/none|na|n\/a|not[\s()*_|]?applicable/i).exec(string)?.length) {
     return 0.0
   }
 
-  if (string.match(/low|cat(egory)?\s*(iii|3)/i)?.length) {
+  if (RegExp(/low|cat(egory)?\s*(iii|3)/i).exec(string)?.length) {
     return 0.3
   }
 
-  if (string.match(/med(ium)?|cat(egory)?\s*(ii|2)/)?.length) {
+  if (RegExp(/med(ium)?|cat(egory)?\s*(ii|2)/).exec(string)?.length) {
     return 0.5
   }
 
-  if (string.match(/high|cat(egory)?\s*(i|1)/)?.length) {
+  if (RegExp(/high|cat(egory)?\s*(i|1)/).exec(string)?.length) {
     return 0.7
   }
 
-  if (string.match(/crit(ical)?|severe/)?.length) {
+  if (RegExp(/crit(ical)?|severe/).exec(string)?.length) {
     return 1.0
   }
 

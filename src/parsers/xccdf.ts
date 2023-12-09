@@ -118,8 +118,12 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
       default:
         throw new Error('useRuleId must be one of "group", "rule", or "version"')
     }
+
+    if(!(_.isArray(rule.title) && rule.title.length === 1)) {
+      throw new Error("Rule title is not an array of legnth 1.");
+    }
         
-    control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title, 'undefined title') : `[[[MISSING SEVERITY FROM BENCHMARK]]] ${ensureDecodedXMLStringValue(rule.title,'undefined title')}`)
+    control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title[0], 'undefined title') : `[[[MISSING SEVERITY FROM BENCHMARK]]] ${ensureDecodedXMLStringValue(rule.title[0],'undefined title')}`)
         
     if (typeof extractedDescription === 'object' && !Array.isArray(extractedDescription)) {
       control.desc = extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || ''
@@ -352,7 +356,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
               }
             } else {
               logger.warn('Reference parts of invalid length:')
-              logger.info(referenceParts)
+              // logger.info(referenceParts)
             }
           }
         } catch (e) {
