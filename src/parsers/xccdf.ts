@@ -94,10 +94,10 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
         control.id = rule.group['@_id']
         break;
       case 'rule':
-        if (rule['@_id'].toLowerCase().startsWith('sv')) {
-          control.id = rule['@_id'].split('r')[0]
+        if (rule['@_id'][0].toLowerCase().startsWith('sv')) {
+          control.id = rule['@_id'][0].split('r')[0]
         } else {
-          control.id = rule['@_id']
+          control.id = rule['@_id'][0]
         }
         break;
       case 'version':
@@ -120,9 +120,9 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
     }
 
     if(!(_.isArray(rule.title) && rule.title.length === 1)) {
-      throw new Error("Rule title is not an array of legnth 1.");
+      throw new Error('Rule title is not an array of length 1.');
     }
-        
+    
     control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title[0], 'undefined title') : `[[[MISSING SEVERITY FROM BENCHMARK]]] ${ensureDecodedXMLStringValue(rule.title[0],'undefined title')}`)
         
     if (typeof extractedDescription === 'object' && !Array.isArray(extractedDescription)) {
@@ -143,7 +143,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
 
     if (rule.check) {
       if (rule.check.some((ruleValue) => 'check-content' in ruleValue)) {
-        control.descs.check = removeXMLSpecialCharacters(rule.check ? rule.check[0]['check-content'] : 'Missing description')
+        control.descs.check = removeXMLSpecialCharacters(rule.check ? rule.check[0]['check-content'][0] : 'Missing description')
         control.tags.check_id = rule.check[0]['@_system']
       } else if (rule.check.some((ruleValue) => 'check-content-ref' in ruleValue) && ovalDefinitions) {
         let referenceID: string | null = null;
@@ -158,7 +158,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
           }
         }
         if (referenceID && referenceID in ovalDefinitions) {
-          control.descs.check = removeXMLSpecialCharacters(ovalDefinitions[referenceID].metadata[0].title)
+          control.descs.check = removeXMLSpecialCharacters(ovalDefinitions[referenceID].metadata[0].title[0])
         } else if (referenceID) {
           logger.warn(`Could not find OVAL definition for ${referenceID}`)
         }
@@ -220,11 +220,11 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
 
     if (_.get(rule.fixtext, '[0]["#text"]')) {
       control.descs.fix = removeXMLSpecialCharacters(rule.fixtext[0]['#text'])
-    } else if (typeof rule.fixtext === 'string') {
-      control.descs.fix = removeXMLSpecialCharacters(rule.fixtext)
-    } else if (typeof rule.fixtext === 'object') {
-      if (Array.isArray(rule.fixtext)) {
-        control.descs.fix = removeXMLSpecialCharacters(pretty(convertJsonIntoXML(rule.fixtext.map((fixtext: any) => {
+    } else if (typeof rule.fixtext[0] === 'string') {
+      control.descs.fix = removeXMLSpecialCharacters(rule.fixtext[0])
+    } else if (typeof rule.fixtext[0] === 'object') {
+      if (Array.isArray(rule.fixtext[0])) {
+        control.descs.fix = removeXMLSpecialCharacters(pretty(convertJsonIntoXML(rule.fixtext[0].map((fixtext: any) => {
           if (fixtext.div) {
             return fixtext.div
           } else {
@@ -249,9 +249,8 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
     control.tags.rid = rule['@_id']
     control.tags.stig_id = rule['version']
 
-
-    if (typeof rule.group.title === 'string') {
-      control.tags.gtitle = removeXMLSpecialCharacters(rule.group.title)
+    if (typeof rule.group.title[0] === 'string') {
+      control.tags.gtitle = removeXMLSpecialCharacters(rule.group.title[0])
     } else {
       control.tags.gtitle = removeXMLSpecialCharacters(_.get(rule.group, 'title[0].#text', 'undefined title'))
     }
@@ -280,7 +279,14 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
     }
 
     control.tags = _.mapValues(_.omitBy(control.tags, (value) => value === undefined), (value) => {
-      if (typeof value === 'string') {
+      if (value && Array.isArray(value)) {
+        if (Array.isArray(value[0])) {
+          return removeXMLSpecialCharacters(value[0][0] as string)
+        }
+        else {
+          return removeXMLSpecialCharacters(value[0] as string)
+        }
+      } else if (typeof value === 'string') {
         return removeXMLSpecialCharacters(value)
       } else {
         return value
@@ -291,14 +297,14 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
     if (rule.ident) {
       rule.ident.forEach((identifier) => {
         // Get CCIs
-        if (identifier['@_system'].toLowerCase().includes('cci')) {
+        if (identifier['@_system'][0].toLowerCase().includes('cci')) {
           if (!('cci' in control.tags)) {
             control.tags.cci = []
           }
           control.tags.cci?.push(identifier['#text'])
         }
         // Get legacy identifiers
-        else if (identifier['@_system'].toLowerCase().includes('legacy')) {
+        else if (identifier['@_system'][0].toLowerCase().includes('legacy')) {
           if (!('legacy' in control.tags)) {
             control.tags.legacy = []
           }
