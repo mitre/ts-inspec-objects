@@ -150,7 +150,7 @@ export default class Control {
     return result;
   }
 
-  toRuby(verbose = true) {
+  toRuby(verbose = false) {
     const logger = createWinstonLogger();
     let result = '';
 
@@ -183,7 +183,7 @@ export default class Control {
             result += `  desc '${key}', ${escapeQuotes(subDesc)}\n`;
           }
         } else {
-          if (verbose) {logger.error(`${this.id} does not have a desc for the value ${key}`);}
+          if (verbose) {logger.warn(`${this.id} does not have a desc for the value ${key}`);}
         }
       });
     }
