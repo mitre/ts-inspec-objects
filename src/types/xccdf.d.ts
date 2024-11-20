@@ -722,7 +722,7 @@ export interface BenchmarkRule {
   '@_severity': Severity;
   '@_weight': string;
   version: string;
-  title: string;
+  title: string[];
   description: string;
   rationale: FrontMatter[];
   reference: PurpleReference[];
