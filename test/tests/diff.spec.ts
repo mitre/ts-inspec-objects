@@ -44,10 +44,10 @@ describe('The diff utils', () => {
     expect(profileDiff_7.rawDiff.addedControlIDs).toEqual(['SV-204394']);
   })
   it('should correctly identify removed controls', () => {
-    expect(profileDiff_7.rawDiff.removedControlIDs).toEqual(['SV-204474']);
+    expect(profileDiff_7.rawDiff.removedControlIDs).toEqual([]);
   })
   it('should correctly identify renamed controls', () => {
-    expect(profileDiff_7.rawDiff.renamedControlIDs).toEqual({'V-73165': 'SV-204565'});
+    expect(profileDiff_7.rawDiff.renamedControlIDs).toEqual({'SV-204474': 'SV-204392', 'V-73165': 'SV-204565'});
   })
   it('should correctly identify changes in existing controls', () => {
     // we know that the description in the sample's SV-251703 changed

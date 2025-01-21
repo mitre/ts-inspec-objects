@@ -97,6 +97,7 @@ export function diffProfile(
   // a diffValue has an entry for both what was subtracted ("-")
   // and what was added ("+") -- need to handle both
   controlIDDiff?.forEach((diffValue) => {
+    //console.log(`diffValue[0]: ${diffValue[0]}, diffValue[1] is: ${diffValue[1].toString().toLowerCase()}`)
     if (diffValue[0] === '-') {
       const existingControl = fromProfile.controls.find(
         (control) => control.id === diffValue[1]
@@ -120,7 +121,7 @@ export function diffProfile(
           // logger.info("CONTROL DIFF:" + JSON.stringify(controlDiff, null, 2))
 
           const renamedControlIgnoredFormatting = ignoreFormattingDiff(controlDiff);
-          logger.info(JSON.stringify(renamedControlIgnoredFormatting));
+          //logger.info(JSON.stringify(renamedControlIgnoredFormatting));
           profileDiff.changedControls[newControl.id] = renamedControlIgnoredFormatting;
           profileDiff.changedControlIDs.push(newControl.id);
           originalDiff.changedControls[newControl.id] = controlDiff;
@@ -130,15 +131,16 @@ export function diffProfile(
             `Control ${existingControl.id} has been updated to ${newControl.id}`
           );
         } else {
+          console.log(`Adding this to the removedControlIDs ${diffValue[1]}`);
           profileDiff.removedControlIDs.push(diffValue[1]);
           originalDiff.removedControlIDs.push(diffValue[1]);
         }
       } else {
         logger.error(`Unable to find existing control ${diffValue[1]}`);
       }
-    } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1]) {
-      logger.info(JSON.stringify(diffValue))
-      logger.info(JSON.stringify(changedControlIds))
+    } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toString().toLowerCase()) && diffValue[1]) {
+      //logger.info(JSON.stringify(diffValue))
+      //logger.info(JSON.stringify(changedControlIds))
       profileDiff.addedControlIDs.push(diffValue[1]);
       originalDiff.addedControlIDs.push(diffValue[1]);
     }

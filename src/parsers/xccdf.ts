@@ -119,7 +119,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
         throw new Error('useRuleId must be one of "group", "rule", or "version"')
     }
 
-    if(!(_.isArray(rule.title) && rule.title.length === 1)) {
+    if (!(_.isArray(rule.title) && rule.title.length === 1)) {
       throw new Error('Rule title is not an array of length 1.');
     }
     
@@ -135,8 +135,9 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
       logger.warn(`Invalid value for extracted description: ${extractedDescription}`)
     }
 
-    control.impact = severityStringToImpact(rule['@_severity'] || 'medium', rule.group['@_id'])
-        
+    // control.impact = severityStringToImpact(rule['@_severity'] || 'medium', rule.group['@_id'])
+    control.impact = severityStringToImpact(rule['@_severity'] || 'medium')
+
     if (!control.descs || Array.isArray(control.descs)) {
       control.descs = {}
     }
@@ -220,6 +221,10 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
 
     if (_.get(rule.fixtext, '[0]["#text"]')) {
       control.descs.fix = removeXMLSpecialCharacters(rule.fixtext[0]['#text'])
+    } else if (typeof rule.fixtext === 'undefined') {
+      if (rule.fix && rule.fix[0]) {
+        control.descs.fix = removeXMLSpecialCharacters((rule.fix[0] as Notice)['#text'] || 'Missing fix text')
+      }      
     } else if (typeof rule.fixtext[0] === 'string') {
       control.descs.fix = removeXMLSpecialCharacters(rule.fixtext[0])
     } else if (typeof rule.fixtext[0] === 'object') {
@@ -234,17 +239,12 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
       } else {
         control.descs.fix = removeXMLSpecialCharacters(pretty(convertJsonIntoXML(rule.fixtext)))
       }
-            
-    } else if (typeof rule.fixtext === 'undefined') {
-      if (rule.fix && rule.fix[0]) {
-        control.descs.fix = removeXMLSpecialCharacters((rule.fix[0] as Notice)['#text'] || 'Missing fix text')
-      }
     } else {
       control.descs.fix = 'Missing fix text'
     }
-    
         
-    control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium', control.id || 'Unknown'))
+    // control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium', control.id || 'Unknown'))
+    control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium'))
     control.tags.gid = rule.group['@_id'],
     control.tags.rid = rule['@_id']
     control.tags.stig_id = rule['version']

@@ -1,7 +1,7 @@
 import {convertEncodedXmlIntoJson} from '../utilities/xccdf'
 import {OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State} from '../types/oval'
 import {createWinstonLogger} from '../utilities/logging';
-
+import fs from 'fs'
 
 // https://stackoverflow.com/questions/9133500/how-to-find-a-node-in-a-tree-with-javascript
 

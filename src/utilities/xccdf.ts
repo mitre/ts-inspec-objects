@@ -10,7 +10,7 @@ import he from 'he'
 //STIG
 // const alwaysArray = ['title', 'dc-status', 'description','notice', 'front-matter', 'rear-matter', 'reference', 'plain-text', 'platform', 'metadata', 'Benchmark', 'Group', 'Rule', 'TestResult', 'Value', 'Profile', 'check', 'ident', 'rationale'];
 //OVAL
-const alwaysArray = ['object_reference', 'oval-def:definition', 'definition', 'affected', 'reference', 'xsd:any', 'platform', 'product', 'note', 'criteria', 'criterion', 'extend_definition', 'oval-def:test', 'oval-def:object', 'oval-def:filter', 'oval-def:state', 'oval-def:variable', 'possible_value', 'possible_restriction', 'restriction', 'value', 'field', 'definitions', 'generator'];
+//const alwaysArray = ['object_reference', 'oval-def:definition', 'definition', 'affected', 'reference', 'xsd:any', 'platform', 'product', 'note', 'criteria', 'criterion', 'extend_definition', 'oval-def:test', 'oval-def:object', 'oval-def:filter', 'oval-def:state', 'oval-def:variable', 'possible_value', 'possible_restriction', 'restriction', 'value', 'field', 'definitions', 'generator'];
 
 // arrayMode: () => { 
 //   return true;
@@ -21,16 +21,18 @@ export function convertEncodedXmlIntoJson(
 ): any {
   const options = {
     ignoreAttributes: false,
-    ignoreNameSpace: true,
+    removeNSPrefix: true,
     attributeNamePrefix: '@_',
     stopNodes: ['div', 'p'],
-    isArray: (_name: string, _jpath: string, isLeafNode: boolean) => {
-      // if (isLeafNode) {
-        return true;
-      // } else {
-      //   return false;
-      // }
-    }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    isArray: (_name: string, _jpath: string, _isLeafNode: boolean, _isAttribute: boolean) => true,
+    // isArray: (_name: string, _jpath: string, isLeafNode: boolean) => {
+    //   // if (isLeafNode) {
+    //   return true;
+    //   // } else {
+    //   //   return false;
+    //   // }
+    // }
   };
   const parser = new XMLParser(options);
   return parser.parse(encodedXml);
@@ -42,13 +44,14 @@ export function convertJsonIntoXML(data: any) {
 }
 
 export function removeXMLSpecialCharacters(str: string) {
-  console.log("Remove special characters: ", JSON.stringify(str, null, 2));
+  //console.log('Remove special characters: ', JSON.stringify(str, null, 2));
   const result = he.decode(str);
-  console.log("Result of he.decode: ", JSON.stringify(result));
+  //console.log('Result of he.decode: ', JSON.stringify(result));
   return result
 }
 
-export function severityStringToImpact(string: string, id: string): number {
+// export function severityStringToImpact(string: string, id: string): number {
+export function severityStringToImpact(string: string): number {
   if (RegExp(/none|na|n\/a|not[\s()*_|]?applicable/i).exec(string)?.length) {
     return 0.0
   }
