@@ -3,6 +3,40 @@ import YAML from 'yaml';
 import _ from 'lodash';
 import {unformatText} from '../utilities/global';
 
+/**
+ * Represents an InSpec profile with various metadata and dependencies.
+ * 
+ * @remarks
+ * This class is used to model an InSpec profile, which includes metadata such as
+ * name, title, maintainer, copyright, license, and version. It also includes
+ * dependencies, supported platforms, inputs, gem dependencies, libraries, readme,
+ * files, and controls.
+ * 
+ * It provides methods to generate a YAML representation of the profile and to convert
+ * the profile to an unformatted version.
+ * 
+ * @example
+ * ```typescript
+ * const profileData = {
+ *   name: "example-profile",
+ *   title: "Example Profile",
+ *   maintainer: "John Doe",
+ *   version: "1.0.0",
+ *   supports: [{ 'platform-name': 'ubuntu' }],
+ *   depends: [{ name: "dependency-profile", url: "http://example.com/dependency.tar.gz" }],
+ *   inputs: [{ key: "value" }],
+ *   libraries: ["lib/example.rb"],
+ *   files: ["controls/example.rb"],
+ *   readme: "This is an example profile.",
+ * };
+ * 
+ * const profile = new Profile(profileData);
+ * const yamlString = profile.createInspecYaml();
+ * console.log(yamlString);
+ * ```
+ * 
+ * @public
+ */
 export default class Profile {
   name?: string | null;
   title?: string | null;
@@ -55,6 +89,12 @@ export default class Profile {
   files: string[] = [];
   controls: Control[] = [];
 
+  /**
+   * Constructs a new instance of the Profile class.
+   * 
+   * @param data - An optional object containing partial profile data, excluding the 'controls' property.
+   *               The provided data will be used to set the corresponding properties on the instance.
+   */
   constructor(data?: Omit<Partial<Profile>, 'controls'>) {
     if (data) {
       Object.entries(data).forEach(([key, value]) => {
@@ -63,6 +103,11 @@ export default class Profile {
     }
   }
 
+  /**
+   * Generates an InSpec YAML string representation of the profile object.
+   *
+   * @returns {string} The YAML string representation of the profile.
+   */
   createInspecYaml(): string {
     return YAML.stringify({
       name: this.name,
@@ -80,6 +125,16 @@ export default class Profile {
     });
   }
 
+  /**
+   * Converts the current Profile object to an unformatted version.
+   * 
+   * This method creates a new Profile instance and iterates over the properties
+   * of the current Profile object. If a property value is a string, it applies
+   * the `unformatText` function to the value and sets it on the new Profile instance.
+   * It also recursively converts the controls of the Profile to their unformatted versions.
+   * 
+   * @returns {Profile} The unformatted Profile object.
+   */
   toUnformattedObject(): Profile {
     const unformattedProfile: Profile = new Profile(this);
     Object.entries(this).forEach(([key, value]) => {

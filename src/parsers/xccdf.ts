@@ -1,6 +1,12 @@
 import Profile from '../objects/profile';
-import {convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson, convertJsonIntoXML, impactNumberToSeverityString, removeXMLSpecialCharacters, severityStringToImpact} from '../utilities/xccdf';
-import {BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice, ParsedXCCDF, RationaleElement, RuleComplexCheck} from '../types/xccdf';
+import {
+  convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson,
+  convertJsonIntoXML, impactNumberToSeverityString,
+  removeXMLSpecialCharacters, severityStringToImpact
+} from '../utilities/xccdf';
+import {BenchmarkGroup, BenchmarkRule, DecodedDescription,
+  FrontMatter, Notice, ParsedXCCDF, RationaleElement,
+  RuleComplexCheck} from '../types/xccdf';
 import Control from '../objects/control';
 import _ from 'lodash';
 import {OvalDefinitionValue} from '../types/oval';
@@ -10,6 +16,12 @@ import {createWinstonLogger} from '../utilities/logging'
 
 export type GroupContextualizedRule = BenchmarkRule & {group: Omit<BenchmarkGroup, 'Rule' | 'Group'>}
 
+/**
+ * Extracts all rules from the given benchmark groups, including nested groups.
+ *
+ * @param groups - An array of benchmark groups to extract rules from.
+ * @returns An array of contextualized rules, each rule includes its parent group context.
+ */
 export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRule[] {
   const rules: GroupContextualizedRule[] = [];
   groups.forEach((group) => {
@@ -28,6 +40,16 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
   return rules
 }
 
+/**
+ * Extracts all nested complex checks from a given `RuleComplexCheck` object.
+ * 
+ * This function recursively traverses the `complex-check` property of the input
+ * `RuleComplexCheck` object and collects all nested complex checks into a flat array.
+ * Each complex check in the resulting array will have its own `complex-check` property omitted.
+ * 
+ * @param complexCheck - The `RuleComplexCheck` object to extract complex checks from.
+ * @returns An array of `RuleComplexCheck` objects with the `complex-check` property omitted.
+ */
 export function extractAllComplexChecks(complexCheck: RuleComplexCheck): Omit<RuleComplexCheck, 'complex-check'>[] {
   const complexChecks: Omit<RuleComplexCheck, 'complex-check'>[] = [_.omit(complexCheck, 'complex-check')];
   if (complexCheck['complex-check']) {
@@ -44,11 +66,31 @@ export type InputTextLang = {
   '@_lang': string
 }
 
+/**
+ * Ensures that the input is decoded as an XML string value.
+ * 
+ * @param input - The input value which can be either a string or an array of
+ *                InputTextLang objects.
+ * @param defaultValue - The default string value to return if the input is
+ *                       not a string.
+ * @returns The decoded XML string value if the input is a string, otherwise the
+ *          value from the first element of the input array or the default value.
+ */
 function ensureDecodedXMLStringValue(input: string | InputTextLang[], defaultValue: string): string {
   return _.isString(input) ? input : _.get(input, '[0].#text', defaultValue)
 }
 
-// Moving the newline removal to diff library rather than processXCCDF level
+/**
+ * Processes an XCCDF XML string and converts it into a Profile object.
+ * Note: Moved the newline removal to diff library rather than here.
+ * 
+ * @param xml - The XCCDF XML string to process.
+ * @param removeNewlines - A flag indicating whether to remove newlines from the processed data.
+ * @param useRuleId - Specifies the rule ID format to use. Can be 'group', 'rule', 'version', or 'cis'.
+ * @param ovalDefinitions - Optional OVAL definitions to use for resolving values.
+ * @returns A Profile object representing the processed XCCDF data.
+ * @throws Will throw an error if the XCCDF file is not properly formatted or if required data is missing.
+ */
 export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }>): Profile {
   const logger = createWinstonLogger()
   const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)

@@ -1,10 +1,21 @@
 import {convertEncodedXmlIntoJson} from '../utilities/xccdf'
 import {OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State} from '../types/oval'
 import {createWinstonLogger} from '../utilities/logging';
-import fs from 'fs'
 
-// https://stackoverflow.com/questions/9133500/how-to-find-a-node-in-a-tree-with-javascript
-
+/**
+ * Search through all arrays of the tree if the for a value from a property
+ * Code provided by:
+ * https://stackoverflow.com/questions/9133500/how-to-find-a-node-in-a-tree-with-javascript
+ * 
+ * @param aTree : The tree array
+ * @param fCompair : This function will receive each node. Define based on caller for specific 
+                     condition necessary for the match. It must return true if the condition
+                     is matched. Example:
+                        function(oNode){ if(oNode["Name"] === "AA") return true; }
+ * @param bGreedy? : Set to `true` to search all node and not stopping after the first match, default is false
+ * @return An array with references to the nodes for which fCompair was true. In case no node was found an empty array
+ *         will be returned
+*/
 function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean) {
   let oNode;               // always the current node  
   const aInnerTree = [];   // will contain the inner children
@@ -39,6 +50,16 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
   return aReturnNodes;
 }
 
+/**
+ * Extracts all test references from a list of initial criteria.
+ *
+ * This function recursively traverses the provided criteria and extracts
+ * all test references (`@_test_ref`) from each criterion. It returns an
+ * array of all found test references.
+ *
+ * @param initialCriteria - An array of `DefinitionCriterion` objects to extract test references from.
+ * @returns An array of strings containing all extracted test references.
+ */
 export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): string[] {
   const criteriaRefs: string[] = []
   initialCriteria.forEach(criteria => {
@@ -54,6 +75,24 @@ export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): 
   return criteriaRefs
 }
 
+/**
+ * Processes an OVAL (Open Vulnerability and Assessment Language) XML string and converts it into a JSON object.
+ * Extracts definitions and their associated criteria references and resolved values.
+ * The function performs the following steps:
+ * 1. Converts the OVAL XML string into a JSON object.
+ * 2. Iterates through the OVAL definitions and extracts each definition.
+ * 3. For each definition, extracts criteria references and resolves the associated objects and states.
+ * 4. Logs warnings if any objects or states cannot be found.
+ *
+ * The returned record contains:
+ * - The original definition.
+ * - An array of criteria references.
+ * - An array of resolved values, each containing the original criteria, resolved objects, and resolved states.
+ * 
+ * @param {string} [oval] - The OVAL XML string to be processed. If not provided, the function returns `undefined`.
+ * @returns {Record<string, OvalDefinitionValue> | undefined} - A record of extracted definitions with their
+ *  criteria references and resolved values, or `undefined` if no OVAL string is provided.
+ */
 export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> | undefined {
   const logger = createWinstonLogger()
 

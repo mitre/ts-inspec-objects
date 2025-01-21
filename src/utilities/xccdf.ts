@@ -5,17 +5,24 @@ import _ from 'lodash'
 import {DecodedDescription} from '../types/xccdf'
 import he from 'he'
 
-// const alwaysArray = ['cci_item', 'reference', 'Group', 'group', 'Benchmark', 'Rule', 'title', 'rule', 'version', 'title', '@_id', 'check'];
-// 'title',  
-//STIG
-// const alwaysArray = ['title', 'dc-status', 'description','notice', 'front-matter', 'rear-matter', 'reference', 'plain-text', 'platform', 'metadata', 'Benchmark', 'Group', 'Rule', 'TestResult', 'Value', 'Profile', 'check', 'ident', 'rationale'];
-//OVAL
-//const alwaysArray = ['object_reference', 'oval-def:definition', 'definition', 'affected', 'reference', 'xsd:any', 'platform', 'product', 'note', 'criteria', 'criterion', 'extend_definition', 'oval-def:test', 'oval-def:object', 'oval-def:filter', 'oval-def:state', 'oval-def:variable', 'possible_value', 'possible_restriction', 'restriction', 'value', 'field', 'definitions', 'generator'];
-
-// arrayMode: () => { 
-//   return true;
-// }//true  // needs to be updated to isArray https://github.com/NaturalIntelligence/fast-xml-parser/blob/master/docs/v4/2.XMLparseOptions.md#isarray
-
+/**
+ * Converts an encoded XML string into a JSON object.
+ * 
+ * @param encodedXml - The encoded XML string to be converted.
+ * @returns The JSON representation of the XML string.
+ *
+ * @remarks
+ * This function uses the `fast-xml-parser` library to parse the XML string.
+ * The parser options are configured to:
+ * - Not ignore attributes.
+ * - Remove namespace prefixes.
+ * - Prefix attribute names with '@_'.
+ * - Stop parsing at 'div' and 'p' nodes.
+ * - Treat all nodes as arrays.
+ *
+ * For more details on the parser options, see the documentation for the v4 or v5 version of the library:
+ * {@link https://github.com/NaturalIntelligence/fast-xml-parser/tree/master/docs/v4}
+ */
 export function convertEncodedXmlIntoJson(
   encodedXml: string
 ): any {
@@ -26,23 +33,30 @@ export function convertEncodedXmlIntoJson(
     stopNodes: ['div', 'p'],
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     isArray: (_name: string, _jpath: string, _isLeafNode: boolean, _isAttribute: boolean) => true,
-    // isArray: (_name: string, _jpath: string, isLeafNode: boolean) => {
-    //   // if (isLeafNode) {
-    //   return true;
-    //   // } else {
-    //   //   return false;
-    //   // }
-    // }
   };
   const parser = new XMLParser(options);
   return parser.parse(encodedXml);
 }
 
-
+/**
+ * Converts a JSON object into an XML string.
+ *
+ * @param data - The JSON object to be converted.
+ * @returns The XML string representation of the JSON object.
+ */
 export function convertJsonIntoXML(data: any) {
   return toXML(data)
 }
 
+/**
+ * Removes XML special characters from a given string.
+ *
+ * This function decodes any XML special characters in the input string
+ * and returns the decoded result.
+ *
+ * @param str - The input string containing XML special characters.
+ * @returns The decoded string with XML special characters removed.
+ */
 export function removeXMLSpecialCharacters(str: string) {
   //console.log('Remove special characters: ', JSON.stringify(str, null, 2));
   const result = he.decode(str);
@@ -50,7 +64,22 @@ export function removeXMLSpecialCharacters(str: string) {
   return result
 }
 
-// export function severityStringToImpact(string: string, id: string): number {
+/**
+ * Converts a severity string to a numerical impact value.
+ *
+ * The function matches the input string against various regular expressions
+ * to determine the corresponding impact value:
+ * - "none", "na", "n/a", "not applicable" (case insensitive) -> 0.0
+ * - "low", "category iii", "category 3" (case insensitive) -> 0.3
+ * - "medium", "category ii", "category 2" -> 0.5
+ * - "high", "category i", "category 1" -> 0.7
+ * - "critical", "severe" -> 1.0
+ *
+ * If no match is found, the default impact value is 0.5.
+ *
+ * @param string - The severity string to be converted.
+ * @returns The numerical impact value corresponding to the severity string.
+ */
 export function severityStringToImpact(string: string): number {
   if (RegExp(/none|na|n\/a|not[\s()*_|]?applicable/i).exec(string)?.length) {
     return 0.0
@@ -72,10 +101,21 @@ export function severityStringToImpact(string: string): number {
     return 1.0
   }
 
-  // console.log(`${string} is not a valid severity value. It should be one of the approved keywords. ${id} will be treated as medium severity`)
   return 0.5;
 }
 
+/**
+ * Converts an impact number to a severity string.
+ *
+ * @param impact - A number representing the impact, which must be between 0.0 and 1.0 inclusive.
+ * @returns A string representing the severity level:
+ * - 'critical' for impact >= 0.9
+ * - 'high' for impact >= 0.7
+ * - 'medium' for impact >= 0.4
+ * - 'low' for impact >= 0.1
+ * - 'none' for impact < 0.1
+ * @throws {Error} If the impact is less than 0.0 or greater than 1.0.
+ */
 export function impactNumberToSeverityString(impact: number): string {
   // Impact must be 0.0 - 1.0
   if (impact < 0.0 || impact > 1.0) {
@@ -101,6 +141,26 @@ export function impactNumberToSeverityString(impact: number): string {
   }
 }
 
+/**
+ * Converts an encoded HTML string into a JSON object, handling specific edge
+ * cases related to XSS and XML tags.
+ *
+ * This function performs the following steps:
+ * 1. Replaces occurrences of `"&lt;"` with a placeholder to avoid
+ *    breaking parsing.
+ * 2. Parses the patched HTML to extract text chunks.
+ * 3. Converts the extracted text chunks into JSON.
+ * 4. Cleans the converted JSON by replacing placeholders with the original
+ *    characters and handling nested objects.
+ *
+ * Note: This function specifically addresses issues found in certain
+ *       STIGs (Security Technical Implementation Guides) where XML tags are
+ *       embedded within text fields.
+ * 
+ * @param encodedHTML - The encoded HTML string to be converted. 
+ *                      If not provided, an empty object is returned.
+ * @returns A `DecodedDescription` object containing the converted JSON data.
+ */
 export function convertEncodedHTMLIntoJson(encodedHTML?: string): DecodedDescription {
   if (encodedHTML) {
     // Some STIGs regarding XSS put the < character inside of the description which breaks parsing
@@ -117,9 +177,17 @@ export function convertEncodedHTMLIntoJson(encodedHTML?: string): DecodedDescrip
     const converted = convertEncodedXmlIntoJson(xmlChunks.join(''))
     let cleaned: Record<string, string | boolean | undefined> = {}
 
-    if (typeof converted.VulnDiscussion === 'object') { // Some STIGs have xml tags inside of the actual text which breaks processing, e.g U_ASD_STIG_V5R1_Manual-xccdf.xml and all Oracle Database STIGs
+    // Some STIGs have xml tags inside of the actual text which breaks processing,
+    // e.g U_ASD_STIG_V5R1_Manual-xccdf.xml and all Oracle Database STIGs
+    if (typeof converted.VulnDiscussion === 'object') { 
       let extractedVulnDescription = ''
-      const remainingFields = _.omit(converted.VulnDiscussion, ['FalsePositives', 'FalseNegatives', 'Documentable', 'Mitigations', 'SeverityOverrideGuidance', 'PotentialImpacts', 'ThirdPartyTools', 'MitigationControl', 'Responsibility', 'IAControls'])
+      const remainingFields = _.omit(converted.VulnDiscussion,
+        [
+          'FalsePositives', 'FalseNegatives', 'Documentable', 'Mitigations',
+          'SeverityOverrideGuidance', 'PotentialImpacts', 'ThirdPartyTools',
+          'MitigationControl', 'Responsibility', 'IAControls'
+        ]
+      )
       Object.entries(remainingFields).forEach(([field, value]) => {
         extractedVulnDescription += `<${field}> ${value}`
       })

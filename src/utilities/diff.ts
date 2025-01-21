@@ -6,6 +6,17 @@ import {findUpdatedControlByAllIdentifiers} from './update';
 import winston from 'winston';
 import {removeWhitespace} from './global';
 
+/**
+ * Removes newlines from all string values within a nested object.
+ * 
+ * This function recursively traverses the provided object and replaces
+ * newline characters (`\n`) in string values with the placeholder `{{{{newlineHERE}}}}`.
+ * It also trims any leading or trailing whitespace from the string values.
+ * 
+ * @param control - The object from which to remove newlines. If not provided,
+ *                  an empty object is returned.
+ * @returns A new object with newlines removed from all string values.
+ */
 export function removeNewlines(
   control?: Record<string, unknown>
 ): Record<string, unknown> {
@@ -22,7 +33,26 @@ export function removeNewlines(
   });
 }
 
-// Goal is to use a linter for the formatting and compare characters without whitespaces here
+/**
+ * Processes a diff object to ignore formatting differences such as whitespace.
+ * Goal is to use a linter for the formatting and compare characters without
+ * whitespaces here.
+ * 
+ * The function performs the following:
+ * - If the diff value has a `__new` property, it compares the `__new` and
+ *   `__old` values after removing whitespace. If they are different, it sets
+ *   the result to the `__new` value.
+ * - If the diff value is an array, it maps and filters the array to include
+ *   only the new values.
+ * - If the diff value is an object, it recursively processes the object.
+ * - If the key ends with `__deleted`, it ignores the value.
+ * - Otherwise, it sets the result to the diff value.
+ * 
+ * @param diffData - The diff object containing differences to process.
+ * @returns A new object with formatting differences ignored.
+ * 
+
+ */
 export function ignoreFormattingDiff(diffData: Record<string, unknown>) {
   return _.transform(
     diffData,
@@ -57,11 +87,24 @@ export function ignoreFormattingDiff(diffData: Record<string, unknown>) {
   );
 }
 
+/**
+ * Computes the differences between two profiles and logs the process.
+ *
+ * @param fromProfile - The original profile to compare from.
+ * @param toProfile   - The target profile to compare to.
+ * @param logger      - The logger instance to use for logging information.
+ * 
+ * @returns An object containing two properties:
+ *  - `ignoreFormattingDiff`: The profile differences ignoring formatting changes.
+ *  - `rawDiff`: The raw profile differences.
+ */
 export function diffProfile(
   fromProfile: Profile,
   toProfile: Profile,
   logger: winston.Logger
 ): { ignoreFormattingDiff: ProfileDiff; rawDiff: Record<string, unknown> } {
+  logger.info(`Processing diff between: ${fromProfile.name}(v:${fromProfile.version}) and: ${toProfile.name}(v:${toProfile.version})`)
+
   const profileDiff: ProfileDiff = {
     addedControlIDs: [],
     removedControlIDs: [],
@@ -80,9 +123,7 @@ export function diffProfile(
     changedControls: {},
   };
 
-  const fromControlIDs = fromProfile.controls
-    .map((control) => control.id)
-    .sort();
+  const fromControlIDs = fromProfile.controls.map((control) => control.id).sort();
   const toControlIDs = toProfile.controls.map((control) => control.id).sort();
 
   // Find new controls
@@ -97,7 +138,6 @@ export function diffProfile(
   // a diffValue has an entry for both what was subtracted ("-")
   // and what was added ("+") -- need to handle both
   controlIDDiff?.forEach((diffValue) => {
-    //console.log(`diffValue[0]: ${diffValue[0]}, diffValue[1] is: ${diffValue[1].toString().toLowerCase()}`)
     if (diffValue[0] === '-') {
       const existingControl = fromProfile.controls.find(
         (control) => control.id === diffValue[1]
@@ -121,7 +161,6 @@ export function diffProfile(
           // logger.info("CONTROL DIFF:" + JSON.stringify(controlDiff, null, 2))
 
           const renamedControlIgnoredFormatting = ignoreFormattingDiff(controlDiff);
-          //logger.info(JSON.stringify(renamedControlIgnoredFormatting));
           profileDiff.changedControls[newControl.id] = renamedControlIgnoredFormatting;
           profileDiff.changedControlIDs.push(newControl.id);
           originalDiff.changedControls[newControl.id] = controlDiff;
@@ -130,8 +169,8 @@ export function diffProfile(
           logger.verbose(
             `Control ${existingControl.id} has been updated to ${newControl.id}`
           );
+          logger.debug(`Updated control content: ${JSON.stringify(renamedControlIgnoredFormatting)}`);
         } else {
-          console.log(`Adding this to the removedControlIDs ${diffValue[1]}`);
           profileDiff.removedControlIDs.push(diffValue[1]);
           originalDiff.removedControlIDs.push(diffValue[1]);
         }
@@ -139,8 +178,8 @@ export function diffProfile(
         logger.error(`Unable to find existing control ${diffValue[1]}`);
       }
     } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toString().toLowerCase()) && diffValue[1]) {
-      //logger.info(JSON.stringify(diffValue))
-      //logger.info(JSON.stringify(changedControlIds))
+      logger.info(JSON.stringify(diffValue))
+      logger.info(JSON.stringify(changedControlIds))
       profileDiff.addedControlIDs.push(diffValue[1]);
       originalDiff.addedControlIDs.push(diffValue[1]);
     }

@@ -5,3 +5,7 @@ export * from './parsers/oval';
 export * from './parsers/xccdf';
 export * from './utilities/diff';
 export * from './utilities/update';
+import Control from './objects/control';
+export {Control};
+import Profile from './objects/profile';
+export {Profile};

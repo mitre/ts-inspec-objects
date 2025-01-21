@@ -5,6 +5,15 @@ import {unflatten} from 'flat';
 import {escapeQuotes} from '../utilities/global';
 import {createWinstonLogger} from '../utilities/logging';
 
+/**
+ * Converts an array of ExecJSON.ControlDescription objects or a dictionary of descriptions
+ * into a standardized dictionary format.
+ *
+ * @param descs - An array of ExecJSON.ControlDescription objects, a dictionary of descriptions,
+ *                or null/undefined.
+ * @returns A dictionary where the keys are description labels and the values are description data.
+ *          If the input is null or undefined, an empty dictionary is returned.
+ */
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
     const descriptions: Record<string, string | undefined> = {}
@@ -16,6 +25,57 @@ export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [
   return descs || {}
 }
 
+/**
+ * Represents a Control object with various properties and methods to manipulate and convert it.
+ * 
+ * @class Control
+ * @property {string} id - The unique identifier for the control.
+ * @property {string | null} [title] - The title of the control.
+ * @property {string | null} [code] - The code associated with the control.
+ * @property {string | null} [describe] - Additional description content for the control.
+ * @property {string | null} [desc] - The default description of the control.
+ * @property {Object.<string, string | undefined>} descs - Additional descriptions for the control.
+ * @property {number} [impact] - The impact value of the control.
+ * @property {string} [ref] - A reference string for the control.
+ * @property {(string | { ref?: string; url?: string; uri?: string; })[]} [refs] - An array of references for the control.
+ * @property {Object.<string, string | string[] | Record<string, string[]>[] | boolean | undefined | null>} tags - Tags associated with the control.
+ * 
+ * @constructor
+ * @param {Partial<Control>} [data] - An optional partial object of type Control to initialize the instance with.
+ * 
+ * @method toUnformattedObject
+ * Converts the current Control object into an unformatted object.
+ * The method flattens the object, processes its string properties, and then unflattens it back into a Control object.
+ * @returns {Control} A new Control object created from the unformatted data.
+ * 
+ * @method toString
+ * Converts the control object to a string representation in a specific format.
+ * The resulting string includes:
+ * - The control ID.
+ * - The title, if present.
+ * - The default description, if present.
+ * - Additional descriptions, if present.
+ * - The impact value, if present.
+ * - References, if present.
+ * - Tags, if present.
+ * - Additional describe content, if present.
+ * @returns {string} The string representation of the control object.
+ * 
+ * @method toRuby
+ * Converts the control object to a Ruby string representation.
+ * @param {boolean} [verbose=false] - If true, logs detailed error and warning messages.
+ * @returns {string} The Ruby string representation of the control object.
+ * The generated Ruby string includes:
+ * - `control` block with the control ID.
+ * - `title` if available, otherwise logs an error if verbose is true.
+ * - `desc` if available, otherwise logs an error if verbose is true.
+ * - Additional descriptions (`descs`) if available, with special handling for the 'default' keyword.
+ * - `impact` if defined, otherwise logs an error if verbose is true.
+ * - `refs` if available, with support for both string and object references.
+ * - `tags` if available, with special formatting for arrays and objects, and handling for nil values for specific tags.
+ * - `describe` if available, appended at the end of the control block.
+ * The function ensures proper formatting and escaping of quotes for Ruby syntax.
+ */
 export default class Control {
   id!: string;
   title?: string | null;
@@ -55,18 +115,18 @@ export default class Control {
     mitigation_controls?: string;
     responsibility?: string;
     ia_controls?: string;
-    [key: string]:
-      | string
-      | string[]
-      | Record<string, string[]>[]
-      | boolean
-      | undefined
-      | null;
+    [key: string]: string | string[] | Record<string, string[]>[] | boolean | undefined | null;
   } = {};
 
+  /**
+   * Constructs a new instance of the Control class.
+   * 
+   * @param data - An optional partial object of type Control to initialize the instance with.
+   *               If provided, the properties of the data object will be assigned to the instance.
+   */
   constructor(data?: Partial<Control>) {
-    this.refs = []
-    this.tags = {}
+    this.refs = [];
+    this.tags = {};
     if (data) {
       Object.entries(data).forEach(([key, value]) => {
         _.set(this, key, value);
@@ -74,9 +134,16 @@ export default class Control {
     }
   }
 
+  /**
+   * Converts the current Control object into an unformatted object.
+   * The method flattens the object, processes its string properties,
+   * and then unflattens it back into a Control object.
+   *
+   * @returns {Control} A new Control object created from the unformatted data.
+   */
   toUnformattedObject(): Control {
-    const flattened: Record<string, string | number> = flatten(this)
-    
+    const flattened: Record<string, string | number> = flatten(this);
+
     Object.entries(flattened).forEach(([key, value]) => {
       if (typeof value === 'string') {
         _.set(flattened, key, value);
@@ -86,8 +153,23 @@ export default class Control {
     return new Control(unflatten(flattened));
   }
 
-  // WIP - provides the ability to get the control in its raw form
-  toString() {
+  /**
+   * Converts the control object to a string representation in a specific format.
+   * WIP - provides the ability to get the control in its raw form
+   * 
+   * The resulting string includes:
+   * - The control ID.
+   * - The title, if present.
+   * - The default description, if present.
+   * - Additional descriptions, if present.
+   * - The impact value, if present.
+   * - References, if present.
+   * - Tags, if present.
+   * - Additional describe content, if present.
+   * 
+   * @returns {string} The string representation of the control object.
+   */
+  toString(): string {
     let result = '';
     result += `control '${this.id}' do\n`;
     
@@ -150,7 +232,25 @@ export default class Control {
     return result;
   }
 
-  toRuby(verbose = false) {
+  /**
+   * Converts the control object to a Ruby string representation.
+   *
+   * @param {boolean} [verbose=false] - If true, logs detailed error and warning messages.
+   * @returns {string} The Ruby string representation of the control object.
+   *
+   * The generated Ruby string includes:
+   * - `control` block with the control ID.
+   * - `title` if available, otherwise logs an error if verbose is true.
+   * - `desc` if available, otherwise logs an error if verbose is true.
+   * - Additional descriptions (`descs`) if available, with special handling for the 'default' keyword.
+   * - `impact` if defined, otherwise logs an error if verbose is true.
+   * - `refs` if available, with support for both string and object references.
+   * - `tags` if available, with special formatting for arrays and objects, and handling for nil values for specific tags.
+   * - `describe` if available, appended at the end of the control block.
+   *
+   * The function ensures proper formatting and escaping of quotes for Ruby syntax.
+   */
+  toRuby(verbose = false): string {
     const logger = createWinstonLogger();
     let result = '';
 
