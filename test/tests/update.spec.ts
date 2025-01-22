@@ -12,12 +12,12 @@ describe('The update utils', () => {
 
   it('should correctly set describe blocks when ruby specific syntax (%q{}) is used in check text', () => {
     const V3R6 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r6-mini-profile.json', 'utf-8'));
-    const updatedProfile = updateProfileUsingXCCDF(V3R6, fs.readFileSync('test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml', 'utf-8'), 'rule', createWinstonLogger());
+    const updatedProfile = updateProfileUsingXCCDF(V3R6, fs.readFileSync('test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml', 'utf-8'), 'rule', createWinstonLogger('ts-inspec-objects'));
     expect(updatedProfile.profile.controls[3].describe).toEqual(ruby_describe_block);
   })
   it('should correctly set describe blocks when ruby specific syntax (%<>) is used in check text', () => {
     const V3R6PercentString = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r6-mini-profile-with-percent-strings.json', 'utf-8'));
-    const updatedProfile = updateProfileUsingXCCDF(V3R6PercentString, fs.readFileSync('test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml', 'utf-8'), 'rule', createWinstonLogger());
+    const updatedProfile = updateProfileUsingXCCDF(V3R6PercentString, fs.readFileSync('test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml', 'utf-8'), 'rule', createWinstonLogger('ts-inspec-objects'));
     expect(updatedProfile.profile.controls[3].describe).toEqual(ruby_describe_block);
   })
 })
