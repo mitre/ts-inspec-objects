@@ -4,7 +4,7 @@ import {diffProfile, processXCCDF} from '../../src/index'
 import {createWinstonLogger} from '../../src/utilities/logging'
 import {processInSpecProfile} from '../../src/parsers/json'
 
-const thisLogger = createWinstonLogger('info')
+const thisLogger = createWinstonLogger('ts-inspec-objects')
 const V1R2 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_8_STIG_V1R2_Manual-xccdf.xml', 'utf-8'), false, 'group');
 const V1R3 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_8_STIG_V1R3_Manual-xccdf.xml', 'utf-8'), false, 'group');
 
@@ -17,14 +17,12 @@ const V3R8 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/rhe
 
 describe('The diff utils', () => {
   it('Successfully finds the difference between RHEL 8 V1R2 XCCDF and V1R3 XCCDF', () => {
-    fs.writeFileSync('test/sample_data/diffs/RHEL8_V1R2_V1R3.json', JSON.stringify(diffProfile(V1R2, V1R3, thisLogger), null, 2))
     const expected = JSON.parse(fs.readFileSync('test/sample_data/diffs/RHEL8_V1R2_V1R3.json', 'utf-8'))
 
     expect(diffProfile(V1R2, V1R3, thisLogger)).toEqual(expected)
   })
 
   it('Successfully finds the difference between a RHEL 7 V2R6 InSpec Profile and V2R7 XCCDF', () => {
-    fs.writeFileSync('test/sample_data/diffs/RHEL7_V2R6_V2R7.json', JSON.stringify(diffProfile(V2R6, V2R7, thisLogger), null, 2))
     const expected = JSON.parse(fs.readFileSync('test/sample_data/diffs/RHEL7_V2R6_V2R7.json', 'utf-8'))
 
     expect(diffProfile(V2R6, V2R7, thisLogger)).toEqual(expected)
@@ -33,10 +31,7 @@ describe('The diff utils', () => {
 
 describe('The diff utils', () => {
 
-  fs.writeFileSync('test/sample_data/diffs/RHEL7_V3R7_V3R8.json', JSON.stringify(diffProfile(V3R7, V3R8, thisLogger), null, 2))
   const profileDiff_7 = diffProfile(V3R7, V3R8, thisLogger);
-
-  fs.writeFileSync('test/sample_data/diffs/RHEL7_V3R6_V3R8.json', JSON.stringify(diffProfile(V3R6, V3R8, thisLogger), null, 2))
   const profileDiff_6 = diffProfile(V3R6, V3R8, thisLogger);
 
   it('should correctly identify added controls', () => {

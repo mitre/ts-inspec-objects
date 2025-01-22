@@ -105,7 +105,10 @@ export default class Profile {
 
   /**
    * Generates an InSpec YAML string representation of the profile object.
-   *
+   * Note: Per Chef documentation the inspec_version should be a string
+   *       in the format of "x.y.z" or "x.y.z-alpha" or "x.y.z-beta",
+   *       it must be double quoted, most often the format is "~>#.#"
+   * 
    * @returns {string} The YAML string representation of the profile.
    */
   createInspecYaml(): string {
@@ -121,7 +124,8 @@ export default class Profile {
       version: this.version,
       supports: this.supports,
       depends: this.depends,
-      inspec_version: this.inspec_version,
+      //inspec_version: this.inspec_version,
+      inspec_version: YAML.stringify(`${this.inspec_version}`, {defaultStringType: 'QUOTE_DOUBLE'}),
     });
   }
 

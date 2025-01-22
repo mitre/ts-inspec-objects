@@ -92,7 +92,7 @@ function ensureDecodedXMLStringValue(input: string | InputTextLang[], defaultVal
  * @throws Will throw an error if the XCCDF file is not properly formatted or if required data is missing.
  */
 export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'group' | 'rule' | 'version' | 'cis', ovalDefinitions?: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }>): Profile {
-  const logger = createWinstonLogger()
+  const logger = createWinstonLogger('ts-inspec-objects')
   const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml)
 
   if (parsedXML.Benchmark === undefined) {
@@ -162,7 +162,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
     }
 
     if (!(_.isArray(rule.title) && rule.title.length === 1)) {
-      throw new Error('Rule title is not an array of length 1.');
+      throw new Error('Rule title is not an array of length 1. Investigate if the file is in the proper format.')
     }
     
     control.title = removeXMLSpecialCharacters(rule['@_severity'] ? ensureDecodedXMLStringValue(rule.title[0], 'undefined title') : `[[[MISSING SEVERITY FROM BENCHMARK]]] ${ensureDecodedXMLStringValue(rule.title[0],'undefined title')}`)
@@ -177,7 +177,6 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
       logger.warn(`Invalid value for extracted description: ${extractedDescription}`)
     }
 
-    // control.impact = severityStringToImpact(rule['@_severity'] || 'medium', rule.group['@_id'])
     control.impact = severityStringToImpact(rule['@_severity'] || 'medium')
 
     if (!control.descs || Array.isArray(control.descs)) {
@@ -201,6 +200,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
           }
         }
         if (referenceID && referenceID in ovalDefinitions) {
+          // May need to further check if ovalDefinitions[referenceID].metadata[0].title[0] are not populated?
           control.descs.check = removeXMLSpecialCharacters(ovalDefinitions[referenceID].metadata[0].title[0])
         } else if (referenceID) {
           logger.warn(`Could not find OVAL definition for ${referenceID}`)
@@ -221,7 +221,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
         allComplexChecks.forEach((complexCheck) => {
           if (complexCheck.check) {
             complexCheck.check.forEach((check) => {
-              if (check['@_system']?.toLowerCase().includes('oval')) {
+              if (check['@_system']?.toString().toLowerCase().includes('oval')) {
                 const ovalReference = check['check-content-ref'][0]['@_name']
                 if (!ovalDefinitions) {
                   logger.warn(`Missing OVAL definitions! Unable to process OVAL reference: ${ovalReference}`)
@@ -285,7 +285,6 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
       control.descs.fix = 'Missing fix text'
     }
         
-    // control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium', control.id || 'Unknown'))
     control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium'))
     control.tags.gid = rule.group['@_id'],
     control.tags.rid = rule['@_id']
@@ -353,7 +352,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
           control.tags.legacy?.push(identifier['#text'])
         }
         // Get NIST identifiers
-        else if (identifier['@_system'].toLowerCase().includes('nist')) {
+        else if (identifier['@_system'].toString().toLowerCase().includes('nist')) {
           if (!('nist' in control.tags)) {
             control.tags.nist = []
           }
@@ -403,8 +402,7 @@ export function processXCCDF(xml: string, removeNewlines: false, useRuleId: 'gro
                 logger.warn(`Attempted to push identifier to control tags when identifier already exists: ${identifierType}: ${identifier}`)
               }
             } else {
-              logger.warn('Reference parts of invalid length:')
-              // logger.info(referenceParts)
+              logger.warn('Reference parts of invalid length: ', referenceParts)
             }
           }
         } catch (e) {

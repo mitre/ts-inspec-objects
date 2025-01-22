@@ -14,7 +14,8 @@ import {createDiffMarkdown} from './diffMarkdown'
 /**
  * Represents the return type of an updated profile operation.
  * 
- * @typedef {Object} UpdatedProfileReturn
+ * @typedef UpdatedProfileReturn
+ * 
  * @property {Profile} profile - The updated profile object.
  * @property {Object} diff - The differences between the original and updated profiles.
  * @property {ProfileDiff} diff.ignoreFormattingDiff - The differences ignoring formatting changes.
@@ -243,7 +244,6 @@ function getMultiLineRanges(ranges: number[][]): number[][] {
   return multiLineRanges
 }
 
-
 /**
  * This is the most likely thing to break if you are getting code formatting issues. 
  * 
@@ -254,6 +254,7 @@ function getMultiLineRanges(ranges: number[][]): number[][] {
  * @returns The extracted `describe` block as a string, or an empty string if the control has no code.
  */
 export function getExistingDescribeFromControl(control: Control): string {
+  console.log(`Control.code: ${control.code}`)
   if (control.code) {
     // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
@@ -285,7 +286,12 @@ export function getExistingDescribeFromControl(control: Control): string {
     }
 
     // Return synthesized logic as describe block
-    return describeBlock.slice(0, describeBlock.lastIndexOf('end')).join('\n') // Drop trailing ['end', '\n'] from Control block.
+    const lastIndex = (describeBlock.lastIndexOf('end') === -1)
+      ? describeBlock.lastIndexOf('end\r')
+      : describeBlock.lastIndexOf('end')
+    
+    // Drop trailing ['end', '\n'] from Control block.
+    return describeBlock.slice(0, lastIndex).join('\n') 
   } else {
     return ''
   }
@@ -339,6 +345,22 @@ export function updateControl(from: Control, update: Partial<Control>, logger: w
   const existingDescribeBlock = getExistingDescribeFromControl(from)
   logger.debug(`Existing describe block for control ${from.id}: ${JSON.stringify(existingDescribeBlock)}`)
   const projectedControl = projectValuesOntoExistingObj(from as unknown as Record<string, unknown>, update) as unknown as Control
+  projectedControl.describe = existingDescribeBlock
+  return projectedControl
+}
+
+/**
+ * Updates the describe block of a control with the describe block from another control.
+ *
+ * @param from - The control from which to get the existing describe block.
+ * @param update - The partial control data to update.
+ * @param logger - The logger instance to use for logging debug information.
+ * @returns The updated control with the describe block from the `from` control.
+ */
+export function updateControlDescribeBlock(from: Control, update: Partial<Control>, logger: winston.Logger): Control {
+  const existingDescribeBlock = getExistingDescribeFromControl(from)
+  logger.debug(`Updating control ${update.id} with this describe block: ${JSON.stringify(existingDescribeBlock)}`)
+  const projectedControl = new Control(update)
   projectedControl.describe = existingDescribeBlock
   return projectedControl
 }

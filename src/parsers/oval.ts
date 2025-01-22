@@ -3,7 +3,7 @@ import {OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State} fro
 import {createWinstonLogger} from '../utilities/logging';
 
 /**
- * Search through all arrays of the tree if the for a value from a property
+ * Search through all arrays of the tree to find a value from a property 
  * Code provided by:
  * https://stackoverflow.com/questions/9133500/how-to-find-a-node-in-a-tree-with-javascript
  * 
@@ -94,7 +94,7 @@ export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): 
  *  criteria references and resolved values, or `undefined` if no OVAL string is provided.
  */
 export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> | undefined {
-  const logger = createWinstonLogger()
+  const logger = createWinstonLogger('ts-inspec-objects')
 
   if (!oval) {
     return undefined

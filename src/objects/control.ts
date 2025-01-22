@@ -44,37 +44,8 @@ export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [
  * @param {Partial<Control>} [data] - An optional partial object of type Control to initialize the instance with.
  * 
  * @method toUnformattedObject
- * Converts the current Control object into an unformatted object.
- * The method flattens the object, processes its string properties, and then unflattens it back into a Control object.
- * @returns {Control} A new Control object created from the unformatted data.
- * 
  * @method toString
- * Converts the control object to a string representation in a specific format.
- * The resulting string includes:
- * - The control ID.
- * - The title, if present.
- * - The default description, if present.
- * - Additional descriptions, if present.
- * - The impact value, if present.
- * - References, if present.
- * - Tags, if present.
- * - Additional describe content, if present.
- * @returns {string} The string representation of the control object.
- * 
  * @method toRuby
- * Converts the control object to a Ruby string representation.
- * @param {boolean} [verbose=false] - If true, logs detailed error and warning messages.
- * @returns {string} The Ruby string representation of the control object.
- * The generated Ruby string includes:
- * - `control` block with the control ID.
- * - `title` if available, otherwise logs an error if verbose is true.
- * - `desc` if available, otherwise logs an error if verbose is true.
- * - Additional descriptions (`descs`) if available, with special handling for the 'default' keyword.
- * - `impact` if defined, otherwise logs an error if verbose is true.
- * - `refs` if available, with support for both string and object references.
- * - `tags` if available, with special formatting for arrays and objects, and handling for nil values for specific tags.
- * - `describe` if available, appended at the end of the control block.
- * The function ensures proper formatting and escaping of quotes for Ruby syntax.
  */
 export default class Control {
   id!: string;
@@ -155,7 +126,7 @@ export default class Control {
 
   /**
    * Converts the control object to a string representation in a specific format.
-   * WIP - provides the ability to get the control in its raw form
+   * Provides the ability to get the control in its raw form
    * 
    * The resulting string includes:
    * - The control ID.
@@ -191,6 +162,8 @@ export default class Control {
 
     if (this.impact) {
       result += `  impact ${this.impact}\n`;
+    } else if (this.impact === 0) {
+      result += `  impact ${this.impact.toFixed(1)}\n`;
     }
 
     if (this.refs) {
@@ -251,7 +224,7 @@ export default class Control {
    * The function ensures proper formatting and escaping of quotes for Ruby syntax.
    */
   toRuby(verbose = false): string {
-    const logger = createWinstonLogger();
+    const logger = createWinstonLogger('ts-inspec-objects');
     let result = '';
 
     result += `control '${this.id}' do\n`;
@@ -294,6 +267,8 @@ export default class Control {
       if (verbose) {logger.error(`${this.id} does not have an impact`);}
     }
 
+    // This may not be necessary, but it is included for completeness.
+    // Once we agreed that it is not needed we can remove it.
     if (this.refs) {
       this.refs.forEach((ref) => {
         if (typeof ref === 'string') {
