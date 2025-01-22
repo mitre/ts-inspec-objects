@@ -42,7 +42,7 @@ describe('describe block extraction', () => {
 
     const expectedOutput = fs.readFileSync(path.join(pathToTestCases, 'expected-results', `${file}.rb`), 'utf-8')
     it(`should provide the proper describe block for use case -> ${file}`, () => {
-      expect(generatedOutput).toEqual(expectedOutput);
+      expect(generatedOutput.replace(/\r/gi, '')).toEqual(expectedOutput.replace(/\r/gi, ''));
     })
   }
 });

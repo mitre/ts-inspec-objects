@@ -2,6 +2,35 @@ export interface ParsedXCCDF {
   Benchmark: Benchmark[];
 }
 
+/**
+ * Represents a Benchmark in the XCCDF (Extensible Configuration Checklist Description Format) standard.
+ * 
+ * @property {'@_xmlns:dsig'} [@_xmlns:dsig] - Optional XML namespace for digital signatures.
+ * @property {'@_xmlns:xsi'} @_xmlns:xsi - XML namespace for XML Schema Instance.
+ * @property {'@_xmlns:cpe'} [@_xmlns:cpe] - Optional XML namespace for Common Platform Enumeration.
+ * @property {'@_xmlns:xhtml'} [@_xmlns:xhtml] - Optional XML namespace for XHTML.
+ * @property {'@_xmlns:dc'} [@_xmlns:dc] - Optional XML namespace for Dublin Core metadata.
+ * @property {'@_xmlns'} @_xmlns - XML namespace for the Benchmark.
+ * @property {'@_id'} @_id - Unique identifier for the Benchmark.
+ * @property {'@_xml:lang'} @_xml:lang - Language of the XML content.
+ * @property {'@_xsi:schemaLocation'} [@_xsi:schemaLocation] - Optional schema location for XML validation.
+ * @property {Status[]} status - Array of status elements describing the Benchmark's status.
+ * @property {FrontMatter[] | string} title - Title of the Benchmark, can be an array of front matter elements or a string.
+ * @property {RationaleElement[] | string} description - Description of the Benchmark, can be an array of rationale elements or a string.
+ * @property {Notice[]} notice - Array of notice elements providing legal or other notices.
+ * @property {BenchmarkReference[]} [reference] - Optional array of references related to the Benchmark.
+ * @property {PlainText[]} ['plain-text'] - Optional array of plain text elements.
+ * @property {VersionElement[] | number} version - Version of the Benchmark, can be an array of version elements or a number.
+ * @property {Profile[]} Profile - Array of profiles defined within the Benchmark.
+ * @property {BenchmarkGroup[]} Group - Array of groups defined within the Benchmark.
+ * @property {FrontMatter[]} ['front-matter'] - Optional array of front matter elements.
+ * @property {FrontMatter[]} ['rear-matter'] - Optional array of rear matter elements.
+ * @property {'@_resolved'} [@_resolved] - Optional resolved attribute.
+ * @property {'@_style'} [@_style] - Optional style attribute.
+ * @property {Platform[]} [platform] - Optional array of platforms applicable to the Benchmark.
+ * @property {Metadatum[]} [metadata] - Optional array of metadata elements.
+ * @property {Model[]} [model] - Optional array of models associated with the Benchmark.
+ */
 export interface Benchmark {
   '@_xmlns:dsig'?: string;
   '@_xmlns:xsi': string;
@@ -722,7 +751,7 @@ export interface BenchmarkRule {
   '@_severity': Severity;
   '@_weight': string;
   version: string;
-  title: string;
+  title: string[];
   description: string;
   rationale: FrontMatter[];
   reference: PurpleReference[];

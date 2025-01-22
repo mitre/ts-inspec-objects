@@ -11,12 +11,43 @@ import {processXCCDF} from '../parsers/xccdf'
 import {OvalDefinitionValue} from '../types/oval'
 import {createDiffMarkdown} from './diffMarkdown'
 
+/**
+ * Represents the return type of an updated profile operation.
+ * 
+ * @typedef UpdatedProfileReturn
+ * 
+ * @property {Profile} profile - The updated profile object.
+ * @property {Object} diff - The differences between the original and updated profiles.
+ * @property {ProfileDiff} diff.ignoreFormattingDiff - The differences ignoring formatting changes.
+ * @property {Record<string, unknown>} diff.rawDiff - The raw differences as a record.
+ * @property {string} markdown - The markdown representation of the differences.
+ */
 export type UpdatedProfileReturn = {
     profile: Profile,
     diff: {ignoreFormattingDiff: ProfileDiff, rawDiff: Record<string, unknown>},
     markdown: string
 }
 
+/**
+ * Projects values from the source object onto the destination object,
+ * updating the destination object in place.
+ * 
+ * @param dst - The destination object to be updated.
+ * @param src - The source object containing new values.
+ * @param currentPath - The current path being processed (used for nested objects).
+ * @returns The updated destination object.
+ * 
+ * @remarks
+ * - If a value in the source object is an object and the corresponding value
+ *   in the destination object is also an object, the function will recursively
+ *   update the nested object.
+ * - If a value in the source object is a string, it will be trimmed before
+ *   being set in the destination object.
+ * - If a value in the source object is a number, it will be directly set in
+ *   the destination object.
+ * - If a value in the source object is an array, the function will merge it with
+ *   the corresponding array in the destination object, ensuring unique values.
+ */
 function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<string, unknown>, currentPath = ''): Record<string, unknown> {
   for (const updatedValue in src) {
     const existingValue = _.get(dst, updatedValue)
@@ -39,28 +70,32 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
   return dst
 }
 
+/**
+ * Returns an array containing two numerical indices (i.e., start and stop
+ * line numbers) for each string or multi-line comment, given raw text as 
+ * an input parameter. The raw text is a string containing the entirety of an 
+ * InSpec control.
+ * 
+ * The function utilizes a pair of stacks (i.e., `stack`, `rangeStack`) to keep 
+ * track of string delimiters and their associated line numbers, respectively.
+ * 
+ * Combinations Handled:
+ * - Single quotes (')
+ * - Double quotes (")
+ * - Back ticks (`)
+ * - Mixed quotes ("`'")
+ * - Percent strings (%; keys: q, Q, r, i, I, w, W, x; delimiters: (), {}, 
+ *   [], <>, most non-alphanumeric characters); (e.g., "%q()")
+ * - Percent literals (%; delimiters: (), {}, [], <>, most non-
+ *   alphanumeric characters); (e.g., "%()")
+ * - Multi-line comments (e.g., =begin\nSome comment\n=end)
+ * - Variable delimiters (i.e., parenthesis: (); array: []; hash: {})
+ * 
+ * @param text - The raw text containing the entirety of an InSpec control.
+ * @returns An array of arrays, each containing two numerical indices representing
+ * the start and stop line numbers for each string or multi-line comment.
+ */
 function getRangesForLines(text: string): number[][] {  
-  /*
-    Returns an array containing two numerical indices (i.e., start and stop  
-    line numbers) for each string or multi-line comment, given raw text as 
-    an input parameter. The raw text is a string containing the entirety of an 
-    InSpec control. 
-
-    Algorithm utilizes a pair of stacks (i.e., `stack`, `rangeStack`) to keep 
-    track of string delimiters and their associated line numbers, respectively.
-
-    Combinations Handled:
-    - Single quotes (')
-    - Double quotes (")
-    - Back ticks (`)
-    - Mixed quotes ("`'")
-    - Percent strings (%; keys: q, Q, r, i, I, w, W, x; delimiters: (), {}, 
-      [], <>, most non-alphanumeric characters); (e.g., "%q()")
-    - Percent literals (%; delimiters: (), {}, [], <>, most non-
-      alphanumeric characters); (e.g., "%()")
-    - Multi-line comments (e.g., =begin\nSome comment\n=end)
-    - Variable delimiters (i.e., parenthesis: (); array: []; hash: {})
-  */
   const stringDelimiters: {[key: string]: string} = {'(': ')', '{': '}', '[': ']', '<': '>'}
   const variableDelimiters: {[key: string]: string} = {'(': ')', '{': '}', '[': ']'}
   const quotes = '\'"`'
@@ -158,11 +193,17 @@ function getRangesForLines(text: string): number[][] {
   return ranges
 }
 
+/**
+ * Joins lines of text from specified ranges and returns an array of strings.
+ * Each range is specified by a start and stop index, and the lines within
+ * those ranges are joined together.
+ *
+ * @param text - The raw text input to be processed.
+ * @param ranges - An array of ranges, where each range is a tuple containing
+ *                 the start and stop indices (inclusive) of the lines to be joined.
+ * @returns An array of strings, where lines within the specified ranges are joined.
+ */
 function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): string[] {
-  /*
-    Returns an array of strings and joined strings at specified ranges, given 
-    raw text as an input parameter.
-  */
   const originalLines = text.split('\n')
   const joinedLines: string[] = []
   let i = 0
@@ -184,11 +225,16 @@ function joinMultiLineStringsFromRanges(text: string, ranges: number[][]): strin
   return joinedLines
 }
 
+/**
+ * Filters out ranges that span only a single line. There is,
+ * drops ranges with the same start and stop line numbers (i.e., strings 
+ * that populate a single line)
+ * 
+ * @param ranges - An array of ranges, where each range is represented by a
+ *                 tuple of start and stop line numbers.
+ * @returns An array of ranges that span multiple lines.
+ */
 function getMultiLineRanges(ranges: number[][]): number[][] {
-  /*
-    Drops ranges with the same start and stop line numbers (i.e., strings 
-    that populate a single line)
-  */
   const multiLineRanges: number[][] = []
   for (const [start, stop] of ranges) {
     if (start !== stop) {
@@ -198,12 +244,17 @@ function getMultiLineRanges(ranges: number[][]): number[][] {
   return multiLineRanges
 }
 
-
-/*
-  This is the most likely thing to break if you are getting code formatting issues.
-  Extract the existing describe blocks (what is actually run by inspec for validation)
-*/
+/**
+ * This is the most likely thing to break if you are getting code formatting issues. 
+ * 
+ * Extracts the `describe` block (what is actually run by inspec for validation)
+ * from an InSpec control object, collapsing multi-line strings.
+ *
+ * @param control - The InSpec control object containing the code to extract the `describe` block from.
+ * @returns The extracted `describe` block as a string, or an empty string if the control has no code.
+ */
 export function getExistingDescribeFromControl(control: Control): string {
+  console.log(`Control.code: ${control.code}`)
   if (control.code) {
     // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
@@ -235,16 +286,33 @@ export function getExistingDescribeFromControl(control: Control): string {
     }
 
     // Return synthesized logic as describe block
-    return describeBlock.slice(0, describeBlock.lastIndexOf('end')).join('\n') // Drop trailing ['end', '\n'] from Control block.
+    const lastIndex = (describeBlock.lastIndexOf('end') === -1)
+      ? describeBlock.lastIndexOf('end\r')
+      : describeBlock.lastIndexOf('end')
+    
+    // Drop trailing ['end', '\n'] from Control block.
+    return describeBlock.slice(0, lastIndex).join('\n') 
   } else {
     return ''
   }
 }
 
+/**
+ * Finds an updated control from a list of updated controls by matching all possible identifiers.
+ *
+ * This function attempts to find a matching control in the `updatedControls` array by comparing
+ * the `id` of the `existingControl` with the `id` of each control in the `updatedControls` array.
+ * If no match is found based on `id`, it then tries to match based on legacy identifiers found
+ * in the `tags.legacy` property of each control in the `updatedControls` array.
+ *
+ * @param existingControl - The control to find a match for in the updated controls.
+ * @param updatedControls - An array of updated controls to search through.
+ * @returns The matching updated control if found, otherwise `undefined`.
+ */
 export function findUpdatedControlByAllIdentifiers(existingControl: Control, updatedControls: Control[]): Control | undefined {
   // Try to match based on IDs
   let updatedControl = updatedControls.find((updatedControl) => {
-    return updatedControl.id.toLowerCase() === existingControl.id.toLowerCase()
+    return updatedControl.id[0].toLowerCase() === existingControl.id[0].toLowerCase()
   })
     
   if (updatedControl) {
@@ -265,6 +333,14 @@ export function findUpdatedControlByAllIdentifiers(existingControl: Control, upd
   return undefined
 }
 
+/**
+ * Updates a given control object with the provided partial update and logs the process.
+ *
+ * @param {Control} from - The original control object to be updated.
+ * @param {Partial<Control>} update - An object containing the properties to update in the original control.
+ * @param {winston.Logger} logger - A logger instance to log debug information.
+ * @returns {Control} - The updated control object.
+ */
 export function updateControl(from: Control, update: Partial<Control>, logger: winston.Logger): Control {
   const existingDescribeBlock = getExistingDescribeFromControl(from)
   logger.debug(`Existing describe block for control ${from.id}: ${JSON.stringify(existingDescribeBlock)}`)
@@ -273,6 +349,32 @@ export function updateControl(from: Control, update: Partial<Control>, logger: w
   return projectedControl
 }
 
+/**
+ * Updates the describe block of a control with the describe block from another control.
+ *
+ * @param from - The control from which to get the existing describe block.
+ * @param update - The partial control data to update.
+ * @param logger - The logger instance to use for logging debug information.
+ * @returns The updated control with the describe block from the `from` control.
+ */
+export function updateControlDescribeBlock(from: Control, update: Partial<Control>, logger: winston.Logger): Control {
+  const existingDescribeBlock = getExistingDescribeFromControl(from)
+  logger.debug(`Updating control ${update.id} with this describe block: ${JSON.stringify(existingDescribeBlock)}`)
+  const projectedControl = new Control(update)
+  projectedControl.describe = existingDescribeBlock
+  return projectedControl
+}
+
+/**
+ * Updates a given profile with new metadata and controls from another profile.
+ *
+ * @param from - The original profile to be updated.
+ * @param using - The profile containing the new metadata and controls.
+ * @param logger - A winston logger instance for logging debug information.
+ * @returns An object containing the updated profile and the diff between the original and updated profiles, excluding markdown.
+ *
+ * @throws Will throw an error if a new control is added but the control data is not available.
+ */
 export function updateProfile(from: Profile, using: Profile, logger: winston.Logger): Omit<UpdatedProfileReturn, 'markdown'> {
   // Update the profile with the new metadata
   const to = new Profile(_.omit(from, 'controls'))
@@ -312,7 +414,7 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
 }
 
 export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group' | 'rule' | 'version' | 'cis', logger: winston.Logger, ovalDefinitions?: Record<string, OvalDefinitionValue>): UpdatedProfileReturn {
-  logger.debug(`Updating profile ${from.name} with control IDs: ${id}`)
+  logger.info(`Updating profile ${from.name} with control IDs type: ${id}`)
 
   // Parse the XCCDF benchmark and convert it into a Profile
   logger.debug('Loading XCCDF File')

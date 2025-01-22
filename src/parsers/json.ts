@@ -12,6 +12,12 @@ import Control, {objectifyDescriptions} from '../objects/control';
 import Profile from '../objects/profile';
 import {getExistingDescribeFromControl} from '../utilities/update';
 
+/**
+ * Processes a contextualized evaluation input and converts it into a Profile object.
+ *
+ * @param evaluationInput - The contextualized evaluation input containing profile and control data.
+ * @returns A Profile object populated with the data from the evaluation input.
+ */
 export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
   const topLevelProfile = evaluationInput.contains[0];
   const profile = new Profile({
@@ -40,6 +46,12 @@ export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
   return profile;
 }
 
+/**
+ * Processes a contextualized profile JSON object and converts it into a Profile instance.
+ *
+ * @param profileInput - The contextualized profile input containing profile data and controls.
+ * @returns A Profile instance populated with the data from the input.
+ */
 export function processProfileJSON(
   profileInput: ContextualizedProfile
 ): Profile {
@@ -84,10 +96,30 @@ export function processProfileJSON(
   return profile;
 }
 
-export function processExecJSON(execJSON: ExecJSON.Execution) {
+/**
+ * Processes the given ExecJSON execution object and returns a Profile.
+ *
+ * This function takes an ExecJSON execution object, contextualizes the evaluation,
+ * and then processes the evaluation to produce a Profile.
+ *
+ * @param execJSON - The ExecJSON execution object to be processed.
+ * @returns The processed Profile.
+ */
+export function processExecJSON(execJSON: ExecJSON.Execution): Profile {
   return processEvaluation(contextualizeEvaluation(execJSON));
 }
 
+/**
+ * Processes an InSpec profile from a JSON string.
+ *
+ * This function takes a JSON string representing an InSpec profile, converts it,
+ * and processes it to return a `Profile` object. It handles different versions
+ * of the InSpec JSON format and sorts the controls by their ID.
+ *
+ * @param json - The JSON string representing the InSpec profile.
+ * @returns A `Profile` object containing the processed profile data.
+ * @throws Will throw an error if the JSON string does not match known InSpec formats.
+ */
 export function processInSpecProfile(json: string): Profile {
   const convertedFile: ConversionResult = convertFile(json, true);
   let profile = new Profile();

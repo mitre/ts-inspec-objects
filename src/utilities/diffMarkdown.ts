@@ -5,6 +5,19 @@ import template from '../resources/automatticUpdateTemplate.json';
 
 type DiffValues = {id: string, old: string, new: string}[]
 
+/**
+ * Generates a markdown representation of the differences between two profiles.
+ *
+ * The function processes the differences to create a renderable data structure
+ * that includes added controls, renamed controls, and updated properties such as
+ * checks, fixes, impacts, titles, and descriptions. It then uses a mustache template
+ * to render the markdown output.
+ * 
+ * @param diff - An object containing the differences between two profiles.
+ * @param diff.ignoreFormattingDiff - The profile differences ignoring formatting changes.
+ * @param diff.rawDiff - The raw differences between the profiles.
+ * @returns A string containing the markdown representation of the differences.
+ */
 export function createDiffMarkdown(
   diff: {
     ignoreFormattingDiff: ProfileDiff;
