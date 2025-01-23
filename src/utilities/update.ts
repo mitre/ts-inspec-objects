@@ -254,7 +254,6 @@ function getMultiLineRanges(ranges: number[][]): number[][] {
  * @returns The extracted `describe` block as a string, or an empty string if the control has no code.
  */
 export function getExistingDescribeFromControl(control: Control): string {
-  console.log(`Control.code: ${control.code}`)
   if (control.code) {
     // Join multi-line strings in InSpec control.
     const ranges = getRangesForLines(control.code)
