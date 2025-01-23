@@ -267,17 +267,20 @@ export default class Control {
       if (verbose) {logger.error(`${this.id} does not have an impact`);}
     }
 
-    // This may not be necessary, but it is included for completeness.
-    // Once we agreed that it is not needed we can remove it.
-    if (this.refs) {
-      this.refs.forEach((ref) => {
-        if (typeof ref === 'string') {
-          result += `  ref ${escapeQuotes(ref)}\n`;
-        } else {
-          result += `  ref ${escapeQuotes(ref.ref?.toString() || '')}, url: ${escapeQuotes(ref.url || '')}`
-        }
-      });
-    }
+    //-------------------------------------------------------------------------
+    // This may not be necessary, leaving commented code for posterity. Once we
+    // have implemented the process and determined that there isn't any side
+    // effects we can remove the commented code
+    //-------------------------------------------------------------------------
+    // if (this.refs) {
+    //   this.refs.forEach((ref) => {
+    //     if (typeof ref === 'string') {
+    //       result += `  ref ${escapeQuotes(ref)}\n`;
+    //     } else {
+    //       result += `  ref ${escapeQuotes(ref.ref?.toString() || '')}, url: ${escapeQuotes(ref.url || '')}`
+    //     }
+    //   });
+    // }
 
     Object.entries(this.tags).forEach(([tag, value]) => {
       if (value) {
