@@ -311,9 +311,9 @@ export function getExistingDescribeFromControl(control: Control): string {
 export function findUpdatedControlByAllIdentifiers(existingControl: Control, updatedControls: Control[]): Control | undefined {
   // Try to match based on IDs
   let updatedControl = updatedControls.find((updatedControl) => {
-    return updatedControl.id[0].toLowerCase() === existingControl.id[0].toLowerCase()
+    return updatedControl.id.toLowerCase() === existingControl.id.toLowerCase()
   })
-    
+
   if (updatedControl) {
     return updatedControl
   }

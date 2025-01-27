@@ -100,8 +100,8 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
     return undefined
   }
 
-  const parsed: Oval = convertEncodedXmlIntoJson(oval)
-
+  const parsed: Oval = convertEncodedXmlIntoJson(oval, 'withArrayNoEntitiesOption')
+  
   const extractedDefinitions: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }> = {}
 
   for (const ovalDefinitions of parsed.oval_definitions) {

@@ -131,7 +131,7 @@ export function diffProfile(
     fromControlIDs,
     toControlIDs
   )?.filter((item: string) => !(item.length === 1 && item[0] === ' '));
-  
+
   // Contains the new IDs
   const changedControlIds: string[] = [];
 
@@ -177,7 +177,7 @@ export function diffProfile(
       } else {
         logger.error(`Unable to find existing control ${diffValue[1]}`);
       }
-    } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toString().toLowerCase()) && diffValue[1]) {
+    } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1]) {
       logger.info(JSON.stringify(diffValue))
       logger.info(JSON.stringify(changedControlIds))
       profileDiff.addedControlIDs.push(diffValue[1]);
