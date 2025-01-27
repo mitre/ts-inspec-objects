@@ -159,6 +159,7 @@ export interface FrontMatter {
   'html:code'?: HTMLEmElement[];
   'html:a'?: HTMLA[];
   '@_override'?: string;
+  '@_id'?: string;
 }
 
 export enum Category {
@@ -207,6 +208,7 @@ export interface HTMLAElement {
 
 export interface RationaleElement {
   '#text'?: string;
+  'p'?: string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
   'html:br'?: HTMLBr[];

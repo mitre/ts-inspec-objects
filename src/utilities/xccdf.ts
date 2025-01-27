@@ -6,35 +6,91 @@ import {DecodedDescription} from '../types/xccdf'
 import he from 'he'
 
 /**
- * Converts an encoded XML string into a JSON object.
+ * Converts an encoded XML string into a JSON object using specified
+ * parsing options.
  * 
- * @param encodedXml - The encoded XML string to be converted.
+ * @param encodedXml      - The encoded XML string to be converted.
+ * @param xmlParserOption - The parsing option to be used. Defaults to
+ *                          'withArrayOption'.
+ *   Possible values are:
+ *     - 'withArrayOption': Parses XML with array option enabled.
+ *     - 'withArrayNoEntitiesOption': Parses XML with array option
+ *       enabled and processes entities.
+ *     - Any other value: Parses XML without array option.
  * @returns The JSON representation of the XML string.
  *
  * @remarks
  * This function uses the `fast-xml-parser` library to parse the XML string.
  * The parser options are configured to:
- * - Not ignore attributes.
+ * - Prevent the parser from converting XML entities (converting &lt into <)
+ * - Ignore attributes, allow or disallows attributes to be parsed 
  * - Remove namespace prefixes.
  * - Prefix attribute names with '@_'.
- * - Stop parsing at 'div' and 'p' nodes.
- * - Treat all nodes as arrays.
+ * - Stop parsing 'div' and 'p' tags.
+ * - Treat all nodes as arrays or not
  *
+ * Options being used for the XML parser (V4) are:
+ *  - processEntities: true or false (based on xmlParserOption)
+ *  - ignoreAttributes: false (allow attributes to be parsed)
+ *  - removeNSPrefix: true (remove namespace prefixes)
+ *  - attributeNamePrefix: '@_' (prefix all attribute names with @_)
+ *  - stopNodes: ["*.pre", "*.p"]
+ *  - isArray(): true or false (based on xmlParserOption)
+ * 
+ * NOTE: The isArray can specify what tags to always convert into an array, we
+ *       do not specify specific fields as it could break parsing if future
+ *       fields are added, we parse all fields as an array.
+ * 
  * For more details on the parser options, see the documentation for the v4 or v5 version of the library:
  * {@link https://github.com/NaturalIntelligence/fast-xml-parser/tree/master/docs/v4}
  */
-export function convertEncodedXmlIntoJson(
-  encodedXml: string
-): any {
-  const options = {
+/**
+ * Converts an encoded XML string into a JSON object using specified parsing options.
+ *
+ * @param encodedXml - The encoded XML string to be converted.
+ * @param xmlParserOption - The parsing option to be used. Defaults to 'withArrayOption'.
+ *                          Possible values are:
+ *                          - 'withArrayOption': Parses XML with array option enabled.
+ *                          - 'withArrayNoEntitiesOption': Parses XML with array option enabled and processes entities.
+ *                          - Any other value: Parses XML without array option.
+ * @returns The JSON object resulting from the XML parsing.
+ */
+export function convertEncodedXmlIntoJson(encodedXml: string, xmlParserOption: string = 'withArrayOption'): any {
+
+  const withArrayOption = {
+    processEntities: false,
     ignoreAttributes: false,
     removeNSPrefix: true,
     attributeNamePrefix: '@_',
-    stopNodes: ['div', 'p'],
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    isArray: (_name: string, _jpath: string, _isLeafNode: boolean, _isAttribute: boolean) => true,
+    stopNodes: ['*.div', '*.p'],
+    isArray: () => true,
   };
-  const parser = new XMLParser(options);
+
+  const withArrayNoEntitiesOption = {
+    processEntities: true,
+    ignoreAttributes: false,
+    removeNSPrefix: true,
+    attributeNamePrefix: '@_',
+    stopNodes: ['*.div', '*.p'],
+    isArray: () => true,
+  };
+
+  const noArrayOption = {
+    processEntities: false,
+    ignoreAttributes: false,
+    removeNSPrefix: true,
+    attributeNamePrefix: '@_',
+    stopNodes: ['*.div', '*.p'],
+    isArray: () => false,
+  };
+
+  const parser = new XMLParser(
+    xmlParserOption === 'withArrayOption' 
+      ? withArrayOption 
+      : xmlParserOption === 'withArrayNoEntitiesOption' 
+        ? withArrayNoEntitiesOption
+        : noArrayOption)
+  
   return parser.parse(encodedXml);
 }
 
@@ -58,10 +114,18 @@ export function convertJsonIntoXML(data: any) {
  * @returns The decoded string with XML special characters removed.
  */
 export function removeXMLSpecialCharacters(str: string) {
-  //console.log('Remove special characters: ', JSON.stringify(str, null, 2));
   const result = he.decode(str);
-  //console.log('Result of he.decode: ', JSON.stringify(result));
   return result
+}
+
+/**
+ * Removes HTML tags from the given input string.
+ *
+ * @param input - The string from which HTML tags should be removed.
+ * @returns A new string with all HTML tags removed.
+ */
+export function removeHtmlTags(input: string): string {
+  return input.replace(/<\/?[^>]+(>|$)/g, '');
 }
 
 /**
@@ -174,7 +238,7 @@ export function convertEncodedHTMLIntoJson(encodedHTML?: string): DecodedDescrip
     })
     htmlParser.write(patchedHTML)
     htmlParser.end()
-    const converted = convertEncodedXmlIntoJson(xmlChunks.join(''))
+    const converted = convertEncodedXmlIntoJson(xmlChunks.join(''), 'noArrayOption')
     let cleaned: Record<string, string | boolean | undefined> = {}
 
     // Some STIGs have xml tags inside of the actual text which breaks processing,
