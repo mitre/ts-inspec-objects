@@ -44,9 +44,9 @@ Here are some formatting choices that are being made.
   <img src="images/ts-inspec-objects-xccdf-workflow-process.png" alt="Typescript Objects Generation Process" title="Typescript Objects XCCDF Conversion Workflow Process">
 </div>
 
-### Delta and Stub Process
+### XCCDF Workflow Process
 <div align="center">
-  <img src="images/Delta_Process.jpg" alt="Delta and Stub Generation Process" title="Delta and Stub Generation Process">
+  <img src="images/ts-inspec-objects-oval-workflow-process.jpg" alt="Delta and Stub Generation Process" title="Typescript Objects Oval Conversion Workflow Process">
 </div>
 
 ## Development Environment Configuration
