@@ -41,7 +41,7 @@ Here are some formatting choices that are being made.
 
 ### Workflow graphical representation
 <div align="center">
-  <img src="images/ts-inspec-objects.jpg" alt="Typescript Objects Generation Process" title="Typescript Objects Generation Process">
+  <img src="images/ts-inspec-objects-xccdf-workflow-process.png" alt="Typescript Objects Generation Process" title="Typescript Objects XCCDF Conversion Workflow Process">
 </div>
 
 ### Delta and Stub Process
