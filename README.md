@@ -39,7 +39,7 @@ Here are some formatting choices that are being made.
 2. Tag keywords are not quoted (ex: tag severity: 'medium')
 3. Each control file ends with a newline
 
-### Workflow graphical representation
+### XCCDF Workflow Process
 <div align="center">
   <img src="images/ts-inspec-objects-xccdf-workflow-process.png" alt="Typescript Objects Generation Process" title="Typescript Objects XCCDF Conversion Workflow Process">
 </div>
