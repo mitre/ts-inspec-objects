@@ -41,12 +41,12 @@ Here are some formatting choices that are being made.
 
 ### XCCDF Workflow Process
 <div align="center">
-  <img src="images/ts-inspec-objects-xccdf-workflow-process.png" alt="Typescript Objects Generation Process" title="Typescript Objects XCCDF Conversion Workflow Process">
+  <img src="images/ts-inspec-objects-xccdf-workflow-process.png" alt="Typescript Objects XCCDF Conversion Workflow Process" title="Typescript Objects XCCDF Conversion Workflow Process">
 </div>
 
 ### XCCDF Workflow Process
 <div align="center">
-  <img src="images/ts-inspec-objects-oval-workflow-process.jpg" alt="Delta and Stub Generation Process" title="Typescript Objects Oval Conversion Workflow Process">
+  <img src="images/ts-inspec-objects-oval-workflow-process.png" alt="Typescript Objects Oval Conversion Workflow Process" title="Typescript Objects Oval Conversion Workflow Process">
 </div>
 
 ## Development Environment Configuration
