@@ -88,7 +88,8 @@ function ensureDecodedXMLStringValue(input: string | InputTextLang[], defaultVal
 }
 
 /**
- * Processes an XCCDF XML string and converts it into a Profile object.
+ * Processes an XCCDF (Extensible Configuration Checklist Description Format) XML
+ * string and converts it into a Profile object.
  * NOTE: We are using the fast xml parser (FXP) V4 which requires to specify
  *       which Whether a single tag should be parsed as an array or an object,
  *       it can't be decided by FXP. We process every tag as an array, this is
