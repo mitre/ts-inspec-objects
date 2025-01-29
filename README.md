@@ -41,26 +41,39 @@ Here are some formatting choices that are being made.
 
 ---
 ### XCCDF Workflow Process
+Processes an XCCDF (Extensible Configuration Checklist Description Format) XML string based on the `Rule Identifier` provided and converts it into a Profile object.
+If and OVAL definition is provided it retrives the oval objects and associated states and the Controls description check text is update with the content.
 <div align="center">
   <img src="images/ts-inspec-objects-xccdf-workflow-process.png" alt="Typescript Objects XCCDF Conversion Workflow Process" title="Typescript Objects XCCDF Conversion Workflow Process">
 </div>
 
-### Oval Workflow Process
+### OVAL Workflow Process
+Processes an OVAL (Open Vulnerability and Assessment Language) XML string and converts it into a JSON object.
+The process extracts definitions and their associated criteria references and resolved values.
+The process executes the following steps:
+1. Converts the OVAL XML string into a JSON object.
+2. Iterates through the OVAL definitions and extracts each definition.
+3. For each definition, extracts criteria references and resolves the associated objects and states.
+4. Logs warnings if any objects or states cannot be found.
 <div align="center">
   <img src="images/ts-inspec-objects-oval-workflow-process.png" alt="Typescript Objects Oval Conversion Workflow Process" title="Typescript Objects Oval Conversion Workflow Process">
 </div>
 
 ### InSpec Profile Workflow Process
+Process a JSON string representing an InSpec profile, converts it, and processes it to return a `Profile` object.
+It handles different versions of the InSpec JSON format and sorts the controls by their ID.
 <div align="center">
   <img src="images/ts-inspec-objects-inspec-profile-workflow-process.png" alt="Typescript Objects InSpec Profile Workflow Process" title="Typescript Objects InSpec Profile Workflow Process">
 </div>
 
 ### Update Profile Using XCCDF Workflow Process
+Updates a Profile with new metadata from and XCCDF, based on the `Rule Indetefier` and logs the process.
 <div align="center">
   <img src="images/ts-inspec-objects-updateProfileUsingXccdf-workflow.png" alt="Typescript Objects Update Profile Using XCCDF Workflow Process" title="Typescript Objects Update Profile Using XCCDF Workflow Process">
 </div>
 
 ### Update Control Workflow Process
+Updates a given control object with the provided partial control and logs the process.
 <div align="center">
   <img src="images/ts-inspec-objects-process-updateControl-workflow.png" alt="Typescript Objects Update Control Workflow Process" title="Typescript Objects Update Control Workflow Process">
 </div>
