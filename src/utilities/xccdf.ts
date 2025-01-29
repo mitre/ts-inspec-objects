@@ -119,12 +119,29 @@ export function removeXMLSpecialCharacters(str: string) {
 }
 
 /**
- * Removes HTML tags from the given input string.
- *
+ * Removes all of the HTML tags and leaves only the text content.
+  *
  * @param input - The string from which HTML tags should be removed.
  * @returns A new string with all HTML tags removed.
+ * 
+ * @example
+ * ```typescript
+ * const str = '<div>Hello <b>World</b>!</div>';
+ * const stripped = removeHtmlTags(str);
+ * console.log(stripped); // Output: "Hello World!"
+ * ```
  */
 export function removeHtmlTags(input: string): string {
+  // Regex explained
+  //    <: Matches the opening angle bracket of an HTML tag
+  //   /?: Matches zero or one forward slash /, to include closing tags
+  // [^>]: Matches any character except the > symbol
+  //    +: Ensures preceding pattern ([^>]) matches one or more characters
+  // (>|$):
+  //   > matches the closing angle bracket of an HTML tag.
+  //   $ matches the end of the string. This ensures the regex can handle
+  //     cases where the tag is incomplete or unclosed (e.g., <div)
+  // g: Global flag to find all matches in the input string
   return input.replace(/<\/?[^>]+(>|$)/g, '');
 }
 
