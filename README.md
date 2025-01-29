@@ -44,9 +44,14 @@ Here are some formatting choices that are being made.
   <img src="images/ts-inspec-objects-xccdf-workflow-process.png" alt="Typescript Objects XCCDF Conversion Workflow Process" title="Typescript Objects XCCDF Conversion Workflow Process">
 </div>
 
-### XCCDF Workflow Process
+### Oval Workflow Process
 <div align="center">
   <img src="images/ts-inspec-objects-oval-workflow-process.png" alt="Typescript Objects Oval Conversion Workflow Process" title="Typescript Objects Oval Conversion Workflow Process">
+</div>
+
+### InSpec Profile Workflow Process
+<div align="center">
+  <img src="images/ts-inspec-objects-inspec-profile-workflow-process.png" alt="Typescript Objects InSpec Profile Workflow Process" title="Typescript Objects InSpec Profile Workflow Process">
 </div>
 
 ## Development Environment Configuration
