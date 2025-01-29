@@ -39,6 +39,7 @@ Here are some formatting choices that are being made.
 2. Tag keywords are not quoted (ex: tag severity: 'medium')
 3. Each control file ends with a newline
 
+---
 ### XCCDF Workflow Process
 <div align="center">
   <img src="images/ts-inspec-objects-xccdf-workflow-process.png" alt="Typescript Objects XCCDF Conversion Workflow Process" title="Typescript Objects XCCDF Conversion Workflow Process">
@@ -54,6 +55,12 @@ Here are some formatting choices that are being made.
   <img src="images/ts-inspec-objects-inspec-profile-workflow-process.png" alt="Typescript Objects InSpec Profile Workflow Process" title="Typescript Objects InSpec Profile Workflow Process">
 </div>
 
+### Update Profile Using XCCDF Workflow Process
+<div align="center">
+  <img src="images/ts-inspec-objects-updateProfileUsingXccdf-workflow.png" alt="Typescript Objects Update Profile Using XCCDF Workflow Process" title="Typescript Objects Update Profile Using XCCDF Workflow Process">
+</div>
+
+---
 ## Development Environment Configuration
 ### Installation
 To install the project, clone the repository and install the dependencies:
