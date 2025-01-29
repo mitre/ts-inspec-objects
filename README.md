@@ -1,11 +1,13 @@
 # ts-inspec-objects
-Typescript objects for InSpec profiles
+Typescript objects for InSpec Profiles
 
-This repository contains the source code that facilitates the writing of InSpec profiles (for use in things like stub generation and delta comparisons) more consistent with `Chef Cookstyle` formatting for ease of use when comparing with new changes from delta and when generating InSpec stubs that match a standard format. 
+This repository contains the source code that facilitates the writing of InSpec Profiles (for use in things like stub generation and delta comparisons) more consistent with `Chef Cookstyle` formatting for ease of use when comparing with new changes from delta and when generating InSpec stubs that match a standard format. 
 
 For more information about Chef Cookstyle see: 
  - [chef/cookstyle on GitHub](https://github.com/chef/cookstyle)
  - [Chef Cookstyle on Chef documents page](https://docs.chef.io/workstation/cookstyle/)
+
+The `ts-inspec-objects` mainly provide the capability of manipulating InSpec Profiles. This is accomplished by providing `Profile` and `Control` classes and supporting functions.
 
 ## How to Use
 The process code maintained in this repository generates a `npm` executable that is published to the `npm registry` as [mitre-inspec-objects](https://www.npmjs.com/package/@mitre/inspec-objects).
@@ -18,7 +20,7 @@ The package is a CommonJS-based npm written in TypeScript
 
 ## Parsing Process
 
-When using this library to parse `InSpec profiles` or `xccdf files` for the purposes of generating InSpec profiles, the general workflow is as follows:
+When using this library to parse `InSpec Profiles` or `xccdf files` for the purposes of generating InSpec profiles, the general workflow is as follows:
 ```
   - The input is processed, read into a typescript object
   - Operated on with any required action / logic
