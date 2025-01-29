@@ -412,10 +412,20 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
   }
 }
 
+/**
+ * Update a Profile with with new metadata from a XCCDF benchmark
+ * 
+ * @param from - A Profile object
+ * @param using - An XCCDF in string format (XML)
+ * @param id - Specifies the rule ID format to use ('group', 'rule', 'version', or 'cis').
+ * @param logger - A winston logger instance for logging debug information.
+ * @param ovalDefinitions - Optional OVAL definitions to use for resolving values.
+ * @returns The Updated Profile (profile, the diff between from and using, and the markdown)
+ */
 export function updateProfileUsingXCCDF(from: Profile, using: string, id: 'group' | 'rule' | 'version' | 'cis', logger: winston.Logger, ovalDefinitions?: Record<string, OvalDefinitionValue>): UpdatedProfileReturn {
   logger.info(`Updating profile ${from.name} with control IDs type: ${id}`)
 
-  // Parse the XCCDF benchmark and convert it into a Profile
+  // Parse the XCCDF benchmark and convert it into a Profile object
   logger.debug('Loading XCCDF File')
   const xccdfProfile = processXCCDF(using, false, id, ovalDefinitions);
   logger.debug('Loaded XCCDF File')
