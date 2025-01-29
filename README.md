@@ -60,6 +60,11 @@ Here are some formatting choices that are being made.
   <img src="images/ts-inspec-objects-updateProfileUsingXccdf-workflow.png" alt="Typescript Objects Update Profile Using XCCDF Workflow Process" title="Typescript Objects Update Profile Using XCCDF Workflow Process">
 </div>
 
+### Update Control Workflow Process
+<div align="center">
+  <img src="images/ts-inspec-objects-process-updateControl-workflow.png" alt="Typescript Objects Update Control Workflow Process" title="Typescript Objects Update Control Workflow Process">
+</div>
+
 ---
 ## Development Environment Configuration
 ### Installation
