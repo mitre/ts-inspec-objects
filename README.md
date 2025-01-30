@@ -7,7 +7,7 @@ For more information about Chef Cookstyle see:
  - [chef/cookstyle on GitHub](https://github.com/chef/cookstyle)
  - [Chef Cookstyle on Chef documents page](https://docs.chef.io/workstation/cookstyle/)
 
-The `ts-inspec-objects` mainly provide the capability of manipulating InSpec Profiles. This is accomplished by providing `Profile` and `Control` classes and supporting functions.
+The `ts-inspec-objects` provides the capability of updating InSpect Profiles and creating stub Profiles based on XCCDF Benchmarks. This is accomplished by providing `Profile` and `Control` classes and supporting methods (functions).
 
 ## How to Use
 The process code maintained in this repository generates a `npm` executable that is published to the `npm registry` as [mitre-inspec-objects](https://www.npmjs.com/package/@mitre/inspec-objects).
