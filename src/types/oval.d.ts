@@ -269,13 +269,13 @@ export interface OvalDefinitionObject {
     symlink_object:               SymlinkObject[];
     password_object:              PasswordObject[];
     shadow_object:                ShadowObject[];
-    environmentvariable58_object: Object[]; // eslint-disable-line @typescript-eslint/ban-types
+    environmentvariable58_object: Object[];
     rpminfo_object:               RpminfoObject[];
     systemdunitproperty_object:   SystemdunitpropertyObject[];
     systemdunitdependency_object: SymlinkObject[];
-    dpkginfo_object:              Object[]; // eslint-disable-line @typescript-eslint/ban-types
+    dpkginfo_object:              Object[];
     partition_object:             PartitionObject[];
-    sysctl_object:                Object[]; // eslint-disable-line @typescript-eslint/ban-types
+    sysctl_object:                Object[];
     family_object:                FamilyObject[];
     uname_object:                 SymlinkObject[];
 }
