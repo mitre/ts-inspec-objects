@@ -1,4 +1,5 @@
 import fs from 'fs'
+import {describe, it} from 'vitest'
 import {processXCCDF} from '../../src/index'
 import {processOVAL} from '../../src/parsers/oval'
 

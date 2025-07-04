@@ -1,4 +1,5 @@
 import fs from 'fs'
+import {describe, expect, it} from 'vitest'
 import {processInSpecProfile} from '../../src/index'
 import {updateProfileUsingXCCDF} from '../../src/utilities/update'
 import {createWinstonLogger} from '../../src/utilities/logging'
