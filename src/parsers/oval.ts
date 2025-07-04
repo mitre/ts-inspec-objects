@@ -114,7 +114,6 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
           // Extract the original criteria from the oval file
           const foundCriteriaRefererence: Test = searchTree(parsed.oval_definitions[0].tests, (oNode: any) => oNode['@_id'] === criteriaRef, false)[0]
           
-          // eslint-disable-next-line @typescript-eslint/ban-types
           const foundObjects: Object[] = []
           const foundStates: State[] = []
                     
