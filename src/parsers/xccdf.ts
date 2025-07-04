@@ -190,9 +190,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
         break;
       case 'version':
         if (rule.version !== undefined) {
-          (_.isArray(rule.version)) 
-            ? control.id = rule.version[0]
-            : control.id = rule.version
+          control.id = (_.isArray(rule.version)) ? rule.version[0] : rule.version
         } else {
           throw new Error('The rule type "version" did not provide an identification (Id) value')
         }
@@ -362,7 +360,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
 
     // Update the control tags base on corresponding rule tags.
     control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium'))
-    control.tags.gid = rule.group['@_id'],
+    control.tags.gid = rule.group['@_id']
     control.tags.rid = rule['@_id']
     control.tags.stig_id = rule['version']
 
