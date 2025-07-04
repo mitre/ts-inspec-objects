@@ -1,4 +1,5 @@
 import fs from 'fs'
+import { describe, expect, it } from 'vitest'
 import {processXCCDF} from '../../src/index'
 
 // Expected XCCDF parsing to pass

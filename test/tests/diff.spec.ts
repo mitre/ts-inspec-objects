@@ -1,5 +1,6 @@
-import fs from 'fs'
 import _ from 'lodash'
+import fs from 'fs'
+import { describe, expect, it } from 'vitest'
 import {diffProfile, processXCCDF} from '../../src/index'
 import {createWinstonLogger} from '../../src/utilities/logging'
 import {processInSpecProfile} from '../../src/parsers/json'
