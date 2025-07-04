@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { describe, expect, it } from 'vitest'
+import {describe, expect, it} from 'vitest'
 import {processInSpecProfile} from '../../src/index'
 
 const TEST_USE_CASES = new Map();

@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path';
-import { describe, expect, it } from 'vitest'
+import {describe, expect, it} from 'vitest'
 import Control from '../../src/objects/control'
 import {getExistingDescribeFromControl, processInSpecProfile, updateControlDescribeBlock} from '../../src/index'
 import {createWinstonLogger} from '../../src/utilities/logging';
