@@ -6,6 +6,8 @@ updates:
     directory: "/"
     schedule:
       interval: daily
-      time: "20:00"
-      timezone: America/New_York
-    open-pull-requests-limit: 99
+    groups:
+      typescript-eslint:
+        applies-to: version-updates
+        patterns:
+          - "@typescript-eslint/*"
