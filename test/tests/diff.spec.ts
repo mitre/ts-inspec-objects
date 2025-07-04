@@ -1,5 +1,6 @@
-import fs from 'fs'
 import _ from 'lodash'
+import fs from 'fs'
+import {describe, expect, it} from 'vitest'
 import {diffProfile, processXCCDF} from '../../src/index'
 import {createWinstonLogger} from '../../src/utilities/logging'
 import {processInSpecProfile} from '../../src/parsers/json'
@@ -89,7 +90,7 @@ describe('The diff utils for controls with group as Id', () => {
     // this particular control ONLY had a few newlines change in its description
     // ignoreFormattingDiff should ignore this, but rawDiff should not
     expect(_.get(profileDiff_6, 'ignoreFormattingDiff.changedControls.["SV-204392"].descs.check')).toBeFalsy();
-    expect(_.get(profileDiff_6, 'rawDiff.changedControls.["V-204565"].descs.check')).toBeFalsy;
+    expect(_.get(profileDiff_6, 'rawDiff.changedControls.["V-204565"].descs.check')).toBeFalsy();
   })
   // Test nested rules in one group
 })

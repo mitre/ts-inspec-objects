@@ -1,4 +1,5 @@
 import fs from 'fs'
+import {describe, expect, it} from 'vitest'
 import {processOVAL} from '../../src/parsers/oval'
 
 describe('The OVAL Parser', () => {
