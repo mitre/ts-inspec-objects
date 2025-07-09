@@ -97,7 +97,7 @@ export default class Control {
     this.refs = [];
     this.tags = {};
     if (data) {
-      Object.entries(data).forEach(([key, value]) => {
+      Object.entries(_.cloneDeep(data)).forEach(([key, value]) => {
         _.set(this, key, value);
       });
     }
