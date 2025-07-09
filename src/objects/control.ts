@@ -1,7 +1,5 @@
 import _ from 'lodash';
 import {ExecJSON} from 'inspecjs';
-import {flatten} from 'flat';
-import {unflatten} from 'flat';
 import {escapeQuotes} from '../utilities/global';
 import {createWinstonLogger} from '../utilities/logging';
 
@@ -99,7 +97,7 @@ export default class Control {
     this.refs = [];
     this.tags = {};
     if (data) {
-      Object.entries(data).forEach(([key, value]) => {
+      Object.entries(_.cloneDeep(data)).forEach(([key, value]) => {
         _.set(this, key, value);
       });
     }
@@ -113,15 +111,7 @@ export default class Control {
    * @returns {Control} A new Control object created from the unformatted data.
    */
   toUnformattedObject(): Control {
-    const flattened: Record<string, string | number> = flatten(this);
-
-    Object.entries(flattened).forEach(([key, value]) => {
-      if (typeof value === 'string') {
-        _.set(flattened, key, value);
-      }
-    });
-
-    return new Control(unflatten(flattened));
+    return new Control(this);
   }
 
   /**
