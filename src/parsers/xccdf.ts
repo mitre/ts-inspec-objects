@@ -1,18 +1,18 @@
+import {prettify} from 'htmlfy';
+import _ from 'lodash';
+import {data as CciNistMappingData} from '../mappings/CciNistMappingData';
+import Control from '../objects/control';
 import Profile from '../objects/profile';
+import {OvalDefinitionValue} from '../types/oval';
+import {BenchmarkGroup, BenchmarkRule, DecodedDescription,
+  FrontMatter, Notice, ParsedXCCDF, RationaleElement,
+  RuleComplexCheck} from '../types/xccdf';
+import {createWinstonLogger} from '../utilities/logging';
 import {
   convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson,
   convertJsonIntoXML, impactNumberToSeverityString,
   removeHtmlTags, removeXMLSpecialCharacters, severityStringToImpact
 } from '../utilities/xccdf';
-import {BenchmarkGroup, BenchmarkRule, DecodedDescription,
-  FrontMatter, Notice, ParsedXCCDF, RationaleElement,
-  RuleComplexCheck} from '../types/xccdf';
-import Control from '../objects/control';
-import _ from 'lodash';
-import {OvalDefinitionValue} from '../types/oval';
-import {data as CciNistMappingData} from '../mappings/CciNistMappingData'
-import pretty from 'pretty'
-import {createWinstonLogger} from '../utilities/logging'
 
 export type GroupContextualizedRule = BenchmarkRule & {group: Omit<BenchmarkGroup, 'Rule' | 'Group'>}
 
@@ -156,11 +156,11 @@ export function processXCCDF(xml: string, removeNewlines: false,
         extractedDescription = rule.description[0]['#text']
       } else {
         if (typeof _.get(rule.description, '[0].p') === 'string') {
-          extractedDescription = pretty(_.get(rule.description, '[0].p'))
+          extractedDescription = prettify(_.get(rule.description, '[0].p'))
         } else {
           if (Array.isArray(_.get(rule.description, '[0].p'))) {
             const joinedDescriptions: string[] = (_.get(rule.description, '[0].p') as string[])
-            extractedDescription = pretty(joinedDescriptions.join('\n\n'))
+            extractedDescription = prettify(joinedDescriptions.join('\n\n'))
             extractedDescription = removeHtmlTags(extractedDescription).replace('\n',' ')
           } else if (Array.isArray(rule.description)) {
             extractedDescription = convertEncodedHTMLIntoJson(rule.description[0])
@@ -344,7 +344,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
       control.descs.fix = removeHtmlTags(rule.fixtext[0])
     } else if (typeof rule.fixtext[0] === 'object') {
       if (Array.isArray(rule.fixtext[0])) {
-        control.descs.fix = removeHtmlTags(pretty(convertJsonIntoXML(rule.fixtext[0].map((fixtext: any) => {
+        control.descs.fix = removeHtmlTags(prettify(convertJsonIntoXML(rule.fixtext[0].map((fixtext: any) => {
           if (fixtext.div) {
             return fixtext.div
           } else {
@@ -352,7 +352,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
           }
         }))))
       } else {
-        control.descs.fix = removeHtmlTags(removeXMLSpecialCharacters(pretty(convertJsonIntoXML(rule.fixtext)))).replace('\n',' ').trim()
+        control.descs.fix = removeHtmlTags(removeXMLSpecialCharacters(prettify(convertJsonIntoXML(rule.fixtext)))).replace('\n',' ').trim()
       }
     } else {
       control.descs.fix = 'Missing fix text'
