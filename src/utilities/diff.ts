@@ -212,10 +212,10 @@ export function diffProfile(
         'code__deleted'
       );
       if (controlDiff) {
-        // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+         
         profileDiff.changedControls[toControl.id!] = ignoreFormattingDiff(controlDiff);
         profileDiff.changedControlIDs.push(toControl.id);
-        // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+         
         originalDiff.changedControls[toControl.id!] = controlDiff;
         originalDiff.changedControlIDs.push(toControl.id);        
       }

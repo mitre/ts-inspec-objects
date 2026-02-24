@@ -80,13 +80,13 @@ export function processProfileJSON(
 
     // Migrate check and fix text from tags to descriptions
     if (newControl.tags.check && !newControl.descs.check) {
-      // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+       
       _.set(newControl.descs, 'check', control.tags.check);
       _.set(newControl.tags, 'check', undefined);
     }
 
     if (newControl.tags.fix && !newControl.descs.fix) {
-      // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+       
       _.set(newControl.descs!, 'fix', control.tags.fix);
       _.set(newControl.tags, 'fix', undefined);
     }
@@ -122,19 +122,15 @@ export function processExecJSON(execJSON: ExecJSON.Execution): Profile {
  */
 export function processInSpecProfile(json: string): Profile {
   const convertedFile: ConversionResult = convertFile(json, true);
-  let profile = new Profile();
+  let profile;
   if (convertedFile['1_0_ExecJson']) {
-    profile = processEvaluation(
-      contextualizeEvaluation(convertedFile['1_0_ExecJson'])
-    ).toUnformattedObject();
+    profile = processEvaluation(contextualizeEvaluation(convertedFile['1_0_ExecJson'])).toUnformattedObject();
   } else if (convertedFile['1_0_ProfileJson']) {
     profile = processProfileJSON(contextualizeProfile(JSON.parse(json))).toUnformattedObject();
   } else {
     throw new Error('Unknown file type passed');
   }
-
   profile.controls = _.sortBy(profile.controls, 'id');
-   
   return profile;
 }
 
