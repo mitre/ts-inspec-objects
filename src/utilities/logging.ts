@@ -19,5 +19,5 @@ export function createWinstonLogger(
         info => `\x1b[33m[${[info.timestamp]} -> ${mapperName}]:\x1b[0m \x1b[34m${info.message}\x1b[0m`,
       ),
     ),
-  })
+  });
 }

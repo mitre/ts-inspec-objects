@@ -6,5 +6,5 @@ export * from './utilities/update';
 
 import Control from './objects/control';
 import Profile from './objects/profile';
-export {Control};
-export {Profile};
+export { Control };
+export { Profile };

@@ -1,9 +1,9 @@
 import mustache from 'mustache';
-import {ProfileDiff} from '../types/diff';
+import { ProfileDiff } from '../types/diff';
 import _ from 'lodash';
 import template from '../resources/automatticUpdateTemplate.json';
 
-type DiffValues = {id: string, old: string, new: string}[]
+type DiffValues = { id: string; old: string; new: string }[];
 
 /**
  * Generates a markdown representation of the differences between two profiles.
@@ -12,7 +12,7 @@ type DiffValues = {id: string, old: string, new: string}[]
  * that includes added controls, renamed controls, and updated properties such as
  * checks, fixes, impacts, titles, and descriptions. It then uses a mustache template
  * to render the markdown output.
- * 
+ *
  * @param diff - An object containing the differences between two profiles.
  * @param diff.ignoreFormattingDiff - The profile differences ignoring formatting changes.
  * @param diff.rawDiff - The raw differences between the profiles.
@@ -22,7 +22,7 @@ export function createDiffMarkdown(
   diff: {
     ignoreFormattingDiff: ProfileDiff;
     rawDiff: any;
-  }
+  },
 ): string {
   const renderableDiffData = {
     addedControls: Object.values(diff.ignoreFormattingDiff.addedControls),
@@ -42,7 +42,7 @@ export function createDiffMarkdown(
         oldId: oldId,
         newId: newId,
       });
-    }
+    },
   );
 
   Object.entries((diff.rawDiff as ProfileDiff).changedControls).forEach(
@@ -51,8 +51,8 @@ export function createDiffMarkdown(
         const oldCheck = _.get(controlDiff.descs.check, '__old', 'undefined') as string;
         const newCheck = _.get(controlDiff.descs.check, '__new', 'undefined') as string;
         if (
-          oldCheck.replace(/\n/g, '').replace(/\W/g, '') !==
-          newCheck.replace(/\n/g, '').replace(/\W/g, '')
+          oldCheck.replace(/\n/g, '').replace(/\W/g, '')
+          !== newCheck.replace(/\n/g, '').replace(/\W/g, '')
         ) {
           renderableDiffData.updatedChecks.push({
             id: id,
@@ -65,8 +65,8 @@ export function createDiffMarkdown(
         const oldFix = _.get(controlDiff.descs.fix, '__old', 'undefined') as string;
         const newFix = _.get(controlDiff.descs.fix, '__new', 'undefined') as string;
         if (
-          oldFix.replace(/\n/g, '').replace(/\W/g, '') !==
-          newFix.replace(/\n/g, '').replace(/\W/g, '')
+          oldFix.replace(/\n/g, '').replace(/\W/g, '')
+          !== newFix.replace(/\n/g, '').replace(/\W/g, '')
         ) {
           renderableDiffData.updatedFixes.push({
             id: id,
@@ -109,7 +109,7 @@ export function createDiffMarkdown(
           });
         }
       }
-    }
+    },
   );
 
   // Render output

@@ -5,12 +5,12 @@ import {
   contextualizeProfile,
   ConversionResult,
   convertFile,
-  ExecJSON
+  ExecJSON,
 } from 'inspecjs';
 import _ from 'lodash';
-import Control, {objectifyDescriptions} from '../objects/control';
+import Control, { objectifyDescriptions } from '../objects/control';
 import Profile from '../objects/profile';
-import {getExistingDescribeFromControl} from '../utilities/update';
+import { getExistingDescribeFromControl } from '../utilities/update';
 
 /**
  * Processes a contextualized evaluation input and converts it into a Profile object.
@@ -40,7 +40,7 @@ export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
         desc: control.data.desc,
         descs: objectifyDescriptions(control.hdf.wraps.descriptions),
         tags: control.hdf.wraps.tags,
-      })
+      }),
     );
   });
   return profile;
@@ -53,7 +53,7 @@ export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
  * @returns A Profile instance populated with the data from the input.
  */
 export function processProfileJSON(
-  profileInput: ContextualizedProfile
+  profileInput: ContextualizedProfile,
 ): Profile {
   const profile = new Profile({
     name: profileInput.data.name,
@@ -75,18 +75,16 @@ export function processProfileJSON(
       code: control.code,
       tags: control.tags,
       descs: objectifyDescriptions(control.descriptions),
-    })
+    });
     newControl.describe = getExistingDescribeFromControl(newControl);
 
     // Migrate check and fix text from tags to descriptions
     if (newControl.tags.check && !newControl.descs.check) {
-       
       _.set(newControl.descs, 'check', control.tags.check);
       _.set(newControl.tags, 'check', undefined);
     }
 
     if (newControl.tags.fix && !newControl.descs.fix) {
-       
       _.set(newControl.descs!, 'fix', control.tags.fix);
       _.set(newControl.tags, 'fix', undefined);
     }
@@ -133,4 +131,3 @@ export function processInSpecProfile(json: string): Profile {
   profile.controls = _.sortBy(profile.controls, 'id');
   return profile;
 }
-

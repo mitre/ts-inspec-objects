@@ -2,14 +2,14 @@ import _ from 'lodash';
 
 /**
  * Wraps a given string to a specified line length by inserting newline characters.
- * 
+ *
  * @param s - The string to be wrapped.
  * @param lineLength - The maximum length of each line before wrapping. Defaults to 80.
  * @returns The wrapped string with newline characters inserted at appropriate positions.
  */
 export function wrap(s: string, lineLength = 80): string {
-  let newString = ''
-  let currentLength = 0
+  let newString = '';
+  let currentLength = 0;
   let shouldBreakLine = false;
 
   for (let i = 0; i < s.length; i++) {
@@ -18,8 +18,8 @@ export function wrap(s: string, lineLength = 80): string {
       currentLength = 0;
       shouldBreakLine = false;
     }
-    const currentChar = s.charAt(i)
-    const nextChar = s.charAt(i + 1)
+    const currentChar = s.charAt(i);
+    const nextChar = s.charAt(i + 1);
 
     if (nextChar === ' ') {
       if (currentLength >= lineLength) {
@@ -48,7 +48,7 @@ export function wrap(s: string, lineLength = 80): string {
  * @returns The unformatted string with newline characters and excessive whitespace removed.
  */
 export function unformatText(s: string): string {
-  return s.replace(/\n/g, ' ').replace(/\\n/g, ' ').replace(/( +|\t)/g, ' ')
+  return s.replace(/\n/g, ' ').replace(/\\n/g, ' ').replace(/( +|\t)/g, ' ');
 }
 
 /**
@@ -58,7 +58,7 @@ export function unformatText(s: string): string {
  * @returns A new string with all whitespace characters removed.
  */
 export function removeWhitespace(input: string): string {
-  return input.replace(/\s/gi, '')
+  return input.replace(/\s/gi, '');
 }
 
 /**
@@ -74,7 +74,7 @@ export function removeWhitespace(input: string): string {
  */
 const escapeSpecialCaseBackslashes = (s: string) => {
   return s.replace(/\\\)/g, '\\\\)');
-}
+};
 
 /**
  * Escapes single quotes and backslashes in a given string.
@@ -87,7 +87,7 @@ const escapeSpecialCaseBackslashes = (s: string) => {
  */
 const escapeSingleQuotes = (s: string) => {
   return s.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-}
+};
 
 /**
  * Escapes backslashes and double quotes in a given string.
@@ -100,7 +100,7 @@ const escapeSingleQuotes = (s: string) => {
  */
 const escapeDoubleQuotes = (s: string) => {
   return s.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-}
+};
 
 /**
  * Escapes quotes in a given string based on the presence of single and double quotes.
@@ -114,11 +114,11 @@ const escapeDoubleQuotes = (s: string) => {
  */
 export function escapeQuotes(s: string): string {
   if (s.includes("'") && s.includes('"')) {
-    return `%q(${escapeSpecialCaseBackslashes(removeNewlinePlaceholders(s))})`
+    return `%q(${escapeSpecialCaseBackslashes(removeNewlinePlaceholders(s))})`;
   } else if (s.includes("'")) {
-    return `"${escapeDoubleQuotes(removeNewlinePlaceholders(s))}"`
+    return `"${escapeDoubleQuotes(removeNewlinePlaceholders(s))}"`;
   } else {
-    return `'${escapeSingleQuotes(removeNewlinePlaceholders(s))}'`
+    return `'${escapeSingleQuotes(removeNewlinePlaceholders(s))}'`;
   }
 }
 
@@ -129,7 +129,7 @@ export function escapeQuotes(s: string): string {
  * @returns The modified string with placeholders replaced by newline characters.
  */
 export function removeNewlinePlaceholders(s: string): string {
-  return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n')
+  return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n');
 }
 
 /**
@@ -142,13 +142,13 @@ export function removeNewlinePlaceholders(s: string): string {
  */
 export function getFirstPath(
   object: Record<string, unknown>,
-  paths: string[]
+  paths: string[],
 ): string {
-  const index = _.findIndex(paths, (p) => hasPath(object, p));
+  const index = _.findIndex(paths, p => hasPath(object, p));
 
   if (index === -1) {
     throw new Error(
-      `Attestation is missing one of these paths: ${paths.join(', ')}`
+      `Attestation is missing one of these paths: ${paths.join(', ')}`,
     );
   } else {
     return _.get(object, paths[index]) as string;
@@ -164,7 +164,7 @@ export function getFirstPath(
  */
 export function hasPath(
   file: Record<string, unknown>,
-  path: string | string[]
+  path: string | string[],
 ): boolean {
   let pathArray;
   if (typeof path === 'string') {
@@ -173,5 +173,5 @@ export function hasPath(
     pathArray = path;
   }
 
-  return _.some(pathArray, (p) => _.has(file, p));
+  return _.some(pathArray, p => _.has(file, p));
 }
