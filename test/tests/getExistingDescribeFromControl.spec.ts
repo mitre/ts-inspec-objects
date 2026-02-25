@@ -5,13 +5,7 @@ import Control from '../../src/objects/control';
 import { getExistingDescribeFromControl, processInSpecProfile, updateControlDescribeBlock } from '../../src/index';
 import { createWinstonLogger } from '../../src/utilities/logging';
 
-const TEST_USE_CASES = new Set(['array-in-header', 'back-ticks', 'comments-on-describe-block', 'comments', 'double-quotes', 'end-of-line', 'end-on-control', 'end-on-desc', 'end-on-impact', 'end-on-ref', 'end-on-tag', 'end-on-title', 'hash-in-header', 'headers-in-describe', 'input-in-metadata', 'keywords-in-strings', 'mixed-quotes', 'multi-line-describe-block', 'multi-line-in-tags', 'multiple-single-line-inputs']);
-TEST_USE_CASES.add('parenthesis-in-header');
-TEST_USE_CASES.add('percent-literals');
-TEST_USE_CASES.add('percent-strings');
-TEST_USE_CASES.add('single-quotes');
-TEST_USE_CASES.add('start-of-line-input');
-TEST_USE_CASES.add('old-control-new-control');
+const TEST_USE_CASES = new Set(['array-in-header', 'back-ticks', 'comments-on-describe-block', 'comments', 'double-quotes', 'end-of-line', 'end-on-control', 'end-on-desc', 'end-on-impact', 'end-on-ref', 'end-on-tag', 'end-on-title', 'hash-in-header', 'headers-in-describe', 'input-in-metadata', 'keywords-in-strings', 'mixed-quotes', 'multi-line-describe-block', 'multi-line-in-tags', 'multiple-single-line-inputs', 'parenthesis-in-header', 'percent-literals', 'percent-strings', 'single-quotes', 'start-of-line-input', 'old-control-new-control']);
 
 describe('describe block extraction', () => {
   const pathToTestCases = 'test/sample_data/controls-for-describe-tests';
