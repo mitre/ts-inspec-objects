@@ -166,8 +166,6 @@ export function hasPath(
   file: Record<string, unknown>,
   path: string | string[],
 ): boolean {
-  let pathArray;
-  pathArray = typeof path === 'string' ? [path] : path;
-
+  const pathArray = _.isString(path) ? [path] : path;
   return _.some(pathArray, p => _.has(file, p));
 }
