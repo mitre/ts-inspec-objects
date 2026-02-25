@@ -293,13 +293,13 @@ export function processXCCDF(xml: string, removeNewlines: false,
                 if (!ovalDefinitions) {
                   logger.warn(`Missing OVAL definitions! Unable to process OVAL reference: ${ovalReference}`);
                 } else if (ovalReference && ovalReference in ovalDefinitions) {
-                  ovalDefinitions[ovalReference].resolvedValues.forEach((resolvedValue: any) => {
+                  for (const resolvedValue of ovalDefinitions[ovalReference].resolvedValues) {
                     const comment = resolvedValue['@_comment'];
                     if (comment) {
                       checkTexts.push(comment + '\n');
                     }
 
-                    resolvedValue.resolvedObjects.forEach((resolvedObject: any) => {
+                    for (const resolvedObject of resolvedValue.resolvedObjects) {
                       // Try to find the associated state for a resolved object
                       const resolvedId = resolvedObject['@_id'].split(':')[resolvedValue['@_id'].split(':').length - 1];
 
@@ -313,8 +313,8 @@ export function processXCCDF(xml: string, removeNewlines: false,
                         }
                       }
                       checkTexts.push(JSON.stringify(_.pickBy(resolvedObject, (value, key) => !key.startsWith('@_')), null, 2));
-                    });
-                  });
+                    }
+                  }
                 }
               } else {
                 logger.warn(`Found external reference to unknown system: ${check['@_system']}, only OVAL is supported`);
@@ -496,14 +496,14 @@ export function processXCCDF(xml: string, removeNewlines: false,
 
     // Associate any CCIs with NIST tags
     if (control.tags.cci) {
-      control.tags.cci.forEach((cci: string) => {
+      for (const cci of control.tags.cci) {
         if (!('nist' in control.tags)) {
           control.tags.nist = [];
         }
         if (cci in CciNistMappingData) {
           control.tags.nist?.push(_.get(CciNistMappingData, cci));
         }
-      });
+      }
     }
 
     profile.controls.push(control);
