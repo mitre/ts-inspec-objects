@@ -11,8 +11,8 @@
     "dev": "npx -y ts-node test.ts",
     "test": "vitest",
     "test:ci": "vitest run",
-    "lint": "eslint \"**/*.ts\" --fix",
-    "lint:ci": "eslint \"**/*.ts\" --max-warnings 0"
+    "lint": "eslint --fix",
+    "lint:ci": "eslint --max-warnings 0"
   },
   "repository": {
     "type": "git",
@@ -44,11 +44,14 @@
     "yaml": "^2.3.1"
   },
   "devDependencies": {
-    "@types/node": "^25.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.35.1",
-    "@typescript-eslint/parser": "^8.35.1",
-    "eslint": "^8.30.0",
-    "typescript": "^5.2.2",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.9.0",
+    "@types/node": "^25.3.0",
+    "eslint": "^10.0.2",
+    "eslint-plugin-n": "^17.24.0",
+    "eslint-plugin-unicorn": "^63.0.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1",
     "vitest": "^4.0.1"
   }
 }

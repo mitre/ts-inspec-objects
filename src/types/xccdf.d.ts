@@ -4,7 +4,7 @@ export interface ParsedXCCDF {
 
 /**
  * Represents a Benchmark in the XCCDF (Extensible Configuration Checklist Description Format) standard.
- * 
+ *
  * @property {'@_xmlns:dsig'} [@_xmlns:dsig] - Optional XML namespace for digital signatures.
  * @property {'@_xmlns:xsi'} @_xmlns:xsi - XML namespace for XML Schema Instance.
  * @property {'@_xmlns:cpe'} [@_xmlns:cpe] - Optional XML namespace for Common Platform Enumeration.
@@ -208,7 +208,7 @@ export interface HTMLAElement {
 
 export interface RationaleElement {
   '#text'?: string;
-  'p'?: string;
+  p?: string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
   'html:br'?: HTMLBr[];

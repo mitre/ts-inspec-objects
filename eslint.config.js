@@ -1,0 +1,41 @@
+import { defineConfig } from 'eslint/config';
+import js from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
+import tseslint from 'typescript-eslint';
+import unicorn from 'eslint-plugin-unicorn';
+import n from 'eslint-plugin-n';
+
+export default defineConfig([
+  {
+    ignores: ['node_modules/**', 'lib/**'],
+  },
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+  unicorn.configs.recommended,
+  stylistic.configs.customize({
+    braceStyle: '1tbs',
+    indent: [2, { SwitchCase: 1 }],
+    semi: true,
+    quoteProps: 'as-needed',
+    quotes: 'single',
+  }),
+  {
+    languageOptions: {
+      parser: tseslint.parser,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
+    plugins: {
+      '@typescript-eslint': tseslint.plugin,
+      unicorn,
+      n,
+    },
+    rules: {
+      '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
+      '@typescript-eslint/no-explicit-any': 'off',
+      'unicorn/no-null': 'off',
+      'unicorn/prefer-node-protocol': 'off',
+      'unicorn/prevent-abbreviations': 'off',
+    },
+  },
+]);

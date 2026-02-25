@@ -4,7 +4,5 @@ export * from './parsers/xccdf';
 export * from './utilities/diff';
 export * from './utilities/update';
 
-import Control from './objects/control';
-import Profile from './objects/profile';
-export {Control};
-export {Profile};
+export { default as Control } from './objects/control';
+export { default as Profile } from './objects/profile';

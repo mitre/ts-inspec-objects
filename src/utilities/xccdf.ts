@@ -1,14 +1,14 @@
-import {XMLParser} from 'fast-xml-parser'
-import {toXML} from 'jstoxml';
-import * as htmlparser from 'htmlparser2'
-import _ from 'lodash'
-import {DecodedDescription} from '../types/xccdf'
-import he from 'he'
+import { XMLParser } from 'fast-xml-parser';
+import { toXML } from 'jstoxml';
+import * as htmlparser from 'htmlparser2';
+import _ from 'lodash';
+import { DecodedDescription } from '../types/xccdf';
+import he from 'he';
 
 /**
  * Converts an encoded XML string into a JSON object using specified
  * parsing options.
- * 
+ *
  * @param encodedXml      - The encoded XML string to be converted.
  * @param xmlParserOption - The parsing option to be used. Defaults to
  *                          'withArrayOption'.
@@ -23,7 +23,7 @@ import he from 'he'
  * This function uses the `fast-xml-parser` library to parse the XML string.
  * The parser options are configured to:
  * - Prevent the parser from converting XML entities (converting &lt into <)
- * - Ignore attributes, allow or disallows attributes to be parsed 
+ * - Ignore attributes, allow or disallows attributes to be parsed
  * - Remove namespace prefixes.
  * - Prefix attribute names with '@_'.
  * - Stop parsing 'div' and 'p' tags.
@@ -36,11 +36,11 @@ import he from 'he'
  *  - attributeNamePrefix: '@_' (prefix all attribute names with @_)
  *  - stopNodes: ["*.pre", "*.p"]
  *  - isArray(): true or false (based on xmlParserOption)
- * 
+ *
  * NOTE: The isArray can specify what tags to always convert into an array, we
  *       do not specify specific fields as it could break parsing if future
  *       fields are added, we parse all fields as an array.
- * 
+ *
  * For more details on the parser options, see the documentation for the v4 or v5 version of the library:
  * {@link https://github.com/NaturalIntelligence/fast-xml-parser/tree/master/docs/v4}
  */
@@ -56,7 +56,6 @@ import he from 'he'
  * @returns The JSON object resulting from the XML parsing.
  */
 export function convertEncodedXmlIntoJson(encodedXml: string, xmlParserOption: string = 'withArrayOption'): any {
-
   const withArrayOption = {
     processEntities: false,
     ignoreAttributes: false,
@@ -85,12 +84,12 @@ export function convertEncodedXmlIntoJson(encodedXml: string, xmlParserOption: s
   };
 
   const parser = new XMLParser(
-    xmlParserOption === 'withArrayOption' 
-      ? withArrayOption 
-      : xmlParserOption === 'withArrayNoEntitiesOption' 
+    xmlParserOption === 'withArrayOption'
+      ? withArrayOption
+      : (xmlParserOption === 'withArrayNoEntitiesOption'
         ? withArrayNoEntitiesOption
-        : noArrayOption)
-  
+        : noArrayOption));
+
   return parser.parse(encodedXml);
 }
 
@@ -101,7 +100,7 @@ export function convertEncodedXmlIntoJson(encodedXml: string, xmlParserOption: s
  * @returns The XML string representation of the JSON object.
  */
 export function convertJsonIntoXML(data: any) {
-  return toXML(data)
+  return toXML(data);
 }
 
 /**
@@ -115,7 +114,7 @@ export function convertJsonIntoXML(data: any) {
  */
 export function removeXMLSpecialCharacters(str: string) {
   const result = he.decode(str);
-  return result
+  return result;
 }
 
 /**
@@ -123,7 +122,7 @@ export function removeXMLSpecialCharacters(str: string) {
   *
  * @param input - The string from which HTML tags should be removed.
  * @returns A new string with all HTML tags removed.
- * 
+ *
  * @example
  * ```typescript
  * const str = '<div>Hello <b>World</b>!</div>';
@@ -142,7 +141,7 @@ export function removeHtmlTags(input: string): string {
   //   $ matches the end of the string. This ensures the regex can handle
   //     cases where the tag is incomplete or unclosed (e.g., <div)
   // g: Global flag to find all matches in the input string
-  return input.replace(/<\/?[^>]+(>|$)/g, '');
+  return input.replaceAll(/<\/?[^>]+(>|$)/g, '');
 }
 
 /**
@@ -162,24 +161,24 @@ export function removeHtmlTags(input: string): string {
  * @returns The numerical impact value corresponding to the severity string.
  */
 export function severityStringToImpact(string: string): number {
-  if (RegExp(/none|na|n\/a|not[\s()*_|]?applicable/i).exec(string)?.length) {
-    return 0.0
+  if (new RegExp(/none|na|n\/a|not[\s()*_|]?applicable/i).exec(string)?.length) {
+    return 0;
   }
 
-  if (RegExp(/low|cat(egory)?\s*(iii|3)/i).exec(string)?.length) {
-    return 0.3
+  if (new RegExp(/low|cat(egory)?\s*(iii|3)/i).exec(string)?.length) {
+    return 0.3;
   }
 
-  if (RegExp(/med(ium)?|cat(egory)?\s*(ii|2)/).exec(string)?.length) {
-    return 0.5
+  if (new RegExp(/med(ium)?|cat(egory)?\s*(ii|2)/).exec(string)?.length) {
+    return 0.5;
   }
 
-  if (RegExp(/high|cat(egory)?\s*(i|1)/).exec(string)?.length) {
-    return 0.7
+  if (new RegExp(/high|cat(egory)?\s*(i|1)/).exec(string)?.length) {
+    return 0.7;
   }
 
-  if (RegExp(/crit(ical)?|severe/).exec(string)?.length) {
-    return 1.0
+  if (new RegExp(/crit(ical)?|severe/).exec(string)?.length) {
+    return 1;
   }
 
   return 0.5;
@@ -199,26 +198,26 @@ export function severityStringToImpact(string: string): number {
  */
 export function impactNumberToSeverityString(impact: number): string {
   // Impact must be 0.0 - 1.0
-  if (impact < 0.0 || impact > 1.0) {
-    throw new Error('Impact cannot be less than 0.0 or greater than 1.0')
+  if (impact < 0 || impact > 1) {
+    throw new Error('Impact cannot be less than 0.0 or greater than 1.0');
   } else {
     if (impact >= 0.9) {
-      return 'critical'
+      return 'critical';
     }
 
     if (impact >= 0.7) {
-      return 'high'
+      return 'high';
     }
 
     if (impact >= 0.4) {
-      return 'medium'
+      return 'medium';
     }
 
     if (impact >= 0.1) {
-      return 'low'
+      return 'low';
     }
 
-    return 'none'
+    return 'none';
   }
 }
 
@@ -237,63 +236,55 @@ export function impactNumberToSeverityString(impact: number): string {
  * Note: This function specifically addresses issues found in certain
  *       STIGs (Security Technical Implementation Guides) where XML tags are
  *       embedded within text fields.
- * 
- * @param encodedHTML - The encoded HTML string to be converted. 
+ *
+ * @param encodedHTML - The encoded HTML string to be converted.
  *                      If not provided, an empty object is returned.
  * @returns A `DecodedDescription` object containing the converted JSON data.
  */
 export function convertEncodedHTMLIntoJson(encodedHTML?: string): DecodedDescription {
   if (encodedHTML) {
     // Some STIGs regarding XSS put the < character inside of the description which breaks parsing
-    const patchedHTML = encodedHTML.replace(/"&lt;"/g, '[[[REPLACE_LESS_THAN]]]')
+    const patchedHTML = encodedHTML.replaceAll('"&lt;"', '[[[REPLACE_LESS_THAN]]]');
 
-    const xmlChunks: string[] = []
+    const xmlChunks: string[] = [];
     const htmlParser = new htmlparser.Parser({
       ontext(text: string) {
-        xmlChunks.push(text)
+        xmlChunks.push(text);
       },
-    })
-    htmlParser.write(patchedHTML)
-    htmlParser.end()
-    const converted = convertEncodedXmlIntoJson(xmlChunks.join(''), 'noArrayOption')
-    let cleaned: Record<string, string | boolean | undefined> = {}
+    });
+    htmlParser.write(patchedHTML);
+    htmlParser.end();
+    const converted = convertEncodedXmlIntoJson(xmlChunks.join(''), 'noArrayOption');
+    let cleaned: Record<string, string | boolean | undefined> = {};
 
     // Some STIGs have xml tags inside of the actual text which breaks processing,
     // e.g U_ASD_STIG_V5R1_Manual-xccdf.xml and all Oracle Database STIGs
-    if (typeof converted.VulnDiscussion === 'object') { 
-      let extractedVulnDescription = ''
+    if (typeof converted.VulnDiscussion === 'object') {
+      let extractedVulnDescription = '';
       const remainingFields = _.omit(converted.VulnDiscussion,
         [
           'FalsePositives', 'FalseNegatives', 'Documentable', 'Mitigations',
           'SeverityOverrideGuidance', 'PotentialImpacts', 'ThirdPartyTools',
-          'MitigationControl', 'Responsibility', 'IAControls'
-        ]
-      )
-      Object.entries(remainingFields).forEach(([field, value]) => {
-        extractedVulnDescription += `<${field}> ${value}`
-      })
+          'MitigationControl', 'Responsibility', 'IAControls',
+        ],
+      );
+      for (const [field, value] of Object.entries(remainingFields)) {
+        extractedVulnDescription += `<${field}> ${value}`;
+      }
       cleaned = {
         VulnDiscussion: extractedVulnDescription.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"'),
+      };
+      for (const [key, value] of Object.entries(converted.VulnDiscussion)) {
+        cleaned[key] = typeof value === 'string' ? value.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"') : (value as boolean);
       }
-      Object.entries(converted.VulnDiscussion).forEach(([key, value]) => {
-        if (typeof value === 'string') {
-          cleaned[key] = value.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"')
-        } else {
-          cleaned[key] = (value as boolean)
-        }
-      })
     } else {
-      Object.entries(converted).forEach(([key, value]) => {
-        if (typeof value === 'string') {
-          cleaned[key] = value.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"')
-        } else {
-          cleaned[key] = (value as boolean)
-        }
-      })
+      for (const [key, value] of Object.entries(converted)) {
+        cleaned[key] = typeof value === 'string' ? value.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"') : (value as boolean);
+      }
     }
 
-    return cleaned
+    return cleaned;
   }
 
-  return {}
+  return {};
 }

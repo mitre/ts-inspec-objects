@@ -1,14 +1,14 @@
-import {convertEncodedXmlIntoJson} from '../utilities/xccdf'
-import {OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State} from '../types/oval'
-import {createWinstonLogger} from '../utilities/logging';
+import { convertEncodedXmlIntoJson } from '../utilities/xccdf';
+import { OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State } from '../types/oval';
+import { createWinstonLogger } from '../utilities/logging';
 
 /**
- * Search through all arrays of the tree to find a value from a property 
+ * Search through all arrays of the tree to find a value from a property
  * Code provided by:
  * https://stackoverflow.com/questions/9133500/how-to-find-a-node-in-a-tree-with-javascript
- * 
+ *
  * @param aTree : The tree array
- * @param fCompair : This function will receive each node. Define based on caller for specific 
+ * @param fCompair : This function will receive each node. Define based on caller for specific
                      condition necessary for the match. It must return true if the condition
                      is matched. Example:
                         function(oNode){ if(oNode["Name"] === "AA") return true; }
@@ -17,8 +17,8 @@ import {createWinstonLogger} from '../utilities/logging';
  *         will be returned
 */
 function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean) {
-  let oNode;               // always the current node  
-  const aInnerTree = [];   // will contain the inner children
+  let oNode; // always the current node
+  const aInnerTree = []; // will contain the inner children
   const aReturnNodes = []; // the nodes array which will returned
 
   // 1. loop through all root nodes, store tree content locally so we don't touch the tree structure
@@ -38,7 +38,7 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
       // find other objects, 1. check all properties of the node if they are arrays
       for (const keysNode in oNode) {
         // true if the property is an array
-        if (oNode[keysNode] instanceof Array) {
+        if (Array.isArray(oNode[keysNode])) {
           // 2. push all array object to aInnerTree to search in those later
           for (let i = 0; i < oNode[keysNode].length; i++) {
             aInnerTree.push(oNode[keysNode][i]);
@@ -61,18 +61,18 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
  * @returns An array of strings containing all extracted test references.
  */
 export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): string[] {
-  const criteriaRefs: string[] = []
-  initialCriteria.forEach(criteria => {
-    criteria.criterion?.forEach((criterion) => {
+  const criteriaRefs: string[] = [];
+  for (const criteria of initialCriteria) {
+    if (criteria.criterion) for (const criterion of criteria.criterion) {
       if (criterion['@_test_ref']) {
-        criteriaRefs.push(criterion['@_test_ref'])
+        criteriaRefs.push(criterion['@_test_ref']);
       }
-    })
-    if (criteria.criteria) {
-      criteriaRefs.push(...extractAllCriteriaRefs(criteria.criteria))
     }
-  })
-  return criteriaRefs
+    if (criteria.criteria) {
+      criteriaRefs.push(...extractAllCriteriaRefs(criteria.criteria));
+    }
+  }
+  return criteriaRefs;
 }
 
 /**
@@ -88,75 +88,73 @@ export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): 
  * - The original definition.
  * - An array of criteria references.
  * - An array of resolved values, each containing the original criteria, resolved objects, and resolved states.
- * 
+ *
  * @param {string} [oval] - The OVAL XML string to be processed. If not provided, the function returns `undefined`.
  * @returns {Record<string, OvalDefinitionValue> | undefined} - A record of extracted definitions with their
  *  criteria references and resolved values, or `undefined` if no OVAL string is provided.
  */
 export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> | undefined {
-  const logger = createWinstonLogger('ts-inspec-objects')
+  const logger = createWinstonLogger('ts-inspec-objects');
 
   if (!oval) {
-    return undefined
+    return undefined;
   }
 
-  const parsed: Oval = convertEncodedXmlIntoJson(oval, 'withArrayNoEntitiesOption')
-  
-  const extractedDefinitions: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }> = {}
+  const parsed: Oval = convertEncodedXmlIntoJson(oval, 'withArrayNoEntitiesOption');
+
+  const extractedDefinitions: Record<string, OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }> = {};
 
   for (const ovalDefinitions of parsed.oval_definitions) {
     for (const definitionList of ovalDefinitions.definitions) {
       for (const definition of definitionList.definition) {
-        extractedDefinitions[definition['@_id']] = definition
-        extractedDefinitions[definition['@_id']].criteriaRefs = extractAllCriteriaRefs(definition.criteria)
+        extractedDefinitions[definition['@_id']] = definition;
+        extractedDefinitions[definition['@_id']].criteriaRefs = extractAllCriteriaRefs(definition.criteria);
 
         extractedDefinitions[definition['@_id']].resolvedValues = extractedDefinitions[definition['@_id']].criteriaRefs?.map((criteriaRef) => {
           // Extract the original criteria from the oval file
-          const foundCriteriaRefererence: Test = searchTree(parsed.oval_definitions[0].tests, (oNode: any) => oNode['@_id'] === criteriaRef, false)[0]
-          
-          const foundObjects: Object[] = []
-          const foundStates: State[] = []
-                    
+          const foundCriteriaRefererence: Test = searchTree(parsed.oval_definitions[0].tests, (oNode: any) => oNode['@_id'] === criteriaRef, false)[0];
+
+          const foundObjects: Object[] = [];
+          const foundStates: State[] = [];
+
           if (foundCriteriaRefererence) {
             if (foundCriteriaRefererence.object) {
-              foundCriteriaRefererence.object.forEach((object) => {
-                if (!object['@_object_ref']) {
-                  logger.warn(`Found object without object_ref in test ${criteriaRef}`)
-                } else {
-                  const objectRef = object['@_object_ref']
-                  const foundObjectReference = searchTree(parsed.oval_definitions[0].objects, (oNode: any) => oNode['@_id'] === objectRef, false)[0]
+              for (const object of foundCriteriaRefererence.object) {
+                if (object['@_object_ref']) {
+                  const objectRef = object['@_object_ref'];
+                  const foundObjectReference = searchTree(parsed.oval_definitions[0].objects, (oNode: any) => oNode['@_id'] === objectRef, false)[0];
                   if (foundObjectReference) {
-                    foundObjects.push(foundObjectReference)
+                    foundObjects.push(foundObjectReference);
                   } else {
-                    logger.warn(`Could not find object ${objectRef} for test ${criteriaRef}`)
+                    logger.warn(`Could not find object ${objectRef} for test ${criteriaRef}`);
                   }
+                } else {
+                  logger.warn(`Found object without object_ref in test ${criteriaRef}`);
                 }
-              })
+              }
             }
             if (foundCriteriaRefererence.state) {
-              foundCriteriaRefererence.state.forEach((state) => {
-                if (!state['@_state_ref']) {
-                  logger.warn(`Found state without state_ref in test ${criteriaRef}`)
-                } else {
-                  const stateRef = state['@_state_ref']
-                  const foundStateReference = searchTree(parsed.oval_definitions[0].states, (oNode: any) => oNode['@_id'] === stateRef, false)[0]
+              for (const state of foundCriteriaRefererence.state) {
+                if (state['@_state_ref']) {
+                  const stateRef = state['@_state_ref'];
+                  const foundStateReference = searchTree(parsed.oval_definitions[0].states, (oNode: any) => oNode['@_id'] === stateRef, false)[0];
                   if (foundStateReference) {
-                    foundStates.push(foundStateReference)
+                    foundStates.push(foundStateReference);
                   } else {
-                    logger.warn(`Could not find state ${stateRef} for test ${criteriaRef}`)
+                    logger.warn(`Could not find state ${stateRef} for test ${criteriaRef}`);
                   }
+                } else {
+                  logger.warn(`Found state without state_ref in test ${criteriaRef}`);
                 }
-              })
+              }
             }
           }
 
-          return {...foundCriteriaRefererence, resolvedObjects: foundObjects, resolvedStates: foundStates}
-
-
-        }).filter((value) => value)
+          return { ...foundCriteriaRefererence, resolvedObjects: foundObjects, resolvedStates: foundStates };
+        }).filter(Boolean);
       }
     }
   }
 
-  return extractedDefinitions
+  return extractedDefinitions;
 }
