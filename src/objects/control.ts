@@ -98,7 +98,7 @@ export default class Control {
     this.refs = [];
     this.tags = {};
     if (data) {
-      for (const [key, value] of Object.entries(_.cloneDeep(data))) {
+      for (const [key, value] of Object.entries(structuredClone(data))) {
         _.set(this, key, value);
       }
     }
