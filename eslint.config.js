@@ -32,6 +32,7 @@ export default defineConfig([
     },
     rules: {
       '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
+      'unicorn/no-null': 'off',
       'unicorn/prefer-node-protocol': 'off',
       'unicorn/prevent-abbreviations': 'off',
     },
