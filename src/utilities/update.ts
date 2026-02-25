@@ -61,7 +61,7 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
       } else if (typeof src[updatedValue] === 'number') {
         _.set(dst, updatedValue, src[updatedValue]);
       } else if (Array.isArray(src[updatedValue])) {
-        const uniqueArrayValues = [...new Set((_.get(dst, updatedValue, []) as unknown[]).concat(src[updatedValue] as unknown[]))];
+        const uniqueArrayValues = _.uniq([..._.get(dst, updatedValue, []) as unknown[], ...src[updatedValue]]);
         _.set(dst, updatedValue, uniqueArrayValues);
       }
     }
