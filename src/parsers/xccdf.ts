@@ -135,6 +135,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
       : parsedXML.Benchmark[0].title,
     summary: Array.isArray(parsedXML.Benchmark[0].description)
       ? parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['#text']).join(' ') === ''
+        // eslint-disable-next-line unicorn/no-nested-ternary
         ? parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['p'] || '').join(' ') === ''
           ? parsedXML.Benchmark[0].description.map(d => (d as unknown as string[])).join(' ')
           : parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['p'] || '').join(' ')
