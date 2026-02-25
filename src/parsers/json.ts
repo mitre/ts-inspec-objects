@@ -31,7 +31,7 @@ export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
     description: _.get(topLevelProfile.data, 'description'),
     version: topLevelProfile.data.version,
   });
-  topLevelProfile.contains.forEach((control) => {
+  for (const control of topLevelProfile.contains) {
     profile.controls.push(
       new Control({
         id: control.data.id,
@@ -42,7 +42,7 @@ export function processEvaluation(evaluationInput: ContextualizedEvaluation) {
         tags: control.hdf.wraps.tags,
       }),
     );
-  });
+  }
   return profile;
 }
 
@@ -66,7 +66,7 @@ export function processProfileJSON(
     description: _.get(profileInput.data, 'description'),
     version: profileInput.data.version,
   });
-  profileInput.data.controls.forEach((control) => {
+  for (const control of profileInput.data.controls) {
     const newControl = new Control({
       id: control.id,
       title: control.title,
@@ -90,7 +90,7 @@ export function processProfileJSON(
     }
 
     profile.controls.push(newControl);
-  });
+  }
   return profile;
 }
 

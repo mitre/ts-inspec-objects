@@ -38,7 +38,7 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
       // find other objects, 1. check all properties of the node if they are arrays
       for (const keysNode in oNode) {
         // true if the property is an array
-        if (oNode[keysNode] instanceof Array) {
+        if (Array.isArray(oNode[keysNode])) {
           // 2. push all array object to aInnerTree to search in those later
           for (let i = 0; i < oNode[keysNode].length; i++) {
             aInnerTree.push(oNode[keysNode][i]);
@@ -62,16 +62,16 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
  */
 export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): string[] {
   const criteriaRefs: string[] = [];
-  initialCriteria.forEach((criteria) => {
-    criteria.criterion?.forEach((criterion) => {
+  for (const criteria of initialCriteria) {
+    if (criteria.criterion) for (const criterion of criteria.criterion) {
       if (criterion['@_test_ref']) {
         criteriaRefs.push(criterion['@_test_ref']);
       }
-    });
+    }
     if (criteria.criteria) {
       criteriaRefs.push(...extractAllCriteriaRefs(criteria.criteria));
     }
-  });
+  }
   return criteriaRefs;
 }
 
@@ -119,10 +119,8 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
 
           if (foundCriteriaRefererence) {
             if (foundCriteriaRefererence.object) {
-              foundCriteriaRefererence.object.forEach((object) => {
-                if (!object['@_object_ref']) {
-                  logger.warn(`Found object without object_ref in test ${criteriaRef}`);
-                } else {
+              for (const object of foundCriteriaRefererence.object) {
+                if (object['@_object_ref']) {
                   const objectRef = object['@_object_ref'];
                   const foundObjectReference = searchTree(parsed.oval_definitions[0].objects, (oNode: any) => oNode['@_id'] === objectRef, false)[0];
                   if (foundObjectReference) {
@@ -130,14 +128,14 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
                   } else {
                     logger.warn(`Could not find object ${objectRef} for test ${criteriaRef}`);
                   }
+                } else {
+                  logger.warn(`Found object without object_ref in test ${criteriaRef}`);
                 }
-              });
+              }
             }
             if (foundCriteriaRefererence.state) {
-              foundCriteriaRefererence.state.forEach((state) => {
-                if (!state['@_state_ref']) {
-                  logger.warn(`Found state without state_ref in test ${criteriaRef}`);
-                } else {
+              for (const state of foundCriteriaRefererence.state) {
+                if (state['@_state_ref']) {
                   const stateRef = state['@_state_ref'];
                   const foundStateReference = searchTree(parsed.oval_definitions[0].states, (oNode: any) => oNode['@_id'] === stateRef, false)[0];
                   if (foundStateReference) {
@@ -145,13 +143,15 @@ export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> 
                   } else {
                     logger.warn(`Could not find state ${stateRef} for test ${criteriaRef}`);
                   }
+                } else {
+                  logger.warn(`Found state without state_ref in test ${criteriaRef}`);
                 }
-              });
+              }
             }
           }
 
           return { ...foundCriteriaRefererence, resolvedObjects: foundObjects, resolvedStates: foundStates };
-        }).filter(value => value);
+        }).filter(Boolean);
       }
     }
   }

@@ -24,7 +24,7 @@ export type GroupContextualizedRule = BenchmarkRule & { group: Omit<BenchmarkGro
  */
 export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRule[] {
   const rules: GroupContextualizedRule[] = [];
-  groups.forEach((group) => {
+  for (const group of groups) {
     if (group.Rule) {
       rules.push(...(group.Rule.map((rule) => {
         return {
@@ -36,7 +36,7 @@ export function extractAllRules(groups: BenchmarkGroup[]): GroupContextualizedRu
     if (group.Group) {
       rules.push(...extractAllRules(group.Group));
     }
-  });
+  }
   return rules;
 }
 
@@ -54,9 +54,9 @@ export function extractAllComplexChecks(complexCheck: RuleComplexCheck): Omit<Ru
   const complexChecks: Omit<RuleComplexCheck, 'complex-check'>[] = [_.omit(complexCheck, 'complex-check')];
   if (complexCheck['complex-check']) {
     complexChecks.push(...complexCheck['complex-check'].map(subComplexCheck => _.omit(subComplexCheck, 'complex-check')));
-    complexCheck['complex-check'].forEach((subComplexCheck) => {
+    for (const subComplexCheck of complexCheck['complex-check']) {
       complexChecks.push(...extractAllComplexChecks(subComplexCheck));
-    });
+    }
   }
   return complexChecks;
 }
@@ -82,9 +82,9 @@ export type InputTextLang = {
 function ensureDecodedXMLStringValue(input: string | InputTextLang[], defaultValue: string): string {
   return _.isString(input)
     ? input
-    : _.isArray(input)
+    : (_.isArray(input)
       ? _.get(input, '[0].#text', defaultValue)
-      : _.get(input, '#text', defaultValue);
+      : _.get(input, '#text', defaultValue));
 }
 
 /**
@@ -124,14 +124,14 @@ export function processXCCDF(xml: string, removeNewlines: false,
     // title: (parsedXML.Benchmark[0].title[0] as FrontMatter)['#text'],
     // summary: (parsedXML.Benchmark[0].description[0] as RationaleElement)['#text']
     name: Array.isArray(parsedXML.Benchmark[0]['@_id'])
-      ? parsedXML.Benchmark[0]['@_id'].map(n => (n as FrontMatter)['@_id']).join(' ') === ''
+      ? (parsedXML.Benchmark[0]['@_id'].map(n => (n as FrontMatter)['@_id']).join(' ') === ''
         ? parsedXML.Benchmark[0]['@_id'].map(n => (n as string[])).join(' ')
-        : parsedXML.Benchmark[0]['@_id'].join(' ')
+        : parsedXML.Benchmark[0]['@_id'].join(' '))
       : parsedXML.Benchmark[0]['@_id'],
     title: Array.isArray(parsedXML.Benchmark[0].title)
-      ? parsedXML.Benchmark[0].title.map(t => (t as FrontMatter)['#text']).join(' ') === ''
+      ? (parsedXML.Benchmark[0].title.map(t => (t as FrontMatter)['#text']).join(' ') === ''
         ? parsedXML.Benchmark[0].title.map(t => (t as unknown as string[])).join(' ')
-        : parsedXML.Benchmark[0].title.map(t => (t as FrontMatter)['#text']).join(' ')
+        : parsedXML.Benchmark[0].title.map(t => (t as FrontMatter)['#text']).join(' '))
       : parsedXML.Benchmark[0].title,
     summary: Array.isArray(parsedXML.Benchmark[0].description)
       ? parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['#text']).join(' ') === ''
@@ -144,7 +144,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
 
   // Process each rule, extracting the necessary
   // data and save it to the profile variable.
-  rules.forEach((rule) => {
+  for (const rule of rules) {
     // The description tag contains the following tags:
     //   "FalsePositives", "FalseNegatives", "Documentable", "Mitigations",
     //   "SeverityOverrideGuidance", "PotentialImpacts", "ThirdPartyTools",
@@ -177,23 +177,22 @@ export function processXCCDF(xml: string, removeNewlines: false,
 
     // Update the control Id with the appropriate value based on the rule id.
     switch (useRuleId) {
-      case 'group':
+      case 'group': {
         control.id = rule.group['@_id'].toString();
         break;
-      case 'rule':
-        if (rule['@_id'][0].toLowerCase().startsWith('sv')) {
-          control.id = rule['@_id'][0].split('r')[0];
-        } else {
-          control.id = rule['@_id'][0];
-        }
+      }
+      case 'rule': {
+        control.id = rule['@_id'][0].toLowerCase().startsWith('sv') ? rule['@_id'][0].split('r')[0] : rule['@_id'][0];
         break;
-      case 'version':
-        if (rule.version !== undefined) {
-          control.id = (_.isArray(rule.version)) ? rule.version[0] : rule.version;
-        } else {
+      }
+      case 'version': {
+        if (rule.version === undefined) {
           throw new Error('The rule type "version" did not provide an identification (Id) value');
+        } else {
+          control.id = (_.isArray(rule.version)) ? rule.version[0] : rule.version;
         }
         break;
+      }
       case 'cis': {
         // Regex explained
         // \d:
@@ -217,8 +216,9 @@ export function processXCCDF(xml: string, removeNewlines: false,
         }
         break;
       }
-      default:
+      default: {
         throw new Error('useRuleId must be one of "group", "rule", "version" for STIG benchmarks, or "cis" for CIS benchmarks');
+      }
     }
 
     if (!(_.isArray(rule.title) && rule.title.length === 1)) {
@@ -285,9 +285,9 @@ export function processXCCDF(xml: string, removeNewlines: false,
           logger.info(allComplexChecks);
         }
 
-        allComplexChecks.forEach((complexCheck) => {
+        for (const complexCheck of allComplexChecks) {
           if (complexCheck.check) {
-            complexCheck.check.forEach((check) => {
+            for (const check of complexCheck.check) {
               if (check['@_system']?.toString().toLowerCase().includes('oval')) {
                 const ovalReference = check['check-content-ref'][0]['@_name'];
                 if (!ovalDefinitions) {
@@ -319,12 +319,12 @@ export function processXCCDF(xml: string, removeNewlines: false,
               } else {
                 logger.warn(`Found external reference to unknown system: ${check['@_system']}, only OVAL is supported`);
               }
-            });
+            }
           }
-        });
+        }
       }
 
-      if (checkTexts.length >= 1) {
+      if (checkTexts.length > 0) {
         control.descs.check = checkTexts.join('\n');
       }
     }
@@ -333,24 +333,18 @@ export function processXCCDF(xml: string, removeNewlines: false,
     // fixtest, if not found, defaults to "Missing fix text"
     if (_.get(rule.fixtext, '[0]["#text"]')) {
       control.descs.fix = removeXMLSpecialCharacters(rule.fixtext[0]['#text']);
-    } else if (typeof rule.fixtext === 'undefined') {
+    } else if (rule.fixtext === undefined) {
       if (rule.fix && rule.fix[0]) {
         control.descs.fix = removeHtmlTags((rule.fix[0] as Notice)['#text'] || 'Missing fix text');
       }
     } else if (typeof rule.fixtext[0] === 'string') {
       control.descs.fix = removeHtmlTags(rule.fixtext[0]);
     } else if (typeof rule.fixtext[0] === 'object') {
-      if (Array.isArray(rule.fixtext[0])) {
-        control.descs.fix = removeHtmlTags(prettify(convertJsonIntoXML(rule.fixtext[0].map((fixtext: any) => {
-          if (fixtext.div) {
-            return fixtext.div;
-          } else {
-            return fixtext;
-          }
-        }))));
-      } else {
-        control.descs.fix = removeHtmlTags(removeXMLSpecialCharacters(prettify(convertJsonIntoXML(rule.fixtext)))).replace('\n', ' ').trim();
-      }
+      control.descs.fix = Array.isArray(rule.fixtext[0])
+        ? removeHtmlTags(prettify(convertJsonIntoXML(rule.fixtext[0].map((fixtext: any) => {
+          return fixtext.div ? fixtext.div : fixtext;
+        }))))
+        : removeHtmlTags(removeXMLSpecialCharacters(prettify(convertJsonIntoXML(rule.fixtext)))).replace('\n', ' ').trim();
     } else {
       control.descs.fix = 'Missing fix text';
     }
@@ -385,7 +379,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
     //   "MitigationControl", "Responsibility", "IAControls"
     if (typeof extractedDescription === 'object') {
       control.tags.satisfies
-        = extractedDescription.VulnDiscussion?.includes('Satisfies: ') && extractedDescription.VulnDiscussion.split('Satisfies: ').length >= 1
+        = extractedDescription.VulnDiscussion?.includes('Satisfies: ') && extractedDescription.VulnDiscussion.split('Satisfies: ').length > 0
           ? extractedDescription.VulnDiscussion.split('Satisfies: ')[1].split(',').map(satisfaction => satisfaction.trim())
           : undefined;
       control.tags.false_negatives = extractedDescription.FalseNegatives || undefined;
@@ -422,7 +416,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
 
     // Get all identifiers from the rule; cci, nist, and legacy
     if (rule.ident) {
-      rule.ident.forEach((identifier) => {
+      for (const identifier of rule.ident) {
         // Get CCIs
         if (identifier['@_system'][0].toLowerCase().includes('cci')) {
           if (!('cci' in control.tags)) {
@@ -440,11 +434,11 @@ export function processXCCDF(xml: string, removeNewlines: false,
           }
           control.tags.nist?.push(identifier['#text']);
         }
-      });
+      }
     }
 
     // Update control references with content from the benchmark rule object
-    rule.reference?.forEach((reference) => {
+    if (rule.reference) for (const reference of rule.reference) {
       if (_.get(reference, '@_href') === '') {
         control.refs?.push(_.get(reference, '#text', 'undefined href'));
       } else {
@@ -475,7 +469,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
             }
           }
           // Add the reference to the control tags when separated by §
-          if (typeof referenceText === 'string' && referenceText.indexOf('§') !== -1) {
+          if (typeof referenceText === 'string' && referenceText.includes('§')) {
             const referenceParts = referenceText.split('§');
             if (referenceParts.length == 2) {
               // eslint-disable-next-line  prefer-const
@@ -492,13 +486,13 @@ export function processXCCDF(xml: string, removeNewlines: false,
               logger.warn('Reference parts of invalid length: ', referenceParts);
             }
           }
-        } catch (e) {
+        } catch (error) {
           logger.warn(`Error parsing ref for control ${control.id}: `);
           logger.warn(JSON.stringify(reference, null, 2));
-          logger.warn(e);
+          logger.warn(error);
         }
       }
-    });
+    }
 
     // Associate any CCIs with NIST tags
     if (control.tags.cci) {
@@ -513,7 +507,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
     }
 
     profile.controls.push(control);
-  });
+  }
 
   profile.controls = _.sortBy(profile.controls, 'id');
 

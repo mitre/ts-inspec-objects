@@ -35,82 +35,78 @@ export function createDiffMarkdown(
     updatedDescriptions: [] as DiffValues,
   };
 
-  Object.entries(diff.ignoreFormattingDiff.renamedControlIDs).forEach(
-    ([oldId, newId]) => {
-      renderableDiffData.hasRenamedControls = true;
-      renderableDiffData.renamedControls.push({
-        oldId: oldId,
-        newId: newId,
-      });
-    },
-  );
+  for (const [oldId, newId] of Object.entries(diff.ignoreFormattingDiff.renamedControlIDs)) {
+    renderableDiffData.hasRenamedControls = true;
+    renderableDiffData.renamedControls.push({
+      oldId: oldId,
+      newId: newId,
+    });
+  }
 
-  Object.entries((diff.rawDiff as ProfileDiff).changedControls).forEach(
-    ([id, controlDiff]) => {
-      if (controlDiff.descs?.check) {
-        const oldCheck = _.get(controlDiff.descs.check, '__old', 'undefined') as string;
-        const newCheck = _.get(controlDiff.descs.check, '__new', 'undefined') as string;
-        if (
-          oldCheck.replace(/\n/g, '').replace(/\W/g, '')
-          !== newCheck.replace(/\n/g, '').replace(/\W/g, '')
-        ) {
-          renderableDiffData.updatedChecks.push({
-            id: id,
-            old: oldCheck,
-            new: newCheck,
-          });
-        }
+  for (const [id, controlDiff] of Object.entries((diff.rawDiff as ProfileDiff).changedControls)) {
+    if (controlDiff.descs?.check) {
+      const oldCheck = _.get(controlDiff.descs.check, '__old', 'undefined') as string;
+      const newCheck = _.get(controlDiff.descs.check, '__new', 'undefined') as string;
+      if (
+        oldCheck.replaceAll('\n', '').replaceAll(/\W/g, '')
+        !== newCheck.replaceAll('\n', '').replaceAll(/\W/g, '')
+      ) {
+        renderableDiffData.updatedChecks.push({
+          id: id,
+          old: oldCheck,
+          new: newCheck,
+        });
       }
-      if (controlDiff.descs?.fix) {
-        const oldFix = _.get(controlDiff.descs.fix, '__old', 'undefined') as string;
-        const newFix = _.get(controlDiff.descs.fix, '__new', 'undefined') as string;
-        if (
-          oldFix.replace(/\n/g, '').replace(/\W/g, '')
-          !== newFix.replace(/\n/g, '').replace(/\W/g, '')
-        ) {
-          renderableDiffData.updatedFixes.push({
-            id: id,
-            old: oldFix,
-            new: newFix,
-          });
-        }
+    }
+    if (controlDiff.descs?.fix) {
+      const oldFix = _.get(controlDiff.descs.fix, '__old', 'undefined') as string;
+      const newFix = _.get(controlDiff.descs.fix, '__new', 'undefined') as string;
+      if (
+        oldFix.replaceAll('\n', '').replaceAll(/\W/g, '')
+        !== newFix.replaceAll('\n', '').replaceAll(/\W/g, '')
+      ) {
+        renderableDiffData.updatedFixes.push({
+          id: id,
+          old: oldFix,
+          new: newFix,
+        });
       }
-      if (controlDiff.impact) {
-        const oldImpact = _.get(controlDiff.impact, '__old', 'undefined') as string;
-        const newImpact = _.get(controlDiff.impact, '__new', 'undefined') as string;
-        if (oldImpact !== newImpact) {
-          renderableDiffData.updatedImpacts.push({
-            id: id,
-            old: oldImpact,
-            new: newImpact,
-          });
-        }
+    }
+    if (controlDiff.impact) {
+      const oldImpact = _.get(controlDiff.impact, '__old', 'undefined') as string;
+      const newImpact = _.get(controlDiff.impact, '__new', 'undefined') as string;
+      if (oldImpact !== newImpact) {
+        renderableDiffData.updatedImpacts.push({
+          id: id,
+          old: oldImpact,
+          new: newImpact,
+        });
       }
-      if (controlDiff.title) {
-        const oldTitle = _.get(controlDiff.title, '__old', 'undefined') as string;
-        const newTitle = _.get(controlDiff.title, '__new', 'undefined') as string;
-        if (oldTitle !== newTitle) {
-          renderableDiffData.updatedTitles.push({
-            id: id,
-            old: oldTitle,
-            new: newTitle,
-          });
-        }
+    }
+    if (controlDiff.title) {
+      const oldTitle = _.get(controlDiff.title, '__old', 'undefined') as string;
+      const newTitle = _.get(controlDiff.title, '__new', 'undefined') as string;
+      if (oldTitle !== newTitle) {
+        renderableDiffData.updatedTitles.push({
+          id: id,
+          old: oldTitle,
+          new: newTitle,
+        });
       }
+    }
 
-      if (controlDiff.desc) {
-        const oldDesc = _.get(controlDiff.desc, '__old', 'undefined') as string;
-        const newDesc = _.get(controlDiff.desc, '__new', 'undefined') as string;
-        if (oldDesc !== newDesc) {
-          renderableDiffData.updatedDescriptions.push({
-            id: id,
-            old: oldDesc,
-            new: newDesc,
-          });
-        }
+    if (controlDiff.desc) {
+      const oldDesc = _.get(controlDiff.desc, '__old', 'undefined') as string;
+      const newDesc = _.get(controlDiff.desc, '__new', 'undefined') as string;
+      if (oldDesc !== newDesc) {
+        renderableDiffData.updatedDescriptions.push({
+          id: id,
+          old: oldDesc,
+          new: newDesc,
+        });
       }
-    },
-  );
+    }
+  }
 
   // Render output
   return mustache.render(template.data, renderableDiffData);

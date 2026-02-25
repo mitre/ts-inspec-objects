@@ -56,6 +56,7 @@ export default class Profile {
     release?: string;
     platform?: string;
   }[];
+
   declare depends: {
     // Required for all
     name: string; // Required for all
@@ -82,6 +83,7 @@ export default class Profile {
     // Base Compliance
     compliance?: string;
   }[];
+
   declare inputs: { [key: string]: string }[];
   declare gem_dependencies?: { name: string; version: string }[];
   declare libraries: string[];
@@ -103,9 +105,9 @@ export default class Profile {
     this.files = [];
     this.controls = [];
     if (data) {
-      Object.entries(data).forEach(([key, value]) => {
+      for (const [key, value] of Object.entries(data)) {
         _.set(this, key, value);
-      });
+      }
     }
   }
 
@@ -147,11 +149,11 @@ export default class Profile {
    */
   toUnformattedObject(): Profile {
     const unformattedProfile: Profile = new Profile(this);
-    Object.entries(this).forEach(([key, value]) => {
+    for (const [key, value] of Object.entries(this)) {
       if (typeof value === 'string') {
         _.set(unformattedProfile, key, unformatText(value));
       }
-    });
+    }
     unformattedProfile.controls = this.controls.map(control => control.toUnformattedObject());
     return unformattedProfile;
   }

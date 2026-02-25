@@ -48,7 +48,7 @@ export function wrap(s: string, lineLength = 80): string {
  * @returns The unformatted string with newline characters and excessive whitespace removed.
  */
 export function unformatText(s: string): string {
-  return s.replace(/\n/g, ' ').replace(/\\n/g, ' ').replace(/( +|\t)/g, ' ');
+  return s.replaceAll('\n', ' ').replaceAll(String.raw`\n`, ' ').replaceAll(/( +|\t)/g, ' ');
 }
 
 /**
@@ -58,7 +58,7 @@ export function unformatText(s: string): string {
  * @returns A new string with all whitespace characters removed.
  */
 export function removeWhitespace(input: string): string {
-  return input.replace(/\s/gi, '');
+  return input.replaceAll(/\s/gi, '');
 }
 
 /**
@@ -73,7 +73,7 @@ export function removeWhitespace(input: string): string {
  * @returns A new string with the specified backslashes escaped.
  */
 const escapeSpecialCaseBackslashes = (s: string) => {
-  return s.replace(/\\\)/g, '\\\\)');
+  return s.replaceAll(String.raw`\)`, String.raw`\\)`);
 };
 
 /**
@@ -86,7 +86,7 @@ const escapeSpecialCaseBackslashes = (s: string) => {
  * @returns The escaped string with single quotes and backslashes properly escaped.
  */
 const escapeSingleQuotes = (s: string) => {
-  return s.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+  return s.replaceAll('\\', '\\\\').replaceAll('\'', String.raw`\'`);
 };
 
 /**
@@ -99,7 +99,7 @@ const escapeSingleQuotes = (s: string) => {
  * @returns The escaped string with backslashes and double quotes properly escaped.
  */
 const escapeDoubleQuotes = (s: string) => {
-  return s.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+  return s.replaceAll('\\', '\\\\').replaceAll('"', String.raw`\"`);
 };
 
 /**
@@ -129,7 +129,7 @@ export function escapeQuotes(s: string): string {
  * @returns The modified string with placeholders replaced by newline characters.
  */
 export function removeNewlinePlaceholders(s: string): string {
-  return s.replace(/\{\{\{\{newlineHERE\}\}\}\}/g, '\n');
+  return s.replaceAll('{{{{newlineHERE}}}}', '\n');
 }
 
 /**
@@ -167,11 +167,7 @@ export function hasPath(
   path: string | string[],
 ): boolean {
   let pathArray;
-  if (typeof path === 'string') {
-    pathArray = [path];
-  } else {
-    pathArray = path;
-  }
+  pathArray = typeof path === 'string' ? [path] : path;
 
   return _.some(pathArray, p => _.has(file, p));
 }

@@ -3,26 +3,17 @@ import path from 'path';
 import { describe, expect, it } from 'vitest';
 import { processInSpecProfile } from '../../src/index';
 
-const TEST_USE_CASES = new Map();
-TEST_USE_CASES.set('SV-204392', 'should correctly write the control structure using single quote string as suggested by cookstyle');
-TEST_USE_CASES.set('SV-204474', 'should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle');
-TEST_USE_CASES.set('SV-205653', 'should properly write a control with simple description block');
-TEST_USE_CASES.set('SV-205734', 'should properly write a control with embedded %q() cookstyle formatting');
-TEST_USE_CASES.set('SV-230385', 'should extract describe block that includes keywords (e.g., tag, impact).');
-TEST_USE_CASES.set('V-92975', 'should properly write a control with complicated and long describe block');
-TEST_USE_CASES.set('V-92979', 'should properly write a control with long tag arrays');
-TEST_USE_CASES.set('V-93033', 'should properly write a control with comments in the describe block');
-TEST_USE_CASES.set('V-93149', 'should properly write a control with special characters in the desc block');
+const TEST_USE_CASES = new Map([['SV-204392', 'should correctly write the control structure using single quote string as suggested by cookstyle'], ['SV-204474', 'should properly write a control with complicated fix text using %q() ruby annotation as suggested by cookstyle'], ['SV-205653', 'should properly write a control with simple description block'], ['SV-205734', 'should properly write a control with embedded %q() cookstyle formatting'], ['SV-230385', 'should extract describe block that includes keywords (e.g., tag, impact).'], ['V-92975', 'should properly write a control with complicated and long describe block'], ['V-92979', 'should properly write a control with long tag arrays'], ['V-93033', 'should properly write a control with comments in the describe block'], ['V-93149', 'should properly write a control with special characters in the desc block']]);
 
 describe('The control functionality', () => {
-  const cookstyle_profile = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/cookstyle-controls-profile.json', 'utf-8'));
+  const cookstyle_profile = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/cookstyle-controls-profile.json', 'utf8'));
 
-  const allKeys = [...TEST_USE_CASES.keys()];
-  cookstyle_profile.controls.forEach((control) => {
-    if (allKeys.includes(control.id)) {
+  const allKeys = new Set(TEST_USE_CASES.keys());
+  for (const control of cookstyle_profile.controls) {
+    if (allKeys.has(control.id)) {
       fs.writeFileSync(path.join('test/sample_data/', 'controls-test-results', `${control.id}.rb`), control.toRuby(true));
     }
-  });
+  }
 
   // These checks are comparing what the function "toRuby" is outputting with a small sample profile created from
   // the controls in the 'controls' folder, it generates the controls and compares with expected controls
@@ -50,11 +41,11 @@ describe('The control functionality', () => {
   //   The "expected" files were generated using end of line characters (CRLF).
   //   We remove all CR from both files before comparing
 
-  TEST_USE_CASES.forEach((value, key) => {
-    const generated = fs.readFileSync(path.join('test/sample_data/controls-test-results', `${key}.rb`), 'utf-8');
-    const expected = fs.readFileSync(path.join('test/sample_data/controls-cookstyle/inputs-interpolation', `${key}.rb`), 'utf-8');
+  for (const [key, value] of TEST_USE_CASES.entries()) {
+    const generated = fs.readFileSync(path.join('test/sample_data/controls-test-results', `${key}.rb`), 'utf8');
+    const expected = fs.readFileSync(path.join('test/sample_data/controls-cookstyle/inputs-interpolation', `${key}.rb`), 'utf8');
     it(value, () => {
-      expect(generated.replace(/\r/gi, '')).toEqual(expected.replace(/\r/gi, ''));
+      expect(generated.replaceAll(/\r/gi, '')).toEqual(expected.replaceAll(/\r/gi, ''));
     });
-  });
+  }
 });

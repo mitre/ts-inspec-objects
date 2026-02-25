@@ -7,25 +7,25 @@ import { processInSpecProfile } from '../../src/parsers/json';
 
 const thisLogger = createWinstonLogger('ts-inspec-objects');
 
-const V1R2 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_8_STIG_V1R2_Manual-xccdf.xml', 'utf-8'), false, 'group');
-const V1R3 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_8_STIG_V1R3_Manual-xccdf.xml', 'utf-8'), false, 'group');
+const V1R2 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_8_STIG_V1R2_Manual-xccdf.xml', 'utf8'), false, 'group');
+const V1R3 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_8_STIG_V1R3_Manual-xccdf.xml', 'utf8'), false, 'group');
 
-const V2R6 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/RHEL7-V2R6-Profile.json', 'utf-8'));
-const V2R7 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_7_STIG_V2R7_Manual-xccdf.xml', 'utf-8'), false, 'group');
+const V2R6 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/RHEL7-V2R6-Profile.json', 'utf8'));
+const V2R7 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_7_STIG_V2R7_Manual-xccdf.xml', 'utf8'), false, 'group');
 
-const V3R7 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r7-mini-sample-profile.json', 'utf-8'));
-const V3R6 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r6-mini-profile.json', 'utf-8'));
-const V3R8_rule = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml', 'utf-8'), false, 'rule');
-const V3R8_group = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml', 'utf-8'), false, 'group');
+const V3R7 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r7-mini-sample-profile.json', 'utf8'));
+const V3R6 = processInSpecProfile(fs.readFileSync('test/sample_data/inspec/json/rhel-7-v3r6-mini-profile.json', 'utf8'));
+const V3R8_rule = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml', 'utf8'), false, 'rule');
+const V3R8_group = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/rhel-7-v3r8-mini-sample-xxcdf.xml', 'utf8'), false, 'group');
 
 describe('The diff utils', () => {
   it('Successfully finds the difference between RHEL 8 V1R2 XCCDF and V1R3 XCCDF', () => {
-    const expected = JSON.parse(fs.readFileSync('test/sample_data/diffs/RHEL8_V1R2_V1R3.json', 'utf-8'));
+    const expected = JSON.parse(fs.readFileSync('test/sample_data/diffs/RHEL8_V1R2_V1R3.json', 'utf8'));
     expect(diffProfile(V1R2, V1R3, thisLogger)).toEqual(expected);
   });
 
   it('Successfully finds the difference between a RHEL 7 V2R6 InSpec Profile and V2R7 XCCDF', () => {
-    const expected = JSON.parse(fs.readFileSync('test/sample_data/diffs/RHEL7_V2R6_V2R7.json', 'utf-8'));
+    const expected = JSON.parse(fs.readFileSync('test/sample_data/diffs/RHEL7_V2R6_V2R7.json', 'utf8'));
     expect(diffProfile(V2R6, V2R7, thisLogger)).toEqual(expected);
   });
 });

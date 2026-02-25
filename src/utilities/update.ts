@@ -112,13 +112,12 @@ function getRangesForLines(text: string): number[][] {
   const ranges: number[][] = [];
 
   const lines = text.split('\n');
-  for (let i = 0; i < lines.length; i++) {
+  for (const [i, line] of lines.entries()) {
     let j = 0;
-    while (j < lines[i].length) {
-      const line = lines[i];
+    while (j < line.length) {
       let char = line[j];
 
-      const isEmptyStack = (stack.length == 0);
+      const isEmptyStack = (stack.length === 0);
       const isNotEmptyStack = (stack.length > 0);
 
       const isQuoteChar = quotes.includes(char);
@@ -159,12 +158,12 @@ function getRangesForLines(text: string): number[][] {
       char = line[j];
 
       baseCondition = (isNotEmptyStack && isNotEscapeChar);
-      const delimiterCondition = (baseCondition && Object.keys(stringDelimiters).includes(stack[stack.length - 1]));
-      const delimiterPushCondition = (delimiterCondition && (stack[stack.length - 1] == char));
-      const delimiterPopCondition = (delimiterCondition && (stringDelimiters[stack[stack.length - 1] as string] == char));
-      const basePopCondition = (baseCondition && (stack[stack.length - 1] == char) && !Object.keys(stringDelimiters).includes(char));
+      const delimiterCondition = (baseCondition && Object.keys(stringDelimiters).includes(stack.at(-1)!));
+      const delimiterPushCondition = (delimiterCondition && (stack.at(-1) == char));
+      const delimiterPopCondition = (delimiterCondition && (stringDelimiters[stack.at(-1) as string] == char));
+      const basePopCondition = (baseCondition && (stack.at(-1) == char) && !Object.keys(stringDelimiters).includes(char));
       const isCommentEndChar = ((j == 0) && (line.length >= 4) && (line.slice(0, 4) == '=end'));
-      const commentEndCondition = (baseCondition && isCommentEndChar && (stack[stack.length - 1] == '=begin'));
+      const commentEndCondition = (baseCondition && isCommentEndChar && (stack.at(-1) == '=begin'));
 
       const popCondition = (basePopCondition || delimiterPopCondition || commentEndCondition);
       const pushCondition = (quotePushCondition || variablePushCondition || stringPushCondition
@@ -172,9 +171,9 @@ function getRangesForLines(text: string): number[][] {
 
       if (popCondition) {
         stack.pop();
-        rangeStack[rangeStack.length - 1].push(i);
+        rangeStack.at(-1)!.push(i);
         const range_ = rangeStack.pop() as number[];
-        if (rangeStack.length == 0) {
+        if (rangeStack.length === 0) {
           ranges.push(range_);
         }
       } else if (pushCondition) {
@@ -265,8 +264,8 @@ export function getExistingDescribeFromControl(control: Control): string {
     const lines = joinMultiLineStringsFromRanges(control.code, multiLineRanges);
 
     // Define RegExp for lines to skip.
-    const skip = ['control\\W', '  title\\W', '  desc\\W', '  impact\\W', '  tag\\W', '  ref\\W'];
-    const skipRegExp = RegExp(skip.map(x => `(^${x})`).join('|'));
+    const skip = [String.raw`control\W`, String.raw`  title\W`, String.raw`  desc\W`, String.raw`  impact\W`, String.raw`  tag\W`, String.raw`  ref\W`];
+    const skipRegExp = new RegExp(skip.map(x => `(^${x})`).join('|'));
 
     // Extract describe block from InSpec control with collapsed multiline strings.
     const describeBlock: string[] = [];
@@ -285,9 +284,9 @@ export function getExistingDescribeFromControl(control: Control): string {
     }
 
     // Return synthesized logic as describe block
-    const lastIndex = (describeBlock.lastIndexOf('end') === -1)
-      ? describeBlock.lastIndexOf('end\r')
-      : describeBlock.lastIndexOf('end');
+    const lastIndex = (describeBlock.includes('end'))
+      ? describeBlock.lastIndexOf('end')
+      : describeBlock.lastIndexOf('end\r');
 
     // Drop trailing ['end', '\n'] from Control block.
     return describeBlock.slice(0, lastIndex).join('\n');
@@ -381,7 +380,7 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
   const diff = diffProfile(from, using, logger);
 
   // Add the new controls
-  diff.ignoreFormattingDiff.addedControlIDs.forEach((id) => {
+  for (const id of diff.ignoreFormattingDiff.addedControlIDs) {
     const addedControl = diff.ignoreFormattingDiff.addedControls[id];
     if (addedControl) {
       logger.debug(`New Control: ${addedControl.id} - ${addedControl.title}`);
@@ -389,7 +388,7 @@ export function updateProfile(from: Profile, using: Profile, logger: winston.Log
     } else {
       throw new Error(`New control ${id} added but don't have the control data`);
     }
-  });
+  }
 
   // Update the existing controls
   for (const existingControl of from.controls) {

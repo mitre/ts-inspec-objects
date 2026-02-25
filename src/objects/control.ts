@@ -15,9 +15,9 @@ import { createWinstonLogger } from '../utilities/logging';
 export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
   if (Array.isArray(descs)) {
     const descriptions: Record<string, string | undefined> = {};
-    descs.forEach((description) => {
+    for (const description of descs) {
       descriptions[description.label] = description.data;
-    });
+    }
     return descriptions;
   }
   return descs || {};
@@ -59,6 +59,7 @@ export default class Control {
     url?: string;
     uri?: string;
   })[];
+
   declare tags: {
     check?: string;
     check_id?: string;
@@ -97,9 +98,9 @@ export default class Control {
     this.refs = [];
     this.tags = {};
     if (data) {
-      Object.entries(_.cloneDeep(data)).forEach(([key, value]) => {
+      for (const [key, value] of Object.entries(_.cloneDeep(data))) {
         _.set(this, key, value);
-      });
+      }
     }
   }
 
@@ -143,11 +144,11 @@ export default class Control {
     }
 
     if (this.descs) {
-      Object.entries(this.descs).forEach(([key, subDesc]) => {
+      for (const [key, subDesc] of Object.entries(this.descs)) {
         if (subDesc) {
           result += `  desc '${key}', "${subDesc}"\n`;
         }
-      });
+      }
     }
 
     if (this.impact) {
@@ -157,30 +158,18 @@ export default class Control {
     }
 
     if (this.refs) {
-      this.refs.forEach((ref) => {
-        if (typeof ref === 'string') {
-          result += `  ref "${ref}"\n`;
-        } else {
-          result += `  ref ${ref.ref?.toString() || ''}, url: ${ref.url || ''}`;
-        }
-      });
+      for (const ref of this.refs) {
+        result += typeof ref === 'string' ? `  ref "${ref}"\n` : `  ref ${ref.ref?.toString() || ''}, url: ${ref.url || ''}`;
+      }
     }
 
-    Object.entries(this.tags).forEach(([tag, value]) => {
+    for (const [tag, value] of Object.entries(this.tags)) {
       if (typeof value === 'object') {
-        if (Array.isArray(value) && typeof value[0] === 'string') {
-          result += `  tag ${tag}: ${JSON.stringify(value)}\n`;
-        } else {
-          result += `  tag '${tag}': ${(value == null ? 'nil' : value)}\n`;
-        }
+        result += Array.isArray(value) && typeof value[0] === 'string' ? `  tag ${tag}: ${JSON.stringify(value)}\n` : `  tag '${tag}': ${(value == undefined ? 'nil' : value)}\n`;
       } else if (typeof value === 'string') {
-        if (value.includes('"')) {
-          result += `  tag "${tag}": "${value}"\n`;
-        } else {
-          result += `  tag '${tag}': '${value}'\n`;
-        }
+        result += value.includes('"') ? `  tag "${tag}": "${value}"\n` : `  tag '${tag}': '${value}'\n`;
       }
-    });
+    }
 
     if (this.describe) {
       result += '\n';
@@ -232,7 +221,7 @@ export default class Control {
     }
 
     if (this.descs) {
-      Object.entries(this.descs).forEach(([key, subDesc]) => {
+      for (const [key, subDesc] of Object.entries(this.descs)) {
         if (subDesc) {
           if (key.match('default') && this.desc) {
             // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions.
@@ -247,7 +236,7 @@ export default class Control {
         } else if (verbose) {
           logger.warn(`${this.id} does not have a desc for the value ${key}`);
         }
-      });
+      }
     }
 
     if (this.impact !== undefined) {
@@ -271,24 +260,24 @@ export default class Control {
     //   });
     // }
 
-    Object.entries(this.tags).forEach(([tag, value]) => {
+    for (const [tag, value] of Object.entries(this.tags)) {
       if (value) {
         if (typeof value === 'object') {
           if (Array.isArray(value) && typeof value[0] === 'string') {
             // The goal is to keep the style similar to cookstyle formatting
             result += `  tag ${tag}: ${JSON.stringify(value)
-              .replace(/"/g, "'") // replace the double quotes with single quotes, ex: ["V-72029","SV-86653"] -> ['V-72029','SV-86653']
+              .replaceAll('"', "'") // replace the double quotes with single quotes, ex: ["V-72029","SV-86653"] -> ['V-72029','SV-86653']
               .split("','") // split the items in the string
               .join("', '")}\n`; // join them together using single quote and a space, ex: ['V-72029','SV-86653'] -> ['V-72029', 'SV-86653']
           } else {
             // Convert JSON Object to Ruby Hash
             const stringifiedObject = JSON.stringify(value, null, 2)
-              .replace(/\n/g, '\n  ')
-              .replace(/\{\n {6}/g, '{')
-              .replace(/\[\n {8}/g, '[')
-              .replace(/\n {6}\]/g, ']')
-              .replace(/\n {4}\}/g, '}')
-              .replace(/": \[/g, '" => [');
+              .replaceAll('\n', '\n  ')
+              .replaceAll(/\{\n {6}/g, '{')
+              .replaceAll(/\[\n {8}/g, '[')
+              .replaceAll(/\n {6}\]/g, ']')
+              .replaceAll(/\n {4}\}/g, '}')
+              .replaceAll('": [', '" => [');
             result += `  tag ${tag}: ${stringifiedObject}\n`;
           }
         } else if (typeof value === 'string') {
@@ -296,16 +285,12 @@ export default class Control {
         }
       } else {
         const nilTagList = ['severity', 'satisfies'];
-        if (nilTagList.includes(tag)) {
-          result += `  tag ${tag}: nil\n`;
-        } else {
-          result += `  tag '${tag}'\n`;
-        }
+        result += nilTagList.includes(tag) ? `  tag ${tag}: nil\n` : `  tag '${tag}'\n`;
         if (verbose) {
           logger.info(`${this.id} does not have a value for tag: ${tag}`);
         }
       }
-    });
+    }
 
     if (this.describe) {
       result += '\n';

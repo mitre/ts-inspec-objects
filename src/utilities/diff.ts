@@ -25,7 +25,7 @@ export function removeNewlines(
   }
   return _.mapValues(control, (value) => {
     if (typeof value === 'string') {
-      return value.replace(/\n/g, '{{{{newlineHERE}}}}').trim();
+      return value.replaceAll('\n', '{{{{newlineHERE}}}}').trim();
     } else if (typeof value === 'object' && value !== null) {
       return removeNewlines(value as Record<string, unknown>);
     }
@@ -75,11 +75,11 @@ export function ignoreFormattingDiff(diffData: Record<string, unknown>) {
       } else if (Array.isArray(diffValue)) {
         result[key] = diffValue
           .map(value => value[0] === '+' && value[1])
-          .filter(value => value);
+          .filter(Boolean);
       } else if (typeof diffValue === 'object') {
         result[key] = ignoreFormattingDiff(diffValue as Record<string, unknown>);
       } else if (key.endsWith('__deleted')) {
-        return undefined;
+        return;
       } else {
         result[key] = diffValue;
       }
@@ -137,7 +137,7 @@ export function diffProfile(
 
   // a diffValue has an entry for both what was subtracted ("-")
   // and what was added ("+") -- need to handle both
-  controlIDDiff?.forEach((diffValue) => {
+  if (controlIDDiff) for (const diffValue of controlIDDiff) {
     if (diffValue[0] === '-') {
       const existingControl = fromProfile.controls.find(
         control => control.id === diffValue[1],
@@ -183,7 +183,7 @@ export function diffProfile(
       profileDiff.addedControlIDs.push(diffValue[1]);
       originalDiff.addedControlIDs.push(diffValue[1]);
     }
-  });
+  }
 
   // take the list of renamed controls out of the list of added controls
   // (a control is not "new" if it was renamed)
@@ -191,7 +191,7 @@ export function diffProfile(
   originalDiff.addedControlIDs = originalDiff.addedControlIDs.filter((item: string) => !Object.values(originalDiff.renamedControlIDs).includes(item));
 
   // Add new controls to addedControls
-  profileDiff.addedControlIDs.forEach((addedControl) => {
+  for (const addedControl of profileDiff.addedControlIDs) {
     const newControl = toProfile.controls.find(
       control => addedControl === control.id,
     );
@@ -199,7 +199,7 @@ export function diffProfile(
       profileDiff.addedControls[addedControl] = newControl;
       originalDiff.addedControls[addedControl] = newControl;
     }
-  });
+  }
 
   // Find changed controls
   for (const fromControl of fromProfile.controls) {

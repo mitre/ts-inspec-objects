@@ -16,7 +16,7 @@ export function createWinstonLogger(
         // Using the ANSI escape code sequence initiator (\xb[) to change output colors
         // Colors used are: 33m (yellow) and 34m (blue)
         // \x1b[0m : Resets the color settings to the default
-        info => `\x1b[33m[${[info.timestamp]} -> ${mapperName}]:\x1b[0m \x1b[34m${info.message}\x1b[0m`,
+        info => `\u001B[33m[${[info.timestamp]} -> ${mapperName}]:\u001B[0m \u001B[34m${info.message}\u001B[0m`,
       ),
     ),
   });

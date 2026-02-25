@@ -86,9 +86,9 @@ export function convertEncodedXmlIntoJson(encodedXml: string, xmlParserOption: s
   const parser = new XMLParser(
     xmlParserOption === 'withArrayOption'
       ? withArrayOption
-      : xmlParserOption === 'withArrayNoEntitiesOption'
+      : (xmlParserOption === 'withArrayNoEntitiesOption'
         ? withArrayNoEntitiesOption
-        : noArrayOption);
+        : noArrayOption));
 
   return parser.parse(encodedXml);
 }
@@ -141,7 +141,7 @@ export function removeHtmlTags(input: string): string {
   //   $ matches the end of the string. This ensures the regex can handle
   //     cases where the tag is incomplete or unclosed (e.g., <div)
   // g: Global flag to find all matches in the input string
-  return input.replace(/<\/?[^>]+(>|$)/g, '');
+  return input.replaceAll(/<\/?[^>]+(>|$)/g, '');
 }
 
 /**
@@ -161,24 +161,24 @@ export function removeHtmlTags(input: string): string {
  * @returns The numerical impact value corresponding to the severity string.
  */
 export function severityStringToImpact(string: string): number {
-  if (RegExp(/none|na|n\/a|not[\s()*_|]?applicable/i).exec(string)?.length) {
-    return 0.0;
+  if (new RegExp(/none|na|n\/a|not[\s()*_|]?applicable/i).exec(string)?.length) {
+    return 0;
   }
 
-  if (RegExp(/low|cat(egory)?\s*(iii|3)/i).exec(string)?.length) {
+  if (new RegExp(/low|cat(egory)?\s*(iii|3)/i).exec(string)?.length) {
     return 0.3;
   }
 
-  if (RegExp(/med(ium)?|cat(egory)?\s*(ii|2)/).exec(string)?.length) {
+  if (new RegExp(/med(ium)?|cat(egory)?\s*(ii|2)/).exec(string)?.length) {
     return 0.5;
   }
 
-  if (RegExp(/high|cat(egory)?\s*(i|1)/).exec(string)?.length) {
+  if (new RegExp(/high|cat(egory)?\s*(i|1)/).exec(string)?.length) {
     return 0.7;
   }
 
-  if (RegExp(/crit(ical)?|severe/).exec(string)?.length) {
-    return 1.0;
+  if (new RegExp(/crit(ical)?|severe/).exec(string)?.length) {
+    return 1;
   }
 
   return 0.5;
@@ -198,7 +198,7 @@ export function severityStringToImpact(string: string): number {
  */
 export function impactNumberToSeverityString(impact: number): string {
   // Impact must be 0.0 - 1.0
-  if (impact < 0.0 || impact > 1.0) {
+  if (impact < 0 || impact > 1) {
     throw new Error('Impact cannot be less than 0.0 or greater than 1.0');
   } else {
     if (impact >= 0.9) {
@@ -244,7 +244,7 @@ export function impactNumberToSeverityString(impact: number): string {
 export function convertEncodedHTMLIntoJson(encodedHTML?: string): DecodedDescription {
   if (encodedHTML) {
     // Some STIGs regarding XSS put the < character inside of the description which breaks parsing
-    const patchedHTML = encodedHTML.replace(/"&lt;"/g, '[[[REPLACE_LESS_THAN]]]');
+    const patchedHTML = encodedHTML.replaceAll('"&lt;"', '[[[REPLACE_LESS_THAN]]]');
 
     const xmlChunks: string[] = [];
     const htmlParser = new htmlparser.Parser({
@@ -268,27 +268,19 @@ export function convertEncodedHTMLIntoJson(encodedHTML?: string): DecodedDescrip
           'MitigationControl', 'Responsibility', 'IAControls',
         ],
       );
-      Object.entries(remainingFields).forEach(([field, value]) => {
+      for (const [field, value] of Object.entries(remainingFields)) {
         extractedVulnDescription += `<${field}> ${value}`;
-      });
+      }
       cleaned = {
         VulnDiscussion: extractedVulnDescription.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"'),
       };
-      Object.entries(converted.VulnDiscussion).forEach(([key, value]) => {
-        if (typeof value === 'string') {
-          cleaned[key] = value.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"');
-        } else {
-          cleaned[key] = (value as boolean);
-        }
-      });
+      for (const [key, value] of Object.entries(converted.VulnDiscussion)) {
+        cleaned[key] = typeof value === 'string' ? value.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"') : (value as boolean);
+      }
     } else {
-      Object.entries(converted).forEach(([key, value]) => {
-        if (typeof value === 'string') {
-          cleaned[key] = value.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"');
-        } else {
-          cleaned[key] = (value as boolean);
-        }
-      });
+      for (const [key, value] of Object.entries(converted)) {
+        cleaned[key] = typeof value === 'string' ? value.replace(/\[\[\[REPLACE_LESS_THAN]]]/, '"<"') : (value as boolean);
+      }
     }
 
     return cleaned;
