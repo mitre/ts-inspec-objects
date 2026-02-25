@@ -123,8 +123,8 @@ export function diffProfile(
     changedControls: {},
   };
 
-  const fromControlIDs = fromProfile.controls.map(control => control.id).sort();
-  const toControlIDs = toProfile.controls.map(control => control.id).sort();
+  const fromControlIDs = fromProfile.controls.map(control => control.id).toSorted();
+  const toControlIDs = toProfile.controls.map(control => control.id).toSorted();
 
   // Find new controls
   const controlIDDiff: string[][] | undefined = diff(
