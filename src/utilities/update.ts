@@ -9,7 +9,7 @@ import Profile from '../objects/profile';
 import { ProfileDiff } from '../types/diff';
 import { processXCCDF } from '../parsers/xccdf';
 import { OvalDefinitionValue } from '../types/oval';
-import { createDiffMarkdown } from './diffMarkdown';
+import { createDiffMarkdown } from './diff-markdown';
 
 /**
  * Represents the return type of an updated profile operation.
