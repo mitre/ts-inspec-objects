@@ -46,21 +46,20 @@ export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [
  * @method toRuby
  */
 export default class Control {
-  id!: string;
-  title?: string | null;
-  code?: string | null;
-  describe?: string | null;
-  desc?: string | null;
-  descs!: { [key: string]: string | undefined };
-  impact?: number;
-  ref?: string;
-  refs?: (string | {
+  declare id: string;
+  declare title?: string | null;
+  declare code?: string | null;
+  declare describe?: string | null;
+  declare desc?: string | null;
+  declare descs: { [key: string]: string | undefined };
+  declare impact?: number;
+  declare ref?: string;
+  declare refs?: (string | {
     ref?: string;
     url?: string;
     uri?: string;
   })[];
-
-  tags: {
+  declare tags: {
     check?: string;
     check_id?: string;
     fix?: string;
@@ -86,7 +85,7 @@ export default class Control {
     responsibility?: string;
     ia_controls?: string;
     [key: string]: string | string[] | Record<string, string[]>[] | boolean | undefined | null;
-  } = {};
+  };
 
   /**
    * Constructs a new instance of the Control class.

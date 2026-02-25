@@ -38,26 +38,25 @@ import { unformatText } from '../utilities/global';
  * @public
  */
 export default class Profile {
-  name?: string | null;
-  title?: string | null;
-  maintainer?: string | null;
-  copyright?: string | null;
-  copyright_email?: string | null;
-  license?: string | null;
-  summary?: string | null;
-  description?: string | null;
-  version?: string | null;
-  inspec_version?: string | null;
-  supports: {
+  declare name?: string | null;
+  declare title?: string | null;
+  declare maintainer?: string | null;
+  declare copyright?: string | null;
+  declare copyright_email?: string | null;
+  declare license?: string | null;
+  declare summary?: string | null;
+  declare description?: string | null;
+  declare version?: string | null;
+  declare inspec_version?: string | null;
+  declare supports: {
     'platform-family'?: string;
     'platform-name'?: string;
     'os-name'?: string;
     'os-family'?: string;
     release?: string;
     platform?: string;
-  }[] = [];
-
-  depends: {
+  }[];
+  declare depends: {
     // Required for all
     name: string; // Required for all
 
@@ -82,14 +81,13 @@ export default class Profile {
 
     // Base Compliance
     compliance?: string;
-  }[] = [];
-
-  inputs: { [key: string]: string }[] = [];
-  gem_dependencies?: { name: string; version: string }[];
-  libraries: string[] = [];
-  readme?: string | null;
-  files: string[] = [];
-  controls: Control[] = [];
+  }[];
+  declare inputs: { [key: string]: string }[];
+  declare gem_dependencies?: { name: string; version: string }[];
+  declare libraries: string[];
+  declare readme?: string | null;
+  declare files: string[];
+  declare controls: Control[];
 
   /**
    * Constructs a new instance of the Profile class.
@@ -98,6 +96,12 @@ export default class Profile {
    *               The provided data will be used to set the corresponding properties on the instance.
    */
   constructor(data?: Omit<Partial<Profile>, 'controls'>) {
+    this.supports = [];
+    this.depends = [];
+    this.inputs = [];
+    this.libraries = [];
+    this.files = [];
+    this.controls = [];
     if (data) {
       Object.entries(data).forEach(([key, value]) => {
         _.set(this, key, value);
