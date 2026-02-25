@@ -343,7 +343,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
     } else if (typeof rule.fixtext[0] === 'object') {
       control.descs.fix = Array.isArray(rule.fixtext[0])
         ? removeHtmlTags(prettify(convertJsonIntoXML(rule.fixtext[0].map((fixtext: any) => {
-          return fixtext.div ? fixtext.div : fixtext;
+          return fixtext.div || fixtext;
         }))))
         : removeHtmlTags(removeXMLSpecialCharacters(prettify(convertJsonIntoXML(rule.fixtext)))).replace('\n', ' ').trim();
     } else {
