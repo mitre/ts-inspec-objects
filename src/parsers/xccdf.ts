@@ -1,6 +1,6 @@
 import { prettify } from 'htmlfy';
 import _ from 'lodash';
-import { data as CciNistMappingData } from '../mappings/cci-nist-mapping-data';
+import { data as CciNistMappingData } from '../mappings/cci_nist_mapping_data';
 import Control from '../objects/control';
 import Profile from '../objects/profile';
 import { OvalDefinitionValue } from '../types/oval';
