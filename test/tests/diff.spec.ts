@@ -5,7 +5,7 @@ import { diffProfile, processXCCDF } from '../../src/index';
 import { createWinstonLogger } from '../../src/utilities/logging';
 import { processInSpecProfile } from '../../src/parsers/json';
 
-const thisLogger = createWinstonLogger('ts-inspec-objects');
+const thisLogger = createWinstonLogger();
 
 const V1R2 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_8_STIG_V1R2_Manual-xccdf.xml', 'utf8'), false, 'group');
 const V1R3 = processXCCDF(fs.readFileSync('test/sample_data/xccdf/input/STIG/U_RHEL_8_STIG_V1R3_Manual-xccdf.xml', 'utf8'), false, 'group');

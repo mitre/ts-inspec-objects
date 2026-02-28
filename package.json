@@ -8,7 +8,6 @@
   },
   "scripts": {
     "build": "tsc -p ./tsconfig.build.json",
-    "dev": "npx -y ts-node test.ts",
     "test": "vitest",
     "test:ci": "vitest run",
     "lint": "eslint --fix",

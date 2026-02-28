@@ -1,22 +1,45 @@
-import winston from 'winston';
+import * as _ from 'lodash';
+import { createLogger, format, transports, type Logger } from 'winston';
 
-export function createWinstonLogger(
-  mapperName: string,
-  level = 'debug',
-): winston.Logger {
-  return winston.createLogger({
-    transports: [new winston.transports.Console()],
+// Use user defined colors. Used by the console log transporter
+const syslogColors = {
+  debug: 'blue',
+  info: 'cyan',
+  notice: 'white',
+  warn: 'magenta',
+  warning: 'bold magenta',
+  error: 'bold red',
+  verbose: 'blue',
+  crit: 'inverse yellow',
+  alert: 'bold inverse red',
+  emerg: 'bold inverse magenta',
+  prefix: 'yellow',
+};
+
+export function createWinstonLogger(library = 'inspec-objects', level = 'debug'): Logger {
+  const colorizer = format.colorize({ colors: syslogColors });
+  return createLogger({
     level: level,
-    format: winston.format.combine(
-      winston.format.simple(),
-      winston.format.timestamp({
+    transports: [new transports.Console()],
+    format: format.combine(
+      format.timestamp({
         format: 'MMM-DD-YYYY HH:mm:ss Z',
       }),
-      winston.format.printf(
-        // Using the ANSI escape code sequence initiator (\xb[) to change output colors
-        // Colors used are: 33m (yellow) and 34m (blue)
-        // \x1b[0m : Resets the color settings to the default
-        info => `\u001B[33m[${[info.timestamp]} -> ${mapperName}]:\u001B[0m \u001B[34m${info.message}\u001B[0m`,
+      format.errors({ stack: true }),
+      format.printf(
+        (info) => {
+          const prefix = colorizer.colorize('prefix', `[${info.timestamp as string} -> ${library}]`);
+          const lvl = colorizer.colorize(info.level, info.level);
+          let msg = '';
+          if (info.message) {
+            msg = _.isString(info.message) ? info.message : JSON.stringify(info.message, null, 2);
+          }
+          if (info.stack) {
+            msg += `\n${_.isString(info.stack) ? info.stack : JSON.stringify(info.stack, null, 2)}`;
+          }
+          msg = colorizer.colorize(info.level, msg);
+          return `${prefix} - ${lvl}: ${msg}`;
+        },
       ),
     ),
   });

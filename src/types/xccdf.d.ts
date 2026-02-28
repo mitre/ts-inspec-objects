@@ -1,6 +1,6 @@
-export interface ParsedXCCDF {
+export type ParsedXCCDF = {
   Benchmark: Benchmark[];
-}
+};
 
 /**
  * Represents a Benchmark in the XCCDF (Extensible Configuration Checklist Description Format) standard.
@@ -31,7 +31,7 @@ export interface ParsedXCCDF {
  * @property {Metadatum[]} [metadata] - Optional array of metadata elements.
  * @property {Model[]} [model] - Optional array of models associated with the Benchmark.
  */
-export interface Benchmark {
+export type Benchmark = {
   '@_xmlns:dsig'?: string;
   '@_xmlns:xsi': string;
   '@_xmlns:cpe'?: string;
@@ -57,14 +57,14 @@ export interface Benchmark {
   platform?: Platform[];
   metadata?: Metadatum[];
   model?: Model[];
-}
+};
 
 export enum XMLLang {
   En = 'en',
   EnUS = 'en-US',
 }
 
-export interface BenchmarkGroup {
+export type BenchmarkGroup = {
   '@_id': string;
   title: FrontMatter[] | string;
   description: FrontMatter[] | CunningDescription;
@@ -72,9 +72,9 @@ export interface BenchmarkGroup {
   Value?: HilariousValue[];
   platform?: Platform[];
   Group?: BenchmarkGroup[];
-}
+};
 
-export interface FluffyGroup {
+export type FluffyGroup = {
   '@_id': string;
   title: FrontMatter[];
   description: IndecentDescription[];
@@ -83,9 +83,9 @@ export interface FluffyGroup {
   platform?: Platform[];
   Value?: StickyValue[];
   warning?: FrontMatter[];
-}
+};
 
-export interface TentacledGroup {
+export type TentacledGroup = {
   '@_id': string;
   title: FrontMatter[];
   description: StickyDescription[];
@@ -94,9 +94,9 @@ export interface TentacledGroup {
   platform?: Platform[];
   Rule?: TentacledRule[];
   warning?: FrontMatter[];
-}
+};
 
-export interface StickyGroup {
+export type StickyGroup = {
   '@_id': string;
   title: FrontMatter[];
   description: FluffyDescription[];
@@ -105,17 +105,17 @@ export interface StickyGroup {
   Value?: PurpleValue[];
   Group?: IndigoGroup[];
   warning?: FrontMatter[];
-}
+};
 
-export interface IndigoGroup {
+export type IndigoGroup = {
   '@_id': string;
   title: FrontMatter[];
   description: RationaleElement[];
   platform?: Platform[];
   Rule?: PurpleRule[];
-}
+};
 
-export interface PurpleRule {
+export type PurpleRule = {
   '@_id': string;
   '@_selected': string;
   '@_severity': Severity;
@@ -127,7 +127,7 @@ export interface PurpleRule {
   conflicts: Platform[];
   fix: Notice[];
   check: PurpleCheck[];
-}
+};
 
 export enum Severity {
   High = 'high',
@@ -136,21 +136,21 @@ export enum Severity {
   Unknown = 'unknown',
 }
 
-export interface PurpleCheck {
+export type PurpleCheck = {
   '@_system': string;
   'check-content-ref': CheckContentRef[];
-}
+};
 
-export interface CheckContentRef {
+export type CheckContentRef = {
   '@_name'?: string;
   '@_href': string;
-}
+};
 
-export interface Platform {
+export type Platform = {
   '@_idref': string;
-}
+};
 
-export interface FrontMatter {
+export type FrontMatter = {
   '#text': string;
   '@_xmlns:xhtml'?: string;
   '@_xml:lang': XMLLang;
@@ -160,7 +160,7 @@ export interface FrontMatter {
   'html:a'?: HTMLA[];
   '@_override'?: string;
   '@_id'?: string;
-}
+};
 
 export enum Category {
   Dependency = 'dependency',
@@ -170,28 +170,28 @@ export enum Category {
   Regulatory = 'regulatory',
 }
 
-export interface HTMLA {
+export type HTMLA = {
   '#text': string;
   '@_xmlns:html': string;
   '@_href': string;
-}
+};
 
-export interface HTMLBr {
+export type HTMLBr = {
   '@_xmlns:html': string;
-}
+};
 
-export interface HTMLEmElement {
+export type HTMLEmElement = {
   '#text': string;
   '@_xmlns:html': string;
-}
+};
 
-export interface Notice {
+export type Notice = {
   '#text'?: string;
   '@_xmlns:xhtml'?: string;
   '@_id': string;
   '@_system'?: System;
   '@_xml:lang'?: XMLLang;
-}
+};
 
 export enum System {
   UrnRedhatOsbuildBlueprint = 'urn:redhat:osbuild:blueprint',
@@ -201,12 +201,12 @@ export enum System {
   UrnXccdfFixScriptSh = 'urn:xccdf:fix:script:sh',
 }
 
-export interface HTMLAElement {
+export type HTMLAElement = {
   '#text': string;
   '@_href': string;
-}
+};
 
-export interface RationaleElement {
+export type RationaleElement = {
   '#text'?: string;
   p?: string;
   '@_xmlns:xhtml': string;
@@ -217,20 +217,20 @@ export interface RationaleElement {
   'html:ul'?: PurpleHTMLUL[];
   'html:a'?: HTMLA[];
   'html:em'?: HTMLEmElement[];
-}
+};
 
-export interface PurpleHTMLUL {
+export type PurpleHTMLUL = {
   '@_xmlns:html': string;
   'html:li': PurpleHTMLLi[];
-}
+};
 
-export interface PurpleHTMLLi {
+export type PurpleHTMLLi = {
   '#text': string;
   'html:pre': string;
   'html:code'?: string;
-}
+};
 
-export interface FluffyRule {
+export type FluffyRule = {
   '@_id': string;
   '@_selected': string;
   '@_severity': Severity;
@@ -241,20 +241,20 @@ export interface FluffyRule {
   platform?: Platform[];
   fix: PurpleFix[];
   check: FluffyCheck[];
-}
+};
 
-export interface FluffyCheck {
+export type FluffyCheck = {
   '@_system': string;
   'check-content-ref': CheckContentRef[];
   'check-export'?: CheckExport[];
-}
+};
 
-export interface CheckExport {
+export type CheckExport = {
   '@_export-name': string;
   '@_value-id': string;
-}
+};
 
-export interface PurpleDescription {
+export type PurpleDescription = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -263,34 +263,34 @@ export interface PurpleDescription {
   'html:br'?: HTMLBr[];
   'xccdf-1.1:sub'?: Xccdf11Sub[];
   'html:ul'?: FluffyHTMLUL[];
-}
+};
 
-export interface PurpleHTMLCode {
+export type PurpleHTMLCode = {
   '#text'?: number | string;
   '@_xmlns:html': string;
   '@_xmlns:xccdf-1.1'?: string;
   'xccdf-1.1:sub'?: Platform[];
-}
+};
 
-export interface FluffyHTMLUL {
+export type FluffyHTMLUL = {
   '@_xmlns:html': string;
   'html:li': FluffyHTMLLi[];
-}
+};
 
-export interface FluffyHTMLLi {
+export type FluffyHTMLLi = {
   'html:b': HTMLLiHTMLB[];
-}
+};
 
-export interface HTMLLiHTMLB {
+export type HTMLLiHTMLB = {
   'html:a': HTMLAElement[];
-}
+};
 
-export interface Xccdf11Sub {
+export type Xccdf11Sub = {
   '@_xmlns:xccdf-1.1': string;
   '@_idref': string;
-}
+};
 
-export interface PurpleFix {
+export type PurpleFix = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_id': string;
@@ -300,7 +300,7 @@ export interface PurpleFix {
   '@_strategy'?: Strategy;
   'xccdf-1.1:sub'?: Xccdf11Sub[];
   '@_reboot'?: string;
-}
+};
 
 export enum Strategy {
   Configure = 'configure',
@@ -309,14 +309,14 @@ export enum Strategy {
   Restrict = 'restrict',
 }
 
-export interface PurpleValue {
+export type PurpleValue = {
   '@_id': string;
   '@_type': Type;
   title: FrontMatter[];
   description: FrontMatter[];
-  value: Array<FluffyValue | number | string>;
+  value: (FluffyValue | number | string)[];
   '@_interactive'?: string;
-}
+};
 
 export enum Type {
   Boolean = 'boolean',
@@ -324,12 +324,12 @@ export enum Type {
   String = 'string',
 }
 
-export interface FluffyValue {
+export type FluffyValue = {
   '#text': number | string;
   '@_selector': string;
-}
+};
 
-export interface FluffyDescription {
+export type FluffyDescription = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -338,16 +338,16 @@ export interface FluffyDescription {
   'html:br'?: HTMLBr[];
   'html:i'?: HTMLEmElement[];
   'html:a'?: HTMLA[];
-}
+};
 
-export interface PurpleHTML {
+export type PurpleHTML = {
   '#text'?: string;
   '@_xmlns:html': string;
   'html:i'?: string;
   'html:a'?: HTMLAElement[];
-}
+};
 
-export interface TentacledRule {
+export type TentacledRule = {
   '@_id': string;
   '@_selected': string;
   '@_severity': Severity;
@@ -360,28 +360,28 @@ export interface TentacledRule {
   check?: TentacledCheck[];
   fix?: PurpleFix[];
   'complex-check'?: RuleComplexCheck[];
-}
+};
 
-export interface TentacledCheck {
+export type TentacledCheck = {
   '@_system': string;
   'check-content-ref': CheckContentRef[];
   'check-export'?: CheckExport[];
   'check-import'?: CheckImport[];
-}
+};
 
-export interface CheckImport {
+export type CheckImport = {
   '@_import-name': ImportName;
-}
+};
 
 export enum ImportName {
   Stdout = 'stdout',
 }
 
-export interface RuleComplexCheck {
+export type RuleComplexCheck = {
   '@_operator': PurpleOperator;
   'complex-check': RuleComplexCheck[];
   check: PurpleCheck[];
-}
+};
 
 export enum PurpleOperator {
   Or = 'OR',
@@ -391,7 +391,7 @@ export enum FluffyOperator {
   And = 'AND',
 }
 
-export interface TentacledDescription {
+export type TentacledDescription = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -402,48 +402,48 @@ export interface TentacledDescription {
   'html:i'?: HTMLEmElement[];
   'xccdf-1.1:sub'?: Xccdf11Sub[];
   'html:ul'?: TentacledHTMLUL[];
-}
+};
 
-export interface FluffyHTMLCode {
+export type FluffyHTMLCode = {
   '#text'?: boolean | number | string;
   '@_xmlns:html': string;
   '@_xmlns:xccdf-1.1'?: string;
   'xccdf-1.1:sub'?: Platform[];
   'html:i'?: string;
-}
+};
 
-export interface PurpleHTMLPre {
+export type PurpleHTMLPre = {
   '#text': string;
   '@_xmlns:html': string;
   '@_xmlns:xccdf-1.1'?: string;
   'xccdf-1.1:sub'?: Platform[];
   'html:i'?: HTMLIHTMLB[] | string;
   'html:code'?: string;
-}
+};
 
-export interface HTMLIHTMLB {
+export type HTMLIHTMLB = {
   'xccdf-1.1:sub': Platform[];
-}
+};
 
-export interface TentacledHTMLUL {
+export type TentacledHTMLUL = {
   '@_xmlns:html': string;
   '@_xmlns:xccdf-1.1'?: string;
-  'html:li': Array<TentacledHTMLLi | string>;
-}
+  'html:li': (TentacledHTMLLi | string)[];
+};
 
-export interface TentacledHTMLLi {
+export type TentacledHTMLLi = {
   '#text': string;
   'html:code': string;
   'html:pre': HTMLLiHTMLPreClass[];
-}
+};
 
-export interface HTMLLiHTMLPreClass {
+export type HTMLLiHTMLPreClass = {
   '#text': string;
   'html:i': string;
   'xccdf-1.1:sub': Platform[];
-}
+};
 
-export interface PurpleRationale {
+export type PurpleRationale = {
   '#text'?: string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -451,26 +451,26 @@ export interface PurpleRationale {
   'html:br'?: HTMLBr[];
   'html:code'?: HTMLEmElement[];
   'html:ul'?: StickyHTMLUL[];
-}
+};
 
-export interface StickyHTMLUL {
+export type StickyHTMLUL = {
   '@_xmlns:html': string;
   '@_xmlns:xccdf-1.1': string;
   'html:li': StickyHTMLLi[];
-}
+};
 
-export interface StickyHTMLLi {
+export type StickyHTMLLi = {
   '#text': string;
-  'html:code': Array<HTMLCodeHTMLPre | string> | string;
+  'html:code': (HTMLCodeHTMLPre | string)[] | string;
   'html:pre': HTMLCodeHTMLPre[] | string;
-}
+};
 
-export interface HTMLCodeHTMLPre {
+export type HTMLCodeHTMLPre = {
   '#text': string;
   'xccdf-1.1:sub': Platform[];
-}
+};
 
-export interface PurpleWarning {
+export type PurpleWarning = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -478,33 +478,33 @@ export interface PurpleWarning {
   'html:b'?: WarningHTMLB[];
   'html:ul'?: IndigoHTMLUL[];
   'html:code'?: HTMLEmElement[];
-}
+};
 
-export interface WarningHTMLB {
+export type WarningHTMLB = {
   '@_xmlns:html': string;
   'html:a': HTMLAElement[];
-}
+};
 
-export interface IndigoHTMLUL {
+export type IndigoHTMLUL = {
   '@_xmlns:html': string;
   'html:li': IndigoHTMLLi[];
-}
+};
 
-export interface IndigoHTMLLi {
+export type IndigoHTMLLi = {
   'html:code': string;
-}
+};
 
-export interface TentacledValue {
+export type TentacledValue = {
   '@_id': string;
   '@_type': Type;
   '@_interactive'?: string;
   title: FrontMatter[];
   description: FrontMatter[];
-  value: Array<FluffyValue | number | string> | number | string;
+  value: (FluffyValue | number | string)[] | number | string;
   warning?: FrontMatter[];
-}
+};
 
-export interface StickyDescription {
+export type StickyDescription = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -514,32 +514,32 @@ export interface StickyDescription {
   'html:ul'?: IndecentHTMLUL[];
   'html:i'?: HTMLEmElement[];
   'html:pre'?: PurpleHTML[];
-}
+};
 
-export interface FluffyHTML {
+export type FluffyHTML = {
   '@_xmlns:html': string;
   'html:a'?: HTMLAElement[];
   '#text'?: string;
-}
+};
 
-export interface IndecentHTMLUL {
+export type IndecentHTMLUL = {
   '@_xmlns:html': string;
-  'html:li': Array<IndecentHTMLLi | string>;
-}
+  'html:li': (IndecentHTMLLi | string)[];
+};
 
-export interface IndecentHTMLLi {
+export type IndecentHTMLLi = {
   'html:code': string[] | string;
   'html:br'?: string;
   'html:p'?: HTMLPElement[] | string;
   '#text'?: string;
-}
+};
 
-export interface HTMLPElement {
+export type HTMLPElement = {
   '#text': string;
   'html:code': string[];
-}
+};
 
-export interface StickyRule {
+export type StickyRule = {
   '@_id': string;
   '@_selected': string;
   '@_severity': Severity;
@@ -552,9 +552,9 @@ export interface StickyRule {
   platform?: Platform[];
   warning?: FluffyWarning[];
   requires?: Platform[];
-}
+};
 
-export interface IndigoDescription {
+export type IndigoDescription = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -566,42 +566,42 @@ export interface IndigoDescription {
   'xccdf-1.1:sub'?: Xccdf11Sub[];
   'html:ul'?: IndigoHTMLUL[];
   'html:b'?: HTMLEmElement[];
-}
+};
 
-export interface TentacledHTMLCode {
+export type TentacledHTMLCode = {
   '#text'?: boolean | number | string;
   '@_xmlns:html': string;
   'html:br'?: string[];
   'html:i'?: HTMLIHTMLB[] | string;
   '@_xmlns:xccdf-1.1'?: string;
   'xccdf-1.1:sub'?: Platform[];
-}
+};
 
-export interface FluffyHTMLPre {
+export type FluffyHTMLPre = {
   '#text': string;
   '@_xmlns:html': string;
   '@_xmlns:xccdf-1.1'?: string;
   'xccdf-1.1:sub'?: Platform[];
-  'html:i'?: Array<HTMLIHTMLB | string> | string;
+  'html:i'?: (HTMLIHTMLB | string)[] | string;
   'html:code'?: string[] | string;
   'html:b'?: HTMLIHTMLB[];
-}
+};
 
-export interface FluffyRationale {
+export type FluffyRationale = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
   'html:code'?: RationaleHTMLCode[];
   'html:br'?: HTMLBr[];
   'html:pre'?: HTMLEmElement[];
-}
+};
 
-export interface RationaleHTMLCode {
+export type RationaleHTMLCode = {
   '#text': number | string;
   '@_xmlns:html': string;
-}
+};
 
-export interface FluffyWarning {
+export type FluffyWarning = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -610,34 +610,34 @@ export interface FluffyWarning {
   'html:ul'?: HilariousHTMLUL[];
   'html:pre'?: HTMLEmElement[];
   'html:b'?: WarningHTMLB[];
-}
+};
 
-export interface HilariousHTMLUL {
+export type HilariousHTMLUL = {
   '@_xmlns:html': string;
-  'html:li': Array<HilariousHTMLLi | string>;
-}
+  'html:li': (HilariousHTMLLi | string)[];
+};
 
-export interface HilariousHTMLLi {
+export type HilariousHTMLLi = {
   'html:code': string[] | string;
   '#text'?: string;
-}
+};
 
-export interface StickyValue {
+export type StickyValue = {
   '@_id': string;
   '@_type': Type;
   '@_interactive'?: string;
   title: FrontMatter[];
   description: FrontMatter[];
-  value: Array<boolean | IndigoValue | number | string> | string;
+  value: (boolean | IndigoValue | number | string)[] | string;
   '@_operator'?: string;
-}
+};
 
-export interface IndigoValue {
+export type IndigoValue = {
   '#text': boolean | number | string;
   '@_selector': string;
-}
+};
 
-export interface IndecentDescription {
+export type IndecentDescription = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -648,26 +648,26 @@ export interface IndecentDescription {
   'html:br'?: HTMLBr[];
   'html:b'?: FluffyHTML[];
   'html:pre'?: PurpleHTML[];
-}
+};
 
-export interface HTMLIClass {
+export type HTMLIClass = {
   '#text': string;
   '@_xmlns:html': string;
   'html:code'?: string[];
-}
+};
 
-export interface AmbitiousHTMLUL {
+export type AmbitiousHTMLUL = {
   '@_xmlns:html': string;
-  'html:li': Array<AmbitiousHTMLLi | string>;
-}
+  'html:li': (AmbitiousHTMLLi | string)[];
+};
 
-export interface AmbitiousHTMLLi {
+export type AmbitiousHTMLLi = {
   '#text': string;
   'html:code': string[] | string;
   'html:pre'?: string;
-}
+};
 
-export interface IndigoRule {
+export type IndigoRule = {
   '@_id': string;
   '@_selected': string;
   '@_severity': Severity;
@@ -680,9 +680,9 @@ export interface IndigoRule {
   platform?: Platform[];
   fix?: PurpleFix[];
   requires?: Platform[];
-}
+};
 
-export interface HilariousDescription {
+export type HilariousDescription = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -692,17 +692,17 @@ export interface HilariousDescription {
   'html:a'?: HTMLA[];
   'xccdf-1.1:sub'?: Xccdf11Sub[];
   'html:em'?: HTMLEmElement[];
-}
+};
 
-export interface TentacledHTMLPre {
+export type TentacledHTMLPre = {
   '#text': string;
   '@_xmlns:html': string;
   '@_xmlns:xccdf-1.1'?: string;
   'xccdf-1.1:sub'?: Platform[];
   'html:i'?: string;
-}
+};
 
-export interface TentacledWarning {
+export type TentacledWarning = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -710,18 +710,18 @@ export interface TentacledWarning {
   'html:code'?: HTMLEmElement[];
   'html:pre'?: HTMLEmElement[];
   'html:ul'?: PurpleHTMLUL[];
-}
+};
 
-export interface IndecentValue {
+export type IndecentValue = {
   '@_id': string;
   '@_type': Type;
   title: FrontMatter[];
   description: FrontMatter[];
-  value: Array<boolean | IndigoValue | number | string> | number;
+  value: (boolean | IndigoValue | number | string)[] | number;
   '@_interactive'?: string;
-}
+};
 
-export interface AmbitiousDescription {
+export type AmbitiousDescription = {
   '#text': string;
   '@_xmlns:xhtml': string;
   '@_xml:lang': XMLLang;
@@ -731,24 +731,24 @@ export interface AmbitiousDescription {
   'html:ul'?: CunningHTMLUL[];
   'html:i'?: HTMLEmElement[];
   'html:a'?: HTMLA[];
-}
+};
 
-export interface CunningHTMLUL {
+export type CunningHTMLUL = {
   '@_xmlns:html': string;
-  'html:li': Array<CunningHTMLLi | string>;
-}
+  'html:li': (CunningHTMLLi | string)[];
+};
 
-export interface CunningHTMLLi {
+export type CunningHTMLLi = {
   'html:code': string;
   'html:ul': HTMLLiHTMLUL[];
   '#text'?: string;
-}
+};
 
-export interface HTMLLiHTMLUL {
+export type HTMLLiHTMLUL = {
   'html:li': HilariousHTMLLi[] | string;
-}
+};
 
-export interface BenchmarkRule {
+export type BenchmarkRule = {
   '@_id': string;
   '@_severity': Severity;
   '@_weight': string;
@@ -762,40 +762,40 @@ export interface BenchmarkRule {
   fix: FluffyFix[];
   check: CheckContent[];
   'complex-check'?: RuleComplexCheck[];
-}
+};
 
-export interface CheckContent {
+export type CheckContent = {
   '@_system': string;
   'check-content-ref': CheckContentRef[];
   'check-content': string;
-}
+};
 
-export interface FluffyFix {
+export type FluffyFix = {
   '@_id': string;
-}
+};
 
-export interface Rationale {
+export type Rationale = {
   '#text': string;
   '@_fixref': string;
-}
+};
 
-export interface Fixtext {
+export type Fixtext = {
   '#text': string;
   '@_fixref': string;
-}
+};
 
-export interface Ident {
+export type Ident = {
   '#text': string;
   '@_system': string;
-}
+};
 
-export interface PurpleReference {
+export type PurpleReference = {
   'dc:title': DcTitle;
   'dc:publisher': DcPublisher;
   'dc:type': DcType;
   'dc:subject': DcSubject;
   'dc:identifier': number;
-}
+};
 
 export enum DcPublisher {
   Disa = 'DISA',
@@ -815,7 +815,7 @@ export enum DcType {
   DPMSTarget = 'DPMS Target',
 }
 
-export interface HilariousValue {
+export type HilariousValue = {
   '@_id': string;
   '@_hidden': string;
   '@_prohibitChanges': string;
@@ -824,7 +824,7 @@ export interface HilariousValue {
   title: FrontMatter[];
   description: FrontMatter[];
   value: string;
-}
+};
 
 export enum ValueOperator {
   Equals = 'equals',
@@ -834,67 +834,67 @@ export enum CunningDescription {
   LtGroupDescriptionGtLtGroupDescriptionGt = '&lt;GroupDescription&gt;&lt;/GroupDescription&gt;',
 }
 
-export interface Profile {
+export type Profile = {
   '@_id': string;
   title: FrontMatter[] | string;
   description: FrontMatter[] | MagentaDescription;
   select: Select[];
   'refine-value'?: RefineValue[];
-}
+};
 
 export enum MagentaDescription {
   LtProfileDescriptionGtLtProfileDescriptionGt = '&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;',
 }
 
-export interface RefineValue {
+export type RefineValue = {
   '@_idref': string;
   '@_selector': string;
-}
+};
 
-export interface Select {
+export type Select = {
   '@_idref': string;
   '@_selected': string;
-}
+};
 
-export interface Metadatum {
+export type Metadatum = {
   '@_xmlns:xhtml': string;
   'dc:publisher': Dc[];
   'dc:creator': Dc[];
   'dc:contributor': Dc[];
   'dc:source': Dc[];
-}
+};
 
-export interface Dc {
+export type Dc = {
   '#text': string;
   '@_xmlns:dc': string;
-}
+};
 
-export interface Model {
+export type Model = {
   '@_system': string;
-}
+};
 
-export interface PlainText {
+export type PlainText = {
   '#text': string;
   '@_id': string;
-}
+};
 
-export interface BenchmarkReference {
+export type BenchmarkReference = {
   '@_href': string;
   'dc:publisher': DcPublisher;
   'dc:source': string;
-}
+};
 
-export interface Status {
+export type Status = {
   '#text': string;
   '@_date': Date;
-}
+};
 
-export interface VersionElement {
+export type VersionElement = {
   '#text': string;
   '@_update': string;
-}
+};
 
-export interface DecodedDescription {
+export type DecodedDescription = {
   VulnDiscussion?: string;
   FalsePositives?: string;
   FalseNegatives?: string;
@@ -907,4 +907,4 @@ export interface DecodedDescription {
   MitigationControls?: string;
   Responsibility?: string;
   IAControls?: string;
-}
+};

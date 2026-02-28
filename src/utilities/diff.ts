@@ -1,10 +1,10 @@
 import { diff } from 'json-diff';
-import Profile from '../objects/profile';
-import { ProfileDiff } from '../types/diff';
 import _ from 'lodash';
-import { findUpdatedControlByAllIdentifiers } from './update';
-import winston from 'winston';
+import type winston from 'winston';
+import type Profile from '../objects/profile';
+import type { ProfileDiff } from '../types/diff';
 import { removeWhitespace } from './global';
+import { findUpdatedControlByAllIdentifiers } from './update';
 
 /**
  * Removes newlines from all string values within a nested object.
@@ -102,7 +102,7 @@ export function diffProfile(
   fromProfile: Profile,
   toProfile: Profile,
   logger: winston.Logger,
-): { ignoreFormattingDiff: ProfileDiff; rawDiff: Record<string, unknown> } {
+): { ignoreFormattingDiff: ProfileDiff; rawDiff: ProfileDiff } {
   logger.info(`Processing diff between: ${fromProfile.name}(v:${fromProfile.version}) and: ${toProfile.name}(v:${toProfile.version})`);
 
   const profileDiff: ProfileDiff = {
@@ -130,7 +130,7 @@ export function diffProfile(
   const controlIDDiff: string[][] | undefined = diff(
     fromControlIDs,
     toControlIDs,
-  )?.filter((item: string) => !(item.length === 1 && item[0] === ' '));
+  )?.filter((item: string[]) => !(item.length === 1 && item[0] === ' '));
 
   // Contains the new IDs
   const changedControlIds: string[] = [];
@@ -212,10 +212,10 @@ export function diffProfile(
         'code__deleted',
       );
       if (controlDiff) {
-        profileDiff.changedControls[toControl.id!] = ignoreFormattingDiff(controlDiff);
+        profileDiff.changedControls[toControl.id] = ignoreFormattingDiff(controlDiff);
         profileDiff.changedControlIDs.push(toControl.id);
 
-        originalDiff.changedControls[toControl.id!] = controlDiff;
+        originalDiff.changedControls[toControl.id] = controlDiff;
         originalDiff.changedControlIDs.push(toControl.id);
       }
     }

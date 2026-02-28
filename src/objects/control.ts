@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { ExecJSON } from 'inspecjs';
+import type { ExecJSON } from 'inspecjs';
 import { escapeQuotes } from '../utilities/global';
 import { createWinstonLogger } from '../utilities/logging';
 
@@ -12,7 +12,7 @@ import { createWinstonLogger } from '../utilities/logging';
  * @returns A dictionary where the keys are description labels and the values are description data.
  *          If the input is null or undefined, an empty dictionary is returned.
  */
-export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | { [key: string]: string | undefined } | null | undefined): { [key: string]: string | undefined } {
+export function objectifyDescriptions(descs: ExecJSON.ControlDescription[] | Record<string, string | undefined> | null | undefined): Record<string, string | undefined> {
   if (Array.isArray(descs)) {
     const descriptions: Record<string, string | undefined> = {};
     for (const description of descs) {
@@ -51,7 +51,7 @@ export default class Control {
   declare code?: string | null;
   declare describe?: string | null;
   declare desc?: string | null;
-  declare descs: { [key: string]: string | undefined };
+  declare descs: Record<string, string | undefined>;
   declare impact?: number;
   declare ref?: string;
   declare refs?: (string | {
@@ -165,7 +165,7 @@ export default class Control {
 
     for (const [tag, value] of Object.entries(this.tags)) {
       if (typeof value === 'object') {
-        result += Array.isArray(value) && typeof value[0] === 'string' ? `  tag ${tag}: ${JSON.stringify(value)}\n` : `  tag '${tag}': ${(value == undefined ? 'nil' : value)}\n`;
+        result += Array.isArray(value) && typeof value[0] === 'string' ? `  tag ${tag}: ${JSON.stringify(value)}\n` : `  tag '${tag}': ${(value == undefined ? 'nil' : JSON.stringify(value))}\n`;
       } else if (typeof value === 'string') {
         result += value.includes('"') ? `  tag "${tag}": "${value}"\n` : `  tag '${tag}': '${value}'\n`;
       }
@@ -176,7 +176,7 @@ export default class Control {
       result += this.describe;
     }
 
-    if (!result.slice(-1).match('\n')) {
+    if (!(result.slice(-1).includes('\n'))) {
       result += '\n';
     }
     result += 'end\n';
@@ -203,7 +203,7 @@ export default class Control {
    * The function ensures proper formatting and escaping of quotes for Ruby syntax.
    */
   toRuby(verbose = false): string {
-    const logger = createWinstonLogger('ts-inspec-objects');
+    const logger = createWinstonLogger();
     let result = '';
 
     result += `control '${this.id}' do\n`;
@@ -223,7 +223,7 @@ export default class Control {
     if (this.descs) {
       for (const [key, subDesc] of Object.entries(this.descs)) {
         if (subDesc) {
-          if (key.match('default') && this.desc) {
+          if ((key.includes('default')) && this.desc) {
             // The "default" keyword may have the same content as the desc content for backward compatibility with different historical InSpec versions.
             // In that case, we can ignore writing the "default" subdescription field.
             // If they are different, however, someone may be trying to use the keyword "default" for a unique subdescription, which should not be done.
@@ -297,7 +297,7 @@ export default class Control {
       result += this.describe;
     }
 
-    if (!result.slice(-1).match('\n')) {
+    if (!(result.slice(-1).includes('\n'))) {
       result += '\n';
     }
     result += 'end\n';

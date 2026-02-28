@@ -1,12 +1,10 @@
 import { prettify } from 'htmlfy';
 import _ from 'lodash';
-import { data as CciNistMappingData } from '../mappings/cci-nist-mapping-data';
+import { data as CciNistMappingData } from '../mappings/cci_nist_mapping_data';
 import Control from '../objects/control';
 import Profile from '../objects/profile';
-import { OvalDefinitionValue } from '../types/oval';
-import { BenchmarkGroup, BenchmarkRule, DecodedDescription,
-  FrontMatter, Notice, ParsedXCCDF, RationaleElement,
-  RuleComplexCheck } from '../types/xccdf';
+import type { OvalDefinitionValue } from '../types/oval';
+import type { BenchmarkGroup, BenchmarkRule, DecodedDescription, FrontMatter, Notice, ParsedXCCDF, RuleComplexCheck } from '../types/xccdf';
 import { createWinstonLogger } from '../utilities/logging';
 import {
   convertEncodedHTMLIntoJson, convertEncodedXmlIntoJson,
@@ -107,7 +105,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
   useRuleId: 'group' | 'rule' | 'version' | 'cis',
   ovalDefinitions?: Record<string,
   OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }>): Profile {
-  const logger = createWinstonLogger('ts-inspec-objects');
+  const logger = createWinstonLogger();
   const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml);
 
   if (parsedXML.Benchmark === undefined) {
@@ -129,17 +127,17 @@ export function processXCCDF(xml: string, removeNewlines: false,
         : parsedXML.Benchmark[0]['@_id'].join(' '))
       : parsedXML.Benchmark[0]['@_id'],
     title: Array.isArray(parsedXML.Benchmark[0].title)
-      ? (parsedXML.Benchmark[0].title.map(t => (t as FrontMatter)['#text']).join(' ') === ''
+      ? (parsedXML.Benchmark[0].title.map(t => t['#text']).join(' ') === ''
         ? parsedXML.Benchmark[0].title.map(t => (t as unknown as string[])).join(' ')
-        : parsedXML.Benchmark[0].title.map(t => (t as FrontMatter)['#text']).join(' '))
+        : parsedXML.Benchmark[0].title.map(t => t['#text']).join(' '))
       : parsedXML.Benchmark[0].title,
     summary: Array.isArray(parsedXML.Benchmark[0].description)
-      ? parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['#text']).join(' ') === ''
+      ? parsedXML.Benchmark[0].description.map(d => d['#text']).join(' ') === ''
         // eslint-disable-next-line unicorn/no-nested-ternary
-        ? parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['p'] || '').join(' ') === ''
+        ? parsedXML.Benchmark[0].description.map(d => d.p || '').join(' ') === ''
           ? parsedXML.Benchmark[0].description.map(d => (d as unknown as string[])).join(' ')
-          : parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['p'] || '').join(' ')
-        : parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['#text']).join(' ')
+          : parsedXML.Benchmark[0].description.map(d => d.p || '').join(' ')
+        : parsedXML.Benchmark[0].description.map(d => d['#text']).join(' ')
       : parsedXML.Benchmark[0].description,
   });
 
@@ -151,11 +149,13 @@ export function processXCCDF(xml: string, removeNewlines: false,
     //   "SeverityOverrideGuidance", "PotentialImpacts", "ThirdPartyTools",
     //   "MitigationControl", "Responsibility", "IAControls"
     let extractedDescription: string | DecodedDescription;
-    if (typeof rule.description === 'object') {
+    if (_.isString(rule.description) || _.isNil(rule.description)) {
+      extractedDescription = convertEncodedHTMLIntoJson(rule.description);
+    } else {
       if (Array.isArray(rule.description) && _.get(rule, "description[0]['#text']")) {
         extractedDescription = rule.description[0]['#text'];
       } else {
-        if (typeof _.get(rule.description, '[0].p') === 'string') {
+        if (_.isString(_.get(rule.description, '[0].p'))) {
           extractedDescription = prettify(_.get(rule.description, '[0].p'));
         } else {
           if (Array.isArray(_.get(rule.description, '[0].p'))) {
@@ -169,8 +169,6 @@ export function processXCCDF(xml: string, removeNewlines: false,
           }
         }
       }
-    } else {
-      extractedDescription = convertEncodedHTMLIntoJson(rule.description);
     }
 
     // Create a new control object and populate it with the necessary data.
@@ -234,13 +232,14 @@ export function processXCCDF(xml: string, removeNewlines: false,
       : `[[[MISSING SEVERITY or WEIGHT FROM BENCHMARK]]] ${ensureDecodedXMLStringValue(rule.title[0], 'undefined title')}`);
 
     // Update the control description (desc) with the extracted description content
-    if (typeof extractedDescription === 'object' && !Array.isArray(extractedDescription)) {
+    if (_.isObject(extractedDescription) && !Array.isArray(extractedDescription)) {
       control.desc = extractedDescription.VulnDiscussion?.split('Satisfies: ')[0] || '';
-    } else if (typeof extractedDescription === 'object') {
+    } else if (_.isArray(extractedDescription)) {
       control.desc = JSON.stringify(extractedDescription);
-    } else if (typeof extractedDescription === 'string') {
-      control.desc = extractedDescription || '';
+    } else if (_.isString(extractedDescription)) {
+      control.desc = extractedDescription;
     } else {
+      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
       logger.warn(`Invalid value for extracted description: ${extractedDescription}`);
     }
 
@@ -335,12 +334,12 @@ export function processXCCDF(xml: string, removeNewlines: false,
     if (_.get(rule.fixtext, '[0]["#text"]')) {
       control.descs.fix = removeXMLSpecialCharacters(rule.fixtext[0]['#text']);
     } else if (rule.fixtext === undefined) {
-      if (rule.fix && rule.fix[0]) {
+      if (rule.fix?.[0]) {
         control.descs.fix = removeHtmlTags((rule.fix[0] as Notice)['#text'] || 'Missing fix text');
       }
-    } else if (typeof rule.fixtext[0] === 'string') {
+    } else if (_.isString(rule.fixtext[0])) {
       control.descs.fix = removeHtmlTags(rule.fixtext[0]);
-    } else if (typeof rule.fixtext[0] === 'object') {
+    } else if (_.isObject(rule.fixtext[0])) {
       control.descs.fix = Array.isArray(rule.fixtext[0])
         ? removeHtmlTags(prettify(convertJsonIntoXML(rule.fixtext[0].map((fixtext) => {
           return fixtext.div || fixtext;
@@ -354,38 +353,38 @@ export function processXCCDF(xml: string, removeNewlines: false,
     control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium'));
     control.tags.gid = rule.group['@_id'];
     control.tags.rid = rule['@_id'];
-    control.tags.stig_id = rule['version'];
+    control.tags.stig_id = rule.version;
 
-    if (typeof rule.group.title === 'string') {
+    if (_.isString(rule.group.title)) {
       control.tags.gtitle = removeXMLSpecialCharacters(rule.group.title);
     } else {
       const gtitle = _.get(rule.group, 'title[0].#text', 'undefined title') === 'undefined title'
         ? _.get(rule.group, 'title[0]', 'undefined title')
         : _.get(rule.group, 'title[0].#text', 'undefined title');
 
-      control.tags.gtitle = typeof gtitle === 'string' ? gtitle : (gtitle as FrontMatter)['#text'] || 'undefined title';
+      control.tags.gtitle = _.isString(gtitle) ? gtitle : gtitle['#text'] || 'undefined title';
     }
 
-    if (rule['fix'] && rule['fix'].length > 0) {
-      control.tags.fix_id = rule['fix'][0]['@_id'];
+    if (rule.fix && rule.fix.length > 0) {
+      control.tags.fix_id = rule.fix[0]['@_id'];
     }
 
-    if (rule['rationale']) {
-      control.tags.rationale = rule['rationale'][0]['#text'];
+    if (rule.rationale) {
+      control.tags.rationale = rule.rationale[0]['#text'];
     }
 
     // The description tag contains the following tags as well:
     //   "FalsePositives", "FalseNegatives", "Documentable", "Mitigations",
     //   "SeverityOverrideGuidance", "PotentialImpacts", "ThirdPartyTools",
     //   "MitigationControl", "Responsibility", "IAControls"
-    if (typeof extractedDescription === 'object') {
+    if (_.isObject(extractedDescription)) {
       control.tags.satisfies
         = extractedDescription.VulnDiscussion?.includes('Satisfies: ') && extractedDescription.VulnDiscussion.split('Satisfies: ').length > 0
           ? extractedDescription.VulnDiscussion.split('Satisfies: ')[1].split(',').map(satisfaction => satisfaction.trim())
           : undefined;
       control.tags.false_negatives = extractedDescription.FalseNegatives || undefined;
       control.tags.false_positives = extractedDescription.FalsePositives || undefined;
-      control.tags.documentable = typeof extractedDescription.Documentable === 'boolean'
+      control.tags.documentable = _.isBoolean(extractedDescription.Documentable)
         ? extractedDescription.Documentable
         : undefined;
       control.tags.mitigations = extractedDescription.Mitigations || undefined;
@@ -408,7 +407,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
         } else {
           return removeXMLSpecialCharacters(value[0] as string);
         }
-      } else if (typeof value === 'string') {
+      } else if (_.isString(value)) {
         return removeXMLSpecialCharacters(value);
       } else {
         return value;
@@ -470,7 +469,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
             }
           }
           // Add the reference to the control tags when separated by §
-          if (typeof referenceText === 'string' && referenceText.includes('§')) {
+          if (_.isString(referenceText) && referenceText.includes('§')) {
             const referenceParts = referenceText.split('§');
             if (referenceParts.length == 2) {
               // eslint-disable-next-line  prefer-const

@@ -1,7 +1,7 @@
-import mustache from 'mustache';
-import { ProfileDiff } from '../types/diff';
 import _ from 'lodash';
-import template from '../resources/automatticUpdateTemplate.json';
+import mustache from 'mustache';
+import template from '../resources/automatic_update_template.json';
+import type { ProfileDiff } from '../types/diff';
 
 type DiffValues = { id: string; old: string; new: string }[];
 

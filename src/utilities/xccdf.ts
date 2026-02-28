@@ -1,9 +1,9 @@
 import { XMLParser } from 'fast-xml-parser';
-import { toXML } from 'jstoxml';
-import * as htmlparser from 'htmlparser2';
-import _ from 'lodash';
-import { DecodedDescription } from '../types/xccdf';
 import he from 'he';
+import * as htmlparser from 'htmlparser2';
+import { toXML } from 'jstoxml';
+import _ from 'lodash';
+import type { DecodedDescription } from '../types/xccdf';
 
 /**
  * Converts an encoded XML string into a JSON object using specified
@@ -55,7 +55,7 @@ import he from 'he';
  *                          - Any other value: Parses XML without array option.
  * @returns The JSON object resulting from the XML parsing.
  */
-export function convertEncodedXmlIntoJson(encodedXml: string, xmlParserOption: string = 'withArrayOption'): any {
+export function convertEncodedXmlIntoJson(encodedXml: string, xmlParserOption = 'withArrayOption'): any {
   const withArrayOption = {
     processEntities: false,
     ignoreAttributes: false,

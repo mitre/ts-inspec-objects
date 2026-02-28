@@ -1,11 +1,11 @@
 import {
-  ContextualizedEvaluation,
-  ContextualizedProfile,
   contextualizeEvaluation,
   contextualizeProfile,
-  ConversionResult,
   convertFile,
-  ExecJSON,
+  type ContextualizedEvaluation,
+  type ContextualizedProfile,
+  type ConversionResult,
+  type ExecJSON,
 } from 'inspecjs';
 import _ from 'lodash';
 import Control, { objectifyDescriptions } from '../objects/control';
@@ -85,7 +85,7 @@ export function processProfileJSON(
     }
 
     if (newControl.tags.fix && !newControl.descs.fix) {
-      _.set(newControl.descs!, 'fix', control.tags.fix);
+      _.set(newControl.descs, 'fix', control.tags.fix);
       _.set(newControl.tags, 'fix', undefined);
     }
 
