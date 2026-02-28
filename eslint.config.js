@@ -10,7 +10,7 @@ export default defineConfig([
     ignores: ['node_modules/**', 'lib/**'],
   },
   js.configs.recommended,
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommendedTypeChecked,
   unicorn.configs.recommended,
   stylistic.configs.customize({
     braceStyle: '1tbs',
@@ -19,9 +19,15 @@ export default defineConfig([
     quoteProps: 'as-needed',
     quotes: 'single',
   }),
+  tseslint.configs.stylisticTypeChecked,
   {
     languageOptions: {
       parser: tseslint.parser,
+      parserOptions: {
+        projectService: {
+          allowDefaultProject: ['eslint.config.js', 'vitest.config.ts'],
+        },
+      },
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
@@ -32,6 +38,8 @@ export default defineConfig([
     },
     rules: {
       '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
+      '@typescript-eslint/consistent-type-exports': 'error',
+      '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-explicit-any': 'off',
       'unicorn/filename-case': ['error', { case: 'snakeCase' }],
       'unicorn/no-null': 'off',
