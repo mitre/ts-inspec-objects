@@ -165,7 +165,7 @@ export default class Control {
 
     for (const [tag, value] of Object.entries(this.tags)) {
       if (typeof value === 'object') {
-        result += Array.isArray(value) && typeof value[0] === 'string' ? `  tag ${tag}: ${JSON.stringify(value)}\n` : `  tag '${tag}': ${(value == undefined ? 'nil' : value)}\n`;
+        result += Array.isArray(value) && typeof value[0] === 'string' ? `  tag ${tag}: ${JSON.stringify(value)}\n` : `  tag '${tag}': ${(value == undefined ? 'nil' : JSON.stringify(value))}\n`;
       } else if (typeof value === 'string') {
         result += value.includes('"') ? `  tag "${tag}": "${value}"\n` : `  tag '${tag}': '${value}'\n`;
       }

@@ -40,9 +40,7 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
         // true if the property is an array
         if (Array.isArray(oNode[keysNode])) {
           // 2. push all array object to aInnerTree to search in those later
-          for (let i = 0; i < oNode[keysNode].length; i++) {
-            aInnerTree.push(oNode[keysNode][i]);
-          }
+          aInnerTree.push(...oNode[keysNode]);
         }
       }
     }
