@@ -1,23 +1,31 @@
 {
   "compilerOptions": {
-    "target": "ES2024",
+    "target": "esnext",
+    "lib": ["esnext"],
 
     "module": "esnext",
     "moduleResolution": "bundler",
     "verbatimModuleSyntax": true,
 
-    "noImplicitAny": true,
-    "resolveJsonModule": true,
-    "declaration": true,
-    "importHelpers": true,
-    "esModuleInterop": true,
-    "outDir": "lib",
     "rootDir": "src",
+    "outDir": "lib",
+
     "strict": true,
+    "noImplicitAny": true,
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "inlineSources": true,
+
+    "incremental": true,
+
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+
     "types": ["node"]
   },
   "include": [
-    "index.ts",
     "src/**/*",
     "types/*"
   ]
