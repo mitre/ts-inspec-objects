@@ -47,6 +47,7 @@ export default defineConfig([
       '@typescript-eslint/no-unsafe-call': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',
       '@typescript-eslint/no-unsafe-return': 'off',
+      '@typescript-eslint/prefer-nullish-coalescing': 'off',
       'unicorn/filename-case': ['error', { case: 'snakeCase' }],
       'unicorn/no-null': 'off',
       'unicorn/prefer-node-protocol': 'off',
