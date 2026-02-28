@@ -11,14 +11,14 @@ describe('describe block extraction', () => {
   const pathToTestCases = 'test/sample_data/controls-for-describe-tests';
   const pathToTestResults = 'test/sample_data/controls-test-results';
 
-  for (const file of TEST_USE_CASES as Set<string>) {
+  for (const file of TEST_USE_CASES) {
     let generatedOutput: string;
 
     if (file.includes('old-control-new-control')) {
       const inspecProfile = processInSpecProfile(fs.readFileSync(path.join(pathToTestCases, 'control-tests', 'new-control.json'), 'utf8'));
       const newControl = inspecProfile.controls[0];
       const oldControl = processInSpecProfile(fs.readFileSync(path.join(pathToTestCases, 'control-tests', 'old-control.json'), 'utf8')).controls[0];
-      generatedOutput = updateControlDescribeBlock(oldControl, newControl, createWinstonLogger('ts-inspec-objects')).toString();
+      generatedOutput = updateControlDescribeBlock(oldControl, newControl, createWinstonLogger()).toString();
     } else {
       const controlCode = fs.readFileSync(path.join(pathToTestCases, 'control-tests', `${file}.rb`), 'utf8');
       const testControl = new Control({ code: controlCode });

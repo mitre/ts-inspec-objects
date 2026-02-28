@@ -2,13 +2,13 @@
 // The ultimate goal is to preserve all the metadata that is already there and only add what is new
 
 import _ from 'lodash';
-import winston from 'winston';
-import { diffProfile } from './diff';
+import type winston from 'winston';
 import Control from '../objects/control';
 import Profile from '../objects/profile';
-import { ProfileDiff } from '../types/diff';
 import { processXCCDF } from '../parsers/xccdf';
-import { OvalDefinitionValue } from '../types/oval';
+import type { ProfileDiff } from '../types/diff';
+import type { OvalDefinitionValue } from '../types/oval';
+import { diffProfile } from './diff';
 import { createDiffMarkdown } from './diff_markdown';
 
 /**
@@ -24,7 +24,7 @@ import { createDiffMarkdown } from './diff_markdown';
  */
 export type UpdatedProfileReturn = {
   profile: Profile;
-  diff: { ignoreFormattingDiff: ProfileDiff; rawDiff: Record<string, unknown> };
+  diff: { ignoreFormattingDiff: ProfileDiff; rawDiff: ProfileDiff };
   markdown: string;
 };
 
@@ -57,11 +57,11 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
       if (typeof existingValue === 'object' && existingValue !== null && !Array.isArray(existingValue)) {
         dst[updatedValue] = projectValuesOntoExistingObj(existingValue as Record<string, unknown>, src[updatedValue] as Record<string, unknown>, currentPath + updatedValue + '.');
       } else if (typeof src[updatedValue] === 'string') {
-        _.set(dst, updatedValue, (src[updatedValue] as string).trim());
+        _.set(dst, updatedValue, (src[updatedValue]).trim());
       } else if (typeof src[updatedValue] === 'number') {
         _.set(dst, updatedValue, src[updatedValue]);
       } else if (Array.isArray(src[updatedValue])) {
-        const uniqueArrayValues = _.uniq([..._.get(dst, updatedValue, []) as unknown[], ...src[updatedValue]]);
+        const uniqueArrayValues = _.uniq([..._.get(dst, updatedValue, []) as unknown[], ...src[updatedValue] as unknown[]]);
         _.set(dst, updatedValue, uniqueArrayValues);
       }
     }
@@ -96,8 +96,8 @@ function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<
  * the start and stop line numbers for each string or multi-line comment.
  */
 function getRangesForLines(text: string): number[][] {
-  const stringDelimiters: { [key: string]: string } = { '(': ')', '{': '}', '[': ']', '<': '>' };
-  const variableDelimiters: { [key: string]: string } = { '(': ')', '{': '}', '[': ']' };
+  const stringDelimiters: Record<string, string> = { '(': ')', '{': '}', '[': ']', '<': '>' };
+  const variableDelimiters: Record<string, string> = { '(': ')', '{': '}', '[': ']' };
   const quotes = '\'"`';
   const strings = 'qQriIwWxs';
   enum skipCharLength {
@@ -125,7 +125,7 @@ function getRangesForLines(text: string): number[][] {
       const isPercentChar = (char == '%');
       const isVariableDelimiterChar = Object.keys(variableDelimiters).includes(char);
       const isStringDelimiterChar = ((j < line.length - 1) && (/^[^A-Za-z0-9]$/.test(line[j + 1])));
-      const isCommentBeginChar = ((j == 0) && (line.length >= 6) && (line.slice(0, 6) == '=begin'));
+      const isCommentBeginChar = ((j == 0) && (line.length >= 6) && (line.startsWith('=begin')));
       const isCommentChar = /^\s*#/.test(line);
       const isInlineInterpolation = (char == '#' && ((j < line.length - 1) && line[j + 1] == '{'));
 
@@ -160,9 +160,9 @@ function getRangesForLines(text: string): number[][] {
       baseCondition = (isNotEmptyStack && isNotEscapeChar);
       const delimiterCondition = (baseCondition && Object.keys(stringDelimiters).includes(stack.at(-1)!));
       const delimiterPushCondition = (delimiterCondition && (stack.at(-1) == char));
-      const delimiterPopCondition = (delimiterCondition && (stringDelimiters[stack.at(-1) as string] == char));
+      const delimiterPopCondition = (delimiterCondition && (stringDelimiters[stack.at(-1)!] == char));
       const basePopCondition = (baseCondition && (stack.at(-1) == char) && !Object.keys(stringDelimiters).includes(char));
-      const isCommentEndChar = ((j == 0) && (line.length >= 4) && (line.slice(0, 4) == '=end'));
+      const isCommentEndChar = ((j == 0) && (line.length >= 4) && (line.startsWith('=end')));
       const commentEndCondition = (baseCondition && isCommentEndChar && (stack.at(-1) == '=begin'));
 
       const popCondition = (basePopCondition || delimiterPopCondition || commentEndCondition);
@@ -172,7 +172,7 @@ function getRangesForLines(text: string): number[][] {
       if (popCondition) {
         stack.pop();
         rangeStack.at(-1)!.push(i);
-        const range_ = rangeStack.pop() as number[];
+        const range_ = rangeStack.pop()!;
         if (rangeStack.length === 0) {
           ranges.push(range_);
         }

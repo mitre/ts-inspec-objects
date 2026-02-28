@@ -1,4 +1,4 @@
-import Control from '../objects/control';
+import type Control from '../objects/control';
 
 /**
  * Represents the differences between two profiles.
@@ -36,15 +36,11 @@ export type ProfileDiff = {
   /**
      * Object containing the added controls, keyed by control ID.
      */
-  addedControls: {
-    [key: string]: Control;
-  };
+  addedControls: Record<string, Control>;
 
   /**
      * Object containing the changed controls, keyed by control ID.
      * Each changed control is represented as a partial Control object.
      */
-  changedControls: {
-    [key: string]: Partial<Control>;
-  };
+  changedControls: Record<string, Partial<Control>>;
 };

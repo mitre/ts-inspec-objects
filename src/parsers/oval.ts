@@ -1,6 +1,6 @@
-import { convertEncodedXmlIntoJson } from '../utilities/xccdf';
-import { OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State } from '../types/oval';
+import type { OvalDefinitionValue, Oval, DefinitionCriterion, Test, Object, State } from '../types/oval';
 import { createWinstonLogger } from '../utilities/logging';
+import { convertEncodedXmlIntoJson } from '../utilities/xccdf';
 
 /**
  * Search through all arrays of the tree to find a value from a property
@@ -94,7 +94,7 @@ export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): 
  *  criteria references and resolved values, or `undefined` if no OVAL string is provided.
  */
 export function processOVAL(oval?: string): Record<string, OvalDefinitionValue> | undefined {
-  const logger = createWinstonLogger('ts-inspec-objects');
+  const logger = createWinstonLogger();
 
   if (!oval) {
     return undefined;

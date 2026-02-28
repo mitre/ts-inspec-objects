@@ -3,8 +3,8 @@ import _ from 'lodash';
 import { data as CciNistMappingData } from '../mappings/cci_nist_mapping_data';
 import Control from '../objects/control';
 import Profile from '../objects/profile';
-import { OvalDefinitionValue } from '../types/oval';
-import { BenchmarkGroup, BenchmarkRule, DecodedDescription,
+import type { OvalDefinitionValue } from '../types/oval';
+import type { BenchmarkGroup, BenchmarkRule, DecodedDescription,
   FrontMatter, Notice, ParsedXCCDF, RationaleElement,
   RuleComplexCheck } from '../types/xccdf';
 import { createWinstonLogger } from '../utilities/logging';
@@ -107,7 +107,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
   useRuleId: 'group' | 'rule' | 'version' | 'cis',
   ovalDefinitions?: Record<string,
   OvalDefinitionValue & { criteriaRefs?: string[]; resolvedValues?: any }>): Profile {
-  const logger = createWinstonLogger('ts-inspec-objects');
+  const logger = createWinstonLogger();
   const parsedXML: ParsedXCCDF = convertEncodedXmlIntoJson(xml);
 
   if (parsedXML.Benchmark === undefined) {
@@ -129,17 +129,17 @@ export function processXCCDF(xml: string, removeNewlines: false,
         : parsedXML.Benchmark[0]['@_id'].join(' '))
       : parsedXML.Benchmark[0]['@_id'],
     title: Array.isArray(parsedXML.Benchmark[0].title)
-      ? (parsedXML.Benchmark[0].title.map(t => (t as FrontMatter)['#text']).join(' ') === ''
+      ? (parsedXML.Benchmark[0].title.map(t => t['#text']).join(' ') === ''
         ? parsedXML.Benchmark[0].title.map(t => (t as unknown as string[])).join(' ')
-        : parsedXML.Benchmark[0].title.map(t => (t as FrontMatter)['#text']).join(' '))
+        : parsedXML.Benchmark[0].title.map(t => t['#text']).join(' '))
       : parsedXML.Benchmark[0].title,
     summary: Array.isArray(parsedXML.Benchmark[0].description)
-      ? parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['#text']).join(' ') === ''
+      ? parsedXML.Benchmark[0].description.map(d => d['#text']).join(' ') === ''
         // eslint-disable-next-line unicorn/no-nested-ternary
-        ? parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['p'] || '').join(' ') === ''
+        ? parsedXML.Benchmark[0].description.map(d => d.p || '').join(' ') === ''
           ? parsedXML.Benchmark[0].description.map(d => (d as unknown as string[])).join(' ')
-          : parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['p'] || '').join(' ')
-        : parsedXML.Benchmark[0].description.map(d => (d as RationaleElement)['#text']).join(' ')
+          : parsedXML.Benchmark[0].description.map(d => d.p || '').join(' ')
+        : parsedXML.Benchmark[0].description.map(d => d['#text']).join(' ')
       : parsedXML.Benchmark[0].description,
   });
 
@@ -354,7 +354,7 @@ export function processXCCDF(xml: string, removeNewlines: false,
     control.tags.severity = impactNumberToSeverityString(severityStringToImpact(rule['@_severity'] || 'medium'));
     control.tags.gid = rule.group['@_id'];
     control.tags.rid = rule['@_id'];
-    control.tags.stig_id = rule['version'];
+    control.tags.stig_id = rule.version;
 
     if (typeof rule.group.title === 'string') {
       control.tags.gtitle = removeXMLSpecialCharacters(rule.group.title);
@@ -363,15 +363,15 @@ export function processXCCDF(xml: string, removeNewlines: false,
         ? _.get(rule.group, 'title[0]', 'undefined title')
         : _.get(rule.group, 'title[0].#text', 'undefined title');
 
-      control.tags.gtitle = typeof gtitle === 'string' ? gtitle : (gtitle as FrontMatter)['#text'] || 'undefined title';
+      control.tags.gtitle = typeof gtitle === 'string' ? gtitle : gtitle['#text'] || 'undefined title';
     }
 
-    if (rule['fix'] && rule['fix'].length > 0) {
-      control.tags.fix_id = rule['fix'][0]['@_id'];
+    if (rule.fix && rule.fix.length > 0) {
+      control.tags.fix_id = rule.fix[0]['@_id'];
     }
 
-    if (rule['rationale']) {
-      control.tags.rationale = rule['rationale'][0]['#text'];
+    if (rule.rationale) {
+      control.tags.rationale = rule.rationale[0]['#text'];
     }
 
     // The description tag contains the following tags as well:

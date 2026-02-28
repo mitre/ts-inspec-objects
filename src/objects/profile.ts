@@ -1,7 +1,7 @@
-import Control from './control';
-import YAML from 'yaml';
 import _ from 'lodash';
+import YAML from 'yaml';
 import { unformatText } from '../utilities/global';
+import type Control from './control';
 
 /**
  * Represents an InSpec profile with various metadata and dependencies.
@@ -84,7 +84,7 @@ export default class Profile {
     compliance?: string;
   }[];
 
-  declare inputs: { [key: string]: string }[];
+  declare inputs: Record<string, string>[];
   declare gem_dependencies?: { name: string; version: string }[];
   declare libraries: string[];
   declare readme?: string | null;

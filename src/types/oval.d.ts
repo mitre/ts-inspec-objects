@@ -1,9 +1,9 @@
 /**
  * Represents an Oval object which contains an array of OvalDefinition objects.
  */
-export interface Oval {
+export type Oval = {
   oval_definitions: OvalDefinition[];
-}
+};
 
 /**
  * Represents an OVAL (Open Vulnerability and Assessment Language) definition.
@@ -16,15 +16,15 @@ export interface Oval {
  * @property {OvalDefinitionState[]} states - An array of OVAL definition states.
  * @property {Variable[]} variables - An array of variables used in the OVAL definition.
  */
-export interface OvalDefinition {
+export type OvalDefinition = {
   '@_schemaLocation': string;
   generator: Generator[];
   definitions: OvalOvalDefinitionValue[];
-  tests: { [key: string]: Test[] }[];
+  tests: Record<string, Test[]>[];
   objects: OvalDefinitionObject[];
   states: OvalDefinitionState[];
   variables: Variable[];
-}
+};
 
 /**
  * Represents a collection of OVAL (Open Vulnerability and Assessment Language) definitions.
@@ -32,9 +32,9 @@ export interface OvalDefinition {
  * @interface OvalOvalDefinitionValue
  * @property {OvalDefinitionValue[]} definition - An array of OVAL definitions.
  */
-export interface OvalOvalDefinitionValue {
+export type OvalOvalDefinitionValue = {
   definition: OvalDefinitionValue[];
-}
+};
 
 /**
  * Represents an OVAL (Open Vulnerability and Assessment Language) definition value.
@@ -45,13 +45,13 @@ export interface OvalOvalDefinitionValue {
  * @property {Metadatum[]} metadata - An array of metadata associated with the OVAL definition.
  * @property {DefinitionCriterion[]} criteria - An array of criteria that define the OVAL definition.
  */
-export interface OvalDefinitionValue {
+export type OvalDefinitionValue = {
   '@_class': Class;
   '@_id': string;
   '@_version': string;
   metadata: Metadatum[];
   criteria: DefinitionCriterion[];
-}
+};
 
 /**
  * Enum representing different classes of OVAL (Open Vulnerability and Assessment Language) definitions.
@@ -73,13 +73,13 @@ export enum Class {
  * @property {PurpleCriterion[]} [criteria] - An optional array of grouped criteria.
  * @property {ExtendDefinition[]} [extend_definition] - An optional array of extended definitions.
  */
-export interface DefinitionCriterion {
+export type DefinitionCriterion = {
   '@_comment'?: string;
   '@_operator'?: Operator;
   criterion?: IndigoCriterion[];
   criteria?: PurpleCriterion[];
   extend_definition?: ExtendDefinition[];
-}
+};
 
 /**
  * Enum representing logical operators.
@@ -102,13 +102,13 @@ export enum Operator {
  * @property {ExtendDefinition[]} [extend_definition] - An optional array of extended definitions.
  * @property {FluffyCriterion[]} [criteria] - An optional array of additional nested criteria.
  */
-export interface PurpleCriterion {
+export type PurpleCriterion = {
   '@_operator': Operator;
   criterion?: IndigoCriterion[];
   '@_comment'?: string;
   extend_definition?: ExtendDefinition[];
   criteria?: FluffyCriterion[];
-}
+};
 
 /**
  * Represents a criterion with optional nested criteria and definitions.
@@ -119,13 +119,13 @@ export interface PurpleCriterion {
  * @property {IndigoCriterion[]} [criterion] - An optional array of nested criteria.
  * @property {TentacledCriterion[]} [criteria] - An optional array of nested criteria groups.
  */
-export interface FluffyCriterion {
+export type FluffyCriterion = {
   '@_comment'?: string;
   '@_operator': Operator;
   extend_definition?: ExtendDefinition[];
   criterion?: IndigoCriterion[];
   criteria?: TentacledCriterion[];
-}
+};
 
 /**
  * Represents a criterion with an operator and a list of sticky criteria.
@@ -136,11 +136,11 @@ export interface FluffyCriterion {
  * @property {StickyCriterion[]} criterion - An array of sticky criteria.
  * @property {'@_comment'} [comment] - An optional comment for the criterion.
  */
-export interface TentacledCriterion {
+export type TentacledCriterion = {
   '@_operator': Operator;
   criterion: StickyCriterion[];
   '@_comment'?: string;
-}
+};
 
 /**
  * Represents a sticky criterion in an OVAL (Open Vulnerability and Assessment Language) definition.
@@ -148,10 +148,10 @@ export interface TentacledCriterion {
  * @property {'@_comment'} @_comment - A comment or note associated with the criterion.
  * @property {'@_test_ref'} @_test_ref - A reference to the test associated with the criterion.
  */
-export interface StickyCriterion {
+export type StickyCriterion = {
   '@_comment': string;
   '@_test_ref': string;
-}
+};
 
 /**
  * Represents a criterion used in the Indigo system.
@@ -160,11 +160,11 @@ export interface StickyCriterion {
  * @property @_test_ref - A reference to the test associated with the criterion.
  * @property [@_negate] - An optional flag indicating whether the criterion should be negated.
  */
-export interface IndigoCriterion {
+export type IndigoCriterion = {
   '@_comment'?: string;
   '@_test_ref': string;
   '@_negate'?: string;
-}
+};
 
 /**
  * Represents an extension of a definition in OVAL (Open Vulnerability and Assessment Language).
@@ -173,21 +173,21 @@ export interface IndigoCriterion {
  * @property @_definition_ref - A reference to the definition being extended.
  * @property [@_negate] - An optional attribute to indicate if the definition should be negated.
  */
-export interface ExtendDefinition {
+export type ExtendDefinition = {
   '@_comment'?: string;
   '@_definition_ref': string;
   '@_negate'?: string;
-}
+};
 
 /**
  * Represents metadata information.
  */
-export interface Metadatum {
+export type Metadatum = {
   title: string;
   affected: Affected[];
   description: string;
   reference: Reference[];
-}
+};
 
 /**
  * Represents an object that indicates the affected family and platform.
@@ -195,10 +195,10 @@ export interface Metadatum {
  * @property {'@_family'} family - The family affected.
  * @property {Platform} platform - The platform affected.
  */
-export interface Affected {
+export type Affected = {
   '@_family': Family;
   platform: Platform;
-}
+};
 
 /**
  * Enum representing different operating system families.
@@ -222,10 +222,10 @@ export enum Platform {
  * @property {'@_ref_id'} - The unique identifier for the reference.
  * @property {'@_source'} - The source of the reference.
  */
-export interface Reference {
+export type Reference = {
   '@_ref_id': string;
   '@_source': Source;
-}
+};
 
 export enum Source {
   Cpe = 'CPE',
@@ -235,12 +235,12 @@ export enum Source {
 /**
  * Represents a generator object with details about the product and schema versions.
  */
-export interface Generator {
+export type Generator = {
   product_name: string;
   product_version: string;
   schema_version: number;
   timestamp: Date;
-}
+};
 
 /**
  * Represents an OVAL (Open Vulnerability and Assessment Language) definition object.
@@ -262,7 +262,7 @@ export interface Generator {
  * @property {FamilyObject[]} family_object - Array of family objects.
  * @property {SymlinkObject[]} uname_object - Array of uname objects.
  */
-export interface OvalDefinitionObject {
+export type OvalDefinitionObject = {
   textfilecontent54_object: Textfilecontent54Object[];
   file_object: FileObject[];
   variable_object: VariableObject[];
@@ -278,7 +278,7 @@ export interface OvalDefinitionObject {
   sysctl_object: Object[];
   family_object: FamilyObject[];
   uname_object: SymlinkObject[];
-}
+};
 
 /**
  * Represents an object with specific attributes and optional PID array.
@@ -288,12 +288,12 @@ export interface OvalDefinitionObject {
  * @property {string} name - The name of the object.
  * @property {PID[]} [pid] - An optional array of PID objects.
  */
-export interface Object {
+export type Object = {
   '@_id': string;
   '@_version': string;
   name: string;
   pid?: PID[];
-}
+};
 
 /**
  * Represents a Process ID (PID) object.
@@ -301,10 +301,10 @@ export interface Object {
  * @property {'@_datatype'} - The datatype of the PID.
  * @property {'@_nil'} - A string indicating if the PID is nil.
  */
-export interface PID {
+export type PID = {
   '@_datatype': PIDDatatype;
   '@_nil': string;
-}
+};
 
 export enum PIDDatatype {
   Int = 'int',
@@ -317,10 +317,10 @@ export enum PIDDatatype {
  * @property {'@_id'} id - The unique identifier for the FamilyObject.
  * @property {'@_version'} version - The version of the FamilyObject.
  */
-export interface FamilyObject {
+export type FamilyObject = {
   '@_id': string;
   '@_version': string;
-}
+};
 
 /**
  * Represents a file object with various attributes and optional properties.
@@ -335,7 +335,7 @@ export interface FamilyObject {
  * @property {FileObjectBehavior[]} [behaviors] - An optional array of file object behaviors.
  * @property {Filter[]} [filter] - An optional array of filters.
  */
-export interface FileObject {
+export type FileObject = {
   '@_comment'?: string;
   '@_id': string;
   '@_version': string;
@@ -344,7 +344,7 @@ export interface FileObject {
   filename?: FilenameElement[] | string;
   behaviors?: FileObjectBehavior[];
   filter?: Filter[];
-}
+};
 
 /**
  * Represents the behavior of a file object in an OVAL (Open Vulnerability and Assessment Language) definition.
@@ -354,12 +354,12 @@ export interface FileObject {
  * @property @_recurse_direction - Specifies the direction of recursion.
  * @property @_recurse_file_system - Specifies the file system to be used for recursion.
  */
-export interface FileObjectBehavior {
+export type FileObjectBehavior = {
   '@_max_depth'?: string;
   '@_recurse': Recurse;
   '@_recurse_direction': RecurseDirection;
   '@_recurse_file_system': RecurseFileSystem;
-}
+};
 
 /**
  * Enum representing the types of recursion that can be performed.
@@ -384,11 +384,11 @@ export enum RecurseFileSystem {
  * @property '@_operation' - The operation to be performed on the filename element.
  * @property '@_nil' - Indicates whether the filename element is nil.
  */
-export interface FilenameElement {
+export type FilenameElement = {
   '#text'?: string;
   '@_operation'?: Operation;
   '@_nil'?: string;
-}
+};
 
 export enum Operation {
   BitwiseAnd = 'bitwise and',
@@ -411,13 +411,13 @@ export enum Operation {
  * @property {Check} [@_var_check] - The variable check attribute of the pattern.
  * @property {string} [@_var_ref] - The variable reference attribute of the pattern.
  */
-export interface Pattern {
+export type Pattern = {
   '#text'?: string;
   '@_operation'?: Operation;
   '@_datatype'?: PIDDatatype;
   '@_var_check'?: Check;
   '@_var_ref'?: string;
-}
+};
 
 export enum Check {
   All = 'all',
@@ -432,10 +432,10 @@ export enum Check {
  * @property {string} '#text' - The text content of the filter.
  * @property {Action} '@_action' - The action associated with the filter.
  */
-export interface Filter {
+export type Filter = {
   '#text': string;
   '@_action': Action;
-}
+};
 
 export enum Action {
   Exclude = 'exclude',
@@ -449,11 +449,11 @@ export enum Action {
  * @property {'@_version'} version - The version of the partition object.
  * @property {string} mount_point - The mount point of the partition.
  */
-export interface PartitionObject {
+export type PartitionObject = {
   '@_id': string;
   '@_version': string;
   mount_point: string;
-}
+};
 
 /**
  * Represents a password object in the OVAL (Open Vulnerability and Assessment Language) schema.
@@ -462,11 +462,11 @@ export interface PartitionObject {
  * @property {'@_version'} version - The version of the password object.
  * @property {EvrElement[]} username - An array of `EvrElement` representing the usernames associated with the password object.
  */
-export interface PasswordObject {
+export type PasswordObject = {
   '@_id': string;
   '@_version': string;
   username: EvrElement[];
-}
+};
 
 /**
  * Represents an EVR (Epoch, Version, Release) element in an OVAL (Open Vulnerability and Assessment Language) definition.
@@ -476,12 +476,12 @@ export interface PasswordObject {
  * @property {string} [@_datatype] - Optional. The data type of the EVR element.
  * @property {Check} [@_entity_check] - Optional. The check to be performed on the EVR element.
  */
-export interface EvrElement {
+export type EvrElement = {
   '#text': string;
   '@_operation': Operation;
   '@_datatype'?: string;
   '@_entity_check'?: Check;
-}
+};
 
 /**
  * Represents an RPM information object.
@@ -492,11 +492,11 @@ export interface EvrElement {
  * @property {string} @version - The version of the RPM information object.
  * @property {ProcessorTypeElement[] | string} name - The name of the RPM package, which can be either an array of ProcessorTypeElement or a string.
  */
-export interface RpminfoObject {
+export type RpminfoObject = {
   '@_id': string;
   '@_version': string;
   name: ProcessorTypeElement[] | string;
-}
+};
 
 /**
  * Represents a processor type element with text content and an operation attribute.
@@ -506,10 +506,10 @@ export interface RpminfoObject {
  * @property {string} '#text' - The text content of the processor type element.
  * @property {Operation} '@_operation' - The operation attribute associated with the processor type element.
  */
-export interface ProcessorTypeElement {
+export type ProcessorTypeElement = {
   '#text': string;
   '@_operation': Operation;
-}
+};
 
 /**
  * Represents a ShadowObject with specific properties.
@@ -519,12 +519,12 @@ export interface ProcessorTypeElement {
  * @property {ProcessorTypeElement[]} username - An array of ProcessorTypeElement associated with the username.
  * @property {Filter[]} filter - An array of Filter objects.
  */
-export interface ShadowObject {
+export type ShadowObject = {
   '@_id': string;
   '@_version': string;
   username: ProcessorTypeElement[];
   filter: Filter[];
-}
+};
 
 /**
  * Represents a symbolic link object in the OVAL (Open Vulnerability and Assessment Language) schema.
@@ -539,7 +539,7 @@ export interface ShadowObject {
  * @property [dependency] - An array of dependencies for the symbolic link.
  * @property [processor_type] - An array of processor types associated with the symbolic link.
  */
-export interface SymlinkObject {
+export type SymlinkObject = {
   '@_comment'?: string;
   '@_id': string;
   '@_version': string;
@@ -549,24 +549,24 @@ export interface SymlinkObject {
   canonical_path?: ProcessorTypeElement[] | string;
   dependency?: Dependency[];
   processor_type?: ProcessorTypeElement[];
-}
+};
 
-export interface Dependency {
+export type Dependency = {
   '#text': string;
   '@_entity_check': Check;
-}
+};
 
 export enum Unit {
   MultiUserTarget = 'multi-user.target',
 }
 
-export interface ValueElement {
+export type ValueElement = {
   '#text'?: number | string;
   '@_operation': Operation;
   '@_datatype'?: PIDDatatype;
   '@_var_check'?: Check;
   '@_var_ref'?: string;
-}
+};
 
 export enum ValueEnum {
   Active = 'active',
@@ -575,13 +575,13 @@ export enum ValueEnum {
   Masked = 'masked',
 }
 
-export interface SystemdunitpropertyObject {
+export type SystemdunitpropertyObject = {
   '@_id': string;
   '@_version': string;
   unit: ProcessorTypeElement[] | string;
   property: Property;
   '@_comment'?: string;
-}
+};
 
 export enum Property {
   ActiveState = 'ActiveState',
@@ -589,7 +589,7 @@ export enum Property {
   UnitFileState = 'UnitFileState',
 }
 
-export interface Textfilecontent54Object {
+export type Textfilecontent54Object = {
   '@_id': string;
   '@_version': string;
   filepath?: Pattern[] | string;
@@ -600,31 +600,31 @@ export interface Textfilecontent54Object {
   filename?: ProcessorTypeElement[];
   behaviors?: Textfilecontent54ObjectBehavior[];
   filter?: Filter[];
-}
+};
 
-export interface Textfilecontent54ObjectBehavior {
+export type Textfilecontent54ObjectBehavior = {
   '@_singleline': string;
   '@_multiline'?: string;
-}
+};
 
-export interface Instance {
+export type Instance = {
   '#text'?: number;
   '@_datatype': PIDDatatype;
   '@_operation'?: Operation;
   '@_var_ref'?: string;
-}
+};
 
-export interface VariableObject {
+export type VariableObject = {
   '@_id': string;
   '@_version': string;
   var_ref?: string;
   '@_comment'?: string;
   set?: Set[];
-}
+};
 
-export interface Set {
+export type Set = {
   object_reference: string[];
-}
+};
 
 /**
  * Represents the state of an OVAL (Open Vulnerability and Assessment Language) definition.
@@ -646,7 +646,7 @@ export interface Set {
  * @property {DpkginfoState[]} dpkginfo_state - Array of states for DPKG package information.
  * @property {SymlinkObject[]} uname_state - Array of states for uname information.
  */
-export interface OvalDefinitionState {
+export type OvalDefinitionState = {
   textfilecontent54_state: Textfilecontent54State[];
   variable_state: SymlinkObject[];
   symlink_state: SymlinkObject[];
@@ -662,19 +662,19 @@ export interface OvalDefinitionState {
   family_state: FamilyState[];
   dpkginfo_state: DpkginfoState[];
   uname_state: SymlinkObject[];
-}
+};
 
-export interface DpkginfoState {
+export type DpkginfoState = {
   '@_id': string;
   '@_version': string;
   evr: EvrElement[];
-}
+};
 
-export interface FamilyState {
+export type FamilyState = {
   '@_id': string;
   '@_version': string;
   family: Family;
-}
+};
 
 /**
  * Represents the state of a file in the system.
@@ -701,7 +701,7 @@ export interface FamilyState {
  * @property {UserID[]} [user_id] - The user ID instances.
  * @property {ProcessorTypeElement[]} [filepath] - The file path elements.
  */
-export interface FileState {
+export type FileState = {
   '@_id': string;
   '@_version': string;
   type?: ProcessorTypeElement[] | string;
@@ -723,7 +723,7 @@ export interface FileState {
   group_id?: Instance[];
   user_id?: UserID[];
   filepath?: ProcessorTypeElement[];
-}
+};
 
 /**
  * Represents an execution object with text and datatype properties.
@@ -732,10 +732,10 @@ export interface FileState {
  * @property {boolean} '#text' - Indicates whether the text is present.
  * @property {GexecDatatype} '@_datatype' - Specifies the datatype of the execution object.
  */
-export interface Gexec {
+export type Gexec = {
   '#text': boolean;
   '@_datatype': GexecDatatype;
-}
+};
 
 export enum GexecDatatype {
   Boolean = 'boolean',
@@ -750,13 +750,13 @@ export enum GexecDatatype {
  * @property {Check} [@_var_check] - The variable check associated with the user ID.
  * @property {string} [@_var_ref] - The variable reference associated with the user ID.
  */
-export interface UserID {
+export type UserID = {
   '#text'?: number;
   '@_datatype': PIDDatatype;
   '@_operation'?: Operation;
   '@_var_check'?: Check;
   '@_var_ref'?: string;
-}
+};
 
 /**
  * Represents the state of a partition.
@@ -765,11 +765,11 @@ export interface UserID {
  * @property {'@_version'} version - The version of the partition state.
  * @property {EvrElement[]} mount_options - The list of mount options associated with the partition.
  */
-export interface PartitionState {
+export type PartitionState = {
   '@_id': string;
   '@_version': string;
   mount_options: EvrElement[];
-}
+};
 
 /**
  * Represents the state of an object with optional password and encryption method properties.
@@ -779,12 +779,12 @@ export interface PartitionState {
  * @property {ProcessorTypeElement[]} [password] - An optional array of password processor type elements.
  * @property {ProcessorTypeElement[]} [encrypt_method] - An optional array of encryption method processor type elements.
  */
-export interface State {
+export type State = {
   '@_id': string;
   '@_version': string;
   password?: ProcessorTypeElement[];
   encrypt_method?: ProcessorTypeElement[];
-}
+};
 
 /**
  * Represents the state information for an RPM package.
@@ -797,13 +797,13 @@ export interface State {
  * @property {ProcessorTypeElement[]} [name] - An optional array of name elements.
  * @property {EvrElement[]} [evr] - An optional array of EVR (Epoch:Version-Release) elements.
  */
-export interface RpminfoState {
+export type RpminfoState = {
   '@_id': string;
   '@_version': string;
   version?: ProcessorTypeElement[];
   name?: ProcessorTypeElement[];
   evr?: EvrElement[];
-}
+};
 
 /**
  * Represents the state of a sysctl configuration.
@@ -812,11 +812,11 @@ export interface RpminfoState {
  * @property {'@_version'} version - The version of the sysctl state.
  * @property {Instance[]} value - An array of instances representing the sysctl values.
  */
-export interface SysctlState {
+export type SysctlState = {
   '@_id': string;
   '@_version': string;
   value: Instance[];
-}
+};
 
 /**
  * Represents the state of a text file content in OVAL (Open Vulnerability and Assessment Language) version 5.4.
@@ -827,13 +827,13 @@ export interface SysctlState {
  * @property {ValueElement[] | number | string} [subexpression] - An optional subexpression which can be an array of ValueElement, a number, or a string.
  * @property {Text[]} [text] - An optional array of text elements.
  */
-export interface Textfilecontent54State {
+export type Textfilecontent54State = {
   '@_comment'?: string;
   '@_id': string;
   '@_version': string;
   subexpression?: ValueElement[] | number | string;
   text?: Text[];
-}
+};
 
 /**
  * Represents a text object with an associated operation.
@@ -841,10 +841,10 @@ export interface Textfilecontent54State {
  * @property {'#text'} - The text content, which can be either a number or a string.
  * @property {'@_operation'} - The operation associated with the text, defined by the `Operation` type.
  */
-export interface Text {
+export type Text = {
   '#text': number | string;
   '@_operation': Operation;
-}
+};
 
 /**
  * Represents a test in the OVAL (Open Vulnerability and Assessment Language) schema.
@@ -860,7 +860,7 @@ export interface Text {
  * @property {TestState[]} [@optional] The states to be tested, if applicable.
  * @property {'@_state_operator'} [@optional] The operator to be used for state evaluation.
  */
-export interface Test {
+export type Test = {
   '@_check': Check;
   '@_check_existence'?: CheckExistence;
   '@_comment': string;
@@ -869,7 +869,7 @@ export interface Test {
   object: TestObject[];
   state?: TestState[];
   '@_state_operator'?: Operator;
-}
+};
 
 /**
  * Enum representing the different conditions for checking the existence of items.
@@ -887,18 +887,18 @@ export enum CheckExistence {
  *
  * @property {'@_object_ref'} @_object_ref - A string that references another object.
  */
-export interface TestObject {
+export type TestObject = {
   '@_object_ref': string;
-}
+};
 
 /**
  * Represents the state of a test in the OVAL (Open Vulnerability and Assessment Language) schema.
  *
  * @property {'@_state_ref'} state_ref - A reference to the state associated with the test.
  */
-export interface TestState {
+export type TestState = {
   '@_state_ref': string;
-}
+};
 
 /**
  * Represents a variable in the OVAL (Open Vulnerability and Assessment Language) schema.
@@ -907,11 +907,11 @@ export interface TestState {
  * @property local_variable - An array of local variables.
  * @property constant_variable - An array of constant variable elements.
  */
-export interface Variable {
+export type Variable = {
   external_variable: ConstantVariableElement[];
   local_variable: LocalVariable[];
   constant_variable: ConstantVariableElement[];
-}
+};
 
 /**
  * Represents a constant variable element in the OVAL (Open Vulnerability and Assessment Language) schema.
@@ -924,13 +924,13 @@ export interface Variable {
  * @property {'@_version'} @_version - The version of the constant variable element.
  * @property {string[] | string} [value] - The value(s) of the constant variable element, which can be a single string or an array of strings.
  */
-export interface ConstantVariableElement {
+export type ConstantVariableElement = {
   '@_comment': string;
   '@_datatype': PIDDatatype;
   '@_id': string;
   '@_version': string;
   value?: string[] | string;
-}
+};
 
 /**
  * Represents a local variable in an OVAL (Open Vulnerability and Assessment Language) definition.
@@ -949,7 +949,7 @@ export interface ConstantVariableElement {
  * @property {LocalVariableUnique[]} [unique] - An optional array of `LocalVariableUnique` objects representing unique operations.
  * @property {LocalVariableLiteralComponent[]} [literal_component] - An optional array of `LocalVariableLiteralComponent` objects representing literal components.
  */
-export interface LocalVariable {
+export type LocalVariable = {
   '@_comment': string;
   '@_datatype': PIDDatatype;
   '@_id': string;
@@ -963,13 +963,13 @@ export interface LocalVariable {
   arithmetic?: LocalVariableArithmetic[];
   unique?: LocalVariableUnique[];
   literal_component?: LocalVariableLiteralComponent[];
-}
+};
 
-export interface LocalVariableArithmetic {
+export type LocalVariableArithmetic = {
   '@_arithmetic_operation': string;
   arithmetic: ArithmeticArithmetic[];
   variable_component: VariableComponent[];
-}
+};
 
 /**
  * Represents an arithmetic operation in the OVAL (Open Vulnerability and Assessment Language) schema.
@@ -981,11 +981,11 @@ export interface LocalVariableArithmetic {
  * @property {ArithmeticLiteralComponent[]} literal_component - An array of literal components involved in the arithmetic operation.
  * @property {VariableComponent[]} variable_component - An array of variable components involved in the arithmetic operation.
  */
-export interface ArithmeticArithmetic {
+export type ArithmeticArithmetic = {
   '@_arithmetic_operation': ArithmeticOperation;
   literal_component: ArithmeticLiteralComponent[];
   variable_component: VariableComponent[];
-}
+};
 
 /**
  * Enumeration representing arithmetic operations.
@@ -1003,10 +1003,10 @@ export enum ArithmeticOperation {
  * @property {'#text'} '#text' - The text value of the literal component.
  * @property {'@_datatype'} '@_datatype' - The datatype of the literal component.
  */
-export interface ArithmeticLiteralComponent {
+export type ArithmeticLiteralComponent = {
   '#text': number;
   '@_datatype': PIDDatatype;
-}
+};
 
 /**
  * Represents a variable component that references a local variable.
@@ -1015,18 +1015,18 @@ export interface ArithmeticLiteralComponent {
  *
  * @property {'@_var_ref'} '@_var_ref' - The reference to the local variable.
  */
-export interface VariableComponent {
+export type VariableComponent = {
   '@_var_ref': string;
-}
+};
 
 /**
  * Represents a concatenation operation that can include literal, variable, and object components.
  */
-export interface Concat {
+export type Concat = {
   literal_component: string[] | LiteralComponentEnum;
   variable_component?: VariableComponent[];
   object_component?: ObjectComponent[];
-}
+};
 
 /**
  * Enumeration representing various literal components.
@@ -1045,10 +1045,10 @@ export enum LiteralComponentEnum {
  * @property {'@_item_field'} ItemField - The field of the item associated with this object component.
  * @property {'@_object_ref'} string - A reference to the object associated with this component.
  */
-export interface ObjectComponent {
+export type ObjectComponent = {
   '@_item_field': ItemField;
   '@_object_ref': string;
-}
+};
 
 /**
  * Enum representing different item fields.
@@ -1069,19 +1069,19 @@ export enum ItemField {
 /**
  * Represents a count of object components and unique elements.
  */
-export interface Count {
+export type Count = {
   object_component?: ObjectComponent[];
   unique?: GlobToRegexElement[];
-}
+};
 
 /**
  * Represents an element that converts a glob pattern to a regular expression.
  *
  * @property {ObjectComponent[]} object_component - An array of object components that are part of this element.
  */
-export interface GlobToRegexElement {
+export type GlobToRegexElement = {
   object_component: ObjectComponent[];
-}
+};
 
 /**
  * Represents a local variable literal component.
@@ -1089,10 +1089,10 @@ export interface GlobToRegexElement {
  * @property '#text' - The text value of the local variable literal component.
  * @property '@_datatype' - The datatype of the local variable literal component, represented by the `PIDDatatype` type.
  */
-export interface LocalVariableLiteralComponent {
+export type LocalVariableLiteralComponent = {
   '#text': string;
   '@_datatype': PIDDatatype;
-}
+};
 
 /**
  * Represents a regex capture pattern and its associated object components.
@@ -1100,10 +1100,10 @@ export interface LocalVariableLiteralComponent {
  * @property {'@_pattern'} pattern - The regex pattern to be captured.
  * @property {ObjectComponent[]} object_component - An array of object components that match the regex pattern.
  */
-export interface RegexCapture {
+export type RegexCapture = {
   '@_pattern': string;
   object_component: ObjectComponent[];
-}
+};
 
 /**
  * Represents a split operation with a delimiter and optional object and variable components.
@@ -1114,11 +1114,11 @@ export interface RegexCapture {
  * @property {ObjectComponent[]} [object_component] - An optional array of object components.
  * @property {VariableComponent[]} [variable_component] - An optional array of variable components.
  */
-export interface Split {
+export type Split = {
   '@_delimiter': string;
   object_component?: ObjectComponent[];
   variable_component?: VariableComponent[];
-}
+};
 
 /**
  * Represents a substring with specific length and start position.
@@ -1130,12 +1130,12 @@ export interface Split {
  * @property {ObjectComponent[]} [object_component] - An optional array of object components.
  * @property {VariableComponent[]} [variable_component] - An optional array of variable components.
  */
-export interface Substring {
+export type Substring = {
   '@_substring_length': string;
   '@_substring_start': string;
   object_component?: ObjectComponent[];
   variable_component?: VariableComponent[];
-}
+};
 
 /**
  * Represents a local variable that is unique within the context.
@@ -1143,6 +1143,6 @@ export interface Substring {
  * @interface LocalVariableUnique
  * @property {GlobToRegexElement[]} glob_to_regex - An array of elements that convert glob patterns to regular expressions.
  */
-export interface LocalVariableUnique {
+export type LocalVariableUnique = {
   glob_to_regex: GlobToRegexElement[];
-}
+};
