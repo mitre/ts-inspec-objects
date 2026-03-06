@@ -61,9 +61,11 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
 export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): string[] {
   const criteriaRefs: string[] = [];
   for (const criteria of initialCriteria) {
-    if (criteria.criterion) for (const criterion of criteria.criterion) {
-      if (criterion['@_test_ref']) {
-        criteriaRefs.push(criterion['@_test_ref']);
+    if (criteria.criterion) {
+      for (const criterion of criteria.criterion) {
+        if (criterion['@_test_ref']) {
+          criteriaRefs.push(criterion['@_test_ref']);
+        }
       }
     }
     if (criteria.criteria) {
