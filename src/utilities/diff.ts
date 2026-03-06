@@ -137,51 +137,53 @@ export function diffProfile(
 
   // a diffValue has an entry for both what was subtracted ("-")
   // and what was added ("+") -- need to handle both
-  if (controlIDDiff) for (const diffValue of controlIDDiff) {
-    if (diffValue[0] === '-') {
-      const existingControl = fromProfile.controls.find(
-        control => control.id === diffValue[1],
-      );
-      // Check if the control has been given a new ID
-      if (existingControl) {
-        const newControl = findUpdatedControlByAllIdentifiers(
-          existingControl,
-          toProfile.controls,
+  if (controlIDDiff) {
+    for (const diffValue of controlIDDiff) {
+      if (diffValue[0] === '-') {
+        const existingControl = fromProfile.controls.find(
+          control => control.id === diffValue[1],
         );
-        if (newControl && newControl.id !== existingControl.id) {
-          profileDiff.renamedControlIDs[existingControl.id] = newControl.id;
-          originalDiff.renamedControlIDs[existingControl.id] = newControl.id;
-
-          changedControlIds.push(newControl.id.toLowerCase());
-          const controlDiff: Record<string, any> | undefined = _.omit(
-            diff(existingControl, newControl),
-            'code__deleted',
+        // Check if the control has been given a new ID
+        if (existingControl) {
+          const newControl = findUpdatedControlByAllIdentifiers(
+            existingControl,
+            toProfile.controls,
           );
+          if (newControl && newControl.id !== existingControl.id) {
+            profileDiff.renamedControlIDs[existingControl.id] = newControl.id;
+            originalDiff.renamedControlIDs[existingControl.id] = newControl.id;
 
-          // logger.info("CONTROL DIFF:" + JSON.stringify(controlDiff, null, 2))
+            changedControlIds.push(newControl.id.toLowerCase());
+            const controlDiff: Record<string, any> | undefined = _.omit(
+              diff(existingControl, newControl),
+              'code__deleted',
+            );
 
-          const renamedControlIgnoredFormatting = ignoreFormattingDiff(controlDiff);
-          profileDiff.changedControls[newControl.id] = renamedControlIgnoredFormatting;
-          profileDiff.changedControlIDs.push(newControl.id);
-          originalDiff.changedControls[newControl.id] = controlDiff;
-          originalDiff.changedControlIDs.push(newControl.id);
+            // logger.info("CONTROL DIFF:" + JSON.stringify(controlDiff, null, 2))
 
-          logger.verbose(
-            `Control ${existingControl.id} has been updated to ${newControl.id}`,
-          );
-          logger.debug(`Updated control content: ${JSON.stringify(renamedControlIgnoredFormatting)}`);
+            const renamedControlIgnoredFormatting = ignoreFormattingDiff(controlDiff);
+            profileDiff.changedControls[newControl.id] = renamedControlIgnoredFormatting;
+            profileDiff.changedControlIDs.push(newControl.id);
+            originalDiff.changedControls[newControl.id] = controlDiff;
+            originalDiff.changedControlIDs.push(newControl.id);
+
+            logger.verbose(
+              `Control ${existingControl.id} has been updated to ${newControl.id}`,
+            );
+            logger.debug(`Updated control content: ${JSON.stringify(renamedControlIgnoredFormatting)}`);
+          } else {
+            profileDiff.removedControlIDs.push(diffValue[1]);
+            originalDiff.removedControlIDs.push(diffValue[1]);
+          }
         } else {
-          profileDiff.removedControlIDs.push(diffValue[1]);
-          originalDiff.removedControlIDs.push(diffValue[1]);
+          logger.error(`Unable to find existing control ${diffValue[1]}`);
         }
-      } else {
-        logger.error(`Unable to find existing control ${diffValue[1]}`);
+      } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1]) {
+        logger.info(JSON.stringify(diffValue));
+        logger.info(JSON.stringify(changedControlIds));
+        profileDiff.addedControlIDs.push(diffValue[1]);
+        originalDiff.addedControlIDs.push(diffValue[1]);
       }
-    } else if (diffValue[0] === '+' && !changedControlIds.includes(diffValue[1].toLowerCase()) && diffValue[1]) {
-      logger.info(JSON.stringify(diffValue));
-      logger.info(JSON.stringify(changedControlIds));
-      profileDiff.addedControlIDs.push(diffValue[1]);
-      originalDiff.addedControlIDs.push(diffValue[1]);
     }
   }
 
