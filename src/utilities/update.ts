@@ -49,7 +49,7 @@ export type UpdatedProfileReturn = {
  *   the corresponding array in the destination object, ensuring unique values.
  */
 function projectValuesOntoExistingObj(dst: Record<string, unknown>, src: Record<string, unknown>, currentPath = ''): Record<string, unknown> {
-  for (const updatedValue in src) {
+  for (const updatedValue of Object.keys(src)) {
     const existingValue = _.get(dst, updatedValue);
 
     // We have a new value for something that already exists in dst
