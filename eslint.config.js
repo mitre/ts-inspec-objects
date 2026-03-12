@@ -37,6 +37,8 @@ export default defineConfig([
       n,
     },
     rules: {
+      curly: 'error',
+      'prefer-object-has-own': 'error',
       '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
       '@typescript-eslint/consistent-type-exports': 'error',

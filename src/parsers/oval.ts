@@ -22,8 +22,8 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
   const aReturnNodes = []; // the nodes array which will returned
 
   // 1. loop through all root nodes, store tree content locally so we don't touch the tree structure
-  for (const keysTree in aTree) {
-    aInnerTree.push(aTree[keysTree]);
+  for (const value of Object.values(aTree)) {
+    aInnerTree.push(value);
   }
 
   while (aInnerTree.length > 0) {
@@ -36,11 +36,11 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
       }
     } else { // if (node.children && node.children.length) {
       // find other objects, 1. check all properties of the node if they are arrays
-      for (const keysNode in oNode) {
+      for (const value of Object.values(oNode)) {
         // true if the property is an array
-        if (Array.isArray(oNode[keysNode])) {
+        if (Array.isArray(value)) {
           // 2. push all array object to aInnerTree to search in those later
-          aInnerTree.push(...oNode[keysNode]);
+          aInnerTree.push(...value);
         }
       }
     }
@@ -61,9 +61,11 @@ function searchTree(aTree: Record<string, any>, fCompair: any, bGreedy: boolean)
 export function extractAllCriteriaRefs(initialCriteria: DefinitionCriterion[]): string[] {
   const criteriaRefs: string[] = [];
   for (const criteria of initialCriteria) {
-    if (criteria.criterion) for (const criterion of criteria.criterion) {
-      if (criterion['@_test_ref']) {
-        criteriaRefs.push(criterion['@_test_ref']);
+    if (criteria.criterion) {
+      for (const criterion of criteria.criterion) {
+        if (criterion['@_test_ref']) {
+          criteriaRefs.push(criterion['@_test_ref']);
+        }
       }
     }
     if (criteria.criteria) {

@@ -438,58 +438,60 @@ export function processXCCDF(xml: string, removeNewlines: false,
     }
 
     // Update control references with content from the benchmark rule object
-    if (rule.reference) for (const reference of rule.reference) {
-      if (_.get(reference, '@_href') === '') {
-        control.refs?.push(_.get(reference, '#text', 'undefined href'));
-      } else {
-        try {
-          const referenceText = _.get(reference, '#text') || '';
-          const referenceURL = _.get(reference, '@_href') || '';
-          if (referenceURL) {
-            const parsedURL = new URL(_.get(reference, '@_href', 'undefined href'));
-            if (parsedURL.protocol.toLowerCase().includes('http') || parsedURL.protocol.toLowerCase().includes('https')) {
-              control.refs?.push({
-                ref: referenceText,
-                url: referenceURL,
-              });
-            } else {
-              control.refs?.push({
-                ref: referenceText,
-                uri: referenceURL,
-              });
-            }
-          } else {
-            if ('title' in reference) {
-              const title = _.get(reference, 'title');
-              if (Array.isArray(title)) {
-                control.refs?.push(title[0]);
+    if (rule.reference) {
+      for (const reference of rule.reference) {
+        if (_.get(reference, '@_href') === '') {
+          control.refs?.push(_.get(reference, '#text', 'undefined href'));
+        } else {
+          try {
+            const referenceText = _.get(reference, '#text') || '';
+            const referenceURL = _.get(reference, '@_href') || '';
+            if (referenceURL) {
+              const parsedURL = new URL(_.get(reference, '@_href', 'undefined href'));
+              if (parsedURL.protocol.toLowerCase().includes('http') || parsedURL.protocol.toLowerCase().includes('https')) {
+                control.refs?.push({
+                  ref: referenceText,
+                  url: referenceURL,
+                });
               } else {
-                control.refs?.push(_.get(reference, 'title') as string);
+                control.refs?.push({
+                  ref: referenceText,
+                  uri: referenceURL,
+                });
+              }
+            } else {
+              if ('title' in reference) {
+                const title = _.get(reference, 'title');
+                if (Array.isArray(title)) {
+                  control.refs?.push(title[0]);
+                } else {
+                  control.refs?.push(_.get(reference, 'title') as string);
+                }
               }
             }
-          }
-          // Add the reference to the control tags when separated by §
-          if (_.isString(referenceText) && referenceText.includes('§')) {
-            const referenceParts = referenceText.split('§');
-            if (referenceParts.length == 2) {
+            // Add the reference to the control tags when separated by §
+            if (_.isString(referenceText) && referenceText.includes('§')) {
+              const referenceParts = referenceText.split('§');
+              if (referenceParts.length == 2) {
               // eslint-disable-next-line  prefer-const
-              let [identifierType, identifier] = referenceText.split('§');
-              identifierType = identifierType.toLowerCase();
-              if (!(identifierType in control.tags)) {
-                control.tags[identifierType] = [identifier];
-              } else if (Array.isArray(control.tags[identifierType])) {
-                control.tags[identifierType] = _.union(control.tags[identifierType] as ArrayLike<string>, [identifier]);
+                let [identifierType, identifier] = referenceText.split('§');
+                identifierType = identifierType.toLowerCase();
+                if (!(identifierType in control.tags)) {
+                  control.tags[identifierType] = [identifier];
+                } else if (Array.isArray(control.tags[identifierType])) {
+                  control.tags[identifierType] = _.union(control.tags[identifierType] as ArrayLike<string>, [identifier]);
+                } else {
+                  logger.warn(`Attempted to push identifier to control tags when identifier already exists: ${identifierType}: ${identifier}`);
+                }
               } else {
-                logger.warn(`Attempted to push identifier to control tags when identifier already exists: ${identifierType}: ${identifier}`);
+                logger.warn('Reference parts of invalid length: ', referenceParts);
               }
-            } else {
-              logger.warn('Reference parts of invalid length: ', referenceParts);
             }
+          } catch (error) {
+            logger.warn(`Error parsing ref for control ${control.id}: `);
+            logger.warn(JSON.stringify(reference, null, 2));
+            logger.warn(error);
           }
-        } catch (error) {
-          logger.warn(`Error parsing ref for control ${control.id}: `);
-          logger.warn(JSON.stringify(reference, null, 2));
-          logger.warn(error);
         }
       }
     }
